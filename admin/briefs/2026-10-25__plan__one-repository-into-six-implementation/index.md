@@ -77,7 +77,7 @@ Why not build in a "php-v2" repository and rename it to the main name later:
 
 - **Not live yet:** none of the six repositories has deployed. Each needs its Pages source set to "Deploy from a branch: dev, / (root)", or a deploy workflow, which goes to security.
 
-- **One source for every file, 25 to 26 October (the editor: "we don't want to have engineering issues, and ironically security issues, by having multiple sources for the same files").**
+- **One source for every file, 25 October (the editor: "we don't want to have engineering issues, and ironically security issues, by having multiple sources for the same files").**
 
 - **The assets are served once, by the press.** `tools/assets_v1.py` takes v1's `assets/` at a released commit (122 files); press v1.0.2 publishes them under `/v/1.0.2/assets/`, and v1.0.4 is the current version. The partition cuts a site only against a press version whose assets are exactly v1's at the commit it cuts.
 
@@ -94,6 +94,8 @@ Why not build in a "php-v2" repository and rename it to the main name later:
 - **Versions:** after a repository's first release, every release adds one to the last number (the editor). The press is at 1.0.4, data at 0.1.4.
 
 - **The main site is staged at `site.php.oct.2026.newsroom.sgit.ai`,** the name its DNS record has.
+
+- **The reports, 25 October:** four on the briefs page, with the numbers, the design, the challenges and the runbook: [Report: one repository into six, the first day in numbers](https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-the-first-day/), [Report: one source for every file](https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-source-for-every-file/), [Report: one repository into six, the challenges](https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-the-challenges/) and [Report: one repository into six, how to work in it](https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-how-to-work-in-it/).
 
 - **Pass two:**
 
@@ -223,8 +225,8 @@ Going back is one step while the old repository is still there: move the custom 
 
 This brief is the file `admin/content/briefs/2026-10-25__plan__one-repository-into-six-implementation.md` in the repository, published as written.
 
-← older: Decks: what ruv.sgit.ai does, and how it changes the deck
+← older: Decks: what ruv.sgit.ai does, and how it changes the deck newer: → Report: one repository into six, how to work in it
 
 
 ---
-site v0.22.5 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__plan__one-repository-into-six-implementation/index.html
+site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__plan__one-repository-into-six-implementation/index.html

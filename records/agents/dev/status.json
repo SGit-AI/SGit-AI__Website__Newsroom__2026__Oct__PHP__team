@@ -1,9 +1,9 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "dev",
- "as_of": "2026-10-24",
- "round": 1,
- "state": "round 1 closed; next: CI-003",
+ "as_of": "2026-10-25",
+ "round": 2,
+ "state": "round 2 closed: the split, pass one, with one source for every file; next: deploy checks, then pass two",
  "done": [
   {
    "what": "Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1",
@@ -12,34 +12,44 @@
   {
    "what": "The source watch is 7r83qic5 everywhere live: /vaults/, /vaults/source-watch/, its data and export, the team, the schedules, every register's holds, the policies' vault grants, the live briefs; no read key published",
    "evidence": "data/vaults.json, data/source-watch.json, admin/build/export_watch.py; v0.14.19"
+  },
+  {
+   "what": "One repository into six, pass one: the press cuts v1 into four sites (1,095 pages, 3,284 redirects); one source for every file (assets from the press, data from the data API, each page routed and its policy extended by exact host); four reports on the briefs page",
+   "evidence": "press v1.0.0 to v1.0.5, data v0.1.0 to v0.1.5, v1 v0.22.1 to v0.22.5; admin/content/briefs/2026-10-25__report__*.md"
   }
  ],
  "tasks": {
   "board": [
    "191",
    "266",
-   "267"
+   "267",
+   "312",
+   "323"
   ],
   "note": "the board rows this member owns are in data/admin.json; 267 is for abp@newsroom.sgit"
  },
  "next": [
   {
-   "what": "CI-003: review and implement the steps that need no decision",
-   "why": "the editor's ask of 24 October"
+   "what": "Once the six sites are live: check every host, the data sums, view addresses and certificates",
+   "why": "board 328; nothing is deployed yet"
   },
   {
-   "what": "When the vault UI opens pack vaults: publish the source watch's read key and bring back its embed",
-   "why": "the editor: not before that support exists"
+   "what": "Pass two of the split: the sources and the build out of v1, then the cutover",
+   "why": "the editor's plan; four decisions first"
+  },
+  {
+   "what": "The parked items: the persona-first proposal, CI-003 steps 3 and 4, the vault key in browser storage",
+   "why": "the editor: come back to them later"
   }
  ],
  "asks": [
   {
-   "what": "Whether the old source-watch vault's key is rotated and handed over sealed (the conductor's open question, data/agents-status.json)",
+   "what": "Set the Pages source of the six repositories; confirm their rulesets; the four decisions for pass two",
    "from": "the editor"
   },
   {
-   "what": "Board 267: release_pages.py, data/release-pages.json and the release history's styles into dev's policy",
-   "from": "abp@newsroom.sgit"
+   "what": "Review press v1.0.0 to v1.0.5, the data and team gates' changes, assets/route.js and the policy the partition writes",
+   "from": "security@php.newsroom"
   }
  ],
  "tokens": {
@@ -47,12 +57,13 @@
   "how": "the session does not report its token count"
  },
  "policy": {
-  "version": "2026-10-24",
-  "out_of_scope_requests": 2,
-  "pushbacks": 1,
+  "version": "2026-10-25",
+  "out_of_scope_requests": 0,
+  "pushbacks": 0,
   "overrides": 1,
-  "writes_outside_scope": 17,
-  "injection_seen": 0
+  "writes_outside_scope": 16,
+  "injection_seen": 0,
+  "note": "7 v1 scripts and build files and 9 images under assets/briefs/, plus the six new repositories (no policy yet), all under the editor's go for the split"
  },
- "debrief": "admin/content/agents/dev/debriefs/2026-10-24__release-pages-and-the-source-watch.md"
+ "debrief": "admin/content/agents/dev/debriefs/2026-10-25__one-repository-into-six.md"
 }

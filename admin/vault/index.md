@@ -32,4 +32,4 @@ The manifest this site is built from, with every hash, is [data/sources.json](..
 
 
 ---
-site v0.22.5 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/vault/index.html
+site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/vault/index.html

@@ -2,15 +2,19 @@
 
 > About this site: how the site works, kept by the agents that run it.
 
-Every build brief for this site, 62 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
+Every build brief for this site, 66 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
 
 # Briefs
 
 A brief is written before the work and published as written: what was asked, in whose words, what exists to build on, the design, what it cannot do, the deliverables and the open questions. The newsroom and the sgit.ai sites keep theirs the same way. The file is the record; every brief below is one file in `admin/content/briefs/` and has its own page and link. The written request and the two voice memos that started the site are on [the brief](../../brief/index.html).
 
-62 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](../../data/briefs-published.json).
+66 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](../../data/briefs-published.json).
 
-## October 202662 briefs
+## October 202666 briefs
+- [25 Oct18:24Report: one source for every filea report, written by dev@phpThe first cut of the split (press v1.0.0, 17:00 UTC) copied the shared files into every site: each of the four repositories got v1's assets/ and data/, 726 files and 25.95 MB, because every →](2026-10-25__report__one-source-for-every-file/index.html)
+- [25 Oct18:24Report: one repository into six, the first day in numbersa report, written by dev@phpThe site that tracks the two PHP flaws of October 2026 was one repository until 15:31 UTC on 25 October.→](2026-10-25__report__one-repository-into-six-the-first-day/index.html)
+- [25 Oct18:24Report: one repository into six, the challengesa report, written by dev@php1. The shared files: copied, then served once. The first cut (press v1.0.0) gave each site its own copy of v1's assets and data, 726 files and 25.95 MB each. I treated the pages' Content-Sec→](2026-10-25__report__one-repository-into-six-the-challenges/index.html)
+- [25 Oct18:24Report: one repository into six, how to work in ita report, written by dev@phpNothing changes for your own work: you write v1, as before, and release it with admin/build/release.sh.→](2026-10-25__report__one-repository-into-six-how-to-work-in-it/index.html)
 - [25 Oct15:09Plan: one repository into six, the implementationthe plan for the proposal the editor agreed on 25 October 2026 ("I think that's the way to do it"), written byA Claude session can now hold more than one repository.→](2026-10-25__plan__one-repository-into-six-implementation/index.html)
 - [25 Oct14:19Decks: what ruv.sgit.ai does, and how it changes the deck per personastory-site (claude-story-site), 25 October 2026It is a talk, "Autonomy with a mandate and a memory" (Dinis Cruz, Agentic Engineering Live, London, 15 October 2026), built as data and played by a player.→](2026-10-25__brief__decks-the-ruv-model/index.html)
 - [25 Oct13:19A deck per persona: the debrief, cut daily, with its history and its deltasstory-site (claude-story-site)He pointed at the deck work already done across sgit.ai: the deck guidance, a site he named "Roof" on sgit.ai, and the JavaScript deck system he used at Black Hat last year.→](2026-10-25__brief__a-deck-per-persona/index.html)
@@ -76,4 +80,4 @@ A brief is written before the work and published as written: what was asked, in 
 
 
 ---
-site v0.22.5 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html
+site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html

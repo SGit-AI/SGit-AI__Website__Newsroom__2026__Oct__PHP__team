@@ -6,7 +6,23 @@ Every release of this site, with what changed, why, the pages it changed and the
 
 # Release history
 
-One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.5. The data is [data/versions.json](../data/versions.json); the pages are [data/release-pages.json](../data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.7. The data is [data/versions.json](../data/versions.json); the pages are [data/release-pages.json](../data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+
+### v0.22.7 · 2026-10-25
+
+the four reports on the split link each other, the proposal and the plan
+Pages changed (12): Report: one repository into six, the first day in numbers · The fact pipeline: from a web page to a reader · What changed in the risk graph, release by release · Plan: one repository into six, the implementation · Report: one repository into six, how to work in it · Report: one repository into six, the challenges · Report: one source for every file · Admin and engineering and 4 more
+[Release history](../admin/versions.html) · [Runs: what the agents do on their own, and every time they did it](../team/runs/index.html) · [How the story changed, release by release](../versions/index.html) · [What's new: every change, release by release](../whatsnew/index.html)
+
+ Vault commit `87795d121200`.
+
+### v0.22.6 · 2026-10-25
+
+one repository into six, in four reports on the briefs page: the first day in numbers, one source for every file (the design), the challenges, and how to work in it; dev's debrief of the round; the dates corrected to 25 October
+Pages changed (19): Report: one repository into six, the challenges new · Report: one repository into six, the first day in numbers new · Report: one source for every file new · Report: one repository into six, how to work in it new · dev@php.newsroom: role, policy and rounds · Briefs · Plan: one repository into six, the implementation · Every round: what each member did and 11 more
+[dev@php.newsroom, build, gate and release: the team](../team/dev/index.html) · [Dinis Cruz, Editor: the team](../team/dinis/index.html) · [The fact pipeline: from a web page to a reader](../pipeline/index.html) · [What changed in the risk graph, release by release](../grc/changes/index.html) · [Questions readers ask about php2shell](../questions/index.html) · [The board](../admin/board/index.html) · [Admin and engineering](../admin/index.html) · [Release history](../admin/versions.html) · [Runs: what the agents do on their own, and every time they did it](../team/runs/index.html) · [How the story changed, release by release](../versions/index.html) · [What's new: every change, release by release](../whatsnew/index.html)
+
+ Vault commit `87795d121200`.
 
 ### v0.22.5 · 2026-10-25
 
@@ -1469,4 +1485,4 @@ Files: `admin/build/build.py`, `admin/build/export_vault.py`, `admin/build/valid
 
 
 ---
-site v0.22.5 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/versions.html
+site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/versions.html

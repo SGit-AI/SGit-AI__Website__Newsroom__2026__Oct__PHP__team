@@ -1,6 +1,24 @@
 {
- "current": "0.22.5",
+ "current": "0.22.7",
  "versions": [
+  {
+   "version": "0.22.7",
+   "date": "2026-10-25",
+   "title": "the four reports on the split link each other, the proposal and the plan",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.6",
+   "date": "2026-10-25",
+   "title": "one repository into six, in four reports on the briefs page: the first day in numbers, one source for every file (the design), the challenges, and how to work in it; dev's debrief of the round; the dates corrected to 25 October",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.5",
    "date": "2026-10-25",

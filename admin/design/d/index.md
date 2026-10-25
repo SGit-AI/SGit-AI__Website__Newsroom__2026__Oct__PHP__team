@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.5. Not the live site.
+> Mockup D for review, built from the data of release v0.22.7. Not the live site.
 
-PHP Team console Console Overview Board 216 Agents 19 Releases 189 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 216 Agents 19 Releases 191 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,15 +12,15 @@ Team console · public, like everything here
  built 25 October 2026, 09:35 UTC 
 
 Release 
-v0.22.5 
-189 releases since 22 Oct 
+v0.22.7 
+191 releases since 22 Oct 
 
 Open on the board 
 216 
 108 done, 5 waiting 
 
 Pages built 
-1055 
+1059 
 every one with a markdown twin 
 
 Sources in the vault 
@@ -99,14 +99,14 @@ Article: URL paths, personas in the address, and a single-page site, written bef
 ### Releases
  latest 8 
 
+ v0.22.7 2026-10-25 the four reports on the split link each other, the proposal and the plan 
+ v0.22.6 2026-10-25 one repository into six, in four reports on the briefs page: the first day in numbers, one source for every file (the design), the… 
  v0.22.5 2026-10-25 one repository into six: one source for every file, recorded (the plan's Progress, REALITY, the board): press v1.0.4 serves the as… 
  v0.22.4 2026-10-25 the control room loads under a view address (/team/control/as/executive/ fetched team/control/data/control.json): control.js resol… 
  v0.22.3 2026-10-25 assets/route.js sends every data/ request on the split sites to the data API, which now publishes every file the pages' scripts fe… 
  v0.22.2 2026-10-25 one resolver for every URL a script builds (assets/route.js, loaded first on every page; boot.js, the Ask pane, the phone app and … 
  v0.22.1 2026-10-25 pass one of the split, recorded: the press (v1.0.0) cuts this site's built pages at d9af616ffd0b into four sites (site 230 pages, … 
  v0.22.0 2026-10-25 the line is live on every page in place of the two dials, and the router: /agencies/as/security/ opens the agencies for Security, … 
- v0.21.10 2026-10-25 the split, in progress: the press is at press.php.oct.2026.newsroom.sgit.ai, this story's own for now (the editor); the data repos… 
- v0.21.9 2026-10-25 the split's names, as the editor decided: press (not kit) for the build library, the gate, the release and the shared components, … 
 
 ### Agents and what they own
  open items 
@@ -122,4 +122,4 @@ Article: URL paths, personas in the address, and a single-page site, written bef
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.5 · https://php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.7 · https://php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

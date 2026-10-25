@@ -16,6 +16,11 @@ E = lambda s: html.escape(str(s if s is not None else ''), quote=True)
 GH = 'https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php__team'
 
 
+def short(text, n):
+    """At most n characters, cut at a word, with an ellipsis when cut."""
+    return text if len(text) <= n else text[:n].rsplit(' ', 1)[0].rstrip(',;:(') + '…'
+
+
 def load(p):
     return json.load(open(os.path.join(ROOT, p), encoding='utf-8'))
 
@@ -33,10 +38,10 @@ def page():
     for f in sorted(os.listdir(os.path.join(ROOT, 'records', 'schedule'))):
         if f.endswith('.json'):
             c = load(f'records/schedule/{f}')
-            cards.append(f'<tr><td><a href="{GH}/blob/dev/records/schedule/{E(f)}">{E(c.get("member") or f[:-5])}</a></td><td>{E(c.get("status"))}</td><td>{E(", ".join(c.get("times") or []))}</td><td>{E((c.get("objective") or "")[:140])}</td></tr>')
+            cards.append(f'<tr><td><a href="{GH}/blob/dev/records/schedule/{E(f)}">{E(c.get("member") or f[:-5])}</a></td><td>{E(c.get("status"))}</td><td>{E(", ".join(c.get("times") or []))}</td><td>{E(short(c.get("objective") or "", 140))}</td></tr>')
     members = sorted(d for d in os.listdir(os.path.join(ROOT, 'records', 'agents')) if os.path.isdir(os.path.join(ROOT, 'records', 'agents', d)))
     mlist = ' &middot; '.join(f'<a href="{GH}/tree/dev/records/agents/{E(m)}">{E(m)}</a>' for m in members)
-    waiting = ''.join(f'<li><b>{E(r["id"])}</b> ({E(r["owner"])}): {E(r["title"][:160])}</li>' for r in board if r['status'] == 'waiting')
+    waiting = ''.join(f'<li><b>{E(r["id"])}</b> ({E(r["owner"])}): {E(short(r["title"], 160))}</li>' for r in board if r['status'] == 'waiting')
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PHP October 2026: the team</title>
