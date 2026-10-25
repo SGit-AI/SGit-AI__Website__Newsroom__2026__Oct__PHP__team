@@ -1,0 +1,54 @@
+{
+ "about": "Everything the team runs on its own, without a person starting it: who runs it, where, how often, whether it runs at night, what it is allowed to change, and what it must leave behind. Kept by conductor@php.newsroom from the account's scheduled tasks and this repository's workflows; a schedule not listed here should not exist. Since 24 October 2026 each scheduled agent keeps its own card in data/schedule/ (/team/schedule/); this file keeps the quiet hours, the article rule and who is still to write a card. Times are UTC unless they say London.",
+ "kept_by": "conductor",
+ "observed": "2026-10-22T21:40Z",
+ "quiet_hours": {
+  "tz": "Europe/London",
+  "from": "22:00",
+  "to": "07:00",
+  "as_of": "2026-10-22",
+  "rule": "Nothing scheduled runs between 22:00 and 07:00 London time. A run that would fall in those hours is moved to 07:00 or skipped. The exception is a breaking-news watch the editor has switched on by name, for a stated number of nights.",
+  "status": "proposed by the conductor on 22 October 2026; not yet applied to any schedule (board)"
+ },
+ "article_rule": "A run that changes something a reader can see (a grade, a series, a new capture, a review with failures) leaves a dated article in admin/content/articles/ whose front matter names the run (run: <run id>). A run that changes nothing leaves one line in its own log and no article. The runs page flags every run with changes and no article.",
+ "schedules": [
+  {
+   "id": "source-watch",
+   "member": "researcher",
+   "name": "Source watch pass",
+   "where": "a claude.ai scheduled task waking researcher@php.newsroom's session",
+   "kind": "chain",
+   "every_minutes": 30,
+   "cadence": "every 30 minutes, each pass scheduling the next",
+   "does": "Probes every watched source, captures what changed into the source watch vault, rebuilds the series and the analysis, pushes the vault, and reports moves (sites dark, KEV, EPSS, the NCSC-NL inventory, Metasploit and nuclei counts).",
+   "writes": "the source watch vault (7r83qic5, pack mode); nothing in this repository",
+   "status": "paused by the editor at 21:36 UTC on 22 October until he has reviewed it; the pass booked for 21:40 is disabled. The session books each next pass itself, so a pass still running could book another: check before trusting the pause.",
+   "since": "2026-10-22T20:33Z",
+   "proposed": "Before scheduling the next pass, check London time: between 22:00 and 07:00, schedule it for 07:04 instead. Breaking-news nights only when the editor says so."
+  },
+  {
+   "id": "factcheck",
+   "member": "verifier",
+   "name": "Fact-check desk run",
+   "where": "a claude.ai scheduled task waking factcheck@php.newsroom's session",
+   "kind": "cron",
+   "cron": "52 */4 * * *",
+   "cadence": "every four hours at :52 UTC",
+   "does": "Re-grades every new or changed claim against its captures, re-checks tickets and contradictions, checks KEV, the CVE and NVD records, php.net and the NCSC-NL repository, and pushes the desk's branch.",
+   "writes": "the factcheck/desk branch; never dev",
+   "status": "paused by the editor at 21:36 UTC on 22 October until he has reviewed it",
+   "since": "2026-10-22T18:52Z",
+   "proposed": "CRON_TZ=Europe/London 52 8-20/4 * * *  (08:52, 12:52, 16:52 and 20:52 London)"
+  }
+ ],
+ "expected": [
+  {
+   "agent": "pulse",
+   "note": "already runs on a schedule; to write its card"
+  },
+  {
+   "agent": "librarian",
+   "note": "asked by the editor on 24 October to propose one"
+  }
+ ]
+}

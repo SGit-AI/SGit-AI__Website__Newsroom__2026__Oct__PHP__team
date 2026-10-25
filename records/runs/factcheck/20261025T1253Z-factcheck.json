@@ -1,0 +1,14 @@
+{
+ "run": "20261025T1253Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-25T12:53:00Z",
+ "finished": "2026-10-25T13:01:08Z",
+ "outcome": "ok",
+ "summary": "12:52 London wake: no-confirmed-compromise re-graded as of 09:35 UTC on 25 October, still holds (A4), and none of 20 new captures names a victim; K-010 gains Lorikeet's unsourced 24 October date; KEV unchanged; audit 0 failures; notes read to head 82df2ac0bfc5. Page: /factcheck/",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "82df2ac0bfc509147af9bcbf7dfb2020bd4a99c5"
+}

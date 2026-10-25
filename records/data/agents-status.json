@@ -1,0 +1,415 @@
+{
+ "about": "Where every agent on the team is: what it last did, what it is waiting for and from whom, which branches wait to be carried into dev, what ran on a schedule, and how fresh the site's data is against its vaults. A snapshot taken by conductor@php.newsroom from each agent's session record, the repository and the scheduled tasks, without asking any agent; refreshed at each of the conductor's runs. Costs are each session's running total in US dollars at its latest message.",
+ "kept_by": "conductor",
+ "as_of": "2026-10-25T15:25Z",
+ "live_version": "0.21.7",
+ "agents": [
+  {
+   "agent": "curator@php.newsroom (scheduled)",
+   "member": "newsroom-lead",
+   "state": "waiting",
+   "last": "2026-10-24T22:17Z",
+   "did": "25 Oct 08:00 London: promoted 18 sources and 2 newer snapshots, 7 new claims (139 in all, none confirmed); the evidence vault is at 400 sources, head 176e2dc212e1, 113 queue rows pending. The site shows 382 (the journalist exported 24 Oct 22:04). The report is only in its session.",
+   "waiting": "Your go on the site export; whether a public normal-vault copy stays; confirm the researcher wrote nothing to oq9gflln after the move.",
+   "on": "editor",
+   "cost": 22
+  },
+  {
+   "agent": "researcher@php.newsroom (scheduled)",
+   "member": "researcher",
+   "state": "working",
+   "last": "2026-10-25T07:16Z",
+   "did": "Passes pushed to the source-watch vault at every wake (24 Oct 07:00 to 17:00; 25 Oct 07:03); another pass is running now. Nothing of this is in the repository: no commit, no run record.",
+   "waiting": "A run record in git at every wake (your call: see the first decision).",
+   "on": "",
+   "cost": 14
+  },
+  {
+   "agent": "curator@php.newsroom (first session)",
+   "member": "newsroom-lead",
+   "state": "review",
+   "last": "2026-10-23T23:06Z",
+   "did": "Measured the creator vault (580 MB, mostly captures) and the evidence vault; advises waiting before moving either to pack mode.",
+   "waiting": "A decision on moving the creator vault to pack mode (the agent advises waiting).",
+   "on": "editor",
+   "cost": 19.94
+  },
+  {
+   "agent": "researcher@php.newsroom (first session)",
+   "member": "researcher",
+   "state": "review",
+   "last": "2026-10-23T22:57Z",
+   "did": "Pack mode measured and written up; reviewed the old schedule vault. Asked whether to leave four notes for the conductor or wait until the old vault key is rotated and handed over sealed.",
+   "waiting": "Whether the old source vault (oq9gflln) key is rotated and handed over sealed.",
+   "on": "editor",
+   "cost": 101.97
+  },
+  {
+   "agent": "dev@php.newsroom",
+   "member": "dev",
+   "state": "blocked",
+   "last": "2026-10-24T16:45Z",
+   "did": "Blocked on a Bash permission prompt (since 11:52 UTC, asked again 16:45).",
+   "waiting": "Approve or deny the Bash call in its session; desk lists 6 decisions waiting on you.",
+   "on": "editor",
+   "cost": 181
+  },
+  {
+   "agent": "sherpa@php.newsroom",
+   "member": "sherpa",
+   "state": "waiting",
+   "last": "2026-10-24T20:47Z",
+   "did": "Wakes on schedule; both lanes empty; next 07:45.",
+   "waiting": "The conductor's lane key (5iwos28w) and the subscriptions key (wgeiqabu) handed over sealed.",
+   "on": "editor",
+   "cost": 91
+  },
+  {
+   "agent": "designer@php.newsroom",
+   "member": "story-site",
+   "state": "waiting",
+   "last": "2026-10-24T13:38Z",
+   "did": "Lens UI prototype built and checked; board 274 closed.",
+   "waiting": "Its agent key enrolled; the picks on board 138.",
+   "on": "editor",
+   "cost": 54
+  },
+  {
+   "agent": "pulse@newsroom",
+   "member": "",
+   "state": "waiting",
+   "last": "2026-10-25T07:03Z",
+   "did": "The 06:44 pass pushed. It wants to switch its source from the watch to the site, add two KEV entries (CVE-2026-110447, CVE-2026-114625), move its morning pass to 07:14 and release its schedule card.",
+   "waiting": "Your go on those four; its card is not released yet.",
+   "on": "editor",
+   "cost": 28
+  },
+  {
+   "agent": "desk@php.newsroom",
+   "member": "",
+   "state": "waiting",
+   "last": "2026-10-24T15:32Z",
+   "did": "Afternoon check done (run record 16:20). Lists 6 decisions for you, starting with dev's stuck prompt.",
+   "waiting": "Your 6 ranked decisions; its scope.",
+   "on": "editor",
+   "cost": 20
+  },
+  {
+   "agent": "synthetic@php.newsroom",
+   "member": "synthetic",
+   "state": "done",
+   "last": "2026-10-24T00:23Z",
+   "did": "Six readers public-read; the workflow removal was merged to dev.",
+   "waiting": "nothing, apart from branches still open (see branches)",
+   "on": "",
+   "cost": 30.06
+  },
+  {
+   "agent": "grc@php.newsroom",
+   "member": "grc",
+   "state": "done",
+   "last": "2026-10-22T21:45Z",
+   "did": "The GRC section and the data protection officer's briefing (v0.6.0).",
+   "waiting": "Board 092 (the editor: accept, fund or fix the newsroom's own risks), 093 (journalist), 094 (story-site).",
+   "on": "editor",
+   "cost": 17.44
+  },
+  {
+   "agent": "factcheck@php.newsroom",
+   "member": "verifier",
+   "state": "waiting",
+   "last": "2026-10-24T19:58Z",
+   "did": "The 20:52 wake was quiet: no release, audit 0 failures.",
+   "waiting": "nothing",
+   "on": "",
+   "cost": 96
+  },
+  {
+   "agent": "librarian@php.newsroom",
+   "member": "librarian",
+   "state": "working",
+   "last": "2026-10-25T07:13Z",
+   "did": "Its 07:13 pass is running now.",
+   "waiting": "Two board decisions; security review of its CLAUDE.md branch.",
+   "on": "editor",
+   "cost": 47
+  },
+  {
+   "agent": "abp@newsroom.sgit",
+   "member": "",
+   "state": "blocked",
+   "last": "2026-10-22T19:58Z",
+   "did": "Agent behaviour policies, uncommitted: its own guard hook blocks every tool call.",
+   "waiting": "The editor to turn the repository's hooks off in that session so it can commit and push its branch; the work exists only in its container.",
+   "on": "editor",
+   "cost": 5.27
+  },
+  {
+   "agent": "storyboards@php.newsroom",
+   "member": "",
+   "state": "waiting",
+   "last": "2026-10-22T19:57Z",
+   "did": "The deck as HTML slides with a PDF (16 pages), on its branch.",
+   "waiting": "A model key for four images; it must arrive sealed (pki.sgit.ai), not pasted.",
+   "on": "editor",
+   "cost": 15.13
+  },
+  {
+   "agent": "ontologist@php.newsroom (cartographer)",
+   "member": "cartographer",
+   "state": "done",
+   "last": "2026-10-24T23:24Z",
+   "did": "Its first pass (14:40, run record 21:50 UTC): the Wikipedia php2shell article graph is live (v0.17.1).",
+   "waiting": "nothing",
+   "on": "",
+   "cost": 66
+  },
+  {
+   "agent": "liaison@php.newsroom (outreach)",
+   "member": "",
+   "state": "waiting",
+   "last": "2026-10-22T19:27Z",
+   "did": "\"Corrections we have asked for\" at /outreach/, on its branch; nothing sent to any outlet.",
+   "waiting": "Which sender, approval per message or a standing rule; a change to the security requirements; a key pair of its own.",
+   "on": "editor",
+   "cost": 2.21
+  },
+  {
+   "agent": "security@php.newsroom",
+   "member": "",
+   "state": "waiting",
+   "last": "2026-10-24T22:05Z",
+   "did": "CodeQL fixes done (first scan triaged and hardened, v0.15.12); gate-pass-2 now 5 commits ahead of dev.",
+   "waiting": "Reply go to release security/gate-pass-2 (it carries the #4-6 fix); dismiss CodeQL alerts #3 and #22 yourself.",
+   "on": "editor",
+   "cost": 70
+  },
+  {
+   "agent": "conductor@php.newsroom",
+   "member": "conductor",
+   "state": "working",
+   "last": "2026-10-24T14:15Z",
+   "did": "The scheduled conductor: full pass 15:15 London. The editor-session conductor wrote a debrief at 12:28.",
+   "waiting": "The lanes: no key. The editor session asks for a go on the Sherpa schedule (card active) and the cartographer one (archived: the ontologist took over).",
+   "on": "editor",
+   "cost": 2
+  },
+  {
+   "agent": "observability@php.newsroom",
+   "member": "observability",
+   "state": "waiting",
+   "last": "2026-10-24T12:22Z",
+   "did": "A debrief released. Board rows 270 to 273.",
+   "waiting": "The SG/Send access token (board 273); a decision on re-keying 84wr8mib; its key enrolled; the roster row.",
+   "on": "editor",
+   "cost": 11
+  },
+  {
+   "agent": "sharness (cli)",
+   "member": "",
+   "state": "done",
+   "last": "2026-10-24T17:57Z",
+   "did": "Pages updated; term check clean; sgit doc 05 linked, not copied.",
+   "waiting": "nothing",
+   "on": "",
+   "cost": 13
+  },
+  {
+   "agent": "correspondent@php.newsroom (scheduled)",
+   "member": "correspondent",
+   "state": "waiting",
+   "last": "2026-10-25T01:44Z",
+   "did": "Pipeline owner after the journalist; site pages updated to v0.17.7. Active from 00:40 London: Opus, 09:25, 11:55, 14:25, 16:55, 19:25 (45 minutes after each journalist wake).",
+   "waiting": "Your call on board 285: move the desk's checks to about 10:15 and 17:40 (its wakes clash with the correspondent's).",
+   "on": "editor",
+   "cost": 114
+  },
+  {
+   "agent": "journalist@php.newsroom (scheduled)",
+   "member": "journalist",
+   "state": "waiting",
+   "last": "2026-10-24T23:09Z",
+   "did": "Branch matches dev; nothing to push. Active from 00:40 London: Sonnet, 08:40, 11:10, 13:40, 16:10, 18:40; a fresh session each wake.",
+   "waiting": "Its first wake at 08:40.",
+   "on": "",
+   "cost": 4
+  }
+ ],
+ "branches": [
+  [
+   "claude/vibrant-gauss-s70yod",
+   "researcher@",
+   1,
+   "the source watch pass in three phases (proposal)"
+  ],
+  [
+   "sherpa/inbox-lane",
+   "sherpa@",
+   5,
+   "the inbox lane and the changes since v0.14.5"
+  ],
+  [
+   "sherpa/three-views",
+   "sherpa@",
+   4,
+   "three views of the team"
+  ],
+  [
+   "sherpa/onboard-and-tasks",
+   "sherpa@",
+   2,
+   "onboarding and tasks"
+  ],
+  [
+   "security/gate-pass-2",
+   "security@",
+   5,
+   "security pass 2: waits for the editor's go"
+  ],
+  [
+   "synthetic/pages",
+   "synthetic@",
+   2,
+   "the readers' pages"
+  ],
+  [
+   "claude/gallant-dijkstra-uucoop",
+   "storyboards@",
+   2,
+   "the deck"
+  ],
+  [
+   "claude/sharp-brahmagupta-roydmy",
+   "unknown",
+   3,
+   "last commit 22 October 14:43 UTC"
+  ],
+  [
+   "conductor/pause-synthetic",
+   "conductor@",
+   1,
+   "superseded: can be deleted"
+  ],
+  [
+   "synthetic/pause-schedule",
+   "synthetic@",
+   1,
+   "superseded: can be deleted"
+  ],
+  [
+   "sherpa/wake-2026-10-24",
+   "sherpa@",
+   1,
+   "the Sherpa's wake branch"
+  ],
+  [
+   "claude/wonderful-allen-vu7tzg",
+   "unknown",
+   5,
+   "last commit 24 October 12:21 UTC"
+  ],
+  [
+   "sherpa/round-2",
+   "sherpa@",
+   2,
+   "round 2"
+  ],
+  [
+   "claude/focused-brahmagupta-kzb508",
+   "unknown",
+   4,
+   "last commit 24 October 23:09 UTC"
+  ],
+  [
+   "code-coverage-agent/setup-code-coverage-reporting",
+   "coverage agent",
+   1,
+   "code coverage reporting"
+  ],
+  [
+   "dependabot/github_actions/dev/*",
+   "dependabot",
+   4,
+   "four workflow action bumps (.github/workflows: security review)"
+  ]
+ ],
+ "schedules": [
+  [
+   "Wiring check (15:15 London, 25 Oct)",
+   "Every task below was read from the account: which session it fires into, its prompt, when it last fired. \"Own session\" is the model the editor asked for; \"new session each time\" is not."
+  ],
+  [
+   "Conductor",
+   "own session; prompt points to WAKE.md (updated 15:16); hourly 07:15-21:15"
+  ],
+  [
+   "Researcher (2 tasks)",
+   "own session; WAKE.md prompt; fired 07:02, 09:31, 12:02, 14:31; no run record published yet"
+  ],
+  [
+   "Curator (2 tasks)",
+   "own session; WAKE.md prompt; fired 08:02, 10:36, 13:02; run record for 13:02 published and carried in"
+  ],
+  [
+   "Pulse (2 tasks)",
+   "own session; WAKE.md prompt; now 07:22 and 14:52; run record for 14:52 carried in"
+  ],
+  [
+   "Sherpa",
+   "own session; WAKE.md prompt; every two hours at :45; runs at 11:45 and 13:45"
+  ],
+  [
+   "Desk",
+   "own session; WAKE.md prompt; moved to 10:40 and 17:40"
+  ],
+  [
+   "Librarian",
+   "own session; WAKE.md prompt; moved to 20:23"
+  ],
+  [
+   "Ontologist",
+   "own session (new task, the fresh-session one is gone); WAKE.md prompt; 06:05, 10:05, 14:05, 18:05"
+  ],
+  [
+   "Security",
+   "own session; WAKE.md prompt; 22:35 London, inside the quiet hours (the editor asked in the security session)"
+  ],
+  [
+   "Fact-check",
+   "own session; OLD prompt still (says a quiet wake commits nothing): update it from its session"
+  ],
+  [
+   "Journalist (2 tasks)",
+   "NEW SESSION EACH TIME (not \"scheduled | journalist\"); prompt is the WAKE.md one; 08:40, 11:10, 13:40, 16:10, 18:40"
+  ],
+  [
+   "Correspondent (2 tasks)",
+   "NEW SESSION EACH TIME (not \"scheduled | correspondent\"); prompt is the WAKE.md one; 09:25, 11:55, 14:25, 16:55, 19:25"
+  ]
+ ],
+ "freshness": [
+  [
+   "Evidence vault, as exported to this site",
+   "2026-10-24T12:34Z",
+   "328 sources on the site; the vault holds more"
+  ],
+  [
+   "Site build",
+   "2026-10-25",
+   "live version v0.18.0"
+  ]
+ ],
+ "decisions": [
+  "Wiring: the journalist's and the correspondent's tasks still start a new session each time; create them from 'scheduled | journalist' and 'scheduled | correspondent' and pause the old four. Fact-check's task still has the old prompt: update it from its session.",
+  "INCIDENT, visibility: the researcher and the curator run on schedule but leave no commit and no run record, so the repository, this page and the control room cannot show what they did (their wake prompts say 'nothing new: no commit', which predates AGENTS.md section 7). Proposed: each wake writes a run report into the vault it owns and the conductor commits it as a run record, with your go to change the four scheduled prompts (a researcher that reads the open web should not also release).",
+  "security/gate-pass-2 (5 commits ahead): a go; dismiss CodeQL alerts #3 and #22 yourself; rulesets at user logins; private vulnerability reporting.",
+  "The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move.",
+  "Pulse: a go on four things (switch its source to the site, two KEV entries, morning pass to 07:14, release its schedule card).",
+  "The desk's wakes clash with the correspondent's: board 285 proposes moving the desk's checks to about 10:15 and 17:40.",
+  "dev@ was blocked on a Bash permission prompt (last seen 16:45 UTC).",
+  "Lane keys: the Sherpa needs 5iwos28w and wgeiqabu; this session still has no lane keys, so the lanes are not drained here.",
+  "Run records: most scheduled prompts leave none on a quiet wake; AGENTS.md section 7 asks for one. The control room shows these as red dots. Say which rule stands.",
+  "Owner for admin/build/control.py, assets/control.css and assets/control.js; roster row for observability (data/team.json); security's self-check paragraph and card step.",
+  "Board 283: three additions to AGENTS.md section 1 on taking in dev (the correspondent says you agreed them)."
+ ]
+}

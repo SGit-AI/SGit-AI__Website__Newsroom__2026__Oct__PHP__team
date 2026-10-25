@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Release the team repository: take in dev, write the front page, gate, commit, push. In that order, every time.
+# Release the team repository: take in dev, write the front page, gate the records and the pages, commit, push. In that order, every time.
 # Usage: tools/release.sh "<one sentence: what changed and why>"
 # Never --no-verify, never a force-push, never main.
 set -euo pipefail
@@ -15,6 +15,7 @@ if git rev-parse -q --verify "origin/$BRANCH" >/dev/null && ! git merge-base --i
 fi
 python3 tools/front.py
 python3 tools/gate.py
+if [ -f tools/pages_gate.py ]; then python3 tools/pages_gate.py; fi   # the pages, partitioned from v1 by the press
 git add -A
 if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}' ; then
   echo "tripwire: credential shape in the staged diff; release aborted"; exit 1

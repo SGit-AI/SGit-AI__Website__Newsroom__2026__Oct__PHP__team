@@ -1,0 +1,13 @@
+{
+ "run": "20261024T0752Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-24T07:52:00Z",
+ "finished": "2026-10-24T07:58:36Z",
+ "outcome": "ok",
+ "summary": "Scheduled wake 08:52 London: no claim changed, audit 0 failures. CrowdStrike dates CVE-2026-109618 from PHP 7.3.0 and CVE-2026-109619 back to 5.4 (K-003); Siemens and PAN-OS now in the CVE and NVD records; KEV still lists neither CVE; every PHPocalypse site back. Evidence-12 (AWS's revised sentence) still waits on a capture. Page: /factcheck/",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null
+}

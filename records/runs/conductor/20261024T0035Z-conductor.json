@@ -1,0 +1,19 @@
+{
+ "run": "20261024T0035Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-24T00:35:00Z",
+ "finished": "2026-10-24T00:57:13Z",
+ "outcome": "ok",
+ "summary": "Not a scheduled wake: the editor's session. The lanes move to the Sherpa: its card drafted (proposed, every two hours at :45), the conductor's card no longer drains them. The cartographer's card noted; the message sent to 'ontologist' moved to its right inbox, and the build now refuses a message to an agent nobody would read.",
+ "read": [
+  "20261024T0019Z__cartographer__to-conductor__my-card-is-data-schedule-cartographer-js",
+  "20261024T0005Z__conductor__to-all__schedules-runs-and-messages-move-to-the"
+ ],
+ "sent": [
+  "20261024T0057Z__conductor__to-sherpa__your-schedule-draining-the-lanes-a-card"
+ ],
+ "article": "",
+ "model": "the editor's session",
+ "cost_usd": null,
+ "log": "Conflict, solved: none this time. Misaddressed message: data/messages/ontologist/ was read by nobody's wake (the agent's id is cartographer). Moved to data/messages/cartographer/ and readdressed; build.py now stops on a message to an unknown inbox.\n"
+}

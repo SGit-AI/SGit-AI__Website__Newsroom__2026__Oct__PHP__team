@@ -1,0 +1,154 @@
+{
+ "librarian": {
+  "id": "librarian",
+  "address": "librarian@php.newsroom",
+  "name": "Librarian",
+  "beat": "the catalogue: which page answers which question, the questions readers actually ask, and the articles readers have seen that the vault has not captured yet",
+  "rule": "Answer a question with a page, not a paragraph. If no page answers it, the answer is written here with its sources, and the gap goes to the editor.",
+  "mistake": "The first question came from a group chat with a newspaper link in it; the newspaper was not in the vault. It is listed below as seen, not captured, rather than cited."
+ },
+ "questions": [
+  {
+   "id": "fix-or-wait",
+   "q": "Can anything be done to fix it, or do we just have to wait for updates?",
+   "heard": "In a group chat on the morning of 22 October, under a link to The Times' story 'Race to fix PHP security issue in software behind most websites'.",
+   "short": "The updates already exist: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 were released on 21 October and fix both flaws. Nobody is waiting on PHP; the wait is for whoever runs each server to install them and restart. If that is you, update now; if you cannot today, there are temporary settings and, as a last resort, taking the site offline. If a hosting company runs your site, ask them whether it is patched.",
+   "answer": [
+    {"html": "<b>The fix is out.</b> The PHP project released fixed versions on 21 October 2026: 8.5.12, 8.4.27, 8.3.36 and 8.2.35. php.net says <q>All PHP users are strongly encouraged to update immediately</q>, and that only an update is a complete solution.", "sources": ["php-net-advisory", "cve-cve-2026-109618", "cve-cve-2026-109619", "github-php-src-tag-php-8.5.12"]},
+    {"html": "<b>So the wait is not for PHP, it is for whoever runs the server.</b> Installing the package is not enough on its own: every PHP worker has to be restarted and every container image rebuilt, and the running version checked afterwards. Linux distributions ship their own backported packages; at least one third-party repository had none on release day.", "sources": ["php-net-advisory", "ch-bacs-warnung-php", "ncsc-nl-php2shell"]},
+    {"html": "<b>If you cannot update today</b>, php.net lists temporary settings that each block a known attack path (for example <code>session.upload_progress.enabled=0</code>, a low <code>post_max_size</code>, and on 8.5 <code>fatal_error_backtraces=0</code>). Its own words: they <q>reduce exposure to specific attack paths but do not make an installation safe</q>.", "sources": ["php-net-advisory", "github-ghsa-6wmf-4rv5-p3rp"]},
+    {"html": "<b>A web application firewall in front helps, and is not enough.</b> Cloudflare, Akamai, Fastly, Imperva and Fortinet shipped rules, and every one of them calls it a stopgap and says patch anyway.", "sources": ["cloudflare-blog-php2shell-waf", "akamai-blog-php-core-rce", "fastly-blog-php2shell", "ch-bacs-warnung-php"]},
+    {"html": "<b>If none of that can be done in time</b>, the NSA, CISA and the UK NCSC say take the system offline until it is fixed. That is the last step on every agency's list, not the first.", "sources": ["nsa-x-2112903220209098897", "cisa-alert-php-20261021", "ncsc-news-php"]},
+    {"html": "<b>Two exceptions.</b> PHP 8.1 and older get no release: the project published source backports for 7.4, 8.0 and 8.1, so for those the answer is a migration plan, or a vendor that backports. And a report that the 8.5.12 fix may be incomplete reached the oss-security list within hours; it is unverified, carried second-hand, and PHP is reported second-hand to have called it unrelated. Keep watching php.net for a follow-up release anyway.", "sources": ["php-net-advisory", "github-php-src-branch-7.4-backport", "openwall-oss-security-109619-thread"]}
+   ],
+   "who": [
+    {"if": "you run your own server or VPS", "then": "update the PHP package, restart PHP-FPM or Apache, check <code>php -v</code> where the code actually runs."},
+    {"if": "a hosting company or agency runs your site", "then": "ask them in writing whether PHP is on 8.5.12, 8.4.27, 8.3.36 or 8.2.35 (or a distribution backport) and when the workers were restarted."},
+    {"if": "you use a hosted service such as a shop platform or a SaaS product", "then": "there is nothing to install; the provider patches. Check its status page."},
+    {"if": "you only visit websites", "then": "there is nothing to update on your computer or phone for this one; the flaw is on web servers."}
+   ],
+   "see": ["playbook/index.html", "flaws/index.html#mitigations", "defence/index.html", "affected/index.html", "briefings/developer/index.html"]
+  },
+  {
+   "id": "most-websites",
+   "q": "Is PHP really the software behind most websites?",
+   "heard": "The Times' headline: 'software behind most websites'.",
+   "short": "Roughly, if you count websites, not the Internet. About 69% of the websites whose server-side language can be identified run PHP, and the share is falling; on every site the HTTP Archive crawls, PHP is detected on about half (the fact-check desk's investigation). Wiz's '70% of the Internet' is that website figure restated: nobody measures a share of 'the Internet'. Internet-facing PHP hosts number in the low millions: VulnCheck counts about 2.6 million, and Censys counted 1.57 million unpatched on 21 October among the 1.58 million whose version it could read.",
+   "answer": [
+    {"html": "<b>About 70% of websites</b> is the figure Cloudflare and OpenAI use. It is a share of websites whose server-side language could be identified, so it is reported, not confirmed.", "sources": ["cloudflare-blog-php2shell-waf", "x-openai-php2shell", "wiz-blog-php2shell"]},
+    {"html": "<b>'70% of the Internet'</b> is the same number in a Wiz headline and post. The body of Wiz's own post says websites. This site marks the Internet version unverified.", "sources": ["wiz-blog-php2shell", "x-wiz-io-php2shell"]},
+    {"html": "<b>Hosts, not websites:</b> VulnCheck counts about 2.6 million internet-facing hosts running PHP; Censys saw 2.58 million, could read a version on 1.58 million, and counted 1.57 million of those still unpatched on 21 October. One host can serve thousands of sites.", "sources": ["thehackernews-php2shell-4days", "securityweek-exploitation-days-before"]},
+    {"html": "<b>Being built on PHP is not the same as being exploitable.</b> The CVE vector says attack complexity is high, and Fastly says the public exploits need knowledge of the exact PHP build on a 64-bit server.", "sources": ["cve-cve-2026-109618", "fastly-blog-php2shell", "imperva-blog-php2shell"]}
+   ],
+   "see": ["numbers/index.html", "claims/index.html#scale-70pc-internet", "affected/index.html", "factcheck/investigations/php-share/index.html"]
+  },
+  {
+   "id": "been-hacked",
+   "q": "Has anyone actually been hacked?",
+   "heard": "The Times' standfirst: 'Hackers could seize control of online stores and steal passwords'.",
+   "short": "Not that any named organisation has said, as of 09:35 UTC on 25 October, the latest capture in the evidence vault. Attack attempts are real and in the millions at Cloudflare alone, Amazon saw one on a honeypot four days before disclosure, and two security vendors are reported as saying it is being exploited, without naming any victim (other reports of the same vendors describe attempts). CISA had not added it to its exploited-vulnerabilities list when last checked, and the sites that went offline say they did it as a precaution.",
+   "answer": [
+    {"html": "<b>Attempts: yes.</b> Cloudflare's chief executive reported millions of exploit attempts across its network by the early hours of 22 October; Amazon saw an attempt on a honeypot on 17 October; Latvia saw automated attempts, none successful.", "sources": ["x-eastdakota-php2shell-stats", "aws-security-blog-madpot", "certlv-php-preventive"]},
+    {"html": "<b>Successful break-ins: none named.</b> As of 09:35 UTC on 25 October no named organisation has said it was compromised through php2shell, and the four named cases in the press (Valtec, ČVUT, GMO, DMM) either were retracted or state no php2shell cause; two security vendors, Hadrian and Patchstack, are reported as saying it is being exploited, without naming a victim, while other reports of the same vendors describe attack attempts, not compromises. CISA has not observed exploitation and neither CVE was in its Known Exploited Vulnerabilities catalog when it was fetched; Huntress saw none on its partners' systems. This is a statement about the evidence so far, and it will change.", "sources": ["cisa-alert-php-20261021", "cisa-kev-json", "huntress-php2shell-rapid-response", "the-register-hackers-pile-on-php2shell", "insurance-business-au-asiapac-attacks-begin", "securitynl-misbruik-gemeld", "bleepingcomputer-amazon-4-days-before", "impress-watch-valtec", "lupa-cvut-cyber-attack", "yahoo-jp-gmo-fx-login-leak", "sankei-dmm-service-halt"]},
+    {"html": "<b>The offline sites were precautions.</b> Weird Gloop, the Dutch government's DigiD and the NCSC-NL itself, Finland's Valtori and Oxford City Council all describe taking sites down to be safe, not after a breach. A UK minister said there was no breach of Budget security after the OBR site was affected.", "sources": ["weirdgloop-blog-php2shell", "rijksoverheid-ncsc-php-news", "yle-finland-government-sites-shut", "oxfordchronicle-councils-offline", "eadt-minister-budget-no-breach"]},
+    {"html": "<b>The caveat.</b> A clean log does not prove a clean system (JPCERT), and the last PHP core flaw, in 2024, was exploited one day after disclosure. Absence of a confirmed victim after two days is a fact about two days; authorities in Singapore and Luxembourg now ask operators to look for traces of a break-in.", "sources": ["jpcert-at260033", "akamai-blog-cve-2024-4577-one-day", "cisa-kev-json", "channelnewsasia-singapore-php-vulnerabilities-csa-singapore-firms-cybersecur", "paperjam-article-php2shell-des-milliers-de-sites"]}
+   ],
+   "see": ["exploitation/index.html", "impact/index.html", "claims/index.html#no-confirmed-compromise"]
+  },
+  {
+   "id": "passwords",
+   "q": "Do I need to change my passwords?",
+   "heard": "The Times' standfirst mentions stolen passwords.",
+   "short": "Not because of this, as things stand. The flaw is on web servers, not on your devices, and no named site has announced a breach through it, as of the latest check. If a site you use announces one, follow its instructions. Using a different password on every site is the protection that holds whatever the next flaw is.",
+   "answer": [
+    {"html": "<b>The flaw is on the server.</b> Both bugs are in the PHP engine that runs on web servers; nothing on a reader's computer or phone is affected or needs updating for this.", "sources": ["github-php-src-fix-commit-3584a98bd", "php-net-advisory"]},
+    {"html": "<b>What an attacker could reach</b> on a compromised server is whatever that server holds, which can include a site's user database. That is why the agencies treat it as urgent. But no named organisation has said it was compromised through php2shell, as of the latest check.", "sources": ["cisa-alert-php-20261021", "cisa-kev-json", "huntress-php2shell-rapid-response"]},
+    {"html": "<b>This is the site's reading, not an agency's advice:</b> none of the captured advisories tells the public to change passwords. If a service you use announces a breach, its notice is what to act on.", "sources": ["ncsc-news-php", "cisa-alert-php-20261021"]}
+   ],
+   "see": ["flaws/index.html#blast", "impact/index.html", "briefings/comms/index.html"]
+  },
+  {
+   "id": "am-i-affected",
+   "q": "How do I know whether my site is affected?",
+   "heard": "The follow-up to 'can anything be done', asked by every site owner.",
+   "short": "If the site runs on PHP (WordPress, Drupal, Joomla, Magento, MediaWiki, and Laravel all do) and the running PHP version is older than 8.5.12, 8.4.27, 8.3.36 or 8.2.35 without a distribution backport, it is affected. Check the version where the code runs, after the restart, not the package list. For bought-in products, the Dutch NCSC keeps an inventory of 674 products and their status.",
+   "answer": [
+    {"html": "<b>Every PHP installation serving web requests is in scope</b>, says php.net: mod_php, PHP-FPM, php-cgi, FrankenPHP and LiteSpeed, with mod_php at highest risk. The flaw runs before any application code, so your own code is not the question.", "sources": ["php-net-advisory", "github-ghsa-w8hw-w9fx-j79w"]},
+    {"html": "<b>Fixed in</b> 8.5.12, 8.4.27, 8.3.36 and 8.2.35. Versions 7.4 to 8.1 are affected too and get no release from PHP.", "sources": ["php-net-advisory", "github-php-src-branch-7.4-backport", "openwall-oss-security-109619-thread"]},
+    {"html": "<b>Check the running version</b> (<code>php -v</code> inside the container, or <code>phpinfo()</code> on the box) after restarting, and check vendors that bundle PHP.", "sources": ["ncsc-nl-php2shell", "ch-bacs-warnung-php"]},
+    {"html": "<b>For products you did not build</b>, the NCSC-NL inventory lists 674 products: 206 vulnerable, 46 fixed, 418 under investigation and 3 not vulnerable when it was counted.", "sources": ["ncsc-nl-php2shell-software-list"]}
+   ],
+   "see": ["affected/index.html", "affected/software.html", "playbook/index.html", "briefings/developer/index.html"]
+  },
+  {
+   "id": "take-offline",
+   "q": "Should we take our site offline?",
+   "heard": "After reading that councils, the Met Police and government sites went dark.",
+   "short": "Only if you cannot patch or apply the temporary mitigations in time. That is the advice from the NSA, CISA and the UK NCSC, and it is the last step on every agency's list. If the site is patched and the workers restarted, the advice is to keep it up and watch it.",
+   "answer": [
+    {"html": "<b>The agencies' order</b> is: patch; if you cannot, apply the temporary mitigations; if you cannot do that in time, consider taking the system offline until it is fully mitigated.", "sources": ["ncsc-news-php", "nsa-x-2112903220209098897", "cisa-alert-php-20261021"]},
+    {"html": "<b>Not every agency said offline.</b> Italy's CSIRT advises update only; the UK NCSC puts offline fourth; CERT-EU, Canada and France say isolate from public networks.", "sources": ["acn-it-php2shell", "ncsc-news-php", "certeu-sa-2026-018", "cccs-al26-026"]},
+    {"html": "<b>What offline costs</b> can be small if planned: Weird Gloop turned off its wiki servers for 13 hours and still served about 94% of page views from cache.", "sources": ["weirdgloop-blog-php2shell"]}
+   ],
+   "see": ["playbook/index.html", "agencies/index.html", "impact/index.html", "briefings/board/index.html"]
+  },
+  {
+   "id": "why-big-news",
+   "q": "Why is this such big news?",
+   "heard": "'Article about this in The Times as well, so it's big news.'",
+   "short": "Four things at once: the flaws are in PHP itself, which runs a large share of the web; they were found with AI help; the coordinated disclosure leaked a day early, so the fix shipped under pressure; and the NSA, CISA and NCSC told organisations that could not patch to take systems offline, which is why government, council and police sites went dark.",
+   "answer": [
+    {"html": "<b>Where the flaw is.</b> In the PHP engine, so it affects any PHP site regardless of the application on top, rated 9.2 out of 10.", "sources": ["cve-cve-2026-109618", "php-net-advisory"]},
+    {"html": "<b>How it was found.</b> Calif, OpenAI and Wiz each found it with frontier AI models in August; the same root cause had been seen in a 2024 audit and left unfixed.", "sources": ["calif-php2shell", "php-foundation-blog-security-release", "wiz-blog-php2shell"]},
+    {"html": "<b>How disclosure broke.</b> The CVE IDs leaked on 20 October with a wrong 10.0 score, a demonstration video was published and deleted, and the release was brought forward a day.", "sources": ["php-foundation-blog-security-release", "daubois-blog-php2shell-rumors"]},
+    {"html": "<b>What the agencies said.</b> The NSA's post was viewed 10.1 million times at capture; councils, the Met Police, the OBR and government sites in the Netherlands, Finland, France and Latvia went offline as a precaution.", "sources": ["nsa-x-2112903220209098897", "lbc-uk-websites-offline", "rijksoverheid-ncsc-php-news", "certlv-php-preventive"]}
+   ],
+   "see": ["index.html", "discovery/index.html", "leak/index.html", "timeline/index.html", "context/index.html"]
+  },
+  {
+   "id": "old-php",
+   "q": "We are on PHP 7.4, 8.0 or 8.1. Is there a patch?",
+   "heard": "Asked by anyone with a site that has not been upgraded in a while.",
+   "short": "Not a release. PHP 8.1 and older are out of support; the project published source backport branches for 7.4, 8.0 and 8.1, which someone has to build. CISA says systems on 8.1 or older should be taken offline. Plan the migration to 8.2 or later now; in the meantime a distribution or vendor that backports, the temporary mitigations and isolation are the options.",
+   "answer": [
+    {"html": "<b>No release for 8.1 and older.</b> php.net: <q>PHP 8.1 and older no longer receive updates from the PHP project.</q> Source-only backport branches exist for 7.4, 8.0 and 8.1.", "sources": ["php-net-advisory", "github-php-src-branch-7.4-backport"]},
+    {"html": "<b>They are affected.</b> The CVE records list 8.2 to 8.5 only, but the backports imply at least 7.4 onward is affected, as Greenbone noted on oss-security.", "sources": ["openwall-oss-security-109619-thread", "cve-cve-2026-109618"]},
+    {"html": "<b>CISA's advice</b> is that organisations running PHP 8.1 or older should take PHP-based systems offline.", "sources": ["cisa-alert-php-20261021"]}
+   ],
+   "see": ["flaws/index.html#versions", "playbook/index.html", "briefings/cto/index.html"]
+  },
+  {
+   "id": "waf-enough",
+   "q": "We are behind Cloudflare (or another firewall). Are we safe?",
+   "heard": "Asked by site owners who saw that Cloudflare had rules live before disclosure.",
+   "short": "Safer, not safe. Cloudflare's rules were live about nine hours before disclosure, on every plan including Free, and Akamai, Fastly, Imperva and Fortinet followed. Every one of them calls it a stopgap and says patch anyway: attackers mutate payloads, and the rules only see traffic that goes through the firewall.",
+   "answer": [
+    {"html": "<b>Rules exist.</b> Cloudflare at 03:02 UTC on 21 October for all plans; Akamai, Fastly and Imperva the same day; Fortinet signatures by 22 October, shipped in alert-only mode by default.", "sources": ["cloudflare-blog-php2shell-waf", "akamai-blog-php-core-rce", "fastly-blog-php2shell", "imperva-blog-php2shell", "fortinet-fortiweb-php2shell"]},
+    {"html": "<b>Their own caveats.</b> Cloudflare's CTO: a stopgap only. Swiss BACS: not sufficient on its own. Tenable: Cloudflare's rules cover only traffic routed through Cloudflare, so a direct hit on the origin server is not covered.", "sources": ["cloudflare-blog-php2shell-waf", "ch-bacs-warnung-php", "tenable-php2shell-faq"]}
+   ],
+   "see": ["defence/index.html", "claims/index.html#waf"]
+  },
+  {
+   "id": "change-code",
+   "q": "Do our developers need to change our code?",
+   "heard": "Asked by managers handed the headline.",
+   "short": "No. Both bugs are in the C engine that runs PHP, not in PHP code, and the demonstrated attack runs before any application code. The fix is updating the PHP runtime and restarting it. What developers can do is check the version on the machines they deploy to and rebuild container images.",
+   "answer": [
+    {"html": "<b>The bugs are in the engine.</b> The fix commit changes the allocator's out-of-memory handling and the request globals in php-src, 389 files.", "sources": ["github-php-src-fix-commit-3584a98bd", "github-ghsa-w8hw-w9fx-j79w", "github-ghsa-6wmf-4rv5-p3rp"]},
+    {"html": "<b>Before your code runs.</b> The mod_php exploit was demonstrated with default settings before any application code runs.", "sources": ["github-ghsa-w8hw-w9fx-j79w", "openwall-oss-security-2026-10-21-6", "php-net-advisory"]}
+   ],
+   "see": ["briefings/developer/index.html", "code/index.html", "review/index.html"]
+  }
+ ],
+ "seen": [
+  {
+   "publisher": "The Times",
+   "title": "Race to fix PHP security issue in software behind most websites",
+   "standfirst": "Hackers could seize control of online stores and steal passwords after the discovery of a critical vulnerability in programming",
+   "url": "https://www.thetimes.com/article/624a88e5-8d6b-43fc-af01-a1988c7ea9d9",
+   "seen": "2026-10-22, shared in a group chat",
+   "state": "not captured: paywalled, and a reader's share link is personal, so the token was dropped from the URL. Queued for the researcher and vendor collector.",
+   "answered_by": ["fix-or-wait", "most-websites", "been-hacked", "passwords", "why-big-news"]
+  }
+ ]
+}

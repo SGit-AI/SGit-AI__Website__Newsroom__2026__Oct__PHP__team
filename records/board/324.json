@@ -1,0 +1,9 @@
+{
+ "id": "324",
+ "title": "The line is live on every page, and the router: /agencies/as/security/ opens the agencies for Security; every page shows its view in the address bar; cards for the front page, the agencies, the numbers and the playbook unfurl with who they are for",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor's go of 25 October, in story-site's session (boards 297 and 311, his rows, which he can close). The line replaces the two dials on every page; /404.html answers any view address; 28 cards; a fetch shim so every script resolves against the real page (the security policy rules out <base>). 27 journeys checked in Chromium against a local stand-in for GitHub Pages, no errors.",
+ "version": "0.22.0",
+ "order": 323
+}

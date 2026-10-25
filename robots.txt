@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://team.php.oct.2026.newsroom.sgit.ai/sitemap.xml

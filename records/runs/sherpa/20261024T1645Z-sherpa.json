@@ -1,0 +1,16 @@
+{
+ "run": "20261024T1645Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-24T16:45:25Z",
+ "finished": "2026-10-24T16:47:14Z",
+ "outcome": "ok",
+ "summary": "Full pass (17:45 London); two quiet wakes before it (13:45, 15:45: both lanes empty, no commit). Lanes drained: 58526ytp and d6zak0o3, nothing in either. Read: security's message (the self-check and the CSP; the feedback viewer checked live, no violations) and eight commit notes (head 28d25aabf9b7). Releases since 11:45 read (v0.14.19 to v0.15.4). Walked five pages at 390x780: the phone header is 43px everywhere (F034 closed, v0.14.22), headlines 434 to 535px (F001 improved), no overflow, no errors; /grc/changes/ live (CI-003 step 2); the lens prototype (v0.15.0) answers F035 and F011, waiting for the editor; Three ways to read still 9,204px down.",
+ "read": [
+  "20261024T1157Z__security__to-all__application-security-a-self-check-after"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "the session's model",
+ "cost_usd": null,
+ "head": "28d25aabf9b75aac66e26ebad8700af562b21d48"
+}

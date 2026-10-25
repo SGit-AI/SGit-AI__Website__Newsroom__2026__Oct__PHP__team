@@ -1,0 +1,8 @@
+# Security contact for php.oct.2026.newsroom.sgit.ai (RFC 9116). Kept by security@php.newsroom.
+# How to report, what is in scope, the safe harbour and the leaderboard (paid in kudos) are on the Policy page.
+Contact: https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/security/advisories/new
+Expires: 2027-04-24T00:00:00Z
+Policy: https://php.oct.2026.newsroom.sgit.ai/admin/appsec/bounty/index.html
+Acknowledgments: https://php.oct.2026.newsroom.sgit.ai/admin/appsec/bounty/index.html#leaderboard
+Preferred-Languages: en
+Canonical: https://php.oct.2026.newsroom.sgit.ai/.well-known/security.txt

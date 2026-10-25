@@ -22,7 +22,7 @@ def load(p):
 
 def page():
     imp = load('tools/imported.json')
-    board = [load(f'board/{f}') for f in sorted(os.listdir(os.path.join(ROOT, 'board')))]
+    board = [load(f'records/board/{f}') for f in sorted(os.listdir(os.path.join(ROOT, 'records', 'board')))]
     board.sort(key=lambda r: r.get('order', 0))
     by = defaultdict(Counter)
     for r in board:
@@ -30,12 +30,12 @@ def page():
     owners = sorted(by, key=lambda o: (-sum(by[o][s] for s in ('open', 'waiting')), o))
     brow = ''.join(f'<tr><td>{E(o)}</td><td>{by[o]["open"]}</td><td>{by[o]["waiting"]}</td><td>{by[o]["done"]}</td></tr>' for o in owners)
     cards = []
-    for f in sorted(os.listdir(os.path.join(ROOT, 'schedule'))):
+    for f in sorted(os.listdir(os.path.join(ROOT, 'records', 'schedule'))):
         if f.endswith('.json'):
-            c = load(f'schedule/{f}')
-            cards.append(f'<tr><td><a href="{GH}/blob/dev/schedule/{E(f)}">{E(c.get("member") or f[:-5])}</a></td><td>{E(c.get("status"))}</td><td>{E(", ".join(c.get("times") or []))}</td><td>{E((c.get("objective") or "")[:140])}</td></tr>')
-    members = sorted(d for d in os.listdir(os.path.join(ROOT, 'agents')) if os.path.isdir(os.path.join(ROOT, 'agents', d)))
-    mlist = ' &middot; '.join(f'<a href="{GH}/tree/dev/agents/{E(m)}">{E(m)}</a>' for m in members)
+            c = load(f'records/schedule/{f}')
+            cards.append(f'<tr><td><a href="{GH}/blob/dev/records/schedule/{E(f)}">{E(c.get("member") or f[:-5])}</a></td><td>{E(c.get("status"))}</td><td>{E(", ".join(c.get("times") or []))}</td><td>{E((c.get("objective") or "")[:140])}</td></tr>')
+    members = sorted(d for d in os.listdir(os.path.join(ROOT, 'records', 'agents')) if os.path.isdir(os.path.join(ROOT, 'records', 'agents', d)))
+    mlist = ' &middot; '.join(f'<a href="{GH}/tree/dev/records/agents/{E(m)}">{E(m)}</a>' for m in members)
     waiting = ''.join(f'<li><b>{E(r["id"])}</b> ({E(r["owner"])}): {E(r["title"][:160])}</li>' for r in board if r['status'] == 'waiting')
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,10 +48,12 @@ td,th{{text-align:left;padding:.3rem .5rem;border-bottom:1px solid #8884;vertica
 <h2>Waiting on someone</h2>
 <ul>{waiting or "<li>Nothing.</li>"}</ul>
 <h2>The board, by owner</h2>
-<p>{len(board)} rows, one file each in <a href="{GH}/tree/dev/board">board/</a>.</p>
+<p>{len(board)} rows, one file each in <a href="{GH}/tree/dev/records/board">board/</a>.</p>
 <div class="tw"><table><thead><tr><th>Owner</th><th>Open</th><th>Waiting</th><th>Done</th></tr></thead><tbody>{brow}</tbody></table></div>
 <h2>On a schedule</h2>
 <div class="tw"><table><thead><tr><th>Member</th><th>Status</th><th>Wakes (London)</th><th>Objective</th></tr></thead><tbody>{"".join(cards)}</tbody></table></div>
+<h2>The team's pages</h2>
+<p><a href="team/index.html">The team</a> &middot; <a href="team/schedule/index.html">the schedule</a> &middot; <a href="team/status/index.html">the status</a> &middot; <a href="admin/board/index.html">the board</a> &middot; <a href="admin/briefs/index.html">the briefs</a> &middot; <a href="admin/agents/index.html">the members' rounds</a> &middot; <a href="sherpa/index.html">the Sherpa</a> &middot; <a href="feedback/index.html">feedback</a>.</p>
 <h2>Members</h2>
 <p>{mlist}</p>
 </body></html>

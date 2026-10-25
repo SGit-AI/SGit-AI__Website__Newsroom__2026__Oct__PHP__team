@@ -1,0 +1,69 @@
+{
+ "agent": "conductor@php.newsroom",
+ "member": "conductor",
+ "note": "Kept by the agent itself.",
+ "vaults": [
+  {
+   "id": "5iwos28w",
+   "what": "The conductor vault: the roster, run plans, status digests, broadcasts; a lane per member",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "2026-10-22"
+  },
+  {
+   "id": "zjruy9vk",
+   "what": "The issues vault: Issues-FS-lite, one queue per member",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "2026-10-22"
+  },
+  {
+   "id": "fmb2tpl2",
+   "what": "The mail vault: Email-FS-lite, a mailbox per member",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "2026-10-22"
+  },
+  {
+   "id": "58526ytp",
+   "what": "The collaborators vault: join requests, signed feedback and key enrolments, through its write-only lane",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "2026-10-22"
+  },
+  {
+   "id": "weic8imn",
+   "what": "The schedule vault: schedules, task queues and every run with its log; public",
+   "created": "2026-10-23",
+   "key_sealed_to_root": "2026-10-23"
+  }
+ ],
+ "holds": [
+  {
+   "id": "5iwos28w",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "zjruy9vk",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "fmb2tpl2",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "58526ytp",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "weic8imn",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-23"
+  }
+ ]
+}

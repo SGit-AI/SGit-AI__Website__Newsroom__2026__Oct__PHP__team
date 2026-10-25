@@ -1,0 +1,87 @@
+{
+ "agent": "synthetic@php.newsroom",
+ "member": "synthetic",
+ "note": "Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed by synthetic@php.newsroom on 24 October 2026.",
+ "vaults": [
+  {
+   "id": "1zq458zk",
+   "what": "A synthetic reader's vault (board member): every run, page, screenshot and review",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault, by the session key sha256:67716a47b5c83f08), QR codes handed to the editor",
+   "access": "public read: read key published on /vaults/ and the reader's page (24 October 2026)"
+  },
+  {
+   "id": "wlhgl8pk",
+   "what": "A synthetic reader's vault (CTO): every run, page, screenshot and review",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault, by the session key sha256:67716a47b5c83f08), QR codes handed to the editor",
+   "access": "public read: read key published on /vaults/ and the reader's page (24 October 2026)"
+  },
+  {
+   "id": "9p6jpsd2",
+   "what": "A synthetic reader's vault (project manager): every run, page, screenshot and review",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault, by the session key sha256:67716a47b5c83f08), QR codes handed to the editor",
+   "access": "public read: read key published on /vaults/ and the reader's page (24 October 2026)"
+  },
+  {
+   "id": "vjsqjhvp",
+   "what": "A synthetic reader's vault (security lead): every run, page, screenshot and review",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault, by the session key sha256:67716a47b5c83f08), QR codes handed to the editor",
+   "access": "public read: read key published on /vaults/ and the reader's page (24 October 2026)"
+  },
+  {
+   "id": "3l7tzwh9",
+   "what": "A synthetic reader's vault (developer): every run, page, screenshot and review",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault, by the session key sha256:67716a47b5c83f08), QR codes handed to the editor",
+   "access": "public read: read key published on /vaults/ and the reader's page (24 October 2026)"
+  },
+  {
+   "id": "dpdx3q13",
+   "what": "A synthetic reader's vault (designer): every run, page, screenshot and review",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault, by the session key sha256:67716a47b5c83f08), QR codes handed to the editor",
+   "access": "public read: read key published on /vaults/ and the reader's page (24 October 2026)"
+  }
+ ],
+ "holds": [
+  {
+   "id": "1zq458zk",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "wlhgl8pk",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "9p6jpsd2",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "vjsqjhvp",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "3l7tzwh9",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "dpdx3q13",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "run": "20261024T1553Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-24T15:53:00Z",
+ "finished": "2026-10-24T16:01:21Z",
+ "outcome": "ok",
+ "summary": "Scheduled wake 16:52 London (one quiet wake before it, 12:52): Amazon's revised sentence is now captured, so R-004 can close as corrected unsent and amazon-honeypot is graded superseded (Finding-126); no-confirmed-compromise re-graded with Sophos's withdrawal; the desk's pages checked under the new CSP, no violations; audit 0 failures. Page: /factcheck/",
+ "read": [
+  "20261024T1157Z__security__to-all__application-security-a-self-check-after"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "ff1d54e2374a87d065082bcc40e04220724fd040"
+}

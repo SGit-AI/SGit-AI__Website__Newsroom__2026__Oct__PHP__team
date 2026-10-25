@@ -1,0 +1,3495 @@
+{
+ "about": "Every member of the newsroom: role, scope, the computed delta, the latest status and the debriefs, assembled from admin/content/agents/*/ by the build. The conductor reads this one file.",
+ "version": "0.22.0",
+ "members": [
+  {
+   "agent": "abp",
+   "address": "abp@newsroom.sgit",
+   "name": "abp@newsroom.sgit",
+   "kind": "agent",
+   "group": "site",
+   "title": "Agent behaviour policies",
+   "policy_status": "draft",
+   "member_status": "blocked: its own guard hook blocks every tool call; its work is uncommitted (data/agents-status.json)",
+   "writes": [
+    "admin/content/agents/abp/ROLE.md",
+    "admin/content/agents/abp/status.json",
+    "admin/content/agents/abp/debriefs/**",
+    "admin/content/agents/*/policy.json",
+    "data/vault-register/abp.json",
+    "data/schedule/abp.json",
+    "data/runs/abp/**"
+   ],
+   "pages": [],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "abp",
+    "as_of": "2026-10-24",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "briefing-writer",
+   "address": "briefing-writer@php.newsroom",
+   "name": "Briefing writer",
+   "kind": "agent",
+   "group": "writing",
+   "title": "One page per audience",
+   "policy_status": "draft",
+   "member_status": "covered by dev@php.newsroom until filled",
+   "writes": [
+    "admin/content/agents/briefing-writer/ROLE.md",
+    "admin/content/agents/briefing-writer/status.json",
+    "admin/content/agents/briefing-writer/debriefs/**",
+    "data/briefings.json",
+    "data/vault-register/briefing-writer.json",
+    "data/schedule/briefing-writer.json",
+    "data/runs/briefing-writer/**"
+   ],
+   "pages": [
+    "briefings/**"
+   ],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "briefing-writer",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "collector-gov",
+   "address": "collector-gov",
+   "name": "Government and CERT collector",
+   "kind": "agent",
+   "group": "evidence",
+   "title": "Agencies and CERTs",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/collector-gov/ROLE.md",
+    "admin/content/agents/collector-gov/status.json",
+    "admin/content/agents/collector-gov/debriefs/**",
+    "admin/build/inventory_history.py",
+    "data/inventory-history.json",
+    "data/vault-register/collector-gov.json",
+    "data/schedule/collector-gov.json",
+    "data/runs/collector-gov/**"
+   ],
+   "pages": [
+    "patching/inventory/**"
+   ],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "vault",
+     "why": "the evidence vault: its own files only"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "collector-gov",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "collector-primary",
+   "address": "collector-primary",
+   "name": "Primary-source collector",
+   "kind": "agent",
+   "group": "evidence",
+   "title": "Primary sources",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/collector-primary/ROLE.md",
+    "admin/content/agents/collector-primary/status.json",
+    "admin/content/agents/collector-primary/debriefs/**",
+    "data/vault-register/collector-primary.json",
+    "data/schedule/collector-primary.json",
+    "data/runs/collector-primary/**"
+   ],
+   "pages": [],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "vault",
+     "why": "the evidence vault: its own files only"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "collector-primary",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "collector-researchers",
+   "address": "collector-researchers",
+   "name": "Researcher, vendor and press collector",
+   "kind": "agent",
+   "group": "evidence",
+   "title": "Researchers, vendors and the press",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/collector-researchers/ROLE.md",
+    "admin/content/agents/collector-researchers/status.json",
+    "admin/content/agents/collector-researchers/debriefs/**",
+    "data/vault-register/collector-researchers.json",
+    "data/schedule/collector-researchers.json",
+    "data/runs/collector-researchers/**"
+   ],
+   "pages": [],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "vault",
+     "why": "the evidence vault: its own files only"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "collector-researchers",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "conductor",
+   "address": "conductor@php.newsroom",
+   "name": "Conductor",
+   "kind": "agent",
+   "group": "coordination",
+   "title": "Conductor and comms",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/conductor/ROLE.md",
+    "admin/content/agents/conductor/status.json",
+    "admin/content/agents/conductor/debriefs/**",
+    "data/team.json",
+    "data/admin.json",
+    "AGENTS.md",
+    "admin/build/conductor_drain.py",
+    "admin/build/issues_sync.py",
+    "admin/build/collaborators_drain.py",
+    "admin/build/contributors.py",
+    "admin/build/invite.py",
+    "admin/build/postmaster.py",
+    "admin/build/updates_digest.py",
+    "admin/content/updates/**",
+    "assets/collaborators.js",
+    "assets/feedback/**",
+    "assets/vendor/qrcode-generator/**",
+    "assets/schedule/**",
+    "data/agents-status.json",
+    "data/collaborators.json",
+    "data/contributors.json",
+    "data/schedule-vault.json",
+    "data/schedules.json",
+    "data/vault-register/conductor.json",
+    "admin/build/schedule.py",
+    "data/messages/**",
+    "data/schedule/conductor.json",
+    "data/runs/conductor/**"
+   ],
+   "pages": [
+    "team/**",
+    "admin/board/**",
+    "admin/roles/**",
+    "admin/agents/index.html",
+    "updates/**",
+    "collaborators/**",
+    "join/**"
+   ],
+   "vaults": [
+    {
+     "id": "5iwos28w",
+     "key": "vault",
+     "why": "the conductor vault: only it writes"
+    },
+    {
+     "id": "zjruy9vk",
+     "key": "vault",
+     "why": "the issues vault"
+    },
+    {
+     "id": "fmb2tpl2",
+     "key": "vault",
+     "why": "the mail vault: layout and READMEs, not sending"
+    },
+    {
+     "id": "weic8imn",
+     "key": "vault",
+     "why": "the schedule vault (public read)"
+    },
+    {
+     "id": "58526ytp",
+     "key": "vault",
+     "why": "the collaborators vault: drain only"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "conductor",
+    "as_of": "2026-10-24",
+    "round": 1,
+    "state": "round 1 closed: schedules in the repository, the conductor's schedule active, Commit-FS-lite, dev's red CI fixed, dev's reverted v0.14.24 restored",
+    "done": [
+     {
+      "what": "/team/status/ full pass (v0.10.18)",
+      "evidence": "data/agents-status.json, /team/status/; v0.10.18"
+     },
+     {
+      "what": "schedules, runs and messages in the repository, /team/schedule/ (v0.10.22)",
+      "evidence": "data/schedule/, data/runs/, data/messages/, admin/build/schedule.py, /team/schedule/; v0.10.22"
+     },
+     {
+      "what": "the conductor's schedule: a Sonnet session, hourly 07:15 to 21:15 London (v0.10.24)",
+      "evidence": "data/schedule/conductor.json, session conductor@php.newsroom (scheduled), one scheduled task; v0.10.24"
+     },
+     {
+      "what": "the Sherpa drains the lanes: its card drafted (v0.11.4)",
+      "evidence": "data/schedule/sherpa.json; v0.11.4"
+     },
+     {
+      "what": "Commit-FS-lite and /team/comms/ (v0.14.23)",
+      "evidence": "AGENTS.md section 8, /team/comms/; v0.14.23"
+     },
+     {
+      "what": "dev's red CI fixed: /team/comms/ from data/comms.json (v0.14.24)",
+      "evidence": "data/comms.json, schedule.py export-notes; v0.14.24"
+     },
+     {
+      "what": "dev's v0.14.24, reverted by the conductor's release, restored (v0.14.26)",
+      "evidence": "c0bef8898 replayed on dev; this release"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "177",
+      "178",
+      "179",
+      "180",
+      "268",
+      "269"
+     ],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "check /grc/changes/ with dev after the restore",
+      "why": "my release reverted it; the restore should be whole"
+     },
+     {
+      "what": "watch the scheduled conductor's first wakes and correct its card",
+      "why": "its first wakes are on 24 October"
+     },
+     {
+      "what": "signed commit notes (board 269)",
+      "why": "an Agent: line is a claim, not proof"
+     }
+    ],
+    "asks": [
+     {
+      "what": "a go for the Sherpa's schedule; the conductor lane's key handed to the Sherpa, sealed; the researcher's wake prompts changed (board 177, 180)",
+      "from": "the editor"
+     },
+     {
+      "what": "data/comms.json and data/schedule/* in the conductor's policy scope",
+      "from": "abp@newsroom.sgit"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the editor's session does not show its total to the agent"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": 10,
+     "injection_seen": 1
+    },
+    "debrief": "admin/content/agents/conductor/debriefs/2026-10-24__schedules-and-commit-notes.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-24__schedules-and-commit-notes.md",
+     "date": "2026-10-24",
+     "title": "Schedules, runs and messages in the repository; the conductor's own schedule; Commit-FS-lite; dev's red CI fixed"
+    }
+   ]
+  },
+  {
+   "agent": "cyber",
+   "address": "cyber@php.newsroom",
+   "name": "cyber@php.newsroom",
+   "kind": "agent",
+   "group": "writing",
+   "title": "The attacker's view",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/cyber/ROLE.md",
+    "admin/content/agents/cyber/status.json",
+    "admin/content/agents/cyber/debriefs/**",
+    "admin/content/articles/*__cyber__*.md",
+    "data/vault-register/cyber.json",
+    "data/schedule/cyber.json",
+    "data/runs/cyber/**"
+   ],
+   "pages": [
+    "articles/patch-at-the-speed-of-metasploit/**"
+   ],
+   "vaults": [
+    {
+     "id": "7r83qic5",
+     "key": "read",
+     "why": "the source watch (a pack vault; its read key is not published yet)"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "cyber",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "desk",
+   "address": "desk@php.newsroom",
+   "name": "News desk chief",
+   "kind": "agent",
+   "group": "coordination",
+   "title": "The line of the story and the agenda",
+   "policy_status": "draft",
+   "member_status": "on branch narrator/offline-ledger, not yet in dev",
+   "writes": [
+    "admin/content/agents/desk/ROLE.md",
+    "admin/content/agents/desk/status.json",
+    "admin/content/agents/desk/debriefs/**",
+    "data/vault-register/desk.json",
+    "data/schedule/desk.json",
+    "data/runs/desk/**"
+   ],
+   "pages": [],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "desk",
+    "as_of": "2026-10-25",
+    "round": {
+     "n": 3,
+     "date": "2026-10-25",
+     "branch": "narrator/offline-ledger",
+     "commits": [
+      "2e5a6a4c74",
+      "v0.21.1"
+     ]
+    },
+    "state": "round 3 closed: the scheduled task wired to the card; wakes at 10:40 and 17:40 London; next wake 17:40 today",
+    "done": [
+     {
+      "what": "The scheduled task carries the card's prompt word for word, updated in place; none created, none to delete",
+      "evidence": "trig_012VDhTAeH7RQRRTBF8Gxq6y; /team/schedule/wiring/"
+     },
+     {
+      "what": "Wakes moved to 10:40 and 17:40 London, after the correspondent's reviews (board 285)",
+      "evidence": "data/schedule/desk.json; v0.21.1"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "219",
+      "220",
+      "221",
+      "222",
+      "223",
+      "224",
+      "225",
+      "226",
+      "227",
+      "229",
+      "230",
+      "231",
+      "232",
+      "233",
+      "234",
+      "235",
+      "242",
+      "244",
+      "247",
+      "248",
+      "250",
+      "251"
+     ],
+     "note": "rows the desk opened that are still open, owned by others; the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "The 17:40 afternoon check",
+      "why": "the card"
+     },
+     {
+      "what": "Approve story-site's page lines for the line design when they exist",
+      "why": "the line brief"
+     }
+    ],
+    "asks": [
+     {
+      "what": "the desk's scope over data/outreach.json and the front-page wording",
+      "from": "the editor, through abp@newsroom.sgit"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not show a token count to the agent"
+    },
+    "policy": {
+     "version": "2026-10-25",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": 0,
+     "injection_seen": 0
+    },
+    "debrief": "admin/content/agents/desk/debriefs/2026-10-25__wired.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-25__wired.md",
+     "date": "2026-10-25",
+     "title": "The desk's scheduled task wired to its card, and its wakes moved after the correspondent's reviews"
+    },
+    {
+     "file": "2026-10-25__wakes.md",
+     "date": "2026-10-25",
+     "title": "Three scheduled wakes: correction requests kept in step with the publishers, the front page's stamp and the third flaw on the board"
+    },
+    {
+     "file": "2026-10-24__first-round.md",
+     "date": "2026-10-24",
+     "title": "The news desk chief joins; the data put right; corrections drafted for the editor to send; the desk on a schedule"
+    }
+   ]
+  },
+  {
+   "agent": "dev",
+   "address": "dev@php.newsroom",
+   "name": "dev@php.newsroom",
+   "kind": "agent",
+   "group": "site",
+   "title": "Build, gate and release",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/dev/ROLE.md",
+    "admin/content/agents/dev/status.json",
+    "admin/content/agents/dev/debriefs/**",
+    "admin/build/build.py",
+    "admin/build/validate.py",
+    "admin/build/release.sh",
+    "admin/build/seed_ledger.py",
+    "admin/build/subscriptions_drain.py",
+    "admin/build/telemetry_drain.py",
+    ".github/workflows/pages.yml",
+    ".gitignore",
+    ".nojekyll",
+    "CNAME",
+    "LICENSE",
+    "README.md",
+    "REALITY.md",
+    "VERSION",
+    "vault-app/**",
+    "data/versions.json",
+    "data/pipeline.json",
+    "data/vaults.json",
+    "data/subscriptions.json",
+    "data/telemetry.json",
+    "data/telemetry-report.json",
+    "assets/site.js",
+    "assets/telemetry.js",
+    "assets/subscribe.js",
+    "assets/pipeline.js",
+    "assets/reader-state.js",
+    "assets/desk.js",
+    "assets/feed-viewer.js",
+    "assets/site-tools.js",
+    "assets/ask/**",
+    "assets/now/**",
+    "assets/vault/**",
+    "assets/vendor/sg-vault/**",
+    "assets/vendor/vault-ui-embed.js",
+    "admin/build/telemetry_classes.py",
+    "admin/build/telemetry_flow.sh",
+    "admin/build/telemetry_publish.py",
+    "data/world.json",
+    "data/telemetry-public.json",
+    "admin/content/articles/*__dev__*.md",
+    "assets/articles/**",
+    "assets/compare.js",
+    "assets/stack.js",
+    "data/stack.json",
+    "data/grc-tests.json",
+    "data/grc-basis.json",
+    "data/grc-gaps.json",
+    "data/vault-register/dev.json",
+    "assets/components/base/**",
+    "assets/components/sg-meter/**",
+    "data/schedule/dev.json",
+    "data/runs/dev/**"
+   ],
+   "pages": [
+    "admin/index.html",
+    "admin/versions.html",
+    "admin/status-json/**",
+    "admin/telemetry/**",
+    "status/**",
+    "vaults/index.html",
+    "subscribe/**",
+    "now/**",
+    "you/**",
+    "reader/**",
+    "feeds/**",
+    "whatsnew/**",
+    "pipeline/**",
+    "account/**",
+    "billing/**",
+    "stack/**",
+    "articles/the-risk-graph-before-and-after/**",
+    "articles/the-telemetry-tools/**"
+   ],
+   "vaults": [
+    {
+     "id": "84wr8mib",
+     "key": "vault",
+     "why": "telemetry: drain only"
+    },
+    {
+     "id": "wgeiqabu",
+     "key": "vault",
+     "why": "subscriptions: drain only"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "dev",
+    "as_of": "2026-10-24",
+    "round": 1,
+    "state": "round 1 closed; next: CI-003",
+    "done": [
+     {
+      "what": "Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1",
+      "evidence": "admin/build/release_pages.py, data/release-pages.json, /admin/versions.html; v0.14.19"
+     },
+     {
+      "what": "The source watch is 7r83qic5 everywhere live: /vaults/, /vaults/source-watch/, its data and export, the team, the schedules, every register's holds, the policies' vault grants, the live briefs; no read key published",
+      "evidence": "data/vaults.json, data/source-watch.json, admin/build/export_watch.py; v0.14.19"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "191",
+      "266",
+      "267"
+     ],
+     "note": "the board rows this member owns are in data/admin.json; 267 is for abp@newsroom.sgit"
+    },
+    "next": [
+     {
+      "what": "CI-003: review and implement the steps that need no decision",
+      "why": "the editor's ask of 24 October"
+     },
+     {
+      "what": "When the vault UI opens pack vaults: publish the source watch's read key and bring back its embed",
+      "why": "the editor: not before that support exists"
+     }
+    ],
+    "asks": [
+     {
+      "what": "Whether the old source-watch vault's key is rotated and handed over sealed (the conductor's open question, data/agents-status.json)",
+      "from": "the editor"
+     },
+     {
+      "what": "Board 267: release_pages.py, data/release-pages.json and the release history's styles into dev's policy",
+      "from": "abp@newsroom.sgit"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not report its token count"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 2,
+     "pushbacks": 1,
+     "overrides": 1,
+     "writes_outside_scope": 17,
+     "injection_seen": 0
+    },
+    "debrief": "admin/content/agents/dev/debriefs/2026-10-24__release-pages-and-the-source-watch.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-24__release-pages-and-the-source-watch.md",
+     "date": "2026-10-24",
+     "title": "Every release links the pages it changed; the source watch is 7r83qic5 everywhere live"
+    }
+   ]
+  },
+  {
+   "agent": "editor",
+   "address": "dinis.human",
+   "name": "Dinis Cruz",
+   "kind": "human",
+   "group": "humans",
+   "title": "Editor",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/editor/ROLE.md",
+    "admin/content/briefs/**",
+    "assets/briefs/**"
+   ],
+   "pages": [
+    "brief/**",
+    "admin/briefs/**"
+   ],
+   "vaults": [],
+   "delta": null,
+   "status": null,
+   "debriefs": []
+  },
+  {
+   "agent": "factcheck",
+   "address": "factcheck@php.newsroom",
+   "name": "Fact-check desk",
+   "kind": "agent",
+   "group": "writing",
+   "title": "Every claim graded on a spectrum of evidence",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/factcheck/ROLE.md",
+    "admin/content/agents/factcheck/status.json",
+    "admin/content/agents/factcheck/debriefs/**",
+    "admin/factcheck/**",
+    "data/factcheck.json",
+    "data/vault-register/factcheck.json",
+    "data/schedule/factcheck.json",
+    "data/runs/factcheck/**"
+   ],
+   "pages": [
+    "factcheck/**"
+   ],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "read",
+     "why": "the evidence vault"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "factcheck",
+    "as_of": "2026-10-24",
+    "round": 3,
+    "state": "round 3 closed: the pass released as v0.14.4; the first investigation released with this round's debrief",
+    "done": [
+     {
+      "what": "Run 3: seven changed claims re-graded; Finding-26, 27, 28, 33, 34, 102, 124, 125 closed as fixed; K-004 and K-009 explained; board 212 and 244 done",
+      "evidence": "v0.14.4; admin/factcheck/assessments.json, runs/Run-3.json"
+     },
+     {
+      "what": "The schedule card data/schedule/factcheck.json, and the scheduled task's prompt set to it",
+      "evidence": "data/schedule/factcheck.json"
+     },
+     {
+      "what": "Investigations: /factcheck/investigations/ and the first, php-share (29 measures, 127 statements, 73 pages re-checked, Fortune for UF-005.1); board 255",
+      "evidence": "/factcheck/investigations/php-share/; admin/factcheck/investigations/php-share/"
+     },
+     {
+      "what": "Evidence-12 (high): AWS reworded 'broadly exploited' to 'broad exploitation attempts'; Evidence-13, 14, 15; Contradiction-12",
+      "evidence": "admin/factcheck/.issues/data/evidence/, contradictions.json K-012"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "004",
+      "061",
+      "087",
+      "103",
+      "183",
+      "224",
+      "233"
+     ],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "Re-grade amazon-honeypot and K-002 when Amazon's revised sentence is captured (Evidence-12)",
+      "why": "the one high item; the site quotes a sentence Amazon has changed"
+     },
+     {
+      "what": "Board 183: single-origin confirmed claims against the desk's levels",
+      "why": "a board row the desk owns"
+     },
+     {
+      "what": "Re-fetch the measures daily so W3Techs' share is a series",
+      "why": "so the share is a series, not one value"
+     },
+     {
+      "what": "The next investigation, if the editor wants one: the offline count (board 224)",
+      "why": "the same method on the next contested number"
+     }
+    ],
+    "asks": [
+     {
+      "what": "whether routine scheduled runs should move to Sonnet (the card says the session's model)",
+      "from": "the editor"
+     },
+     {
+      "what": "the three lines in build_llms() for factcheck/investigations/ pages, written by the desk (a policy miss), to keep or rewrite",
+      "from": "dev@php.newsroom"
+     },
+     {
+      "what": "capture W3Techs, the HTTP Archive counts, Amazon's revised post and oss-security 2026/10/22/15",
+      "from": "collector-researchers and collector-primary"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not show a token count to the agent"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 1,
+     "overrides": 0,
+     "writes_outside_scope": [
+      "admin/build/build.py build_llms(): three lines for llms.txt"
+     ],
+     "injection_seen": 0
+    },
+    "debrief": "admin/content/agents/factcheck/debriefs/2026-10-24__run-3-and-the-first-investigation.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-24__run-3-and-the-first-investigation.md",
+     "date": "2026-10-24",
+     "title": "Run 3 (the desk chief's fixes checked) and the first investigation, how much PHP there is and where '70%' comes from"
+    }
+   ]
+  },
+  {
+   "agent": "grc",
+   "address": "grc@php.newsroom",
+   "name": "GRC desk",
+   "kind": "agent",
+   "group": "writing",
+   "title": "Risk registers and the standards",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/grc/ROLE.md",
+    "admin/content/agents/grc/status.json",
+    "admin/content/agents/grc/debriefs/**",
+    "data/grc.json",
+    "data/grc-frameworks.json",
+    "data/grc-network.json",
+    "assets/grc-explore.js",
+    "data/vault-register/grc.json",
+    "data/schedule/grc.json",
+    "data/runs/grc/**"
+   ],
+   "pages": [
+    "grc/**"
+   ],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "grc",
+    "as_of": "2026-10-24",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "historian",
+   "address": "historian@php.newsroom",
+   "name": "Historian",
+   "kind": "agent",
+   "group": "writing",
+   "title": "Perspective and the record",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/historian/ROLE.md",
+    "admin/content/agents/historian/status.json",
+    "admin/content/agents/historian/debriefs/**",
+    "admin/content/articles/*__historian__*.md",
+    "BRIEF-CORRECTIONS.md",
+    "data/history.json",
+    "data/vault-register/historian.json",
+    "data/schedule/historian.json",
+    "data/runs/historian/**"
+   ],
+   "pages": [
+    "articles/php2shell-in-perspective/**",
+    "corrections/**",
+    "context/**",
+    "versions/**"
+   ],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "historian",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "journalist",
+   "address": "journalist@php.newsroom",
+   "name": "Journalist",
+   "kind": "agent",
+   "group": "writing",
+   "title": "Dated articles on the state of affairs",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/journalist/ROLE.md",
+    "admin/content/agents/journalist/status.json",
+    "admin/content/agents/journalist/debriefs/**",
+    "admin/content/articles/*__journalist__*.md",
+    "admin/content/articles/*__journalist-historian__*.md",
+    "admin/content/external/**",
+    "data/readings.json",
+    "data/patching.json",
+    "data/signals.json",
+    "admin/content/views/**",
+    "data/state.json",
+    "data/vault-register/journalist.json",
+    "data/claim-review.json",
+    "data/schedule/journalist.json",
+    "data/runs/journalist/**"
+   ],
+   "pages": [
+    "articles/where-php2shell-stands/**",
+    "articles/why-not-patch-every-version/**",
+    "articles/exposed-is-not-exploited/**",
+    "articles/index.html",
+    "readings/**",
+    "patching/index.html",
+    "signals/**",
+    "views/**",
+    "articles/what-changed-in-a-day/**",
+    "claims/review/**"
+   ],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "read",
+     "why": "the evidence vault"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "journalist",
+    "as_of": "2026-10-25",
+    "round": 2,
+    "state": "second wake released (v0.19.3); schedule card active",
+    "done": [
+     {
+      "what": "Made the pki key sha256:de0decfc882a0235 and sent its QR to the editor",
+      "evidence": "debriefs/2026-10-24__first-wake.md; v0.15.19"
+     },
+     {
+      "what": "Exported the evidence vault at 8c16a64a7cf6 (382 sources)",
+      "evidence": "debriefs/2026-10-24__first-wake.md; v0.15.19"
+     },
+     {
+      "what": "Gave 94 claims a verdict: 38 agrees, 33 noted, 23 held back, 0 used",
+      "evidence": "debriefs/2026-10-24__first-wake.md; v0.15.19"
+     },
+     {
+      "what": "Refreshed compromise.json, no-confirmed-compromise, the as-of lines, plain latest and the pass ledger",
+      "evidence": "debriefs/2026-10-24__first-wake.md; v0.15.19"
+     },
+     {
+      "what": "Released v0.15.19; live site serves it",
+      "evidence": "debriefs/2026-10-24__first-wake.md; v0.15.19"
+     },
+     {
+      "what": "Second wake, by hand: exported the vault at 87795d121200 (418 sources), 15 claims reviewed (2 used, 3 agrees, 6 noted, 4 held back), Turkey, Shizuoka Bank and Nepal rows, as-of lines to 09:35 UTC on 25 October",
+      "evidence": "debriefs/2026-10-25__second-wake.md; v0.19.3"
+     }
+    ],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "Next wake: compare the vault head with 87795d121200; no change, one line and no commit",
+      "why": "the brief"
+     },
+     {
+      "what": "Re-read in full the partly checked files on /views/desk/",
+      "why": "the pass ledger"
+     }
+    ],
+    "asks": [
+     {
+      "what": "Decide whether the journalist scheduled tasks bind to this session (they start a fresh session each wake today)",
+      "from": "the editor, or the conductor"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not show a count"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": "debriefs/2026-10-25__second-wake.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-25__second-wake.md",
+     "date": "2026-10-25",
+     "title": "Second wake (run by hand in the first session): evidence vault 87795d121200, 15 claims, three new rows"
+    },
+    {
+     "file": "2026-10-24__journalist-to-correspondent.md",
+     "date": "2026-10-24",
+     "title": "The Opus journalist's last round as journalist: two exports, three states of affairs, the desk, Pulse, and the pipeline that makes it the correspondent"
+    },
+    {
+     "file": "2026-10-24__first-wake.md",
+     "date": "2026-10-24",
+     "title": "First scheduled session and first wake (Sonnet): key made, evidence vault 8c16a64a7cf6 exported and published"
+    }
+   ]
+  },
+  {
+   "agent": "liaison",
+   "address": "liaison@php.newsroom",
+   "name": "Corrections liaison",
+   "kind": "agent",
+   "group": "writing",
+   "title": "Corrections we ask of others",
+   "policy_status": "draft",
+   "member_status": "on branch claude/corrections-liaison-desk, not yet in dev",
+   "writes": [
+    "admin/content/agents/liaison/ROLE.md",
+    "admin/content/agents/liaison/status.json",
+    "admin/content/agents/liaison/debriefs/**",
+    "admin/liaison/**",
+    "data/outreach.json",
+    "data/vault-register/liaison.json",
+    "data/schedule/liaison.json",
+    "data/runs/liaison/**"
+   ],
+   "pages": [
+    "outreach/**"
+   ],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "read",
+     "why": "to check every quote"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "liaison",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "librarian",
+   "address": "librarian@php.newsroom",
+   "name": "librarian@php.newsroom",
+   "kind": "agent",
+   "group": "writing",
+   "title": "The catalogue",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/librarian/ROLE.md",
+    "admin/content/agents/librarian/status.json",
+    "admin/content/agents/librarian/debriefs/**",
+    "data/questions.json",
+    "data/layers.json",
+    "admin/build/agents.py",
+    "admin/content/agents/README.md",
+    "admin/content/agents/TEMPLATE__debrief.md",
+    "data/vault-register/librarian.json",
+    "data/schedule/librarian.json",
+    "data/runs/librarian/**"
+   ],
+   "pages": [
+    "questions/**",
+    "layers/**",
+    "admin/agents/*/**"
+   ],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "read",
+     "why": "to check an answer against a capture"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "librarian",
+    "as_of": "2026-10-25",
+    "round": {
+     "n": 7,
+     "date": "2026-10-25",
+     "kind": "session round, at the editor's request",
+     "branch": "claude/sweet-wright-1e5iju",
+     "commits": [
+      "this round's release"
+     ]
+    },
+    "state": "round 7 closed: the scheduled task wired to the card's prompt word for word, and the wake moved to 20:23 London, after the correspondent and the ontologist",
+    "done": [
+     {
+      "what": "Scheduled pass of 25 October: dev taken in at v0.18.0 (92 commits, no conflict); inbox read: the ontologist's ask for its Wikipedia scope (a policy edit: not the librarian's file, already board 295) and security's self-check message",
+      "evidence": "data/runs/librarian/"
+     },
+     {
+      "what": "Map: 0 overlaps; every unowned file and page traced to the commit that added it, owners proposed for abp@ in one row (security, conductor, dev, correspondent), with the ontologist's (295) and the earlier three (256) referenced",
+      "evidence": "board 300"
+     },
+     {
+      "what": "Drafted the correspondent's ROLE.md (the editor's decision of 24 October, board 277): a member with no folder; its overlap with the journalist's draft named for abp@",
+      "evidence": "admin/content/agents/correspondent/ROLE.md"
+     },
+     {
+      "what": "Security self-check (security@'s message, 24 October): the reader answers were inserted into pages as raw HTML since v0.2.6; now escaped with E() and only <b>, <i>, <code> and <q> restored without attributes (q_inline in the librarian's block); pages identical once entities are decoded",
+      "evidence": "admin/build/build.py, build_questions"
+     },
+     {
+      "what": "Confirmed this is the librarian's session (session_0119HKHSpRMfmaSRyjX7wbYY, titled librarian@php.newsroom) and followed /team/schedule/wiring/#librarian: the one task that wakes it, trig_015dBN3kZZNti6c9BFE2xMj4, now carries the card's prompt word for word; updated in place, nothing to delete",
+      "evidence": "/team/schedule/wiring/"
+     },
+     {
+      "what": "Moved the wake from 07:13 to 20:23 London at the editor's request: after the correspondent's 19:25 review and the ontologist's 19:50 pass, before the conductor's 21:15 and the quiet hours; card times, reason and note updated",
+      "evidence": "data/schedule/librarian.json"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "300 opened for abp@ (owners for 395 files and 56 pages)",
+      "256, 257, 258 still open (abp@, the editor)"
+     ],
+     "note": "the librarian's own open work: the next daily pass, the reader questions, The Times (014)"
+    },
+    "next": [
+     {
+      "what": "The first evening pass, 20:23 London on 25 October",
+      "why": "the card"
+     },
+     {
+      "what": "Apply abp@'s and the editor's decisions on 256, 257, 258 and 300 to the map",
+      "why": "the map follows the owners' decisions"
+     },
+     {
+      "what": "The Times capture (board 014) and new reader questions",
+      "why": "the librarian's first beat"
+     }
+    ],
+    "asks": [
+     {
+      "what": "Say which holds when the librarian's card and its wake prompt disagree (board 258)",
+      "from": "the editor"
+     },
+     {
+      "what": "The journalist's full pass across other desks' files (board 257)",
+      "from": "the editor"
+     },
+     {
+      "what": "Owners for the unowned files and pages (boards 256, 295, 300) and the correspondent's policy (277)",
+      "from": "abp@newsroom.sgit"
+     }
+    ],
+    "tokens": {
+     "value": {
+      "output_tokens": 319617,
+      "input_tokens": 1654,
+      "cache_read_tokens": 140855685,
+      "cache_write_tokens": 2639520,
+      "cost_usd": 55.7
+     },
+     "how": "the whole session since 22 October, cumulative, read from the platform's session record (get_session, external_metadata.usage) at 12:47 UTC on 25 October; per-round figures are differences between these readings from now on. Earlier rounds said it could not be read: it can, from the session record."
+    },
+    "policy": {
+     "version": "2026-10-22, draft",
+     "out_of_scope_requests": 2,
+     "pushbacks": 0,
+     "overrides": 2,
+     "writes_outside_scope": 0,
+     "injection_seen": 0,
+     "detail": "One request, the editor's, asked for work outside the catalogue: drafting every member's folder and editing CLAUDE.md and .claude/. The editor asked explicitly in the session, so it is counted as one override, not a pushback. Of the 75 files outside scope, 69 are the drafted folders of 24 other members and 2 are CLAUDE.md and .claude/settings.json (the override); 1 is admin/build/validate.py, which was not asked for (a miss, sent to security and dev for review); 3 are from the fractal round before this map existed (data/arcs.json, assets/review-nav.js, assets/site.css), handed to the cartographer and design. Not caught by the check: an edit inside dev's build_llms() in build.py, a shared file the librarian may append to (board 098). Round 2: one more request outside scope, the editor's, explicit: CLAUDE.md (security's) gained the handover section; counted as an override; 1 file outside scope. Round 3: no new out-of-scope request. The pass rewrote the drafted folders of 26 other members again (the editor's override of 22 October, which asked the librarian to map every member) and edited validate.py's check 4h, which was the librarian's own addition, still for security's review. The check on 24 October, after the merge was committed, counts 82 files outside scope across the branch against dev: 76 are the drafted ROLE.md, policy.json and status.json files of 26 other members (the editor's override of 22 October); CLAUDE.md and .claude/settings.json (the editor's overrides); admin/build/validate.py (the librarian's own addition, for security's review); data/arcs.json and assets/review-nav.js (the cartographer's now) and assets/site.css (the story site's now), from the fractal round. Round 5 (the first scheduled pass): no request; the pass first edited two members' policy.json and ROLE.md to map new files, saw that the wake prompt forbids it, reverted them and opened a board row for abp@; 0 files outside scope at the end. Seen: the journalist wrote data/questions.json (the librarian's) in v0.14.3; kept, because it is correct and newer, and raised with the rest of its full pass (board 257). Round 6: the ontologist asked, by message, for its policy to be edited; not done (abp@'s file), already on the board (295). Drafted the correspondent's ROLE.md, allowed by the prompt for a member with no folder."
+    },
+    "debrief": "debriefs/2026-10-25__schedule-wired.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-25__schedule-wired.md",
+     "date": "2026-10-25",
+     "title": "The scheduled task wired to the card, and the wake moved to 20:23 London"
+    },
+    {
+     "file": "2026-10-25__pass.md",
+     "date": "2026-10-25",
+     "title": "Pass of 25 October: dev at v0.18.0 mapped, the correspondent drafted, the reader answers no longer raw HTML"
+    },
+    {
+     "file": "2026-10-24__morning-pass.md",
+     "date": "2026-10-24",
+     "title": "The first scheduled pass: dev at v0.14.6 mapped, the journalist's full pass raised, one answer corrected"
+    },
+    {
+     "file": "2026-10-24__librarian-pass.md",
+     "date": "2026-10-24",
+     "title": "The librarian's pass of 24 October: dev taken in, 27 members mapped, two answers corrected"
+    },
+    {
+     "file": "2026-10-22__vault-key-handover.md",
+     "date": "2026-10-22",
+     "title": "How every agent hands a vault key to the editor, in CLAUDE.md"
+    },
+    {
+     "file": "2026-10-22__agents-and-rounds.md",
+     "date": "2026-10-22",
+     "title": "Every member a folder, a policy and a round: 25 roles mapped, no overlaps, and the round system"
+    }
+   ]
+  },
+  {
+   "agent": "mail",
+   "address": "agent@diniscruz.ai",
+   "name": "agent@diniscruz.ai",
+   "kind": "agent",
+   "group": "coordination",
+   "title": "Mail, in its own deployment",
+   "policy_status": "draft",
+   "member_status": "active, another deployment",
+   "writes": [
+    "admin/content/agents/mail/ROLE.md"
+   ],
+   "pages": [],
+   "vaults": [],
+   "delta": null,
+   "status": null,
+   "debriefs": []
+  },
+  {
+   "agent": "newsroom-lead",
+   "address": "newsroom-lead",
+   "name": "Newsroom lead",
+   "kind": "agent",
+   "group": "evidence",
+   "title": "The evidence vault's protocol and export",
+   "policy_status": "draft",
+   "member_status": "active; sessions: the newsroom lead, curator@php.newsroom (first session, done) and curator@php.newsroom (scheduled, five wakes a day)",
+   "writes": [
+    "admin/content/agents/newsroom-lead/ROLE.md",
+    "admin/content/agents/newsroom-lead/status.json",
+    "admin/content/agents/newsroom-lead/debriefs/**",
+    "admin/build/export_vault.py",
+    "data/sources.json",
+    "data/vault.json",
+    "data/vault-claims.json",
+    "data/vault-timeline.json",
+    "data/software.json",
+    "data/vault-register/newsroom-lead.json",
+    "data/vault-register/curator.json",
+    "data/schedule/newsroom-lead.json",
+    "data/runs/newsroom-lead/**",
+    "data/schedule/curator.json",
+    "data/runs/curator/**"
+   ],
+   "pages": [
+    "sources/**",
+    "admin/vault/**",
+    "affected/software.html"
+   ],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "vault",
+     "why": "the evidence vault: protocol and merges"
+    },
+    {
+     "id": "7r83qic5",
+     "key": "vault",
+     "why": "the source watch's pack-mode copy: read only, to work its queue"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "newsroom-lead",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "observability",
+   "address": "observability@php.newsroom",
+   "name": "Observability",
+   "kind": "agent",
+   "group": "site",
+   "title": "The site's numbers and the lanes that carry them",
+   "policy_status": "draft",
+   "member_status": "joining",
+   "writes": [
+    "admin/content/agents/observability/ROLE.md",
+    "admin/content/agents/observability/status.json",
+    "admin/content/agents/observability/debriefs/**",
+    "admin/observability/**",
+    "data/vault-register/observability.json",
+    "data/schedule/observability.json",
+    "data/runs/observability/**"
+   ],
+   "pages": [],
+   "vaults": [
+    {
+     "id": "5wnsr5h8",
+     "key": "vault",
+     "why": "the telemetry application: its code, versioned in the vault (once the key is handed over, sealed)"
+    },
+    {
+     "id": "84wr8mib",
+     "key": "vault",
+     "why": "telemetry: drain and test the application against it (once the key is handed over, sealed)"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "observability",
+    "as_of": "2026-10-24",
+    "round": {
+     "n": 2,
+     "date": "2026-10-24",
+     "branch": "claude/wonderful-allen-vu7tzg",
+     "commits": [
+      "v0.14.28 (round 1)"
+     ]
+    },
+    "state": "round 2: the telemetry application v0.4.2 pushed to 5wnsr5h8 (Queue & drain progress; One page with the page framed); holds the keys of 84wr8mib and 5wnsr5h8",
+    "done": [
+     {
+      "what": "Joined at the editor's request: the member folder (ROLE.md, a draft policy.json, status.json) and an empty vault register",
+      "evidence": "admin/content/agents/observability/; data/vault-register/observability.json"
+     },
+     {
+      "what": "Its key made on pki.sgit.ai (sha256:b9ddd39416d71cbb), the root pinned from CLAUDE.md, the operator link to the root signed; the enrolment record and the key's QR codes handed to the editor in the session",
+      "evidence": "pki-agent whoami; nothing secret committed"
+     },
+     {
+      "what": "Read the history: dev@php.newsroom built the telemetry application (5wnsr5h8, v0.1.1 to v0.4.0) and the drain; told dev and the conductor, by message and in the commit",
+      "evidence": "data/messages/dev/, data/messages/conductor/"
+     },
+     {
+      "what": "Board rows 270 to 272: the key's enrolment, the vault keys' handover, the telemetry files' owner",
+      "evidence": "data/admin.json"
+     },
+     {
+      "what": "Received the vault key of 84wr8mib, sealed to this member's key (signature checks, sender chains to the root, expires 31 October); cloned it outside the repository with the key read from stdin",
+      "evidence": "data/vault-register/observability.json holds"
+     },
+     {
+      "what": "The lane's 1,000-event cap traced to the SG/Send server (APPEND_MAX_FILES in Service__Vault__Append.py) and checked by running that code: event 1,001 is refused (507) and lost; a brief with the options",
+      "evidence": "admin/content/briefs/2026-10-24__brief__the-lane-cap-and-sharded-lanes.md"
+     },
+     {
+      "what": "The telemetry application v0.4.1: Queue & drain shows a progress bar while the lane is checked, and while it drains the seven steps with their counts, a bar over the events, each batch's size and time, and a summary; 8 more tests (36 pass over 1,543 real events); checked in a dry-run host against the real lane (first run, a repeat over the same events, a failed publish). Committed in the vault; the push is waiting for an SG/Send access token",
+      "evidence": "5wnsr5h8: CHANGELOG.md 0.4.1; debriefs/img/2026-10-24__joining__2 to 5"
+     },
+     {
+      "what": "Pushed the telemetry application v0.4.1 (Queue & drain shows its progress) with the access token the editor gave in the session",
+      "evidence": "5wnsr5h8: VERSION 0.4.1, CHANGELOG.md"
+     },
+     {
+      "what": "The telemetry application v0.4.2: ◎ and ↗ beside every page's name; One page (its numbers, views over time, before and after, paths, who, where from, devices, languages, versions, latest events, and the page itself framed with sandbox=\"\", so it sends no telemetry); siteUrl() keeps untrusted paths on the site's origin; 40 tests pass over 1,653 events",
+      "evidence": "5wnsr5h8: VERSION 0.4.2, CHANGELOG.md; debriefs/2026-10-24__one-page-and-the-drain-live.md"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "270",
+      "272",
+      "273"
+     ],
+     "note": "the board rows this member owns or opened are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "A proposed card for a lane check and drain",
+      "why": "the lane refuses at 1,000 waiting; it needs the editor's go"
+     },
+     {
+      "what": "Count the events the cap refuses, with dev",
+      "why": "today a refused event is lost and nobody knows; assets/telemetry.js is dev's"
+     }
+    ],
+    "asks": [
+     {
+      "what": "Enrol sha256:b9ddd39416d71cbb (board 270)",
+      "from": "the editor"
+     },
+     {
+      "what": "Whether the telemetry files move from dev (board 272)",
+      "from": "the editor and abp@"
+     },
+     {
+      "what": "Whether the telemetry vault's app may open outside links without the host's confirm (permissions.externalLinks): it widens the sandbox",
+      "from": "the editor"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not show a token count"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": 1,
+     "injection_seen": 0,
+     "detail": "One write outside scope: admin/content/agents/observability/policy.json, which abp@newsroom.sgit keeps; written as the member's first draft (the librarian's step for a new member), for abp@ to take over and the editor to agree (board 272's note). Appends only otherwise: own board rows in data/admin.json, own message files in data/messages/. The roster (data/team.json) is the conductor's: asked by message, not edited. One exposure, said to the editor at once: sgit clone printed the private read key of 84wr8mib into this session's tool output (the masking pattern missed it). It is in the session transcript only: no file, commit, page or message. Rotation (a rekey of 84wr8mib) is the editor's call. Round 2: no write outside scope. The editor decided in the session that 84wr8mib needs no rekey."
+    },
+    "debrief": "admin/content/agents/observability/debriefs/2026-10-24__one-page-and-the-drain-live.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-24__one-page-and-the-drain-live.md",
+     "date": "2026-10-24",
+     "title": "The telemetry application v0.4.1 and v0.4.2 pushed: progress on Queue & drain, and One page (a page's numbers and the page itself)"
+    },
+    {
+     "file": "2026-10-24__joining.md",
+     "date": "2026-10-24",
+     "title": "Joined as the observability agent; the lane's cap traced; the telemetry application v0.4.1 (Queue & drain progress)"
+    }
+   ]
+  },
+  {
+   "agent": "ontologist",
+   "address": "ontologist@php.newsroom",
+   "name": "Ontologist",
+   "kind": "agent",
+   "group": "writing",
+   "title": "Fractal semantic graphs: the ontology, the graphs and the component",
+   "policy_status": "draft",
+   "member_status": "active; the cartographer role archived at the editor's word (v0.11.5, 24 October 2026); its card and runs kept as this member's history",
+   "writes": [
+    "admin/content/agents/ontologist/ROLE.md",
+    "admin/content/agents/ontologist/status.json",
+    "admin/content/agents/ontologist/debriefs/**",
+    "data/ontology.json",
+    "data/entities.json",
+    "data/attribution.json",
+    "data/arcs.json",
+    "data/review.json",
+    "review/code/**",
+    "assets/review-nav.js",
+    "assets/components/sg-graph/**",
+    "data/vault-register/cartographer.json",
+    "admin/ontologist/**",
+    "data/crosswalk.json",
+    "data/schedule/cartographer.json",
+    "data/runs/cartographer/**",
+    "data/schedule/ontologist.json",
+    "data/runs/ontologist/**"
+   ],
+   "pages": [
+    "graph/**",
+    "fractal/**",
+    "review/**"
+   ],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "ontologist",
+    "as_of": "2026-10-25",
+    "round": "2026-10-25, round 3 (the editor's session)",
+    "state": "Wikipedia: history as lifelines, the talk page, a reviewer's reading (15 findings), a page for Wikipedia's editors, Wikidata links confirmed, the admin-site story on adopting Wikipedia's principles",
+    "done": [
+     {
+      "what": "admin/wikipedia/fetch.py: 364 revisions of the PHP2Shell article, the Wikidata item Q141801185, 198 articles linking in",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "admin/build/wikitext.py: one statement per sentence, classed by wording; references resolved to sources by address and to parties by host",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "/wikipedia/php2shell/ with statements, references and history; the article's graph in the ontology's wikipedia scope, joined to the story graph by captured_as",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "25 new parties for the article's publishers; 'contains' spelled once across scopes",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "/wikipedia/php2shell/evolution/ and /talk/: every statement as a lifeline, the item's history, the talk page as threads; the card wakes four times a day and fetches first",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "/wikipedia/php2shell/review/ (data/wikipedia/php2shell/review.json): 15 findings as a Wikipedia reviewer would make them, with captures and proposed changes, for the editor to take to the talk page in his own words; finding nodes in the graph (ontology v0.5.0)",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "/wikipedia/for-editors/: the collaboration proposal under Wikipedia's LLM guideline: no agent posts, no model-written request, no self-citation; what we offer",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "data/wikidata-links.json: 25 items confirmed by hand; Wikidata and DBpedia tracked on /wikipedia/",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "the story what-wikipedia-knows-about-being-right (admin site): eleven principles for AGENTS.md",
+      "when": "2026-10-25"
+     },
+     {
+      "what": "scheduled task moved into this session at 06:05, 10:05, 14:05, 18:05 London (trig_01MRxGu6YT6eguebZG8DSAni), card updated; old fresh-session task paused, then deleted",
+      "when": "2026-10-25"
+     }
+    ],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "each wake: fetch all, re-read the review against the new revision (a finding whose statement is gone is shown as such), confirm new Wikidata proposals, re-check DBpedia"
+     },
+     {
+      "what": "board 316 to 319: the editor on the findings and the scheduled tasks, the conductor on the AGENTS.md proposals, abp on the article scope"
+     },
+     {
+      "what": "board 288 to 295 as before; /fractal/ and <sg-graph> brought together (board 181)"
+     }
+    ],
+    "asks": [
+     {
+      "what": "which of the 15 findings, if any, to take to the talk page in his own words (board 315)",
+      "from": "the editor"
+     },
+     {
+      "what": "add admin/content/articles/ for this member, or say that articles stay the editor's call each time (board 318)",
+      "from": "abp@newsroom.sgit"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 1,
+     "writes_outside_scope": "one article at the editor's direction; assets/site.css appended; build.py appended",
+     "injection_seen": 0
+    },
+    "debrief": "admin/content/agents/ontologist/debriefs/2026-10-25__wikipedia-history-and-review.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-25__wikipedia-history-and-review.md",
+     "date": "2026-10-25",
+     "title": "The history of the Wikipedia article as lifelines, its talk page, a reviewer's reading of it, a page for its editors, and Wikidata tracked"
+    },
+    {
+     "file": "2026-10-25__self-check-wikipedia.md",
+     "date": "2026-10-25",
+     "title": "Wikipedia as an anchor, the PHP2Shell article as a fractal semantic graph, and the self-check on it"
+    }
+   ]
+  },
+  {
+   "agent": "pm",
+   "address": "vicky.human",
+   "name": "Vicky",
+   "kind": "human",
+   "group": "humans",
+   "title": "Project manager",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/pm/ROLE.md"
+   ],
+   "pages": [],
+   "vaults": [],
+   "delta": null,
+   "status": null,
+   "debriefs": []
+  },
+  {
+   "agent": "pulse",
+   "address": "pulse@newsroom",
+   "name": "pulse@newsroom",
+   "kind": "agent",
+   "group": "evidence",
+   "title": "Pulse: what else is going on",
+   "policy_status": "draft",
+   "member_status": "blocked: needs a permission rule to push its vault (data/agents-status.json)",
+   "writes": [
+    "admin/content/agents/pulse/ROLE.md",
+    "admin/content/agents/pulse/status.json",
+    "admin/content/agents/pulse/debriefs/**",
+    "admin/build/export_pulse.py",
+    "data/pulse.json",
+    "data/schedule/pulse.json",
+    "data/runs/pulse/**"
+   ],
+   "pages": [
+    "pulse/**"
+   ],
+   "vaults": [
+    {
+     "id": "4klm5qlt",
+     "key": "vault",
+     "why": "the Pulse vault"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "pulse",
+    "as_of": "2026-10-24",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "researcher",
+   "address": "researcher@php.newsroom",
+   "name": "researcher@php.newsroom",
+   "kind": "agent",
+   "group": "evidence",
+   "title": "The source watch",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/researcher/ROLE.md",
+    "admin/content/agents/researcher/status.json",
+    "admin/content/agents/researcher/debriefs/**",
+    "admin/build/export_watch.py",
+    "data/source-watch.json",
+    "data/feed-sources.json",
+    "assets/vaults/**",
+    "data/compromise.json",
+    "data/pack-mode.json",
+    "data/vault-register/researcher.json",
+    "data/schedule/researcher.json",
+    "data/runs/researcher/**"
+   ],
+   "pages": [
+    "vaults/source-watch/**",
+    "compromise/**",
+    "admin/pack-mode/**"
+   ],
+   "vaults": [
+    {
+     "id": "7r83qic5",
+     "key": "vault",
+     "why": "the source watch (a pack vault)"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "researcher",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "security",
+   "address": "security@php.newsroom",
+   "name": "security@php.newsroom",
+   "kind": "agent",
+   "group": "site",
+   "title": "Security",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/security/ROLE.md",
+    "admin/content/agents/security/status.json",
+    "admin/content/agents/security/debriefs/**",
+    "admin/security/**",
+    "admin/build/security_check.py",
+    "CLAUDE.md",
+    ".claude/**",
+    "data/keys.json",
+    "assets/keys/**",
+    "data/vault-register/security.json",
+    "data/schedule/security.json",
+    "data/runs/security/**"
+   ],
+   "pages": [
+    "admin/keys/**",
+    "admin/security/index.html"
+   ],
+   "vaults": [
+    {
+     "id": "*",
+     "key": "read",
+     "why": "read keys for the vaults it is given, cloned outside the repository"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "security",
+    "as_of": "2026-10-24",
+    "round": 1,
+    "state": "round 1 closed: application security section, 40 advisories, CSP on every page",
+    "done": [
+     {
+      "what": "Security passes 1 to 3: 40 advisories, 22 fixed and 1 accepted by the editor",
+      "evidence": "data/advisories.json; v0.5.5, v0.11.1, v0.14.26"
+     },
+     {
+      "what": "/admin/appsec/: threat model, data flows, advisories, root causes, who can do what, client-side analysis, incidents and runbooks, bug bounty and leaderboard, outside reviewers' prompts",
+      "evidence": "v0.14.26; data/appsec.json"
+     },
+     {
+      "what": "A Content-Security-Policy on every page (admin/build/csp.py)",
+      "evidence": "v0.14.26; 851 pages crawled, no violations"
+     },
+     {
+      "what": "The telemetry policy on /admin/telemetry/ (the editor's decision: keep the location lookups)",
+      "evidence": "data/telemetry.json policy; SA-2026-030 accepted"
+     },
+     {
+      "what": "Board 085, 110, 132, 206, 268 closed",
+      "evidence": "data/admin.json"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "278",
+      "279",
+      "280",
+      "281",
+      "282"
+     ],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "A CSP for the vault app (281)",
+      "why": "the vault app runs outside the site's policy and reads the vault (SA-2026-021)"
+     },
+     {
+      "what": "A design for signed messages and cards (282)",
+      "why": "messages steer unsupervised agents and are unauthenticated (SA-2026-024)"
+     },
+     {
+      "what": "The next security pass: the tree, history, the public vaults, every change since v0.15.4",
+      "why": "the team releases dozens of times a day"
+     },
+     {
+      "what": "Verify outside reviewers' findings when the editor hands them over",
+      "why": "the bounty and the reviewer prompts are live"
+     }
+    ],
+    "asks": [
+     {
+      "what": "enable private vulnerability reporting (278); go or not on security/gate-pass-2 (279)",
+      "from": "the editor"
+     },
+     {
+      "what": "add admin/appsec/**, data/advisories.json, data/appsec.json, admin/build/csp.py, admin/build/diagram.py, .well-known/security.txt to security's scope",
+      "from": "the librarian"
+     },
+     {
+      "what": "carry the self-check into AGENTS.md section 5 and the cards",
+      "from": "the conductor"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not show a token count to the agent"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 1,
+     "writes_outside_scope": 2,
+     "injection_seen": 2
+    },
+    "debrief": "admin/content/agents/security/debriefs/2026-10-24__application-security.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-24__application-security.md",
+     "date": "2026-10-24",
+     "title": "Application security: the AppSec section, 40 advisories, a CSP on every page, the telemetry policy, and three security passes"
+    }
+   ]
+  },
+  {
+   "agent": "sherpa",
+   "address": "sherpa@php.newsroom",
+   "name": "Sherpa",
+   "kind": "agent",
+   "group": "site",
+   "title": "The reader's path",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/sherpa/ROLE.md",
+    "admin/content/agents/sherpa/status.json",
+    "admin/content/agents/sherpa/debriefs/**",
+    "admin/sherpa/**",
+    "assets/sherpa/**",
+    "data/vault-register/sherpa.json",
+    "data/schedule/sherpa.json",
+    "data/runs/sherpa/**"
+   ],
+   "pages": [
+    "sherpa/**",
+    "feedback/**"
+   ],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "sherpa",
+    "as_of": "2026-10-24",
+    "round": {
+     "n": 2,
+     "date": "2026-10-24",
+     "branch": "sherpa/wake-2026-10-24, sherpa/ci-003, sherpa/ci-003-design",
+     "commits": [
+      "2a0cd813b",
+      "be4d4401d",
+      "ac5300dc5 (v0.14.9)",
+      "614ef2996 (v0.14.14)",
+      "905c8751b (v0.14.15)"
+     ]
+    },
+    "state": "round 2 closed; the schedule is active (every two hours, 07:45 to 21:45 London)",
+    "done": [
+     {
+      "what": "Scheduled wakes at 07:45 and 09:45 London: both lanes drained, nothing waiting; the fact-check desk's Fortune analysis linked from UF-005, board 195 closed",
+      "evidence": "data/runs/sherpa/20261024T0646Z-sherpa.json; v0.14.9"
+     },
+     {
+      "what": "CI-003, the collaborator's review of the new design, the telemetry and the risk graph: ten items, the phone header measured (F034), a brief to dev (board 260 to 263), row 264 to the editor",
+      "evidence": "/sherpa/ideas/ci-003/; v0.14.14"
+     },
+     {
+      "what": "CI-003 corrected against the redesign that shipped in v0.14.0; F035 measured (the three ways to read, twelve phone screens down); board 265 for story-site; a correction entry",
+      "evidence": "BRIEF-CORRECTIONS.md; v0.14.15"
+     },
+     {
+      "what": "A reminder to the editor at 15:00 London: review the round 1 debrief and the two sealed QR codes",
+      "evidence": "a one-shot message to this session, at the editor's request"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "122",
+      "123",
+      "124",
+      "125",
+      "192",
+      "193",
+      "194",
+      "196",
+      "197",
+      "264"
+     ],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "The 11:45 full pass: every release since the last run read before any comment on a page; CI-002's steps and dev's join fixes checked live",
+      "why": "the frictions stay open until checked; and round 2's miss"
+     },
+     {
+      "what": "The brief on verification across model providers, with the fact-check desk (board 194)",
+      "why": "the editor's ask, UF-005.2; it meets CI-003's signed reviews"
+     }
+    ],
+    "asks": [
+     {
+      "what": "Where the CTO belongs: Operations (the redesign) or with the executive (the three-views brief)",
+      "from": "the editor"
+     },
+     {
+      "what": "Who may review the graph's inferred links, and how many agreeing reviews confirm one",
+      "from": "the editor"
+     },
+     {
+      "what": "A power-user invitation for the collaborator of CI-001 to CI-003",
+      "from": "the editor"
+     },
+     {
+      "what": "The riskmandate token re-sealed to the RiskMandate agent's key; the conductor's lane key if the Sherpa is to drain it",
+      "from": "the editor"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not show the Sherpa a token count"
+    },
+    "policy": {
+     "version": "2026-10-24",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": 0,
+     "injection_seen": 0,
+     "detail": "No writes outside scope (agents.py check). One miss of judgement, recorded in BRIEF-CORRECTIONS.md: a design commented on without reading what had shipped. An edit to the Sherpa's own brief was started and reverted, the correction going to BRIEF-CORRECTIONS.md as the policy says."
+    },
+    "debrief": "admin/content/agents/sherpa/debriefs/2026-10-24__ci-003-and-the-redesign.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-24__drain-schedule-and-inbox.md",
+     "date": "2026-10-24",
+     "title": "The collaborators lane drained, a power user onboarded, the editor's asks recorded, the schedule active and an inbox for outside agents"
+    },
+    {
+     "file": "2026-10-24__ci-003-and-the-redesign.md",
+     "date": "2026-10-24",
+     "title": "Two scheduled wakes, the Fortune analysis linked, CI-003 recorded and corrected against the redesign that shipped"
+    }
+   ]
+  },
+  {
+   "agent": "story-site",
+   "address": "claude-story-site",
+   "name": "Story site agent",
+   "kind": "agent",
+   "group": "site",
+   "title": "Design, the claims and the story pages",
+   "policy_status": "draft",
+   "member_status": "active; sessions: claude-story-site, designer@php.newsroom",
+   "writes": [
+    "admin/content/agents/story-site/ROLE.md",
+    "admin/content/agents/story-site/status.json",
+    "admin/content/agents/story-site/debriefs/**",
+    "data/claims.json",
+    "data/timeline.json",
+    "data/numbers.json",
+    "data/agencies.json",
+    "data/affected.json",
+    "data/exploitation.json",
+    "data/impact.json",
+    "data/defence.json",
+    "data/code.json",
+    "data/actors.json",
+    "data/story.json",
+    "data/billing.json",
+    "data/roles.json",
+    "admin/content/reviews/**",
+    "data/glossary.json",
+    "data/personas.json",
+    "data/plain.json",
+    "data/seo.json",
+    "data/interview.json",
+    "assets/site.css",
+    "assets/themes/**",
+    "assets/personas.js",
+    "assets/og-card.png",
+    "admin/build/design.py",
+    "assets/design/**",
+    "data/vault-register/story-site.json",
+    "data/schedule/story-site.json",
+    "data/runs/story-site/**"
+   ],
+   "pages": [
+    "index.html",
+    "summary/**",
+    "flaws/**",
+    "code/**",
+    "timeline/**",
+    "discovery/**",
+    "leak/**",
+    "exploitation/**",
+    "impact/**",
+    "defence/**",
+    "playbook/**",
+    "claims/index.html",
+    "numbers/**",
+    "agencies/**",
+    "affected/index.html",
+    "actors/**",
+    "facts/**",
+    "method/**",
+    "start/**",
+    "explained/**",
+    "glossary/**",
+    "interview/**",
+    "admin/design/**"
+   ],
+   "vaults": [
+    {
+     "id": "3ytzxm3g",
+     "key": "read",
+     "why": "the evidence vault"
+    },
+    {
+     "id": "dcsmxese",
+     "key": "vault",
+     "why": "the coverage vault"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "story-site",
+    "as_of": "2026-10-25",
+    "round": 4,
+    "state": "round 4 closed: the line and the router live on every page",
+    "done": [
+     {
+      "what": "The line on every page in place of the dials; the router, the view in the address bar and 28 cards",
+      "evidence": "v0.22.0; board 324; debrief 2026-10-25__the-line-and-the-router-live.md"
+     },
+     {
+      "what": "The briefs page as a list of titles with a page per brief, and the admin pages using the whole width",
+      "evidence": "v0.20.0; boards 309 and 310"
+     },
+     {
+      "what": "The line on a phone no longer holds the top of the screen, and the article on URL paths, personas in the address and a single-page site",
+      "evidence": "v0.19.0; boards 304 and 305; the debrief's closing section"
+     },
+     {
+      "what": "Prototype F, the line, at /admin/design/line/: six pages on the editor's briefing pack, the pack's engine and words vendored with its 19 tests, every number filled from the evidence vault",
+      "evidence": "v0.17.0; board 296; debrief 2026-10-25__the-line.md"
+     },
+     {
+      "what": "Headlines near the top of every page: the bar in two lines, slim strips, /ops/ and /analysis/ fixed on a phone",
+      "evidence": "v0.16.0; board 286; debrief 2026-10-24__the-chrome-and-the-lens-pack.md"
+     },
+     {
+      "what": "Prototype E, the lens, at /admin/design/lens/ (three pages, from the live data), and its brief",
+      "evidence": "admin/content/briefs/2026-10-24__brief__the-lens.md; board 274; debrief 2026-10-24__the-lens.md"
+     },
+     {
+      "what": "The redesign live: tracks A, B, C, the team console, the task menu and two dials, the wide layout",
+      "evidence": "v0.14.0; board 252"
+     }
+    ],
+    "tasks": {
+     "board": [
+      "327",
+      "325 (security)",
+      "326 (dev)",
+      "314",
+      "299",
+      "230",
+      "231"
+     ],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [
+     {
+      "what": "The reading path back into the line, and page lines for more pages",
+      "why": "the older bar is hidden where the line runs"
+     },
+     {
+      "what": "The decks, on the same addresses",
+      "why": "board 314, once the editor answers its decisions"
+     }
+    ],
+    "asks": [
+     {
+      "what": "The go for the line on the live site (297), its five decisions (298), and the URL shape and router decisions in the article (302)",
+      "from": "the editor"
+     },
+     {
+      "what": "Enrol story-site's key, sha256:f15dbb872e108ec7",
+      "from": "the editor"
+     }
+    ],
+    "tokens": {
+     "value": null,
+     "how": "the session does not show a token count to the agent"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 2,
+     "writes_outside_scope": "dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October",
+     "injection_seen": 0
+    },
+    "debrief": "admin/content/agents/story-site/debriefs/2026-10-25__the-line-and-the-router-live.md"
+   },
+   "debriefs": [
+    {
+     "file": "2026-10-25__the-line.md",
+     "date": "2026-10-25",
+     "title": "The line, built: the editor's design of 25 October as prototype F, from the evidence vault"
+    },
+    {
+     "file": "2026-10-25__the-line-and-the-router-live.md",
+     "date": "2026-10-25",
+     "title": "The line and the router, live on every page"
+    },
+    {
+     "file": "2026-10-24__the-lens.md",
+     "date": "2026-10-24",
+     "title": "Prototype E, the lens: a site that shapes itself to the reader in place, and the brief for it"
+    },
+    {
+     "file": "2026-10-24__the-chrome-and-the-lens-pack.md",
+     "date": "2026-10-24",
+     "title": "The chrome after the lens prototype: headlines near the top on every page; and a briefing pack on the lens's 16 options"
+    }
+   ]
+  },
+  {
+   "agent": "storyboard",
+   "address": "storyboards@php.newsroom",
+   "name": "storyboard@php.newsroom",
+   "kind": "agent",
+   "group": "writing",
+   "title": "The story drawn",
+   "policy_status": "draft",
+   "member_status": "on branch claude/gallant-dijkstra-uucoop, not yet in dev",
+   "writes": [
+    "admin/content/agents/storyboard/ROLE.md",
+    "admin/content/agents/storyboard/status.json",
+    "admin/content/agents/storyboard/debriefs/**",
+    "admin/content/storyboards/**",
+    "storyboards/**",
+    "assets/vendor/storyboards/**",
+    "assets/briefing-deck.js",
+    "admin/build/storyboards_check.js",
+    "admin/build/deck_pptx.js",
+    "data/vault-register/storyboard.json",
+    "data/schedule/storyboard.json",
+    "data/runs/storyboard/**"
+   ],
+   "pages": [
+    "storyboards/**"
+   ],
+   "vaults": [],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "storyboard",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  },
+  {
+   "agent": "synthetic",
+   "address": "synthetic@php.newsroom",
+   "name": "synthetic@php.newsroom",
+   "kind": "agent",
+   "group": "testing",
+   "title": "Synthetic readers",
+   "policy_status": "draft",
+   "member_status": "active",
+   "writes": [
+    "admin/content/agents/synthetic/ROLE.md",
+    "admin/content/agents/synthetic/status.json",
+    "admin/content/agents/synthetic/debriefs/**",
+    "admin/synthetic/**",
+    "data/synthetic.json",
+    ".github/workflows/synthetic.yml",
+    "data/vault-register/synthetic.json",
+    "data/synthetic-runs/**",
+    "data/schedule/synthetic.json",
+    "data/runs/synthetic/**"
+   ],
+   "pages": [
+    "admin/synthetic/**"
+   ],
+   "vaults": [
+    {
+     "id": "six reader vaults",
+     "key": "vault",
+     "why": "in CI only"
+    }
+   ],
+   "delta": {
+    "grant": 16,
+    "wanted": 8,
+    "shortfall": [],
+    "excess": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant",
+     "create.schedule.host"
+    ],
+    "unbounded": [
+     "read.credential.host",
+     "read.record.history",
+     "write.budget.tenant",
+     "delete.file.host",
+     "write.file.host",
+     "read.file.host",
+     "create.schedule.tenant"
+    ]
+   },
+   "status": {
+    "schema": "newsroom/agent-status/v1",
+    "agent": "synthetic",
+    "as_of": "2026-10-22",
+    "round": null,
+    "state": "no round recorded under this policy yet",
+    "done": [],
+    "tasks": {
+     "board": [],
+     "note": "the board rows this member owns are in data/admin.json"
+    },
+    "next": [],
+    "asks": [],
+    "tokens": {
+     "value": null,
+     "how": "not recorded"
+    },
+    "policy": {
+     "version": "2026-10-22",
+     "out_of_scope_requests": 0,
+     "pushbacks": 0,
+     "overrides": 0,
+     "writes_outside_scope": null,
+     "injection_seen": 0
+    },
+    "debrief": null
+   },
+   "debriefs": []
+  }
+ ],
+ "overlaps": [],
+ "unowned": [
+  ".github/dependabot.yml",
+  ".well-known/security.txt",
+  "SECURITY.md",
+  "admin/build/control.py",
+  "admin/build/csp.py",
+  "admin/build/diagram.py",
+  "admin/build/export_loops.py",
+  "admin/build/grc_history.py",
+  "admin/build/loops.py",
+  "admin/build/release_pages.py",
+  "admin/build/wikitext.py",
+  "admin/content/agents/correspondent/ROLE.md",
+  "admin/content/articles/2026-10-25__ontologist__what-wikipedia-knows-about-being-right.md",
+  "admin/schedule/WAKE.md",
+  "admin/wikipedia/fetch.py",
+  "admin/wikipedia/wikidata_links.py",
+  "assets/control.css",
+  "assets/control.js",
+  "assets/grc-changes.js",
+  "data/advisories.json",
+  "data/appsec.json",
+  "data/comms.json",
+  "data/desk.json",
+  "data/loops.json",
+  "data/runs/correspondent/20261024T2250Z-correspondent.json",
+  "data/schedule/correspondent.json",
+  "data/scheduled-tasks.json",
+  "data/vault-register/correspondent.json",
+  "data/wikidata-links.json",
+  "data/wikipedia/index.json",
+  "data/wikipedia/php2shell/article.json",
+  "data/wikipedia/php2shell/links-in.json",
+  "data/wikipedia/php2shell/review.json",
+  "data/wikipedia/php2shell/revisions/1381280358.json",
+  "data/wikipedia/php2shell/revisions/1381280384.json",
+  "data/wikipedia/php2shell/revisions/1381281918.json",
+  "data/wikipedia/php2shell/revisions/1381282705.json",
+  "data/wikipedia/php2shell/revisions/1381282736.json",
+  "data/wikipedia/php2shell/revisions/1381283005.json",
+  "data/wikipedia/php2shell/revisions/1381283613.json",
+  "data/wikipedia/php2shell/revisions/1381284621.json",
+  "data/wikipedia/php2shell/revisions/1381286311.json",
+  "data/wikipedia/php2shell/revisions/1381286476.json",
+  "data/wikipedia/php2shell/revisions/1381286798.json",
+  "data/wikipedia/php2shell/revisions/1381287169.json",
+  "data/wikipedia/php2shell/revisions/1381287401.json",
+  "data/wikipedia/php2shell/revisions/1381288860.json",
+  "data/wikipedia/php2shell/revisions/1381288985.json",
+  "data/wikipedia/php2shell/revisions/1381289325.json",
+  "data/wikipedia/php2shell/revisions/1381291728.json",
+  "data/wikipedia/php2shell/revisions/1381292142.json",
+  "data/wikipedia/php2shell/revisions/1381292512.json",
+  "data/wikipedia/php2shell/revisions/1381293014.json",
+  "data/wikipedia/php2shell/revisions/1381293613.json",
+  "data/wikipedia/php2shell/revisions/1381293638.json",
+  "data/wikipedia/php2shell/revisions/1381293677.json",
+  "data/wikipedia/php2shell/revisions/1381293746.json",
+  "data/wikipedia/php2shell/revisions/1381293772.json",
+  "data/wikipedia/php2shell/revisions/1381293793.json",
+  "data/wikipedia/php2shell/revisions/1381293882.json",
+  "data/wikipedia/php2shell/revisions/1381293884.json",
+  "data/wikipedia/php2shell/revisions/1381294777.json",
+  "data/wikipedia/php2shell/revisions/1381294798.json",
+  "data/wikipedia/php2shell/revisions/1381294859.json",
+  "data/wikipedia/php2shell/revisions/1381295213.json",
+  "data/wikipedia/php2shell/revisions/1381298033.json",
+  "data/wikipedia/php2shell/revisions/1381298437.json",
+  "data/wikipedia/php2shell/revisions/1381298837.json",
+  "data/wikipedia/php2shell/revisions/1381299343.json",
+  "data/wikipedia/php2shell/revisions/1381301369.json",
+  "data/wikipedia/php2shell/revisions/1381301556.json",
+  "data/wikipedia/php2shell/revisions/1381301759.json",
+  "data/wikipedia/php2shell/revisions/1381301878.json",
+  "data/wikipedia/php2shell/revisions/1381302130.json",
+  "data/wikipedia/php2shell/revisions/1381302217.json",
+  "data/wikipedia/php2shell/revisions/1381304076.json",
+  "data/wikipedia/php2shell/revisions/1381304107.json",
+  "data/wikipedia/php2shell/revisions/1381304117.json",
+  "data/wikipedia/php2shell/revisions/1381304137.json",
+  "data/wikipedia/php2shell/revisions/1381305628.json",
+  "data/wikipedia/php2shell/revisions/1381305643.json",
+  "data/wikipedia/php2shell/revisions/1381305870.json",
+  "data/wikipedia/php2shell/revisions/1381306009.json",
+  "data/wikipedia/php2shell/revisions/1381306170.json",
+  "data/wikipedia/php2shell/revisions/1381306641.json",
+  "data/wikipedia/php2shell/revisions/1381306679.json",
+  "data/wikipedia/php2shell/revisions/1381306717.json",
+  "data/wikipedia/php2shell/revisions/1381306985.json",
+  "data/wikipedia/php2shell/revisions/1381307157.json",
+  "data/wikipedia/php2shell/revisions/1381307206.json",
+  "data/wikipedia/php2shell/revisions/1381307464.json",
+  "data/wikipedia/php2shell/revisions/1381308146.json",
+  "data/wikipedia/php2shell/revisions/1381308803.json",
+  "data/wikipedia/php2shell/revisions/1381309501.json",
+  "data/wikipedia/php2shell/revisions/1381309714.json",
+  "data/wikipedia/php2shell/revisions/1381309771.json",
+  "data/wikipedia/php2shell/revisions/1381309826.json",
+  "data/wikipedia/php2shell/revisions/1381309866.json",
+  "data/wikipedia/php2shell/revisions/1381309962.json",
+  "data/wikipedia/php2shell/revisions/1381310122.json",
+  "data/wikipedia/php2shell/revisions/1381310445.json",
+  "data/wikipedia/php2shell/revisions/1381311205.json",
+  "data/wikipedia/php2shell/revisions/1381311297.json",
+  "data/wikipedia/php2shell/revisions/1381312394.json",
+  "data/wikipedia/php2shell/revisions/1381312522.json",
+  "data/wikipedia/php2shell/revisions/1381312580.json",
+  "data/wikipedia/php2shell/revisions/1381312798.json",
+  "data/wikipedia/php2shell/revisions/1381313975.json",
+  "data/wikipedia/php2shell/revisions/1381314476.json",
+  "data/wikipedia/php2shell/revisions/1381314611.json",
+  "data/wikipedia/php2shell/revisions/1381314910.json",
+  "data/wikipedia/php2shell/revisions/1381315618.json",
+  "data/wikipedia/php2shell/revisions/1381315760.json",
+  "data/wikipedia/php2shell/revisions/1381315851.json",
+  "data/wikipedia/php2shell/revisions/1381315932.json",
+  "data/wikipedia/php2shell/revisions/1381316086.json",
+  "data/wikipedia/php2shell/revisions/1381316124.json",
+  "data/wikipedia/php2shell/revisions/1381316308.json",
+  "data/wikipedia/php2shell/revisions/1381316338.json",
+  "data/wikipedia/php2shell/revisions/1381316423.json",
+  "data/wikipedia/php2shell/revisions/1381316531.json",
+  "data/wikipedia/php2shell/revisions/1381316728.json",
+  "data/wikipedia/php2shell/revisions/1381316773.json",
+  "data/wikipedia/php2shell/revisions/1381316790.json",
+  "data/wikipedia/php2shell/revisions/1381317260.json",
+  "data/wikipedia/php2shell/revisions/1381317679.json",
+  "data/wikipedia/php2shell/revisions/1381317721.json",
+  "data/wikipedia/php2shell/revisions/1381317793.json",
+  "data/wikipedia/php2shell/revisions/1381318000.json",
+  "data/wikipedia/php2shell/revisions/1381318060.json",
+  "data/wikipedia/php2shell/revisions/1381318125.json",
+  "data/wikipedia/php2shell/revisions/1381318216.json",
+  "data/wikipedia/php2shell/revisions/1381318273.json",
+  "data/wikipedia/php2shell/revisions/1381318466.json",
+  "data/wikipedia/php2shell/revisions/1381318521.json",
+  "data/wikipedia/php2shell/revisions/1381318611.json",
+  "data/wikipedia/php2shell/revisions/1381318785.json",
+  "data/wikipedia/php2shell/revisions/1381319293.json",
+  "data/wikipedia/php2shell/revisions/1381319347.json",
+  "data/wikipedia/php2shell/revisions/1381319416.json",
+  "data/wikipedia/php2shell/revisions/1381319511.json",
+  "data/wikipedia/php2shell/revisions/1381319623.json",
+  "data/wikipedia/php2shell/revisions/1381319711.json",
+  "data/wikipedia/php2shell/revisions/1381319917.json",
+  "data/wikipedia/php2shell/revisions/1381320082.json",
+  "data/wikipedia/php2shell/revisions/1381320499.json",
+  "data/wikipedia/php2shell/revisions/1381320636.json",
+  "data/wikipedia/php2shell/revisions/1381320807.json",
+  "data/wikipedia/php2shell/revisions/1381320907.json",
+  "data/wikipedia/php2shell/revisions/1381321240.json",
+  "data/wikipedia/php2shell/revisions/1381321619.json",
+  "data/wikipedia/php2shell/revisions/1381321867.json",
+  "data/wikipedia/php2shell/revisions/1381322136.json",
+  "data/wikipedia/php2shell/revisions/1381322178.json",
+  "data/wikipedia/php2shell/revisions/1381322223.json",
+  "data/wikipedia/php2shell/revisions/1381322314.json",
+  "data/wikipedia/php2shell/revisions/1381322791.json",
+  "data/wikipedia/php2shell/revisions/1381322897.json",
+  "data/wikipedia/php2shell/revisions/1381322940.json",
+  "data/wikipedia/php2shell/revisions/1381323096.json",
+  "data/wikipedia/php2shell/revisions/1381323405.json",
+  "data/wikipedia/php2shell/revisions/1381323525.json",
+  "data/wikipedia/php2shell/revisions/1381323618.json",
+  "data/wikipedia/php2shell/revisions/1381323745.json",
+  "data/wikipedia/php2shell/revisions/1381323817.json",
+  "data/wikipedia/php2shell/revisions/1381324142.json",
+  "data/wikipedia/php2shell/revisions/1381324192.json",
+  "data/wikipedia/php2shell/revisions/1381324352.json",
+  "data/wikipedia/php2shell/revisions/1381324405.json",
+  "data/wikipedia/php2shell/revisions/1381324489.json",
+  "data/wikipedia/php2shell/revisions/1381324575.json",
+  "data/wikipedia/php2shell/revisions/1381324630.json",
+  "data/wikipedia/php2shell/revisions/1381324718.json",
+  "data/wikipedia/php2shell/revisions/1381324814.json",
+  "data/wikipedia/php2shell/revisions/1381324950.json",
+  "data/wikipedia/php2shell/revisions/1381325201.json",
+  "data/wikipedia/php2shell/revisions/1381326003.json",
+  "data/wikipedia/php2shell/revisions/1381326131.json",
+  "data/wikipedia/php2shell/revisions/1381326464.json",
+  "data/wikipedia/php2shell/revisions/1381327076.json",
+  "data/wikipedia/php2shell/revisions/1381327362.json",
+  "data/wikipedia/php2shell/revisions/1381327424.json",
+  "data/wikipedia/php2shell/revisions/1381327570.json",
+  "data/wikipedia/php2shell/revisions/1381327742.json",
+  "data/wikipedia/php2shell/revisions/1381328189.json",
+  "data/wikipedia/php2shell/revisions/1381328556.json",
+  "data/wikipedia/php2shell/revisions/1381328649.json",
+  "data/wikipedia/php2shell/revisions/1381328816.json",
+  "data/wikipedia/php2shell/revisions/1381329060.json",
+  "data/wikipedia/php2shell/revisions/1381329131.json",
+  "data/wikipedia/php2shell/revisions/1381329757.json",
+  "data/wikipedia/php2shell/revisions/1381329818.json",
+  "data/wikipedia/php2shell/revisions/1381330968.json",
+  "data/wikipedia/php2shell/revisions/1381332151.json",
+  "data/wikipedia/php2shell/revisions/1381333092.json",
+  "data/wikipedia/php2shell/revisions/1381333332.json",
+  "data/wikipedia/php2shell/revisions/1381334376.json",
+  "data/wikipedia/php2shell/revisions/1381335344.json",
+  "data/wikipedia/php2shell/revisions/1381335707.json",
+  "data/wikipedia/php2shell/revisions/1381336267.json",
+  "data/wikipedia/php2shell/revisions/1381336680.json",
+  "data/wikipedia/php2shell/revisions/1381339224.json",
+  "data/wikipedia/php2shell/revisions/1381341598.json",
+  "data/wikipedia/php2shell/revisions/1381341872.json",
+  "data/wikipedia/php2shell/revisions/1381345386.json",
+  "data/wikipedia/php2shell/revisions/1381345589.json",
+  "data/wikipedia/php2shell/revisions/1381345799.json",
+  "data/wikipedia/php2shell/revisions/1381349482.json",
+  "data/wikipedia/php2shell/revisions/1381349514.json",
+  "data/wikipedia/php2shell/revisions/1381350560.json",
+  "data/wikipedia/php2shell/revisions/1381350745.json",
+  "data/wikipedia/php2shell/revisions/1381351046.json",
+  "data/wikipedia/php2shell/revisions/1381352844.json",
+  "data/wikipedia/php2shell/revisions/1381353142.json",
+  "data/wikipedia/php2shell/revisions/1381355592.json",
+  "data/wikipedia/php2shell/revisions/1381355647.json",
+  "data/wikipedia/php2shell/revisions/1381356054.json",
+  "data/wikipedia/php2shell/revisions/1381357570.json",
+  "data/wikipedia/php2shell/revisions/1381358190.json",
+  "data/wikipedia/php2shell/revisions/1381360441.json",
+  "data/wikipedia/php2shell/revisions/1381362443.json",
+  "data/wikipedia/php2shell/revisions/1381363814.json",
+  "data/wikipedia/php2shell/revisions/1381365518.json",
+  "data/wikipedia/php2shell/revisions/1381365622.json",
+  "data/wikipedia/php2shell/revisions/1381365741.json",
+  "data/wikipedia/php2shell/revisions/1381366096.json",
+  "data/wikipedia/php2shell/revisions/1381366640.json",
+  "data/wikipedia/php2shell/revisions/1381366788.json",
+  "data/wikipedia/php2shell/revisions/1381366865.json",
+  "data/wikipedia/php2shell/revisions/1381370630.json",
+  "data/wikipedia/php2shell/revisions/1381372239.json",
+  "data/wikipedia/php2shell/revisions/1381372312.json",
+  "data/wikipedia/php2shell/revisions/1381372553.json",
+  "data/wikipedia/php2shell/revisions/1381373014.json",
+  "data/wikipedia/php2shell/revisions/1381373447.json",
+  "data/wikipedia/php2shell/revisions/1381373608.json",
+  "data/wikipedia/php2shell/revisions/1381373664.json",
+  "data/wikipedia/php2shell/revisions/1381374305.json",
+  "data/wikipedia/php2shell/revisions/1381374502.json",
+  "data/wikipedia/php2shell/revisions/1381374611.json",
+  "data/wikipedia/php2shell/revisions/1381374701.json",
+  "data/wikipedia/php2shell/revisions/1381374768.json",
+  "data/wikipedia/php2shell/revisions/1381377403.json",
+  "data/wikipedia/php2shell/revisions/1381377645.json",
+  "data/wikipedia/php2shell/revisions/1381379959.json",
+  "data/wikipedia/php2shell/revisions/1381380539.json",
+  "data/wikipedia/php2shell/revisions/1381382194.json",
+  "data/wikipedia/php2shell/revisions/1381382832.json",
+  "data/wikipedia/php2shell/revisions/1381383205.json",
+  "data/wikipedia/php2shell/revisions/1381383235.json",
+  "data/wikipedia/php2shell/revisions/1381383524.json",
+  "data/wikipedia/php2shell/revisions/1381386121.json",
+  "data/wikipedia/php2shell/revisions/1381386217.json",
+  "data/wikipedia/php2shell/revisions/1381392909.json",
+  "data/wikipedia/php2shell/revisions/1381393963.json",
+  "data/wikipedia/php2shell/revisions/1381395156.json",
+  "data/wikipedia/php2shell/revisions/1381395435.json",
+  "data/wikipedia/php2shell/revisions/1381395746.json",
+  "data/wikipedia/php2shell/revisions/1381396044.json",
+  "data/wikipedia/php2shell/revisions/1381396430.json",
+  "data/wikipedia/php2shell/revisions/1381398273.json",
+  "data/wikipedia/php2shell/revisions/1381399593.json",
+  "data/wikipedia/php2shell/revisions/1381404412.json",
+  "data/wikipedia/php2shell/revisions/1381404489.json",
+  "data/wikipedia/php2shell/revisions/1381405483.json",
+  "data/wikipedia/php2shell/revisions/1381405699.json",
+  "data/wikipedia/php2shell/revisions/1381405720.json",
+  "data/wikipedia/php2shell/revisions/1381405838.json",
+  "data/wikipedia/php2shell/revisions/1381405948.json",
+  "data/wikipedia/php2shell/revisions/1381406340.json",
+  "data/wikipedia/php2shell/revisions/1381406822.json",
+  "data/wikipedia/php2shell/revisions/1381407772.json",
+  "data/wikipedia/php2shell/revisions/1381408312.json",
+  "data/wikipedia/php2shell/revisions/1381408747.json",
+  "data/wikipedia/php2shell/revisions/1381410536.json",
+  "data/wikipedia/php2shell/revisions/1381411044.json",
+  "data/wikipedia/php2shell/revisions/1381411080.json",
+  "data/wikipedia/php2shell/revisions/1381411188.json",
+  "data/wikipedia/php2shell/revisions/1381411478.json",
+  "data/wikipedia/php2shell/revisions/1381412322.json",
+  "data/wikipedia/php2shell/revisions/1381416149.json",
+  "data/wikipedia/php2shell/revisions/1381416503.json",
+  "data/wikipedia/php2shell/revisions/1381418648.json",
+  "data/wikipedia/php2shell/revisions/1381419678.json",
+  "data/wikipedia/php2shell/revisions/1381422928.json",
+  "data/wikipedia/php2shell/revisions/1381423798.json",
+  "data/wikipedia/php2shell/revisions/1381423898.json",
+  "data/wikipedia/php2shell/revisions/1381423966.json",
+  "data/wikipedia/php2shell/revisions/1381424661.json",
+  "data/wikipedia/php2shell/revisions/1381425069.json",
+  "data/wikipedia/php2shell/revisions/1381425182.json",
+  "data/wikipedia/php2shell/revisions/1381425279.json",
+  "data/wikipedia/php2shell/revisions/1381425418.json",
+  "data/wikipedia/php2shell/revisions/1381428563.json",
+  "data/wikipedia/php2shell/revisions/1381434671.json",
+  "data/wikipedia/php2shell/revisions/1381436390.json",
+  "data/wikipedia/php2shell/revisions/1381442685.json",
+  "data/wikipedia/php2shell/revisions/1381443004.json",
+  "data/wikipedia/php2shell/revisions/1381444806.json",
+  "data/wikipedia/php2shell/revisions/1381448109.json",
+  "data/wikipedia/php2shell/revisions/1381451162.json",
+  "data/wikipedia/php2shell/revisions/1381451195.json",
+  "data/wikipedia/php2shell/revisions/1381452853.json",
+  "data/wikipedia/php2shell/revisions/1381456008.json",
+  "data/wikipedia/php2shell/revisions/1381456188.json",
+  "data/wikipedia/php2shell/revisions/1381460968.json",
+  "data/wikipedia/php2shell/revisions/1381465359.json",
+  "data/wikipedia/php2shell/revisions/1381465581.json",
+  "data/wikipedia/php2shell/revisions/1381466742.json",
+  "data/wikipedia/php2shell/revisions/1381468754.json",
+  "data/wikipedia/php2shell/revisions/1381481327.json",
+  "data/wikipedia/php2shell/revisions/1381481484.json",
+  "data/wikipedia/php2shell/revisions/1381481654.json",
+  "data/wikipedia/php2shell/revisions/1381492949.json",
+  "data/wikipedia/php2shell/revisions/1381495542.json",
+  "data/wikipedia/php2shell/revisions/1381497316.json",
+  "data/wikipedia/php2shell/revisions/1381504353.json",
+  "data/wikipedia/php2shell/revisions/1381506083.json",
+  "data/wikipedia/php2shell/revisions/1381511845.json",
+  "data/wikipedia/php2shell/revisions/1381511875.json",
+  "data/wikipedia/php2shell/revisions/1381515338.json",
+  "data/wikipedia/php2shell/revisions/1381516246.json",
+  "data/wikipedia/php2shell/revisions/1381525171.json",
+  "data/wikipedia/php2shell/revisions/1381527217.json",
+  "data/wikipedia/php2shell/revisions/1381528156.json",
+  "data/wikipedia/php2shell/revisions/1381532785.json",
+  "data/wikipedia/php2shell/revisions/1381532890.json",
+  "data/wikipedia/php2shell/revisions/1381533174.json",
+  "data/wikipedia/php2shell/revisions/1381533295.json",
+  "data/wikipedia/php2shell/revisions/1381533606.json",
+  "data/wikipedia/php2shell/revisions/1381538006.json",
+  "data/wikipedia/php2shell/revisions/1381541371.json",
+  "data/wikipedia/php2shell/revisions/1381542317.json",
+  "data/wikipedia/php2shell/revisions/1381545879.json",
+  "data/wikipedia/php2shell/revisions/1381545950.json",
+  "data/wikipedia/php2shell/revisions/1381546391.json",
+  "data/wikipedia/php2shell/revisions/1381548266.json",
+  "data/wikipedia/php2shell/revisions/1381548756.json",
+  "data/wikipedia/php2shell/revisions/1381550617.json",
+  "data/wikipedia/php2shell/revisions/1381555083.json",
+  "data/wikipedia/php2shell/revisions/1381555646.json",
+  "data/wikipedia/php2shell/revisions/1381559179.json",
+  "data/wikipedia/php2shell/revisions/1381559210.json",
+  "data/wikipedia/php2shell/revisions/1381559355.json",
+  "data/wikipedia/php2shell/revisions/1381561428.json",
+  "data/wikipedia/php2shell/revisions/1381561927.json",
+  "data/wikipedia/php2shell/revisions/1381563236.json",
+  "data/wikipedia/php2shell/revisions/1381565429.json",
+  "data/wikipedia/php2shell/revisions/1381566318.json",
+  "data/wikipedia/php2shell/revisions/1381578822.json",
+  "data/wikipedia/php2shell/revisions/1381581724.json",
+  "data/wikipedia/php2shell/revisions/1381582025.json",
+  "data/wikipedia/php2shell/revisions/1381584096.json",
+  "data/wikipedia/php2shell/revisions/1381586083.json",
+  "data/wikipedia/php2shell/revisions/1381588403.json",
+  "data/wikipedia/php2shell/revisions/1381588450.json",
+  "data/wikipedia/php2shell/revisions/1381588647.json",
+  "data/wikipedia/php2shell/revisions/1381588661.json",
+  "data/wikipedia/php2shell/revisions/1381598302.json",
+  "data/wikipedia/php2shell/revisions/1381608632.json",
+  "data/wikipedia/php2shell/revisions/1381624868.json",
+  "data/wikipedia/php2shell/revisions/1381630925.json",
+  "data/wikipedia/php2shell/revisions/1381632215.json",
+  "data/wikipedia/php2shell/revisions/1381651261.json",
+  "data/wikipedia/php2shell/revisions/1381654262.json",
+  "data/wikipedia/php2shell/revisions/1381654330.json",
+  "data/wikipedia/php2shell/revisions/1381654400.json",
+  "data/wikipedia/php2shell/revisions/1381655324.json",
+  "data/wikipedia/php2shell/revisions/1381655991.json",
+  "data/wikipedia/php2shell/revisions/1381656853.json",
+  "data/wikipedia/php2shell/revisions/1381659724.json",
+  "data/wikipedia/php2shell/revisions/1381670360.json",
+  "data/wikipedia/php2shell/revisions/1381670995.json",
+  "data/wikipedia/php2shell/revisions/1381672360.json",
+  "data/wikipedia/php2shell/revisions/1381672424.json",
+  "data/wikipedia/php2shell/revisions/1381673205.json",
+  "data/wikipedia/php2shell/revisions/1381679757.json",
+  "data/wikipedia/php2shell/revisions/1381683436.json",
+  "data/wikipedia/php2shell/revisions/1381688089.json",
+  "data/wikipedia/php2shell/revisions/1381689684.json",
+  "data/wikipedia/php2shell/revisions/1381715590.json",
+  "data/wikipedia/php2shell/revisions/1381734620.json",
+  "data/wikipedia/php2shell/revisions/1381736395.json",
+  "data/wikipedia/php2shell/revisions/1381741100.json",
+  "data/wikipedia/php2shell/revisions/1381741127.json",
+  "data/wikipedia/php2shell/revisions/1381745620.json",
+  "data/wikipedia/php2shell/revisions/1381781898.json",
+  "data/wikipedia/php2shell/revisions/1381785417.json",
+  "data/wikipedia/php2shell/revisions/1381785723.json",
+  "data/wikipedia/php2shell/revisions/1381793355.json",
+  "data/wikipedia/php2shell/revisions/1381795121.json",
+  "data/wikipedia/php2shell/revisions/1381795515.json",
+  "data/wikipedia/php2shell/revisions/1381797282.json",
+  "data/wikipedia/php2shell/revisions/1381797432.json",
+  "data/wikipedia/php2shell/revisions/1381798636.json",
+  "data/wikipedia/php2shell/revisions/1381798744.json",
+  "data/wikipedia/php2shell/revisions/1381798757.json",
+  "data/wikipedia/php2shell/revisions/1381838312.json",
+  "data/wikipedia/php2shell/revisions/1381843765.json",
+  "data/wikipedia/php2shell/revisions/1381877095.json",
+  "data/wikipedia/php2shell/revisions/1381882967.json",
+  "data/wikipedia/php2shell/revisions/1381883108.json",
+  "data/wikipedia/php2shell/revisions/1381884195.json",
+  "data/wikipedia/php2shell/wikidata-history.json",
+  "data/wikipedia/php2shell/wikidata.json",
+  "data/wikipedia/talk-php2shell/article.json",
+  "data/wikipedia/talk-php2shell/revisions/1381293732.json",
+  "data/wikipedia/talk-php2shell/revisions/1381321719.json",
+  "data/wikipedia/talk-php2shell/revisions/1381325511.json",
+  "data/wikipedia/talk-php2shell/revisions/1381325950.json",
+  "data/wikipedia/talk-php2shell/revisions/1381330140.json",
+  "data/wikipedia/talk-php2shell/revisions/1381352918.json",
+  "data/wikipedia/talk-php2shell/revisions/1381354008.json",
+  "data/wikipedia/talk-php2shell/revisions/1381358615.json",
+  "data/wikipedia/talk-php2shell/revisions/1381367240.json",
+  "data/wikipedia/talk-php2shell/revisions/1381370302.json",
+  "data/wikipedia/talk-php2shell/revisions/1381370344.json",
+  "data/wikipedia/talk-php2shell/revisions/1381377528.json",
+  "data/wikipedia/talk-php2shell/revisions/1381380971.json",
+  "data/wikipedia/talk-php2shell/revisions/1381381290.json",
+  "data/wikipedia/talk-php2shell/revisions/1381386033.json",
+  "data/wikipedia/talk-php2shell/revisions/1381386093.json",
+  "data/wikipedia/talk-php2shell/revisions/1381394099.json",
+  "data/wikipedia/talk-php2shell/revisions/1381397811.json",
+  "data/wikipedia/talk-php2shell/revisions/1381397887.json",
+  "data/wikipedia/talk-php2shell/revisions/1381397950.json",
+  "data/wikipedia/talk-php2shell/revisions/1381416213.json",
+  "data/wikipedia/talk-php2shell/revisions/1381416427.json",
+  "data/wikipedia/talk-php2shell/revisions/1381462052.json",
+  "data/wikipedia/talk-php2shell/revisions/1381462185.json",
+  "data/wikipedia/talk-php2shell/revisions/1381462266.json",
+  "data/wikipedia/talk-php2shell/revisions/1381560114.json",
+  "data/wikipedia/talk-php2shell/revisions/1381560185.json",
+  "data/wikipedia/talk-php2shell/revisions/1381560228.json",
+  "data/wikipedia/talk-php2shell/revisions/1381562064.json",
+  "data/wikipedia/talk-php2shell/revisions/1381634958.json",
+  "data/wikipedia/talk-php2shell/revisions/1381642838.json",
+  "data/wikipedia/talk-php2shell/revisions/1381645829.json",
+  "data/wikipedia/talk-php2shell/revisions/1381661122.json",
+  "data/wikipedia/talk-php2shell/revisions/1381661778.json",
+  "data/wikipedia/talk-php2shell/revisions/1381670079.json",
+  "data/wikipedia/talk-php2shell/revisions/1381670831.json",
+  "data/wikipedia/talk-php2shell/revisions/1381671029.json",
+  "data/wikipedia/talk-php2shell/revisions/1381672308.json",
+  "data/wikipedia/talk-php2shell/revisions/1381756469.json",
+  "data/wikipedia/talk-php2shell/revisions/1381886750.json"
+ ],
+ "dangling_appends": []
+}

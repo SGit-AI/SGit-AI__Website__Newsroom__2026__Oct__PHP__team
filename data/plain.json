@@ -1,0 +1,319 @@
+{
+ "note": "The plain-English layer: the front page's headline, the five questions everyone asks, the story in five moments, and a one-line plain summary for every page. Every factual sentence cites the vault slugs it rests on; the gate refuses an unknown slug.",
+ "headline": "Two serious security flaws in PHP, the software behind many of the world's websites",
+ "deck": "PHP is the software that WordPress and millions of other websites run on. A fix came out on 21 October 2026. Government cyber agencies have told organisations to install it now; the two US agencies add: take websites offline if you cannot. Phones and personal computers are not affected.",
+ "cards": [
+  {
+   "q": "What happened?",
+   "a": "Two flaws were found in PHP itself, the engine that runs WordPress, Drupal, Wikipedia's software and millions of other sites. Either lets anyone on the internet, with no password, run commands on the web server. The fix came out on 21 October 2026.",
+   "href": "explained/index.html",
+   "sources": [
+    "php-net-advisory",
+    "cve-cve-2026-109618",
+    "cve-cve-2026-109619"
+   ]
+  },
+  {
+   "q": "Does it affect me?",
+   "a": "Not your phone or laptop: the flaw is on web servers. It affects organisations that run websites on PHP, and their visitors only indirectly. If you run a website, the question is whether PHP on its server has been updated and restarted.",
+   "href": "affected/index.html",
+   "sources": [
+    "php-net-advisory",
+    "ncsc-news-php"
+   ]
+  },
+  {
+   "q": "Has anyone been hacked?",
+   "a": "Attackers have been trying: Cloudflare reports millions of attempts and Amazon a honeypot hit four days before disclosure. But as of 09:35 UTC on 25 October no named organisation has said it was broken into through this flaw, and CISA has not listed either flaw as exploited. One company in Japan is investigating a break-in without saying how it happened, and a Czech university says it stopped an attack.",
+   "href": "impact/index.html",
+   "sources": [
+    "x-eastdakota-php2shell-stats",
+    "thehackernews-php2shell-4days",
+    "cisa-kev-json"
+   ]
+  },
+  {
+   "q": "Why did websites go offline?",
+   "a": "As a precaution. The US NSA and CISA said take systems offline if you cannot update them, and several governments and companies did, including Dutch government services such as DigiD. Offline is a decision, not evidence of a hack.",
+   "href": "agencies/index.html",
+   "sources": [
+    "nsa-x-2112903220209098897",
+    "cisa-alert-php-20261021",
+    "rijksoverheid-ncsc-php-news"
+   ]
+  },
+  {
+   "q": "What should be done?",
+   "a": "Update PHP to 8.5.12, 8.4.27, 8.3.36 or 8.2.35 (or the fixed package from your Linux distribution) and restart it. If that cannot happen today, apply the temporary settings, put a firewall in front, and as a last resort take the system offline.",
+   "href": "playbook/index.html",
+   "sources": [
+    "php-net-advisory",
+    "cisa-alert-php-20261021",
+    "ncsc-news-php"
+   ]
+  }
+ ],
+ "moments": [
+  {
+   "when": "2024",
+   "what": "An audit spots the out-of-memory weakness. Nobody can show it is exploitable, so it is left.",
+   "tone": "mute",
+   "href": "context/index.html",
+   "sources": [
+    "php-foundation-blog-security-release"
+   ]
+  },
+  {
+   "when": "Aug 2026",
+   "what": "Three teams using AI turn it into working attacks within three weeks and report them to PHP.",
+   "tone": "info",
+   "href": "discovery/index.html",
+   "sources": [
+    "calif-php2shell",
+    "wiz-blog-php2shell",
+    "php-foundation-blog-security-release"
+   ]
+  },
+  {
+   "when": "20 Oct",
+   "what": "The secret leaks: the CVE numbers circulate two days early, with a wrong severity score.",
+   "tone": "warn",
+   "href": "leak/index.html",
+   "sources": [
+    "php-foundation-blog-security-release"
+   ]
+  },
+  {
+   "when": "21 Oct",
+   "what": "PHP releases the fix a day ahead of plan. Firewall vendors already have rules live.",
+   "tone": "ok",
+   "href": "flaws/index.html",
+   "sources": [
+    "php-net-advisory",
+    "cloudflare-blog-php2shell-waf"
+   ]
+  },
+  {
+   "when": "22 Oct",
+   "what": "Agencies warn: update, or take systems offline. Sites go dark as a precaution.",
+   "tone": "bad",
+   "href": "agencies/index.html",
+   "sources": [
+    "nsa-x-2112903220209098897",
+    "cisa-alert-php-20261021",
+    "bbc-live-ckgel5xp2xv9t"
+   ]
+  }
+ ],
+ "pages": {
+  "flaws/index.html": "Two bugs deep inside PHP, in how it cleans up after an error. Both can be triggered by anyone who can reach a PHP website. Both are fixed in the same four releases.",
+  "code/index.html": "Where exactly the bug sits in PHP's own source code, and what the fix changed. Technical; the short version is that PHP used to abandon work mid-way when memory ran out, and now it stops safely.",
+  "timeline/index.html": "Everything that happened, in order, from a 2024 audit to this morning, each line tied to the page that says so.",
+  "discovery/index.html": "Who found the flaws (three research teams, all using AI help) and what the AI actually did, as far as anyone has said.",
+  "leak/index.html": "The plan was to publish the fix and the details together on 22 October. The secret leaked on the 20th; this page is the hour-by-hour account.",
+  "exploitation/index.html": "Every sign of attackers trying to use the flaws, in order. Lots of attempts; no confirmed break-in of a named organisation yet.",
+  "impact/index.html": "Two lists: who took websites offline (many, as a precaution), and who was actually broken into (no named organisation through this flaw, as of 09:35 UTC on 25 October).",
+  "defence/index.html": "Can these attacks be blocked or spotted? Yes at the edge and on the server, mostly; no from ordinary web logs alone.",
+  "context/index.html": "How php2shell compares with famous past flaws such as Heartbleed and Log4Shell, using the official record of which ones were exploited.",
+  "playbook/index.html": "What an organisation that runs PHP should do, step by step, merged from every agency's advice.",
+  "claims/index.html": "Every statement made about the story, who made it, and how far it can be trusted, with links to the evidence.",
+  "numbers/index.html": "The big numbers in the headlines measure different things. 70% is a share of websites, not of the Internet; 2.6 million is a count of servers.",
+  "agencies/index.html": "What sixteen government cyber agencies told organisations to do. All say update; they disagree on whether to take systems offline.",
+  "affected/index.html": "Which PHP versions, which server setups and which software products are affected.",
+  "affected/software.html": "The Dutch government's list of software products and whether each is affected. A reference table.",
+  "sources/index.html": "Every web page this site relied on, with the time it was saved and a fingerprint proving it has not been altered since.",
+  "actors/index.html": "Every organisation and person quoted, and what each one says.",
+  "graph/index.html": "Who said each thing first, who passed it on, and which saved pages it rests on. Click anything to walk from it to what it is connected to.",
+  "method/index.html": "How this site works: save every source, fingerprint it, attach every statement to its evidence, and rebuild the site from that.",
+  "explained/index.html": "",
+  "glossary/index.html": "",
+  "start/index.html": ""
+ },
+ "aka": "You may also see this called php2shell, or by its two official reference numbers, CVE-2026-109618 and CVE-2026-109619.",
+ "now": [
+  {
+   "text": "A fix has been available since 21 October. Organisations that run websites on PHP are installing it.",
+   "sources": [
+    "php-net-advisory"
+   ]
+  },
+  {
+   "text": "Every government cyber agency says: install the fix now. If you cannot, the US agencies say take the website offline; the UK puts that after temporary mitigations, and several European agencies say cut it off from the public internet first.",
+   "sources": [
+    "cisa-alert-php-20261021",
+    "ncsc-news-php",
+    "certeu-sa-2026-018",
+    "nsa-x-2112903220209098897"
+   ]
+  },
+  {
+   "text": "Attackers are trying to use the flaws, in large numbers: millions of attempts by one internet security company's count. As of 09:35 UTC on 25 October, no named organisation has said it was broken into through this flaw. The one security company that had claimed a successful break-in, Sophos, withdrew it; US banks and the large crypto platforms report none.",
+   "sources": [
+    "x-eastdakota-php2shell-stats",
+    "cisa-kev-json",
+    "paperjam-article-php2shell-des-milliers-de-sites",
+    "cybersecuritynews-critical-php2shell-exploit-code",
+    "americanbanker-news-banks-dodge-early-damage-from-php2s",
+    "btc-echo-news-krypto-boersen-akut-bedroht-kritisc"
+   ]
+  },
+  {
+   "text": "The advice is moving from 'install the fix' to 'and check whether you were already broken into'. Singapore's and Luxembourg's authorities now say so.",
+   "sources": [
+    "channelnewsasia-singapore-php-vulnerabilities-csa-singapore-firms-cybersecur",
+    "paperjam-article-php2shell-des-milliers-de-sites"
+   ]
+  },
+  {
+   "text": "Some organisations took websites offline as a precaution: the Dutch government took its cyber agency's own site offline, and Dutch press reported the DigiD login down too. Almost all of them are back.",
+   "sources": [
+    "rijksoverheid-ncsc-php-news",
+    "tpo-nl-digid-offline",
+    "phpocalypse-tracker-sites-csv",
+    "securitynl-misbruik-gemeld"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "text": "There are two flaws. Both are in PHP itself, underneath every website that uses it, and both are rated critical: 9.2 out of 10.",
+   "status": "confirmed",
+   "sources": [
+    "cve-cve-2026-109618",
+    "cve-cve-2026-109619",
+    "php-net-advisory"
+   ],
+   "href": "flaws/index.html"
+  },
+  {
+   "text": "Someone anywhere on the internet, with no password, can use them against a website that has not installed the fix, and make its server run their own commands. Researchers proved this on the most traditional way of running PHP; for other setups it is likely but less certain.",
+   "status": "confirmed",
+   "sources": [
+    "github-ghsa-w8hw-w9fx-j79w",
+    "github-ghsa-6wmf-4rv5-p3rp",
+    "php-foundation-blog-security-release"
+   ],
+   "href": "flaws/index.html"
+  },
+  {
+   "text": "The fix is in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, released on 21 October 2026. Websites on PHP 8.1 or older have no ready-made fix.",
+   "status": "confirmed",
+   "sources": [
+    "php-net-advisory",
+    "github-php-src-branch-7.4-backport"
+   ],
+   "href": "affected/index.html"
+  },
+  {
+   "text": "The weak spot was first noticed in 2024 and left alone, because nobody could show it was dangerous. In August 2026, three research teams using AI tools showed that it was, and told the PHP project.",
+   "status": "reported",
+   "sources": [
+    "php-foundation-blog-security-release",
+    "calif-php2shell",
+    "wiz-blog-php2shell"
+   ],
+   "href": "discovery/index.html"
+  },
+  {
+   "text": "The plan was to announce the fix on 22 October. Word leaked out on 20 October, so it was released a day early.",
+   "status": "confirmed",
+   "sources": [
+    "php-foundation-blog-security-release",
+    "daubois-blog-php2shell-rumors"
+   ],
+   "href": "leak/index.html"
+  },
+  {
+   "text": "Attackers are trying, in large numbers: one internet security company reports millions of attempts, and Amazon reports a decoy server hit four days before the announcement. No named organisation has said it was broken into through these flaws, as of 09:35 UTC on 25 October, and the US government's official list of flaws known to be used in attacks did not include them when last checked.",
+   "status": "reported",
+   "sources": [
+    "x-eastdakota-php2shell-stats",
+    "thehackernews-php2shell-4days",
+    "paperjam-article-php2shell-des-milliers-de-sites",
+    "cisa-kev-json",
+    "cisa-kev-catalog"
+   ],
+   "href": "exploitation/index.html"
+  },
+  {
+   "text": "Every agency says install the fix. They disagree on what to do if you cannot: the US says take the website offline, the UK lists that as a last resort, several European agencies say cut it off from the public internet, and some say nothing about it.",
+   "status": "confirmed",
+   "sources": [
+    "cisa-alert-php-20261021",
+    "ncsc-news-php",
+    "certeu-sa-2026-018",
+    "acsc-alert-php"
+   ],
+   "href": "agencies/index.html"
+  },
+  {
+   "text": "The headline '70% of the Internet' is not what it sounds like. It is roughly the share of websites whose server-side language is known that use PHP, which is what the same company's own article says; nobody has measured how many are actually at risk.",
+   "status": "confirmed",
+   "sources": [
+    "wiz-blog-php2shell",
+    "x-wiz-io-php2shell",
+    "cloudflare-blog-php2shell-waf"
+   ],
+   "href": "numbers/index.html"
+  }
+ ],
+ "unknown": [
+  {
+   "text": "Whether any website was actually broken into before it installed the fix.",
+   "href": "impact/index.html"
+  },
+  {
+   "text": "Whether the fix is complete. A report on 21 October suggested it may not be; the PHP security team replied on the mailing list on 22 October, and this site will settle the question once that reply is saved here. Separately, on 23 October PHP published an advisory for another flaw, CVE-2026-115560, which affects fully patched releases and needs a rare session setting (reported by Cloudflare, SOCRadar and The Hacker News).",
+   "href": "code/index.html"
+  },
+  {
+   "text": "Who leaked the news on 20 October, and where.",
+   "href": "leak/index.html"
+  },
+  {
+   "text": "How many websites went offline, and why. The reports this site holds range from a single site to a whole government's platform; a community tracker lists about fifty sites that went dark and came back. Nobody has counted them all.",
+   "href": "impact/index.html"
+  },
+  {
+   "text": "Where the 70% figure comes from. None of the pages that use it says how it was measured.",
+   "href": "numbers/index.html"
+  }
+ ],
+ "latest": [
+  {
+   "when": "23 Oct, 10:03 UTC",
+   "text": "Die Presse: as of 12:03 Vienna time (10:03 UTC) on 23 October no successful attack via the PHP flaws was known in Austria.",
+   "sources": [
+    "diepresse-41383717-die-php-sicherheitsluecke-ist-a"
+   ]
+  },
+  {
+   "when": "23 Oct, 09:16 UTC",
+   "text": "Japan's RainForest reports that its honeypots recorded 21 php2shell-related requests from 14 different addresses: attempts, not break-ins.",
+   "sources": [
+    "voix-business-cards-rainforest-ip-activity-an"
+   ]
+  },
+  {
+   "when": "23 Oct, 07:58 UTC",
+   "text": "IT Social: the update closes the flaw, but obliges a hunt for possible compromises; the published figures count attempts, not intrusions.",
+   "sources": [
+    "itsocial-cybersecurite-cybersecurite-articles-php"
+   ]
+  },
+  {
+   "when": "23 Oct",
+   "text": "American Banker: no US bank or credit union has publicly reported a compromise, despite millions of attempts.",
+   "sources": [
+    "americanbanker-news-banks-dodge-early-damage-from-php2s"
+   ]
+  },
+  {
+   "when": "22 Oct, 21:21 UTC",
+   "text": "Sophos withdraws an earlier claim of a successful compromise: its data shows scanning and a few failed attempts, and a botnet payload it saw was blocked.",
+   "sources": [
+    "cybersecuritynews-critical-php2shell-exploit-code"
+   ]
+  }
+ ]
+}

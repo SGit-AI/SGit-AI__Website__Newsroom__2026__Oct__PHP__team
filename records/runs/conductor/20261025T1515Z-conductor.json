@@ -1,0 +1,14 @@
+{
+ "run": "20261025T1515Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-25T15:15:26Z",
+ "finished": "2026-10-25T15:16:40Z",
+ "outcome": "ok",
+ "summary": "Full pass (15:15 London). Dev head c6cc961740bd (v0.21.7). Ingested 2 run records from runs/ branches (curator 13:02, pulse 14:52): the publish path works. Wiring check of every scheduled task: 11 agents fire into their own sessions with the WAKE.md prompt; fact-check still has its old prompt; the journalist's and correspondent's tasks still start a new session each time. Updated this session's own task to the WAKE.md prompt. Researcher: no run record published yet. Status page schedules rewritten as the wiring table.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "c6cc961740bd1096742c082642bc25cd8d5a3f4c"
+}

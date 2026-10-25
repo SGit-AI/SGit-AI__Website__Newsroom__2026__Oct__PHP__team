@@ -1,0 +1,16 @@
+{
+ "run": "20261024T0613Z-librarian",
+ "agent": "librarian",
+ "started": "2026-10-24T06:13:40Z",
+ "finished": "2026-10-24T06:22:40Z",
+ "outcome": "ok",
+ "summary": "First scheduled pass: dev taken in at v0.14.6; 0 overlaps; data/desk.json, /analysis/ and /ops/ sent to abp@ for owners (board 256); the journalist's full pass across six desks raised to the editor (257); the card's contradiction with its prompt raised (258); 'Is PHP really most websites?' corrected; the scope check ignores the release's version files.",
+ "read": [
+  "20261024T0005Z__conductor__to-librarian__your-proposed-schedule-a-card-in-data-sc",
+  "20261024T0005Z__conductor__to-all__schedules-runs-and-messages-move-to-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null
+}

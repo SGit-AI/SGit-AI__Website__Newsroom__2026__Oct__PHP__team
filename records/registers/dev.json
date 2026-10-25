@@ -1,0 +1,87 @@
+{
+ "agent": "dev@php.newsroom",
+ "member": "dev",
+ "note": "Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed by dev@php.newsroom on 23 October 2026.",
+ "vaults": [
+  {
+   "id": "84wr8mib",
+   "what": "The telemetry vault: anonymous page events through a write-only lane",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the editor on 22 October (board 013)"
+  },
+  {
+   "id": "wgeiqabu",
+   "what": "The subscriptions vault: subscription requests through a write-only lane",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the editor on 22 October (board 013)"
+  },
+  {
+   "id": "0cfkdcvh",
+   "what": "The public telemetry stats: curated counts and a world map, its read key published, written at every drain",
+   "created": "2026-10-23",
+   "key_sealed_to_root": "sealed to the root on 23 October (pki-agent seal --from-vault)"
+  },
+  {
+   "id": "i4diy82d",
+   "what": "The telemetry dashboard: a vault app over the telemetry vault (superseded by 5wnsr5h8)",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault)"
+  },
+  {
+   "id": "5wnsr5h8",
+   "what": "The telemetry application (v0.4.0), versioned in a vault of its own; the telemetry vault links it",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "sealed to the root on 22 October (pki-agent seal --from-vault)"
+  }
+ ],
+ "holds": [
+  {
+   "id": "84wr8mib",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "wgeiqabu",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "i4diy82d",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "5wnsr5h8",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "0cfkdcvh",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-23"
+  },
+  {
+   "id": "84wr8mib",
+   "key": "append token",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "wgeiqabu",
+   "key": "append token",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "3ytzxm3g",
+   "key": "read key",
+   "from": "published on the site",
+   "since": "2026-10-22"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "run": "20261024T1520Z-desk",
+ "agent": "desk",
+ "started": "2026-10-24T15:20:46Z",
+ "finished": "2026-10-24T15:25:55Z",
+ "outcome": "ok",
+ "summary": "Afternoon check: Right now's stamp newer than its text (board 276); R-012 TechTarget drafted as the origin of R-011; the editor's queue ranked, dev's permission prompt first",
+ "read": [
+  "20261024T1157Z__security__to-all__application-security-a-self-check-after"
+ ],
+ "sent": [
+  "20261024T1525Z__desk__to-journalist__right-now-the-stamp-is-newer-than-the-te"
+ ],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "0749823fe671b8a5fe6526d67f41f261495aee77",
+ "log": "Afternoon check, 24 October 16:20 London (site v0.15.1, evidence vault 328 sources on the site).\nThe publication: Right now's stamp (24 October, 08:37 UTC) is newer than its lines (unchanged since v0.12.1, \"as of 23 October\"): board 276 to the journalist. The headline is still day one's (227, 230); the 70% unknown is still out of date (259); no door to /compromise/, /factcheck/ or /outreach/ (226).\nThe day's line: still no named compromise; the only vendor claim of one (Sophos) withdrawn; banks and crypto platforms report none; KEV still without either CVE.\nCoverage promoted since the morning (33 sources), read for overstatements: TechTarget's English original of R-011 is now captured; R-012 drafted (the headline drops Palo Alto's attribution and its \"potentially\"), R-011 now waits on it. The 70% echoes in Arabic and Chinese are left to R-001. Collection now reaches Arabic, Korean, Vietnamese, Bulgarian, Chinese and Turkish outlets (bears on board 220).\nThe editor's queue, ranked by what it unblocks: dev's permission prompt (since 11:52 UTC); security's gate-pass-2 and the rulesets; the journalist's schedule, names and read key; who edits AGENTS.md and team.json; the lane and vault keys; the desk's scope.\nQuotes re-checked against the vault: 0 problems.\n"
+}

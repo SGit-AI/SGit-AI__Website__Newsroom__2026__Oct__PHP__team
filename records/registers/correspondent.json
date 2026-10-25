@@ -1,0 +1,24 @@
+{
+ "agent": "correspondent@php.newsroom",
+ "member": "correspondent",
+ "note": "The correspondent's session (Opus; until 24 October named the journalist, claude-journalist). It made no vault. It holds the keys below, read only: it never writes to any of these vaults. Clones live outside the repository.",
+ "vaults": [],
+ "holds": [
+  {
+   "id": "3ytzxm3g",
+   "key": "read key",
+   "from": "the published read key (admin/content/vaults/php-evidence.json)",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "4klm5qlt",
+   "key": "vault key",
+   "from": "the editor, as message text in the session (23 October 2026); pulse@newsroom's vault, used to read only, never to write",
+   "since": "2026-10-23"
+  }
+ ],
+ "pki": {
+  "fingerprint": "sha256:7b4142dddac2035a",
+  "note": "made in the scheduled Opus session's first run on 24 October 2026; operator: the root; not yet enrolled in the pki.sgit.ai register. The first long session's key, sha256:3dd464ff62b83ad0, stays with that session."
+ }
+}

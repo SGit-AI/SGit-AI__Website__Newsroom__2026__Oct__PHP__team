@@ -24,7 +24,7 @@ def files(top):
 
 
 docs = {}
-for p in files('.'):
+for p in files('records'):
     if p.startswith(('.git/', 'tools/__pycache__')):
         continue
     if p.endswith('.json'):
@@ -36,7 +36,7 @@ for p in files('.'):
         if CREDENTIAL.search(open(os.path.join(ROOT, p), encoding='utf-8', errors='replace').read()):
             fails.append(f'{p}: a credential shape')
 
-rows = {p: d for p, d in docs.items() if p.startswith('board/')}
+rows = {p: d for p, d in docs.items() if p.startswith('records/board/')}
 for p, r in rows.items():
     stem = os.path.basename(p)[:-5]
     for k in ('id', 'title', 'status', 'owner'):
@@ -47,26 +47,26 @@ for p, r in rows.items():
     if stem != r.get('id') and stem not in KNOWN_REPEATS:
         fails.append(f'{p}: filed under {stem}, but its id is {r.get("id")}')
 for stem in sorted(KNOWN_REPEATS):
-    if f'board/{stem}.json' in rows:
-        notes.append(f'board/{stem}.json: a v1 row that repeats another row\'s id; renumber one of them')
+    if f'records/board/{stem}.json' in rows:
+        notes.append(f'records/board/{stem}.json: a v1 row that repeats another row\'s id; renumber one of them')
 
 for p, c in docs.items():
-    if p.startswith('schedule/') and p.count('/') == 1:
+    if p.startswith('records/schedule/') and p.count('/') == 2:
         for k in ('member', 'status', 'times'):
             if k not in c:
                 fails.append(f'{p}: no "{k}"')
-agents = sorted(d for d in os.listdir(os.path.join(ROOT, 'agents')) if os.path.isdir(os.path.join(ROOT, 'agents', d)))
+agents = sorted(d for d in os.listdir(os.path.join(ROOT, 'records', 'agents')) if os.path.isdir(os.path.join(ROOT, 'records', 'agents', d)))
 for a in agents:
     for need in ('ROLE.md', 'policy.json'):
-        if not os.path.exists(os.path.join(ROOT, 'agents', a, need)):
-            notes.append(f'agents/{a}/: no {need} (as in v1; the member, or abp@newsroom.sgit who keeps the policies, adds it)')
+        if not os.path.exists(os.path.join(ROOT, 'records', 'agents', a, need)):
+            notes.append(f'records/agents/{a}/: no {need} (as in v1; the member, or abp@newsroom.sgit who keeps the policies, adds it)')
 
 r = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'front.py'), '--check'], capture_output=True, text=True)
 if r.returncode:
     fails.append('index.html: ' + (r.stdout + r.stderr).strip()[-300:])
 
 notes.append(f'{len(rows)} board rows ({sum(1 for r in rows.values() if r.get("status") != "done")} not done), '
-             f'{sum(1 for p in docs if p.startswith("schedule/") and p.count("/") == 1)} schedule cards, {len(agents)} member folders')
+             f'{sum(1 for p in docs if p.startswith("records/schedule/") and p.count("/") == 2)} schedule cards, {len(agents)} member folders')
 for n in notes:
     print('note:', n)
 for f in fails:

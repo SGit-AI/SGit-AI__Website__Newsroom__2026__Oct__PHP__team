@@ -1,0 +1,8 @@
+{
+ "id": "325",
+ "title": "The gate and the router: exempt /404.html and the view cards (<page>/as/<reader>/) from the sitemap, llms.txt and orphan checks, and let 404.html use root-relative links",
+ "status": "open",
+ "owner": "security",
+ "note": "To pass validate.py as it stands, 404.html is self-contained (its router inline, hashed by csp.py; absolute links only), and 404.html and the 28 cards are in the sitemap and llms.txt and linked from a page. A sitemap should list canonical pages only, and a 404 page should not be in it. A proposal for security's review; story-site has not changed validate.py.",
+ "order": 324
+}

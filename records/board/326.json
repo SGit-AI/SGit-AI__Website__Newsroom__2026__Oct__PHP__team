@@ -1,0 +1,8 @@
+{
+ "id": "326",
+ "title": "sg-meter v1.3.1 edited in place: what a reader has paid for is keyed by the real page (window.P2S_REAL_PATH), not the address bar, so a view is never charged twice",
+ "status": "open",
+ "owner": "dev",
+ "note": "Two lines, marked in the files, under the editor's go. A versioned component should change as a new version, and upstream may want the same: when a page sets P2S_REAL_PATH, use it. Also edited, the same way: ask.js and site-tools.js (module URLs from the real page) and telemetry.js (counts the real page).",
+ "order": 325
+}
