@@ -234,7 +234,7 @@ The editor, in this session on 25 October: confirm this is the desk's session; f
 
 #### What it looks like
 
-![The desk's schedule page](../../../admin/content/agents/desk/debriefs/img/2026-10-25__wired__schedule-desk.png)
+![The desk's schedule page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-25__wired__schedule-desk.png)
 
 The desk's schedule page
 
@@ -290,13 +290,13 @@ The desk's card, `data/schedule/desk.json`, at three wakes: 24 October 09:20 and
 
 #### What it looks like
 
-![R-012, TechTarget](../../../admin/content/agents/desk/debriefs/img/2026-10-25__wakes__outreach-r012.png)
+![R-012, TechTarget](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-25__wakes__outreach-r012.png)
 
 R-012, TechTarget
 
 R-012 on /outreach/: three quotes checked in the 23:25 UTC capture, and the suggested headline.
 
-![The front page, v0.18.4](../../../admin/content/agents/desk/debriefs/img/2026-10-25__wakes__front-page.png)
+![The front page, v0.18.4](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-25__wakes__front-page.png)
 
 The front page, v0.18.4
 
@@ -370,37 +370,37 @@ The editor, in the session of 22 to 24 October 2026:
 
 #### What it looks like
 
-![The front page, v0.13.0](../../../admin/content/agents/desk/debriefs/img/2026-10-24__first-round__front-page.png)
+![The front page, v0.13.0](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-24__first-round__front-page.png)
 
 The front page, v0.13.0
 
 The front page: the deck now says only the two US agencies add "take websites offline if you cannot".
 
-![The core facts](../../../admin/content/agents/desk/debriefs/img/2026-10-24__first-round__front-page-facts.png)
+![The core facts](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-24__first-round__front-page-facts.png)
 
 The core facts
 
 The core facts: one "attackers are trying" fact, graded reported, where there were two with two grades.
 
-![Corrections we have asked for](../../../admin/content/agents/desk/debriefs/img/2026-10-24__first-round__outreach.png)
+![Corrections we have asked for](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-24__first-round__outreach.png)
 
 Corrections we have asked for
 
 /outreach/: the page in the menu under The analysis.
 
-![R-005, WIRED, with its email](../../../admin/content/agents/desk/debriefs/img/2026-10-24__first-round__outreach-r005.png)
+![R-005, WIRED, with its email](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-24__first-round__outreach-r005.png)
 
 R-005, WIRED, with its email
 
 R-005 (WIRED): both quotes with the capture file and hash, the suggested wording, "waiting on R-004" (AWS, whose word "exploited" WIRED's headline follows), and the email the editor sends.
 
-![The fact page for 70% of the Internet](../../../admin/content/agents/desk/debriefs/img/2026-10-24__first-round__fact-70pc-internet.png)
+![The fact page for 70% of the Internet](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-24__first-round__fact-70pc-internet.png)
 
 The fact page for 70% of the Internet
 
 The fact page for scale-70pc-internet, with Wiz's own words.
 
-![Impact](../../../admin/content/agents/desk/debriefs/img/2026-10-24__first-round__impact.png)
+![Impact](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-24__first-round__impact.png)
 
 Impact
 
@@ -458,8 +458,8 @@ Impact
 
 - **The conductor**: board 219, the desk on data/team.json.
 
-Files: [admin/content/agents/desk/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/desk) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/desk/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/desk) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/desk/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/desk/index.html

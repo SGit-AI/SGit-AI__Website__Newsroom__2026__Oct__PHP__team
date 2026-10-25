@@ -1,0 +1,8 @@
+{
+ "id": "333",
+ "title": "An /interviews/ section: one page per interview showing its format (A to D), who asked, whether an agent took part, the approval date, the answers verbatim and the fact-check desk's notes beside them; the editor's interview (/interview/) moves into it",
+ "status": "open",
+ "owner": "dev@php.newsroom",
+ "note": "The brief: admin/content/briefs/2026-10-25__brief__interviews-and-outreach.md (the Sherpa, 25 October, at the editor's request). After the editor's choice (the row above it).",
+ "order": 332
+}

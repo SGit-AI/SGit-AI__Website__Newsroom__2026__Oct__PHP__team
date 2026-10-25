@@ -74,7 +74,7 @@ def main():
         json.dump({'about': 'The roles of the newsroom, as v1 data/admin.json kept them.', 'roles': admin['roles']}, f, ensure_ascii=False, indent=1); f.write('\n')
     commit = git(v1, 'rev-parse', 'HEAD')
     version = open(os.path.join(v1, 'VERSION'), encoding='utf-8').read().strip()
-    with open(os.path.join(ROOT, 'tools', 'imported.json'), 'w', encoding='utf-8', newline='\n') as f:
+    with open(os.path.join(ROOT, 'records', 'imported.json'), 'w', encoding='utf-8', newline='\n') as f:
         json.dump({'from': {'repository': 'SGit-AI/sgit-ai__website__newsroom__2026__oct__php', 'commit': commit, 'site_version': version},
                    'board_rows': len(admin['board'])}, f, indent=1); f.write('\n')
     print(f'imported from v1 at {commit[:12]} (site v{version}): {len(admin["board"])} board rows, {len(COPY)} paths')

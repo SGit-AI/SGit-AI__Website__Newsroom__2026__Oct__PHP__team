@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.7. Not the live site.
+> Mockup D for review, built from the data of release v0.22.10. Not the live site.
 
-PHP Team console Console Overview Board 216 Agents 19 Releases 191 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 220 Agents 19 Releases 194 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,15 +12,15 @@ Team console · public, like everything here
  built 25 October 2026, 09:35 UTC 
 
 Release 
-v0.22.7 
-191 releases since 22 Oct 
+v0.22.10 
+194 releases since 22 Oct 
 
 Open on the board 
-216 
-108 done, 5 waiting 
+220 
+108 done, 7 waiting 
 
 Pages built 
-1059 
+1061 
 every one with a markdown twin 
 
 Sources in the vault 
@@ -30,8 +30,20 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 216
+#### Open 220
 
+ #335 
+The split, for every agent: four decisions before the schedule resumes (the go for step A: records to team and data to d… 
+ editor 
+ #333 
+An /interviews/ section: one page per interview showing its format (A to D), who asked, whether an agent took part, the … 
+ dev@php.newsroom 
+ #332 
+Interview requests as a new kind of row in data/outreach.json (drafted, approved, sent, answered, published), next to th… 
+ liaison@php.newsroom 
+ #330 
+Telemetry from agents' local test servers: assets/telemetry.js sends from any host, so 439 of the telemetry vault's 2,08… 
+ dev@php.newsroom 
  #329 
 The line's prototype pages under /admin/design/line/ link to sources one level too shallow (../../../sources/… from admi… 
  story-site 
@@ -41,21 +53,15 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
  #327 
 The line's next steps on the live pages: the reading path ('Next: your briefing') as one of its actions, dated views (on… 
  claude-story-site 
- #326 
-sg-meter v1.3.1 edited in place: what a reader has paid for is keyed by the real page (window.P2S_REAL_PATH), not the ad… 
- dev 
- #325 
-The gate and the router: exempt /404.html and the view cards (<page>/as/<reader>/) from the sitemap, llms.txt and orphan… 
- security 
- #323 
-One repository into six, step 1: the one big session (press, data, team, refs, updates, site; every old address answerin… 
- dev@php.newsroom 
- #322 
-One repository into six, step 0: create the six repositories (…__PHP__press, __data, __refs, __updates, __team, __site),… 
+
+#### Waiting 7
+
+ #334 
+For each party the editor picks: check that their /actors/ page works as a stranger's first link, and draft format B que… 
+ sherpa@php.newsroom 
+ #331 
+Interviews and outreach: choose the first wave (the brief proposes Weird Gloop, the PHP security team, the three discove… 
  editor 
-
-#### Waiting 5
-
  #307 
 Ten scheduled tasks still carry their long prompts, which only their own sessions can change: paste the card's prompt (s… 
  editor 
@@ -99,19 +105,19 @@ Article: URL paths, personas in the address, and a single-page site, written bef
 ### Releases
  latest 8 
 
+ v0.22.10 2026-10-25 the split, for every agent: a brief with where each member writes today, after the records and data move and after the cutover, th… 
+ v0.22.9 2026-10-25 The Sherpa's brief on interviews and outreach: three waves of people and organisations the site already maps, what each is given f… 
+ v0.22.8 2026-10-25 observability drained the telemetry lane on 25 October (150 events, the lane empty) with a new command-line drainer that publishes… 
  v0.22.7 2026-10-25 the four reports on the split link each other, the proposal and the plan 
  v0.22.6 2026-10-25 one repository into six, in four reports on the briefs page: the first day in numbers, one source for every file (the design), the… 
  v0.22.5 2026-10-25 one repository into six: one source for every file, recorded (the plan's Progress, REALITY, the board): press v1.0.4 serves the as… 
  v0.22.4 2026-10-25 the control room loads under a view address (/team/control/as/executive/ fetched team/control/data/control.json): control.js resol… 
  v0.22.3 2026-10-25 assets/route.js sends every data/ request on the split sites to the data API, which now publishes every file the pages' scripts fe… 
- v0.22.2 2026-10-25 one resolver for every URL a script builds (assets/route.js, loaded first on every page; boot.js, the Ask pane, the phone app and … 
- v0.22.1 2026-10-25 pass one of the split, recorded: the press (v1.0.0) cuts this site's built pages at d9af616ffd0b into four sites (site 230 pages, … 
- v0.22.0 2026-10-25 the line is live on every page in place of the two dials, and the router: /agencies/as/security/ opens the agencies for Security, … 
 
 ### Agents and what they own
  open items 
 
- Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
+ Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 34 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 21 
  dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 17 
@@ -122,4 +128,4 @@ Article: URL paths, personas in the address, and a single-page site, written bef
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.7 · https://php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.10 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

@@ -227,41 +227,41 @@ The editor, in the session, on 24 October: whether the desk was running on its s
 
 #### What it looks like
 
-![The investigation's short answer](../../../admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-answer.png)
+![The investigation's short answer](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-answer.png)
 
 The investigation's short answer
 
 The short answer at the top of /factcheck/investigations/php-share/.
 
-![The versions of the claim, graded](../../../admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-verdicts.png)
+![The versions of the claim, graded](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-verdicts.png)
 
 The versions of the claim, graded
 
 Five wordings of the claim on the desk's spectrum: 'about 69-70% of websites whose language is known' A6; 'of all websites' A1; 'of the Internet' A0; Reuters' 75% A2; Fortune's 'could take down' A0.
 
-![PHP's share over time, by measurer](../../../admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-shares-chart.png)
+![PHP's share over time, by measurer](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-shares-chart.png)
 
 PHP's share over time, by measurer
 
 W3Techs (known-language sites) from 80.6% in 2015 to 69.3%; the HTTP Archive (all crawled sites) at 48.3%; WordPress alone at 39.6% of all sites; the dashed line is the 70% of the headlines.
 
-![Every statement of the share, by time and wording](../../../admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-timeline.png)
+![Every statement of the share, by time and wording](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-timeline.png)
 
 Every statement of the share, by time and wording
 
 127 statements in 13 wording families; colour is what each claims to measure; ringed dots are the origins; the dashed line is Wiz's X post at 13:32 UTC on 21 October.
 
-![Did anyone correct it](../../../admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-corrections.png)
+![Did anyone correct it](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/factcheck/debriefs/img/2026-10-24__php-share-corrections.png)
 
 Did anyone correct it
 
 73 page records re-fetched: 64 unchanged, 4 reworded, 3 blocked, 2 could not be checked, none corrected; the changes found, before and after.
 
-![The investigations index](../../../admin/content/agents/factcheck/debriefs/img/2026-10-24__investigations-index.png)
+![The investigations index](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/factcheck/debriefs/img/2026-10-24__investigations-index.png)
 
 The investigations index
 
-![The link from the fact-check page](../../../admin/content/agents/factcheck/debriefs/img/2026-10-24__factcheck-investigations-link.png)
+![The link from the fact-check page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/factcheck/debriefs/img/2026-10-24__factcheck-investigations-link.png)
 
 The link from the fact-check page
 
@@ -307,8 +307,8 @@ Closed: 212, 244, 255 (the investigation, opened and done). Still open: 004, 061
 
 4. The next investigation, if the editor wants one: the offline count (board 224), with the same method.
 
-Files: [admin/content/agents/factcheck/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/factcheck) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/factcheck/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/factcheck) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/factcheck/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/factcheck/index.html

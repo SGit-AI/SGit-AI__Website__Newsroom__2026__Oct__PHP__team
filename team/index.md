@@ -6,16 +6,16 @@ Every member of the team that runs this site, 2 people and 19 agents and roles, 
 
 # The team: two people and the agents that work with them
 
-This site is built and run by [Dinis Cruz](dinis/index.html) (editor) and [Vicky](vicky/index.html) (project manager), and a team of software agents, with help from [collaborators](../collaborators/index.html) who use it as it grows. Every member, human or agent, has a page: what they own, the rules they work by, the pages that are their home on this site, what they have shipped and the tasks they hold now. A new agent should be able to read this page and its own and begin. The roster is [data/team.json](../data/team.json), kept by [the conductor](conductor/index.html).
+This site is built and run by [Dinis Cruz](dinis/index.html) (editor) and [Vicky](vicky/index.html) (project manager), and a team of software agents, with help from [collaborators](../collaborators/index.html) who use it as it grows. Every member, human or agent, has a page: what they own, the rules they work by, the pages that are their home on this site, what they have shipped and the tasks they hold now. A new agent should be able to read this page and its own and begin. The roster is [data/team.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/team.json), kept by [the conductor](conductor/index.html).
 
-21members2humans17agents2roles not yet filled189open tasks5waiting98done
+21members2humans17agents2roles not yet filled192open tasks7waiting98done
 
 ## Who is on it
 
 ### The humans
 
 The two people on the team. They set direction and make the calls; every agent works for them.
-DIDinis Cruz@Dinis · EditorSets direction by voice memo, points agents at sources, reads what they wrote and says go.human33 open, 2 waiting, 18 doneVIVicky@Vicky · Project managerRuns the project side: what is planned, who has it, what is late and what the editor needs to decide.human2 open, 0 done
+DIDinis Cruz@Dinis · EditorSets direction by voice memo, points agents at sources, reads what they wrote and says go.human34 open, 3 waiting, 18 doneVIVicky@Vicky · Project managerRuns the project side: what is planned, who has it, what is late and what the editor needs to decide.human2 open, 0 done
 ### Coordination and comms
 
 Keeps every member, human and agent, synchronised: what is assigned, what is blocked, what changed.
@@ -23,7 +23,7 @@ COConductor@Conductor · Conductor and commsMaps the work, hands it out, and kee
 ### Building the site
 
 The build, the gate, the release, the design, and the pages.
-DEdev@php.newsroom@Dev · Build, gate and releaseThe build, the gate, the release, the data schema, the admin section, the telemetry and subscriptions lanes, and the site's reality file.agent27 open, 1 waiting, 35 doneSSStory site agent@StorySite · Design, claims and the story pagesReads every note in the vault, writes the claims and timeline this site publishes, and designs the pages that carry them.agent23 open, 11 done
+DEdev@php.newsroom@Dev · Build, gate and releaseThe build, the gate, the release, the data schema, the admin section, the telemetry and subscriptions lanes, and the site's reality file.agent29 open, 1 waiting, 35 doneSSStory site agent@StorySite · Design, claims and the story pagesReads every note in the vault, writes the claims and timeline this site publishes, and designs the pages that carry them.agent23 open, 11 done
 ### Evidence
 
 Capture before you read: the sources, the vaults, the watch.
@@ -35,7 +35,7 @@ LIlibrarian@php.newsroom@Librarian · The catalogueWhich page answers which ques
 ### Testing
 
 Readers that are not people, reading the live site.
-SYsynthetic@php.newsroom@Synthetic · Synthetic readersSix test readers who read the live site in a real browser every hour or when it changes, and review it in their own voice.agent1 open, 1 doneSHSherpa@Sherpa · Walks with the readersherpa@php.newsroom. Cares about the reader's path: who they are, the question they came with, the first screen, the first click, whether they got their answer and where they went next. Reads the trails (telemetry, the synthetic readers' runs, feedback from the Feedback button and the collaborators), walks the live site at phone, tablet and desktop, logs every friction as structured data, and routes each one to the member who owns the page. Advises and alerts; fixes nothing itself. Writes guidance for readers.agent10 open, 3 done
+SYsynthetic@php.newsroom@Synthetic · Synthetic readersSix test readers who read the live site in a real browser every hour or when it changes, and review it in their own voice.agent1 open, 1 doneSHSherpa@Sherpa · Walks with the readersherpa@php.newsroom. Cares about the reader's path: who they are, the question they came with, the first screen, the first click, whether they got their answer and where they went next. Reads the trails (telemetry, the synthetic readers' runs, feedback from the Feedback button and the collaborators), walks the live site at phone, tablet and desktop, logs every friction as structured data, and routes each one to the member who owns the page. Advises and alerts; fixes nothing itself. Writes guidance for readers.agent10 open, 1 waiting, 3 done
 
 ## How the team runs
 
@@ -67,22 +67,22 @@ How a URL becomes a published claim, and who does each step.
 ## The audiences
 
 Each briefing is a role too: a reader whose question the site answers in one page.
-- [Curious reader](../briefings/everyone/index.html): What happened, does it affect me, and should I worry?
-- [Website owner](../briefings/site-owner/index.html): My website runs on WordPress or similar: am I affected, and what do I ask my host?
-- [Project or programme manager](../briefings/pm/index.html): What unplanned work does this create, who do I chase, and what do I tell stakeholders?
-- [Board member or executive](../briefings/board/index.html): Are we exposed, what is it costing us, and who owns the decision to pull a system?
-- [Security lead](../briefings/security/index.html): What do I patch first, what do I watch for, and when do I take something offline?
-- [PHP or platform engineer](../briefings/engineer/index.html): Which versions, which SAPIs, which settings, which commands?
-- [Journalist](../briefings/journalist/index.html): Which numbers hold up, who said what first, and what is still unverified?
-- [Security researcher](../briefings/researcher/index.html): What are the bug classes, what was demonstrated, and what is still open?
-- [Analyst or advisor](../briefings/analyst/index.html): How did coordinated disclosure fail, and what does AI-assisted discovery change?
-- [CISO](../briefings/ciso/index.html): What is our exposure, what is our evidence we were not hit, and what do I tell the board?
-- [CTO](../briefings/cto/index.html): What does this cost us in engineering time, what breaks when we patch, and what do we change so the next one is a non-event?
-- [CFO](../briefings/cfo/index.html): What is the financial exposure, what does downtime cost against breach cost, and will insurance respond?
-- [Data protection officer](../briefings/dpo/index.html): Was personal data exposed, does this start a GDPR breach assessment or a 72-hour notification, and what do I document?
-- [Head of AppSec](../briefings/appsec/index.html): Which of our applications are in scope, which settings matter, and what do we add to the pipeline?
-- [Developer](../briefings/developer/index.html): Is my code the problem, what do I change, and how do I check the box I deployed to?
-- [Media and communications team](../briefings/comms/index.html): What can we say that is true, what should we not say, and what will we be asked?
+- [Curious reader](https://php.oct.2026.newsroom.sgit.ai/briefings/everyone/): What happened, does it affect me, and should I worry?
+- [Website owner](https://php.oct.2026.newsroom.sgit.ai/briefings/site-owner/): My website runs on WordPress or similar: am I affected, and what do I ask my host?
+- [Project or programme manager](https://php.oct.2026.newsroom.sgit.ai/briefings/pm/): What unplanned work does this create, who do I chase, and what do I tell stakeholders?
+- [Board member or executive](https://php.oct.2026.newsroom.sgit.ai/briefings/board/): Are we exposed, what is it costing us, and who owns the decision to pull a system?
+- [Security lead](https://php.oct.2026.newsroom.sgit.ai/briefings/security/): What do I patch first, what do I watch for, and when do I take something offline?
+- [PHP or platform engineer](https://php.oct.2026.newsroom.sgit.ai/briefings/engineer/): Which versions, which SAPIs, which settings, which commands?
+- [Journalist](https://php.oct.2026.newsroom.sgit.ai/briefings/journalist/): Which numbers hold up, who said what first, and what is still unverified?
+- [Security researcher](https://php.oct.2026.newsroom.sgit.ai/briefings/researcher/): What are the bug classes, what was demonstrated, and what is still open?
+- [Analyst or advisor](https://php.oct.2026.newsroom.sgit.ai/briefings/analyst/): How did coordinated disclosure fail, and what does AI-assisted discovery change?
+- [CISO](https://php.oct.2026.newsroom.sgit.ai/briefings/ciso/): What is our exposure, what is our evidence we were not hit, and what do I tell the board?
+- [CTO](https://php.oct.2026.newsroom.sgit.ai/briefings/cto/): What does this cost us in engineering time, what breaks when we patch, and what do we change so the next one is a non-event?
+- [CFO](https://php.oct.2026.newsroom.sgit.ai/briefings/cfo/): What is the financial exposure, what does downtime cost against breach cost, and will insurance respond?
+- [Data protection officer](https://php.oct.2026.newsroom.sgit.ai/briefings/dpo/): Was personal data exposed, does this start a GDPR breach assessment or a 72-hour notification, and what do I document?
+- [Head of AppSec](https://php.oct.2026.newsroom.sgit.ai/briefings/appsec/): Which of our applications are in scope, which settings matter, and what do we add to the pipeline?
+- [Developer](https://php.oct.2026.newsroom.sgit.ai/briefings/developer/): Is my code the problem, what do I change, and how do I check the box I deployed to?
+- [Media and communications team](https://php.oct.2026.newsroom.sgit.ai/briefings/comms/): What can we say that is true, what should we not say, and what will we be asked?
 
 ## The rules every member shares
 
@@ -104,4 +104,4 @@ Each briefing is a role too: a reader whose question the site answers in one pag
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/team/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/index.html

@@ -258,25 +258,25 @@ information and materials.
 
 #### What it looks like
 
-![UF-005, the editor's two asks, in the feedback viewer](../../../admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__1.png)
+![UF-005, the editor's two asks, in the feedback viewer](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__1.png)
 
 UF-005, the editor's two asks, in the feedback viewer
 
 UF-005 under "From the editor", each ask with the Sherpa's comment and who acts.
 
-![The Sherpa's schedule card, active](../../../admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__2.png)
+![The Sherpa's schedule card, active](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__2.png)
 
 The Sherpa's schedule card, active
 
 `/team/schedule/sherpa/`: active, eight wakes a day, the session and the keys it holds.
 
-![The brief to the conductor](../../../admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__3.png)
+![The brief to the conductor](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__3.png)
 
 The brief to the conductor
 
 `/feedback/briefs/`: every open friction by owner and severity, including F031 and F032.
 
-![The Sherpa on the vault register](../../../admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__4.png)
+![The Sherpa on the vault register](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-24__drain-schedule-and-inbox__4.png)
 
 The Sherpa on the vault register
 
@@ -338,19 +338,19 @@ the design comments took into account what the design agent had shipped.
 
 #### What it looks like
 
-![CI-003, the collaborator's review](../../../admin/content/agents/sherpa/debriefs/img/2026-10-24__ci-003-and-the-redesign__1.png)
+![CI-003, the collaborator's review](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-24__ci-003-and-the-redesign__1.png)
 
 CI-003, the collaborator's review
 
 `/sherpa/ideas/ci-003/`: the record, the conversation, and the items set against the site.
 
-![UF-005 with the fact-check desk's Fortune analysis](../../../admin/content/agents/sherpa/debriefs/img/2026-10-24__ci-003-and-the-redesign__2.png)
+![UF-005 with the fact-check desk's Fortune analysis](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-24__ci-003-and-the-redesign__2.png)
 
 UF-005 with the fact-check desk's Fortune analysis
 
 `/feedback/uf-005/`: the first ask, answered by the desk's investigation.
 
-![The front page on a phone](../../../admin/content/agents/sherpa/debriefs/img/2026-10-24__ci-003-and-the-redesign__3.png)
+![The front page on a phone](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-24__ci-003-and-the-redesign__3.png)
 
 The front page on a phone
 
@@ -378,8 +378,8 @@ None for readers this round. For the team: a brief to dev from a power user's re
 
 - Writes outside scope: none (`agents.py check`: outside []). `BRIEF-CORRECTIONS.md` is an append the policy allows.
 
-Files: [admin/content/agents/sherpa/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/sherpa) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/sherpa/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/sherpa) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/sherpa/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/sherpa/index.html

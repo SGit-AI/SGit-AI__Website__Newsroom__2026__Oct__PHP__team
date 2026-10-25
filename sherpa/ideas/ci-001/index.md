@@ -57,7 +57,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The site says the same, from the fix itself. The code page puts the bug in the engine, not in a site's own PHP ('a Hello World application on an affected version is affected'), and walks the mechanism: memory_limit, a fatal error inside zend_try, and a longjmp that abandons functions half-way through.
 
-See: [The code: where the bug is, and what the fix does](../../../code/index.html)
+See: [The code: where the bug is, and what the fix does](https://refs.php.oct.2026.newsroom.sgit.ai/code/)
 
 **What is missing.** None for the point itself. It is the strongest argument for the graph: a reader's application stories never mention memory_limit, so only a graph that goes below the application shows that they are exposed.
 
@@ -72,7 +72,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** That join exists in part. The GRC graph has 442 nodes and 914 edges, every edge a verb with its named inverse: a risk arises from a weakness, which arises from a vulnerability, fixed by a remediation, realised in code; the risk is borne by stakeholders, governed by controls and told in stories. It shares its claim, source, fix and code nodes with the story graph and the code review graph.
 
-See: [The risk graph](../../../grc/graph/index.html) · [The fix, mapped to the code](../../../review/index.html) · [The story graph](../../../graph/index.html)
+See: [The risk graph](https://php.oct.2026.newsroom.sgit.ai/grc/graph/) · [The fix, mapped to the code](https://refs.php.oct.2026.newsroom.sgit.ai/review/) · [The story graph](https://refs.php.oct.2026.newsroom.sgit.ai/graph/)
 
 **What is missing.** The business end stops at risks and stakeholders; the technical end stops at files and areas of the fix. Nothing yet in between describes what the software does for someone (a user story).
 
@@ -89,7 +89,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The code review graph has three layers (the flaws, what the fix does, the code): 54 nodes and 68 edges from the fix commit's 389 files, 37 of them in the engine. It has no user-story layer, no execution paths and no dependencies. The model it comes from, 'Code review as a fractal semantic graph' (newsroom.sgit.ai, 3 October), goes from user stories down to the syntax tree and treats a bug as a story that stopped holding; it is listed on /grc/network/ and not built here. The editor says agents are mapping code to user stories; that work is not on any branch of this repository yet.
 
-See: [Walk the graph](../../../review/ui/index.html) · [What the sgit network already holds](../../../grc/network/index.html)
+See: [Walk the graph](https://refs.php.oct.2026.newsroom.sgit.ai/review/ui/) · [What the sgit network already holds](https://php.oct.2026.newsroom.sgit.ai/grc/network/)
 
 **What is missing.** A user-story layer, call paths from the request entry points to the changed functions, and security boundaries (where untrusted input enters and where memory_limit is enforced) as nodes.
 
@@ -104,7 +104,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Security requirements exist as controls: 120 controls in 20 frameworks, 95 of them mapped to risks (GDPR, NIS2, the Cyber Resilience Act, NIST SSDF and the rest). They join risks, not code or stories. 14 weaknesses (CWE) sit between risks and the two CVEs. Threat scenarios are not a node kind.
 
-See: [GRC: risks, owners, standards](../../../grc/index.html)
+See: [GRC: risks, owners, standards](https://php.oct.2026.newsroom.sgit.ai/grc/)
 
 **What is missing.** Threat scenarios as stories that must not happen ('an unauthenticated request cannot leave the engine's state half-updated'), joined to the functional stories they shadow, to the assumption that holds them (memory_limit stops a request cleanly), and to the code that enforces it. php2shell is exactly a broken assumption: the limit stopped the request, but not cleanly.
 
@@ -119,7 +119,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The site grades claims this way, not edges. The fact-check desk gives every claim a level of evidence from A0 to A6 and a verdict, naming the captures it read by file and hash. The graphs' edges carry only from, rel, inverse and to: an edge read from the diff and an edge an agent inferred look the same.
 
-See: [The fact-check desk](../../../factcheck/index.html) · [data/grc-graph.json](../../../data/grc-graph.json)
+See: [The fact-check desk](https://php.oct.2026.newsroom.sgit.ai/factcheck/) · [data/grc-graph.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.7/grc-graph.json)
 
 **What is missing.** A basis on every edge. This is the most actionable of the three ideas, and the cheapest.
 
@@ -136,7 +136,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** What exists, for the editor's answer: separate agents own separate graphs (the cartographer the story graph, the GRC desk the risk graph, the code review from the fix commit), joined by shared node ids rather than copies, rebuilt deterministically on every release, with every edge a named verb and inverse. The code-to-user-story mapping is in progress elsewhere and not yet here.
 
-See: [The team](../../../team/index.html) · [The risk graph](../../../grc/graph/index.html)
+See: [The team](../../../team/index.html) · [The risk graph](https://php.oct.2026.newsroom.sgit.ai/grc/graph/)
 
 **What is missing.** No page explains the graphs together for an outside reader.
 
@@ -151,7 +151,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Two forms exist. /stack/ is impact analysis for a reader's own systems: each PHP runtime against both CVEs, the platform's backports, the SAPI, exposure, settings and edge rules, and the blast radius as a graph. Each GRC risk page draws the path from a stakeholder down to the code.
 
-See: [Your stack, the blast radius](../../../stack/index.html) · [GRC](../../../grc/index.html)
+See: [Your stack, the blast radius](https://php.oct.2026.newsroom.sgit.ai/stack/) · [GRC](https://php.oct.2026.newsroom.sgit.ai/grc/)
 
 **What is missing.** Impact runs from deployment and from risk; not yet from a changed function up to the stories it breaks, which is the collaborator's direction.
 
@@ -166,7 +166,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Not built. The code review graph shows the fix touching tests/, ext/zend_test and run-tests.php, but only as areas of the commit: no single test is a node, and nothing says which remediation a test exercises.
 
-See: [The fix, mapped to the code](../../../review/index.html)
+See: [The fix, mapped to the code](https://refs.php.oct.2026.newsroom.sgit.ai/review/)
 
 **What is missing.** Tests as nodes, with tested_by / tests edges to remediations and functions.
 
@@ -197,4 +197,4 @@ Not sent. Questions 6 to 8 are addressed to the editor; the 'today' notes are wh
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-001/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-001/index.html

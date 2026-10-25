@@ -6,7 +6,7 @@ The machine-readable summary of this site at /status.json: status, version, data
 
 # status.json: this site's state, for other sites
 
-One small file at the site root, [/status.json](../../status.json), that another site or an agent can read instead of scraping pages: the story's status, the version, when the evidence was last checked, the counts, three headline facts with their status and sources, and the latest story. The SGit Newsroom's front page reads it while the story is developing, and its tracker checks for it before the newsroom's own section on the story becomes a pointer here.
+One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sgit.ai/status.json), that another site or an agent can read instead of scraping pages: the story's status, the version, when the evidence was last checked, the counts, three headline facts with their status and sources, and the latest story. The SGit Newsroom's front page reads it while the story is developing, and its tracker checks for it before the newsroom's own section on the story becomes a pointer here.
 
 **Schema** `sgit.newsroom.story-status/1` · **rebuilt** on every release, from the same data as the pages, with no clock: if the evidence has not changed, neither has the file.
 
@@ -19,7 +19,7 @@ One small file at the site root, [/status.json](../../status.json), that another
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.7" |
+| `version` | "0.22.10" |
 | `data_as_of` | "2026-10-25T09:35Z" |
 | `vault_commit` | "87795d121200" |
 | `counts` | {"sources": 418, "captures": 479, "claims": 70, "claims_by_status": {"confirmed": 19, "reported": 36, "disputed": 8, "contradicted": 3, "unverified": 4}, "event |
@@ -31,7 +31,7 @@ One small file at the site root, [/status.json](../../status.json), that another
 
 - Fields are only ever added. A reader of version 1 keeps working.
 
-- A headline fact is a claim id from [every claim](../../claims/index.html); its text and status are the claim's, never rewritten for the feed.
+- A headline fact is a claim id from [every claim](https://php.oct.2026.newsroom.sgit.ai/claims/); its text and status are the claim's, never rewritten for the feed.
 
 - `data_as_of` is the time of the latest capture in the evidence vault, not the time of the build.
 
@@ -49,7 +49,7 @@ One small file at the site root, [/status.json](../../status.json), that another
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.7",
+ "version": "0.22.10",
  "data_as_of": "2026-10-25T09:35Z",
  "vault_commit": "87795d121200",
  "counts": {
@@ -145,4 +145,4 @@ One small file at the site root, [/status.json](../../status.json), that another
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

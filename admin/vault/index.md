@@ -6,7 +6,7 @@ The read key to the evidence vault behind this site, the link that opens it in t
 
 # The evidence vault, opened
 
-[Vaults](../../vaults/index.html) / The evidence vault
+[Vaults](https://refs.php.oct.2026.newsroom.sgit.ai/vaults/) / The evidence vault
 
 The vault behind every claim on this site, 418 sources and 479 captures at commit `87795d121200`, opens read-only in the browser with the key below, the way every published vault on sgit.ai and the newsroom does. The key is a read key: derived one way from the vault key, it decrypts and cannot write, and there is no privilege inside it to escalate. It is published on purpose, so treat it as you would the content.
 
@@ -28,8 +28,8 @@ $ sgit clone sgit_public_read_6451da6ba1c6201d35b0832d570097327552564c12c8e9a550
 
 - `memos/`: the editor's voice memos; `notes/`: agents' working notes; `tools/`: the capture tool and the index builder.
 
-The manifest this site is built from, with every hash, is [data/sources.json](../../data/sources.json); the sources are listed on [every source](../../sources/index.html). The telemetry vault (`84wr8mib`) is separate and private: Private. Its vault key, enum key and key-pair passphrase are held by the editor and the drainer, never in this repository.
+The manifest this site is built from, with every hash, is [data/sources.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.7/sources.json); the sources are listed on [every source](https://refs.php.oct.2026.newsroom.sgit.ai/sources/). The telemetry vault (`84wr8mib`) is separate and private: Private. Its vault key, enum key and key-pair passphrase are held by the editor and the drainer, never in this repository.
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/vault/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/vault/index.html

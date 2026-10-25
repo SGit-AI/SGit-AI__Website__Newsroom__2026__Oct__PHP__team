@@ -6,7 +6,7 @@ What every page sends to the telemetry lane, the published write-only credential
 
 # Who reads this site
 
-Every page sends one anonymous event to a write-only lane on a separate, private vault: which page, the referrer's host, the visitor's country, region and city from a geolocation lookup, language, screen class and time zone, with a random session id that lives in the tab. No IP address, no cookie, no name, no user-agent string; since v0.8.4, whether the browser is automated (by class: a crawler's name, webdriver, headless) and, if this browser holds a key from [/join/](../../join/index.html) or was set below, its role (editor, team, power user), never who. The event is encrypted in your browser to the key below before it leaves; the lane's reply is a blind `{"ok": true}`. Do Not Track and Global Privacy Control switch it off. The brief is on [briefs](../briefs/index.html#2026-10-22__telemetry-over-an-append-lane).
+Every page sends one anonymous event to a write-only lane on a separate, private vault: which page, the referrer's host, the visitor's country, region and city from a geolocation lookup, language, screen class and time zone, with a random session id that lives in the tab. No IP address, no cookie, no name, no user-agent string; since v0.8.4, whether the browser is automated (by class: a crawler's name, webdriver, headless) and, if this browser holds a key from [/join/](https://php.oct.2026.newsroom.sgit.ai/join/) or was set below, its role (editor, team, power user), never who. The event is encrypted in your browser to the key below before it leaves; the lane's reply is a blind `{"ok": true}`. Do Not Track and Global Privacy Control switch it off. The brief is on [briefs](../briefs/index.html#2026-10-22__telemetry-over-an-append-lane).
 
 ## What this page carries
 
@@ -207,4 +207,4 @@ Mechanics: `assets/telemetry.js` sends; `admin/build/telemetry_drain.py`, run by
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/telemetry/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/telemetry/index.html

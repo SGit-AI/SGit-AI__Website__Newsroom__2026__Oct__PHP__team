@@ -1,0 +1,8 @@
+{
+ "id": "332",
+ "title": "Interview requests as a new kind of row in data/outreach.json (drafted, approved, sent, answered, published), next to the correction requests, so a publisher never gets an interview request alongside a correction request",
+ "status": "open",
+ "owner": "liaison@php.newsroom",
+ "note": "The brief: admin/content/briefs/2026-10-25__brief__interviews-and-outreach.md (the Sherpa, 25 October, at the editor's request). Corrections first: R-002 (BBC), R-007 (The Hacker News), R-008 (Fortune) come before any interview request to them.",
+ "order": 331
+}

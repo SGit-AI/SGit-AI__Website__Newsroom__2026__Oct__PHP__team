@@ -1,6 +1,33 @@
 {
- "current": "0.22.7",
+ "current": "0.22.10",
  "versions": [
+  {
+   "version": "0.22.10",
+   "date": "2026-10-25",
+   "title": "the split, for every agent: a brief with where each member writes today, after the records and data move and after the cutover, the repositories its session needs and a card field for them; on a split site the 404 page sends an address another host owns (a twin, a view address, an asset, a data file) to that host, route.js allowing only the route's own hosts",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.9",
+   "date": "2026-10-25",
+   "title": "The Sherpa's brief on interviews and outreach: three waves of people and organisations the site already maps, what each is given first, the topic, four formats, and the rules (board 331 to 334)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.8",
+   "date": "2026-10-25",
+   "title": "observability drained the telemetry lane on 25 October (150 events, the lane empty) with a new command-line drainer that publishes before it marks; its debrief on the member's page /admin/agents/observability/; board 330 (telemetry from local test servers, for dev)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.7",
    "date": "2026-10-25",

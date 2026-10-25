@@ -44,7 +44,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 | [questions/old-php/index.html](#questions-old-php-index-html) | 1 | 0 (0) | 0 | 1 |
 | [review/index.html](#review-index-html) | 1 | 0 (0) | 0 | 1 |
 
-## [index.html](../../../index.html)
+## [index.html](https://php.oct.2026.newsroom.sgit.ai/)
 
 6 of 6 readers: Board member, CTO, Designer, Developer, Project manager, Security lead
 
@@ -94,7 +94,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *Your reading: on this page 9 new, 0 changed, 0 read; across the site 429 new and 0 changed of 429.* ([Designer](../../../admin/synthetic/designer/index.html))Still the first words on the page, before the headline, and still noise to a first-time visitor.
 - *Phones and personal computers are not affected.* ([Designer](../../../admin/synthetic/designer/index.html))Still the right reassurance in the right place, last in a large standfirst.
 
-## [patching/index.html](../../../patching/index.html)
+## [patching/index.html](https://php.oct.2026.newsroom.sgit.ai/patching/)
 
 3 of 6 readers: CTO, Developer, Project manager
 
@@ -132,7 +132,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *fixed Docker Official Images maintainers: Docker Official Image: php* ([Developer](../../../admin/synthetic/developer/index.html))Fixed which tags? Still the row where I needed detail and got none.
 - *46 fixed · 206 still affected · 418 under investigation · 3 not affected, of 674 products in the NCSC-NL inventory at commit cca173c64ec5* ([Developer](../../../admin/synthetic/developer/index.html))The release notes say 675 at this commit and 751 now; this page says neither.
 
-## [briefings/board/index.html](../../../briefings/board/index.html)
+## [briefings/board/index.html](https://php.oct.2026.newsroom.sgit.ai/briefings/board/)
 
 1 of 6 readers: Board member
 
@@ -162,7 +162,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *Who is authorised to take a system offline, how long does it take, and has it been rehearsed?* ([Board member](../../../admin/synthetic/board/index.html))Exactly the governance question a board should own; 'rehearsed' is the word that will make management squirm.
 - *Whether the deleted Calif video is the one now embedded on Calif's own write-up. Calif's page does not mention the leak.* ([Board member](../../../admin/synthetic/board/index.html))Still no idea who Calif is or why this matters to my company; it lost me again.
 
-## [claims/index.html](../../../claims/index.html)
+## [claims/index.html](https://php.oct.2026.newsroom.sgit.ai/claims/)
 
 2 of 6 readers: Designer, Security lead
 
@@ -191,7 +191,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *IN PLAIN ENGLISH Every statement made about the story, who made it, and how far it can be trusted, with links to the evidence.* ([Designer](../../../admin/synthetic/designer/index.html))New and exactly right: one sentence, in its own box, before the dense paragraph. This is the pattern the other technical pages should copy.
 - *The words are defined here, once, and the build refuses a claim whose sources are not in the manifest.* ([Designer](../../../admin/synthetic/designer/index.html))Still internal vocabulary ('the build', 'the manifest') in the first paragraph a newcomer reads, though the new plain-English box above it softens the blow.
 
-## [briefings/cto/index.html](../../../briefings/cto/index.html)
+## [briefings/cto/index.html](https://php.oct.2026.newsroom.sgit.ai/briefings/cto/)
 
 1 of 6 readers: CTO
 
@@ -219,7 +219,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *7.4, 8.0 and 8.1 have a source backport and no release: that is a migration you are now doing, not a patch.* ([CTO](../../../admin/synthetic/cto/index.html))Still the line that changes engineering time; it goes straight into the budget conversation.
 - *About 20 minutes in all.* ([CTO](../../../admin/synthetic/cto/index.html))Unchanged, and still more than double my time with no shortcut offered.
 
-## [briefings/pm/index.html](../../../briefings/pm/index.html)
+## [briefings/pm/index.html](https://php.oct.2026.newsroom.sgit.ai/briefings/pm/)
 
 1 of 6 readers: Project manager
 
@@ -247,7 +247,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *Expect a second round. A report that the first fix may be incomplete is open. Keep a slot free in the next fortnight.* ([Project manager](../../../admin/synthetic/pm/index.html))Useful, but 'next fortnight' is too loose to schedule, and I cannot tell if this is still the position a day later.
 - *This briefing v5 written in site v0.5.9 on 22 October 2026* ([Project manager](../../../admin/synthetic/pm/index.html))The site is on v0.10.18; is my briefing out of date?
 
-## [exploitation/index.html](../../../exploitation/index.html)
+## [exploitation/index.html](https://php.oct.2026.newsroom.sgit.ai/exploitation/)
 
 1 of 6 readers: Security lead
 
@@ -270,7 +270,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *A remote code execution bug is not an invisibility cloak.* ([Security lead](../../../admin/synthetic/security/index.html))Still the right framing, but the page that says it has not been updated since 22 October.
 - *REPORTED Cloudflare's own post confirms attack traffic, Amazon's own post not found* ([Security lead](../../../admin/synthetic/security/index.html))Unchanged since yesterday and still contradicted by the claims and sources pages.
 
-## [briefings/developer/index.html](../../../briefings/developer/index.html)
+## [briefings/developer/index.html](https://php.oct.2026.newsroom.sgit.ai/briefings/developer/)
 
 1 of 6 readers: Developer
 
@@ -287,7 +287,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *Nothing in userland blocks the demonstrated paths: ini_set() runs too late, .user.ini runs too late, auto_prepend_file runs too late.* ([Developer](../../../admin/synthetic/developer/index.html))Still exactly what I need first; it kills the idea of a code-side hotfix.
 - *Check the running version where the code runs: php -v inside the container or phpinfo() on the box, after the restart. The package list is not the answer.* ([Developer](../../../admin/synthetic/developer/index.html))Word for word what it said last time. Right instinct, still not enough for images or backports.
 
-## [briefings/everyone/index.html](../../../briefings/everyone/index.html)
+## [briefings/everyone/index.html](https://php.oct.2026.newsroom.sgit.ai/briefings/everyone/)
 
 1 of 6 readers: Designer
 
@@ -303,7 +303,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *You do not need to know anything about computers to follow this.* ([Designer](../../../admin/synthetic/designer/index.html))Lands well under the answer box; on a phone it is below the first screen.
 
-## [impact/index.html](../../../impact/index.html)
+## [impact/index.html](https://php.oct.2026.newsroom.sgit.ai/impact/)
 
 1 of 6 readers: Board member
 
@@ -322,7 +322,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *A quiet log is not a clean host.* ([Board member](../../../admin/synthetic/board/index.html))Plain and memorable; it tells me not to accept 'we saw nothing' as proof.
 - *how many were mod_php on x86_64 with default limits, reachable without a WAF, and how many of those show a worker spawning a shell.* ([Board member](../../../admin/synthetic/board/index.html))Still complete jargon. I gave up on this paragraph again.
 
-## [playbook/index.html](../../../playbook/index.html)
+## [playbook/index.html](https://php.oct.2026.newsroom.sgit.ai/playbook/)
 
 2 of 6 readers: CTO, Project manager
 
@@ -343,7 +343,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *Decide who can make that call and how fast it can be executed, and write it down before you need it.* ([Project manager](../../../admin/synthetic/pm/index.html))Good: a governance action I own.
 - *Taking a system offline is the last step on every list, and the one list where it comes earlier is the one that says isolate, then migrate.* ([Project manager](../../../admin/synthetic/pm/index.html))Still lost me. Is offline early or late?
 
-## [timeline/index.html](../../../timeline/index.html)
+## [timeline/index.html](https://php.oct.2026.newsroom.sgit.ai/timeline/)
 
 1 of 6 readers: Project manager
 
@@ -353,13 +353,13 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *Everything that happened, in order, from a 2024 audit to this morning, each line tied to the page that says so.* ([Project manager](../../../admin/synthetic/pm/index.html))Promises 'this morning', but the last row is yesterday at 08:40 UTC.
 
-## [code/index.html](../../../code/index.html)
+## [code/index.html](https://refs.php.oct.2026.newsroom.sgit.ai/code/)
 
 1 of 6 readers: Developer
 
 ### What does not work
 - **low** The hunks are still called verbatim but contain elisions, and the code block has no diff colouring, so the removed bailout and the added lines look the same in dark mode. ([Developer](../../../admin/synthetic/developer/index.html))'the hunks below are verbatim' followed by 'bool *did_gc ...)', '{ ... }' and bare '...' lines; the block is a plain
- with no add or delete classes, and full.jpg shows uniform white monospace. - **low** The commit hash links to the site's own source page, not to the upstream php-src commit. ([Developer](../../../admin/synthetic/developer/index.html))The only link for 3584a98 is '../sources/github-php-src-fix-commit-3584a98bd/index.html'. - **low** About 360px of site chrome sits above the H1 on technical pages at 1440x900. ([Developer](../../../admin/synthetic/developer/index.html))metrics.json: H1 'The code: where the bug is, and what the fix does' at top 360; fold.png shows the two-row nav, the explainer banner, the reading bar and the research strip before it. ### What to change - Mark the elisions in the hunks or drop 'verbatim', colour + and - lines, and link the hash to the upstream php-src commit. ([Developer](../../../admin/synthetic/developer/index.html), small)I want to grep and diff these myself, and in dark mode removed and added lines blur together. ### What works, so do not break it - Full commit hash, parent, authors, merge times into each branch, a step-by-step before and after, readable C hunks, and the 7.4 backport's different _exit strategy with its 17 files listed. I can go and diff this myself. ([Developer](../../../admin/synthetic/developer/index.html)) ### Lines readers reacted to - *Each step names the function or file it comes from; the hunks below are verbatim.* ([Developer](../../../admin/synthetic/developer/index.html))And the hunks still contain '...'. Small, but it is the kind of claim I check. ## [glossary/index.html](../../../glossary/index.html) 2 of 6 readers: Board member, Designer
+ with no add or delete classes, and full.jpg shows uniform white monospace. - **low** The commit hash links to the site's own source page, not to the upstream php-src commit. ([Developer](../../../admin/synthetic/developer/index.html))The only link for 3584a98 is '../sources/github-php-src-fix-commit-3584a98bd/index.html'. - **low** About 360px of site chrome sits above the H1 on technical pages at 1440x900. ([Developer](../../../admin/synthetic/developer/index.html))metrics.json: H1 'The code: where the bug is, and what the fix does' at top 360; fold.png shows the two-row nav, the explainer banner, the reading bar and the research strip before it. ### What to change - Mark the elisions in the hunks or drop 'verbatim', colour + and - lines, and link the hash to the upstream php-src commit. ([Developer](../../../admin/synthetic/developer/index.html), small)I want to grep and diff these myself, and in dark mode removed and added lines blur together. ### What works, so do not break it - Full commit hash, parent, authors, merge times into each branch, a step-by-step before and after, readable C hunks, and the 7.4 backport's different _exit strategy with its 17 files listed. I can go and diff this myself. ([Developer](../../../admin/synthetic/developer/index.html)) ### Lines readers reacted to - *Each step names the function or file it comes from; the hunks below are verbatim.* ([Developer](../../../admin/synthetic/developer/index.html))And the hunks still contain '...'. Small, but it is the kind of claim I check. ## [glossary/index.html](https://php.oct.2026.newsroom.sgit.ai/glossary/) 2 of 6 readers: Board member, Designer
 
 ### What does not work
 - **low** The glossary is labelled as being about how the site works rather than about the story, which made me wonder if I had left the briefing. ([Board member](../../../admin/synthetic/board/index.html))fold.png box 'ABOUT THIS SITE how the site works, kept by the agents that run it' above 'Glossary: every term, in plain English'.
@@ -368,7 +368,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### What to change
 - Drive the band, the kicker and the highlighted menu item from one field, so glossary and explained name one section and the Stories page says STORIES in its band. ([Designer](../../../admin/synthetic/designer/index.html), small)The site promises each page says which half it belongs to, and three of my seven pages visibly break that promise.
 
-## [flaws/index.html](../../../flaws/index.html)
+## [flaws/index.html](https://php.oct.2026.newsroom.sgit.ai/flaws/)
 
 2 of 6 readers: CTO, Developer
 
@@ -391,7 +391,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *The CVE records carry defaultStatus 'unaffected' and list only 8.2 to 8.5, so an automated scanner reading the CVE will call 7.4 to 8.1 unaffected.* ([CTO](../../../admin/synthetic/cto/index.html))Still the most useful warning for my security team.
 - *The CVE records carry defaultStatus 'unaffected' and list only 8.2 to 8.5, so an automated scanner reading the CVE will call 7.4 to 8.1 unaffected.* ([Developer](../../../admin/synthetic/developer/index.html))Still the sentence that would have saved me in CI.
 
-## [sources/index.html](../../../sources/index.html)
+## [sources/index.html](https://refs.php.oct.2026.newsroom.sgit.ai/sources/)
 
 1 of 6 readers: Security lead
 
@@ -399,7 +399,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - **medium** The banner still promises a saved copy behind every fact while the captures are private. ([Security lead](../../../admin/synthetic/security/index.html))Banner on every page: 'every fact links to a saved copy of its source'. sources/index.html: 'The captures are third-party pages held privately and are not republished'.
 - **low** A 404 page is still listed as a captured primary source, and the Log4j source page still has no claim or event. ([Security lead](../../../admin/synthetic/security/index.html))'Page Not Found | CISA ... primary · CAPTURED ... HTTP 404'. sources/cisa-alert-log4j-2021/index.html: 'No claim cites this source yet.' (it now adds 'Comparator for the context page.')
 
-## [status.json](../../../status.json)
+## [status.json](https://php.oct.2026.newsroom.sgit.ai/status.json)
 
 1 of 6 readers: Developer
 
@@ -412,7 +412,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### What works, so do not break it
 - status.json now carries the CVE IDs, data_as_of and the vault commit, so a tool can at least tell how fresh it is; the flaws markdown twin still renders clean tables and a backticked CVSS vector. ([Developer](../../../admin/synthetic/developer/index.html))
 
-## [defence/index.html](../../../defence/index.html)
+## [defence/index.html](https://php.oct.2026.newsroom.sgit.ai/defence/)
 
 2 of 6 readers: CTO, Security lead
 
@@ -430,7 +430,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *with the known exploits no application code runs, so a shell from a worker is the exploit* ([Security lead](../../../admin/synthetic/security/index.html))Still the most actionable sentence on the site.
 
-## [questions/index.html](../../../questions/index.html)
+## [questions/index.html](https://php.oct.2026.newsroom.sgit.ai/questions/)
 
 1 of 6 readers: Board member
 
@@ -446,7 +446,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *Safer, not safe.* ([Board member](../../../admin/synthetic/board/index.html))Three words I will use if someone says our firewall provider has it covered.
 
-## [start/index.html](../../../start/index.html)
+## [start/index.html](https://php.oct.2026.newsroom.sgit.ai/start/)
 
 1 of 6 readers: Designer
 
@@ -457,7 +457,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *Across: how much technical language the reader wants. Down: what they need to do with the story. Pick the one closest to you.* ([Designer](../../../admin/synthetic/designer/index.html))Clear instruction, and the map with its dot scale delivers on it.
 
-## [articles/index.html](../../../articles/index.html)
+## [articles/index.html](https://php.oct.2026.newsroom.sgit.ai/articles/)
 
 1 of 6 readers: Designer
 
@@ -470,7 +470,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *Every page on the site says at its top which half it belongs to.* ([Designer](../../../admin/synthetic/designer/index.html))Still a good promise, still broken by the band directly above it, which says ABOUT THIS SITE.
 
-## [llms.txt](../../../llms.txt)
+## [llms.txt](https://php.oct.2026.newsroom.sgit.ai/llms.txt)
 
 1 of 6 readers: Developer
 
@@ -484,28 +484,28 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *so the front page's 'not answered publicly yet' is out of date* ([Developer](../../../admin/synthetic/developer/index.html))The site knows its front page is wrong and the front page still says it a day later.
 
-## [agencies/index.html](../../../agencies/index.html)
+## [agencies/index.html](https://php.oct.2026.newsroom.sgit.ai/agencies/)
 
 1 of 6 readers: Security lead
 
 ### What works, so do not break it
 - Verbatim offline advice per agency, the two blocked agencies recorded, and the BBC's NCSC quote shown not to be on the captured NCSC page. ([Security lead](../../../admin/synthetic/security/index.html))
 
-## [articles/why-not-patch-every-version/index.html](../../../articles/why-not-patch-every-version/index.html)
+## [articles/why-not-patch-every-version/index.html](https://php.oct.2026.newsroom.sgit.ai/articles/why-not-patch-every-version/)
 
 1 of 6 readers: CTO
 
 ### What works, so do not break it
 - The story carries a clear 'The evidence has moved since this was written' notice with both data timestamps, so I know not to quote its numbers as current. ([CTO](../../../admin/synthetic/cto/index.html))
 
-## [briefings/security/index.html](../../../briefings/security/index.html)
+## [briefings/security/index.html](https://php.oct.2026.newsroom.sgit.ai/briefings/security/)
 
 1 of 6 readers: Security lead
 
 ### What works, so do not break it
 - The thirty-second answer and 'What to decide or do' list is still a usable runbook skeleton. ([Security lead](../../../admin/synthetic/security/index.html))
 
-## [explained/index.html](../../../explained/index.html)
+## [explained/index.html](https://php.oct.2026.newsroom.sgit.ai/explained/)
 
 2 of 6 readers: Board member, Designer
 
@@ -518,7 +518,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 - *it does not matter how well a website is written; if PHP underneath it is unpatched, it is in scope.* ([Board member](../../../admin/synthetic/board/index.html))Clear and alarming in the right way: 'our code is fine' is not an answer I should accept.
 - *Words in the dotted underline are explained when you hover or tap them.* ([Designer](../../../admin/synthetic/designer/index.html))Good and consistently applied; the underlined words remain small tap targets on a phone.
 
-## [questions/old-php/index.html](../../../questions/old-php/index.html)
+## [questions/old-php/index.html](https://php.oct.2026.newsroom.sgit.ai/questions/old-php/)
 
 1 of 6 readers: Project manager
 
@@ -528,7 +528,7 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 ### Lines readers reacted to
 - *To paste back where it was asked: the paragraph above and https://php.oct.2026.newsroom.sgit.ai/questions/old-php/index.html* ([Project manager](../../../admin/synthetic/pm/index.html))Very handy; I can send this to the clients still on 7.4 as is.
 
-## [review/index.html](../../../review/index.html)
+## [review/index.html](https://refs.php.oct.2026.newsroom.sgit.ai/review/)
 
 1 of 6 readers: Developer
 
@@ -540,4 +540,4 @@ A synthetic reader is a test instrument, not a reader: its review is a prompt fo
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/synthetic/pages/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/synthetic/pages/index.html

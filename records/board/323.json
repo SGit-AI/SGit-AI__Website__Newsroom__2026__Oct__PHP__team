@@ -3,6 +3,6 @@
  "title": "One repository into six, step 1: the one big session (press, data, team, refs, updates, site; every old address answering; the parity report; the replay), then each agent reviews its own repository",
  "status": "open",
  "owner": "dev@php.newsroom",
- "note": "Pass one done on 25 October; one source for every file the same day: press v1.0.4 serves the assets, data v0.1.4 the data, and the four sites, cut from v0.22.4 (ec5d411eeb70), hold no copies (each page's route and Content-Security-Policy name the hosts). Pass two moves the sources and the build. The press goes to security for review.",
+ "note": "Pass one done on 25 October; one source for every file the same day: press v1.0.4 serves the assets, data v0.1.4 the data, and the four sites, cut from v0.22.4 (ec5d411eeb70), hold no copies (each page's route and Content-Security-Policy name the hosts). Pass two moves the sources and the build. The press goes to security for review. Reviewed against the brief on the evening of 25 October: parity (plan step 1.8) holds for every page (tools/parity.py in the press), the markdown twins' links now follow their pages, a site's 404 page sends a foreign address to the host that owns it.",
  "order": 322
 }

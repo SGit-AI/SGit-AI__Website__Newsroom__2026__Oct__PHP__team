@@ -2,7 +2,7 @@
 
 A content page under the line: the same page for every reader, with its own sentence per role in the line and the spectrum of government advice as the line's picture.
 
-> Prototype F for review, built from the data of release v0.22.7. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
+> Prototype F for review, built from the data of release v0.22.10. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
 
 The agencies 
 ## 16 agencies. All say update. They split on offline.
@@ -151,4 +151,4 @@ The block is recorded in the vault.
  CNCS
 
 ---
-site v0.22.7 · https://php.oct.2026.newsroom.sgit.ai/admin/design/line/agencies/index.html
+site v0.22.10 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/agencies/index.html

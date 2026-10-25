@@ -71,7 +71,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The risk graph has 442 nodes and 914 edges, every edge a verb with its named inverse: 43 stakeholders, 34 risks, 14 weaknesses, 2 vulnerabilities, 6 remediations, 16 code nodes, 95 controls, 62 claims and 71 sources.
 
-See: [The risk graph](../../../grc/graph/index.html)
+See: [The risk graph](https://php.oct.2026.newsroom.sgit.ai/grc/graph/)
 
 **What is missing.** None for the point itself.
 
@@ -86,7 +86,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Agreed, and it is the thread through items 3 to 8: start from what you hold, see what it reaches, know how sure each link is, see what is missing.
 
-See: [The risk graph](../../../grc/graph/index.html)
+See: [The risk graph](https://php.oct.2026.newsroom.sgit.ai/grc/graph/)
 
 **What is missing.** None for the point itself.
 
@@ -118,7 +118,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Half there. The overview draws every layer at once (stakeholders, risks, weaknesses, vulnerabilities). Each risk's own page draws only its path, and 'Walk the graph' steps through the code review graph one node at a time; nothing starts from any node and expands.
 
-See: [The risk graph](../../../grc/graph/index.html) · [Walk the graph](../../../review/ui/index.html)
+See: [The risk graph](https://php.oct.2026.newsroom.sgit.ai/grc/graph/) · [Walk the graph](https://refs.php.oct.2026.newsroom.sgit.ai/review/ui/)
 
 **What is missing.** A view that starts from one node and grows on request.
 
@@ -133,7 +133,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Partly. Risks reach weaknesses, vulnerabilities, remediations and code; controls (the security requirements, 95 of them) govern risks; 20 of the 34 risks join a story directly. Not yet in the graph: user stories (as distinct from the site's own stories), tests, and any join from a control to code. The same idea as CI-001 items 3 and 8.
 
-See: [GRC](../../../grc/index.html) · [The fix, mapped to the code](../../../review/index.html)
+See: [GRC](https://php.oct.2026.newsroom.sgit.ai/grc/) · [The fix, mapped to the code](https://refs.php.oct.2026.newsroom.sgit.ai/review/)
 
 **What is missing.** Tests and user stories as nodes; controls joined to the code that implements them.
 
@@ -148,7 +148,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Not yet. Asked in CI-001 item 5 too. The fact-check desk grades every claim from A0 to A6, but every one of the 914 edges carries only from, rel, inverse and to: an edge read from the diff and an edge an agent inferred look the same.
 
-See: [The fact-check desk](../../../factcheck/index.html) · [data/grc-graph.json](../../../data/grc-graph.json)
+See: [The fact-check desk](https://php.oct.2026.newsroom.sgit.ai/factcheck/) · [data/grc-graph.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.7/grc-graph.json)
 
 **What is missing.** A basis on every edge, with its source.
 
@@ -163,7 +163,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Possible today for everything except the user stories: the graph runs code, realised by remediations, fixing the vulnerabilities, which weaknesses arise from, which risks arise from, which stakeholders bear and controls govern. Only the direction is missing: every view runs from risk down, none from code up.
 
-See: [Walk the graph](../../../review/ui/index.html) · [Your stack, the blast radius](../../../stack/index.html)
+See: [Walk the graph](https://refs.php.oct.2026.newsroom.sgit.ai/review/ui/) · [Your stack, the blast radius](https://php.oct.2026.newsroom.sgit.ai/stack/)
 
 **What is missing.** The climb from a function to the risks, controls and stakeholders above it.
 
@@ -193,7 +193,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The graph already shows this, if asked. Measured on v0.10.10: none of the 16 code nodes has an owner one step away; none of the 95 controls reaches code or a test; there are no tests in the graph; 14 of the 34 risks join no story directly. The GRC page lists some gaps by hand; none is computed.
 
-See: [GRC](../../../grc/index.html)
+See: [GRC](https://php.oct.2026.newsroom.sgit.ai/grc/)
 
 **What is missing.** A computed gaps report.
 
@@ -207,4 +207,4 @@ Shared by the editor. Steps 1 to 5 of the brief to dev shipped in v0.10.13 (ever
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-002/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-002/index.html

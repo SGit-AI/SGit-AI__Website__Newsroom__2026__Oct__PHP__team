@@ -385,15 +385,15 @@ The editor, in this session, 25 October 2026:
 
 #### What it looks like
 
-![Where each request of a page on refs goes](../../../admin/content/agents/dev/debriefs/img/2026-10-25__one-repository-into-six__1.png)
+![Where each request of a page on refs goes](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-25__one-repository-into-six__1.png)
 
 Where each request of a page on refs goes
 
-![refs serving its sources page, its scripts from the press and its data from the data API (served locally from the repositories)](../../../admin/content/agents/dev/debriefs/img/2026-10-25__one-repository-into-six__2.png)
+![refs serving its sources page, its scripts from the press and its data from the data API (served locally from the repositories)](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-25__one-repository-into-six__2.png)
 
 refs serving its sources page, its scripts from the press and its data from the data API (served locally from the repositories)
 
-![The chain after every v1 release, and what stops it](../../../admin/content/agents/dev/debriefs/img/2026-10-25__one-repository-into-six__3.png)
+![The chain after every v1 release, and what stops it](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-25__one-repository-into-six__3.png)
 
 The chain after every v1 release, and what stops it
 
@@ -483,19 +483,19 @@ The editor, in this session, 24 October 2026:
 
 #### What it looks like
 
-![The release history: v0.14.0 with its 85 changed pages, the two new reader homes first, the rest opened](../../../admin/content/agents/dev/debriefs/img/2026-10-24__release-pages-and-the-source-watch__1.png)
+![The release history: v0.14.0 with its 85 changed pages, the two new reader homes first, the rest opened](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-24__release-pages-and-the-source-watch__1.png)
 
 The release history: v0.14.0 with its 85 changed pages, the two new reader homes first, the rest opened
 
 The release history entry for v0.14.0, the redesign, with its toggle opened: Operations and Analysis (new) first, then the pages whose text changed most.
 
-![The vaults page: the source watch, vault 7r83qic5, private for now, no read key](../../../admin/content/agents/dev/debriefs/img/2026-10-24__release-pages-and-the-source-watch__2.png)
+![The vaults page: the source watch, vault 7r83qic5, private for now, no read key](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-24__release-pages-and-the-source-watch__2.png)
 
 The vaults page: the source watch, vault 7r83qic5, private for now, no read key
 
 The source watch's card on `/vaults/`.
 
-![The source-watch page's notice: vault 7r83qic5, in pack mode, no read key yet, counts from the export of 23 October](../../../admin/content/agents/dev/debriefs/img/2026-10-24__release-pages-and-the-source-watch__3.png)
+![The source-watch page's notice: vault 7r83qic5, in pack mode, no read key yet, counts from the export of 23 October](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-24__release-pages-and-the-source-watch__3.png)
 
 The source-watch page's notice: vault 7r83qic5, in pack mode, no read key yet, counts from the export of 23 October
 
@@ -569,8 +569,8 @@ The notice at the top of `/vaults/source-watch/`.
 
 - abp@newsroom.sgit: board 267.
 
-Files: [admin/content/agents/dev/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/dev) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/dev/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/dev) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/dev/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/dev/index.html

@@ -56,7 +56,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Already decided and shipped: the editor chose all four as complementary tracks, and story-site built them in v0.14.0 (the brief 'the redesign, live'): A is the front page (Briefing), B is /ops/ (Operations), C is /analysis/ (Analysis), D is the team console around every admin page; the persona chosen in the bar sends a reader to their track's home. His preference matches what shipped, track for track.
 
-See: [The redesign, live](../../../admin/briefs/index.html#2026-10-24__brief__the-redesign-live) · [Operations](../../../ops/index.html) · [Analysis](../../../analysis/index.html)
+See: [The redesign, live](../../../admin/briefs/index.html#2026-10-24__brief__the-redesign-live) · [Operations](https://php.oct.2026.newsroom.sgit.ai/ops/) · [Analysis](https://php.oct.2026.newsroom.sgit.ai/analysis/)
 
 **What is missing.** None: shipped. One inconsistency for the editor: the redesign puts the CTO in Operations, while the three-views brief (the editor's answer of 23 October) puts the CTO with the executive.
 
@@ -86,7 +86,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** On v0.14.13: 721 nodes and 1,442 edges; every edge has a basis: 340 from a source, 287 from code, 815 inferred.
 
-See: [Explore the graph](../../../grc/explore/index.html) · [Gaps](../../../grc/gaps/index.html)
+See: [Explore the graph](https://php.oct.2026.newsroom.sgit.ai/grc/explore/) · [Gaps](https://php.oct.2026.newsroom.sgit.ai/grc/gaps/)
 
 **What is missing.** None for the point itself.
 
@@ -101,7 +101,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Agreed.
 
-See: [The risk graph](../../../grc/graph/index.html)
+See: [The risk graph](https://php.oct.2026.newsroom.sgit.ai/grc/graph/)
 
 **What is missing.** None.
 
@@ -118,7 +118,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Partly there. The front page has 'Three ways to read this site' (Briefing, Operations, Analysis), which are his three doors under other names (understand the incident, check what I need to do, explore the evidence). But they are offered by role ('choose who you are'), not by task, and they come seventh, after the agencies: measured on v0.14.14, the section starts 9,218px down a 14,778px page on a phone (about twelve screens) and 3,643px down on a 1,440px-wide desktop.
 
-See: [The front page](../../../index.html) · [The telemetry article](../../../articles/the-telemetry-tools/index.html)
+See: [The front page](https://php.oct.2026.newsroom.sgit.ai/) · [The telemetry article](https://php.oct.2026.newsroom.sgit.ai/articles/the-telemetry-tools/)
 
 **What is missing.** The three ways, named by task, where a first-time reader sees them.
 
@@ -148,7 +148,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** 815 of 1,442 links are inferred and nobody can confirm one yet. The pieces exist: the Feedback pane signs with a power user's enrolled key, and the collaborators drain already knows a 'review' kind; the fact-check desk keeps a contradiction ledger.
 
-See: [Gaps](../../../grc/gaps/index.html) · [Join](../../../join/index.html)
+See: [Gaps](https://php.oct.2026.newsroom.sgit.ai/grc/gaps/) · [Join](https://php.oct.2026.newsroom.sgit.ai/join/)
 
 **What is missing.** Confirm or reject an inferred link, signed, with the evidence and a history.
 
@@ -163,7 +163,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The site keeps every release's data in git; v0.10.14 built split, slider and diff blocks for articles. Nothing compares two releases of the graph.
 
-See: [The risk graph](../../../grc/graph/index.html)
+See: [The risk graph](https://php.oct.2026.newsroom.sgit.ai/grc/graph/)
 
 **What is missing.** A graph diff between any two releases.
 
@@ -180,7 +180,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The Feedback button signs with a key from an invitation; he has none yet. The editor's own bootstrap invitation is retired (its code appeared in drained rows), so he needs one of his own.
 
-See: [Invite someone](../../../join/invite/index.html) · [Join](../../../join/index.html)
+See: [Invite someone](https://php.oct.2026.newsroom.sgit.ai/join/invite/) · [Join](https://php.oct.2026.newsroom.sgit.ai/join/)
 
 **What is missing.** An invitation for him, with the power-user role.
 
@@ -194,4 +194,4 @@ Shared by the editor. Step 1 shipped in v0.14.22 (the phone header, 43px; checke
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-003/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-003/index.html

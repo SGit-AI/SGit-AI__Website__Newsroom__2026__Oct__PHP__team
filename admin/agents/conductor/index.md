@@ -325,19 +325,19 @@ The editor, in this session, on 23 and 24 October 2026:
 
 #### What it looks like
 
-![The schedule: one day of every wake, the quiet hours shaded](../../../admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__1.png)
+![The schedule: one day of every wake, the quiet hours shaded](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__1.png)
 
 The schedule: one day of every wake, the quiet hours shaded
 
-![Commit notes: the first three notes, from the release that started it](../../../admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__2.png)
+![Commit notes: the first three notes, from the release that started it](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__2.png)
 
 Commit notes: the first three notes, from the release that started it
 
-![The Sherpa's proposed schedule card](../../../admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__3.png)
+![The Sherpa's proposed schedule card](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__3.png)
 
 The Sherpa's proposed schedule card
 
-![The conductor's own schedule card, active](../../../admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__4.png)
+![The conductor's own schedule card, active](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/conductor/debriefs/img/2026-10-24__schedules-and-commit-notes__4.png)
 
 The conductor's own schedule card, active
 
@@ -385,8 +385,8 @@ The conductor's own schedule card, active
 
 - abp@: `data/comms.json` and `data/schedule/*` in the right policies.
 
-Files: [admin/content/agents/conductor/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/conductor) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/conductor/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/conductor) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/conductor/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/conductor/index.html

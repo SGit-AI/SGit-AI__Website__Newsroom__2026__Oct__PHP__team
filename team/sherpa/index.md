@@ -42,6 +42,12 @@ The Sherpa: here to help yousherpa/index.htmlFeedback from collaboratorsfeedback
 | 197 | Sherpa: three views over time, step 1 (the executive view and its slices as data); the guidance on reuse; the knowledge-gap view | open |  |
 | 264 | Sherpa: CI-003 to the editor: the CTO's place (the redesign puts it in Operations, the three-views brief with the executive); the three ways to read on the first screen, named by task (F035); and a power-user invitation for the collaborator so his feedback and reviews come signed | open |  |
 
+## Waiting on someone else
+
+| # | Task | Status | Shipped in |
+|---|---|---|---|
+| 334 | For each party the editor picks: check that their /actors/ page works as a stranger's first link, and draft format B questions from their own claims for the editor to approveThe brief: admin/content/briefs/2026-10-25__brief__interviews-and-outreach.md (the Sherpa, 25 October, at the editor's request). Waits on the editor's choice of the first wave. | waiting |  |
+
 ## What they have done
 - 23 October: joined; the first walk of v0.8.1: nine frictions logged with evidence, six of them from the synthetic readers' v0.4.3 runs re-checked on v0.8.1, four still open; where the headline starts on a phone measured on seven pages; proposals for better trails and for making the Sherpa visible to readers
 - 23 October: the first reader feedback, UF-001, recorded point by point on /sherpa/feedback/uf-001/: ten points, both interface bugs reproduced (the at-a-glance tile in every theme at most widths; the glossary card's link unreachable by design), seven frictions logged and routed
@@ -66,4 +72,4 @@ What the three vaults are and who holds their keys: [how the team talks](../chan
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/team/sherpa/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/sherpa/index.html

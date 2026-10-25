@@ -44,8 +44,8 @@ Every page of this site also checks, once, whether the site now serves a newer r
 
 The sites whose deploy pipeline /status/ reads from GitHub's public API, in the browser, with no credential. Each repository is public; its workflow deploys the dev branch to GitHub Pages. GitHub allows 60 requests an hour per IP address, shared by every page that calls api.github.com from that address; this page spends one call per site per refresh: every five minutes, every twenty seconds for a site with a run in flight, and none while the tab is hidden. The badges are images GitHub serves, loaded by the same script, and do not count. Commit messages, run numbers and the agent named in a commit's `Agent:` line are public on GitHub already; this page shows them, and sends nothing anywhere else.
 
-For agents: `admin/build/release.sh ""` takes in whatever other agents released before it bumps, and if its push loses a race it takes that in too and releases again on top, so two agents can release minutes apart without either push being rejected or either deploy being lost. The list of the sites read here is [data/pipeline.json](../data/pipeline.json).
+For agents: `admin/build/release.sh ""` takes in whatever other agents released before it bumps, and if its push loses a race it takes that in too and releases again on top, so two agents can release minutes apart without either push being rejected or either deploy being lost. The list of the sites read here is [data/pipeline.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/pipeline.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/status/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/status/index.html

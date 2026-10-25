@@ -280,7 +280,7 @@ The editor asked for a pass on the curator's new promotions, and said this sessi
 
 #### What it looks like
 
-![/compromise/ on the live site after the release](../../../admin/content/agents/journalist/debriefs/img/2026-10-25__second-wake__1.png)
+![/compromise/ on the live site after the release](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-25__second-wake__1.png)
 
 /compromise/ on the live site after the release
 
@@ -342,23 +342,23 @@ By the editor, in this session, on 23 and 24 October 2026: bring the site up to 
 
 #### What it looks like
 
-![The desk: the pipeline from the researcher to the correspondent, and the full pass](../../../admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__1-desk.png)
+![The desk: the pipeline from the researcher to the correspondent, and the full pass](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__1-desk.png)
 
 The desk: the pipeline from the researcher to the correspondent, and the full pass
 
-![The state of affairs, version 3](../../../admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__2-state-v3.png)
+![The state of affairs, version 3](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__2-state-v3.png)
 
 The state of affairs, version 3
 
-![Claims waiting for review, with verdicts](../../../admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__3-claims-review.png)
+![Claims waiting for review, with verdicts](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__3-claims-review.png)
 
 Claims waiting for review, with verdicts
 
-![Pulse, a separate section](../../../admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__4-pulse.png)
+![Pulse, a separate section](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__4-pulse.png)
 
 Pulse, a separate section
 
-![The front page at v0.15.14](../../../admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__5-front.png)
+![The front page at v0.15.14](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-24__journalist-to-correspondent__5-front.png)
 
 The front page at v0.15.14
 
@@ -408,7 +408,7 @@ The editor started the session with the brief `2026-10-24__brief__the-journalist
 
 #### What it looks like
 
-![/claims/review/ on the live site after the release](../../../admin/content/agents/journalist/debriefs/img/2026-10-24__first-wake__1.png)
+![/claims/review/ on the live site after the release](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-24__first-wake__1.png)
 
 /claims/review/ on the live site after the release
 
@@ -444,8 +444,8 @@ None owned on the board.
 
 3. Re-read in full the files marked partly checked on /views/desk/.
 
-Files: [admin/content/agents/journalist/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/journalist) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/journalist/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/journalist) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/journalist/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/journalist/index.html

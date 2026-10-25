@@ -26,7 +26,7 @@ def load(p):
 
 
 def page():
-    imp = load('tools/imported.json')
+    imp = load('records/imported.json')
     board = [load(f'records/board/{f}') for f in sorted(os.listdir(os.path.join(ROOT, 'records', 'board')))]
     board.sort(key=lambda r: r.get('order', 0))
     by = defaultdict(Counter)

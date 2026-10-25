@@ -67,8 +67,8 @@ Scores are 0 to 5 from that reader's point of view; the change since its previou
 
 ## The vaults
 
-One vault per reader; its id is on that reader's page. Each holds `README.md` (the reader), `latest.json`, `history.jsonl`, `heartbeats.jsonl` and `runs//` with `run.json`, `requests.jsonl`, `console.jsonl`, `pages/` (served and rendered HTML, text, screenshots, measurements), `review-request.md`, `feedback.json` and `feedback.md`. They hold nothing confidential: captures of this public site and the readers' reviews, so their read keys are published, on each reader's page and on [every vault behind this site](../../vaults/index.html): anyone can open them read-only. Their vault keys are sealed to the editor's key; none is in this repository.
+One vault per reader; its id is on that reader's page. Each holds `README.md` (the reader), `latest.json`, `history.jsonl`, `heartbeats.jsonl` and `runs//` with `run.json`, `requests.jsonl`, `console.jsonl`, `pages/` (served and rendered HTML, text, screenshots, measurements), `review-request.md`, `feedback.json` and `feedback.md`. They hold nothing confidential: captures of this public site and the readers' reviews, so their read keys are published, on each reader's page and on [every vault behind this site](https://refs.php.oct.2026.newsroom.sgit.ai/vaults/): anyone can open them read-only. Their vault keys are sealed to the editor's key; none is in this repository.
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/synthetic/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/synthetic/index.html

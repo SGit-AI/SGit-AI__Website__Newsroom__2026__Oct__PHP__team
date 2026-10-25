@@ -277,7 +277,7 @@ makes sense beside the other scheduled runs.
 
 #### What it looks like
 
-![The librarian's row on /team/schedule/: active, 20:23 London](../../../admin/content/agents/librarian/debriefs/img/2026-10-25__schedule-wired__1.png)
+![The librarian's row on /team/schedule/: active, 20:23 London](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-25__schedule-wired__1.png)
 
 The librarian's row on /team/schedule/: active, 20:23 London
 
@@ -329,11 +329,11 @@ The scheduled wake at 07:13 London: follow the card, `data/schedule/librarian.js
 
 #### What it looks like
 
-![An answer after the fix: bold, code and quotes still render; nothing else can](../../../admin/content/agents/librarian/debriefs/img/2026-10-25__pass__1.png)
+![An answer after the fix: bold, code and quotes still render; nothing else can](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-25__pass__1.png)
 
 An answer after the fix: bold, code and quotes still render; nothing else can
 
-![Overlaps: none](../../../admin/content/agents/librarian/debriefs/img/2026-10-25__pass__2.png)
+![Overlaps: none](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-25__pass__2.png)
 
 Overlaps: none
 
@@ -391,11 +391,11 @@ card, `data/schedule/librarian.json`, and nothing else.
 
 #### What it looks like
 
-![The corrected short answer to "Is PHP really the software behind most websites?"](../../../admin/content/agents/librarian/debriefs/img/2026-10-24__morning-pass__1.png)
+![The corrected short answer to "Is PHP really the software behind most websites?"](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-24__morning-pass__1.png)
 
 The corrected short answer to "Is PHP really the software behind most websites?"
 
-![Every debrief, newest first: the desk, the fact-check desk and the Sherpa now close their rounds this way](../../../admin/content/agents/librarian/debriefs/img/2026-10-24__morning-pass__2.png)
+![Every debrief, newest first: the desk, the fact-check desk and the Sherpa now close their rounds this way](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-24__morning-pass__2.png)
 
 Every debrief, newest first: the desk, the fact-check desk and the Sherpa now close their rounds this way
 
@@ -453,23 +453,23 @@ The editor, in the session: pull from dev and do a librarian pass; propose a tim
 
 #### What it looks like
 
-![Who owns what, 27 members: no overlaps, no unowned file](../../../admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__1.png)
+![Who owns what, 27 members: no overlaps, no unowned file](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__1.png)
 
 Who owns what, 27 members: no overlaps, no unowned file
 
-![The members table, with each one's exclusive writes, pages and mandate](../../../admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__2.png)
+![The members table, with each one's exclusive writes, pages and mandate](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__2.png)
 
 The members table, with each one's exclusive writes, pages and mandate
 
-![The corrected short answer to "Has anyone actually been hacked?"](../../../admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__3.png)
+![The corrected short answer to "Has anyone actually been hacked?"](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__3.png)
 
 The corrected short answer to "Has anyone actually been hacked?"
 
-![abp@newsroom.sgit's page: it keeps every member's policy](../../../admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__4.png)
+![abp@newsroom.sgit's page: it keeps every member's policy](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__4.png)
 
 abp@newsroom.sgit's page: it keeps every member's policy
 
-![The story site's page, with the design work folded in](../../../admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__5.png)
+![The story site's page, with the design work folded in](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-24__librarian-pass__5.png)
 
 The story site's page, with the design work folded in
 
@@ -645,23 +645,23 @@ markdown only. The message is in full in the brief, `admin/content/briefs/2026-1
 
 #### What it looks like
 
-![Who owns what: every member, its exclusive writes, its pages and its mandate](../../../admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__1.png)
+![Who owns what: every member, its exclusive writes, its pages and its mandate](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__1.png)
 
 Who owns what: every member, its exclusive writes, its pages and its mandate
 
-![The overlap check: none, 0 unowned source files, 0 appends to an unowned file](../../../admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__2.png)
+![The overlap check: none, 0 unowned source files, 0 appends to an unowned file](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__2.png)
 
 The overlap check: none, 0 unowned source files, 0 appends to an unowned file
 
-![The librarian's computed delta: 16 granted, 7 wanted, 8 excess with nothing that counts as a control in the way](../../../admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__3.png)
+![The librarian's computed delta: 16 granted, 7 wanted, 8 excess with nothing that counts as a control in the way](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__3.png)
 
 The librarian's computed delta: 16 granted, 7 wanted, 8 excess with nothing that counts as a control in the way
 
-![Every round: the table the conductor reads, one row per agent](../../../admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__4.png)
+![Every round: the table the conductor reads, one row per agent](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__4.png)
 
 Every round: the table the conductor reads, one row per agent
 
-![The fractal graph's threads, from the previous round, now the cartographer's](../../../admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__5.png)
+![The fractal graph's threads, from the previous round, now the cartographer's](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/librarian/debriefs/img/2026-10-22__agents-and-rounds__5.png)
 
 The fractal graph's threads, from the previous round, now the cartographer's
 
@@ -733,8 +733,8 @@ The fractal graph's threads, from the previous round, now the cartographer's
 
 *Note, 24 October 2026: the librarian's board rows were renumbered each time this branch took in dev (090-102, then 172-190, 191-209, 192-210, and 199-217 at v0.11.6). The board shows them by title and owner; the numbers above are as they were on the day.*
 
-Files: [admin/content/agents/librarian/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/librarian) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/librarian/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/librarian) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/librarian/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/librarian/index.html

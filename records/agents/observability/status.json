@@ -1,16 +1,14 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "observability",
- "as_of": "2026-10-24",
+ "as_of": "2026-10-25",
  "round": {
-  "n": 2,
-  "date": "2026-10-24",
+  "n": 3,
+  "date": "2026-10-25",
   "branch": "claude/wonderful-allen-vu7tzg",
-  "commits": [
-   "v0.14.28 (round 1)"
-  ]
+  "commits": []
  },
- "state": "round 2: the telemetry application v0.4.2 pushed to 5wnsr5h8 (Queue & drain progress; One page with the page framed); holds the keys of 84wr8mib and 5wnsr5h8",
+ "state": "round 3: the telemetry lane drained on 25 October (150 events; the lane empty); admin/observability/drain.py drains from the command line",
  "done": [
   {
    "what": "Joined at the editor's request: the member folder (ROLE.md, a draft policy.json, status.json) and an empty vault register",
@@ -47,24 +45,32 @@
   {
    "what": "The telemetry application v0.4.2: ◎ and ↗ beside every page's name; One page (its numbers, views over time, before and after, paths, who, where from, devices, languages, versions, latest events, and the page itself framed with sandbox=\"\", so it sends no telemetry); siteUrl() keeps untrusted paths on the site's origin; 40 tests pass over 1,653 events",
    "evidence": "5wnsr5h8: VERSION 0.4.2, CHANGELOG.md; debriefs/2026-10-24__one-page-and-the-drain-live.md"
+  },
+  {
+   "what": "Drained the telemetry lane: 150 events (18 reader sessions, 40 synthetic, 2 crawlers, 2 power users), pushed to 84wr8mib before marking them processed; the vault holds 2,083 events from 674 sessions",
+   "evidence": "84wr8mib: drain 2026-10-25: 150 event(s); debriefs/2026-10-25__the-lane-drained.md"
+  },
+  {
+   "what": "admin/observability/drain.py: the application's drain from the command line, the same order and row bytes, nothing secret printed",
+   "evidence": "admin/observability/drain.py"
   }
  ],
  "tasks": {
   "board": [
    "270",
    "272",
-   "273"
+   "330"
   ],
   "note": "the board rows this member owns or opened are in data/admin.json"
  },
  "next": [
   {
-   "what": "A proposed card for a lane check and drain",
-   "why": "the lane refuses at 1,000 waiting; it needs the editor's go"
+   "what": "A proposed card for a scheduled lane check and drain with admin/observability/drain.py",
+   "why": "the lane refuses at 1,000 waiting; 430 came in on 25 October; needs the editor's go"
   },
   {
-   "what": "Count the events the cap refuses, with dev",
-   "why": "today a refused event is lost and nobody knows; assets/telemetry.js is dev's"
+   "what": "Count the events the cap refuses, and stop telemetry from local test servers, with dev",
+   "why": "board 330: 21% of the events so far came from localhost"
   }
  ],
  "asks": [
@@ -92,7 +98,7 @@
   "overrides": 0,
   "writes_outside_scope": 1,
   "injection_seen": 0,
-  "detail": "One write outside scope: admin/content/agents/observability/policy.json, which abp@newsroom.sgit keeps; written as the member's first draft (the librarian's step for a new member), for abp@ to take over and the editor to agree (board 272's note). Appends only otherwise: own board rows in data/admin.json, own message files in data/messages/. The roster (data/team.json) is the conductor's: asked by message, not edited. One exposure, said to the editor at once: sgit clone printed the private read key of 84wr8mib into this session's tool output (the masking pattern missed it). It is in the session transcript only: no file, commit, page or message. Rotation (a rekey of 84wr8mib) is the editor's call. Round 2: no write outside scope. The editor decided in the session that 84wr8mib needs no rekey."
+  "detail": "One write outside scope: admin/content/agents/observability/policy.json, which abp@newsroom.sgit keeps; written as the member's first draft (the librarian's step for a new member), for abp@ to take over and the editor to agree (board 272's note). Appends only otherwise: own board rows in data/admin.json, own message files in data/messages/. The roster (data/team.json) is the conductor's: asked by message, not edited. One exposure, said to the editor at once: sgit clone printed the private read key of 84wr8mib into this session's tool output (the masking pattern missed it). It is in the session transcript only: no file, commit, page or message. Rotation (a rekey of 84wr8mib) is the editor's call. Round 2: no write outside scope. The editor decided in the session that 84wr8mib needs no rekey. Round 3: no write outside scope."
  },
- "debrief": "admin/content/agents/observability/debriefs/2026-10-24__one-page-and-the-drain-live.md"
+ "debrief": "admin/content/agents/observability/debriefs/2026-10-25__the-lane-drained.md"
 }

@@ -201,8 +201,8 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 
 - **Asked for a key, or a QR code of it?** Seal it and send the sealed link and its QR code; never the key itself, in a page, a file, a commit, a chat or a message. The steps are in `AGENTS.md`, section 7, and on [guidance for agents](../../admin/agents/index.html).
 
-What each vault is for, and the published read keys and write-only lanes, are on [the vaults behind this site](../../vaults/index.html).
+What each vault is for, and the published read keys and write-only lanes, are on [the vaults behind this site](https://refs.php.oct.2026.newsroom.sgit.ai/vaults/).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html

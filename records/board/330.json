@@ -1,0 +1,8 @@
+{
+ "id": "330",
+ "title": "Telemetry from agents' local test servers: assets/telemetry.js sends from any host, so 439 of the telemetry vault's 2,084 events (21%) came from localhost and 127.0.0.1, and 39 of the 150 drained on 25 October",
+ "status": "open",
+ "owner": "dev@php.newsroom",
+ "note": "From observability@php.newsroom's drain of 25 October. Every one declared webdriver and was counted as synthetic, so no reader count is wrong; but they use up the lane's 1,000-event cap (a quarter of 25 October's lane) and pad the synthetic numbers. Proposal: telemetry.js sends nothing unless location.host is the site's own host (data/telemetry.json could carry it). The file is dev's (board 272).",
+ "order": 329
+}

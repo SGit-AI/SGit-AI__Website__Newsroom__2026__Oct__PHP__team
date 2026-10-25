@@ -353,39 +353,39 @@ Built prototype F at `/admin/design/line/`: six pages, every word and number fro
 
 #### What it looks like
 
-![A first visit: the panel says who we think you are, why, and offers the six others](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__first-visit.png)
+![A first visit: the panel says who we think you are, why, and offers the six others](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__first-visit.png)
 
 A first visit: the panel says who we think you are, why, and offers the six others
 
-![An Executive reading on: one row, the chip, and this page's sentence for them](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__executive-reading.png)
+![An Executive reading on: one row, the chip, and this page's sentence for them](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__executive-reading.png)
 
 An Executive reading on: one row, the chip, and this page's sentence for them
 
-![Behind the chip: the seven roles, the readers inside the role, and how technical](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__the-control.png)
+![Behind the chip: the seven roles, the readers inside the role, and how technical](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__the-control.png)
 
 Behind the chip: the seven roles, the readers inside the role, and how technical
 
-![Switching to Security: the page re-lays in place, the line says what moved, Undo is offered](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__switched-to-security.png)
+![Switching to Security: the page re-lays in place, the line says what moved, Undo is offered](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__switched-to-security.png)
 
 Switching to Security: the page re-lays in place, the line says what moved, Undo is offered
 
-![Back within a week: what changed for an Executive, with the changed part marked in the page](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__since-you-were-here.png)
+![Back within a week: what changed for an Executive, with the changed part marked in the page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__since-you-were-here.png)
 
 Back within a week: what changed for an Executive, with the changed part marked in the page
 
-![A page written for the team: the gate in the line, the page dimmed rather than hidden](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__the-gate.png)
+![A page written for the team: the gate in the line, the page dimmed rather than hidden](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__the-gate.png)
 
 A page written for the team: the gate in the line, the page dimmed rather than hidden
 
-![Back within the hour: parts already read fold to one row until they change](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__read-parts-folded.png)
+![Back within the hour: parts already read fold to one row until they change](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__read-parts-folded.png)
 
 Back within the hour: parts already read fold to one row until they change
 
-![The catalogue: every line the rules produce, by moment, role and page](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__every-line.png)
+![The catalogue: every line the rules produce, by moment, role and page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__every-line.png)
 
 The catalogue: every line the rules produce, by moment, role and page
 
-![On a phone: the line keeps its chip and its sentence](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__phone.png)
+![On a phone: the line keeps its chip and its sentence](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__the-line__phone.png)
 
 On a phone: the line keeps its chip and its sentence
 
@@ -498,27 +498,27 @@ cards' preview tags, the phone. No failed request and no page error. Headline at
 
 #### What it looks like
 
-![A first visit: Executive, the line's question, the address already /as/executive/](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__front-first-visit.png)
+![A first visit: Executive, the line's question, the address already /as/executive/](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__front-first-visit.png)
 
 A first visit: Executive, the line's question, the address already /as/executive/
 
-![The agencies for an Executive: the line's sentence and the spectrum as its picture](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__agencies-executive.png)
+![The agencies for an Executive: the line's sentence and the spectrum as its picture](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__agencies-executive.png)
 
 The agencies for an Executive: the line's sentence and the spectrum as its picture
 
-![A shared link opened by someone with their own view: borrowed, theirs kept](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__shared-link-borrowed.png)
+![A shared link opened by someone with their own view: borrowed, theirs kept](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__shared-link-borrowed.png)
 
 A shared link opened by someone with their own view: borrowed, theirs kept
 
-![An address that is not a page](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__not-found.png)
+![An address that is not a page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__not-found.png)
 
 An address that is not a page
 
-![On a phone: one bar, the line under it, scrolling away](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__phone.png)
+![On a phone: one bar, the line under it, scrolling away](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__phone.png)
 
 On a phone: one bar, the line under it, scrolling away
 
-![The control in the night theme](../../../admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__dark-control.png)
+![The control in the night theme](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-25__line-live__dark-control.png)
 
 The control in the night theme
 
@@ -582,31 +582,31 @@ The editor, in this session, 24 October 2026 (verbatim in the brief): the whole 
 
 #### What it looks like
 
-![First visit: the first question, the page below already shaped for five minutes](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__first-visit.png)
+![First visit: the first question, the page below already shaped for five minutes](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__first-visit.png)
 
 First visit: the first question, the page below already shaped for five minutes
 
-![After three taps: one minute, a decision maker, to know what to do; two parts, under a minute of reading](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__decide-act.png)
+![After three taps: one minute, a decision maker, to know what to do; two parts, under a minute of reading](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__decide-act.png)
 
 After three taps: one minute, a decision maker, to know what to do; two parts, under a minute of reading
 
-![The control: every option says what it would show on this page](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__the-control.png)
+![The control: every option says what it would show on this page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__the-control.png)
 
 The control: every option says what it would show on this page
 
-![The same page for a security lead at five minutes, to know what to do](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__security-5min.png)
+![The same page for a security lead at five minutes, to know what to do](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__security-5min.png)
 
 The same page for a security lead at five minutes, to know what to do
 
-![The agencies: a page that does not answer to aim says so, and keeps it for the next page](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__agencies-partial.png)
+![The agencies: a page that does not answer to aim says so, and keeps it for the next page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__agencies-partial.png)
 
 The agencies: a page that does not answer to aim says so, and keeps it for the next page
 
-![The team console, for a reader who is not on the team](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__console-gate.png)
+![The team console, for a reader who is not on the team](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__console-gate.png)
 
 The team console, for a reader who is not on the team
 
-![On a phone: the control as a sheet](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__phone-sheet.png)
+![On a phone: the control as a sheet](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__the-lens__phone-sheet.png)
 
 On a phone: the control as a sheet
 
@@ -664,23 +664,23 @@ The editor, in this session, 24 October 2026: a briefing pack (a zip) on the len
 
 #### What it looks like
 
-![Before: a content page on a laptop, headline at 349px](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__before-desktop.png)
+![Before: a content page on a laptop, headline at 349px](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__before-desktop.png)
 
 Before: a content page on a laptop, headline at 349px
 
-![After: the same page, headline at 234px](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__after-desktop.png)
+![After: the same page, headline at 234px](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__after-desktop.png)
 
 After: the same page, headline at 234px
 
-![Before: /ops/ on a phone, the rail first](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__before-phone-ops.png)
+![Before: /ops/ on a phone, the rail first](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__before-phone-ops.png)
 
 Before: /ops/ on a phone, the rail first
 
-![After: /ops/ on a phone, the headline first](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__after-phone-ops.png)
+![After: /ops/ on a phone, the headline first](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__after-phone-ops.png)
 
 After: /ops/ on a phone, the headline first
 
-![After: /analysis/ on a phone, the hero readable](../../../admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__after-phone-analysis.png)
+![After: /analysis/ on a phone, the hero readable](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-24__chrome__after-phone-analysis.png)
 
 After: /analysis/ on a phone, the hero readable
 
@@ -710,8 +710,8 @@ Closed: 286. Opened: 287 (dev). Open and mine: 275 waits on the editor; 230, 231
 
 2. With the go on 275, the lens live.
 
-Files: [admin/content/agents/story-site/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/story-site) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/story-site/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/story-site) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/story-site/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/story-site/index.html

@@ -315,19 +315,19 @@ commit's trailer.
 
 #### Screenshots
 
-![The reviewer's reading](../../../admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__1.png)
+![The reviewer's reading](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__1.png)
 
 The reviewer's reading
 
-![For Wikipedia's editors](../../../admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__2.png)
+![For Wikipedia's editors](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__2.png)
 
 For Wikipedia's editors
 
-![The evolution](../../../admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__3.png)
+![The evolution](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__3.png)
 
 The evolution
 
-![The talk page](../../../admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__4.png)
+![The talk page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia-history-and-review__4.png)
 
 The talk page
 
@@ -359,11 +359,11 @@ opinions", each fact linked to its evidence, so it becomes one of the site's anc
 
 #### What it looks like
 
-![The Wiz blog source in the story graph, reached by a zoom out of the Wikipedia graph: its claims, its capture, and the way back](../../../admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia__1.png)
+![The Wiz blog source in the story graph, reached by a zoom out of the Wikipedia graph: its claims, its capture, and the way back](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia__1.png)
 
 The Wiz blog source in the story graph, reached by a zoom out of the Wikipedia graph: its claims, its capture, and the way back
 
-![Every statement of the article at phone width, dark: the five classes written out as pills, each statement with its references and evidence](../../../admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia__2.png)
+![Every statement of the article at phone width, dark: the five classes written out as pills, each statement with its references and evidence](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/ontologist/debriefs/img/2026-10-25__wikipedia__2.png)
 
 Every statement of the article at phone width, dark: the five classes written out as pills, each statement with its references and evidence
 
@@ -453,8 +453,8 @@ The editor: the licence decision (board 293). The librarian, for the policy's ke
 
 Security: the rights question in 5 above.
 
-Files: [admin/content/agents/ontologist/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/ontologist) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/ontologist/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/ontologist) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/ontologist/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/ontologist/index.html

@@ -355,6 +355,8 @@ By domain, kept current by whoever ships. A thing not listed here does not exist
 
 - Not deployed yet: their Pages source must be "Deploy from a branch" (dev, root), or get a workflow (security review).
 
+- **Reviewed against the brief, 25 October evening:** parity holds (every one of v1's pages owned by one site, its text the same there: `tools/parity.py` in the press); the markdown twins' links follow their pages; a site's 404 page sends an address another host owns (a page, a twin, a view address, an asset, a data file) there, to the route's hosts only. The brief "The split, for every agent" says where each agent writes today, after the records and data move (step A, the editor's go) and after the cutover, with a `repositories` field for every card.
+
 ### Recorded, not started
 
 - The organisation as a digital twin (`admin/content/briefs/2026-10-22__brief__the-organisation-as-a-digital-twin.md`): a state machine of roles, runs and handovers, a common run record, the accountant, a bulletin board for agents, and a daily improvement loop with a budget.
@@ -439,4 +441,4 @@ By domain, kept current by whoever ships. A thing not listed here does not exist
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/index.html

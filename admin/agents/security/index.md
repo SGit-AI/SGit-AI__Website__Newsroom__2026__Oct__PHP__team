@@ -258,31 +258,31 @@ By the editor, in this session (22 to 24 October 2026): join the team as securit
 
 #### What it looks like
 
-![The application security overview](../../../admin/content/agents/security/debriefs/img/2026-10-24__application-security__1.png)
+![The application security overview](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/security/debriefs/img/2026-10-24__application-security__1.png)
 
 The application security overview
 
-![A data-flow diagram on the threat model page](../../../admin/content/agents/security/debriefs/img/2026-10-24__application-security__2.png)
+![A data-flow diagram on the threat model page](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/security/debriefs/img/2026-10-24__application-security__2.png)
 
 A data-flow diagram on the threat model page
 
-![The advisories list](../../../admin/content/agents/security/debriefs/img/2026-10-24__application-security__3.png)
+![The advisories list](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/security/debriefs/img/2026-10-24__application-security__3.png)
 
 The advisories list
 
-![SA-2026-012, the Ask pane XSS, kept as an incident](../../../admin/content/agents/security/debriefs/img/2026-10-24__application-security__4.png)
+![SA-2026-012, the Ask pane XSS, kept as an incident](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/security/debriefs/img/2026-10-24__application-security__4.png)
 
 SA-2026-012, the Ask pane XSS, kept as an incident
 
-![The bug bounty's leaderboard](../../../admin/content/agents/security/debriefs/img/2026-10-24__application-security__5.png)
+![The bug bounty's leaderboard](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/security/debriefs/img/2026-10-24__application-security__5.png)
 
 The bug bounty's leaderboard
 
-![The runbook for taking the site offline](../../../admin/content/agents/security/debriefs/img/2026-10-24__application-security__6.png)
+![The runbook for taking the site offline](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/security/debriefs/img/2026-10-24__application-security__6.png)
 
 The runbook for taking the site offline
 
-![The telemetry policy](../../../admin/content/agents/security/debriefs/img/2026-10-24__application-security__7.png)
+![The telemetry policy](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/security/debriefs/img/2026-10-24__application-security__7.png)
 
 The telemetry policy
 
@@ -306,8 +306,8 @@ Anyone can read every vulnerability the site has had and how it was fixed; repor
 
 - Injection seen (recorded, not acted on): a headline on The Register's security page, captured seven times by the source watch, is itself a prompt-injection payload (it tells the reader's model to disregard its instructions); a chatbot script in the Lorikeet capture asks for payment. The gate caught the first when this debrief quoted it word for word, so it is described here instead.
 
-Files: [admin/content/agents/security/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/security) · the same data for every member in [data/agents.json](../../../data/agents.json).
+Files: [admin/content/agents/security/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/security) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.7 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/agents/security/index.html
+site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/security/index.html
