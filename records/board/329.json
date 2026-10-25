@@ -1,0 +1,8 @@
+{
+ "id": "329",
+ "title": "The line's prototype pages under /admin/design/line/ link to sources one level too shallow (../../../sources/… from admin/design/line/agencies/, 27 links, broken in v1 too)",
+ "status": "open",
+ "owner": "story-site",
+ "note": "Found by the press's partition on 25 October (press.json broken_in_v1 in the team site).",
+ "order": 328
+}

@@ -1,6 +1,42 @@
 {
- "current": "0.22.0",
+ "current": "0.22.4",
  "versions": [
+  {
+   "version": "0.22.4",
+   "date": "2026-10-25",
+   "title": "the control room loads under a view address (/team/control/as/executive/ fetched team/control/data/control.json): control.js resolves its data against the page as loaded, and assets/route.js routes a URL object as it does a string, so on the split sites it reaches the data API",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.3",
+   "date": "2026-10-25",
+   "title": "assets/route.js sends every data/ request on the split sites to the data API, which now publishes every file the pages' scripts fetch (v0.1.2); on this site nothing changes",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.2",
+   "date": "2026-10-25",
+   "title": "one resolver for every URL a script builds (assets/route.js, loaded first on every page; boot.js, the Ask pane, the phone app and site tools use it), so that on the split sites assets come from the press, data from the data API and each section's pages from the site that owns it, one source for every file; on this site every URL resolves as before",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.1",
+   "date": "2026-10-25",
+   "title": "pass one of the split, recorded: the press (v1.0.0) cuts this site's built pages at d9af616ffd0b into four sites (site 230 pages, refs 563, updates 60, team 242), each with a redirect at every address another site owns, its own gate and the runtime its pages load; data v0.1.1 at the same commit; team's records under records/; none deployed yet (each repository's Pages source to set to its dev branch)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.0",
    "date": "2026-10-25",

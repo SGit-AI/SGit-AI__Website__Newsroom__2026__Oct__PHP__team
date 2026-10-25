@@ -146,4 +146,4 @@ Paste this into Perplexity as it stands. It's also in the watch vault at `docs/p
 
 
 ---
-site v0.22.0 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-23__brief__perplexity-community-signals/index.html
+site v0.22.4 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-23__brief__perplexity-community-signals/index.html

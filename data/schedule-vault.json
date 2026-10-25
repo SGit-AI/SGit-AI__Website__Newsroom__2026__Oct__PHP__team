@@ -1,6 +1,0 @@
-{
- "about": "The schedule vault: every scheduled agent's schedule, its task queue and every run with its log. Public by design: its read key opens it read-only and cannot write; /team/schedule/ reads it live with this key. Kept by conductor@php.newsroom; the brief is admin/content/briefs/2026-10-23__brief__the-schedule-vault.md.",
- "vault_id": "weic8imn",
- "read_key": "sgit_public_read_95c3be658efcb7aa068a762756aa5affb7d7451829cb728b044a7da8803e4d06:weic8imn",
- "endpoint": "https://dev.send.sgraph.ai"
-}

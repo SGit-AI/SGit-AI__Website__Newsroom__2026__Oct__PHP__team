@@ -38,7 +38,24 @@ Why not build in a "php-v2" repository and rename it to the main name later:
 - **25 October:** the editor created the six repositories, with `dev` as their default branch, Pages and DNS, and attached all seven to dev's session.
 - **data:** v0.1.0 is on `dev`: 49 catalogue entries (466 files) imported from v1, a schema for every top-level file, immutable `/v/0.1.0/` with a manifest of sha256s, `/latest/`, `versions.json` and a front page. Its gate takes under a second.
 - **team:** its first import is on `dev`. The board is split into one file per row (323 rows; the two rows that both took 013 are kept and named). It also holds the 13 schedule cards, the runs and messages, 29 members' folders, the registers, the briefs, the Sherpa's material and `WAKE.md`. Its gate takes a tenth of a second.
-- **Waiting on the design agent's UX refactor:** press, refs, updates and site. They carry the layout it is reworking, so they move after it, and with less code.
+- **Pass one, 25 October, after the design agent's refactor (v0.22.0).** Every page is still built in v1. The press (v1.0.0) cuts v1's committed output, at commit `d9af616ffd0b`, into four sites by section, as `sites.json` lists them. Every v1 page has exactly one owner:
+
+  | Site | Pages of its own | Redirects to other sites |
+  | --- | --- | --- |
+  | site | 230 | 865 |
+  | refs | 563 | 532 |
+  | updates | 60 | 1,035 |
+  | team | 242 | 852 |
+
+  - **Every old address answers on every site.** A page another site owns answers with a redirect to it. Links between the sites are absolute, and a moved page's canonical address names its new site. Links to v1's sources (a review's markdown) go to the file on GitHub.
+  - **Each site carries its own runtime** (assets, data and the 404 router), because the pages' Content-Security-Policy loads scripts and data only from their own host.
+  - **Each site has its own gate,** taking seconds: every file is what the press wrote, every link resolves, every link across sites names a page the other site serves.
+  - **data** is v0.1.1, imported at the same commit. **team**'s records moved under `records/`, with the team's pages at its root.
+  - **Not live yet:** none of the six repositories has deployed. Each needs its Pages source set to "Deploy from a branch: dev, / (root)", or a deploy workflow, which goes to security.
+- **Pass two:**
+  - each site's sources (its pages' content and the build code that writes them) move into its repository, and the build library into the press;
+  - the shared assets and the data are served once, from the press and the data API, when the Content-Security-Policy allows those hosts (a change for security);
+  - the agents' cards and `WAKE.md` name their repositories, and the cutover follows.
 
 ## Step 0: the editor's setup (before the session)
 

@@ -3,6 +3,6 @@
  "title": "One repository into six, step 1: the one big session (press, data, team, refs, updates, site; every old address answering; the parity report; the replay), then each agent reviews its own repository",
  "status": "open",
  "owner": "dev@php.newsroom",
- "note": "After step 0. The press goes to security for review before v1.0.0.",
+ "note": "Pass one done on 25 October (press v1.0.0, data v0.1.1, site, refs, updates and team cut from v1 at d9af616ffd0b, every old address answering, each site's gate); pass two moves the sources and the build. After step 0. The press goes to security for review before v1.0.0.",
  "order": 322
 }

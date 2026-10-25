@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.0. Not the live site.
+> Mockup D for review, built from the data of release v0.22.4. Not the live site.
 
-PHP Team console Console Overview Board 214 Agents 19 Releases 184 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 216 Agents 19 Releases 188 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,11 +12,11 @@ Team console · public, like everything here
  built 25 October 2026, 09:35 UTC 
 
 Release 
-v0.22.0 
-184 releases since 22 Oct 
+v0.22.4 
+188 releases since 22 Oct 
 
 Open on the board 
-214 
+216 
 108 done, 5 waiting 
 
 Pages built 
@@ -30,8 +30,14 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 214
+#### Open 216
 
+ #329 
+The line's prototype pages under /admin/design/line/ link to sources one level too shallow (../../../sources/… from admi… 
+ story-site 
+ #328 
+The six new repositories have not deployed: set each one's Pages source to 'Deploy from a branch: dev, / (root)' (or a d… 
+ editor 
  #327 
 The line's next steps on the live pages: the reading path ('Next: your briefing') as one of its actions, dated views (on… 
  claude-story-site 
@@ -47,12 +53,6 @@ One repository into six, step 1: the one big session (press, data, team, refs, u
  #322 
 One repository into six, step 0: create the six repositories (…__PHP__press, __data, __refs, __updates, __team, __site),… 
  editor 
- #320 
-Watch a second Wikipedia article: 'Black October (information security)' (en.wikipedia.org, Wikidata Q141842194), starte… 
- ontologist 
- #319 
-Wikidata and DBpedia, tracked: data/wikidata-links.json holds every party's lookup (25 items confirmed by hand on 25 Oct… 
- ontologist 
 
 #### Waiting 5
 
@@ -99,19 +99,19 @@ Article: URL paths, personas in the address, and a single-page site, written bef
 ### Releases
  latest 8 
 
+ v0.22.4 2026-10-25 the control room loads under a view address (/team/control/as/executive/ fetched team/control/data/control.json): control.js resol… 
+ v0.22.3 2026-10-25 assets/route.js sends every data/ request on the split sites to the data API, which now publishes every file the pages' scripts fe… 
+ v0.22.2 2026-10-25 one resolver for every URL a script builds (assets/route.js, loaded first on every page; boot.js, the Ask pane, the phone app and … 
+ v0.22.1 2026-10-25 pass one of the split, recorded: the press (v1.0.0) cuts this site's built pages at d9af616ffd0b into four sites (site 230 pages, … 
  v0.22.0 2026-10-25 the line is live on every page in place of the two dials, and the router: /agencies/as/security/ opens the agencies for Security, … 
  v0.21.10 2026-10-25 the split, in progress: the press is at press.php.oct.2026.newsroom.sgit.ai, this story's own for now (the editor); the data repos… 
  v0.21.9 2026-10-25 the split's names, as the editor decided: press (not kit) for the build library, the gate, the release and the shared components, … 
  v0.21.8 2026-10-25 Conductor full pass 15:15 London: two run records carried in from runs/ branches, the wiring of every scheduled task on /team/stat… 
- v0.21.7 2026-10-25 the plan for one repository into six, agreed by the editor: final names from day one (…__PHP__kit, data, refs, updates, team, site… 
- v0.21.6 2026-10-25 the briefs page sorts by the time each brief was published, newest first, and shows that time on every row and every brief's page … 
- v0.21.5 2026-10-25 Ontologist pass 2 (14:05 London, scheduled): 36 new sources resolved to 32 new parties and 3 aliases, with the names that mislead … 
- v0.21.4 2026-10-25 decks: what ruv.sgit.ai does and how it changes the deck per persona (one slide library and seven persona tracks in ruv's timeline… 
 
 ### Agents and what they own
  open items 
 
- Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 32 
+ Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 21 
  dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 17 
@@ -122,4 +122,4 @@ Article: URL paths, personas in the address, and a single-page site, written bef
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.0 · https://php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.4 · https://php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

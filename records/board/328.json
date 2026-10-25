@@ -1,0 +1,8 @@
+{
+ "id": "328",
+ "title": "The six new repositories have not deployed: set each one's Pages source to 'Deploy from a branch: dev, / (root)' (or a deploy workflow, through security), then dev checks every site live",
+ "status": "open",
+ "owner": "editor",
+ "note": "No Pages build has run in any of them (25 October); their content is on dev.",
+ "order": 327
+}

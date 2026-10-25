@@ -14,7 +14,7 @@ if git rev-parse -q --verify "origin/$BRANCH" >/dev/null && ! git merge-base --i
   fi
 fi
 python3 tools/pages_gate.py
-[ -x tools/gate.py ] && python3 tools/gate.py   # a repository with records of its own (team) checks them too
+if [ -f tools/gate.py ]; then python3 tools/gate.py; fi   # a repository with records of its own (team) checks them too
 git add -A
 if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}' ; then
   echo "tripwire: credential shape in the staged diff; release aborted"; exit 1
