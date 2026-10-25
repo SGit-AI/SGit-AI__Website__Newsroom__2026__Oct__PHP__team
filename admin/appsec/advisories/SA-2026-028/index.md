@@ -47,4 +47,4 @@ Quotas on the server; caps per drain; drop invalid rows before saving attachment
 
 
 ---
-site v0.22.4 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-028/index.html
+site v0.22.5 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-028/index.html

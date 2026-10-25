@@ -37,7 +37,7 @@ The new repositories get their final names from the start. Only today's reposito
 | `…__PHP__refs` | refs.php.oct.2026.newsroom.sgit.ai | day one |
 | `…__PHP__updates` | updates.php.oct.2026.newsroom.sgit.ai | day one |
 | `…__PHP__team` | team.php.oct.2026.newsroom.sgit.ai | day one |
-| `…__PHP__site` | next.php.oct.2026.newsroom.sgit.ai until the cutover, then php.oct.2026.newsroom.sgit.ai | cutover |
+| `…__PHP__site` | site.php.oct.2026.newsroom.sgit.ai until the cutover, then php.oct.2026.newsroom.sgit.ai | cutover |
 | today's `…__PHP` | stays as it is until the cutover; then renamed `…__PHP__v1`, archived, read-only |  |
 
 Why not build in a "php-v2" repository and rename it to the main name later:
@@ -69,7 +69,7 @@ Why not build in a "php-v2" repository and rename it to the main name later:
 
 - **Every old address answers on every site.** A page another site owns answers with a redirect to it. Links between the sites are absolute, and a moved page's canonical address names its new site. Links to v1's sources (a review's markdown) go to the file on GitHub.
 
-- **Each site carries its own runtime** (assets, data and the 404 router), because the pages' Content-Security-Policy loads scripts and data only from their own host.
+- **Each site carried its own runtime** in this first cut (assets, data and the 404 router), because the pages' Content-Security-Policy loaded scripts and data only from their own host. The same day this became one source per file (below).
 
 - **Each site has its own gate,** taking seconds: every file is what the press wrote, every link resolves, every link across sites names a page the other site serves.
 
@@ -77,11 +77,27 @@ Why not build in a "php-v2" repository and rename it to the main name later:
 
 - **Not live yet:** none of the six repositories has deployed. Each needs its Pages source set to "Deploy from a branch: dev, / (root)", or a deploy workflow, which goes to security.
 
+- **One source for every file, 25 to 26 October (the editor: "we don't want to have engineering issues, and ironically security issues, by having multiple sources for the same files").**
+
+- **The assets are served once, by the press.** `tools/assets_v1.py` takes v1's `assets/` at a released commit (122 files); press v1.0.2 publishes them under `/v/1.0.2/assets/`, and v1.0.4 is the current version. The partition cuts a site only against a press version whose assets are exactly v1's at the commit it cuts.
+
+- **The data is served once, by the data API.** It also publishes every file the pages' scripts fetch: the items, the telemetry and subscription settings, the control room, the personas and the stack. This is v0.1.4, imported from v1 v0.22.4.
+
+- **No site holds a copy.** Each page's links name the press and the data API at the pinned versions. Its route (``) tells `assets/route.js`, which every page loads first, where the URLs its scripts build go: `assets/` to the press, `data/` to the API, a section to the site that owns it, and `VERSION` and the 404 router to the site itself. Each page's Content-Security-Policy is extended for scripts, styles, images, fonts and manifest (the press) and for requests (the press, the data API and the other sites). A site keeps only `VERSION`, the 404 router and `.well-known/`.
+
+- **Each site's gate** checks every link to the press against the files that press version publishes, and every link to the API against the files that data version publishes.
+
+- **Tested in a browser,** with the press, the data API and the four sites served from their repositories: the front pages, sources, the graph, the stack tool, the control room, the feeds, the status page, a view address and a redirect. No missing file, no policy violation, and the Ask pane opens on each.
+
+- **Found on the way, and fixed in v1 v0.22.4:** the control room under a view address (`/team/control/as/executive/`) asked for `team/control/data/control.json` and failed, on this site too.
+
+- **Versions:** after a repository's first release, every release adds one to the last number (the editor). The press is at 1.0.4, data at 0.1.4.
+
+- **The main site is staged at `site.php.oct.2026.newsroom.sgit.ai`,** the name its DNS record has.
+
 - **Pass two:**
 
 - each site's sources (its pages' content and the build code that writes them) move into its repository, and the build library into the press;
-
-- the shared assets and the data are served once, from the press and the data API, when the Content-Security-Policy allows those hosts (a change for security);
 
 - the agents' cards and `WAKE.md` name their repositories, and the cutover follows.
 
@@ -91,7 +107,7 @@ Why not build in a "php-v2" repository and rename it to the main name later:
 
 2. For each, turn Pages on with "GitHub Actions" as the source, and add its custom domain. In DNS, the same record as today's site (a CNAME to `sgit-ai.github.io.`, TTL 300):
 
- press.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. data.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. refs.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. updates.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. team.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. next.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. php.oct.2026.newsroom.sgit.ai needs no new record: at the cutover only its Pages setting moves. Verify `sgit.ai` in the organisation's Pages settings, so no other account can claim a subdomain before its repository serves it, and turn on HTTPS for each once its certificate is issued.
+ press.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. data.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. refs.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. updates.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. team.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. site.php.oct.2026.newsroom.sgit.ai CNAME sgit-ai.github.io. php.oct.2026.newsroom.sgit.ai needs no new record: at the cutover only its Pages setting moves. Verify `sgit.ai` in the organisation's Pages settings, so no other account can claim a subdomain before its repository serves it, and turn on HTTPS for each once its certificate is issued.
 
 3. Give the Claude GitHub app access to the six, and the same rulesets as today's repository: no force-push, no deleting `dev`, `main` protected.
 
@@ -139,7 +155,7 @@ The session works in all seven at once. Agents keep releasing into today's repos
 
 5. **updates.** The state of affairs and its versions, the desk, what is new, the line, the feeds; built from data at a pinned version.
 
-6. **site.** What is left: the homes, briefings, questions, stories, tools, the risk graph's pages. Its routing follows story-site's two briefs of 25 October, "Refactoring the site to URL paths and a single page" and "The 404 router, and a site with two modes": the persona in the path, and the 404 router, which also answers the moved addresses of step 1.7. Built from data and the press at pinned versions, served on next.php.oct.2026.newsroom.sgit.ai.
+6. **site.** What is left: the homes, briefings, questions, stories, tools, the risk graph's pages. Its routing follows story-site's two briefs of 25 October, "Refactoring the site to URL paths and a single page" and "The 404 router, and a site with two modes": the persona in the path, and the 404 router, which also answers the moved addresses of step 1.7. Built from data and the press at pinned versions, served on site.php.oct.2026.newsroom.sgit.ai.
 
 7. **Every old address still answers.** Each of today's 1,058 pages, with its markdown twin, either exists in the new site or redirects to its new home. Two examples: `/team/…` goes to team.php…, `/sources/…` to refs.php…. Today's sitemap is the list. The site's gate checks every entry answers, so nothing a reader or a search engine kept breaks.
 
@@ -211,4 +227,4 @@ This brief is the file `admin/content/briefs/2026-10-25__plan__one-repository-in
 
 
 ---
-site v0.22.4 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__plan__one-repository-into-six-implementation/index.html
+site v0.22.5 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__plan__one-repository-into-six-implementation/index.html

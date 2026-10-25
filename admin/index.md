@@ -345,11 +345,13 @@ By domain, kept current by whoever ships. A thing not listed here does not exist
 
 ### One repository into six, pass one (dev@php.newsroom, 25 October 2026)
 
-- The six repositories exist (`…__PHP__press`, `__data`, `__refs`, `__updates`, `__team`, `__site`), each with `dev` as default and its custom domain (`next.php.oct.2026.newsroom.sgit.ai` for the site until the cutover). This repository is still where every page is built and every agent writes.
+- The six repositories exist (`…__PHP__press`, `__data`, `__refs`, `__updates`, `__team`, `__site`), each with `dev` as default and its custom domain (`site.php.oct.2026.newsroom.sgit.ai` for the site until the cutover). This repository is still where every page is built and every agent writes.
 
 - **press v1.0.0:** `sites.json` (which site owns which section) and `tools/partition.py`, which cuts this repository's committed output at one commit into a site. It installs each site's gate and release.
 
 - **The four sites:** cut at `d9af616ffd0b` (v0.22.0). site has 230 pages of its own, refs 563, updates 60, team 242; every other address answers with a redirect. **data** v0.1.1: 49 entries, 466 files, a schema each. **team**: its records under `records/`, the board one file per row.
+
+- **One source for every file (25 to 26 October):** the sites hold no copy of the assets or the data. press v1.0.4 publishes v1's `assets/` under `/v/1.0.4/assets/`; data v0.1.4 publishes every file the pages' scripts fetch. Each page links both at pinned versions, carries a route (``) for `assets/route.js`, and has a Content-Security-Policy extended to the press, the data API and the other sites. They were cut from v0.22.4 (`ec5d411eeb70`). After a first release, every release adds one to the last number.
 
 - Not deployed yet: their Pages source must be "Deploy from a branch" (dev, root), or get a workflow (security review).
 
@@ -437,4 +439,4 @@ By domain, kept current by whoever ships. A thing not listed here does not exist
 
 
 ---
-site v0.22.4 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/index.html
+site v0.22.5 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/index.html
