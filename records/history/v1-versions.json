@@ -1,6 +1,15 @@
 {
- "current": "0.22.4",
+ "current": "0.22.5",
  "versions": [
+  {
+   "version": "0.22.5",
+   "date": "2026-10-25",
+   "title": "one repository into six: one source for every file, recorded (the plan's Progress, REALITY, the board): press v1.0.4 serves the assets, data v0.1.4 the data, the four sites cut from v0.22.4 hold no copies; the main site is staged at site.php.oct.2026.newsroom.sgit.ai, its DNS record's name",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.4",
    "date": "2026-10-25",
