@@ -4,8 +4,8 @@ title: One repository into six, pass one, with one source for every file; four r
 date: 2026-10-25
 round: 2
 branch: dev (v1 with admin/build/release.sh; each new repository with its own release script)
-commits: v1 v0.21.9, v0.21.10, v0.22.1 to v0.22.5 and the reports' release; press v1.0.0 to v1.0.5; data v0.1.0 to v0.1.5; four cuts of site, refs, updates and team
-site_version: 0.22.5
+commits: v1 v0.21.9, v0.21.10, v0.22.1 to v0.22.7, v0.22.10 and the closing release; press v1.0.0 to v1.0.8; data v0.1.0 to v0.1.7; six cuts of site, refs, updates and team
+site_version: 0.22.11
 tokens: unknown
 tokens_how: the session does not report its token count to the agent
 outside_scope: v1: assets/route.js (new), assets/design/line/boot.js, admin/build/design.py, assets/site-tools.js, assets/ask/ask.js, assets/now/now.js, assets/control.js (story-site's), 9 images under assets/briefs/ (the editor's); and all of the six new repositories, which no policy names yet; all under the editor's go for the split in this session
@@ -39,6 +39,10 @@ The editor, in this session, 25 October 2026:
 ![refs serving its sources page, its scripts from the press and its data from the data API (served locally from the repositories)](img/2026-10-25__one-repository-into-six__2.png)
 
 ![The chain after every v1 release, and what stops it](img/2026-10-25__one-repository-into-six__3.png)
+
+## The review, the same evening
+
+The editor asked for a step back against the original brief. Done, and released as press v1.0.7, data v0.1.7, v1 v0.22.10 and a cut of the four sites: the parity report the plan's step 1.8 asked for (1,101 of 1,101 pages read the same on the site that owns them); the markdown twins' links, never rewritten until then; the 404 page sending a foreign address (a twin, a view address, an asset, a data file) to the host that owns it, to the route's hosts only; both immutability checks moved from the index to the last commit; the site's gate and release installed with their sha256; and the smaller findings of an independent reading of the press's code, all fixed. Items 23 to 33 of "the challenges" list them. A brief for every agent, "The split, for every agent", says where each member writes today, after the records and data move and after the cutover, with a `repositories` field for every card and the per-agent table; board row 335 holds the four decisions it asks the editor for.
 
 ## New features
 

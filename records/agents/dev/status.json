@@ -3,7 +3,7 @@
  "agent": "dev",
  "as_of": "2026-10-25",
  "round": 2,
- "state": "round 2 closed: the split, pass one, with one source for every file; next: deploy checks, then pass two",
+ "state": "round 2 closed: the split, pass one, one source for every file, reviewed against the brief; next: the editor's four decisions (board 335), then step A",
  "done": [
   {
    "what": "Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1",
@@ -16,6 +16,10 @@
   {
    "what": "One repository into six, pass one: the press cuts v1 into four sites (1,095 pages, 3,284 redirects); one source for every file (assets from the press, data from the data API, each page routed and its policy extended by exact host); four reports on the briefs page",
    "evidence": "press v1.0.0 to v1.0.5, data v0.1.0 to v0.1.5, v1 v0.22.1 to v0.22.5; admin/content/briefs/2026-10-25__report__*.md"
+  },
+  {
+   "what": "The split reviewed against the brief: parity (1,101 of 1,101 pages), the twins' links, the 404 page's redirect to the owning host, immutability against the last commit, the tools with their sha256, an independent read's findings fixed; a brief for every agent with the repositories each needs",
+   "evidence": "press v1.0.7, data v0.1.7, v1 v0.22.10; admin/content/briefs/2026-10-25__brief__the-split-for-every-agent.md; board 335"
   }
  ],
  "tasks": {
@@ -30,8 +34,8 @@
  },
  "next": [
   {
-   "what": "Once the six sites are live: check every host, the data sums, view addresses and certificates",
-   "why": "board 328; nothing is deployed yet"
+   "what": "The editor's four decisions (board 335): step A (records to team, data to data) or resume against v1; the Pages source; the rulesets. Then step A, a day's work.",
+   "why": "the schedule is paused until the agents are briefed"
   },
   {
    "what": "Pass two of the split: the sources and the build out of v1, then the cutover",
@@ -44,7 +48,7 @@
  ],
  "asks": [
   {
-   "what": "Set the Pages source of the six repositories; confirm their rulesets; the four decisions for pass two",
+   "what": "Board 335: the four decisions before the schedule resumes; the Pages source of the six (board 328)",
    "from": "the editor"
   },
   {

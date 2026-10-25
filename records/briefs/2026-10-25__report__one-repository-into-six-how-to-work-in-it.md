@@ -11,7 +11,7 @@ Nothing changes for your own work: **you write v1, as before**, and release it w
 | `…__press` | dev, and only through security's review: `sites.json`, `tools/`; its `assets/` come from v1 (`tools/assets_v1.py`) | `v/`, `latest/`, `assets/` |
 | `…__data` | `tools/import_v1.py` from v1; the catalogue on a writer's request to dev | `files/`, `v/`, `latest/` |
 | `…__team` | `tools/import_v1.py` (the records, under `records/`) and the press (the pages, at the root) | everything but `tools/` |
-| `…__site`, `__refs`, `__updates` | the press | everything but `README.md`, `CLAUDE.md` |
+| `…__site`, `__refs`, `__updates` | the press | everything but `README.md`, `CLAUDE.md`, `LICENSE`, `.gitignore`, `.github/` (and under `tools/`, only the two the press installs) |
 
 An edit by hand in a site is refused by its gate ("changed since the press wrote it") and lost at the next cut.
 
@@ -33,7 +33,13 @@ for s in site refs updates team; do python3 …__press/tools/partition.py --site
 for s in site refs updates; do (cd …__$s && RELEASE_TRAILER="$T" tools/pages_release.sh "cut from v1 v<x>"); done
 ```
 
-On 25 October one pass took about five minutes. A step with nothing new says so ("nothing to release") and stops cleanly.
+On 25 October one pass took about five minutes. A step with nothing new says so ("nothing to release"; the press and the data mint no version when their files are the same) and stops cleanly. After the cuts, parity in a few seconds:
+
+```
+python3 …__press/tools/parity.py --v1 … --sites …__site …__refs …__updates …__team
+```
+
+It says that every page v1 builds is owned by one site and reads the same there, and exits 1 if not.
 
 ## When the chain stops
 

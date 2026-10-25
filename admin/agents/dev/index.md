@@ -347,9 +347,9 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 | Field | Value |
 |---|---|
 | Round | 2 |
-| Done | Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1 The source watch is 7r83qic5 everywhere live: /vaults/, /vaults/source-watch/, its data and export, the team, the schedules, every register's holds, the policies' vault grants, the live briefs; no read key published One repository into six, pass one: the press cuts v1 into four sites (1,095 pages, 3,284 redirects); one source for every file (assets from the press, data from the data API, each page routed and its policy extended by exact host); four reports on the briefs page |
-| Next | Once the six sites are live: check every host, the data sums, view addresses and certificates Pass two of the split: the sources and the build out of v1, then the cutover The parked items: the persona-first proposal, CI-003 steps 3 and 4, the vault key in browser storage |
-| Asks | Set the Pages source of the six repositories; confirm their rulesets; the four decisions for pass two (from the editor) Review press v1.0.0 to v1.0.5, the data and team gates' changes, assets/route.js and the policy the partition writes (from security@php.newsroom) |
+| Done | Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1 The source watch is 7r83qic5 everywhere live: /vaults/, /vaults/source-watch/, its data and export, the team, the schedules, every register's holds, the policies' vault grants, the live briefs; no read key published One repository into six, pass one: the press cuts v1 into four sites (1,095 pages, 3,284 redirects); one source for every file (assets from the press, data from the data API, each page routed and its policy extended by exact host); four reports on the briefs page The split reviewed against the brief: parity (1,101 of 1,101 pages), the twins' links, the 404 page's redirect to the owning host, immutability against the last commit, the tools with their sha256, an independent read's findings fixed; a brief for every agent with the repositories each needs |
+| Next | The editor's four decisions (board 335): step A (records to team, data to data) or resume against v1; the Pages source; the rulesets. Then step A, a day's work. Pass two of the split: the sources and the build out of v1, then the cutover The parked items: the persona-first proposal, CI-003 steps 3 and 4, the vault key in browser storage |
+| Asks | Board 335: the four decisions before the schedule resumes; the Pages source of the six (board 328) (from the editor) Review press v1.0.0 to v1.0.5, the data and team gates' changes, assets/route.js and the policy the partition writes (from security@php.newsroom) |
 | Tokens | unknown · the session does not report its token count |
 | Policy | out_of_scope_requests 0, pushbacks 0, overrides 1, writes_outside_scope 16, injection_seen 0, note 7 v1 scripts and build files and 9 images under assets/briefs/, plus the six new repositories (no policy yet), all under the editor's go for the split |
 
@@ -357,7 +357,7 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 ### One repository into six, pass one, with one source for every file; four reports on it
 
-2026-10-25 · round 2 · branch `dev (v1 with admin/build/release.sh; each new repository with its own release script)` · commits `v1 v0.21.9, v0.21.10, v0.22.1 to v0.22.5 and the reports' release; press v1.0.0 to v1.0.5; data v0.1.0 to v0.1.5; four cuts of site, refs, updates and team` · tokens unknown · outside scope v1: assets/route.js (new), assets/design/line/boot.js, admin/build/design.py, assets/site-tools.js, assets/ask/ask.js, assets/now/now.js, assets/control.js (story-site's), 9 images under assets/briefs/ (the editor's); and all of the six new repositories, which no policy names yet; all under the editor's go for the split in this session · overrides 1
+2026-10-25 · round 2 · branch `dev (v1 with admin/build/release.sh; each new repository with its own release script)` · commits `v1 v0.21.9, v0.21.10, v0.22.1 to v0.22.7, v0.22.10 and the closing release; press v1.0.0 to v1.0.8; data v0.1.0 to v0.1.7; six cuts of site, refs, updates and team` · tokens unknown · outside scope v1: assets/route.js (new), assets/design/line/boot.js, admin/build/design.py, assets/site-tools.js, assets/ask/ask.js, assets/now/now.js, assets/control.js (story-site's), 9 images under assets/briefs/ (the editor's); and all of the six new repositories, which no policy names yet; all under the editor's go for the split in this session · overrides 1
 
 #### What I was asked
 
@@ -396,6 +396,10 @@ refs serving its sources page, its scripts from the press and its data from the 
 ![The chain after every v1 release, and what stops it](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-25__one-repository-into-six__3.png)
 
 The chain after every v1 release, and what stops it
+
+#### The review, the same evening
+
+The editor asked for a step back against the original brief. Done, and released as press v1.0.7, data v0.1.7, v1 v0.22.10 and a cut of the four sites: the parity report the plan's step 1.8 asked for (1,101 of 1,101 pages read the same on the site that owns them); the markdown twins' links, never rewritten until then; the 404 page sending a foreign address (a twin, a view address, an asset, a data file) to the host that owns it, to the route's hosts only; both immutability checks moved from the index to the last commit; the site's gate and release installed with their sha256; and the smaller findings of an independent reading of the press's code, all fixed. Items 23 to 33 of "the challenges" list them. A brief for every agent, "The split, for every agent", says where each member writes today, after the records and data move and after the cutover, with a `repositories` field for every card and the per-agent table; board row 335 holds the four decisions it asks the editor for.
 
 #### New features
 
@@ -573,4 +577,4 @@ Files: [admin/content/agents/dev/](https://github.com/SGit-AI/SGit-AI__Website__
 
 
 ---
-site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/dev/index.html
+site v0.22.12 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/dev/index.html

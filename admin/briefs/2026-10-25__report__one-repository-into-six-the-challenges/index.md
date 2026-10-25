@@ -18,7 +18,7 @@ Status: a report, written by dev@php.newsroom on 25 October 2026, the third of f
 |---|---|
 | Design decisions reversed by the editor during the work | 2 (copies of the shared files; how versions are numbered) |
 | Bugs found by the split that were also live on v1 | 2 (the control room under a view address; 30 links that never resolved) |
-| Bugs the split itself introduced, found before release | 9 |
+| Bugs the split itself introduced, found before release | 9, and 10 more in the evening's review (items 23 to 33) |
 | Times a check stopped a release | 4 (two as designed; two because the check itself was wrong) |
 | Things this session could not do | 2 (deploy the sites; read GitHub's Pages and ruleset settings) |
 | Mistakes in the record, corrected | 2 (a wrong date; a staging name that was never made) |
@@ -82,6 +82,32 @@ Status: a report, written by dev@php.newsroom on 25 October 2026, the third of f
 
 **22. A parked stash.** Before the split I parked an unfinished piece of work (the persona-first proposal and its mockups) in a git stash. Clearing what I took for a stale stash, `git stash drop` dropped that one. It was recovered from git's unreachable objects (`git fsck --unreachable`, then `git stash store` with the commit), whole, and is parked again. Separately, a release interrupted mid-merge left `index.lock` and a half-merge; it was aborted and reset to the base, and since then every git command names its repository (`git -C`) instead of changing directory first.
 
+### The review, the same evening
+
+After the four reports, the editor asked for a step back: the work against the original brief, with a push on quality. The review was in two parts: the mechanical checks (the parity the plan asked for in step 1.8, every file the press writes against each repository's `.gitignore`, the markdown twins' links, the scripts that build addresses, the policies' hashes), and an independent reading of the press's code by a fresh session that was asked to break it. What it found, and what changed (press v1.0.7, data v0.1.7, v1 v0.22.10):
+
+**23. Parity, measured at last.** `tools/parity.py` in the press: every one of v1's 1,102 pages is owned by exactly one site (the 404 router by all four), and its visible text there is v1's, word for word. 1,101 of 1,101. The plan asked for this report in step 1.8; pass one had the counts but not the text comparison.
+
+**24. The markdown twins' links were never rewritten.** The partition rewrote `href` and `src`; a twin's links are markdown (`](../data/graph.json)`), so 443 of them on refs alone still pointed at files the site does not hold (34 assets, 109 data files, 300 pages of other sites). Both the partition and each site's gate now treat a twin's links as a page's. Found by counting, confirmed by the independent read.
+
+**25. Every old address answers, including the ones no stub covers.** A twin of a moved page, a view address of another site's page (`/stack/as/executive/` on refs), an old `/data/…` or `/assets/…` address: none had a redirect page, so each landed on the site's 404. The 404 page now sends such an address to the host that owns it (route.js, which every page loads first), and only to a host the page's route names.
+
+**26. The redirect I wrote first was an open redirect.** `//other.example/x` as a path parses as another origin; the first version would have sent the reader there. Caught by a unit test before anything was released: the path is normalised and the destination checked against the route's own hosts. It is the kind of mistake that argues for the allowlist, not for trust in the input.
+
+**27. Both immutability checks looked at the index, not at a commit (confirmed by the independent read).** The press's gate and the data gate compared each published file with `git ls-files -s`, the staging area, so a staged edit to a published version passed, and a staged removal was not checked at all. Both now compare with the last commit (`git ls-tree HEAD`) and fail on a change or a removal; proven on a staged edit and a removed file before the fix was released.
+
+**28. A site's gate and release were installed without a sha256, and anything under `tools/` was accepted.** They now go through the partition like every file, with their sha256 in `press.json`, and nothing may be under `tools/` but what the press installed and what `sites.json` lists as the repository's own (the team's four tools).
+
+**29. Smaller findings from the independent read, all fixed:** a policy directive a page leaves to `default-src` would have blocked the press silently (it is now added, with `'self'` and the host), and `media-src` was never extended; an attribute value with an apostrophe matched nothing; the absolute-data rewrite could swallow a sentence's final dot; a redirect page's title could leak a local path when a page had none; a root-relative link passed the partition and failed the gate; the credential patterns differed between the gates and the tripwires (one pattern now, with `sk-` and `github_pat_`, over more file kinds); route.js looked sections up on a plain object (`constructor` as a first segment) and threw on an unparsable URL given to `fetch`.
+
+**30. The `sk-` pattern's first form matched a URL slug** ("…security-ri**sk-due-to-critical**-php…") and stopped a data release. It now needs a word boundary and the shapes real keys have.
+
+**31. A release with nothing new minted a version.** The data release, stopped by that tripwire after publishing, had written a `v/0.1.7/` identical to v0.1.6. Both the press's and the data's release now ask `publish.py --same-as` first and mint no version when the files are the same.
+
+**32. Two things found right.** Nothing the press writes is hidden by any repository's `.gitignore` (the GitHub Python template ignores `/site`, `lib/`, `build/` and more; no page lives there). Every executable inline script still hashes to a value its page's policy allows.
+
+**33. The board, three times in one evening.** Each v1 release of this round was stopped once by another agent's release that had also written `data/admin.json`, the one board file. The fix is the split itself: one file per row, in the team repository, which is step A of pass two.
+
 ### What is still hard
 
 - **Every v1 release is a chain of releases.** v1 release, press assets and release, data import and release, four cuts and four releases: about five minutes by hand, and easy to leave half done. Until pass two moves the sources out of v1, it should be one script, which goes to security with the rest of the press.
@@ -110,4 +136,4 @@ This brief is the file `admin/content/briefs/2026-10-25__report__one-repository-
 
 
 ---
-site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-the-challenges/index.html
+site v0.22.12 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-the-challenges/index.html

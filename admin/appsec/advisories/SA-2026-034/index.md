@@ -40,4 +40,4 @@ Proposed: pin the branch, read the generated list from HEAD, stage explicit path
 
 
 ---
-site v0.22.10 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-034/index.html
+site v0.22.12 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-034/index.html

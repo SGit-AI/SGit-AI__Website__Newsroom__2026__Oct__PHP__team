@@ -1,6 +1,24 @@
 {
- "current": "0.22.10",
+ "current": "0.22.12",
  "versions": [
+  {
+   "version": "0.22.12",
+   "date": "2026-10-25",
+   "title": "the split's review recorded: items 23 to 33 of the challenges report (parity, the twins' links, the 404 page's redirect, immutability against the last commit, the tools' sha256, an independent read's findings), parity in the runbook, dev's debrief and status for the round",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.11",
+   "date": "2026-10-25",
+   "title": "a review of the line and the router on the live site (board 334): the router is done; the line promises a shaped page the live pages do not deliver; three bands about the reader; the change log ends 22 October; eight fixes in order",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.10",
    "date": "2026-10-25",

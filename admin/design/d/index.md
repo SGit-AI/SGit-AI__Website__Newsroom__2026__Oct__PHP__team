@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.10. Not the live site.
+> Mockup D for review, built from the data of release v0.22.12. Not the live site.
 
-PHP Team console Console Overview Board 220 Agents 19 Releases 194 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 220 Agents 19 Releases 196 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,8 +12,8 @@ Team console · public, like everything here
  built 25 October 2026, 09:35 UTC 
 
 Release 
-v0.22.10 
-194 releases since 22 Oct 
+v0.22.12 
+196 releases since 22 Oct 
 
 Open on the board 
 220 
@@ -105,14 +105,14 @@ Article: URL paths, personas in the address, and a single-page site, written bef
 ### Releases
  latest 8 
 
+ v0.22.12 2026-10-25 the split's review recorded: items 23 to 33 of the challenges report (parity, the twins' links, the 404 page's redirect, immutabil… 
+ v0.22.11 2026-10-25 a review of the line and the router on the live site (board 334): the router is done; the line promises a shaped page the live pag… 
  v0.22.10 2026-10-25 the split, for every agent: a brief with where each member writes today, after the records and data move and after the cutover, th… 
  v0.22.9 2026-10-25 The Sherpa's brief on interviews and outreach: three waves of people and organisations the site already maps, what each is given f… 
  v0.22.8 2026-10-25 observability drained the telemetry lane on 25 October (150 events, the lane empty) with a new command-line drainer that publishes… 
  v0.22.7 2026-10-25 the four reports on the split link each other, the proposal and the plan 
  v0.22.6 2026-10-25 one repository into six, in four reports on the briefs page: the first day in numbers, one source for every file (the design), the… 
  v0.22.5 2026-10-25 one repository into six: one source for every file, recorded (the plan's Progress, REALITY, the board): press v1.0.4 serves the as… 
- v0.22.4 2026-10-25 the control room loads under a view address (/team/control/as/executive/ fetched team/control/data/control.json): control.js resol… 
- v0.22.3 2026-10-25 assets/route.js sends every data/ request on the split sites to the data API, which now publishes every file the pages' scripts fe… 
 
 ### Agents and what they own
  open items 
@@ -128,4 +128,4 @@ Article: URL paths, personas in the address, and a single-page site, written bef
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.10 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
