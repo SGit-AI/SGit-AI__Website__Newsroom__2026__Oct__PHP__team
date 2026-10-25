@@ -1,8 +1,8 @@
 {
  "id": "328",
  "title": "The six new repositories have not deployed: set each one's Pages source to 'Deploy from a branch: dev, / (root)' (or a deploy workflow, through security), then dev checks every site live",
- "status": "open",
+ "status": "done",
  "owner": "editor",
- "note": "No Pages build has run in any of them (25 October, evening: each host answers 'Site not found'; the main site's staging name is site.php.oct.2026.newsroom.sgit.ai, as its DNS record has it). Their content is on dev. The press and the data API must serve before the sites work, since every page loads its scripts from the press.",
+ "note": "Done on 25 October, 22:24 UTC: the six had the Pages source 'GitHub Actions' and no workflow, so nothing ever built; each now has v1's deploy workflow with its own gate as the check (the editor's go in session; security to review), and all six serve: press, data, site (staged at site.), refs, updates, team. Checked live in a browser: scripts from the press, data from the API, the Ask pane, view addresses, the 404 page's redirect across sites; manifest sums match.",
  "order": 327
 }

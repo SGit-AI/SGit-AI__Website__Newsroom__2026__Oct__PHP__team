@@ -2,7 +2,7 @@
 
 The agencies page redesigned: the answer in one line, every agency placed on one spectrum from no offline advice to take it offline, a card per agency, and the evidence table one click away.
 
-> Mockup C for review, built from the data of release v0.22.12. Not the live site.
+> Mockup C for review, built from the data of release v0.22.13. Not the live site.
 
 The analysis · government advice 
 ## 16 agencies. All say update. They split on offline.
@@ -160,4 +160,4 @@ On the live site this is the full table, one row per agency with the verbatim se
  A wall of text becomes three layers: the one-line answer, the picture, and the cards; the evidence table is one click away, not the first thing you see.
 
 ---
-site v0.22.12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/c/index.html
+site v0.22.13 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/c/index.html

@@ -10,7 +10,7 @@ The register of every schedule the team runs (who, where, how often, how many ru
 
 Everything the team runs on its own, without a person starting it: who runs it, where, how often, whether it runs at night, what it is allowed to change, and what it must leave behind. Kept by conductor@php.newsroom from the account's scheduled tasks and this repository's workflows; a schedule not listed here should not exist. Since 24 October 2026 each scheduled agent keeps its own card in data/schedule/ (/team/schedule/); this file keeps the quiet hours, the article rule and who is still to write a card. Times are UTC unless they say London.
 
-2schedules20runs a night, today293runs recorded95runs with changes and no article
+2schedules20runs a night, today294runs recorded95runs with changes and no article
 
 ## Quiet hours
 
@@ -33,7 +33,7 @@ A run that changes something a reader can see (a grade, a series, a new capture,
 
 ## Every run
 
-Newest first, read from the data each agent publishes: the release history, the source watch, the fact-check desk's runs and the synthetic readers' latest run each. dev@php.newsroom: 196, researcher@php.newsroom: 38, Conductor: 16, synthetic@php.newsroom: 12, Fact-check desk: 7, Sherpa: 5, factcheck: 5, Ontologist: 3, desk: 3, Journalist: 2, librarian@php.newsroom: 2, pulse: 1, curator: 1, correspondent: 1, Cartographer: 1.
+Newest first, read from the data each agent publishes: the release history, the source watch, the fact-check desk's runs and the synthetic readers' latest run each. dev@php.newsroom: 197, researcher@php.newsroom: 38, Conductor: 16, synthetic@php.newsroom: 12, Fact-check desk: 7, Sherpa: 5, factcheck: 5, Ontologist: 3, desk: 3, Journalist: 2, librarian@php.newsroom: 2, pulse: 1, curator: 1, correspondent: 1, Cartographer: 1.
 
 | When | Who | What | Run | Summary | Changes | Article | Output |
 |---|---|---|---|---|---|---|---|
@@ -62,6 +62,7 @@ Newest first, read from the data each agent publishes: the release history, the 
 | 2026-10-25 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.4` | the control room loads under a view address (/team/control/as/executive/ fetched team/control/data/control.json): control.js resolves its data against the page as loaded, and assets/route.js routes a URL object as it does a string, so on the split sites it reaches the data API | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-25 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.3` | assets/route.js sends every data/ request on the split sites to the data API, which now publishes every file the pages' scripts fetch (v0.1.2); on this site nothing changes | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-25 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.2` | one resolver for every URL a script builds (assets/route.js, loaded first on every page; boot.js, the Ask pane, the phone app and site tools use it), so that on the split sites assets come from the press, data from the data API and each section's pages from the site that owns it, one source for every file; on this site every URL resolves as before | yes | its release note | [output](../../admin/versions.html) |
+| 2026-10-25 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.13` | the six repositories are live (board 328 done): each deploys with v1's workflow and its own gate; checked live in a browser | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-25 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.12` | the split's review recorded: items 23 to 33 of the challenges report (parity, the twins' links, the 404 page's redirect, immutability against the last commit, the tools' sha256, an independent read's findings), parity in the runbook, dev's debrief and status for the round | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-25 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.11` | a review of the line and the router on the live site (board 334): the router is done; the line promises a shaped page the live pages do not deliver; three bands about the reader; the change log ends 22 October; eight fixes in order | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-25 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.10` | the split, for every agent: a brief with where each member writes today, after the records and data move and after the cutover, the repositories its session needs and a card field for them; on a split site the 404 page sends an address another host owns (a twin, a view address, an asset, a data file) to that host, route.js allowing only the route's own hosts | yes | its release note | [output](../../admin/versions.html) |
@@ -333,4 +334,4 @@ Newest first, read from the data each agent publishes: the release history, the 
 
 
 ---
-site v0.22.12 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/runs/index.html
+site v0.22.13 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/runs/index.html

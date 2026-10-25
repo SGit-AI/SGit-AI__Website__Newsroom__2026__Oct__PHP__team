@@ -47,4 +47,4 @@ Pass secrets by stdin; catch and redact errors; reuse security_check's patterns 
 
 
 ---
-site v0.22.12 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-031/index.html
+site v0.22.13 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-031/index.html

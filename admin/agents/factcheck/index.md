@@ -311,4 +311,4 @@ Files: [admin/content/agents/factcheck/](https://github.com/SGit-AI/SGit-AI__Web
 
 
 ---
-site v0.22.12 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/factcheck/index.html
+site v0.22.13 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/factcheck/index.html

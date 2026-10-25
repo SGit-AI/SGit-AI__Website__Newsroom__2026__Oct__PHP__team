@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.12. Not the live site.
+> Mockup D for review, built from the data of release v0.22.13. Not the live site.
 
-PHP Team console Console Overview Board 220 Agents 19 Releases 196 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 219 Agents 19 Releases 197 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,12 +12,12 @@ Team console · public, like everything here
  built 25 October 2026, 09:35 UTC 
 
 Release 
-v0.22.12 
-196 releases since 22 Oct 
+v0.22.13 
+197 releases since 22 Oct 
 
 Open on the board 
-220 
-108 done, 7 waiting 
+219 
+109 done, 7 waiting 
 
 Pages built 
 1061 
@@ -30,7 +30,7 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 220
+#### Open 219
 
  #335 
 The split, for every agent: four decisions before the schedule resumes (the go for step A: records to team and data to d… 
@@ -47,12 +47,12 @@ Telemetry from agents' local test servers: assets/telemetry.js sends from any ho
  #329 
 The line's prototype pages under /admin/design/line/ link to sources one level too shallow (../../../sources/… from admi… 
  story-site 
- #328 
-The six new repositories have not deployed: set each one's Pages source to 'Deploy from a branch: dev, / (root)' (or a d… 
- editor 
  #327 
 The line's next steps on the live pages: the reading path ('Next: your briefing') as one of its actions, dated views (on… 
  claude-story-site 
+ #326 
+sg-meter v1.3.1 edited in place: what a reader has paid for is keyed by the real page (window.P2S_REAL_PATH), not the ad… 
+ dev 
 
 #### Waiting 7
 
@@ -78,8 +78,11 @@ The story graph: every node a link, parties as nodes, typed edges (newsroom revi
 Hand the telemetry vault key to the editor, sealed to his pki.sgit.ai key 
  dev 
 
-#### Done 108
+#### Done 109
 
+ #328 
+The six new repositories have not deployed: set each one's Pages source to 'Deploy from a branch: dev, / (root)' (or a d… 
+ editor 
  #324 
 The line is live on every page, and the router: /agencies/as/security/ opens the agencies for Security; every page shows… 
  claude-story-site v0.22.0 
@@ -98,13 +101,11 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  #309 
 The briefs page is a list of titles, newest first, and every brief has its own page and link (admin/briefs/<the file's n… 
  claude-story-site v0.20.0 
- #305 
-Article: URL paths, personas in the address, and a single-page site, written before the work (a link that names its pers… 
- claude-story-site v0.19.0 
 
 ### Releases
  latest 8 
 
+ v0.22.13 2026-10-25 the six repositories are live (board 328 done): each deploys with v1's workflow and its own gate; checked live in a browser 
  v0.22.12 2026-10-25 the split's review recorded: items 23 to 33 of the challenges report (parity, the twins' links, the 404 page's redirect, immutabil… 
  v0.22.11 2026-10-25 a review of the line and the router on the live site (board 334): the router is done; the line promises a shaped page the live pag… 
  v0.22.10 2026-10-25 the split, for every agent: a brief with where each member writes today, after the records and data move and after the cutover, th… 
@@ -112,12 +113,11 @@ Article: URL paths, personas in the address, and a single-page site, written bef
  v0.22.8 2026-10-25 observability drained the telemetry lane on 25 October (150 events, the lane empty) with a new command-line drainer that publishes… 
  v0.22.7 2026-10-25 the four reports on the split link each other, the proposal and the plan 
  v0.22.6 2026-10-25 one repository into six, in four reports on the briefs page: the first day in numbers, one source for every file (the design), the… 
- v0.22.5 2026-10-25 one repository into six: one source for every file, recorded (the plan's Progress, REALITY, the board): press v1.0.4 serves the as… 
 
 ### Agents and what they own
  open items 
 
- Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 34 
+ Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 21 
  dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 17 
@@ -128,4 +128,4 @@ Article: URL paths, personas in the address, and a single-page site, written bef
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.13 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

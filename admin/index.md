@@ -353,7 +353,7 @@ By domain, kept current by whoever ships. A thing not listed here does not exist
 
 - **One source for every file (25 October):** the sites hold no copy of the assets or the data. press v1.0.4 publishes v1's `assets/` under `/v/1.0.4/assets/`; data v0.1.4 publishes every file the pages' scripts fetch. Each page links both at pinned versions, carries a route (``) for `assets/route.js`, and has a Content-Security-Policy extended to the press, the data API and the other sites. They were cut from v0.22.4 (`ec5d411eeb70`). After a first release, every release adds one to the last number.
 
-- Not deployed yet: their Pages source must be "Deploy from a branch" (dev, root), or get a workflow (security review).
+- **Live since 25 October, 22:24 UTC:** each of the six deploys with v1's workflow (`.github/workflows/pages.yml`, its own gate as the check; security to review). press.php…, data.php…, site.php… (the main site, staged), refs.php…, updates.php…, team.php… all serve; checked live in a browser, manifest sums checked.
 
 - **Reviewed against the brief, 25 October evening:** parity holds (every one of v1's pages owned by one site, its text the same there: `tools/parity.py` in the press); the markdown twins' links follow their pages; a site's 404 page sends an address another host owns (a page, a twin, a view address, an asset, a data file) there, to the route's hosts only. The brief "The split, for every agent" says where each agent writes today, after the records and data move (step A, the editor's go) and after the cutover, with a `repositories` field for every card.
 
@@ -441,4 +441,4 @@ By domain, kept current by whoever ships. A thing not listed here does not exist
 
 
 ---
-site v0.22.12 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/index.html
+site v0.22.13 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/index.html
