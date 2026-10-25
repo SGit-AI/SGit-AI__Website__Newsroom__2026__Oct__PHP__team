@@ -1,6 +1,15 @@
 {
- "current": "0.22.13",
+ "current": "0.22.14",
  "versions": [
+  {
+   "version": "0.22.14",
+   "date": "2026-10-25",
+   "title": "this repository is closing (the editor, 25 October): the note at the top of README and REALITY, and a board row; every agent reads the brief on the team site, starts no new work here, and after step A only dev's chain commits here",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.13",
    "date": "2026-10-25",

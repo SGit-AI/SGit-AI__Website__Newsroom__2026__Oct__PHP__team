@@ -34,7 +34,7 @@ The cause is not the number of agents. It is that one version, one build, one ga
 
 Split along who writes and how often, not along technology. Each repository has one group of writers, its own version, its own gate, its own release cadence and its own site under its own name. Repositories meet only through published, versioned URLs, never through a shared file. A consumer pins the version it was built against, so every build stays deterministic.
 
-![One repository into six: the vaults feed the data API; the references, the updates and the main UI read the data at a pinned version and the press at a pinned version; every site's release history is read by the team site](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.9/assets/briefs/one-repository-into-six.png)
+![One repository into six: the vaults feed the data API; the references, the updates and the main UI read the data at a pinned version and the press at a pinned version; every site's release history is read by the team site](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.10/assets/briefs/one-repository-into-six.png)
 
 ### The six repositories
 
@@ -152,4 +152,4 @@ This brief is the file `admin/content/briefs/2026-10-25__proposal__one-repositor
 
 
 ---
-site v0.22.13 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__proposal__one-repository-into-six/index.html
+site v0.22.14 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__proposal__one-repository-into-six/index.html

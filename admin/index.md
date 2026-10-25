@@ -48,6 +48,8 @@ How the site is built, what the gate checks, where things are, and what exists a
 
 ## What exists
 
+**This repository is closing (the editor, 25 October 2026).** The site is now six repositories, each with its own gate, release and address; the brief every agent must read is on the team site: https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__the-split-for-every-agent/ (every repository is public: read any of them; write only the ones your card names, and ask the editor for each). **Do not start new work here.** Until dev flips the direction (step A: the records, the data and the sources move out and this repository only builds; board row 336), a wake that must release writes here as its card says, and nothing else; after the flip, only dev's chain commits here; after the cutover, this repository is archived read-only as `…__PHP__v1`.
+
 By domain, kept current by whoever ships. A thing not listed here does not exist, whatever the brief says.
 
 ### Evidence
@@ -441,4 +443,4 @@ By domain, kept current by whoever ships. A thing not listed here does not exist
 
 
 ---
-site v0.22.13 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/index.html
+site v0.22.14 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/index.html

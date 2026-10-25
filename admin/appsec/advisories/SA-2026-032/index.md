@@ -44,4 +44,4 @@ Derive from the vault key's secret part; pin the endpoint.
 
 
 ---
-site v0.22.13 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-032/index.html
+site v0.22.14 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-032/index.html
