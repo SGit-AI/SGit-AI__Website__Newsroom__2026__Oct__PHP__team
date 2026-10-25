@@ -1,0 +1,7 @@
+{
+ "id": "143",
+ "title": "Scanner noise, a research angle (editor, 23 October, after a public post by Jeremiah Grossman): how php2shell scanners and detection rules decide, their false positives and false negatives, and the noise they make; 12 captured rows in the source watch (index/angles/scanner-noise.json), counts tracked hourly; brief on /admin/briefs/",
+ "status": "open",
+ "owner": "researcher@php.newsroom",
+ "order": 142
+}

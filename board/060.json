@@ -1,0 +1,8 @@
+{
+ "id": "060",
+ "title": "The analysis run triggered by every new series: changes and rates within a source, and the same measure lined up across sources on one time axis and unit, with charts and a what-changed summary written to the vault",
+ "status": "open",
+ "owner": "ontologist",
+ "note": "From the brief on scheduled capture, JSON and analysis (22 October, critical).",
+ "order": 60
+}

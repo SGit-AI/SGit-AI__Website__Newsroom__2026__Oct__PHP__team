@@ -1,0 +1,8 @@
+{
+ "id": "306",
+ "title": "URL paths and the router: the five steps in the article, after the editor's answers to its five decisions (the URL shape, depth in the address, which pages get persona paths, how long ?as= stays, and the order against the line going live)",
+ "status": "open",
+ "owner": "editor",
+ "note": "From the article of 25 October. Step 1 (persona paths as real files, canonical to the base, Share minting them) is the one that delivers 'a link that includes the persona name' and can ship on its own.",
+ "order": 305
+}

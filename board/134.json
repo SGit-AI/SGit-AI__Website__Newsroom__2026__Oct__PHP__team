@@ -1,0 +1,7 @@
+{
+ "id": "134",
+ "title": "The vault key is the whole boundary: the collaborators (58526ytp) and conductor (5iwos28w) vaults moved onto sgit.ai's postmaster convention (admin/build/postmaster.py): the enum key and the key pair's passphrase derived from the write key, the key pair encrypted inside the vault, the lane in .vault/postmaster/lane.json; drained from a fresh clone with the vault key alone",
+ "status": "done",
+ "owner": "conductor",
+ "order": 133
+}

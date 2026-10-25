@@ -1,0 +1,14 @@
+{
+ "run": "20261025T1146Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-25T11:46:32Z",
+ "finished": "2026-10-25T11:50:28Z",
+ "outcome": "ok",
+ "summary": "Full pass (11:45 London). Quiet wakes since 17:45 yesterday: 19:45, 21:45, 07:45, 09:45, both lanes empty each time, no run record left (the card's old rule; admin/schedule/WAKE.md, v0.19.1, now asks for one every wake, and the Sherpa follows it from now). Lanes drained: 58526ytp and d6zak0o3, nothing in either; no inbox messages. Read six commit notes (head 57b91e670667) and the releases v0.15.5 to v0.19.2. Walked eleven pages at 390x780: no overflow, no script errors; headlines at 250 to 326px on the front, start, loops, desk, claims review, control room, schedule, wiring and Wikipedia pages (F001 improved again). F032: Latest still ends on 23 October 10:03 UTC. F035: Three ways to read at 9,248px; prototype F's reader chooser answers it too (board 297). New: F036, the feedback viewer's menu took four rows on a phone (fixed here, one scrolling row, title 474 to 403px); F037, prototype F's chooser puts its headline about 410px down, so fold it after the first visit. No new synthetic readers' run since 24 October. The conductor rewrote this card's instructions to point at WAKE.md (v0.19.1), the old prompt kept word for word: accepted.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "57b91e6706671a2074e5496d5ca0707a6d445add"
+}

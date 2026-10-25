@@ -1,0 +1,7 @@
+{
+ "id": "181",
+ "title": "Use <sg-graph> wherever a page draws a graph: the actor, source and fact pages' mini_graph(), the review navigator (review/ui, assets/review-nav.js, which also assigns location.hash), the reader's persona graph; one component, one grammar",
+ "status": "open",
+ "owner": "ontologist",
+ "order": 180
+}

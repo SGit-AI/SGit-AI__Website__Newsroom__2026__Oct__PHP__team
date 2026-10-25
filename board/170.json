@@ -1,0 +1,9 @@
+{
+ "id": "170",
+ "title": "From CI-002, step 5: a gaps page computed at every build from written rules (control with no path to a test, code with no owner, risk with no story, treatment or holder, edge with no basis)",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done: /grc/gaps/, eight rules as data (data/grc-gaps.json), computed at every build: all 95 controls joined to no code or test; 16 of 16 code nodes with no owner; 9 of 16 code nodes no test reaches (main/SAPI.c and main/main.c among them); 14 of 34 risks no story tells; 815 edges inferred and unchecked.",
+ "version": "0.10.13",
+ "order": 169
+}

@@ -1,0 +1,7 @@
+{
+ "id": "126",
+ "title": "Vaults: /team/vaults/ lists every vault each agent made, by ID only, from one file per agent (data/vault-register/); AGENTS.md section 6 and CLAUDE.md: add the ID when you make a vault, seal the key to the root, and when asked for a key send the sealed link and its QR code, never the key",
+ "status": "done",
+ "owner": "conductor",
+ "order": 125
+}

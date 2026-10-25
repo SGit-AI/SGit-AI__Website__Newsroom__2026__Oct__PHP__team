@@ -1,0 +1,7 @@
+{
+ "id": "117",
+ "title": "Stack, next: the pulse's vulnerabilities as rows in data/stack.json (rules beyond PHP: product and version ranges), news from the feeds matched to a saved stack, a test of the vault sync with a real reader vault, deletions that carry across devices",
+ "status": "open",
+ "owner": "dev@php.newsroom",
+ "order": 116
+}

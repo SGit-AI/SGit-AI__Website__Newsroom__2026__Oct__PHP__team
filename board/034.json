@@ -1,0 +1,8 @@
+{
+ "id": "034",
+ "title": "Deploys from several agents: a started deploy is never cut off (the Pages workflow queues instead of cancelling), and release.sh takes in what other agents released before it bumps, and again if its push loses a race",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.2.12",
+ "order": 34
+}

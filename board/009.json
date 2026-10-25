@@ -1,0 +1,7 @@
+{
+ "id": "009",
+ "title": "A second model reads the vault and writes its own claims file; disagreements become disputed rows",
+ "status": "open",
+ "owner": "editor",
+ "order": 9
+}

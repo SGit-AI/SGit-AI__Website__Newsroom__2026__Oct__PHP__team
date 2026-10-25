@@ -1,0 +1,8 @@
+{
+ "id": "120",
+ "title": "The public telemetry stats vault (0cfkdcvh, read key published): its own app with the hourly chart by group, a world map of readers, what readers read; curated counts only, written at every drain by admin/build/telemetry_flow.sh (drain, classify, publish, push both vaults); the same counts and map on /admin/telemetry/",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.8.4",
+ "order": 119
+}

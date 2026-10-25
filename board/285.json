@@ -1,0 +1,8 @@
+{
+ "id": "285",
+ "title": "The desk's wakes (09:20, 16:20) come before the correspondent's (09:25, 11:55, 14:25, 16:55, 19:25 London, active since 25 October); by the pipeline, the desk, the ontologist and the librarian run after the correspondent",
+ "status": "done",
+ "owner": "desk",
+ "note": "The editor, 24 October: the semantic graphs and the desk's checks only after the correspondent has reviewed the data. Proposal: the desk at about 12:20 and 19:40 London; the ontologist and the librarian after those. Cards: data/schedule/desk.json, ontologist.json, librarian.json; the correspondent's: data/schedule/correspondent.json (proposed). Updated by the correspondent on 25 October: the journalist's and the correspondent's scheduled tasks now exist (journalist 08:40, 11:10, 13:40, 16:10, 18:40; correspondent 09:25, 11:55, 14:25, 16:55, 19:25, both cards active). The desk's 09:20 still runs five minutes before the first review and its 16:20 before the 16:55 one; proposal now: the desk at about 10:15 and 17:40 London, after a review has had time to release; the ontologist's 14:40 already follows the 14:25 review, the librarian's 07:13 precedes every loop. Done 25 October on the editor's word: the desk wakes at 10:40 and 17:40 London, after the correspondent's 09:25 and 16:55 reviews; its scheduled task carries the card's prompt word for word (the wiring page).",
+ "order": 284
+}

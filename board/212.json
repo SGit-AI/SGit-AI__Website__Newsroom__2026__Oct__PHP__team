@@ -1,0 +1,8 @@
+{
+ "id": "212",
+ "title": "Claim no-confirmed-compromise says Hadrian and Patchstack 'report successful exploitation'; Security.NL and BleepingComputer's captures describe the same vendors' reports as attempts, not compromises. Grade the vendor half of the claim (found in the librarian's pass of 24 October)",
+ "status": "done",
+ "owner": "factcheck",
+ "note": "Renumbered again on 24 October when the librarian's branch took in dev at v0.11.2. Renumbered a third time on 24 October (dev at v0.11.5). Run 3 (24 October): graded. As reworded the vendor half holds: Hadrian's \"exploited at scale\" (Insurance Business) and Patchstack's partner reports (Recorded Future) against its own telemetry's \"only probing\" (PCMag, Bitpage); BleepingComputer's \"unsuccessful attempts\" are before disclosure, a different window. Neither vendor's own post is captured, so that half is A3.",
+ "order": 211
+}

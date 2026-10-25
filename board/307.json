@@ -1,0 +1,8 @@
+{
+ "id": "307",
+ "title": "Ten scheduled tasks still carry their long prompts, which only their own sessions can change: paste the card's prompt (shown on /team/schedule/, What the account runs) into the sessions of the Sherpa, the desk, the librarian, the conductor (scheduled), pulse, the researcher (two tasks), the curator (two tasks) and the fact-check desk. The researcher's two still run the retired schedule vault's steps.",
+ "status": "waiting",
+ "owner": "editor",
+ "note": "Checked on 25 October: the other five (correspondent, journalist, ontologist) were updated from the conductor's session; two stale one-shot tasks from 22 October were deleted.",
+ "order": 306
+}

@@ -1,0 +1,9 @@
+{
+ "id": "260",
+ "title": "From CI-003 (the Sherpa's brief of 24 October), step 1: on phones the header sticks as one line or not at all (233px today, 30% of the screen; F034)",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done by dev@php.newsroom on 24 October: at 700px and narrower one 43px line stays at the top (the site's name, the version, Menu); the status, the breadcrumbs and the tools (Ask, Feedback, who you are, the view, the meter) open with the menu, and an open menu scrolls inside the screen. Measured in Chromium at 360 and 390 wide: 233px to 43px.",
+ "version": "0.14.22",
+ "order": 259
+}

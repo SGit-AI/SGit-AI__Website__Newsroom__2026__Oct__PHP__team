@@ -1,0 +1,8 @@
+{
+ "id": "057",
+ "title": "Schedule the watch list: every source in the scheduled-capture brief checked on a cadence (15 minutes while breaking, hourly, then daily), extending the source watch rather than starting a second scheduler",
+ "status": "open",
+ "owner": "dev",
+ "note": "From the brief on scheduled capture, JSON and analysis (22 October, critical).",
+ "order": 57
+}

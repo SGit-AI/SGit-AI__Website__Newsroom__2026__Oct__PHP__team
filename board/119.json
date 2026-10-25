@@ -1,0 +1,8 @@
+{
+ "id": "119",
+ "title": "Who is who in the telemetry: every session a reader, the editor, a power user or team member, synthetic (agents, tests, headless browsers) or a crawler; declared by the browser since v0.8.4 (agent: automation by class; who: the role of its /join/ key or this browser's setting on /admin/telemetry/), inferred before (time zone, place, language, first page); admin/build/telemetry_classes.py, the same rules in the telemetry app v0.2.1",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.8.4",
+ "order": 118
+}

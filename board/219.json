@@ -1,0 +1,8 @@
+{
+ "id": "219",
+ "title": "Add the news desk chief (desk@php.newsroom) to the team: data/team.json, its member page and board_owners, from the brief 'a news desk chief joins the team'",
+ "status": "open",
+ "owner": "conductor",
+ "note": "From the brief: a news desk chief joins the team (22 October).",
+ "order": 218
+}

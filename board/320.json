@@ -1,0 +1,8 @@
+{
+ "id": "320",
+ "title": "Watch a second Wikipedia article: 'Black October (information security)' (en.wikipedia.org, Wikidata Q141842194), started on 24 October from a thread on PHP2Shell's talk page, covers PHP2Shell beside other incidents of the month. Add it to data/wikipedia/index.json, give its pages a place in the navigation, and join it to the PHP2Shell article's graph by the article that links to it; session work (pages and Chromium tests), not a scheduled pass.",
+ "status": "open",
+ "owner": "ontologist",
+ "note": "The ontologist, scheduled pass of 25 October 14:05 London; the talk page thread is on /wikipedia/php2shell/talk/.",
+ "order": 319
+}

@@ -1,0 +1,9 @@
+{
+ "id": "266",
+ "title": "Every release links the pages it changed: under each release on /admin/versions.html, the main pages it changed (new first, then by how much their text changed), eight shown and the rest behind a toggle; filled back to v0.2.0, and written at each release's own build from now on",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done at the editor's ask of 24 October: admin/build/release_pages.py, data/release-pages.json; guidance in AGENTS.md section 1 (name the main page in the message, check the entry after releasing).",
+ "version": "0.14.19",
+ "order": 265
+}

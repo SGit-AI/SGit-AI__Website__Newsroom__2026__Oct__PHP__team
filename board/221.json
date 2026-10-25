@@ -1,0 +1,8 @@
+{
+ "id": "221",
+ "title": "The posture map, extended: add every other EU and EEA national CERT to data/agencies.json (Finland, Germany and Belgium first), coded as the 16 are; and, per offline row, whether the operator followed its CERT's advice or went further",
+ "status": "open",
+ "owner": "collector-gov",
+ "note": "From the brief: how many sites went offline, and where (22 October; the news desk chief's proposal, for the editor's go).",
+ "order": 220
+}

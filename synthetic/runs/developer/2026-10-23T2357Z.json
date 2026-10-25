@@ -1,0 +1,541 @@
+{
+ "schema": "sgit.newsroom.synthetic-run-export/1",
+ "persona": "developer",
+ "run": "2026-10-23T2357Z",
+ "started": "2026-10-23T2357Z",
+ "finished": "2026-10-23T23:58:11Z",
+ "site_version": "0.10.18",
+ "data_as_of": "2026-10-23T01:20Z",
+ "device": {
+  "width": 1440,
+  "height": 900,
+  "mobile": false,
+  "scale": 1,
+  "color_scheme": "dark"
+ },
+ "question": "What exactly is the bug, which versions and SAPIs, what does the fix change, and how do I verify my images are patched?",
+ "pages": [
+  {
+   "n": 1,
+   "path": "index.html",
+   "why": "start",
+   "title": "PHP in October 2026: two critical security flaws, tracked as evidence · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 2107,
+   "screens": 7.1,
+   "reading_ease": 56.7,
+   "min_font_px": 11.84,
+   "small_text_blocks": 1,
+   "low_contrast_count": 0,
+   "contrast_checked": 86,
+   "tap_targets": 189,
+   "tap_targets_small": 22,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 897,
+   "jargon_per_1000": 12.8,
+   "jargon_top": [
+    "CISA",
+    "CVE",
+    "NCSC",
+    "NSA",
+    "Patch"
+   ]
+  },
+  {
+   "n": 2,
+   "path": "briefings/developer/index.html",
+   "why": "reading path",
+   "title": "Briefing for a developer: Is my code the problem, what do I change, and how do I check the box I deployed to? · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1626,
+   "screens": 5.3,
+   "reading_ease": 43.2,
+   "min_font_px": 11.84,
+   "small_text_blocks": 2,
+   "low_contrast_count": 0,
+   "contrast_checked": 130,
+   "tap_targets": 188,
+   "tap_targets_small": 36,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 585,
+   "jargon_per_1000": 25.2,
+   "jargon_top": [
+    "CVE",
+    "CVSS",
+    "mod_php",
+    "PHP-FPM",
+    "longjmp"
+   ]
+  },
+  {
+   "n": 3,
+   "path": "flaws/index.html",
+   "why": "reading path",
+   "title": "The two flaws: CVE-2026-109618 and CVE-2026-109619 · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1503,
+   "screens": 4.7,
+   "reading_ease": 52.0,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 114,
+   "tap_targets": 112,
+   "tap_targets_small": 8,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 514,
+   "jargon_per_1000": 39.3,
+   "jargon_top": [
+    "CVE",
+    "mod_php",
+    "Backport",
+    "NCSC",
+    "CVSS"
+   ]
+  },
+  {
+   "n": 4,
+   "path": "code/index.html",
+   "why": "reading path",
+   "title": "The code: where php2shell lives and what the fix does · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1774,
+   "screens": 5.8,
+   "reading_ease": 54.3,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 69,
+   "tap_targets": 81,
+   "tap_targets_small": 8,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 510,
+   "jargon_per_1000": 18.6,
+   "jargon_top": [
+    "Multipart",
+    "CVE",
+    "SAPI",
+    "Backport",
+    "longjmp"
+   ]
+  },
+  {
+   "n": 5,
+   "path": "patching/index.html",
+   "why": "reading path",
+   "title": "Patching: which versions get a fix, and from whom · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1636,
+   "screens": 5.2,
+   "reading_ease": 34.4,
+   "min_font_px": 12.8,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 110,
+   "tap_targets": 87,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 629,
+   "jargon_per_1000": 17.1,
+   "jargon_top": [
+    "NCSC",
+    "CVE",
+    "Backport",
+    "End of life",
+    "CISA"
+   ]
+  },
+  {
+   "n": 6,
+   "path": "affected/index.html",
+   "why": "reading path",
+   "title": "Affected systems: versions, deployments, applications, inventory · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 638,
+   "screens": 3.6,
+   "reading_ease": 35.9,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 115,
+   "tap_targets": 84,
+   "tap_targets_small": 8,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 819,
+   "jargon_per_1000": 53.3,
+   "jargon_top": [
+    "CVE",
+    "NCSC",
+    "Backport",
+    "End of life",
+    "CERT"
+   ]
+  },
+  {
+   "n": 7,
+   "path": "review/index.html",
+   "why": "followed a link",
+   "title": "The fix, mapped to the code · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 826,
+   "screens": 4.3,
+   "reading_ease": 55.6,
+   "min_font_px": 11.84,
+   "small_text_blocks": 9,
+   "low_contrast_count": 0,
+   "contrast_checked": 132,
+   "tap_targets": 83,
+   "tap_targets_small": 13,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 674,
+   "jargon_per_1000": 25.4,
+   "jargon_top": [
+    "CVE",
+    "Patch",
+    "CVSS",
+    "longjmp",
+    "SAPI"
+   ]
+  },
+  {
+   "n": 8,
+   "path": "admin/versions.html",
+   "why": "followed a link",
+   "title": "Release history · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 4725,
+   "screens": 17.6,
+   "reading_ease": 22.6,
+   "min_font_px": 12.8,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 200,
+   "tap_targets": 56,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 594,
+   "jargon_per_1000": 4.9,
+   "jargon_top": [
+    "Evidence vault",
+    "CVE",
+    "NCSC",
+    "KEV",
+    "Patch"
+   ]
+  }
+ ],
+ "totals": {
+  "pages": 8,
+  "requests": 144,
+  "blocked": 24,
+  "failed": 0,
+  "bytes": 3271705,
+  "console_errors": 0,
+  "words_read": 14835
+ },
+ "checks": [
+  {
+   "severity": "low",
+   "page": "index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 1 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "briefings/developer/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 2 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "review/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 9 blocks below 12px"
+  }
+ ],
+ "extra_viewports": [],
+ "machine_formats": [
+  {
+   "path": "llms.txt",
+   "status": 200,
+   "bytes": 150081,
+   "content_type": "text/plain; charset=utf-8",
+   "sha256": "6f5e021e04f187ab845f01529e68fb4947587f565b4106279cf2892efde084dd",
+   "parses": true
+  },
+  {
+   "path": "status.json",
+   "status": 200,
+   "bytes": 2979,
+   "content_type": "application/json; charset=utf-8",
+   "sha256": "5b0eaf3a4a740b2b5671ec42b8dbae165d686bdac9c4314aba29dc03b0f0a2ad",
+   "parses": true
+  },
+  {
+   "path": "flaws/index.md",
+   "status": 200,
+   "bytes": 11436,
+   "content_type": "text/markdown; charset=utf-8",
+   "sha256": "c2d79b06cc854882d7139698a971e2764a02ee11a4886b5b70822d5859f39ad7",
+   "parses": true
+  }
+ ],
+ "feedback": {
+  "verdict": "The technical core is still the best write-up of php2shell I have read, but fifteen releases on, the one thing I came to do, prove my Docker images are patched, still gets a single php -v line, and the pages I read now lag the site's own newer data.",
+  "answered_question": "partly",
+  "time_to_answer": "The bug, the fixed versions and 'your code cannot fix it' landed in the thirty-second answer on briefings/developer/index.html (page 2); SAPIs, version table and mitigations on flaws/index.html (page 3); what the fix changes on code/index.html (page 4). How to verify an image or a distro backport never went beyond 'php -v inside the container', on any of the eight pages or in llms.txt.",
+  "scores": {
+   "answered": 3,
+   "clarity": 4,
+   "trust": 3,
+   "design": 3,
+   "navigation": 4
+  },
+  "works": [
+   {
+    "point": "The thirty-second answer still does the right job for a developer: the flaw is in the C engine, ini_set, .user.ini and auto_prepend_file run too late, check the running version after the restart. It stops me wasting time on code-side fixes.",
+    "page": "briefings/developer/index.html"
+   },
+   {
+    "point": "Each CVE has its GHSA ID, full CVSS 4.0 vector, CWEs, exact timestamps and the record's description verbatim, kept apart from what was demonstrated and what the fix does.",
+    "page": "flaws/index.html"
+   },
+   {
+    "point": "The SAPI table shows the FPM disagreement between the GitHub advisory and the Foundation instead of smoothing it over, and says CLI parsing untrusted input is 'not covered either way by the primary sources'. That is the honesty I want.",
+    "page": "flaws/index.html"
+   },
+   {
+    "point": "The warning that the CVE records default to 'unaffected' and list only 8.2 to 8.5, so scanners will clear 7.4 to 8.1. Still the most practically useful sentence for anyone with a scanner in CI.",
+    "page": "flaws/index.html"
+   },
+   {
+    "point": "The mitigations table puts each setting beside its own caveat and where it must be set (php_admin_value, pool, php.ini), including the RLIMIT_AS warning and pm.max_requests=1.",
+    "page": "flaws/index.html"
+   },
+   {
+    "point": "Full commit hash, parent, authors, merge times into each branch, a step-by-step before and after, readable C hunks, and the 7.4 backport's different _exit strategy with its 17 files listed. I can go and diff this myself.",
+    "page": "code/index.html"
+   },
+   {
+    "point": "'What the fix changes' warns about the delayed OOM, memory_hard_limit_percent and max_multipart_body_parts. That is what I need to warn QA about.",
+    "page": "patching/index.html"
+   },
+   {
+    "point": "The review page states the code layer comes from git show -U0 by a parser, never a model, with per-file added and removed counts. A provenance claim I can check.",
+    "page": "review/index.html"
+   },
+   {
+    "point": "status.json now carries the CVE IDs, data_as_of and the vault commit, so a tool can at least tell how fresh it is; the flaws markdown twin still renders clean tables and a backticked CVSS vector.",
+    "page": "status.json"
+   }
+  ],
+  "fails": [
+   {
+    "point": "There is still no real verification step for container images or backports: one sentence about php -v, no docker run command, no version-independent check, nothing for distro builds.",
+    "page": "briefings/developer/index.html",
+    "severity": "high",
+    "evidence": "The only instruction is still 'Check the running version where the code runs: php -v inside the container or phpinfo() on the box, after the restart. The package list is not the answer.' llms.txt's am-i-affected answer adds 'without a distribution backport' but never says how to tell."
+   },
+   {
+    "point": "php -v gives the wrong answer on the backports the site itself marks fixed: an Ubuntu Noble box reports 8.3.6, below 8.3.36.",
+    "page": "patching/index.html",
+    "severity": "high",
+    "evidence": "'fixed Canonical / Ubuntu package maintainers: Ubuntu Noble php8.3-fpm binary package 8.3.6-0ubuntu0.24.04.13' against the briefing's 'Fixed: 8.5.12, 8.4.27, 8.3.36, 8.2.35'. Same for Jammy 8.1.2 and Focal 7.4.3."
+   },
+   {
+    "point": "The Docker Official Image row, the one I most need, still has no tags, versions, rebuild date or digests.",
+    "page": "patching/index.html",
+    "severity": "high",
+    "evidence": "'fixed Docker Official Images maintainers: Docker Official Image: php' with no version text, on the ladder and again under 'Fixed, but you must rebuild and redeploy', while Debian, Red Hat, Heroku and Bref rows carry versions."
+   },
+   {
+    "point": "The patching and affected pages are frozen at an old inventory commit while the site says it has read a much newer one, so I do not know which figures to cite.",
+    "page": "patching/index.html",
+    "severity": "medium",
+    "evidence": "patching/index.html: '46 fixed · 206 still affected · 418 under investigation · 3 not affected, of 674 products ... at commit cca173c64ec5 (22 October, 08:40 UTC)'. The front page says 'the NCSC-NL inventory, latest change read 23 October 2026, 12:50 UTC'; admin/versions.html v0.10.4 says '109 of 751 products fixed'; v0.4.3's correction 'had 675 rows at the captured commit, not 674' is still not applied on patching, affected or llms.txt."
+   },
+   {
+    "point": "The 'still open' lists say PHP has not answered the incomplete-fix report, but the site's own release notes say it did, on 22 October.",
+    "page": "index.html",
+    "severity": "medium",
+    "evidence": "index.html: 'Whether the fix is complete. A report on 21 October suggested it may not be; the PHP project has not answered it publicly yet.' briefings/developer/index.html: 'Nothing from PHP on the list yet.' admin/versions.html v0.5.8: 'the PHP security team answered the 'incomplete fix' report publicly at 09:11 UTC on 22 October ... so the front page's 'not answered publicly yet' is out of date'."
+   },
+   {
+    "point": "status.json still has no machine-readable affected ranges or fixed versions and does not link data/affected.json, so a CI step cannot gate on it.",
+    "page": "status.json",
+    "severity": "medium",
+    "evidence": "Versions appear only in prose in headline_facts[0].text; links holds front, sources, claims, stories, releases, llms and nothing for affected or patching."
+   },
+   {
+    "point": "The SAPI table still has no row for long-running workers (Octane on Swoole or RoadRunner), where cross-request stale state should worry a Laravel team most.",
+    "page": "flaws/index.html",
+    "severity": "medium",
+    "evidence": "SAPI rows: Apache mod_php, PHP-FPM, php-cgi, FrankenPHP, LiteSpeed (LSAPI), CLI/cron/queue workers. Nothing for Swoole or RoadRunner, not even 'not covered'."
+   },
+   {
+    "point": "The cPanel row under 8.1, 8.0 and 7.4 still lists only 8.2 to 8.4 packages, and the page's prose now contradicts the row.",
+    "page": "patching/index.html",
+    "severity": "medium",
+    "evidence": "Row: 'cPanel EasyApache 4 / MultiPHP EA4 25.91: ea-php82 8.2.35; ea-php83 8.3.36; ea-php84 8.4.27'. Prose: 'cPanel backported to 7.4, 8.0 and 8.1'."
+   },
+   {
+    "point": "The hunks are still called verbatim but contain elisions, and the code block has no diff colouring, so the removed bailout and the added lines look the same in dark mode.",
+    "page": "code/index.html",
+    "severity": "low",
+    "evidence": "'the hunks below are verbatim' followed by 'bool *did_gc ...)', '{ ... }' and bare '...' lines; the block is a plain <pre> with no add or delete classes, and full.jpg shows uniform white monospace."
+   },
+   {
+    "point": "The commit hash links to the site's own source page, not to the upstream php-src commit.",
+    "page": "code/index.html",
+    "severity": "low",
+    "evidence": "The only link for 3584a98 is '../sources/github-php-src-fix-commit-3584a98bd/index.html'."
+   },
+   {
+    "point": "Downstream rows are still cut off mid-word.",
+    "page": "patching/index.html",
+    "severity": "low",
+    "evidence": "'Bref 3: php-85:21, php-84:24, php-83:24, php-82:26; Bref 2 l', 'Cloud Run customer containers with unpatched PHP on their re', 'patched distribution/Sury pac', 'fix still bei'."
+   },
+   {
+    "point": "llms.txt's Data list still omits the files the pages cite, and the markdown twin's links still point to HTML, so a tool walking markdown falls back to HTML.",
+    "page": "llms.txt",
+    "severity": "low",
+    "evidence": "patching/index.html cites 'data/patching.json', review/index.html cites 'data/review.json'; neither is under '## Data'. flaws/index.md links '../sources/cve-cve-2026-109618/index.html'. llms.txt is also now 150 KB and 727 lines, much of it team, GRC and design-mockup pages a tool asking about the bug does not need."
+   },
+   {
+    "point": "About 360px of site chrome sits above the H1 on technical pages at 1440x900.",
+    "page": "code/index.html",
+    "severity": "low",
+    "evidence": "metrics.json: H1 'The code: where the bug is, and what the fix does' at top 360; fold.png shows the two-row nav, the explainer banner, the reading bar and the research strip before it."
+   }
+  ],
+  "changes": [
+   {
+    "change": "Add a 'Verify your image' block with copy-paste commands: docker run --rm <image> php -v, a version-independent check such as php -r 'var_dump(ini_get(\"max_multipart_body_parts\"));' if the site can confirm only patched builds have it, and the distro changelog or package-version check for backports.",
+    "page": "briefings/developer/index.html",
+    "why": "This half of my question is still unanswered, and php -v alone gives the wrong result on the Ubuntu backports the site lists as fixed.",
+    "effort": "medium"
+   },
+   {
+    "change": "Give the Docker Official Image row the fixed tags per variant (cli, fpm, apache, alpine) and the rebuild date.",
+    "page": "patching/index.html",
+    "why": "I build on php:*-fpm and php:*-apache; without tags I cannot check my Dockerfiles or pinned digests.",
+    "effort": "small"
+   },
+   {
+    "change": "Move patching and affected to the inventory commit the front page says it has read (751 products), or say on each page why they stay on cca173c64ec5, and fix 674 versus 675.",
+    "page": "patching/index.html",
+    "why": "Three different inventory sizes across the site make me unsure which number to cite.",
+    "effort": "small"
+   },
+   {
+    "change": "Update the 'still open' item on the incomplete fix with PHP's public answer of 22 October, as the v0.5.8 notes already say.",
+    "page": "index.html",
+    "why": "When the release notes say a page is out of date and the page is unchanged, I start doubting the rest.",
+    "effort": "small"
+   },
+   {
+    "change": "Add affected_ranges and fixed_versions per branch to status.json and link data/affected.json and data/patching.json from its links block.",
+    "page": "status.json",
+    "why": "Then a CI step or an LLM tool can gate on the data instead of parsing a prose headline.",
+    "effort": "small"
+   },
+   {
+    "change": "Add Swoole, RoadRunner and Octane worker rows to the SAPI table, saying 'not covered by the primary sources' if that is the truth.",
+    "page": "flaws/index.html",
+    "why": "Long-running workers are where cross-request stale state should worry a Laravel team, and silence reads as 'not affected'.",
+    "effort": "small"
+   },
+   {
+    "change": "Mark the elisions in the hunks or drop 'verbatim', colour + and - lines, and link the hash to the upstream php-src commit.",
+    "page": "code/index.html",
+    "why": "I want to grep and diff these myself, and in dark mode removed and added lines blur together.",
+    "effort": "small"
+   },
+   {
+    "change": "Fix the cPanel row placement and truncated product text, and list data/patching.json and data/review.json in llms.txt with .md links in the twins.",
+    "page": "patching/index.html",
+    "why": "A row under 8.1 listing only 8.2 to 8.4 packages makes me doubt the ladder, and tools should be able to stay in markdown and JSON.",
+    "effort": "small"
+   }
+  ],
+  "quotes": [
+   {
+    "page": "briefings/developer/index.html",
+    "text": "Nothing in userland blocks the demonstrated paths: ini_set() runs too late, .user.ini runs too late, auto_prepend_file runs too late.",
+    "reaction": "Still exactly what I need first; it kills the idea of a code-side hotfix."
+   },
+   {
+    "page": "briefings/developer/index.html",
+    "text": "Check the running version where the code runs: php -v inside the container or phpinfo() on the box, after the restart. The package list is not the answer.",
+    "reaction": "Word for word what it said last time. Right instinct, still not enough for images or backports."
+   },
+   {
+    "page": "flaws/index.html",
+    "text": "The CVE records carry defaultStatus 'unaffected' and list only 8.2 to 8.5, so an automated scanner reading the CVE will call 7.4 to 8.1 unaffected.",
+    "reaction": "Still the sentence that would have saved me in CI."
+   },
+   {
+    "page": "code/index.html",
+    "text": "Each step names the function or file it comes from; the hunks below are verbatim.",
+    "reaction": "And the hunks still contain '...'. Small, but it is the kind of claim I check."
+   },
+   {
+    "page": "patching/index.html",
+    "text": "fixed Docker Official Images maintainers: Docker Official Image: php",
+    "reaction": "Fixed which tags? Still the row where I needed detail and got none."
+   },
+   {
+    "page": "patching/index.html",
+    "text": "46 fixed · 206 still affected · 418 under investigation · 3 not affected, of 674 products in the NCSC-NL inventory at commit cca173c64ec5",
+    "reaction": "The release notes say 675 at this commit and 751 now; this page says neither."
+   },
+   {
+    "page": "admin/versions.html",
+    "text": "so the front page's 'not answered publicly yet' is out of date",
+    "reaction": "The site knows its front page is wrong and the front page still says it a day later."
+   },
+   {
+    "page": "review/index.html",
+    "text": "Never a model, so it cannot invent a function that is not in the diff.",
+    "reaction": "The right provenance claim for a code map, and one I can check against git show."
+   }
+  ],
+  "since_last": "Almost nothing I asked for on v0.4.3 is fixed on v0.10.18: the image verification step, the Docker tags, the Ubuntu backport trap, status.json versions, the Swoole and RoadRunner rows, the cPanel row, the truncated rows, the 'verbatim' hunks with elisions, the uncoloured diff, the missing data files in llms.txt and the .html links in the markdown twin are all still open, and the 674 versus 675 correction is still not applied. Small gains: status.json now carries cves, data_as_of and vault_commit. Worse: the patching and affected pages now lag the 751-product inventory the front page says it has read, and the 'still open' lists on index.html and the developer briefing contradict the v0.5.8 note that PHP answered the incomplete-fix report on 22 October. The instruments' 11.84px text on index.html, the briefing and review did not hurt me at 1440x900 in dark mode; the code block, at 12px and above, was readable. No page text addressed me or an AI.",
+  "reviewer": {
+   "by": "agent-session"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "id": "309",
+ "title": "The briefs page is a list of titles, newest first, and every brief has its own page and link (admin/briefs/<the file's name>/), instead of 57 briefs rendered one after another",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor asked for it in story-site's session of 25 October: 'a navigation structure where I can see the latest article titles, and then open them in a new page so that I can read them (and you can link to them directly)'. admin/briefs/** is the editor's own page in his policy, so this is an override of story-site's scope, counted in its status. Every link already published to admin/briefs/index.html#<file stem> still lands on that brief's row: the five in build.py were checked. The pages are in llms.txt and have markdown twins.",
+ "version": "0.20.0",
+ "order": 308
+}

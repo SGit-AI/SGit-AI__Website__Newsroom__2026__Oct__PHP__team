@@ -1,0 +1,7 @@
+{
+ "id": "160",
+ "title": "Run every scheduled wake through the schedule vault: pull, schedule.py due curator, start/finish with the log, index, push; your routine is task T-001, repeating until 31 October",
+ "status": "open",
+ "owner": "curator",
+ "order": 159
+}

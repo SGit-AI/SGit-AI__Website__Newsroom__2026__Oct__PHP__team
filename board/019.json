@@ -1,0 +1,7 @@
+{
+ "id": "019",
+ "title": "A layer badge (evidence, derived, authored) in every page's kicker, from data/layers.json, so a reader always knows what kind of page they are on",
+ "status": "open",
+ "owner": "dev",
+ "order": 19
+}

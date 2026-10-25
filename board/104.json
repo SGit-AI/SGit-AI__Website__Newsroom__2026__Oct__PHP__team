@@ -1,0 +1,8 @@
+{
+ "id": "104",
+ "title": "Synthetic readers: limit synthetic.yml's schedule to daytime (branch for security review, then the editor's go); a run with failures leaves a dated article with run: <run id>",
+ "status": "done",
+ "owner": "synthetic",
+ "note": "The editor asked for the workflow to be removed (22 October): .github/workflows/synthetic.yml is deleted; the readers run only when an agent session runs admin/synthetic/run.py.",
+ "order": 103
+}

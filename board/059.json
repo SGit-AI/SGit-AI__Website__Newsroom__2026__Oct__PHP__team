@@ -1,0 +1,8 @@
+{
+ "id": "059",
+ "title": "One parser per watched source turning each capture into timestamped JSON rows (observed_at, published_at, source_updated_at, capture hash, parser version), appended to a series per source",
+ "status": "open",
+ "owner": "collector-gov",
+ "note": "From the brief on scheduled capture, JSON and analysis (22 October, critical).",
+ "order": 59
+}

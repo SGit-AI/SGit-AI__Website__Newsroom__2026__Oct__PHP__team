@@ -1,0 +1,8 @@
+{
+ "id": "020",
+ "title": "Pricing by content type and freshness: every content page metered, price = max(1p, round(base x freshness)) x share read x rating; tiers fresh, new, current, archive picked in the reader's browser; rules on the billing page",
+ "status": "done",
+ "owner": "journalist",
+ "version": "0.2.10",
+ "order": 20
+}

@@ -1,0 +1,84 @@
+{
+ "schema": "newsroom/agent-status/v1",
+ "agent": "factcheck",
+ "as_of": "2026-10-24",
+ "round": 3,
+ "state": "round 3 closed: the pass released as v0.14.4; the first investigation released with this round's debrief",
+ "done": [
+  {
+   "what": "Run 3: seven changed claims re-graded; Finding-26, 27, 28, 33, 34, 102, 124, 125 closed as fixed; K-004 and K-009 explained; board 212 and 244 done",
+   "evidence": "v0.14.4; admin/factcheck/assessments.json, runs/Run-3.json"
+  },
+  {
+   "what": "The schedule card data/schedule/factcheck.json, and the scheduled task's prompt set to it",
+   "evidence": "data/schedule/factcheck.json"
+  },
+  {
+   "what": "Investigations: /factcheck/investigations/ and the first, php-share (29 measures, 127 statements, 73 pages re-checked, Fortune for UF-005.1); board 255",
+   "evidence": "/factcheck/investigations/php-share/; admin/factcheck/investigations/php-share/"
+  },
+  {
+   "what": "Evidence-12 (high): AWS reworded 'broadly exploited' to 'broad exploitation attempts'; Evidence-13, 14, 15; Contradiction-12",
+   "evidence": "admin/factcheck/.issues/data/evidence/, contradictions.json K-012"
+  }
+ ],
+ "tasks": {
+  "board": [
+   "004",
+   "061",
+   "087",
+   "103",
+   "183",
+   "224",
+   "233"
+  ],
+  "note": "the board rows this member owns are in data/admin.json"
+ },
+ "next": [
+  {
+   "what": "Re-grade amazon-honeypot and K-002 when Amazon's revised sentence is captured (Evidence-12)",
+   "why": "the one high item; the site quotes a sentence Amazon has changed"
+  },
+  {
+   "what": "Board 183: single-origin confirmed claims against the desk's levels",
+   "why": "a board row the desk owns"
+  },
+  {
+   "what": "Re-fetch the measures daily so W3Techs' share is a series",
+   "why": "so the share is a series, not one value"
+  },
+  {
+   "what": "The next investigation, if the editor wants one: the offline count (board 224)",
+   "why": "the same method on the next contested number"
+  }
+ ],
+ "asks": [
+  {
+   "what": "whether routine scheduled runs should move to Sonnet (the card says the session's model)",
+   "from": "the editor"
+  },
+  {
+   "what": "the three lines in build_llms() for factcheck/investigations/ pages, written by the desk (a policy miss), to keep or rewrite",
+   "from": "dev@php.newsroom"
+  },
+  {
+   "what": "capture W3Techs, the HTTP Archive counts, Amazon's revised post and oss-security 2026/10/22/15",
+   "from": "collector-researchers and collector-primary"
+  }
+ ],
+ "tokens": {
+  "value": null,
+  "how": "the session does not show a token count to the agent"
+ },
+ "policy": {
+  "version": "2026-10-24",
+  "out_of_scope_requests": 0,
+  "pushbacks": 1,
+  "overrides": 0,
+  "writes_outside_scope": [
+   "admin/build/build.py build_llms(): three lines for llms.txt"
+  ],
+  "injection_seen": 0
+ },
+ "debrief": "admin/content/agents/factcheck/debriefs/2026-10-24__run-3-and-the-first-investigation.md"
+}

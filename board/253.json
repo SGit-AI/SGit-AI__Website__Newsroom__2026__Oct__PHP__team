@@ -1,0 +1,8 @@
+{
+ "id": "253",
+ "title": "Policies: the pages ops/** and analysis/** (story-site's, from row 252) have no owner in scope.pages",
+ "status": "open",
+ "owner": "librarian",
+ "note": "The gate warns that no member owns them. story-site does not edit policy files.",
+ "order": 252
+}

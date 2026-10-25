@@ -1,0 +1,7 @@
+{
+ "id": "111",
+ "title": "The run record, sgit.newsroom.run/1: one JSON object per agent run (trigger, model, objectives, raw, JSON and programmatic reads, writes, commits, network calls, tokens, cost, article, handovers), read by /team/runs/ (the digital twin brief, step 1)",
+ "status": "open",
+ "owner": "conductor",
+ "order": 110
+}

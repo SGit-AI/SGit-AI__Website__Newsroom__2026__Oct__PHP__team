@@ -1,0 +1,7 @@
+{
+ "id": "129",
+ "title": "Confirm data/vault-register/synthetic.json (seeded by the conductor) and seal the six readers' vault keys to the root",
+ "status": "open",
+ "owner": "synthetic",
+ "order": 128
+}

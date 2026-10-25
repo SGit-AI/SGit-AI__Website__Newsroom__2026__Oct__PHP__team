@@ -1,0 +1,8 @@
+{
+ "id": "070",
+ "title": "Decide how each member receives the coordination vaults' keys: the conductor vault's read key, the issues and mail vaults' keys, each member's append token (sealed per member on pki.sgit.ai, or handed in each session's launch prompt)",
+ "status": "open",
+ "owner": "editor",
+ "note": "Until this is decided, the conductor holds every key and members are reached through the editor.",
+ "order": 69
+}

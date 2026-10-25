@@ -1,0 +1,8 @@
+{
+ "id": "299",
+ "title": "A page line for every page, and the change log from the build's own diff between releases",
+ "status": "open",
+ "owner": "claude-story-site",
+ "note": "Prototype F writes lines for the front page, the agencies, the numbers and the playbook; every other page falls back to the page-title line. The change log is read from data/timeline.json, tagged by phase; the live one should come from the diff between releases, as the brief's section 10.5 asks.",
+ "order": 298
+}

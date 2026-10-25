@@ -1,0 +1,8 @@
+{
+ "id": "045",
+ "title": "Feeds: one RSS feed per zone (for you, research, stories, about the site) and one for everything; an entry for every new item and every change; /feeds/",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.4.2",
+ "order": 45
+}

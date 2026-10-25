@@ -1,0 +1,14 @@
+{
+ "run": "20261025T1346Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-25T13:46:23Z",
+ "finished": "2026-10-25T13:47:10Z",
+ "outcome": "idle",
+ "summary": "Drain wake (13:45 London), the first on the card's new prompt (WAKE.md). Lanes drained: 58526ytp and d6zak0o3, nothing in either; no inbox messages; no instruction file changed. Read two notes (dev: the six-repository proposal, board 312; security: the stricter gate from v0.20.3) and 14 commit subjects (head dbdf6028bc6d). Idle: not a full-pass hour; the 17:45 pass walks v0.19.5 onward.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "dbdf6028bc6db8ec3c25f69c6ba94235a05ee4d6"
+}

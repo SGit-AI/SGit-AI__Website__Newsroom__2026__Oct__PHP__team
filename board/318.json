@@ -1,0 +1,8 @@
+{
+ "id": "318",
+ "title": "The ontologist's story on the admin site (admin/content/articles/2026-10-25__ontologist__what-wikipedia-knows-about-being-right.md) is outside the draft policy's appends (articles are not listed for this member); written at the editor's explicit direction in his session ('write a new article on the admin site'), counted as an override in status.json. AUTHOR_ROLES in build.py has no 'ontologist' entry and falls back to the role id; the policy's keeper to add articles to the scope if the editor wants more.",
+ "status": "open",
+ "owner": "abp",
+ "note": "The ontologist, 25 October.",
+ "order": 317
+}

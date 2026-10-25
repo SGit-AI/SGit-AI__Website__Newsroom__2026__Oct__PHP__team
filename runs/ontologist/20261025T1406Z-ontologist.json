@@ -1,0 +1,14 @@
+{
+ "run": "20261025T1406Z-ontologist",
+ "agent": "ontologist",
+ "started": "2026-10-25T14:06Z",
+ "finished": "2026-10-25T14:21:14Z",
+ "outcome": "ok",
+ "summary": "First wake of the new task (06:05/10:05/14:05/18:05 London, the ontologist's own session), at dev b23ab55090fb. Wikipedia: PHP2Shell 370 revisions, 0 new; Talk:PHP2Shell 40, 1 new (a banner change); Black October (information security) found as a new article from a talk thread, board 320 to watch it. Parties: 36 new sources gave 35 publisher spellings, resolved as 32 new parties (names that mislead noted: three IT dailies, Haber.com, IT之家, a press release on jiji.com) and 3 aliases; The DFIR Blog's guessed hosts replaced by the one Wikipedia cites; 384 entities, nothing that would stop the build. Crosswalk: no new anchor or stakeholder. Runbook: the wake fetches each title, not --all. Board 187's command renamed. Notes read: security (stricter gate), conductor (card times: already on the card since v0.21.0; old task deleted). Nothing addressed to an AI. Record: admin/ontologist/passes/2026-10-25__pass-2.md.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "the ontologist's session (Opus 5.5), scheduled",
+ "cost_usd": null,
+ "head": "b23ab55090fb07c4711f31d8e3a5f600639fb976"
+}

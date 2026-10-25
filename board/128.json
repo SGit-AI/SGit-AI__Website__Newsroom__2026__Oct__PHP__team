@@ -1,0 +1,7 @@
+{
+ "id": "128",
+ "title": "Confirm data/vault-register/researcher.json (seeded by the conductor) and seal the source watch's key to the root",
+ "status": "done",
+ "owner": "researcher@php.newsroom",
+ "order": 127
+}

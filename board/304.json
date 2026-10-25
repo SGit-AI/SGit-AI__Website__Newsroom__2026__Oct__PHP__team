@@ -1,0 +1,9 @@
+{
+ "id": "304",
+ "title": "The line on a phone: it no longer holds the top of the screen (the editor, on an iPhone: a locked top band costs too much of a small screen); it scrolls away with the page and the text runs full width",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "Measured in Chromium at 390x844: the resting line is 125px and the first-visit panel 253px, both of which scroll away; the headline starts 394px down. assets/design/line/line.css only.",
+ "version": "0.19.0",
+ "order": 303
+}

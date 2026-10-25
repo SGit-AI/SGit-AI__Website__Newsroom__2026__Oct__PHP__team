@@ -1,0 +1,8 @@
+{
+ "id": "302",
+ "title": "Right now: CVE-2026-115560 is a line of its own, not a clause in 'What nobody knows yet': a third PHP flaw, affecting fully patched releases, fixed in the next regular release; it needs a rare session setting, has no severity score and no reported exploitation; the mitigation is session.upload_progress.enabled=0. Keep it separate from php2shell's two CVEs, and keep the unknown about whether it is the Fediverse report's bug",
+ "status": "open",
+ "owner": "journalist",
+ "note": "From the news desk chief's morning wake, 25 October.",
+ "order": 301
+}

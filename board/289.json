@@ -1,0 +1,8 @@
+{
+ "id": "289",
+ "title": "Follow every link Wikipedia's PHP2Shell article cites and keep following them: each capture turns a quotation Wikipedia makes into one this site can make, with the capture's hash; re-capture the article itself on each pass so the vault holds the revisions the site reads",
+ "status": "open",
+ "owner": "researcher",
+ "note": "From the brief: Wikipedia as an anchor (admin/content/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md).",
+ "order": 288
+}

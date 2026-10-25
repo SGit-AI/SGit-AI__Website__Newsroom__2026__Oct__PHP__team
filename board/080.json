@@ -1,0 +1,8 @@
+{
+ "id": "080",
+ "title": "Guidance for every agent (AGENTS.md, /admin/agents/): push to your own branch early and often, dev@ carries it into dev; quality from coding.sgit.ai, NFRs from nfrs.sgit.ai, the security requirements",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.5.3",
+ "order": 79
+}

@@ -1,0 +1,8 @@
+{
+ "id": "278",
+ "title": "Enable private vulnerability reporting on this repository (Settings, Code security, Private vulnerability reporting): security.txt and the bug bounty page point reporters there; the session's proxy cannot change repository settings",
+ "status": "done",
+ "owner": "editor",
+ "note": "Opened by security@php.newsroom, 24 October 2026. Done 24 October: the editor enabled private vulnerability reporting, with Dependabot alerts, malware alerts and security updates; security@ confirmed it reads as enabled through the API.",
+ "order": 277
+}

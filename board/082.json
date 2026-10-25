@@ -1,0 +1,8 @@
+{
+ "id": "082",
+ "title": "Ask: talk to the site from any page; the model uses the site's tools (window.__tools, also for any agent in the browser), proposes changes to your record only with your Allow; your OpenRouter key and your desk kept in your vault, shared with the phone app",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.5.4",
+ "order": 81
+}

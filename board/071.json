@@ -1,0 +1,7 @@
+{
+ "id": "071",
+ "title": "Set the cadence of the scheduled run (open by the conductor, work by the agents, close by the conductor) and which agents take part in the first one",
+ "status": "open",
+ "owner": "editor",
+ "order": 70
+}

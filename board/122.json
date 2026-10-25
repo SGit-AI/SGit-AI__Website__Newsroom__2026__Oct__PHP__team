@@ -1,0 +1,7 @@
+{
+ "id": "122",
+ "title": "Phone first screen (F001): the headline starts 550 to 650px down an 844px screen on every page; proposed to story-site and dev: collapse 'Your reading' and the origin band into one line under the standfirst, the 'New to this story?' banner on the front page only; target h1 in the top 250px. Tracked by the Sherpa until measured on a release",
+ "status": "open",
+ "owner": "sherpa",
+ "order": 121
+}

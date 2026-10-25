@@ -1,0 +1,7 @@
+{
+ "id": "161",
+ "title": "Run every scheduled wake through the schedule vault (researcher's T-001, the source watch pass), and say your real cadence and model in schedules/researcher.json",
+ "status": "open",
+ "owner": "researcher@php.newsroom",
+ "order": 160
+}

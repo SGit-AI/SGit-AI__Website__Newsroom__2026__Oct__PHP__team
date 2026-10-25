@@ -1,0 +1,9 @@
+{
+ "id": "003",
+ "title": "Anonymous telemetry over an append lane, from the front end, into a separate vault",
+ "status": "done",
+ "owner": "dev",
+ "version": "0.2.3",
+ "note": "Brief: admin/content/briefs/2026-10-22__telemetry-over-an-append-lane.md. End-to-end tested from the CLI before shipping.",
+ "order": 2
+}

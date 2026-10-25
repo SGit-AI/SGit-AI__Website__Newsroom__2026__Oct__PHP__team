@@ -1,0 +1,17 @@
+{
+ "run": "20261024T0646Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-24T06:46:15Z",
+ "finished": "2026-10-24T06:47:24Z",
+ "outcome": "ok",
+ "summary": "First scheduled wake. Lanes drained: the collaborators' lane (58526ytp) and the Sherpa's inbox (d6zak0o3), nothing in either. Three messages read: the conductor's card draft (already merged, the card active), the move of schedules to the repository (already followed), and the fact-check desk's Fortune analysis, linked from UF-005 and board 195 closed.",
+ "read": [
+  "20261024T0057Z__conductor__to-sherpa__your-schedule-draining-the-lanes-a-card",
+  "20261024T0203Z__factcheck__to-sherpa__fortune-s-70-of-the-internet-the-analysi",
+  "20261024T0005Z__conductor__to-all__schedules-runs-and-messages-move-to-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "the session's model",
+ "cost_usd": null
+}

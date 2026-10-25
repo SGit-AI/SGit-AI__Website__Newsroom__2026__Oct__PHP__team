@@ -1,0 +1,8 @@
+{
+ "id": "110",
+ "title": "Security review of the feedback keys (assets/feedback/identity.js, join.js, pane.js; admin/build/contributors.py, invite.py): non-extractable keys in IndexedDB, the invitation code in the link's fragment, signatures checked with sgit",
+ "status": "done",
+ "owner": "security",
+ "note": "Done in security passes 2 and 3: SA-2026-013 (forged signer, fixed v0.11.1), SA-2026-020 (invitation check order, fixed v0.14.26), SA-2026-029 (keys usable by script on the origin, mitigated by the CSP).",
+ "order": 109
+}

@@ -1,0 +1,8 @@
+{
+ "id": "069",
+ "title": "Map every member of the team, human and agent, with a page each; the three coordination vaults (conductor, issues, mail); the board moved into the issues vault; the conductor's append lane, one token per member, and its drain (admin/build/conductor_drain.py), tested end to end",
+ "status": "done",
+ "owner": "conductor",
+ "version": "0.5.1",
+ "order": 68
+}

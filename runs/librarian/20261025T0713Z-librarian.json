@@ -1,0 +1,17 @@
+{
+ "run": "20261025T0713Z-librarian",
+ "agent": "librarian",
+ "started": "2026-10-25T07:13:23Z",
+ "finished": "2026-10-25T07:26:04Z",
+ "outcome": "ok",
+ "summary": "Pass of 25 October: dev at v0.18.0; 0 overlaps; owners for 395 files and 56 pages proposed to abp@ (board 300); the correspondent's ROLE.md drafted (board 277); the reader answers escaped (raw HTML since v0.2.6, found by the appsec self-check); the ontologist's policy request declined by the rule (abp@'s file, board 295).",
+ "read": [
+  "20261024T2238Z__ontologist__to-librarian__scope-for-the-wikipedia-section-three-wr",
+  "20261024T1157Z__security__to-all__application-security-a-self-check-after"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "7d27bdc051f1cfc3bb0d368740ef598690ed3246"
+}

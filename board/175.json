@@ -1,0 +1,8 @@
+{
+ "id": "175",
+ "title": "release.sh fails the gate's determinism check on the first try when a release changes a versioned page's text: the section ledger settles on the second build",
+ "status": "done",
+ "owner": "claude-journalist",
+ "note": "Seen on v0.10.19: build, then the gate's rebuild changed the output; a second build from the same tree is identical. Probably: pages that read LEDGER are rendered before later pages add their versions to it. Cause found on 24 October: admin/build/design.py drew mockup B from data/items.json read from disk, but save_items() writes that file at the end of the build, so the mockup showed the previous build's items and the first rebuild after any content change differed (admin/design/b/). Fixed in one line: the mockup takes this build's items from all_items(). Checked: after a version bump, the first and second builds are identical. release.sh and validate.py unchanged. The same lag was in the new Operations and Analysis homes (design.py build_tracks, v0.14.0), fixed the same way. A third lag, 24 October: admin/build/release_pages.py ranked the always-changing hubs (admin/versions.html among them) by words changed, and admin/versions.html shows the store as read at the start of the build, so the release's own entry differed between the first and second build; the hubs now go last by path only. Then a fourth (grc/changes/ reads data/grc-history.json, written later), so the fix is now general: build.py, when a build changes any generated data file it reads back at its start (every data/*.json in outputs.txt), builds once more, at most twice; the first build of a release is the settled one and the gate's rebuild changes nothing. Costs one extra build on a release that changes content.",
+ "order": 174
+}

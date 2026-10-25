@@ -1,0 +1,8 @@
+{
+ "id": "294",
+ "title": "data/wikipedia/ grows with every revision (6 MB for 364 revisions of one article): decide, with the researcher, whether old revisions move to the evidence vault and the repository keeps the latest text plus statement-level deltas",
+ "status": "open",
+ "owner": "ontologist",
+ "note": "From the brief: Wikipedia as an anchor (admin/content/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md).",
+ "order": 293
+}

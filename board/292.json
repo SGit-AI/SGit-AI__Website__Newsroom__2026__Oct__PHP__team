@@ -1,0 +1,8 @@
+{
+ "id": "292",
+ "title": "The gate's em-dash rule exempts the sources page for third-party titles; the Wikipedia section carries third-party text too and writes its em-dashes as entities to pass. Extend the exemption to /wikipedia/ (a change to validate.py, for security review) so the text can be stored as written",
+ "status": "open",
+ "owner": "security@php.newsroom",
+ "note": "From the brief: Wikipedia as an anchor (admin/content/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md).",
+ "order": 291
+}

@@ -1,0 +1,9 @@
+{
+ "id": "041",
+ "title": "Follow the patching curve: re-read the NCSC-NL inventory per commit and draw how the 418 'under investigation' rows turn into fixed or vulnerable",
+ "status": "done",
+ "owner": "journalist",
+ "version": "0.4.2",
+ "note": "The inventory over time: /patching/inventory/, 38 versions read from the public git history; the curve keeps growing with each re-run of admin/build/inventory_history.py.",
+ "order": 41
+}

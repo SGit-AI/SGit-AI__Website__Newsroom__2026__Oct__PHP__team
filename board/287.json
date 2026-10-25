@@ -1,0 +1,8 @@
+{
+ "id": "287",
+ "title": "On a phone the reading strip ('Your reading: ... Mark this page read, Mark everything read, Read items: fade hide show, Your desk') takes three lines, and the newcomer line three more, above every headline: one line each, the actions behind a tap",
+ "status": "open",
+ "owner": "dev",
+ "note": "From story-site's review of the live pages against the lens prototype (24 October). assets/reader-state.js and assets/site.js are dev's; the styles are already slimmed in v2-live.css. With the lens live (board 275), the newcomer line becomes the lens's first question and can go.",
+ "order": 286
+}

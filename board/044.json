@@ -1,0 +1,8 @@
+{
+ "id": "044",
+ "title": "Patching and status.json: /patching/ with every downstream row checked against the inventory; the story 'Why can't every version of PHP just be patched?'; Research and Stories zones in the menu and an origin strip on every page",
+ "status": "done",
+ "owner": "journalist",
+ "version": "0.4.1",
+ "order": 44
+}

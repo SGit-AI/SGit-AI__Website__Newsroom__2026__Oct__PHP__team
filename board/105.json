@@ -1,0 +1,7 @@
+{
+ "id": "105",
+ "title": "Runs: /team/runs/, the register of every schedule (who, where, how often, how many runs fall in the quiet hours) and every recorded run with the article it should leave (data/schedules.json)",
+ "status": "done",
+ "owner": "conductor",
+ "order": 104
+}

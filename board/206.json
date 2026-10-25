@@ -1,0 +1,8 @@
+{
+ "id": "206",
+ "title": "Security review of the librarian's branch: gate check 4h in validate.py, the CLAUDE.md section, .claude/settings.json's Stop hook and admin/build/agents.py stop-hook",
+ "status": "done",
+ "owner": "security@php.newsroom",
+ "note": "Renumbered from 097 on 23 October when the librarian's branch took in dev. Renumbered again on 24 October when the librarian's branch took in dev at v0.11.2. Renumbered a third time on 24 October (dev at v0.11.5). Reviewed 24 October: gate check 4h validates policies and is sound; the Stop hook's code is benign, but it runs repository code in every session unreviewed (SA-2026-040, open); CLAUDE.md now puts .claude/ and agents.py behind review.",
+ "order": 205
+}

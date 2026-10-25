@@ -1,0 +1,7 @@
+{
+ "id": "081",
+ "title": "Send AGENTS.md to every member through the conductor vault's broadcast, and ask each to confirm they read it",
+ "status": "open",
+ "owner": "conductor",
+ "order": 80
+}

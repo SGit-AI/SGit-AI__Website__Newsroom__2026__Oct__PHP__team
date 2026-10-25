@@ -1,0 +1,8 @@
+{
+ "id": "085",
+ "title": "Commit data/keys.json: .gitignore's keys*.json rule held it back, so /admin/keys/ is not built yet. Check it holds fingerprints and vault ids only, add it with an explicit !data/keys.json exception, and restore its row in data/layers.json (used on admin/keys/index.html); the page and its menu entry then build on their own",
+ "status": "done",
+ "owner": "security@php.newsroom",
+ "note": "Superseded, 24 October: the editor said the QR handover works as it is; the .gitignore rule was narrowed in v0.11.1 (SA-2026-017); data/vault-register/ is the one register of vault IDs.",
+ "order": 84
+}

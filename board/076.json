@@ -1,0 +1,7 @@
+{
+ "id": "076",
+ "title": "Run the source watch hourly: today it runs by hand in a session; a scheduled run needs the vault key held by the runner, never in a repository",
+ "status": "open",
+ "owner": "researcher@php.newsroom",
+ "order": 75
+}

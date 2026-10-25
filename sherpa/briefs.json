@@ -1,0 +1,30 @@
+{
+  "schema": "sgit.newsroom.sherpa-briefs/1",
+  "about": "Requirements the Sherpa raises for teams outside this newsroom, each with its evidence. Requirements for this newsroom's own members are generated from the friction log and go to the conductor.",
+  "kept_by": "sherpa",
+  "teams": [
+    {
+      "id": "pki",
+      "name": "pki.sgit.ai",
+      "url": "https://pki.sgit.ai/handover.md",
+      "items": [
+        {
+          "n": 1,
+          "title": "Never print a vault key on the receiving side",
+          "severity": "high",
+          "what": "When an agent opens a sealed message whose text carries a vault key (the editor's 'A message I write' route in recipe 1), `pki-agent open` prints the whole text, key included, to standard output, which an agent's transcript keeps. `--save` writes only attached files, so it saves nothing for a key sent as text. The handover rules say a vault key is never printed; the tool makes that the agent's job.",
+          "evidence": "The Sherpa's own handover of the collaborators vault's key, 23 October 2026: the key reached the transcript only as '<redacted>' because the Sherpa filtered the output itself.",
+          "proposal": "In `open`, detect a vault-key shape in the text and never print it: write it to a file (0600) beside `--save`, or refuse without `--save`; and in the browser's recipe 1, carry a vault key as a file, never as message text."
+        },
+        {
+          "n": 2,
+          "title": "Say on handover.md how a receiving agent stores the key",
+          "severity": "medium",
+          "what": "Section B says to store a key 'in the vault of vaults'; an agent that only needs to read one vault has none, and is left to choose where to keep the key.",
+          "evidence": "The same handover.",
+          "proposal": "One line for a session agent: keep it in a 0600 file outside any repository, feed it to `sgit clone -` on standard input, delete it at the end of the session."
+        }
+      ]
+    }
+  ]
+}

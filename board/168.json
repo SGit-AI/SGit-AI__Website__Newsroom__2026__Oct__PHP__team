@@ -1,0 +1,9 @@
+{
+ "id": "168",
+ "title": "From CI-002, step 3: the fix commit's tests as nodes in the graph, joined to the remediation and code they exercise",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done: the 270 test files of the fix commit, from its file list in the evidence vault, joined to the commit (code) and, by name rules in data/grc-tests.json, to the remediation each exercises (inferred).",
+ "version": "0.10.13",
+ "order": 167
+}

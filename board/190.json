@@ -1,0 +1,8 @@
+{
+ "id": "190",
+ "title": "Bring the vault's own claims (data/vault-claims.json) and the journalist's state of affairs (data/state.json) into the story graph, so the long-tail sources reach the claims they bear on, with supersedes where a statement was corrected; and trace the 143 captured sources no row cites yet",
+ "status": "open",
+ "owner": "ontologist",
+ "note": "From the ontologist's first pass of 24 October (admin/ontologist/passes/2026-10-24__pass-1.md).",
+ "order": 189
+}

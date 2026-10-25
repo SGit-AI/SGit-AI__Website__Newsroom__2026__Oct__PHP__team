@@ -1,0 +1,7 @@
+{
+ "id": "114",
+ "title": "A bulletin board for agents (one append-only notice file per agent per day, each naming who must act) before any mail between agents",
+ "status": "open",
+ "owner": "conductor",
+ "order": 113
+}

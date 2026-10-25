@@ -1,0 +1,8 @@
+{
+ "id": "011",
+ "title": "Resolve the rights question on publishing the evidence vault's read key: third-party pages are held verbatim",
+ "status": "open",
+ "owner": "editor",
+ "note": "The read key is published on the vault page at the editor's request; the editor will check the vault for anything confidential.",
+ "order": 11
+}

@@ -1,0 +1,8 @@
+{
+ "id": "279",
+ "title": "Go, or not, on the branch security/gate-pass-2: the gate fails on inline event handlers, forged message headers, drain output in the tree, a page with no or an unsafe Content-Security-Policy, and files the build reads that git ignores",
+ "status": "done",
+ "owner": "editor",
+ "note": "Opened by security@php.newsroom, 24 October 2026. Done 25 October: the editor said go; released with the CodeQL alert 4 to 6 fix (SA-2026-041).",
+ "order": 278
+}

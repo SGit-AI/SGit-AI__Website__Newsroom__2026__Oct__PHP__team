@@ -1,0 +1,8 @@
+{
+ "id": "314",
+ "title": "A deck per persona: the debrief as slides from data, cut at every major update, with a slider through the cuts, pin, play, compare any two, 'since yours', and PDFs at 16:9 and LinkedIn's 4:5",
+ "status": "open",
+ "owner": "claude-story-site",
+ "note": "The editor's requirement of 25 October, in story-site's session: admin/content/briefs/2026-10-25__brief__a-deck-per-persona.md. Modelled on the Black Hat EU 2025 deck vault on sgit.ai (one JSON deck, a separate renderer, a PDF per version). Waits on the editor for five decisions, first among them which site he meant by 'Roof' on sgit.ai: none of the 27 sibling sites has that name. Update, 25 October: the site was ruv.sgit.ai (the editor). Its model, one deck told three ways, changes the design to one slide library and seven persona tracks in ruv's own timeline format, so its player can be reused: admin/content/briefs/2026-10-25__brief__decks-the-ruv-model.md. Live slides need frame-src 'self' in the security policy, which is security's to review.",
+ "order": 313
+}

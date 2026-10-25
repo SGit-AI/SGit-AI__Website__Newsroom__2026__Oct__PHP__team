@@ -1,0 +1,7 @@
+{
+ "id": "099",
+ "title": "Seal the conductor and collaborators lanes' secrets (enum keys, member tokens, key-pair passphrases) to the root: the session's permission check stopped it; the four vault keys are sealed",
+ "status": "waiting",
+ "owner": "conductor",
+ "order": 98
+}

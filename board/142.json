@@ -1,0 +1,8 @@
+{
+ "id": "142",
+ "title": "Move the admin pages into the team console (layout D), with its own menu; out of the reader menu, still public",
+ "status": "open",
+ "owner": "dev",
+ "note": "From the brief on the redesign (23 October).",
+ "order": 141
+}

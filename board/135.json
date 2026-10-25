@@ -1,0 +1,7 @@
+{
+ "id": "135",
+ "title": "Keys each agent holds: the holds list in every data/vault-register/<agent>.json (vault ID, the kind of key, who gave it, since), shown on /team/vaults/; AGENTS.md section 6 and CLAUDE.md say so",
+ "status": "done",
+ "owner": "conductor",
+ "order": 134
+}

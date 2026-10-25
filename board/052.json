@@ -1,0 +1,7 @@
+{
+ "id": "052",
+ "title": "Fix the vault's export of the NCSC-NL inventory: it dropped one row (iBabs bestuursportaal) at cca173c64ec5, so pages say 674 and 3 where the list has 675 and 4",
+ "status": "open",
+ "owner": "collector-gov",
+ "order": 52
+}

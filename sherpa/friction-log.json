@@ -1,0 +1,775 @@
+{
+ "schema": "sgit.newsroom.friction-log/1",
+ "about": "Every friction a reader meets on this site, structured: who, where, what they tried, what happened, what they expected, the evidence, who can fix it and whether it landed. Kept by sherpa@php.newsroom; see admin/sherpa/README.md. Synthetic readers are test instruments, not people: their findings are prompts, and each is re-checked on the current version before it is logged.",
+ "kept_by": "sherpa",
+ "as_of_version": "0.19.2",
+ "stages": [
+  "arrive",
+  "first-screen",
+  "find-my-path",
+  "get-the-answer",
+  "act",
+  "next-step",
+  "come-back"
+ ],
+ "frictions": [
+  {
+   "id": "F001",
+   "reader": "board member, phone",
+   "page": "briefings/board/index.html",
+   "stage": "first-screen",
+   "intended": "Learn in seconds, between meetings, whether to worry",
+   "actual": "Four blocks of site machinery come before the briefing: the masthead with Ask and Feedback, the 'New to this story?' banner, the 'Your reading' tracker with five buttons, and the RESEARCH band. The headline starts 649px down an 844px screen; the thirty-second answer is below the fold.",
+   "expected": "The headline and the thirty-second answer on the first screen",
+   "evidence": [
+    "synthetic board run 2026-10-22T1753Z on v0.4.3 (top fail, high)",
+    "synthetic designer run 2026-10-22T1753Z on v0.4.3 (top fail, high)",
+    "sherpa walk on v0.8.1: h1 top at 649px on briefings/board/, 631px on briefings/cto/ and briefings/pm/, 569px on claims/, 550px on the front page (390x844, mobile)",
+    "telemetry to v0.5.9: 107 of 275 events (39%) from phones",
+    "UF-001 point 5: a real reader finds pages dense with icons and links (see F011)",
+    "UF-002 point 6",
+    "UF-003 point 3: a fourth reader",
+    "synthetic board and designer, run 2 on v0.10.18: still two screens of controls before the briefing on a phone; the designer counts three boxes now",
+    "11:45 pass on v0.14.17: the headline starts 603 to 671px down on a phone on every page walked (source, articles, fact-check, explore, gaps, join)",
+    "17:45 pass on v0.15.4: h1 at 452 (front), 535 (board briefing), 455 (claims), 434 (fact-check), 482 (graph changes)",
+    "11:45 pass on v0.19.2, 25 October, 390x780: h1 at 322 (front, with 'What is happening now' and three more doors on the first screen), 250 (start), 305 to 326 (loops, desk, claims review, control room, schedule, wiring, Wikipedia)"
+   ],
+   "severity": "high",
+   "affects": "every page, every phone reader",
+   "proposal": "On phones, collapse 'Your reading' and the origin band into one line under the standfirst (or behind a 'Reading tools' toggle), and show the 'New to this story?' banner only on the front page and only once. Target: h1 inside the top 250px of the first screen.",
+   "owner": "story-site",
+   "also": [
+    "dev"
+   ],
+   "first_seen": "0.4.3",
+   "last_seen": "0.19.2",
+   "status": "improved again: the headline is on the first screen of every page walked on v0.19.2 (250 to 326px); left open only for the board briefing's thirty-second answer, not re-measured this pass",
+   "trend": "worse: the Ask and Feedback row of v0.8.0 added about 60px above the fold"
+  },
+  {
+   "id": "F002",
+   "reader": "CTO, desktop",
+   "page": "briefings/cto/index.html",
+   "stage": "get-the-answer",
+   "intended": "Know what to tell the board",
+   "actual": "No board-ready paragraph anywhere on the CTO's path; the board briefing is a separate path",
+   "expected": "A 'What to tell the board' box of four or five sentences under the thirty-second answer",
+   "evidence": [
+    "synthetic cto run 2026-10-22T1753Z on v0.4.3 (top fail, high)",
+    "sherpa check on v0.8.1: no briefing contains 'what to tell the board'",
+    "synthetic CTO, run 2 on v0.10.18: 'a day on there is still no paragraph I can take to my board'"
+   ],
+   "severity": "high",
+   "proposal": "Add a 'What to tell the board' box to the CTO and CISO briefings, generated from the same claims as the board briefing so it cannot drift.",
+   "owner": "briefing-writer",
+   "first_seen": "0.4.3",
+   "last_seen": "0.10.18",
+   "status": "open"
+  },
+  {
+   "id": "F003",
+   "reader": "project manager, desktop",
+   "page": "briefings/pm/index.html",
+   "stage": "act",
+   "intended": "Put a hard date on the plan and report progress to clients",
+   "actual": "No deadline stated (not even that none was set) and no status template",
+   "expected": "A 'Deadlines' line (who set one, who did not, CISA KEV status) and a copyable status table with a two-line stakeholder update",
+   "evidence": [
+    "synthetic pm run 2026-10-22T1754Z on v0.4.3 (two top fails, high)",
+    "sherpa check on v0.8.1: 'deadline' does not appear in briefings/pm/",
+    "synthetic PM, run 2 on v0.10.18: 'still no date to plan against, no way to report progress'"
+   ],
+   "severity": "high",
+   "proposal": "As the reader proposed. The status table could be a download from /stack/ once it holds a reader's systems.",
+   "owner": "briefing-writer",
+   "first_seen": "0.4.3",
+   "last_seen": "0.10.18",
+   "status": "open"
+  },
+  {
+   "id": "F004",
+   "reader": "developer and CTO, containers",
+   "page": "patching/index.html",
+   "stage": "act",
+   "intended": "Prove a Docker image is patched",
+   "actual": "The Docker Official Image row names no tags, versions, digests or rebuild date; the developer briefing says only to run php -v, which gives the wrong answer for distribution backports",
+   "expected": "Fixed tags per variant with the rebuild date, and a verification step that works on backports",
+   "evidence": [
+    "synthetic developer run 2026-10-22T1753Z on v0.4.3 (three top fails, high)",
+    "synthetic cto run on v0.4.3 (top change)",
+    "sherpa check on v0.8.1: the Docker row is still 'Docker Official Image: php' with no tag; /stack/ now explains that a backport keeps its old version number, which answers half of it",
+    "synthetic developer, run 2 on v0.10.18: 'fifteen releases on ... still a single php -v line'"
+   ],
+   "severity": "high",
+   "proposal": "Capture the Docker Official Images rebuild into the vault, add the tags to the row, and link the developer briefing to /stack/ for the backport check.",
+   "owner": "story-site",
+   "also": [
+    "collector-primary",
+    "briefing-writer"
+   ],
+   "first_seen": "0.4.3",
+   "last_seen": "0.10.18",
+   "status": "partly addressed"
+  },
+  {
+   "id": "F005",
+   "reader": "security lead",
+   "page": "claims/index.html",
+   "stage": "get-the-answer",
+   "intended": "Cite the site's grading to the CISO",
+   "actual": "CONFIRMED is used for single-source items, against the site's own definition",
+   "expected": "One grade per claim, applied by the published rule",
+   "evidence": [
+    "synthetic security run 2026-10-22T1753Z on v0.4.3 (top fail, high)",
+    "fact-check run 1 (22 October): 11 of 70 claims carry a status word stronger than their evidence",
+    "synthetic security lead, run 2 on v0.10.18: every grading fault still there"
+   ],
+   "severity": "high",
+   "proposal": "The fact-check desk already found the same thing; the reader-facing fix is to show the desk's grade beside the status word wherever a claim appears, until the status words are corrected.",
+   "owner": "verifier",
+   "also": [
+    "story-site"
+   ],
+   "first_seen": "0.4.3",
+   "last_seen": "0.10.18",
+   "status": "open, to re-check on 0.8.1"
+  },
+  {
+   "id": "F006",
+   "reader": "board member and designer",
+   "page": "index.html",
+   "stage": "first-screen",
+   "intended": "Read without worrying about being charged",
+   "actual": "An unlabelled pound figure in the masthead changed from page to page and read as a charge",
+   "expected": "A label ('Reading credit, free') or nothing until the reader opens the account",
+   "evidence": [
+    "synthetic designer run 2026-10-22T1753Z on v0.4.3 (top fail, high)",
+    "sherpa walk on v0.8.1 with the meter loading (desktop, 1280px): the masthead shows an unlabelled '£5.00' pill beside the theme switch",
+    "UF-002 point 6: the pound pill moved from £5.00 to £4.99 while reading, unexplained",
+    "UF-003 point 11: a fourth reader",
+    "synthetic designer, run 2 on v0.10.18: 'the unlabelled pound pill still ticks down'"
+   ],
+   "severity": "high",
+   "owner": "dev",
+   "first_seen": "0.4.3",
+   "last_seen": "0.10.18",
+   "status": "open"
+  },
+  {
+   "id": "F007",
+   "reader": "every reader",
+   "page": "the whole site",
+   "stage": "next-step",
+   "intended": "Go on to the next useful page",
+   "actual": "176 sessions made 275 page events, 1.6 per session; 237 of 275 events have no referrer, 34 came from this site. Most readers land and leave.",
+   "expected": "A clear next step at the foot of every page for the reader they said they were",
+   "evidence": [
+    "data/telemetry-report.json as of 2026-10-22 (site versions up to v0.5.9); counts are untrusted claims, see F009",
+    "UF-001 point 2: the reader values the personas, which a Where next block would build on"
+   ],
+   "severity": "medium",
+   "proposal": "A 'Where next for you' block at the foot of every page, from the reader's chosen persona path (data/personas.json already holds the paths), falling back to the three most-read pages for a reader with no persona.",
+   "owner": "story-site",
+   "first_seen": "0.5.9",
+   "last_seen": "0.5.9",
+   "status": "open"
+  },
+  {
+   "id": "F008",
+   "reader": "the team",
+   "page": "admin/synthetic/index.html",
+   "stage": "come-back",
+   "intended": "Know whether the site got easier to use since the readers last read it",
+   "actual": "The synthetic readers last ran on v0.4.3 (22 October, 17:53Z); the site is at v0.8.1. Their fifteen top changes became no board rows, and none has shipped. Telemetry was last drained at v0.5.9.",
+   "expected": "A run after every release, and each top fail on the board with an owner",
+   "evidence": [
+    "data/synthetic.json: every persona's latest run is 0.4.3, runs: 1",
+    "data/admin.json: no open row cites a synthetic finding",
+    "REALITY.md: synthetic.yml needs repository secrets that are not set"
+   ],
+   "severity": "high",
+   "proposal": "The editor sets the two secrets (or a session runs the readers by hand after each release); the Sherpa turns each run's top fails into friction-log entries and board rows.",
+   "owner": "synthetic",
+   "also": [
+    "dinis",
+    "dev"
+   ],
+   "first_seen": "0.4.3",
+   "last_seen": "0.8.1",
+   "status": "open"
+  },
+  {
+   "id": "F009",
+   "reader": "the team",
+   "page": "admin/telemetry/index.html",
+   "stage": "come-back",
+   "intended": "Trust the trail",
+   "actual": "Six of the top forty paths in the telemetry report are not pages on this site (/storyboards/briefing-2026-10-22/, /fractal/, /fractal/ui/, /admin/agents/rounds/, /admin/agents/librarian/, /admin/agents/roles/): forged rows (the append token is public by design) or another site writing to the same lane",
+   "expected": "Rows for paths this site does not serve are counted apart",
+   "evidence": [
+    "data/telemetry-report.json by_path as of 2026-10-22",
+    "checked against the v0.8.1 tree"
+   ],
+   "severity": "medium",
+   "proposal": "The drain counts unknown paths separately (against sitemap.xml) and says so on the telemetry page; security to look at whether it is another site or a forgery.",
+   "owner": "dev",
+   "also": [
+    "security"
+   ],
+   "first_seen": "0.5.9",
+   "last_seen": "0.5.9",
+   "status": "open"
+  },
+  {
+   "id": "F010",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "page": "articles/",
+   "stage": "find-my-path",
+   "actual": "Confirmed. Neither house story measured has a table of contents: 'Where php2shell stands' has 10 sections and about 2,100 words, 'Patch at the speed of Metasploit' 9 sections and about 2,950 words. The reader has to scroll to learn what the article covers.",
+   "expected": "An 'On this page' list built from the h2s, at the top of every article and of every page with four or more sections; collapsed to one line on phones so it does not cost the first screen (F001). Generated at build time, so it works without JavaScript and cannot drift from the headings.",
+   "evidence": [
+    "UF-001 point 4, received 2026-10-23",
+    "Measured on 0.8.1 in Chromium: no .toc element on articles/where-php2shell-stands/ or articles/patch-at-the-speed-of-metasploit/; h2 counts 10 and 9."
+   ],
+   "severity": "medium",
+   "proposal": "An 'On this page' list built from the h2s, at the top of every article and of every page with four or more sections; collapsed to one line on phones so it does not cost the first screen (F001). Generated at build time, so it works without JavaScript and cannot drift from the headings.",
+   "owner": "dev",
+   "also": [
+    "journalist"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.1",
+   "status": "open",
+   "source": "UF-001.4"
+  },
+  {
+   "id": "F011",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "page": "every page",
+   "stage": "first-screen",
+   "actual": "Confirmed, and it agrees with the board member's and the designer's synthetic runs (F001). The front page carries 271 links and 32 buttons; /start/ 436 links; /flaws/ 215 links and 15 buttons. Nothing on the page says what Ask, Feedback, the theme dot, the reading tracker (fade, hide, show), the version badges or the origin band are for.",
+   "expected": "Three steps, cheapest first: a one-screen guide to the site's own tools, linked from a '?' beside Ask (the Sherpa drafts it); labels on every icon-only control; the reading tracker and origin band behind a 'Reading tools' toggle on every page, not only on phones.",
+   "evidence": [
+    "UF-001 point 5, received 2026-10-23",
+    "Counted on 0.8.1 in Chromium: links and buttons per page as above.",
+    "UF-002 points 6, 10 and 11: unexplained chrome; the theme pill and the banner link seemed to do nothing",
+    "UF-003 point 3: reading buttons with nothing to act on say nothing; a fourth reader",
+    "The lens prototype (v0.15.0) folds the reading tools into one control ('Seen: Show, Fade, Hide'), which answers UF-003's 'what do fade, hide and show do'; waits for the editor's go"
+   ],
+   "severity": "medium",
+   "proposal": "Three steps, cheapest first: a one-screen guide to the site's own tools, linked from a '?' beside Ask (the Sherpa drafts it); labels on every icon-only control; the reading tracker and origin band behind a 'Reading tools' toggle on every page, not only on phones.",
+   "owner": "story-site",
+   "also": [
+    "sherpa"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.9.0",
+   "status": "open",
+   "source": "UF-001.5"
+  },
+  {
+   "id": "F012",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "page": "briefings and the front page",
+   "stage": "get-the-answer",
+   "actual": "Plausible and partly seen: a page can carry a standfirst, an 'In plain English' box and a 'thirty seconds' answer that say much the same thing. Not measured yet. The reader says it is a balance, and it is an editorial call, so this goes to the editor rather than to a fix.",
+   "expected": "One summary per page, chosen by the reader's depth: plain English for the plain-English reader, the technical one otherwise, with the other one folded. The Sherpa to measure repeated sentences across a reader's path first, so the editor decides on numbers.",
+   "evidence": [
+    "UF-001 point 6, received 2026-10-23",
+    "Observed on briefings and the front page on 0.8.1; no count of repeated sentences yet."
+   ],
+   "severity": "low",
+   "proposal": "One summary per page, chosen by the reader's depth: plain English for the plain-English reader, the technical one otherwise, with the other one folded. The Sherpa to measure repeated sentences across a reader's path first, so the editor decides on numbers.",
+   "owner": "dinis",
+   "also": [
+    "story-site",
+    "briefing-writer",
+    "sherpa"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.1",
+   "status": "open",
+   "source": "UF-001.6"
+  },
+  {
+   "id": "F013",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "page": "every page with glossary terms",
+   "stage": "get-the-answer",
+   "actual": "Confirmed, and the reader's proposal is a good one. On /flaws/, 'PHP' appears 41 times and 'CVE' 20 times, and each has a card on its first use only. A reader who arrives through an anchor, or jumps to a section, never meets the first use.",
+   "expected": "As the reader proposes: the first use stays underlined; every later use carries the same card with no underline (a dotted underline only on hover or focus), so the page stays calm and the card is always there. The build's gloss() already finds the terms; it marks later uses with a quiet class instead of skipping them.",
+   "evidence": [
+    "UF-001 point 7, received 2026-10-23",
+    "Counted on flaws/index.html on 0.8.1: PHP 41 occurrences, CVE 20, CVSS 3, CWE 2; one card each."
+   ],
+   "severity": "medium",
+   "proposal": "As the reader proposes: the first use stays underlined; every later use carries the same card with no underline (a dotted underline only on hover or focus), so the page stays calm and the card is always there. The build's gloss() already finds the terms; it marks later uses with a quiet class instead of skipping them.",
+   "owner": "dev",
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.1",
+   "status": "open",
+   "source": "UF-001.7"
+  },
+  {
+   "id": "F014",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "page": "collaborators/index.html and the Feedback button",
+   "stage": "come-back",
+   "actual": "Confirmed by reading /collaborators/: the feedback form is per ask. The Feedback button on every page (v0.8.0) is per page, but it needs a key from an invitation, and no invitation has been sent yet (REALITY.md), so this reader had no way to send page-level feedback except email. The reader's email is itself a good template: progress, pages read, pros, cons, bugs.",
+   "expected": "Use the reader's structure for the collaborators form: a progress field (none, partial, done), the pages read, then pros, cons and bugs, each optional. Let the Feedback button send unsigned feedback too, marked unsigned, so a reader without a key can report a bug from the page it is on. Email stays welcome; the Sherpa logs every message, whichever way it comes.",
+   "evidence": [
+    "UF-001 point 8, received 2026-10-23",
+    "collaborators/index.html and REALITY.md on 0.8.1.",
+    "UF-002 point 4: the Feedback tab sends a person holding an invitation back to ask for one",
+    "UF-003 point 7: two wordings for Feedback"
+   ],
+   "severity": "medium",
+   "proposal": "Use the reader's structure for the collaborators form: a progress field (none, partial, done), the pages read, then pros, cons and bugs, each optional. Let the Feedback button send unsigned feedback too, marked unsigned, so a reader without a key can report a bug from the page it is on. Email stays welcome; the Sherpa logs every message, whichever way it comes.",
+   "owner": "conductor",
+   "also": [
+    "sherpa"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.14.17",
+   "status": "closed: checked in the live site's code on v0.14.17 (24 October, 11:45 pass)",
+   "source": "UF-001.8"
+  },
+  {
+   "id": "F015",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "page": "index.html",
+   "stage": "first-screen",
+   "actual": "Reproduced in every theme and at most widths. The tile 'Websites taken offline' shows '10 organisations' in the 1.35rem serif; 'organisations' is wider than the tile (134 to 142px) and the stylesheet forbids breaking it (.tile b {overflow-wrap: normal}), so it runs 3 to 11px into the next tile. The other tiles fit.",
+   "expected": "Put the number alone in the large type ('10') and move the unit into the small line ('organisations took websites offline, as a precaution'), as the other tiles already do with 'Yes' and 'Not yet'. A guard for the next long word: .tile b {overflow-wrap: anywhere}. The gate's browser check could flag any element wider than its tile.",
+   "evidence": [
+    "UF-001 point 9, received 2026-10-23",
+    "Measured on 0.8.1 in Chromium in all six themes at 320, 600, 768, 1024, 1280 and 1440px wide: overflow of 5, 9, 4, 11, 3 and 3px. Fits at 360, 390, 414 and 820px.",
+    "UF-002: the tester's screenshot shows the same tile overflow, independently"
+   ],
+   "severity": "medium",
+   "proposal": "Put the number alone in the large type ('10') and move the unit into the small line ('organisations took websites offline, as a precaution'), as the other tiles already do with 'Yes' and 'Not yet'. A guard for the next long word: .tile b {overflow-wrap: anywhere}. The gate's browser check could flag any element wider than its tile.",
+   "owner": "story-site",
+   "also": [
+    "dev"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.2",
+   "status": "open",
+   "source": "UF-001.9"
+  },
+  {
+   "id": "F016",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "page": "every page with glossary terms",
+   "stage": "get-the-answer",
+   "actual": "Reproduced, and it is unreachable by design: the card is drawn with pointer-events: none, it closes as soon as the pointer leaves the word, and 'Open the glossary' is plain text, not a link. The card promises an action it cannot give. Clicking the word itself does open the glossary, but nothing says so. On a touch screen the card cannot be opened at all without following the link.",
+   "expected": "Quick and honest: change the line to 'Click the word for the glossary entry'. Proper: make the line a real link to the term's glossary entry, let the card take the pointer (pointer-events: auto) and keep it open for a short grace period while the pointer moves from the word to the card; on touch, the first tap opens the card and the link inside it goes on. Keyboard: focus already opens it; Escape closes it.",
+   "evidence": [
+    "UF-001 point 10, received 2026-10-23",
+    "On flaws/index.html on 0.8.1 in Chromium: hovering 'PHP' shows the card (no links inside it, pointer-events none); moving the pointer to 'Open the glossary' closes it. Code: the showTip() and mouseout handler in the site script written by build_sitejs(), and .tip in assets/site.css."
+   ],
+   "severity": "medium",
+   "proposal": "Quick and honest: change the line to 'Click the word for the glossary entry'. Proper: make the line a real link to the term's glossary entry, let the card take the pointer (pointer-events: auto) and keep it open for a short grace period while the pointer moves from the word to the card; on touch, the first tap opens the card and the link inside it goes on. Keyboard: focus already opens it; Escape closes it.",
+   "owner": "dev",
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.1",
+   "status": "open",
+   "source": "UF-001.10"
+  },
+  {
+   "id": "F017",
+   "reader": "agent tester as a founder, laptop",
+   "page": "join/ and the invitation link",
+   "stage": "arrive",
+   "actual": "Held for the editor and security.",
+   "severity": "high",
+   "proposal": "Held.",
+   "owner": "dinis",
+   "evidence": [
+    "UF-002, received 2026-10-23",
+    "UF-003 point 2: the tester joined from the link and sees no role"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.9.0",
+   "status": "open",
+   "source": "UF-002",
+   "also": [
+    "security",
+    "conductor"
+   ]
+  },
+  {
+   "id": "F018",
+   "reader": "agent tester as a founder, laptop",
+   "page": "the WhatsApp message and /join/",
+   "stage": "arrive",
+   "actual": "One invitation link shared with a group enrols at most three devices; everyone after gets 'ask Dinis for an invitation'.",
+   "severity": "high",
+   "proposal": "One invitation per person from /join/invite/; the group message asks people to reply for their link.",
+   "owner": "conductor",
+   "evidence": [
+    "UF-002, received 2026-10-23"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.2",
+   "status": "open",
+   "source": "UF-002",
+   "also": [
+    "dinis"
+   ]
+  },
+  {
+   "id": "F019",
+   "reader": "agent tester as a founder, laptop",
+   "page": "join/index.html",
+   "stage": "first-screen",
+   "actual": "The join page never says what the site is about; it opens with keys, signing and fingerprints.",
+   "severity": "high",
+   "proposal": "Open with the one-line pitch and a link to the explainer, or land invitations on the front page with a join banner.",
+   "owner": "conductor",
+   "evidence": [
+    "UF-002, received 2026-10-23"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.2",
+   "status": "open",
+   "source": "UF-002",
+   "also": [
+    "sherpa"
+   ]
+  },
+  {
+   "id": "F020",
+   "reader": "agent tester as a founder, laptop",
+   "page": "the Ask pane",
+   "stage": "first-screen",
+   "actual": "Three tabs each ask for a credential (OpenRouter key, vault key or token, agent tools) with no line saying they are optional.",
+   "severity": "medium",
+   "proposal": "'You don't need anything here to read or to give feedback.' at the top; the Tools tab labelled 'For agents'.",
+   "owner": "dev",
+   "evidence": [
+    "UF-002, received 2026-10-23",
+    "UF-003 point 10: \"no vault\" unexplained"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.9.0",
+   "status": "open",
+   "source": "UF-002"
+  },
+  {
+   "id": "F021",
+   "reader": "agent tester as a founder, laptop",
+   "page": "index.html source chips",
+   "stage": "get-the-answer",
+   "actual": "Source chips are cut at a fixed length with an ellipsis.",
+   "severity": "low",
+   "proposal": "The publisher's short name on the chip, the full title on hover and focus.",
+   "owner": "story-site",
+   "evidence": [
+    "UF-002, received 2026-10-23"
+   ],
+   "first_seen": "0.8.1",
+   "last_seen": "0.8.2",
+   "status": "open",
+   "source": "UF-002"
+  },
+  {
+   "id": "F022",
+   "reader": "a power user, as a project manager",
+   "page": "join/index.html",
+   "stage": "come-back",
+   "actual": "After joining, nothing shows that the key is waiting for approval; the enrolled list says 'None yet', so joining looks failed.",
+   "severity": "high",
+   "proposal": "Show the key's state on the join page: waiting, then approved, checked against the published fingerprints.",
+   "owner": "conductor",
+   "evidence": [
+    "UF-003, received 2026-10-23"
+   ],
+   "first_seen": "0.8.2",
+   "last_seen": "0.14.17",
+   "status": "fixed live (the join page's code shows where a key stands, v0.14.17); open until a reader with a key sees it",
+   "source": "UF-003"
+  },
+  {
+   "id": "F023",
+   "reader": "a power user, as a project manager",
+   "page": "join/index.html",
+   "stage": "come-back",
+   "actual": "Bug: with a key and no invitation in the address, the page says 'This device already has a key. To get one, ask Dinis...'.",
+   "severity": "medium",
+   "proposal": "Append 'To get one' only when there is no key.",
+   "owner": "conductor",
+   "evidence": [
+    "UF-003, received 2026-10-23"
+   ],
+   "first_seen": "0.8.2",
+   "last_seen": "0.14.17",
+   "status": "closed: checked in the live site's code on v0.14.17 (24 October, 11:45 pass)",
+   "source": "UF-003"
+  },
+  {
+   "id": "F024",
+   "reader": "a power user, as a project manager",
+   "page": "join/index.html",
+   "stage": "act",
+   "actual": "Nothing reassures a person that there is nothing to save, or warns that other browsers, profiles and private windows have no key.",
+   "severity": "medium",
+   "proposal": "One line: nothing to save; other browsers, private windows and devices will not have it; how to get a new invitation.",
+   "owner": "conductor",
+   "evidence": [
+    "UF-003, received 2026-10-23"
+   ],
+   "first_seen": "0.8.2",
+   "last_seen": "0.9.0",
+   "status": "open",
+   "source": "UF-003"
+  },
+  {
+   "id": "F025",
+   "reader": "a power user, as a project manager",
+   "page": "the Feedback pane",
+   "stage": "act",
+   "actual": "One kind and one screenshot per message, and no copy of what was sent.",
+   "severity": "medium",
+   "proposal": "Several kinds, up to three screenshots, and 'Feedback I've sent' kept in the reader's own browser or vault.",
+   "owner": "conductor",
+   "evidence": [
+    "UF-003, received 2026-10-23"
+   ],
+   "first_seen": "0.8.2",
+   "last_seen": "0.9.3",
+   "status": "partly fixed in v0.9.2 (up to three screenshots); several kinds and a copy of what was sent still open",
+   "source": "UF-003"
+  },
+  {
+   "id": "F026",
+   "reader": "a power user, as a project manager",
+   "page": "the Feedback pane",
+   "stage": "act",
+   "actual": "After a screen capture is refused, the pane says 'No screenshot taken' while an earlier screenshot is still in the preview, and that earlier screenshot is sent with the message.",
+   "severity": "low",
+   "proposal": "On a refused capture, say 'The earlier screenshot is still attached' (or clear it), so the message and the preview agree.",
+   "owner": "conductor",
+   "evidence": [
+    "assets/feedback/pane.js on 0.9.1: the capture's catch does not clear the shot",
+    "Seen in a screenshot sent from the site on 23 October"
+   ],
+   "first_seen": "0.8.2",
+   "last_seen": "0.9.1",
+   "status": "open",
+   "source": "UF-003"
+  },
+  {
+   "id": "F027",
+   "reader": "the editor",
+   "page": "the Feedback pane and the feedback form",
+   "stage": "act",
+   "actual": "Nothing tells a person their feedback may be published, so every message needs the editor's consent after the fact.",
+   "severity": "high",
+   "proposal": "A required checkbox: 'I agree this can be published' (words, screenshots, page, time; never name, email or key), stored in the message with the wording's version; a line under 'Capture this screen' to check the screenshot; removal on request; the collaborators vault's README to say rows marked public are published.",
+   "owner": "conductor",
+   "evidence": [
+    "the editor's decision in session, 23 October"
+   ],
+   "first_seen": "0.9.3",
+   "last_seen": "0.9.3",
+   "status": "open",
+   "source": "the editor's decision in session, 23 October"
+  },
+  {
+   "id": "F028",
+   "reader": "the editor",
+   "page": "/join/ and the Feedback pane",
+   "stage": "arrive",
+   "actual": "Signing keys and invitations are too much for a new user, and most of this is ephemeral (the editor, 23 October).",
+   "severity": "high",
+   "proposal": "Remove the key and invitation step for feedback (the editor's decision); with no signatures, a flood limit and a 'held for a person' state on the drain, as the subscriptions drain already does. F017, F018, F022, F023 and F024 are superseded when it ships.",
+   "owner": "conductor",
+   "evidence": [
+    "the editor's decision in session, 23 October"
+   ],
+   "first_seen": "0.9.3",
+   "last_seen": "0.9.3",
+   "status": "open",
+   "source": "the editor's decision in session, 23 October"
+  },
+  {
+   "id": "F029",
+   "reader": "the editor, testing",
+   "page": "/collaborators/ and the Feedback pane",
+   "stage": "act",
+   "actual": "Two feedback forms of two shapes: the power users' form asks for the page as text; the Feedback button fills it in.",
+   "severity": "low",
+   "proposal": "One feedback form, filling in the page and version itself, with the publish checkbox (F027).",
+   "owner": "conductor",
+   "evidence": [
+    "UF-004"
+   ],
+   "first_seen": "0.9.3",
+   "last_seen": "0.9.3",
+   "status": "open",
+   "source": "UF-004"
+  },
+  {
+   "id": "F030",
+   "reader": "the editor, testing",
+   "page": "the readers (data/personas.json) and the join form",
+   "stage": "find-my-path",
+   "actual": "No Founder among the readers; the join form's list is not in alphabetical order.",
+   "severity": "low",
+   "proposal": "Add a Founder reader and sort the join form's list alphabetically, once the editor confirms.",
+   "owner": "story-site",
+   "evidence": [
+    "UF-004"
+   ],
+   "first_seen": "0.9.3",
+   "last_seen": "0.9.3",
+   "status": "open",
+   "source": "UF-004"
+  },
+  {
+   "id": "F031",
+   "reader": "synthetic CTO and security lead",
+   "page": "claims/index.html",
+   "stage": "get-the-answer",
+   "actual": "The fact-check desk's grade now sits beside the status word on the same row, and sometimes disagrees with it, with nothing saying which to trust.",
+   "severity": "high",
+   "proposal": "Where the grade and the status word disagree, say so on the row ('the desk grades this lower: A2'), and settle each in the contradiction ledger; the status word follows the desk's grade once settled.",
+   "owner": "verifier",
+   "also": [
+    "story-site"
+   ],
+   "evidence": [
+    "synthetic CTO and security lead, run 2 on v0.10.18"
+   ],
+   "first_seen": "0.10.18",
+   "last_seen": "0.10.18",
+   "status": "open",
+   "source": "synthetic readers, run 2"
+  },
+  {
+   "id": "F032",
+   "reader": "synthetic project manager",
+   "page": "index.html (Latest) and timeline/index.html",
+   "stage": "come-back",
+   "actual": "'Latest' and the timeline stop on 22 October, so a returning reader cannot see what moved since yesterday.",
+   "severity": "medium",
+   "proposal": "Feed 'Latest' and the timeline from the evidence vault at each export (the state of affairs v2 has the delta already).",
+   "owner": "story-site",
+   "also": [
+    "journalist"
+   ],
+   "evidence": [
+    "synthetic PM, run 2 on v0.10.18",
+    "v0.19.2: the front page's Latest still ends on 23 October, 10:03 UTC, while its own header says latest evidence 24 October 16:05 UTC and the third flaw (CVE-2026-115560, on the board 25 October) is on the page above it"
+   ],
+   "first_seen": "0.10.18",
+   "last_seen": "0.19.2",
+   "status": "open",
+   "source": "synthetic readers, run 2"
+  },
+  {
+   "id": "F033",
+   "reader": "the editor and the team",
+   "page": "team/vaults/index.html",
+   "stage": "get-the-answer",
+   "actual": "A vault ID breaks across two lines in a narrow column ('d6zak0o' then '3'), so it cannot be read or copied as one word.",
+   "severity": "low",
+   "proposal": "Keep IDs on one line (white-space: nowrap on the ID cell, or give the column a minimum width).",
+   "owner": "conductor",
+   "also": [
+    "dev"
+   ],
+   "evidence": [
+    "The Sherpa's screenshot of /team/vaults/ on v0.14.3, 24 October"
+   ],
+   "first_seen": "0.14.3",
+   "last_seen": "0.14.3",
+   "status": "open",
+   "source": "the Sherpa"
+  },
+  {
+   "id": "F034",
+   "reader": "every phone reader (raised by a power user, CI-003)",
+   "page": "every page, the new design",
+   "stage": "first-screen",
+   "actual": "The sticky header is 233px tall on a phone, 30% of a 780px screen, and keeps that height when scrolling; the front page's headline starts at 642 to 691px.",
+   "severity": "high",
+   "proposal": "On phones, stick one line (the name and a menu button) or nothing; the menu groups go into the menu.",
+   "owner": "dev",
+   "also": [
+    "story-site"
+   ],
+   "evidence": [
+    "Measured in Chromium on v0.14.13 at 360 and 390 wide, 24 October",
+    "CI-003 item 3",
+    "11:45 pass on v0.14.17: the headline starts 603 to 671px down on a phone on every page walked (source, articles, fact-check, explore, gaps, join)"
+   ],
+   "first_seen": "0.14.13",
+   "last_seen": "0.15.4",
+   "status": "closed: fixed in v0.14.22 (one 43px line sticks on a phone); checked live on v0.15.4 at 390x780 on five pages, 24 October 17:45 pass",
+   "source": "CI-003"
+  },
+  {
+   "id": "F035",
+   "reader": "a first-time reader (raised by a power user, CI-003)",
+   "page": "index.html",
+   "stage": "find-my-path",
+   "actual": "The three ways to read the site (Briefing, Operations, Analysis) are offered by role and come seventh on the front page: 9,218px down on a phone, about twelve screens; 3,643px on desktop.",
+   "severity": "high",
+   "proposal": "Put them on the first screen, named by task (Understand the incident, Check what I need to do, Explore the evidence), each opening its track's home.",
+   "owner": "story-site",
+   "also": [
+    "dinis"
+   ],
+   "evidence": [
+    "Measured in Chromium on v0.14.14, 390x780 and 1440x900, 24 October",
+    "CI-003 item 2",
+    "v0.15.0's prototype E (the lens, /admin/design/lens/) asks 'Aim: Understand it, Know what to do, Check the evidence' on a first visit: the collaborator's three doors; waits for the editor's go. Live front page unchanged: 'Three ways to read' at 9,204px on a phone (v0.15.4)",
+    "v0.19.2: 'Three ways to read' at 9,248px on a phone. Prototype F (the line, v0.18.0, /admin/design/line/) answers it another way: a reader chooser on the first screen ('You're viewing this as an Executive ... Not you? Read it as: General reader, Security, Engineer, Journalist, Researcher, Everything'); by role, not by task. Either prototype closes this; the choice is the editor's (board 297)"
+   ],
+   "first_seen": "0.14.14",
+   "last_seen": "0.19.2",
+   "status": "open",
+   "source": "CI-003"
+  },
+  {
+   "id": "F036",
+   "reader": "a phone reader of the feedback section",
+   "page": "feedback/index.html",
+   "stage": "find-my-path",
+   "actual": "The feedback viewer's menu (nine items) wraps into four rows above the page title on a phone: 108px, and the title starts 474px down while the rest of the site is at 250 to 326.",
+   "severity": "low",
+   "proposal": "On a phone, keep the menu to one row that scrolls sideways.",
+   "owner": "sherpa",
+   "also": [],
+   "evidence": [
+    "Measured on v0.19.2 at 390x780, 25 October, 11:45 pass"
+   ],
+   "first_seen": "0.19.2",
+   "last_seen": "0.19.2",
+   "status": "fixed by the Sherpa in this pass (assets/sherpa/viewer.css: one scrolling row; the menu 108 to 38px, the title 474 to 403px locally); to be checked live at 17:45",
+   "source": "the Sherpa's 11:45 pass"
+  },
+  {
+   "id": "F037",
+   "reader": "a first-time reader on a phone",
+   "page": "admin/design/line/index.html",
+   "stage": "first-screen",
+   "actual": "Prototype F (the line) puts the reader chooser (about 240px: 'You're viewing this as an Executive', 'That's me', six other readers) between the site's name and the headline; under the prototype's own banner the headline starts 522px down, about 410px without it, against 322px on the live front page today.",
+   "severity": "medium",
+   "proposal": "If prototype F ships: after the first visit, or once 'That's me' is pressed, fold the chooser into the one 'Executive' pill, so a returning reader gets the headline at the live page's height. On a first visit the chooser earns its place: it is the first step F035 asks for.",
+   "owner": "story-site",
+   "also": [
+    "dinis"
+   ],
+   "evidence": [
+    "Measured on v0.19.2 (prototype F after v0.19.0's phone fix) at 390x780, 25 October, 11:45 pass"
+   ],
+   "first_seen": "0.19.2",
+   "last_seen": "0.19.2",
+   "status": "open: for the editor's decision on prototype F (board 297)",
+   "source": "the Sherpa's 11:45 pass"
+  }
+ ]
+}

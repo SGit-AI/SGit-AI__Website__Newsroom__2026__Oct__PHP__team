@@ -1,0 +1,7 @@
+{
+ "id": "152",
+ "title": "Take the curator's 36 claims and 18 timeline rows (claims/curator@php.newsroom.json, now in data/vault-claims.json) into the claims table the front page uses",
+ "status": "open",
+ "owner": "claude-story-site",
+ "order": 151
+}

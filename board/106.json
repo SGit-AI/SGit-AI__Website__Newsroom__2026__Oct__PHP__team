@@ -1,0 +1,7 @@
+{
+ "id": "106",
+ "title": "Feedback from any page, signed: a Feedback button beside Ask opens the pane's Feedback tab (kind, words, a screenshot from a file or captured), signed with the device's key and encrypted to the collaborators lane; /join/ makes the key from an invitation's QR code in one tap; admin/build/invite.py makes invitations and enrols keys; the drain verifies every signature with sgit pki verify",
+ "status": "done",
+ "owner": "conductor",
+ "order": 105
+}

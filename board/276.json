@@ -1,0 +1,8 @@
+{
+ "id": "276",
+ "title": "Front page, Right now: the stamp says 'as of 24 October 2026, 08:37 UTC' but the five lines are unchanged since v0.12.1 and still say 'as of 23 October'; the day's news (Sophos withdrew the only vendor claim of a compromise; banks and crypto platforms report none) is in the state of affairs v3 and not on the front page",
+ "status": "done",
+ "owner": "journalist",
+ "note": "From the news desk chief's afternoon wake, 24 October. Done by the correspondent the same afternoon: the third line of Right now is as of the morning of 24 October and carries the Sophos withdrawal and the banks and crypto platforms; the line had been missed because it began with a capital 'As of'.",
+ "order": 275
+}

@@ -1,0 +1,12 @@
+{
+ "name": "The Sherpa's inbox",
+ "vault_id": "d6zak0o3",
+ "endpoint": "https://dev.send.sgraph.ai",
+ "recipient": "sha256:3b964d5e3abf03c0",
+ "recipient_bundle": "admin/sherpa/inbox/sherpa-inbox.bundle.json",
+ "senders": [
+  "editor",
+  "riskmandate"
+ ],
+ "token": "each sender's own append token, derived from the vault key and handed to it sealed on pki.sgit.ai; never published"
+}

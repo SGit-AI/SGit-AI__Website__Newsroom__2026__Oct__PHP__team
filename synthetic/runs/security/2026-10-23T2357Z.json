@@ -1,0 +1,553 @@
+{
+ "schema": "sgit.newsroom.synthetic-run-export/1",
+ "persona": "security",
+ "run": "2026-10-23T2357Z",
+ "started": "2026-10-23T2357Z",
+ "finished": "2026-10-23T23:57:40Z",
+ "site_version": "0.10.18",
+ "data_as_of": "2026-10-23T01:20Z",
+ "device": {
+  "width": 1680,
+  "height": 1050,
+  "mobile": false,
+  "scale": 1,
+  "color_scheme": "dark"
+ },
+ "question": "Is it exploited in the wild, how do I detect it, what do the agencies say, and how good is the evidence?",
+ "pages": [
+  {
+   "n": 1,
+   "path": "index.html",
+   "why": "start",
+   "title": "PHP in October 2026: two critical security flaws, tracked as evidence · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 2107,
+   "screens": 6,
+   "reading_ease": 56.7,
+   "min_font_px": 11.84,
+   "small_text_blocks": 1,
+   "low_contrast_count": 0,
+   "contrast_checked": 86,
+   "tap_targets": 189,
+   "tap_targets_small": 22,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 899,
+   "jargon_per_1000": 12.8,
+   "jargon_top": [
+    "CISA",
+    "CVE",
+    "NCSC",
+    "NSA",
+    "Patch"
+   ]
+  },
+  {
+   "n": 2,
+   "path": "briefings/security/index.html",
+   "why": "reading path",
+   "title": "Briefing for a security lead: What do I patch first, what do I watch for, and when do I take something offline? · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 2721,
+   "screens": 8.2,
+   "reading_ease": 32.4,
+   "min_font_px": 11.84,
+   "small_text_blocks": 2,
+   "low_contrast_count": 0,
+   "contrast_checked": 200,
+   "tap_targets": 323,
+   "tap_targets_small": 86,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 673,
+   "jargon_per_1000": 34.2,
+   "jargon_top": [
+    "CVE",
+    "CISA",
+    "NCSC",
+    "CERT",
+    "NSA"
+   ]
+  },
+  {
+   "n": 3,
+   "path": "exploitation/index.html",
+   "why": "reading path",
+   "title": "Exploitation signals, in order · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1030,
+   "screens": 3.1,
+   "reading_ease": 35.7,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 134,
+   "tap_targets": 99,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 724,
+   "jargon_per_1000": 38.8,
+   "jargon_top": [
+    "CISA",
+    "CVE",
+    "NCSC",
+    "CERT",
+    "Honeypot"
+   ]
+  },
+  {
+   "n": 4,
+   "path": "defence/index.html",
+   "why": "reading path",
+   "title": "Detection and defence: what blocks php2shell and what shows it · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1310,
+   "screens": 3.3,
+   "reading_ease": 38.0,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 71,
+   "tap_targets": 96,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 545,
+   "jargon_per_1000": 23.7,
+   "jargon_top": [
+    "WAF",
+    "Multipart",
+    "CVE",
+    "Shell",
+    "Patch"
+   ]
+  },
+  {
+   "n": 5,
+   "path": "agencies/index.html",
+   "why": "reading path",
+   "title": "What sixteen agencies actually advise · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1139,
+   "screens": 2.9,
+   "reading_ease": 45.8,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 104,
+   "tap_targets": 88,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 530,
+   "jargon_per_1000": 46.5,
+   "jargon_top": [
+    "NCSC",
+    "CERT",
+    "CISA",
+    "NSA",
+    "Patch"
+   ]
+  },
+  {
+   "n": 6,
+   "path": "claims/index.html",
+   "why": "reading path",
+   "title": "Every claim, with its status and sources · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 4375,
+   "screens": 12,
+   "reading_ease": 21.4,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 200,
+   "tap_targets": 464,
+   "tap_targets_small": 155,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 704,
+   "jargon_per_1000": 21.5,
+   "jargon_top": [
+    "CVE",
+    "CERT",
+    "CISA",
+    "NCSC",
+    "NSA"
+   ]
+  },
+  {
+   "n": 7,
+   "path": "sources/index.html",
+   "why": "reading path",
+   "title": "Every source: 227 pages, 222 captures, 1386 hashes · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 15663,
+   "screens": 46.7,
+   "reading_ease": 6.6,
+   "min_font_px": 11.84,
+   "small_text_blocks": 247,
+   "low_contrast_count": 0,
+   "contrast_checked": 153,
+   "tap_targets": 1236,
+   "tap_targets_small": 903,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 612,
+   "jargon_per_1000": 24.1,
+   "jargon_top": [
+    "CVE",
+    "NCSC",
+    "Vulnerability",
+    "Patch",
+    "CISA"
+   ]
+  },
+  {
+   "n": 8,
+   "path": "sources/cisa-alert-log4j-2021/index.html",
+   "why": "followed a link",
+   "title": "Source: Apache Releases Log4j Version 2.15.0 to Address Critical RCE Vulnerability Under Exploitation | CISA · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 191,
+   "screens": 1.4,
+   "reading_ease": 21.4,
+   "min_font_px": 11.84,
+   "small_text_blocks": 7,
+   "low_contrast_count": 0,
+   "contrast_checked": 16,
+   "tap_targets": 47,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 908,
+   "jargon_per_1000": 68.1,
+   "jargon_top": [
+    "CISA",
+    "Vulnerability",
+    "Evidence vault"
+   ]
+  },
+  {
+   "n": 9,
+   "path": "glossary/index.html",
+   "why": "followed a link",
+   "title": "Glossary: every php2shell term in plain English · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 2990,
+   "screens": 9.9,
+   "reading_ease": 60.9,
+   "min_font_px": 11.84,
+   "small_text_blocks": 1,
+   "low_contrast_count": 0,
+   "contrast_checked": 184,
+   "tap_targets": 108,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 509,
+   "jargon_per_1000": 36.8,
+   "jargon_top": [
+    "CVE",
+    "Web server",
+    "Shell",
+    "NCSC",
+    "Vulnerability"
+   ]
+  }
+ ],
+ "totals": {
+  "pages": 9,
+  "requests": 162,
+  "blocked": 27,
+  "failed": 0,
+  "bytes": 4235484,
+  "console_errors": 0,
+  "words_read": 31526
+ },
+ "checks": [
+  {
+   "severity": "low",
+   "page": "index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 1 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "briefings/security/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 2 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "sources/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 247 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "sources/index.html",
+   "check": "length fits the reader",
+   "evidence": "46.7 screens long on this device"
+  },
+  {
+   "severity": "low",
+   "page": "sources/cisa-alert-log4j-2021/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 7 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "glossary/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 1 blocks below 12px"
+  }
+ ],
+ "extra_viewports": [],
+ "machine_formats": [],
+ "feedback": {
+  "verdict": "Still the best single place to brief the CISO on php2shell, and the detection and agency pages are as strong as yesterday, but the pages on my path have not moved since 22 October: every grading fault I raised is still there, the new fact-check column now argues with the status column on the same row, and vendor reports of successful exploitation sit only in a footnote on the claims page.",
+  "answered_question": "yes",
+  "time_to_answer": "The short answer was on the security briefing (step 2); the full answer with citable sources came on exploitation, defence and agencies (steps 3 to 5), about six minutes in. The newest exploitation evidence (Hadrian, Patchstack, GMO) only turned up in a claim note on the claims page (step 6).",
+  "scores": {
+   "answered": 4,
+   "clarity": 3,
+   "trust": 3,
+   "design": 4,
+   "navigation": 4
+  },
+  "works": [
+   {
+    "point": "Attempts, honeypot hits, negative findings and second-hand claims are still kept apart in the KIND column, which is the distinction I have to make upwards.",
+    "page": "exploitation/index.html"
+   },
+   {
+    "point": "The KEV negative finding is still dated to catalog version, release time, fetch time and entry count, and called a point-in-time finding. Citable as written.",
+    "page": "exploitation/index.html"
+   },
+   {
+    "point": "Host signals by layer with literal strings ('in Unknown on line 0', 'exit signal Segmentation fault (11)') and the 'What the log cannot show' row remain directly usable for SOC alerting.",
+    "page": "defence/index.html"
+   },
+   {
+    "point": "The WAF table keeps each vendor's own caveat beside its rule, including Fortinet's alert-only default and Fastly's must-enable rule.",
+    "page": "defence/index.html"
+   },
+   {
+    "point": "Verbatim offline advice per agency, the two blocked agencies recorded, and the BBC's NCSC quote shown not to be on the captured NCSC page.",
+    "page": "agencies/index.html"
+   },
+   {
+    "point": "The 'no named organisation has said it was compromised' claim is now REPORTED, time-bounded to 20:50 UTC on 22 October, and its note lists the near-misses (GMO, Czech Technical University, the Valtec retraction) with capture paths. That is the honest framing I need.",
+    "page": "claims/index.html"
+   },
+   {
+    "point": "The front page CONFIRMED count now matches the claims page (21 on both).",
+    "page": "index.html"
+   },
+   {
+    "point": "The thirty-second answer and 'What to decide or do' list is still a usable runbook skeleton.",
+    "page": "briefings/security/index.html"
+   }
+  ],
+  "fails": [
+   {
+    "point": "Two vendors reporting successful exploitation, and a confirmed GMO break-in of undetermined cause, are only in a claim note; the exploitation page, which is the page I rely on for this question, does not mention them and still says it has 20 signals.",
+    "page": "exploitation/index.html",
+    "severity": "high",
+    "evidence": "claims/index.html: 'two security vendors, Hadrian and Patchstack, report successful exploitation without naming any victim' and 'GMO confirmed a break-in on 20 October on its FX trading VPS service'. exploitation/index.html is 'This page v5 written in site v0.3.2 on 22 October 2026' and has no Hadrian, Patchstack, GMO or Czech Technical University row."
+   },
+   {
+    "point": "The new FACT-CHECK column contradicts the STATUS column on the same row, and the status is not corrected, so I now have two grades and no rule for which one to cite.",
+    "page": "claims/index.html",
+    "severity": "high",
+    "evidence": "Weird Gloop: 'CONFIRMED' next to 'A2 Reported ... STATUS OVERSTATED 1/1'. Edge protections: 'CONFIRMED' next to 'A2 Reported STATUS OVERSTATED'. NCSC-NL count: 'CONFIRMED' next to 'A1 Weak signal ... CONTRADICTED STATUS OVERSTATED'. The A1 to A6 scale is defined neither on the page nor in the glossary."
+   },
+   {
+    "point": "CONFIRMED is still used for one-source items, against the site's own definition.",
+    "page": "claims/index.html",
+    "severity": "high",
+    "evidence": "Legend: 'CONFIRMED two or more primary sources agree, or the fact was counted from a captured file'. Rows: CISA offline advice 'CONFIRMED ... 1/1', Latvia restrictions 'CONFIRMED ... 1/1', Weird Gloop 'CONFIRMED ... 1/1'. exploitation/index.html: CCCS, CERT.LV, ACSC and the CISA ADP row each 'CONFIRMED (PRIMARY)' on one source."
+   },
+   {
+    "point": "The Amazon self-contradiction is unchanged.",
+    "page": "exploitation/index.html",
+    "severity": "high",
+    "evidence": "Woodward row: 'REPORTED Cloudflare's own post confirms attack traffic, Amazon's own post not found'. claims/index.html grades the same claim 'CONFIRMED' with 'confirmed by both companies' own posts', and sources/index.html lists the captured 'Amazon (CJ Moses, AWS Security Blog) · vendor · primary · CAPTURED · ... aws-security-blog-madpot'."
+   },
+   {
+    "point": "CERT.LV still carries different grades on different pages.",
+    "page": "exploitation/index.html",
+    "severity": "medium",
+    "evidence": "exploitation/index.html: 'Automated exploitation attempts seen in Latvia; no reports of successful attacks. attempts CONFIRMED (PRIMARY)'. claims/index.html and briefings/security/index.html: 'Automated exploitation attempts were seen in Latvia; none succeeded ... REPORTED'."
+   },
+   {
+    "point": "A front-page core fact cites sources that do not support its key words.",
+    "page": "index.html",
+    "severity": "medium",
+    "evidence": "'CONFIRMED Attackers are trying, in large numbers. ... CISA CISA'. The volume comes from Cloudflare's CEO (REPORTED, 1/1 on claims/index.html); CISA's own line is 'CISA has not observed exploitation'."
+   },
+   {
+    "point": "The front page tally and legend still do not match the claims page.",
+    "page": "index.html",
+    "severity": "medium",
+    "evidence": "index.html: '70 statements checked: 21 confirmed, 11 disputed, 4 unverified' and a four-word legend without CONTRADICTED. claims/index.html: '70 claims: 21 confirmed, 34 reported, 8 disputed, 3 contradicted, 4 unverified'."
+   },
+   {
+    "point": "The same Amazon honeypot event is still counted twice in the headline signal count.",
+    "page": "exploitation/index.html",
+    "severity": "medium",
+    "evidence": "'What the captured sources carry is 20 signals', with the first two rows both '2026-10-17 ... One exploit attempt against a MadPot honeypot', once from the AWS blog and once 'via The Hacker News'."
+   },
+   {
+    "point": "A status change is justified partly by asking chatbots, which I cannot cite to a CISO.",
+    "page": "claims/index.html",
+    "severity": "low",
+    "evidence": "'Changed from \"confirmed\" on 22 October at the editor's request (fact-check run 1 had marked it overstated; Perplexity and ChatGPT, asked by the editor, said the same).'"
+   },
+   {
+    "point": "The banner still promises a saved copy behind every fact while the captures are private.",
+    "page": "sources/index.html",
+    "severity": "medium",
+    "evidence": "Banner on every page: 'every fact links to a saved copy of its source'. sources/index.html: 'The captures are third-party pages held privately and are not republished'."
+   },
+   {
+    "point": "The malformed Fortinet signature ID is unchanged.",
+    "page": "defence/index.html",
+    "severity": "low",
+    "evidence": "'Three FortiGuard signatures (090502648, 090502651, 09052654)': the third has eight digits, the others nine."
+   },
+   {
+    "point": "A 404 page is still listed as a captured primary source, and the Log4j source page still has no claim or event.",
+    "page": "sources/index.html",
+    "severity": "low",
+    "evidence": "'Page Not Found | CISA ... primary · CAPTURED ... HTTP 404'. sources/cisa-alert-log4j-2021/index.html: 'No claim cites this source yet.' (it now adds 'Comparator for the context page.')"
+   },
+   {
+    "point": "The unlabelled price pill in the header still changes from page to page.",
+    "page": "index.html",
+    "severity": "low",
+    "evidence": "Header pill reads '£4.99' on index.html, '£4.98' on briefings/security, '£4.97' on exploitation, '£4.92' on the Log4j source page and the glossary, with no label."
+   }
+  ],
+  "changes": [
+   {
+    "change": "Add Hadrian, Patchstack, GMO and Czech Technical University rows to the exploitation table with KIND and status, and put the 'vendors report successful exploitation, no victim named' line on the front page 'Anyone confirmed hacked?' tile.",
+    "page": "exploitation/index.html",
+    "why": "This is the most important change in the exploitation picture since yesterday and the page I cite for it does not show it.",
+    "effort": "small"
+   },
+   {
+    "change": "Where the fact-check column says STATUS OVERSTATED, change the status (or remove the flag), and define the A1 to A6 scale in the legend and the glossary.",
+    "page": "claims/index.html",
+    "why": "Two grades that disagree on one row leave me unable to cite either.",
+    "effort": "medium"
+   },
+   {
+    "change": "Re-run the status rule so one-source primary items are REPORTED (or add a named 'single primary' grade), and use one grade per claim on every page, starting with CERT.LV.",
+    "page": "claims/index.html",
+    "why": "The grading must keep its own definition before I can put it in front of the CISO.",
+    "effort": "medium"
+   },
+   {
+    "change": "Fix the Woodward row to say Amazon's own post was captured and link aws-security-blog-madpot.",
+    "page": "exploitation/index.html",
+    "why": "Still the clearest self-contradiction on the exploitation question.",
+    "effort": "small"
+   },
+   {
+    "change": "Cite Cloudflare, not CISA, for 'in large numbers' in the front-page core fact, and grade that part REPORTED.",
+    "page": "index.html",
+    "why": "A board member will check the first fact first, and CISA says the opposite of 'large numbers'.",
+    "effort": "small"
+   },
+   {
+    "change": "Make the signal count '20 rows, 19 events' or merge the two Amazon 17 October rows.",
+    "page": "exploitation/index.html",
+    "why": "Double counting undermines a page whose value is careful counting.",
+    "effort": "small"
+   },
+   {
+    "change": "Bring the front-page tally and legend in line with the claims page (five statuses: 34 reported, 8 disputed, 3 contradicted).",
+    "page": "index.html",
+    "why": "The first numbers I see should match the later ones.",
+    "effort": "small"
+   },
+   {
+    "change": "Correct the third Fortinet signature ID, label or remove the £ pill, and reword the banner to 'links to its source and a hash of the saved copy'.",
+    "page": "defence/index.html",
+    "why": "I paste IDs into tickets, and unexplained numbers and promises the practice does not keep erode trust.",
+    "effort": "small"
+   }
+  ],
+  "quotes": [
+   {
+    "page": "exploitation/index.html",
+    "text": "A remote code execution bug is not an invisibility cloak.",
+    "reaction": "Still the right framing, but the page that says it has not been updated since 22 October."
+   },
+   {
+    "page": "claims/index.html",
+    "text": "two security vendors, Hadrian and Patchstack, report successful exploitation without naming any victim.",
+    "reaction": "This is the line my CISO will ask about, and I found it in a claim note, not on the exploitation page."
+   },
+   {
+    "page": "claims/index.html",
+    "text": "A time-bounded absence, not a confirmed fact: it can only be true as of the last check, and it will change.",
+    "reaction": "Exactly how I want 'no confirmed victim' worded. I will use it."
+   },
+   {
+    "page": "defence/index.html",
+    "text": "with the known exploits no application code runs, so a shell from a worker is the exploit",
+    "reaction": "Still the most actionable sentence on the site."
+   },
+   {
+    "page": "exploitation/index.html",
+    "text": "REPORTED Cloudflare's own post confirms attack traffic, Amazon's own post not found",
+    "reaction": "Unchanged since yesterday and still contradicted by the claims and sources pages."
+   },
+   {
+    "page": "claims/index.html",
+    "text": "Perplexity and ChatGPT, asked by the editor, said the same",
+    "reaction": "Not evidence. I cannot tell a CISO a grade changed because two chatbots agreed."
+   },
+   {
+    "page": "index.html",
+    "text": "70 statements checked: 21 confirmed, 11 disputed, 4 unverified",
+    "reaction": "The confirmed count now matches; the rest still does not add up against the claims page."
+   }
+  ],
+  "since_last": "The site went from v0.4.3 to v0.10.18 but the exploitation, defence and agencies pages on my path are unchanged (still written in v0.3.x on 22 October). Fixed: the front-page confirmed count now matches the claims page (21), and the Log4j source page now says why it is there. Still open: single-source CONFIRMED, the Amazon contradiction, the CERT.LV double grade, the double-counted honeypot event, the front-page legend and disputed count, the private-captures banner, the Fortinet ID, the 404 source and the £ pill. New or worse: a FACT-CHECK column that flags STATUS OVERSTATED without changing the status, an undefined A1 to A6 scale, vendor reports of successful exploitation kept off the exploitation page, a front-page fact citing CISA for 'large numbers', and a grade change justified by chatbots. No page text addressed me or an AI.",
+  "reviewer": {
+   "by": "agent-session"
+  }
+ }
+}

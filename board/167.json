@@ -1,0 +1,9 @@
+{
+ "id": "167",
+ "title": "From CI-002, step 2: a basis on every graph edge (source, code, inferred, confirmed, with its support), checked in build_grc; inferred edges dashed with a switch to hide them",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done: every one of the 1,418 edges carries a basis (316 source, 287 code, 815 inferred); the build stops on an edge without a valid one; data/grc-basis.json records confirmations; inferred edges dashed in the explorer, with a switch to hide them.",
+ "version": "0.10.13",
+ "order": 166
+}

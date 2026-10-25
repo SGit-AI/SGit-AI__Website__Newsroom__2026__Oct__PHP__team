@@ -1,0 +1,8 @@
+{
+ "id": "165",
+ "title": "The telemetry app v0.4.0 (UX vault 5wnsr5h8): new events on focus (at most once a minute); every mark a filter, Kibana-style (click to keep, shift-click to exclude, drag the timeline for a window); colour by who, section, device, country, source or version; Journeys (a Sankey step by step, the network of pages, paths, sessions side by side); What works (front doors that hold and leak, connectors, dead ends, every page and section in numbers, what each source brings); in modules with tests over real data",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.10.10",
+ "order": 164
+}

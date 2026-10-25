@@ -1,0 +1,7 @@
+{
+ "id": "038",
+ "title": "The source watch is slow to open in the browser: with no app, the official UI decrypts the folder tree (2,678 objects) before it shows anything; from this sandbox that took 17 minutes. A small vault app that reads index/ and state/ first, or a lighter front vault, would open it in seconds",
+ "status": "open",
+ "owner": "researcher@php.newsroom",
+ "order": 38
+}

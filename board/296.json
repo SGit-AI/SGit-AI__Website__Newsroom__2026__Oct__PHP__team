@@ -1,0 +1,9 @@
+{
+ "id": "296",
+ "title": "Prototype F, the line: the editor's design of 25 October built on the site, at /admin/design/line/ (six pages from the live data, the pack's engine and words vendored, the numbers filled from the vault)",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor handed story-site the briefing pack 'the line' in its session of 25 October and asked for it to be implemented. Brief: admin/content/briefs/2026-10-25__brief__the-line.md. The engine's 19 tests pass against the vendored copy (node --test assets/design/line/engine.test.mjs). Rules 1 to 7, the eleven moments, the seven roles, depth, seen and folding, shared links and the past view all work in Chromium; no page errors.",
+ "version": "0.17.0",
+ "order": 295
+}

@@ -1,0 +1,8 @@
+{
+ "id": "311",
+ "title": "The 404 router: view paths (/agencies/as/security/, /on/<date>/, /vs/<date>/) answered by 404.html, never written as files; the editor's notes on the URL article and story-site's reply",
+ "status": "open",
+ "owner": "editor",
+ "note": "admin/content/briefs/2026-10-25__brief__the-404-router-and-two-modes.md. Replaces the article's persona files with a router, so nothing explodes. Four decisions: previews (a neutral card, or also the front page's seven views as files), the front page (no redirect to /as/executive/, the address follows the reader instead; recommended because a script redirect to a 404 risks the front page's indexing), the reserved words (as, on, vs, since), and the timing (after board 297).",
+ "order": 310
+}

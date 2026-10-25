@@ -1,0 +1,17 @@
+{
+ "run": "20261024T0125Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-24T01:25:00Z",
+ "finished": "2026-10-24T02:03:29Z",
+ "outcome": "ok",
+ "summary": "Run 3, at the editor's request (the scheduled task had not fired since 22 October 20:52 UTC): seven changed claims re-graded, eight findings closed as fixed, K-004 and K-009 explained, so R-001 to R-003 no longer wait on the desk (released as v0.14.4). Then the first investigation, /factcheck/investigations/php-share/: how much PHP there is (29 measures) and where 70% comes from (127 statements, lineage, timeline, 73 pages re-checked for corrections, Fortune for UF-005.1). AWS quietly narrowed 'broadly exploited' to 'broad exploitation attempts' (Evidence-12, high).",
+ "read": [
+  "20261024T0005Z__conductor__to-all__schedules-runs-and-messages-move-to-the"
+ ],
+ "sent": [
+  "20261024T0203Z__factcheck__to-desk__run-3-your-fixes-checked-eight-findings"
+ ],
+ "article": "",
+ "model": "",
+ "cost_usd": null
+}

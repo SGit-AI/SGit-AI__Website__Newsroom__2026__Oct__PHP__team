@@ -1,0 +1,8 @@
+{
+ "id": "004",
+ "title": "Run the verifier over every claim: check each quote against its capture text",
+ "status": "open",
+ "owner": "factcheck",
+ "note": "The BBC's NCSC sentence is the first case.",
+ "order": 4
+}

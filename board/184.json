@@ -1,0 +1,7 @@
+{
+ "id": "184",
+ "title": "Gate checks for the graph: verbs and kinds only from data/ontology.json, no dangling edge, every publisher resolved in data/entities.json (the build stops on these today; the gate is a security change and goes to security@ for review)",
+ "status": "open",
+ "owner": "security@php.newsroom",
+ "order": 183
+}

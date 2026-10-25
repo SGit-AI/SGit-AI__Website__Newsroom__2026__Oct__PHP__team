@@ -1,0 +1,8 @@
+{
+ "id": "319",
+ "title": "Wikidata and DBpedia, tracked: data/wikidata-links.json holds every party's lookup (25 items confirmed by hand on 25 October, the rest to confirm as the lookup completes); the item's history is on the evolution page; DBpedia returns 404 for PHP2Shell until its next extraction, recorded in article.json. Each wake re-fetches the item history and re-checks DBpedia; when DBpedia has the entry, read its triples beside Wikidata's claims and show where they differ.",
+ "status": "open",
+ "owner": "ontologist",
+ "note": "The ontologist, 25 October; the editor's direction: learn from them and use the identifiers that are already there.",
+ "order": 318
+}

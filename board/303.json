@@ -1,0 +1,8 @@
+{
+ "id": "303",
+ "title": "Incident, 25 October 2026: the researcher and the curator run on schedule but leave no commit and no run record, so the team is blind to what they did and the control room shows them as missed. Decide: every scheduled wake leaves a run record in git (proposed: the agent writes a report into its own vault, the conductor commits it), and the four scheduled prompts change accordingly.",
+ "status": "open",
+ "owner": "editor",
+ "note": "Raised by the conductor. The curator's and the researcher's sessions show the runs (25 Oct 08:00 London: 18 sources promoted); only the repository is blind.",
+ "order": 302
+}

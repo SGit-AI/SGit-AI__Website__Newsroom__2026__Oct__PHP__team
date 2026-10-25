@@ -1,0 +1,15 @@
+{
+ "run": "20261024T0815Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-24T08:15:45Z",
+ "finished": "2026-10-24T08:16:11Z",
+ "outcome": "ok",
+ "summary": "Light check (09:15 London). Dev taken in; inbox empty; lanes: no key. Runs seen: sherpa 07:45, factcheck 08:52. Curator's 08:00 wake has no run record: status line and a message. Researcher's 07:00 wake still has none (messaged at 08:15). Pulse still has no card.",
+ "read": [],
+ "sent": [
+  "20261024T0816Z__conductor__to-curator__no-run-record-for-the-08-00-london-wake"
+ ],
+ "article": "",
+ "model": "sonnet",
+ "cost_usd": null
+}

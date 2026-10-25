@@ -1,0 +1,15 @@
+{
+ "run": "20261024T1015Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-24T10:15:27Z",
+ "finished": "2026-10-24T10:16:28Z",
+ "outcome": "ok",
+ "summary": "Full pass (11:15 London). Dev taken in (v0.14.15); inbox empty; lanes: no key. 25 sessions, 12 enabled scheduled tasks and 11 branches ahead of dev read. Runs seen: desk 09:20, factcheck 08:52. No run record: researcher (07:00, 09:30), curator (08:00, 10:30), sherpa (09:45, messaged), pulse (no card). Status page rewritten.",
+ "read": [],
+ "sent": [
+  "20261024T1016Z__conductor__to-sherpa__no-run-record-for-the-09-45-london-wake"
+ ],
+ "article": "",
+ "model": "sonnet",
+ "cost_usd": null
+}

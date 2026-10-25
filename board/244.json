@@ -1,0 +1,8 @@
+{
+ "id": "244",
+ "title": "Close or keep Finding-33, Finding-102 and K-009 with a fresh look, so the first correction requests can unblock (needs board 238)",
+ "status": "done",
+ "owner": "factcheck",
+ "note": "From the brief: asking other publications for corrections (24 October; the news desk chief, for the editor's go). Run 3 (24 October): Finding-33 and Finding-102 closed as fixed (and Finding-124); K-009 explained by time (the Foundation describes the IDs at about 15:00 UTC; the exploit video came that evening). Finding-32 stays open: claim note, numbers.json and the front page still say no page names the survey, and Cloudflare links W3Techs.",
+ "order": 243
+}

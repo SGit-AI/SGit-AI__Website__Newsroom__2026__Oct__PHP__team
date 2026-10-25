@@ -1,0 +1,58 @@
+{
+ "schema": "newsroom/agent-policy/v1",
+ "agent": "editor",
+ "address": "dinis.human",
+ "name": "Dinis Cruz",
+ "kind": "human",
+ "group": "humans",
+ "title": "Editor",
+ "status": "draft",
+ "drafted_by": "librarian@php.newsroom (22 and 24 October 2026), for abp@newsroom.sgit to take over (board 157)",
+ "kept_by": "abp@newsroom.sgit",
+ "agreed_by": null,
+ "as_of": "2026-10-24",
+ "member_status": "active",
+ "grant": null,
+ "mandate": {
+  "wanted": [],
+  "not_wanted": []
+ },
+ "scope": {
+  "content": [
+   "the lead of the story",
+   "which claim is confirmed",
+   "what ships"
+  ],
+  "writes": [
+   "admin/content/agents/editor/ROLE.md",
+   "admin/content/briefs/**",
+   "assets/briefs/**"
+  ],
+  "appends": [],
+  "pages": [
+   "brief/**",
+   "admin/briefs/**"
+  ],
+  "reads": [
+   "the whole repository"
+  ],
+  "vaults": []
+ },
+ "acting_for": [],
+ "requires_go": [],
+ "never": [],
+ "pushback": [],
+ "untrusted_inputs": [],
+ "kpis": [
+  {
+   "measure": "Policies agreed",
+   "target": "every member's policy.json has status agreed",
+   "how": "admin/build/agents.py report"
+  },
+  {
+   "measure": "Decisions waiting on the editor",
+   "target": "none older than one day",
+   "how": "the asks in every status.json"
+  }
+ ]
+}

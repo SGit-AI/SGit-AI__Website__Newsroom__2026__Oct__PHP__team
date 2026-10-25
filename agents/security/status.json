@@ -1,0 +1,84 @@
+{
+ "schema": "newsroom/agent-status/v1",
+ "agent": "security",
+ "as_of": "2026-10-24",
+ "round": 1,
+ "state": "round 1 closed: application security section, 40 advisories, CSP on every page",
+ "done": [
+  {
+   "what": "Security passes 1 to 3: 40 advisories, 22 fixed and 1 accepted by the editor",
+   "evidence": "data/advisories.json; v0.5.5, v0.11.1, v0.14.26"
+  },
+  {
+   "what": "/admin/appsec/: threat model, data flows, advisories, root causes, who can do what, client-side analysis, incidents and runbooks, bug bounty and leaderboard, outside reviewers' prompts",
+   "evidence": "v0.14.26; data/appsec.json"
+  },
+  {
+   "what": "A Content-Security-Policy on every page (admin/build/csp.py)",
+   "evidence": "v0.14.26; 851 pages crawled, no violations"
+  },
+  {
+   "what": "The telemetry policy on /admin/telemetry/ (the editor's decision: keep the location lookups)",
+   "evidence": "data/telemetry.json policy; SA-2026-030 accepted"
+  },
+  {
+   "what": "Board 085, 110, 132, 206, 268 closed",
+   "evidence": "data/admin.json"
+  }
+ ],
+ "tasks": {
+  "board": [
+   "278",
+   "279",
+   "280",
+   "281",
+   "282"
+  ],
+  "note": "the board rows this member owns are in data/admin.json"
+ },
+ "next": [
+  {
+   "what": "A CSP for the vault app (281)",
+   "why": "the vault app runs outside the site's policy and reads the vault (SA-2026-021)"
+  },
+  {
+   "what": "A design for signed messages and cards (282)",
+   "why": "messages steer unsupervised agents and are unauthenticated (SA-2026-024)"
+  },
+  {
+   "what": "The next security pass: the tree, history, the public vaults, every change since v0.15.4",
+   "why": "the team releases dozens of times a day"
+  },
+  {
+   "what": "Verify outside reviewers' findings when the editor hands them over",
+   "why": "the bounty and the reviewer prompts are live"
+  }
+ ],
+ "asks": [
+  {
+   "what": "enable private vulnerability reporting (278); go or not on security/gate-pass-2 (279)",
+   "from": "the editor"
+  },
+  {
+   "what": "add admin/appsec/**, data/advisories.json, data/appsec.json, admin/build/csp.py, admin/build/diagram.py, .well-known/security.txt to security's scope",
+   "from": "the librarian"
+  },
+  {
+   "what": "carry the self-check into AGENTS.md section 5 and the cards",
+   "from": "the conductor"
+  }
+ ],
+ "tokens": {
+  "value": null,
+  "how": "the session does not show a token count to the agent"
+ },
+ "policy": {
+  "version": "2026-10-24",
+  "out_of_scope_requests": 0,
+  "pushbacks": 0,
+  "overrides": 1,
+  "writes_outside_scope": 2,
+  "injection_seen": 2
+ },
+ "debrief": "admin/content/agents/security/debriefs/2026-10-24__application-security.md"
+}

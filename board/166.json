@@ -1,0 +1,9 @@
+{
+ "id": "166",
+ "title": "From CI-002 (the Sherpa's brief of 23 October, the risk graph as a tool), step 1: a focus view of the risk graph: open at any node, its neighbours by verb, expand on click, the path back always shown, the focus in the address; in the browser from data/grc-graph.json",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done: /grc/explore/, start from any node, neighbours by verb, open one step at a time with the path back shown; the address carries the view.",
+ "version": "0.10.13",
+ "order": 165
+}

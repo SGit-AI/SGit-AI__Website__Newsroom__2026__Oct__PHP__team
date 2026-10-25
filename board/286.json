@@ -1,0 +1,9 @@
+{
+ "id": "286",
+ "title": "The chrome after the lens prototype: the bar in two lines on a laptop (132px to 91px), the reading strip and the page's kind as slim lines, the rail of /ops/ after its content on a phone, and /analysis/'s hero fixed on a phone (its text was one word per line)",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor, 24 October: 'with that lens features, can you see the areas you can improve and fix?' Measured in Chromium: the headline of a content page moves from 349px to 234px down on a 1440px screen, and from 434px to 305px on a 390px phone; /ops/ on a phone from 1,184px to 366px. CSS only, in assets/design/v2-live.css (admin/build/design.py).",
+ "version": "0.16.0",
+ "order": 285
+}

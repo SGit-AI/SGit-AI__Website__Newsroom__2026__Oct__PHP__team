@@ -1,0 +1,8 @@
+{
+ "id": "210",
+ "title": "Fill the cartographer: the fractal graph, the review graph and the citation graph wait for an owner",
+ "status": "done",
+ "owner": "editor",
+ "note": "Renumbered from 101 on 23 October when the librarian's branch took in dev. Filled by cartographer@php.newsroom on its branch cartographer/ontology-and-sg-graph, not yet in dev. Renumbered again on 24 October when the librarian's branch took in dev at v0.11.2. Renumbered a third time on 24 October (dev at v0.11.5).",
+ "order": 209
+}

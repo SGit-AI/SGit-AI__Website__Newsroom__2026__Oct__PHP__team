@@ -1,0 +1,9 @@
+{
+ "id": "310",
+ "title": "The admin and team pages use the whole width of the screen; the reader pages stay at 1,440px",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor, 25 October, with a screenshot of the console in a narrow column. One rule in the live layer (assets/design/v2-live.css, from admin/build/design.py): main has no maximum width under admin/ and team/. Prose inside keeps its 82ch measure, so only the tables, lanes and cards take the extra room.",
+ "version": "0.20.0",
+ "order": 309
+}

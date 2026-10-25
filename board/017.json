@@ -1,0 +1,7 @@
+{
+ "id": "017",
+ "title": "Front page: replace 'The last 48 hours' with 'Since the last release', drawn from the timeline rows added since the previous version, and drop this site's own events from it",
+ "status": "open",
+ "owner": "journalist",
+ "order": 17
+}

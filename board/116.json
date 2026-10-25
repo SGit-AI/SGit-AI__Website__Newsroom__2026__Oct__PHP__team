@@ -1,0 +1,8 @@
+{
+ "id": "116",
+ "title": "Your stack, the blast radius (/stack/): describe what you run (internet, edge, apps, platforms, PHP runtimes, data, secrets, services) and see each runtime against both CVEs, the blast radius as a graph, what to do first and what on the site is about your stack; in the browser and the reader's vault",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.8.1",
+ "order": 115
+}

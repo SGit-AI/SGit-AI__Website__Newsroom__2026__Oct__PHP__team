@@ -1,0 +1,7 @@
+{
+ "id": "148",
+ "title": "Go for scheduled updates: an hourly run (only when something moved) and a daily one, with the run's cadence in board 071",
+ "status": "open",
+ "owner": "editor",
+ "order": 147
+}

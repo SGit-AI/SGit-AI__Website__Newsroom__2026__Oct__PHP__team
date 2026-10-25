@@ -1,0 +1,8 @@
+{
+ "id": "164",
+ "title": "The vault key is the master key: the telemetry (84wr8mib) and subscriptions (wgeiqabu) vaults each hold their drain key in identity/private/drain-key.pkcs8.json, protected by the vault's encryption, and their lanes in identity/lanes.json; the telemetry app v0.3.0 drains with the vault key alone (206 events drained that way); managing lanes from the site is next",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.10.9",
+ "order": 163
+}

@@ -1,0 +1,8 @@
+{
+ "id": "275",
+ "title": "The lens: go or not for the live site (replacing the two dials), the words of its three questions, and whether 'I work on this site' is a reader",
+ "status": "open",
+ "owner": "editor",
+ "note": "From the brief on the lens (24 October). With a go, the steps in the brief's 'What it means for the site' go to dev: the boot script and stylesheet on every page, a part() helper in the build, the fallback for untagged pages, menus by the same rules, the settings in the reader's vault (board 140). Overlaps 140 and 235.",
+ "order": 274
+}

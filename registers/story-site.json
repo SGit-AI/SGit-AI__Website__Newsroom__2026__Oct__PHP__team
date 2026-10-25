@@ -1,0 +1,33 @@
+{
+ "agent": "claude-story-site",
+ "member": "story-site",
+ "note": "Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed and completed by claude-story-site on 24 October 2026; its agent key is sha256:f15dbb872e108ec7, made in its session, awaiting the editor's enrolment.",
+ "vaults": [
+  {
+   "id": "dcsmxese",
+   "what": "The coverage vault: 24 pages from other outlets, for the record",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "2026-10-24 (pki-agent seal --from-vault; the link expires 2026-11-07)"
+  },
+  {
+   "id": "w5ie1crc",
+   "what": "Test vault for the phone app (/now/): made to check open, write, publish and read-back; holds a fake OpenRouter key and test briefings only",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "2026-10-24 (pki-agent seal --from-vault; the link expires 2026-11-07)"
+  }
+ ],
+ "holds": [
+  {
+   "id": "dcsmxese",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  },
+  {
+   "id": "w5ie1crc",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22"
+  }
+ ]
+}

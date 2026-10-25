@@ -1,0 +1,87 @@
+{
+ "schema": "newsroom/agent-status/v1",
+ "agent": "ontologist",
+ "as_of": "2026-10-25",
+ "round": "2026-10-25, round 3 (the editor's session)",
+ "state": "Wikipedia: history as lifelines, the talk page, a reviewer's reading (15 findings), a page for Wikipedia's editors, Wikidata links confirmed, the admin-site story on adopting Wikipedia's principles",
+ "done": [
+  {
+   "what": "admin/wikipedia/fetch.py: 364 revisions of the PHP2Shell article, the Wikidata item Q141801185, 198 articles linking in",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "admin/build/wikitext.py: one statement per sentence, classed by wording; references resolved to sources by address and to parties by host",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "/wikipedia/php2shell/ with statements, references and history; the article's graph in the ontology's wikipedia scope, joined to the story graph by captured_as",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "25 new parties for the article's publishers; 'contains' spelled once across scopes",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "/wikipedia/php2shell/evolution/ and /talk/: every statement as a lifeline, the item's history, the talk page as threads; the card wakes four times a day and fetches first",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "/wikipedia/php2shell/review/ (data/wikipedia/php2shell/review.json): 15 findings as a Wikipedia reviewer would make them, with captures and proposed changes, for the editor to take to the talk page in his own words; finding nodes in the graph (ontology v0.5.0)",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "/wikipedia/for-editors/: the collaboration proposal under Wikipedia's LLM guideline: no agent posts, no model-written request, no self-citation; what we offer",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "data/wikidata-links.json: 25 items confirmed by hand; Wikidata and DBpedia tracked on /wikipedia/",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "the story what-wikipedia-knows-about-being-right (admin site): eleven principles for AGENTS.md",
+   "when": "2026-10-25"
+  },
+  {
+   "what": "scheduled task moved into this session at 06:05, 10:05, 14:05, 18:05 London (trig_01MRxGu6YT6eguebZG8DSAni), card updated; old fresh-session task paused, then deleted",
+   "when": "2026-10-25"
+  }
+ ],
+ "tasks": {
+  "board": [],
+  "note": "the board rows this member owns are in data/admin.json"
+ },
+ "next": [
+  {
+   "what": "each wake: fetch all, re-read the review against the new revision (a finding whose statement is gone is shown as such), confirm new Wikidata proposals, re-check DBpedia"
+  },
+  {
+   "what": "board 316 to 319: the editor on the findings and the scheduled tasks, the conductor on the AGENTS.md proposals, abp on the article scope"
+  },
+  {
+   "what": "board 288 to 295 as before; /fractal/ and <sg-graph> brought together (board 181)"
+  }
+ ],
+ "asks": [
+  {
+   "what": "which of the 15 findings, if any, to take to the talk page in his own words (board 315)",
+   "from": "the editor"
+  },
+  {
+   "what": "add admin/content/articles/ for this member, or say that articles stay the editor's call each time (board 318)",
+   "from": "abp@newsroom.sgit"
+  }
+ ],
+ "tokens": {
+  "value": null,
+  "how": "not recorded"
+ },
+ "policy": {
+  "version": "2026-10-24",
+  "out_of_scope_requests": 0,
+  "pushbacks": 0,
+  "overrides": 1,
+  "writes_outside_scope": "one article at the editor's direction; assets/site.css appended; build.py appended",
+  "injection_seen": 0
+ },
+ "debrief": "admin/content/agents/ontologist/debriefs/2026-10-25__wikipedia-history-and-review.md"
+}

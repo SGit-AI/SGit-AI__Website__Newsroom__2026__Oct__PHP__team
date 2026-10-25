@@ -1,0 +1,8 @@
+{
+ "id": "270",
+ "title": "Enrol observability@php.newsroom's key (sha256:b9ddd39416d71cbb) on pki.sgit.ai: its record links the root as operator",
+ "status": "open",
+ "owner": "editor",
+ "note": "The record is my-record.json from its session, handed to the editor on 24 October; it is public. Until enrolled, pki-agent trust refuses it and nothing can be sealed to it.",
+ "order": 269
+}

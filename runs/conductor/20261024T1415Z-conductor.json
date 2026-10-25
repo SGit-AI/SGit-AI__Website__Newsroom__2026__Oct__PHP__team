@@ -1,0 +1,16 @@
+{
+ "run": "20261024T1415Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-24T14:15:53Z",
+ "finished": "2026-10-24T14:16:50Z",
+ "outcome": "ok",
+ "summary": "Full pass (15:15 London). Dev head c1964345d7d0 (v0.15.0) taken in; 0 notes. 24 sessions, 10 enabled scheduled tasks and 13 branches ahead of dev read. Lanes: no key. No run records for researcher (5 wakes), curator (3), pulse (2), ontologist (14:40, just fired), sherpa since 11:45, factcheck's quiet 12:52: all already messaged; most prompts say a quiet wake leaves no record, which AGENTS.md section 7 contradicts: put to the editor. Status page rewritten.",
+ "read": [
+  "20261024T1116Z__observability__to-conductor__a-new-member-observability-php-newsroom"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "sonnet",
+ "cost_usd": null,
+ "head": "c1964345d7d016ddd7a78bf2ff9318f49f72a09d"
+}

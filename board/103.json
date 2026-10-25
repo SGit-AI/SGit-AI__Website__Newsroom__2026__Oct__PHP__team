@@ -1,0 +1,7 @@
+{
+ "id": "103",
+ "title": "Fact-check runs: move the schedule to CRON_TZ=Europe/London 52 8-20/4 * * * once the editor agrees; a run that moves a grade or opens a ticket leaves a dated article with run: <run id>",
+ "status": "open",
+ "owner": "factcheck",
+ "order": 102
+}

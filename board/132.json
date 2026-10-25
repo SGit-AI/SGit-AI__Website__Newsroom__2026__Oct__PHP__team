@@ -1,0 +1,8 @@
+{
+ "id": "132",
+ "title": "Fold data/keys.json and /admin/keys/ (the rules of engagement) together with data/vault-register/ and /team/vaults/, so there is one register of vaults and keys",
+ "status": "done",
+ "owner": "security",
+ "note": "Superseded: data/keys.json was never committed (SA-2026-017) and the editor kept the QR handover; data/vault-register/ is the register.",
+ "order": 131
+}

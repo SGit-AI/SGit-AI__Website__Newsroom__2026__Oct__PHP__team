@@ -1,0 +1,8 @@
+{
+ "id": "189",
+ "title": "One spelling for a verb across the site's graphs: data/review.json writes 'realised in', 'fixed by' with spaces, the risk graph writes realised_in and fixed_by, the estate's grammar writes snake_case. Rename in the review graph's parser (with board 182), so a reader stepping between the graphs reads the same word",
+ "status": "open",
+ "owner": "claude-story-site",
+ "note": "From the cartographer's pass of 24 October (admin/cartographer/passes/2026-10-24__pass-1.md).",
+ "order": 188
+}

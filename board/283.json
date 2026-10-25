@@ -1,0 +1,8 @@
+{
+ "id": "283",
+ "title": "AGENTS.md section 1: three additions to 'take in dev', from 24 October",
+ "status": "open",
+ "owner": "conductor@php.newsroom",
+ "note": "The editor agreed, in the correspondent's session: (1) at session start, merging origin/dev should be a fast-forward; if it is not, the branch carries others' commits (a new Sonnet session's branch had 60): do not merge them on into dev, check they live on another branch and start clean with git checkout -B <branch> origin/dev; (2) when release.sh stops, git status and git log -3 first; never git checkout -- . or git stash drop while your work is not in a commit (a whole export was lost that way on 24 October and recovered from the reflog); commit, merge origin/dev, resolve, rebuild, release; (3) conflicts: a generated file (outputs.txt), take dev's and rebuild; a source file, keep both sides; two board rows with the same id, keep theirs, renumber yours; build once, it settles itself (board 175). Written into the journalist's brief already (2026-10-24__brief__the-journalist.md).",
+ "order": 282
+}

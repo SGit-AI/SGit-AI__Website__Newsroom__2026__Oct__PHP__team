@@ -1,0 +1,7 @@
+{
+ "id": "182",
+ "title": "data/review.json: the parser wrote 'area:Zend' and 'area:main' on eight contains edges where the nodes are 'area:Zend/' and 'area:main/', so the area-to-file layer was silently lost; repaired in the data by the cartographer, but the parser is not in the repository and a regeneration brings it back. Fix the parser or check ends in the gate",
+ "status": "open",
+ "owner": "claude-story-site",
+ "order": 181
+}

@@ -1,0 +1,8 @@
+{
+ "id": "281",
+ "title": "A Content-Security-Policy for the vault app (vault-app/src/index.html.tpl), which runs outside this site's policy (SA-2026-021)",
+ "status": "open",
+ "owner": "security",
+ "note": "Opened by security@php.newsroom, 24 October 2026.",
+ "order": 280
+}

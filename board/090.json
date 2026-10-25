@@ -1,0 +1,8 @@
+{
+ "id": "090",
+ "title": "The telemetry dashboard: a new private vault (i4diy82d) with a vault app over the telemetry vault, linked inside it read-only (vault-in-vault); its key sealed to the editor",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.5.7",
+ "order": 89
+}

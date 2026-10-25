@@ -1,0 +1,11 @@
+{
+ "agent": "journalist@php.newsroom",
+ "member": "journalist",
+ "note": "The scheduled journalist (Sonnet), proposed on 24 October 2026; not yet running. It will read the evidence vault with its published read key; a read key for the source-watch pack vault (7r83qic5) will be sealed to it after the handshake.",
+ "vaults": [],
+ "holds": [],
+ "pki": {
+  "fingerprint": "sha256:de0decfc882a0235",
+  "note": "made in its first session on 24 October 2026, confirmed by the editor the same day; operator: the root; not yet enrolled in the pki.sgit.ai register"
+ }
+}

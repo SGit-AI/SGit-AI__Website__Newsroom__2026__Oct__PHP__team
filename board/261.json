@@ -1,0 +1,9 @@
+{
+ "id": "261",
+ "title": "From CI-003, step 2: a graph diff between any two releases: nodes and edges added and removed, bases changed, gaps opened and closed, with the before-and-after blocks",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.14.24",
+ "note": "Done by dev@php.newsroom on 24 October: /grc/changes/, any two releases compared (nodes and edges added and removed, bases changed, gaps opened and closed, each measure side by side), from data/grc-history.json, which admin/build/grc_history.py writes once per release at its own build, filled back to v0.6.0. Found on the way: 91 repeated edges, removed (BRIEF-CORRECTIONS.md).",
+ "order": 260
+}

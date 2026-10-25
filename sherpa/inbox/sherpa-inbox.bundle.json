@@ -1,0 +1,8 @@
+{
+ "v": 1,
+ "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAoJ6ek2stLjqZIQTYll+v\nQzTYt+RCmmWBgDgaXVwyZrnY3qJvNpzyHv2V7GdtgJROLTRs4W0LlwUb16jjOurU\nKmmtnhGKeo/yVevtAotKSHleBhNNxZO/ktD0UFJTWH7JGBqe9TnUo+tnedzkZWXL\nKYFzTKG/BocOJ+oEhlikDsU9as0yOtRlejhzpXFBkRuDiiIAcKuXxmpAvnfF1onm\nxgaR+coCkqMd1zWR/SYoM6nAtqwt+hwOfKkd7iD79tK1PxzxGb7D64AawwLku0MU\n+VCoWnzdsS4ccGgz8i39A60H1/wxruEB4cappFU9J6CFRrFf5Z4qzRx1+GL5XMTB\nOPuWkqp+raiUcfBNdhZt9k4whgLuWZYL74xVfOtWW16bDZ9sKT5rdIWR8I3ODzI3\najLJBZlNjPf27BzHdJlfsktmnwtV+pjs+LO06dNloy+87hFhDw9qPcDA00eOkD0b\nLyEw6N+JLLumSVtOc7xCAQtpFI3+YqHM+H9fo40PeTelzb4ZekaKMcbe6zOQVTIo\nMExWB9T9CWjQadZN0Di2lELko/y53/rMTYscyLJGmuGb9ecOBZIP5lVUEFFJIiUW\n0C3SHhrhlDNpitPtL9GHnOqPLKGAwkYxFh5Tu+EyvL5RA5UdlxtGpvjFNgn9pl3C\nnMZTzuHeKdEQPiBgoNfrrNkCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+ "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEBxtVZB273agSwhFNxhSZcKexX+H1\nWhTy8eTew2myYUrLxpkqsZhYLZw5Yw+7H5a4IJF61IhL7u9GP6j0fVlH3w==\n-----END PUBLIC KEY-----\n",
+ "label": "Sherpa inbox (d6zak0o3)",
+ "fingerprint": "sha256:3b964d5e3abf03c0",
+ "signing_fingerprint": "sha256:bca38dbcb627e99a"
+}

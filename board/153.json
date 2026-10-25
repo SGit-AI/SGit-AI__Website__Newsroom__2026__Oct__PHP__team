@@ -1,0 +1,7 @@
+{
+ "id": "153",
+ "title": "Show a rewritten line in diffs as removed then added, not word-diffed, when the two lines share little (diff_html): the state of affairs' delta interleaves rewritten paragraphs",
+ "status": "open",
+ "owner": "dev@php.newsroom",
+ "order": 152
+}

@@ -1,0 +1,9 @@
+{
+ "id": "169",
+ "title": "From CI-002, step 4: an impact view: pick a function or file, climb the graph to remediations, vulnerabilities, weaknesses, risks, controls and stakeholders, each with its path",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done: What it puts at stake, in the explorer: from code, a test or a fix, the remediations, flaws, weaknesses, risks, controls, stakeholders, treatments and stories above it, each with its path.",
+ "version": "0.10.13",
+ "order": 168
+}

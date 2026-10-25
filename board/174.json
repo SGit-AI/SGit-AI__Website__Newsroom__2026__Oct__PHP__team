@@ -1,0 +1,8 @@
+{
+ "id": "174",
+ "title": "The journalist reads the source watch only up to 08:30 UTC on 23 October: the read key of pack vault 7r83qic5 is needed for KEV, NVD, EPSS and repository series after that",
+ "status": "done",
+ "owner": "editor",
+ "note": "Read key only; the write key is neither wanted nor to be accepted. Closed 24 October: the editor, the journalist reads only the evidence vault (3ytzxm3g, published read key) and needs no key for the source watch; KEV and the other series come into the site through the curator's promotions (and, for the state of affairs, the Pulse vault).",
+ "order": 173
+}

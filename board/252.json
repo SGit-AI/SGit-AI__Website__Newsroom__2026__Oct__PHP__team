@@ -1,0 +1,9 @@
+{
+ "id": "252",
+ "title": "The redesign, live: the front page on layout A, /ops/ (B) and /analysis/ (C) as homes by persona, the menu by task with two dials (who you are; Focus, Standard, Everything), the wide layout, and every admin page in the team console (D)",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor, 24 October, in story-site's session: \"I think you implement all of them.\" Covers most of 139 to 142 (rows of dev, the briefing writer and the editor, left for their owners to close): the dials are remembered in the browser, not yet in the reader's vault; pattern C is on the agencies page only. Brief: admin/content/briefs/2026-10-24__brief__the-redesign-live.md.",
+ "version": "0.14.0",
+ "order": 251
+}

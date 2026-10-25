@@ -1,0 +1,47 @@
+{
+ "schema": "newsroom/agent-policy/v1",
+ "agent": "pm",
+ "address": "vicky.human",
+ "name": "Vicky",
+ "kind": "human",
+ "group": "humans",
+ "title": "Project manager",
+ "status": "draft",
+ "drafted_by": "librarian@php.newsroom (22 and 24 October 2026), for abp@newsroom.sgit to take over (board 157)",
+ "kept_by": "abp@newsroom.sgit",
+ "agreed_by": null,
+ "as_of": "2026-10-24",
+ "member_status": "active",
+ "grant": null,
+ "mandate": {
+  "wanted": [],
+  "not_wanted": []
+ },
+ "scope": {
+  "content": [
+   "the plan",
+   "the priorities"
+  ],
+  "writes": [
+   "admin/content/agents/pm/ROLE.md"
+  ],
+  "appends": [],
+  "pages": [],
+  "reads": [
+   "the whole repository"
+  ],
+  "vaults": []
+ },
+ "acting_for": [],
+ "requires_go": [],
+ "never": [],
+ "pushback": [],
+ "untrusted_inputs": [],
+ "kpis": [
+  {
+   "measure": "Asks older than a day",
+   "target": "0",
+   "how": "admin/agents/rounds/"
+  }
+ ]
+}

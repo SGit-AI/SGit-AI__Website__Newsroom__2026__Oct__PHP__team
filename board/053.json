@@ -1,0 +1,7 @@
+{
+ "id": "053",
+ "title": "Capture the NCSC-NL inventory's later commits into the vault, so the history on /patching/inventory/ rests on captures as well as on the public repository",
+ "status": "open",
+ "owner": "collector-gov",
+ "order": 53
+}

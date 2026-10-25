@@ -1,0 +1,7 @@
+{
+ "id": "112",
+ "title": "The organisation as a digital twin: data/twin.json (roles, artefacts, typed edges: produces, consumes, hands over to, triggers, escalates to) and /team/twin/, the state machine drawn, with the schedules on a 24-hour clock and the escalation lanes",
+ "status": "open",
+ "owner": "conductor",
+ "order": 111
+}

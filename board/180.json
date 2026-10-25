@@ -1,0 +1,8 @@
+{
+ "id": "180",
+ "title": "The Sherpa drains the lanes (the editor, 24 October 2026): a go for its schedule (data/schedule/sherpa.json, proposed: every two hours at :45, 07:45 to 21:45 London), and the conductor's lane key (5iwos28w) handed to it sealed; it already holds the collaborators' lane key (58526ytp)",
+ "status": "waiting",
+ "owner": "editor",
+ "note": "Until then the conductor's editor session drains the lanes.",
+ "order": 179
+}

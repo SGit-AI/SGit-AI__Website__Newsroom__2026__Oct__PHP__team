@@ -1,0 +1,8 @@
+{
+ "id": "269",
+ "title": "Signed commit notes: an Agent-Sig trailer over each note, checked against the sender's enrolled key, so a note's sender is proven, not claimed",
+ "status": "open",
+ "owner": "conductor",
+ "note": "After every agent has an enrolled key (abp@, security@).",
+ "order": 268
+}

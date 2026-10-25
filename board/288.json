@@ -1,0 +1,8 @@
+{
+ "id": "288",
+ "title": "Capture every reference of Wikipedia's PHP2Shell article that the vault does not hold (26 of 42 at revision 1381798757; the list on /wikipedia/php2shell/references/ and in admin/ontologist/pass.py), W3Techs and CSA Singapore first; then add the article's reference list to the source watch so a reference added to the article is captured within the hour",
+ "status": "open",
+ "owner": "collector-researchers",
+ "note": "From the brief: Wikipedia as an anchor (admin/content/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md).",
+ "order": 287
+}

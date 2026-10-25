@@ -1,0 +1,8 @@
+{
+ "id": "039",
+ "title": "Re-export from the vault head: 184 sources in the vault against 144 here, and the newsroom's tracker check 3",
+ "status": "open",
+ "owner": "dev",
+ "note": "Done on the journalist's branch on 23 October: re-exported from the evidence vault at f3c5db0d9873 (227 sources, data as of 01:20 UTC on 23 October), for dev@php.newsroom to carry in and close.",
+ "order": 39
+}

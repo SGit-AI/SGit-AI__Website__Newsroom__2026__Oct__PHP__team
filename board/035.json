@@ -1,0 +1,8 @@
+{
+ "id": "035",
+ "title": "/status/: each newsroom site's deploy runs, read from GitHub's public API with no credential, beside the version each site serves; every page notes when a newer release is live",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.2.12",
+ "order": 35
+}

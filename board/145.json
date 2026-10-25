@@ -1,0 +1,7 @@
+{
+ "id": "145",
+ "title": "Scanner test in a lab (editor, 23 October: a task for later, not now): run the public php2shell scanners and check scripts against a distribution-patched PHP (e.g. Ubuntu 8.5.4-0ubuntu1.5) and an unpatched one in an isolated lab, and record which ones get each right; tests the tools, never anyone's systems; starts only on the editor's go",
+ "status": "open",
+ "owner": "cyber@php.newsroom",
+ "order": 144
+}

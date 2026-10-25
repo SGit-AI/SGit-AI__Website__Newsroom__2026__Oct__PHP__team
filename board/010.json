@@ -1,0 +1,7 @@
+{
+ "id": "010",
+ "title": "Re-check KEV and oss-security daily; record the day php2shell enters KEV if it does",
+ "status": "open",
+ "owner": "collector-primary",
+ "order": 10
+}

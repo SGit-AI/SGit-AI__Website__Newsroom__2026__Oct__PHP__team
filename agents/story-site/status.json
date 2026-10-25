@@ -1,0 +1,80 @@
+{
+ "schema": "newsroom/agent-status/v1",
+ "agent": "story-site",
+ "as_of": "2026-10-25",
+ "round": 3,
+ "state": "round 3 closed: the editor's design of 25 October built as prototype F, the line",
+ "done": [
+  {
+   "what": "The briefs page as a list of titles with a page per brief, and the admin pages using the whole width",
+   "evidence": "v0.20.0; boards 309 and 310"
+  },
+  {
+   "what": "The line on a phone no longer holds the top of the screen, and the article on URL paths, personas in the address and a single-page site",
+   "evidence": "v0.19.0; boards 304 and 305; the debrief's closing section"
+  },
+  {
+   "what": "Prototype F, the line, at /admin/design/line/: six pages on the editor's briefing pack, the pack's engine and words vendored with its 19 tests, every number filled from the evidence vault",
+   "evidence": "v0.17.0; board 296; debrief 2026-10-25__the-line.md"
+  },
+  {
+   "what": "Headlines near the top of every page: the bar in two lines, slim strips, /ops/ and /analysis/ fixed on a phone",
+   "evidence": "v0.16.0; board 286; debrief 2026-10-24__the-chrome-and-the-lens-pack.md"
+  },
+  {
+   "what": "Prototype E, the lens, at /admin/design/lens/ (three pages, from the live data), and its brief",
+   "evidence": "admin/content/briefs/2026-10-24__brief__the-lens.md; board 274; debrief 2026-10-24__the-lens.md"
+  },
+  {
+   "what": "The redesign live: tracks A, B, C, the team console, the task menu and two dials, the wide layout",
+   "evidence": "v0.14.0; board 252"
+  }
+ ],
+ "tasks": {
+  "board": [
+   "297 (editor: the line live)",
+   "298 (editor: the five decisions)",
+   "306 (editor: the URL shape and the router)",
+   "299",
+   "230",
+   "231",
+   "223",
+   "226",
+   "227"
+  ],
+  "note": "the board rows this member owns are in data/admin.json"
+ },
+ "next": [
+  {
+   "what": "Step 1 of the article: persona paths as real files for the pages that read differently, canonical to the base, with Share minting them",
+   "why": "it is what gives a link that names its persona, and it ships on its own; waiting on board 306"
+  },
+  {
+   "what": "Step 1 of the line's rollout on the live pages",
+   "why": "waiting on board 297"
+  }
+ ],
+ "asks": [
+  {
+   "what": "The go for the line on the live site (297), its five decisions (298), and the URL shape and router decisions in the article (302)",
+   "from": "the editor"
+  },
+  {
+   "what": "Enrol story-site's key, sha256:f15dbb872e108ec7",
+   "from": "the editor"
+  }
+ ],
+ "tokens": {
+  "value": null,
+  "how": "the session does not show a token count to the agent"
+ },
+ "policy": {
+  "version": "2026-10-22",
+  "out_of_scope_requests": 0,
+  "pushbacks": 0,
+  "overrides": 1,
+  "writes_outside_scope": "admin/briefs/** and build.py's briefs block: the editor asked for it directly in this session; admin/briefs/** is his own page in admin/content/agents/editor/policy.json",
+  "injection_seen": 0
+ },
+ "debrief": "admin/content/agents/story-site/debriefs/2026-10-25__the-line.md"
+}

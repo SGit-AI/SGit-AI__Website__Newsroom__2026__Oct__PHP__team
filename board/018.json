@@ -1,0 +1,7 @@
+{
+ "id": "018",
+ "title": "Navigation: split About into About (method, team, brief, corrections) and Engineering (admin, board, roles, briefs, telemetry, releases); move billing and the reading account to the bar's balance",
+ "status": "open",
+ "owner": "dev",
+ "order": 18
+}

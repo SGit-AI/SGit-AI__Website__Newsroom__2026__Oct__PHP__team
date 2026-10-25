@@ -1,0 +1,8 @@
+{
+ "id": "096",
+ "title": "GRC run 2: re-rate every risk against the next vault capture (a KEV listing or a confirmed compromise moves R03 and R06), add the stakeholders the next captures name, and map the remaining controls each holder will be asked about",
+ "status": "open",
+ "owner": "grc",
+ "note": "From the brief: a GRC desk joins the team (22 October).",
+ "order": 95
+}

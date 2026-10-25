@@ -1,0 +1,8 @@
+{
+ "id": "298",
+ "title": "The line's decisions for the editor: the Executive as the default, the team not being a persona, the seven empty role x depth cells, the thresholds, and who writes the page lines",
+ "status": "open",
+ "owner": "editor",
+ "note": "Section 14 of the brief. The prototype ships the pack's answers to all five; they are cheap to change (assets/design/line/roles.json, copy.src.json and moments.json are read by the build).",
+ "order": 297
+}

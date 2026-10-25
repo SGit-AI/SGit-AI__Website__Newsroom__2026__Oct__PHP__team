@@ -1,0 +1,8 @@
+{
+ "id": "058",
+ "title": "Capture raw on every change: page, rendered, text, screenshot, headers and the data itself (JSON, CSV, git, RSS), hashed, a new stamped folder only when the hash changes, a check-log line when it does not",
+ "status": "open",
+ "owner": "collector-researchers",
+ "note": "From the brief on scheduled capture, JSON and analysis (22 October, critical).",
+ "order": 58
+}

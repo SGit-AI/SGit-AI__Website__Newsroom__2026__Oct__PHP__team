@@ -1,0 +1,8 @@
+{
+ "id": "295",
+ "title": "The ontologist's policy (admin/content/agents/ontologist/policy.json, kept by abp@): add data/wikipedia/**, admin/wikipedia/** and admin/build/wikitext.py to scope.writes and wikipedia/** to scope.pages; until then the gate warns that the Wikipedia pages have no owner",
+ "status": "open",
+ "owner": "abp",
+ "note": "From the brief: Wikipedia as an anchor (25 October).",
+ "order": 294
+}

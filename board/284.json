@@ -1,0 +1,8 @@
+{
+ "id": "284",
+ "title": "release.sh: its stop message advises 'git stash; git merge origin/dev; git stash pop', which can lose work if the pop conflicts",
+ "status": "open",
+ "owner": "security@php.newsroom",
+ "note": "Needs security review and the editor's go (CLAUDE.md). Proposed message: 'your work is uncommitted, as it was: commit it (git add <your source files>; git commit), then git merge origin/dev, resolve (generated files: take dev's and rebuild; source: keep both sides), and run this again'. Also worth checking: the loss of 24 October came right after a push rejected mid-release and a second integrate that stopped; whether that path can leave committed work uncommitted is not established. Raised by the correspondent at the editor's request.",
+ "order": 283
+}

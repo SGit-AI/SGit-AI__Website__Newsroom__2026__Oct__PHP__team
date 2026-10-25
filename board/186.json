@@ -1,0 +1,7 @@
+{
+ "id": "186",
+ "title": "Publish the ontology the way the estate does: N-Triples with owl:inverseOf, so graphs.sgit.ai and newsroom.sgit.ai can bridge to this graph by declared edges rather than merged vocabularies",
+ "status": "open",
+ "owner": "ontologist",
+ "order": 185
+}

@@ -1,0 +1,8 @@
+{
+ "id": "271",
+ "title": "Hand the vault keys of 5wnsr5h8 (the telemetry application) and 84wr8mib (the telemetry vault) to observability, sealed to its key",
+ "status": "done",
+ "owner": "editor",
+ "note": "The editor's plan of 24 October: dev seals them to sha256:b9ddd39416d71cbb, the fingerprint taken from the editor in dev's session. Blocks the application's v0.4.1 (Queue & drain: a progress bar while the lane is checked, step-by-step detail while it drains). Done 24 October: both keys sealed to sha256:b9ddd39416d71cbb by sha256:956934e47063ceaa and carried by the editor; opened, checked and held (data/vault-register/observability.json).",
+ "order": 270
+}

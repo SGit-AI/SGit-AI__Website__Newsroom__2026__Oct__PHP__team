@@ -1,0 +1,8 @@
+{
+ "id": "187",
+ "title": "Twelve pages are recorded twice in data/sources.json under different slugs (for example tpo-nl-digid-offline and tpo-tpo-nl-digid-offline, cisa-kev-catalog and cisa-kev-json, ch-unige-down and unige-site); and unige.ch and epfl.ch, two universities, are classed 'government'. Merge or mark each pair as a later capture of the same page (supersedes), and fix the class. The list: python3 admin/ontologist/pass.py (the cartographer is now the ontologist)",
+ "status": "open",
+ "owner": "collector-researchers",
+ "note": "From the cartographer's pass of 24 October (admin/cartographer/passes/2026-10-24__pass-1.md).",
+ "order": 186
+}

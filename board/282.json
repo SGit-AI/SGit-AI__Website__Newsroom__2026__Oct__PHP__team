@@ -1,0 +1,8 @@
+{
+ "id": "282",
+ "title": "Signed messages and cards (SA-2026-024): a design using each agent's pki.sgit.ai key, for the editor and the conductor",
+ "status": "open",
+ "owner": "security",
+ "note": "Opened by security@php.newsroom, 24 October 2026.",
+ "order": 281
+}

@@ -1,0 +1,85 @@
+{
+ "schema": "newsroom/agent-status/v1",
+ "agent": "conductor",
+ "as_of": "2026-10-24",
+ "round": 1,
+ "state": "round 1 closed: schedules in the repository, the conductor's schedule active, Commit-FS-lite, dev's red CI fixed, dev's reverted v0.14.24 restored",
+ "done": [
+  {
+   "what": "/team/status/ full pass (v0.10.18)",
+   "evidence": "data/agents-status.json, /team/status/; v0.10.18"
+  },
+  {
+   "what": "schedules, runs and messages in the repository, /team/schedule/ (v0.10.22)",
+   "evidence": "data/schedule/, data/runs/, data/messages/, admin/build/schedule.py, /team/schedule/; v0.10.22"
+  },
+  {
+   "what": "the conductor's schedule: a Sonnet session, hourly 07:15 to 21:15 London (v0.10.24)",
+   "evidence": "data/schedule/conductor.json, session conductor@php.newsroom (scheduled), one scheduled task; v0.10.24"
+  },
+  {
+   "what": "the Sherpa drains the lanes: its card drafted (v0.11.4)",
+   "evidence": "data/schedule/sherpa.json; v0.11.4"
+  },
+  {
+   "what": "Commit-FS-lite and /team/comms/ (v0.14.23)",
+   "evidence": "AGENTS.md section 8, /team/comms/; v0.14.23"
+  },
+  {
+   "what": "dev's red CI fixed: /team/comms/ from data/comms.json (v0.14.24)",
+   "evidence": "data/comms.json, schedule.py export-notes; v0.14.24"
+  },
+  {
+   "what": "dev's v0.14.24, reverted by the conductor's release, restored (v0.14.26)",
+   "evidence": "c0bef8898 replayed on dev; this release"
+  }
+ ],
+ "tasks": {
+  "board": [
+   "177",
+   "178",
+   "179",
+   "180",
+   "268",
+   "269"
+  ],
+  "note": "the board rows this member owns are in data/admin.json"
+ },
+ "next": [
+  {
+   "what": "check /grc/changes/ with dev after the restore",
+   "why": "my release reverted it; the restore should be whole"
+  },
+  {
+   "what": "watch the scheduled conductor's first wakes and correct its card",
+   "why": "its first wakes are on 24 October"
+  },
+  {
+   "what": "signed commit notes (board 269)",
+   "why": "an Agent: line is a claim, not proof"
+  }
+ ],
+ "asks": [
+  {
+   "what": "a go for the Sherpa's schedule; the conductor lane's key handed to the Sherpa, sealed; the researcher's wake prompts changed (board 177, 180)",
+   "from": "the editor"
+  },
+  {
+   "what": "data/comms.json and data/schedule/* in the conductor's policy scope",
+   "from": "abp@newsroom.sgit"
+  }
+ ],
+ "tokens": {
+  "value": null,
+  "how": "the editor's session does not show its total to the agent"
+ },
+ "policy": {
+  "version": "2026-10-24",
+  "out_of_scope_requests": 0,
+  "pushbacks": 0,
+  "overrides": 0,
+  "writes_outside_scope": 10,
+  "injection_seen": 1
+ },
+ "debrief": "admin/content/agents/conductor/debriefs/2026-10-24__schedules-and-commit-notes.md"
+}

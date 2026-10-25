@@ -1,0 +1,8 @@
+{
+ "id": "002",
+ "title": "Admin section: the board, the roles, the briefs, the vault with its public read key, telemetry",
+ "status": "done",
+ "owner": "dev",
+ "version": "0.2.3",
+ "order": 1
+}

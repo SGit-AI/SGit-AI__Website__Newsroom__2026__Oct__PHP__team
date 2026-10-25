@@ -1,0 +1,8 @@
+{
+ "id": "312",
+ "title": "Proposal: one repository into six (kit, data, refs, updates, site, team), meeting through versions by URL, not submodules; the five decisions for the editor",
+ "status": "done",
+ "owner": "editor",
+ "note": "dev@php.newsroom's proposal of 25 October, at the editor's request: /admin/briefs/2026-10-25__proposal__one-repository-into-six/. Phase 1 (inside today's repository) to be agreed with the refactor session. Agreed by the editor on 25 October ('I think that's the way to do it'); the plan is the brief 'Plan: one repository into six, the implementation'.",
+ "order": 311
+}

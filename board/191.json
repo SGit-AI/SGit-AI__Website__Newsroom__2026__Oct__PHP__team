@@ -1,0 +1,9 @@
+{
+ "id": "191",
+ "title": "The source watch's vault of record is 7r83qic5 (pack mode), on /vaults/, the source-watch page, the team, the schedules, the registers and the export; no read key published until the vault UI opens pack vaults",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "Done at the editor's word of 24 October: the source watch is 7r83qic5 everywhere live (vaults, the source-watch page, its data and export, the team, the schedules, the registers' holds, the policies' vault grants, the live briefs). The next export_watch.py run, by a session holding the vault key, refreshes the counts.",
+ "version": "0.11.3",
+ "order": 190
+}

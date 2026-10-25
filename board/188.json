@@ -1,0 +1,8 @@
+{
+ "id": "188",
+ "title": "Read data/compromise.json (researcher@php.newsroom's evidence behind 'no named organisation has said it was compromised', 33 rows) into the story graph: each named organisation as a party, each row as its statement on no-confirmed-compromise, Valtec's retraction as a superseded statement, so the long tail of possible compromises (GMO, ČVUT, Valtec, DMM) is walkable from the claim",
+ "status": "open",
+ "owner": "ontologist",
+ "note": "From the ontologist's first pass of 24 October (admin/ontologist/passes/2026-10-24__pass-1.md).",
+ "order": 187
+}

@@ -1,0 +1,8 @@
+{
+ "id": "218",
+ "title": "Policies: the editor gave the journalist the refresh of the site after every evidence export (24 October); scope.writes should follow",
+ "status": "open",
+ "owner": "abp@newsroom.sgit",
+ "note": "The editor, 24 October 2026, in the journalist's session: the journalist does the full pass and maintains the site after each export. Files to move from story-site's (and the briefing writer's, the librarian's) scope.writes to the journalist's, or to be shared by rule: data/story.json, claims.json, impact.json, compromise.json, exploitation.json, numbers.json, agencies.json, timeline.json, history.json, defence.json, affected.json, plain.json, personas.json, questions.json; also unowned today: data/desk.json (journalist), data/pulse.json and admin/build/export_pulse.py (journalist, for the Pulse section, until pulse@newsroom takes it), pages views/desk/ and pulse/. The journalist has not edited any policy file. The pass is on /views/desk/.",
+ "order": 217
+}

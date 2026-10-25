@@ -1,0 +1,8 @@
+{
+ "id": "118",
+ "title": "Design: --warn-* and --info-* tokens were mapped to themselves in assets/themes/site-tokens.css (cyclic, so invalid) since v0.2.4: every warning and info pill rendered with no colour. Fixed in v0.8.1; checked in all five themes (computed tokens and a pill on /claims/)",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.8.1",
+ "order": 117
+}

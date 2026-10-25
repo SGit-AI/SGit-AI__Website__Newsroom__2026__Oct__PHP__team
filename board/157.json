@@ -1,0 +1,7 @@
+{
+ "id": "157",
+ "title": "One agent behaviour policy per agent that sets its scope: what it may change and release, which vaults and keys it may hold, what it may read and send; from the draft in admin/security/abp/MANDATE.md, for the editor to agree (the editor, 23 October: 'solid ABPs that define the scope of each agent')",
+ "status": "open",
+ "owner": "abp",
+ "order": 156
+}

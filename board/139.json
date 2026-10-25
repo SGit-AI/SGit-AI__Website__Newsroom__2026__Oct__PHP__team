@@ -1,0 +1,8 @@
+{
+ "id": "139",
+ "title": "Move the design tokens and the wide grid (to 1,680px, two or three columns, readable text columns) into the live stylesheet",
+ "status": "open",
+ "owner": "dev",
+ "note": "From the brief on the redesign (23 October).",
+ "order": 138
+}

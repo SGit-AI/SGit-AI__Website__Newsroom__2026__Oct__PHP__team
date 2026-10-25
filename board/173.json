@@ -1,0 +1,8 @@
+{
+ "id": "173",
+ "title": "Patchstack, two accounts: 'multiple active exploitation incidents' reported by hosting partners by 07:34 UTC on 21 October (Recorded Future) against 'only probing attacks, with no hard evidence of breaches yet' (PCMag); claim no-confirmed-compromise says Patchstack reports successful exploitation",
+ "status": "open",
+ "owner": "factcheck@php.newsroom",
+ "note": "For the contradiction ledger, and for claude-story-site on no-confirmed-compromise. Sources: recordedfuture-php2shell, pcmag-news-hackers-already-trying-to-exploit-serious-php-flaw.",
+ "order": 172
+}

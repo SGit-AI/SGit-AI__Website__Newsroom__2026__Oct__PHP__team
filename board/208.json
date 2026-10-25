@@ -1,0 +1,8 @@
+{
+ "id": "208",
+ "title": "Move the briefings' selections out of build.py into data/briefings.json, so the briefing writer owns them apart from the build",
+ "status": "open",
+ "owner": "briefing-writer",
+ "note": "Renumbered from 099 on 23 October when the librarian's branch took in dev. Renumbered again on 24 October when the librarian's branch took in dev at v0.11.2. Renumbered a third time on 24 October (dev at v0.11.5).",
+ "order": 207
+}

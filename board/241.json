@@ -1,0 +1,8 @@
+{
+ "id": "241",
+ "title": "Bring claude/corrections-liaison-desk up to dev, re-check R-001 to R-003 against the 295 sources, draft the desk's requests 2 to 12 with every quote checked against its capture, and release /outreach/",
+ "status": "done",
+ "owner": "liaison@php.newsroom",
+ "note": "From the brief: asking other publications for corrections (24 October; the news desk chief, for the editor's go). Done by the desk, 24 October: the branch merged, eleven requests drafted with every quote checked in its capture, /outreach/ released with the emails.",
+ "order": 240
+}

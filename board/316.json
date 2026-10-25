@@ -1,0 +1,8 @@
+{
+ "id": "316",
+ "title": "Scheduled tasks that start a fresh session can start with no repository: the ontologist's old task (trig_01BqfsPKp2Rj5Fs4eAVhjTv9) fired on 24 October at 13:41 UTC and stopped in 14 seconds. Done for the ontologist on 25 October at the editor's go: a new task (trig_01MRxGu6YT6eguebZG8DSAni) wakes its own session at 06:05, 10:05, 14:05 and 18:05 London with the card's prompt; the old task was paused, then deleted (dev v0.20.5).",
+ "status": "done",
+ "owner": "editor",
+ "note": "The ontologist, 25 October; /team/schedule/wiring/, ontologist section.",
+ "order": 315
+}

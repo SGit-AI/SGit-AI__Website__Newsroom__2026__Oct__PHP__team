@@ -1,0 +1,9 @@
+{
+ "id": "001",
+ "title": "Pages deploy workflow and breadcrumbs up to the month, the year and the newsroom",
+ "status": "done",
+ "owner": "dev",
+ "version": "0.2.2",
+ "note": "The first run failed because admin/build/ was ignored by the repository's Python .gitignore template.",
+ "order": 0
+}

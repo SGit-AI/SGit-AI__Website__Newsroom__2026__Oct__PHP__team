@@ -1,0 +1,8 @@
+{
+ "id": "273",
+ "title": "An SG/Send access token for observability@php.newsroom, sealed to sha256:b9ddd39416d71cbb, to push the telemetry application (5wnsr5h8) and drain 84wr8mib from the command line",
+ "status": "done",
+ "owner": "editor",
+ "note": "The telemetry application v0.4.1 (Queue & drain shows its progress) is committed in 5wnsr5h8 and waits for this to be pushed: a vault key reads and commits, the server takes a push only with an access token. Done 24 October: the editor gave it in the session; v0.4.1 and v0.4.2 pushed.",
+ "order": 272
+}

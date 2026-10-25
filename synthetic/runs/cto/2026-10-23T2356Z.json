@@ -1,0 +1,524 @@
+{
+ "schema": "sgit.newsroom.synthetic-run-export/1",
+ "persona": "cto",
+ "run": "2026-10-23T2356Z",
+ "started": "2026-10-23T2356Z",
+ "finished": "2026-10-23T23:56:25Z",
+ "site_version": "0.10.18",
+ "data_as_of": "2026-10-23T01:20Z",
+ "device": {
+  "width": 1440,
+  "height": 900,
+  "mobile": false,
+  "scale": 1,
+  "color_scheme": "dark"
+ },
+ "question": "How bad is this for us, what is the fix and its side effects, how fast must we move, and what do I tell the board?",
+ "pages": [
+  {
+   "n": 1,
+   "path": "index.html",
+   "why": "start",
+   "title": "PHP in October 2026: two critical security flaws, tracked as evidence · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 2107,
+   "screens": 7.1,
+   "reading_ease": 56.7,
+   "min_font_px": 11.84,
+   "small_text_blocks": 1,
+   "low_contrast_count": 0,
+   "contrast_checked": 86,
+   "tap_targets": 189,
+   "tap_targets_small": 22,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 722,
+   "jargon_per_1000": 12.8,
+   "jargon_top": [
+    "CISA",
+    "CVE",
+    "NCSC",
+    "NSA",
+    "Patch"
+   ]
+  },
+  {
+   "n": 2,
+   "path": "briefings/cto/index.html",
+   "why": "reading path",
+   "title": "Briefing for a CTO: What does this cost us in engineering time, what breaks when we patch, and what do we change so the next one is a non-event? · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 2186,
+   "screens": 7.3,
+   "reading_ease": 35.7,
+   "min_font_px": 11.84,
+   "small_text_blocks": 2,
+   "low_contrast_count": 0,
+   "contrast_checked": 191,
+   "tap_targets": 258,
+   "tap_targets_small": 56,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 686,
+   "jargon_per_1000": 34.3,
+   "jargon_top": [
+    "CVE",
+    "Patch",
+    "CERT",
+    "CISA",
+    "NCSC"
+   ]
+  },
+  {
+   "n": 3,
+   "path": "flaws/index.html",
+   "why": "reading path",
+   "title": "The two flaws: CVE-2026-109618 and CVE-2026-109619 · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1503,
+   "screens": 4.7,
+   "reading_ease": 52.0,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 114,
+   "tap_targets": 112,
+   "tap_targets_small": 8,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 796,
+   "jargon_per_1000": 39.3,
+   "jargon_top": [
+    "CVE",
+    "mod_php",
+    "Backport",
+    "NCSC",
+    "CVSS"
+   ]
+  },
+  {
+   "n": 4,
+   "path": "patching/index.html",
+   "why": "reading path",
+   "title": "Patching: which versions get a fix, and from whom · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1636,
+   "screens": 5.2,
+   "reading_ease": 34.4,
+   "min_font_px": 12.8,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 110,
+   "tap_targets": 87,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 829,
+   "jargon_per_1000": 17.1,
+   "jargon_top": [
+    "NCSC",
+    "CVE",
+    "Backport",
+    "End of life",
+    "CISA"
+   ]
+  },
+  {
+   "n": 5,
+   "path": "playbook/index.html",
+   "why": "reading path",
+   "title": "If you run PHP: the steps, in order, with their sources · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 787,
+   "screens": 2.7,
+   "reading_ease": 50.7,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 38,
+   "tap_targets": 90,
+   "tap_targets_small": 8,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 691,
+   "jargon_per_1000": 43.2,
+   "jargon_top": [
+    "NCSC",
+    "CERT",
+    "CISA",
+    "Patch",
+    "NSA"
+   ]
+  },
+  {
+   "n": 6,
+   "path": "defence/index.html",
+   "why": "reading path",
+   "title": "Detection and defence: what blocks php2shell and what shows it · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1310,
+   "screens": 3.8,
+   "reading_ease": 38.0,
+   "min_font_px": 12.16,
+   "small_text_blocks": 0,
+   "low_contrast_count": 0,
+   "contrast_checked": 71,
+   "tap_targets": 96,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 802,
+   "jargon_per_1000": 23.7,
+   "jargon_top": [
+    "WAF",
+    "Multipart",
+    "CVE",
+    "Shell",
+    "Patch"
+   ]
+  },
+  {
+   "n": 7,
+   "path": "articles/why-not-patch-every-version/index.html",
+   "why": "followed a link",
+   "title": "Why can't every version of PHP just be patched? · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 1582,
+   "screens": 4.2,
+   "reading_ease": 59.4,
+   "min_font_px": 11.84,
+   "small_text_blocks": 1,
+   "low_contrast_count": 0,
+   "contrast_checked": 49,
+   "tap_targets": 97,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 803,
+   "jargon_per_1000": 13.9,
+   "jargon_top": [
+    "NCSC",
+    "Patch",
+    "CVE",
+    "CISA",
+    "CERT"
+   ]
+  },
+  {
+   "n": 8,
+   "path": "glossary/index.html",
+   "why": "followed a link",
+   "title": "Glossary: every php2shell term in plain English · PHP October 2026",
+   "error": null,
+   "h1": 1,
+   "words": 2990,
+   "screens": 11.6,
+   "reading_ease": 60.9,
+   "min_font_px": 11.84,
+   "small_text_blocks": 1,
+   "low_contrast_count": 0,
+   "contrast_checked": 184,
+   "tap_targets": 108,
+   "tap_targets_small": 7,
+   "overflow_x": false,
+   "images": 0,
+   "images_no_alt": 0,
+   "status": 200,
+   "load_ms": 748,
+   "jargon_per_1000": 36.8,
+   "jargon_top": [
+    "CVE",
+    "Web server",
+    "Shell",
+    "NCSC",
+    "Vulnerability"
+   ]
+  }
+ ],
+ "totals": {
+  "pages": 8,
+  "requests": 144,
+  "blocked": 24,
+  "failed": 0,
+  "bytes": 3275682,
+  "console_errors": 0,
+  "words_read": 14101
+ },
+ "checks": [
+  {
+   "severity": "low",
+   "page": "index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 1 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "briefings/cto/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 2 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "articles/why-not-patch-every-version/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 1 blocks below 12px"
+  },
+  {
+   "severity": "low",
+   "page": "glossary/index.html",
+   "check": "text at least 12px",
+   "evidence": "smallest 11.84px, 1 blocks below 12px"
+  }
+ ],
+ "extra_viewports": [],
+ "machine_formats": [],
+ "feedback": {
+  "verdict": "I still get severity, fix, side effects and urgency inside two pages, with evidence I can check, but a day on there is still no paragraph I can take to my board, the CTO path is still 20 minutes for my 8, and the claims table now carries a second grading badge that sometimes argues with the status beside it.",
+  "answered_question": "partly",
+  "time_to_answer": "Severity, fixed versions and urgency on the front page's At a glance block (just below the first screen of index.html); fix order and side effects in the thirty-second answer and 'What to decide or do' on briefings/cto/index.html (page 2, first screen); the container answer improved on patching/index.html (page 4); the board message never came, and I assembled it myself from At a glance and 'What nobody knows yet'.",
+  "scores": {
+   "answered": 4,
+   "clarity": 3,
+   "trust": 4,
+   "design": 3,
+   "navigation": 3
+  },
+  "works": [
+   {
+    "point": "The thirty-second answer is still exactly the right shape: patch order by SAPI, restart and rebuild, test under load, EOL has no release, then the inventory lesson.",
+    "page": "briefings/cto/index.html"
+   },
+   {
+    "point": "'What to decide or do' now ends the patch step with 'then verify the running version inside the container', which is the container check I asked for, said in the place I read first.",
+    "page": "briefings/cto/index.html"
+   },
+   {
+    "point": "At a glance answers fix, severity, attackers, confirmed hacks, KEV, offline count and agency advice in eight tiles; it is still most of my first board slide.",
+    "page": "index.html"
+   },
+   {
+    "point": "'What nobody knows yet' lists the open questions (any real breach, completeness of the fix, the leak, the offline list, the 70% figure) in plain words; that is the honest caveat paragraph a board needs.",
+    "page": "index.html"
+   },
+   {
+    "point": "Severity comes with its evidence and its tempering: 9.2 with the full CVSS v4.0 vector, the 10.0 figure marked contradicted, and AC:H and AT:P explained on the defence page.",
+    "page": "flaws/index.html"
+   },
+   {
+    "point": "The affected and fixed versions table with the scanner warning on defaultStatus 'unaffected' is still the single most actionable thing for my vulnerability management.",
+    "page": "flaws/index.html"
+   },
+   {
+    "point": "The new 'How a fix reaches a server' grouping puts the Docker Official Image under 'Fixed, but you must rebuild and redeploy', which tells my platform team the image is fixed and that nothing running changes until we rebuild.",
+    "page": "patching/index.html"
+   },
+   {
+    "point": "'What the fix changes' gives me the regression-test list (deferred OOM, two new settings with defaults, 389 files, 113 outside tests) and says plainly that no regression is reported yet.",
+    "page": "patching/index.html"
+   },
+   {
+    "point": "The process-tree signal and the plain statement that the nginx default log cannot answer 'were we hit' tell me what to ask my SRE lead today and what to say if the board asks.",
+    "page": "defence/index.html"
+   },
+   {
+    "point": "The story carries a clear 'The evidence has moved since this was written' notice with both data timestamps, so I know not to quote its numbers as current.",
+    "page": "articles/why-not-patch-every-version/index.html"
+   }
+  ],
+  "fails": [
+   {
+    "point": "Still no board-ready summary on my path: the CTO briefing headline drops 'what do I tell the board', and no section addresses board messaging.",
+    "page": "briefings/cto/index.html",
+    "severity": "high",
+    "evidence": "Headline: 'What does this cost us in engineering time, what breaks when we patch, and what do we change so the next one is a non-event?' Headings: 'What to decide or do / Your reading path / What this briefing covers / What you can skip / Words you will meet / The facts this rests on / What is still open'. The board appears only as 'Board member or executive' in the Other readers list."
+   },
+   {
+    "point": "The claims table now shows a second grade (A1 to A6, Established, Reported, Weak signal, OVERSTATED) beside the status, and the two sometimes disagree, so I cannot tell which label to repeat.",
+    "page": "briefings/cto/index.html",
+    "severity": "medium",
+    "evidence": "'Remote code execution is confirmed on PHP-FPM' is DISPUTED but graded 'A6 Established'; 'Edge protections went live hours before disclosure' is CONFIRMED, 5/5, but graded 'A2 Reported' and 'STATUS OVERSTATED'; 'The risks require immediate patching...' is REPORTED but 'A6 Established' with 1/2."
+   },
+   {
+    "point": "The CTO path is still far longer than my time, and there is still no minimum route.",
+    "page": "briefings/cto/index.html",
+    "severity": "medium",
+    "evidence": "'About 20 minutes in all.' The page itself measured 2,186 words and 7.3 screens, up from 2,093 last run."
+   },
+   {
+    "point": "The claims table still mixes disclosure-timing disputes with the facts I act on, although the briefing tells me to skip the disclosure politics.",
+    "page": "briefings/cto/index.html",
+    "severity": "medium",
+    "evidence": "'What you can skip: the disclosure politics', yet 'The pre-announcement was published at 19:30 UTC on 20 October', 'The fixes were released at 14:00 UTC on 21 October' and 'The flaws were disclosed on 22 October 2026' sit in the same table as the FPM, EOL and WAF rows."
+   },
+   {
+    "point": "Several downstream rows are cut off mid-word, including the cloud and container rows that matter to my estate.",
+    "page": "patching/index.html",
+    "severity": "medium",
+    "evidence": "'Bref 2 l', 'App Engine Flexible PHP runtimes not redeployed onto patched', 'Cloud Run customer containers with unpatched PHP on their re', 'fix still bei'."
+   },
+   {
+    "point": "The Docker Official Image row still has no fixed tags or rebuild date, unlike the Ubuntu, Debian and Red Hat rows.",
+    "page": "patching/index.html",
+    "severity": "medium",
+    "evidence": "'fixed Docker Official Images maintainers: Docker Official Image: php' with no version string, while the row above reads 'Debian trixie PHP 8.4 FPM package 8.4.27-1~deb13u1'."
+   },
+   {
+    "point": "The version ladder lists cPanel's 8.2 to 8.4 packages under the 8.1, 8.0 and 7.4 rows, which reads as a fix for those branches when the versions shown are not.",
+    "page": "patching/index.html",
+    "severity": "low",
+    "evidence": "Under '8.1', '8.0' and '7.4': 'fixed WebPros / cPanel: cPanel EasyApache 4 / MultiPHP EA4 25.91: ea-php82 8.2.35; ea-php83 8.3.36; ea-php84 8.4.27'."
+   },
+   {
+    "point": "Site plumbing still leaks into the text I read: the gate, a board item number, a claim id.",
+    "page": "patching/index.html",
+    "severity": "low",
+    "evidence": "'each named exactly so the gate can check it is there'; 'W3Techs publishes version shares and is board item 033's first capture'; on flaws/index.html 'is claim rce-fpm'."
+   },
+   {
+    "point": "The reading tracker, research banner and 'New to this story?' bar still take the top of every page; on the briefing the headline starts around 390px down a 900px screen.",
+    "page": "briefings/cto/index.html",
+    "severity": "low",
+    "evidence": "fold.png: 'New to this story? Tell us who you are...', 'Your reading: on this page 24 new...', 'Mark this page read', 'RESEARCH collected from outside sources...' all precede the headline."
+   },
+   {
+    "point": "The unexplained price badge is still in the header and still ticks down as I read.",
+    "page": "index.html",
+    "severity": "low",
+    "evidence": "Header badge '£5.00' on index.html, '£4.98' on briefings/cto, '£4.96' on patching, '£4.91' on the article and glossary; nothing on the pages explains it."
+   },
+   {
+    "point": "The 'How this site knows' counts do not add up to the total they qualify, which is the kind of thing a board member would ask me about.",
+    "page": "index.html",
+    "severity": "low",
+    "evidence": "'70 statements checked: 21 confirmed, 11 disputed, 4 unverified' (36 of 70 accounted for)."
+   }
+  ],
+  "changes": [
+   {
+    "change": "Add a 'What to tell the board' box of four or five sentences (severity and its evidence, exposure by SAPI, the fix and its risk, the timeline, what is unknown) under the thirty-second answer, and put 'what do I tell the board' back in the headline question.",
+    "page": "briefings/cto/index.html",
+    "why": "It is a quarter of my question, the part I answer in person, and two runs in I still assemble it myself.",
+    "effort": "small"
+   },
+   {
+    "change": "Show one trust label per claim, or explain in the key what the A1 to A6 grade means and why it can differ from the status.",
+    "page": "briefings/cto/index.html",
+    "why": "A row that says DISPUTED and Established, or CONFIRMED and OVERSTATED, leaves me unsure what I can repeat to the board.",
+    "effort": "small"
+   },
+   {
+    "change": "Split the claims table into 'Decide on these' (severity, fix, FPM, EOL, WAF, side effects) and a collapsed 'Background' (timing and attribution disputes).",
+    "page": "briefings/cto/index.html",
+    "why": "The briefing tells me to skip the disclosure politics and then makes me read them to find the FPM and EOL rows.",
+    "effort": "small"
+   },
+   {
+    "change": "Offer an 8-minute route: thirty-second answer, flaws 'Affected and fixed versions', patching 'What the fix changes', defence 'So: can it be detected?'.",
+    "page": "briefings/cto/index.html",
+    "why": "I have eight minutes, not twenty, and need to know the minimum.",
+    "effort": "small"
+   },
+   {
+    "change": "Stop truncating downstream rows, and give the Docker Official Image row its fixed tags or rebuild date.",
+    "page": "patching/index.html",
+    "why": "The Cloud Run, Bref and Docker rows are exactly my estate, and half-sentences and missing tags make them unusable for planning.",
+    "effort": "small"
+   },
+   {
+    "change": "Add a one-line exposure schedule by SAPI to the thirty-second answer (mod_php: demonstrated, today; FPM: susceptible, disputed, this week at latest).",
+    "page": "briefings/cto/index.html",
+    "why": "It turns 'how fast' into a timeline I can commit to and defend.",
+    "effort": "small"
+   },
+   {
+    "change": "Explain or remove the falling price badge in the header.",
+    "page": "index.html",
+    "why": "An unexplained, ticking price next to a security briefing makes me doubt what I am looking at.",
+    "effort": "small"
+   },
+   {
+    "change": "Collapse the reading tracker, research banner and 'New to this story?' bar into one thin line on desktop.",
+    "page": "briefings/cto/index.html",
+    "why": "They still cost me the top third of every page before the answer.",
+    "effort": "medium"
+   }
+  ],
+  "quotes": [
+   {
+    "page": "briefings/cto/index.html",
+    "text": "Patch order: mod_php on the internet first; FPM next; everything else after. Restart every worker, rebuild every image, then verify the running version inside the container.",
+    "reaction": "Better than last time: the container check is now in the instruction. I can hand this line to my platform lead."
+   },
+   {
+    "page": "briefings/cto/index.html",
+    "text": "7.4, 8.0 and 8.1 have a source backport and no release: that is a migration you are now doing, not a patch.",
+    "reaction": "Still the line that changes engineering time; it goes straight into the budget conversation."
+   },
+   {
+    "page": "briefings/cto/index.html",
+    "text": "About 20 minutes in all.",
+    "reaction": "Unchanged, and still more than double my time with no shortcut offered."
+   },
+   {
+    "page": "flaws/index.html",
+    "text": "Remote code execution as the web worker is the floor, not the ceiling, and not yet a breach.",
+    "reaction": "The best single sentence for the board on the whole site, and it is on the flaws page, not in my briefing."
+   },
+   {
+    "page": "flaws/index.html",
+    "text": "The CVE records carry defaultStatus 'unaffected' and list only 8.2 to 8.5, so an automated scanner reading the CVE will call 7.4 to 8.1 unaffected.",
+    "reaction": "Still the most useful warning for my security team."
+   },
+   {
+    "page": "patching/index.html",
+    "text": "The platform or image publisher has a fixed runtime, and nothing already running changes until its owner rebuilds.",
+    "reaction": "Exactly the container framing I wanted; this is new and it lands."
+   },
+   {
+    "page": "patching/index.html",
+    "text": "Cloud Run customer containers with unpatched PHP on their re",
+    "reaction": "Cut off mid-word on the row I most needed to read."
+   },
+   {
+    "page": "index.html",
+    "text": "Whether the fix is complete. A report on 21 October suggested it may not be; the PHP project has not answered it publicly yet.",
+    "reaction": "Honest and important: this goes in my board note as the reason we keep watching after patching."
+   },
+   {
+    "page": "playbook/index.html",
+    "text": "a system that cannot is one you take offline early, because you will not be able to later.",
+    "reaction": "Still a sharp decision rule I can apply to our services list."
+   },
+   {
+    "page": "patching/index.html",
+    "text": "W3Techs publishes version shares and is board item 033's first capture.",
+    "reaction": "Internal bookkeeping; it means nothing to me and makes me wonder which board is meant."
+   }
+  ],
+  "since_last": "Since v0.4.3: the container gap is partly fixed (the briefing now says to verify the running version inside the container, and patching groups Docker under 'Fixed, but you must rebuild and redeploy'), and the front page gained 'What nobody knows yet' and an offline count; still open are the board summary (my top request), the claims-table split, the 20-minute path with no short route, Docker tags, the SAPI timeline, the header clutter, the price badge and the gate jargon; new or worse are a second A1 to A6 grade in the claims table that contradicts some statuses, truncated downstream rows on patching, mislabelled cPanel rows under 8.1, 8.0 and 7.4, and a briefing that grew to 2,186 words.",
+  "reviewer": {
+   "by": "agent-session"
+  }
+ }
+}

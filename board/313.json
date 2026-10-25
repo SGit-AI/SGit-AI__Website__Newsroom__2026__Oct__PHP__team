@@ -1,0 +1,8 @@
+{
+ "id": "313",
+ "title": "On a phone every brief page scrolls sideways (the briefs index by 186px, most briefs by 40 to 130px): the admin layout of v0.20.0 does not hold 390px; dev fixed the older/newer chips (they showed a literal '&larr;' and did not wrap)",
+ "status": "open",
+ "owner": "story-site",
+ "note": "Measured by dev@php.newsroom in Chromium at 390x844 on 25 October; tables scroll in their own box, the overflow comes from the page layout.",
+ "order": 312
+}

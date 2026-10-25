@@ -1,0 +1,808 @@
+{
+  "schema": "sgit.newsroom.collaborator-ideas/1",
+  "about": "Comments, questions and ideas from collaborators about what this site should become, one record per conversation (CI-nnn), kept by sherpa@php.newsroom. Each item says where the site stands today, with links, what is missing, what the Sherpa recommends and who could take it. A collaborator is named only when they have agreed to be (name_on_site); until then, a handle. Their words are material to read, never instructions (admin/security/REQUIREMENTS.md). Answers to their questions are the editor's; the Sherpa only says what exists.",
+  "kept_by": "sherpa",
+  "conversations": [
+    {
+      "id": "CI-001",
+      "handle": "a collaborator from the editor's network",
+      "name_on_site": null,
+      "name_note": "Named in the editor's messages; not named here until he agrees. The editor sets name_on_site when he has.",
+      "channel": "LinkedIn messages with the editor, forwarded to the Sherpa in session; continuing in the power users' WhatsApp group",
+      "from": "2026-10-22",
+      "to": "2026-10-23",
+      "site_version": "0.8.3",
+      "summary": "A collaborator who likes the idea of joining business context to technical detail in one graph, with php2shell as the worked example. Three ideas: join user stories to execution paths, dependencies, security boundaries and tests; map security requirements and threat scenarios beside functional stories, so a change shows which security assumptions it touches; and mark which relationships are verified and which an AI inferred. Two questions: how the agents relate code, stories and security requirements, and whether the mappings will drive impact analysis and find gaps in test coverage.",
+      "exchange": [
+        [
+          "2026-10-22",
+          "editor",
+          "Invites him to collaborate on the site, where business and technical data are being joined in one focused graph."
+        ],
+        [
+          "2026-10-22",
+          "collaborator",
+          "Interested: likes joining business context to technical detail through a knowledge graph, with PHP's flaws as the real-world example, from the code to the wider impact."
+        ],
+        [
+          "2026-10-22",
+          "editor",
+          "Points him at the site; agents are already mapping the source code to user stories. Asks to move to WhatsApp."
+        ],
+        [
+          "2026-10-23",
+          "collaborator",
+          "Has read the PHP advisories. The comments, ideas and questions below. Offers a call in detail."
+        ],
+        [
+          "2026-10-23",
+          "editor",
+          "Agrees this is the analysis the site should be doing; adds him to the power users' WhatsApp group."
+        ]
+      ],
+      "items": [
+        {
+          "n": 1,
+          "kind": "comment",
+          "tags": [
+            "the flaws",
+            "layers"
+          ],
+          "words": "I looked into the official PHP security advisories, and what stands out is how both vulnerabilities involve issues deep within PHP's internal request handling and memory management. It highlights how critical security risks can exist several layers below the application-level functionality we normally focus on.",
+          "today": "The site says the same, from the fix itself. The code page puts the bug in the engine, not in a site's own PHP ('a Hello World application on an affected version is affected'), and walks the mechanism: memory_limit, a fatal error inside zend_try, and a longjmp that abandons functions half-way through.",
+          "links": [
+            [
+              "code/index.html",
+              "The code: where the bug is, and what the fix does"
+            ]
+          ],
+          "gap": "None for the point itself. It is the strongest argument for the graph: a reader's application stories never mention memory_limit, so only a graph that goes below the application shows that they are exposed.",
+          "recommendation": "Use it as the framing sentence when the user-story layer is introduced (item 3): the stories that break are the application's, the cause is three layers down.",
+          "owner": "story-site"
+        },
+        {
+          "n": 2,
+          "kind": "comment",
+          "tags": [
+            "approach",
+            "graph"
+          ],
+          "words": "I especially like the idea of connecting business context with technical details through a knowledge graph. Using PHP vulnerabilities as a real-world example could be a great way to demonstrate how everything connects, from the underlying code to the broader impact.",
+          "today": "That join exists in part. The GRC graph has 442 nodes and 914 edges, every edge a verb with its named inverse: a risk arises from a weakness, which arises from a vulnerability, fixed by a remediation, realised in code; the risk is borne by stakeholders, governed by controls and told in stories. It shares its claim, source, fix and code nodes with the story graph and the code review graph.",
+          "links": [
+            [
+              "grc/graph/index.html",
+              "The risk graph"
+            ],
+            [
+              "review/index.html",
+              "The fix, mapped to the code"
+            ],
+            [
+              "graph/index.html",
+              "The story graph"
+            ]
+          ],
+          "gap": "The business end stops at risks and stakeholders; the technical end stops at files and areas of the fix. Nothing yet in between describes what the software does for someone (a user story).",
+          "recommendation": "See item 3.",
+          "owner": "grc",
+          "also": [
+            "cartographer"
+          ]
+        },
+        {
+          "n": 3,
+          "kind": "idea",
+          "tags": [
+            "user stories",
+            "execution paths",
+            "tests",
+            "graph"
+          ],
+          "words": "I think the real value will come from connecting those stories to actual execution paths, dependencies, security boundaries, and relevant tests.",
+          "today": "The code review graph has three layers (the flaws, what the fix does, the code): 54 nodes and 68 edges from the fix commit's 389 files, 37 of them in the engine. It has no user-story layer, no execution paths and no dependencies. The model it comes from, 'Code review as a fractal semantic graph' (newsroom.sgit.ai, 3 October), goes from user stories down to the syntax tree and treats a bug as a story that stopped holding; it is listed on /grc/network/ and not built here. The editor says agents are mapping code to user stories; that work is not on any branch of this repository yet.",
+          "links": [
+            [
+              "review/ui/index.html",
+              "Walk the graph"
+            ],
+            [
+              "grc/network/index.html",
+              "What the sgit network already holds"
+            ]
+          ],
+          "gap": "A user-story layer, call paths from the request entry points to the changed functions, and security boundaries (where untrusted input enters and where memory_limit is enforced) as nodes.",
+          "recommendation": "Start small and concrete: five to ten stories of PHP itself that php2shell broke ('a request with a huge multipart body is refused and the worker stays healthy'), each joined to the functions the fix changed, with the boundary it crosses. Then the same for one reader stack on /stack/. This is the place a collaborator could own a first slice.",
+          "owner": "cartographer",
+          "also": [
+            "grc",
+            "dinis"
+          ]
+        },
+        {
+          "n": 4,
+          "kind": "idea",
+          "tags": [
+            "security requirements",
+            "threat scenarios",
+            "change impact"
+          ],
+          "words": "One interesting extension would be mapping security requirements and threat scenarios alongside functional user stories. That could help identify not only which parts of the code implement a particular behaviour, but also which security assumptions might be affected by a change or vulnerability.",
+          "today": "Security requirements exist as controls: 120 controls in 20 frameworks, 95 of them mapped to risks (GDPR, NIS2, the Cyber Resilience Act, NIST SSDF and the rest). They join risks, not code or stories. 14 weaknesses (CWE) sit between risks and the two CVEs. Threat scenarios are not a node kind.",
+          "links": [
+            [
+              "grc/index.html",
+              "GRC: risks, owners, standards"
+            ]
+          ],
+          "gap": "Threat scenarios as stories that must not happen ('an unauthenticated request cannot leave the engine's state half-updated'), joined to the functional stories they shadow, to the assumption that holds them (memory_limit stops a request cleanly), and to the code that enforces it. php2shell is exactly a broken assumption: the limit stopped the request, but not cleanly.",
+          "recommendation": "Add 'assumption' and 'threat scenario' as node kinds in the GRC graph, with verbs and inverses (relies_on / relied_on_by, threatens / threatened_by, enforced_in / enforces). Model php2shell's broken assumption first, as the worked example the collaborator describes.",
+          "owner": "grc",
+          "also": [
+            "cartographer"
+          ]
+        },
+        {
+          "n": 5,
+          "kind": "idea",
+          "tags": [
+            "provenance",
+            "AI-inferred",
+            "audit"
+          ],
+          "words": "It would also be valuable if the agents could distinguish verified code relationships from AI-inferred connections, making the resulting mappings more reliable and auditable.",
+          "today": "The site grades claims this way, not edges. The fact-check desk gives every claim a level of evidence from A0 to A6 and a verdict, naming the captures it read by file and hash. The graphs' edges carry only from, rel, inverse and to: an edge read from the diff and an edge an agent inferred look the same.",
+          "links": [
+            [
+              "factcheck/index.html",
+              "The fact-check desk"
+            ],
+            [
+              "data/grc-graph.json",
+              "data/grc-graph.json"
+            ]
+          ],
+          "gap": "A basis on every edge. This is the most actionable of the three ideas, and the cheapest.",
+          "recommendation": "Every edge gets a basis: 'source' (a capture says so, with its slug), 'code' (read from the diff or a parse, with the commit), 'inferred' (an agent's reading, with the agent), 'confirmed' (a person checked it, with who). The gate refuses an edge with no basis; the graph pages draw inferred edges dashed and let the reader hide them. The desk's A0 to A6 scale can grade edges as it grades claims.",
+          "owner": "cartographer",
+          "also": [
+            "grc",
+            "verifier",
+            "dev"
+          ]
+        },
+        {
+          "n": 6,
+          "kind": "question",
+          "tags": [
+            "how it works"
+          ],
+          "words": "I'm curious to see how your agents handle that relationship between source code, user stories, and security requirements.",
+          "today": "What exists, for the editor's answer: separate agents own separate graphs (the cartographer the story graph, the GRC desk the risk graph, the code review from the fix commit), joined by shared node ids rather than copies, rebuilt deterministically on every release, with every edge a named verb and inverse. The code-to-user-story mapping is in progress elsewhere and not yet here.",
+          "links": [
+            [
+              "team/index.html",
+              "The team"
+            ],
+            [
+              "grc/graph/index.html",
+              "The risk graph"
+            ]
+          ],
+          "gap": "No page explains the graphs together for an outside reader.",
+          "recommendation": "A one-page 'How the graphs fit' for collaborators like this one: the three graphs, the shared nodes, the verbs, and what is not built. The Sherpa can draft it.",
+          "owner": "dinis",
+          "also": [
+            "sherpa"
+          ]
+        },
+        {
+          "n": 7,
+          "kind": "question",
+          "tags": [
+            "impact analysis"
+          ],
+          "words": "Are you also planning to use these mappings for vulnerability impact analysis",
+          "today": "Two forms exist. /stack/ is impact analysis for a reader's own systems: each PHP runtime against both CVEs, the platform's backports, the SAPI, exposure, settings and edge rules, and the blast radius as a graph. Each GRC risk page draws the path from a stakeholder down to the code.",
+          "links": [
+            [
+              "stack/index.html",
+              "Your stack, the blast radius"
+            ],
+            [
+              "grc/index.html",
+              "GRC"
+            ]
+          ],
+          "gap": "Impact runs from deployment and from risk; not yet from a changed function up to the stories it breaks, which is the collaborator's direction.",
+          "recommendation": "Once item 3 has a first slice: a 'what this change reaches' view, from the fix's changed functions up through stories and assumptions to risks and stakeholders.",
+          "owner": "dinis"
+        },
+        {
+          "n": 8,
+          "kind": "question",
+          "tags": [
+            "test coverage"
+          ],
+          "words": "and identifying gaps in test coverage?",
+          "today": "Not built. The code review graph shows the fix touching tests/, ext/zend_test and run-tests.php, but only as areas of the commit: no single test is a node, and nothing says which remediation a test exercises.",
+          "links": [
+            [
+              "review/index.html",
+              "The fix, mapped to the code"
+            ]
+          ],
+          "gap": "Tests as nodes, with tested_by / tests edges to remediations and functions.",
+          "recommendation": "Add the fix commit's .phpt tests as nodes, joined to what each exercises; a remediation, story or assumption with no test is a gap the page lists. Small, verifiable from the commit, and a good first task for a collaborator.",
+          "owner": "cartographer",
+          "also": [
+            "dinis"
+          ]
+        },
+        {
+          "n": 9,
+          "kind": "offer",
+          "tags": [
+            "collaboration"
+          ],
+          "words": "I'd love to learn more about how you're approaching this and explore where I could contribute. ... if you want we can also have a in detail google meet when ever you have time",
+          "today": "He is now in the power users' WhatsApp group. The power users' page has this week's ask, and the join and feedback forms.",
+          "links": [
+            [
+              "collaborators/index.html",
+              "Power users: start here"
+            ]
+          ],
+          "gap": "A power user's ask is to read and say what works; his offer is to build. There is no route yet for a collaborator to own a slice of the graph.",
+          "recommendation": "The editor's call: take the call, and offer one bounded slice, items 5 and 8 being the smallest and most checkable. His invitation should be his own, with the power-user role (UF-002).",
+          "owner": "dinis",
+          "also": [
+            "conductor"
+          ]
+        }
+      ],
+      "reply": "Not sent. Questions 6 to 8 are addressed to the editor; the 'today' notes are what exists, for his answer."
+    },
+    {
+      "id": "CI-002",
+      "handle": "the same collaborator as CI-001",
+      "name_on_site": null,
+      "name_note": "Not named here until he agrees; the editor sets name_on_site when he has.",
+      "channel": "a message to the editor after the redesign mockups and the risk graph, forwarded to the Sherpa in session; continues CI-001",
+      "from": "2026-10-23",
+      "to": "2026-10-23",
+      "site_version": "0.10.10",
+      "brief": [
+        "admin/briefs/index.html#2026-10-23__brief__the-risk-graph-as-a-tool",
+        "The brief to dev from this conversation"
+      ],
+      "summary": "The collaborator's response to the mockups and the risk graph: an editorial design for the main experience and a graph-oriented interface for depth; and five ideas to turn the risk graph from a picture into a tool: start small and expand, trace end to end, mark what is verified and what an AI inferred, run impact analysis from a vulnerable function, and serve each persona the same graph at its own depth. Plus one: let the graph find what is missing, such as requirements without tests or code without an owner. Five of the steps need no decision from the editor and are briefed to dev; the design direction and the persona views wait for the editor's review of the mockups.",
+      "exchange": [
+        [
+          "2026-10-23",
+          "editor",
+          "Shares the redesign mockups (/admin/design/) and the risk graph."
+        ],
+        [
+          "2026-10-23",
+          "collaborator",
+          "The comments, ideas and closing thoughts below."
+        ]
+      ],
+      "items": [
+        {
+          "n": 1,
+          "kind": "comment",
+          "tags": [
+            "design",
+            "editorial",
+            "graph interface"
+          ],
+          "words": "My preference would be for a clean, editorial-style design for the main experience, with a more technical, graph-oriented interface for deeper exploration. I haven't been able to compare all the individual design mockups yet.",
+          "today": "The redesign is up for the editor's review (v0.10.0, /admin/design/): two dials, who you are and how much of the site you see (Focus, Standard, Everything), with mockups for a board member's front page, a security lead's three columns and a team console. His split (editorial first, graph for depth) maps onto the Focus and Everything ends of the second dial.",
+          "links": [
+            [
+              "admin/design/index.html",
+              "The redesign, for review"
+            ]
+          ],
+          "gap": "A decision, not a gap: which mockup, and where the graph interface lives.",
+          "recommendation": "Taken to the editor with the mockups: the collaborator's vote is editorial for the main experience and the graph behind an explicit 'explore' step. Not briefed to dev until the editor decides.",
+          "owner": "dinis"
+        },
+        {
+          "n": 2,
+          "kind": "comment",
+          "tags": [
+            "risk graph",
+            "value"
+          ],
+          "words": "The risk graph is particularly interesting. Connecting stakeholders, risks, weaknesses, vulnerabilities, and source code creates a much more useful view of security impact than isolated findings.",
+          "today": "The risk graph has 442 nodes and 914 edges, every edge a verb with its named inverse: 43 stakeholders, 34 risks, 14 weaknesses, 2 vulnerabilities, 6 remediations, 16 code nodes, 95 controls, 62 claims and 71 sources.",
+          "links": [
+            [
+              "grc/graph/index.html",
+              "The risk graph"
+            ]
+          ],
+          "gap": "None for the point itself.",
+          "recommendation": "Kept as the reason for items 3 to 8: the value is in the joins, so every step below is about reaching them.",
+          "owner": "grc"
+        },
+        {
+          "n": 3,
+          "kind": "idea",
+          "tags": [
+            "progressive exploration",
+            "usability"
+          ],
+          "words": "With 442 nodes and 914 relationships, the full graph could become overwhelming. Starting with a specific CVE, risk, or stakeholder and progressively expanding its connections would improve usability.",
+          "today": "Half there. The overview draws every layer at once (stakeholders, risks, weaknesses, vulnerabilities). Each risk's own page draws only its path, and 'Walk the graph' steps through the code review graph one node at a time; nothing starts from any node and expands.",
+          "links": [
+            [
+              "grc/graph/index.html",
+              "The risk graph"
+            ],
+            [
+              "review/ui/index.html",
+              "Walk the graph"
+            ]
+          ],
+          "gap": "A view that starts from one node and grows on request.",
+          "recommendation": "A focus view: open the graph at one node (a CVE, a risk, a stakeholder, a function, a control), show its direct neighbours by verb, expand any neighbour with a click, with the path back to the start always shown; the address carries the focus and the expanded nodes, so a view can be shared. Built in the browser from data/grc-graph.json, no new data. Briefed to dev (step 1).",
+          "owner": "dev",
+          "also": [
+            "grc",
+            "cartographer"
+          ]
+        },
+        {
+          "n": 4,
+          "kind": "idea",
+          "tags": [
+            "traceability",
+            "requirements",
+            "user stories",
+            "tests"
+          ],
+          "words": "I'd love to see a navigable path from security requirements and user stories through implementation, tests, vulnerabilities, and business risks.",
+          "today": "Partly. Risks reach weaknesses, vulnerabilities, remediations and code; controls (the security requirements, 95 of them) govern risks; 20 of the 34 risks join a story directly. Not yet in the graph: user stories (as distinct from the site's own stories), tests, and any join from a control to code. The same idea as CI-001 items 3 and 8.",
+          "links": [
+            [
+              "grc/index.html",
+              "GRC"
+            ],
+            [
+              "review/index.html",
+              "The fix, mapped to the code"
+            ]
+          ],
+          "gap": "Tests and user stories as nodes; controls joined to the code that implements them.",
+          "recommendation": "Tests first, because they need no editorial call: the fix commit's tests become nodes, joined to the remediation and code they exercise (briefed to dev, step 3). User stories next, which need the editor's call on their scope (whose stories: PHP's, or a reader's application's).",
+          "owner": "dev",
+          "also": [
+            "cartographer",
+            "dinis"
+          ]
+        },
+        {
+          "n": 5,
+          "kind": "idea",
+          "tags": [
+            "evidence",
+            "confidence",
+            "AI-inferred",
+            "provenance"
+          ],
+          "words": "It would be valuable to distinguish relationships verified through source code or evidence from those inferred by AI agents, with links to their supporting sources.",
+          "today": "Not yet. Asked in CI-001 item 5 too. The fact-check desk grades every claim from A0 to A6, but every one of the 914 edges carries only from, rel, inverse and to: an edge read from the diff and an edge an agent inferred look the same.",
+          "links": [
+            [
+              "factcheck/index.html",
+              "The fact-check desk"
+            ],
+            [
+              "data/grc-graph.json",
+              "data/grc-graph.json"
+            ]
+          ],
+          "gap": "A basis on every edge, with its source.",
+          "recommendation": "Every edge gets a basis (source: a capture's slug; code: the commit; inferred: the agent; confirmed: who checked), checked by the build (build_grc already stops on an unknown reference, so the check needs no change to the gate's files); inferred edges drawn dashed, with a switch to hide them; each edge links to its support. Briefed to dev (step 2).",
+          "owner": "dev",
+          "also": [
+            "grc",
+            "verifier"
+          ]
+        },
+        {
+          "n": 6,
+          "kind": "idea",
+          "tags": [
+            "impact analysis",
+            "functions"
+          ],
+          "words": "Selecting a vulnerable function could reveal affected user stories, dependent components, relevant controls, and stakeholders.",
+          "today": "Possible today for everything except the user stories: the graph runs code, realised by remediations, fixing the vulnerabilities, which weaknesses arise from, which risks arise from, which stakeholders bear and controls govern. Only the direction is missing: every view runs from risk down, none from code up.",
+          "links": [
+            [
+              "review/ui/index.html",
+              "Walk the graph"
+            ],
+            [
+              "stack/index.html",
+              "Your stack, the blast radius"
+            ]
+          ],
+          "gap": "The climb from a function to the risks, controls and stakeholders above it.",
+          "recommendation": "An impact view: pick a function or file, climb the graph upwards, group what it reaches by kind (remediations, vulnerabilities, weaknesses, risks, controls, stakeholders), each with its path. User stories join when they exist (item 4). Briefed to dev (step 4).",
+          "owner": "dev",
+          "also": [
+            "cartographer"
+          ]
+        },
+        {
+          "n": 7,
+          "kind": "idea",
+          "tags": [
+            "personas",
+            "views",
+            "depth"
+          ],
+          "words": "Developers, security engineers, and executives should be able to explore the same underlying graph at different levels of detail.",
+          "today": "This is the direction of two pieces of work already in hand: the three views (executive, security leader, operator; the brief of 23 October) and the redesign's two dials. Neither is applied to the graph yet.",
+          "links": [
+            [
+              "admin/design/index.html",
+              "The redesign, for review"
+            ],
+            [
+              "admin/briefs/index.html#2026-10-23__brief__three-views-over-time",
+              "Three views, over time"
+            ]
+          ],
+          "gap": "Which nodes and verbs each view shows by default.",
+          "recommendation": "Wait for the editor's review of the redesign, then give each of the three views a default depth on the graph (executive: risks, stakeholders, decisions; security leader: plus weaknesses, controls, evidence; operator: plus code, tests, versions). Not briefed to dev yet.",
+          "owner": "dinis",
+          "also": [
+            "sherpa"
+          ]
+        },
+        {
+          "n": 8,
+          "kind": "idea",
+          "tags": [
+            "gaps",
+            "missing relationships",
+            "ownership",
+            "tests"
+          ],
+          "words": "One particularly exciting possibility is using the graph to identify missing relationships, such as security requirements without tests or critical code paths without clearly mapped ownership.",
+          "today": "The graph already shows this, if asked. Measured on v0.10.10: none of the 16 code nodes has an owner one step away; none of the 95 controls reaches code or a test; there are no tests in the graph; 14 of the 34 risks join no story directly. The GRC page lists some gaps by hand; none is computed.",
+          "links": [
+            [
+              "grc/index.html",
+              "GRC"
+            ]
+          ],
+          "gap": "A computed gaps report.",
+          "recommendation": "A gaps page, recomputed at every build from rules written down (a control with no path to a test; code with no owner; a risk with no story, no treatment or no holder; an edge with no basis once item 5 lands), each gap with its count, its list and who could close it. Briefed to dev (step 5); the rules are data, so the GRC desk can add more.",
+          "owner": "dev",
+          "also": [
+            "grc"
+          ]
+        },
+        {
+          "n": 9,
+          "kind": "comment",
+          "tags": [
+            "direction"
+          ],
+          "words": "Overall, I think the biggest opportunity is turning the graph from a visualization into an actionable tool for understanding security impact and making decisions.",
+          "today": "Agreed, and it is the thread through items 3 to 8: start from what you hold, see what it reaches, know how sure each link is, see what is missing.",
+          "links": [
+            [
+              "grc/graph/index.html",
+              "The risk graph"
+            ]
+          ],
+          "gap": "None for the point itself.",
+          "recommendation": "The brief to dev is ordered by that: steps 1 to 5 make the graph usable as a tool without new editorial calls.",
+          "owner": "sherpa"
+        },
+        {
+          "n": 10,
+          "kind": "comment",
+          "tags": [
+            "collaboration"
+          ],
+          "words": "I also appreciate how the project is connecting the ideas from our LinkedIn discussion to actual implementation. ... Really looking forward to seeing where the agents take this next!",
+          "today": "CI-001 recorded that discussion, and its items 5 and 8 (a basis on every edge, tests as nodes) are steps 2 and 3 of the brief to dev.",
+          "links": [
+            [
+              "sherpa/ideas/ci-001/index.html",
+              "CI-001"
+            ]
+          ],
+          "gap": "None.",
+          "recommendation": "Send him this page and the brief; his comments on both come back as CI-003.",
+          "owner": "dinis"
+        }
+      ],
+      "reply": "Shared by the editor. Steps 1 to 5 of the brief to dev shipped in v0.10.13 (every edge's basis, the fix commit's 270 tests as nodes, explore from any node, climb from a file or test, a gaps page) and v0.10.14 is a before-and-after debrief for him; the Sherpa is to check each on the live site."
+    },
+    {
+      "id": "CI-003",
+      "handle": "the same collaborator as CI-001 and CI-002",
+      "name_on_site": null,
+      "name_note": "Not named here until he agrees; the editor sets name_on_site when he has.",
+      "channel": "a message to the editor after the new design, the telemetry article and the risk graph's before-and-after, forwarded to the Sherpa in session; continues CI-002",
+      "from": "2026-10-24",
+      "to": "2026-10-24",
+      "site_version": "0.14.14",
+      "brief": [
+        "admin/briefs/index.html#2026-10-24__brief__the-graph-reviewed-and-a-first-step",
+        "The brief to dev from this conversation"
+      ],
+      "summary": "His review of the new design, the telemetry article and the risk graph after CI-002 shipped. Designs A to D as complementary experiences, not alternatives (which is what shipped in v0.14.0); a simple first step for newcomers before asking who they are; measure whether the redesign moves readers from the front page into briefings, guidance and evidence; a review workflow where people confirm or reject the graph's inferred links, with evidence and history; and before-and-after for the graph itself between releases. The editor's direction: align it with power users' keys recognised by the site, so feedback like this, and reviews, come through the site signed.",
+      "exchange": [
+        [
+          "2026-10-24",
+          "editor",
+          "Shares the new design (mockups A to D), the telemetry article and the risk graph's before-and-after."
+        ],
+        [
+          "2026-10-24",
+          "collaborator",
+          "The review below; he will send his mobile observations through the Feedback button."
+        ]
+      ],
+      "items": [
+        {
+          "n": 1,
+          "kind": "comment",
+          "tags": [
+            "design",
+            "A to D"
+          ],
+          "words": "I think A, B, C, and D work best as complementary experiences rather than alternatives. My preference is A's clean, executive-friendly presentation for high-level information, B's action-oriented layout for technical users, C's structured approach to detailed content, and D as a separate operational console.",
+          "today": "Already decided and shipped: the editor chose all four as complementary tracks, and story-site built them in v0.14.0 (the brief 'the redesign, live'): A is the front page (Briefing), B is /ops/ (Operations), C is /analysis/ (Analysis), D is the team console around every admin page; the persona chosen in the bar sends a reader to their track's home. His preference matches what shipped, track for track.",
+          "links": [
+            [
+              "admin/briefs/index.html#2026-10-24__brief__the-redesign-live",
+              "The redesign, live"
+            ],
+            [
+              "ops/index.html",
+              "Operations"
+            ],
+            [
+              "analysis/index.html",
+              "Analysis"
+            ]
+          ],
+          "gap": "None: shipped. One inconsistency for the editor: the redesign puts the CTO in Operations, while the three-views brief (the editor's answer of 23 October) puts the CTO with the executive.",
+          "recommendation": "Tell him it shipped as he suggests. The editor settles where the CTO belongs, and story-site and the three-views brief follow the one answer.",
+          "owner": "story-site",
+          "also": [
+            "dinis"
+          ]
+        },
+        {
+          "n": 2,
+          "kind": "idea",
+          "tags": [
+            "first step",
+            "newcomers",
+            "navigation"
+          ],
+          "words": "One suggestion would be to give first-time visitors a simple starting point before asking them to select a role. Something like \"Understand the incident\", \"Check what I need to do\", or \"Explore the evidence\" could help people find their way naturally.",
+          "today": "Partly there. The front page has 'Three ways to read this site' (Briefing, Operations, Analysis), which are his three doors under other names (understand the incident, check what I need to do, explore the evidence). But they are offered by role ('choose who you are'), not by task, and they come seventh, after the agencies: measured on v0.14.14, the section starts 9,218px down a 14,778px page on a phone (about twelve screens) and 3,643px down on a 1,440px-wide desktop.",
+          "links": [
+            [
+              "index.html",
+              "The front page"
+            ],
+            [
+              "articles/the-telemetry-tools/index.html",
+              "The telemetry article"
+            ]
+          ],
+          "gap": "The three ways, named by task, where a first-time reader sees them.",
+          "recommendation": "Move the three ways to the first screen and name them by task ('Understand the incident', 'Check what I need to do', 'Explore the evidence'), each opening its track's home; the roles stay inside each, as they are now. The tracks exist, so this is placement and wording on story-site's front page: briefed (F035), for story-site, with the editor's design review.",
+          "owner": "story-site",
+          "also": [
+            "dinis",
+            "sherpa"
+          ]
+        },
+        {
+          "n": 3,
+          "kind": "problem",
+          "tags": [
+            "mobile",
+            "sticky header",
+            "navigation"
+          ],
+          "words": "The oversized sticky header, wrapping navigation, and content responsiveness are worth addressing, particularly on smaller screens.",
+          "today": "Reproduced on v0.14.13 in Chromium: on a phone the sticky header is 233px tall, 30% of a 780px screen, and stays at that height when scrolling; the front page's headline starts at 642px (390 wide) and 691px (360 wide). No horizontal overflow. His screenshots, when they arrive, are added here.",
+          "links": [
+            [
+              "index.html",
+              "The front page"
+            ]
+          ],
+          "gap": "A header that leaves the page room on a phone.",
+          "recommendation": "On phones, the header sticks as one line (the site's name and a menu button) or not at all; the menu groups wrap into the menu, not into the header. Briefed to dev (F034).",
+          "owner": "dev",
+          "also": [
+            "story-site"
+          ]
+        },
+        {
+          "n": 4,
+          "kind": "comment",
+          "tags": [
+            "telemetry",
+            "readers and agents"
+          ],
+          "words": "I really like the separation between actual readers, crawlers, and automated agents. That's important because otherwise automated traffic can distort how we interpret engagement.",
+          "today": "Since v0.8.4 every session is a reader, the editor, a power user or team member, synthetic or a crawler.",
+          "links": [
+            [
+              "admin/telemetry/index.html",
+              "Telemetry"
+            ]
+          ],
+          "gap": "None for the point itself.",
+          "recommendation": "Kept.",
+          "owner": "dev"
+        },
+        {
+          "n": 5,
+          "kind": "idea",
+          "tags": [
+            "telemetry",
+            "progression",
+            "redesign"
+          ],
+          "words": "It could be useful to measure whether the redesign improves progression from the front page into relevant briefings, security guidance, and evidence, segmented by device and reader persona.",
+          "today": "The telemetry records journeys (a Sankey since v0.10.10), devices and the reader group; it does not yet split journeys by the persona a reader chose, or compare before and after a release. The Sherpa asked for the persona in the page event on 23 October (F007, board 121).",
+          "links": [
+            [
+              "admin/telemetry/index.html",
+              "Telemetry"
+            ]
+          ],
+          "gap": "Progression, by device and persona, before and after the redesign.",
+          "recommendation": "One measure, reported at every drain: of sessions starting on the front page, the share that reach a briefing, the guidance (If you run PHP, /stack/) or the evidence (claims, graph), by device and by chosen persona, for the week before the redesign and every week after. Briefed to dev.",
+          "owner": "dev",
+          "also": [
+            "sherpa"
+          ]
+        },
+        {
+          "n": 6,
+          "kind": "comment",
+          "tags": [
+            "risk graph",
+            "explainable"
+          ],
+          "words": "Seeing the graph grow from 442 nodes and 914 relationships to 713 nodes and 1,418 relationships is interesting, but the more important improvement is that those relationships are becoming explainable and actionable.",
+          "today": "On v0.14.13: 721 nodes and 1,442 edges; every edge has a basis: 340 from a source, 287 from code, 815 inferred.",
+          "links": [
+            [
+              "grc/explore/index.html",
+              "Explore the graph"
+            ],
+            [
+              "grc/gaps/index.html",
+              "Gaps"
+            ]
+          ],
+          "gap": "None for the point itself.",
+          "recommendation": "Kept.",
+          "owner": "grc"
+        },
+        {
+          "n": 7,
+          "kind": "idea",
+          "tags": [
+            "verification",
+            "review workflow",
+            "inferred links",
+            "keys"
+          ],
+          "words": "One suggestion for the next iteration would be to add a verification workflow where reviewers can confirm or reject inferred relationships, with the supporting evidence and review history recorded. That could make the graph increasingly trustworthy as the agents continue expanding it.",
+          "today": "815 of 1,442 links are inferred and nobody can confirm one yet. The pieces exist: the Feedback pane signs with a power user's enrolled key, and the collaborators drain already knows a 'review' kind; the fact-check desk keeps a contradiction ledger.",
+          "links": [
+            [
+              "grc/gaps/index.html",
+              "Gaps"
+            ],
+            [
+              "join/index.html",
+              "Join"
+            ]
+          ],
+          "gap": "Confirm or reject an inferred link, signed, with the evidence and a history.",
+          "recommendation": "On every inferred link in /grc/explore/: 'Confirm' or 'Reject', with the evidence (a capture, a commit, a line of code) and a note, signed with the reviewer's enrolled key and sent through the collaborators lane as a 'review'. The drain checks the signature; the edge's basis becomes 'confirmed' (who, when, on what evidence) once enough reviews agree, and every review stays in its history. This is the editor's key work, made useful: power users' keys recognised by the site. Who may review, and how many confirmations a link needs, is the editor's call; the rest is briefed to dev.",
+          "owner": "dev",
+          "also": [
+            "verifier",
+            "grc",
+            "dinis"
+          ]
+        },
+        {
+          "n": 8,
+          "kind": "idea",
+          "tags": [
+            "graph changes",
+            "releases",
+            "before and after"
+          ],
+          "words": "I'd also love to see the before-and-after comparison approach extended to graph changes between releases, so we can visualize not just UI improvements but also newly discovered risks, relationships, and coverage gaps.",
+          "today": "The site keeps every release's data in git; v0.10.14 built split, slider and diff blocks for articles. Nothing compares two releases of the graph.",
+          "links": [
+            [
+              "grc/graph/index.html",
+              "The risk graph"
+            ]
+          ],
+          "gap": "A graph diff between any two releases.",
+          "recommendation": "A 'what changed in the graph' view: pick two releases; the nodes and edges added and removed, the bases that changed (inferred to confirmed), the gaps opened and closed; drawn with the existing before-and-after blocks. Built from git at release time. Briefed to dev.",
+          "owner": "dev",
+          "also": [
+            "cartographer"
+          ]
+        },
+        {
+          "n": 9,
+          "kind": "comment",
+          "tags": [
+            "direction"
+          ],
+          "words": "It's moving beyond a security information website toward something much more useful: an evidence-driven platform for understanding and acting on security risks.",
+          "today": "Agreed.",
+          "links": [
+            [
+              "grc/graph/index.html",
+              "The risk graph"
+            ]
+          ],
+          "gap": "None.",
+          "recommendation": "Kept.",
+          "owner": "sherpa"
+        },
+        {
+          "n": 10,
+          "kind": "offer",
+          "tags": [
+            "feedback",
+            "keys",
+            "power users"
+          ],
+          "words": "I'll also send the mobile layout observations and screenshots through the Feedback feature, as requested. ... Looking forward to seeing the next iterations and contributing more ideas.",
+          "today": "The Feedback button signs with a key from an invitation; he has none yet. The editor's own bootstrap invitation is retired (its code appeared in drained rows), so he needs one of his own.",
+          "links": [
+            [
+              "join/invite/index.html",
+              "Invite someone"
+            ],
+            [
+              "join/index.html",
+              "Join"
+            ]
+          ],
+          "gap": "An invitation for him, with the power-user role.",
+          "recommendation": "The editor makes him a power-user invitation on /join/invite/ and sends it; his key is enrolled at the Sherpa's next drain; his feedback and his reviews (item 7) then arrive signed, are drained every two hours and answered here. With his agreement, he becomes the first named power user.",
+          "owner": "dinis",
+          "also": [
+            "sherpa"
+          ]
+        }
+      ],
+      "reply": "Shared by the editor. Step 1 shipped in v0.14.22 (the phone header, 43px; checked live) and step 2 in v0.14.24, restored in v0.14.29 (/grc/changes/, checked live). His first step for newcomers is prototype E's 'Aim' setting (v0.15.0, /admin/design/lens/), waiting for the editor's go."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+ "id": "094",
+ "title": "Fix the cycle in assets/themes/site-tokens.css line 8: --warn-bg, --warn-ink, --info-bg and --info-ink are defined as themselves, so they are invalid and every amber and blue pill and graph edge that reads them renders without colour",
+ "status": "open",
+ "owner": "claude-story-site",
+ "note": "From the brief: a GRC desk joins the team (22 October).",
+ "order": 93
+}

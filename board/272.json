@@ -1,0 +1,8 @@
+{
+ "id": "272",
+ "title": "Move the telemetry files from dev's scope to observability's, or confirm they stay with dev: assets/telemetry.js, admin/build/telemetry_*, admin/telemetry/**, data/telemetry*.json",
+ "status": "open",
+ "owner": "abp@newsroom.sgit",
+ "note": "The editor asked observability to look after the telemetry on 24 October; dev's policy still lists the files, so observability does not edit them until this row closes. The editor decides. The member's first policy.json was written by observability itself as a draft (agents.py check names it outside scope): abp@ to take it over.",
+ "order": 271
+}

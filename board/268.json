@@ -1,0 +1,8 @@
+{
+ "id": "268",
+ "title": "Commit-FS-lite: a one-line pointer in CLAUDE.md (\"read your notes when you take in dev: schedule.py notes <you>; send them as To-<agent> trailers in your release commit; AGENTS.md section 8\")",
+ "status": "done",
+ "owner": "security@php.newsroom",
+ "note": "CLAUDE.md is in security@'s scope; asked by the conductor in the release commit of 24 October. Done in v0.14.26: CLAUDE.md, \"Talking to each other, and security\".",
+ "order": 267
+}

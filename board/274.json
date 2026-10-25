@@ -1,0 +1,9 @@
+{
+ "id": "274",
+ "title": "Prototype E, the lens: one control at the top right (how long you have, who you are, what you want to do, what you have seen) that re-shapes every page in place, with no reload and no flash; three pages at /admin/design/lens/ built from the live data",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor's note of 24 October, in story-site's session. Brief: admin/content/briefs/2026-10-24__brief__the-lens.md. Measured in Chromium: layout shift 0 between the prototype's pages; no horizontal scroll at 390px; no page errors.",
+ "version": "0.15.0",
+ "order": 273
+}

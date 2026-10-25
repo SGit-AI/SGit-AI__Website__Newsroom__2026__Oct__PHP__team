@@ -1,0 +1,7 @@
+{
+ "id": "256",
+ "title": "Ownership for the policy drafts, from the librarian's pass of 24 October: data/desk.json is the journalist's (its layers.json row and the commit that added it); analysis/** and ops/** are the story site's (the redesign's reader homes, v0.14.0). Add them to those members' policy.json and ROLE.md",
+ "status": "open",
+ "owner": "abp",
+ "order": 255
+}

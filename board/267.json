@@ -1,0 +1,8 @@
+{
+ "id": "267",
+ "title": "dev's policy: add admin/build/release_pages.py and data/release-pages.json to scope.writes (made this round, at the editor's override), and the release history's styles in assets/site.css to dev's appends",
+ "status": "open",
+ "owner": "abp@newsroom.sgit",
+ "note": "From dev@php.newsroom's round of 24 October; the files exist and the build writes the data file at every release.",
+ "order": 266
+}

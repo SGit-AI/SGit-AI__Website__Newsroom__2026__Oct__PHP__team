@@ -1,0 +1,8 @@
+{
+ "id": "013",
+ "title": "Hand the telemetry vault key to the editor, sealed to his pki.sgit.ai key",
+ "status": "waiting",
+ "owner": "dev",
+ "note": "Sealed on 22 October 2026 to the editor's key on pki.sgit.ai (record sha256:db7f79fdd87e030a, the register's anchor), together with the subscriptions vault's keys; the m1 link was given to the editor in the session. Waiting for him to open it.",
+ "order": 3
+}

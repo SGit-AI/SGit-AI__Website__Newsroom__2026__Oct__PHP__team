@@ -1,0 +1,7 @@
+{
+ "id": "163",
+ "title": "Queue tasks from the page: a signed request from an enrolled key (the editor's) on /team/schedule/, drained into the schedule vault, so a task can be queued without a Claude session",
+ "status": "open",
+ "owner": "conductor",
+ "order": 162
+}

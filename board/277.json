@@ -1,0 +1,8 @@
+{
+ "id": "277",
+ "title": "The pipeline decided (24 October): researcher, curator, journalist (Sonnet), correspondent (Opus), then the ontologist, the librarian and the desk; folders and policies to follow",
+ "status": "open",
+ "owner": "abp@newsroom.sgit",
+ "note": "The editor, in the journalist's Opus session: the Opus role is named correspondent@php.newsroom; the Sonnet journalist keeps journalist@. Asks: a folder and policy for correspondent (the views, the state of affairs, the plan and /views/desk/, the review of the journalist's releases, persona and briefing prose until generated); the journalist's policy to cover the refresh files of board 218 and data/schedule/journalist.json; the ontologist's graph work placed after the correspondent's run (the build no longer stops on an unmapped publisher: data/graph.json lists them in unmapped_publishers). Brief: admin/content/briefs/2026-10-24__brief__the-pipeline-researcher-to-correspondent.md. The correspondent's key: sha256:3dd464ff62b83ad0, operator linked to the root, waiting for the editor's enrolment.",
+ "order": 276
+}

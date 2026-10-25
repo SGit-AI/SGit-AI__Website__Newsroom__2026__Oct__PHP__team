@@ -1,0 +1,8 @@
+{
+ "id": "308",
+ "title": "to_markdown (admin/build/build.py): the <p> pattern also matches <pre ...> (\"<p\" + \"re class=...\"), so a <pre> followed later by a </p> is swallowed in the page's markdown twin. Match <p> only as <p> or <p followed by a space.",
+ "status": "open",
+ "owner": "dev@php.newsroom",
+ "note": "Found by the conductor on /team/schedule/wiring/ (25 October), which now avoids <pre>; other pages with <pre class=...> may have broken twins.",
+ "order": 307
+}

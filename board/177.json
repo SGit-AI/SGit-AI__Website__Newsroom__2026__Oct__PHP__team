@@ -1,0 +1,8 @@
+{
+ "id": "177",
+ "title": "The scheduled researcher's two wake prompts still name the schedule vault: change them to the card's steps (take in dev, inbox, run record, release)",
+ "status": "open",
+ "owner": "editor",
+ "note": "The prompts are the scheduled tasks'; only the editor's session changes them.",
+ "order": 176
+}

@@ -1,0 +1,8 @@
+{
+ "id": "091",
+ "title": "The telemetry vault-in-vault turned around: the application moves to a versioned vault of its own (5wnsr5h8, v0.1.1, eight pages); the telemetry vault imports it and drains its own lane from the browser (Queue & drain: the count waiting, the passphrase-sealed key, push before mark-processed); the dashboard vault i4diy82d superseded",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.5.10",
+ "order": 90
+}

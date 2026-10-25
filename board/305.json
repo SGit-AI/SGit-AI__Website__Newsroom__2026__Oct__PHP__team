@@ -1,0 +1,9 @@
+{
+ "id": "305",
+ "title": "Article: URL paths, personas in the address, and a single-page site, written before the work (a link that names its persona; every page keeps its own path; SEO; code apart from data)",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor asked for the article before the implementation. admin/content/briefs/2026-10-25__brief__urls-personas-and-a-single-page-site.md, published at /admin/briefs/. It proposes /agencies/as/security/ (the page keeps its path, the persona is a suffix), canonical to the base page, persona paths only for the pages that read differently, fragments and a router rather than a framework, and five decisions for the editor.",
+ "version": "0.19.0",
+ "order": 304
+}

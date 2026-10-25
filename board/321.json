@@ -1,0 +1,9 @@
+{
+ "id": "321",
+ "title": "The briefs page sorts by the time each brief was published, newest first, and shows the time (UTC) on every row and on each brief's page",
+ "status": "done",
+ "owner": "claude-story-site",
+ "note": "The editor, 25 October: the briefs at the top were not the most recently published, because the list sorted by file name. data/briefs-published.json now records the minute each was first published: seeded once from git (the first commit adding each file; two that arrived through a merge take the merge's time), then stamped by the first build that includes a new brief, and never changed. The build still never reads git, so a shallow CI clone builds the same pages. Same override as board 309.",
+ "version": "0.21.6",
+ "order": 320
+}

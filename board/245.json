@@ -1,0 +1,8 @@
+{
+ "id": "245",
+ "title": "Allow the mail agent to write to a publisher's published corrections address, for requests the editor approved one by one: a change to admin/security/REQUIREMENTS.md section 6 and the mandate, on a branch, for security's review and the editor's go",
+ "status": "done",
+ "owner": "editor",
+ "note": "From the brief: a corrections liaison joins the team (22 October). Not needed: the editor sends each request (24 October); no agent writes to a publisher.",
+ "order": 244
+}

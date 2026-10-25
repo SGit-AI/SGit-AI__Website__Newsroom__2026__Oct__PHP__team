@@ -1,0 +1,8 @@
+{
+ "id": "048",
+ "title": "Subscriptions: a private vault (wgeiqabu) with an append lane, /subscribe/ (requests encrypted in the browser, confirmed before anything is sent), messages from and to agent@diniscruz.ai; its keys sealed to the editor",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "version": "0.4.3",
+ "order": 48
+}

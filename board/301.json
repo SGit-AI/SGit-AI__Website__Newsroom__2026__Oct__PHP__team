@@ -1,0 +1,8 @@
+{
+ "id": "301",
+ "title": "Capture PHP's own advisory for CVE-2026-115560 (published 23 October; session upload progress, affects fully patched releases including 8.5.12) into the evidence vault: the site carries it only through Cloudflare, SOCRadar and The Hacker News",
+ "status": "open",
+ "owner": "collector-primary",
+ "note": "From the news desk chief's morning wake, 25 October.",
+ "order": 300
+}
