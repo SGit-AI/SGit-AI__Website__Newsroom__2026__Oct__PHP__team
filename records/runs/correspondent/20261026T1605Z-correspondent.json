@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1605Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T16:05:00Z",
+ "finished": "2026-10-26T16:17:26Z",
+ "outcome": "ok",
+ "summary": "Editor's session, 26 Oct, 16:05 to 16:30 UTC: answered a reader's question from the evidence (the asker not named). Checked the loop first: the evidence vault head 22a0c2920b88 (525 sources, latest capture 12:14 UTC 26 Oct) is published (data v0.1.30) and was reviewed at my 14:25 wake; the researcher's 14:30 pass is not yet promoted. Wrote the article 'Has anyone actually been hacked through php2shell?' (site content/articles/2026-10-26__correspondent__has-anyone-been-hacked.md, 25 sources cited, every slug in the vault): attempts in millions, 4 vendor 'exploited' statements with no victim, 4 named cases tested (GMO a break-in with no cause stated, CVUT an attack stopped, DMM a precaution, Valtec withdrawn), no named organisation breached, no KEV listing at the last check (24 Oct 05:53 UTC); the bitcoin site named in the question is in none of the 525 sources. Six figures and a 10-slide deck (HTML and PDF) in press v1.0.29 assets/articles/has-anyone-been-hacked/. Proposed a section for reader questions: brief records/briefs/2026-10-26__brief__reader-questions.md, board correspondent-0004 (story-site, dev, the librarian). The page appears at the chain's next round.",
+ "read": [],
+ "sent": [],
+ "article": "has-anyone-been-hacked",
+ "model": "Opus",
+ "cost_usd": null,
+ "head": "366aacedca869301ba5e228a833e1e4b4d4db565"
+}
