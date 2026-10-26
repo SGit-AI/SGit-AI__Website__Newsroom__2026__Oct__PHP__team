@@ -1,0 +1,16 @@
+{
+ "run": "20261026T1304Z-curator",
+ "agent": "curator",
+ "started": "2026-10-26T13:04:41Z",
+ "finished": "2026-10-26T13:43:37Z",
+ "outcome": "ok",
+ "summary": "Wake 13:00 London (fired 13:04 UTC); team at 0d81af7da975. Took in the researcher's pass 20261026T1208Z (pack vault 7r83qic5 at f12c7b82a7e8; queue 450 rows, 67 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (2 priority 2, 16 priority 4; now 525 sources), 20 claims, no timeline rows. Evidence vault pushed 13:42:35 to 13:43:21 UTC (head 22a0c2920b88, in sync). Every quote checked verbatim, hashes against the watch; the injection scan found nothing aimed at a reader. 49 queue rows pending. Worth a look in this batch: SempreUpdate relays Sophos's Counter Threat Unit that the documented attacks (mostly installing a Mirai variant) failed to compromise targets and that Sophos revised some early detections it had counted as compromises, and Startupper relays Arctic Wolf that confirmed deep intrusions stay limited: both pull against the earlier reports of confirmed compromises, so the compromise picture is marked reported and dated in the claims; Check Point's India rate (14% vs 10% global), Synology's own advisory (affected packages, PHP updates for DSM 7.2 to 7.4), Censys 39.7 million services against Palo Alto's 22.6 million and VirusTotal's 5.1 million, and national shutdowns (France's prefectures, Indonesia's Ministry of Industry to 25 October, Austria's notice of 20 October). A slip of mine, caught before the commit: my spec edit script aborted on one replacement and the batch was written from the unedited spec; I corrected four statements in the written notes (a vague UK funding line, a time stamp, a cross-reference, and a clause about Sophos's red team that the truncated capture did not support) before committing. The conductor's note about running the vault export from the press: I did not run it; who runs it at which wake is the editor's call. sgit-ai v0.25.0 timings, pack clone: the pull of one pass (+6,702 blobs) took 33 m 38 s (13:05:20 to 13:38:58 UTC); evidence vault: commit 2.9 s, push 46 s. Pulling is still the slow step; board row curator-0001 stands. Not done: the data repo (not asked); the oq9gflln question. Waits on the editor: whether wakes write the data files and which wake runs the export; the oq9gflln deletion.",
+ "read": [
+  "20261026T1127Z__conductor__to-curator__the-vault-export-now-runs-from-the-press"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "35aeac644b3dfd1082713eb68664cd4163a1a238"
+}
