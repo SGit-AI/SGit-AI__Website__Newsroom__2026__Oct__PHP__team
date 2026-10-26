@@ -4196,6 +4196,39 @@
    "translation": "70% of the world's sites have been at risk for more than 10 years!",
    "notes": "Usage share turned into a decade of risk. Body: 'il linguaggio che alimenta quasi il 70% dei siti web' (nearly 70% of websites).",
    "family": "F-2"
+  },
+  {
+   "id": "S-128",
+   "slug": "yugatech-news-ai-helps-uncover-php2shell-flaws-th",
+   "publisher": "YugaTech",
+   "url": "https://www.yugatech.com/news/ai-helps-uncover-php2shell-flaws-that-put-websites-worldwide-at-risk/",
+   "title": "AI helps uncover PHP2Shell flaws",
+   "published": "2026-10-26",
+   "time_utc": null,
+   "time_basis": "date only on the page (October 26, 2026)",
+   "captures": [
+    "20261026T121439Z"
+   ],
+   "excerpt_found_in": [
+    "20261026T121439Z"
+   ],
+   "file": "sources/yugatech-news-ai-helps-uncover-php2shell-flaws-th/captures/20261026T121439Z/text.txt",
+   "sha256": "ea3e1134c60159b819defacd7c8ab12409727fd23768da3247338feaa1472d9c",
+   "sha256_from": "the desk's own hash of the capture's text.txt in the evidence vault, run 10",
+   "excerpt": "PHP is used by roughly 70% of websites worldwide, according to figures cited by researchers.",
+   "location": "body",
+   "value": 70,
+   "denominator_text": "websites worldwide",
+   "denominator_class": "websites-all",
+   "qualifier": "roughly",
+   "attribution": "figures cited by researchers (unnamed)",
+   "links_to_measurement": null,
+   "role": "restates",
+   "restates": "S-015",
+   "language": "en",
+   "translation": null,
+   "notes": "Says in the next sentence that this does not mean 70% of websites have been confirmed compromised. Another statement under 'of all websites' with no measurer named.",
+   "family": "F-2"
   }
  ],
  "families": [
@@ -4273,10 +4306,11 @@
     "S-115",
     "S-118",
     "S-125",
-    "S-127"
+    "S-127",
+    "S-128"
    ],
    "denominator_class": "websites-all",
-   "count": 32,
+   "count": 33,
    "origin_note": "WSJ 'up to 70% of the World's Websites at Risk' (Robert McMillan, 21 Oct) is an outside sub-origin for the 'up to' wording (actu17, The Verge, Substack); WSJ is not captured in the vault."
   },
   {

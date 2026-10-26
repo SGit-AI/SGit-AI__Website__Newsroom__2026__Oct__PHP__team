@@ -1,0 +1,15 @@
+{
+  "node_id": "2ee038aa",
+  "node_type": "run",
+  "node_index": 10,
+  "label": "Run-10",
+  "title": "Run 10: 16:52 London wake, 26 October",
+  "description": "no-confirmed-compromise as of 12:14 UTC on 26 October holds A4; S-128 added to the 70% lineage",
+  "status": "done",
+  "created_at": 1793033922213,
+  "updated_at": 1793033922213,
+  "created_by": "dd5fd5bc",
+  "tags": [],
+  "links": [],
+  "properties": {}
+}

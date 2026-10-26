@@ -1,0 +1,13 @@
+{
+ "id": "Run-10",
+ "site_version": "data v0.1.36",
+ "vault_commit": "22a0c2920b88",
+ "site_export_commit": "22a0c2920b88",
+ "started": "2026-10-26T16:54Z",
+ "finished": "2026-10-26T17:20Z",
+ "quiet_wakes_before": 0,
+ "checked": "fc.py changed (no-confirmed-compromise, refreshed to 12:14 UTC on 26 October); fc.py check (0 failures); fc.py drift (the same six); the 20 captures since 09:40 UTC read for a named compromise; KEV; NVD",
+ "opened": "none",
+ "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+ "summary": "no-confirmed-compromise still holds at 12:14 UTC on 26 October (A4); none of the 20 new captures names a compromised organisation. One new statement of the 70% figure added to the lineage (S-128, YugaTech, 'roughly 70% of websites worldwide, according to figures cited by researchers', no measurer named, family F-2). KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
+}
