@@ -146,10 +146,13 @@ def do_import(v1):
         name = row_name(row, seen)
         put(f'{BOARD}{name}.json', (json.dumps({**row, 'order': order}, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     put('records/data/roles.json', (json.dumps({'about': 'The roles of the newsroom, as v1 data/admin.json kept them.', 'roles': admin['roles']}, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
-    # a file the last import wrote that v1 no longer has, and nobody changed here since: gone
+    # a file the last import wrote that v1 no longer has, and nobody changed here since: gone. Only a file the import
+    # itself maps (under a COPY destination, the board, roles.json): a file written here (records/tools/schedule.py) is in
+    # the record as its own and is never v1's to take away (board correspondent-0003; the conductor's patch).
     gone = 0
+    mapped = tuple(dst for _, dst in COPY) + (BOARD, 'records/data/roles.json')
     for p, h in record.get('files', {}).items():
-        if p not in wrote and p not in keep and os.path.exists(os.path.join(ROOT, p)) and sha(os.path.join(ROOT, p)) == h:
+        if p not in wrote and p not in keep and p.startswith(mapped) and os.path.exists(os.path.join(ROOT, p)) and sha(os.path.join(ROOT, p)) == h:
             os.remove(os.path.join(ROOT, p)); gone += 1
     # what is here and was never imported (written here, new) stays, and is in the record as its own
     for p in files_under(os.path.join(ROOT, 'records')):

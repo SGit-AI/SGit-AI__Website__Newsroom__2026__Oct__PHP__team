@@ -3,5 +3,6 @@
  "title": "Phase 2 on the team site: every page that shows records reads them when it opens (board done; runs, schedule, vaults, members next), so an agent's release is live without a round",
  "status": "open",
  "owner": "dev",
- "note": "The editor's go, 26 October. The board was first: records/index/board.json is written by team's own deploy, and /admin/board/ reads it. This row was released to team alone, with no round, to prove it."
+ "note": "The editor's go, 26 October. Live, no round needed: the board (/admin/board/), the schedule pages (/team/schedule/ and each agent's: cards, runs, messages) and the vault register (/team/vaults/), from records/index/*.json written by team's own deploy. Next: the member pages, /team/status/, /team/runs/; then site and data. | The editor's go, 26 October. The board was first: records/index/board.json is written by team's own deploy, and /admin/board/ reads it. This row was released to team alone, with no round, to prove it.",
+ "order": 350
 }

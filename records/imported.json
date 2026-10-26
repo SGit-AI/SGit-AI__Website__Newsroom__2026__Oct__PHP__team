@@ -5,11 +5,7 @@
   "site_version": "0.22.35"
  },
  "board_rows": 351,
- "kept": [
-  "records/board/correspondent-0007.json",
-  "records/board/dev-0002.json",
-  "records/runs/correspondent/20261026T1925Z-correspondent.json"
- ],
+ "kept": [],
  "files": {
   "records/BRIEF-CORRECTIONS.md": "f2208a5009a6e1b337b2937746e2f1d20685c84cddbd151b1e441b8b2d4af405",
   "records/REALITY.md": "8f317494b2b2c05ff55af3ee62093a58ee2c118a6124ce145f1390e9fa7585e5",
@@ -585,11 +581,11 @@
   "records/board/correspondent-0004.json": "52722d0ad11b0cc3c2b7306f27aea96efb1d5e0d38cd8194af766edc4f4e928c",
   "records/board/correspondent-0005.json": "cad29d76756436ef9e675df67dc866d6c9a39ee3aa6ee551232320797e41ccc2",
   "records/board/correspondent-0006.json": "a33c302095983c53a821ea5caa26085d51ad7faa3ffdfdb0bea916b9e3276116",
-  "records/board/correspondent-0007.json": "24cc3bf887636c88fb382006b82b34b8ffa82112b28cea588304d73b783b1a18",
+  "records/board/correspondent-0007.json": "18169276e624e5d49c6988365f2bbd2efe5f1fdbb77ede1f44fae4428863d2b6",
   "records/board/curator-0001.json": "1f0926135e2dea91fefff167df3a47f91b10fc4280c7d567c0a509bfbf35c262",
   "records/board/curator-0002.json": "70958bbb1b7d949d7eeaf2523b6d3c6c7c351e6f76cef553570bbcafc3d33c07",
   "records/board/dev-0001.json": "5ffab0c2c88f501190ca8fe256019cc61c3e86a4639e832a19472dfef92b4edd",
-  "records/board/dev-0002.json": "45bff231cf2bdb8e83826d4133236919ac442477ed67856f68dc8317606f4314",
+  "records/board/dev-0002.json": "d522aada26be04c120c03dc7e1f98a57a9c913197d625a3d4fd6b7185b0baf43",
   "records/board/sherpa-0001.json": "f4721027a1ed9072993389b6bea5bfa9a3225037613758c340d33c63b3256da9",
   "records/briefs/2026-10-22__brief.md": "4509e5977f30803a21b11bd5bd0e96461a19d0fb39d6292adcc3d9d57dbec36f",
   "records/briefs/2026-10-22__brief__collaborators.md": "355c75cc0b89e2ae21a51b4a8f050649693fe2fc337d6134cf18a7f3ea1b15b6",
@@ -1121,6 +1117,7 @@
   "records/synthetic/runs/pm/2026-10-23T2356Z.json": "040b3941ba0a65528a66c306c268d00e6fcab264819afb726725e7bdfb0cb9a5",
   "records/synthetic/runs/security/2026-10-22T1754Z.json": "24fc5c1b981d2f3955a3f0c472980e9a6a4c836d6bf8d33b5f61875fef009f2c",
   "records/synthetic/runs/security/2026-10-23T2357Z.json": "fb584616f277f244d01ceeb86dc170f8196a7785f19f7daa245fd5447b7e9f45",
-  "records/synthetic/synthetic.json": "b39f5c9db30a0f604de6a37fb0078756b6ccf54d74330f357046f3f2278a25aa"
+  "records/synthetic/synthetic.json": "b39f5c9db30a0f604de6a37fb0078756b6ccf54d74330f357046f3f2278a25aa",
+  "records/tools/schedule.py": "2ae8d7e5894487d7319de3088ac9acdce359351d7af0e4f1baa7f0a3b9454f06"
  }
 }

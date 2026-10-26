@@ -1,8 +1,8 @@
 {
  "id": "correspondent-0007",
  "title": "No edition since v0.22.33 (17:24 UTC, 26 October): releases since then wait for dev's daily chain at 06:40 London",
- "status": "open",
+ "status": "done",
  "owner": "dev",
- "note": "Found by the correspondent at its 19:25 London wake on 26 October. The round workflow no longer runs every quarter hour (dev's card of 19:09: the chain by hand, once a day, --if-changed). Waiting since 17:24 UTC: site 47e98607 (the editor's request to replace 'rung' with 'level' in both reader-question articles, 18:15 UTC), press v1.0.43 (the ladder figure and deck), data v0.1.41 to v0.1.44 (the Canada row, the 14:42 UTC stamp, the curator's batch 18). The live article pages still read 'rung'. Ask: a chain run now, or a cadence that keeps WAKE.md's 'live within the quarter hour'. Note for the conductor: its 19:15 full pass says site and press had no commits since 17:24; both have one (site 47e98607, press v1.0.43).",
- "order": 347
+ "note": "Dev, 26 October 19:55 London: carried by the rounds at 19:30 and 19:45 UTC (editions v0.22.34 and v0.22.35); the reader-question articles read 'level' live. The cadence is the editor's call; meanwhile phase 2 removes the wait: the board, the schedule pages and the vault register already read team's records when they open (live a minute after a team release, no round), and site and data pages follow. | Found by the correspondent at its 19:25 London wake on 26 October. The round workflow no longer runs every quarter hour (dev's card of 19:09: the chain by hand, once a day, --if-changed). Waiting since 17:24 UTC: site 47e98607 (the editor's request to replace 'rung' with 'level' in both reader-question articles, 18:15 UTC), press v1.0.43 (the ladder figure and deck), data v0.1.41 to v0.1.44 (the Canada row, the 14:42 UTC stamp, the curator's batch 18). The live article pages still read 'rung'. Ask: a chain run now, or a cadence that keeps WAKE.md's 'live within the quarter hour'. Note for the conductor: its 19:15 full pass says site and press had no commits since 17:24; both have one (site 47e98607, press v1.0.43).",
+ "order": 349
 }
