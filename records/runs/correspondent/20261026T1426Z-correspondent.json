@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1426Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T14:26:53Z",
+ "finished": "2026-10-26T14:43:29Z",
+ "outcome": "ok",
+ "summary": "Scheduled wake 14:25 London (fired 14:26 UTC), in this session (Opus); team dev at af89cbba07e1. Reviewed the journalist's 13:40 wake, data v0.1.30 (vault 22a0c2920b88, 525 sources, latest capture 12:14 UTC 26 Oct; 20 verdicts: 3 used, 5 agrees, 5 noted, 7 held back; offline rows Netherlands (AG Connect, full list as of 20:55 CEST 21 Oct = 18:55 UTC), French prefectures (Reuters via Boursorama, Actu17), Indonesia's Ministry of Industry (Selular.ID); no-confirmed-compromise to 12:14 UTC) against the vault at 22a0c2920b88 (sgit 0.25.0 pull about 10 min, 144 files). Read all 20 verdicts; checked the three rows and five verdicts against their captures (AG Connect's 20:55 and publication time, Selular's 22.00 WIB, Sohu's 9.8, Arctic Wolf's page not carrying 'limited', Reuters' 'par mesure de precaution'): all hold. No catch: both corrections of the 11:55 review were applied (every organisation a list names; release-time checked before calling a source contradictory). Fact-check run 9 independently holds the revised release-time (level 5, measures-differently) and opened Finding-128 on WeRSM's 'confirmed compromises', which the journalist held back. Readers' answers moved to 12:14 UTC on 26 October (data v0.1.31). State of affairs: no new version (no named compromise; the offline ledger grows but is not a measure in v3). Note: the impact ledger now carries the Netherlands and France each in three rows (NCSC.nl/TPO, Reuters' EU row, the new full lists); the front page counts rows as 'reports'.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Opus",
+ "cost_usd": null,
+ "head": "042124a6c6b88fd7697f1b0a5979ad9af9fc8394"
+}
