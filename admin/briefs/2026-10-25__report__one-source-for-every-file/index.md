@@ -29,7 +29,7 @@ Why copies are a security problem, not only an engineering one: five copies of a
 | The site that owns the section | `https://.php.oct.2026.newsroom.sgit.ai/
 ` | the page, its markdown twin, the site's `VERSION`, its 404 router, `.well-known/` | v1's version it was cut from (`press.json`) | | The press | `https://press.php.oct.2026.newsroom.sgit.ai/v//assets/` | every script, stylesheet, image, font, component and the manifest: 122 files | the press version, 1.0.5 | | The data API | `https://data.php.oct.2026.newsroom.sgit.ai/v//` | every JSON file a page links or a script fetches: 474 files | the data version, 0.1.5 | Both the press and the data API serve immutable versions: a file under `/v/1.0.5/` never changes, and a change is a new version. That has three consequences. A site names the exact version it was cut against, so a page and the scripts it runs always match. Caches cannot serve a stale file: GitHub Pages sends `cache-control: max-age=600`, but a new version is a new address. And any reader can check a file: the version's `manifest.json` lists every file's sha256. GitHub Pages also sends `access-control-allow-origin: *` on every file (checked on the live v1 site), which is what lets a page on refs fetch a JSON file from the data host and import a module from the press.
 
-![Where each request of a page on refs goes](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.28/assets/briefs/split-request-flow.png)
+![Where each request of a page on refs goes](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.40/assets/briefs/split-request-flow.png)
 
 ### What the partition does to a page
 
@@ -125,4 +125,4 @@ This brief is the file `admin/content/briefs/2026-10-25__report__one-source-for-
 
 
 ---
-site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-source-for-every-file/index.html
+site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-source-for-every-file/index.html

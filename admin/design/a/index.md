@@ -2,9 +2,9 @@
 
 The front page for a board member who wants only what their role needs: the situation, five numbers, three questions for the team, what is new, and one picture each of how it unfolded and what governments advise.
 
-> Mockup A for review, built from the data of release v0.22.29. Not the live site.
+> Mockup A for review, built from the data of release v0.22.32. Not the live site.
 
-Developing  ·  last checked 26 October 2026, 12:14 UTC 
+Developing  ·  last checked 26 October 2026, 14:42 UTC 
 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
@@ -29,7 +29,7 @@ None
 no named organisation, as of the latest capture 
 
 Taken offline 
-25 organisations 
+28 organisations 
 as a precaution, across 6 countries 
 
 Agencies compared 
@@ -102,7 +102,7 @@ All say install the fix. They split on what to do if you cannot.
 
  See every agency → 
 
- Focus view shows 28 of 1176 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
+ Focus view shows 28 of 1198 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
 
 ---
-site v0.22.29 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html
+site v0.22.32 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html

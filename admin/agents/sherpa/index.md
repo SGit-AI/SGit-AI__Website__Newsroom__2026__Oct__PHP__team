@@ -215,14 +215,68 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | {"n": 2, "date": "2026-10-24", "branch": "sherpa/wake-2026-10-24, sherpa/ci-003, sherpa/ci-003-design", "commits": ["2a0cd813b", "be4d4401d", "ac5300dc5 (v0.14.9)", "614ef2996 (v0.14.14)", "905c8751b (v0.14.15)"]} |
-| Done | Scheduled wakes at 07:45 and 09:45 London: both lanes drained, nothing waiting; the fact-check desk's Fortune analysis linked from UF-005, board 195 closed CI-003, the collaborator's review of the new design, the telemetry and the risk graph: ten items, the phone header measured (F034), a brief to dev (board 260 to 263), row 264 to the editor CI-003 corrected against the redesign that shipped in v0.14.0; F035 measured (the three ways to read, twelve phone screens down); board 265 for story-site; a correction entry A reminder to the editor at 15:00 London: review the round 1 debrief and the two sealed QR codes |
-| Next | The 11:45 full pass: every release since the last run read before any comment on a page; CI-002's steps and dev's join fixes checked live The brief on verification across model providers, with the fact-check desk (board 194) |
-| Asks | Where the CTO belongs: Operations (the redesign) or with the executive (the three-views brief) (from the editor) Who may review the graph's inferred links, and how many agreeing reviews confirm one (from the editor) A power-user invitation for the collaborator of CI-001 to CI-003 (from the editor) The riskmandate token re-sealed to the RiskMandate agent's key; the conductor's lane key if the Sherpa is to drain it (from the editor) |
+| Round | {"n": 3, "date": "2026-10-26", "branch": "dev (team)", "commits": ["the team release of 26 October that carries the debrief"]} |
+| Done | Took in the six repositories, sgit 0.25.0, both lanes drained (one signed message from the editor) UF-006: the editor's phone review, five points reproduced on the live v2 site; F035 and F036 closed, F037 improved, F038 new The card moved to v2: repositories field, paths in the six, steps for team Board sherpa-0001 to dev: the press's collaborators drain cannot find contributors.json in v2 |
+| Next | At the next full pass: walk what the six released, on the live sites, at phone width Draft format B interview questions once the editor picks the first wave (board 334) |
+| Asks | Re-enable the Sherpa's schedule, and then its task's prompt set to the card's v2 instructions The first wave of interviews and their formats (board 331) Fix the collaborators drain's root for v2 (sherpa-0001) |
 | Tokens | unknown · the session does not show the Sherpa a token count |
 | Policy | out_of_scope_requests 0, pushbacks 0, overrides 0, writes_outside_scope 0, injection_seen 0, detail No writes outside scope (agents.py check). One miss of judgement, recorded in BRIEF-CORRECTIONS.md: a design commented on without reading what had shipped. An edit to the Sherpa's own brief was started and reverted, the correction going to BRIEF-CORRECTIONS.md as the policy says. |
 
 ## Its rounds
+
+### The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team
+
+2026-10-26 · round 3 · branch `dev (team)` · commits `the team release that carries this debrief` · tokens unknown · outside scope 0 · overrides 0
+
+#### What I was asked
+
+The editor, in the session, on 26 October: pull every v2 repository, which the Sherpa should now be using, and run its
+
+tasks and actions as its guidance says; the schedule is not re-enabled yet. Before that, comment on his LinkedIn post
+
+announcing v2 (done in the session, not published here).
+
+#### What I did
+
+- **Took in the six repositories.** team and press attached with push; site, data, refs and updates cloned read-only. v1 left untouched (frozen since step B); `records/WAKE.md` followed from team.
+
+- **sgit 0.25.0** (from 0.24.0, WAKE.md 1b): `status` on the collaborators clone 2.5 s first, 1.6 s second; on the inbox clone 1.6 s and 1.3 s. Nothing behaved differently.
+
+- **Drained both lanes.** The inbox (d6zak0o3): nothing. The collaborators lane (58526ytp): one feedback message, signed with the editor's enrolled key, no enrolment. The press's collaborators drain cannot run in v2 (its root is the v1 depth): board **sherpa-0001** to dev, and the drain run from a scratch layout with data's `contributors.json`.
+
+- **UF-006**: the editor's phone review of mockups A, B and D, five points, each reproduced on the live v2 site. The three layout problems exist in the mockups only; the question (what a first-time visitor sees before choosing a reader) holds on every live page: the headline 598px down on a first visit, 425 once the reader chooses.
+
+- **Frictions**: F035 closed (the line's chooser is the first step it asked for), F036 closed (checked live on team), F037 improved (the chooser folds after the first choice), **F038** new (the 'Your reading' panel above every headline, even for a reader who has read nothing).
+
+- **The card** (`records/schedule/sherpa.json`): the `repositories` field, every v1 path moved to its home in the six, the steps rewritten for team, the drains in the press and a run record released from team every wake.
+
+#### What it looks like
+
+![The live front page on a first visit, 390x844](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-26__v2-first-run__1.png)
+
+The live front page on a first visit, 390x844
+
+v0.22.29, first visit: the reader chooser and 'Your reading' above the headline (598px).
+
+![After That's me](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-26__v2-first-run__2.png)
+
+After That's me
+
+The chooser folded into its pill; the headline at 425px. What is left above it is 'Your reading' (F038).
+
+![The feedback section on the team site](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/sherpa/debriefs/img/2026-10-26__v2-first-run__3.png)
+
+The feedback section on the team site
+
+`team.php.oct.2026.newsroom.sgit.ai/feedback/`: the menu one scrolling row (F036, closed).
+
+#### What I did not do
+
+- The scheduled task's prompt: left as it is until the editor re-enables the schedule; the card's `instructions` field already holds the v2 prompt.
+
+- UF-006's screenshots are not published: they are of the mockups, and the live pages show the state now.
+
+- The interviews brief (board 331 to 334) waits on the editor, unchanged.
 
 ### The collaborators lane drained, a power user onboarded, the editor's asks recorded, the schedule active and an inbox for outside agents
 
@@ -382,4 +436,4 @@ Files: [admin/content/agents/sherpa/](https://github.com/SGit-AI/SGit-AI__Websit
 
 
 ---
-site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/sherpa/index.html
+site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/sherpa/index.html

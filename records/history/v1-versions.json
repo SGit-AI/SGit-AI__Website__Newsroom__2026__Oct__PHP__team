@@ -1,6 +1,33 @@
 {
- "current": "0.22.29",
+ "current": "0.22.32",
  "versions": [
+  {
+   "version": "0.22.32",
+   "date": "2026-10-26",
+   "title": "the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; story-site's quiet top and design; the correspondent's two articles; the Sherpa's new feedback",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "2fc7e432584b",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.31",
+   "date": "2026-10-26",
+   "title": "the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; the correspondent's two articles; story-site's quiet top",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "2fc7e432584b",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.30",
+   "date": "2026-10-26",
+   "title": "the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; the correspondent's article, deck and figures; the afternoon's releases",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "2fc7e432584b",
+   "reconstructed": false
+  },
   {
    "version": "0.22.29",
    "date": "2026-10-26",

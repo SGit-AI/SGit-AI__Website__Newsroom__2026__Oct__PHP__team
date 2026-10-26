@@ -47,4 +47,4 @@ Collectors write to vaults only; a separate role releases.
 
 
 ---
-site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-025/index.html
+site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-025/index.html

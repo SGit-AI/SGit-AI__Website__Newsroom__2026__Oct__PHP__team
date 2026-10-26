@@ -19,12 +19,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.29" |
-| `data_as_of` | "2026-10-26T12:14Z" |
-| `vault_commit` | "22a0c2920b88" |
-| `counts` | {"sources": 525, "captures": 586, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 36, "disputed": 7, "contradicted": 3, "unverified": 4}, "event |
+| `version` | "0.22.32" |
+| `data_as_of` | "2026-10-26T14:42Z" |
+| `vault_commit` | "2fc7e432584b" |
+| `counts` | {"sources": 543, "captures": 605, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 36, "disputed": 7, "contradicted": 3, "unverified": 4}, "event |
 | `headline_facts` | [{"id": "two-cves-9.2", "text": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and |
-| `latest_story` | {"title": "What Wikipedia knows about being right: the principles, workflows and review habits this newsroom's agents should adopt", "url": "https://php.oct.202 |
+| `latest_story` | {"title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell", "url": "https://php.oct.2026.newsroom.sgit.ai/articles/steal-my-bi |
 | `links` | {"front": "https://php.oct.2026.newsroom.sgit.ai/index.html", "sources": "https://php.oct.2026.newsroom.sgit.ai/sources/index.html", "claims": "https://php.oct. |
 
 ## The rules
@@ -49,12 +49,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.29",
- "data_as_of": "2026-10-26T12:14Z",
- "vault_commit": "22a0c2920b88",
+ "version": "0.22.32",
+ "data_as_of": "2026-10-26T14:42Z",
+ "vault_commit": "2fc7e432584b",
  "counts": {
-  "sources": 525,
-  "captures": 586,
+  "sources": 543,
+  "captures": 605,
   "claims": 70,
   "claims_by_status": {
    "confirmed": 20,
@@ -65,7 +65,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   "events": 68,
   "agencies": 16,
-  "offline_reported": 25,
+  "offline_reported": 28,
   "compromises_confirmed": 0
  },
  "headline_facts": [
@@ -127,9 +127,9 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   }
  ],
  "latest_story": {
-  "title": "What Wikipedia knows about being right: the principles, workflows and review habits this newsroom's agents should adopt",
-  "url": "https://php.oct.2026.newsroom.sgit.ai/articles/what-wikipedia-knows-about-being-right/index.html",
-  "written": "2026-10-25",
+  "title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell",
+  "url": "https://php.oct.2026.newsroom.sgit.ai/articles/steal-my-bitcoin/index.html",
+  "written": "2026-10-26",
   "origin": "house"
  },
  "links": {
@@ -146,4 +146,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

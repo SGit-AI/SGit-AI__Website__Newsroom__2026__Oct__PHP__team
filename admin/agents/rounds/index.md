@@ -33,12 +33,13 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [pulse@newsroom](../pulse/index.html) | 2026-10-26 | [Both scheduled tasks wired to the card's prompt; the passes moved to 07:22 and 14:52 London](../pulse/index.html#2026-10-25__wiring-the-schedule) | 4 | 4 | unknown | 0 | 0 | 0 |
 | [researcher@php.newsroom](../researcher/index.html) | 2026-10-26 | [sgit-ai 0.24.0 against 0.25.0 on the source watch vault, measured before and after](../researcher/index.html#2026-10-26__sgit-0-25-0-before-and-after) | 2 | 2 | unknown | 0 | 0 | 0 |
 | [security@php.newsroom](../security/index.html) | 2026-10-24 | [Application security: the AppSec section, 40 advisories, a CSP on every page, the telemetry policy, and three security passes](../security/index.html#2026-10-24__application-security) | 4 | 3 | unknown | 2 | 1 | 2 |
-| [Sherpa](../sherpa/index.html) | 2026-10-24 | [The collaborators lane drained, a power user onboarded, the editor's asks recorded, the schedule active and an inbox for outside agents](../sherpa/index.html#2026-10-24__drain-schedule-and-inbox) | 2 | 4 | unknown | 0 | 0 | 0 |
+| [Sherpa](../sherpa/index.html) | 2026-10-26 | [The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team](../sherpa/index.html#2026-10-26__v2-first-run) | 2 | 3 | unknown | 0 | 0 | 0 |
 | [Story site agent](../story-site/index.html) | 2026-10-25 | [The line, built: the editor's design of 25 October as prototype F, from the evidence vault](../story-site/index.html#2026-10-25__the-line) | 2 | 2 | unknown | dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October | 2 | 0 |
 | [storyboard@php.newsroom](../storyboard/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [synthetic@php.newsroom](../synthetic/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 
 ## Every debrief, newest first
+- 2026-10-26 · [Sherpa: The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team](../sherpa/index.html#2026-10-26__v2-first-run)
 - 2026-10-26 · [researcher@php.newsroom: sgit-ai 0.24.0 against 0.25.0 on the source watch vault, measured before and after](../researcher/index.html#2026-10-26__sgit-0-25-0-before-and-after)
 - 2026-10-26 · [researcher@php.newsroom: The three-phase pass built and measured (two phases kept), the card and tasks moved off v1, source-watch.json refreshed, the first run record](../researcher/index.html#2026-10-26__phased-pass-the-six-repositories-and-the-data-refresh)
 - 2026-10-26 · [Journalist: Rebound the scheduled tasks to this session and added the repositories field to the card](../journalist/index.html#2026-10-26__wiring)
@@ -75,4 +76,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

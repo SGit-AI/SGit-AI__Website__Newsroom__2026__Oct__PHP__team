@@ -213,4 +213,4 @@ Files: [admin/content/agents/briefing-writer/](https://github.com/SGit-AI/SGit-A
 
 
 ---
-site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/briefing-writer/index.html
+site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/briefing-writer/index.html
