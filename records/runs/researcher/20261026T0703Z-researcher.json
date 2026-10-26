@@ -1,0 +1,22 @@
+{
+ "run": "20261026T0703Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-26T07:03:28Z",
+ "finished": "2026-10-26T08:16:36Z",
+ "outcome": "ok",
+ "summary": "Wake 07:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head 2bb61c291708. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page lists merged pulls (parser fault in p_pulls, not a finding); EPSS unchanged at 0.99981 (CVE-2026-109618) and 0.99997 (CVE-2026-109619); sites dark 56 on the community tracker (third-party, unverified). Probe: 413 named sites, 322 answering, 39 refused-us, 23 unreachable, 19 server-error, 13 changed state. Watch: 1,038 pages due of 1,243, 668 changed; access 918 open, 76 bot-challenge, 18 down, 20 paywalled, 4 gone, 2 login-wall. Discovery: 5,661 items, 3,417 on topic, 15 pages added. Ledger 59 records, 58 open. Curator queue 432 rows (13 added, existing rows untouched), pushed at 07:55 UTC, before the curator's 08:00 wake. Phase 1 pushed 12,966 objects; phase 2 77 objects. Data: files/source-watch.json refreshed from the vault, data v0.1.21. sgit: upgraded to sgit-ai v0.25.0 after the pass (the pass ran on 0.24.0: commit of phase 1 12 min 38 s, push 4 min 16 s, phase 2 commit 4 min 43 s, push 3 min 49 s). On 0.25.0 in the watch clone (79,000 files): first status 11 s, second status 3.3 s, history log 9.4 s, pull 2.3 s; nothing lost, vault in sync; commit and push on a full pass not yet timed on 0.25.0. Not judged: whether any capture ends the statement on /compromise/. Nothing written to v1. dev of team taken in at ca93865e70c5.",
+ "read": [
+  "20261024T0005Z__conductor__to-researcher__your-schedule-card-drafted-from-your-sch",
+  "20261024T0715Z__conductor__to-researcher__no-run-record-for-the-07-00-london-wake",
+  "20261026T0125Z__conductor__to-researcher__no-run-record-since-the-restart",
+  "20261024T0005Z__conductor__to-all__schedules-runs-and-messages-move-to-the",
+  "20261024T1157Z__security__to-all__application-security-a-self-check-after",
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "0ade2b63424b2c22433d0135f34ecddb1e950424"
+}
