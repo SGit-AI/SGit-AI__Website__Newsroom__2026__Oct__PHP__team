@@ -1,0 +1,27 @@
+{
+ "agent": "factcheck@php.newsroom",
+ "member": "verifier",
+ "note": "Kept by the agent itself.",
+ "vaults": [
+  {
+   "id": "hsmfer5w",
+   "what": "The fact-check desk's pack-mode copy of the evidence vault (3ytzxm3g, head 94352a55fbaa, 49 commits, 5,024 blobs): a fast clone for the desk's checks; it holds no desk writes",
+   "created": "2026-10-26",
+   "key_sealed_to_root": "2026-10-26"
+  }
+ ],
+ "holds": [
+  {
+   "id": "hsmfer5w",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-26"
+  },
+  {
+   "id": "3ytzxm3g",
+   "key": "read key",
+   "from": "the curator's published read key (evidence vault, read only)",
+   "since": "2026-10-22"
+  }
+ ]
+}
