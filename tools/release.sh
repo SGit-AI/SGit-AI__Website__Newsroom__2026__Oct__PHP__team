@@ -21,6 +21,15 @@ if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN
   echo "tripwire: credential shape in the staged diff; release aborted"; exit 1
 fi
 if git diff --cached --quiet; then echo "nothing to release"; exit 0; fi
-if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "$MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "$MSG"; fi
-git push -q -u origin "HEAD:$BRANCH"
-echo "pushed to $BRANCH"
+# Every member releases here, minutes apart. A rejected push undoes the commit, takes in what landed (one file per
+# record, so two members' changes rarely meet), and pushes again. Five tries.
+for attempt in 1 2 3 4 5; do
+  if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "$MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "$MSG"; fi
+  if git push -q -u origin "HEAD:$BRANCH" 2>/dev/null; then echo "pushed to $BRANCH"; exit 0; fi
+  echo "push rejected (someone released meanwhile): taking it in ($attempt of 5)"
+  git reset -q --soft HEAD~1
+  git fetch -q origin "$BRANCH"
+  git merge -q --ff-only "origin/$BRANCH" || { echo "release stopped: your change and someone else's touch the same file; merge origin/$BRANCH by hand and run this again"; exit 3; }
+  python3 tools/front.py >/dev/null && git add -A
+done
+echo "release stopped: five tries, five releases by others in between; run this again"; exit 3
