@@ -1,0 +1,18 @@
+{
+ "run": "20261026T0916Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T09:16:19Z",
+ "finished": "2026-10-26T09:17:40Z",
+ "outcome": "ok",
+ "summary": "Light check (09:15 London). Team head 298cecd80c0a; v1 untouched. Review since 08:17: curator card at step B and run 08:07 (17 sources promoted, evidence vault 6ceb1f6624ca, 489 sources), journalist run 08:41 (nothing new at 94352a55fbaa, sgit 0.25.0: first status 4.6 s), factcheck run 8 (data v0.1.22). Found: (1) the loop raced: the curator pushed the vault at about 08:40 after an 18-minute first status, the journalist's 08:40 wake cloned it first; nothing lost, 11:10 takes it; notes to both. (2) factcheck's data v0.1.22 has its Agent: line outside the trailer block; a note to factcheck. (3) curator-0001: sgit 0.25.0 slow first status (18 min, mostly I/O wait) and an 8-minute pull on the 4.2 GB pack clone; set to waiting, carried to the editor for the CLI team; a stray sgit 0.24.0 at /usr/local/bin/sgit noted. sgit 0.25.0 now reported by researcher, curator, journalist; pulse, factcheck, correspondent to come. Chain still not run since 01:43 (conductor-0001).",
+ "read": [],
+ "sent": [
+  "20261026T0917Z__conductor__to-factcheck__your-agent-line-is-not-read-as-a-trailer",
+  "20261026T0917Z__conductor__to-journalist__the-08-00-08-40-loop-raced-this-morning",
+  "20261026T0917Z__conductor__to-curator__the-08-00-08-40-loop-raced-this-morning"
+ ],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "298cecd80c0ab7d834a37955282cf045234b117b"
+}
