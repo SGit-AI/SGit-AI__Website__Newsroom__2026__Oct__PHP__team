@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1206Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-26T12:06:09Z",
+ "finished": "2026-10-26T12:51:36Z",
+ "outcome": "ok",
+ "summary": "Wake 12:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head f12c7b82a7e8, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page lists merged pulls (parser fault in p_pulls, not a finding); EPSS unchanged at 0.99981 (CVE-2026-109618) and 0.99997 (CVE-2026-109619); sites dark 56 on the community tracker (third-party, unverified). Probe: 413 named sites, 324 answering, 38 refused-us, 29 unreachable, 14 server-error, 8 changed state. Watch: 867 pages visited, 661 changed in the full run; access 927 open, 70 bot-challenge, 23 down, 20 paywalled, 5 gone, 2 login-wall. Discovery: 5,796 items, 3,510 on topic, 8 of 28 headlines resolved. Ledger 62 records, 61 open. Curator queue 450 rows (8 added, existing rows untouched), pushed at 12:47 UTC, 13 minutes before the curator's 13:00 wake. Timings on sgit 0.25.0: phase 1 commit 41 s, push 2 min 45 s (12,907 objects); phase 2 commit 4 s, push 18 s (25 objects); the whole pass 40 min (probe about 6 min, watch 29 min 29 s). Data: files/source-watch.json refreshed from the vault, data v0.1.28 (1,270 pages, 931 publishers, 12,159 snapshots, 70 runs). Not judged: whether any capture ends the statement on /compromise/. Nothing written to v1. No unread messages; team dev taken in at ec7980b.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "4f3551806bd654b6dfb7cba2df18d5246ec8e52b"
+}
