@@ -45,15 +45,13 @@
  "runbook": "",
  "repositories": {
   "push": [
-   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team"
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data"
   ],
   "pull": [],
-  "after_the_move": {
-   "push": [
-    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
-    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data"
-   ],
-   "pull": []
-  }
+  "note": "team: the run record, every wake, and my card, status and debriefs. data: files/pulse.json, refreshed from the Pulse vault once its exporter is moved to the press (a reviewed change; not yet). The Pulse vault is the pack vault 9f5knw9r, not a repository. v1 (SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP) is frozen: never write it, not even a run record. updates, press, site and refs are not attached: publishing updates needs the editor's go and a scope change.",
+  "never": [
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP"
+  ]
  }
 }
