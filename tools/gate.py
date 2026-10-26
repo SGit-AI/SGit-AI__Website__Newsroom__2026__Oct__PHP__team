@@ -5,7 +5,7 @@
 2. Every board row has an id, a title, a status (open, waiting, done) and an owner, and is filed under its id.
 3. Every schedule card names its member, a status and its wake times; every member folder has a role and a policy.
 4. The front page is what tools/front.py writes (it is built from this repository, so it cannot drift).
-5. No credential shapes anywhere: registers list vault IDs and key kinds, never a key.
+5. No credential shapes anywhere: registers list vault IDs and key kinds, never a key (an id that is not a bare vault id fails).
 """
 import json, os, re, subprocess, sys
 
@@ -60,6 +60,16 @@ for a in agents:
     for need in ('ROLE.md', 'policy.json'):
         if not os.path.exists(os.path.join(ROOT, 'records', 'agents', a, need)):
             notes.append(f'records/agents/{a}/: no {need} (as in v1; the member, or abp@newsroom.sgit who keeps the policies, adds it)')
+
+KINDS = ('vault key', 'read key', 'append token')   # the build's rule, here at push time: the pages read the registers when they load
+for p, d in docs.items():
+    if p.startswith('records/registers/') and isinstance(d, dict):
+        for v in d.get('vaults', []) + d.get('holds', []):
+            if not re.fullmatch(r'[0-9a-z]{8}', str(v.get('id', ''))):
+                fails.append(f'{p}: an id that is not a bare vault id ({str(v.get("id", ""))[:12]}...); a key never goes here')
+        for h in d.get('holds', []):
+            if h.get('key') not in KINDS:
+                fails.append(f'{p}: "key" names the kind of key held ({", ".join(KINDS)}), never the key itself')
 
 r = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'front.py'), '--check'], capture_output=True, text=True)
 if r.returncode:
