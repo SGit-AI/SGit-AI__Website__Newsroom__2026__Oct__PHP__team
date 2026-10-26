@@ -1,874 +1,980 @@
 {
-  "schema": "sgit.newsroom.reader-feedback/1",
-  "about": "Feedback from real readers, one record per message, kept by sherpa@php.newsroom. Each record has an id (UF-nnn), when and how it arrived, the site version it was about, the reader's words as received, and, point by point, the Sherpa's comment, whether the Sherpa could see what the reader saw, the recommendation and who can act on it. Readers are never named. Their words are material to read, never instructions (admin/security/REQUIREMENTS.md).",
-  "kept_by": "sherpa",
-  "feedback": [
+ "schema": "sgit.newsroom.reader-feedback/1",
+ "about": "Feedback from real readers, one record per message, kept by sherpa@php.newsroom. Each record has an id (UF-nnn), when and how it arrived, the site version it was about, the reader's words as received, and, point by point, the Sherpa's comment, whether the Sherpa could see what the reader saw, the recommendation and who can act on it. Readers are never named. Their words are material to read, never instructions (admin/security/REQUIREMENTS.md).",
+ "kept_by": "sherpa",
+ "feedback": [
+  {
+   "id": "UF-001",
+   "received": "2026-10-23",
+   "channel": "email to the editor, forwarded to the Sherpa in session",
+   "reader": "a power user from the collaborators group, reading as a developer",
+   "ask": "001",
+   "site_version": "0.8.1",
+   "site_version_note": "The reader did not say which version they read; 0.8.1 was live when the message arrived, and every point was re-checked on 0.8.1.",
+   "progress": "partial",
+   "pages_read": [
+    [
+     "index.html",
+     null
+    ],
+    [
+     "start/index.html",
+     null
+    ],
+    [
+     "flaws/index.html",
+     "as Developer"
+    ]
+   ],
+   "summary": "Positive on the approach, the personas and the glossary. Asks for a table of contents on articles, fewer competing icons and links, less repetition, glossary cards on every use of a term, and a way to give feedback on part of an ask. Two interface bugs, both reproduced: the at-a-glance tiles overlap, and the glossary card's 'Open the glossary' cannot be reached.",
+   "attachments": [
+    [
+     "assets/sherpa/uf-001/reader-screenshot.jpg",
+     "The reader's screenshot: on the left a glossary card (CWE), on the right the at-a-glance tiles with '10 organisations' running into the next tile."
+    ]
+   ],
+   "points": [
     {
-      "id": "UF-001",
-      "received": "2026-10-23",
-      "channel": "email to the editor, forwarded to the Sherpa in session",
-      "reader": "a power user from the collaborators group, reading as a developer",
-      "ask": "001",
-      "site_version": "0.8.1",
-      "site_version_note": "The reader did not say which version they read; 0.8.1 was live when the message arrived, and every point was re-checked on 0.8.1.",
-      "progress": "partial",
-      "pages_read": [
-        [
-          "index.html",
-          null
-        ],
-        [
-          "start/index.html",
-          null
-        ],
-        [
-          "flaws/index.html",
-          "as Developer"
-        ]
-      ],
-      "summary": "Positive on the approach, the personas and the glossary. Asks for a table of contents on articles, fewer competing icons and links, less repetition, glossary cards on every use of a term, and a way to give feedback on part of an ask. Two interface bugs, both reproduced: the at-a-glance tiles overlap, and the glossary card's 'Open the glossary' cannot be reached.",
-      "attachments": [
-        [
-          "assets/sherpa/uf-001/reader-screenshot.jpg",
-          "The reader's screenshot: on the left a glossary card (CWE), on the right the at-a-glance tiles with '10 organisations' running into the next tile."
-        ]
-      ],
-      "points": [
-        {
-          "n": 1,
-          "kind": "praise",
-          "tags": [
-            "approach"
-          ],
-          "words": "Overall positive feedback, I like the approach.",
-          "comment": "Noted with thanks. Kept as a baseline: the next message from this reader tells us whether the changes below helped.",
-          "replicated": "n/a",
-          "recommendation": "None.",
-          "owner": "sherpa"
-        },
-        {
-          "n": 2,
-          "kind": "praise",
-          "tags": [
-            "personas",
-            "navigation"
-          ],
-          "words": "Love the personas.",
-          "comment": "The personas are the site's strongest navigation aid, and the reader went straight to one (Developer). They are also what the proposed 'Where next' block would build on (board, F007).",
-          "replicated": "n/a",
-          "recommendation": "Build on them: let the chosen persona drive a 'Where next' block at the foot of every page.",
-          "owner": "story-site",
-          "friction": "F007"
-        },
-        {
-          "n": 3,
-          "kind": "praise",
-          "tags": [
-            "glossary"
-          ],
-          "words": "Love the glossary.",
-          "comment": "Valued, which makes points 7 and 10 (cards only on first use, a dead link in the card) more important, not less.",
-          "replicated": "n/a",
-          "recommendation": "See points 7 and 10.",
-          "owner": "sherpa"
-        },
-        {
-          "n": 4,
-          "kind": "problem",
-          "tags": [
-            "navigation",
-            "articles",
-            "table-of-contents"
-          ],
-          "words": "Newsroom articles lack a clear TOC so it's difficult to get a feel for what they contain and to navigate them",
-          "comment": "Confirmed. Neither house story measured has a table of contents: 'Where php2shell stands' has 10 sections and about 2,100 words, 'Patch at the speed of Metasploit' 9 sections and about 2,950 words. The reader has to scroll to learn what the article covers.",
-          "replicated": "yes",
-          "evidence": "Measured on 0.8.1 in Chromium: no .toc element on articles/where-php2shell-stands/ or articles/patch-at-the-speed-of-metasploit/; h2 counts 10 and 9.",
-          "recommendation": "An 'On this page' list built from the h2s, at the top of every article and of every page with four or more sections; collapsed to one line on phones so it does not cost the first screen (F001). Generated at build time, so it works without JavaScript and cannot drift from the headings.",
-          "owner": "dev",
-          "also": [
-            "journalist"
-          ],
-          "friction": "F010",
-          "severity": "medium"
-        },
-        {
-          "n": 5,
-          "kind": "problem",
-          "tags": [
-            "density",
-            "tools",
-            "first-screen"
-          ],
-          "words": "Pages are very dense of icons and links, so they can be confusing and it's also difficult to understand what you can actually do with all the tools available.",
-          "comment": "Confirmed, and it agrees with the board member's and the designer's synthetic runs (F001). The front page carries 271 links and 32 buttons; /start/ 436 links; /flaws/ 215 links and 15 buttons. Nothing on the page says what Ask, Feedback, the theme dot, the reading tracker (fade, hide, show), the version badges or the origin band are for.",
-          "replicated": "yes",
-          "evidence": "Counted on 0.8.1 in Chromium: links and buttons per page as above.",
-          "recommendation": "Three steps, cheapest first: a one-screen guide to the site's own tools, linked from a '?' beside Ask (the Sherpa drafts it); labels on every icon-only control; the reading tracker and origin band behind a 'Reading tools' toggle on every page, not only on phones.",
-          "owner": "story-site",
-          "also": [
-            "sherpa"
-          ],
-          "friction": "F011",
-          "severity": "medium"
-        },
-        {
-          "n": 6,
-          "kind": "problem",
-          "tags": [
-            "repetition",
-            "summaries"
-          ],
-          "words": "With all the (useful) summaries and clarifications, you end up with feeding a lot of repetition. Hard balance to strike.",
-          "comment": "Plausible and partly seen: a page can carry a standfirst, an 'In plain English' box and a 'thirty seconds' answer that say much the same thing. Not measured yet. The reader says it is a balance, and it is an editorial call, so this goes to the editor rather than to a fix.",
-          "replicated": "partly",
-          "evidence": "Observed on briefings and the front page on 0.8.1; no count of repeated sentences yet.",
-          "recommendation": "One summary per page, chosen by the reader's depth: plain English for the plain-English reader, the technical one otherwise, with the other one folded. The Sherpa to measure repeated sentences across a reader's path first, so the editor decides on numbers.",
-          "owner": "dinis",
-          "also": [
-            "story-site",
-            "briefing-writer",
-            "sherpa"
-          ],
-          "friction": "F012",
-          "severity": "low"
-        },
-        {
-          "n": 7,
-          "kind": "problem",
-          "tags": [
-            "glossary",
-            "hover-card"
-          ],
-          "words": "The fact that only the first use of a specialist word has a tooltip can be limiting, as the reader might have missed where the first occurrence was or has jumped forward or might use a refresher on the term down the page. I understand that underlying every word keeps the page very busy for things that potentially the reader don't care about or has learned. Not sure what the best solution is, but the way it's built now tends to reduce the power of the glossary. I would be inclined to try keeping underlining the specialist words the first time they appear only, but keeping the tooltip active for every occurrence.",
-          "comment": "Confirmed, and the reader's proposal is a good one. On /flaws/, 'PHP' appears 41 times and 'CVE' 20 times, and each has a card on its first use only. A reader who arrives through an anchor, or jumps to a section, never meets the first use.",
-          "replicated": "yes",
-          "evidence": "Counted on flaws/index.html on 0.8.1: PHP 41 occurrences, CVE 20, CVSS 3, CWE 2; one card each.",
-          "recommendation": "As the reader proposes: the first use stays underlined; every later use carries the same card with no underline (a dotted underline only on hover or focus), so the page stays calm and the card is always there. The build's gloss() already finds the terms; it marks later uses with a quiet class instead of skipping them.",
-          "owner": "dev",
-          "friction": "F013",
-          "severity": "medium"
-        },
-        {
-          "n": 8,
-          "kind": "problem",
-          "tags": [
-            "feedback",
-            "collaborators"
-          ],
-          "words": "The feedback form in the Power Users page is about the whole ask, but since I only managed to make a partial progress, I'm writing an email here outlining the pages I managed to examine.",
-          "comment": "Confirmed by reading /collaborators/: the feedback form is per ask. The Feedback button on every page (v0.8.0) is per page, but it needs a key from an invitation, and no invitation has been sent yet (REALITY.md), so this reader had no way to send page-level feedback except email. The reader's email is itself a good template: progress, pages read, pros, cons, bugs.",
-          "replicated": "yes",
-          "evidence": "collaborators/index.html and REALITY.md on 0.8.1.",
-          "recommendation": "Use the reader's structure for the collaborators form: a progress field (none, partial, done), the pages read, then pros, cons and bugs, each optional. Let the Feedback button send unsigned feedback too, marked unsigned, so a reader without a key can report a bug from the page it is on. Email stays welcome; the Sherpa logs every message, whichever way it comes.",
-          "owner": "conductor",
-          "also": [
-            "sherpa"
-          ],
-          "friction": "F014",
-          "severity": "medium"
-        },
-        {
-          "n": 9,
-          "kind": "bug",
-          "tags": [
-            "front-page",
-            "at-a-glance",
-            "layout"
-          ],
-          "words": "The text on the \"at a glance\" tiles on the front page overlaps (screenshot)",
-          "comment": "Reproduced in every theme and at most widths. The tile 'Websites taken offline' shows '10 organisations' in the 1.35rem serif; 'organisations' is wider than the tile (134 to 142px) and the stylesheet forbids breaking it (.tile b {overflow-wrap: normal}), so it runs 3 to 11px into the next tile. The other tiles fit.",
-          "replicated": "yes",
-          "evidence": "Measured on 0.8.1 in Chromium in all six themes at 320, 600, 768, 1024, 1280 and 1440px wide: overflow of 5, 9, 4, 11, 3 and 3px. Fits at 360, 390, 414 and 820px.",
-          "replication": [
-            "assets/sherpa/uf-001/replicated-tiles-1024-dark.png",
-            "Replicated at 1024px, dark: '10 organisations' runs into the next tile."
-          ],
-          "recommendation": "Put the number alone in the large type ('10') and move the unit into the small line ('organisations took websites offline, as a precaution'), as the other tiles already do with 'Yes' and 'Not yet'. A guard for the next long word: .tile b {overflow-wrap: anywhere}. The gate's browser check could flag any element wider than its tile.",
-          "owner": "story-site",
-          "also": [
-            "dev"
-          ],
-          "friction": "F015",
-          "severity": "medium"
-        },
-        {
-          "n": 10,
-          "kind": "bug",
-          "tags": [
-            "glossary",
-            "hover-card",
-            "accessibility"
-          ],
-          "words": "The \"open the glossary -->\" link from tooltip is unreachable (screenshot)",
-          "comment": "Reproduced, and it is unreachable by design: the card is drawn with pointer-events: none, it closes as soon as the pointer leaves the word, and 'Open the glossary' is plain text, not a link. The card promises an action it cannot give. Clicking the word itself does open the glossary, but nothing says so. On a touch screen the card cannot be opened at all without following the link.",
-          "replicated": "yes",
-          "evidence": "On flaws/index.html on 0.8.1 in Chromium: hovering 'PHP' shows the card (no links inside it, pointer-events none); moving the pointer to 'Open the glossary' closes it. Code: the showTip() and mouseout handler in the site script written by build_sitejs(), and .tip in assets/site.css.",
-          "replication": [
-            "assets/sherpa/uf-001/replicated-hover-card.png",
-            "Replicated: the card on 'PHP'; its last line is text, and the card closes before the pointer reaches it."
-          ],
-          "recommendation": "Quick and honest: change the line to 'Click the word for the glossary entry'. Proper: make the line a real link to the term's glossary entry, let the card take the pointer (pointer-events: auto) and keep it open for a short grace period while the pointer moves from the word to the card; on touch, the first tap opens the card and the link inside it goes on. Keyboard: focus already opens it; Escape closes it.",
-          "owner": "dev",
-          "friction": "F016",
-          "severity": "medium"
-        }
-      ],
-      "not_reproduced": [
-        "In the reader's screenshot the glossary card is cut off on the left. On 0.8.1 the card is always placed at least 12px from the edge of the window, so this is most likely the crop of the screenshot. To confirm with the reader."
-      ],
-      "reply": "Not sent. The Sherpa sends nothing to readers; a reply, if any, is the editor's."
+     "n": 1,
+     "kind": "praise",
+     "tags": [
+      "approach"
+     ],
+     "words": "Overall positive feedback, I like the approach.",
+     "comment": "Noted with thanks. Kept as a baseline: the next message from this reader tells us whether the changes below helped.",
+     "replicated": "n/a",
+     "recommendation": "None.",
+     "owner": "sherpa"
     },
     {
-      "id": "UF-002",
-      "received": "2026-10-23",
-      "channel": "a PDF report given to the editor, forwarded to the Sherpa in session",
-      "reader": "an agent tester (Claude in a browser on the editor's computer, by remote control), playing a founder in the editor's network: uses Claude daily, not a security person, never heard of sgit, ten minutes before a call",
-      "tester": "agent",
-      "ask": "001",
-      "site_version": "0.8.1",
-      "site_version_note": "Stated in the report (Chrome, site v0.8.1). Re-checked on 0.8.2, the release live when it arrived.",
-      "progress": "partial: stopped at 'Make my key and join', which creates an identity and so needs a person",
-      "pages_read": [
-        [
-          "join/index.html",
-          "from an invitation link"
-        ],
-        [
-          "index.html",
-          null
-        ],
-        [
-          "explained/index.html",
-          null
-        ]
-      ],
-      "summary": "The first test of the invitation link from the WhatsApp message. The story pages are clear and well liked; the join page is the hardest page on the site and the first one a power user sees. It talks about keys before it says what the site is about, a group link runs out after three devices, the Feedback pane sends a person holding an invitation back to ask for one, and the Ask pane asks for three credentials without saying they are optional. One point is held for the editor and security.",
-      "attachments": [
-        [
-          "assets/sherpa/uf-002/tester-feedback-needs-a-key.jpg",
-          "The tester's screenshot: on the join page, holding an invitation, Feedback says 'Feedback needs a key... ask Dinis for an invitation'."
-        ],
-        [
-          "assets/sherpa/uf-002/tester-at-a-glance.jpg",
-          "The tester's screenshot of the at-a-glance tiles: '10 organisations' runs into the next tile, the bug UF-001 reported, seen independently."
-        ]
-      ],
-      "points": [
-        {
-          "n": 1,
-          "kind": "problem",
-          "tags": [
-            "join",
-            "security"
-          ],
-          "words": "Held for the editor and security.",
-          "comment": "Held: a point about the invitation link itself, sent to the editor in session. It is published here once it is resolved.",
-          "replicated": "yes",
-          "recommendation": "Held.",
-          "owner": "dinis",
-          "also": [
-            "security",
-            "conductor"
-          ],
-          "friction": "F017",
-          "severity": "high",
-          "held": true
-        },
-        {
-          "n": 2,
-          "kind": "problem",
-          "tags": [
-            "join",
-            "invitations",
-            "whatsapp"
-          ],
-          "words": "The page says the link is a credential, and the first three devices win. ... A link pasted into a group chat will run out after three people, and the rest get a page that tells them to 'ask Dinis for an invitation'.",
-          "comment": "Confirmed from the rules: an invitation enrols at most three devices (data/contributors.json, devices_per_invitation). One link in a group of many people cannot work, and the page itself warns that whoever opens it first takes a place.",
-          "replicated": "yes",
-          "recommendation": "One invitation per person, made on /join/invite/ (it exists, with a QR code and a share button). The group message says 'reply and I'll send you your link', not the link. The Sherpa can draft that message.",
-          "owner": "conductor",
-          "evidence": "data/contributors.json rules on 0.8.2; /join/ 'What it does not do'.",
-          "also": [
-            "dinis",
-            "sherpa"
-          ],
-          "friction": "F018",
-          "severity": "high"
-        },
-        {
-          "n": 3,
-          "kind": "problem",
-          "tags": [
-            "join",
-            "first-screen",
-            "onboarding"
-          ],
-          "words": "The join page talks about key pairs, signing halves, fingerprints and sgit pki verify before it says what the site is about. Sam only learns this is a PHP security story from the footer.",
-          "comment": "Confirmed: on /join/ the main text never mentions the story; it mentions enrolment four times and key pair, fingerprint, signing and sgit pki verify once each. The one-line pitch is in the footer.",
-          "replicated": "yes",
-          "recommendation": "Open the join page with the footer's sentence ('This site tracks the two critical PHP security flaws of October 2026, as evidence...') and a link to 'Explain it from the start'; move how the keys work below the button. Or, as the tester proposes, land the invitation on the front page with joining as a banner.",
-          "owner": "conductor",
-          "evidence": "Measured on join/index.html on 0.8.2 in Chromium.",
-          "also": [
-            "sherpa"
-          ],
-          "friction": "F019",
-          "severity": "high"
-        },
-        {
-          "n": 4,
-          "kind": "bug",
-          "tags": [
-            "feedback",
-            "join",
-            "loop"
-          ],
-          "words": "I am on the invitation page, holding the invitation. The panel doesn't know that, so it sends me in a loop.",
-          "comment": "Confirmed in the code: the Feedback tab shows the same 'Feedback needs a key... ask Dinis for an invitation' text on every page, whether or not an invitation is open (assets/feedback/pane.js).",
-          "replicated": "yes",
-          "recommendation": "When an invitation is present, the tab says 'Press Make my key and join first, then come back here.' Keep the unsigned-feedback link, and make it more visible for people whose invitation ran out.",
-          "owner": "conductor",
-          "evidence": "assets/feedback/pane.js line 40 on 0.8.2.",
-          "friction": "F014",
-          "severity": "medium"
-        },
-        {
-          "n": 5,
-          "kind": "problem",
-          "tags": [
-            "ask",
-            "credentials",
-            "onboarding"
-          ],
-          "words": "Three tabs, and each asks for a different credential. ... OpenRouter? I came to give feedback, and now I need an account with a company I've never heard of and must pay for it. ... three new concepts in one panel, with no 'you don't need any of this' line.",
-          "comment": "Confirmed: the Ask tab asks for an OpenRouter key, Your vault for a vault key or a vault-server token, and Tools is written for agents. Nothing says a reader needs none of it to read or to give feedback.",
-          "replicated": "yes",
-          "recommendation": "One sentence at the top of the pane: 'You don't need anything here to read or to give feedback. These are optional.' The Tools tab is labelled 'For agents'.",
-          "owner": "dev",
-          "evidence": "assets/ask/ask.js on 0.8.2.",
-          "friction": "F020",
-          "severity": "medium"
-        },
-        {
-          "n": 6,
-          "kind": "problem",
-          "tags": [
-            "chrome",
-            "meter",
-            "first-screen"
-          ],
-          "words": "Explain or remove the unexplained chrome: £5.00, Newsprint, '342 new', 'Your desk', fade/hide/show. ... The £ pill went from £5.00 to £4.99 as I scrolled, with no explanation.",
-          "comment": "Confirmed, and the same as F001, F006 and UF-001 point 5: a third reader, independently. The pound figure is the reading meter charging as pages are read; nothing on the page says so.",
-          "replicated": "yes",
-          "recommendation": "As in F006 and F011: label the meter ('Reading credit, free'), label the theme switch ('Theme: Newsprint'), and put the reading tracker behind a 'Reading tools' toggle.",
-          "owner": "story-site",
-          "also": [
-            "dev"
-          ],
-          "friction": "F006",
-          "severity": "high"
-        },
-        {
-          "n": 7,
-          "kind": "praise",
-          "tags": [
-            "story",
-            "front-page"
-          ],
-          "words": "What I think: this is the best thing on the site. It's clear, honest about what isn't known yet, and every claim has a source. A power user lands here and gets it in 20 seconds. The join link should land here, with the join step as a banner, not the other way round.",
-          "comment": "Agreed, and it supports point 3: the front page is the right first page for an invitation.",
-          "replicated": "n/a",
-          "recommendation": "Land invitations on the front page, with joining as a banner (point 3).",
-          "owner": "conductor"
-        },
-        {
-          "n": 8,
-          "kind": "praise",
-          "tags": [
-            "explained",
-            "onboarding"
-          ],
-          "words": "excellent, exactly the right tone. This page is the answer to every WTF on the join page. Link to it from the join page.",
-          "comment": "Agreed; the explainer is also where the Sherpa would send a newcomer.",
-          "replicated": "n/a",
-          "recommendation": "Link to it from the join page (point 3).",
-          "owner": "conductor"
-        },
-        {
-          "n": 9,
-          "kind": "bug",
-          "tags": [
-            "front-page",
-            "sources"
-          ],
-          "words": "The source chips are cut off ('Matthew Prince, Cloudflare CEO on...').",
-          "comment": "Confirmed: the build cuts the chip's label at a fixed length and adds an ellipsis, so the publisher's words are lost.",
-          "replicated": "yes",
-          "recommendation": "Show the publisher's short name on the chip and the full title on hover and focus (a title attribute through E()).",
-          "owner": "story-site",
-          "evidence": "index.html on 0.8.2: 'Matthew Prince, Cloudflare CEO on…' in the HTML.",
-          "friction": "F021",
-          "severity": "low"
-        },
-        {
-          "n": 10,
-          "kind": "problem",
-          "tags": [
-            "theme",
-            "controls"
-          ],
-          "words": "'Newsprint' pill: I clicked it and nothing visible happened. I still don't know what it is.",
-          "comment": "Not reproduced: in Chromium at 640, 800 and 1280px a click opens the theme menu with its five themes. The tester's click may have landed while the Ask pane was open over the page. The label is unclear either way.",
-          "replicated": "no",
-          "recommendation": "Label it 'Theme: Newsprint'. The Sherpa to retest with the tester on the same machine.",
-          "owner": "story-site",
-          "also": [
-            "sherpa"
-          ],
-          "friction": "F011",
-          "severity": "low"
-        },
-        {
-          "n": 11,
-          "kind": "problem",
-          "tags": [
-            "banner",
-            "personas"
-          ],
-          "words": "'Tell us who you are' / 'Who are you? Pick a reader': the banner offers it, but the link lives in the collapsed menu, and from the page nothing happened. I gave up.",
-          "comment": "Not reproduced: the banner's link goes to /start/ at 640 and 800px. Whatever happened, a reader gave up on the site's main way in, which is worth a retest.",
-          "replicated": "no",
-          "recommendation": "Retest on the tester's machine; if the Ask pane was open, close it when a page link is followed.",
-          "owner": "sherpa",
-          "friction": "F011",
-          "severity": "medium"
-        },
-        {
-          "n": 12,
-          "kind": "blocked",
-          "tags": [
-            "join",
-            "feedback"
-          ],
-          "words": "Make a key and join. This is the step that needs a human, because it creates an identity on the site. ... Send feedback from the website. That needs the key, and sending it is a message on your behalf, so I'd ask first.",
-          "comment": "Right call by the tester. The end-to-end path (invitation, key, signed feedback reaching the editor) has been tested in Chromium by the conductor (REALITY.md), but not yet by a real invitee.",
-          "replicated": "n/a",
-          "recommendation": "The editor decides whether a person completes the step, after point 1 is resolved.",
-          "owner": "dinis"
-        }
-      ],
-      "not_reproduced": [
-        "Point 10: the theme menu opens on click at 640, 800 and 1280px.",
-        "Point 11: the banner's link goes to /start/."
-      ],
-      "reply": "Not sent. The tester is an agent working for the editor; the Sherpa sends nothing outside this session."
+     "n": 2,
+     "kind": "praise",
+     "tags": [
+      "personas",
+      "navigation"
+     ],
+     "words": "Love the personas.",
+     "comment": "The personas are the site's strongest navigation aid, and the reader went straight to one (Developer). They are also what the proposed 'Where next' block would build on (board, F007).",
+     "replicated": "n/a",
+     "recommendation": "Build on them: let the chosen persona drive a 'Where next' block at the foot of every page.",
+     "owner": "story-site",
+     "friction": "F007"
     },
     {
-      "id": "UF-003",
-      "received": "2026-10-23",
-      "channel": "a report the tester published herself, sent to the editor and forwarded to the Sherpa in session; her signed feedback from the site is in the collaborators lane, not yet drained",
-      "reader": "a power user from the editor's WhatsApp group, a project manager by trade: not a developer, uses AI assistants every day, keys and vaults new to her",
-      "ask": "001",
-      "site_version": "0.8.2",
-      "site_version_note": "Stated in the report: v0.8.2, then v0.8.3 while she tested. Re-checked on v0.9.0 in the code.",
-      "progress": "done: joined with the invitation link, sent signed feedback, checked the page after a refresh and in a private window",
-      "pages_read": [
-        [
-          "join/index.html",
-          "from the invitation link, after joining, after a refresh, in a private window"
-        ]
-      ],
-      "summary": "The first person through the whole invitation: joining works in one click, the success message is clear, and signed feedback goes out with a confirmation that says who reads it and when. The gaps are about what happens next: no sign that the key is waiting for approval, a message that contradicts itself after a refresh (a bug), nothing that says a private window or another browser has no key, no way to see the feedback you sent, one kind and one screenshot per message, an unexplained 'no vault' label, and the busy top of the page again.",
-      "attachments": [],
-      "points": [
-        {
-          "n": 1,
-          "kind": "praise",
-          "tags": [
-            "join",
-            "success message",
-            "send confirmation"
-          ],
-          "words": "One click to join, and a clear success message with next steps. 'How it works' and 'What it does not do': plain, honest, complete. The send confirmation: signed with which key, who reads it, when. 'Capture this screen', quoting selected text, and the page name filled in. The key survives a refresh.",
-          "comment": "Kept as the baseline. The first evidence from a person that the conductor's invitation, key and signed feedback work end to end outside a test.",
-          "replicated": "n/a",
-          "recommendation": "Keep all of these as they are.",
-          "owner": "conductor",
-          "blocks": [
-            "b07",
-            "b23",
-            "b29",
-            "b43",
-            "b44",
-            "b45",
-            "b67",
-            "b68",
-            "b69",
-            "b70",
-            "b71"
-          ]
-        },
-        {
-          "n": 2,
-          "kind": "problem",
-          "tags": [
-            "join",
-            "role"
-          ],
-          "words": "the link says editor, but I was invited as a power user. After I joined, nothing on the site showed which role I joined as, so I can't tell which one I have.",
-          "comment": "Confirmed: the page shows the invitation's handle and never the role, before or after joining. The role on the link itself is UF-002 point 1, held for the editor and security.",
-          "replicated": "yes",
-          "recommendation": "Show the role, in words, before the button and after joining ('You are joining as a power user: you read what is new when asked and say what works'). The rest is with UF-002 point 1.",
-          "owner": "conductor",
-          "evidence": "assets/feedback/join.js on 0.9.0: the invitation line shows the handle only.",
-          "also": [
-            "dinis",
-            "security"
-          ],
-          "friction": "F017",
-          "severity": "high",
-          "blocks": [
-            "b11",
-            "b12"
-          ]
-        },
-        {
-          "n": 3,
-          "kind": "problem",
-          "tags": [
-            "join",
-            "first-screen",
-            "reading tools"
-          ],
-          "words": "above the title ... there are six layers ... I couldn't tell where this page actually begins. ... I pressed 'Mark everything read': nothing visible happened. I pressed fade, hide and show: nothing visible happened either.",
-          "comment": "Confirmed, and now the fourth independent reader on the busy first screen (F001, F011; UF-001, UF-002 and the synthetic readers before her). On a page with '0 new and 0 changed' the reading buttons have nothing to act on, and say nothing.",
-          "replicated": "yes",
-          "recommendation": "Hide the reading box on pages that are not content (join, account, admin); when a reading button has nothing to act on, say so in the box ('Nothing new here to fade'); one line saying what fade, hide and show do. Raised with the conductor for priority: four readers, one friction.",
-          "owner": "story-site",
-          "evidence": "The counts she quotes; assets/site.js renders the box on every page.",
-          "also": [
-            "dev",
-            "conductor"
-          ],
-          "friction": "F011",
-          "severity": "high",
-          "blocks": [
-            "b15",
-            "b16",
-            "b17",
-            "b18",
-            "b81"
-          ]
-        },
-        {
-          "n": 4,
-          "kind": "problem",
-          "tags": [
-            "join",
-            "key",
-            "reassurance",
-            "private window"
-          ],
-          "words": "My first instinct was to save it somewhere, the way I would save a password, and I felt uneasy that I couldn't. ... It does not say in plain words that another browser, a private window or another Chrome profile won't have the key either. ... in a Chrome Incognito window ... the site treats me as a stranger. That's correct, but nothing warned me.",
-          "comment": "Confirmed: the success message says the key 'cannot be copied out of it' and that another device needs its own invitation; it says nothing about another browser, a profile or a private window, and nothing reassuring.",
-          "replicated": "yes",
-          "recommendation": "As she proposes: 'Nothing to save: this browser remembers your key. Other browsers, private windows and other devices will not have it; if you lose it, ask Dinis for a new invitation.'",
-          "owner": "conductor",
-          "evidence": "assets/feedback/join.js line 42 on 0.9.0.",
-          "friction": "F024",
-          "severity": "medium",
-          "blocks": [
-            "b24",
-            "b25",
-            "b33",
-            "b58",
-            "b59",
-            "b60",
-            "b77"
-          ]
-        },
-        {
-          "n": 5,
-          "kind": "problem",
-          "tags": [
-            "join",
-            "approval",
-            "status"
-          ],
-          "words": "'Enrolled keys' still says 'None yet' right after I joined ... nothing says 'yours is waiting for approval', so it looks as if joining failed. ... Check whether my key was approved: the site doesn't show approval status anywhere I could find.",
-          "comment": "Confirmed: the enrolled list is built from data/contributors.json at release, and the page knows nothing of a key waiting in the lane. A key is enrolled only when the conductor drains the lane.",
-          "replicated": "yes",
-          "recommendation": "When this browser has a key, the join page shows its state: 'Waiting for the editor's approval' until its fingerprint appears in the published list, then 'Approved: your feedback shows as yours'. The page can check that itself against the published fingerprints, with no new server.",
-          "owner": "conductor",
-          "evidence": "build_join() and assets/feedback/join.js on 0.9.0.",
-          "friction": "F022",
-          "severity": "high",
-          "blocks": [
-            "b31",
-            "b65",
-            "b73",
-            "b76"
-          ]
-        },
-        {
-          "n": 6,
-          "kind": "bug",
-          "tags": [
-            "join",
-            "refresh",
-            "contradiction"
-          ],
-          "words": "'This device already has a key. To get one, ask Dinis by email or on WhatsApp, or use the join form.' ... the second sentence contradicts the first: I already have a key, so why ask Dinis for one?",
-          "comment": "Confirmed in the code: when the page has no invitation in its address, it always appends 'To get one, ask Dinis...', whether or not this device has a key.",
-          "replicated": "yes",
-          "recommendation": "Append 'To get one...' only when there is no key; when there is one, show its state (point 5) and a link to send feedback.",
-          "owner": "conductor",
-          "evidence": "assets/feedback/join.js lines 50 to 51 on 0.9.0.",
-          "friction": "F023",
-          "severity": "medium",
-          "blocks": [
-            "b53",
-            "b54",
-            "b55",
-            "b64"
-          ]
-        },
-        {
-          "n": 7,
-          "kind": "problem",
-          "tags": [
-            "feedback",
-            "instructions"
-          ],
-          "words": "Here, step 4 says 'Press Feedback, next to Ask at the top of every page'. The success message says 'open the pane on the right (the Ask button) and choose Feedback'.",
-          "comment": "Confirmed: the two texts differ (build_join's step 4 and join.js's success message). Both work; the second predates the Feedback button.",
-          "replicated": "yes",
-          "recommendation": "One wording, the newer one, in both places: 'Press Feedback, next to Ask at the top of every page.'",
-          "owner": "conductor",
-          "evidence": "assets/feedback/join.js line 40; build_join() in admin/build/build.py.",
-          "friction": "F014",
-          "severity": "low",
-          "blocks": [
-            "b32",
-            "b63",
-            "b82"
-          ]
-        },
-        {
-          "n": 8,
-          "kind": "problem",
-          "tags": [
-            "feedback form",
-            "kinds",
-            "screenshots"
-          ],
-          "words": "my notes usually mix praise and suggestions, so I had to split one note into two submissions ... Only one screenshot. A problem that spans two screens ... needs two.",
-          "comment": "Confirmed: one kind from five, one screenshot per message.",
-          "replicated": "yes",
-          "recommendation": "Let a message carry several kinds (tick boxes) and up to three screenshots, each scaled as now.",
-          "owner": "conductor",
-          "evidence": "assets/feedback/pane.js on 0.9.0: KINDS is one select; one shot.",
-          "friction": "F025",
-          "severity": "medium",
-          "blocks": [
-            "b36",
-            "b37",
-            "b38",
-            "b47",
-            "b80"
-          ]
-        },
-        {
-          "n": 9,
-          "kind": "problem",
-          "tags": [
-            "feedback form",
-            "history"
-          ],
-          "words": "I can't see what I sent. The text box clears, and the note says 'The site never shows it'. If I want to follow up or add to it, there is no record.",
-          "comment": "Confirmed, and by design for the site: it never publishes a message. But the sender's own copy is a different thing, and it can stay in her browser or her own vault, like her reading record.",
-          "replicated": "yes",
-          "recommendation": "Keep a copy of each message sent, in this browser (and the reader's vault when open), listed under Your desk as 'Feedback I've sent', with the time and the page. Nothing leaves the browser that did not already.",
-          "owner": "conductor",
-          "evidence": "assets/feedback/pane.js line 71 on 0.9.0.",
-          "also": [
-            "dev"
-          ],
-          "friction": "F025",
-          "severity": "medium",
-          "blocks": [
-            "b48",
-            "b74",
-            "b78"
-          ]
-        },
-        {
-          "n": 10,
-          "kind": "problem",
-          "tags": [
-            "ask pane",
-            "no vault"
-          ],
-          "words": "'no vault'? A label at the top of the pane, with no explanation. Is something missing or broken?",
-          "comment": "Confirmed: the pane shows 'no vault' with no explanation; UF-002 met the same pane and its three credentials.",
-          "replicated": "yes",
-          "recommendation": "A line under it: 'You don't need a vault to read or to give feedback. A vault keeps your reading, notes and chats across devices.' Same as F020.",
-          "owner": "dev",
-          "evidence": "assets/ask/ask.js line 279 on 0.9.0.",
-          "friction": "F020",
-          "severity": "medium",
-          "blocks": [
-            "b49",
-            "b50",
-            "b79"
-          ]
-        },
-        {
-          "n": 11,
-          "kind": "problem",
-          "tags": [
-            "meter",
-            "theme"
-          ],
-          "words": "Also unexplained: the £ pill (£4.72 here, £5.00 in a private window) and 'Newsprint'.",
-          "comment": "Confirmed, the fourth reader to say so (F006).",
-          "replicated": "yes",
-          "recommendation": "Label them: 'Reading credit, free' and 'Theme: Newsprint'.",
-          "owner": "story-site",
-          "also": [
-            "dev"
-          ],
-          "friction": "F006",
-          "severity": "high",
-          "blocks": [
-            "b19"
-          ]
-        }
-      ],
-      "not_reproduced": [],
-      "reply": "Not sent. Her signed feedback from the site is in the lane; when the conductor drains it, the Sherpa adds it here. Her key, if enrolled from that drain as it stands, would take the role on the link: see UF-002 point 1, held.",
-      "document": "uf-003",
-      "who": "power user 1"
+     "n": 3,
+     "kind": "praise",
+     "tags": [
+      "glossary"
+     ],
+     "words": "Love the glossary.",
+     "comment": "Valued, which makes points 7 and 10 (cards only on first use, a dead link in the card) more important, not less.",
+     "replicated": "n/a",
+     "recommendation": "See points 7 and 10.",
+     "owner": "sherpa"
     },
     {
-      "id": "UF-004",
-      "received": "2026-10-23",
-      "tester": "internal",
-      "channel": "the power users' forms on /collaborators/ (a join request and a piece of feedback), read from the collaborators lane by the Sherpa without draining it",
-      "reader": "the editor, testing the forms",
-      "ask": "001",
-      "site_version": "0.9.3",
-      "site_version_note": "Sent on v0.9.3, between 13:45 and 13:47 UTC.",
-      "progress": "a test: one join request and one piece of feedback",
-      "pages_read": [
-        [
-          "collaborators/index.html",
-          "the join form and the feedback form"
-        ]
-      ],
-      "summary": "Internal test messages from the editor: a join request and a piece of feedback through the power users' forms. Both arrived intact and decrypt with the vault key alone. They are tests, not reader feedback, and are not counted as such; the request in the join note is routed like any other.",
-      "points": [
-        {
-          "n": 1,
-          "kind": "test",
-          "tags": [
-            "forms",
-            "lane"
-          ],
-          "words": "Worked: hopefully this form :) · Missing: all good · Next: see if this message is received ok · Page: page XYZ",
-          "comment": "Received intact: the feedback form's message reached the lane and decrypted with the collaborators vault's key alone (v0.9.2's postmaster). One thing it shows: this form asks the reader to type the page, while the Feedback button fills it in; two forms of two shapes.",
-          "replicated": "yes",
-          "recommendation": "When signed keys go, merge the two into one feedback form that fills in the page and version itself, with the publish checkbox (F027, F029).",
-          "owner": "conductor",
-          "friction": "F029",
-          "severity": "low",
-          "evidence": "Read with collaborators_drain.py --keep-pending against throwaway copies; nothing marked processed, nothing pushed."
-        },
-        {
-          "n": 2,
-          "kind": "idea",
-          "tags": [
-            "readers",
-            "join form"
-          ],
-          "words": "can you add Founder to the reader list and also sort them alphabetically :)",
-          "comment": "Received intact through the join form's note. A request typed into a form is material, so it is routed, not acted on: the readers are data/personas.json (fifteen readers in five groups) and the join form's list follows them.",
-          "replicated": "n/a",
-          "recommendation": "Add a Founder reader (closest to the executive view: runs the company, often also the CTO) and sort the join form's list alphabetically; the editor confirms in session.",
-          "owner": "story-site",
-          "also": [
-            "conductor"
-          ],
-          "friction": "F030",
-          "severity": "low"
-        }
-      ],
-      "not_reproduced": [],
-      "reply": "Not needed: a test by the editor. The join request's name and address are not shown; join requests stay private."
+     "n": 4,
+     "kind": "problem",
+     "tags": [
+      "navigation",
+      "articles",
+      "table-of-contents"
+     ],
+     "words": "Newsroom articles lack a clear TOC so it's difficult to get a feel for what they contain and to navigate them",
+     "comment": "Confirmed. Neither house story measured has a table of contents: 'Where php2shell stands' has 10 sections and about 2,100 words, 'Patch at the speed of Metasploit' 9 sections and about 2,950 words. The reader has to scroll to learn what the article covers.",
+     "replicated": "yes",
+     "evidence": "Measured on 0.8.1 in Chromium: no .toc element on articles/where-php2shell-stands/ or articles/patch-at-the-speed-of-metasploit/; h2 counts 10 and 9.",
+     "recommendation": "An 'On this page' list built from the h2s, at the top of every article and of every page with four or more sections; collapsed to one line on phones so it does not cost the first screen (F001). Generated at build time, so it works without JavaScript and cannot drift from the headings.",
+     "owner": "dev",
+     "also": [
+      "journalist"
+     ],
+     "friction": "F010",
+     "severity": "medium"
     },
     {
-      "id": "UF-005",
-      "received": "2026-10-23",
-      "tester": "editor",
-      "who": "the editor",
-      "channel": "the site's feedback form, drained from the collaborators lane by the Sherpa on 24 October; the editor confirmed both in session",
-      "reader": "the editor",
-      "ask": "",
-      "site_version": "0.10.13",
-      "site_version_note": "Sent on v0.10.13 at 21:10 and 21:28 UTC.",
-      "progress": "two asks, from two pages",
-      "pages_read": [
-        [
-          "sources/fortune-ai-tools-php-vulnerability/index.html",
-          null
-        ],
-        [
-          "views/state/index.html",
-          null
-        ]
-      ],
-      "summary": "Two asks from the editor through the site's own form: a deep analysis of Fortune's article ('AI helped discover the PHP vulnerability that could take down 70% of the internet'), whose claims he calls incredible, wrong and still up; and a thread on running several fact-check and verification workflows, across several model providers, on key pages such as the state of affairs.",
-      "points": [
-        {
-          "n": 1,
-          "kind": "idea",
-          "tags": [
-            "fact-check",
-            "press",
-            "70% of the internet"
-          ],
-          "words": "let's do an deep analysis of this article since its claims are quite incredible, wrong and still there",
-          "comment": "The article is captured (one capture, promoted by the curator) and no claim on the site cites it. Its headline figure is the one the risk graph names as a weakness: 'numbers and ratings repeated without their source' (70% of the Internet, CVSS 10, 30 million sites). The analysis is the fact-check desk's: every claim in the article graded against the evidence vault, what it gets wrong and since when, whether it was corrected, and who repeated it. Done by the desk on 24 October, inside its first investigation (/factcheck/investigations/php-share/, section 'Fortune'): the headline and lede say 'could take down 70% of the internet' in Fortune's own voice, with no source; its one attributed 70% quotes Wiz accurately, but turns Wiz's 'affecting' into 'take down'. The measurement: W3Techs, 69.3% of websites whose server-side language is known; the HTTP Archive, PHP on 48.3% of all crawled sites.",
-          "replicated": "yes",
-          "recommendation": "To the fact-check desk: grade the article claim by claim against the vault and the contradiction ledger, with its first-published and updated dates, what was known when it was written (the knowledge-gap view of the three-views brief), and who relayed it (the cartographer's relays). The journalist writes it up as a story.",
-          "owner": "verifier",
-          "also": [
-            "journalist",
-            "cartographer"
-          ]
-        },
-        {
-          "n": 2,
-          "kind": "idea",
-          "tags": [
-            "verification",
-            "several models",
-            "state of affairs"
-          ],
-          "words": "can we have a thread about how to add multiple fact and verification workflows (across multiple LLM providers) on key pages like this one",
-          "comment": "The site has one fact-check desk, on one model; REALITY.md lists 'a second fact-check desk on a different model' as not built. The state of affairs is the page where a second, independent reading matters most: it is the one people quote.",
-          "replicated": "n/a",
-          "recommendation": "A brief and a thread: on key pages (the state of affairs, the front page's Right now, the briefings), independent verification runs on two or three providers, each grading the same statements on the desk's scale, shown side by side, with every disagreement surfaced and settled in the contradiction ledger. Drafted by the Sherpa for the editor and the fact-check desk.",
-          "owner": "verifier",
-          "also": [
-            "sherpa",
-            "dev"
-          ]
-        }
-      ],
-      "not_reproduced": [],
-      "reply": "Not needed: the editor's own asks, confirmed in session."
+     "n": 5,
+     "kind": "problem",
+     "tags": [
+      "density",
+      "tools",
+      "first-screen"
+     ],
+     "words": "Pages are very dense of icons and links, so they can be confusing and it's also difficult to understand what you can actually do with all the tools available.",
+     "comment": "Confirmed, and it agrees with the board member's and the designer's synthetic runs (F001). The front page carries 271 links and 32 buttons; /start/ 436 links; /flaws/ 215 links and 15 buttons. Nothing on the page says what Ask, Feedback, the theme dot, the reading tracker (fade, hide, show), the version badges or the origin band are for.",
+     "replicated": "yes",
+     "evidence": "Counted on 0.8.1 in Chromium: links and buttons per page as above.",
+     "recommendation": "Three steps, cheapest first: a one-screen guide to the site's own tools, linked from a '?' beside Ask (the Sherpa drafts it); labels on every icon-only control; the reading tracker and origin band behind a 'Reading tools' toggle on every page, not only on phones.",
+     "owner": "story-site",
+     "also": [
+      "sherpa"
+     ],
+     "friction": "F011",
+     "severity": "medium"
+    },
+    {
+     "n": 6,
+     "kind": "problem",
+     "tags": [
+      "repetition",
+      "summaries"
+     ],
+     "words": "With all the (useful) summaries and clarifications, you end up with feeding a lot of repetition. Hard balance to strike.",
+     "comment": "Plausible and partly seen: a page can carry a standfirst, an 'In plain English' box and a 'thirty seconds' answer that say much the same thing. Not measured yet. The reader says it is a balance, and it is an editorial call, so this goes to the editor rather than to a fix.",
+     "replicated": "partly",
+     "evidence": "Observed on briefings and the front page on 0.8.1; no count of repeated sentences yet.",
+     "recommendation": "One summary per page, chosen by the reader's depth: plain English for the plain-English reader, the technical one otherwise, with the other one folded. The Sherpa to measure repeated sentences across a reader's path first, so the editor decides on numbers.",
+     "owner": "dinis",
+     "also": [
+      "story-site",
+      "briefing-writer",
+      "sherpa"
+     ],
+     "friction": "F012",
+     "severity": "low"
+    },
+    {
+     "n": 7,
+     "kind": "problem",
+     "tags": [
+      "glossary",
+      "hover-card"
+     ],
+     "words": "The fact that only the first use of a specialist word has a tooltip can be limiting, as the reader might have missed where the first occurrence was or has jumped forward or might use a refresher on the term down the page. I understand that underlying every word keeps the page very busy for things that potentially the reader don't care about or has learned. Not sure what the best solution is, but the way it's built now tends to reduce the power of the glossary. I would be inclined to try keeping underlining the specialist words the first time they appear only, but keeping the tooltip active for every occurrence.",
+     "comment": "Confirmed, and the reader's proposal is a good one. On /flaws/, 'PHP' appears 41 times and 'CVE' 20 times, and each has a card on its first use only. A reader who arrives through an anchor, or jumps to a section, never meets the first use.",
+     "replicated": "yes",
+     "evidence": "Counted on flaws/index.html on 0.8.1: PHP 41 occurrences, CVE 20, CVSS 3, CWE 2; one card each.",
+     "recommendation": "As the reader proposes: the first use stays underlined; every later use carries the same card with no underline (a dotted underline only on hover or focus), so the page stays calm and the card is always there. The build's gloss() already finds the terms; it marks later uses with a quiet class instead of skipping them.",
+     "owner": "dev",
+     "friction": "F013",
+     "severity": "medium"
+    },
+    {
+     "n": 8,
+     "kind": "problem",
+     "tags": [
+      "feedback",
+      "collaborators"
+     ],
+     "words": "The feedback form in the Power Users page is about the whole ask, but since I only managed to make a partial progress, I'm writing an email here outlining the pages I managed to examine.",
+     "comment": "Confirmed by reading /collaborators/: the feedback form is per ask. The Feedback button on every page (v0.8.0) is per page, but it needs a key from an invitation, and no invitation has been sent yet (REALITY.md), so this reader had no way to send page-level feedback except email. The reader's email is itself a good template: progress, pages read, pros, cons, bugs.",
+     "replicated": "yes",
+     "evidence": "collaborators/index.html and REALITY.md on 0.8.1.",
+     "recommendation": "Use the reader's structure for the collaborators form: a progress field (none, partial, done), the pages read, then pros, cons and bugs, each optional. Let the Feedback button send unsigned feedback too, marked unsigned, so a reader without a key can report a bug from the page it is on. Email stays welcome; the Sherpa logs every message, whichever way it comes.",
+     "owner": "conductor",
+     "also": [
+      "sherpa"
+     ],
+     "friction": "F014",
+     "severity": "medium"
+    },
+    {
+     "n": 9,
+     "kind": "bug",
+     "tags": [
+      "front-page",
+      "at-a-glance",
+      "layout"
+     ],
+     "words": "The text on the \"at a glance\" tiles on the front page overlaps (screenshot)",
+     "comment": "Reproduced in every theme and at most widths. The tile 'Websites taken offline' shows '10 organisations' in the 1.35rem serif; 'organisations' is wider than the tile (134 to 142px) and the stylesheet forbids breaking it (.tile b {overflow-wrap: normal}), so it runs 3 to 11px into the next tile. The other tiles fit.",
+     "replicated": "yes",
+     "evidence": "Measured on 0.8.1 in Chromium in all six themes at 320, 600, 768, 1024, 1280 and 1440px wide: overflow of 5, 9, 4, 11, 3 and 3px. Fits at 360, 390, 414 and 820px.",
+     "replication": [
+      "assets/sherpa/uf-001/replicated-tiles-1024-dark.png",
+      "Replicated at 1024px, dark: '10 organisations' runs into the next tile."
+     ],
+     "recommendation": "Put the number alone in the large type ('10') and move the unit into the small line ('organisations took websites offline, as a precaution'), as the other tiles already do with 'Yes' and 'Not yet'. A guard for the next long word: .tile b {overflow-wrap: anywhere}. The gate's browser check could flag any element wider than its tile.",
+     "owner": "story-site",
+     "also": [
+      "dev"
+     ],
+     "friction": "F015",
+     "severity": "medium"
+    },
+    {
+     "n": 10,
+     "kind": "bug",
+     "tags": [
+      "glossary",
+      "hover-card",
+      "accessibility"
+     ],
+     "words": "The \"open the glossary -->\" link from tooltip is unreachable (screenshot)",
+     "comment": "Reproduced, and it is unreachable by design: the card is drawn with pointer-events: none, it closes as soon as the pointer leaves the word, and 'Open the glossary' is plain text, not a link. The card promises an action it cannot give. Clicking the word itself does open the glossary, but nothing says so. On a touch screen the card cannot be opened at all without following the link.",
+     "replicated": "yes",
+     "evidence": "On flaws/index.html on 0.8.1 in Chromium: hovering 'PHP' shows the card (no links inside it, pointer-events none); moving the pointer to 'Open the glossary' closes it. Code: the showTip() and mouseout handler in the site script written by build_sitejs(), and .tip in assets/site.css.",
+     "replication": [
+      "assets/sherpa/uf-001/replicated-hover-card.png",
+      "Replicated: the card on 'PHP'; its last line is text, and the card closes before the pointer reaches it."
+     ],
+     "recommendation": "Quick and honest: change the line to 'Click the word for the glossary entry'. Proper: make the line a real link to the term's glossary entry, let the card take the pointer (pointer-events: auto) and keep it open for a short grace period while the pointer moves from the word to the card; on touch, the first tap opens the card and the link inside it goes on. Keyboard: focus already opens it; Escape closes it.",
+     "owner": "dev",
+     "friction": "F016",
+     "severity": "medium"
     }
-  ]
+   ],
+   "not_reproduced": [
+    "In the reader's screenshot the glossary card is cut off on the left. On 0.8.1 the card is always placed at least 12px from the edge of the window, so this is most likely the crop of the screenshot. To confirm with the reader."
+   ],
+   "reply": "Not sent. The Sherpa sends nothing to readers; a reply, if any, is the editor's."
+  },
+  {
+   "id": "UF-002",
+   "received": "2026-10-23",
+   "channel": "a PDF report given to the editor, forwarded to the Sherpa in session",
+   "reader": "an agent tester (Claude in a browser on the editor's computer, by remote control), playing a founder in the editor's network: uses Claude daily, not a security person, never heard of sgit, ten minutes before a call",
+   "tester": "agent",
+   "ask": "001",
+   "site_version": "0.8.1",
+   "site_version_note": "Stated in the report (Chrome, site v0.8.1). Re-checked on 0.8.2, the release live when it arrived.",
+   "progress": "partial: stopped at 'Make my key and join', which creates an identity and so needs a person",
+   "pages_read": [
+    [
+     "join/index.html",
+     "from an invitation link"
+    ],
+    [
+     "index.html",
+     null
+    ],
+    [
+     "explained/index.html",
+     null
+    ]
+   ],
+   "summary": "The first test of the invitation link from the WhatsApp message. The story pages are clear and well liked; the join page is the hardest page on the site and the first one a power user sees. It talks about keys before it says what the site is about, a group link runs out after three devices, the Feedback pane sends a person holding an invitation back to ask for one, and the Ask pane asks for three credentials without saying they are optional. One point is held for the editor and security.",
+   "attachments": [
+    [
+     "assets/sherpa/uf-002/tester-feedback-needs-a-key.jpg",
+     "The tester's screenshot: on the join page, holding an invitation, Feedback says 'Feedback needs a key... ask Dinis for an invitation'."
+    ],
+    [
+     "assets/sherpa/uf-002/tester-at-a-glance.jpg",
+     "The tester's screenshot of the at-a-glance tiles: '10 organisations' runs into the next tile, the bug UF-001 reported, seen independently."
+    ]
+   ],
+   "points": [
+    {
+     "n": 1,
+     "kind": "problem",
+     "tags": [
+      "join",
+      "security"
+     ],
+     "words": "Held for the editor and security.",
+     "comment": "Held: a point about the invitation link itself, sent to the editor in session. It is published here once it is resolved.",
+     "replicated": "yes",
+     "recommendation": "Held.",
+     "owner": "dinis",
+     "also": [
+      "security",
+      "conductor"
+     ],
+     "friction": "F017",
+     "severity": "high",
+     "held": true
+    },
+    {
+     "n": 2,
+     "kind": "problem",
+     "tags": [
+      "join",
+      "invitations",
+      "whatsapp"
+     ],
+     "words": "The page says the link is a credential, and the first three devices win. ... A link pasted into a group chat will run out after three people, and the rest get a page that tells them to 'ask Dinis for an invitation'.",
+     "comment": "Confirmed from the rules: an invitation enrols at most three devices (data/contributors.json, devices_per_invitation). One link in a group of many people cannot work, and the page itself warns that whoever opens it first takes a place.",
+     "replicated": "yes",
+     "recommendation": "One invitation per person, made on /join/invite/ (it exists, with a QR code and a share button). The group message says 'reply and I'll send you your link', not the link. The Sherpa can draft that message.",
+     "owner": "conductor",
+     "evidence": "data/contributors.json rules on 0.8.2; /join/ 'What it does not do'.",
+     "also": [
+      "dinis",
+      "sherpa"
+     ],
+     "friction": "F018",
+     "severity": "high"
+    },
+    {
+     "n": 3,
+     "kind": "problem",
+     "tags": [
+      "join",
+      "first-screen",
+      "onboarding"
+     ],
+     "words": "The join page talks about key pairs, signing halves, fingerprints and sgit pki verify before it says what the site is about. Sam only learns this is a PHP security story from the footer.",
+     "comment": "Confirmed: on /join/ the main text never mentions the story; it mentions enrolment four times and key pair, fingerprint, signing and sgit pki verify once each. The one-line pitch is in the footer.",
+     "replicated": "yes",
+     "recommendation": "Open the join page with the footer's sentence ('This site tracks the two critical PHP security flaws of October 2026, as evidence...') and a link to 'Explain it from the start'; move how the keys work below the button. Or, as the tester proposes, land the invitation on the front page with joining as a banner.",
+     "owner": "conductor",
+     "evidence": "Measured on join/index.html on 0.8.2 in Chromium.",
+     "also": [
+      "sherpa"
+     ],
+     "friction": "F019",
+     "severity": "high"
+    },
+    {
+     "n": 4,
+     "kind": "bug",
+     "tags": [
+      "feedback",
+      "join",
+      "loop"
+     ],
+     "words": "I am on the invitation page, holding the invitation. The panel doesn't know that, so it sends me in a loop.",
+     "comment": "Confirmed in the code: the Feedback tab shows the same 'Feedback needs a key... ask Dinis for an invitation' text on every page, whether or not an invitation is open (assets/feedback/pane.js).",
+     "replicated": "yes",
+     "recommendation": "When an invitation is present, the tab says 'Press Make my key and join first, then come back here.' Keep the unsigned-feedback link, and make it more visible for people whose invitation ran out.",
+     "owner": "conductor",
+     "evidence": "assets/feedback/pane.js line 40 on 0.8.2.",
+     "friction": "F014",
+     "severity": "medium"
+    },
+    {
+     "n": 5,
+     "kind": "problem",
+     "tags": [
+      "ask",
+      "credentials",
+      "onboarding"
+     ],
+     "words": "Three tabs, and each asks for a different credential. ... OpenRouter? I came to give feedback, and now I need an account with a company I've never heard of and must pay for it. ... three new concepts in one panel, with no 'you don't need any of this' line.",
+     "comment": "Confirmed: the Ask tab asks for an OpenRouter key, Your vault for a vault key or a vault-server token, and Tools is written for agents. Nothing says a reader needs none of it to read or to give feedback.",
+     "replicated": "yes",
+     "recommendation": "One sentence at the top of the pane: 'You don't need anything here to read or to give feedback. These are optional.' The Tools tab is labelled 'For agents'.",
+     "owner": "dev",
+     "evidence": "assets/ask/ask.js on 0.8.2.",
+     "friction": "F020",
+     "severity": "medium"
+    },
+    {
+     "n": 6,
+     "kind": "problem",
+     "tags": [
+      "chrome",
+      "meter",
+      "first-screen"
+     ],
+     "words": "Explain or remove the unexplained chrome: £5.00, Newsprint, '342 new', 'Your desk', fade/hide/show. ... The £ pill went from £5.00 to £4.99 as I scrolled, with no explanation.",
+     "comment": "Confirmed, and the same as F001, F006 and UF-001 point 5: a third reader, independently. The pound figure is the reading meter charging as pages are read; nothing on the page says so.",
+     "replicated": "yes",
+     "recommendation": "As in F006 and F011: label the meter ('Reading credit, free'), label the theme switch ('Theme: Newsprint'), and put the reading tracker behind a 'Reading tools' toggle.",
+     "owner": "story-site",
+     "also": [
+      "dev"
+     ],
+     "friction": "F006",
+     "severity": "high"
+    },
+    {
+     "n": 7,
+     "kind": "praise",
+     "tags": [
+      "story",
+      "front-page"
+     ],
+     "words": "What I think: this is the best thing on the site. It's clear, honest about what isn't known yet, and every claim has a source. A power user lands here and gets it in 20 seconds. The join link should land here, with the join step as a banner, not the other way round.",
+     "comment": "Agreed, and it supports point 3: the front page is the right first page for an invitation.",
+     "replicated": "n/a",
+     "recommendation": "Land invitations on the front page, with joining as a banner (point 3).",
+     "owner": "conductor"
+    },
+    {
+     "n": 8,
+     "kind": "praise",
+     "tags": [
+      "explained",
+      "onboarding"
+     ],
+     "words": "excellent, exactly the right tone. This page is the answer to every WTF on the join page. Link to it from the join page.",
+     "comment": "Agreed; the explainer is also where the Sherpa would send a newcomer.",
+     "replicated": "n/a",
+     "recommendation": "Link to it from the join page (point 3).",
+     "owner": "conductor"
+    },
+    {
+     "n": 9,
+     "kind": "bug",
+     "tags": [
+      "front-page",
+      "sources"
+     ],
+     "words": "The source chips are cut off ('Matthew Prince, Cloudflare CEO on...').",
+     "comment": "Confirmed: the build cuts the chip's label at a fixed length and adds an ellipsis, so the publisher's words are lost.",
+     "replicated": "yes",
+     "recommendation": "Show the publisher's short name on the chip and the full title on hover and focus (a title attribute through E()).",
+     "owner": "story-site",
+     "evidence": "index.html on 0.8.2: 'Matthew Prince, Cloudflare CEO on…' in the HTML.",
+     "friction": "F021",
+     "severity": "low"
+    },
+    {
+     "n": 10,
+     "kind": "problem",
+     "tags": [
+      "theme",
+      "controls"
+     ],
+     "words": "'Newsprint' pill: I clicked it and nothing visible happened. I still don't know what it is.",
+     "comment": "Not reproduced: in Chromium at 640, 800 and 1280px a click opens the theme menu with its five themes. The tester's click may have landed while the Ask pane was open over the page. The label is unclear either way.",
+     "replicated": "no",
+     "recommendation": "Label it 'Theme: Newsprint'. The Sherpa to retest with the tester on the same machine.",
+     "owner": "story-site",
+     "also": [
+      "sherpa"
+     ],
+     "friction": "F011",
+     "severity": "low"
+    },
+    {
+     "n": 11,
+     "kind": "problem",
+     "tags": [
+      "banner",
+      "personas"
+     ],
+     "words": "'Tell us who you are' / 'Who are you? Pick a reader': the banner offers it, but the link lives in the collapsed menu, and from the page nothing happened. I gave up.",
+     "comment": "Not reproduced: the banner's link goes to /start/ at 640 and 800px. Whatever happened, a reader gave up on the site's main way in, which is worth a retest.",
+     "replicated": "no",
+     "recommendation": "Retest on the tester's machine; if the Ask pane was open, close it when a page link is followed.",
+     "owner": "sherpa",
+     "friction": "F011",
+     "severity": "medium"
+    },
+    {
+     "n": 12,
+     "kind": "blocked",
+     "tags": [
+      "join",
+      "feedback"
+     ],
+     "words": "Make a key and join. This is the step that needs a human, because it creates an identity on the site. ... Send feedback from the website. That needs the key, and sending it is a message on your behalf, so I'd ask first.",
+     "comment": "Right call by the tester. The end-to-end path (invitation, key, signed feedback reaching the editor) has been tested in Chromium by the conductor (REALITY.md), but not yet by a real invitee.",
+     "replicated": "n/a",
+     "recommendation": "The editor decides whether a person completes the step, after point 1 is resolved.",
+     "owner": "dinis"
+    }
+   ],
+   "not_reproduced": [
+    "Point 10: the theme menu opens on click at 640, 800 and 1280px.",
+    "Point 11: the banner's link goes to /start/."
+   ],
+   "reply": "Not sent. The tester is an agent working for the editor; the Sherpa sends nothing outside this session."
+  },
+  {
+   "id": "UF-003",
+   "received": "2026-10-23",
+   "channel": "a report the tester published herself, sent to the editor and forwarded to the Sherpa in session; her signed feedback from the site is in the collaborators lane, not yet drained",
+   "reader": "a power user from the editor's WhatsApp group, a project manager by trade: not a developer, uses AI assistants every day, keys and vaults new to her",
+   "ask": "001",
+   "site_version": "0.8.2",
+   "site_version_note": "Stated in the report: v0.8.2, then v0.8.3 while she tested. Re-checked on v0.9.0 in the code.",
+   "progress": "done: joined with the invitation link, sent signed feedback, checked the page after a refresh and in a private window",
+   "pages_read": [
+    [
+     "join/index.html",
+     "from the invitation link, after joining, after a refresh, in a private window"
+    ]
+   ],
+   "summary": "The first person through the whole invitation: joining works in one click, the success message is clear, and signed feedback goes out with a confirmation that says who reads it and when. The gaps are about what happens next: no sign that the key is waiting for approval, a message that contradicts itself after a refresh (a bug), nothing that says a private window or another browser has no key, no way to see the feedback you sent, one kind and one screenshot per message, an unexplained 'no vault' label, and the busy top of the page again.",
+   "attachments": [],
+   "points": [
+    {
+     "n": 1,
+     "kind": "praise",
+     "tags": [
+      "join",
+      "success message",
+      "send confirmation"
+     ],
+     "words": "One click to join, and a clear success message with next steps. 'How it works' and 'What it does not do': plain, honest, complete. The send confirmation: signed with which key, who reads it, when. 'Capture this screen', quoting selected text, and the page name filled in. The key survives a refresh.",
+     "comment": "Kept as the baseline. The first evidence from a person that the conductor's invitation, key and signed feedback work end to end outside a test.",
+     "replicated": "n/a",
+     "recommendation": "Keep all of these as they are.",
+     "owner": "conductor",
+     "blocks": [
+      "b07",
+      "b23",
+      "b29",
+      "b43",
+      "b44",
+      "b45",
+      "b67",
+      "b68",
+      "b69",
+      "b70",
+      "b71"
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "problem",
+     "tags": [
+      "join",
+      "role"
+     ],
+     "words": "the link says editor, but I was invited as a power user. After I joined, nothing on the site showed which role I joined as, so I can't tell which one I have.",
+     "comment": "Confirmed: the page shows the invitation's handle and never the role, before or after joining. The role on the link itself is UF-002 point 1, held for the editor and security.",
+     "replicated": "yes",
+     "recommendation": "Show the role, in words, before the button and after joining ('You are joining as a power user: you read what is new when asked and say what works'). The rest is with UF-002 point 1.",
+     "owner": "conductor",
+     "evidence": "assets/feedback/join.js on 0.9.0: the invitation line shows the handle only.",
+     "also": [
+      "dinis",
+      "security"
+     ],
+     "friction": "F017",
+     "severity": "high",
+     "blocks": [
+      "b11",
+      "b12"
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "problem",
+     "tags": [
+      "join",
+      "first-screen",
+      "reading tools"
+     ],
+     "words": "above the title ... there are six layers ... I couldn't tell where this page actually begins. ... I pressed 'Mark everything read': nothing visible happened. I pressed fade, hide and show: nothing visible happened either.",
+     "comment": "Confirmed, and now the fourth independent reader on the busy first screen (F001, F011; UF-001, UF-002 and the synthetic readers before her). On a page with '0 new and 0 changed' the reading buttons have nothing to act on, and say nothing.",
+     "replicated": "yes",
+     "recommendation": "Hide the reading box on pages that are not content (join, account, admin); when a reading button has nothing to act on, say so in the box ('Nothing new here to fade'); one line saying what fade, hide and show do. Raised with the conductor for priority: four readers, one friction.",
+     "owner": "story-site",
+     "evidence": "The counts she quotes; assets/site.js renders the box on every page.",
+     "also": [
+      "dev",
+      "conductor"
+     ],
+     "friction": "F011",
+     "severity": "high",
+     "blocks": [
+      "b15",
+      "b16",
+      "b17",
+      "b18",
+      "b81"
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "problem",
+     "tags": [
+      "join",
+      "key",
+      "reassurance",
+      "private window"
+     ],
+     "words": "My first instinct was to save it somewhere, the way I would save a password, and I felt uneasy that I couldn't. ... It does not say in plain words that another browser, a private window or another Chrome profile won't have the key either. ... in a Chrome Incognito window ... the site treats me as a stranger. That's correct, but nothing warned me.",
+     "comment": "Confirmed: the success message says the key 'cannot be copied out of it' and that another device needs its own invitation; it says nothing about another browser, a profile or a private window, and nothing reassuring.",
+     "replicated": "yes",
+     "recommendation": "As she proposes: 'Nothing to save: this browser remembers your key. Other browsers, private windows and other devices will not have it; if you lose it, ask Dinis for a new invitation.'",
+     "owner": "conductor",
+     "evidence": "assets/feedback/join.js line 42 on 0.9.0.",
+     "friction": "F024",
+     "severity": "medium",
+     "blocks": [
+      "b24",
+      "b25",
+      "b33",
+      "b58",
+      "b59",
+      "b60",
+      "b77"
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "problem",
+     "tags": [
+      "join",
+      "approval",
+      "status"
+     ],
+     "words": "'Enrolled keys' still says 'None yet' right after I joined ... nothing says 'yours is waiting for approval', so it looks as if joining failed. ... Check whether my key was approved: the site doesn't show approval status anywhere I could find.",
+     "comment": "Confirmed: the enrolled list is built from data/contributors.json at release, and the page knows nothing of a key waiting in the lane. A key is enrolled only when the conductor drains the lane.",
+     "replicated": "yes",
+     "recommendation": "When this browser has a key, the join page shows its state: 'Waiting for the editor's approval' until its fingerprint appears in the published list, then 'Approved: your feedback shows as yours'. The page can check that itself against the published fingerprints, with no new server.",
+     "owner": "conductor",
+     "evidence": "build_join() and assets/feedback/join.js on 0.9.0.",
+     "friction": "F022",
+     "severity": "high",
+     "blocks": [
+      "b31",
+      "b65",
+      "b73",
+      "b76"
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "bug",
+     "tags": [
+      "join",
+      "refresh",
+      "contradiction"
+     ],
+     "words": "'This device already has a key. To get one, ask Dinis by email or on WhatsApp, or use the join form.' ... the second sentence contradicts the first: I already have a key, so why ask Dinis for one?",
+     "comment": "Confirmed in the code: when the page has no invitation in its address, it always appends 'To get one, ask Dinis...', whether or not this device has a key.",
+     "replicated": "yes",
+     "recommendation": "Append 'To get one...' only when there is no key; when there is one, show its state (point 5) and a link to send feedback.",
+     "owner": "conductor",
+     "evidence": "assets/feedback/join.js lines 50 to 51 on 0.9.0.",
+     "friction": "F023",
+     "severity": "medium",
+     "blocks": [
+      "b53",
+      "b54",
+      "b55",
+      "b64"
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "problem",
+     "tags": [
+      "feedback",
+      "instructions"
+     ],
+     "words": "Here, step 4 says 'Press Feedback, next to Ask at the top of every page'. The success message says 'open the pane on the right (the Ask button) and choose Feedback'.",
+     "comment": "Confirmed: the two texts differ (build_join's step 4 and join.js's success message). Both work; the second predates the Feedback button.",
+     "replicated": "yes",
+     "recommendation": "One wording, the newer one, in both places: 'Press Feedback, next to Ask at the top of every page.'",
+     "owner": "conductor",
+     "evidence": "assets/feedback/join.js line 40; build_join() in admin/build/build.py.",
+     "friction": "F014",
+     "severity": "low",
+     "blocks": [
+      "b32",
+      "b63",
+      "b82"
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "problem",
+     "tags": [
+      "feedback form",
+      "kinds",
+      "screenshots"
+     ],
+     "words": "my notes usually mix praise and suggestions, so I had to split one note into two submissions ... Only one screenshot. A problem that spans two screens ... needs two.",
+     "comment": "Confirmed: one kind from five, one screenshot per message.",
+     "replicated": "yes",
+     "recommendation": "Let a message carry several kinds (tick boxes) and up to three screenshots, each scaled as now.",
+     "owner": "conductor",
+     "evidence": "assets/feedback/pane.js on 0.9.0: KINDS is one select; one shot.",
+     "friction": "F025",
+     "severity": "medium",
+     "blocks": [
+      "b36",
+      "b37",
+      "b38",
+      "b47",
+      "b80"
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "problem",
+     "tags": [
+      "feedback form",
+      "history"
+     ],
+     "words": "I can't see what I sent. The text box clears, and the note says 'The site never shows it'. If I want to follow up or add to it, there is no record.",
+     "comment": "Confirmed, and by design for the site: it never publishes a message. But the sender's own copy is a different thing, and it can stay in her browser or her own vault, like her reading record.",
+     "replicated": "yes",
+     "recommendation": "Keep a copy of each message sent, in this browser (and the reader's vault when open), listed under Your desk as 'Feedback I've sent', with the time and the page. Nothing leaves the browser that did not already.",
+     "owner": "conductor",
+     "evidence": "assets/feedback/pane.js line 71 on 0.9.0.",
+     "also": [
+      "dev"
+     ],
+     "friction": "F025",
+     "severity": "medium",
+     "blocks": [
+      "b48",
+      "b74",
+      "b78"
+     ]
+    },
+    {
+     "n": 10,
+     "kind": "problem",
+     "tags": [
+      "ask pane",
+      "no vault"
+     ],
+     "words": "'no vault'? A label at the top of the pane, with no explanation. Is something missing or broken?",
+     "comment": "Confirmed: the pane shows 'no vault' with no explanation; UF-002 met the same pane and its three credentials.",
+     "replicated": "yes",
+     "recommendation": "A line under it: 'You don't need a vault to read or to give feedback. A vault keeps your reading, notes and chats across devices.' Same as F020.",
+     "owner": "dev",
+     "evidence": "assets/ask/ask.js line 279 on 0.9.0.",
+     "friction": "F020",
+     "severity": "medium",
+     "blocks": [
+      "b49",
+      "b50",
+      "b79"
+     ]
+    },
+    {
+     "n": 11,
+     "kind": "problem",
+     "tags": [
+      "meter",
+      "theme"
+     ],
+     "words": "Also unexplained: the £ pill (£4.72 here, £5.00 in a private window) and 'Newsprint'.",
+     "comment": "Confirmed, the fourth reader to say so (F006).",
+     "replicated": "yes",
+     "recommendation": "Label them: 'Reading credit, free' and 'Theme: Newsprint'.",
+     "owner": "story-site",
+     "also": [
+      "dev"
+     ],
+     "friction": "F006",
+     "severity": "high",
+     "blocks": [
+      "b19"
+     ]
+    }
+   ],
+   "not_reproduced": [],
+   "reply": "Not sent. Her signed feedback from the site is in the lane; when the conductor drains it, the Sherpa adds it here. Her key, if enrolled from that drain as it stands, would take the role on the link: see UF-002 point 1, held.",
+   "document": "uf-003",
+   "who": "power user 1"
+  },
+  {
+   "id": "UF-004",
+   "received": "2026-10-23",
+   "tester": "internal",
+   "channel": "the power users' forms on /collaborators/ (a join request and a piece of feedback), read from the collaborators lane by the Sherpa without draining it",
+   "reader": "the editor, testing the forms",
+   "ask": "001",
+   "site_version": "0.9.3",
+   "site_version_note": "Sent on v0.9.3, between 13:45 and 13:47 UTC.",
+   "progress": "a test: one join request and one piece of feedback",
+   "pages_read": [
+    [
+     "collaborators/index.html",
+     "the join form and the feedback form"
+    ]
+   ],
+   "summary": "Internal test messages from the editor: a join request and a piece of feedback through the power users' forms. Both arrived intact and decrypt with the vault key alone. They are tests, not reader feedback, and are not counted as such; the request in the join note is routed like any other.",
+   "points": [
+    {
+     "n": 1,
+     "kind": "test",
+     "tags": [
+      "forms",
+      "lane"
+     ],
+     "words": "Worked: hopefully this form :) · Missing: all good · Next: see if this message is received ok · Page: page XYZ",
+     "comment": "Received intact: the feedback form's message reached the lane and decrypted with the collaborators vault's key alone (v0.9.2's postmaster). One thing it shows: this form asks the reader to type the page, while the Feedback button fills it in; two forms of two shapes.",
+     "replicated": "yes",
+     "recommendation": "When signed keys go, merge the two into one feedback form that fills in the page and version itself, with the publish checkbox (F027, F029).",
+     "owner": "conductor",
+     "friction": "F029",
+     "severity": "low",
+     "evidence": "Read with collaborators_drain.py --keep-pending against throwaway copies; nothing marked processed, nothing pushed."
+    },
+    {
+     "n": 2,
+     "kind": "idea",
+     "tags": [
+      "readers",
+      "join form"
+     ],
+     "words": "can you add Founder to the reader list and also sort them alphabetically :)",
+     "comment": "Received intact through the join form's note. A request typed into a form is material, so it is routed, not acted on: the readers are data/personas.json (fifteen readers in five groups) and the join form's list follows them.",
+     "replicated": "n/a",
+     "recommendation": "Add a Founder reader (closest to the executive view: runs the company, often also the CTO) and sort the join form's list alphabetically; the editor confirms in session.",
+     "owner": "story-site",
+     "also": [
+      "conductor"
+     ],
+     "friction": "F030",
+     "severity": "low"
+    }
+   ],
+   "not_reproduced": [],
+   "reply": "Not needed: a test by the editor. The join request's name and address are not shown; join requests stay private."
+  },
+  {
+   "id": "UF-005",
+   "received": "2026-10-23",
+   "tester": "editor",
+   "who": "the editor",
+   "channel": "the site's feedback form, drained from the collaborators lane by the Sherpa on 24 October; the editor confirmed both in session",
+   "reader": "the editor",
+   "ask": "",
+   "site_version": "0.10.13",
+   "site_version_note": "Sent on v0.10.13 at 21:10 and 21:28 UTC.",
+   "progress": "two asks, from two pages",
+   "pages_read": [
+    [
+     "sources/fortune-ai-tools-php-vulnerability/index.html",
+     null
+    ],
+    [
+     "views/state/index.html",
+     null
+    ]
+   ],
+   "summary": "Two asks from the editor through the site's own form: a deep analysis of Fortune's article ('AI helped discover the PHP vulnerability that could take down 70% of the internet'), whose claims he calls incredible, wrong and still up; and a thread on running several fact-check and verification workflows, across several model providers, on key pages such as the state of affairs.",
+   "points": [
+    {
+     "n": 1,
+     "kind": "idea",
+     "tags": [
+      "fact-check",
+      "press",
+      "70% of the internet"
+     ],
+     "words": "let's do an deep analysis of this article since its claims are quite incredible, wrong and still there",
+     "comment": "The article is captured (one capture, promoted by the curator) and no claim on the site cites it. Its headline figure is the one the risk graph names as a weakness: 'numbers and ratings repeated without their source' (70% of the Internet, CVSS 10, 30 million sites). The analysis is the fact-check desk's: every claim in the article graded against the evidence vault, what it gets wrong and since when, whether it was corrected, and who repeated it. Done by the desk on 24 October, inside its first investigation (/factcheck/investigations/php-share/, section 'Fortune'): the headline and lede say 'could take down 70% of the internet' in Fortune's own voice, with no source; its one attributed 70% quotes Wiz accurately, but turns Wiz's 'affecting' into 'take down'. The measurement: W3Techs, 69.3% of websites whose server-side language is known; the HTTP Archive, PHP on 48.3% of all crawled sites.",
+     "replicated": "yes",
+     "recommendation": "To the fact-check desk: grade the article claim by claim against the vault and the contradiction ledger, with its first-published and updated dates, what was known when it was written (the knowledge-gap view of the three-views brief), and who relayed it (the cartographer's relays). The journalist writes it up as a story.",
+     "owner": "verifier",
+     "also": [
+      "journalist",
+      "cartographer"
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "idea",
+     "tags": [
+      "verification",
+      "several models",
+      "state of affairs"
+     ],
+     "words": "can we have a thread about how to add multiple fact and verification workflows (across multiple LLM providers) on key pages like this one",
+     "comment": "The site has one fact-check desk, on one model; REALITY.md lists 'a second fact-check desk on a different model' as not built. The state of affairs is the page where a second, independent reading matters most: it is the one people quote.",
+     "replicated": "n/a",
+     "recommendation": "A brief and a thread: on key pages (the state of affairs, the front page's Right now, the briefings), independent verification runs on two or three providers, each grading the same statements on the desk's scale, shown side by side, with every disagreement surfaced and settled in the contradiction ledger. Drafted by the Sherpa for the editor and the fact-check desk.",
+     "owner": "verifier",
+     "also": [
+      "sherpa",
+      "dev"
+     ]
+    }
+   ],
+   "not_reproduced": [],
+   "reply": "Not needed: the editor's own asks, confirmed in session."
+  },
+  {
+   "id": "UF-006",
+   "received": "2026-10-26",
+   "tester": "editor",
+   "who": "the editor",
+   "channel": "the site's feedback form on /collaborators/, signed with the editor's enrolled key (sha256:89984d97af4d2deb, enrolled 23 October); drained from the collaborators lane by the Sherpa on 26 October",
+   "reader": "the editor, on an iPhone (Chrome), reviewing the redesign's mockups",
+   "ask": "",
+   "site_version": "0.22.22",
+   "site_version_note": "Sent on v0.22.22 at 11:05 UTC; the three screenshots are of mockups A, B and D (/admin/design/a/, b/, d/, built from v0.10.11). Checked on the live v2 site, v0.22.29, which runs the line (prototype F).",
+   "progress": "three pages and one question",
+   "pages_read": [
+    [
+     "admin/design/a/index.html",
+     null
+    ],
+    [
+     "admin/design/b/index.html",
+     null
+    ],
+    [
+     "admin/design/d/index.html",
+     null
+    ]
+   ],
+   "summary": "A phone review of the redesign: A to D read as working together (front pages for different readers, a content page, the console), and 'showing each reader what they need works well'. Three phone problems in the mockups (a fixed header two-thirds of the screen, the agencies page's two columns squeezed, the console's menu filling the first screen) and one question: what does a first-time visitor see before choosing a role, when the role and view selectors take so much space? The three problems are mockup-only: the live v2 site does not have them. The question holds on the live site, on every page, on a first visit.",
+   "points": [
+    {
+     "n": 1,
+     "kind": "praise",
+     "tags": [
+      "redesign",
+      "personas"
+     ],
+     "words": "I read A–D as working together: front pages for different readers, a content page and the console. Showing each reader what they need works well.",
+     "comment": "The reading the live site took: v2 runs one design (the line) with a reader chooser on every page, and the console stayed on the team site.",
+     "replicated": "n/a",
+     "recommendation": "Keep.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 2,
+     "kind": "bug",
+     "tags": [
+      "phone",
+      "header",
+      "front page"
+     ],
+     "words": "Front page (screenshot 1): the top bar doesn't fit on one line. The menu breaks onto two lines, and there is no space between the Focus row and the content below it. The header also stays fixed when scrolling and takes about 2/3 of the screen. Could it scroll away, or shrink to a thin bar?",
+     "comment": "Reproduced in mockup A only: its header is 214px and stays fixed. On the live site the header is one 43px line with a Menu button (fixed in v0.14.22, F034), and the reader chooser scrolls away. Reproduced in Chromium at 390x844 on the live v2 site, v0.22.29, 26 October 16:55 UTC.",
+     "replicated": "mockup only",
+     "recommendation": "None for the live site. If mockup A is kept as a reference, mark it superseded by the line.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 3,
+     "kind": "bug",
+     "tags": [
+      "phone",
+      "agencies",
+      "layout"
+     ],
+     "words": "Agencies page (screenshot 2): the two columns break; the headline column is squeezed to one or two words per line. Stack the columns on small screens?",
+     "comment": "Reproduced in mockup B only. The live agencies page (/agencies/) is one column on a phone, nothing overflows (scroll width 390). Reproduced in Chromium at 390x844 on the live v2 site, v0.22.29, 26 October 16:55 UTC.",
+     "replicated": "mockup only",
+     "recommendation": "None for the live site.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 4,
+     "kind": "bug",
+     "tags": [
+      "phone",
+      "team console",
+      "menu"
+     ],
+     "words": "Team console (screenshot 3): the full menu fills the first screen before any content. Collapse it into a ☰ button on phones?",
+     "comment": "Reproduced in mockup D only (the heading starts 911px down). The live team pages use the site's one-line header and Menu button; /team/'s heading starts 571px down on a first visit, for the reason in point 5. Reproduced in Chromium at 390x844 on the live v2 site, v0.22.29, 26 October 16:55 UTC.",
+     "replicated": "mockup only",
+     "recommendation": "None for the console; see point 5.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 5,
+     "kind": "question",
+     "tags": [
+      "phone",
+      "first visit",
+      "personas",
+      "first screen"
+     ],
+     "words": "Question: what does a first-time visitor see before choosing a role? On a phone, the role and view selectors also take a lot of space. Could they go inside a menu?",
+     "comment": "Reproduced on the live site. A first-time visitor sees the reader chooser ('You're viewing this as an Executive', That's me, six other readers, about 270px), then the 'Your reading' panel (about 110px), then the headline: 598px down on the front page, 549 on /agencies/, 571 on /team/ (322 on the front page on 25 October, before v2). Once the reader presses That's me, the chooser folds into its pill: 425px on the front page, 335 on the next page, and it stays folded. So the first visit pays once, and the chooser is the first step F035 asked for. What still costs every page is the 'Your reading' panel, shown even to a reader who has read nothing (F038). On /team/ the chooser says the page 'reads the same for every view' and still takes the space.",
+     "replicated": "yes",
+     "recommendation": "To story-site: on a first visit keep the chooser but shorten it (one line: 'Reading as Executive · change'; the six others behind it); show 'Your reading' only once a reader has marked something read; on pages that read the same for every view (/team/, admin), show only the pill.",
+     "owner": "story-site",
+     "also": [
+      "dev"
+     ]
+    }
+   ]
+  }
+ ]
 }

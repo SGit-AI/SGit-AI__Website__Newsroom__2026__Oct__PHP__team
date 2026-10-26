@@ -2,7 +2,7 @@
  "schema": "sgit.newsroom.friction-log/1",
  "about": "Every friction a reader meets on this site, structured: who, where, what they tried, what happened, what they expected, the evidence, who can fix it and whether it landed. Kept by sherpa@php.newsroom; see admin/sherpa/README.md. Synthetic readers are test instruments, not people: their findings are prompts, and each is re-checked on the current version before it is logged.",
  "kept_by": "sherpa",
- "as_of_version": "0.19.2",
+ "as_of_version": "0.22.29",
  "stages": [
   "arrive",
   "first-screen",
@@ -726,11 +726,12 @@
     "Measured in Chromium on v0.14.14, 390x780 and 1440x900, 24 October",
     "CI-003 item 2",
     "v0.15.0's prototype E (the lens, /admin/design/lens/) asks 'Aim: Understand it, Know what to do, Check the evidence' on a first visit: the collaborator's three doors; waits for the editor's go. Live front page unchanged: 'Three ways to read' at 9,204px on a phone (v0.15.4)",
-    "v0.19.2: 'Three ways to read' at 9,248px on a phone. Prototype F (the line, v0.18.0, /admin/design/line/) answers it another way: a reader chooser on the first screen ('You're viewing this as an Executive ... Not you? Read it as: General reader, Security, Engineer, Journalist, Researcher, Everything'); by role, not by task. Either prototype closes this; the choice is the editor's (board 297)"
+    "v0.19.2: 'Three ways to read' at 9,248px on a phone. Prototype F (the line, v0.18.0, /admin/design/line/) answers it another way: a reader chooser on the first screen ('You're viewing this as an Executive ... Not you? Read it as: General reader, Security, Engineer, Journalist, Researcher, Everything'); by role, not by task. Either prototype closes this; the choice is the editor's (board 297)",
+    "v2, v0.22.29 (26 October): the line is live; a first visit opens on the reader chooser above the headline on every page: the first step this friction asked for (by reader, not by task). Measured at 390x844."
    ],
    "first_seen": "0.14.14",
-   "last_seen": "0.19.2",
-   "status": "open",
+   "last_seen": "0.22.29",
+   "status": "closed: answered by the line's reader chooser on the first screen, live in v2 (v0.22.29), checked 26 October",
    "source": "CI-003"
   },
   {
@@ -744,11 +745,12 @@
    "owner": "sherpa",
    "also": [],
    "evidence": [
-    "Measured on v0.19.2 at 390x780, 25 October, 11:45 pass"
+    "Measured on v0.19.2 at 390x780, 25 October, 11:45 pass",
+    "v2 (v0.22.29): checked live on team.php.oct.2026.newsroom.sgit.ai/feedback/ at 390x844, 26 October: the menu is one scrolling row"
    ],
    "first_seen": "0.19.2",
-   "last_seen": "0.19.2",
-   "status": "fixed by the Sherpa in this pass (assets/sherpa/viewer.css: one scrolling row; the menu 108 to 38px, the title 474 to 403px locally); to be checked live at 17:45",
+   "last_seen": "0.22.29",
+   "status": "closed: the fix (v0.19.5) checked live on the v2 team site, 26 October",
    "source": "the Sherpa's 11:45 pass"
   },
   {
@@ -764,12 +766,34 @@
     "dinis"
    ],
    "evidence": [
-    "Measured on v0.19.2 (prototype F after v0.19.0's phone fix) at 390x780, 25 October, 11:45 pass"
+    "Measured on v0.19.2 (prototype F after v0.19.0's phone fix) at 390x780, 25 October, 11:45 pass",
+    "v2, v0.22.29: first visit, headline at 598px (front), 549 (agencies), 571 (team); after That's me the chooser folds into its pill and stays folded: 425 (front), 335 (next page). UF-006 point 5 raises the same."
    ],
    "first_seen": "0.19.2",
-   "last_seen": "0.19.2",
-   "status": "open: for the editor's decision on prototype F (board 297)",
+   "last_seen": "0.22.29",
+   "status": "improved: the chooser folds after the first choice, as proposed; the first visit still costs about 270px (UF-006.5)",
    "source": "the Sherpa's 11:45 pass"
+  },
+  {
+   "id": "F038",
+   "reader": "a first-time reader, and any reader who has marked nothing read",
+   "page": "index.html",
+   "stage": "first-screen",
+   "actual": "The 'Your reading' panel (new and changed counts, Mark read, fade/hide/show, Your desk), about 110px, sits above the headline on every page, for a reader who has read nothing: after the chooser folds it is most of what stands between the header and the headline (425px on the front page).",
+   "severity": "medium",
+   "proposal": "Show the panel only once a reader has marked something read, or fold it into one line ('728 new · Your desk'); the reading tools go inside it.",
+   "owner": "story-site",
+   "also": [
+    "dev"
+   ],
+   "evidence": [
+    "Measured on the live v2 site, v0.22.29, 390x844, 26 October",
+    "UF-006 point 5"
+   ],
+   "first_seen": "0.22.29",
+   "last_seen": "0.22.29",
+   "status": "open",
+   "source": "UF-006"
   }
  ]
 }

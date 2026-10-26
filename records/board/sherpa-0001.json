@@ -1,0 +1,7 @@
+{
+ "id": "sherpa-0001",
+ "title": "The press's build/collaborators_drain.py (and contributors.py) cannot run in v2: ROOT is two levels above build/ (the v1 depth of admin/build/), so from a press clone it looks for /<parent of the press>/data/contributors.json and stops with FileNotFoundError",
+ "status": "open",
+ "owner": "dev",
+ "note": "Found by the Sherpa on 26 October, draining 58526ytp with the press at v1.0.34 (build/contributors.py line 13: ROOT = dirname(__file__)/../..; lines 48 and 58 read and write ROOT/data/contributors.json). In v2 the file is the data repository's files/contributors.json, kept by the conductor. Workaround used: a scratch layout <dir>/p/build/ with <dir>/data/contributors.json copied from data; one feedback message drained, no enrolment, the copy unchanged. Proposal: take the contributors file's path from an argument or an environment variable (default: a data clone's files/contributors.json), and write enrolments as a file for the conductor to carry into data, not in place. conductor_drain.py is unaffected (it reads no repository file)."
+}

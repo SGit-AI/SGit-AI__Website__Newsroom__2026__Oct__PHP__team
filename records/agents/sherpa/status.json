@@ -1,36 +1,32 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "sherpa",
- "as_of": "2026-10-24",
+ "as_of": "2026-10-26",
  "round": {
-  "n": 2,
-  "date": "2026-10-24",
-  "branch": "sherpa/wake-2026-10-24, sherpa/ci-003, sherpa/ci-003-design",
+  "n": 3,
+  "date": "2026-10-26",
+  "branch": "dev (team)",
   "commits": [
-   "2a0cd813b",
-   "be4d4401d",
-   "ac5300dc5 (v0.14.9)",
-   "614ef2996 (v0.14.14)",
-   "905c8751b (v0.14.15)"
+   "the team release of 26 October that carries the debrief"
   ]
  },
- "state": "round 2 closed; the schedule is active (every two hours, 07:45 to 21:45 London)",
+ "state": "round 3 closed: working from the six repositories (team for records); the schedule paused by the editor, to be re-enabled",
  "done": [
   {
-   "what": "Scheduled wakes at 07:45 and 09:45 London: both lanes drained, nothing waiting; the fact-check desk's Fortune analysis linked from UF-005, board 195 closed",
-   "evidence": "data/runs/sherpa/20261024T0646Z-sherpa.json; v0.14.9"
+   "what": "Took in the six repositories, sgit 0.25.0, both lanes drained (one signed message from the editor)",
+   "evidence": "records/runs/sherpa/ (26 October)"
   },
   {
-   "what": "CI-003, the collaborator's review of the new design, the telemetry and the risk graph: ten items, the phone header measured (F034), a brief to dev (board 260 to 263), row 264 to the editor",
-   "evidence": "/sherpa/ideas/ci-003/; v0.14.14"
+   "what": "UF-006: the editor's phone review, five points reproduced on the live v2 site; F035 and F036 closed, F037 improved, F038 new",
+   "evidence": "records/sherpa/feedback.json, records/sherpa/friction-log.json"
   },
   {
-   "what": "CI-003 corrected against the redesign that shipped in v0.14.0; F035 measured (the three ways to read, twelve phone screens down); board 265 for story-site; a correction entry",
-   "evidence": "BRIEF-CORRECTIONS.md; v0.14.15"
+   "what": "The card moved to v2: repositories field, paths in the six, steps for team",
+   "evidence": "records/schedule/sherpa.json"
   },
   {
-   "what": "A reminder to the editor at 15:00 London: review the round 1 debrief and the two sealed QR codes",
-   "evidence": "a one-shot message to this session, at the editor's request"
+   "what": "Board sherpa-0001 to dev: the press's collaborators drain cannot find contributors.json in v2",
+   "evidence": "records/board/sherpa-0001.json"
   }
  ],
  "tasks": {
@@ -50,30 +46,24 @@
  },
  "next": [
   {
-   "what": "The 11:45 full pass: every release since the last run read before any comment on a page; CI-002's steps and dev's join fixes checked live",
-   "why": "the frictions stay open until checked; and round 2's miss"
+   "what": "At the next full pass: walk what the six released, on the live sites, at phone width"
   },
   {
-   "what": "The brief on verification across model providers, with the fact-check desk (board 194)",
-   "why": "the editor's ask, UF-005.2; it meets CI-003's signed reviews"
+   "what": "Draft format B interview questions once the editor picks the first wave (board 334)"
   }
  ],
  "asks": [
   {
-   "what": "Where the CTO belongs: Operations (the redesign) or with the executive (the three-views brief)",
-   "from": "the editor"
+   "what": "Re-enable the Sherpa's schedule, and then its task's prompt set to the card's v2 instructions",
+   "to": "editor"
   },
   {
-   "what": "Who may review the graph's inferred links, and how many agreeing reviews confirm one",
-   "from": "the editor"
+   "what": "The first wave of interviews and their formats (board 331)",
+   "to": "editor"
   },
   {
-   "what": "A power-user invitation for the collaborator of CI-001 to CI-003",
-   "from": "the editor"
-  },
-  {
-   "what": "The riskmandate token re-sealed to the RiskMandate agent's key; the conductor's lane key if the Sherpa is to drain it",
-   "from": "the editor"
+   "what": "Fix the collaborators drain's root for v2 (sherpa-0001)",
+   "to": "dev"
   }
  ],
  "tokens": {
@@ -89,5 +79,5 @@
   "injection_seen": 0,
   "detail": "No writes outside scope (agents.py check). One miss of judgement, recorded in BRIEF-CORRECTIONS.md: a design commented on without reading what had shipped. An edit to the Sherpa's own brief was started and reverted, the correction going to BRIEF-CORRECTIONS.md as the policy says."
  },
- "debrief": "admin/content/agents/sherpa/debriefs/2026-10-24__ci-003-and-the-redesign.md"
+ "debrief": "records/agents/sherpa/debriefs/2026-10-26__v2-first-run.md"
 }

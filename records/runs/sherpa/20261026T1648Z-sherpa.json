@@ -1,0 +1,17 @@
+{
+ "run": "20261026T1648Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-26T16:48:17Z",
+ "finished": "2026-10-26T16:54:03Z",
+ "outcome": "ok",
+ "summary": "First run on v2, in an interactive session at the editor's request (the schedule is paused). Took in the six repositories: team and press with push, site, data, refs and updates read-only; v1 untouched. sgit-ai v0.25.0 (from 0.24.0): status 2.5 s then 1.6 s on the collaborators clone, 1.6 s then 1.3 s on the inbox; nothing behaved differently. Lanes: d6zak0o3 nothing; 58526ytp one feedback message, signed with the editor's enrolled key, no enrolment, the vault committed and pushed. The press's collaborators drain cannot find contributors.json in v2 (board sherpa-0001 to dev); run from a scratch layout with data's copy. UF-006 recorded: the editor's phone review of mockups A, B, D; three layout points are mockup-only, the first-visit question reproduces on the live site (headline 598px on a first visit, 425 after That's me). F035 and F036 closed, F037 improved, F038 new. Card moved to v2 (repositories field, paths in the six). Two messages read (conductor: after step B; sgit 0.25.0). Team head 42cb55a94319.",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "42cb55a94319b5d59469e236afbb1d36fcbeee36"
+}
