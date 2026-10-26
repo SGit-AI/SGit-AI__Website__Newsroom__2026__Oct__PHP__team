@@ -1,0 +1,13 @@
+{
+ "id": "Run-11",
+ "site_version": "data v0.1.46",
+ "vault_commit": "2fc7e432584b",
+ "site_export_commit": "2fc7e432584b",
+ "started": "2026-10-26T20:55Z",
+ "finished": "2026-10-26T21:10Z",
+ "quiet_wakes_before": 0,
+ "checked": "fc.py changed (no-confirmed-compromise, refreshed to 14:42 UTC on 26 October); fc.py check (0 failures); fc.py drift (the same six); the 10 captures since 12:14 UTC read for a named compromise; KEV; NVD",
+ "opened": "none",
+ "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+ "summary": "no-confirmed-compromise still holds at 14:42 UTC on 26 October (A4); none of the 10 new captures names a compromised organisation. KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
+}

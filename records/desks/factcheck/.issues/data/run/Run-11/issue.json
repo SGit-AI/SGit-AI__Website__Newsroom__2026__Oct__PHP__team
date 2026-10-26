@@ -1,0 +1,15 @@
+{
+  "node_id": "38261493",
+  "node_type": "run",
+  "node_index": 11,
+  "label": "Run-11",
+  "title": "Run 11: 20:52 London wake, 26 October",
+  "description": "no-confirmed-compromise as of 14:42 UTC on 26 October holds A4",
+  "status": "done",
+  "created_at": 1793048444681,
+  "updated_at": 1793048444681,
+  "created_by": "a2eaaf99",
+  "tags": [],
+  "links": [],
+  "properties": {}
+}

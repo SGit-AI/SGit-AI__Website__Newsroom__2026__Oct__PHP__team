@@ -1,0 +1,14 @@
+{
+ "run": "20261026T2055Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-26T20:55:00Z",
+ "finished": "2026-10-26T21:10:00Z",
+ "outcome": "ok",
+ "summary": "20:52 London wake (sgit 0.25.0; loose evidence clone pulled to 2fc7e432584b; pack copy hsmfer5w stays at 94352a55fbaa): no-confirmed-compromise holds A4 as of 14:42 UTC on 26 October, no victim named in 10 new captures; fc.py check 0 failures; drift 6, explained; KEV 2026.10.23 and NVD unchanged; no unread messages; notes read to head 533ac3a6dca6. Waits on the editor: which vault the desk reads.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "533ac3a6dca6"
+}
