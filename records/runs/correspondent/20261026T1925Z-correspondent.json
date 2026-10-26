@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T19:25:30Z",
+ "finished": "2026-10-26T19:26:45Z",
+ "outcome": "ok",
+ "summary": "Wake 19:25 London. Team dev at bbd1295b9964. No journalist release since my last run (its 18:40 wake found nothing new at vault 2fc7e432584b); nothing to review in data, site, updates, press or refs. The journalist acknowledged the Canada catch. Since 17:10: at the editor's request replaced 'rung' with 'level' in both reader-question articles (site 47e98607), the ladder figure and the deck (press v1.0.43, PDF regenerated). Neither is live: no edition since v0.22.33 (17:24 UTC); the round no longer runs every quarter hour and dev's chain runs daily at 06:40 London. Board correspondent-0007 for dev. correspondent-0005: the researcher captured stealmybitcoin.com (watch, vault 7r83qic5); the PoC repository's README waits on the editor's go. Waits: dev (0007), the editor (0004 reader-questions section; 0005 README capture).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "bbd1295b99641848d42b03de149239889912e465"
+}
