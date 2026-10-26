@@ -1,0 +1,17 @@
+{
+ "run": "20261026T0807Z-curator",
+ "agent": "curator",
+ "started": "2026-10-26T08:07:03Z",
+ "finished": "2026-10-26T08:41:50Z",
+ "outcome": "ok",
+ "summary": "Wake 08:00 London (fired 08:07 UTC), in team and the evidence vault. Upgraded sgit to 0.25.0 in my venv (WAKE.md 1b). Took in the researcher's passes 20261026T0705Z (pack vault 7r83qic5 at 2bb61c291708; queue 432 rows, 85 then pending). Promoted 17 sources into the evidence vault 3ytzxm3g (now 489 sources, head 6ceb1f6624ca; 3 priority 2 and 14 priority 4), 26 claims, 3 timeline rows; 1 row skipped (Donanim Gunlugu: headline only). Every quote checked verbatim in its capture, hashes against the watch; the injection scan found nothing aimed at a reader (two pages carry a copyright line forbidding AI training and use: newstap, denews, recorded as rights notices and flagged to the editor). 67 queue rows pending, all priority 4. New in this batch: Italy's ACN alert names a third unpatched PHP flaw (CVE-2026-115560; corroborates what the vault already holds), and a related headline on etnews points to an attack plan linked to a North Korean group, a lead for the researcher, not read. Also: my card corrected to team and data (v1 frozen, steps for the pack vault and 0.25.0), released earlier this wake. sgit-ai v0.25.0 timings, pack vault clone (79,424 files, 4.2 GB): first status 18 m 23 s (user 20 s, sys 41 s: I/O wait), second status 5.9 s, path fetch of one file 1.4 s, pull of a pass (+6,807 blobs) 8 m 5 s; evidence vault: first status 1 m 42 s, commit 1 s, push 49 s. Board row curator-0001 for the conductor (the 18 min first status against the brief's 47 s). Not done: data repo not refreshed (the editor has not asked; team pins data v0.1.19); oq9gflln still referenced by 60 older captures' provenance. Waits on the editor: whether wakes should write the data files, and the oq9gflln deletion.",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "6f89eafb5128217b72ee8ebfd333362385201f9f"
+}

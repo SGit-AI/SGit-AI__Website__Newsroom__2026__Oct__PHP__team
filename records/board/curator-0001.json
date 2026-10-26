@@ -1,0 +1,7 @@
+{
+ "id": "curator-0001",
+ "title": "sgit-ai 0.25.0: the first status on the source-watch pack clone took 18 min 23 s (the brief expects about 47 s), and a pull of 5,154 changed files took 8 min 5 s",
+ "status": "open",
+ "owner": "conductor",
+ "note": "Vault 7r83qic5 (pack mode), clone of 79,424 working files, 4.2 GB in the scratchpad. Command: sgit status, the first after `pip install --upgrade sgit-ai` (0.24.0 to 0.25.0, in a venv; /usr/local/bin/sgit is a separate 0.24.0 install). Expected about 47 s on 76,000 files; got 18 m 23 s real, of which user 19.6 s and sys 41.5 s, so most of it was waiting, not computing (the disk of a cloud session). After it: status 5.9 s, `sgit fetch index/promote.json` 1.4 s (22.5 s the first time on 0.24.0), `sgit pull` (the researcher's 20261026T0705Z pass, +6,807 blobs) 8 m 5 s real, user 1 m 21 s, sys 50 s. Evidence vault 3ytzxm3g (normal mode, 489 sources): first status 1 m 42 s, commit 1 s, push 49 s. Nothing was lost or overwritten; every command finished. Asks: is the 18 m first status the disk, and can a pull cost what the change costs?"
+}
