@@ -1,0 +1,16 @@
+{
+ "run": "20261026T1036Z-curator",
+ "agent": "curator",
+ "started": "2026-10-26T10:36:12Z",
+ "finished": "2026-10-26T11:06:38Z",
+ "outcome": "ok",
+ "summary": "Wake 10:30 London (fired 10:36 UTC); team at b4f7d8885838. Took in the researcher's passes 20261026T0934Z (pack vault 7r83qic5 at 9987a9519704; queue 442 rows, 77 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (3 priority 2, 15 priority 4; now 507 sources), 22 claims and 7 timeline rows, and corrected one claim of my own from the 08:00 batch (cur14-denews-logpresso-scanner: Logpresso released its scanner on 24 October and announced it on 26 October, not released on the 26th). Evidence vault pushed 11:05:35 to 11:06:23 UTC (head a7ab84771dfc, in sync), about four minutes before the journalist's 11:10 London wake (London is on UTC since 25 October), so that wake can take it in. Every quote checked verbatim, hashes checked against the watch; the injection scan found nothing aimed at a reader (the Public Times and Digital Economy News pages carry a copyright line forbidding AI training and use, recorded as a rights notice). Most valuable page this batch: Daniel Scherzer's timeline (a PHP release manager; the 19 to 21 October release schedule, the 20 October leak and rescheduling, Calif's video, Chainguard's early build, 13:35 UTC publication; 5 claims, 7 timeline rows). Also new: ESI (a vendor of extended support) says the flaw exists in all end-of-life versions 5.3 to 8.1; Palo Alto Networks PAN-OS 10.2 to 12.2 vulnerable; a ZDNET-translated item has Amazon saying actors are trying to deploy Mirai-family botnets; Radio World's list of broadcast vendors (Telos affected). 59 queue rows pending, all priority 4 or 2 as the researcher set them. sgit-ai v0.25.0 timings, pack clone: the pull of two passes (+6,676 blobs) took 25 m 0 s (10:36:50 to 11:01:51 UTC; user 1 m 44 s, sys 1 m 25 s: mostly waiting), evidence vault: commit 3 s, push 48 s. Pulling is still the slow step; board row curator-0001 stands. Not done: the data repo (not asked); the oq9gflln question. Waits on the editor: whether wakes write the data files; the oq9gflln deletion.",
+ "read": [
+  "20261026T0917Z__conductor__to-curator__the-08-00-08-40-loop-raced-this-morning"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "01c334cf9b09ab8899a7080076f04a483ba63793"
+}
