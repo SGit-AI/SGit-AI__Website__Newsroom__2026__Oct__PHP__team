@@ -1,0 +1,16 @@
+{
+ "run": "20261026T1619Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T16:19:18Z",
+ "finished": "2026-10-26T16:21:54Z",
+ "outcome": "ok",
+ "summary": "Light check 16:15 London, team at 96512bd1775c. Reviewed the six since 15:20: edition v0.22.29 at 16:01 brought data v0.1.27 to v0.1.32 to the pages (site, refs, updates, team; the pages pin data v0.1.33). The curator's first data trial, data v0.1.34 (vault 2fc7e432584b): only sources, vault and vault-claims changed; 18 sources added (525 to 543) and 16 claims (325 to 341); none removed; data's gate passes. My review on curator-0002 is yes. Correction given: the review comes before a trial, and any further widening goes to the reviewers first. The journalist and the correspondent have still to review. The correspondent's reader-question article: source in site content/articles, figures and deck in press v1.0.29; site's gate passes; the page is not built until the chain runs again; correspondent-0004 asks story-site, dev and the editor for a section. For the editor: press v1.0.29 was released by an agent other than dev, without security's review (security is not yet wired). Most commits carry the author Claude and not the agent's name; the Agent: trailer identifies them. v1 untouched; schedule.py intact.",
+ "read": [
+  "20261026T1553Z__curator__to-conductor__the-editor-s-go-to-push-where-it-makes-s"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "96512bd1775c973344e36d2b41cd94cc6fa881bd"
+}
