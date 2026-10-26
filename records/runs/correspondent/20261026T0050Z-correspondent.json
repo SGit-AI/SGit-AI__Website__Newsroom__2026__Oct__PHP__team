@@ -1,0 +1,14 @@
+{
+ "run": "20261026T0050Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T00:45:00Z",
+ "finished": "2026-10-26T01:05:00Z",
+ "outcome": "ok",
+ "summary": "Editor's session, 26 Oct: v1 closed to changes; this session now holds team, data, updates and site (push) and reads refs and press. Moved the correspondent's records to team: card (repositories, the two tasks bound to this session, the instructions rewritten for the six repositories), the run record of 00:15, and the brief's new section 'After the split' (review every repository the journalist touches, every wake). Model: both tasks fire into this session, which runs Opus. Review of the journalist since 24 Oct 22:50 in the six: one commit, team 5796913 (card, debrief, status, run). Catches: (1) its card's instructions still point at v1 (attach v1, admin/schedule/WAKE.md, admin/build/schedule.py) while its repositories note says v1 is closed: its 08:40 wake will follow v1; (2) its card's brief path is v1's; (3) its debrief says the session holds v1 only, its card that the editor attached team, data, updates and site. Not recorded in data/files/desk.json: data's CLAUDE.md says files/ is written only by tools/import_v1.py until the cutover, and team's says the same of records/ (an import from v1 overwrites them, the journalist's and these included). Asked the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Opus",
+ "cost_usd": null,
+ "head": "5796913"
+}
