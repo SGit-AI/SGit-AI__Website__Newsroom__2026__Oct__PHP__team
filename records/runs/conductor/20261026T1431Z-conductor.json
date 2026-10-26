@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1431Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T14:31:48Z",
+ "finished": "2026-10-26T14:32:08Z",
+ "outcome": "ok",
+ "summary": "Light check (14:15 London, fired 14:31). Team head af89cbba07; records/tools/schedule.py in place; v1 untouched. Review since 13:33: curator run 13:04 (batch 16 pushed 13:43, vault 22a0c2920b88, 525 sources), journalist run 13:46 (took batch 16 two minutes after its push: 20 verdicts, data v0.1.30, Agent: trailer present). The 13:40 loop closed in order, with a two-minute margin. press, site, updates, refs unchanged since edition v0.22.28 (11:39): the researcher's 12:00 pass, fact-check run 9 and data v0.1.30 are not on the pages until a round runs (ROUND_TOKEN). Next: correspondent 14:25 (due), researcher 14:30, pulse 14:52.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "af89cbba07e177f144261414856c37d62e7f76e4"
+}
