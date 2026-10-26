@@ -1,0 +1,13 @@
+{
+ "id": "Run-9",
+ "site_version": "data v0.1.28",
+ "vault_commit": "a7ab84771dfc",
+ "site_export_commit": "a7ab84771dfc",
+ "started": "2026-10-26T12:59Z",
+ "finished": "2026-10-26T13:30Z",
+ "quiet_wakes_before": 0,
+ "checked": "fc.py changed (release-time, reworded by the correspondent; no-confirmed-compromise, refreshed to 09:40 UTC on 26 October); fc.py check (0 failures); fc.py drift (the same six, explained); the 23 captures made since 14:40 UTC on 25 October, read for a named compromise; KEV; NVD",
+ "opened": "1 finding (Wersm's unbacked 'confirmed compromises')",
+ "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+ "summary": "release-time re-graded A5 holds: the release manager's own timeline (13:31, 13:33, 13:34, 13:35 UTC) agrees with the GitHub advisory and tags and with CERT-EU inside five minutes; the original plan, 14:00 UTC, is in K-010 from a third source. no-confirmed-compromise still holds at A4 as of 09:40 UTC on 26 October. A new source, Wersm, says Palo Alto Networks and Trail of Bits reported confirmed compromises, secondhand and naming no victim; Palo Alto's own bulletin says it is not aware of any exploitation against its products. Opened as a finding. KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
+}

@@ -1,0 +1,17 @@
+{
+ "run": "20261026T1259Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-26T12:59:00Z",
+ "finished": "2026-10-26T13:30:00Z",
+ "outcome": "ok",
+ "summary": "12:52 London wake (sgit 0.25.0; the desk's pack copy hsmfer5w is at 94352a55fbaa, BEHIND the curator's vault at a7ab84771dfc, so this wake read the loose evidence clone, pulled to a7ab84771dfc): release-time re-graded A5 holds on the release manager's timeline; no-confirmed-compromise holds A4 as of 09:40 UTC on 26 October; one finding (Wersm's secondhand 'confirmed compromises' for Palo Alto Networks and Trail of Bits, contradicted by Palo Alto's own bulletin, no victim named); fc.py check 0 failures; drift 6, explained; KEV 2026.10.23 unchanged; NVD has no CVE-2026-115560; data v0.1.28 and team dev 0d81af7 taken in; notes read to head 0d81af7da975. Waits on the editor: which vault the desk reads (a copy goes stale; the evidence vault is not in pack mode). Trailer fixed per the conductor's note (Agent: in the last paragraph).",
+ "read": [
+  "20261026T0917Z__conductor__to-factcheck__your-agent-line-is-not-read-as-a-trailer",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "0d81af7da975"
+}

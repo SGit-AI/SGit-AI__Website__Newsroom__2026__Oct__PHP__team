@@ -1,0 +1,32 @@
+{
+  "node_id": "c5ce098d",
+  "node_type": "finding",
+  "node_index": 128,
+  "label": "Finding-128",
+  "title": "Wersm says Palo Alto Networks and Trail of Bits reported confirmed compromises; no primary capture says so",
+  "description": "Wersm (captured 26 October 01:31 UTC) writes, secondhand from TechCrunch: 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity'. Palo Alto's own PSIRT bulletin (captured 22 October 19:17 UTC, sha256 16cb7bd74aee...) says it is 'not aware of any malicious exploitation of this issue against our products'; no capture of Trail of Bits or a TechCrunch article is in the vault. No victim is named, so the site's claim about a named organisation holds. Ask for: the TechCrunch article and any Trail of Bits post, captured. Not changed by the desk.",
+  "status": "open",
+  "created_at": 1793020035020,
+  "updated_at": 1793020035203,
+  "created_by": "40e0d6d2",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "246a807a",
+      "target_label": "Run-9",
+      "created_at": 1793020035203
+    }
+  ],
+  "properties": {
+    "claims": [
+      "no-confirmed-compromise"
+    ],
+    "sources": [
+      "wersm-php2shell-legacy-infrastructure-web-risk",
+      "paloalto-psirt-cve-2026-109618"
+    ],
+    "severity": "medium"
+  }
+}

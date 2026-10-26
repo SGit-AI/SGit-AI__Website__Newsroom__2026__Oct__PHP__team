@@ -520,9 +520,18 @@
      "sources": [
       "lorikeet-php2shell"
      ]
+    },
+    {
+     "who": "PHP 8.5's release manager, Daniel Scherzer (timeline of 22 October, from the repositories' history)",
+     "when": "2026-10-22",
+     "says": "The coordinated releases were originally scheduled for 14:00 UTC on Thursday, October 22 ... rescheduled ... to Wednesday, October 21, at the same time.",
+     "measures": "the original plan, 14:00 UTC, agreeing with the PHP Foundation; it does not give the 15:00 UTC value",
+     "sources": [
+      "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+     ]
     }
    ],
-   "reading": "The original embargo time has two values, 14:00 UTC (the Foundation, echoed by The Hacker News) and 11:00 ET, which is 15:00 UTC (watchTowr, echoed by CybelAngel and others). The release itself is stamped 13:34 UTC on the GitHub advisories, ahead of the announced 14:00. The ChangeLog still carries the original date. The site should say 'about 14:00 UTC, advisories at 13:34' and give both original times. Run 7: Lorikeet's blog gives a third planned date, 24 October, unsourced and alone in the vault (in its captures of 22 and 25 October); it does not change the reading.",
+   "reading": "The original embargo time has two values, 14:00 UTC (the Foundation, echoed by The Hacker News) and 11:00 ET, which is 15:00 UTC (watchTowr, echoed by CybelAngel and others). The release itself is stamped 13:34 UTC on the GitHub advisories, ahead of the announced 14:00. The ChangeLog still carries the original date. The site should say 'about 14:00 UTC, advisories at 13:34' and give both original times. Run 7: Lorikeet's blog gives a third planned date, 24 October, unsourced and alone in the vault (in its captures of 22 and 25 October); it does not change the reading. Run 9: the release manager's own timeline gives 14:00 UTC for the original plan, the Foundation's value; only the watchTowr/CybelAngel line gives 15:00.",
    "settle": "A PHP project statement of the embargo time, or the pre-announcement's original text.",
    "ticket": "Contradiction-10"
   },
