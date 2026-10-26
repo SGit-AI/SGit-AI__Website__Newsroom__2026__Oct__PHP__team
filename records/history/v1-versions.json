@@ -1,6 +1,15 @@
 {
- "current": "0.22.35",
+ "current": "0.22.36",
  "versions": [
+  {
+   "version": "0.22.36",
+   "date": "2026-10-26",
+   "title": "the rest of the team site reads its records when it opens: member status and rounds, tasks, status, runs",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "1dceaa1dfa7f",
+   "reconstructed": false
+  },
   {
    "version": "0.22.35",
    "date": "2026-10-26",

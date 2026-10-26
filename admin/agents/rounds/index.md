@@ -20,7 +20,7 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [Conductor](../conductor/index.html) | 2026-10-24 | [Schedules, runs and messages in the repository; the conductor's own schedule; Commit-FS-lite; dev's red CI fixed](../conductor/index.html#2026-10-24__schedules-and-commit-notes) | 3 | 2 | unknown | 10 | 0 | 1 |
 | [cyber@php.newsroom](../cyber/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [News desk chief](../desk/index.html) | 2026-10-25 | [The desk's scheduled task wired to its card, and its wakes moved after the correspondent's reviews](../desk/index.html#2026-10-25__wired) | 2 | 1 | unknown | 0 | 0 | 0 |
-| [dev@php.newsroom](../dev/index.html) | 2026-10-26 | [One repository into six: pass one, one source for every file, four reports, and steps A and B the same night (nothing depends on v1)](../dev/index.html#2026-10-25__one-repository-into-six) | 3 | 2 | unknown | 16 | 1 | 0 |
+| [dev@php.newsroom](../dev/index.html) | 2026-10-26T19:55Z | [One repository into six: pass one, one source for every file, four reports, and steps A and B the same night (nothing depends on v1)](../dev/index.html#2026-10-25__one-repository-into-six) | 5 | 2 | unknown | 16 | 1 | 0 |
 | [Fact-check desk](../factcheck/index.html) | 2026-10-24 | [Run 3 (the desk chief's fixes checked) and the first investigation, how much PHP there is and where '70%' comes from](../factcheck/index.html#2026-10-24__run-3-and-the-first-investigation) | 4 | 3 | unknown | ['admin/build/build.py build_llms(): three lines for llms.txt'] | 0 | 0 |
 | [GRC desk](../grc/index.html) | 2026-10-24 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Historian](../historian/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
@@ -76,4 +76,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.35 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.36 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

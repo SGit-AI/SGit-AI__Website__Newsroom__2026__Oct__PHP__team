@@ -1,6 +1,497 @@
 {
  "about": "A page counts as changed when the content of its <main> differs from the previous release's, with the two site version numbers masked: the header, the footer and the version stamp change on every page at every release and say nothing about what the release did. Pages are compared as built and committed, so the list is what a reader would have seen change. Stored in data/release-pages.json, one entry per release, written once and never recomputed:",
  "releases": {
+  "0.22.36": {
+   "against": "0.22.35",
+   "pages": [
+    {
+     "path": "feedback/uf-007/index.html",
+     "title": "UF-007: feedback of 2026-10-26, on v0.22.33",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/index.html",
+     "title": "Schedule: every agent that runs on its own",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/conductor/index.html",
+     "title": "Schedule: conductor",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/dev/index.html",
+     "title": "dev@php.newsroom, build, gate and release: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/sherpa/index.html",
+     "title": "Schedule: sherpa",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/dev/index.html",
+     "title": "dev@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/pulse/index.html",
+     "title": "Schedule: pulse",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "sherpa/index.html",
+     "title": "The Sherpa: I'm here to help you find your way",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/dev/index.html",
+     "title": "Schedule: dev",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "factcheck/index.html",
+     "title": "Fact-check: how sure can you be of each claim",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/index.html",
+     "title": "Feedback from collaborators",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/factcheck/index.html",
+     "title": "Schedule: factcheck",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "facts/no-confirmed-compromise/index.html",
+     "title": "Fact: As of 14:42 UTC on 26 October, no named organisation has said it was compromised",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "views/desk/index.html",
+     "title": "The journalist's desk: keeping the site current",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/briefs/index.html",
+     "title": "The briefs: what the feedback asks of each team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-001/index.html",
+     "title": "UF-001: feedback of 2026-10-23, on v0.8.1",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-002/index.html",
+     "title": "UF-002: feedback of 2026-10-23, on v0.8.1",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-003/index.html",
+     "title": "UF-003: feedback of 2026-10-23, on v0.8.2",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-004/index.html",
+     "title": "UF-004: feedback of 2026-10-23, on v0.9.3",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-005/index.html",
+     "title": "UF-005: feedback of 2026-10-23, on v0.10.13",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-006/index.html",
+     "title": "UF-006: feedback of 2026-10-26, on v0.22.22",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "index.html",
+     "title": "PHP in October 2026: two critical security flaws, tracked as evidence",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/rounds/index.html",
+     "title": "Every round: what each member did",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/index.html",
+     "title": "The team: the people, the agents and how they work together",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/roles/index.html",
+     "title": "Every member: who owns what",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/abp/index.html",
+     "title": "abp@newsroom.sgit: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/briefing-writer/index.html",
+     "title": "Briefing writer: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/collector-gov/index.html",
+     "title": "Government and CERT collector: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/collector-primary/index.html",
+     "title": "Primary-source collector: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/collector-researchers/index.html",
+     "title": "Researcher, vendor and press collector: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/conductor/index.html",
+     "title": "Conductor: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/cyber/index.html",
+     "title": "cyber@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/desk/index.html",
+     "title": "News desk chief: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/editor/index.html",
+     "title": "Dinis Cruz: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/factcheck/index.html",
+     "title": "Fact-check desk: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/grc/index.html",
+     "title": "GRC desk: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/historian/index.html",
+     "title": "Historian: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/journalist/index.html",
+     "title": "Journalist: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/liaison/index.html",
+     "title": "Corrections liaison: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/librarian/index.html",
+     "title": "librarian@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/mail/index.html",
+     "title": "agent@diniscruz.ai: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/newsroom-lead/index.html",
+     "title": "Newsroom lead: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/observability/index.html",
+     "title": "Observability: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/ontologist/index.html",
+     "title": "Ontologist: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/pm/index.html",
+     "title": "Vicky: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/pulse/index.html",
+     "title": "pulse@newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/researcher/index.html",
+     "title": "researcher@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/security/index.html",
+     "title": "security@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/sherpa/index.html",
+     "title": "Sherpa: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/story-site/index.html",
+     "title": "Story site agent: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/storyboard/index.html",
+     "title": "storyboard@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/synthetic/index.html",
+     "title": "synthetic@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/briefing-writer/index.html",
+     "title": "Briefing writer, one page per audience: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/cartographer/index.html",
+     "title": "Cartographer, the graph (archived): the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/collector-gov/index.html",
+     "title": "Government and CERT collector, agencies and certs: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/collector-primary/index.html",
+     "title": "Primary-source collector, primary sources: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/collector-researchers/index.html",
+     "title": "Researcher, vendor and press collector, researchers, vendors and the press: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/conductor/index.html",
+     "title": "Conductor, conductor and comms: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/dinis/index.html",
+     "title": "Dinis Cruz, Editor: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/grc/index.html",
+     "title": "GRC desk, risks, who carries them, and the standards that govern them: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/historian/index.html",
+     "title": "Historian, perspective and the record: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/journalist/index.html",
+     "title": "Journalist, dated state-of-affairs articles: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/liaison/index.html",
+     "title": "Corrections liaison, asks other publishers to correct what the evidence does not carry: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/librarian/index.html",
+     "title": "librarian@php.newsroom, the catalogue: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/newsroom-lead/index.html",
+     "title": "Newsroom lead, the evidence vault's protocol: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/ontologist/index.html",
+     "title": "Ontologist, fractal semantic graphs: the ontologies, the story graph and the component that draws it: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/researcher/index.html",
+     "title": "researcher@php.newsroom, the source watch: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/sherpa/index.html",
+     "title": "Sherpa, walks with the reader: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/story-site/index.html",
+     "title": "Story site agent, design, claims and the story pages: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/synthetic/index.html",
+     "title": "synthetic@php.newsroom, synthetic readers: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/verifier/index.html",
+     "title": "Fact-check desk, every claim graded on a spectrum of evidence: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/vicky/index.html",
+     "title": "Vicky, Project manager: the team",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/board/index.html",
+     "title": "The board",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/status/index.html",
+     "title": "Status: where every agent is",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
   "0.22.35": {
    "against": "0.22.34",
    "pages": [
