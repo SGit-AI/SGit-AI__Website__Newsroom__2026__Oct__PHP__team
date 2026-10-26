@@ -21,14 +21,14 @@
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data",
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__updates",
-   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__site"
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__site",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press"
   ],
   "pull": [
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__refs",
-   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press",
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP"
   ],
-  "note": "v1 is closed to changes (the editor, 26 October 2026): read only. Records go to team (records/), data files to data (files/), the state of affairs and the desk to updates, the readers' prose to site; refs and press are read to check what the journalist's changes produce. Attached to this session by the editor on 26 October: team, data, updates and site with push; refs and press are public and read through the proxy."
+  "note": "v1 is closed to changes (the editor, 26 October 2026): read only. Records go to team (records/), data files to data (files/), the state of affairs, the desk and the loops to updates, the readers' prose to site, the correspondent's build modules (build/loops.py, build/export_loops.py) to press. Attached to this session by the editor on 26 October: team, data, updates, site and press with push; refs is public and read through the proxy."
  },
  "brief": "records/briefs/2026-10-24__brief__the-correspondent.md (team)",
  "abp": "none yet (abp@: board 277)",
@@ -56,7 +56,8 @@
   "team: records/ (its card, runs, folder, board rows, the correspondent's and the journalist's briefs)",
   "data: files/ (claim-review.json, desk.json, state.json, the refresh files, loops.json)",
   "updates: the state of affairs, the desk, the loops",
-  "site: the readers' prose, until generated from data"
+  "site: the readers' prose, until generated from data",
+  "press: build/loops.py and build/export_loops.py, its part of the build (after board correspondent-0001 lets build/ be committed)"
  ],
  "never": [
   "print a key or token",

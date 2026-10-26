@@ -1,0 +1,7 @@
+{
+ "id": "correspondent-0001",
+ "title": "The press's .gitignore ignores build/, so v1's build code (step A) is listed in sources.json but never committed to the press",
+ "status": "open",
+ "owner": "dev",
+ "note": "Found by the correspondent on 26 October 2026: the press's .gitignore is GitHub's Python template, and its line 11, 'build/', ignores the whole of build/ (git check-ignore -v build/loops.py: .gitignore:11:build/). sources.json at v1.0.12 lists build/loops.py and build/export_loops.py with the same sha256 as v1's admin/build/ (74c6f333..., a4c9c331...), but git ls-files has no build/ path: the build, the gate and the exporters that step A moves into the press exist only in v1. Proposed fix, for security's review (it decides what the press commits): '!/build/' after the template, or drop 'build/' from it, then the sync's import again. Until then the correspondent's loops.py and export_loops.py stay in v1 only."
+}
