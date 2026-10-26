@@ -28,6 +28,9 @@ Every agent runs in a cloud session, on a fresh container, with its clones in th
 | curator | the same | `status` after that | | 5.9 s |
 | curator | the same | `fetch index/promote.json` | 22.5 s | 1.4 s |
 | curator | the same | `pull` of a pass (+6,807 blobs) | | **8 min 5 s** (user 1 min 21 s, sys 50 s) |
+| curator | the same | `pull` of two passes (+6,676 blobs), 10:36 UTC wake | | **25 min 0 s** (user 1 min 44 s, sys 1 min 25 s) |
+| curator | evidence vault 3ytzxm3g | `commit` / `push`, 10:36 UTC wake | | 3 s / 48 s |
+| journalist | evidence vault, read-only clone | fetch and pull of two batches (+408 files) | | a few minutes; `status` under 1 s |
 | curator | evidence vault 3ytzxm3g (normal, 489 sources) | first `status` after the upgrade | | 1 min 42 s |
 | curator | the same | `commit` | | 1 s |
 | curator | the same | `push` | | 49 s |
@@ -44,7 +47,7 @@ On the vault that prompted the report, the commands an agent runs every wake are
 ## What is still slow, and the questions
 
 1. **The first `status` after the upgrade, on a large pack clone in a cloud session: 18 min 23 s** (the release notes expect about 47 s on 76,000 files). Of that, only about a minute was CPU (user 19.6 s, sys 41.5 s); the rest was waiting, which points at the disk of the session. The researcher's own clone of the same vault took 11 s. So the same command on the same vault took 11 s in one session and 18 minutes in another. **Asks:** is the one-time cache build reading every file's content where a stat would do, on a clone whose files were all just written? Can it build lazily, or in the background, so the first command after an upgrade is not the slow one?
-2. **A `pull` of a whole pass (+6,807 blobs): 8 min 5 s**, with 1 min 21 s of user time. **Ask:** can a pull cost what the change costs, as commit and status now do? Where does the rest of the time go (one request per blob, writing each file, re-hashing)?
+2. **`pull` is now the slow step.** A pass (+6,807 blobs) took 8 min 5 s; two passes (+6,676 blobs) at the 10:36 wake took **25 min**, with under 3½ minutes of CPU (user 1 min 44 s, sys 1 min 25 s): the rest is waiting. **Ask:** can a pull cost what the change costs, as commit and status now do? Where does the rest of the time go (one request per blob, writing each file, re-hashing)?
 3. **The first `pull` on a read-only evidence clone: 226 s** (the correspondent). A smaller vault; likely the same cache build as item 1.
 4. **Commit and push on a full pass: answered, and fixed.** The researcher's 09:30 pass (run 20261026T0934Z), the first full pass on 0.25.0: phase 1 commit 25 s (12 min 38 s on 0.24.0), push 67 s (4 min 16 s), phase 2 commit 4 s, push 16 s; the whole pass 35 min instead of 57; nothing lost, vault in sync. What remains of a pass is the capture work, not sgit.
 5. **Two sgit installations in one image:** a session's `/usr/local/bin/sgit` was still 0.24.0 after `pip install --upgrade` in a venv. Agents now check `sgit version` every wake. **Ask:** could `sgit version` (or every command) warn when another, older sgit is first on the PATH?
