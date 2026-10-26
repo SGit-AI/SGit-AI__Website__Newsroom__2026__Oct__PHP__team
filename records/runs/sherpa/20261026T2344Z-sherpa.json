@@ -1,0 +1,14 @@
+{
+ "run": "20261026T2344Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-26T23:44:04Z",
+ "finished": "2026-10-26T23:46:31Z",
+ "outcome": "ok",
+ "summary": "Wired into the six repositories, at the editor's request. Card records/schedule/sherpa.json: repositories push team; pull press and data; press push when needed (assets/sherpa/, through security); never v1. Paths in the six; the drain step now uses the press's fixed drains (v1.0.41, NEWSROOM_DATA_FILES). sgit-ai v0.25.0. Scheduled task trig_01Jq9e42ZLsawRCoJnLyvydp: prompt set to the card's instructions word for word, enabled true, every two hours 07:45 to 21:45 London, next 07:45 on 27 October. Lanes: d6zak0o3 nothing; 58526ytp eleven feedback messages (ten signed with the editor's enrolled key, one unsigned and empty), no enrolment, vault committed and pushed. Recorded as UF-007 (ten points on the v2 front page; F026 and F032 seen again). Board sherpa-0001 done (dev fixed the drains in press v1.0.41). Team head before release 2e2de59.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "2e2de5990ef40e15ac3d921feb0af357a8641da3"
+}

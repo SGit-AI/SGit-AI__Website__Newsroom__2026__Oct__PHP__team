@@ -552,10 +552,11 @@
    "owner": "conductor",
    "evidence": [
     "assets/feedback/pane.js on 0.9.1: the capture's catch does not clear the shot",
-    "Seen in a screenshot sent from the site on 23 October"
+    "Seen in a screenshot sent from the site on 23 October",
+    "UF-007 point 2 (26 October, v0.22.33): the error 'No screenshot taken (Permission denied by user)' stays under Send after three captures succeeded"
    ],
    "first_seen": "0.8.2",
-   "last_seen": "0.9.1",
+   "last_seen": "0.22.33",
    "status": "open",
    "source": "UF-003"
   },
@@ -661,10 +662,11 @@
    ],
    "evidence": [
     "synthetic PM, run 2 on v0.10.18",
-    "v0.19.2: the front page's Latest still ends on 23 October, 10:03 UTC, while its own header says latest evidence 24 October 16:05 UTC and the third flaw (CVE-2026-115560, on the board 25 October) is on the page above it"
+    "v0.19.2: the front page's Latest still ends on 23 October, 10:03 UTC, while its own header says latest evidence 24 October 16:05 UTC and the third flaw (CVE-2026-115560, on the board 25 October) is on the page above it",
+    "UF-007 point 5 (26 October, v0.22.33): Latest's newest item is 23 October; What's new runs to v0.22.33 on 26 October"
    ],
    "first_seen": "0.10.18",
-   "last_seen": "0.19.2",
+   "last_seen": "0.22.33",
    "status": "open",
    "source": "synthetic readers, run 2"
   },
@@ -788,7 +790,8 @@
    ],
    "evidence": [
     "Measured on the live v2 site, v0.22.29, 390x844, 26 October",
-    "UF-006 point 5"
+    "UF-006 point 5",
+    "UF-007 point 10: 8 menus, 4 equal buttons, 16 roles, three places to choose a role"
    ],
    "first_seen": "0.22.29",
    "last_seen": "0.22.29",

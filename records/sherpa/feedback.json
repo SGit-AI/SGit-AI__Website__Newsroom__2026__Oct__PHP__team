@@ -975,6 +975,174 @@
      ]
     }
    ]
+  },
+  {
+   "id": "UF-007",
+   "received": "2026-10-26",
+   "tester": "editor",
+   "who": "the editor",
+   "channel": "the site's feedback form, ten messages signed with the editor's enrolled key (sha256:89984d97af4d2deb); drained from the collaborators lane by the Sherpa on 26 October, 23:45 UTC, with the press's fixed drain (v1.0.47). An eleventh message, unsigned and empty, from updates.php.oct.2026.newsroom.sgit.ai/whatsnew/as/executive/, is counted only.",
+   "reader": "the editor, reading the v2 front page as a reader would",
+   "ask": "",
+   "site_version": "0.22.33",
+   "site_version_note": "Sent on v0.22.33 between 17:41 and 19:14 UTC.",
+   "progress": "ten notes on the front page: three bugs, three praises, three ideas, one missing",
+   "pages_read": [
+    [
+     "index.html",
+     null
+    ]
+   ],
+   "summary": "A reader's pass over the v2 front page. What works: the status cards, 'What nobody knows yet', the thirty-second answer. What is wrong: the timeline's edge overflows on a phone, the feedback form keeps a stale screenshot error (F026), Latest stops on 23 October (F032). What to change: plain dates instead of version lines, one place to choose a reader, the three groups before the sixteen roles, a plain summary anyone can pass on, and a short FAQ.",
+   "points": [
+    {
+     "n": 1,
+     "kind": "bug",
+     "tags": [
+      "phone",
+      "timeline",
+      "overflow"
+     ],
+     "words": "Left side sits under the timeline line. The start of the line “…on 26 October 2026 · history” is hidden, and the “Changed since you read it” icon sits on top of the line.\n“I make the decisions” columns, this is the same overflow problem.",
+     "comment": "Not yet reproduced: to be walked on the live front page at phone width at the next full pass. Sent 2026-10-26 17:41 UTC on v0.22.33, page index.html, with 3 screenshot(s) kept in the lane's vault.",
+     "replicated": "to check",
+     "recommendation": "To story-site: the timeline's left edge and the 'Changed since you read it' icon must not cover the text; the same check on the 'I make the decisions' columns.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 2,
+     "kind": "bug",
+     "tags": [
+      "feedback form",
+      "screenshot",
+      "stale message"
+     ],
+     "words": "Stale error message. After three screenshots were captured and shown in the form, the message “No screenshot taken (Permission denied by user)” still appears under the Send button. It looks like a leftover from an earlier attempt. It should clear once a screenshot succeeds, or say which attempt failed.",
+     "comment": "The same friction as F026 (a stale screenshot state after a denied capture), seen again on v0.22.33: the old error survives a later success. Sent 2026-10-26 17:42 UTC on v0.22.33, page index.html, with 1 screenshot(s) kept in the lane's vault.",
+     "replicated": "yes (F026)",
+     "recommendation": "To dev: clear the capture error when a capture succeeds, or name the attempt it belongs to.",
+     "owner": "dev",
+     "also": []
+    },
+    {
+     "n": 3,
+     "kind": "praise",
+     "tags": [
+      "status cards",
+      "front page"
+     ],
+     "words": "The status cards give the whole picture in seconds. One question, one large answer and one line of detail each.",
+     "comment": "Kept as the baseline for the front page's status cards. Sent 2026-10-26 18:10 UTC on v0.22.33, page index.html, with 1 screenshot(s) kept in the lane's vault.",
+     "replicated": "n/a",
+     "recommendation": "Keep.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 4,
+     "kind": "praise",
+     "tags": [
+      "what nobody knows yet",
+      "evidence limits"
+     ],
+     "words": "“What nobody knows yet” is useful. It lists the open questions plainly, so readers can see where the evidence stops and know what not to rely on yet, for example, that the fix may not be complete.",
+     "comment": "Kept: where the evidence stops is the site's promise; this block says it plainly. Sent 2026-10-26 18:13 UTC on v0.22.33, page index.html.",
+     "replicated": "n/a",
+     "recommendation": "Keep.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 5,
+     "kind": "bug",
+     "tags": [
+      "Latest",
+      "stale",
+      "front page"
+     ],
+     "words": "The “Latest” box is not kept up to date. Its newest item is from 23 Oct. But when I click “what changed on the site” in the same box, the What’s new page shows releases up to 26 Oct (v0.22.33). So the site has been updated since, but the “Latest” box on the main page has not. A reader who sees 23 Oct at the top may think the story stopped three days ago.",
+     "comment": "The same as F032, open since 24 October: the front page's Latest still ends on 23 October while What's new runs to 26 October. Sent 2026-10-26 18:17 UTC on v0.22.33, page index.html, with 1 screenshot(s) kept in the lane's vault.",
+     "replicated": "yes (F032)",
+     "recommendation": "To the journalist and story-site: Latest is written from the same record as What's new, or says plainly what it lists and since when.",
+     "owner": "journalist",
+     "also": []
+    },
+    {
+     "n": 6,
+     "kind": "praise",
+     "tags": [
+      "thirty-second answer",
+      "personas"
+     ],
+     "words": "“Your answer in thirty seconds” works well. It is the first thing on the page, gives a short plain answer straight away, and adapts to the reader you choose.",
+     "comment": "Kept: the answer adapts to the chosen reader, which is the point of v2. Sent 2026-10-26 18:29 UTC on v0.22.33, page index.html, with 1 screenshot(s) kept in the lane's vault.",
+     "replicated": "n/a",
+     "recommendation": "Keep.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 7,
+     "kind": "idea",
+     "tags": [
+      "section dates",
+      "versions",
+      "plain language"
+     ],
+     "words": "Section dates: keep the date, drop the version numbers. Showing when each section was last updated is useful, because sections change at different times. But the line also shows “This section v7, written in site v0.19.2”, which means nothing to most readers. A simpler line such as “Updated 25 October 2026 · see changes” would keep the useful part, with the version details one click away.",
+     "comment": "Agreed: the version line is the team's language, not a reader's. Sent 2026-10-26 18:34 UTC on v0.22.33, page index.html.",
+     "replicated": "n/a",
+     "recommendation": "To story-site: 'Updated 25 October 2026 · see changes', the version one click away.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 8,
+     "kind": "idea",
+     "tags": [
+      "reader choice",
+      "three ways to read"
+     ],
+     "words": "Make the reader choice easier to find. Reading by role seems to be the core idea of this page, but “Three ways to read this site”, which explains the roles, is far down the page.\n\nSuggestion: turn the line “Choose who you are in the bar above” in the \"Your answer in thirty seconds\" box into a button, e.g. “Reading as Rowan, journalist · Change →”, that jumps to “Three ways to read this site”. Alternatively, show a short version of the three ways (Briefing / Operations / Analysis) near the top, and keep the full list of roles where it is.",
+     "comment": "Related to F035 (closed by the chooser on the first screen) and F037/F038: on 26 October 'Three ways to read' is still far down the page. Sent 2026-10-26 19:03 UTC on v0.22.33, page index.html.",
+     "replicated": "partly",
+     "recommendation": "To story-site: make 'Choose who you are' a button ('Reading as … · Change'), and a short Briefing / Operations / Analysis choice near the top.",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 9,
+     "kind": "missing",
+     "tags": [
+      "plain summary",
+      "share",
+      "FAQ",
+      "non-technical reader"
+     ],
+     "words": "Read as a non-technical reader, I expected and could not find: A plain summary I could pass on. The 30-second answer depends on choosing a role first. One short paragraph for everyone, with a “copy summary” or “share” button, would help.\nA short FAQ: Do I need to do anything? Is my data safe? When will this be over?",
+     "comment": "The thirty-second answer needs a reader chosen first; there is no one paragraph for everyone to pass on. The questions page answers some of the FAQ ('Do I need to change my passwords?'), not on the first screen. Sent 2026-10-26 19:05 UTC on v0.22.33, page index.html.",
+     "replicated": "partly",
+     "recommendation": "To story-site and the briefing writer: one paragraph for everyone with Copy and Share, and three questions on the front page (Do I need to do anything? Is my data safe? When will this be over?).",
+     "owner": "story-site",
+     "also": []
+    },
+    {
+     "n": 10,
+     "kind": "idea",
+     "tags": [
+      "first visit",
+      "menus",
+      "roles"
+     ],
+     "words": "Fewer starting points for first-time visitors. Right now there are 8 menus, 4 equal buttons, 16 reader roles, and three places to choose a role (the “Journalist ▾” picker, the “For you” menu, and “Read this page as” at the bottom). Some ideas:\n\n1. Keep one main button on the first screen (“What is happening now”) and make the other three secondary, or show them only in the views where they matter.\n2. Have one place to choose your role, and link the other two to it.\n3. Show the three groups first (Briefing / Operations / Analysis), and the specific roles only after a group is chosen.\n4. Add a short “New here? Start with the 30-second answer, then the timeline.” line on the first screen.",
+     "comment": "Matches F038 and UF-006 point 5: 8 menus, 4 equal buttons, 16 roles, and three places to choose a role. Sent 2026-10-26 19:14 UTC on v0.22.33, page index.html.",
+     "replicated": "yes",
+     "recommendation": "To story-site: one main button, one place to choose a role, the three groups before the sixteen roles, and a 'New here?' line.",
+     "owner": "story-site",
+     "also": []
+    }
+   ]
   }
  ]
 }
