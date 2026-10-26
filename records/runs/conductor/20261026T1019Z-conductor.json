@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1019Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T10:19:01Z",
+ "finished": "2026-10-26T10:19:41Z",
+ "outcome": "ok",
+ "summary": "Light check (10:15 London). Team head 2b4131dcee48; v1 untouched. Review since 09:16: the researcher's 09:30 run (first full pass on sgit 0.25.0: phase 1 commit 25 s vs 12 min 38 s, push 67 s vs 4 min 16 s, phase 2 commit 4 s, push 16 s, whole pass 35 min vs 57, export 34 s vs 9 min; queue pushed 10:09, 21 min before the curator) and its data v0.1.23, Agent: trailer present; correspondent run 09:25 in team. press, site, updates, refs unchanged: the pages still at edition v0.22.26 (conductor-0001, now dev's). The CLI brief updated with the full-pass numbers (its open item 4 answered). Pulse's next wake 14:52.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "2b4131dcee48c9e149d3042c5096f9fea3c17ed6"
+}
