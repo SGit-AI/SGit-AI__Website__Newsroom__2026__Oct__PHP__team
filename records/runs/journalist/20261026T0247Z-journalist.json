@@ -1,0 +1,16 @@
+{
+ "run": "20261026T0247Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-26T02:47:41Z",
+ "finished": "2026-10-26T02:49:32Z",
+ "outcome": "idle",
+ "summary": "Nothing new: evidence vault at 94352a55fbaa, the head already in the data repository (files/vault.json, v0.1.13); the curator's backlog batch of 26 October is the head I reviewed in data v0.1.16. Read the correspondent's review of my 25 October pass and data v0.1.16 (14 verdicts spot-checked, all hold; one catch, missing: take every organisation a source names beside Shizuoka Bank, which the correspondent added in data v0.1.20); the card now says to take them all. Corrected my card for the six: each_wake, reads and writes name their homes in team and data instead of v1 paths. Open: the published read key for the vault has no home in the six (it is in v1's frozen data/admin.json) and export_vault.py is v1 only; asked in the run for dev/the curator to say where the export lives. plain.json and questions.json still have no home (board correspondent-0002). Dev at 333bdbe5d716. Instructions in captures: none noticed.",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "333bdbe5d716711dc5ee0537d3c35a95f5a6214a"
+}
