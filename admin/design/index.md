@@ -2,7 +2,7 @@
 
 The proposed redesign of the site for review: what is wrong now, the two dials (who you are and how much you see), which pages each reader sees, the menu per view, and four mockups built from the live data.
 
-> Mockup notes for review, built from the data of release v0.22.20. Not the live site.
+> Mockup notes for review, built from the data of release v0.22.22. Not the live site.
 
 Admin · design · for review 
 ## The redesign: who you are, and how much you want to see
@@ -109,20 +109,20 @@ signed articles written here · 10 pages
  The evidence 
 every source, the vaults, the pipeline, versions · 537 pages 
  The site and the team 
-method, roles, board, releases, admin · 295 pages 
+method, roles, board, releases, admin · 297 pages 
 
 ### Pages per reader, per view
 
  Reader Focus Standard Everything 
- Alex Curious reader 28 69 1061 
- Jordan Board member or executive 28 226 1061 
- Quinn CFO 28 226 1061 
- Robin CISO 159 226 1061 
- Rowan Journalist 623 646 1061 
- Sam Security lead 42 112 1061 
- Drew PHP or platform engineer 35 112 1061 
- Ash Security researcher 576 649 1061 
-Counted from the 1061 pages this release builds. 
+ Alex Curious reader 28 69 1063 
+ Jordan Board member or executive 28 226 1063 
+ Quinn CFO 28 226 1063 
+ Robin CISO 159 226 1063 
+ Rowan Journalist 623 646 1063 
+ Sam Security lead 42 112 1063 
+ Drew PHP or platform engineer 35 112 1063 
+ Ash Security researcher 576 649 1063 
+Counted from the 1063 pages this release builds. 
 
 #### Who sees the team console
 
@@ -171,7 +171,7 @@ All of it, for power users and the team.
 
 - The admin pages move into console D. 
 
- Mockups built by the design agent from release v0.22.20; the brief is on the briefs page. Board items record each step.
+ Mockups built by the design agent from release v0.22.22; the brief is on the briefs page. Board items record each step.
 
 ---
-site v0.22.20 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html
+site v0.22.22 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html

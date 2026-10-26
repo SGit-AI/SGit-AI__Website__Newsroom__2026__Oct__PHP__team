@@ -1,27 +1,74 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "researcher",
- "as_of": "2026-10-22",
- "round": null,
- "state": "no round recorded under this policy yet",
- "done": [],
+ "as_of": "2026-10-25",
+ "round": 1,
+ "state": "scheduled; five wakes a day; the watch is the pack vault 7r83qic5",
+ "done": [
+  {
+   "what": "nine passes of the source watch on the pack vault (23 to 25 October), each pushed in sync",
+   "evidence": "the watch vault commits of 23 to 25 October; /team/schedule/ run records"
+  },
+  {
+   "what": "the curator queue topped up after every pass (418 rows; the other writer's rows untouched)",
+   "evidence": "index/promote.json in the watch vault (418 rows)"
+  },
+  {
+   "what": "the 25 uncaptured references of the Wikipedia article PHP2Shell added as watched pages and captured",
+   "evidence": "the watch vault commit f23987eb3b23; the debrief"
+  },
+  {
+   "what": "the proposal for a three-phase pass written (admin/content/briefs/2026-10-23__brief__phased-source-watch-pass.md)",
+   "evidence": "admin/content/briefs/2026-10-23__brief__phased-source-watch-pass.md"
+  },
+  {
+   "what": "both scheduled tasks wired to the card; the first run record published to runs/researcher",
+   "evidence": "trig_01TGWkdZpKK7hDYCcsuA62kX, trig_01LT3J7wdgjPUBRE4GRHyL9k; runs/researcher 60f985afd53f"
+  }
+ ],
  "tasks": {
   "board": [],
   "note": "the board rows this member owns are in data/admin.json"
  },
- "next": [],
- "asks": [],
+ "next": [
+  {
+   "what": "each wake: take in dev, inbox, pass, queue, run record",
+   "why": "every wake leaves a run record and the curator's queue is current before its wake"
+  },
+  {
+   "what": "fix p_pulls and add the Wikipedia references step to pass.sh, on the editor's go",
+   "why": "the nuclei pulls series reads a false zero at times; the Wikipedia reference list should be followed every pass"
+  },
+  {
+   "what": "three-phase pass.sh, on the editor's go",
+   "why": "a restart costs one phase, not the whole pass; the curator can start from the first commit"
+  }
+ ],
+ "asks": [
+  {
+   "what": "editor: go to fix p_pulls (tools/series.py) and change pass.sh",
+   "from": "the editor"
+  },
+  {
+   "what": "editor: rotate the pack vault key, pasted into the session; decide when its read key is published",
+   "from": "the editor"
+  },
+  {
+   "what": "editor or conductor: data/vaults.json and the source-watch export still name the deleted oq9gflln",
+   "from": "the editor or the conductor"
+  }
+ ],
  "tokens": {
-  "value": null,
-  "how": "not recorded"
+  "value": 358942,
+  "how": "context tokens in use, from get_session at 2026-10-25T12:37Z; not tokens spent"
  },
  "policy": {
   "version": "2026-10-22",
   "out_of_scope_requests": 0,
   "pushbacks": 0,
   "overrides": 0,
-  "writes_outside_scope": null,
+  "writes_outside_scope": 0,
   "injection_seen": 0
  },
- "debrief": null
+ "debrief": "admin/content/agents/researcher/debriefs/2026-10-25__source-watch-passes-and-wikipedia-references.md"
 }

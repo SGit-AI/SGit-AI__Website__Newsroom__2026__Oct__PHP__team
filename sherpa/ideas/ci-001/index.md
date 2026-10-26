@@ -119,7 +119,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** The site grades claims this way, not edges. The fact-check desk gives every claim a level of evidence from A0 to A6 and a verdict, naming the captures it read by file and hash. The graphs' edges carry only from, rel, inverse and to: an edge read from the diff and an edge an agent inferred look the same.
 
-See: [The fact-check desk](https://php.oct.2026.newsroom.sgit.ai/factcheck/) · [data/grc-graph.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.11/grc-graph.json)
+See: [The fact-check desk](https://php.oct.2026.newsroom.sgit.ai/factcheck/) · [data/grc-graph.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.12/grc-graph.json)
 
 **What is missing.** A basis on every edge. This is the most actionable of the three ideas, and the cheapest.
 
@@ -197,4 +197,4 @@ Not sent. Questions 6 to 8 are addressed to the editor; the 'today' notes are wh
 
 
 ---
-site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-001/index.html
+site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-001/index.html

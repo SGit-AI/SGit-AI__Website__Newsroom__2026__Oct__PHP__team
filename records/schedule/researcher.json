@@ -36,5 +36,28 @@
   "write to 3ytzxm3g"
  ],
  "kept_by": "researcher@php.newsroom (drafted by conductor@php.newsroom)",
- "updated": "2026-10-25"
+ "updated": "2026-10-26",
+ "repositories": {
+  "push": [
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP"
+  ],
+  "pull": [],
+  "after_the_move": {
+   "push": [
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data",
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP"
+   ],
+   "pull": []
+  },
+  "after_the_cutover": {
+   "push": [
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data",
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press"
+   ],
+   "pull": []
+  },
+  "note": "from the table in admin/content/briefs/2026-10-25__brief__the-split-for-every-agent.md: today v1 only; after A (records and data move) team, data and v1 (the exporter, export_watch.py); after B (cutover) team, data and press. The watch's own vault (7r83qic5) is not a repository and is held by its key, never by this field."
+ }
 }

@@ -229,4 +229,4 @@ This brief is the file `admin/content/briefs/2026-10-25__plan__one-repository-in
 
 
 ---
-site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__plan__one-repository-into-six-implementation/index.html
+site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__plan__one-repository-into-six-implementation/index.html

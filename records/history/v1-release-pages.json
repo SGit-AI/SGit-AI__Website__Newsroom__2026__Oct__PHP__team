@@ -1,6 +1,226 @@
 {
  "about": "A page counts as changed when the content of its <main> differs from the previous release's, with the two site version numbers masked: the header, the footer and the version stamp change on every page at every release and say nothing about what the release did. Pages are compared as built and committed, so the list is what a reader would have seen change. Stored in data/release-pages.json, one entry per release, written once and never recomputed:",
  "releases": {
+  "0.22.22": {
+   "against": "0.22.21",
+   "pages": [
+    {
+     "path": "admin/briefs/2026-10-25__review__the-split-as-served/index.html",
+     "title": "Review: the split, as served at site., refs., updates., team., press. and data.",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/index.html",
+     "title": "Schedule: every agent that runs on its own",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/journalist/index.html",
+     "title": "Journalist: role, policy and rounds",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/correspondent/index.html",
+     "title": "Schedule: correspondent",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-24__brief__the-correspondent/index.html",
+     "title": "Brief: the correspondent (Opus), on a schedule",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/wiring/index.html",
+     "title": "Wiring every scheduled task to its card",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/index.html",
+     "title": "Briefs",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/rounds/index.html",
+     "title": "Every round: what each member did",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/journalist/index.html",
+     "title": "Schedule: journalist",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-23__brief__phased-source-watch-pass/index.html",
+     "title": "Proposal: the source watch pass in three phases, each with its own commit",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "index.html",
+     "title": "PHP in October 2026: two critical security flaws, tracked as evidence",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "views/loops/index.html",
+     "title": "Every loop: from the researcher to the correspondent",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/roles/index.html",
+     "title": "Every member: who owns what",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "questions/index.html",
+     "title": "Questions readers ask about php2shell",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
+  "0.22.21": {
+   "against": "0.22.20",
+   "pages": [
+    {
+     "path": "admin/briefs/2026-10-23__brief__phased-source-watch-pass/index.html",
+     "title": "Proposal: the source watch pass in three phases, each with its own commit",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/researcher/index.html",
+     "title": "researcher@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/rounds/index.html",
+     "title": "Every round: what each member did",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/index.html",
+     "title": "Briefs",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-25__brief__the-split-for-every-agent/index.html",
+     "title": "Brief: the split, for every agent",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "questions/index.html",
+     "title": "Questions readers ask about php2shell",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/schedule/researcher/index.html",
+     "title": "Schedule: researcher",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
   "0.22.20": {
    "against": "0.22.19",
    "pages": [

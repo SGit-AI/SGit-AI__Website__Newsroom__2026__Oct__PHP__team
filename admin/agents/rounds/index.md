@@ -24,14 +24,14 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [Fact-check desk](../factcheck/index.html) | 2026-10-24 | [Run 3 (the desk chief's fixes checked) and the first investigation, how much PHP there is and where '70%' comes from](../factcheck/index.html#2026-10-24__run-3-and-the-first-investigation) | 4 | 3 | unknown | ['admin/build/build.py build_llms(): three lines for llms.txt'] | 0 | 0 |
 | [GRC desk](../grc/index.html) | 2026-10-24 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Historian](../historian/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
-| [Journalist](../journalist/index.html) | 2026-10-25 | [Second wake (run by hand in the first session): evidence vault 87795d121200, 15 claims, three new rows](../journalist/index.html#2026-10-25__second-wake) | 2 | 1 | unknown | not run | 0 | 0 |
+| [Journalist](../journalist/index.html) | 2026-10-26 | [Rebound the scheduled tasks to this session and added the repositories field to the card](../journalist/index.html#2026-10-26__wiring) | 2 | 1 | unknown | not run | 0 | 0 |
 | [Corrections liaison](../liaison/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [librarian@php.newsroom](../librarian/index.html) | 2026-10-25 | [The scheduled task wired to the card, and the wake moved to 20:23 London](../librarian/index.html#2026-10-25__schedule-wired) | 3 | 3 | {'output_tokens': 319617, 'input_tokens': 1654, 'cache_read_tokens': 140855685, 'cache_write_tokens': 2639520, 'cost_usd': 55.7} | 0 | 2 | 0 |
 | [Newsroom lead](../newsroom-lead/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Observability](../observability/index.html) | 2026-10-25 | [The telemetry lane drained (150 events), what was in it, and a drainer that pushes before it marks](../observability/index.html#2026-10-25__the-lane-drained) | 2 | 3 | unknown | 1 | 0 | 0 |
 | [Ontologist](../ontologist/index.html) | 2026-10-25 | [The history of the Wikipedia article as lifelines, its talk page, a reviewer's reading of it, a page for its editors, and Wikidata tracked](../ontologist/index.html#2026-10-25__wikipedia-history-and-review) | 3 | 2 | unknown | one article at the editor's direction; assets/site.css appended; build.py appended | 1 | 0 |
 | [pulse@newsroom](../pulse/index.html) | 2026-10-24 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
-| [researcher@php.newsroom](../researcher/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
+| [researcher@php.newsroom](../researcher/index.html) | 2026-10-25 | [Scheduled source watch passes on the pack vault, the queue for the curator, the Wikipedia references captured, the wake wired to its card](../researcher/index.html#2026-10-25__source-watch-passes-and-wikipedia-references) | 3 | 3 | 358942 | 0 | 0 | 0 |
 | [security@php.newsroom](../security/index.html) | 2026-10-24 | [Application security: the AppSec section, 40 advisories, a CSP on every page, the telemetry policy, and three security passes](../security/index.html#2026-10-24__application-security) | 4 | 3 | unknown | 2 | 1 | 2 |
 | [Sherpa](../sherpa/index.html) | 2026-10-24 | [The collaborators lane drained, a power user onboarded, the editor's asks recorded, the schedule active and an inbox for outside agents](../sherpa/index.html#2026-10-24__drain-schedule-and-inbox) | 2 | 4 | unknown | 0 | 0 | 0 |
 | [Story site agent](../story-site/index.html) | 2026-10-25 | [The line, built: the editor's design of 25 October as prototype F, from the evidence vault](../story-site/index.html#2026-10-25__the-line) | 2 | 2 | unknown | dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October | 2 | 0 |
@@ -39,8 +39,10 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [synthetic@php.newsroom](../synthetic/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 
 ## Every debrief, newest first
+- 2026-10-26 · [Journalist: Rebound the scheduled tasks to this session and added the repositories field to the card](../journalist/index.html#2026-10-26__wiring)
 - 2026-10-25 · [Story site agent: The line, built: the editor's design of 25 October as prototype F, from the evidence vault](../story-site/index.html#2026-10-25__the-line)
 - 2026-10-25 · [Story site agent: The line and the router, live on every page](../story-site/index.html#2026-10-25__the-line-and-the-router-live)
+- 2026-10-25 · [researcher@php.newsroom: Scheduled source watch passes on the pack vault, the queue for the curator, the Wikipedia references captured, the wake wired to its card](../researcher/index.html#2026-10-25__source-watch-passes-and-wikipedia-references)
 - 2026-10-25 · [Ontologist: The history of the Wikipedia article as lifelines, its talk page, a reviewer's reading of it, a page for its editors, and Wikidata tracked](../ontologist/index.html#2026-10-25__wikipedia-history-and-review)
 - 2026-10-25 · [Ontologist: Wikipedia as an anchor, the PHP2Shell article as a fractal semantic graph, and the self-check on it](../ontologist/index.html#2026-10-25__self-check-wikipedia)
 - 2026-10-25 · [Observability: The telemetry lane drained (150 events), what was in it, and a drainer that pushes before it marks](../observability/index.html#2026-10-25__the-lane-drained)
@@ -70,4 +72,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

@@ -1,6 +1,24 @@
 {
- "current": "0.22.20",
+ "current": "0.22.22",
  "versions": [
+  {
+   "version": "0.22.22",
+   "date": "2026-10-26",
+   "title": "the journalist's and the correspondent's records, written in team; story-site's review of the split as served, filed on the team site",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.21",
+   "date": "2026-10-26",
+   "title": "researcher: repositories field in the card (v1 today; team, data and press later), the round-1 debrief with its status, and the proposal for a three-phase source watch pass",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.20",
    "date": "2026-10-26",

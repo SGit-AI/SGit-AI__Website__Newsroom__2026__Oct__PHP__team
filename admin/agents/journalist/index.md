@@ -249,14 +249,64 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | 2 |
-| Done | Made the pki key sha256:de0decfc882a0235 and sent its QR to the editor Exported the evidence vault at 8c16a64a7cf6 (382 sources) Gave 94 claims a verdict: 38 agrees, 33 noted, 23 held back, 0 used Refreshed compromise.json, no-confirmed-compromise, the as-of lines, plain latest and the pass ledger Released v0.15.19; live site serves it Second wake, by hand: exported the vault at 87795d121200 (418 sources), 15 claims reviewed (2 used, 3 agrees, 6 noted, 4 held back), Turkey, Shizuoka Bank and Nepal rows, as-of lines to 09:35 UTC on 25 October |
-| Next | Next wake: compare the vault head with 87795d121200; no change, one line and no commit Re-read in full the partly checked files on /views/desk/ |
-| Asks | Decide whether the journalist scheduled tasks bind to this session (they start a fresh session each wake today) (from the editor, or the conductor) |
+| Round | 3 |
+| Done | Made the pki key sha256:de0decfc882a0235 and sent its QR to the editor Exported the evidence vault at 8c16a64a7cf6 (382 sources) Gave 94 claims a verdict: 38 agrees, 33 noted, 23 held back, 0 used Refreshed compromise.json, no-confirmed-compromise, the as-of lines, plain latest and the pass ledger Released v0.15.19; live site serves it Second wake, by hand: exported the vault at 87795d121200 (418 sources), 15 claims reviewed (2 used, 3 agrees, 6 noted, 4 held back), Turkey, Shizuoka Bank and Nepal rows, as-of lines to 09:35 UTC on 25 October Rebound the two scheduled tasks to this session (trig_015ud63M9vZm7oeiDV6MgAMt, trig_01DrvVrD3jdJvUfyvBjb5oCb), paused the two old ones, added the repositories field to the card Moved the journalist records to the team repository (step A done): wiring debrief, status, the 26 October run record and the card with the four repositories |
+| Next | First wake in this session at 08:40 UTC: compare the vault head with 87795d121200 Re-read in full the partly checked files on /views/desk/ |
+| Asks | Delete the two paused v1 scheduled tasks when convenient (trig_01TZ8DUGnywEuHYTyXkz4zLs, trig_01UvNuwPcfC3naXi3yBiUA3p) (from the editor) |
 | Tokens | unknown · the session does not show a count |
 | Policy | out_of_scope_requests 0, pushbacks 0, overrides 0, writes_outside_scope None, injection_seen 0 |
 
 ## Its rounds
+
+### Rebound the scheduled tasks to this session and added the repositories field to the card
+
+2026-10-26 · round 3 · branch `claude/focused-brahmagupta-kzb508` · commits `see the release of v0.22.19` · tokens unknown · outside scope 0 · overrides 0
+
+#### What I was asked
+
+The editor asked me to pull dev (v0.22.15 or later), read `admin/schedule/WAKE.md` step 0 and the split brief, add the `repositories` field to my card, make sure the scheduled task that wakes this session has the card's prompt, and, since the existing tasks started a new session each wake, create ones bound to this session and leave the old ones paused; then report the id, the next run and that it fires into this session.
+
+#### What I did
+
+- Read WAKE.md step 0 and the split brief (the seven repositories, the three stages, the table of what each agent writes).
+
+- Card `data/schedule/journalist.json`: added `repositories` (push v1 today; after step A team, data and v1; after step B team, data, updates, site), the session, the two task ids and a note.
+
+- Created two scheduled tasks with `persistent_session_id` set to this session and the card's prompt word for word: `trig_015ud63M9vZm7oeiDV6MgAMt` (08:40, 13:40, 18:40 London; next run 2026-10-26 08:40 UTC) and `trig_01DrvVrD3jdJvUfyvBjb5oCb` (11:10, 16:10; next 11:10 UTC). Paused the two that started a fresh session: `trig_01TZ8DUGnywEuHYTyXkz4zLs`, `trig_01UvNuwPcfC3naXi3yBiUA3p`.
+
+- Run record `20261026T0021Z-journalist` (idle: wiring, not an evidence wake). Released in v0.22.19.
+
+#### What it looks like
+
+![/team/schedule/ on the live site](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/journalist/debriefs/img/2026-10-26__wiring__1.png)
+
+/team/schedule/ on the live site
+
+#### New features
+
+The journalist's wakes fire into one standing session instead of a fresh one each time.
+
+#### What I did not do
+
+- Did not delete the two paused tasks (the editor's choice).
+
+- Did not read the evidence vault in this round.
+
+- This session holds v1 only; the split repositories are for the editor to attach.
+
+#### Policy
+
+Scope check: 0 files outside scope. The scheduled tasks were created at the editor's explicit go in this session.
+
+#### Tasks
+
+None owned on the board.
+
+#### Next
+
+1. First wake in this session: 08:40 UTC; compare the vault head with `87795d121200`.
+
+2. The editor attaches the repositories the card names when step A is decided.
 
 ### Second wake (run by hand in the first session): evidence vault 87795d121200, 15 claims, three new rows
 
@@ -448,4 +498,4 @@ Files: [admin/content/agents/journalist/](https://github.com/SGit-AI/SGit-AI__We
 
 
 ---
-site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/journalist/index.html
+site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/journalist/index.html

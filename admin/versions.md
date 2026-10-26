@@ -6,7 +6,23 @@ Every release of this site, with what changed, why, the pages it changed and the
 
 # Release history
 
-One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.20. The data is [data/versions.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/versions.json); the pages are [data/release-pages.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.22. The data is [data/versions.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/versions.json); the pages are [data/release-pages.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+
+### v0.22.22 · 2026-10-26
+
+the journalist's and the correspondent's records, written in team; story-site's review of the split as served, filed on the team site
+Pages changed (21): Review: the split, as served at site., refs., updates., team., press… new · Schedule: every agent that runs on its own · Journalist: role, policy and rounds · Schedule: correspondent · Brief: the correspondent (Opus), on a schedule · Wiring every scheduled task to its card · Briefs · Every round: what each member did and 13 more
+[Schedule: journalist](../team/schedule/journalist/index.html) · [Proposal: the source watch pass in three phases, each with its own c…](../admin/briefs/2026-10-23__brief__phased-source-watch-pass/index.html) · [The fact pipeline: from a web page to a reader](https://php.oct.2026.newsroom.sgit.ai/pipeline/) · [PHP in October 2026: two critical security flaws, tracked as evidence](https://php.oct.2026.newsroom.sgit.ai/) · [Every loop: from the researcher to the correspondent](https://updates.php.oct.2026.newsroom.sgit.ai/views/loops/) · [Every member: who owns what](../admin/agents/roles/index.html) · [What changed in the risk graph, release by release](https://php.oct.2026.newsroom.sgit.ai/grc/changes/) · [Questions readers ask about php2shell](https://php.oct.2026.newsroom.sgit.ai/questions/) · [Admin and engineering](../admin/index.html) · [Release history](../admin/versions.html) · [Runs: what the agents do on their own, and every time they did it](../team/runs/index.html) · [How the story changed, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/versions/) · [What's new: every change, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/whatsnew/)
+
+ Vault commit `87795d121200`.
+
+### v0.22.21 · 2026-10-26
+
+researcher: repositories field in the card (v1 today; team, data and press later), the round-1 debrief with its status, and the proposal for a three-phase source watch pass
+Pages changed (14): Proposal: the source watch pass in three phases, each with its own c… new · researcher@php.newsroom: role, policy and rounds · Every round: what each member did · Briefs · Brief: the split, for every agent · The fact pipeline: from a web page to a reader · What changed in the risk graph, release by release · Questions readers ask about php2shell and 6 more
+[Schedule: researcher](../team/schedule/researcher/index.html) · [Admin and engineering](../admin/index.html) · [Release history](../admin/versions.html) · [Runs: what the agents do on their own, and every time they did it](../team/runs/index.html) · [How the story changed, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/versions/) · [What's new: every change, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/whatsnew/)
+
+ Vault commit `87795d121200`.
 
 ### v0.22.20 · 2026-10-26
 
@@ -1583,4 +1599,4 @@ Files: `admin/build/build.py`, `admin/build/export_vault.py`, `admin/build/valid
 
 
 ---
-site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/versions.html
+site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/versions.html

@@ -8,7 +8,7 @@ researcher: The source watch: probe every watched source, capture what changed i
 
 # researcher: The source watch: probe every watched source, capture what changed into the watch's pack vault, rebuild the series, and report what moved.
 
-**Status** active running since 23 October 2026. Card drafted by the conductor from its scheduled tasks; the researcher to confirm it and keep it. Both wake prompts still name the schedule vault, which this replaces: the editor's session to change them **Wakes** 07:00, 09:30, 12:00, 14:30, 17:00 (every day, Europe/London) · **model** the session's model **Runs in** its persistent session (scheduled researcher), woken by two scheduled tasks **Brief** [admin/content/briefs/2026-10-23__brief__the-scheduled-source-watch.md](../../../admin/briefs/index.html#2026-10-23__brief__the-scheduled-source-watch) · **agent behaviour policy** none yet (abp@, security@: board) **Card kept by** researcher@php.newsroom (drafted by conductor@php.newsroom), updated 2026-10-25
+**Status** active running since 23 October 2026. Card drafted by the conductor from its scheduled tasks; the researcher to confirm it and keep it. Both wake prompts still name the schedule vault, which this replaces: the editor's session to change them **Wakes** 07:00, 09:30, 12:00, 14:30, 17:00 (every day, Europe/London) · **model** the session's model **Runs in** its persistent session (scheduled researcher), woken by two scheduled tasks **Brief** [admin/content/briefs/2026-10-23__brief__the-scheduled-source-watch.md](../../../admin/briefs/index.html#2026-10-23__brief__the-scheduled-source-watch) · **agent behaviour policy** none yet (abp@, security@: board) **Card kept by** researcher@php.newsroom (drafted by conductor@php.newsroom), updated 2026-10-26
 
 ## Its day
 
@@ -64,4 +64,4 @@ Commit-FS-lite: the To-researcher and To-all trailers in the release commits; al
 
 
 ---
-site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/researcher/index.html
+site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/researcher/index.html
