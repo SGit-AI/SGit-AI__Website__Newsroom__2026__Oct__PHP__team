@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1715Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T17:15:44Z",
+ "finished": "2026-10-26T17:17:36Z",
+ "outcome": "ok",
+ "summary": "Light check 17:15 London, team at 811a8e2cf468. Corrected: edition v0.22.32 (811a8e2c, 17:07 UTC) deleted records/tools/schedule.py again, as v0.22.28 did at 11:38; I restored it from 811a8e2c~1. Root cause found in team's tools/sync_v1.py do_import: a file written in team that v1 lacks is recorded as its own at one import, then removed by the 'gone' loop at the next, because v1 is frozen and records/tools/ has no COPY mapping to carry it out and back. Board correspondent-0003 (dev) now has the cause and a one-line patch; To-dev note. Reviewed since 16:19: the cutover, edition v0.22.32: php.oct.2026.newsroom.sgit.ai serves the main site (200, robots open, sitemap, data 0.1.39, press 1.0.40), and the correspondent's article is built and linked. Data v0.1.35 to v0.1.39 (the journalist's 16 verdicts, fact-check run 10, three editions). Press v1.0.34 to v1.0.41: CSP on article decks, the drains on v2 paths, the Sherpa page fix. Site: the correspondent's second article (steal-my-bitcoin) and em-dash fixes for the house-style gate. curator-0002: the journalist says yes, the correspondent is still to answer. Still for the editor: security's review of press releases made by agents other than dev; most commits are authored 'Claude' (the Agent: trailer names the agent). v1 untouched.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "811a8e2cf468c3dbe6a5cad9de00a340a236c7a3"
+}
