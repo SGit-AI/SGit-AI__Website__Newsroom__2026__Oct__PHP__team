@@ -1,6 +1,15 @@
 {
- "current": "0.22.25",
+ "current": "0.22.26",
  "versions": [
+  {
+   "version": "0.22.26",
+   "date": "2026-10-26",
+   "title": "dev's debrief of the night on the pages; whatever the agents wrote since the last round",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "94352a55fbaa",
+   "reconstructed": false
+  },
   {
    "version": "0.22.25",
    "date": "2026-10-26",

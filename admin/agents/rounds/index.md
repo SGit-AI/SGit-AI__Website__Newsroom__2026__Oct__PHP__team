@@ -20,7 +20,7 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [Conductor](../conductor/index.html) | 2026-10-24 | [Schedules, runs and messages in the repository; the conductor's own schedule; Commit-FS-lite; dev's red CI fixed](../conductor/index.html#2026-10-24__schedules-and-commit-notes) | 3 | 2 | unknown | 10 | 0 | 1 |
 | [cyber@php.newsroom](../cyber/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [News desk chief](../desk/index.html) | 2026-10-25 | [The desk's scheduled task wired to its card, and its wakes moved after the correspondent's reviews](../desk/index.html#2026-10-25__wired) | 2 | 1 | unknown | 0 | 0 | 0 |
-| [dev@php.newsroom](../dev/index.html) | 2026-10-25 | [One repository into six, pass one, with one source for every file; four reports on it](../dev/index.html#2026-10-25__one-repository-into-six) | 3 | 2 | unknown | 16 | 1 | 0 |
+| [dev@php.newsroom](../dev/index.html) | 2026-10-26 | [One repository into six: pass one, one source for every file, four reports, and steps A and B the same night (nothing depends on v1)](../dev/index.html#2026-10-25__one-repository-into-six) | 3 | 2 | unknown | 16 | 1 | 0 |
 | [Fact-check desk](../factcheck/index.html) | 2026-10-24 | [Run 3 (the desk chief's fixes checked) and the first investigation, how much PHP there is and where '70%' comes from](../factcheck/index.html#2026-10-24__run-3-and-the-first-investigation) | 4 | 3 | unknown | ['admin/build/build.py build_llms(): three lines for llms.txt'] | 0 | 0 |
 | [GRC desk](../grc/index.html) | 2026-10-24 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Historian](../historian/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
@@ -49,7 +49,7 @@ At the end of every round of work each agent writes a debrief with screenshots a
 - 2026-10-25 · [librarian@php.newsroom: The scheduled task wired to the card, and the wake moved to 20:23 London](../librarian/index.html#2026-10-25__schedule-wired)
 - 2026-10-25 · [librarian@php.newsroom: Pass of 25 October: dev at v0.18.0 mapped, the correspondent drafted, the reader answers no longer raw HTML](../librarian/index.html#2026-10-25__pass)
 - 2026-10-25 · [Journalist: Second wake (run by hand in the first session): evidence vault 87795d121200, 15 claims, three new rows](../journalist/index.html#2026-10-25__second-wake)
-- 2026-10-25 · [dev@php.newsroom: One repository into six, pass one, with one source for every file; four reports on it](../dev/index.html#2026-10-25__one-repository-into-six)
+- 2026-10-25 · [dev@php.newsroom: One repository into six: pass one, one source for every file, four reports, and steps A and B the same night (nothing depends on v1)](../dev/index.html#2026-10-25__one-repository-into-six)
 - 2026-10-25 · [News desk chief: The desk's scheduled task wired to its card, and its wakes moved after the correspondent's reviews](../desk/index.html#2026-10-25__wired)
 - 2026-10-25 · [News desk chief: Three scheduled wakes: correction requests kept in step with the publishers, the front page's stamp and the third flaw on the board](../desk/index.html#2026-10-25__wakes)
 - 2026-10-24 · [Story site agent: Prototype E, the lens: a site that shapes itself to the reader in place, and the brief for it](../story-site/index.html#2026-10-24__the-lens)
@@ -72,4 +72,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.25 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

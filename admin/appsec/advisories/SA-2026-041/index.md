@@ -54,4 +54,4 @@ References: `admin/build/security_check.py kind_of()`
 
 
 ---
-site v0.22.25 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-041/index.html
+site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-041/index.html

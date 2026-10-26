@@ -2,7 +2,7 @@
 
 The proposed redesign of the site for review: what is wrong now, the two dials (who you are and how much you see), which pages each reader sees, the menu per view, and four mockups built from the live data.
 
-> Mockup notes for review, built from the data of release v0.22.25. Not the live site.
+> Mockup notes for review, built from the data of release v0.22.26. Not the live site.
 
 Admin · design · for review 
 ## The redesign: who you are, and how much you want to see
@@ -171,7 +171,7 @@ All of it, for power users and the team.
 
 - The admin pages move into console D. 
 
- Mockups built by the design agent from release v0.22.25; the brief is on the briefs page. Board items record each step.
+ Mockups built by the design agent from release v0.22.26; the brief is on the briefs page. Board items record each step.
 
 ---
-site v0.22.25 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html
+site v0.22.26 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html
