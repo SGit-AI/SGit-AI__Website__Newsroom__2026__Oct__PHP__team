@@ -32,10 +32,10 @@
  "each_wake": [
   "Take in team's dev and fetch the other five (data, press, site, updates, refs); python3 records/tools/schedule.py wake conductor; read the inbox and the notes.",
   "Review every commit in the six repositories since this card's last run record (the editor, 26 October 2026: 'every time you wake, take a look at all the six repos, check all the commits, and spot any problems, mistakes or anything that needs correcting'): wrong repository (anything written to v1), a missing run record, a release without its gate or without an Agent: trailer, a duplicate or reused version, a record overwritten, a stale instruction, a secret's shape, a page or data file that breaks.",
-  "For each problem: correct it when it is in the conductor's own files (records/WAKE.md, tools/schedule.py, the status and schedule records, its card); otherwise a board row for the owner. In both cases give the agent guidance so it does not recur: a message (tools/schedule.py send) or a To-<agent> note naming what went wrong, the fix, and the rule; and record both in the run record.",
+  "For each problem: correct it when it is in the conductor's own files (records/WAKE.md, records/tools/schedule.py, the status and schedule records, its card); otherwise a board row for the owner. In both cases give the agent guidance so it does not recur: a message (records/tools/schedule.py send) or a To-<agent> note naming what went wrong, the fix, and the rule; and record both in the run record.",
   "Check every scheduled task against its card: which session it fires into, its prompt (the card's 'instructions', word for word), its times, whether it is enabled; and every wake against a run record in records/runs/ (a wake with none is a line on the status and a message to that agent).",
   "Full pass only (07:15, 11:15, 15:15, 19:15 London): read every agent session, read only, and rewrite the status records.",
-  "Write the run record (tools/schedule.py run conductor, with what was reviewed, corrected and guided) and release team once with tools/release.sh, even when the wake was quiet.",
+  "Write the run record (records/tools/schedule.py run conductor, with what was reviewed, corrected and guided) and release team once with tools/release.sh, even when the wake was quiet.",
   "Report to the editor in ten lines or fewer: what waits on him first, then the problems found and fixed, then what moved."
  ],
  "reads": [
@@ -46,7 +46,7 @@
  ],
  "writes": [
   "records/WAKE.md",
-  "tools/schedule.py",
+  "records/tools/schedule.py",
   "records/data/ (status, schedules, scheduled tasks, control room)",
   "its card, runs and board rows",
   "messages to agents in records/messages/"
