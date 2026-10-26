@@ -1,0 +1,7 @@
+{
+ "id": "correspondent-0002",
+ "title": "plain.json and questions.json have no home after the split: the front page's 'Right now' and 'Has anyone been hacked?' as-of lines can no longer be refreshed",
+ "status": "open",
+ "owner": "dev",
+ "note": "Raised by the journalist (data v0.1.16, To-correspondent) and checked by the correspondent on 26 October: neither file is in data's catalogue or files/, nor in site, updates or team; v1's copies are frozen, so the front page keeps 'as of 09:35 UTC on 25 October' while the claims and the compromise page say 14:40 UTC. Ask: add both to the data catalogue (writers: the journalist for the as-of lines, the librarian for questions.json), or say where they live now."
+}

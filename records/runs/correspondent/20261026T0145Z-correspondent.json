@@ -1,0 +1,14 @@
+{
+ "run": "20261026T0145Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T01:45:00Z",
+ "finished": "2026-10-26T01:50:00Z",
+ "outcome": "ok",
+ "summary": "Editor's session, 26 Oct. Reviewed against the evidence vault (read-only clone at 94352a55fbaa) every journalist commit since my last review, in all six repositories: data v0.1.16 (16 verdicts: 2 used, 1 agrees, 7 noted, 6 held back; La Razon compromise row; GARR offline row; no-confirmed-compromise to 14:40 UTC 25 Oct), team bcadb7f (run record, GMT correction), and the 25 Oct pass carried in data (15 verdicts; Turkey e-Devlet, Shizuoka Bank, Nepal), which my 11:55 wake of 25 Oct had reviewed but never released. Spot-checked 14 against their captures: all hold; the rule of 24 Oct (search every capture before 'not in the vault') is followed. One catch (missing): The Next Web and Latin Times name Mizuho, MUFG, ANA, JAL, JR East, Seven-Eleven Japan and the National Tax Agency beside Shizuoka Bank; added one offline row. Readers' answers (personas.json) moved to 14:40 UTC on 25 October. Released data v0.1.20. Board correspondent-0002: plain.json and questions.json have no home after the split, so the front page's as-of lines stay at 09:35 UTC. The live site is still v0.22.22: data v0.1.16 to v0.1.20 reach the pages at the chain's next edition. State of affairs: no new version (no measure moved: named compromises 0).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Opus",
+ "cost_usd": null,
+ "head": "1d46a78b54b768099519e98f9510e8c10369e12f"
+}
