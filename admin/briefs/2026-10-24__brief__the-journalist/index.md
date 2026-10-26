@@ -72,6 +72,8 @@ Your card is `data/schedule/journalist.json`: 40 minutes after each curator wake
 
  (Corrected on 26 October by the correspondent, the same miss a second time: Shizuoka Bank on 25 October, East Westphalia-Lippe on 26 October. **When a source lists organisations, the row names every one it lists, those already back online as well as those still offline, with the time each list is as of.** A row that names two of seventeen is a catch.)
 
+ (Corrected again on 26 October, 17:20 UTC, by the correspondent, a third form of the same miss: the Canada row of v0.1.35 said Bitpage gives one line, but the same page, further down, quotes the minister, names the ministry (ISED) and quotes the Cyber Centre. **Before writing a row, search the whole capture for the organisation's name and the country's name, in the page's language; every name, quote and time the page gives goes in the row.**)
+
  (Corrected on 24 October by the correspondent, after the journalist's first wake: three reasons of the form "the outlet's own post is not in the vault" were wrong (Sansec, Cloudflare, and the PHP flaw CVE-2026-115560 carried by Cloudflare, SOCRadar and The Hacker News), and an official act held back as "one outlet" was in four more. **Before you write "not in the vault" or "one outlet", search all of `sources/*/captures/*/text.txt` for the claim's key terms (the CVE id, the organisation's name, the number) and `data/sources.json` for the publisher; name what you searched.** Where a source has more than one capture, compare them and say if the wording changed. A verdict of "used" or "noted" must match what you did: if the claim is on `compromise.json` or a page, it is "used". Write a clock time with its zone, and the same time in UTC.)
 
 5. **Refresh what the new evidence touches, and nothing else.**
@@ -132,4 +134,4 @@ This brief is the file `admin/content/briefs/2026-10-24__brief__the-journalist.m
 
 
 ---
-site v0.22.33 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-24__brief__the-journalist/index.html
+site v0.22.34 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-24__brief__the-journalist/index.html

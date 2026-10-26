@@ -19,10 +19,10 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.33" |
-| `data_as_of` | "2026-10-26T14:42Z" |
-| `vault_commit` | "2fc7e432584b" |
-| `counts` | {"sources": 543, "captures": 605, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 36, "disputed": 7, "contradicted": 3, "unverified": 4}, "event |
+| `version` | "0.22.34" |
+| `data_as_of` | "2026-10-26T17:09Z" |
+| `vault_commit` | "1dceaa1dfa7f" |
+| `counts` | {"sources": 561, "captures": 623, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 36, "disputed": 7, "contradicted": 3, "unverified": 4}, "event |
 | `headline_facts` | [{"id": "two-cves-9.2", "text": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and |
 | `latest_story` | {"title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell", "url": "https://php.oct.2026.newsroom.sgit.ai/articles/steal-my-bi |
 | `links` | {"front": "https://php.oct.2026.newsroom.sgit.ai/index.html", "sources": "https://php.oct.2026.newsroom.sgit.ai/sources/index.html", "claims": "https://php.oct. |
@@ -49,12 +49,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.33",
- "data_as_of": "2026-10-26T14:42Z",
- "vault_commit": "2fc7e432584b",
+ "version": "0.22.34",
+ "data_as_of": "2026-10-26T17:09Z",
+ "vault_commit": "1dceaa1dfa7f",
  "counts": {
-  "sources": 543,
-  "captures": 605,
+  "sources": 561,
+  "captures": 623,
   "claims": 70,
   "claims_by_status": {
    "confirmed": 20,
@@ -84,7 +84,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   {
    "id": "no-confirmed-compromise",
-   "text": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
    "status": "reported",
    "url": "https://php.oct.2026.newsroom.sgit.ai/claims/index.html#no-confirmed-compromise",
    "sources": [
@@ -111,7 +111,9 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
     "diepresse-41383717-die-php-sicherheitsluecke-ist-a",
     "voix-business-cards-rainforest-ip-activity-an",
     "haber-teknoloji-siber-guvenlik-baskanligi-ndan",
-    "larazon-tecnologia-consumo-php-nuevo-fallo-segur"
+    "larazon-tecnologia-consumo-php-nuevo-fallo-segur",
+    "techgaming-internet-sotto-attacco-php2shell-vulnera",
+    "bitpage-php2shell-php-sicherheitsluecke-webseite"
    ]
   },
   {
@@ -146,4 +148,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.33 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.34 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

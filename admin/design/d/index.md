@@ -2,42 +2,39 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.33. Not the live site.
+> Mockup D for review, built from the data of release v0.22.34. Not the live site.
 
-PHP Team console Console Overview Board 228 Agents 19 Releases 217 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 227 Agents 19 Releases 218 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
 ## Overview
- built 26 October 2026, 14:42 UTC 
+ built 26 October 2026, 17:09 UTC 
 
 Release 
-v0.22.33 
-217 releases since 22 Oct 
+v0.22.34 
+218 releases since 22 Oct 
 
 Open on the board 
-228 
-112 done, 8 waiting 
+227 
+112 done, 10 waiting 
 
 Pages built 
-1198 
+1216 
 every one with a markdown twin 
 
 Sources in the vault 
-543 
-528 captured 
+561 
+546 captured 
 
 ### The board
  newest first in each lane 
 
-#### Open 228
+#### Open 227
 
  #correspondent-0006 
 Add PHP's built-in web server (php -S with PHP_CLI_SERVER_WORKERS) to the affected-systems SAPI table, from the StealMyB… 
  newsroom-lead 
- #correspondent-0005 
-Capture stealmybitcoin.com and the StealMyBitcoin-PoC write-up into the source watch, so the two reader-question article… 
- researcher 
  #correspondent-0004 
 A section for reader questions: the questions people ask, each answered from the evidence, dated, with a deck to share 
  story-site 
@@ -53,9 +50,18 @@ plain.json and questions.json have no home after the split: the front page's 'Ri
  #conductor-0002 
 Every agent that runs sgit upgrades to sgit-ai 0.25.0 (the large-vault fix) and names the version and its timings in its… 
  conductor 
+ #conductor-0001 
+Every agent's release is live within minutes, in its own area, as in v1 (the editor, 26 October): today the pages are re… 
+ dev 
 
-#### Waiting 8
+#### Waiting 10
 
+ #conductor-0003 
+Deleting the old source-watch vault oq9gflln: what still names it, checked across team, data, press and site 
+ editor 
+ #correspondent-0005 
+Capture stealmybitcoin.com and the StealMyBitcoin-PoC write-up into the source watch, so the two reader-question article… 
+ researcher 
  #curator-0001 
 sgit-ai 0.25.0: the first status on the source-watch pack clone took 18 min 23 s (the brief expects about 47 s), and a p… 
  conductor 
@@ -71,12 +77,6 @@ Ten scheduled tasks still carry their long prompts, which only their own session
  #180 
 The Sherpa drains the lanes (the editor, 24 October 2026): a go for its schedule (data/schedule/sherpa.json, proposed: e… 
  editor 
- #099 
-Seal the conductor and collaborators lanes' secrets (enum keys, member tokens, key-pair passphrases) to the root: the se… 
- conductor 
- #030 
-The story graph: every node a link, parties as nodes, typed edges (newsroom review, change 10; board 008 holds the fract… 
- ontologist 
 
 #### Done 112
 
@@ -105,6 +105,7 @@ Scheduled tasks that start a fresh session can start with no repository: the ont
 ### Releases
  latest 8 
 
+ v0.22.34 2026-10-26 the board reads its rows when it opens (phase 2, the first page) 
  v0.22.33 2026-10-26 the lane drains in v2 and telemetry from the site's own hosts (boards sherpa-0001, 330) 
  v0.22.32 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; st… 
  v0.22.31 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; th… 
@@ -112,7 +113,6 @@ Scheduled tasks that start a fresh session can start with no repository: the ont
  v0.22.29 2026-10-26 the afternoon's releases on the pages before the cutover: data v0.1.27 to v0.1.32 (the researcher's source watch and the others), … 
  v0.22.28 2026-10-26 the morning's releases on the pages: the journalist's 81 verdicts, the researcher's source watch, the correspondent's ledger, fact… 
  v0.22.27 2026-10-26 the morning's releases on the pages: the researcher's source watch, the correspondent's offline ledger, fact-check's run 8, the cu… 
- v0.22.26 2026-10-26 dev's debrief of the night on the pages; whatever the agents wrote since the last round 
 
 ### Agents and what they own
  open items 
@@ -128,4 +128,4 @@ Scheduled tasks that start a fresh session can start with no repository: the ont
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.33 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.34 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

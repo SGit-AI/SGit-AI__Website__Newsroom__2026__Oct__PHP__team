@@ -249,4 +249,4 @@ Files: [admin/content/agents/newsroom-lead/](https://github.com/SGit-AI/SGit-AI_
 
 
 ---
-site v0.22.33 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/newsroom-lead/index.html
+site v0.22.34 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/newsroom-lead/index.html

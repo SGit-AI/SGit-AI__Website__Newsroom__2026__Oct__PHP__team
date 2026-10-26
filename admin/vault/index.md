@@ -8,7 +8,7 @@ The read key to the evidence vault behind this site, the link that opens it in t
 
 [Vaults](https://refs.php.oct.2026.newsroom.sgit.ai/vaults/) / The evidence vault
 
-The vault behind every claim on this site, 543 sources and 605 captures at commit `2fc7e432584b`, opens read-only in the browser with the key below, the way every published vault on sgit.ai and the newsroom does. The key is a read key: derived one way from the vault key, it decrypts and cannot write, and there is no privilege inside it to escalate. It is published on purpose, so treat it as you would the content.
+The vault behind every claim on this site, 561 sources and 623 captures at commit `1dceaa1dfa7f`, opens read-only in the browser with the key below, the way every published vault on sgit.ai and the newsroom does. The key is a read key: derived one way from the vault key, it decrypts and cannot write, and there is no privilege inside it to escalate. It is published on purpose, so treat it as you would the content.
 
 **Read key** `sgit_public_read_6451da6ba1c6201d35b0832d570097327552564c12c8e9a550fc2ed1150769f8:3ytzxm3g`
 
@@ -28,8 +28,8 @@ $ sgit clone sgit_public_read_6451da6ba1c6201d35b0832d570097327552564c12c8e9a550
 
 - `memos/`: the editor's voice memos; `notes/`: agents' working notes; `tools/`: the capture tool and the index builder.
 
-The manifest this site is built from, with every hash, is [data/sources.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.42/sources.json); the sources are listed on [every source](https://refs.php.oct.2026.newsroom.sgit.ai/sources/). The telemetry vault (`84wr8mib`) is separate and private: Private. Its vault key, enum key and key-pair passphrase are held by the editor and the drainer, never in this repository.
+The manifest this site is built from, with every hash, is [data/sources.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.45/sources.json); the sources are listed on [every source](https://refs.php.oct.2026.newsroom.sgit.ai/sources/). The telemetry vault (`84wr8mib`) is separate and private: Private. Its vault key, enum key and key-pair passphrase are held by the editor and the drainer, never in this repository.
 
 
 ---
-site v0.22.33 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/vault/index.html
+site v0.22.34 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/vault/index.html
