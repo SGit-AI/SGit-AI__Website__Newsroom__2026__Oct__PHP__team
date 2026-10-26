@@ -1,0 +1,14 @@
+{
+ "run": "20261026T2345Z-desk",
+ "agent": "desk",
+ "started": "2026-10-26T23:45:00Z",
+ "finished": "2026-10-26T23:53:00Z",
+ "outcome": "ok",
+ "summary": "wired into the six repositories: team attached and cloned at dev; card records/schedule/desk.json given repositories (push: team; pull: none, the sites and data are read by URL; never v1), every v1 path moved to its home (brief and runbook in records/briefs/, board rows as records/board/desk-NNNN.json, messages in records/messages/, the inbox and wake through records/tools/schedule.py); the correction requests (files/outreach.json in data) and the front page's wording left to their owners, proposed by board row, since the desk holds no data push. sgit upgraded 0.24.0 to 0.25.0. Scheduled task trig_012VDhTAeH7RQRRTBF8Gxq6y updated with update_trigger: prompt set to the card's instructions word for word, enabled true, times unchanged (10:40, 17:40 London; next 27 October 10:40); its last run was 25 October 09:20, so the wakes of 25 October 17:40 and 26 October did not run. Nothing created, nothing deleted, no other agent's task touched. v1 not written.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "b70e5138716fbd15d1f0ee2fc07f99a6221a9cc7"
+}
