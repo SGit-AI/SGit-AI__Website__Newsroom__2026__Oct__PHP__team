@@ -3,7 +3,9 @@
 
 1. Every JSON file parses.
 2. Every board row has an id, a title, a status (open, waiting, done) and an owner, and is filed under its id.
-3. Every schedule card names its member, a status and its wake times; every member folder has a role and a policy.
+3. Every schedule card names its member, a status (active, proposed, paused, ended) and its wake times (HH:MM), under its agent's name;
+   every run record has an outcome (ok, idle, partial, failed); every message has its front matter; every member folder
+   has a role and a policy. (The rules the build stops a round on, here at push time.)
 4. The front page is what tools/front.py writes (it is built from this repository, so it cannot drift).
 5. No credential shapes anywhere: registers list vault IDs and key kinds, never a key (an id that is not a bare vault id fails).
 """
@@ -55,7 +57,28 @@ for p, c in docs.items():
         for k in ('member', 'status', 'times'):
             if k not in c:
                 fails.append(f'{p}: no "{k}"')
-agents = sorted(d for d in os.listdir(os.path.join(ROOT, 'records', 'agents')) if os.path.isdir(os.path.join(ROOT, 'records', 'agents', d)))
+        # the rules the build stops a round on, here at push time (the schedule pages read the cards when they load)
+        if c.get('agent') != os.path.basename(p)[:-5]:
+            fails.append(f'{p}: "agent" must match the file name')
+        if c.get('status') not in ('active', 'proposed', 'paused', 'ended'):
+            fails.append(f'{p}: status is one of active, proposed, paused, ended')
+        for t in c.get('times') or []:
+            if not re.fullmatch(r'([01]\d|2[0-3]):[0-5]\d', str(t)):
+                fails.append(f'{p}: {t!r} is not a time (HH:MM)')
+    if p.startswith('records/runs/') and p.count('/') == 3:
+        if c.get('outcome') not in ('ok', 'idle', 'partial', 'failed'):
+            fails.append(f'{p}: outcome is one of ok, idle, partial, failed')
+        for k in ('run', 'agent', 'started', 'summary'):
+            if not isinstance(c.get(k), str):
+                fails.append(f'{p}: no "{k}"')
+for p in files('records/messages'):
+    if p.endswith('.md'):
+        m = re.match(r'---\n(.*?)\n---\n', open(os.path.join(ROOT, p), encoding='utf-8', errors='replace').read(), re.S)
+        head = {k.strip(): v.strip() for k, v in (l.split(':', 1) for l in m.group(1).splitlines() if ':' in l)} if m else {}
+        miss = [k for k in ('from', 'to', 'sent', 'subject') if not head.get(k)]
+        if miss:
+            fails.append(f'{p}: a message needs front matter with {", ".join(miss)}')
+agents =sorted(d for d in os.listdir(os.path.join(ROOT, 'records', 'agents')) if os.path.isdir(os.path.join(ROOT, 'records', 'agents', d)))
 for a in agents:
     for need in ('ROLE.md', 'policy.json'):
         if not os.path.exists(os.path.join(ROOT, 'records', 'agents', a, need)):
