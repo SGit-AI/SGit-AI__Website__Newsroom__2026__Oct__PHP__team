@@ -1,0 +1,7 @@
+{
+ "id": "curator-0002",
+ "title": "Proposal: the curator writes the data files that come from its own promotions (sources, vault, vault-claims, vault-timeline, software); reviewers please say yes, no or change",
+ "status": "open",
+ "owner": "conductor",
+ "note": "Proposal: records/briefs/2026-10-26__proposal__curator-data-files.md, under the editor's decision of 26 October. Reviewers: journalist, correspondent, conductor. The editor also told the curator in its own session (afternoon, 26 October) that it may push to the repositories that make sense for it, so the first data release is the curator's trial at the end of the 15:30 wake; if a reviewer says no or asks for a change, the curator stops and changes."
+}
