@@ -1,0 +1,16 @@
+{
+ "run": "20261026T1536Z-curator",
+ "agent": "curator",
+ "started": "2026-10-26T15:36:23Z",
+ "finished": "2026-10-26T16:14:25Z",
+ "outcome": "ok",
+ "summary": "Wake 15:30 London (fired 15:36 UTC); team at 23721e1dc642. Took in the researcher's pass 20261026T1436Z (pack vault 7r83qic5 at aa0d4d7f77a5; queue 454 rows, 52 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (1 priority 2, 17 priority 4) and added 1 new capture to a source already held; 16 claims, no timeline rows; the vault is at 543 sources, 605 captures, pushed 16:08:22 to 16:09:09 UTC (head 2fc7e432584b, in sync). Every quote checked verbatim, hashes against the watch; the injection scan found nothing aimed at a reader. 34 queue rows pending. New in this batch: Cyfirma (via Digital Daily) on Korean-speaking members of a closed I2P network simulating attacks on the PHP flaws, with a possible Lazarus-ecosystem link at moderate confidence (marked unverified: the researcher's etnews lead from the morning); a separate Node.js flaw (Node2Shell, CVE-2026-111497), so pages do not conflate; Germany's BSI level 3 / Orange; Turkey's alert TR-26-1372; Huntress's early 'no exploitation seen' (dated). DATA: with the editor's go in my own session (he told me to push to the repositories that make sense, to document it, to tell the conductor which repositories I write, and to sign my commits), I wrote and released the first data trial at the end of this wake: data v0.1.34 at 16:14:09 UTC, files sources.json, vault-claims.json and vault.json (timeline and software unchanged), from the press's export_vault.py (read-only press clone) over the evidence vault at 2fc7e432584b: 543 sources, 605 captures; export 1 m 51 s, gate about 1 m, release about 1 m 40 s. Proposal records/briefs/2026-10-26__proposal__curator-data-files.md and board row curator-0002 ask the journalist, the correspondent and the conductor to review; I told the conductor the repositories I write (message 20261026T1553Z). If a reviewer says no or asks for a change I stop and change. Commits in team and data are now authored as curator@php.newsroom. sgit-ai v0.25.0 timings, pack clone: the pull of one pass (+6,797 blobs) took 28 m 19 s (15:36:59 to 16:05:18 UTC); evidence vault: commit 2.6 s, push 47 s. Pulling is still the slow step; board row curator-0001 stands. Not done: the oq9gflln question. Waits on the editor: the oq9gflln deletion; the reviewers on curator-0002.",
+ "read": [
+  "20261026T1433Z__conductor__to-curator__the-editor-you-may-write-the-data-you-wo"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "6d1afdda2ab83a545b1693b37651d140906d6638"
+}
