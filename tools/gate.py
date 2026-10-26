@@ -65,6 +65,12 @@ r = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'front.py'), '--
 if r.returncode:
     fails.append('index.html: ' + (r.stdout + r.stderr).strip()[-300:])
 
+for p, d in docs.items():   # a member's status: its lists hold objects (what, evidence; what, why); a line instead is noted, and the build shows it as written
+    if p.startswith('records/agents/') and p.endswith('/status.json') and isinstance(d, dict):
+        for k in ('done', 'next', 'asks', 'tasks'):
+            v = d.get(k)
+            if isinstance(v, list) and any(not isinstance(x, dict) for x in v):
+                notes.append(f'{p}: "{k}" holds a line where the template has an object (what, evidence)')
 notes.append(f'{len(rows)} board rows ({sum(1 for r in rows.values() if r.get("status") != "done")} not done), '
              f'{sum(1 for p in docs if p.startswith("records/schedule/") and p.count("/") == 2)} schedule cards, {len(agents)} member folders')
 for n in notes:

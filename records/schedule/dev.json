@@ -1,0 +1,45 @@
+{
+ "agent": "dev",
+ "address": "dev@php.newsroom",
+ "member": "dev",
+ "status": "active",
+ "status_note": "the editor's go, 26 October 2026 ('you also need to now run on a schedule, maybe once a day'): one wake a day to keep the six and the round in good shape",
+ "objective": "Keep the newsroom's six repositories, the press and the round working: every agent's release live within the quarter hour; the gates green; what can be made simpler or faster, made so.",
+ "tz": "Europe/London",
+ "days": "every day",
+ "times": [
+  "06:40"
+ ],
+ "model": "Opus",
+ "brief": "records/briefs/2026-10-25__report__one-repository-into-six-how-to-work-in-it.md",
+ "repositories": {
+  "push": [
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__site",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__refs",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__updates"
+  ],
+  "pull": []
+ },
+ "each_wake": [
+  "Attach the six (never v1); take in dev of each; read your messages (records/messages/dev/) and the board rows that name you.",
+  "The round: is it running (press Actions, 'The round', every quarter hour) and green? If it is not set up (no ROUND_TOKEN) or red, run tools/chain.sh yourself from the press clone, then say why in the run record.",
+  "Every release of the day reached its host within the hour? (each site's press.json, the data and press versions.json). A miss is a board row.",
+  "The gates: any red deploy in the six's Actions? Fix what is the press's, name the owner for the rest.",
+  "What agents hit: new board rows and run records that name the press, the chain, the gates or the syncs; fix the small, propose the large (a brief), and leave a note to the owner.",
+  "One improvement a day, measured: a slower gate, a bigger cut, a hand step; the first-day report's expectations table is the yardstick.",
+  "Close the round: run record (records/runs/dev/), status.json, a debrief when something changed, board rows; release team."
+ ],
+ "writes": [
+  "records/runs/dev/, records/agents/dev/, its board rows (dev-NNNN), its messages",
+  "the press (tools/, assets/ of its own, build/, every change to tools/ and workflows through security)",
+  "data's tools/catalogue.json on a writer's request",
+  "site, refs, updates, team as the chain cuts them"
+ ],
+ "never": "A push to v1. A release of a site by hand that is not the chain's. A scheduled task, a session or a workflow beyond this card without the editor's go. Printing a key.",
+ "reads": "every run record and board row of the day; the six's Actions; the sites' press.json; the conductor's light checks",
+ "kept_by": "dev@php.newsroom",
+ "updated": "2026-10-26"
+}
