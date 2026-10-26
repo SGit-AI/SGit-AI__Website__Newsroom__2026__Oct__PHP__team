@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1630Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T16:30:00Z",
+ "finished": "2026-10-26T16:41:09Z",
+ "outcome": "ok",
+ "summary": "Editor's session, 26 Oct. Two deliverables. (1) Added a 'weight behind one answer' section and figure to the has-anyone-been-hacked article (press v1.0.31, deck now 11 slides): 525 sources / 586 captures / 0.92 GB in 3,389 fingerprinted files, 12,887 source-watch snapshots, 325 claims, 269 verdicts, ~730 MB across six repos, 25+ languages, all from the pinned data v0.1.33. (2) New article: 'Someone stole the bitcoin: what it tells us about php2shell' (site content/articles/2026-10-26__correspondent__steal-my-bitcoin.md, press v1.0.33 four figures + 9-slide deck). Analysis of the Steal My Bitcoin challenge (stealmybitcoin.com, won 25 Oct 15:47 UTC, ~,000; write-up github.com/KillaBoi/StealMyBitcoin-PoC): it IS the php2shell family (PHP 8.4.26, upload-progress chain), a genuine end-to-end RCE demonstration, but a consenting honeypot, not a real victim, so our 'no named compromise' answer stands; the working exploit is bespoke to the target (specific build, the built-in php -S server with workers, a ~70% race, per-target offsets) and does not drop onto arbitrary sites. Written defensively: no offsets, no payload, no recipe; mechanism only at the level our own advisory already publishes. Notable finding: the built-in server is a SAPI the primary advisories did not cover (board correspondent-0006). The external sources referred to the researcher for capture (board correspondent-0005). State of affairs unchanged (no named compromise). Did not read the full evidence vault this run beyond the CVE-mechanism and SAPI facts; the 14:25 review stands for the data.",
+ "read": [],
+ "sent": [],
+ "article": "steal-my-bitcoin",
+ "model": "Opus",
+ "cost_usd": null,
+ "head": "42feb2333e6480411ed41193a78f663370b17fe7"
+}

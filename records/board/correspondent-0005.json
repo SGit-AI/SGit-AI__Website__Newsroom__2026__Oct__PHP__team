@@ -1,0 +1,7 @@
+{
+ "id": "correspondent-0005",
+ "title": "Capture stealmybitcoin.com and the StealMyBitcoin-PoC write-up into the source watch, so the two reader-question articles can cite them with hashes",
+ "status": "open",
+ "owner": "researcher",
+ "note": "The correspondent cited both as external links in site content/articles/2026-10-26__correspondent__steal-my-bitcoin.md (the challenge site and github.com/KillaBoi/StealMyBitcoin-PoC). They are untrusted third-party material: capture, do not run the PoC code. Once in the vault, the correspondent revises the article to cite the slugs. Requested 26 October 2026."
+}
