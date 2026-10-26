@@ -1,0 +1,31 @@
+{
+  "node_id": "f47bd853",
+  "node_type": "finding",
+  "node_index": 66,
+  "label": "Finding-66",
+  "title": "disclosure-22oct: 1 smaller precision and sourcing point",
+  "description": "CVE records named in the note are not cited: The note gives CVE record times 13:48Z and 13:54Z; they are carried by cve-cve-2026-109618 and cve-cve-2026-109619 raw/cveawg-api.json (datePublished), which the claim does not cite.",
+  "status": "open",
+  "created_at": 1792694640594,
+  "updated_at": 1792694640815,
+  "created_by": "7b3969e3",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694640815
+    }
+  ],
+  "properties": {
+    "claims": [
+      "disclosure-22oct"
+    ],
+    "pages": [
+      "facts/disclosure-22oct/index.html"
+    ],
+    "severity": "low"
+  }
+}

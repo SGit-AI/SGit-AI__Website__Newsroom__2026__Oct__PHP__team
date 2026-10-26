@@ -1,0 +1,31 @@
+{
+  "node_id": "a9d84bb8",
+  "node_type": "finding",
+  "node_index": 62,
+  "label": "Finding-62",
+  "title": "chainguard: 1 smaller precision and sourcing point",
+  "description": "Notification timing differs between relays: The Register: Lorenc 'notified the PHP coordinated disclosure channel about his plans' (before). Feross: 'he notified the group right after making the call'. Feross's post ID 2113043398664015878 decodes to 2026-10-21T23:02:59Z, so the source's published '2026-10-22' is off by a day in UTC.",
+  "status": "open",
+  "created_at": 1792694638646,
+  "updated_at": 1792694638912,
+  "created_by": "e9e9c431",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694638912
+    }
+  ],
+  "properties": {
+    "claims": [
+      "chainguard"
+    ],
+    "pages": [
+      "facts/chainguard/index.html"
+    ],
+    "severity": "low"
+  }
+}

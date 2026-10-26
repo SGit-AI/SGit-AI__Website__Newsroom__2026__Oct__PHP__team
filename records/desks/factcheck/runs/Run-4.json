@@ -1,0 +1,12 @@
+{
+ "id": "Run-4",
+ "site_version": "0.14.10",
+ "vault_commit": "b995a28fe67a",
+ "site_export_commit": "1845598d9a38",
+ "started": "2026-10-24T07:52Z",
+ "finished": "2026-10-24T08:05Z",
+ "checked": "fc.py changed (no claim changed); fc.py check (0 failures); the vault's new captures against the open tickets; mode 2: KEV, the CVE and NVD records and their new references, php.net releases, the NCSC-NL head, the PHPocalypse Tracker, W3Techs, Amazon's post, CrowdStrike",
+ "opened": "3 evidence (Evidence-16 CrowdStrike's version origins, Evidence-17 Siemens and PAN-OS in the record, Evidence-18 the primary feeds); Evidence-4 marked captured (byte-identical), Evidence-11 superseded",
+ "audit": "fc.py check: 0 failures.",
+ "summary": "No claim changed and no fix landed. The world moved a little: CrowdStrike dates CVE-2026-109618 from PHP 7.3.0 and CVE-2026-109619 back to 5.4 (bears on K-003, 'every version since 5.4'); Siemens and Palo Alto PAN-OS are now in the primary record; KEV (2026.10.23) still lists neither CVE and CISA's SSVC still says no exploitation; every PHPocalypse site is back. Amazon's revised sentence is still not captured (Evidence-12, high). The vault moved to b995a28fe67a; the site's export is still at 1845598d9a38."
+}

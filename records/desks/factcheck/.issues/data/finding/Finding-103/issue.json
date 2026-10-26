@@ -1,0 +1,31 @@
+{
+  "node_id": "aad94a78",
+  "node_type": "finding",
+  "node_index": 103,
+  "label": "Finding-103",
+  "title": "scale-70pc-websites: 1 smaller precision and sourcing point",
+  "description": "Outlets disagree on the W3Techs figure: about 69-70% versus about 75%: Tenable (69.3%), Imperva (over 69%) and Insurance Business (around 70%, 'W3Techs (August 2026)') against Reuters via RTE and ABC Australia ('roughly 75%' / 'about 75 per cent' of websites whose programming language can be identified). RTE and ABC are vault captures outside the site manifest. The difference may be a date or a different W3Techs measure; capturing W3Techs would settle it.",
+  "status": "open",
+  "created_at": 1792694658493,
+  "updated_at": 1792694658715,
+  "created_by": "3f356bb6",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694658715
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-70pc-websites"
+    ],
+    "pages": [
+      "facts/scale-70pc-websites/index.html"
+    ],
+    "severity": "low"
+  }
+}

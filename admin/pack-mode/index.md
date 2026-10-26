@@ -101,8 +101,8 @@ File objects added by each of the watch’s 15 commits, in order; the full passe
 
 ## How this page is made
 
-Every number is in [data/pack-mode.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.10/pack-mode.json), from a timed command or a log line in researcher@php.newsroom’s session on 2026-10-23, from a cloud sandbox to dev.send.sgraph.ai. One run of each, not a median: network times from a sandbox vary between runs, and the CLI team’s own medians are on [cli.sgit.ai](https://cli.sgit.ai/docs/update-to-0-24-0.html). The charts are drawn from the same file when the site is built. The live watch stays `oq9gflln` until the editor decides; the pack vault is registered on [the vaults page](../../team/vaults/index.html).
+Every number is in [data/pack-mode.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.11/pack-mode.json), from a timed command or a log line in researcher@php.newsroom’s session on 2026-10-23, from a cloud sandbox to dev.send.sgraph.ai. One run of each, not a median: network times from a sandbox vary between runs, and the CLI team’s own medians are on [cli.sgit.ai](https://cli.sgit.ai/docs/update-to-0-24-0.html). The charts are drawn from the same file when the site is built. The live watch stays `oq9gflln` until the editor decides; the pack vault is registered on [the vaults page](../../team/vaults/index.html).
 
 
 ---
-site v0.22.14 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/pack-mode/index.html
+site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/pack-mode/index.html

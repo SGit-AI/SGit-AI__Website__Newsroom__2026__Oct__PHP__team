@@ -1,0 +1,39 @@
+{
+  "node_id": "3778526a",
+  "node_type": "evidence",
+  "node_index": 8,
+  "label": "Evidence-8",
+  "title": "oss-security 22_14: the deb.sury.org tracker quotes the PHP team, 'aware of that report and there are no new plans as of now'",
+  "description": "Nicolas Vigier relays a comment on the Debian/Ubuntu PHP packager's issue tracker. Third-hand, but consistent with PHP's own answer in 22/15.",
+  "status": "proposed",
+  "created_at": 1792702576420,
+  "updated_at": 1792702576833,
+  "created_by": "1a578cee",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "00b6d9a2",
+      "target_label": "Run-2",
+      "created_at": 1792702576614
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "a6f17295",
+      "target_label": "Contradiction-11",
+      "created_at": 1792702576833
+    }
+  ],
+  "properties": {
+    "url": "https://www.openwall.com/lists/oss-security/2026/10/22/14",
+    "retrieved_at": "2026-10-22T20:54Z",
+    "sha256": "7f8f85193e75133f88647d70733a69938c17e6f2773b4755c0dc67acd3512dbb",
+    "excerpt": "The PHP team is aware of that report and there are no new plans as of now.",
+    "claims": [
+      "fix-incomplete"
+    ],
+    "severity": "low"
+  }
+}

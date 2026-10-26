@@ -1,0 +1,13 @@
+{
+ "id": "Run-5",
+ "site_version": "0.15.3",
+ "vault_commit": "9cfe2778c1b0",
+ "site_export_commit": "1f38e70921b2",
+ "started": "2026-10-24T15:53Z",
+ "finished": "2026-10-24T16:10Z",
+ "checked": "fc.py changed (no-confirmed-compromise refreshed by the journalist); fc.py check (0 failures); the open tickets against the vault's new captures; the desk's pages under the new Content-Security-Policy (no violations); KEV, php.net releases, the CVE record",
+ "opened": "1 finding (Finding-126, amazon-honeypot quotes Amazon's first wording); closed: Evidence-12 and Evidence-3 captured",
+ "audit": "fc.py check: 0 failures; Sophos (Cyber Security News), American Banker, The Next Web and Amazon's revised sentence re-found verbatim in their captures.",
+ "quiet_wakes_before": 1,
+ "summary": "Amazon's revised sentence is now captured (aws-security-blog-madpot, 23 October): 'broadly exploited in the wild' became 'seeing broad exploitation attempts in the wild' at 21:25 UTC on 22 October, so correction request R-004 can close as corrected without being sent, and amazon-honeypot is graded superseded until it gives both wordings (Finding-126). no-confirmed-compromise refreshed to 08:37 UTC on 24 October and still holds, now with Sophos's withdrawn success claim. KEV still lists neither CVE; no PHP release after 21 October. The 12:52 wake before this one was quiet."
+}

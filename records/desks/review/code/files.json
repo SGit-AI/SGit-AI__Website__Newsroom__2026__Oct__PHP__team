@@ -1,0 +1,5486 @@
+{
+ "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
+ "engine_files": [
+  {
+   "path": "Zend/zend.c",
+   "hunks": [
+    {
+     "new_start": 740,
+     "new_len": 2,
+     "context": "static void compiler_globals_ctor(zend_compiler_globals *compiler_globals) /* {{"
+    },
+    {
+     "new_start": 814,
+     "new_len": 1,
+     "context": "static void executor_globals_ctor(zend_executor_globals *executor_globals) /* {{"
+    },
+    {
+     "new_start": 1313,
+     "new_len": 2,
+     "context": "ZEND_API void zend_deactivate(void) /* {{{ */"
+    },
+    {
+     "new_start": 1404,
+     "new_len": 1,
+     "context": "ZEND_API ZEND_COLD void zend_error_zstr_at("
+    },
+    {
+     "new_start": 1850,
+     "new_len": 3,
+     "context": "ZEND_API zend_result zend_execute_scripts(int type, zval *retval, int file_count"
+    }
+   ],
+   "functions": [
+    [
+     "compiler_globals_ctor",
+     1
+    ],
+    [
+     "executor_globals_ctor",
+     1
+    ],
+    [
+     "zend_deactivate",
+     1
+    ],
+    [
+     "zend_error_zstr_at",
+     1
+    ],
+    [
+     "zend_execute_scripts",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 9,
+   "del": 1,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend.c"
+  },
+  {
+   "path": "Zend/zend_API.c",
+   "hunks": [
+    {
+     "new_start": 1729,
+     "new_len": 12,
+     "context": "ZEND_API void object_init(zval *arg) /* {{{ */"
+    }
+   ],
+   "functions": [
+    [
+     "object_init",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "object_finit"
+   ],
+   "add": 12,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_API.c"
+  },
+  {
+   "path": "Zend/zend_API.h",
+   "hunks": [
+    {
+     "new_start": 526,
+     "new_len": 37,
+     "context": "ZEND_API const char *zend_get_type_by_const(int type);"
+    },
+    {
+     "new_start": 564,
+     "new_len": 1,
+     "context": "ZEND_API void object_init(zval *arg);"
+    },
+    {
+     "new_start": 887,
+     "new_len": 11,
+     "context": "static zend_always_inline bool zend_char_has_nul_byte(const char *s, size_t know"
+    },
+    {
+     "new_start": 903,
+     "new_len": 4,
+     "context": "static zend_always_inline bool zend_char_has_nul_byte(const char *s, size_t know"
+    },
+    {
+     "new_start": 967,
+     "new_len": 2,
+     "context": "static zend_always_inline bool zend_char_has_nul_byte(const char *s, size_t know"
+    },
+    {
+     "new_start": 995,
+     "new_len": 2,
+     "context": "static zend_always_inline bool zend_char_has_nul_byte(const char *s, size_t know"
+    },
+    {
+     "new_start": 1011,
+     "new_len": 1,
+     "context": "static zend_always_inline bool zend_char_has_nul_byte(const char *s, size_t know"
+    }
+   ],
+   "functions": [
+    [
+     "const char *zend_get_type_by_const",
+     1
+    ],
+    [
+     "object_init",
+     1
+    ],
+    [
+     "zend_char_has_nul_byte",
+     5
+    ]
+   ],
+   "added_symbols": [
+    "RETURN_FSTRING",
+    "RETURN_FSTRINGL",
+    "RETURN_OOM",
+    "RETVAL_FSTRING",
+    "RETVAL_FSTRINGL",
+    "_array_finit",
+    "_array_finit_ex"
+   ],
+   "add": 58,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_API.h"
+  },
+  {
+   "path": "Zend/zend_alloc.c",
+   "hunks": [
+    {
+     "new_start": 56,
+     "new_len": 1,
+     "context": ""
+    },
+    {
+     "new_start": 62,
+     "new_len": 2,
+     "context": ""
+    },
+    {
+     "new_start": 197,
+     "new_len": 4,
+     "context": "typedef zend_mm_bitset zend_mm_page_map[ZEND_MM_PAGE_MAP_LEN];     /* 64B */"
+    },
+    {
+     "new_start": 208,
+     "new_len": 1,
+     "context": "static bool zend_mm_use_huge_pages = false;"
+    },
+    {
+     "new_start": 262,
+     "new_len": 2,
+     "context": "struct _zend_mm_heap {"
+    },
+    {
+     "new_start": 266,
+     "new_len": 1,
+     "context": "struct _zend_mm_heap {"
+    },
+    {
+     "new_start": 292,
+     "new_len": 1,
+     "context": "struct _zend_mm_heap {"
+    },
+    {
+     "new_start": 383,
+     "new_len": 3,
+     "context": "static ZEND_COLD ZEND_NORETURN void zend_mm_panic(const char *message)"
+    },
+    {
+     "new_start": 387,
+     "new_len": 3,
+     "context": "static ZEND_COLD ZEND_NORETURN void zend_mm_safe_error(zend_mm_heap *heap,"
+    },
+    {
+     "new_start": 391,
+     "new_len": 146,
+     "context": "static ZEND_COLD ZEND_NORETURN void zend_mm_safe_error(zend_mm_heap *heap,"
+    },
+    {
+     "new_start": 1149,
+     "new_len": 5,
+     "context": "static void *zend_mm_alloc_pages(zend_mm_heap *heap, uint32_t pages_count ZEND_F"
+    },
+    {
+     "new_start": 1155,
+     "new_len": 1,
+     "context": "static void *zend_mm_alloc_pages(zend_mm_heap *heap, uint32_t pages_count ZEND_F"
+    },
+    {
+     "new_start": 1163,
+     "new_len": 1,
+     "context": "static void *zend_mm_alloc_pages(zend_mm_heap *heap, uint32_t pages_count ZEND_F"
+    },
+    {
+     "new_start": 1221,
+     "new_len": 3,
+     "context": "static zend_always_inline void *zend_mm_alloc_large_ex(zend_mm_heap *heap, size_"
+    },
+    {
+     "new_start": 1389,
+     "new_len": 5,
+     "context": "static zend_never_inline void *zend_mm_alloc_small_slow(zend_mm_heap *heap, uint"
+    },
+    {
+     "new_start": 1515,
+     "new_len": 1,
+     "context": "static zend_always_inline void *zend_mm_alloc_heap(zend_mm_heap *heap, size_t si"
+    },
+    {
+     "new_start": 1522,
+     "new_len": 8,
+     "context": "static zend_always_inline void *zend_mm_alloc_heap(zend_mm_heap *heap, size_t si"
+    },
+    {
+     "new_start": 1535,
+     "new_len": 8,
+     "context": "static zend_always_inline void *zend_mm_alloc_heap(zend_mm_heap *heap, size_t si"
+    },
+    {
+     "new_start": 1615,
+     "new_len": 6,
+     "context": "static zend_never_inline void *zend_mm_realloc_slow(zend_mm_heap *heap, void *pt"
+    },
+    {
+     "new_start": 1622,
+     "new_len": 3,
+     "context": "static zend_never_inline void *zend_mm_realloc_slow(zend_mm_heap *heap, void *pt"
+    },
+    {
+     "new_start": 1680,
+     "new_len": 2,
+     "context": "static zend_never_inline void *zend_mm_realloc_huge(zend_mm_heap *heap, void *pt"
+    },
+    {
+     "new_start": 1683,
+     "new_len": 1,
+     "context": "static zend_never_inline void *zend_mm_realloc_huge(zend_mm_heap *heap, void *pt"
+    },
+    {
+     "new_start": 1747,
+     "new_len": 3,
+     "context": "static zend_always_inline void *zend_mm_realloc_heap(zend_mm_heap *heap, void *p"
+    },
+    {
+     "new_start": 1765,
+     "new_len": 3,
+     "context": "static zend_always_inline void *zend_mm_realloc_heap(zend_mm_heap *heap, void *p"
+    },
+    {
+     "new_start": 1789,
+     "new_len": 4,
+     "context": "static zend_always_inline void *zend_mm_realloc_heap(zend_mm_heap *heap, void *p"
+    },
+    {
+     "new_start": 1880,
+     "new_len": 2,
+     "context": "static void zend_mm_add_huge_block(zend_mm_heap *heap, void *ptr, size_t size ZE"
+    },
+    {
+     "new_start": 1894,
+     "new_len": 1,
+     "context": "static void zend_mm_add_huge_block(zend_mm_heap *heap, void *ptr, size_t size ZE"
+    },
+    {
+     "new_start": 1972,
+     "new_len": 2,
+     "context": "static void *zend_mm_alloc_huge(zend_mm_heap *heap, size_t size ZEND_FILE_LINE_D"
+    },
+    {
+     "new_start": 1976,
+     "new_len": 2,
+     "context": "static void *zend_mm_alloc_huge(zend_mm_heap *heap, size_t size ZEND_FILE_LINE_D"
+    },
+    {
+     "new_start": 1979,
+     "new_len": 1,
+     "context": "static void *zend_mm_alloc_huge(zend_mm_heap *heap, size_t size ZEND_FILE_LINE_D"
+    },
+    {
+     "new_start": 1987,
+     "new_len": 1,
+     "context": "static void *zend_mm_alloc_huge(zend_mm_heap *heap, size_t size ZEND_FILE_LINE_D"
+    },
+    {
+     "new_start": 2071,
+     "new_len": 3,
+     "context": "static zend_mm_heap *zend_mm_init(void)"
+    },
+    {
+     "new_start": 2076,
+     "new_len": 1,
+     "context": "static zend_mm_heap *zend_mm_init(void)"
+    },
+    {
+     "new_start": 2408,
+     "new_len": 1,
+     "context": "void zend_mm_shutdown(zend_mm_heap *heap, bool full, bool silent)"
+    },
+    {
+     "new_start": 2782,
+     "new_len": 12,
+     "context": "ZEND_API size_t ZEND_FASTCALL _zend_mem_block_size(void *ptr ZEND_FILE_LINE_DC Z"
+    },
+    {
+     "new_start": 2796,
+     "new_len": 3,
+     "context": "ZEND_API void* ZEND_FASTCALL _safe_emalloc(size_t nmemb, size_t size, size_t off"
+    },
+    {
+     "new_start": 2803,
+     "new_len": 3,
+     "context": "ZEND_API void* ZEND_FASTCALL _safe_malloc(size_t nmemb, size_t size, size_t offs"
+    },
+    {
+     "new_start": 2810,
+     "new_len": 3,
+     "context": "ZEND_API void* ZEND_FASTCALL _safe_erealloc(void *ptr, size_t nmemb, size_t size"
+    },
+    {
+     "new_start": 2817,
+     "new_len": 3,
+     "context": "ZEND_API void* ZEND_FASTCALL _safe_realloc(void *ptr, size_t nmemb, size_t size,"
+    },
+    {
+     "new_start": 2825,
+     "new_len": 2,
+     "context": "ZEND_API void* ZEND_FASTCALL _ecalloc(size_t nmemb, size_t size ZEND_FILE_LINE_D"
+    },
+    {
+     "new_start": 2828,
+     "new_len": 2,
+     "context": "ZEND_API void* ZEND_FASTCALL _ecalloc(size_t nmemb, size_t size ZEND_FILE_LINE_D"
+    },
+    {
+     "new_start": 2840,
+     "new_len": 2,
+     "context": "ZEND_API char* ZEND_FASTCALL _estrdup(const char *s ZEND_FILE_LINE_DC ZEND_FILE_"
+    },
+    {
+     "new_start": 2853,
+     "new_len": 2,
+     "context": "ZEND_API char* ZEND_FASTCALL _estrndup(const char *s, size_t length ZEND_FILE_LI"
+    },
+    {
+     "new_start": 2861,
+     "new_len": 0,
+     "context": "ZEND_API char* ZEND_FASTCALL _estrndup(const char *s, size_t length ZEND_FILE_LI"
+    },
+    {
+     "new_start": 2867,
+     "new_len": 2,
+     "context": "ZEND_API char* ZEND_FASTCALL zend_strndup(const char *s, size_t length)"
+    },
+    {
+     "new_start": 2881,
+     "new_len": 104,
+     "context": "ZEND_API char* ZEND_FASTCALL zend_strndup(const char *s, size_t length)"
+    },
+    {
+     "new_start": 2990,
+     "new_len": 4,
+     "context": "ZEND_API zend_result zend_set_memory_limit(size_t memory_limit)"
+    },
+    {
+     "new_start": 3004,
+     "new_len": 2,
+     "context": "ZEND_API zend_result zend_set_memory_limit(size_t memory_limit)"
+    },
+    {
+     "new_start": 3010,
+     "new_len": 22,
+     "context": "ZEND_API zend_result zend_set_memory_limit(size_t memory_limit)"
+    },
+    {
+     "new_start": 3078,
+     "new_len": 13,
+     "context": "ZEND_API void zend_memory_reset_peak_usage(void)"
+    },
+    {
+     "new_start": 3118,
+     "new_len": 13,
+     "context": "static zend_always_inline zval *tracked_get_size_zv(zend_mm_heap *heap, void *pt"
+    },
+    {
+     "new_start": 3132,
+     "new_len": 1,
+     "context": "static zend_always_inline void tracked_check_limit(zend_mm_heap *heap, size_t ad"
+    },
+    {
+     "new_start": 3134,
+     "new_len": 1,
+     "context": "static zend_always_inline void tracked_check_limit(zend_mm_heap *heap, size_t ad"
+    },
+    {
+     "new_start": 3136,
+     "new_len": 3,
+     "context": "static zend_always_inline void tracked_check_limit(zend_mm_heap *heap, size_t ad"
+    },
+    {
+     "new_start": 3140,
+     "new_len": 10,
+     "context": "static zend_always_inline void tracked_check_limit(zend_mm_heap *heap, size_t ad"
+    },
+    {
+     "new_start": 3155,
+     "new_len": 7,
+     "context": "static void *tracked_malloc(size_t size)"
+    },
+    {
+     "new_start": 3197,
+     "new_len": 7,
+     "context": "static void *tracked_realloc(void *ptr, size_t new_size) {"
+    },
+    {
+     "new_start": 3239,
+     "new_len": 3,
+     "context": "static void alloc_globals_ctor(zend_alloc_globals *alloc_globals)"
+    },
+    {
+     "new_start": 3243,
+     "new_len": 1,
+     "context": "static void alloc_globals_ctor(zend_alloc_globals *alloc_globals)"
+    },
+    {
+     "new_start": 3306,
+     "new_len": 10,
+     "context": "ZEND_API zend_mm_heap *zend_mm_get_heap(void)"
+    }
+   ],
+   "functions": [
+    [
+     "(file scope)",
+     2
+    ],
+    [
+     "typedef zend_mm_bitset zend_mm_page_map[ZEND_MM_PAGE_MAP_LEN];     /* 64B */",
+     1
+    ],
+    [
+     "zend_mm_use_huge_pages = false;",
+     1
+    ],
+    [
+     "struct _zend_mm_heap",
+     3
+    ],
+    [
+     "zend_mm_panic",
+     1
+    ],
+    [
+     "zend_mm_safe_error",
+     2
+    ],
+    [
+     "*zend_mm_alloc_pages",
+     3
+    ],
+    [
+     "*zend_mm_alloc_large_ex",
+     1
+    ],
+    [
+     "zend_never_inline void *zend_mm_alloc_small_slow",
+     1
+    ],
+    [
+     "*zend_mm_alloc_heap",
+     3
+    ],
+    [
+     "zend_never_inline void *zend_mm_realloc_slow",
+     2
+    ],
+    [
+     "zend_never_inline void *zend_mm_realloc_huge",
+     2
+    ],
+    [
+     "*zend_mm_realloc_heap",
+     3
+    ],
+    [
+     "zend_mm_add_huge_block",
+     2
+    ],
+    [
+     "*zend_mm_alloc_huge",
+     4
+    ],
+    [
+     "zend_mm_heap *zend_mm_init",
+     2
+    ],
+    [
+     "zend_mm_shutdown",
+     1
+    ],
+    [
+     "_zend_mem_block_size",
+     1
+    ],
+    [
+     "void* ZEND_FASTCALL _safe_emalloc",
+     1
+    ],
+    [
+     "void* ZEND_FASTCALL _safe_malloc",
+     1
+    ],
+    [
+     "void* ZEND_FASTCALL _safe_erealloc",
+     1
+    ],
+    [
+     "void* ZEND_FASTCALL _safe_realloc",
+     1
+    ],
+    [
+     "void* ZEND_FASTCALL _ecalloc",
+     2
+    ],
+    [
+     "char* ZEND_FASTCALL _estrdup",
+     1
+    ],
+    [
+     "char* ZEND_FASTCALL _estrndup",
+     2
+    ],
+    [
+     "char* ZEND_FASTCALL zend_strndup",
+     2
+    ],
+    [
+     "zend_set_memory_limit",
+     3
+    ],
+    [
+     "zend_memory_reset_peak_usage",
+     1
+    ],
+    [
+     "zval *tracked_get_size_zv",
+     1
+    ],
+    [
+     "tracked_check_limit",
+     4
+    ],
+    [
+     "*tracked_malloc",
+     1
+    ],
+    [
+     "*tracked_realloc",
+     1
+    ],
+    [
+     "alloc_globals_ctor",
+     2
+    ],
+    [
+     "zend_mm_heap *zend_mm_get_heap",
+     1
+    ],
+    [
+     "zend_mm_heap *zend_mm_startup_ex",
+     3
+    ],
+    [
+     "* __zend_calloc",
+     2
+    ]
+   ],
+   "added_symbols": [
+    "ZEND_MM_FALLIBLE_FORWARD",
+    "ZEND_MM_LIMIT_MAX",
+    "ZEND_MM_SAFE_ADDRESS_GUARDED",
+    "_fecalloc",
+    "_femalloc",
+    "_ferealloc",
+    "_ferealloc2",
+    "_safe_femalloc",
+    "_safe_ferealloc",
+    "scale_by_percent",
+    "tracked_check_limit",
+    "tracked_check_max_allocs",
+    "tracked_max_allocs_error",
+    "zend_handle_delayed_oom",
+    "zend_mm_check_limit",
+    "zend_mm_delayed_error",
+    "zend_mm_delayed_error_or_panic",
+    "zend_mm_delayed_verror",
+    "zend_mm_is_fallible",
+    "zend_mm_max_allocs_hit",
+    "zend_mm_oom_info_dtor",
+    "zend_mm_set_fallible",
+    "zend_mm_set_max_allocs",
+    "zend_mm_update_hard_limit",
+    "zend_set_memory_hard_limit_percent"
+   ],
+   "add": 527,
+   "del": 122,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_alloc.c"
+  },
+  {
+   "path": "Zend/zend_alloc.h",
+   "hunks": [
+    {
+     "new_start": 40,
+     "new_len": 14,
+     "context": ""
+    },
+    {
+     "new_start": 63,
+     "new_len": 2,
+     "context": "typedef struct _zend_leak_info {"
+    },
+    {
+     "new_start": 233,
+     "new_len": 32,
+     "context": "ZEND_API ZEND_ATTRIBUTE_MALLOC char * __zend_strdup(const char *s);"
+    },
+    {
+     "new_start": 266,
+     "new_len": 1,
+     "context": "ZEND_API zend_result zend_set_memory_limit(size_t memory_limit);"
+    },
+    {
+     "new_start": 319,
+     "new_len": 3,
+     "context": "ZEND_API size_t zend_mm_gc(zend_mm_heap *heap);"
+    },
+    {
+     "new_start": 365,
+     "new_len": 11,
+     "context": "ZEND_API zend_mm_heap *zend_mm_startup_ex(const zend_mm_handlers *handlers, void"
+    }
+   ],
+   "functions": [
+    [
+     "(file scope)",
+     1
+    ],
+    [
+     "typedef struct _zend_leak_info",
+     1
+    ],
+    [
+     "ZEND_ATTRIBUTE_MALLOC char * __zend_strdup",
+     1
+    ],
+    [
+     "zend_set_memory_limit",
+     1
+    ],
+    [
+     "zend_mm_gc",
+     1
+    ],
+    [
+     "zend_mm_heap *zend_mm_startup_ex",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "ZEND_HAS_OOM",
+    "ZEND_MM_MAX_ALLOCS_EXIT_STATUS"
+   ],
+   "add": 63,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_alloc.h"
+  },
+  {
+   "path": "Zend/zend_attributes.c",
+   "hunks": [
+    {
+     "new_start": 117,
+     "new_len": 6,
+     "context": "ZEND_METHOD(SensitiveParameter, __construct)"
+    },
+    {
+     "new_start": 131,
+     "new_len": 1,
+     "context": "ZEND_METHOD(SensitiveParameterValue, __construct)"
+    }
+   ],
+   "functions": [
+    [
+     "ZEND_METHOD",
+     2
+    ]
+   ],
+   "added_symbols": [
+    "zend_sensitive_parameter_value_init"
+   ],
+   "add": 7,
+   "del": 1,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_attributes.c"
+  },
+  {
+   "path": "Zend/zend_attributes.h",
+   "hunks": [
+    {
+     "new_start": 125,
+     "new_len": 2,
+     "context": "void zend_attributes_shutdown(void);"
+    }
+   ],
+   "functions": [
+    [
+     "zend_attributes_shutdown",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 2,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_attributes.h"
+  },
+  {
+   "path": "Zend/zend_builtin_functions.c",
+   "hunks": [
+    {
+     "new_start": 1537,
+     "new_len": 1,
+     "context": "ZEND_FUNCTION(get_defined_constants)"
+    },
+    {
+     "new_start": 1545,
+     "new_len": 3,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1580,
+     "new_len": 1,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1582,
+     "new_len": 5,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1617,
+     "new_len": 1,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1619,
+     "new_len": 5,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1662,
+     "new_len": 1,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1664,
+     "new_len": 5,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1691,
+     "new_len": 3,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1696,
+     "new_len": 7,
+     "context": "static void debug_backtrace_get_args(zend_execute_data *call, zval *arg_array) /"
+    },
+    {
+     "new_start": 1858,
+     "new_len": 5,
+     "context": "ZEND_API void zend_fetch_debug_backtrace(zval *return_value, int skip_last, int"
+    },
+    {
+     "new_start": 1922,
+     "new_len": 4,
+     "context": "ZEND_API void zend_fetch_debug_backtrace(zval *return_value, int skip_last, int"
+    },
+    {
+     "new_start": 1928,
+     "new_len": 4,
+     "context": "ZEND_API void zend_fetch_debug_backtrace(zval *return_value, int skip_last, int"
+    }
+   ],
+   "functions": [
+    [
+     "ZEND_FUNCTION",
+     1
+    ],
+    [
+     "debug_backtrace_get_args",
+     9
+    ],
+    [
+     "zend_fetch_debug_backtrace",
+     3
+    ]
+   ],
+   "added_symbols": [
+    "debug_backtrace_get_args"
+   ],
+   "add": 45,
+   "del": 9,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_builtin_functions.c"
+  },
+  {
+   "path": "Zend/zend_compile.c",
+   "hunks": [
+    {
+     "new_start": 415,
+     "new_len": 1,
+     "context": "void init_compiler(void) /* {{{ */"
+    }
+   ],
+   "functions": [
+    [
+     "init_compiler",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 1,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_compile.c"
+  },
+  {
+   "path": "Zend/zend_exceptions.c",
+   "hunks": [
+    {
+     "new_start": 105,
+     "new_len": 3,
+     "context": "void zend_exception_set_previous(zend_object *exception, zend_object *add_previo"
+    }
+   ],
+   "functions": [
+    [
+     "zend_exception_set_previous",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 3,
+   "del": 1,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_exceptions.c"
+  },
+  {
+   "path": "Zend/zend_execute.c",
+   "hunks": [
+    {
+     "new_start": 4345,
+     "new_len": 12,
+     "context": "static void cleanup_unfinished_calls(zend_execute_data *execute_data, uint32_t o"
+    }
+   ],
+   "functions": [
+    [
+     "cleanup_unfinished_calls",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "free_unfinished_calls"
+   ],
+   "add": 12,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_execute.c"
+  },
+  {
+   "path": "Zend/zend_execute_API.c",
+   "hunks": [
+    {
+     "new_start": 396,
+     "new_len": 7,
+     "context": "ZEND_API void zend_shutdown_executor_values(bool fast_shutdown)"
+    },
+    {
+     "new_start": 407,
+     "new_len": 7,
+     "context": "ZEND_API void zend_shutdown_executor_values(bool fast_shutdown)"
+    },
+    {
+     "new_start": 448,
+     "new_len": 2,
+     "context": "void shutdown_executor(void) /* {{{ */"
+    },
+    {
+     "new_start": 780,
+     "new_len": 5,
+     "context": "zend_result zend_call_function(zend_fcall_info *fci, zend_fcall_info_cache *fci_"
+    },
+    {
+     "new_start": 988,
+     "new_len": 1,
+     "context": "zend_result zend_call_function(zend_fcall_info *fci, zend_fcall_info_cache *fci_"
+    },
+    {
+     "new_start": 1009,
+     "new_len": 1,
+     "context": "zend_result zend_call_function(zend_fcall_info *fci, zend_fcall_info_cache *fci_"
+    },
+    {
+     "new_start": 1011,
+     "new_len": 9,
+     "context": "zend_result zend_call_function(zend_fcall_info *fci, zend_fcall_info_cache *fci_"
+    },
+    {
+     "new_start": 1021,
+     "new_len": 1,
+     "context": "zend_result zend_call_function(zend_fcall_info *fci, zend_fcall_info_cache *fci_"
+    },
+    {
+     "new_start": 1023,
+     "new_len": 2,
+     "context": "zend_result zend_call_function(zend_fcall_info *fci, zend_fcall_info_cache *fci_"
+    },
+    {
+     "new_start": 1026,
+     "new_len": 1,
+     "context": "zend_result zend_call_function(zend_fcall_info *fci, zend_fcall_info_cache *fci_"
+    }
+   ],
+   "functions": [
+    [
+     "zend_shutdown_executor_values",
+     2
+    ],
+    [
+     "shutdown_executor",
+     1
+    ],
+    [
+     "zend_call_function",
+     7
+    ]
+   ],
+   "added_symbols": [],
+   "add": 36,
+   "del": 13,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_execute_API.c"
+  },
+  {
+   "path": "Zend/zend_globals.h",
+   "hunks": [
+    {
+     "new_start": 29,
+     "new_len": 1,
+     "context": ""
+    },
+    {
+     "new_start": 124,
+     "new_len": 1,
+     "context": "struct _zend_compiler_globals {"
+    },
+    {
+     "new_start": 285,
+     "new_len": 2,
+     "context": "struct _zend_executor_globals {"
+    }
+   ],
+   "functions": [
+    [
+     "(file scope)",
+     1
+    ],
+    [
+     "struct _zend_compiler_globals",
+     1
+    ],
+    [
+     "struct _zend_executor_globals",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 4,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_globals.h"
+  },
+  {
+   "path": "Zend/zend_hash.c",
+   "hunks": [
+    {
+     "new_start": 84,
+     "new_len": 4,
+     "context": "static void _zend_is_inconsistent(const HashTable *ht, const char *file, int lin"
+    },
+    {
+     "new_start": 112,
+     "new_len": 1,
+     "context": "ZEND_API void *zend_hash_find_ptr_lc(const HashTable *ht, zend_string *key) {"
+    },
+    {
+     "new_start": 114,
+     "new_len": 1,
+     "context": "static void ZEND_FASTCALL zend_hash_do_resize(HashTable *ht);"
+    },
+    {
+     "new_start": 125,
+     "new_len": 2,
+     "context": "static zend_always_inline uint32_t zend_hash_check_size(uint32_t nSize)"
+    },
+    {
+     "new_start": 150,
+     "new_len": 1,
+     "context": "static zend_always_inline uint32_t zend_hash_check_size(uint32_t nSize)"
+    },
+    {
+     "new_start": 155,
+     "new_len": 1,
+     "context": "static zend_always_inline void zend_hash_real_init_packed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 158,
+     "new_len": 1,
+     "context": "static zend_always_inline void zend_hash_real_init_packed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 160,
+     "new_len": 4,
+     "context": "static zend_always_inline void zend_hash_real_init_packed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 169,
+     "new_len": 1,
+     "context": "static zend_always_inline void zend_hash_real_init_packed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 172,
+     "new_len": 6,
+     "context": "static zend_always_inline void zend_hash_real_init_packed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 185,
+     "new_len": 4,
+     "context": "static zend_always_inline void zend_hash_real_init_mixed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 190,
+     "new_len": 4,
+     "context": "static zend_always_inline void zend_hash_real_init_mixed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 233,
+     "new_len": 1,
+     "context": "static zend_always_inline void zend_hash_real_init_mixed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 235,
+     "new_len": 4,
+     "context": "static zend_always_inline void zend_hash_real_init_mixed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 244,
+     "new_len": 2,
+     "context": "static zend_always_inline void zend_hash_real_init_mixed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 248,
+     "new_len": 6,
+     "context": "static zend_always_inline void zend_hash_real_init_mixed_ex(HashTable *ht)"
+    },
+    {
+     "new_start": 258,
+     "new_len": 1,
+     "context": "static zend_always_inline void zend_hash_real_init_ex(HashTable *ht, bool packed"
+    },
+    {
+     "new_start": 260,
+     "new_len": 1,
+     "context": "static zend_always_inline void zend_hash_real_init_ex(HashTable *ht, bool packed"
+    },
+    {
+     "new_start": 264,
+     "new_len": 5,
+     "context": "static zend_always_inline void zend_hash_real_init_ex(HashTable *ht, bool packed"
+    },
+    {
+     "new_start": 286,
+     "new_len": 1,
+     "context": "ZEND_API const HashTable zend_empty_array = {"
+    },
+    {
+     "new_start": 298,
+     "new_len": 10,
+     "context": "static zend_always_inline void _zend_hash_init_int(HashTable *ht, uint32_t nSize"
+    },
+    {
+     "new_start": 322,
+     "new_len": 20,
+     "context": "ZEND_API HashTable* ZEND_FASTCALL _zend_new_array_0(void)"
+    },
+    {
+     "new_start": 349,
+     "new_len": 14,
+     "context": "ZEND_API HashTable* ZEND_FASTCALL _zend_new_array(uint32_t nSize)"
+    },
+    {
+     "new_start": 378,
+     "new_len": 1,
+     "context": "ZEND_API HashTable* ZEND_FASTCALL zend_new_pair(zval *val1, zval *val2)"
+    },
+    {
+     "new_start": 382,
+     "new_len": 2,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_packed_grow(HashTable *ht)"
+    },
+    {
+     "new_start": 386,
+     "new_len": 5,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_packed_grow(HashTable *ht)"
+    },
+    {
+     "new_start": 392,
+     "new_len": 6,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_packed_grow(HashTable *ht)"
+    },
+    {
+     "new_start": 408,
+     "new_len": 8,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_real_init(HashTable *ht, bool packed)"
+    },
+    {
+     "new_start": 424,
+     "new_len": 9,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_real_init_packed(HashTable *ht)"
+    },
+    {
+     "new_start": 441,
+     "new_len": 10,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_real_init_mixed(HashTable *ht)"
+    },
+    {
+     "new_start": 462,
+     "new_len": 4,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_packed_to_hash(HashTable *ht)"
+    },
+    {
+     "new_start": 479,
+     "new_len": 6,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_packed_to_hash(HashTable *ht)"
+    },
+    {
+     "new_start": 509,
+     "new_len": 1,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_to_packed(HashTable *ht)"
+    },
+    {
+     "new_start": 513,
+     "new_len": 1,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_extend(HashTable *ht, uint32_t nSize, bool"
+    },
+    {
+     "new_start": 519,
+     "new_len": 9,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_extend(HashTable *ht, uint32_t nSize, bool"
+    },
+    {
+     "new_start": 528,
+     "new_len": 0,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_extend(HashTable *ht, uint32_t nSize, bool"
+    },
+    {
+     "new_start": 533,
+     "new_len": 9,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_extend(HashTable *ht, uint32_t nSize, bool"
+    },
+    {
+     "new_start": 549,
+     "new_len": 8,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_extend(HashTable *ht, uint32_t nSize, bool"
+    },
+    {
+     "new_start": 566,
+     "new_len": 12,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_extend(HashTable *ht, uint32_t nSize, bool"
+    },
+    {
+     "new_start": 917,
+     "new_len": 4,
+     "context": "static zend_always_inline zval *_zend_hash_add_or_update_i(HashTable *ht, zend_s"
+    },
+    {
+     "new_start": 923,
+     "new_len": 4,
+     "context": "static zend_always_inline zval *_zend_hash_add_or_update_i(HashTable *ht, zend_s"
+    },
+    {
+     "new_start": 1095,
+     "new_len": 5,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_update(HashTable *ht, zend_string *key, z"
+    },
+    {
+     "new_start": 1110,
+     "new_len": 5,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_add_new(HashTable *ht, zend_string *key,"
+    },
+    {
+     "new_start": 1120,
+     "new_len": 5,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_lookup(HashTable *ht, zend_string *key)"
+    },
+    {
+     "new_start": 1223,
+     "new_len": 4,
+     "context": "static zend_always_inline zval *_zend_hash_index_add_or_update_i(HashTable *ht,"
+    },
+    {
+     "new_start": 1252,
+     "new_len": 4,
+     "context": "static zend_always_inline zval *_zend_hash_index_add_or_update_i(HashTable *ht,"
+    },
+    {
+     "new_start": 1258,
+     "new_len": 1,
+     "context": "static zend_always_inline zval *_zend_hash_index_add_or_update_i(HashTable *ht,"
+    },
+    {
+     "new_start": 1262,
+     "new_len": 5,
+     "context": "static zend_always_inline zval *_zend_hash_index_add_or_update_i(HashTable *ht,"
+    },
+    {
+     "new_start": 1270,
+     "new_len": 4,
+     "context": "static zend_always_inline zval *_zend_hash_index_add_or_update_i(HashTable *ht,"
+    },
+    {
+     "new_start": 1276,
+     "new_len": 4,
+     "context": "static zend_always_inline zval *_zend_hash_index_add_or_update_i(HashTable *ht,"
+    },
+    {
+     "new_start": 1348,
+     "new_len": 5,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_index_update(HashTable *ht, zend_ulong h,"
+    },
+    {
+     "new_start": 1358,
+     "new_len": 5,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_next_index_insert(HashTable *ht, zval *pD"
+    },
+    {
+     "new_start": 1368,
+     "new_len": 5,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_next_index_insert_new(HashTable *ht, zval"
+    },
+    {
+     "new_start": 1378,
+     "new_len": 5,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_index_lookup(HashTable *ht, zend_ulong h)"
+    },
+    {
+     "new_start": 1444,
+     "new_len": 1,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_set_bucket_key(HashTable *ht, Bucket *b,"
+    },
+    {
+     "new_start": 1445,
+     "new_len": 0,
+     "context": "static void ZEND_FASTCALL zend_hash_do_resize(HashTable *ht)"
+    },
+    {
+     "new_start": 1459,
+     "new_len": 4,
+     "context": "static void ZEND_FASTCALL zend_hash_do_resize(HashTable *ht)"
+    },
+    {
+     "new_start": 1470,
+     "new_len": 2,
+     "context": "static void ZEND_FASTCALL zend_hash_do_resize(HashTable *ht)"
+    },
+    {
+     "new_start": 1473,
+     "new_len": 1,
+     "context": "static void ZEND_FASTCALL zend_hash_do_resize(HashTable *ht)"
+    }
+   ],
+   "functions": [
+    [
+     "_zend_is_inconsistent",
+     1
+    ],
+    [
+     "*zend_hash_find_ptr_lc",
+     1
+    ],
+    [
+     "zend_hash_do_resize",
+     5
+    ],
+    [
+     "uint32_t zend_hash_check_size",
+     2
+    ],
+    [
+     "zend_hash_real_init_packed_ex",
+     5
+    ],
+    [
+     "zend_hash_real_init_mixed_ex",
+     6
+    ],
+    [
+     "zend_hash_real_init_ex",
+     3
+    ],
+    [
+     "const HashTable zend_empty_array =",
+     1
+    ],
+    [
+     "_zend_hash_init_int",
+     1
+    ],
+    [
+     "_zend_new_array_0",
+     1
+    ],
+    [
+     "_zend_new_array",
+     1
+    ],
+    [
+     "zend_new_pair",
+     1
+    ],
+    [
+     "zend_hash_packed_grow",
+     3
+    ],
+    [
+     "zend_hash_real_init",
+     1
+    ],
+    [
+     "zend_hash_real_init_packed",
+     1
+    ],
+    [
+     "zend_hash_real_init_mixed",
+     1
+    ],
+    [
+     "zend_hash_packed_to_hash",
+     2
+    ],
+    [
+     "zend_hash_to_packed",
+     1
+    ],
+    [
+     "zend_hash_extend",
+     6
+    ],
+    [
+     "zval *_zend_hash_add_or_update_i",
+     2
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_update",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_add_new",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_lookup",
+     1
+    ],
+    [
+     "zval *_zend_hash_index_add_or_update_i",
+     6
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_index_update",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_next_index_insert",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_next_index_insert_new",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_index_lookup",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_set_bucket_key",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "_zend_fnew_array",
+    "_zend_fnew_array_0",
+    "_zend_hash_fextend",
+    "_zend_hash_finit_int",
+    "_zend_hash_init_int",
+    "zend_hash_check_size",
+    "zend_hash_do_fresize",
+    "zend_hash_extend",
+    "zend_hash_fadd_new",
+    "zend_hash_fconvert_packed_to_hash",
+    "zend_hash_fextend",
+    "zend_hash_flookup",
+    "zend_hash_fupdate",
+    "zend_hash_index_flookup",
+    "zend_hash_index_fupdate",
+    "zend_hash_next_index_finsert",
+    "zend_hash_next_index_finsert_new",
+    "zend_hash_packed_fgrow",
+    "zend_hash_packed_grow",
+    "zend_hash_packed_to_hash",
+    "zend_hash_real_finit",
+    "zend_hash_real_finit_ex",
+    "zend_hash_real_finit_mixed",
+    "zend_hash_real_finit_mixed_ex",
+    "zend_hash_real_finit_packed",
+    "zend_hash_real_finit_packed_ex",
+    "zend_hash_real_init_ex",
+    "zend_hash_real_init_mixed_ex",
+    "zend_hash_real_init_packed_ex",
+    "zend_new_array_singleton"
+   ],
+   "add": 259,
+   "del": 43,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_hash.c"
+  },
+  {
+   "path": "Zend/zend_hash.h",
+   "hunks": [
+    {
+     "new_start": 37,
+     "new_len": 1,
+     "context": ""
+    },
+    {
+     "new_start": 92,
+     "new_len": 1,
+     "context": "extern ZEND_API const HashTable zend_empty_array;"
+    },
+    {
+     "new_start": 120,
+     "new_len": 5,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_packed_grow(HashTable *ht);"
+    },
+    {
+     "new_start": 132,
+     "new_len": 3,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_add_new(HashTable *ht, zend_string *key,z"
+    },
+    {
+     "new_start": 148,
+     "new_len": 4,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_next_index_insert_new(HashTable *ht, zval"
+    },
+    {
+     "new_start": 231,
+     "new_len": 3,
+     "context": "ZEND_API zval* ZEND_FASTCALL zend_hash_index_lookup(HashTable *ht, zend_ulong h)"
+    },
+    {
+     "new_start": 351,
+     "new_len": 10,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_rehash(HashTable *ht);"
+    },
+    {
+     "new_start": 364,
+     "new_len": 2,
+     "context": "ZEND_API void ZEND_FASTCALL zend_hash_rehash(HashTable *ht);"
+    },
+    {
+     "new_start": 369,
+     "new_len": 1,
+     "context": "ZEND_API HashTable* ZEND_FASTCALL _zend_new_array_0(void);"
+    },
+    {
+     "new_start": 380,
+     "new_len": 3,
+     "context": "ZEND_API HashTable* ZEND_FASTCALL zend_proptable_to_symtable(HashTable *ht, bool"
+    },
+    {
+     "new_start": 525,
+     "new_len": 10,
+     "context": "static zend_always_inline zval *zend_symtable_update(HashTable *ht, zend_string"
+    },
+    {
+     "new_start": 546,
+     "new_len": 0,
+     "context": "static zend_always_inline zval *zend_symtable_update_ind(HashTable *ht, zend_str"
+    },
+    {
+     "new_start": 854,
+     "new_len": 1,
+     "context": "static zend_always_inline void *zend_hash_index_add_new_ptr(HashTable *ht, zend_"
+    },
+    {
+     "new_start": 859,
+     "new_len": 8,
+     "context": "static zend_always_inline void *zend_hash_index_update_ptr(HashTable *ht, zend_u"
+    },
+    {
+     "new_start": 871,
+     "new_len": 5,
+     "context": "static zend_always_inline void *zend_hash_index_update_ptr(HashTable *ht, zend_u"
+    }
+   ],
+   "functions": [
+    [
+     "(file scope)",
+     1
+    ],
+    [
+     "extern ZEND_API const HashTable zend_empty_array;",
+     1
+    ],
+    [
+     "zend_hash_packed_grow",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_add_new",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_next_index_insert_new",
+     1
+    ],
+    [
+     "zval* ZEND_FASTCALL zend_hash_index_lookup",
+     1
+    ],
+    [
+     "zend_hash_rehash",
+     2
+    ],
+    [
+     "_zend_new_array_0",
+     1
+    ],
+    [
+     "zend_proptable_to_symtable",
+     1
+    ],
+    [
+     "zval *zend_symtable_update",
+     1
+    ],
+    [
+     "zval *zend_symtable_update_ind",
+     1
+    ],
+    [
+     "*zend_hash_index_add_new_ptr",
+     1
+    ],
+    [
+     "*zend_hash_index_update_ptr",
+     2
+    ]
+   ],
+   "added_symbols": [
+    "HASH_FALLIBLE",
+    "HASH_NOMEM",
+    "zend_hash_index_fupdate_ptr",
+    "zend_hash_index_update_ptr",
+    "zend_symtable_fupdate"
+   ],
+   "add": 57,
+   "del": 3,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_hash.h"
+  },
+  {
+   "path": "Zend/zend_objects.c",
+   "hunks": [
+    {
+     "new_start": 99,
+     "new_len": 4,
+     "context": "ZEND_API void zend_objects_destroy_object(zend_object *object)"
+    },
+    {
+     "new_start": 194,
+     "new_len": 12,
+     "context": "ZEND_API zend_object* ZEND_FASTCALL zend_objects_new(zend_class_entry *ce)"
+    }
+   ],
+   "functions": [
+    [
+     "zend_objects_destroy_object",
+     1
+    ],
+    [
+     "zend_object* ZEND_FASTCALL zend_objects_new",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "zend_objects_fnew"
+   ],
+   "add": 16,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_objects.c"
+  },
+  {
+   "path": "Zend/zend_objects.h",
+   "hunks": [
+    {
+     "new_start": 28,
+     "new_len": 1,
+     "context": "ZEND_API zend_object* ZEND_FASTCALL zend_objects_new(zend_class_entry *ce);"
+    }
+   ],
+   "functions": [
+    [
+     "zend_object* ZEND_FASTCALL zend_objects_new",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 1,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_objects.h"
+  },
+  {
+   "path": "Zend/zend_operators.c",
+   "hunks": [
+    {
+     "new_start": 2857,
+     "new_len": 1,
+     "context": "ZEND_API char* ZEND_FASTCALL zend_str_toupper_dup_ex(const char *source, size_t"
+    },
+    {
+     "new_start": 2868,
+     "new_len": 4,
+     "context": "ZEND_API zend_string* ZEND_FASTCALL zend_string_tolower_ex(zend_string *str, boo"
+    },
+    {
+     "new_start": 2892,
+     "new_len": 4,
+     "context": "ZEND_API zend_string* ZEND_FASTCALL zend_string_tolower_ex(zend_string *str, boo"
+    },
+    {
+     "new_start": 2910,
+     "new_len": 5,
+     "context": "ZEND_API zend_string* ZEND_FASTCALL zend_string_tolower_ex(zend_string *str, boo"
+    },
+    {
+     "new_start": 2917,
+     "new_len": 5,
+     "context": "ZEND_API zend_string* ZEND_FASTCALL zend_string_tolower_ex(zend_string *str, boo"
+    }
+   ],
+   "functions": [
+    [
+     "char* ZEND_FASTCALL zend_str_toupper_dup_ex",
+     1
+    ],
+    [
+     "zend_string* ZEND_FASTCALL zend_string_tolower_ex",
+     4
+    ]
+   ],
+   "added_symbols": [
+    "_zend_string_ftolower_ex",
+    "zend_string_ftolower_ex",
+    "zend_string_tolower_ex"
+   ],
+   "add": 19,
+   "del": 3,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_operators.c"
+  },
+  {
+   "path": "Zend/zend_operators.h",
+   "hunks": [
+    {
+     "new_start": 455,
+     "new_len": 2,
+     "context": "ZEND_API zend_string* ZEND_FASTCALL zend_string_toupper_ex(zend_string *str, boo"
+    },
+    {
+     "new_start": 464,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string* zend_string_toupper(zend_string *str) {"
+    }
+   ],
+   "functions": [
+    [
+     "zend_string* ZEND_FASTCALL zend_string_toupper_ex",
+     1
+    ],
+    [
+     "zend_string* zend_string_toupper",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "zend_string_ftolower"
+   ],
+   "add": 6,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_operators.h"
+  },
+  {
+   "path": "Zend/zend_smart_str.c",
+   "hunks": [
+    {
+     "new_start": 29,
+     "new_len": 1,
+     "context": ""
+    },
+    {
+     "new_start": 32,
+     "new_len": 1,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_erealloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 35,
+     "new_len": 5,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_erealloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 42,
+     "new_len": 7,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_erealloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 50,
+     "new_len": 1,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_erealloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 53,
+     "new_len": 11,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_erealloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 66,
+     "new_len": 1,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_realloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 69,
+     "new_len": 5,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_realloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 76,
+     "new_len": 7,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_realloc(smart_str *str, size_t len)"
+    },
+    {
+     "new_start": 84,
+     "new_len": 11,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_realloc(smart_str *str, size_t len)"
+    }
+   ],
+   "functions": [
+    [
+     "(file scope)",
+     1
+    ],
+    [
+     "smart_str_erealloc",
+     5
+    ],
+    [
+     "smart_str_realloc",
+     4
+    ]
+   ],
+   "added_symbols": [
+    "i_smart_str_erealloc",
+    "i_smart_str_realloc",
+    "smart_str_erealloc",
+    "smart_str_ferealloc",
+    "smart_str_frealloc",
+    "smart_str_realloc"
+   ],
+   "add": 50,
+   "del": 10,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_smart_str.c"
+  },
+  {
+   "path": "Zend/zend_smart_str.h",
+   "hunks": [
+    {
+     "new_start": 27,
+     "new_len": 1,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_erealloc(smart_str *str, size_t len);"
+    },
+    {
+     "new_start": 29,
+     "new_len": 1,
+     "context": "ZEND_API void ZEND_FASTCALL smart_str_realloc(smart_str *str, size_t len);"
+    },
+    {
+     "new_start": 41,
+     "new_len": 1,
+     "context": "END_EXTERN_C()"
+    },
+    {
+     "new_start": 49,
+     "new_len": 5,
+     "context": "static zend_always_inline size_t smart_str_alloc(smart_str *str, size_t len, boo"
+    },
+    {
+     "new_start": 55,
+     "new_len": 5,
+     "context": "static zend_always_inline size_t smart_str_alloc(smart_str *str, size_t len, boo"
+    },
+    {
+     "new_start": 66,
+     "new_len": 12,
+     "context": "static zend_always_inline size_t smart_str_alloc(smart_str *str, size_t len, boo"
+    },
+    {
+     "new_start": 83,
+     "new_len": 4,
+     "context": "static zend_always_inline char* smart_str_extend_ex(smart_str *dest, size_t len,"
+    },
+    {
+     "new_start": 152,
+     "new_len": 6,
+     "context": "static zend_always_inline void smart_str_appendc_ex(smart_str *dest, char ch, bo"
+    },
+    {
+     "new_start": 160,
+     "new_len": 5,
+     "context": "static zend_always_inline void smart_str_appendl_ex(smart_str *dest, const char"
+    }
+   ],
+   "functions": [
+    [
+     "smart_str_erealloc",
+     1
+    ],
+    [
+     "smart_str_realloc",
+     1
+    ],
+    [
+     "END_EXTERN_C",
+     1
+    ],
+    [
+     "smart_str_alloc",
+     3
+    ],
+    [
+     "char* smart_str_extend_ex",
+     1
+    ],
+    [
+     "smart_str_appendc_ex",
+     1
+    ],
+    [
+     "smart_str_appendl_ex",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "smart_str_alloc",
+    "smart_str_appendl_ex",
+    "smart_str_extend_ex",
+    "smart_str_falloc",
+    "smart_str_fappendl_ex",
+    "smart_str_fextend_ex"
+   ],
+   "add": 40,
+   "del": 7,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_smart_str.h"
+  },
+  {
+   "path": "Zend/zend_string.c",
+   "hunks": [
+    {
+     "new_start": 132,
+     "new_len": 12,
+     "context": "ZEND_API void zend_interned_strings_dtor(void)"
+    },
+    {
+     "new_start": 299,
+     "new_len": 4,
+     "context": "static zend_string* ZEND_FASTCALL zend_string_init_existing_interned_permanent(c"
+    },
+    {
+     "new_start": 351,
+     "new_len": 4,
+     "context": "static zend_string* ZEND_FASTCALL zend_string_init_existing_interned_request(con"
+    }
+   ],
+   "functions": [
+    [
+     "zend_interned_strings_dtor",
+     1
+    ],
+    [
+     "zend_string* ZEND_FASTCALL zend_string_init_existing_interned_permanent",
+     1
+    ],
+    [
+     "zend_string* ZEND_FASTCALL zend_string_init_existing_interned_request",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "zend_string_finit_existing_interned"
+   ],
+   "add": 20,
+   "del": 2,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_string.c"
+  },
+  {
+   "path": "Zend/zend_string.h",
+   "hunks": [
+    {
+     "new_start": 39,
+     "new_len": 1,
+     "context": "ZEND_API zend_string* ZEND_FASTCALL zend_interned_string_find_permanent(zend_str"
+    },
+    {
+     "new_start": 151,
+     "new_len": 2,
+     "context": "static zend_always_inline uint32_t zend_string_delref(zend_string *s)"
+    },
+    {
+     "new_start": 154,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_alloc(size_t len, bool persis"
+    },
+    {
+     "new_start": 166,
+     "new_len": 1,
+     "context": "static zend_always_inline zend_string *zend_string_alloc(size_t len, bool persis"
+    },
+    {
+     "new_start": 168,
+     "new_len": 10,
+     "context": "static zend_always_inline zend_string *zend_string_safe_alloc(size_t n, size_t m"
+    },
+    {
+     "new_start": 186,
+     "new_len": 5,
+     "context": "static zend_always_inline zend_string *zend_string_safe_alloc(size_t n, size_t m"
+    },
+    {
+     "new_start": 200,
+     "new_len": 13,
+     "context": "static zend_always_inline zend_string *zend_string_init(const char *str, size_t"
+    },
+    {
+     "new_start": 215,
+     "new_len": 1,
+     "context": "static zend_always_inline zend_string *zend_string_init_fast(const char *str, si"
+    },
+    {
+     "new_start": 223,
+     "new_len": 5,
+     "context": "static zend_always_inline zend_string *zend_string_init_fast(const char *str, si"
+    },
+    {
+     "new_start": 258,
+     "new_len": 1,
+     "context": "static zend_always_inline zend_string *zend_string_separate(zend_string *s, bool"
+    },
+    {
+     "new_start": 264,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_realloc(zend_string *s, size_"
+    },
+    {
+     "new_start": 273,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_realloc(zend_string *s, size_"
+    },
+    {
+     "new_start": 284,
+     "new_len": 6,
+     "context": "static zend_always_inline zend_string *zend_string_realloc(zend_string *s, size_"
+    },
+    {
+     "new_start": 296,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_extend(zend_string *s, size_t"
+    },
+    {
+     "new_start": 305,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_extend(zend_string *s, size_t"
+    },
+    {
+     "new_start": 316,
+     "new_len": 6,
+     "context": "static zend_always_inline zend_string *zend_string_extend(zend_string *s, size_t"
+    },
+    {
+     "new_start": 328,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_truncate(zend_string *s, size"
+    },
+    {
+     "new_start": 337,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_truncate(zend_string *s, size"
+    },
+    {
+     "new_start": 348,
+     "new_len": 6,
+     "context": "static zend_always_inline zend_string *zend_string_truncate(zend_string *s, size"
+    },
+    {
+     "new_start": 359,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_safe_realloc(zend_string *s,"
+    },
+    {
+     "new_start": 368,
+     "new_len": 4,
+     "context": "static zend_always_inline zend_string *zend_string_safe_realloc(zend_string *s,"
+    },
+    {
+     "new_start": 379,
+     "new_len": 5,
+     "context": "static zend_always_inline zend_string *zend_string_safe_realloc(zend_string *s,"
+    }
+   ],
+   "functions": [
+    [
+     "zend_string* ZEND_FASTCALL zend_interned_string_find_permanent",
+     1
+    ],
+    [
+     "uint32_t zend_string_delref",
+     1
+    ],
+    [
+     "zend_string *zend_string_alloc",
+     2
+    ],
+    [
+     "zend_string *zend_string_safe_alloc",
+     2
+    ],
+    [
+     "zend_string *zend_string_init",
+     1
+    ],
+    [
+     "zend_string *zend_string_init_fast",
+     2
+    ],
+    [
+     "zend_string *zend_string_separate",
+     1
+    ],
+    [
+     "zend_string *zend_string_realloc",
+     3
+    ],
+    [
+     "zend_string *zend_string_extend",
+     3
+    ],
+    [
+     "zend_string *zend_string_truncate",
+     3
+    ],
+    [
+     "zend_string *zend_string_safe_realloc",
+     3
+    ]
+   ],
+   "added_symbols": [
+    "zend_string_alloc",
+    "zend_string_extend",
+    "zend_string_falloc",
+    "zend_string_fextend",
+    "zend_string_finit",
+    "zend_string_finit_fast",
+    "zend_string_frealloc",
+    "zend_string_ftruncate",
+    "zend_string_init_fast",
+    "zend_string_realloc",
+    "zend_string_safe_alloc",
+    "zend_string_safe_falloc",
+    "zend_string_safe_frealloc",
+    "zend_string_safe_realloc",
+    "zend_string_truncate"
+   ],
+   "add": 98,
+   "del": 18,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_string.h"
+  },
+  {
+   "path": "Zend/zend_types.h",
+   "hunks": [
+    {
+     "new_start": 470,
+     "new_len": 15,
+     "context": "struct _zend_array {"
+    }
+   ],
+   "functions": [
+    [
+     "struct _zend_array",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 15,
+   "del": 11,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_types.h"
+  },
+  {
+   "path": "Zend/zend_vm_def.h",
+   "hunks": [
+    {
+     "new_start": 3336,
+     "new_len": 1,
+     "context": "ZEND_VM_HANDLER(56, ZEND_ROPE_END, TMP, CONST|TMPVAR|CV, NUM)"
+    },
+    {
+     "new_start": 3955,
+     "new_len": 1,
+     "context": "ZEND_VM_HOT_HANDLER(129, ZEND_DO_ICALL, ANY, ANY, SPEC(RETVAL,OBSERVER))"
+    },
+    {
+     "new_start": 4076,
+     "new_len": 1,
+     "context": "ZEND_VM_HOT_HANDLER(131, ZEND_DO_FCALL_BY_NAME, ANY, ANY, SPEC(RETVAL,OBSERVER))"
+    },
+    {
+     "new_start": 4188,
+     "new_len": 1,
+     "context": "ZEND_VM_HOT_HANDLER(60, ZEND_DO_FCALL, ANY, ANY, SPEC(RETVAL,OBSERVER))"
+    },
+    {
+     "new_start": 6183,
+     "new_len": 1,
+     "context": "ZEND_VM_HANDLER(71, ZEND_INIT_ARRAY, CONST|TMP|VAR|CV|UNUSED, CONST|TMPVAR|UNUSE"
+    },
+    {
+     "new_start": 7625,
+     "new_len": 1,
+     "context": "ZEND_VM_HOT_NOCONST_HANDLER(198, ZEND_JMP_NULL, CONST|TMP|VAR|CV, JMP_ADDR)"
+    },
+    {
+     "new_start": 7938,
+     "new_len": 8,
+     "context": "ZEND_VM_HANDLER(149, ZEND_HANDLE_EXCEPTION, ANY, ANY)"
+    },
+    {
+     "new_start": 8790,
+     "new_len": 1,
+     "context": "ZEND_VM_HANDLER(158, ZEND_CALL_TRAMPOLINE, ANY, ANY, SPEC(OBSERVER))"
+    },
+    {
+     "new_start": 9988,
+     "new_len": 3,
+     "context": "ZEND_VM_HELPER(zend_interrupt_helper, ANY, ANY)"
+    }
+   ],
+   "functions": [
+    [
+     "ZEND_VM_HANDLER",
+     4
+    ],
+    [
+     "ZEND_VM_HOT_HANDLER",
+     3
+    ],
+    [
+     "ZEND_VM_HOT_NOCONST_HANDLER",
+     1
+    ],
+    [
+     "ZEND_VM_HELPER",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 18,
+   "del": 5,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_vm_def.h"
+  },
+  {
+   "path": "Zend/zend_vm_execute.h",
+   "hunks": [],
+   "functions": [],
+   "added_symbols": [],
+   "add": 0,
+   "del": 0,
+   "area": "Zend",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_vm_execute.h"
+  },
+  {
+   "path": "ext/session/php_session.h",
+   "hunks": [
+    {
+     "new_start": 205,
+     "new_len": 2,
+     "context": "typedef struct _php_ps_globals {"
+    }
+   ],
+   "functions": [
+    [
+     "typedef struct _php_ps_globals",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 2,
+   "del": 0,
+   "area": "ext/session",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/session/php_session.h"
+  },
+  {
+   "path": "ext/session/session.c",
+   "hunks": [
+    {
+     "new_start": 110,
+     "new_len": 0,
+     "context": "static inline void php_rinit_session_globals(void) /* {{{ */"
+    },
+    {
+     "new_start": 120,
+     "new_len": 1,
+     "context": "static inline void php_rinit_session_globals(void) /* {{{ */"
+    },
+    {
+     "new_start": 848,
+     "new_len": 22,
+     "context": "PHP_INI_END()"
+    },
+    {
+     "new_start": 876,
+     "new_len": 1,
+     "context": "PS_SERIALIZER_ENCODE_FUNC(php_serialize) /* {{{ */"
+    },
+    {
+     "new_start": 893,
+     "new_len": 1,
+     "context": "PS_SERIALIZER_DECODE_FUNC(php_serialize) /* {{{ */"
+    },
+    {
+     "new_start": 926,
+     "new_len": 1,
+     "context": "PS_SERIALIZER_ENCODE_FUNC(php_binary) /* {{{ */"
+    },
+    {
+     "new_start": 950,
+     "new_len": 1,
+     "context": "PS_SERIALIZER_DECODE_FUNC(php_binary) /* {{{ */"
+    },
+    {
+     "new_start": 992,
+     "new_len": 1,
+     "context": "PS_SERIALIZER_ENCODE_FUNC(php) /* {{{ */"
+    },
+    {
+     "new_start": 1022,
+     "new_len": 1,
+     "context": "PS_SERIALIZER_DECODE_FUNC(php) /* {{{ */"
+    },
+    {
+     "new_start": 2804,
+     "new_len": 1,
+     "context": "static PHP_GINIT_FUNCTION(ps) /* {{{ */"
+    },
+    {
+     "new_start": 3004,
+     "new_len": 6,
+     "context": "static void php_session_rfc1867_update(php_session_rfc1867_progress *progress, i"
+    },
+    {
+     "new_start": 3019,
+     "new_len": 1,
+     "context": "static void php_session_rfc1867_update(php_session_rfc1867_progress *progress, i"
+    },
+    {
+     "new_start": 3024,
+     "new_len": 5,
+     "context": "static void php_session_rfc1867_cleanup(php_session_rfc1867_progress *progress)"
+    },
+    {
+     "new_start": 3035,
+     "new_len": 1,
+     "context": "static void php_session_rfc1867_cleanup(php_session_rfc1867_progress *progress)"
+    },
+    {
+     "new_start": 3049,
+     "new_len": 4,
+     "context": "static zend_result php_session_rfc1867_callback(unsigned int event, void *event_"
+    },
+    {
+     "new_start": 3059,
+     "new_len": 4,
+     "context": "static zend_result php_session_rfc1867_callback(unsigned int event, void *event_"
+    },
+    {
+     "new_start": 3220,
+     "new_len": 5,
+     "context": "static zend_result php_session_rfc1867_callback(unsigned int event, void *event_"
+    }
+   ],
+   "functions": [
+    [
+     "php_rinit_session_globals",
+     2
+    ],
+    [
+     "PHP_INI_END",
+     1
+    ],
+    [
+     "PS_SERIALIZER_ENCODE_FUNC",
+     3
+    ],
+    [
+     "PS_SERIALIZER_DECODE_FUNC",
+     3
+    ],
+    [
+     "PHP_GINIT_FUNCTION",
+     1
+    ],
+    [
+     "php_session_rfc1867_update",
+     2
+    ],
+    [
+     "php_session_rfc1867_cleanup",
+     2
+    ],
+    [
+     "php_session_rfc1867_callback",
+     3
+    ]
+   ],
+   "added_symbols": [
+    "php_session_serialize_init",
+    "php_session_unserialize_init"
+   ],
+   "add": 56,
+   "del": 11,
+   "area": "ext/session",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/session/session.c"
+  },
+  {
+   "path": "main/SAPI.c",
+   "hunks": [
+    {
+     "new_start": 169,
+     "new_len": 4,
+     "context": "SAPI_API void sapi_handle_post(void *arg)"
+    },
+    {
+     "new_start": 176,
+     "new_len": 1,
+     "context": "SAPI_API void sapi_handle_post(void *arg)"
+    },
+    {
+     "new_start": 1028,
+     "new_len": 1,
+     "context": "SAPI_API char *sapi_getenv(const char *name, size_t name_len)"
+    }
+   ],
+   "functions": [
+    [
+     "sapi_handle_post",
+     2
+    ],
+    [
+     "sapi_getenv",
+     1
+    ]
+   ],
+   "added_symbols": [
+    "sapi_read_post_data"
+   ],
+   "add": 6,
+   "del": 2,
+   "area": "main",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/SAPI.c"
+  },
+  {
+   "path": "main/SAPI.h",
+   "hunks": [
+    {
+     "new_start": 189,
+     "new_len": 1,
+     "context": "SAPI_API void sapi_handle_post(void *arg);"
+    }
+   ],
+   "functions": [
+    [
+     "sapi_handle_post",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 1,
+   "del": 0,
+   "area": "main",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/SAPI.h"
+  },
+  {
+   "path": "main/main.c",
+   "hunks": [
+    {
+     "new_start": 285,
+     "new_len": 24,
+     "context": "static PHP_INI_MH(OnChangeMemoryLimit)"
+    },
+    {
+     "new_start": 768,
+     "new_len": 1,
+     "context": "PHP_INI_BEGIN()"
+    },
+    {
+     "new_start": 974,
+     "new_len": 4,
+     "context": "PHPAPI ZEND_COLD void php_verror(const char *docref, const char *params, int typ"
+    },
+    {
+     "new_start": 1304,
+     "new_len": 4,
+     "context": "static ZEND_COLD void php_error_cb(int orig_type, zend_string *error_filename, c"
+    },
+    {
+     "new_start": 1423,
+     "new_len": 1,
+     "context": "static ZEND_COLD void php_error_cb(int orig_type, zend_string *error_filename, c"
+    },
+    {
+     "new_start": 1816,
+     "new_len": 1,
+     "context": "zend_result php_request_startup(void)"
+    },
+    {
+     "new_start": 1862,
+     "new_len": 5,
+     "context": "zend_result php_request_startup(void)"
+    },
+    {
+     "new_start": 1877,
+     "new_len": 1,
+     "context": "void php_request_shutdown(void *dummy)"
+    },
+    {
+     "new_start": 1934,
+     "new_len": 2,
+     "context": "void php_request_shutdown(void *dummy)"
+    },
+    {
+     "new_start": 1968,
+     "new_len": 1,
+     "context": "void php_request_shutdown(void *dummy)"
+    },
+    {
+     "new_start": 1972,
+     "new_len": 1,
+     "context": "void php_request_shutdown(void *dummy)"
+    },
+    {
+     "new_start": 1993,
+     "new_len": 3,
+     "context": "void php_request_shutdown(void *dummy)"
+    }
+   ],
+   "functions": [
+    [
+     "PHP_INI_MH",
+     1
+    ],
+    [
+     "PHP_INI_BEGIN",
+     1
+    ],
+    [
+     "php_verror",
+     1
+    ],
+    [
+     "php_error_cb",
+     2
+    ],
+    [
+     "php_request_startup",
+     2
+    ],
+    [
+     "php_request_shutdown",
+     5
+    ]
+   ],
+   "added_symbols": [],
+   "add": 48,
+   "del": 2,
+   "area": "main",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/main.c"
+  },
+  {
+   "path": "main/php_variables.c",
+   "hunks": [
+    {
+     "new_start": 221,
+     "new_len": 7,
+     "context": "PHPAPI void php_register_variable_ex(const char *var_name, zval *val, zval *trac"
+    },
+    {
+     "new_start": 259,
+     "new_len": 1,
+     "context": "PHPAPI void php_register_variable_ex(const char *var_name, zval *val, zval *trac"
+    },
+    {
+     "new_start": 276,
+     "new_len": 1,
+     "context": "PHPAPI void php_register_variable_ex(const char *var_name, zval *val, zval *trac"
+    },
+    {
+     "new_start": 284,
+     "new_len": 1,
+     "context": "PHPAPI void php_register_variable_ex(const char *var_name, zval *val, zval *trac"
+    },
+    {
+     "new_start": 385,
+     "new_len": 4,
+     "context": "static bool add_post_var(zval *arr, post_var_data_t *var, bool eof)"
+    },
+    {
+     "new_start": 396,
+     "new_len": 4,
+     "context": "static bool add_post_var(zval *arr, post_var_data_t *var, bool eof)"
+    },
+    {
+     "new_start": 421,
+     "new_len": 6,
+     "context": "static inline int add_post_vars(zval *arr, post_var_data_t *vars, bool eof)"
+    },
+    {
+     "new_start": 456,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(php_std_post_handler)"
+    },
+    {
+     "new_start": 501,
+     "new_len": 1,
+     "context": "SAPI_API SAPI_TREAT_DATA_FUNC(php_default_treat_data)"
+    }
+   ],
+   "functions": [
+    [
+     "php_register_variable_ex",
+     4
+    ],
+    [
+     "add_post_var",
+     2
+    ],
+    [
+     "add_post_vars",
+     1
+    ],
+    [
+     "SAPI_POST_HANDLER_FUNC",
+     1
+    ],
+    [
+     "SAPI_TREAT_DATA_FUNC",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 30,
+   "del": 4,
+   "area": "main",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/php_variables.c"
+  },
+  {
+   "path": "main/rfc1867.c",
+   "hunks": [
+    {
+     "new_start": 54,
+     "new_len": 1,
+     "context": "PHPAPI int (*php_rfc1867_callback)(unsigned int event, void *event_data, void **"
+    },
+    {
+     "new_start": 143,
+     "new_len": 1,
+     "context": "static void normalize_protected_variable(char *varname) /* {{{ */"
+    },
+    {
+     "new_start": 147,
+     "new_len": 1,
+     "context": "static void add_protected_variable(char *varname) /* {{{ */"
+    },
+    {
+     "new_start": 158,
+     "new_len": 1,
+     "context": "static bool is_protected_variable(char *varname) /* {{{ */"
+    },
+    {
+     "new_start": 163,
+     "new_len": 1,
+     "context": "static void safe_php_register_variable(char *var, char *strval, size_t val_len,"
+    },
+    {
+     "new_start": 167,
+     "new_len": 1,
+     "context": "static void safe_php_register_variable(char *var, char *strval, size_t val_len,"
+    },
+    {
+     "new_start": 172,
+     "new_len": 1,
+     "context": "static void safe_php_register_variable_ex(char *var, zval *val, zval *track_vars"
+    },
+    {
+     "new_start": 176,
+     "new_len": 1,
+     "context": "static void safe_php_register_variable_ex(char *var, zval *val, zval *track_vars"
+    },
+    {
+     "new_start": 178,
+     "new_len": 1,
+     "context": "static void register_http_post_files_variable(char *strvar, char *val, zval *htt"
+    },
+    {
+     "new_start": 182,
+     "new_len": 1,
+     "context": "static void register_http_post_files_variable(char *strvar, char *val, zval *htt"
+    },
+    {
+     "new_start": 184,
+     "new_len": 1,
+     "context": "static void register_http_post_files_variable_ex(char *var, zval *val, zval *htt"
+    },
+    {
+     "new_start": 249,
+     "new_len": 4,
+     "context": "static int fill_buffer(multipart_buffer *self)"
+    },
+    {
+     "new_start": 400,
+     "new_len": 8,
+     "context": "static int find_boundary(multipart_buffer *self, char *boundary)"
+    },
+    {
+     "new_start": 447,
+     "new_len": 0,
+     "context": "static int multipart_buffer_headers(multipart_buffer *self, zend_llist *header)"
+    },
+    {
+     "new_start": 449,
+     "new_len": 9,
+     "context": "static int multipart_buffer_headers(multipart_buffer *self, zend_llist *header)"
+    },
+    {
+     "new_start": 463,
+     "new_len": 4,
+     "context": "static int multipart_buffer_headers(multipart_buffer *self, zend_llist *header)"
+    },
+    {
+     "new_start": 478,
+     "new_len": 7,
+     "context": "static int multipart_buffer_headers(multipart_buffer *self, zend_llist *header)"
+    },
+    {
+     "new_start": 542,
+     "new_len": 1,
+     "context": "static char *php_ap_getword(const zend_encoding *encoding, char **line, char sto"
+    },
+    {
+     "new_start": 546,
+     "new_len": 1,
+     "context": "static char *substring_conf(char *start, int len, char quote)"
+    },
+    {
+     "new_start": 574,
+     "new_len": 1,
+     "context": "static char *php_ap_getword_conf(const zend_encoding *encoding, char *str)"
+    },
+    {
+     "new_start": 581,
+     "new_len": 1,
+     "context": "static char *php_ap_getword_conf(const zend_encoding *encoding, char *str)"
+    },
+    {
+     "new_start": 686,
+     "new_len": 5,
+     "context": "static char *multipart_buffer_read_body(multipart_buffer *self, size_t *len)"
+    },
+    {
+     "new_start": 825,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 839,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 865,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 877,
+     "new_len": 6,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 910,
+     "new_len": 6,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 923,
+     "new_len": 10,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 939,
+     "new_len": 8,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 963,
+     "new_len": 6,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 983,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 990,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1009,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1091,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1146,
+     "new_len": 4,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1215,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1232,
+     "new_len": 6,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1249,
+     "new_len": 6,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1259,
+     "new_len": 9,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1274,
+     "new_len": 5,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1300,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1314,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1336,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1352,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1362,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1370,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1410,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1423,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1428,
+     "new_len": 7,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    },
+    {
+     "new_start": 1439,
+     "new_len": 3,
+     "context": "SAPI_API SAPI_POST_HANDLER_FUNC(rfc1867_post_handler) /* {{{ */"
+    }
+   ],
+   "functions": [
+    [
+     "",
+     1
+    ],
+    [
+     "normalize_protected_variable",
+     1
+    ],
+    [
+     "add_protected_variable",
+     1
+    ],
+    [
+     "is_protected_variable",
+     1
+    ],
+    [
+     "safe_php_register_variable",
+     2
+    ],
+    [
+     "safe_php_register_variable_ex",
+     2
+    ],
+    [
+     "register_http_post_files_variable",
+     2
+    ],
+    [
+     "register_http_post_files_variable_ex",
+     1
+    ],
+    [
+     "fill_buffer",
+     1
+    ],
+    [
+     "find_boundary",
+     1
+    ],
+    [
+     "multipart_buffer_headers",
+     4
+    ],
+    [
+     "php_ap_getword",
+     1
+    ],
+    [
+     "substring_conf",
+     1
+    ],
+    [
+     "php_ap_getword_conf",
+     2
+    ],
+    [
+     "multipart_buffer_read_body",
+     1
+    ],
+    [
+     "SAPI_POST_HANDLER_FUNC",
+     28
+    ]
+   ],
+   "added_symbols": [
+    "add_protected_variable",
+    "php_mime_should_save_hdr",
+    "register_http_post_files_variable",
+    "register_http_post_files_variable_ex",
+    "safe_php_register_variable",
+    "safe_php_register_variable_ex",
+    "substring_conf"
+   ],
+   "add": 188,
+   "del": 27,
+   "area": "main",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/rfc1867.c"
+  },
+  {
+   "path": "main/streams/memory.c",
+   "hunks": [
+    {
+     "new_start": 56,
+     "new_len": 5,
+     "context": "static ssize_t php_stream_memory_write(php_stream *stream, const char *buf, size"
+    },
+    {
+     "new_start": 240,
+     "new_len": 5,
+     "context": "static int php_stream_memory_set_option(php_stream *stream, int option, int valu"
+    },
+    {
+     "new_start": 250,
+     "new_len": 5,
+     "context": "static int php_stream_memory_set_option(php_stream *stream, int option, int valu"
+    }
+   ],
+   "functions": [
+    [
+     "ssize_t php_stream_memory_write",
+     1
+    ],
+    [
+     "php_stream_memory_set_option",
+     2
+    ]
+   ],
+   "added_symbols": [],
+   "add": 15,
+   "del": 3,
+   "area": "main",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/streams/memory.c"
+  },
+  {
+   "path": "main/streams/streams.c",
+   "hunks": [
+    {
+     "new_start": 552,
+     "new_len": 4,
+     "context": "PHPAPI zend_result _php_stream_fill_read_buffer(php_stream *stream, size_t size)"
+    },
+    {
+     "new_start": 614,
+     "new_len": 14,
+     "context": "PHPAPI zend_result _php_stream_fill_read_buffer(php_stream *stream, size_t size)"
+    },
+    {
+     "new_start": 689,
+     "new_len": 8,
+     "context": "PHPAPI zend_result _php_stream_fill_read_buffer(php_stream *stream, size_t size)"
+    },
+    {
+     "new_start": 796,
+     "new_len": 4,
+     "context": "PHPAPI zend_string *php_stream_read_to_str(php_stream *stream, size_t len)"
+    },
+    {
+     "new_start": 974,
+     "new_len": 3,
+     "context": "PHPAPI char *_php_stream_get_line(php_stream *stream, char *buf, size_t maxlen,"
+    },
+    {
+     "new_start": 1145,
+     "new_len": 4,
+     "context": "PHPAPI zend_string *php_stream_get_record(php_stream *stream, size_t maxlen, con"
+    },
+    {
+     "new_start": 1491,
+     "new_len": 3,
+     "context": "PHPAPI ssize_t _php_stream_passthru(php_stream * stream STREAMS_DC)"
+    },
+    {
+     "new_start": 1507,
+     "new_len": 3,
+     "context": "PHPAPI ssize_t _php_stream_passthru(php_stream * stream STREAMS_DC)"
+    },
+    {
+     "new_start": 1541,
+     "new_len": 4,
+     "context": "PHPAPI zend_string *_php_stream_copy_to_mem(php_stream *src, size_t maxlen, int"
+    },
+    {
+     "new_start": 1582,
+     "new_len": 4,
+     "context": "PHPAPI zend_string *_php_stream_copy_to_mem(php_stream *src, size_t maxlen, int"
+    },
+    {
+     "new_start": 1592,
+     "new_len": 6,
+     "context": "PHPAPI zend_string *_php_stream_copy_to_mem(php_stream *src, size_t maxlen, int"
+    }
+   ],
+   "functions": [
+    [
+     "_php_stream_fill_read_buffer",
+     3
+    ],
+    [
+     "zend_string *php_stream_read_to_str",
+     1
+    ],
+    [
+     "_php_stream_get_line",
+     1
+    ],
+    [
+     "zend_string *php_stream_get_record",
+     1
+    ],
+    [
+     "ssize_t _php_stream_passthru",
+     2
+    ],
+    [
+     "zend_string *_php_stream_copy_to_mem",
+     3
+    ]
+   ],
+   "added_symbols": [],
+   "add": 57,
+   "del": 12,
+   "area": "main",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/streams/streams.c"
+  },
+  {
+   "path": "sapi/fuzzer/fuzzer-sapi.c",
+   "hunks": [
+    {
+     "new_start": 199,
+     "new_len": 2,
+     "context": "void fuzzer_request_shutdown()"
+    },
+    {
+     "new_start": 277,
+     "new_len": 6,
+     "context": "int fuzzer_do_request_from_buffer("
+    }
+   ],
+   "functions": [
+    [
+     "fuzzer_request_shutdown",
+     1
+    ],
+    [
+     "fuzzer_do_request_from_buffer",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 8,
+   "del": 0,
+   "area": "sapi",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/sapi/fuzzer/fuzzer-sapi.c"
+  },
+  {
+   "path": "sapi/phpdbg/phpdbg.c",
+   "hunks": [
+    {
+     "new_start": 1463,
+     "new_len": 1,
+     "context": "int main(int argc, char **argv) /* {{{ */"
+    }
+   ],
+   "functions": [
+    [
+     "main",
+     1
+    ]
+   ],
+   "added_symbols": [],
+   "add": 1,
+   "del": 1,
+   "area": "sapi",
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/sapi/phpdbg/phpdbg.c"
+  }
+ ],
+ "all_files": [
+  {
+   "path": "Zend/tests/bug40770.phpt",
+   "add": 2,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/bug40770.phpt"
+  },
+  {
+   "path": "Zend/tests/bug54268.phpt",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/bug54268.phpt"
+  },
+  {
+   "path": "Zend/tests/bug76846.phpt",
+   "add": 9,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/bug76846.phpt"
+  },
+  {
+   "path": "Zend/tests/fibers/get-return-after-bailout.phpt",
+   "add": 2,
+   "del": 9,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/fibers/get-return-after-bailout.phpt"
+  },
+  {
+   "path": "Zend/tests/gh11189.phpt",
+   "add": 2,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/gh11189.phpt"
+  },
+  {
+   "path": "Zend/tests/gh11189_1.phpt",
+   "add": 1,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/gh11189_1.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_SplFixedArray___unserialize.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_SplFixedArray___unserialize.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_SplFixedArray___wakeup.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_SplFixedArray___wakeup.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_SplFixedArray_copy_ctor.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_SplFixedArray_copy_ctor.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_SplFixedArray_fromArray_001.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_SplFixedArray_fromArray_001.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_SplFixedArray_fromArray_002.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_SplFixedArray_fromArray_002.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_after_main_script.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_after_main_script.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_fill_001.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_fill_001.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_fill_002.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_fill_002.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_fill_003.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_fill_003.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_fill_004.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_fill_004.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_001.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_001.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_002.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_002.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_003.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_003.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_004.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_004.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_005.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_005.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_006.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_006.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_007.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_007.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_array_pad_008.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_array_pad_008.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_call_function.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_call_function.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_call_function_002.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_call_function_002.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_call_function_003.phpt",
+   "add": 39,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_call_function_003.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_debug_backtrace.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_debug_backtrace.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_debug_backtrace_args.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_debug_backtrace_args.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_debug_backtrace_named_args.phpt",
+   "add": 29,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_debug_backtrace_named_args.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_error_get_last.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_error_get_last.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_exception_trace.phpt",
+   "add": 25,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_exception_trace.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_hard_limit_exceeded.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_hard_limit_exceeded.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_hard_limit_exceeded_during_complilation.phpt",
+   "add": 42,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_hard_limit_exceeded_during_complilation.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_interrupt.phpt",
+   "add": 38,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_interrupt.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_interrupt_unfinished_call_frame.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_interrupt_unfinished_call_frame.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_interrupt_unfinished_call_frame_fiber.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_interrupt_unfinished_call_frame_fiber.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_json_decode_001.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_json_decode_001.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_json_decode_002.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_json_decode_002.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_json_decode_003.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_json_decode_003.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_json_decode_004.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_json_decode_004.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_json_decode_005.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_json_decode_005.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_json_decode_006.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_json_decode_006.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_json_decode_007.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_json_decode_007.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_pending_at_shutdown.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_pending_at_shutdown.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_range_001.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_range_001.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_range_002.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_range_002.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_range_003.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_range_003.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_range_004.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_range_004.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_request_parsing.phpt",
+   "add": 130,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_request_parsing.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_soft_limit_exceeded.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_soft_limit_exceeded.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_soft_limit_exceeded_fcall.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_soft_limit_exceeded_fcall.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_soft_limit_in_callback.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_soft_limit_in_callback.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_str_repeat.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_str_repeat.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_001.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_001.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_002.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_002.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_003.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_003.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_004.phpt",
+   "add": 23,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_004.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_005.phpt",
+   "add": 23,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_005.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_006.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_006.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_007.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_007.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_008.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_008.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_009.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_009.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_011.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_011.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_012.phpt",
+   "add": 23,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_012.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_013.phpt",
+   "add": 28,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_013.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_014.phpt",
+   "add": 28,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_014.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_015.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_015.phpt"
+  },
+  {
+   "path": "Zend/tests/oom_unserialize_016.phpt",
+   "add": 33,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/oom_unserialize_016.phpt"
+  },
+  {
+   "path": "Zend/tests/singleton_array.phpt",
+   "add": 140,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/tests/singleton_array.phpt"
+  },
+  {
+   "path": "Zend/zend.c",
+   "add": 9,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend.c"
+  },
+  {
+   "path": "Zend/zend_API.c",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_API.c"
+  },
+  {
+   "path": "Zend/zend_API.h",
+   "add": 58,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_API.h"
+  },
+  {
+   "path": "Zend/zend_alloc.c",
+   "add": 527,
+   "del": 122,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_alloc.c"
+  },
+  {
+   "path": "Zend/zend_alloc.h",
+   "add": 63,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_alloc.h"
+  },
+  {
+   "path": "Zend/zend_attributes.c",
+   "add": 7,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_attributes.c"
+  },
+  {
+   "path": "Zend/zend_attributes.h",
+   "add": 2,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_attributes.h"
+  },
+  {
+   "path": "Zend/zend_builtin_functions.c",
+   "add": 45,
+   "del": 9,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_builtin_functions.c"
+  },
+  {
+   "path": "Zend/zend_compile.c",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_compile.c"
+  },
+  {
+   "path": "Zend/zend_exceptions.c",
+   "add": 3,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_exceptions.c"
+  },
+  {
+   "path": "Zend/zend_execute.c",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_execute.c"
+  },
+  {
+   "path": "Zend/zend_execute_API.c",
+   "add": 36,
+   "del": 13,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_execute_API.c"
+  },
+  {
+   "path": "Zend/zend_globals.h",
+   "add": 4,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_globals.h"
+  },
+  {
+   "path": "Zend/zend_hash.c",
+   "add": 259,
+   "del": 43,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_hash.c"
+  },
+  {
+   "path": "Zend/zend_hash.h",
+   "add": 57,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_hash.h"
+  },
+  {
+   "path": "Zend/zend_objects.c",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_objects.c"
+  },
+  {
+   "path": "Zend/zend_objects.h",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_objects.h"
+  },
+  {
+   "path": "Zend/zend_operators.c",
+   "add": 19,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_operators.c"
+  },
+  {
+   "path": "Zend/zend_operators.h",
+   "add": 6,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_operators.h"
+  },
+  {
+   "path": "Zend/zend_smart_str.c",
+   "add": 50,
+   "del": 10,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_smart_str.c"
+  },
+  {
+   "path": "Zend/zend_smart_str.h",
+   "add": 40,
+   "del": 7,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_smart_str.h"
+  },
+  {
+   "path": "Zend/zend_string.c",
+   "add": 20,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_string.c"
+  },
+  {
+   "path": "Zend/zend_string.h",
+   "add": 98,
+   "del": 18,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_string.h"
+  },
+  {
+   "path": "Zend/zend_types.h",
+   "add": 15,
+   "del": 11,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_types.h"
+  },
+  {
+   "path": "Zend/zend_vm_def.h",
+   "add": 18,
+   "del": 5,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_vm_def.h"
+  },
+  {
+   "path": "Zend/zend_vm_execute.h",
+   "add": 0,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/Zend/zend_vm_execute.h"
+  },
+  {
+   "path": "ext/bz2/bz2.c",
+   "add": 26,
+   "del": 5,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/bz2/bz2.c"
+  },
+  {
+   "path": "ext/bz2/bz2_filter.c",
+   "add": 5,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/bz2/bz2_filter.c"
+  },
+  {
+   "path": "ext/bz2/tests/oom_bzcompress.phpt",
+   "add": 30,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/bz2/tests/oom_bzcompress.phpt"
+  },
+  {
+   "path": "ext/bz2/tests/oom_bzdecompress.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/bz2/tests/oom_bzdecompress.phpt"
+  },
+  {
+   "path": "ext/bz2/tests/oom_bzip2_decompress_filter.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/bz2/tests/oom_bzip2_decompress_filter.phpt"
+  },
+  {
+   "path": "ext/curl/interface.c",
+   "add": 7,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/curl/interface.c"
+  },
+  {
+   "path": "ext/curl/tests/oom_curl_exec.phpt",
+   "add": 37,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/curl/tests/oom_curl_exec.phpt"
+  },
+  {
+   "path": "ext/curl/tests/oom_curl_multi_exec.phpt",
+   "add": 43,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/curl/tests/oom_curl_multi_exec.phpt"
+  },
+  {
+   "path": "ext/curl/tests/responder/get.inc",
+   "add": 8,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/curl/tests/responder/get.inc"
+  },
+  {
+   "path": "ext/date/lib/parse_date.c",
+   "add": 121,
+   "del": 104,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/lib/parse_date.c"
+  },
+  {
+   "path": "ext/date/lib/parse_date.re",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/lib/parse_date.re"
+  },
+  {
+   "path": "ext/date/lib/parse_iso_intervals.c",
+   "add": 23,
+   "del": 18,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/lib/parse_iso_intervals.c"
+  },
+  {
+   "path": "ext/date/lib/parse_iso_intervals.re",
+   "add": 5,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/lib/parse_iso_intervals.re"
+  },
+  {
+   "path": "ext/date/tests/oom_date_create.phpt",
+   "add": 10,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_date_create.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_date_create_immutable.phpt",
+   "add": 10,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_date_create_immutable.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_date_interval_create_from_date_string.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_date_interval_create_from_date_string.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_date_modify.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_date_modify.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_date_parse.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_date_parse.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_dateinterval_construct.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_dateinterval_construct.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_dateinterval_createfromdatestring.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_dateinterval_createfromdatestring.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_dateperiod_construct.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_dateperiod_construct.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_datetime_construct.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_datetime_construct.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_datetime_modify.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_datetime_modify.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_datetimeimmutable_construct.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_datetimeimmutable_construct.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_datetimeimmutable_modify.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_datetimeimmutable_modify.phpt"
+  },
+  {
+   "path": "ext/date/tests/oom_strtotime.phpt",
+   "add": 10,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/date/tests/oom_strtotime.phpt"
+  },
+  {
+   "path": "ext/dom/tests/oom_xpath.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/dom/tests/oom_xpath.phpt"
+  },
+  {
+   "path": "ext/dom/xpath.c",
+   "add": 14,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/dom/xpath.c"
+  },
+  {
+   "path": "ext/exif/exif.c",
+   "add": 91,
+   "del": 23,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/exif.c"
+  },
+  {
+   "path": "ext/exif/tests/oom_exif_big_thumbnail.inc",
+   "add": 47,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/tests/oom_exif_big_thumbnail.inc"
+  },
+  {
+   "path": "ext/exif/tests/oom_exif_numeric_metadata.phpt",
+   "add": 38,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/tests/oom_exif_numeric_metadata.phpt"
+  },
+  {
+   "path": "ext/exif/tests/oom_exif_read_data_tags.phpt",
+   "add": 38,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/tests/oom_exif_read_data_tags.phpt"
+  },
+  {
+   "path": "ext/exif/tests/oom_exif_scan_jpeg_header.phpt",
+   "add": 29,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/tests/oom_exif_scan_jpeg_header.phpt"
+  },
+  {
+   "path": "ext/exif/tests/oom_exif_thumbnail_large_file_001.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/tests/oom_exif_thumbnail_large_file_001.phpt"
+  },
+  {
+   "path": "ext/exif/tests/oom_exif_thumbnail_large_file_002.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/tests/oom_exif_thumbnail_large_file_002.phpt"
+  },
+  {
+   "path": "ext/exif/tests/oom_exif_thumbnail_tiff.phpt",
+   "add": 32,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/exif/tests/oom_exif_thumbnail_tiff.phpt"
+  },
+  {
+   "path": "ext/fileinfo/libmagic.patch",
+   "add": 54,
+   "del": 48,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/fileinfo/libmagic.patch"
+  },
+  {
+   "path": "ext/fileinfo/libmagic/cdf.c",
+   "add": 38,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/fileinfo/libmagic/cdf.c"
+  },
+  {
+   "path": "ext/fileinfo/tests/oom_cdf_sector_chain.phpt",
+   "add": 76,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/fileinfo/tests/oom_cdf_sector_chain.phpt"
+  },
+  {
+   "path": "ext/filter/filter.c",
+   "add": 24,
+   "del": 5,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/filter.c"
+  },
+  {
+   "path": "ext/filter/sanitizing_filters.c",
+   "add": 19,
+   "del": 4,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/sanitizing_filters.c"
+  },
+  {
+   "path": "ext/filter/tests/oom_filter_default_encoded.phpt",
+   "add": 126,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/tests/oom_filter_default_encoded.phpt"
+  },
+  {
+   "path": "ext/filter/tests/oom_filter_input.phpt",
+   "add": 56,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/tests/oom_filter_input.phpt"
+  },
+  {
+   "path": "ext/filter/tests/oom_filter_input_array.phpt",
+   "add": 56,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/tests/oom_filter_input_array.phpt"
+  },
+  {
+   "path": "ext/filter/tests/oom_filter_var.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/tests/oom_filter_var.phpt"
+  },
+  {
+   "path": "ext/filter/tests/oom_filter_var_array.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/tests/oom_filter_var_array.phpt"
+  },
+  {
+   "path": "ext/filter/tests/oom_filter_var_full_special_chars.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/filter/tests/oom_filter_var_full_special_chars.phpt"
+  },
+  {
+   "path": "ext/gd/libgd/gd.c",
+   "add": 31,
+   "del": 6,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/libgd/gd.c"
+  },
+  {
+   "path": "ext/gd/libgd/gd_gd2.c",
+   "add": 17,
+   "del": 5,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/libgd/gd_gd2.c"
+  },
+  {
+   "path": "ext/gd/libgd/gd_tga.c",
+   "add": 4,
+   "del": 4,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/libgd/gd_tga.c"
+  },
+  {
+   "path": "ext/gd/libgd/gdhelpers.h",
+   "add": 2,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/libgd/gdhelpers.h"
+  },
+  {
+   "path": "ext/gd/libgd/wbmp.c",
+   "add": 1,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/libgd/wbmp.c"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefrombmp.phpt",
+   "add": 28,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefrombmp.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromgd2.phpt",
+   "add": 31,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromgd2.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromgd2_chunkbuf.phpt",
+   "add": 39,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromgd2_chunkbuf.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromgd2_compbuf.phpt",
+   "add": 38,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromgd2_compbuf.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromgd2part.phpt",
+   "add": 31,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromgd2part.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromgd2part_chunkbuf.phpt",
+   "add": 39,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromgd2part_chunkbuf.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromgd2part_compbuf.phpt",
+   "add": 38,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromgd2part_compbuf.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromgif.phpt",
+   "add": 28,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromgif.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefrompng.phpt",
+   "add": 32,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefrompng.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromstring.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromstring.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromtga.phpt",
+   "add": 36,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromtga.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromwbmp.phpt",
+   "add": 33,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromwbmp.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagecreatefromxbm.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagecreatefromxbm.phpt"
+  },
+  {
+   "path": "ext/gd/tests/oom_imagepalettetotruecolor.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/gd/tests/oom_imagepalettetotruecolor.phpt"
+  },
+  {
+   "path": "ext/iconv/iconv.c",
+   "add": 37,
+   "del": 11,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/iconv/iconv.c"
+  },
+  {
+   "path": "ext/iconv/tests/oom_iconv.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/iconv/tests/oom_iconv.phpt"
+  },
+  {
+   "path": "ext/iconv/tests/oom_iconv_mime_decode.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/iconv/tests/oom_iconv_mime_decode.phpt"
+  },
+  {
+   "path": "ext/iconv/tests/oom_iconv_mime_decode_headers.phpt",
+   "add": 13,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/iconv/tests/oom_iconv_mime_decode_headers.phpt"
+  },
+  {
+   "path": "ext/iconv/tests/oom_iconv_mime_encode.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/iconv/tests/oom_iconv_mime_encode.phpt"
+  },
+  {
+   "path": "ext/iconv/tests/oom_iconv_mime_encode_line_length.phpt",
+   "add": 13,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/iconv/tests/oom_iconv_mime_encode_line_length.phpt"
+  },
+  {
+   "path": "ext/iconv/tests/oom_iconv_stream_filter.phpt",
+   "add": 28,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/iconv/tests/oom_iconv_stream_filter.phpt"
+  },
+  {
+   "path": "ext/imap/php_imap.c",
+   "add": 1,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/imap/php_imap.c"
+  },
+  {
+   "path": "ext/imap/tests/oom_imap_mime_header_decode.phpt",
+   "add": 13,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/imap/tests/oom_imap_mime_header_decode.phpt"
+  },
+  {
+   "path": "ext/intl/converter/converter.c",
+   "add": 9,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/intl/converter/converter.c"
+  },
+  {
+   "path": "ext/intl/normalizer/normalizer_normalize.c",
+   "add": 9,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/intl/normalizer/normalizer_normalize.c"
+  },
+  {
+   "path": "ext/intl/tests/oom_normalizer_normalize.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/intl/tests/oom_normalizer_normalize.phpt"
+  },
+  {
+   "path": "ext/intl/tests/oom_normalizer_normalize_func.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/intl/tests/oom_normalizer_normalize_func.phpt"
+  },
+  {
+   "path": "ext/intl/tests/oom_uconverter_convert.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/intl/tests/oom_uconverter_convert.phpt"
+  },
+  {
+   "path": "ext/intl/tests/oom_uconverter_transcode.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/intl/tests/oom_uconverter_transcode.phpt"
+  },
+  {
+   "path": "ext/json/json_encoder.c",
+   "add": 32,
+   "del": 11,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/json_encoder.c"
+  },
+  {
+   "path": "ext/json/json_parser.y",
+   "add": 40,
+   "del": 11,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/json_parser.y"
+  },
+  {
+   "path": "ext/json/json_scanner.re",
+   "add": 5,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/json_scanner.re"
+  },
+  {
+   "path": "ext/json/tests/json_decode_oom_utf8_substitute.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/tests/json_decode_oom_utf8_substitute.phpt"
+  },
+  {
+   "path": "ext/json/tests/json_encode_oom_escape.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/tests/json_encode_oom_escape.phpt"
+  },
+  {
+   "path": "ext/json/tests/json_encode_oom_partial_output.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/tests/json_encode_oom_partial_output.phpt"
+  },
+  {
+   "path": "ext/json/tests/json_encode_oom_pretty_print.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/tests/json_encode_oom_pretty_print.phpt"
+  },
+  {
+   "path": "ext/json/tests/json_encode_oom_string_prealloc.phpt",
+   "add": 13,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/json/tests/json_encode_oom_string_prealloc.phpt"
+  },
+  {
+   "path": "ext/libxml/libxml.c",
+   "add": 6,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/libxml/libxml.c"
+  },
+  {
+   "path": "ext/mbstring/libmbfl/filters/mbfilter_qprint.c",
+   "add": 1,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/libmbfl/filters/mbfilter_qprint.c"
+  },
+  {
+   "path": "ext/mbstring/libmbfl/mbfl/mbfilter.c",
+   "add": 68,
+   "del": 18,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/libmbfl/mbfl/mbfilter.c"
+  },
+  {
+   "path": "ext/mbstring/libmbfl/mbfl/mbfl_encoding.h",
+   "add": 22,
+   "del": 8,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/libmbfl/mbfl/mbfl_encoding.h"
+  },
+  {
+   "path": "ext/mbstring/libmbfl/mbfl/mbfl_memory_device.c",
+   "add": 16,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/libmbfl/mbfl/mbfl_memory_device.c"
+  },
+  {
+   "path": "ext/mbstring/mb_gpc.c",
+   "add": 14,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/mb_gpc.c"
+  },
+  {
+   "path": "ext/mbstring/mbstring.c",
+   "add": 58,
+   "del": 19,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/mbstring.c"
+  },
+  {
+   "path": "ext/mbstring/php_mbregex.c",
+   "add": 8,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/php_mbregex.c"
+  },
+  {
+   "path": "ext/mbstring/php_unicode.c",
+   "add": 49,
+   "del": 25,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/php_unicode.c"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_buf_growth.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_buf_growth.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_convert_case.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_convert_case.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_convert_encoding.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_convert_encoding.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_convert_variables.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_convert_variables.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_convert_variables_many.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_convert_variables_many.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_decode_mimeheader.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_decode_mimeheader.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_encode_mimeheader.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_encode_mimeheader.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_encode_numericentity.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_encode_numericentity.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_ereg_replace.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_ereg_replace.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_eregi_replace.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_eregi_replace.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_parse_str.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_parse_str.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_split.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_split.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_str_split.phpt",
+   "add": 13,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_str_split.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_str_split_filter.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_str_split_filter.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_str_split_fixed_width.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_str_split_fixed_width.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_str_split_length.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_str_split_length.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_strcut_filter.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_strcut_filter.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_strcut_length.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_strcut_length.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_strimwidth.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_strimwidth.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_strtoupper.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_strtoupper.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_substr_count.phpt",
+   "add": 14,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_substr_count.phpt"
+  },
+  {
+   "path": "ext/mbstring/tests/oom_mb_substr_length.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/mbstring/tests/oom_mb_substr_length.phpt"
+  },
+  {
+   "path": "ext/opcache/ZendAccelerator.c",
+   "add": 11,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/opcache/ZendAccelerator.c"
+  },
+  {
+   "path": "ext/opcache/ZendAccelerator.h",
+   "add": 10,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/opcache/ZendAccelerator.h"
+  },
+  {
+   "path": "ext/opcache/jit/zend_jit_arm64.dasc",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/opcache/jit/zend_jit_arm64.dasc"
+  },
+  {
+   "path": "ext/opcache/jit/zend_jit_disasm.c",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/opcache/jit/zend_jit_disasm.c"
+  },
+  {
+   "path": "ext/opcache/jit/zend_jit_x86.dasc",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/opcache/jit/zend_jit_x86.dasc"
+  },
+  {
+   "path": "ext/opcache/zend_file_cache.c",
+   "add": 8,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/opcache/zend_file_cache.c"
+  },
+  {
+   "path": "ext/opcache/zend_persist.c",
+   "add": 59,
+   "del": 8,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/opcache/zend_persist.c"
+  },
+  {
+   "path": "ext/pcre/php_pcre.c",
+   "add": 108,
+   "del": 10,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/php_pcre.c"
+  },
+  {
+   "path": "ext/pcre/tests/oom_preg_filter.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/tests/oom_preg_filter.phpt"
+  },
+  {
+   "path": "ext/pcre/tests/oom_preg_match_all.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/tests/oom_preg_match_all.phpt"
+  },
+  {
+   "path": "ext/pcre/tests/oom_preg_match_captures.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/tests/oom_preg_match_captures.phpt"
+  },
+  {
+   "path": "ext/pcre/tests/oom_preg_replace.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/tests/oom_preg_replace.phpt"
+  },
+  {
+   "path": "ext/pcre/tests/oom_preg_replace_callback.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/tests/oom_preg_replace_callback.phpt"
+  },
+  {
+   "path": "ext/pcre/tests/oom_preg_replace_callback_array.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/tests/oom_preg_replace_callback_array.phpt"
+  },
+  {
+   "path": "ext/pcre/tests/oom_preg_split.phpt",
+   "add": 11,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/pcre/tests/oom_preg_split.phpt"
+  },
+  {
+   "path": "ext/session/php_session.h",
+   "add": 2,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/session/php_session.h"
+  },
+  {
+   "path": "ext/session/session.c",
+   "add": 56,
+   "del": 11,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/session/session.c"
+  },
+  {
+   "path": "ext/session/tests/rfc1867_incomplete_class_reserved_props.phpt",
+   "add": 139,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/session/tests/rfc1867_incomplete_class_reserved_props.phpt"
+  },
+  {
+   "path": "ext/session/tests/rfc1867_no_user_code.phpt",
+   "add": 217,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/session/tests/rfc1867_no_user_code.phpt"
+  },
+  {
+   "path": "ext/session/tests/rfc1867_sid_invalid.phpt",
+   "add": 2,
+   "del": 52,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/session/tests/rfc1867_sid_invalid.phpt"
+  },
+  {
+   "path": "ext/shmop/shmop.c",
+   "add": 4,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/shmop/shmop.c"
+  },
+  {
+   "path": "ext/simplexml/simplexml.c",
+   "add": 74,
+   "del": 26,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/simplexml/simplexml.c"
+  },
+  {
+   "path": "ext/simplexml/tests/oom_array_cast.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/simplexml/tests/oom_array_cast.phpt"
+  },
+  {
+   "path": "ext/simplexml/tests/oom_json_encode.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/simplexml/tests/oom_json_encode.phpt"
+  },
+  {
+   "path": "ext/simplexml/tests/oom_xpath.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/simplexml/tests/oom_xpath.phpt"
+  },
+  {
+   "path": "ext/soap/php_encoding.c",
+   "add": 7,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/php_encoding.c"
+  },
+  {
+   "path": "ext/soap/php_http.c",
+   "add": 24,
+   "del": 4,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/php_http.c"
+  },
+  {
+   "path": "ext/soap/soap.c",
+   "add": 27,
+   "del": 4,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/soap.c"
+  },
+  {
+   "path": "ext/soap/tests/oom_http_server.inc",
+   "add": 69,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_http_server.inc"
+  },
+  {
+   "path": "ext/soap/tests/oom_soap_response.inc",
+   "add": 33,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soap_response.inc"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapclient_call.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapclient_call.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapclient_dorequest_chunked.phpt",
+   "add": 24,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapclient_dorequest_chunked.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapclient_dorequest_close.phpt",
+   "add": 28,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapclient_dorequest_close.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapclient_dorequest_content_length.phpt",
+   "add": 24,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapclient_dorequest_content_length.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapclient_response_headers.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapclient_response_headers.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapclient_soapcall.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapclient_soapcall.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapserver_handle_array.phpt",
+   "add": 30,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapserver_handle_array.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapserver_handle_headers.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapserver_handle_headers.phpt"
+  },
+  {
+   "path": "ext/soap/tests/oom_soapserver_handle_parameters.phpt",
+   "add": 25,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/soap/tests/oom_soapserver_handle_parameters.phpt"
+  },
+  {
+   "path": "ext/spl/spl_fixedarray.c",
+   "add": 64,
+   "del": 26,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/spl/spl_fixedarray.c"
+  },
+  {
+   "path": "ext/standard/array.c",
+   "add": 56,
+   "del": 13,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/array.c"
+  },
+  {
+   "path": "ext/standard/assert.c",
+   "add": 3,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/assert.c"
+  },
+  {
+   "path": "ext/standard/basic_functions.c",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/basic_functions.c"
+  },
+  {
+   "path": "ext/standard/basic_functions.h",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/basic_functions.h"
+  },
+  {
+   "path": "ext/standard/file.c",
+   "add": 18,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/file.c"
+  },
+  {
+   "path": "ext/standard/head.c",
+   "add": 11,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/head.c"
+  },
+  {
+   "path": "ext/standard/html.c",
+   "add": 10,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/html.c"
+  },
+  {
+   "path": "ext/standard/image.c",
+   "add": 14,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/image.c"
+  },
+  {
+   "path": "ext/standard/levenshtein.c",
+   "add": 22,
+   "del": 7,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/levenshtein.c"
+  },
+  {
+   "path": "ext/standard/pack.c",
+   "add": 5,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/pack.c"
+  },
+  {
+   "path": "ext/standard/php_incomplete_class.h",
+   "add": 5,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/php_incomplete_class.h"
+  },
+  {
+   "path": "ext/standard/php_var.h",
+   "add": 2,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/php_var.h"
+  },
+  {
+   "path": "ext/standard/string.c",
+   "add": 151,
+   "del": 27,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/string.c"
+  },
+  {
+   "path": "ext/standard/tests/GHSA-96wq-48vp-hh57.phpt",
+   "add": 2,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/GHSA-96wq-48vp-hh57.phpt"
+  },
+  {
+   "path": "ext/standard/tests/array/oom_array_chunk.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/array/oom_array_chunk.phpt"
+  },
+  {
+   "path": "ext/standard/tests/array/oom_array_map_zip.phpt",
+   "add": 12,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/array/oom_array_map_zip.phpt"
+  },
+  {
+   "path": "ext/standard/tests/file/fread_oom_chunk_size.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/file/fread_oom_chunk_size.phpt"
+  },
+  {
+   "path": "ext/standard/tests/file/fread_oom_filter_chunk_size.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/file/fread_oom_filter_chunk_size.phpt"
+  },
+  {
+   "path": "ext/standard/tests/file/fread_oom_length.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/file/fread_oom_length.phpt"
+  },
+  {
+   "path": "ext/standard/tests/file/oom_file.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/file/oom_file.phpt"
+  },
+  {
+   "path": "ext/standard/tests/file/oom_file_get_contents.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/file/oom_file_get_contents.phpt"
+  },
+  {
+   "path": "ext/standard/tests/image/oom_getimagesize_cws.inc",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/image/oom_getimagesize_cws.inc"
+  },
+  {
+   "path": "ext/standard/tests/image/oom_getimagesize_cws.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/image/oom_getimagesize_cws.phpt"
+  },
+  {
+   "path": "ext/standard/tests/image/oom_getimagesize_xbm.phpt",
+   "add": 23,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/image/oom_getimagesize_xbm.phpt"
+  },
+  {
+   "path": "ext/standard/tests/image/oom_getimagesizefromstring_cws.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/image/oom_getimagesizefromstring_cws.phpt"
+  },
+  {
+   "path": "ext/standard/tests/serialize/incomplete_class_raw_payload_markers.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/serialize/incomplete_class_raw_payload_markers.phpt"
+  },
+  {
+   "path": "ext/standard/tests/streams/bug61115-1.phpt",
+   "add": 3,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/streams/bug61115-1.phpt"
+  },
+  {
+   "path": "ext/standard/tests/streams/oom_stream_copy_to_stream_memory.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/streams/oom_stream_copy_to_stream_memory.phpt"
+  },
+  {
+   "path": "ext/standard/tests/streams/oom_stream_get_contents.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/streams/oom_stream_get_contents.phpt"
+  },
+  {
+   "path": "ext/standard/tests/streams/stream_get_line_oom_chunk_size.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/streams/stream_get_line_oom_chunk_size.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/chunk_split_variation3.phpt",
+   "add": 6,
+   "del": 12,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/chunk_split_variation3.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_explode.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_explode.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_implode.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_implode.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_levenshtein.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_levenshtein.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_nl2br.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_nl2br.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_setcookie_value.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_setcookie_value.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_str_getcsv.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_str_getcsv.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_str_ireplace.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_str_ireplace.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_str_replace.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_str_replace.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_str_split.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_str_split.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_str_word_count.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_str_word_count.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_strtr.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_strtr.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_substr_replace.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_substr_replace.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/oom_unpack.phpt",
+   "add": 17,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/oom_unpack.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/str_pad_variation1.phpt",
+   "add": 1,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/str_pad_variation1.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/wordwrap_memory_limit_002.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/wordwrap_memory_limit_002.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/wordwrap_memory_limit_003.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/wordwrap_memory_limit_003.phpt"
+  },
+  {
+   "path": "ext/standard/tests/strings/wordwrap_memory_limit_004.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/tests/strings/wordwrap_memory_limit_004.phpt"
+  },
+  {
+   "path": "ext/standard/url_scanner_ex.h",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/url_scanner_ex.h"
+  },
+  {
+   "path": "ext/standard/url_scanner_ex.re",
+   "add": 7,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/url_scanner_ex.re"
+  },
+  {
+   "path": "ext/standard/var.c",
+   "add": 62,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/var.c"
+  },
+  {
+   "path": "ext/standard/var_unserializer.re",
+   "add": 124,
+   "del": 15,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/standard/var_unserializer.re"
+  },
+  {
+   "path": "ext/tokenizer/tests/token_get_all_TOKEN_PARSE_oom_feedback.phpt",
+   "add": 15,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/tokenizer/tests/token_get_all_TOKEN_PARSE_oom_feedback.phpt"
+  },
+  {
+   "path": "ext/tokenizer/tokenizer.c",
+   "add": 49,
+   "del": 15,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/tokenizer/tokenizer.c"
+  },
+  {
+   "path": "ext/xml/tests/oom_xml_parse_attributes.phpt",
+   "add": 22,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xml/tests/oom_xml_parse_attributes.phpt"
+  },
+  {
+   "path": "ext/xml/tests/oom_xml_parse_into_struct.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xml/tests/oom_xml_parse_into_struct.phpt"
+  },
+  {
+   "path": "ext/xml/tests/oom_xml_parse_ns.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xml/tests/oom_xml_parse_ns.phpt"
+  },
+  {
+   "path": "ext/xml/xml.c",
+   "add": 38,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xml/xml.c"
+  },
+  {
+   "path": "ext/xmlreader/php_xmlreader.c",
+   "add": 5,
+   "del": 5,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/php_xmlreader.c"
+  },
+  {
+   "path": "ext/xmlreader/tests/oom_xmlreader_getattribute.phpt",
+   "add": 32,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/tests/oom_xmlreader_getattribute.phpt"
+  },
+  {
+   "path": "ext/xmlreader/tests/oom_xmlreader_getattributeno.phpt",
+   "add": 32,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/tests/oom_xmlreader_getattributeno.phpt"
+  },
+  {
+   "path": "ext/xmlreader/tests/oom_xmlreader_getattributens.phpt",
+   "add": 31,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/tests/oom_xmlreader_getattributens.phpt"
+  },
+  {
+   "path": "ext/xmlreader/tests/oom_xmlreader_lookupnamespace.phpt",
+   "add": 32,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/tests/oom_xmlreader_lookupnamespace.phpt"
+  },
+  {
+   "path": "ext/xmlreader/tests/oom_xmlreader_readinnerxml.phpt",
+   "add": 36,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/tests/oom_xmlreader_readinnerxml.phpt"
+  },
+  {
+   "path": "ext/xmlreader/tests/oom_xmlreader_readouterxml.phpt",
+   "add": 32,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/tests/oom_xmlreader_readouterxml.phpt"
+  },
+  {
+   "path": "ext/xmlreader/tests/oom_xmlreader_readstring.phpt",
+   "add": 36,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlreader/tests/oom_xmlreader_readstring.phpt"
+  },
+  {
+   "path": "ext/xmlwriter/php_xmlwriter.c",
+   "add": 5,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/xmlwriter/php_xmlwriter.c"
+  },
+  {
+   "path": "ext/zend_test/test.c",
+   "add": 157,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/test.c"
+  },
+  {
+   "path": "ext/zend_test/test.stub.php",
+   "add": 9,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/test.stub.php"
+  },
+  {
+   "path": "ext/zend_test/test_arginfo.h",
+   "add": 0,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/test_arginfo.h"
+  },
+  {
+   "path": "ext/zend_test/tests/observer_bug81430_2.phpt",
+   "add": 8,
+   "del": 13,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/tests/observer_bug81430_2.phpt"
+  },
+  {
+   "path": "ext/zend_test/tests/observer_bug81435.phpt",
+   "add": 4,
+   "del": 9,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/tests/observer_bug81435.phpt"
+  },
+  {
+   "path": "ext/zend_test/tests/observer_error_01.phpt",
+   "add": 8,
+   "del": 10,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/tests/observer_error_01.phpt"
+  },
+  {
+   "path": "ext/zend_test/tests/observer_fiber_functions_03.phpt",
+   "add": 7,
+   "del": 10,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/tests/observer_fiber_functions_03.phpt"
+  },
+  {
+   "path": "ext/zend_test/tests/zend_test_handle_post_data.phpt",
+   "add": 85,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zend_test/tests/zend_test_handle_post_data.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_deflate_add.phpt",
+   "add": 34,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_deflate_add.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_gzcompress.phpt",
+   "add": 32,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_gzcompress.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_gzdecode.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_gzdecode.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_gzfile.phpt",
+   "add": 35,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_gzfile.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_gzgets.phpt",
+   "add": 36,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_gzgets.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_gzpassthru.phpt",
+   "add": 37,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_gzpassthru.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_inflate_add.phpt",
+   "add": 27,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_inflate_add.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_readgzfile.phpt",
+   "add": 36,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_readgzfile.phpt"
+  },
+  {
+   "path": "ext/zlib/tests/oom_zlib_inflate_filter.phpt",
+   "add": 37,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/tests/oom_zlib_inflate_filter.phpt"
+  },
+  {
+   "path": "ext/zlib/zlib.c",
+   "add": 39,
+   "del": 9,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/zlib.c"
+  },
+  {
+   "path": "ext/zlib/zlib_filter.c",
+   "add": 5,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/ext/zlib/zlib_filter.c"
+  },
+  {
+   "path": "main/SAPI.c",
+   "add": 6,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/SAPI.c"
+  },
+  {
+   "path": "main/SAPI.h",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/SAPI.h"
+  },
+  {
+   "path": "main/main.c",
+   "add": 48,
+   "del": 2,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/main.c"
+  },
+  {
+   "path": "main/php_variables.c",
+   "add": 30,
+   "del": 4,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/php_variables.c"
+  },
+  {
+   "path": "main/rfc1867.c",
+   "add": 188,
+   "del": 27,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/rfc1867.c"
+  },
+  {
+   "path": "main/streams/memory.c",
+   "add": 15,
+   "del": 3,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/streams/memory.c"
+  },
+  {
+   "path": "main/streams/streams.c",
+   "add": 57,
+   "del": 12,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/main/streams/streams.c"
+  },
+  {
+   "path": "run-tests.php",
+   "add": 8,
+   "del": 4,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/run-tests.php"
+  },
+  {
+   "path": "sapi/cli/tests/oom_request_parsing_next_request.phpt",
+   "add": 36,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/sapi/cli/tests/oom_request_parsing_next_request.phpt"
+  },
+  {
+   "path": "sapi/cli/tests/oom_shutdown_function_next_request.phpt",
+   "add": 37,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/sapi/cli/tests/oom_shutdown_function_next_request.phpt"
+  },
+  {
+   "path": "sapi/fpm/tests/bug77023-pm-dynamic-blocking-sigquit.phpt",
+   "add": 1,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/sapi/fpm/tests/bug77023-pm-dynamic-blocking-sigquit.phpt"
+  },
+  {
+   "path": "sapi/fuzzer/fuzzer-sapi.c",
+   "add": 8,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/sapi/fuzzer/fuzzer-sapi.c"
+  },
+  {
+   "path": "sapi/phpdbg/phpdbg.c",
+   "add": 1,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/sapi/phpdbg/phpdbg.c"
+  },
+  {
+   "path": "tests/basic/GHSA-2cv3-554h-jpmh_multipart.phpt",
+   "add": 37,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-2cv3-554h-jpmh_multipart.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-2cv3-554h-jpmh_urlencoded.phpt",
+   "add": 29,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-2cv3-554h-jpmh_urlencoded.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_001.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_001.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_002.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_002.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_003.phpt",
+   "add": 21,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_003.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_004.phpt",
+   "add": 23,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_004.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_005.phpt",
+   "add": 23,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_005.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_006.phpt",
+   "add": 43,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_006.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_007.inc",
+   "add": 3,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_007.inc"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_007.phpt",
+   "add": 63,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_007.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_008.phpt",
+   "add": 44,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_008.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_009.phpt",
+   "add": 44,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_009.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_010.phpt",
+   "add": 45,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_010.phpt"
+  },
+  {
+   "path": "tests/basic/GHSA-f883-x959-3vr9_011.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/GHSA-f883-x959-3vr9_011.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867.inc",
+   "add": 88,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867.inc"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_array_upload_name.phpt",
+   "add": 45,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_array_upload_name.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_early_report.phpt",
+   "add": 34,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_early_report.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_field_name.phpt",
+   "add": 25,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_field_name.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_files.phpt",
+   "add": 29,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_files.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_files_registration.phpt",
+   "add": 58,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_files_registration.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_files_registration_full_path.phpt",
+   "add": 26,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_files_registration_full_path.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_form_value.phpt",
+   "add": 19,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_form_value.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_header_continuation.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_header_continuation.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_header_count.phpt",
+   "add": 18,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_header_count.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_long_header_line.phpt",
+   "add": 45,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_long_header_line.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_mb_encoding.phpt",
+   "add": 114,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_mb_encoding.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_mb_skipif.inc",
+   "add": 5,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_mb_skipif.inc"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_post_vars.phpt",
+   "add": 16,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_post_vars.phpt"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_session_skipif.inc",
+   "add": 5,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_session_skipif.inc"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_skipif.inc",
+   "add": 7,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_skipif.inc"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_target.inc",
+   "add": 2,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_target.inc"
+  },
+  {
+   "path": "tests/basic/oom_rfc1867_upload_progress.phpt",
+   "add": 98,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/basic/oom_rfc1867_upload_progress.phpt"
+  },
+  {
+   "path": "tests/output/gh15179.phpt",
+   "add": 1,
+   "del": 1,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/output/gh15179.phpt"
+  },
+  {
+   "path": "tests/output/oom_in_internal_output_handler.phpt",
+   "add": 20,
+   "del": 0,
+   "url": "https://github.com/php/php-src/blob/3584a98bda0f2c0d367255b046798b0d3a221a19/tests/output/oom_in_internal_output_handler.phpt"
+  }
+ ],
+ "note": "derived by regex from git show -U0 of the fix commit; hunk context lines are what git prints, function names are the hunk header heuristic"
+}

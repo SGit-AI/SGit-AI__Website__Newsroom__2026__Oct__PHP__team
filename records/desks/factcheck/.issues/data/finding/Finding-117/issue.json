@@ -1,0 +1,31 @@
+{
+  "node_id": "8e0fb8be",
+  "node_type": "finding",
+  "node_index": 117,
+  "label": "Finding-117",
+  "title": "The site is 40 sources behind the evidence vault, and the missing ones change what it can say",
+  "description": "The vault head is 31ccc515c29f with 184 source folders; data/sources.json has 144, exported at 200d08971937 (11:35 UTC), which is an ancestor of the head through the 12:06 UTC merge of the collectors' branches. The 40 not exported are 35 captures and 5 failed fetches, mostly by collector-news: Reuters (via RTE, Boursorama and a factbox), The Record, Global News, ABC Australia, BleepingComputer, Tagesspiegel/dpa, and captures of operators' own sites (UNIGE and EPFL, two French prefectures, ANTS, Edinburgh council, NCSC.nl, Overheid.nl, Wikimedia status). The impact checker used them: several operators the site does not list were down, and several it lists as down were back up by 08:19 UTC. Board 039 has asked for this re-export since v0.2; it is still not done. Every page footer names vault 200d08971937 as if it were the vault.",
+  "status": "open",
+  "created_at": 1792694665126,
+  "updated_at": 1792694665334,
+  "created_by": "3c1ebf18",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694665334
+    }
+  ],
+  "properties": {
+    "board": "039",
+    "pages": [
+      "sources/index.html",
+      "impact/index.html",
+      "admin/vault/index.html"
+    ],
+    "severity": "high"
+  }
+}

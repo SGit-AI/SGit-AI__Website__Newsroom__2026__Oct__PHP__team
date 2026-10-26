@@ -1,0 +1,32 @@
+{
+  "node_id": "5ee17dc2",
+  "node_type": "finding",
+  "node_index": 30,
+  "label": "Finding-30",
+  "title": "oxford: Quote is not in the cited source",
+  "description": "oxfordchronicle-councils-offline (sha 35c84729...) does not contain the quoted words; only the collector's notes.md does. The words are in eadt-minister-budget-no-breach (sha 4c8556b5...), an embedded post signed \"Oxford City Council (@OxfordCity) October 21, 2026\". Cite that and change \"via Oxford Chronicle\"; impact.json also says Oxford Chronicle is \"quoting\" the councils' posts, which it is not.",
+  "status": "open",
+  "created_at": 1792694621684,
+  "updated_at": 1792694621882,
+  "created_by": "2cfa2b2c",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694621882
+    }
+  ],
+  "properties": {
+    "claims": [
+      "oxford"
+    ],
+    "pages": [
+      "facts/oxford/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

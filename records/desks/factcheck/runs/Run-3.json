@@ -1,0 +1,12 @@
+{
+ "id": "Run-3",
+ "site_version": "0.13.0",
+ "vault_commit": "1845598d9a38",
+ "site_export_commit": "1845598d9a38",
+ "started": "2026-10-24T01:25Z",
+ "finished": "2026-10-24T02:20Z",
+ "checked": "the seven claims that changed since run 2 (the news desk chief's fixes); every open ticket on them; board 212 and 244; K-009 with 112 more sources in the vault; K-011's capture; the export (now at the vault head, 296 sources); and the first investigation, php-share (the editor's brief of 24 October): 29 measures from the measurers, 127 statements of the share in the vault, 73 page records re-fetched live",
+ "opened": "5 tickets (Evidence-12 high: AWS reworded its key sentence; Evidence-13 CNN; Evidence-14 Wikipedia; Evidence-15 the measurement; Contradiction-12 explained); closed 9: Finding-26, 27, 28, 33, 34, 102, 124 and 125 fixed, K-004 and K-009 explained",
+ "audit": "fc.py check: 0 failures; the new excerpts (The Verge, PCMag, Recorded Future, Insurance Business, TPO) re-found verbatim in their captures. The investigation: 29 of 29 measures, 127 of 127 statements and 81 of 81 live excerpts re-found in the bytes whose sha256 they record, by a check independent of the researchers' own.",
+ "summary": "The editor asked for a pass on 24 October; the scheduled task had not fired since 22 October 20:52 UTC. Seven claims changed: the desk chief's fixes carry the evidence now, so eight findings close and two contradictions are explained (K-004 by the restated counters; K-009 by time: the Foundation describes the IDs at about 15:00 UTC on 20 October, the exploit video came that evening). Finding-32 stays open: the claim note, numbers.json and the front page still say no page names the survey, and Cloudflare links W3Techs. The correction requests R-001 to R-003 no longer wait on the desk. K-011 waits on the capture of PHP's 09:11 UTC reply (board 250). Then the first investigation, at the editor's request: PHP is on 69.3% of the websites whose server-side language W3Techs can identify (80.6% in 2015), on about half of every site the HTTP Archive crawls (48.3%), and WordPress alone on 39.6% of all sites; scanners count about 2 to 3 million internet-facing hosts. '70% of the Internet' starts in Wiz's own X post and blog headline, whose body says 'websites'. Of 73 pages re-checked, none corrected the figure; CNN reworded it twice. AWS quietly narrowed 'broadly exploited' to 'broad exploitation attempts', which this site still quotes (Evidence-12, high)."
+}

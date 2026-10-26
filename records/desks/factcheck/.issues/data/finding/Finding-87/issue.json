@@ -1,0 +1,31 @@
+{
+  "node_id": "4cea7779",
+  "node_type": "finding",
+  "node_index": 87,
+  "label": "Finding-87",
+  "title": "offline-allies: 1 smaller precision and sourcing point",
+  "description": "acn-it-php2shell is flagged primary=false: It is the Italian national cyber agency's own alert (AL07/261021/CSIRT-ITA) on acn.gov.it, which makes it a primary source for Italy's advice.",
+  "status": "open",
+  "created_at": 1792694650673,
+  "updated_at": 1792694650955,
+  "created_by": "064a3b1a",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694650955
+    }
+  ],
+  "properties": {
+    "claims": [
+      "offline-allies"
+    ],
+    "pages": [
+      "facts/offline-allies/index.html"
+    ],
+    "severity": "low"
+  }
+}

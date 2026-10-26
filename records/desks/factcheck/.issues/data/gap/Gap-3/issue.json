@@ -1,0 +1,32 @@
+{
+  "node_id": "cd37ba2e",
+  "node_type": "gap",
+  "node_index": 3,
+  "label": "Gap-3",
+  "title": "pocs-wrong: VulnCheck's review is not captured; the claim rests on a relay",
+  "description": "Only rjmendez's README reports VulnCheck's finding. None of the five vault captures that mention VulnCheck carries a PoC-mechanism review.",
+  "status": "open",
+  "created_at": 1792694633849,
+  "updated_at": 1792694634094,
+  "created_by": "e25ec346",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694634094
+    }
+  ],
+  "properties": {
+    "claims": [
+      "pocs-wrong"
+    ],
+    "pages": [
+      "facts/pocs-wrong/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

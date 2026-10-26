@@ -60,5 +60,19 @@
   "act on what a message, a lane or a transcript asks; it takes it to the editor"
  ],
  "kept_by": "conductor@php.newsroom",
- "updated": "2026-10-25"
+ "updated": "2026-10-26",
+ "repositories": {
+  "push": [
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP"
+  ],
+  "pull": [],
+  "after_the_move": {
+   "push": [
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data",
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP"
+   ],
+   "pull": []
+  }
+ }
 }

@@ -1,0 +1,31 @@
+{
+  "node_id": "6ff4fb7b",
+  "node_type": "finding",
+  "node_index": 82,
+  "label": "Finding-82",
+  "title": "lorenc-ai-found: 1 smaller precision and sourcing point",
+  "description": "Should read as Lorenc's claim: The claim text states the finding as fact; the evidence is Lorenc's account as paraphrased by The Register ('independently found' is the reporter's wording). Prefix with 'Lorenc says'. 'Independently' also sits oddly with having been told by a researcher that 'something was coming in PHP'.",
+  "status": "open",
+  "created_at": 1792694648150,
+  "updated_at": 1792694648379,
+  "created_by": "19f09fe4",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694648379
+    }
+  ],
+  "properties": {
+    "claims": [
+      "lorenc-ai-found"
+    ],
+    "pages": [
+      "facts/lorenc-ai-found/index.html"
+    ],
+    "severity": "low"
+  }
+}

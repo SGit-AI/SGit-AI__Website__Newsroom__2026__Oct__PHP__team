@@ -156,6 +156,30 @@ Separately, every executable inline script on the four sites (198) was hashed an
 
 ![The main site, staged, with the Ask pane open: its scripts all came from the press](assets/briefs/split-site-ask.png)
 
+## Expectations, for the run and the review (26 October)
+
+The editor asked, on the evening of 25 October, what the pipeline costs now and what it should cost once the agents write the six repositories, so that a run of a day or two can be reviewed against a number. Measured from GitHub's run logs (v1: 194 deploy runs since 22 October; the six: three runs each on the night they went live) and from git (131 v1 releases since 23 October: 77 on the 24th, 51 on the 25th, a median of 9 minutes apart, the closest 3 minutes).
+
+| Per release | v1 today | Each new repository, measured | Expected after the flip |
+| --- | --- | --- | --- |
+| CI run, push to live | median 88 s, p90 151 s, max 190 s | 25 to 42 s (press 29 to 36, data 34 to 42, team 27 to 31, site 26 to 30, refs 32 to 36, updates 25 to 26) | under 45 s |
+| The gate step in CI | 70 to 132 s: it rebuilds the whole site to prove determinism | 0.1 s (team) to 7 s (refs); the rest of the run is checkout and upload | seconds |
+| On the agent's side, before the push | build 42 s, one to three settle rounds, gate 74 s: 2 to 4 min | gates in seconds, release scripts under 10 s | under a minute |
+| Files rewritten | median 1,809 (1,274 to 2,241): the version stamp is on every page | a cut: about 470 (site) to 550 (data) | a run record or board row: 1; a data file: 2 |
+| Runs cancelled or failed | 10 of 194 | 0 of 18 | rare: a red gate blocks only its own writers |
+
+| What the agents do all day (131 releases) | Share | Today | After the flip |
+| --- | --- | --- | --- |
+| A run record, a wake, a drain | 44 (34%) | 2 to 4 min on the agent's side, 90 s in CI, 1,800 files, the one board file fought over (three of dev's own releases on 25 October were stopped by another agent's board write) | team: 1 file, 0.1 s gate, 30 s CI, no shared file |
+| An article, a brief, a page | 44 (34%) | the same | the repository that owns the section, its own gate; the press re-cuts that site |
+| Board rows, messages, status | 21 (16%) | the same | team: one file per row, ids per writer, nothing renumbered |
+| A data export (the vault, the watch, pulse) | 7 (5%) | the same | data: 6 s gate, 40 s CI; readers pin a version |
+| The build, the design, the tools | 5 (4%) | the same | the press, reviewed; the sites re-cut on purpose |
+
+Per wake: 3 to 5 minutes of build and gate become under a minute, and 1,800 touched files become one. Over a day of 50 releases: about 3 hours of agent-session time spent rebuilding and gating become about ten minutes, and about 90,000 file rewrites become a few hundred.
+
+Two caveats, so the review is fair. Until the flip, none of this is realised: every release still goes through v1, and then dev's chain (about 5 minutes) on top; the split costs time today and pays after step A. And the new repositories' own commits are still large (a cut about 470 files, a data version about 550), because v1's version stamp sits on every page and each data version is copied whole; taking the stamp out of the pages and publishing only the changed files per version are the two optimisations left, and they are what would make a re-cut of refs or site a handful of files.
+
 ## What is left
 
 - **Deploy.** Each of the six repositories needs its Pages source set to "Deploy from a branch: dev, / (root)" (board row 328). The press and the data API first: every page of the other four loads its scripts from the press.

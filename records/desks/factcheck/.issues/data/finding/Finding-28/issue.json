@@ -1,0 +1,41 @@
+{
+  "node_id": "c468aa88",
+  "node_type": "finding",
+  "node_index": 28,
+  "label": "Finding-28",
+  "title": "nl-offline: \"No signs of active exploitation of those services\" is narrower than any source",
+  "description": "Rijksoverheid says NCSC has not yet seen active misuse in general (13:59 on 21 Oct, before the patch); TPO quotes the minister saying there were \"nog geen signalen\" of active misuse. Neither speaks about those services specifically. Same wording in impact.json.",
+  "status": "fixed",
+  "created_at": 1792694620644,
+  "updated_at": 1792805573365,
+  "created_by": "6835ccc0",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694620891
+    }
+  ],
+  "properties": {
+    "claims": [
+      "nl-offline"
+    ],
+    "pages": [
+      "facts/nl-offline/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "3f490f32",
+        "author": "cli-user",
+        "text": "Run-3: Fixed in v0.13.0: the narrower 'no signs of exploitation of those services' is gone.",
+        "created_at": 1792805573365,
+        "updated_at": 1792805573365
+      }
+    ]
+  }
+}

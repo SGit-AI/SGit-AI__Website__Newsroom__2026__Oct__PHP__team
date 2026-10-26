@@ -1,0 +1,103 @@
+{
+  "link_types": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "inverse_verb": "opened",
+      "description": "Ticket opened (or updated) by this run",
+      "source_types": [
+        "finding",
+        "contradiction",
+        "gap",
+        "evidence"
+      ],
+      "target_types": [
+        "run"
+      ]
+    },
+    {
+      "link_type_id": "8f3dc370",
+      "verb": "contradicts",
+      "inverse_verb": "contradicts",
+      "description": "The two disagree (symmetric)",
+      "source_types": [
+        "finding",
+        "contradiction",
+        "evidence"
+      ],
+      "target_types": [
+        "finding",
+        "contradiction",
+        "evidence"
+      ]
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "inverse_verb": "supported-by",
+      "description": "Evidence that bears on a finding, gap or contradiction",
+      "source_types": [
+        "evidence"
+      ],
+      "target_types": [
+        "finding",
+        "contradiction",
+        "gap"
+      ]
+    },
+    {
+      "link_type_id": "88656288",
+      "verb": "supersedes",
+      "inverse_verb": "superseded-by",
+      "description": "A later ticket replaces an earlier one",
+      "source_types": [
+        "finding",
+        "contradiction",
+        "gap",
+        "evidence"
+      ],
+      "target_types": [
+        "finding",
+        "contradiction",
+        "gap",
+        "evidence"
+      ]
+    },
+    {
+      "link_type_id": "2a12da17",
+      "verb": "blocks",
+      "inverse_verb": "blocked-by",
+      "description": "Cannot be closed until the target is",
+      "source_types": [
+        "finding",
+        "contradiction",
+        "gap",
+        "evidence"
+      ],
+      "target_types": [
+        "finding",
+        "contradiction",
+        "gap",
+        "evidence"
+      ]
+    },
+    {
+      "link_type_id": "b45c53be",
+      "verb": "relates-to",
+      "inverse_verb": "relates-to",
+      "description": "General association (symmetric)",
+      "source_types": [
+        "finding",
+        "contradiction",
+        "gap",
+        "evidence"
+      ],
+      "target_types": [
+        "finding",
+        "contradiction",
+        "gap",
+        "evidence"
+      ]
+    }
+  ]
+}

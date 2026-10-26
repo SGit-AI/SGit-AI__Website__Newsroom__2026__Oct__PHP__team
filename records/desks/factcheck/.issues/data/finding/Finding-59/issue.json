@@ -1,0 +1,31 @@
+{
+  "node_id": "07faad1e",
+  "node_type": "finding",
+  "node_index": 59,
+  "label": "Finding-59",
+  "title": "ai-found: 2 smaller precision and sourcing points",
+  "description": "'frontier' is not Calif's word: Calif writes 'No special harness, or access to models that weren't generally available to everyone were used in the initial bug discovery' and refers to an 'LLM companion'. 'Frontier AI' is Wiz's and OpenAI's language, not Calif's. | Calif's model is named only second-hand: That Calif used GPT-5.6 Sol rests on OpenAI's blocked blog (openai-blog-coordinated-disclosure text.txt is 0 bytes) and press relays (cybernews, wikipedia). Calif's own page names no model.",
+  "status": "open",
+  "created_at": 1792694637130,
+  "updated_at": 1792694637341,
+  "created_by": "63ac0319",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694637341
+    }
+  ],
+  "properties": {
+    "claims": [
+      "ai-found"
+    ],
+    "pages": [
+      "facts/ai-found/index.html"
+    ],
+    "severity": "low"
+  }
+}

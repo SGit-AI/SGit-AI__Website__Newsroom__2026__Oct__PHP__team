@@ -1,0 +1,32 @@
+{
+  "node_id": "d70722c0",
+  "node_type": "finding",
+  "node_index": 29,
+  "label": "Finding-29",
+  "title": "wikimedia-precaution: CNN does not carry the quoted phrase",
+  "description": "The claim's \"by\" credits CNN, but CNN has only \"precautionary measure\" (told CNN on Thursday). The full phrase is in The Cyber Express, Newsweek (newsweek-php2shell-websites) and the Reuters factbox (reuters-factbox-websites-offline); cite those.",
+  "status": "open",
+  "created_at": 1792694621196,
+  "updated_at": 1792694621433,
+  "created_by": "f6010399",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694621433
+    }
+  ],
+  "properties": {
+    "claims": [
+      "wikimedia-precaution"
+    ],
+    "pages": [
+      "facts/wikimedia-precaution/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

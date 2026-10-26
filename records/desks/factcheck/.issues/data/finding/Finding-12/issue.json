@@ -1,0 +1,32 @@
+{
+  "node_id": "3e33e3b8",
+  "node_type": "finding",
+  "node_index": 12,
+  "label": "Finding-12",
+  "title": "no-exploitation: Claim uses the BBC headline's absolute wording, not Austin's hedged words",
+  "description": "Austin said \"Not at the moment... it doesn't look like exploitation has taken off or been widespread\", which allows some exploitation; 'There is no evidence yet that hackers have exploited the flaw' is the BBC's paraphrase. Reword to his words or attribute the headline to the BBC.",
+  "status": "open",
+  "created_at": 1792694611861,
+  "updated_at": 1792694612091,
+  "created_by": "f32ce9e6",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694612091
+    }
+  ],
+  "properties": {
+    "claims": [
+      "no-exploitation"
+    ],
+    "pages": [
+      "facts/no-exploitation/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "node_id": "964c820c",
+  "node_type": "contradiction",
+  "node_index": 12,
+  "label": "Contradiction-12",
+  "title": "K-012: What does W3Techs say: 69.3_ or 75_?",
+  "description": "The same measurer at different dates. Reuters' 75% matches W3Techs' figure for January 2025, not the 69.3% W3Techs showed when Reuters wrote; the attribution is right and the number is out of date. Investigation php-share.",
+  "status": "explained",
+  "created_at": 1792807351751,
+  "updated_at": 1792807352240,
+  "created_by": "9089e653",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "6800daee",
+      "target_label": "Run-3",
+      "created_at": 1792807351967
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-70pc-websites"
+    ],
+    "severity": "low"
+  }
+}

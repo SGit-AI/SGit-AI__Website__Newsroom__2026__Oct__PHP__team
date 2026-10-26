@@ -1,0 +1,1690 @@
+{
+ "generated_at": "2026-10-24",
+ "fetches": [
+  {
+   "url": "https://w3techs.com/technologies/details/pl-php",
+   "retrieved_at": "2026-10-24T01:31:13Z",
+   "status": 200,
+   "sha256": "f49b114f2c6055e2bb21b2009d25e781cf715553e782b83c0adbeec818780948",
+   "file": "fetched/w3t-pl-php.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/overview/programming_language",
+   "retrieved_at": "2026-10-24T01:31:15Z",
+   "status": 200,
+   "sha256": "9ff0583d5c0932e9e132d6ed5dc56796b21014dc6d7592b773879f614d19ea11",
+   "file": "fetched/w3t-overview-pl.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_overview/programming_language/ms/y",
+   "retrieved_at": "2026-10-24T01:31:17Z",
+   "status": 200,
+   "sha256": "bb824681f72b337d10e7d8620ab52eb76298431eb4257afe2903d3b568666eb2",
+   "file": "fetched/w3t-history-pl.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_overview/programming_language/ms/q",
+   "retrieved_at": "2026-10-24T01:31:20Z",
+   "status": 200,
+   "sha256": "1f32eccdc844c3b4176636cd416d1b697591dd85c04619db3b1ca8501cff7fe2",
+   "file": "fetched/w3t-history-pl-q.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/details/pl-php/all/all",
+   "retrieved_at": "2026-10-24T01:31:23Z",
+   "status": 200,
+   "sha256": "f49b114f2c6055e2bb21b2009d25e781cf715553e782b83c0adbeec818780948",
+   "file": "fetched/w3t-php-versions.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/overview/content_management",
+   "retrieved_at": "2026-10-24T01:31:26Z",
+   "status": 200,
+   "sha256": "b363d4408a378f860c971a45a8e63de3b99dce715dbc3c533b997105582a7c72",
+   "file": "fetched/w3t-cms-overview.html"
+  },
+  {
+   "url": "https://trends.builtwith.com/framework/PHP",
+   "retrieved_at": "2026-10-24T01:31:28Z",
+   "status": 200,
+   "sha256": "467433b45a8db4bed3e1fa4fa3df0e8f41f916263eb4b13e47df0f1ba047823a",
+   "file": "fetched/builtwith-php.html",
+   "note": "bytes are gzip (server sent gzip without curl --compressed); decoded copy in decoded/builtwith-php.html"
+  },
+  {
+   "url": "https://packagist.org/statistics",
+   "retrieved_at": "2026-10-24T01:31:28Z",
+   "status": 200,
+   "sha256": "c81dcafd59845c51602e13361c182dc308e95fda5e6c71b68ce62f1f4faaec24",
+   "file": "fetched/packagist-stats.html"
+  },
+  {
+   "url": "https://www.wappalyzer.com/technologies/programming-languages/php/",
+   "retrieved_at": "2026-10-24T01:31:28Z",
+   "status": 200,
+   "sha256": "c96eba601b04e734a48c9c0bf72f0f2067b124fccbd28d31f5f98242d912924d",
+   "file": "fetched/wappalyzer-php.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies",
+   "retrieved_at": "2026-10-24T01:31:52Z",
+   "status": 200,
+   "sha256": "e69c8859ef246e6c623083cc21421b8630409e8be407c56185ee64b66f6c86b2",
+   "file": "fetched/w3t-technologies.html"
+  },
+  {
+   "url": "https://w3techs.com/faq",
+   "retrieved_at": "2026-10-24T01:31:53Z",
+   "status": 200,
+   "sha256": "2ee7fbfdd6f223745a5a471a8cf999204926149b8b723cf32fea1942a441c0e3",
+   "file": "fetched/w3t-faq.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/details/pl-php/8",
+   "retrieved_at": "2026-10-24T01:31:54Z",
+   "status": 200,
+   "sha256": "2e4782e518ceee75a0bd8c1412e3235a8819198718dd29e033adcbd574f6970f",
+   "file": "fetched/w3t-php8.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/details/pl-php/7",
+   "retrieved_at": "2026-10-24T01:31:57Z",
+   "status": "connection-failed",
+   "sha256": null,
+   "file": null
+  },
+  {
+   "url": "https://w3techs.com/technologies/details/pl-php/5",
+   "retrieved_at": "2026-10-24T01:32:04Z",
+   "status": "connection-failed",
+   "sha256": null,
+   "file": null
+  },
+  {
+   "url": "https://w3techs.com/technologies/details/cm-wordpress",
+   "retrieved_at": "2026-10-24T01:32:12Z",
+   "status": 200,
+   "sha256": "c7c819ccd71cea94f7e02b6652664dcc2cb0b4411dedbb28fddc200d8fad24be",
+   "file": "fetched/w3t-wordpress.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_details/pl-php",
+   "retrieved_at": "2026-10-24T01:32:20Z",
+   "status": 200,
+   "sha256": "50ebc3d08c2decf724357faef0d01e7a51ac6316003ef4e60a363db0b69ed60b",
+   "file": "fetched/w3t-hist-php-versions.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_overview/programming_language",
+   "retrieved_at": "2026-10-24T01:32:22Z",
+   "status": 200,
+   "sha256": "aea4e6acf2397713fa68eb3a51d8fa276aea9ae611541102b2740354fa835747",
+   "file": "fetched/w3t-hist-pl-monthly.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_overview/content_management/ms/y",
+   "retrieved_at": "2026-10-24T01:32:27Z",
+   "status": 200,
+   "sha256": "ce63e40fecc4253414b087c6fe558aee4b6a3baf42c4139387d117b485379f78",
+   "file": "fetched/w3t-hist-cms-y.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/market/programming_language",
+   "retrieved_at": "2026-10-24T01:32:28Z",
+   "status": 200,
+   "sha256": "b81e072fc488200502831d7b14d61915ca2225ba5e4f818e8431cf681be62c77",
+   "file": "fetched/w3t-market-pl.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/topsite/programming_language",
+   "retrieved_at": "2026-10-24T01:32:29Z",
+   "status": 200,
+   "sha256": "8caa0d4e10dbda96d99e7ee3f0e651db1b448305e8d9e5c52f04d5ad476a317d",
+   "file": "fetched/w3t-topsite-pl.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/details/pl-php/7",
+   "retrieved_at": "2026-10-24T01:32:43Z",
+   "status": 200,
+   "sha256": "95b2d636702df6d0f2bcdb710bf1c9d2d21514fcd361eb508198a989040026f8",
+   "file": "fetched/w3t-php7.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/details/pl-php/5",
+   "retrieved_at": "2026-10-24T01:32:43Z",
+   "status": 200,
+   "sha256": "a2cd9ba5f26b6db66123c87c686d1c962bbce6359e542a12cf580eb7d7df8608",
+   "file": "fetched/w3t-php5.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_overview/content_management/all/y",
+   "retrieved_at": "2026-10-24T01:33:12Z",
+   "status": 200,
+   "sha256": "b624bcbb7cfe6b45009769ea8e1502046f817a2d387aa38e44a0615bb3082927",
+   "file": "fetched/w3t-hist-cms-all-y.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_overview/programming_language/all/y",
+   "retrieved_at": "2026-10-24T01:33:13Z",
+   "status": "connection-failed",
+   "sha256": null,
+   "file": null
+  },
+  {
+   "url": "https://w3techs.com/technologies/overview/programming_language/all",
+   "retrieved_at": "2026-10-24T01:33:44Z",
+   "status": 200,
+   "sha256": "661a714c7373843f13e839257a2046a2afb4b084241e6c78c4fc0152aa1c7bd4",
+   "file": "fetched/w3t-overview-pl-all.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/history_overview/programming_language/all/y",
+   "retrieved_at": "2026-10-24T01:33:56Z",
+   "status": 404,
+   "sha256": "32a6aee157cc63fc12f8465c4cac844b744d108424a29e7ef7fe4a8449549275",
+   "file": "fetched/w3t-hist-pl-all-y.html"
+  },
+  {
+   "url": "https://packagist.org/php-statistics",
+   "retrieved_at": "2026-10-24T01:34:44Z",
+   "status": 200,
+   "sha256": "cdf070b0ead2ef5835d9b852a22a44802513249c7c124329ab8a33d6754e2662",
+   "file": "fetched/packagist-php-statistics.html"
+  },
+  {
+   "url": "https://packagist.org/statistics.json",
+   "retrieved_at": "2026-10-24T01:34:45Z",
+   "status": 200,
+   "sha256": "9b04f05b713166c57f0eccf2bf1aaa60c0d1a0776168b9fb3e938a40d0657934",
+   "file": "fetched/packagist-statistics.json"
+  },
+  {
+   "url": "https://reports-dot-httparchive.uc.r.appspot.com/v1/adoption?technology=PHP&geo=ALL&rank=ALL&start=latest",
+   "retrieved_at": "2026-10-24T01:35:17Z",
+   "status": 404,
+   "sha256": "6b43b396ba4708e5ffe9da06909bc2059e55b300f2434bc4181ca3a842d83bd6",
+   "file": "fetched/ha-techreport-adoption-php.json"
+  },
+  {
+   "url": "https://reports-dot-httparchive.uc.r.appspot.com/v1/technologies?technology=PHP",
+   "retrieved_at": "2026-10-24T01:35:18Z",
+   "status": 404,
+   "sha256": "6b43b396ba4708e5ffe9da06909bc2059e55b300f2434bc4181ca3a842d83bd6",
+   "file": "fetched/ha-techreport-tech-php.json"
+  },
+  {
+   "url": "https://reports-dot-httparchive.uc.r.appspot.com/v1/adoption?technology=PHP&geo=ALL&rank=ALL",
+   "retrieved_at": "2026-10-24T01:35:18Z",
+   "status": 404,
+   "sha256": "6b43b396ba4708e5ffe9da06909bc2059e55b300f2434bc4181ca3a842d83bd6",
+   "file": "fetched/ha-techreport-adoption-php-all.json"
+  },
+  {
+   "url": "https://httparchive.org/reports/techreport/tech?tech=PHP",
+   "retrieved_at": "2026-10-24T01:35:26Z",
+   "status": 200,
+   "sha256": "8c3ff8bb868f913c2f232fd5d985a219b8d0b396c4178c395059dbb5e4d6fa72",
+   "file": "fetched/ha-techreport-php-page.html"
+  },
+  {
+   "url": "https://httparchive.org/_astro/TechReportLayout.astro_astro_type_script_index_0_lang.sR8T6x9X.js",
+   "retrieved_at": "2026-10-24T01:35:38Z",
+   "status": 200,
+   "sha256": "a2ee436112d61898cd8bd498ac2a1109e1f9faad6978cb5dcc14e3707a5ca399",
+   "file": "fetched/ha-tr-layout0.js.txt"
+  },
+  {
+   "url": "https://httparchive.org/_astro/TechReportLayout.astro_astro_type_script_index_1_lang.Dy0l2-s9.js",
+   "retrieved_at": "2026-10-24T01:35:39Z",
+   "status": 200,
+   "sha256": "6f1682a83e610c231285ab4f6b2ced5963a29e6763b4055efe2c89a8b719ff9e",
+   "file": "fetched/ha-tr-layout1.js.txt"
+  },
+  {
+   "url": "https://httparchive.org/_astro/constants.C1noILWJ.js",
+   "retrieved_at": "2026-10-24T01:35:50Z",
+   "status": 200,
+   "sha256": "7a2d0cb24e9ef95b56b64282f8e99909c8e1bbfa7393b13d1f98e9ff6516a02f",
+   "file": "fetched/ha-tr-constants.js.txt"
+  },
+  {
+   "url": "https://cdn.httparchive.org/v1/adoption?technology=PHP&geo=ALL&rank=ALL",
+   "retrieved_at": "2026-10-24T01:35:57Z",
+   "status": 200,
+   "sha256": "2013e7d1b47ecbd266cf27c364381c52d4eea5199fea2f1f740c81d066f90173",
+   "file": "fetched/ha-v1-adoption-php.json"
+  },
+  {
+   "url": "https://cdn.httparchive.org/v1/technologies?technology=PHP",
+   "retrieved_at": "2026-10-24T01:35:57Z",
+   "status": 200,
+   "sha256": "5eb523b421d5bf0a5f98ad44a8af9c1d747016162b573dc881170ac02ffb70fd",
+   "file": "fetched/ha-v1-technologies-php.json"
+  },
+  {
+   "url": "https://cdn.httparchive.org/v1/adoption?technology=WordPress&geo=ALL&rank=ALL",
+   "retrieved_at": "2026-10-24T01:35:58Z",
+   "status": 200,
+   "sha256": "7964a028052a05716ff8df036542f7afa086ec2ecbaa475a576f847e788b4c06",
+   "file": "fetched/ha-v1-adoption-wordpress.json"
+  },
+  {
+   "url": "https://cdn.httparchive.org/v1/adoption?technology=ALL&geo=ALL&rank=ALL",
+   "retrieved_at": "2026-10-24T01:35:58Z",
+   "status": 200,
+   "sha256": "2241b8e38794dec31edd727783abb65edcc456335d2d09f505d5bd63a013f74d",
+   "file": "fetched/ha-v1-adoption-all.json"
+  },
+  {
+   "url": "https://www.shodan.io/search/facet?query=%22X-Powered-By%3A+PHP%22&facet=http.component",
+   "retrieved_at": "2026-10-24T01:36:09Z",
+   "status": 403,
+   "sha256": "351d0688da1ad42070c9c930c580f20a21293bfaf1af9d7e647c1c5adb4bb5ac",
+   "file": "fetched/shodan-facet-php.html",
+   "note": "Cloudflare 'Just a moment... Enable JavaScript and cookies' challenge"
+  },
+  {
+   "url": "https://www.shodan.io/search?query=%22X-Powered-By%3A+PHP%22",
+   "retrieved_at": "2026-10-24T01:36:09Z",
+   "status": 403,
+   "sha256": "f45ed4d0c0399feaee43fd0ebf6987da42f90060f0de0016b90dd05bdca05be8",
+   "file": "fetched/shodan-count-php.html",
+   "note": "Cloudflare 'Just a moment... Enable JavaScript and cookies' challenge"
+  },
+  {
+   "url": "https://search.censys.io/search?resource=hosts&q=services.software.product%3A%22PHP%22",
+   "retrieved_at": "2026-10-24T01:36:10Z",
+   "status": 403,
+   "sha256": "5fb366d90b0ff91939e0bfa6f7b5c773665d597cf67271195d9e20f8cddf3e94",
+   "file": "fetched/censys-search-php.html",
+   "note": "Cloudflare 'Just a moment... Enable JavaScript and cookies' challenge"
+  },
+  {
+   "url": "https://www.netcraft.com/blog/",
+   "retrieved_at": "2026-10-24T01:36:10Z",
+   "status": 200,
+   "sha256": "0c8f0d78eca54643df3ea0bdf841a3b825e1c56ac4b4c1ba4d32650efca4eeb0",
+   "file": "fetched/netcraft-survey.html"
+  },
+  {
+   "url": "https://almanac.httparchive.org/en/2024/cms",
+   "retrieved_at": "2026-10-24T01:36:11Z",
+   "status": 200,
+   "sha256": "b40c25d876bca91978f2aed2254d63a4851549a708863acb58e1b320412d6186",
+   "file": "fetched/webalmanac-2024-cms.html"
+  },
+  {
+   "url": "https://almanac.httparchive.org/en/2025/cms",
+   "retrieved_at": "2026-10-24T01:36:11Z",
+   "status": 200,
+   "sha256": "180e877aeccff347f42eab6926f5ca4192d99e01349b98be47ee3ec7f6d32ea6",
+   "file": "fetched/webalmanac-2025-cms.html"
+  },
+  {
+   "url": "https://survey.stackoverflow.co/2026/technology",
+   "retrieved_at": "2026-10-24T01:36:27Z",
+   "status": 200,
+   "sha256": "918e5dfab40b12805d3e84ee1db8d9041a94735eb2b068ae233b5c2158b20c6b",
+   "file": "fetched/so-survey-2026-tech.html"
+  },
+  {
+   "url": "https://survey.stackoverflow.co/2025/technology",
+   "retrieved_at": "2026-10-24T01:36:27Z",
+   "status": 200,
+   "sha256": "721a084a2139830bbdef949add7415104d59d85fb021e01c52b5ce63155dd577",
+   "file": "fetched/so-survey-2025-tech.html"
+  },
+  {
+   "url": "https://www.tiobe.com/tiobe-index/",
+   "retrieved_at": "2026-10-24T01:36:28Z",
+   "status": 200,
+   "sha256": "d55f43879550643acd749189a556da86d445ec70873d6c1a64ca8b68578d98c5",
+   "file": "fetched/tiobe-index.html"
+  },
+  {
+   "url": "https://www.jetbrains.com/lp/devecosystem-2025/",
+   "retrieved_at": "2026-10-24T01:36:29Z",
+   "status": 200,
+   "sha256": "c2e3e65f6a518ef835a0d254c119f02ff6754a9f253f6c1d0690a3b381c7f875",
+   "file": "fetched/jetbrains-devecosystem-2025.html"
+  },
+  {
+   "url": "https://www.php.net/usage.php",
+   "retrieved_at": "2026-10-24T01:36:30Z",
+   "status": 404,
+   "sha256": "cf09aae7f848064708cf5320637fb648e859fde1447c665535c1af22fca9034d",
+   "file": "fetched/php-net-usage.html"
+  },
+  {
+   "url": "https://blog.jetbrains.com/phpstorm/2025/10/state-of-php-2025/",
+   "retrieved_at": "2026-10-24T01:36:59Z",
+   "status": 200,
+   "sha256": "7720d77ce3d687615e70b606ad4b78a130b50f85968cb92f227c3cd99e6335dc",
+   "file": "fetched/jetbrains-state-of-php-2025.html"
+  },
+  {
+   "url": "https://w3techs.com/technologies/breakdown/pl-php/ranking",
+   "retrieved_at": "2026-10-24T01:37:59Z",
+   "status": 200,
+   "sha256": "c75051a6d55f368ceefca22ce84b6a81553fae04764bd46a45a8eb0008a89821",
+   "file": "fetched/w3t-php-ranking.html"
+  }
+ ],
+ "measures": [
+  {
+   "id": "w3techs-php-share-known",
+   "family": "websites",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "share of websites whose server-side programming language W3Techs knows that use PHP",
+   "value": 69.3,
+   "unit": "%",
+   "population": "all the websites whose server-side programming language we know (within W3Techs' relevant-web sample)",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-23",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/details/pl-php",
+    "sha256": "f49b114f2c6055e2bb21b2009d25e781cf715553e782b83c0adbeec818780948",
+    "retrieved_at": "2026-10-24T01:31:13Z",
+    "file": "fetched/w3t-pl-php.html",
+    "excerpt": "PHP is used by 69.3% of all the websites whose server-side programming language we know."
+   },
+   "history": [
+    {
+     "date": "2015-01-01",
+     "value": 80.6
+    },
+    {
+     "date": "2016-01-01",
+     "value": 80.0
+    },
+    {
+     "date": "2017-01-01",
+     "value": 80.0
+    },
+    {
+     "date": "2018-01-01",
+     "value": 80.2
+    },
+    {
+     "date": "2019-01-01",
+     "value": 78.9
+    },
+    {
+     "date": "2020-01-01",
+     "value": 78.9
+    },
+    {
+     "date": "2021-01-01",
+     "value": 79.1
+    },
+    {
+     "date": "2022-01-01",
+     "value": 78.1
+    },
+    {
+     "date": "2023-01-01",
+     "value": 77.7
+    },
+    {
+     "date": "2024-01-01",
+     "value": 76.7
+    },
+    {
+     "date": "2025-01-01",
+     "value": 75.2
+    },
+    {
+     "date": "2026-01-01",
+     "value": 72.4
+    },
+    {
+     "date": "2026-10-23",
+     "value": 69.3
+    },
+    {
+     "date": "2026-10-25",
+     "value": 69.2
+    }
+   ],
+   "notes": "Denominator is sites with a KNOWN server-side language, not all websites. W3Techs' free pages do not publish what fraction of sites have a known language (no 'unknown/none' row for this category, unlike CMS). Multiple languages per site allowed. Same page dated 24 Oct 2026 on overview/programming_language/all.",
+   "rechecks": [
+    {
+     "retrieved_at": "2026-10-24T07:57Z",
+     "value": 69.3,
+     "sha256": "ca7ba9d1ce117cc1e4061e8509072182bda77ace4b7c40481d5de7ee4aa51c63",
+     "run": "Run-4",
+     "excerpt": "PHP is used by 69.3% of all the websites whose server-side programming language we know"
+    },
+    {
+     "retrieved_at": "2026-10-25T08:59Z",
+     "value": 69.2,
+     "sha256": "918957998f37697d1b1339a20f4b86ccb1ddb90744547325703ffaa2694eeb36",
+     "run": "Run-6",
+     "excerpt": "PHP is used by 69.2% of all the websites whose server-side programming language we know."
+    }
+   ]
+  },
+  {
+   "id": "w3techs-php-share-known-monthly",
+   "family": "websites",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "monthly trend of the same PHP share (known-language sites)",
+   "value": 69.3,
+   "unit": "%",
+   "population": "all the websites whose server-side programming language we know",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-23",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/history_overview/programming_language",
+    "sha256": "aea4e6acf2397713fa68eb3a51d8fa276aea9ae611541102b2740354fa835747",
+    "retrieved_at": "2026-10-24T01:32:22Z",
+    "file": "fetched/w3t-hist-pl-monthly.html",
+    "excerpt": "This report shows the historical trends in the usage of the top server-side programming languages since October 2025."
+   },
+   "history": [
+    {
+     "date": "2025-10-01",
+     "value": 73.4
+    },
+    {
+     "date": "2025-11-01",
+     "value": 73.1
+    },
+    {
+     "date": "2025-12-01",
+     "value": 72.9
+    },
+    {
+     "date": "2026-01-01",
+     "value": 72.4
+    },
+    {
+     "date": "2026-02-01",
+     "value": 72.2
+    },
+    {
+     "date": "2026-03-01",
+     "value": 72.0
+    },
+    {
+     "date": "2026-04-01",
+     "value": 71.7
+    },
+    {
+     "date": "2026-05-01",
+     "value": 71.4
+    },
+    {
+     "date": "2026-06-01",
+     "value": 71.1
+    },
+    {
+     "date": "2026-07-01",
+     "value": 70.8
+    },
+    {
+     "date": "2026-08-01",
+     "value": 70.6
+    },
+    {
+     "date": "2026-09-01",
+     "value": 70.2
+    },
+    {
+     "date": "2026-10-01",
+     "value": 69.8
+    },
+    {
+     "date": "2026-10-23",
+     "value": 69.3
+    }
+   ],
+   "notes": "Falls about 0.3 points a month: 73.4% on 1 Oct 2025 to 69.3% on 23 Oct 2026. JavaScript (server-side) rose from 5.0% to 8.2% over the same period."
+  },
+  {
+   "id": "w3techs-php-share-top-ranks",
+   "family": "websites",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "PHP share among known-language sites, by traffic rank band",
+   "value": 64.4,
+   "unit": "%",
+   "population": "websites whose server-side programming language we know and that rank in the top 1,000,000 (CrUX plus customised Tranco ranking)",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-24",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/breakdown/pl-php/ranking",
+    "sha256": "c75051a6d55f368ceefca22ce84b6a81553fae04764bd46a45a8eb0008a89821",
+    "retrieved_at": "2026-10-24T01:37:59Z",
+    "file": "fetched/w3t-php-ranking.html",
+    "excerpt": "Overall 69.3% top 1,000,000 64.4% top 100,000 60.9% top 10,000 59.4% top 1,000 58.7%"
+   },
+   "notes": "Value is top 1M; top 100k 60.9%, top 10k 59.4%, top 1k 58.7%. PHP share falls as traffic rises."
+  },
+  {
+   "id": "w3techs-wordpress-share-all",
+   "family": "applications",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "share of ALL websites (W3Techs sample) using WordPress (a PHP application)",
+   "value": 39.6,
+   "unit": "%",
+   "population": "all websites in W3Techs' sample (CMS report includes a 'None' row)",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-24",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/details/cm-wordpress",
+    "sha256": "c7c819ccd71cea94f7e02b6652664dcc2cb0b4411dedbb28fddc200d8fad24be",
+    "retrieved_at": "2026-10-24T01:32:12Z",
+    "file": "fetched/w3t-wordpress.html",
+    "excerpt": "WordPress is used by 58.3% of all the websites whose content management system we know. This is 39.6% of all websites ."
+   },
+   "history": [
+    {
+     "date": "2015-01-01",
+     "value": 23.3
+    },
+    {
+     "date": "2016-01-01",
+     "value": 25.6
+    },
+    {
+     "date": "2017-01-01",
+     "value": 27.3
+    },
+    {
+     "date": "2018-01-01",
+     "value": 29.2
+    },
+    {
+     "date": "2019-01-01",
+     "value": 32.7
+    },
+    {
+     "date": "2020-01-01",
+     "value": 35.4
+    },
+    {
+     "date": "2021-01-01",
+     "value": 39.5
+    },
+    {
+     "date": "2022-01-01",
+     "value": 43.2
+    },
+    {
+     "date": "2023-01-01",
+     "value": 43.1
+    },
+    {
+     "date": "2024-01-01",
+     "value": 43.1
+    },
+    {
+     "date": "2025-01-01",
+     "value": 43.6
+    },
+    {
+     "date": "2026-01-01",
+     "value": 43.0
+    },
+    {
+     "date": "2026-10-24",
+     "value": 39.6
+    }
+   ],
+   "notes": "Unlike the PHP language figure, this IS a share of all websites. Peaked at 43.6% on 1 Jan 2025 in the yearly trend; 'None' (no monitored CMS) rose from 28.6% (1 Jan 2026) to 32.1% (24 Oct 2026). WordPress alone implies PHP, so 39.6% of all sites is a floor-type figure for PHP on all sites in this sample."
+  },
+  {
+   "id": "w3techs-drupal-joomla-share-all",
+   "family": "applications",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "share of ALL websites using Joomla / Drupal (PHP CMSs)",
+   "value": 1.1,
+   "unit": "%",
+   "population": "all websites in W3Techs' sample",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-24",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/overview/content_management",
+    "sha256": "b363d4408a378f860c971a45a8e63de3b99dce715dbc3c533b997105582a7c72",
+    "retrieved_at": "2026-10-24T01:31:26Z",
+    "file": "fetched/w3t-cms-overview.html",
+    "excerpt": "Joomla 1.1% 1.6% Tilda 0.8% 1.2% Webflow 0.8% 1.2% Duda 0.7% 1.1% Drupal 0.6% 0.9%"
+   },
+   "history": [
+    {
+     "date": "2015-01-01",
+     "value": 3.3
+    },
+    {
+     "date": "2016-01-01",
+     "value": 3.3
+    },
+    {
+     "date": "2017-01-01",
+     "value": 3.4
+    },
+    {
+     "date": "2018-01-01",
+     "value": 3.2
+    },
+    {
+     "date": "2019-01-01",
+     "value": 3.0
+    },
+    {
+     "date": "2020-01-01",
+     "value": 2.6
+    },
+    {
+     "date": "2021-01-01",
+     "value": 2.2
+    },
+    {
+     "date": "2022-01-01",
+     "value": 1.7
+    },
+    {
+     "date": "2023-01-01",
+     "value": 1.8
+    },
+    {
+     "date": "2024-01-01",
+     "value": 1.7
+    },
+    {
+     "date": "2025-01-01",
+     "value": 1.6
+    },
+    {
+     "date": "2026-01-01",
+     "value": 1.3
+    },
+    {
+     "date": "2026-10-24",
+     "value": 1.1
+    }
+   ],
+   "notes": "Value and history are Joomla (share of all sites). Drupal 0.6% of all sites now; Drupal yearly history (all sites) from the same trend page: 2015 2.0%, 2016 2.1%, 2017 2.2%, 2018 2.3%, 2019 1.9%, 2020 1.7%, 2021 1.5%, 2022 1.3%, 2023 1.2%, 2024 1.1%, 2025 0.9%, 2026 0.8%, 2026-10-24 0.6%. Other PHP CMSs in the list: PrestaShop 0.5%, Bitrix 0.4%, TYPO3 0.3%, OpenCart 0.3%, MODx, phpBB, Moodle 0.1% each."
+  },
+  {
+   "id": "w3techs-php-v8-share",
+   "family": "versions",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "share of PHP websites on PHP major version 8",
+   "value": 65.3,
+   "unit": "%",
+   "population": "all the websites who use PHP (and whose version W3Techs detects)",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-23",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/details/pl-php",
+    "sha256": "f49b114f2c6055e2bb21b2009d25e781cf715553e782b83c0adbeec818780948",
+    "retrieved_at": "2026-10-24T01:31:13Z",
+    "file": "fetched/w3t-pl-php.html",
+    "excerpt": "Version 8 is used by 65.3% of all the websites who use PHP. Version 8 65.3% Version 7 26.9% Version 5 7.7% Version 4 0.1%"
+   },
+   "history": [
+    {
+     "date": "2025-10-01",
+     "value": 51.3
+    },
+    {
+     "date": "2025-11-01",
+     "value": 52.7
+    },
+    {
+     "date": "2025-12-01",
+     "value": 53.9
+    },
+    {
+     "date": "2026-01-01",
+     "value": 54.8
+    },
+    {
+     "date": "2026-02-01",
+     "value": 55.8
+    },
+    {
+     "date": "2026-03-01",
+     "value": 56.8
+    },
+    {
+     "date": "2026-04-01",
+     "value": 57.9
+    },
+    {
+     "date": "2026-05-01",
+     "value": 59.0
+    },
+    {
+     "date": "2026-06-01",
+     "value": 60.1
+    },
+    {
+     "date": "2026-07-01",
+     "value": 61.3
+    },
+    {
+     "date": "2026-08-01",
+     "value": 62.4
+    },
+    {
+     "date": "2026-09-01",
+     "value": 63.3
+    },
+    {
+     "date": "2026-10-01",
+     "value": 64.3
+    },
+    {
+     "date": "2026-10-23",
+     "value": 65.3
+    }
+   ],
+   "notes": "Expressed as share of known-language sites: v8 45.3%, v7 18.6%, v5 5.3%. Version is only known where sites expose it (e.g. X-Powered-By); W3Techs does not state the share of PHP sites with a known version."
+  },
+  {
+   "id": "w3techs-php-v7-share",
+   "family": "versions",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "share of PHP websites on PHP major version 7",
+   "value": 26.9,
+   "unit": "%",
+   "population": "all the websites who use PHP",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-23",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/details/pl-php/7",
+    "sha256": "95b2d636702df6d0f2bcdb710bf1c9d2d21514fcd361eb508198a989040026f8",
+    "retrieved_at": "2026-10-24T01:32:43Z",
+    "file": "fetched/w3t-php7.html",
+    "excerpt": "Version 7.4 is used by 73.4% of all the websites who use PHP version 7."
+   },
+   "history": [
+    {
+     "date": "2025-10-01",
+     "value": 38.7
+    },
+    {
+     "date": "2025-11-01",
+     "value": 37.6
+    },
+    {
+     "date": "2025-12-01",
+     "value": 36.6
+    },
+    {
+     "date": "2026-01-01",
+     "value": 35.7
+    },
+    {
+     "date": "2026-02-01",
+     "value": 34.9
+    },
+    {
+     "date": "2026-03-01",
+     "value": 34.2
+    },
+    {
+     "date": "2026-04-01",
+     "value": 33.2
+    },
+    {
+     "date": "2026-05-01",
+     "value": 32.3
+    },
+    {
+     "date": "2026-06-01",
+     "value": 31.4
+    },
+    {
+     "date": "2026-07-01",
+     "value": 30.4
+    },
+    {
+     "date": "2026-08-01",
+     "value": 29.5
+    },
+    {
+     "date": "2026-09-01",
+     "value": 28.7
+    },
+    {
+     "date": "2026-10-01",
+     "value": 27.8
+    },
+    {
+     "date": "2026-10-23",
+     "value": 26.9
+    }
+   ],
+   "notes": "Within v7: 7.4 73.4%, 7.3 10.5%, 7.2 8.4%, 7.0 4.0%, 7.1 3.7%. The excerpt is the 7.x subversion split; the 26.9% top-line is in the w3techs-php-v8-share excerpt. All v7 is end-of-life."
+  },
+  {
+   "id": "w3techs-php-v5-share",
+   "family": "versions",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "share of PHP websites on PHP major version 5",
+   "value": 7.7,
+   "unit": "%",
+   "population": "all the websites who use PHP",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-23",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/details/pl-php/5",
+    "sha256": "a2cd9ba5f26b6db66123c87c686d1c962bbce6359e542a12cf580eb7d7df8608",
+    "retrieved_at": "2026-10-24T01:32:43Z",
+    "file": "fetched/w3t-php5.html",
+    "excerpt": "PHP version 5 is used by 5.3% of all the websites whose server-side programming language we know."
+   },
+   "history": [
+    {
+     "date": "2025-10-01",
+     "value": 9.9
+    },
+    {
+     "date": "2025-11-01",
+     "value": 9.7
+    },
+    {
+     "date": "2025-12-01",
+     "value": 9.5
+    },
+    {
+     "date": "2026-01-01",
+     "value": 9.3
+    },
+    {
+     "date": "2026-02-01",
+     "value": 9.2
+    },
+    {
+     "date": "2026-03-01",
+     "value": 9.0
+    },
+    {
+     "date": "2026-04-01",
+     "value": 8.8
+    },
+    {
+     "date": "2026-05-01",
+     "value": 8.6
+    },
+    {
+     "date": "2026-06-01",
+     "value": 8.4
+    },
+    {
+     "date": "2026-07-01",
+     "value": 8.2
+    },
+    {
+     "date": "2026-08-01",
+     "value": 8.0
+    },
+    {
+     "date": "2026-09-01",
+     "value": 7.9
+    },
+    {
+     "date": "2026-10-01",
+     "value": 7.8
+    },
+    {
+     "date": "2026-10-23",
+     "value": 7.7
+    }
+   ],
+   "notes": "7.7% of PHP sites = 5.3% of known-language sites. Within v5: 5.6 54.9%, 5.3 15.4%, 5.4 14.7%."
+  },
+  {
+   "id": "w3techs-php8-subversions",
+   "family": "versions",
+   "measurer": "W3Techs (Q-Success)",
+   "what": "split of PHP 8 sites by minor version (8.0/8.1 are end-of-life)",
+   "value": 20.9,
+   "unit": "%",
+   "population": "all the websites who use PHP version 8",
+   "method": "Crawl approx. monthly per site, several thousand indicators (HTML, headers, cookies, URL structure, DNS); dependencies inferred, e.g. WordPress implies PHP; reports updated daily",
+   "as_of": "2026-10-23",
+   "source": {
+    "kind": "fetch",
+    "url": "https://w3techs.com/technologies/details/pl-php/8",
+    "sha256": "2e4782e518ceee75a0bd8c1412e3235a8819198718dd29e033adcbd574f6970f",
+    "retrieved_at": "2026-10-24T01:31:54Z",
+    "file": "fetched/w3t-php8.html",
+    "excerpt": "Version 8.3 34.9% Version 8.2 27.6% Version 8.1 15.1% Version 8.4 12.1% Version 8.0 5.8% Version 8.5 4.5%"
+   },
+   "notes": "value = 8.0 + 8.1 = 20.9% of PHP-8 sites (our sum). Derived: supported 8.2-8.5 = 79.1% of v8 = about 51.7% of PHP sites; so roughly 48% of version-detected PHP sites are on EoL branches (our arithmetic, not W3Techs')."
+  },
+  {
+   "id": "builtwith-php-live-sites",
+   "family": "websites",
+   "measurer": "BuiltWith",
+   "what": "count of live websites BuiltWith detects using PHP",
+   "value": 23961854,
+   "unit": "count",
+   "population": "BuiltWith's index of websites ('live websites'); also 80,459,242 that used PHP historically",
+   "method": "BuiltWith technology lookup crawl (not described on this page)",
+   "as_of": "2026-08-22",
+   "source": {
+    "kind": "fetch",
+    "url": "https://trends.builtwith.com/framework/PHP",
+    "sha256": "467433b45a8db4bed3e1fa4fa3df0e8f41f916263eb4b13e47df0f1ba047823a",
+    "retrieved_at": "2026-10-24T01:31:28Z",
+    "file": "fetched/builtwith-php.html",
+    "excerpt": "We know of 23,961,854 live websites using PHP and an additional 80,459,242 sites that used PHP historically"
+   },
+   "history": [
+    {
+     "date": "2011-01-01",
+     "value": 182686
+    },
+    {
+     "date": "2012-01-28",
+     "value": 854549
+    },
+    {
+     "date": "2013-02-16",
+     "value": 1433825
+    },
+    {
+     "date": "2014-01-04",
+     "value": 7880041
+    },
+    {
+     "date": "2015-01-31",
+     "value": 12829875
+    },
+    {
+     "date": "2016-02-27",
+     "value": 16328894
+    },
+    {
+     "date": "2017-01-14",
+     "value": 19613872
+    },
+    {
+     "date": "2018-02-03",
+     "value": 25294349
+    },
+    {
+     "date": "2019-03-02",
+     "value": 26997836
+    },
+    {
+     "date": "2020-01-18",
+     "value": 28815778
+    },
+    {
+     "date": "2021-02-13",
+     "value": 23240309
+    },
+    {
+     "date": "2022-01-01",
+     "value": 20035156
+    },
+    {
+     "date": "2023-01-28",
+     "value": 25581016
+    },
+    {
+     "date": "2024-02-17",
+     "value": 25256294
+    },
+    {
+     "date": "2025-01-11",
+     "value": 21759778
+    },
+    {
+     "date": "2026-01-31",
+     "value": 20346162
+    },
+    {
+     "date": "2026-08-22",
+     "value": 23961854
+    }
+   ],
+   "notes": "Absolute count, no denominator given on the page. History is BuiltWith's own chart series 'Entire Internet' (first point per year plus latest, 2026-08-22). Series peak 30,546,471 on 2020-10-03 (top 1m peak 547,327 same date); last chart point dated 2026-08-22. Bytes were gzip; excerpt from decoded copy."
+  },
+  {
+   "id": "builtwith-php-top1m",
+   "family": "websites",
+   "measurer": "BuiltWith",
+   "what": "count of top-1-million sites (BuiltWith traffic ranking) using PHP",
+   "value": 196288,
+   "unit": "count",
+   "population": "BuiltWith's top 1m sites",
+   "method": "BuiltWith technology lookup crawl",
+   "as_of": "2026-08-22",
+   "source": {
+    "kind": "fetch",
+    "url": "https://trends.builtwith.com/framework/PHP",
+    "sha256": "467433b45a8db4bed3e1fa4fa3df0e8f41f916263eb4b13e47df0f1ba047823a",
+    "retrieved_at": "2026-10-24T01:31:28Z",
+    "file": "fetched/builtwith-php.html",
+    "excerpt": "Traffic Top 1m 196,288 Top 100k 13,440 Top 10k 1,362 Top 1000 134"
+   },
+   "history": [
+    {
+     "date": "2011-01-01",
+     "value": 32559
+    },
+    {
+     "date": "2012-01-28",
+     "value": 110824
+    },
+    {
+     "date": "2013-02-16",
+     "value": 149870
+    },
+    {
+     "date": "2014-01-04",
+     "value": 240479
+    },
+    {
+     "date": "2015-01-31",
+     "value": 309372
+    },
+    {
+     "date": "2016-02-27",
+     "value": 359698
+    },
+    {
+     "date": "2017-01-14",
+     "value": 400767
+    },
+    {
+     "date": "2018-02-03",
+     "value": 451815
+    },
+    {
+     "date": "2019-03-02",
+     "value": 482574
+    },
+    {
+     "date": "2020-01-18",
+     "value": 502255
+    },
+    {
+     "date": "2021-02-13",
+     "value": 496189
+    },
+    {
+     "date": "2022-01-01",
+     "value": 323048
+    },
+    {
+     "date": "2023-01-28",
+     "value": 326422
+    },
+    {
+     "date": "2024-02-17",
+     "value": 302666
+    },
+    {
+     "date": "2025-01-11",
+     "value": 274233
+    },
+    {
+     "date": "2026-01-31",
+     "value": 193965
+    },
+    {
+     "date": "2026-08-22",
+     "value": 196288
+    }
+   ],
+   "notes": "About 19.6% of the top 1M, 13.4% of the top 100k, 13.6% of top 10k, 13.4% of top 1k (our division by the band size). Far below W3Techs' known-language shares: BuiltWith requires a positive PHP signal, W3Techs divides by known-language sites only."
+  },
+  {
+   "id": "wappalyzer-php-sites",
+   "family": "websites",
+   "measurer": "Wappalyzer",
+   "what": "count of websites Wappalyzer tracks using PHP",
+   "value": 22700000,
+   "unit": "count",
+   "population": "websites in Wappalyzer's dataset",
+   "method": "Wappalyzer fingerprint detection (not described on this page)",
+   "as_of": "2026-10-24 (retrieved; page gives no date)",
+   "source": {
+    "kind": "fetch",
+    "url": "https://www.wappalyzer.com/technologies/programming-languages/php/",
+    "sha256": "c96eba601b04e734a48c9c0bf72f0f2067b124fccbd28d31f5f98242d912924d",
+    "retrieved_at": "2026-10-24T01:31:28Z",
+    "file": "fetched/wappalyzer-php.html",
+    "excerpt": "Wappalyzer tracks about 22,700,000 websites using PHP."
+   },
+   "notes": "Rounded count, no denominator published on the page."
+  },
+  {
+   "id": "httparchive-php-origins-mobile",
+   "family": "websites",
+   "measurer": "HTTP Archive (Tech Report API, Wappalyzer detection)",
+   "what": "count of origins in the HTTP Archive mobile crawl where PHP is detected",
+   "value": 4221648,
+   "unit": "count",
+   "population": "origins in the HTTP Archive crawl (CrUX-derived list), mobile client; ALL ranks, ALL geos",
+   "method": "Monthly crawl of CrUX origins with WebPageTest/Chrome; technologies by Wappalyzer rules",
+   "as_of": "2026-09-01",
+   "source": {
+    "kind": "fetch",
+    "url": "https://cdn.httparchive.org/v1/adoption?technology=PHP&geo=ALL&rank=ALL",
+    "sha256": "2013e7d1b47ecbd266cf27c364381c52d4eea5199fea2f1f740c81d066f90173",
+    "retrieved_at": "2026-10-24T01:35:57Z",
+    "file": "fetched/ha-v1-adoption-php.json",
+    "excerpt": "{\"date\":\"2026-09-01\",\"adoption\":{\"desktop\":2606557,\"mobile\":4221648},\"technology\":\"PHP\"}"
+   },
+   "history": [
+    {
+     "date": "2020-01-01",
+     "value": 1735024
+    },
+    {
+     "date": "2021-01-01",
+     "value": 2864275
+    },
+    {
+     "date": "2022-01-01",
+     "value": 3617213
+    },
+    {
+     "date": "2023-01-01",
+     "value": 5618398
+    },
+    {
+     "date": "2024-01-01",
+     "value": 5376001
+    },
+    {
+     "date": "2025-01-01",
+     "value": 5007478
+    },
+    {
+     "date": "2026-01-01",
+     "value": 4634946
+    },
+    {
+     "date": "2026-09-01",
+     "value": 4221648
+    }
+   ],
+   "notes": "Desktop 2,606,557. bq/BigQuery not usable (no credentials) so the published Tech Report API at cdn.httparchive.org/v1 (the endpoint httparchive.org's own techreport page calls) was used."
+  },
+  {
+   "id": "httparchive-php-share-mobile",
+   "family": "websites",
+   "measurer": "HTTP Archive (Tech Report API, Wappalyzer detection)",
+   "what": "share of all crawled origins where PHP is detected (mobile), computed from two published counts",
+   "value": 48.3,
+   "unit": "%",
+   "population": "all origins in the HTTP Archive mobile crawl (8,739,300 in Sept 2026)",
+   "method": "our ratio: PHP origins / ALL origins from the same API, same date",
+   "as_of": "2026-09-01",
+   "source": {
+    "kind": "fetch",
+    "url": "https://cdn.httparchive.org/v1/adoption?technology=ALL&geo=ALL&rank=ALL",
+    "sha256": "2241b8e38794dec31edd727783abb65edcc456335d2d09f505d5bd63a013f74d",
+    "retrieved_at": "2026-10-24T01:35:58Z",
+    "file": "fetched/ha-v1-adoption-all.json",
+    "excerpt": "{\"date\":\"2026-09-01\",\"adoption\":{\"desktop\":5515143,\"mobile\":8739300},\"technology\":\"ALL\"}"
+   },
+   "history": [
+    {
+     "date": "2020-01-01",
+     "value": 51.0
+    },
+    {
+     "date": "2021-01-01",
+     "value": 50.2
+    },
+    {
+     "date": "2022-01-01",
+     "value": 56.9
+    },
+    {
+     "date": "2023-01-01",
+     "value": 58.0
+    },
+    {
+     "date": "2024-01-01",
+     "value": 56.4
+    },
+    {
+     "date": "2025-01-01",
+     "value": 54.6
+    },
+    {
+     "date": "2026-01-01",
+     "value": 52.3
+    },
+    {
+     "date": "2026-09-01",
+     "value": 48.3
+    }
+   ],
+   "notes": "Denominator is ALL origins, including those where no language is detectable, which is why it is lower than W3Techs. Desktop share history: 2020-01-01 50.9, 2021-01-01 50.7, 2022-01-01 56.3, 2023-01-01 55.9, 2024-01-01 54.9, 2025-01-01 53.3, 2026-01-01 50.5, 2026-09-01 47.3. Numerator excerpt is in httparchive-php-origins-mobile."
+  },
+  {
+   "id": "httparchive-wordpress-share-mobile",
+   "family": "applications",
+   "measurer": "HTTP Archive (Tech Report API, Wappalyzer detection)",
+   "what": "share of all crawled mobile origins running WordPress, computed from published counts",
+   "value": 31.1,
+   "unit": "%",
+   "population": "all origins in the HTTP Archive mobile crawl",
+   "method": "our ratio of two published counts",
+   "as_of": "2026-09-01",
+   "source": {
+    "kind": "fetch",
+    "url": "https://cdn.httparchive.org/v1/adoption?technology=WordPress&geo=ALL&rank=ALL",
+    "sha256": "7964a028052a05716ff8df036542f7afa086ec2ecbaa475a576f847e788b4c06",
+    "retrieved_at": "2026-10-24T01:35:58Z",
+    "file": "fetched/ha-v1-adoption-wordpress.json",
+    "excerpt": "{\"date\":\"2026-09-01\",\"adoption\":{\"desktop\":1626771,\"mobile\":2714694},\"technology\":\"WordPress\"}"
+   },
+   "history": [
+    {
+     "date": "2020-01-01",
+     "value": 30.5
+    },
+    {
+     "date": "2021-01-01",
+     "value": 32.2
+    },
+    {
+     "date": "2022-01-01",
+     "value": 33.6
+    },
+    {
+     "date": "2023-01-01",
+     "value": 35.1
+    },
+    {
+     "date": "2024-01-01",
+     "value": 34.9
+    },
+    {
+     "date": "2025-01-01",
+     "value": 34.4
+    },
+    {
+     "date": "2026-01-01",
+     "value": 33.6
+    },
+    {
+     "date": "2026-09-01",
+     "value": 31.1
+    }
+   ],
+   "notes": "Comparable with W3Techs' 39.6%-of-all-sites WordPress figure."
+  },
+  {
+   "id": "webalmanac-2025-wordpress",
+   "family": "applications",
+   "measurer": "HTTP Archive Web Almanac 2025 (CMS chapter)",
+   "what": "WordPress share of all websites (mobile) in the 2025 Almanac crawl",
+   "value": 35.0,
+   "unit": "%",
+   "population": "all websites in the HTTP Archive 2025 crawl, mobile",
+   "method": "Wappalyzer detection on the HTTP Archive crawl",
+   "as_of": "2025 (Almanac edition)",
+   "source": {
+    "kind": "fetch",
+    "url": "https://almanac.httparchive.org/en/2025/cms",
+    "sha256": "180e877aeccff347f42eab6926f5ca4192d99e01349b98be47ee3ec7f6d32ea6",
+    "retrieved_at": "2026-10-24T01:36:11Z",
+    "file": "fetched/webalmanac-2025-cms.html",
+    "excerpt": "peaking at 35.0% for all websites."
+   },
+   "history": [
+    {
+     "date": "2022",
+     "value": 35.1
+    },
+    {
+     "date": "2023",
+     "value": 34.9
+    },
+    {
+     "date": "2024",
+     "value": 35.6
+    },
+    {
+     "date": "2025",
+     "value": 35.0
+    }
+   ],
+   "notes": "2022-2024 points are from the 2024 chapter (webalmanac-2024-cms.html): 'WordPress was used on 35.1% in 2022, 34.9% in 2023, and 35.6% in 2024'. The Almanac chapters do not give a PHP-language share."
+  },
+  {
+   "id": "packagist-packages",
+   "family": "packages",
+   "measurer": "Packagist.org",
+   "what": "packages registered on Packagist (the Composer PHP package repository)",
+   "value": 475515,
+   "unit": "count",
+   "population": "Packagist.org registry",
+   "method": "registry totals",
+   "as_of": "2026-10-24",
+   "source": {
+    "kind": "fetch",
+    "url": "https://packagist.org/statistics",
+    "sha256": "c81dcafd59845c51602e13361c182dc308e95fda5e6c71b68ce62f1f4faaec24",
+    "retrieved_at": "2026-10-24T01:31:28Z",
+    "file": "fetched/packagist-stats.html",
+    "excerpt": "Packages registered 475 515 Versions available 5 972 250 Packages installed (since 2012-04-13) 207 858 803 613"
+   },
+   "notes": "statistics.json fetched seconds later gave packages 475503, versions 5967561, downloads 207859011119 (live counters)."
+  },
+  {
+   "id": "packagist-installs",
+   "family": "packages",
+   "measurer": "Packagist.org",
+   "what": "cumulative package installs via Composer since 2012-04-13",
+   "value": 207858803613,
+   "unit": "count",
+   "population": "Composer installs served by Packagist.org",
+   "method": "install counter",
+   "as_of": "2026-10-24",
+   "source": {
+    "kind": "fetch",
+    "url": "https://packagist.org/statistics",
+    "sha256": "c81dcafd59845c51602e13361c182dc308e95fda5e6c71b68ce62f1f4faaec24",
+    "retrieved_at": "2026-10-24T01:31:28Z",
+    "file": "fetched/packagist-stats.html",
+    "excerpt": "Packages installed (since 2012-04-13) 207 858 803 613"
+   },
+   "notes": "Installs, not users or sites. Packagist php-statistics page (installs by PHP minor version) is chart-only; numbers not in the static bytes."
+  },
+  {
+   "id": "stackoverflow-2025-php",
+   "family": "developers",
+   "measurer": "Stack Overflow Developer Survey 2025",
+   "what": "share of all respondents who worked with PHP in the past year",
+   "value": 18.9,
+   "unit": "%",
+   "population": "2025 survey respondents answering the language question (All Respondents)",
+   "method": "self-selected online survey",
+   "as_of": "2025",
+   "source": {
+    "kind": "fetch",
+    "url": "https://survey.stackoverflow.co/2025/technology",
+    "sha256": "721a084a2139830bbdef949add7415104d59d85fb021e01c52b5ce63155dd577",
+    "retrieved_at": "2026-10-24T01:36:27Z",
+    "file": "fetched/so-survey-2025-tech.html",
+    "excerpt": "All Respondents JavaScript 66% HTML/CSS 61.9% SQL 58.6% Python 57.9%"
+   },
+   "notes": "Excerpt anchors the 'All Respondents' list; the same list continues 'C++ 23.5% PowerShell 23.2% C 22% PHP 18.9% Go 16.4%'.Professional developers 19.1%. 12th language. The 2026 survey page lists only the top 10 languages (PHP not among them); PHP figure for 2026 not in the fetched bytes."
+  },
+  {
+   "id": "tiobe-2026-10-php",
+   "family": "developers",
+   "measurer": "TIOBE Index",
+   "what": "PHP rating in the TIOBE index (search-engine popularity)",
+   "value": 1.26,
+   "unit": "%",
+   "population": "TIOBE search-engine hit model",
+   "method": "TIOBE rating",
+   "as_of": "2026-10",
+   "source": {
+    "kind": "fetch",
+    "url": "https://www.tiobe.com/tiobe-index/",
+    "sha256": "d55f43879550643acd749189a556da86d445ec70873d6c1a64ca8b68578d98c5",
+    "retrieved_at": "2026-10-24T01:36:28Z",
+    "file": "fetched/tiobe-index.html",
+    "excerpt": "12 14 PHP 1.26% -0.12%"
+   },
+   "notes": "Rank 12 in October 2026, 14 a year earlier. Not a usage measure. Page heading 'TIOBE Index for October 2026'."
+  },
+  {
+   "id": "jetbrains-2025-php-versions",
+   "family": "versions",
+   "measurer": "JetBrains State of PHP 2025",
+   "what": "share of surveyed PHP developers using PHP 8.x",
+   "value": 89,
+   "unit": "%",
+   "population": "PHP developers in the JetBrains Developer Ecosystem survey 2025",
+   "method": "survey; multiple versions per respondent",
+   "as_of": "2025",
+   "source": {
+    "kind": "fetch",
+    "url": "https://blog.jetbrains.com/phpstorm/2025/10/state-of-php-2025/",
+    "sha256": "7720d77ce3d687615e70b606ad4b78a130b50f85968cb92f227c3cd99e6335dc",
+    "retrieved_at": "2026-10-24T01:36:59Z",
+    "file": "fetched/jetbrains-state-of-php-2025.html",
+    "excerpt": "PHP 8.x dominates with 89% usage, while PHP 7.x has dropped to 33%. Legacy versions (5.6 and earlier) are now down to 8%"
+   },
+   "notes": "Developer self-report, skewed to JetBrains users per its own disclaimer; not site counts."
+  },
+  {
+   "id": "censys-php-hosts-gist",
+   "family": "hosts",
+   "measurer": "Censys (query by Silas Cutler)",
+   "what": "internet hosts whose service software product is PHP",
+   "value": 2574043,
+   "unit": "count",
+   "population": "hosts in Censys platform index",
+   "method": "Censys query host.services.software.product: \"PHP\"",
+   "as_of": "2026-10-22 (capture date; query date not stated)",
+   "source": {
+    "kind": "vault",
+    "url": "https://gist.github.com/silascutler/c7f04537a79ace89569f979d964af0f9",
+    "sha256": "5cea858eacc35a20d7943cf8334baad5fa8b37ed7f19ecbf3416f489935edd49",
+    "retrieved_at": "2026-10-22T11:28:41.000Z",
+    "vault_slug": "gist-silascutler-censys-query",
+    "vault_file": "sources/gist-silascutler-censys-query/captures/20261022T112841Z/text.txt",
+    "excerpt": "For all PHP: host.services.software.product: \"PHP\" ( 2,574,043 results)"
+   },
+   "notes": "Primary: the researcher's own published query result. Hosts (IPs), not websites."
+  },
+  {
+   "id": "censys-php-hosts-securityweek",
+   "family": "hosts",
+   "measurer": "Censys (via SecurityWeek)",
+   "what": "internet-facing hosts running PHP; with identifiable version; unpatched",
+   "value": 2580000,
+   "unit": "count",
+   "population": "internet-facing hosts seen by Censys on 2026-10-21",
+   "method": "Censys scan, reported by SecurityWeek",
+   "as_of": "2026-10-21",
+   "source": {
+    "kind": "vault",
+    "url": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
+    "sha256": "b922b47f8fab0fa86af000c740795a67ad78d0d4cdc6a57a316408988acb5835",
+    "retrieved_at": "2026-10-23T01:38:36.326Z",
+    "vault_slug": "securityweek-exploitation-days-before",
+    "vault_file": "sources/securityweek-exploitation-days-before/captures/20261023T012042Z/text.txt",
+    "excerpt": "Out of 2.58 million internet-facing hosts seen on October 21, roughly 1.58 million were reporting identifiable PHP versions"
+   },
+   "notes": "Same article: approx. 1.57 million not patched; 'nearly 3 million' hosts as of 22 Oct. Second-hand (news)."
+  },
+  {
+   "id": "censys-php-web-properties",
+   "family": "hosts",
+   "measurer": "Censys (via KrebsOnSecurity, via bitpage.de)",
+   "what": "web properties serving PHP",
+   "value": 54900000,
+   "unit": "count",
+   "population": "Censys web-property index",
+   "method": "Censys; reported third-hand",
+   "as_of": "2026-10 (not stated)",
+   "source": {
+    "kind": "vault",
+    "url": "https://bitpage.de/php2shell-php-sicherheitsluecke-webseiten-offline/",
+    "sha256": "50d84bde38c55c1772d88500502e6aa7a1e20d4691519ca18654499441ad8786",
+    "retrieved_at": "2026-10-23T16:12:58.182Z",
+    "vault_slug": "bitpage-php2shell-php-sicherheitsluecke-webseite",
+    "vault_file": "sources/bitpage-php2shell-php-sicherheitsluecke-webseite/captures/20261023T160435Z/text.txt",
+    "excerpt": "Censys zählt laut KrebsOnSecurity 2,58 Millionen direkt aus dem Internet erreichbare Hosts mit PHP und 54,9 Millionen Web-Properties, die PHP ausliefern."
+   },
+   "notes": "Third-hand; Krebs article not in the vault. Web properties (names) not hosts. Same German page later cites Censys '34,4 Millionen verwundbare PHP-Dienste'. Born (borncity) reports an unquoted Censys 'php' search giving 7 million hosts and 59 million software products."
+  },
+  {
+   "id": "vulncheck-php-hosts",
+   "family": "hosts",
+   "measurer": "VulnCheck (via The Hacker News)",
+   "what": "internet-facing hosts with PHP identified",
+   "value": 2608039,
+   "unit": "count",
+   "population": "internet-facing hosts in VulnCheck's scan data",
+   "method": "VulnCheck analysis, reported by The Hacker News",
+   "as_of": "2026-10-21/22",
+   "source": {
+    "kind": "vault",
+    "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+    "sha256": "c1cb63141287484c7b96b6f842f983bb978a108b3b82eebb95ebe78c4ed608f4",
+    "retrieved_at": "2026-10-22T08:13:20.228Z",
+    "vault_slug": "thehackernews-php2shell-4days",
+    "vault_file": "sources/thehackernews-php2shell-4days/captures/20261022T081320Z/text.txt",
+    "excerpt": "VulnCheck's analysis has identified PHP on 2,608,039 internet-facing hosts, out of which over 700,000 hosts run PHP 3.x through 7.3."
+   },
+   "notes": "Same text: about 400,000 on 7.4/8.0/8.1 and 403,000 on supported 8.2-8.5. Second-hand."
+  },
+  {
+   "id": "virustotal-php-ips",
+   "family": "hosts",
+   "measurer": "VirusTotal (via SecurityWeek)",
+   "what": "IP addresses running PHP; with version announced",
+   "value": 5100000,
+   "unit": "count",
+   "population": "IP addresses seen by VirusTotal",
+   "method": "VirusTotal estimate, reported by SecurityWeek",
+   "as_of": "2026-10-21",
+   "source": {
+    "kind": "vault",
+    "url": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
+    "sha256": "b922b47f8fab0fa86af000c740795a67ad78d0d4cdc6a57a316408988acb5835",
+    "retrieved_at": "2026-10-23T01:38:36.326Z",
+    "vault_slug": "securityweek-exploitation-days-before",
+    "vault_file": "sources/securityweek-exploitation-days-before/captures/20261023T012042Z/text.txt",
+    "excerpt": "VirusTotal says it sees roughly 5.1 million IP addresses running PHP, but only 1.1 million of them announce a version"
+   },
+   "notes": "Of 1.1M with a version: approx. 272,000 supported, approx. 758,000 EoL (5.4-8.1). About four in five hide the version. Also in recordedfuture-php2shell and bleepingcomputer-php2shell captures. Second-hand."
+  },
+  {
+   "id": "mallory-shodan-php-versions",
+   "family": "hosts",
+   "measurer": "Mallory (Shodan banner counts, via The Hacker News)",
+   "what": "hosts whose HTTP banner reports PHP 8.1 or older",
+   "value": 884000,
+   "unit": "count",
+   "population": "internet-facing hosts in Shodan reporting any PHP version (approx. 1.5 million)",
+   "method": "Shodan banner counts published by Mallory 2026-10-20",
+   "as_of": "2026-10-20",
+   "source": {
+    "kind": "vault",
+    "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
+    "sha256": "33ba8292e26406d7275daee8f4f0b07cf240d878bdcff089c5a9e1d4c21eff6b",
+    "retrieved_at": "2026-10-22T11:31:44.588Z",
+    "vault_slug": "thehackernews-php2shell-unpatched-alert",
+    "vault_file": "sources/thehackernews-php2shell-unpatched-alert/captures/20261022T113144Z/text.txt",
+    "excerpt": "Security company Mallory counted about 884,000 internet-facing hosts whose HTTP banner reported a PHP version of 8.1 or older"
+   },
+   "notes": "59% of the roughly 1.5 million version-reporting hosts. cybelangel capture gives exact 883,717."
+  },
+  {
+   "id": "shodan-php-hosts-poley",
+   "family": "hosts",
+   "measurer": "Shodan (search by Henk Poley, via Tenable)",
+   "what": "internet-exposed hosts running PHP (Shodan search)",
+   "value": 1900000,
+   "unit": "count",
+   "population": "Shodan index",
+   "method": "Shodan search, reported by Tenable FAQ",
+   "as_of": "2026-10-21/22",
+   "source": {
+    "kind": "vault",
+    "url": "https://www.tenable.com/blog/php2shell-cve-2026-109618-cve-2026-109619-frequently-asked-questions-about-critical-php-remote",
+    "sha256": "10d98694b9c0243efaf17de612d27de215138873b711598eae3f68ceb9b11b54",
+    "retrieved_at": "2026-10-22T11:23:31.380Z",
+    "vault_slug": "tenable-php2shell-faq",
+    "vault_file": "sources/tenable-php2shell-faq/captures/20261022T112331Z/text.txt",
+    "excerpt": "A Shodan search by Henk Poley counts over 1.9 million internet-exposed hosts running PHP."
+   },
+   "notes": "Direct Shodan fetch was blocked (Cloudflare challenge). Same capture: Silas Cutler's rough estimate of over 1.3 million potentially vulnerable hosts."
+  },
+  {
+   "id": "unit42-22.6m-instances",
+   "family": "hosts",
+   "measurer": "Palo Alto Networks (as reported by Fortune and others)",
+   "what": "'potentially vulnerable instances' / 'internet-exposed servers' (definition unclear)",
+   "value": 22600000,
+   "unit": "count",
+   "population": "not stated",
+   "method": "not stated ('initial analysis', 'Cortex Xpanse telemetry sweep' per Clarin)",
+   "as_of": "2026-10-22/23",
+   "source": {
+    "kind": "vault",
+    "url": "https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/",
+    "sha256": "cdcba1b8c212b9e8d3928e5d5ea0a7e09ea4c719e7bef44139d3f9f2f0612808",
+    "retrieved_at": "2026-10-23T01:37:11.005Z",
+    "vault_slug": "fortune-ai-tools-php-vulnerability",
+    "vault_file": "sources/fortune-ai-tools-php-vulnerability/captures/20261023T012042Z/text.txt",
+    "excerpt": "An initial analysis by cybersecurity firm Palo Alto Networks identified 22.6 million potentially vulnerable instances."
+   },
+   "notes": "UNVERIFIED and an outlier: about 10x every host count above. Vault curator marks claim scale-22m-paloalto 'unverified': Palo Alto's own advisory (paloalto-psirt-cve-2026-109618) gives no such figure. Claim cur3-22m-servers (TechTarget Japan) 'basis not stated'. Likely counts instances/sites, not hosts. Do not use as a host count without the primary."
+  }
+ ],
+ "injection_seen": [
+  {
+   "where": "all fetched pages and vault captures grepped for 'ignore (all|previous)', 'as an AI', 'language model', 'assistant'",
+   "found": "none addressed to an AI. Matches were survey content (JetBrains/Stack Overflow questions about AI assistants) and a Stack Overflow 'Open Claude / Open ChatGPT' share button, neither an instruction."
+  }
+ ],
+ "blocked": [
+  {
+   "what": "HTTP Archive BigQuery (bq ls httparchive:)",
+   "result": "BigQuery error in ls operation: Invalid Credentials; gcloud: No credentialed accounts",
+   "status": "blocked",
+   "workaround": "used published Tech Report API (cdn.httparchive.org/v1)"
+  },
+  {
+   "what": "Shodan search/facet pages",
+   "url": "https://www.shodan.io/search?query=%22X-Powered-By%3A+PHP%22",
+   "status": "blocked",
+   "http": 403,
+   "result": "Cloudflare challenge 'Just a moment...'"
+  },
+  {
+   "what": "Censys search",
+   "url": "https://search.censys.io/search?resource=hosts&q=services.software.product%3A%22PHP%22",
+   "status": "blocked",
+   "http": 403,
+   "result": "Cloudflare challenge 'Just a moment...'"
+  },
+  {
+   "what": "W3Techs yearly 'all' history for programming languages",
+   "url": "https://w3techs.com/technologies/history_overview/programming_language/all/y",
+   "status": "not-available",
+   "http": 404,
+   "result": "no 'share of all sites' history published for languages; first attempt connection reset"
+  },
+  {
+   "what": "php.net usage page",
+   "url": "https://www.php.net/usage.php",
+   "status": "not-available",
+   "http": 404,
+   "result": "php.net no longer publishes usage stats at this URL; no php.net/PHP Foundation usage number found"
+  },
+  {
+   "what": "Netcraft",
+   "status": "not-a-measure",
+   "result": "Netcraft surveys web servers, not server-side languages; fetched blog has no PHP usage figure"
+  },
+  {
+   "what": "Packagist installs by PHP version",
+   "url": "https://packagist.org/php-statistics",
+   "status": "not-extracted",
+   "result": "chart rendered client-side; no figures in static bytes"
+  }
+ ]
+}

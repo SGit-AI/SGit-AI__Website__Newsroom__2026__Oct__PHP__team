@@ -1,0 +1,32 @@
+{
+  "node_id": "66626d5e",
+  "node_type": "evidence",
+  "node_index": 17,
+  "label": "Evidence-17",
+  "title": "Siemens joins the CVE records as an affected supplier (RUGGEDCOM APE1808, SSA-566512); NVD now lists Palo Alto PAN-OS and the Siemens device among 306 vulnerable configurations",
+  "description": "Both CVE records gained a Siemens supplier container on 23 October (14:07 UTC); NVD's configurations grew from four PHP ranges to 306 matches, including hundreds of PAN-OS versions (Palo Alto's own advisory is already in the vault, paloalto-psirt-cve-2026-109618). The first appliance vendors in the primary record. Capture Siemens SSA-566512; the inventory and affected pages are the owners'.",
+  "status": "proposed",
+  "created_at": 1792828702161,
+  "updated_at": 1792828702346,
+  "created_by": "de6b37bc",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "fd8a8147",
+      "target_label": "Run-4",
+      "created_at": 1792828702346
+    }
+  ],
+  "properties": {
+    "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109618",
+    "retrieved_at": "2026-10-24T07:57Z",
+    "sha256": "e90dc1df042aca8ba35d87d9748e2347a865ed285ca49e62e353e909d71547b8",
+    "excerpt": "RUGGEDCOM APE1808",
+    "claims": [
+      "two-cves-9.2"
+    ],
+    "severity": "medium"
+  }
+}

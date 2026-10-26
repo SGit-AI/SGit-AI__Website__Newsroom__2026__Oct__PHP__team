@@ -1,0 +1,32 @@
+{
+  "node_id": "2c2c205e",
+  "node_type": "finding",
+  "node_index": 37,
+  "label": "Finding-37",
+  "title": "scale-ncsc-nl: The claim's status counts do not add up to its total",
+  "description": "206 + 46 + 418 + 3 = 673, not 674. The 674th row is 'The PHP Group / PHP core and Zend Engine', an unversioned anchor with no status. numbers.json n-674 mentions it; the claim does not. Corrected: 675 rows: 206 vulnerable, 46 fixed, 418 under investigation, 4 not vulnerable, 1 PHP-core anchor without a status.",
+  "status": "open",
+  "created_at": 1792694625195,
+  "updated_at": 1792694625435,
+  "created_by": "ae7cae75",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694625435
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-ncsc-nl"
+    ],
+    "pages": [
+      "facts/scale-ncsc-nl/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

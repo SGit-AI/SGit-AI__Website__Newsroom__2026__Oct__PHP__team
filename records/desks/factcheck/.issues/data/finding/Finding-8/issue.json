@@ -1,0 +1,32 @@
+{
+  "node_id": "4d90abda",
+  "node_type": "finding",
+  "node_index": 8,
+  "label": "Finding-8",
+  "title": "most-severe: Cited Wiz source does not say it; the real origin is uncited",
+  "description": "The claim cites wiz-blog-php2shell, whose wording is 'among the most severe ... in PHP'. The 'ever detected by AI' framing appears in the BBC and, as a WSJ quote of Wiz's co-founder ('the most severe AI vulnerability that was ever found'), in substack-lopezkurtz-patch-is-the-exploit. Cite the Substack relay and label the claim as a quote of a quote from the WSJ.",
+  "status": "open",
+  "created_at": 1792694609806,
+  "updated_at": 1792694610032,
+  "created_by": "8d33ae16",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694610032
+    }
+  ],
+  "properties": {
+    "claims": [
+      "most-severe"
+    ],
+    "pages": [
+      "facts/most-severe/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

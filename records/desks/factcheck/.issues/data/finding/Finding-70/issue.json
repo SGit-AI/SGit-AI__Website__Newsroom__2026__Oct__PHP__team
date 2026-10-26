@@ -1,0 +1,31 @@
+{
+  "node_id": "c7a1d86c",
+  "node_type": "finding",
+  "node_index": 70,
+  "label": "Finding-70",
+  "title": "fix-bailout: 1 smaller precision and sourcing point",
+  "description": "ChangeLog dates the four releases 22 Oct 2026, a day after the release: php-net-changelog-8 lists 'Version 8.5.12 / 22 Oct 2026' (and the same for 8.4.27, 8.3.36, 8.2.35) although php.net and the Foundation say they shipped 21 Oct. Not a problem for this claim, but any page that dates the fix from the ChangeLog would be a day off.",
+  "status": "open",
+  "created_at": 1792694642392,
+  "updated_at": 1792694642634,
+  "created_by": "5acb3c40",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694642634
+    }
+  ],
+  "properties": {
+    "claims": [
+      "fix-bailout"
+    ],
+    "pages": [
+      "facts/fix-bailout/index.html"
+    ],
+    "severity": "low"
+  }
+}

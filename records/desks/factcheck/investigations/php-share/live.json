@@ -1,0 +1,2538 @@
+{
+ "generated_at": "2026-10-24T01:46:33Z",
+ "method": "curl -sS -L -m 40 with a Chrome UA; sha256 of the bytes saved under fetched/; tags stripped; 70% sentences compared with the vault capture text.txt (sha256 checked against provenance.json). Excerpts verified as substrings of the saved bytes (after HTML-entity decoding and whitespace collapsing). Em-dashes inside verbatim quotes are written as the JSON escape \\u2014.",
+ "counts": {
+  "page_records": 73,
+  "unique_urls": 68,
+  "by_classification": {
+   "unchanged": 64,
+   "changed": 4,
+   "blocked": 3,
+   "unverifiable": 2
+  },
+  "new_outlets": 14,
+  "changes": 9
+ },
+ "pages": [
+  {
+   "slug_or_url": "20-minuten-20min-fr-suisse-romande",
+   "publisher": "20 minutes (20min.ch)",
+   "url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/20-minuten-20min-fr-suisse-romande/captures/20261022T181608Z/text.txt",
+    "sha256": "d8cc82c5b6a9481087a4ef62989c8855f0cd8432771d1e02fa8a4b9572387e65",
+    "excerpt": "Le PHP, un langage de programmation créé au début des années 1990, a des failles qui mettent en danger «70% du web mondial».AFP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:04Z",
+    "status": 200,
+    "sha256": "0ee22cf60217a261fbc9b36e15183bc5bc5423dee76cc4ef24e6fe9b59fb7166",
+    "file": "fetched/20-minuten-20min-fr-suisse-romande__20261024T013203Z.html",
+    "final_url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
+    "title": "Faille de sécurité: Panne mondiale: la Suisse romande fortement impactée - 20 minutes",
+    "excerpt": "En cause, une faille critique dans PHP, un langage de programmation utilisé par environ 70% des sites web dont la technologie est identifiée, a conduit à la mise hors ligne"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "70% wording unchanged (the AFP photo caption \"«70% du web mondial»\" is now only in the page JSON). Headline changed between vault captures 08:14 and 18:16 UTC on 22 Oct (\"Panne mondiale des sites web: la Suisse romande touchée\" to \"Panne mondiale: la Suisse romande fortement impactée\"); not a 70% change."
+  },
+  {
+   "slug_or_url": "20min-fr-suisse-romande",
+   "publisher": "20 minutes (20min.ch)",
+   "url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
+   "vault": {
+    "stamp": "20261022T081421Z",
+    "file": "sources/20min-fr-suisse-romande/captures/20261022T081421Z/text.txt",
+    "sha256": "97a639a7c23eb1a480daf7e711e19852b387f74e01996372a8e3a23d59839dc4",
+    "excerpt": "Le PHP, un langage de programmation créé au début des années 1990, a des failles qui mettent en danger «70% du web mondial».AFP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:04Z",
+    "status": 200,
+    "sha256": "0ee22cf60217a261fbc9b36e15183bc5bc5423dee76cc4ef24e6fe9b59fb7166",
+    "file": "fetched/20-minuten-20min-fr-suisse-romande__20261024T013203Z.html",
+    "final_url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
+    "title": "Faille de sécurité: Panne mondiale: la Suisse romande fortement impactée - 20 minutes",
+    "excerpt": "En cause, une faille critique dans PHP, un langage de programmation utilisé par environ 70% des sites web dont la technologie est identifiée, a conduit à la mise hors ligne"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Same URL as another vault slug; one fetch serves both. See 20-minuten-20min-fr-suisse-romande."
+  },
+  {
+   "slug_or_url": "20minutos-tecnologia-ciberseguridad-por-que-gobiernos-hospit",
+   "publisher": "20minutos",
+   "url": "https://www.20minutos.es/tecnologia/ciberseguridad/por-que-gobiernos-hospitales-colegios-desconectan-webs-alerta-php_7051888_0.html",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/20minutos-tecnologia-ciberseguridad-por-que-gobiernos-hospit/captures/20261022T181608Z/text.txt",
+    "sha256": "96ea536b04fe59c76df5ae9fc13efbf08dc59d6eeb8232b7d4c22a85becff632",
+    "excerpt": "Dos fallos \"críticos\" en el lenguaje de programación PHP ponen en riesgo cerca del 70% de las páginas web de todo el mundo"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:05Z",
+    "status": 200,
+    "sha256": "4b42d75c91a18f1e8fd77a73a7a5d9fe412d9bc62a24d61c444e6af9f229c239",
+    "file": "fetched/20minutos-tecnologia-ciberseguridad-por-que-gobiernos-hospit__20261024T013204Z.html",
+    "final_url": "https://www.20minutos.es/tecnologia/ciberseguridad/por-que-gobiernos-hospitales-colegios-desconectan-webs-alerta-php_7051888_0.html",
+    "title": "Alerta de PHP: por qué gobiernos, hospitales y colegios desconectan sus webs",
+    "excerpt": "Dos fallos \"críticos\" en el lenguaje de programación PHP ponen en riesgo cerca del 70% de las páginas web de todo el mundo"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "abc-au-politics-live",
+   "publisher": "ABC News (Australia)",
+   "url": "https://www.abc.net.au/news/2026-10-22/federal-politics-live-blog-helen-haines/107294950",
+   "vault": {
+    "stamp": "20261022T081530Z",
+    "file": "sources/abc-au-politics-live/captures/20261022T081530Z/text.txt",
+    "sha256": "a86331d9b7a21f78af1750d3daf6ebbb696253e1216649e973e34262313040b1",
+    "excerpt": "Several government sites went offline overnight after a vulnerability was discovered in 70 per cent of the world's websites by an OpenAI tool, which detected a flaw in the PHP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:06Z",
+    "status": 200,
+    "sha256": "6da9d74b0c806972684d1a30e9f1b77bebb1eac7c2009f57bd25c6038b97ff6a",
+    "file": "fetched/abc-au-politics-live__20261024T013205Z.html",
+    "final_url": "https://www.abc.net.au/news/2026-10-22/federal-politics-live-blog-helen-haines/107294950",
+    "title": "Federal politics: No government websites hacked after global security flaw found — as it happened - ABC News",
+    "excerpt": "Several government sites went offline overnight after a vulnerability was discovered in 70 per cent of the world's websites by an OpenAI tool, which detected a flaw in the PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "actu17-prefectures",
+   "publisher": "Actu17",
+   "url": "https://actu17.fr/societe/failles-critiques-dans-php-des-sites-coupes-en-urgence-dans-le-monde-entier-dont-ceux-des-prefectures-en-france.html",
+   "vault": {
+    "stamp": "20261022T081432Z",
+    "file": "sources/actu17-prefectures/captures/20261022T081432Z/text.txt",
+    "sha256": "84edb7f59b55a5ce64bf9458671e49987b9e48e0e8388039de616a4c8c1e534d",
+    "excerpt": "D'après le Wall Street Journal, PHP fait fonctionner jusqu'à 70 % des sites internet dans le monde"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:07Z",
+    "status": 200,
+    "sha256": "6a6c2d28dc206b2dd46ca801ff8f7c3b38defcb1de2e92fe16b7b8e768829cb0",
+    "file": "fetched/actu17-prefectures__20261024T013206Z.html",
+    "final_url": "https://actu17.fr/societe/failles-critiques-dans-php-des-sites-coupes-en-urgence-dans-le-monde-entier-dont-ceux-des-prefectures-en-france.html",
+    "title": "Failles critiques dans PHP : des sites coupés en urgence dans le monde entier, dont ceux des préfectures en France",
+    "excerpt": "D'après le Wall Street Journal, PHP fait fonctionner jusqu'à 70 % des sites internet dans le monde"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Sentence still present; vault and live differ only by whitespace around a link."
+  },
+  {
+   "slug_or_url": "agconnect-maatschappij-security-welke-nederlandse-websites-w",
+   "publisher": "AG Connect",
+   "url": "https://www.agconnect.nl/maatschappij/security/welke-nederlandse-websites-waren-uit-de-lucht",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/agconnect-maatschappij-security-welke-nederlandse-websites-w/captures/20261022T181608Z/text.txt",
+    "sha256": "505809e89b530fe70249289f22bf5d7aa6c94100d0656851754fb9a469552cbc",
+    "excerpt": "Naar schatting gebruikt ongeveer 70 procent van alle websites wereldwijd PHP of een voortvloeisel daarvan"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:07Z",
+    "status": 200,
+    "sha256": "27c92b6d5f2fc28778ee5520093d21d8506f737f4c3a37fb2f0a7b59a3b22401",
+    "file": "fetched/agconnect-maatschappij-security-welke-nederlandse-websites-w__20261024T013207Z.html",
+    "final_url": "https://www.agconnect.nl/maatschappij/security/welke-nederlandse-websites-waren-uit-de-lucht",
+    "title": "Offline door PHP kwetsbaarheden: Welke Nederlandse websites waren uit de lucht?",
+    "excerpt": "Naar schatting gebruikt ongeveer 70 procent van alle websites wereldwijd PHP of een voortvloeisel daarvan"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "bbc-live-ckgel5xp2xv9t",
+   "publisher": "BBC News",
+   "url": "https://www.bbc.com/news/live/ckgel5xp2xv9t",
+   "vault": {
+    "stamp": "20261022T080559Z",
+    "file": "sources/bbc-live-ckgel5xp2xv9t/captures/20261022T080559Z/text.txt",
+    "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d",
+    "excerpt": "Cyber-security firm Wiz estimates that \"roughly 70%\" of the internet is affected by the PHP flaws"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:34:20Z",
+    "status": 200,
+    "sha256": "2fda11d58b21bbe97f21a578aee86756cb83b711934f2e8d9b47782cd1f58682",
+    "file": "fetched/bbc-live-ckgel5xp2xv9t_page3__20261024T013419Z.html",
+    "final_url": "https://www.bbc.com/news/live/ckgel5xp2xv9t",
+    "title": "Scale of cyber-security flaw 'unprecedented' but no sign of breaches, says expert - BBC News",
+    "excerpt": "with cyber-security firm Wiz estimating that \"roughly 70%\" of the internet is affected, though the BBC is unable to independently verify that figure"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Live page: the two \"roughly 70%\" entries (06:15 and 07:14 UTC, 22 Oct) are unchanged but now sit on ?page=3 (fetched 2026-10-24T01:34:20Z). Later entries word it differently: 13:54 and 16:27 UTC \"PHP powers 70% of the world's websites\" (attributed to Wiz); 17:12 UTC \"which helps run around 70% of sites\". Page title now: \"Scale of cyber-security flaw 'unprecedented' but no sign of breaches, says expert\". No correction note."
+  },
+  {
+   "slug_or_url": "cccs-al26-026",
+   "publisher": "Canadian Centre for Cyber Security",
+   "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619",
+   "vault": {
+    "stamp": "20261022T081700Z",
+    "file": "sources/cccs-al26-026/captures/20261022T081700Z/text.txt",
+    "sha256": "9e7f44cc73e21ad54d1caf36c5273a289839c76ff1e1ac35bf377e4645ad91a2",
+    "excerpt": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:09Z",
+    "status": 200,
+    "sha256": "84eaffa97f6cb91189f9235f94786222f61bb6cd9e0575222a9ffe586ff384a8",
+    "file": "fetched/cccs-al26-026__20261024T013208Z.html",
+    "final_url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619",
+    "title": "AL26-026 - Critical vulnerabilities impacting PHP - CVE-2026-109618 and CVE-2026-109619 - Update 1 - Canadian Centre for Cyber Security",
+    "excerpt": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Title now ends \"Update 1\" (Updated: October 23, 2026), about a new CVE-2026-115560; the 70% wording is only the Wiz blog title in a footnote, unchanged."
+  },
+  {
+   "slug_or_url": "clarin-us-news-php-security-vulnerabilities-how-ai-uncovered-massiv",
+   "publisher": "Clarin (English edition)",
+   "url": "https://www.clarin.com/us-news/php-security-vulnerabilities-how-ai-uncovered-massive-14-year-old-flaw-threatening-70-of-the-internet_0_BPPGgn8KC7.html",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/clarin-us-news-php-security-vulnerabilities-how-ai-uncovered-massiv/captures/20261023T080331Z/text.txt",
+    "sha256": "c11dd717273bac9546aaf433f103637af20d579a0fb1ba06943929d81a70e82d",
+    "excerpt": "PHP security vulnerabilities: How AI uncovered a massive 14-year-old flaw threatening 70% of the internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:09Z",
+    "status": 200,
+    "sha256": "2e0a107308cde91901e0e94a9d139331ef13cd72ca2ddbd289aec9c6b5a3c722",
+    "file": "fetched/clarin-us-news-php-security-vulnerabilities-how-ai-uncovered-massiv__20261024T013209Z.html",
+    "final_url": "https://www.clarin.com/us-news/php-security-vulnerabilities-how-ai-uncovered-massive-14-year-old-flaw-threatening-70-of-the-internet_0_BPPGgn8KC7.html",
+    "title": "PHP security vulnerabilities: How AI uncovered a massive 14-year-old flaw threatening 70% of the internet",
+    "excerpt": "PHP security vulnerabilities: How AI uncovered a massive 14-year-old flaw threatening 70% of the internet"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "All vault 70% sentences still present (some differ only by whitespace)."
+  },
+  {
+   "slug_or_url": "clickx-fr-actualites-200877-des-failles-php-critiques-menace",
+   "publisher": "Clickx",
+   "url": "https://www.clickx.be/fr/actualites/200877/des-failles-php-critiques-menacent-les-sites-web-du-monde-entier-dpg-media-et-les-pouvoirs-publics-mettent-leurs-sites-hors-ligne/",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/clickx-fr-actualites-200877-des-failles-php-critiques-menace/captures/20261022T181608Z/text.txt",
+    "sha256": "f1876f8dd43053e0c0b3e106e9409256b3487f7228617f8e2abf7aca5e6c053d",
+    "excerpt": "On estime qu’environ 70 % des sites web ou des applications web fonctionnent sous PHP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:10Z",
+    "status": 200,
+    "sha256": "cf7fcc7006deb59d6bbb754f9e0b6524f8a70509f938374dfc6c554ba7263216",
+    "file": "fetched/clickx-fr-actualites-200877-des-failles-php-critiques-menace__20261024T013209Z.html",
+    "final_url": "https://www.clickx.be/fr/actualites/200877/des-failles-php-critiques-menacent-les-sites-web-du-monde-entier-dpg-media-et-les-pouvoirs-publics-mettent-leurs-sites-hors-ligne/",
+    "title": "Des failles PHP critiques menacent les sites web du monde entier : DPG Media et les pouvoirs publics mettent leurs sites hors ligne | Clickx",
+    "excerpt": "On estime qu’environ 70 % des sites web ou des applications web fonctionnent sous PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "cloudflare-blog-php2shell-waf",
+   "publisher": "Cloudflare",
+   "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+   "vault": {
+    "stamp": "20261022T081216Z",
+    "file": "sources/cloudflare-blog-php2shell-waf/captures/20261022T081216Z/text.txt",
+    "sha256": "302408765abf45e3ae84473d9050c1c65b35c2858e5b53be4fee29dda4de2823",
+    "excerpt": "PHP is used by almost 70% of websites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:10Z",
+    "status": 200,
+    "sha256": "86ea19bbbde206f9339a36bc7e3a2276a5263296cfd3c902395ab2bd27801484",
+    "file": "fetched/cloudflare-blog-php2shell-waf__20261024T013210Z.html",
+    "final_url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+    "title": "Cloudflare deploys protections against php2shell vulnerability | Cloudflare Blog",
+    "excerpt": "PHP is used by almost 70% of websites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "cnn-php2shell-ai",
+   "publisher": "CNN Business",
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai",
+   "vault": {
+    "stamp": "20261022T080952Z",
+    "file": "sources/cnn-php2shell-ai/captures/20261022T080952Z/text.txt",
+    "sha256": "81bf5a9a7a84ad06077d46e5c782bcd925860cc16ca9e696ebacf90832db3fef",
+    "excerpt": "Global websites shut down after AI found a critical flaw affecting 70% of the internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:10Z",
+    "status": 200,
+    "sha256": "e3a57d45a3ace0974642017c6cd2b951e0664b5616061b377d22f13fa81f738b",
+    "file": "fetched/cnn-php2shell-ai__20261024T013210Z.html",
+    "final_url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+    "title": "Websites shut down globally after AI finds cybersecurity flaw affecting 70% of the internet | CNN Business",
+    "excerpt": "Websites shut down globally after AI finds cybersecurity flaw affecting 70% of the internet"
+   },
+   "classification": "changed",
+   "correction_note": null,
+   "notes": "This URL now 301-redirects to the -intl article (headers file cnn-nonintl-headers). The vault 08:09 UTC capture had title \"PHP2Shell: AI helped find a critical security flaw affecting 70% of the internet\" and lede \"could affect 70% of the internet\"; live lede now says \"could affect 70% of the world's websites\"."
+  },
+  {
+   "slug_or_url": "cnn-php2shell-websites-shut",
+   "publisher": "CNN Business",
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+   "vault": {
+    "stamp": "20261022T112616Z",
+    "file": "sources/cnn-php2shell-websites-shut/captures/20261022T112616Z/text.txt",
+    "sha256": "ee49fc4265ae1c7cfb7ed245597071af43f17d437ed08be951d8388502f5a533",
+    "excerpt": "Websites shut down globally after AI finds a critical flaw affecting 70% of the internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:11Z",
+    "status": 200,
+    "sha256": "e3a57d45a3ace0974642017c6cd2b951e0664b5616061b377d22f13fa81f738b",
+    "file": "fetched/cnn-php2shell-websites-shut__20261024T013210Z.html",
+    "final_url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+    "title": "Websites shut down globally after AI finds cybersecurity flaw affecting 70% of the internet | CNN Business",
+    "excerpt": "Websites shut down globally after AI finds cybersecurity flaw affecting 70% of the internet"
+   },
+   "classification": "changed",
+   "correction_note": null,
+   "notes": "Headline lost \"a critical\" (now \"cybersecurity flaw\"); body \"powers 70% of all websites in the world\" now reads \"powers 70% of the world's websites\"; new lede \"could affect 70% of the world's websites\". Page shows \"Updated Oct 22, 2026, 2:26 PM ET\" (dateModified 2026-10-22T18:26:13Z). No correction or editor's note. Headline still says \"70% of the internet\"."
+  },
+  {
+   "slug_or_url": "cnnportugal-php",
+   "publisher": "CNN Portugal",
+   "url": "https://cnnportugal.iol.pt/php/internet/um-dos-incidentes-mais-impactantes-da-memoria-recente-o-que-se-esta-a-passar-na-internet/20261022/6ad9be61d34e53c759c776e2",
+   "vault": {
+    "stamp": "20261022T081548Z",
+    "file": "sources/cnnportugal-php/captures/20261022T081548Z/text.txt",
+    "sha256": "de3c730717888f1395fbb1acc2b293846e9b0bf90bc7104fec23d64aad5886c2",
+    "excerpt": "De acordo com a empresa de cibersegurança Wiz, “cerca de 70%” de toda a Internet estará a ser afetada por este problema, o que não significa que todos os sites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:12Z",
+    "status": 200,
+    "sha256": "bcb4ae3fe4bcf6c5a36ef81d99172e519f05aadaa0e65f97ce8f304a8102bb3e",
+    "file": "fetched/cnnportugal-php__20261024T013211Z.html",
+    "final_url": "https://cnnportugal.iol.pt/php/internet/um-dos-incidentes-mais-impactantes-da-memoria-recente-o-que-se-esta-a-passar-na-internet/20261022/6ad9be61d34e53c759c776e2",
+    "title": "\"Um dos incidentes mais impactantes da memória recente\": o que se está a passar na Internet? - CNN Portugal",
+    "excerpt": "De acordo com a empresa de cibersegurança Wiz, “cerca de 70%” de toda a Internet estará a ser afetada por este problema, o que não significa que todos os sites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "computerworld-article-4238887-dos-fallos-criticos-de-p",
+   "publisher": "Computerworld Espana",
+   "url": "https://www.computerworld.es/article/4238887/dos-fallos-criticos-de-php-ponen-en-alerta-a-la-red-mientras-llegan-los-parches-de-emergencia.html",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/computerworld-article-4238887-dos-fallos-criticos-de-p/captures/20261023T160435Z/text.txt",
+    "sha256": "e008b157b0ff9821a0995ada3ad6e5895f5f361231721c4191868b050a77d886",
+    "excerpt": "PHP sustenta el 70% de los sitios web, lo que supone un enorme riesgo de concentración"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:15Z",
+    "status": 200,
+    "sha256": "ca514cc649f3fb54b2015387c081dbbee853cacab94a0e2e83c6c6db67d3b1ff",
+    "file": "fetched/computerworld-article-4238887-dos-fallos-criticos-de-p__20261024T013214Z.html",
+    "final_url": "https://www.computerworld.es/article/4238887/dos-fallos-criticos-de-php-ponen-en-alerta-a-la-red-mientras-llegan-los-parches-de-emergencia.html",
+    "title": "Dos fallos críticos de PHP ponen en alerta a Internet | Computerworld.es",
+    "excerpt": "PHP sustenta el 70% de los sitios web, lo que supone un enorme riesgo de concentración"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "criticarad-php2shell-cve-2026-109618-ghid-patch",
+   "publisher": "Critica Rad",
+   "url": "https://www.criticarad.ro/php2shell-cve-2026-109618-ghid-patch/",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/criticarad-php2shell-cve-2026-109618-ghid-patch/captures/20261023T160435Z/text.txt",
+    "sha256": "2f3acccf122140590c9aec1ab56e7076bc1f9c3a6e5f0b693a80f742162a205c",
+    "excerpt": "E în PHP însuși, limbajul pe care rulează aproximativ 70% din web"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:16Z",
+    "status": 200,
+    "sha256": "b249e56d39be586f7ba0e711be62225d78ce7dc89ed47a3569e32eddfc1f5b6b",
+    "file": "fetched/criticarad-php2shell-cve-2026-109618-ghid-patch__20261024T013215Z.html",
+    "final_url": "https://www.criticarad.ro/php2shell-cve-2026-109618-ghid-patch/",
+    "title": "PHP2Shell | Panică mondială și ghidul complet de patch",
+    "excerpt": "E în PHP însuși, limbajul pe care rulează aproximativ 70% din web"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "crn-news-security-2026-5-things-to-know-about-critical-php-vulne",
+   "publisher": "CRN",
+   "url": "https://www.crn.com/news/security/2026/5-things-to-know-about-critical-php-vulnerabilities-exploitation",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/crn-news-security-2026-5-things-to-know-about-critical-php-vulne/captures/20261023T080331Z/text.txt",
+    "sha256": "7e2214693dddacf72cedf3f64ad2898acb80fbee6504be4f8122dd7ddb481ee5",
+    "excerpt": "PHP is a key technology behind numerous web platforms including WordPress and Drupal.[Related: 10 Major Cyberattacks And Data Breaches In 2026 (So Far)]“With 70 percent of the Internet affected, the"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:16Z",
+    "status": 200,
+    "sha256": "15e4ed3c6f1ec67eb7b83108c4a9a5843d8ef30d577677fa6216182062bbe177",
+    "file": "fetched/crn-news-security-2026-5-things-to-know-about-critical-php-vulne__20261024T013216Z.html",
+    "final_url": "https://www.crn.com/news/security/2026/5-things-to-know-about-critical-php-vulnerabilities-exploitation",
+    "title": "5 Things To Know About ‘Critical’ PHP Vulnerabilities Exploitation",
+    "excerpt": "“With 70 percent of the Internet affected, the impact of PHP2Shell cannot be overstated,” researchers at Google-owned Wiz wrote in a post"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Vault and live differ only by whitespace."
+  },
+  {
+   "slug_or_url": "cyberexpress-php2shell-gov-sites",
+   "publisher": "The Cyber Express",
+   "url": "https://thecyberexpress.com/php2shell-cve-2026-109618-php-flaw/",
+   "vault": {
+    "stamp": "20261022T112646Z",
+    "file": "sources/cyberexpress-php2shell-gov-sites/captures/20261022T112646Z/text.txt",
+    "sha256": "f45bc7599367343e65c9a0d202d909990a7a802e526f44362042e0de16cf20a6",
+    "excerpt": "It estimates “roughly 70%” of the internet is affected; a figure not independently verified."
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:16Z",
+    "status": 200,
+    "sha256": "b0d09d30872aed02a6389b180f10e386655c19a6ace0cdf204f2a8d010c2366c",
+    "file": "fetched/cyberexpress-php2shell-gov-sites__20261024T013216Z.html",
+    "final_url": "https://thecyberexpress.com/php2shell-cve-2026-109618-php-flaw/",
+    "title": "PHP2Shell CVE-2026-109618 PHP Flaw Hits Gov Sites",
+    "excerpt": "It estimates “roughly 70%” of the internet is affected; a figure not independently verified."
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "cyberkendra-2026-10-php2shell-cve-2026-109618-cve-20",
+   "publisher": "Cyber Kendra",
+   "url": "https://www.cyberkendra.com/2026/10/php2shell-cve-2026-109618-cve-2026-109619.html",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/cyberkendra-2026-10-php2shell-cve-2026-109618-cve-20/captures/20261023T080331Z/text.txt",
+    "sha256": "c604df6084ae12123c45d972380fb4ef9be0d787f0ef685f9be4161ce9bf5065",
+    "excerpt": "PHP runs on about 70% of websites whose server-side language is known, according to W3Techs"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:17Z",
+    "status": 403,
+    "sha256": "3bb40456027c77d05b991e4686f10e51739a6ebdca3e33ec5edcd1e2c28b34cf",
+    "file": "fetched/cyberkendra-2026-10-php2shell-cve-2026-109618-cve-20__20261024T013216Z.html",
+    "final_url": "https://www.cyberkendra.com/2026/10/php2shell-cve-2026-109618-cve-2026-109619.html",
+    "title": "Bot Verification",
+    "excerpt": null
+   },
+   "classification": "blocked",
+   "correction_note": null,
+   "notes": "HTTP 403; page title now: 'Bot Verification'. Not guessed."
+  },
+  {
+   "slug_or_url": "cybernews-php2shell-millions",
+   "publisher": "Cybernews",
+   "url": "https://cybernews.com/security/php2shell-wordpress-amazon-cloudflare-ai-cyberattacks/",
+   "vault": {
+    "stamp": "20261022T112703Z",
+    "file": "sources/cybernews-php2shell-millions/captures/20261022T112703Z/text.txt",
+    "sha256": "a5ebfc60c25fe8b2c4cf59d2c2b9019703ef75d77de84f502e27df28ea891ceb",
+    "excerpt": "As Cybernews reported yesterday, the flaws affect PHP, the programming language underpinning about 70% of known websites on the internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:17Z",
+    "status": 403,
+    "sha256": "7fd73b5f6052ce7d5dda13ef8e9fcb97739d90648dfbcca97c1ebacea9e460fb",
+    "file": "fetched/cybernews-php2shell-millions__20261024T013217Z.html",
+    "final_url": "https://cybernews.com/security/php2shell-wordpress-amazon-cloudflare-ai-cyberattacks/",
+    "title": "Just a moment...",
+    "excerpt": null
+   },
+   "classification": "blocked",
+   "correction_note": null,
+   "notes": "HTTP 403; page title now: 'Just a moment...'. Not guessed."
+  },
+  {
+   "slug_or_url": "eadt-minister-budget-no-breach",
+   "publisher": "East Anglian Daily Times (PA)",
+   "url": "https://www.eadt.co.uk/news/national/26659279.no-breach-budget-security-critical-flaw-found-php-minister-says/",
+   "vault": {
+    "stamp": "20261022T112742Z",
+    "file": "sources/eadt-minister-budget-no-breach/captures/20261022T112742Z/text.txt",
+    "sha256": "4c8556b5aaedee9f059a9862338d94d85df76b55d648396c2a7f964507cda4dc",
+    "excerpt": "It comes after cyber security chiefs warned UK organisations on Wednesday that a “critical security issue” had been discovered in the programming language PHP, used by almost 70% of websites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:19Z",
+    "status": 200,
+    "sha256": "d26191174e4f9e85f147a7c88216d4905eb293537b1fd9f9b79703868ec50e96",
+    "file": "fetched/eadt-minister-budget-no-breach__20261024T013217Z.html",
+    "final_url": "https://www.eadt.co.uk/news/national/26659279.no-breach-budget-security-critical-flaw-found-php-minister-says/",
+    "title": "No breach of Budget security after critical flaw found in PHP, minister says | East Anglian Daily Times",
+    "excerpt": "It comes after cyber security chiefs warned UK organisations on Wednesday that a “critical security issue” had been discovered in the programming language PHP, used by almost 70% of websites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "fortune-ai-tools-php-vulnerability",
+   "publisher": "Fortune",
+   "url": "https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/",
+   "vault": {
+    "stamp": "20261023T012042Z",
+    "file": "sources/fortune-ai-tools-php-vulnerability/captures/20261023T012042Z/text.txt",
+    "sha256": "cdcba1b8c212b9e8d3928e5d5ea0a7e09ea4c719e7bef44139d3f9f2f0612808",
+    "excerpt": "AI tools discovered the PHP vulnerability that could take down 70% of the internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:19Z",
+    "status": 200,
+    "sha256": "c5d640eceed2f2f49ea871c10b6041292c1bff4e28c681163c32e1b4295ab12a",
+    "file": "fetched/fortune-ai-tools-php-vulnerability__20261024T013219Z.html",
+    "final_url": "https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/",
+    "title": "AI helped discover the PHP vulnerability that could take down 70% of the internet | Fortune",
+    "excerpt": "AI tools discovered the PHP vulnerability that could take down 70% of the internet"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Unchanged since the vault capture; dateModified still 2026-10-22T14:56:06Z. See \"fortune\"."
+  },
+  {
+   "slug_or_url": "globalnews-ottawa-sites",
+   "publisher": "Global News",
+   "url": "https://globalnews.ca/news/12110881/government-sites-go-dark-vuln-in-code/",
+   "vault": {
+    "stamp": "20261022T081641Z",
+    "file": "sources/globalnews-ottawa-sites/captures/20261022T081641Z/text.txt",
+    "sha256": "87d2ae5079c3620bd0b22f78e743865d283f1915fde2bc8badc1b1c56daf2ae8",
+    "excerpt": "The Canadian government is temporarily taking down some of its own websites to patch a serious vulnerability in the code that underpins roughly 70 per cent of the world’s websites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:19Z",
+    "status": 200,
+    "sha256": "95471aac6073b2bf15e45b4bbee98c2d37bf5d90ce7b2b56e02daf0add90969e",
+    "file": "fetched/globalnews-ottawa-sites__20261024T013219Z.html",
+    "final_url": "https://globalnews.ca/news/12110881/government-sites-go-dark-vuln-in-code/",
+    "title": "Ottawa taking down some federal websites over critical global vulnerability - National | Globalnews.ca",
+    "excerpt": "The Canadian government is temporarily taking down some of its own websites to patch a serious vulnerability in the code that underpins roughly 70 per cent of the world’s websites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "ia-acs-article-2026-govt-sites-go-down-after-ai-finds-critical-php",
+   "publisher": "Information Age (ACS)",
+   "url": "https://ia.acs.org.au/article/2026/govt-sites-go-down-after-ai-finds--critical--php-vulnerabilities.html",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/ia-acs-article-2026-govt-sites-go-down-after-ai-finds-critical-php/captures/20261023T080331Z/text.txt",
+    "sha256": "640f80b25de71eba27f0e3c27d8ff99a44a1fbfbff094fbba106b66ca99af2c5",
+    "excerpt": "PHP is estimated to be used on around 70 per cent of the world's websites and web applications"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:20Z",
+    "status": 200,
+    "sha256": "382bf8b6c0139a1b5d162323579656c954dcb016b6166af28d87cdd13057ce06",
+    "file": "fetched/ia-acs-article-2026-govt-sites-go-down-after-ai-finds-critical-php__20261024T013219Z.html",
+    "final_url": "https://ia.acs.org.au/article/2026/govt-sites-go-down-after-ai-finds--critical--php-vulnerabilities.html",
+    "title": "Govt sites go down after AI finds 'critical' PHP vulnerabilities | Information Age | ACS",
+    "excerpt": "PHP is estimated to be used on around 70 per cent of the world's websites and web applications"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "in-mashable-tech-115245-fbi-releases-php2shell-advisory-as-the-internet",
+   "publisher": "Mashable India",
+   "url": "https://in.mashable.com/tech/115245/fbi-releases-php2shell-advisory-as-the-internet-explodes-in-hilarious-php-memes-here-are-the-best-on",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/in-mashable-tech-115245-fbi-releases-php2shell-advisory-as-the-internet/captures/20261023T080331Z/text.txt",
+    "sha256": "072bc5f150b26f629c58d74b6a3e20e8f6b35a9e8d53fdcc2ce072df0ac34acb",
+    "excerpt": "About 70 percent of websites run on PHP, according to Wiz Research, the security firm that found the bugs"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:21Z",
+    "status": 200,
+    "sha256": "7b81520e5e8fd0a928db78f163b883aff81370419460a752be242b2833664ab8",
+    "file": "fetched/in-mashable-tech-115245-fbi-releases-php2shell-advisory-as-the-internet__20261024T013220Z.html",
+    "final_url": "https://in.mashable.com/tech/115245/fbi-releases-php2shell-advisory-as-the-internet-explodes-in-hilarious-php-memes-here-are-the-best-on",
+    "title": "FBI Releases PHP2Shell Advisory As The Internet Explodes In Hilarious PHP Memes; Here Are The Best Ones",
+    "excerpt": "About 70 percent of websites run on PHP, according to Wiz Research, the security firm that found the bugs"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "All vault 70% sentences still present (some differ only by whitespace)."
+  },
+  {
+   "slug_or_url": "insurance-business-au-asiapac-attacks-begin",
+   "publisher": "Insurance Business",
+   "url": "https://www.insurancebusinessmag.com/au/news/cyber/critical-global-website-flaw-sparks-alerts-across-asiapac-as-attacks-begin-594446.aspx",
+   "vault": {
+    "stamp": "20261023T012042Z",
+    "file": "sources/insurance-business-au-asiapac-attacks-begin/captures/20261023T012042Z/text.txt",
+    "sha256": "8d88bddde485e36f27c001a80e9ad0506055b64f3879347345be5ad336a10cad",
+    "excerpt": "Global high profile websites have been taken down as crucial bugs found in software that runs around 70% of the web"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:21Z",
+    "status": 200,
+    "sha256": "193c8e7c63e579939f5a7f4694f7432ae0cbd1bccc941c4ebc3a5893bd65d309",
+    "file": "fetched/insurance-business-au-asiapac-attacks-begin__20261024T013221Z.html",
+    "final_url": "https://www.insurancebusinessmag.com/au/news/cyber/critical-global-website-flaw-sparks-alerts-across-asiapac-as-attacks-begin-594446.aspx",
+    "title": "Critical global website flaw sparks alerts across Asia-Pac as attacks begin | Insurance Business",
+    "excerpt": "Global high profile websites have been taken down as crucial bugs found in software that runs around 70% of the web"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "insurancebusiness-uk-councils",
+   "publisher": "Insurance Business",
+   "url": "https://www.insurancebusinessmag.com/uk/news/cyber/uk-councils-and-met-police-among-sites-pulled-offline-after-ncsc-alert-594424.aspx",
+   "vault": {
+    "stamp": "20261022T081252Z",
+    "file": "sources/insurancebusiness-uk-councils/captures/20261022T081252Z/text.txt",
+    "sha256": "daa04c79edfb56f49761d38fa7ce81c2aa1828f78a0b0b4694519818e4e507ca",
+    "excerpt": "Organisations across the UK and Europe are taking websites offline as emergency fixes arrive for “PHP2Shell”, two critical bugs in software that runs around 70% of the web"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:21Z",
+    "status": 200,
+    "sha256": "ed3ff0ee80ee2de2f9752fc2df9b9b6731550925563e5ae6b095d4db32d6155a",
+    "file": "fetched/insurancebusiness-uk-councils__20261024T013221Z.html",
+    "final_url": "https://www.insurancebusinessmag.com/uk/news/cyber/uk-councils-and-met-police-among-sites-pulled-offline-after-ncsc-alert-594424.aspx",
+    "title": "UK councils and Met Police among sites pulled offline after NCSC alert | Insurance Business",
+    "excerpt": "Organisations across the UK and Europe are taking websites offline as emergency fixes arrive for “PHP2Shell”, two critical bugs in software that runs around 70% of the web"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "All vault 70% sentences still present (some differ only by whitespace)."
+  },
+  {
+   "slug_or_url": "insurancebusiness-uk-councils-met",
+   "publisher": "Insurance Business",
+   "url": "https://www.insurancebusinessmag.com/uk/news/cyber/uk-councils-and-met-police-among-sites-pulled-offline-after-ncsc-alert-594424.aspx",
+   "vault": {
+    "stamp": "20261022T112225Z",
+    "file": "sources/insurancebusiness-uk-councils-met/captures/20261022T112225Z/text.txt",
+    "sha256": "89357150e0bc8363b71ef8b709b7e047e0503f20791d7d062a758550609d0d20",
+    "excerpt": "Organisations across the UK and Europe are taking websites offline as emergency fixes arrive for “PHP2Shell”, two critical bugs in software that runs around 70% of the web"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:21Z",
+    "status": 200,
+    "sha256": "ed3ff0ee80ee2de2f9752fc2df9b9b6731550925563e5ae6b095d4db32d6155a",
+    "file": "fetched/insurancebusiness-uk-councils__20261024T013221Z.html",
+    "final_url": "https://www.insurancebusinessmag.com/uk/news/cyber/uk-councils-and-met-police-among-sites-pulled-offline-after-ncsc-alert-594424.aspx",
+    "title": "UK councils and Met Police among sites pulled offline after NCSC alert | Insurance Business",
+    "excerpt": "Organisations across the UK and Europe are taking websites offline as emergency fixes arrive for “PHP2Shell”, two critical bugs in software that runs around 70% of the web"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Same URL as another vault slug; one fetch serves both. All vault 70% sentences still present (some differ only by whitespace)."
+  },
+  {
+   "slug_or_url": "jn-pt-sites-desligados",
+   "publisher": "Jornal de Noticias",
+   "url": "https://www.jn.pt/inovacao/artigo/internet-em-alarme-com-erro-detetado-que-obrigou-a-desligar-varios-sites/18139512",
+   "vault": {
+    "stamp": "20261022T081616Z",
+    "file": "sources/jn-pt-sites-desligados/captures/20261022T081616Z/text.txt",
+    "sha256": "d0ab599600817fabee6ab55163b27b2738e2ac00ac5659cd0bac26dfa4eafd2e",
+    "excerpt": "A linguagem PHP é a base da mais de 70% dos servidores da Internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:22Z",
+    "status": 200,
+    "sha256": "dadde9f00e81998e8e225a185c05c86c722a81005b76578ce5a0383ed23a5cb6",
+    "file": "fetched/jn-pt-sites-desligados__20261024T013221Z.html",
+    "final_url": "https://www.jn.pt/inovacao/artigo/internet-em-alarme-com-erro-detetado-que-obrigou-a-desligar-varios-sites/18139512",
+    "title": "Erro crítico em PHP obriga desligação de vários sites",
+    "excerpt": "A linguagem PHP é a base da mais de 70% dos servidores da Internet"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "jpcert-at260033",
+   "publisher": "JPCERT/CC",
+   "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+   "vault": {
+    "stamp": "20261022T081700Z",
+    "file": "sources/jpcert-at260033/captures/20261022T081700Z/text.txt",
+    "sha256": "1fea87241b307f92c5ddc2b16356954d947ec3e0f5ad55158315dc08d98127f5",
+    "excerpt": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:23Z",
+    "status": 200,
+    "sha256": "85db7a09e865158643525fef5aa5cfc69513aaf896fcb2da4562189d43decf44",
+    "file": "fetched/jpcert-at260033__20261024T013222Z.html",
+    "final_url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+    "title": "PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
+    "excerpt": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "koran-jakarta-2026-10-22-upaya-global-perbaiki-celah-keamana",
+   "publisher": "Koran Jakarta",
+   "url": "https://koran-jakarta.com/2026-10-22/upaya-global-perbaiki-celah-keamanan-siber-php-dari-amazon-hingga-kementerian-jepang",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/koran-jakarta-2026-10-22-upaya-global-perbaiki-celah-keamana/captures/20261022T181608Z/text.txt",
+    "sha256": "f5c3e92816a8aaf3d21543436c76aa52fac6863eada37a37eb37b0618a5f987d",
+    "excerpt": "Perusahaan keamanan siber Wiz memperkirakan \"sekitar 70%\" internet terpengaruh oleh celah keamanan PHP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:24Z",
+    "status": 200,
+    "sha256": "f192038c9db609935938ad402e4604d3c6ebfcac98d0f7f5516b4a084fd30716",
+    "file": "fetched/koran-jakarta-2026-10-22-upaya-global-perbaiki-celah-keamana__20261024T013223Z.html",
+    "final_url": "https://koran-jakarta.com/2026-10-22/upaya-global-perbaiki-celah-keamanan-siber-php-dari-amazon-hingga-kementerian-jepang",
+    "title": "Upaya Global Perbaiki Celah Keamanan Siber PHP, dari Amazon hingga Kementerian Jepang",
+    "excerpt": "Perusahaan keamanan siber Wiz memperkirakan \"sekitar 70%\" internet terpengaruh oleh celah keamanan PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "lebigdata-php2shell-des-millions-dattaques-frappen",
+   "publisher": "LeBigData",
+   "url": "https://www.lebigdata.fr/php2shell-des-millions-dattaques-frappent-les-sites-php-comment-vous-proteger-maintenant",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/lebigdata-php2shell-des-millions-dattaques-frappen/captures/20261023T160435Z/text.txt",
+    "sha256": "e2295f56852e6bb0a72ce660e7a5be199cf097dfdd19e09a4a5b7cc649ad5f13",
+    "excerpt": "Près de 70 % du Web utilise PHP : mais non, 70 % des sites ne sont pas automatiquement piratables"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:24Z",
+    "status": 200,
+    "sha256": "117c392c1899b61bddfb4642c4c1b0c8312cd994d4f77609d015e03ce30dabae",
+    "file": "fetched/lebigdata-php2shell-des-millions-dattaques-frappen__20261024T013224Z.html",
+    "final_url": "https://www.lebigdata.fr/php2shell-des-millions-dattaques-frappent-les-sites-php-comment-vous-proteger-maintenant",
+    "title": "PHP2Shell : comment protéger votre site des attaques PHP",
+    "excerpt": "Près de 70 % du Web utilise PHP : mais non, 70 % des sites ne sont pas automatiquement piratables"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "All vault 70% sentences still present (some differ only by whitespace)."
+  },
+  {
+   "slug_or_url": "linternaute-hightech-internet-11310057-panne-interne",
+   "publisher": "L'Internaute",
+   "url": "https://www.linternaute.com/hightech/internet/11310057-panne-internet-on-vous-explique-la-faille-php-qui-a-fait-trembler-internet-l-ia-au-coeur-de-la-panique-mondiale/",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/linternaute-hightech-internet-11310057-panne-interne/captures/20261023T160435Z/text.txt",
+    "sha256": "940e7811d3ae55de70fd3dac417e2c383c58e2a555b36c27a5e1a39140fa0a6b",
+    "excerpt": "La cause de cette panne sur Internet est l'identification de deux failles de sécurité dans PHP (pour Hypertext Preprocessor), un langage de programmation qui structure près de 70% des sites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:24Z",
+    "status": 200,
+    "sha256": "605b95f5ac959e916755c5843f737e9f252c3800892a61ef561fc898614fda36",
+    "file": "fetched/linternaute-hightech-internet-11310057-panne-interne__20261024T013224Z.html",
+    "final_url": "https://www.linternaute.com/hightech/internet/11310057-panne-internet-on-vous-explique-la-faille-php-qui-a-fait-trembler-internet-l-ia-au-coeur-de-la-panique-mondiale/",
+    "title": "Failles PHP : c'est quoi ? On vous explique la panique mondiale sur internet, l'IA au coeur du problème",
+    "excerpt": "La cause de cette panne sur Internet est l'identification de deux failles de sécurité dans PHP (pour Hypertext Preprocessor), un langage de programmation qui structure près de 70% des sites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "lorikeet-php2shell",
+   "publisher": "Lorikeet Security",
+   "url": "https://lorikeetsecurity.com/blog/php2shell-leaked-critical-php-vulnerabilities",
+   "vault": {
+    "stamp": "20261022T112438Z",
+    "file": "sources/lorikeet-php2shell/captures/20261022T112438Z/text.txt",
+    "sha256": "db7958824da2628a693fcca386ac3ea9994977209f017b245fab2d3e894cb349",
+    "excerpt": "The 70% Blast Radius: Why CMS Security & Web Plugins Fail"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:25Z",
+    "status": 200,
+    "sha256": "d65e4a94ff7eb5bc34f60a5bf1da95d7ad5a61c4e248f5c1c1fd765b8c942fd5",
+    "file": "fetched/lorikeet-php2shell__20261024T013224Z.html",
+    "final_url": "https://lorikeetsecurity.com/blog/php2shell-leaked-critical-php-vulnerabilities",
+    "title": "php2shell: Inside the Leaked Critical PHP Flaws Triggering Emergency RCE Patching (CVE-2026-109618 & CVE-2026-109619) | Lorikeet Security",
+    "excerpt": "The 70% Blast Radius: Why CMS Security & Web Plugins Fail"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "medianama-2026-10-223-php-vulnerabilities-global-rush-update",
+   "publisher": "MediaNama",
+   "url": "https://www.medianama.com/2026/10/223-php-vulnerabilities-global-rush-update/",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/medianama-2026-10-223-php-vulnerabilities-global-rush-update/captures/20261023T080331Z/text.txt",
+    "sha256": "b30b86dc910dc8d60cbb6deaf6383d04f99c68b984c5d04673dd949e1cb4f04d",
+    "excerpt": "Two critical security vulnerabilities in PHP, the programming language behind around 70% of the internet, were disclosed publicly on October 21, 2026, along with fixed patches"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:25Z",
+    "status": 200,
+    "sha256": "2a93594773b63af269563964dba65a753859ff4bfe3916fc635931039dd84f39",
+    "file": "fetched/medianama-2026-10-223-php-vulnerabilities-global-rush-update__20261024T013225Z.html",
+    "final_url": "https://www.medianama.com/2026/10/223-php-vulnerabilities-global-rush-update/",
+    "title": "What are the two PHP vulnerabilities behind a global rush to update",
+    "excerpt": "Two critical security vulnerabilities in PHP, the programming language behind around 70% of the internet, were disclosed publicly on October 21, 2026, along with fixed patches"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "news-yahoo-articles-d953e2a13109253ae974bf2a64ebe94",
+   "publisher": "Yahoo! News Japan (THE PAGE)",
+   "url": "https://news.yahoo.co.jp/articles/d953e2a13109253ae974bf2a64ebe9408d2de2e6",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/news-yahoo-articles-d953e2a13109253ae974bf2a64ebe94/captures/20261023T160435Z/text.txt",
+    "sha256": "3f6309ea905ada2a3609b89da18be043419e1e2c246a6acd26772a44a06cdee3",
+    "excerpt": "出典記事は「PHP欠陥、企業・団体が予防措置 銀行サービス一時停止」「プログラミング言語「PHP」に脆弱性 世界のサイト7割が危険に」"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:27Z",
+    "status": 200,
+    "sha256": "af45f1a112fb2e83bf4a371aa9970df9a84b6839ed5e0817b132bda2808c6ca6",
+    "file": "fetched/news-yahoo-articles-d953e2a13109253ae974bf2a64ebe94__20261024T013225Z.html",
+    "final_url": "https://news.yahoo.co.jp/articles/d953e2a13109253ae974bf2a64ebe9408d2de2e6",
+    "title": "【図解】重大な脆弱性が見つかった「PHP」とは？（Yahoo!ニュース オリジナル THE PAGE）",
+    "excerpt": "出典記事は「PHP欠陥、企業・団体が予防措置 銀行サービス一時停止」「プログラミング言語「PHP」に脆弱性 世界のサイト7割が危険に」"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Article text unchanged; a related-article link titled with 7割 seen in the vault capture is not in the live static HTML."
+  },
+  {
+   "slug_or_url": "newsweek-php2shell-list",
+   "publisher": "Newsweek",
+   "url": "https://www.newsweek.com/php-vunerability-php2shell-issue-websites-hack-server-12601225",
+   "vault": {
+    "stamp": "20261022T081350Z",
+    "file": "sources/newsweek-php2shell-list/captures/20261022T081350Z/text.txt",
+    "sha256": "dc7ff69a1e38d3d6a18e69e19cca63a0b086601d4ae1fb2fe1c77654b30957be",
+    "excerpt": "Wiz Research estimates that PHP powers roughly 70 percent of websites worldwide, though that does not mean 70 percent of websites are vulnerable to these particular attacks"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:27Z",
+    "status": 200,
+    "sha256": "59cbf9a0f2b5ad6f951b71935dd286edb880161c424584f229d8947bab0a79dc",
+    "file": "fetched/newsweek-php2shell-list__20261024T013227Z.html",
+    "final_url": "https://www.newsweek.com/php-vunerability-php2shell-issue-websites-hack-server-12601225",
+    "title": "PHP Vulnerability: List of Websites Powered by PHP as Hacker Threat Prompts Scramble - Newsweek",
+    "excerpt": "Wiz Research estimates that PHP powers roughly 70 percent of websites worldwide, though that does not mean 70 percent of websites are vulnerable to these particular attacks"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "newsweek-php2shell-websites",
+   "publisher": "Newsweek",
+   "url": "https://www.newsweek.com/php-vunerability-php2shell-issue-websites-hack-server-12601225",
+   "vault": {
+    "stamp": "20261022T112237Z",
+    "file": "sources/newsweek-php2shell-websites/captures/20261022T112237Z/text.txt",
+    "sha256": "323ccf78f4d6f2d0d0a657e9792a88bb3b05ac66492762caa614e9fe02343294",
+    "excerpt": "Wiz Research estimates that PHP powers roughly 70 percent of websites worldwide, though that does not mean 70 percent of websites are vulnerable to these particular attacks"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:27Z",
+    "status": 200,
+    "sha256": "59cbf9a0f2b5ad6f951b71935dd286edb880161c424584f229d8947bab0a79dc",
+    "file": "fetched/newsweek-php2shell-list__20261024T013227Z.html",
+    "final_url": "https://www.newsweek.com/php-vunerability-php2shell-issue-websites-hack-server-12601225",
+    "title": "PHP Vulnerability: List of Websites Powered by PHP as Hacker Threat Prompts Scramble - Newsweek",
+    "excerpt": "Wiz Research estimates that PHP powers roughly 70 percent of websites worldwide, though that does not mean 70 percent of websites are vulnerable to these particular attacks"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Same URL as another vault slug; one fetch serves both."
+  },
+  {
+   "slug_or_url": "nguoiquansat-lo-hong-php2shell-de-doa-70-website-toan",
+   "publisher": "Nguoi Quan Sat",
+   "url": "https://nguoiquansat.vn/lo-hong-php2shell-de-doa-70-website-toan-cau-thu-tuong-nhat-ban-thuc-trang-dem-phat-lenh-bao-dong-do-323658.html",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/nguoiquansat-lo-hong-php2shell-de-doa-70-website-toan/captures/20261023T160435Z/text.txt",
+    "sha256": "176d23d05dee09bd3ec76145b7258bdc602945e0ae56615e62e4164b7e2def48",
+    "excerpt": "Lỗ hổng php2shell đe dọa 70% website toàn cầu: Thủ tướng Nhật Bản thức trắng đêm phát lệnh báo động đỏ"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:29Z",
+    "status": 200,
+    "sha256": "0fce5e9309c3073d9d78a9b839366b0de5afd13d64cb8096d37ed7e475c39f61",
+    "file": "fetched/nguoiquansat-lo-hong-php2shell-de-doa-70-website-toan__20261024T013227Z.html",
+    "final_url": "https://nguoiquansat.vn/lo-hong-php2shell-de-doa-70-website-toan-cau-thu-tuong-nhat-ban-thuc-trang-dem-phat-lenh-bao-dong-do-323658.html",
+    "title": "Lỗ hổng php2shell đe dọa 70% website toàn cầu: Thủ tướng Nhật Bản thức trắng đêm phát lệnh báo động đỏ",
+    "excerpt": "Lỗ hổng php2shell đe dọa 70% website toàn cầu: Thủ tướng Nhật Bản thức trắng đêm phát lệnh báo động đỏ"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "nsa-x-2113068811058622971",
+   "publisher": "NSA Cybersecurity (X)",
+   "url": "https://x.com/NSACyber/status/2113068811058622971",
+   "vault": {
+    "stamp": "20261022T080954Z",
+    "file": "sources/nsa-x-2113068811058622971/captures/20261022T080954Z/text.txt",
+    "sha256": "899e5ba4af69c5311210a846d98721e674abded497de292dfdc4af17b2ff1bd3",
+    "excerpt": "the NSA just told 70% of the internet to “turn it off and on again”"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:29Z",
+    "status": 200,
+    "sha256": "3019588332aecb098afe9bd16f716730b4f35f39f72a6834810819c94e7c668f",
+    "file": "fetched/nsa-x-2113068811058622971__20261024T013229Z.html",
+    "final_url": "https://x.com/NSACyber/status/2113068811058622971",
+    "title": "NSA Cyber on X: \"UPDATE: Specific mitigation guidance for the recently identified PHP critical vulnerabilities is now available. Secure your servers today. Guidance and technical steps here: https://t.co/nuXgQ10Fzc\" / X",
+    "excerpt": "the NSA just told 70% of the internet to “turn it off and on again”"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "openai-community-php-flaws",
+   "publisher": "OpenAI Community",
+   "url": "https://community.openai.com/t/openai-models-help-researchers-uncover-critical-php-security-flaws/1408490",
+   "vault": {
+    "stamp": "20261022T081721Z",
+    "file": "sources/openai-community-php-flaws/captures/20261022T081721Z/text.txt",
+    "sha256": "43afe7a0a3b96a86e52cbeea1c6ae41560bab1566da848fc4f9067152f739cd5",
+    "excerpt": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:30Z",
+    "status": 200,
+    "sha256": "80decc77eef0ff91161b2161f5123a5d29a8d8232e12565d8ea5f01de46ff08e",
+    "file": "fetched/openai-community-php-flaws__20261024T013229Z.html",
+    "final_url": "https://community.openai.com/t/openai-models-help-researchers-uncover-critical-php-security-flaws/1408490",
+    "title": "OpenAI models help researchers uncover critical PHP security flaws - Community - OpenAI Developer Community",
+    "excerpt": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "orf-stories-3445806",
+   "publisher": "ORF",
+   "url": "https://orf.at/stories/3445806/",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/orf-stories-3445806/captures/20261022T181608Z/text.txt",
+    "sha256": "e88c6f39edbd6d1c325ec7cc18abe50a9b8ad94010b2d5a425ba59e4252b2d0d",
+    "excerpt": "Nach Einschätzung des US-israelischen Cybersicherheitsunternehmen Wiz basieren etwa 70 Prozent der weltweiten Websites auf PHP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:31Z",
+    "status": 200,
+    "sha256": "e6e819c970cd07143bba576750bd3778fd9613309af974447b013b2b5d311608",
+    "file": "fetched/orf-stories-3445806__20261024T013230Z.html",
+    "final_url": "https://orf.at/stories/3445806/",
+    "title": "PHP-Lücke: Millionen Angriffsversuche im Netz - news.ORF.at",
+    "excerpt": "Nach Einschätzung des US-israelischen Cybersicherheitsunternehmen Wiz basieren etwa 70 Prozent der weltweiten Websites auf PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "paperjam-article-php2shell-des-milliers-de-sites",
+   "publisher": "Paperjam",
+   "url": "https://paperjam.lu/article/php2shell-des-milliers-de-sites-exposes-au-luxembourg",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/paperjam-article-php2shell-des-milliers-de-sites/captures/20261023T160435Z/text.txt",
+    "sha256": "73aed7ccd645b7172699b36b2e9dd8540c0300f2ff6c3de8ad218d7aeb29b20e",
+    "excerpt": "PHP fait fonctionner près de 70% des sites dont le langage côté serveur peut être identifié dans le monde, selon W3Techs"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:31Z",
+    "status": 200,
+    "sha256": "844c7944fa663762adf8ac6c27adfb39a47b63e02d5ec15756ddd0ac1973f74d",
+    "file": "fetched/paperjam-article-php2shell-des-milliers-de-sites__20261024T013231Z.html",
+    "final_url": "https://paperjam.lu/article/php2shell-des-milliers-de-sites-exposes-au-luxembourg",
+    "title": "PHP2Shell: des milliers de sites exposés au Luxembourg | Paperjam News",
+    "excerpt": "PHP fait fonctionner près de 70% des sites dont le langage côté serveur peut être identifié dans le monde, selon W3Techs"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "pcmag-news-hackers-already-trying-to-exploit-serious-php-flaw",
+   "publisher": "PCMag",
+   "url": "https://www.pcmag.com/news/hackers-already-trying-to-exploit-serious-php-flaw",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/pcmag-news-hackers-already-trying-to-exploit-serious-php-flaw/captures/20261023T080331Z/text.txt",
+    "sha256": "82ef905cd2201bd4507643ba274b135e32b1e440606b1ded976617c782b28166",
+    "excerpt": "The flaw affects PHP, a scripting language used by an estimated 70% of websites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:32Z",
+    "status": 200,
+    "sha256": "eda3fa74492dddcf641d889e0d82adcc673d99e5e3d4886e5493d531fcd8d3b1",
+    "file": "fetched/pcmag-news-hackers-already-trying-to-exploit-serious-php-flaw__20261024T013231Z.html",
+    "final_url": "https://www.pcmag.com/news/hackers-already-trying-to-exploit-serious-php-flaw",
+    "title": "Hackers Already Trying to Exploit Serious PHP Flaw | PCMag",
+    "excerpt": "The flaw affects PHP, a scripting language used by an estimated 70% of websites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "php-foundation-blog-security-release",
+   "publisher": "The PHP Foundation",
+   "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+   "vault": {
+    "stamp": "20261022T080901Z",
+    "file": "sources/php-foundation-blog-security-release/captures/20261022T080901Z/text.txt",
+    "sha256": "a1be057adc1c5bfabad6a59007bd08960168346230f03967fba68f2402ab3f04",
+    "excerpt": "I also saw a lot of \"PoCs\", so I understand the fear, but releasing the patch early and thus risking 70% of the web just to make sure you get"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:32Z",
+    "status": 200,
+    "sha256": "03c22f760a3da8749d98ddd40dbb79d50464e5be7e10c1433da16f589e656158",
+    "file": "fetched/php-foundation-blog-security-release__20261024T013232Z.html",
+    "final_url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+    "title": "Today's PHP Security Release, and How We're Strengthening PHP Security — The PHP Foundation — Supporting, Advancing, and Developing the PHP Language",
+    "excerpt": null
+   },
+   "classification": "unverifiable",
+   "correction_note": null,
+   "notes": "The only 70% wording is in a reader comment that the page renders by script (vault rendered.html has it, vault page.html does not). curl gets the static HTML only, so the comment could not be re-checked. The post body has no 70% figure."
+  },
+  {
+   "slug_or_url": "php2shell-com",
+   "publisher": "php2shell.com (Wiz/Calif)",
+   "url": "https://www.php2shell.com/",
+   "vault": {
+    "stamp": "20261022T111831Z",
+    "file": "sources/php2shell-com/captures/20261022T111831Z/text.txt",
+    "sha256": "b1e83b4f0feb87d5abb59bfb76015b154a7b678a51c0e965e06929f1e6b17f48",
+    "excerpt": "PHP powers approximately 70% of websites, including platforms such as WordPress, Drupal and Wikipedia's MediaWiki"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:32Z",
+    "status": 200,
+    "sha256": "3cd8d65ea92fff67fe8ba33a859adf17d23ec992b51a919ea16ace361b803805",
+    "file": "fetched/php2shell-com__20261024T013232Z.html",
+    "final_url": "https://www.php2shell.com/",
+    "title": "PHP2Shell — AI uncovers critical vulnerabilities in the backbone of the web",
+    "excerpt": "PHP powers approximately 70% of websites, including platforms such as WordPress, Drupal and Wikipedia's MediaWiki"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "phpfoundation-blog-security-release-leak",
+   "publisher": "The PHP Foundation",
+   "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+   "vault": {
+    "stamp": "20261022T081244Z",
+    "file": "sources/phpfoundation-blog-security-release-leak/captures/20261022T081244Z/text.txt",
+    "sha256": "b9f29cfdc1c0cd65dd505738d06d5f7d590d5d3da95801309990871870d2e0dd",
+    "excerpt": "I also saw a lot of \"PoCs\", so I understand the fear, but releasing the patch early and thus risking 70% of the web just to make sure you get"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:32Z",
+    "status": 200,
+    "sha256": "03c22f760a3da8749d98ddd40dbb79d50464e5be7e10c1433da16f589e656158",
+    "file": "fetched/php-foundation-blog-security-release__20261024T013232Z.html",
+    "final_url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+    "title": "Today's PHP Security Release, and How We're Strengthening PHP Security — The PHP Foundation — Supporting, Advancing, and Developing the PHP Language",
+    "excerpt": null
+   },
+   "classification": "unverifiable",
+   "correction_note": null,
+   "notes": "Same URL as another vault slug; one fetch serves both. The only 70% wording is in a reader comment that the page renders by script (vault rendered.html has it, vault page.html does not). curl gets the static HTML only, so the comment could not be re-checked. The post body has no 70% figure."
+  },
+  {
+   "slug_or_url": "rte-reuters-websites-go-dark",
+   "publisher": "RTE (Reuters)",
+   "url": "https://www.rte.ie/news/world/2026/1021/1596231-eu-cybersecurity/",
+   "vault": {
+    "stamp": "20261022T081010Z",
+    "file": "sources/rte-reuters-websites-go-dark/captures/20261022T081010Z/text.txt",
+    "sha256": "99bb92662561bd292bc1f931e1e6a22f14756140e4f67365d75961f4b05bb653",
+    "excerpt": "He said the popular programme is used by 70% of websites worldwide"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:33Z",
+    "status": 200,
+    "sha256": "c7a716b8c2b2f5be15981c4b1f23f4e9b578b7afcbcd451b60ee52fc23533252",
+    "file": "fetched/rte-reuters-websites-go-dark__20261024T013232Z.html",
+    "final_url": "https://www.rte.ie/news/world/2026/1021/1596231-eu-cybersecurity/",
+    "title": "Websites go dark as AI exposes critical security flaws",
+    "excerpt": "He said the popular programme is used by 70% of websites worldwide"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "rtl-leben-digitales-php-luecke-bsi-warnt-vor-cyber-gefahr-fi",
+   "publisher": "RTL.de",
+   "url": "https://www.rtl.de/leben/digitales/php-luecke-bsi-warnt-vor-cyber-gefahr-firmen-oft-unwissend-id31448587.html",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/rtl-leben-digitales-php-luecke-bsi-warnt-vor-cyber-gefahr-fi/captures/20261022T181608Z/text.txt",
+    "sha256": "a69da5f39287ad4307292733dfaf03317eb57edfcc30fc1959d41922af77bcf7",
+    "excerpt": "Schätzungsweise 70 Prozent aller Websites basieren auf dem Skript"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:33Z",
+    "status": 200,
+    "sha256": "26b4143fd623867ce2676beb4af822d0b8e9bf1d6580bd02fefa2d5d0ca7f6ff",
+    "file": "fetched/rtl-leben-digitales-php-luecke-bsi-warnt-vor-cyber-gefahr-fi__20261024T013233Z.html",
+    "final_url": "https://www.rtl.de/leben/digitales/php-luecke-bsi-warnt-vor-cyber-gefahr-firmen-oft-unwissend-id31448587.html",
+    "title": "PHP-Lücke: BSI warnt vor Cyber-Gefahr – Firmen oft unwissend",
+    "excerpt": "Schätzungsweise 70 Prozent aller Websites basieren auf dem Skript"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "rtve-noticias-20261022-fallos-criticos-php2shell-vulnerabili",
+   "publisher": "RTVE",
+   "url": "https://www.rtve.es/noticias/20261022/fallos-criticos-php2shell-vulnerabilidades-servidores-alerta-ciberseguridad/17277748.shtml",
+   "vault": {
+    "stamp": "20261022T181608Z",
+    "file": "sources/rtve-noticias-20261022-fallos-criticos-php2shell-vulnerabili/captures/20261022T181608Z/text.txt",
+    "sha256": "0c7f8e327e5c8bd0d5c3b0c7c6ab7cb7ef3a383f5da908cecc7da96ba7a19ccf",
+    "excerpt": "Su alcance es masivo: está presente en cerca del 70% de las páginas web con lenguaje identificable y también es la base de WordPress, el sistema que impulsa alrededor del"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:34Z",
+    "status": 200,
+    "sha256": "3c2bc244f4b26f84e3a9b22b7841160b32b71e70475192c29631acb8e0392cce",
+    "file": "fetched/rtve-noticias-20261022-fallos-criticos-php2shell-vulnerabili__20261024T013233Z.html",
+    "final_url": "https://www.rtve.es/noticias/20261022/fallos-criticos-php2shell-vulnerabilidades-servidores-alerta-ciberseguridad/17277748.shtml",
+    "title": "Alerta por fallos críticos en PHP: riesgo en servidores web",
+    "excerpt": "Su alcance es masivo: está presente en cerca del 70% de las páginas web con lenguaje identificable y también es la base de WordPress, el sistema que impulsa alrededor del"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "securitynl-misbruik-gemeld",
+   "publisher": "Security.NL",
+   "url": "https://www.security.nl/posting/958424/Misbruik+van+PHP2Shell-lek+gemeld%2C+DigiD+en+andere+sites+weer+online",
+   "vault": {
+    "stamp": "20261022T191411Z",
+    "file": "sources/securitynl-misbruik-gemeld/captures/20261022T191411Z/text.txt",
+    "sha256": "95d1565c5959e61fa188ea5af37ef0518b3c171d442554cbee86484dd03ddd09",
+    "excerpt": "Om die reden draait het op 70% vd sites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:35Z",
+    "status": 200,
+    "sha256": "5bf8b35957e71b5da98257cf047b4f0432c28eadb757401c197e7af34a8ee393",
+    "file": "fetched/securitynl-misbruik-gemeld__20261024T013234Z.html",
+    "final_url": "https://www.security.nl/posting/958424/Misbruik+van+PHP2Shell-lek+gemeld%2C+DigiD+en+andere+sites+weer+online",
+    "title": "Misbruik van PHP2Shell-lek gemeld, DigiD en andere sites weer online - Security.NL",
+    "excerpt": "Om die reden draait het op 70% vd sites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "securityweek-first-attempts-sensors",
+   "publisher": "SecurityWeek",
+   "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
+   "vault": {
+    "stamp": "20261022T112324Z",
+    "file": "sources/securityweek-first-attempts-sensors/captures/20261022T112324Z/text.txt",
+    "sha256": "b63772dddccf9cee302313f5dece42bf30d91abdb6f30ca61fb2a38081c85a41",
+    "excerpt": "Because the security defects are in PHP itself, they impact 70% of all websites in the world, independent of their CMS"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:35Z",
+    "status": 200,
+    "sha256": "a95fcd372006a4351b8dad9a6a10275a2d469562b5681cd0739e6a2abdd2c7c7",
+    "file": "fetched/securityweek-first-attempts-sensors__20261024T013235Z.html",
+    "final_url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
+    "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors - SecurityWeek",
+    "excerpt": "Because the security defects are in PHP itself, they impact 70% of all websites in the world, independent of their CMS"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "seroundtable-google-php2shell-42353-html",
+   "publisher": "Search Engine Roundtable",
+   "url": "https://www.seroundtable.com/google-php2shell-42353.html",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/seroundtable-google-php2shell-42353-html/captures/20261023T080331Z/text.txt",
+    "sha256": "ced33ac294361df1bd82380fede1bad604578ac5148f9ac7f71ba83ebabbb24e",
+    "excerpt": "This PHP exploit is serious; it can allow for unauthenticated remote code execution (RCE) and memory disclosure across roughly 70% of the world's websites"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:36Z",
+    "status": 200,
+    "sha256": "8fa18c77b5e68e44d9fb6f7a2df58dc2e10dcfef3cdb80ecfa031b948f9f31ab",
+    "file": "fetched/seroundtable-google-php2shell-42353-html__20261024T013235Z.html",
+    "final_url": "https://www.seroundtable.com/google-php2shell-42353.html",
+    "title": "Google Advice On Taking Sites Down When Fixing PHP2Shell - The PHP Exploit",
+    "excerpt": "This PHP exploit is serious; it can allow for unauthenticated remote code execution (RCE) and memory disclosure across roughly 70% of the world's websites"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "substack-lopezkurtz-patch-is-the-exploit",
+   "publisher": "David Lopez-Kurtz (Substack)",
+   "url": "https://davidlopezkurtz.substack.com/p/the-patch-is-the-exploit",
+   "vault": {
+    "stamp": "20261022T113134Z",
+    "file": "sources/substack-lopezkurtz-patch-is-the-exploit/captures/20261022T113134Z/text.txt",
+    "sha256": "cb3714dc12f96c969959784164a40f12aa923b46cf56df83aa950a9ea2573330",
+    "excerpt": "he attack before any application code runs.” PHP’s advisories skip the branding and stick to plainer titles (“RCE via OOM corruption” and “RCE via stale global state”).[1] The Wall Street"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:36Z",
+    "status": 200,
+    "sha256": "a9e7bfa66631ad1e6cdda3e12e498ea816319de08b4cb6a46920f26ae16c95f7",
+    "file": "fetched/substack-lopezkurtz-patch-is-the-exploit__20261024T013236Z.html",
+    "final_url": "https://davidlopezkurtz.substack.com/p/the-patch-is-the-exploit",
+    "title": "The Patch Is the Exploit - by David Lopez-Kurtz",
+    "excerpt": "he attack before any application code runs.” PHP’s advisories skip the branding and stick to plainer titles (“RCE via OOM corruption” and “RCE via stale global state”).[1] The Wall Street"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "All vault 70% sentences still present (some differ only by whitespace)."
+  },
+  {
+   "slug_or_url": "tech-everyeye-notizie-vulnerabilita-php-70-siti-mondo",
+   "publisher": "Everyeye Tech",
+   "url": "https://tech.everyeye.it/notizie/vulnerabilita-php-70-siti-mondo-rischio-10-anni-907538.html",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/tech-everyeye-notizie-vulnerabilita-php-70-siti-mondo/captures/20261023T160435Z/text.txt",
+    "sha256": "e7a5a2d24c7eb2aa38181b0292f6a2cc695ad4388ed7ca476335140c75cab18d",
+    "excerpt": "VULNERABILITÀ PHP: IL 70% DEI SITI AL MONDO È STATO A RISCHIO PER PIÙ DI 10 ANNI!"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:36Z",
+    "status": 200,
+    "sha256": "6b9d1a356b39ccd72abf285020223ae38a01ecc6c427205c1121dacb6708aafb",
+    "file": "fetched/tech-everyeye-notizie-vulnerabilita-php-70-siti-mondo__20261024T013236Z.html",
+    "final_url": "https://tech.everyeye.it/notizie/vulnerabilita-php-70-siti-mondo-rischio-10-anni-907538.html",
+    "title": "Vulnerabilità PHP: il 70% dei siti al mondo è stato a rischio per più di 10 anni!",
+    "excerpt": "Vulnerabilità PHP: il 70% dei siti al mondo è stato a rischio per più di 10 anni!"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Vault text is upper-cased by CSS; live HTML has the same headline in mixed case."
+  },
+  {
+   "slug_or_url": "the-verge-php2shell-websites-down",
+   "publisher": "The Verge",
+   "url": "https://www.theverge.com/tech/1016574/php2shell-security-vulnerability-websites-down",
+   "vault": {
+    "stamp": "20261023T012042Z",
+    "file": "sources/the-verge-php2shell-websites-down/captures/20261023T012042Z/text.txt",
+    "sha256": "1a9a20537e477cc84bdd688c3d13f165e980a7bae0aa54bd2f88011d32d3b3d3",
+    "excerpt": "By some accounts, up to 70 percent of websites use PHP in some capacity"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:37Z",
+    "status": 200,
+    "sha256": "0568576d8c28d24d154c2fed13f2739b7486959a6349100805af11b387972cce",
+    "file": "fetched/the-verge-php2shell-websites-down__20261024T013236Z.html",
+    "final_url": "https://www.theverge.com/tech/1016574/php2shell-security-vulnerability-websites-down",
+    "title": "Everything we know so far about the PHP2Shell vulnerability | The Verge",
+    "excerpt": "By some accounts, up to 70 percent of websites use PHP in some capacity"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "thehackernews-php2shell-4days",
+   "publisher": "The Hacker News",
+   "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+   "vault": {
+    "stamp": "20261022T081320Z",
+    "file": "sources/thehackernews-php2shell-4days/captures/20261022T081320Z/text.txt",
+    "sha256": "c1cb63141287484c7b96b6f842f983bb978a108b3b82eebb95ebe78c4ed608f4",
+    "excerpt": "\"PHP is used by almost 70% of websites,\" Cloudflare said"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:37Z",
+    "status": 200,
+    "sha256": "efe7ccaf49d1d8e4c23ba319ec35e1c7f7f1ede785b0422537de4d5935c29dc8",
+    "file": "fetched/thehackernews-php2shell-4days__20261024T013237Z.html",
+    "final_url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+    "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+    "excerpt": "\"PHP is used by almost 70% of websites,\" Cloudflare said"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "therecord-php-foundation-statement",
+   "publisher": "The Record",
+   "url": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
+   "vault": {
+    "stamp": "20261022T113158Z",
+    "file": "sources/therecord-php-foundation-statement/captures/20261022T113158Z/text.txt",
+    "sha256": "28c72344e03a5a79b2ee018193bbd930283c78444f9cffcea3dc7a422c49051e",
+    "excerpt": "Some estimates show that more than 70% of all websites on the internet use PHP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:37Z",
+    "status": 200,
+    "sha256": "1c24b8ba8f40a8b0b76a06f202f1641f71498af0f74d4a389e65ab605582e4aa",
+    "file": "fetched/therecord-php-foundation-statement__20261024T013237Z.html",
+    "final_url": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
+    "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024 | The Record from Recorded Future News",
+    "excerpt": "Some estimates show that more than 70% of all websites on the internet use PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "therecord-php-warnings",
+   "publisher": "The Record",
+   "url": "https://therecord.media/php-script-vulnerabilities-warnings",
+   "vault": {
+    "stamp": "20261022T080854Z",
+    "file": "sources/therecord-php-warnings/captures/20261022T080854Z/text.txt",
+    "sha256": "39efe473da414c018f1d06c944097b5fbee7132a7cbc76df44a89656db344443",
+    "excerpt": "Some estimates show that more than 70% of all websites on the internet use PHP"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:38Z",
+    "status": 200,
+    "sha256": "a3f188b988cf10baf5432642662b2c1f0ffba1722abc633c4612d4d659bd423c",
+    "file": "fetched/therecord-php-warnings__20261024T013237Z.html",
+    "final_url": "https://therecord.media/php-script-vulnerabilities-warnings",
+    "title": "Hundreds of websites taken offline as concern grows over two PHP vulnerabilities | The Record from Recorded Future News",
+    "excerpt": "Some estimates show that more than 70% of all websites on the internet use PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "New correction note since the vault capture, unrelated to 70%: \"Correction: A previous version of this article used an incorrect pronoun for Detectify researcher Joviane Jardim.\" The 70% sentence is unchanged."
+  },
+  {
+   "slug_or_url": "theregister-php-blames-chainguard",
+   "publisher": "The Register",
+   "url": "https://www.theregister.com/security/2026/10/22/php-blames-supply-chain-security-biz-chainguard-for-putting-huge-chunks-of-the-web-at-risk/5304611",
+   "vault": {
+    "stamp": "20261022T113204Z",
+    "file": "sources/theregister-php-blames-chainguard/captures/20261022T113204Z/text.txt",
+    "sha256": "b355691c9b584c533c626787860d8f2f329c17e1618422ab1088cfcdb71530ca",
+    "excerpt": "affected servers, steal sensitive data, and deface the websites running on them,” Wiz researchers Sagi Tzadik, Shir Tamari, Nir Ohfeld, and Tomer Schwartz warned on Wednesday, adding the oft-quoted stat"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:38Z",
+    "status": 200,
+    "sha256": "250e37d95551326ffb238f5c39a6920df2b677e81f04e44e475c4338ffd840a3",
+    "file": "fetched/theregister-php-blames-chainguard__20261024T013238Z.html",
+    "final_url": "https://www.theregister.com/security/2026/10/22/php-blames-supply-chain-security-biz-chainguard-for-putting-huge-chunks-of-the-web-at-risk/5304611",
+    "title": "PHP blames supply chain security biz Chainguard for putting huge chunks of the web at risk",
+    "excerpt": "affected servers, steal sensitive data, and deface the websites running on them,” Wiz researchers Sagi Tzadik, Shir Tamari, Nir Ohfeld, and Tomer Schwartz warned on Wednesday, adding the oft-quoted stat"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "tpo-nl-digid-offline",
+   "publisher": "TPO.NL",
+   "url": "https://tpo.nl/2026/10/21/php2shell-websites-offline-digid-ncsc/",
+   "vault": {
+    "stamp": "20261022T113213Z",
+    "file": "sources/tpo-nl-digid-offline/captures/20261022T113213Z/text.txt",
+    "sha256": "2ddfd8817abf25b62a1d65842ea2e1eda4c28468ef7c075bdcb2b736ab509dcb",
+    "excerpt": "Het gaat om twee kwetsbaarheden in de kern van PHP, de taal waarop volgens de PHP Foundation en beveiligingsbedrijf Wiz zo’n 70 procent van de websites draait"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:39Z",
+    "status": 200,
+    "sha256": "1ad044bff8e96636aba6f7cd64ffc320eea5c69055aa087a1b96187ccb5cacad",
+    "file": "fetched/tpo-nl-digid-offline__20261024T013238Z.html",
+    "final_url": "https://tpo.nl/2026/10/21/php2shell-websites-offline-digid-ncsc/",
+    "title": "PHP-lek legt DigiD, MijnOverheid en Tweede Kamer plat | TPO.NL",
+    "excerpt": "Het gaat om twee kwetsbaarheden in de kern van PHP, de taal waarop volgens de PHP Foundation en beveiligingsbedrijf Wiz zo’n 70 procent van de websites draait"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "tpo-tpo-nl-digid-offline",
+   "publisher": "TPO.NL",
+   "url": "https://tpo.nl/2026/10/21/php2shell-websites-offline-digid-ncsc/",
+   "vault": {
+    "stamp": "20261022T171501Z",
+    "file": "sources/tpo-tpo-nl-digid-offline/captures/20261022T171501Z/text.txt",
+    "sha256": "2ddfd8817abf25b62a1d65842ea2e1eda4c28468ef7c075bdcb2b736ab509dcb",
+    "excerpt": "Het gaat om twee kwetsbaarheden in de kern van PHP, de taal waarop volgens de PHP Foundation en beveiligingsbedrijf Wiz zo’n 70 procent van de websites draait"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:39Z",
+    "status": 200,
+    "sha256": "1ad044bff8e96636aba6f7cd64ffc320eea5c69055aa087a1b96187ccb5cacad",
+    "file": "fetched/tpo-nl-digid-offline__20261024T013238Z.html",
+    "final_url": "https://tpo.nl/2026/10/21/php2shell-websites-offline-digid-ncsc/",
+    "title": "PHP-lek legt DigiD, MijnOverheid en Tweede Kamer plat | TPO.NL",
+    "excerpt": "Het gaat om twee kwetsbaarheden in de kern van PHP, de taal waarop volgens de PHP Foundation en beveiligingsbedrijf Wiz zo’n 70 procent van de websites draait"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Same URL as another vault slug; one fetch serves both."
+  },
+  {
+   "slug_or_url": "trak-stories-70-websites-at-security-risk-due",
+   "publisher": "Trak.in",
+   "url": "https://trak.in/stories/70-websites-at-security-risk-due-to-critical-php-vulnerability-php2shell/",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/trak-stories-70-websites-at-security-risk-due/captures/20261023T160435Z/text.txt",
+    "sha256": "019553b7a67c18ab791515f5de15e32683828dbee3ffb981c370cf741299b786",
+    "excerpt": "70% Websites At Security Risk Due To Critical PhP Vulnerability: PHP2Shell"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:39Z",
+    "status": 200,
+    "sha256": "d2073c4cf5aab41ec0cae39f83e7cd9fce8caef46e2c7791b35b609d137f13ce",
+    "file": "fetched/trak-stories-70-websites-at-security-risk-due__20261024T013239Z.html",
+    "final_url": "https://trak.in/stories/70-websites-at-security-risk-due-to-critical-php-vulnerability-php2shell/",
+    "title": "70% Websites At Security Risk Due To Critical PhP Vulnerability: PHP2Shell - Trak.in - Indian Business of Tech, Mobile & Startups",
+    "excerpt": "70% Websites At Security Risk Due To Critical PhP Vulnerability: PHP2Shell"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "usa-today-php2shell-live",
+   "publisher": "USA Today",
+   "url": "https://www.usatoday.com/story/news/nation/2026/10/21/php-vulnerability-php2shell-updates--live/92362348007/",
+   "vault": {
+    "stamp": "20261023T012042Z",
+    "file": "sources/usa-today-php2shell-live/captures/20261023T012042Z/text.txt",
+    "sha256": "ad354dc6d75d42e28616703bb73ff6a1e2d63576f6e94a3b63868e689a8cd355",
+    "excerpt": "A critical security issue in a programming language used in as much as 70% of websites has put much of the internet at risk, sending shock waves around the globe"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:39Z",
+    "status": 402,
+    "sha256": "e8dbc3dd43c22a207485dc95fbec2a04690a23b6ab2d5bbe64715c2829e7ffac",
+    "file": "fetched/usa-today-php2shell-live__20261024T013239Z.html",
+    "final_url": "https://www.usatoday.com/story/news/nation/2026/10/21/php-vulnerability-php2shell-updates--live/92362348007/",
+    "title": "Access Restricted",
+    "excerpt": null
+   },
+   "classification": "blocked",
+   "correction_note": null,
+   "notes": "HTTP 402; page title now: 'Access Restricted'. Not guessed."
+  },
+  {
+   "slug_or_url": "wikipedia-php2shell",
+   "publisher": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/PHP2Shell",
+   "vault": {
+    "stamp": "20261022T112309Z",
+    "file": "sources/wikipedia-php2shell/captures/20261022T112309Z/text.txt",
+    "sha256": "bbb51bbd069506b09282b45086984565ae875b5d974d121584c8e2b3c912222f",
+    "excerpt": "\"PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet | Wiz Blog\""
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:39Z",
+    "status": 200,
+    "sha256": "f7acb60f6cc157187728644dd16ec491689c3e9164c4c5bda572cc3da22b5239",
+    "file": "fetched/wikipedia-php2shell__20261024T013239Z.html",
+    "final_url": "https://en.wikipedia.org/wiki/PHP2Shell",
+    "title": "PHP2Shell - Wikipedia",
+    "excerpt": "PHP is a popular programming language that many website architectures are built upon, with the two vulnerabilities estimated to affect nearly 70% of the commercial world wide web"
+   },
+   "classification": "changed",
+   "correction_note": null,
+   "notes": "Vault capture (22 Oct 11:23 UTC) had 70% only in reference titles. The lead sentence was added in revision 1381581724 (13:41 UTC, 23 Oct 2026, editor Masem); revision 1381578822 (13:11 UTC) lacks it. Still present in the latest revision 1381672424 (01:37 UTC, 24 Oct)."
+  },
+  {
+   "slug_or_url": "wiz-blog-php2shell",
+   "publisher": "Wiz",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "vault": {
+    "stamp": "20261022T081047Z",
+    "file": "sources/wiz-blog-php2shell/captures/20261022T081047Z/text.txt",
+    "sha256": "e3568b6f88c93f6bb08eebe3c8811f9fd283212f7331b287d5170b91d6bad1ea",
+    "excerpt": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:40Z",
+    "status": 200,
+    "sha256": "4aaa4cf67373e369b913a25cfd18b8081f283ac1ba53909c986f153c2b39e14a",
+    "file": "fetched/wiz-blog-php2shell__20261024T013239Z.html",
+    "final_url": "https://www.wiz.io/blog/php2shell-php-rce",
+    "title": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet | Wiz Blog",
+    "excerpt": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "x-openai-php2shell",
+   "publisher": "OpenAI (X)",
+   "url": "https://x.com/OpenAI/status/2112907856018309586",
+   "vault": {
+    "stamp": "20261022T081645Z",
+    "file": "sources/x-openai-php2shell/captures/20261022T081645Z/text.txt",
+    "sha256": "785b7cae55e3748b3d11e002f9b254408a57849c1ef08eb9fcc16a2cd196f189",
+    "excerpt": "OpenAI on X: \"OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70%"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:41Z",
+    "status": 200,
+    "sha256": "15454eed879f64e65ed9407e0169b63801a8c39c5a15d2e5512f620f155e19e0",
+    "file": "fetched/x-openai-php2shell__20261024T013240Z.html",
+    "final_url": "https://x.com/OpenAI/status/2112907856018309586",
+    "title": "OpenAI on X: \"OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers, and s… / X",
+    "excerpt": "OpenAI on X: \"OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70%"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "x-wiz-io-php2shell",
+   "publisher": "Wiz (X)",
+   "url": "https://x.com/wiz_io/status/2112899813264277528",
+   "vault": {
+    "stamp": "20261022T081624Z",
+    "file": "sources/x-wiz-io-php2shell/captures/20261022T081624Z/text.txt",
+    "sha256": "6c17977662815b0cb25a32e0987d1b1f95942156825b0cc616dc43a3f7f46809",
+    "excerpt": "Wiz on X: \"🚨 BREAKING: @Wiz_io Research uncovers #PHP2SHELL, a decade-old PHP Core vulnerability reaching CVSS 9.2 severity impacting 70% of the Internet.\""
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:41Z",
+    "status": 200,
+    "sha256": "a3c6238d99d088c05114a9b8fbc8e552779419ebf465975879680c24176aac64",
+    "file": "fetched/x-wiz-io-php2shell__20261024T013241Z.html",
+    "final_url": "https://x.com/wiz_io/status/2112899813264277528",
+    "title": "Wiz on X: \"🚨 BREAKING: @Wiz_io Research uncovers #PHP2SHELL, a decade-old PHP Core vulnerability reaching CVSS 9.2 severity impacting 70% of the Internet.\" / X",
+    "excerpt": "Wiz on X: \"🚨 BREAKING: @Wiz_io Research uncovers #PHP2SHELL, a decade-old PHP Core vulnerability reaching CVSS 9.2 severity impacting 70% of the Internet.\""
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": ""
+  },
+  {
+   "slug_or_url": "aws-security-blog-madpot",
+   "publisher": "AWS Security Blog",
+   "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+   "vault": {
+    "stamp": "20261022T111755Z",
+    "file": "sources/aws-security-blog-madpot/captures/20261022T111755Z/text.txt",
+    "sha256": "94315ded6e1175f290a4a7cac71ba39dcf18ada7232367f66c34e1decfb08c7d",
+    "excerpt": "PHP2Shell is now being broadly exploited in the wild.",
+    "outreach": "R-004"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:42Z",
+    "status": 200,
+    "sha256": "1889fa097c9073520cbb6526ebd4d044d224371107abd89b52dae3f4d7c862c4",
+    "file": "fetched/aws-security-blog-madpot__20261024T013241Z.html",
+    "final_url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+    "title": "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot | AWS Security Blog",
+    "excerpt": "PHP2Shell is now seeing broad exploitation attempts in the wild."
+   },
+   "classification": "changed",
+   "correction_note": null,
+   "notes": "Not a 70% wording but outreach R-004: \"now being broadly exploited in the wild\" became \"now seeing broad exploitation attempts in the wild\". article:modified_time moved from 2026-10-21T21:36:56-07:00 (vault) to 2026-10-22T14:25:03-07:00. No update note found on the page."
+  },
+  {
+   "slug_or_url": "wired-exploited-days-before-patched",
+   "publisher": "WIRED",
+   "url": "https://www.wired.com/story/hackers-exploited-the-php-vulnerabilities-days-before-they-were-patched/",
+   "vault": {
+    "stamp": "20261023T012042Z",
+    "file": "sources/wired-exploited-days-before-patched/captures/20261023T012042Z/text.txt",
+    "sha256": "d43b99af65d563ddd047c20c80d5318813eda28abd497763f91dd0a6ab8427cd",
+    "excerpt": "Hackers Exploited the PHP Vulnerabilities Days Before They Were Patched",
+    "outreach": "R-005"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:42Z",
+    "status": 200,
+    "sha256": "853f594c681c4fc1c71943d28b80be1438592f356aed671c697d5613c3cf978d",
+    "file": "fetched/wired-exploited-days-before-patched__20261024T013242Z.html",
+    "final_url": "https://www.wired.com/story/hackers-exploited-the-php-vulnerabilities-days-before-they-were-patched/",
+    "title": "Hackers Exploited the PHP Vulnerabilities Days Before They Were Patched | WIRED",
+    "excerpt": "Hackers Exploited the PHP Vulnerabilities Days Before They Were Patched"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Outreach R-005 page; no 70% wording; headline unchanged."
+  },
+  {
+   "slug_or_url": "bankinfosecurity-attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a",
+   "publisher": "BankInfoSecurity (ISMG)",
+   "url": "https://www.bankinfosecurity.com/attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a-33161",
+   "vault": {
+    "stamp": "20261023T080331Z",
+    "file": "sources/bankinfosecurity-attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a/captures/20261023T080331Z/text.txt",
+    "sha256": "c0242ed45a367f748a8e597436b19a84a00c9199c5e0300ff98dfc94e55c43c3",
+    "excerpt": "Attackers Exploit Leaked Zero-Day Flaws in Widely Used PHP",
+    "outreach": "R-006"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:44Z",
+    "status": 200,
+    "sha256": "2767ab90064697398e44c3e3c00735bede8ec2d1cbf3381944d443ec7a5b58d3",
+    "file": "fetched/bankinfosecurity-attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a__20261024T013242Z.html",
+    "final_url": "https://www.bankinfosecurity.com/attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a-33161",
+    "title": "Attackers Exploit Leaked Zero-Day Flaws in Widely Used PHP",
+    "excerpt": "Attackers Exploit Leaked Zero-Day Flaws in Widely Used PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Outreach R-006 page; no 70% wording; headline unchanged; its \"Update Oct. 22, 2026 07:45 UTC\" note was already in the vault capture."
+  },
+  {
+   "slug_or_url": "letemps-php-sites-debranches",
+   "publisher": "Le Temps",
+   "url": "https://letemps.ch/cyber/alerte-sur-le-web-des-millions-de-sites-sont-debranches-en-urgence-a-cause-de-failles-majeures-au-coeur-de-php",
+   "vault": {
+    "stamp": "20261022T081413Z",
+    "file": "sources/letemps-php-sites-debranches/captures/20261022T081413Z/text.txt",
+    "sha256": "4330f33c3b6763a95df44d21cfc602ec5f9bfd9df6141e863545c6a9a276cf4e",
+    "excerpt": "des millions de sites sont débranchés en urgence à cause de failles majeures au cœur de PHP",
+    "outreach": "R-010"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:45Z",
+    "status": 200,
+    "sha256": "1fe1216bec77f5bd95c45bb33e37abc93dc9b20b945b0bcdb43fbf2970279cb2",
+    "file": "fetched/letemps-php-sites-debranches__20261024T013244Z.html",
+    "final_url": "https://www.letemps.ch/cyber/alerte-sur-le-web-des-millions-de-sites-sont-debranches-en-urgence-a-cause-de-failles-majeures-au-coeur-de-php",
+    "title": "Alerte sur le Web: des millions de sites sont débranchés en urgence à cause de failles majeures au cœur de PHP - Le Temps",
+    "excerpt": "des millions de sites sont débranchés en urgence à cause de failles majeures au cœur de PHP"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Outreach R-010 page; no 70% wording; headline unchanged (URL now redirects to www.letemps.ch)."
+  },
+  {
+   "slug_or_url": "techtarget-itmedia-tt-article-2610-23-2000002526",
+   "publisher": "TechTarget Japan (ITmedia)",
+   "url": "https://techtarget.itmedia.co.jp/tt/article/2610/23/2000002526/",
+   "vault": {
+    "stamp": "20261023T160435Z",
+    "file": "sources/techtarget-itmedia-tt-article-2610-23-2000002526/captures/20261023T160435Z/text.txt",
+    "sha256": "14c421632d9592d8a6b0b2bef1f45af7363175b91bd978cc453d73de9b51dbdb",
+    "excerpt": "2200万台以上のサーバが危険にさらされた",
+    "outreach": "R-011"
+   },
+   "now": {
+    "retrieved_at": "2026-10-24T01:32:47Z",
+    "status": 200,
+    "sha256": "d8a949ebfaf6eb46e9a048c51151bacaf979b55cbbcc6461d7b2dd6480a76803",
+    "file": "fetched/techtarget-itmedia-tt-article-2610-23-2000002526__20261024T013245Z.html",
+    "final_url": "https://techtarget.itmedia.co.jp/tt/article/2610/23/2000002526/",
+    "title": "PHP脆弱性「PHP2Shell」で2260万件に影響 情シスの緊急チェックリスト：OpenAIモデルが暴いた脆弱性 - TechTargetジャパン",
+    "excerpt": "2200万台以上のサーバが危険にさらされた"
+   },
+   "classification": "unchanged",
+   "correction_note": null,
+   "notes": "Outreach R-011 page; no 70% wording; summary unchanged. Page shows 公開 2026年10月23日 05時00分 更新 2026年10月23日 09時43分 (same as at capture time)."
+  }
+ ],
+ "snapshots": [
+  {
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "timestamp": "20261021134412",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261021000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_1_20261021000000__20261024T013902Z.json",
+    "sha256": "2f3a55d4b4b146ce1565dce491e65d9e929618f3159275587b63692a1db67dc3"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "timestamp": "20261023160032",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261024000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_1_20261024000000__20261024T013906Z.json",
+    "sha256": "9756677281d9269dcdbf04d097890533a54a6ef54b103d302336dc45b769c0a9"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+   "timestamp": null,
+   "digest": null,
+   "status": null,
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261021000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_2_20261021000000__20261024T013907Z.json",
+    "sha256": "89471b287217ff5168b8a58b28fd031a281fcf704daa38e93a7cec37f7a1e147"
+   },
+   "notes": "No snapshot at or near this time."
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+   "timestamp": "20261023185704",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261024000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_2_20261024000000__20261024T013912Z.json",
+    "sha256": "7117df615cfa6ba70e4a4bd074da5858399cd3e5c315460ff671463e57a96877"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai",
+   "timestamp": null,
+   "digest": null,
+   "status": null,
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261021000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_3_20261021000000__20261024T013915Z.json",
+    "sha256": "daf5c4a3b732b21a2b2cc3a94af29478ee67b91984d8d3542f9f15217700806a"
+   },
+   "notes": "No snapshot at or near this time."
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai",
+   "timestamp": null,
+   "digest": null,
+   "status": null,
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261024000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_3_20261024000000__20261024T013915Z.json",
+    "sha256": "517673e0737bbdcc0ac41b26948529ea25149bc3624905ab78132743c86b840c"
+   },
+   "notes": "No snapshot at or near this time."
+  },
+  {
+   "url": "https://www.bbc.com/news/live/ckgel5xp2xv9t",
+   "timestamp": "20261022070738",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261021000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_4_20261021000000__20261024T013916Z.json",
+    "sha256": "fd1748f0ac365447422a6376d4b8ab722e5fcdd3dcbfa352155b5804cb8386a1"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://www.bbc.com/news/live/ckgel5xp2xv9t",
+   "timestamp": "20261023133740",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261024000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_4_20261024000000__20261024T013917Z.json",
+    "sha256": "c7db3d79f74ce0ad732165d0c350f2994540b753d4584cf6f867310cbd7ff422"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/",
+   "timestamp": null,
+   "digest": null,
+   "status": null,
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261021000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_5_20261021000000__20261024T013918Z.json",
+    "sha256": "01d6da13c11740a1abfb7fc49a48efaa31a41046dd3bbccbc7db449995ed2539"
+   },
+   "notes": "No snapshot at or near this time."
+  },
+  {
+   "url": "https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/",
+   "timestamp": "20261022113203",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261024000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_5_20261024000000__20261024T013924Z.json",
+    "sha256": "36258081f5517560596f12ccaad9ec7bf9cd2fe55ab5cc230b65fe1aa68ddfb5"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+   "timestamp": "20261022091249",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261021000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_6_20261021000000__20261024T013924Z.json",
+    "sha256": "48ea5a1d6a3968afcad34b5ce082309f5dfaa48a5aeee525414b25774b9ff207"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+   "timestamp": "20261022174502",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261024000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_6_20261024000000__20261024T013925Z.json",
+    "sha256": "be434ea13f9f8d32926e0951149267843c3a5094028c75a4cb440b887e5d0a64"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://www.php2shell.com/",
+   "timestamp": "20261021134854",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261021000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_7_20261021000000__20261024T013926Z.json",
+    "sha256": "4dd5132c9db683c26bd1b7578234f1a0943b6f9e6daddb048cfd5965e4abc1b0"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://www.php2shell.com/",
+   "timestamp": "20261023045525",
+   "digest": null,
+   "status": "200",
+   "excerpt": null,
+   "source": "archive.org/wayback/available (closest to 20261024000000)",
+   "evidence": {
+    "file": "fetched/cdx/avail_7_20261024000000__20261024T013927Z.json",
+    "sha256": "a009746339180902798f24ec1aeaebf2eef3e62616f70129a415fd620dd29596"
+   },
+   "notes": "Snapshot exists but its content could not be fetched: web.archive.org (CDX and id_ snapshots) is unreachable from this session (connection reset by the egress proxy); no digest available."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/PHP2Shell?oldid=1381578822",
+   "timestamp": "2026-10-23T13:11Z",
+   "digest": "7d00f61e24959f99add32e0a7971ac50365c4917ce8ca46ba44ff33855bea38c",
+   "status": "200",
+   "excerpt": null,
+   "source": "Wikipedia action=raw (digest is sha256 of the wikitext fetched)",
+   "evidence": {
+    "file": "fetched/wiki/rev_1381578822__20261024T014016Z.txt",
+    "sha256": "7d00f61e24959f99add32e0a7971ac50365c4917ce8ca46ba44ff33855bea38c"
+   }
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/PHP2Shell?oldid=1381581724",
+   "timestamp": "2026-10-23T13:41:34Z",
+   "digest": "786b2c1c89bcf866e33806e51edee170dd5592f4ea6a60e8133d28624628b0fa",
+   "status": "200",
+   "excerpt": "with the two vulnerabilities estimated to affect nearly 70% of the commercial world wide web.",
+   "source": "Wikipedia action=raw (digest is sha256 of the wikitext fetched)",
+   "evidence": {
+    "file": "fetched/wiki/rev_1381581724__20261024T014017Z.txt",
+    "sha256": "786b2c1c89bcf866e33806e51edee170dd5592f4ea6a60e8133d28624628b0fa"
+   }
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/PHP2Shell?oldid=1381672424",
+   "timestamp": "2026-10-24T01:37:29Z",
+   "digest": "765648102637b69f1d559ef7d1c34d8f0494b19265603635842f17c448c06bbc",
+   "status": "200",
+   "excerpt": "with the two vulnerabilities estimated to affect nearly 70% of the commercial [[world wide web]]",
+   "source": "Wikipedia action=raw (digest is sha256 of the wikitext fetched)",
+   "evidence": {
+    "file": "fetched/wiki/rev_1381672424__20261024T014009Z.txt",
+    "sha256": "765648102637b69f1d559ef7d1c34d8f0494b19265603635842f17c448c06bbc"
+   }
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai",
+   "timestamp": "20261022T080952Z",
+   "digest": "81bf5a9a7a84ad06077d46e5c782bcd925860cc16ca9e696ebacf90832db3fef",
+   "status": "200",
+   "excerpt": "PHP2Shell: AI helped find a critical security flaw affecting 70% of the internet | CNN Business",
+   "source": "evidence vault capture (excerpt is the page title; digest is text.txt sha256)",
+   "evidence": {
+    "file": "sources/cnn-php2shell-ai/captures/20261022T080952Z/text.txt (vault)",
+    "sha256": "81bf5a9a7a84ad06077d46e5c782bcd925860cc16ca9e696ebacf90832db3fef"
+   }
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+   "timestamp": "20261022T112616Z",
+   "digest": "ee49fc4265ae1c7cfb7ed245597071af43f17d437ed08be951d8388502f5a533",
+   "status": "200",
+   "excerpt": "Websites shut down globally after AI finds a critical flaw affecting 70% of the internet | CNN Business",
+   "source": "evidence vault capture (excerpt is the page title; digest is text.txt sha256)",
+   "evidence": {
+    "file": "sources/cnn-php2shell-websites-shut/captures/20261022T112616Z/text.txt (vault)",
+    "sha256": "ee49fc4265ae1c7cfb7ed245597071af43f17d437ed08be951d8388502f5a533"
+   }
+  },
+  {
+   "url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
+   "timestamp": "20261022T081421Z",
+   "digest": "97a639a7c23eb1a480daf7e711e19852b387f74e01996372a8e3a23d59839dc4",
+   "status": "200",
+   "excerpt": "Faille de sécurité: Panne mondiale des sites web: la Suisse romande touchée - 20 minutes",
+   "source": "evidence vault capture (excerpt is the page title; digest is text.txt sha256)",
+   "evidence": {
+    "file": "sources/20min-fr-suisse-romande/captures/20261022T081421Z/text.txt (vault)",
+    "sha256": "97a639a7c23eb1a480daf7e711e19852b387f74e01996372a8e3a23d59839dc4"
+   }
+  },
+  {
+   "url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
+   "timestamp": "20261022T181608Z",
+   "digest": "d8cc82c5b6a9481087a4ef62989c8855f0cd8432771d1e02fa8a4b9572387e65",
+   "status": "200",
+   "excerpt": "Faille de sécurité: Panne mondiale: la Suisse romande fortement impactée - 20 minutes",
+   "source": "evidence vault capture (excerpt is the page title; digest is text.txt sha256)",
+   "evidence": {
+    "file": "sources/20-minuten-20min-fr-suisse-romande/captures/20261022T181608Z/text.txt (vault)",
+    "sha256": "d8cc82c5b6a9481087a4ef62989c8855f0cd8432771d1e02fa8a4b9572387e65"
+   }
+  },
+  {
+   "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+   "timestamp": "20261022T111755Z",
+   "digest": "94315ded6e1175f290a4a7cac71ba39dcf18ada7232367f66c34e1decfb08c7d",
+   "status": "200",
+   "excerpt": "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot | AWS Security Blog",
+   "source": "evidence vault capture (excerpt is the page title; digest is text.txt sha256)",
+   "evidence": {
+    "file": "sources/aws-security-blog-madpot/captures/20261022T111755Z/text.txt (vault)",
+    "sha256": "94315ded6e1175f290a4a7cac71ba39dcf18ada7232367f66c34e1decfb08c7d"
+   }
+  }
+ ],
+ "changes": [
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai",
+   "publisher": "CNN Business",
+   "kind": "headline",
+   "before": {
+    "when": "2026-10-22T08:09:52Z (vault capture)",
+    "excerpt": "Global websites shut down after AI found a critical flaw affecting 70% of the internet",
+    "evidence": {
+     "file": "sources/cnn-php2shell-ai/captures/20261022T080952Z/text.txt (vault)",
+     "sha256": "81bf5a9a7a84ad06077d46e5c782bcd925860cc16ca9e696ebacf90832db3fef"
+    }
+   },
+   "after": {
+    "when": "2026-10-22T11:26:16Z (vault capture of the -intl URL; dateModified 2026-10-22T11:06:26Z)",
+    "excerpt": "Websites shut down globally after AI finds a critical flaw affecting 70% of the internet",
+    "evidence": {
+     "file": "sources/cnn-php2shell-websites-shut/captures/20261022T112616Z/text.txt (vault)",
+     "sha256": "ee49fc4265ae1c7cfb7ed245597071af43f17d437ed08be951d8388502f5a533"
+    }
+   },
+   "notes": "The non-intl URL now 301-redirects to the -intl article. Its vault title was \"PHP2Shell: AI helped find a critical security flaw affecting 70% of the internet\"."
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+   "publisher": "CNN Business",
+   "kind": "headline",
+   "before": {
+    "when": "2026-10-22T11:26:16Z (vault capture)",
+    "excerpt": "Websites shut down globally after AI finds a critical flaw affecting 70% of the internet",
+    "evidence": {
+     "file": "sources/cnn-php2shell-websites-shut/captures/20261022T112616Z/text.txt (vault)",
+     "sha256": "ee49fc4265ae1c7cfb7ed245597071af43f17d437ed08be951d8388502f5a533"
+    }
+   },
+   "after": {
+    "when": "page says Updated Oct 22, 2026, 2:26 PM ET (dateModified 2026-10-22T18:26:13Z); fetched 2026-10-24",
+    "excerpt": "Websites shut down globally after AI finds cybersecurity flaw affecting 70% of the internet",
+    "evidence": {
+     "file": "fetched/cnn-php2shell-websites-shut__20261024T013210Z.html",
+     "sha256": "e3a57d45a3ace0974642017c6cd2b951e0664b5616061b377d22f13fa81f738b"
+    }
+   },
+   "notes": "Only \"a critical\" became \"cybersecurity\"; \"70% of the internet\" kept. No correction note."
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+   "publisher": "CNN Business",
+   "kind": "body",
+   "before": {
+    "when": "2026-10-22T11:26:16Z (vault capture)",
+    "excerpt": "a programming language that powers 70% of all websites in the world, including WordPress and Drupal",
+    "evidence": {
+     "file": "sources/cnn-php2shell-websites-shut/captures/20261022T112616Z/text.txt (vault)",
+     "sha256": "ee49fc4265ae1c7cfb7ed245597071af43f17d437ed08be951d8388502f5a533"
+    }
+   },
+   "after": {
+    "when": "Updated Oct 22, 2026, 2:26 PM ET; fetched 2026-10-24",
+    "excerpt": "a programming language that powers 70% of the world’s websites",
+    "evidence": {
+     "file": "fetched/cnn-php2shell-websites-shut__20261024T013210Z.html",
+     "sha256": "e3a57d45a3ace0974642017c6cd2b951e0664b5616061b377d22f13fa81f738b"
+    }
+   },
+   "notes": "Same meaning, reworded; no note."
+  },
+  {
+   "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+   "publisher": "CNN Business",
+   "kind": "body",
+   "before": {
+    "when": "2026-10-22T08:09:52Z (vault capture, original URL)",
+    "excerpt": "after artificial intelligence helped discover and address critical bugs that could affect 70% of the internet",
+    "evidence": {
+     "file": "sources/cnn-php2shell-ai/captures/20261022T080952Z/text.txt (vault)",
+     "sha256": "81bf5a9a7a84ad06077d46e5c782bcd925860cc16ca9e696ebacf90832db3fef"
+    }
+   },
+   "after": {
+    "when": "Updated Oct 22, 2026, 2:26 PM ET; fetched 2026-10-24",
+    "excerpt": "Governments and companies around the world are racing to fix vulnerabilities revealed by artificial intelligence that could affect 70% of the world’s websites",
+    "evidence": {
+     "file": "fetched/cnn-php2shell-websites-shut__20261024T013210Z.html",
+     "sha256": "e3a57d45a3ace0974642017c6cd2b951e0664b5616061b377d22f13fa81f738b"
+    }
+   },
+   "notes": "The lede moved from \"70% of the internet\" to \"70% of the world's websites\", while the headline still says \"70% of the internet\". The 11:26 UTC capture opened with a lede that has no 70% figure."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/PHP2Shell",
+   "publisher": "Wikipedia",
+   "kind": "body",
+   "before": {
+    "when": "revision 1381578822, 2026-10-23T13:11Z",
+    "excerpt": "that allow [[Arbitrary code execution|remote code execution]] (RCE). Their existence was publicly announced on 20 October 2026.",
+    "evidence": {
+     "file": "fetched/wiki/rev_1381578822__20261024T014016Z.txt",
+     "sha256": "7d00f61e24959f99add32e0a7971ac50365c4917ce8ca46ba44ff33855bea38c"
+    }
+   },
+   "after": {
+    "when": "revision 1381581724, 2026-10-23T13:41:34Z (editor Masem); still in 1381672424, 2026-10-24T01:37Z",
+    "excerpt": "with the two vulnerabilities estimated to affect nearly 70% of the commercial world wide web.",
+    "evidence": {
+     "file": "fetched/wiki/rev_1381581724__20261024T014017Z.txt",
+     "sha256": "786b2c1c89bcf866e33806e51edee170dd5592f4ea6a60e8133d28624628b0fa"
+    }
+   },
+   "notes": "In 1381578822 the lead sentence ends at \"(RCE).\" with no 70% sentence (grep count 0); 1381581724 adds it; a later edit wikilinked [[world wide web]]. Vault capture 2026-10-22T11:23Z had 70% only in reference titles."
+  },
+  {
+   "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+   "publisher": "AWS Security Blog",
+   "kind": "body",
+   "before": {
+    "when": "2026-10-22T11:17:55Z (vault capture; article:modified_time 2026-10-21T21:36:56-07:00)",
+    "excerpt": "PHP2Shell is now being broadly exploited in the wild.",
+    "evidence": {
+     "file": "sources/aws-security-blog-madpot/captures/20261022T111755Z/text.txt (vault)",
+     "sha256": "94315ded6e1175f290a4a7cac71ba39dcf18ada7232367f66c34e1decfb08c7d"
+    }
+   },
+   "after": {
+    "when": "article:modified_time 2026-10-22T14:25:03-07:00; fetched 2026-10-24",
+    "excerpt": "PHP2Shell is now seeing broad exploitation attempts in the wild.",
+    "evidence": {
+     "file": "fetched/aws-security-blog-madpot__20261024T013241Z.html",
+     "sha256": "1889fa097c9073520cbb6526ebd4d044d224371107abd89b52dae3f4d7c862c4"
+    }
+   },
+   "notes": "Not a 70% wording; relevant to outreach R-004 (exploited vs attempts). Silent edit: no update note found."
+  },
+  {
+   "url": "https://www.bbc.com/news/live/ckgel5xp2xv9t",
+   "publisher": "BBC News",
+   "kind": "body",
+   "before": {
+    "when": "entry published 2026-10-22T06:15:41Z (still on ?page=3, fetched 2026-10-24T01:34:20Z)",
+    "excerpt": "with cyber-security firm Wiz estimating that \"roughly 70%\" of the internet is affected, though the BBC is unable to independently verify that figure",
+    "evidence": {
+     "file": "fetched/bbc-live-ckgel5xp2xv9t_page3__20261024T013419Z.html",
+     "sha256": "2fda11d58b21bbe97f21a578aee86756cb83b711934f2e8d9b47782cd1f58682"
+    }
+   },
+   "after": {
+    "when": "later entries 13:54 and 16:27 UTC, 22 Oct (live page, fetched 2026-10-24)",
+    "excerpt": "According to cyber-security firm Wiz, which helped uncover the critical PHP vulnerabilities surfaced this week, PHP powers 70% of the world’s websites",
+    "evidence": {
+     "file": "fetched/bbc-live-ckgel5xp2xv9t__20261024T013207Z.html",
+     "sha256": "5ed3e9b103d357537ebc6b96fc00edfbfd8bd7ec19a20193f73ff154228cd4e3"
+    }
+   },
+   "notes": "Not an edit of the old entry: the early entries are unchanged; later entries use websites wording (and at 17:12 UTC \"which helps run around 70% of sites\")."
+  },
+  {
+   "url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
+   "publisher": "20 minutes (20min.ch)",
+   "kind": "headline",
+   "before": {
+    "when": "2026-10-22T08:14:21Z (vault capture)",
+    "excerpt": "Panne mondiale des sites web: la Suisse romande touchée",
+    "evidence": {
+     "file": "sources/20min-fr-suisse-romande/captures/20261022T081421Z/text.txt (vault)",
+     "sha256": "97a639a7c23eb1a480daf7e711e19852b387f74e01996372a8e3a23d59839dc4"
+    }
+   },
+   "after": {
+    "when": "2026-10-22T18:16:08Z (vault capture) and live 2026-10-24",
+    "excerpt": "Panne mondiale: la Suisse romande fortement impactée",
+    "evidence": {
+     "file": "sources/20-minuten-20min-fr-suisse-romande/captures/20261022T181608Z/text.txt (vault)",
+     "sha256": "d8cc82c5b6a9481087a4ef62989c8855f0cd8432771d1e02fa8a4b9572387e65"
+    }
+   },
+   "notes": "Headline change not involving 70%; the 70% caption and body sentence are unchanged."
+  },
+  {
+   "url": "https://therecord.media/php-script-vulnerabilities-warnings",
+   "publisher": "The Record",
+   "kind": "correction-note",
+   "before": {
+    "when": "vault capture",
+    "excerpt": null,
+    "evidence": {
+     "file": "sources/therecord-php-warnings/captures/20261022T080854Z/text.txt (vault)",
+     "sha256": "39efe473da414c018f1d06c944097b5fbee7132a7cbc76df44a89656db344443",
+     "check": "note absent"
+    }
+   },
+   "after": {
+    "when": "fetched 2026-10-24",
+    "excerpt": "Correction: A previous version of this article used an incorrect pronoun for Detectify researcher Joviane Jardim.",
+    "evidence": {
+     "file": "fetched/therecord-php-warnings__20261024T013237Z.html",
+     "sha256": "a3f188b988cf10baf5432642662b2c1f0ffba1722abc633c4612d4d659bd423c"
+    }
+   },
+   "notes": "Correction unrelated to 70%; the 70% sentence (\"Some estimates show that more than 70% of all websites on the internet use PHP\") is unchanged."
+  }
+ ],
+ "new_outlets": [
+  {
+   "slug_or_url": "https://tidbits.com/2026/10/21/php2shell-vulnerabilities-put-70-of-websites-at-risk/",
+   "publisher": "TidBITS",
+   "url": "https://tidbits.com/2026/10/21/php2shell-vulnerabilities-put-70-of-websites-at-risk/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:36Z",
+    "status": 200,
+    "sha256": "798930ccfc966c0d8752f46611b5043627226d458c6091a8862a4c39003d9d10",
+    "file": "fetched/new/tidbits__20261024T014136Z.html",
+    "excerpt": "PHP2Shell Vulnerabilities Put 70% of Websites at Risk"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Body quotes Wiz: \"powers 70% of all websites in the world\"."
+  },
+  {
+   "slug_or_url": "https://protos.com/remotely-exploitable-php-bug-found-on-70-of-worlds-websites/",
+   "publisher": "Protos",
+   "url": "https://protos.com/remotely-exploitable-php-bug-found-on-70-of-worlds-websites/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:37Z",
+    "status": 200,
+    "sha256": "9d197451aaaa70772ff9234a03083bc45712ff9ca1b69fba431cb45a2b214e8f",
+    "file": "fetched/new/protos__20261024T014136Z.html",
+    "excerpt": "PHP is trying to patch two remotely exploitable bugs that AI found hiding in the language behind up to 70% of the world’s websites"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Headline: \"Remotely exploitable PHP bug found on 70% of world’s websites\"."
+  },
+  {
+   "slug_or_url": "https://www.island.io/blog/php2shell-turns-nearly-half-of-the-web-into-exploitation-infrastructure",
+   "publisher": "Island",
+   "url": "https://www.island.io/blog/php2shell-turns-nearly-half-of-the-web-into-exploitation-infrastructure",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:38Z",
+    "status": 200,
+    "sha256": "3d2a405e1164dba287598b7fce92fe8a17717134b26f1b5f7bc81fbffe1d6e63",
+    "file": "fetched/new/island__20261024T014138Z.html",
+    "excerpt": "According to W3Techs, PHP runs 69.3% of websites"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Elsewhere: \"PHP runs about 70% of the web\". Drops the \"whose server-side language we know\" qualifier."
+  },
+  {
+   "slug_or_url": "https://hackernoon.com/nsa-says-patch-or-go-offline-as-ai-found-php2shell-flaws-reach-70percent-of-the-web",
+   "publisher": "HackerNoon",
+   "url": "https://hackernoon.com/nsa-says-patch-or-go-offline-as-ai-found-php2shell-flaws-reach-70percent-of-the-web",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:38Z",
+    "status": 200,
+    "sha256": "b8fd7c0eaa0d8288cffca9e61c8443c0751eb985ddc34c21c2d533bb79645c68",
+    "file": "fetched/new/hackernoon__20261024T014138Z.html",
+    "excerpt": "The share figures cover only sites whose server language can be identified, so \"70% of the web\" is shorthand for that"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Headline: \"NSA Says Patch PHP or Go Offline as AI-Found PHP2Shell Flaws Reach ~70% of the Web\". Qualifies the figure in the body."
+  },
+  {
+   "slug_or_url": "https://tech-insider.org/ai-php2shell-vulnerability-70-percent-web-2026/",
+   "publisher": "Tech Insider",
+   "url": "https://tech-insider.org/ai-php2shell-vulnerability-70-percent-web-2026/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:39Z",
+    "status": 200,
+    "sha256": "b4c55da6a5d28f3ad17a0ebbfc7fc1abfa06439815520aaf185f6e3a39557aa7",
+    "file": "fetched/new/techinsider__20261024T014138Z.html",
+    "excerpt": "PHP is the open-source programming language that processes code on the back end of roughly 70% of the world’s websites and web applications"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Headline \"AI Finds PHP2Shell Flaw Hitting 70% of the Web\"."
+  },
+  {
+   "slug_or_url": "https://www.bestanswerhub.com/playbooks/php2shell-php-vulnerability/",
+   "publisher": "Best Answer Hub",
+   "url": "https://www.bestanswerhub.com/playbooks/php2shell-php-vulnerability/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:40Z",
+    "status": 200,
+    "sha256": "75a35e619b62dc8ab3745dca28c4de75bc787f7587080e66f55c426a00e37c73",
+    "file": "fetched/new/bestanswerhub__20261024T014139Z.html",
+    "excerpt": "The headline number, \"up to 70% of the world's websites\", is PHP's market share, not a count of hackable sites"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Explainer pushing back on the 70% headline; cites W3Techs 69.3%."
+  },
+  {
+   "slug_or_url": "https://dev.to/bargan/php2shell-your-php-app-can-be-secure-and-still-be-vulnerable-odd",
+   "publisher": "DEV Community (bargan)",
+   "url": "https://dev.to/bargan/php2shell-your-php-app-can-be-secure-and-still-be-vulnerable-odd",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:40Z",
+    "status": 200,
+    "sha256": "bf5daea3ef0206f3888c300967b72c639eb7424f0fcc1f06dab4e350a44e188c",
+    "file": "fetched/new/devto__20261024T014140Z.html",
+    "excerpt": "Does PHP2Shell really affect 70% of the internet?"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Explainer; says W3Techs reported roughly 69% and qualifies it."
+  },
+  {
+   "slug_or_url": "https://abc7news.com/story/urgent-security-fix-issued-code-vital-estimated-70-websites/19965216/",
+   "publisher": "ABC7 (ABC owned stations; same story on abc30, abc13, 6abc, abc11)",
+   "url": "https://abc7news.com/story/urgent-security-fix-issued-code-vital-estimated-70-websites/19965216/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:41Z",
+    "status": 200,
+    "sha256": "9936da39f5dd96538c352b25a3d007827d282c9791710e2e7ee2c3035ec8b13f",
+    "file": "fetched/new/abc7news__20261024T014140Z.html",
+    "excerpt": "Nearly 70% of the internet is estimated to use PHP"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Headline \"Urgent security fix issued for code vital to estimated 70% of all websites\"."
+  },
+  {
+   "slug_or_url": "https://larepublica.co/globoeconomia/ia-detecta-fallo-de-seguridad-que-pone-en-riesgo-a-70-de-los-sitios-web-4507904",
+   "publisher": "La Republica (Colombia)",
+   "url": "https://larepublica.co/globoeconomia/ia-detecta-fallo-de-seguridad-que-pone-en-riesgo-a-70-de-los-sitios-web-4507904",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:41Z",
+    "status": 200,
+    "sha256": "551c91530563b89861441c8ee6232b17c31d790212e98c37c8c8a3b007ff4f0a",
+    "file": "fetched/new/larepublica__20261024T014141Z.html",
+    "excerpt": "IA detecta fallo de seguridad que pone en riesgo a 70% de los sitios web"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Attributes the figure to The Wall Street Journal."
+  },
+  {
+   "slug_or_url": "https://cybelangel.com/blog/critical-php-rce-vulnerabilities-cve-2026-109618-and-cve-2026-109619/",
+   "publisher": "CybelAngel",
+   "url": "https://cybelangel.com/blog/critical-php-rce-vulnerabilities-cve-2026-109618-and-cve-2026-109619/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:42Z",
+    "status": 200,
+    "sha256": "a5870e66e263ece967c4d744fe6a1d7d58b6eb9018745d0f1e6156a139b4e84b",
+    "file": "fetched/new/cybelangel__20261024T014141Z.html",
+    "excerpt": null
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Counts hosts (2.24M internet-facing PHP hosts); no 70% figure in static text."
+  },
+  {
+   "slug_or_url": "https://hermes-ai.net/news/openai-s-php2shell-exposes-70-of-websites-to-remote-code-attacks/",
+   "publisher": "Hermes AI News (indexed from AlphaSignal)",
+   "url": "https://hermes-ai.net/news/openai-s-php2shell-exposes-70-of-websites-to-remote-code-attacks/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:43Z",
+    "status": 200,
+    "sha256": "6f8ab009e6fd1f344b5baafdab9ffaab286a01be20cee0ffc2c70a1325657814",
+    "file": "fetched/new/hermesai__20261024T014142Z.html",
+    "excerpt": "two critical RCE flaws impacting roughly 70% of the web"
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "Headline \"OpenAI's PHP2Shell Exposes 70% of Websites to Remote Code Attacks\"."
+  },
+  {
+   "slug_or_url": "https://itdaily.com/blogs/software/php2shell-bug-php/",
+   "publisher": "ITdaily",
+   "url": "https://itdaily.com/blogs/software/php2shell-bug-php/",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:44Z",
+    "status": 200,
+    "sha256": "d63d2aba97062d34a500f6866442730159da0dfdfba4abcb3546989f7dd61a66",
+    "file": "fetched/new/itdaily__20261024T014143Z.html",
+    "excerpt": "Nearly 70 percent of all websites worldwide are affected."
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "States affected, not uses."
+  },
+  {
+   "slug_or_url": "https://w3techs.com/technologies/overview/programming_language",
+   "publisher": "W3Techs (measurer)",
+   "url": "https://w3techs.com/technologies/overview/programming_language",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:44Z",
+    "status": 200,
+    "sha256": "661a714c7373843f13e839257a2046a2afb4b084241e6c78c4fc0152aa1c7bd4",
+    "file": "fetched/new/w3techs-pl__20261024T014144Z.html",
+    "excerpt": "PHP is used by 69.3% of all the websites whose server-side programming language we know."
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "The measurer's own wording today. No mention of php2shell on the page, so no W3Techs comment on how the figure is used was found."
+  },
+  {
+   "slug_or_url": "https://w3techs.com/technologies/details/pl-php",
+   "publisher": "W3Techs (measurer)",
+   "url": "https://w3techs.com/technologies/details/pl-php",
+   "vault": null,
+   "now": {
+    "retrieved_at": "2026-10-24T01:41:45Z",
+    "status": 200,
+    "sha256": "ca7ba9d1ce117cc1e4061e8509072182bda77ace4b7c40481d5de7ee4aa51c63",
+    "file": "fetched/new/w3techs-php__20261024T014144Z.html",
+    "excerpt": "PHP is used by 69.3% of all the websites whose server-side programming language we know."
+   },
+   "classification": "new",
+   "correction_note": null,
+   "notes": "As above."
+  }
+ ],
+ "fortune": {
+  "url": "https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/",
+  "outreach": "R-008 (UF-005.1)",
+  "now": {
+   "retrieved_at": "2026-10-24T01:32:19Z",
+   "status": 200,
+   "sha256": "c5d640eceed2f2f49ea871c10b6041292c1bff4e28c681163c32e1b4295ab12a",
+   "file": "fetched/fortune-ai-tools-php-vulnerability__20261024T013219Z.html"
+  },
+  "vault": {
+   "stamp": "20261023T012042Z",
+   "file": "sources/fortune-ai-tools-php-vulnerability/captures/20261023T012042Z/text.txt",
+   "sha256": "cdcba1b8c212b9e8d3928e5d5ea0a7e09ea4c719e7bef44139d3f9f2f0612808"
+  },
+  "byline": "Emily Forlini, Senior AI Reporter",
+  "datePublished": "2026-10-21T18:48:38-00:00",
+  "dateModified": "2026-10-22T14:56:06-00:00 (same in vault capture and now)",
+  "sentences_about_70pc": [
+   {
+    "where": "headline (h1 / schema headline)",
+    "excerpt": "AI tools discovered the PHP vulnerability that could take down 70% of the internet. Now, the race is on to patch it before AI-powered hackers attack",
+    "attribution": "Fortune's own words, unattributed"
+   },
+   {
+    "where": "<title> and og:title",
+    "excerpt": "AI helped discover the PHP vulnerability that could take down 70% of the internet",
+    "attribution": "Fortune's own words; the HTML title differs from the visible headline (\"AI helped discover\" vs \"AI tools discovered\"), both in the vault capture and now"
+   },
+   {
+    "where": "body, paragraph 1",
+    "excerpt": "Today, the defenders are hoping they got a leg up in identifying a critical issue that stands to take down 70% of the internet if left unaddressed.",
+    "attribution": "Fortune's own words, unattributed"
+   },
+   {
+    "where": "body, quoting Wiz",
+    "excerpt": "“With 70% of the internet affected, the impact of php2shell cannot be overstated,” Wiz said in a blog post announcing its findings.",
+    "attribution": "Attributed to Wiz's blog post; the Wiz post's Conclusion has \"With 70% of the Internet affected, the impact of PHP2Shell cannot be overstated.\""
+   }
+  ],
+  "update_note": "Update, Oct. 22: This story has been updated to include Cloudflare’s early data on the number of exploit attempts after the news got out, and comment from Amazon Web Services",
+  "update_note_about_70pc": false,
+  "what_it_attributes_70pc_to": "Headline and lede: no attribution (Fortune's voice, \"could take down\" / \"stands to take down\"). One sentence quotes Wiz's blog (\"With 70% of the internet affected\"). No mention of W3Techs or of websites as the base.",
+  "changed": false,
+  "classification": "unchanged",
+  "correction_note": null
+ },
+ "injection_seen": [],
+ "injection_scan": "All fetched files were searched for text addressed to an AI or a model (the usual override phrasings, 'if you are an AI', notes to language models). The only hits were Wiz page UI strings describing agent command-line tools, which are product copy, not addressed to a reader's AI. Nothing recorded as injection.",
+ "excluded_false_positives": [
+  {
+   "slug": "bursahakimiyet-teknoloji-php-deki-kritik-guvenlik-acigi-alar",
+   "url": "https://www.bursahakimiyet.com.tr/teknoloji/php-deki-kritik-guvenlik-acigi-alarmi-dunya-genelinde-cok-sayida-site-erisime-kapatildi-1734665",
+   "reason": "only \"70%\" match is a market-ticker figure, not about PHP"
+  },
+  {
+   "slug": "cointelegraph-news-php-foundation-admits-structural-failure",
+   "url": "https://cointelegraph.com.br/news/php-foundation-admits-structural-failure-delayed-critical-security-fix",
+   "reason": "only \"70%\" match is a crypto price change, not about PHP"
+  }
+ ],
+ "blocked": [
+  {
+   "url": "https://www.cyberkendra.com/2026/10/php2shell-cve-2026-109618-cve-2026-109619.html",
+   "status": 403,
+   "retrieved_at": "2026-10-24T01:32:17Z",
+   "sha256": "3bb40456027c77d05b991e4686f10e51739a6ebdca3e33ec5edcd1e2c28b34cf",
+   "file": "fetched/cyberkendra-2026-10-php2shell-cve-2026-109618-cve-20__20261024T013216Z.html",
+   "what": "Bot Verification"
+  },
+  {
+   "url": "https://cybernews.com/security/php2shell-wordpress-amazon-cloudflare-ai-cyberattacks/",
+   "status": 403,
+   "retrieved_at": "2026-10-24T01:32:17Z",
+   "sha256": "7fd73b5f6052ce7d5dda13ef8e9fcb97739d90648dfbcca97c1ebacea9e460fb",
+   "file": "fetched/cybernews-php2shell-millions__20261024T013217Z.html",
+   "what": "Just a moment..."
+  },
+  {
+   "url": "https://www.usatoday.com/story/news/nation/2026/10/21/php-vulnerability-php2shell-updates--live/92362348007/",
+   "status": 402,
+   "retrieved_at": "2026-10-24T01:32:39Z",
+   "sha256": "e8dbc3dd43c22a207485dc95fbec2a04690a23b6ab2d5bbe64715c2829e7ffac",
+   "file": "fetched/usa-today-php2shell-live__20261024T013239Z.html",
+   "what": "Access Restricted"
+  },
+  {
+   "url": "https://www.digitec.ch/en/page/php2shell-half-the-internet-is-at-risk-only-patching-php-will-help-44165",
+   "status": 403,
+   "retrieved_at": "2026-10-24T01:41:37Z",
+   "sha256": "c98ec82e2d954c3262c566085d339c347d2b76285c4dbca548c748a43814193c",
+   "file": "fetched/new/digitec__20261024T014137Z.html",
+   "what": "found by WebSearch; HTTP 403 (bot challenge), not read"
+  },
+  {
+   "url": "https://ecosistemastartup.com/php2shell-fallo-critico-en-php-afecta-al-70-de-la-web/",
+   "status": 403,
+   "retrieved_at": "2026-10-24T01:41:38Z",
+   "sha256": "cac05ee6a91f0f0f309fabeb8f3aaa5d7a1711cf2f5327f17b171b411641b1db",
+   "file": "fetched/new/ecosistemastartup__20261024T014137Z.html",
+   "what": "found by WebSearch; HTTP 403 (bot challenge), not read"
+  },
+  {
+   "url": "https://fourweekmba.com/ai-gemini-and-gpt-helped-find-php-flaws-in-up-to-70-of-sites/",
+   "status": 403,
+   "retrieved_at": "2026-10-24T01:41:40Z",
+   "sha256": "b4b94e6496f82953c3c9d3d25bb482409d0204bf741e0db198b944bfe1409172",
+   "file": "fetched/new/fourweekmba__20261024T014140Z.html",
+   "what": "found by WebSearch; HTTP 403 (bot challenge), not read"
+  },
+  {
+   "url": "https://cybernews.com/security/wordpress-php-severe-rce-flaws-emergency-patches/",
+   "status": 403,
+   "retrieved_at": "2026-10-24T01:41:43Z",
+   "sha256": "0a05649b66f3f2aab79642caf0b7a58e11b9990a23d8b2659fe01bfb03c90ced",
+   "file": "fetched/new/cybernews-wp__20261024T014143Z.html",
+   "what": "found by WebSearch; HTTP 403 (bot challenge), not read"
+  },
+  {
+   "url": "https://web.archive.org/cdx/search/cdx and https://web.archive.org/web/<ts>id_/<url>",
+   "status": null,
+   "retrieved_at": "2026-10-24T01:36Z to 01:38Z",
+   "sha256": null,
+   "file": null,
+   "what": "Connection reset on every request (proxy recentRelayFailures: tunnel closed after 517 B sent, 39 B received, host web.archive.org:443); WebFetch also refuses web.archive.org. Only archive.org/wayback/available answered (timestamps, no digests, no content)."
+  }
+ ],
+ "normalised": [
+  "1 zero-width word joiner (U+2060) removed from captured titles; invisible, and the gate refuses it in published text."
+ ]
+}

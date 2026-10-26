@@ -1,0 +1,32 @@
+{
+  "node_id": "5ed802f7",
+  "node_type": "finding",
+  "node_index": 36,
+  "label": "Finding-36",
+  "title": "scale-ncsc-nl: Site data disagree on the inventory count",
+  "description": "data/claims.json (scale-ncsc-nl), data/numbers.json n-674 ('674 ... 3 Not vulnerable, 1 without a status'), data/software.json (count 674), questions.json, sections.json and index.md ('reaches 674 products') say 674; data/inventory-history.json self_check says the parser 'also finds 1 row the vault missed: iBabs'. numbers.json n-674 agrees with the claim but both are wrong against the file.",
+  "status": "open",
+  "created_at": 1792694624687,
+  "updated_at": 1792694624910,
+  "created_by": "f8b9354b",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694624910
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-ncsc-nl"
+    ],
+    "pages": [
+      "facts/scale-ncsc-nl/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

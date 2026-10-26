@@ -1,0 +1,32 @@
+{
+  "node_id": "e03a39f8",
+  "node_type": "finding",
+  "node_index": 50,
+  "label": "Finding-50",
+  "title": "versions-old: 'from 5 onwards' is wider than the finder's '_= 5.4', and the 5.x sources look like echoes of the leak",
+  "description": "Wiz (X post and blog) says 5.4 and later. NCSC-NL's text is the pre-patch banner ('vermoedelijk ... in ieder geval vanaf versie 5'), CERT-FR lists 'toutes versions 6.x' (PHP 6 never shipped; Daubois says watchTowr named 5, 6, 7 and 8), and The Hacker News says the HN leak claimed 'from PHP 5 onward'. These trace to one origin (A3 at most). Suggest the claim say '5.4 onwards per Wiz; PHP's backports imply 7.4 onwards'.",
+  "status": "open",
+  "created_at": 1792694632470,
+  "updated_at": 1792694632669,
+  "created_by": "98b5d52c",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694632669
+    }
+  ],
+  "properties": {
+    "claims": [
+      "versions-old"
+    ],
+    "pages": [
+      "facts/versions-old/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

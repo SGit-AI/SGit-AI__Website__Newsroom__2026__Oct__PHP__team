@@ -1,0 +1,31 @@
+{
+  "node_id": "5e386168",
+  "node_type": "finding",
+  "node_index": 97,
+  "label": "Finding-97",
+  "title": "rce-modphp: 1 smaller precision and sourcing point",
+  "description": "'default settings' is broader than the advisory's wording, and the claim does not name the CVE: GHSA-w8hw says 'default PHP input and memory limits and normal prefork configurations with multiple workers', and adds that 'Exploit portability and reliability depend on the PHP build, extensions, frontend behavior and allocator layout'. The before-application-code path is CVE-2026-109618 specifically; naming it would stop readers transferring it to CVE-2026-109619, whose confirmed mod_php case needs fatal_error_backtraces (PHP 8.5).",
+  "status": "open",
+  "created_at": 1792694655395,
+  "updated_at": 1792694655612,
+  "created_by": "d4cbb8bc",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694655612
+    }
+  ],
+  "properties": {
+    "claims": [
+      "rce-modphp"
+    ],
+    "pages": [
+      "facts/rce-modphp/index.html"
+    ],
+    "severity": "low"
+  }
+}

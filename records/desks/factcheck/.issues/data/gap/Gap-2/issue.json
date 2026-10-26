@@ -1,0 +1,32 @@
+{
+  "node_id": "84e15a20",
+  "node_type": "gap",
+  "node_index": 2,
+  "label": "Gap-2",
+  "title": "fix-incomplete: The Fediverse posts (fedi.katze.sh__elise) are not captured; the thread has no text capture",
+  "description": "The source openwall-oss-security-109619-thread has only raw/ curl copies (no captures/ entry, no text.txt, no manifest sha for a text file). The origin posts 117479383739450605 and 117478655339557825 are not in the vault, so the claim rests on a relay of an unnamed person.",
+  "status": "open",
+  "created_at": 1792694631961,
+  "updated_at": 1792694632200,
+  "created_by": "465fcd80",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694632200
+    }
+  ],
+  "properties": {
+    "claims": [
+      "fix-incomplete"
+    ],
+    "pages": [
+      "facts/fix-incomplete/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

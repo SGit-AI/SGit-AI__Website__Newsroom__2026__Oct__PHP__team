@@ -1,0 +1,31 @@
+{
+  "node_id": "906d0d0a",
+  "node_type": "finding",
+  "node_index": 96,
+  "label": "Finding-96",
+  "title": "rce-fpm: 1 smaller precision and sourcing point",
+  "description": "Claim omits that the validated FPM path is application-dependent: GHSA-6wmf: 'It works with a normal dynamic FPM pool, although it depends on a suitable application operation.' The bare claim reads as if FPM is exploitable as generically as mod_php.",
+  "status": "open",
+  "created_at": 1792694654953,
+  "updated_at": 1792694655162,
+  "created_by": "1533efe2",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694655162
+    }
+  ],
+  "properties": {
+    "claims": [
+      "rce-fpm"
+    ],
+    "pages": [
+      "facts/rce-fpm/index.html"
+    ],
+    "severity": "low"
+  }
+}

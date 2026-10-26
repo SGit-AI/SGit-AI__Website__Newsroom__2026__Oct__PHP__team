@@ -1,0 +1,39 @@
+{
+  "node_id": "75e21387",
+  "node_type": "evidence",
+  "node_index": 9,
+  "label": "Evidence-9",
+  "title": "oss-security 22_16, 22_19, 22_20: list members say every version from PHP 5.4 is affected, each citing Wiz",
+  "description": "Three replies to Greenbone's question about versions older than 8.2. All three trace to Wiz's write-up (restates, not corroborates); no reply from the PHP project on versions. Adds echoes to K-003, not evidence.",
+  "status": "proposed",
+  "created_at": 1792702577084,
+  "updated_at": 1792702577459,
+  "created_by": "7a5bebc8",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "00b6d9a2",
+      "target_label": "Run-2",
+      "created_at": 1792702577271
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "b51bf2ed",
+      "target_label": "Contradiction-3",
+      "created_at": 1792702577459
+    }
+  ],
+  "properties": {
+    "url": "https://www.openwall.com/lists/oss-security/2026/10/22/16",
+    "retrieved_at": "2026-10-22T20:54Z",
+    "sha256": "04f109cae98defca4e2db749e7dc1cf106fc8503ae907aff9e16d60a285ea45e",
+    "excerpt": "It's pubblically document in the writeup that everything from PHP 5.4 is affected",
+    "claims": [
+      "versions-old"
+    ],
+    "severity": "low"
+  }
+}

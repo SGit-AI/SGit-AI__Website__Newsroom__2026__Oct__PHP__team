@@ -1,0 +1,31 @@
+{
+  "node_id": "9aae776f",
+  "node_type": "finding",
+  "node_index": 78,
+  "label": "Finding-78",
+  "title": "leak-cve-ids: 1 smaller precision and sourcing point",
+  "description": "Duplicate slugs for one page: php-foundation-blog-security-release and phpfoundation-blog-security-release-leak are the same URL captured 3 minutes apart (only the embedded Reddit vote counts differ). Citing both suggests two sources.",
+  "status": "open",
+  "created_at": 1792694646241,
+  "updated_at": 1792694646457,
+  "created_by": "087eef1b",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694646457
+    }
+  ],
+  "properties": {
+    "claims": [
+      "leak-cve-ids"
+    ],
+    "pages": [
+      "facts/leak-cve-ids/index.html"
+    ],
+    "severity": "low"
+  }
+}

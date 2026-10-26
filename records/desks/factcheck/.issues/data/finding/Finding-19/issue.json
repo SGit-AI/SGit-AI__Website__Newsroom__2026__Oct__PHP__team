@@ -1,0 +1,32 @@
+{
+  "node_id": "d9df8109",
+  "node_type": "finding",
+  "node_index": 19,
+  "label": "Finding-19",
+  "title": "watchtowr-itw: Claim omits watchTowr's own qualifier: no successful attempt, and sprayed exploits mostly do not work",
+  "description": "Knott: 'Whilst nobody has been successful to date' (SecurityWeek) and 'The exploits being sprayed indiscriminately either don't work at all, test for timing-based differences, or crash the target'. Without this the claim reads as more than attempts.",
+  "status": "open",
+  "created_at": 1792694615394,
+  "updated_at": 1792694615776,
+  "created_by": "646326c3",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694615776
+    }
+  ],
+  "properties": {
+    "claims": [
+      "watchtowr-itw"
+    ],
+    "pages": [
+      "facts/watchtowr-itw/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

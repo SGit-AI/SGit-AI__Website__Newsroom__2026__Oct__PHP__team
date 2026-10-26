@@ -1,0 +1,32 @@
+{
+  "node_id": "e4f1e1cd",
+  "node_type": "finding",
+  "node_index": 42,
+  "label": "Finding-42",
+  "title": "offline-ncsc: LBC carried the same NCSC sentence on 21 October, before the NCSC page was modified",
+  "description": "lbc-uk-websites-offline (dated '21 Oct 2026, 15:41', written before the release: 'Full details ... have yet to be published') quotes the NCSC verbatim with the BBC's wording. The NCSC page captured at 08:09Z on 22 Oct has HTTP last-modified 07:30:02 GMT that morning. Two outlets, one of them hours earlier than the BBC, quoting the same sentence suggests an earlier NCSC version said it and was reworded. The note frames it as a BBC misquote whose opening 'matches the Canadian CCCS text'; it should mention LBC and the likely supersession. The quote is not in the NCSC capture, so A3 stands until an earlier NCSC version is captured.",
+  "status": "open",
+  "created_at": 1792694627857,
+  "updated_at": 1792694628060,
+  "created_by": "3bab6429",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694628060
+    }
+  ],
+  "properties": {
+    "claims": [
+      "offline-ncsc"
+    ],
+    "pages": [
+      "facts/offline-ncsc/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

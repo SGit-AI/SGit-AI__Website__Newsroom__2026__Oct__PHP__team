@@ -1,0 +1,32 @@
+{
+  "node_id": "1ffa6c61",
+  "node_type": "finding",
+  "node_index": 13,
+  "label": "Finding-13",
+  "title": "cisa-none: Claim drops CISA's own time qualifier",
+  "description": "CISA says it 'has not observed exploitation ... as of the time of publication' (Release Date October 21, 2026, no time given). The claim text uses an undated present tense ('CISA has not observed exploitation'); the qualifier is only in the note. Put 'as of 21 October' in the claim itself, since Amazon, Cloudflare, watchTowr and NCSC NZ report exploitation attempts after that.",
+  "status": "open",
+  "created_at": 1792694612347,
+  "updated_at": 1792694612567,
+  "created_by": "81a540a6",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694612567
+    }
+  ],
+  "properties": {
+    "claims": [
+      "cisa-none"
+    ],
+    "pages": [
+      "facts/cisa-none/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

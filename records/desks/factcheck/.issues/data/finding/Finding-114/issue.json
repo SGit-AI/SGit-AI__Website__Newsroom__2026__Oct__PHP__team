@@ -1,0 +1,31 @@
+{
+  "node_id": "3fb5d139",
+  "node_type": "finding",
+  "node_index": 114,
+  "label": "Finding-114",
+  "title": "wikimedia-precaution: 2 smaller precision and sourcing points",
+  "description": "\"other\" dropped from the paraphrase: The statement says \"a number of other systems\", after saying all Foundation-supported and volunteer-run PHP systems are affected; Mashable describes them as \"supporting tools\". The claim's \"a number of systems\" loses that nuance. | Restoration not recorded: wikimediastatus.net at 08:18:50Z on 22 Oct shows \"All Systems Operational\" (reading and editing). Insider Paper (via Mashable) says the status page had listed \"Emergency Maintenance\" on 21 Oct.",
+  "status": "open",
+  "created_at": 1792694663692,
+  "updated_at": 1792694663902,
+  "created_by": "acaab9dc",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694663902
+    }
+  ],
+  "properties": {
+    "claims": [
+      "wikimedia-precaution"
+    ],
+    "pages": [
+      "facts/wikimedia-precaution/index.html"
+    ],
+    "severity": "low"
+  }
+}

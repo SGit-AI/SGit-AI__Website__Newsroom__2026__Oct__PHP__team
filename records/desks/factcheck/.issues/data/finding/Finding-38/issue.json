@@ -1,0 +1,32 @@
+{
+  "node_id": "e59eed1c",
+  "node_type": "finding",
+  "node_index": 38,
+  "label": "Finding-38",
+  "title": "disclosure-22oct: The BBC capture does not say the flaws were disclosed on 22 October",
+  "description": "The claim's 'by' is 'BBC framing (UK morning coverage)', but the captured BBC live page (080559Z, and the 07:55Z raw copy) gives no disclosure date; it says details 'leaked online this week' and the patch 'has been rushed out'. Labelling a BBC statement 'contradicted' when the BBC did not make it misattributes. The '22 October' dates in the vault come from the original schedule (Foundation: 'from October 22nd, 14:00 UTC'), Wiz's thread ('Apply the Oct 22 security release') and ACSC's local time ('22 October 2026 at 0100 AEDT').",
+  "status": "open",
+  "created_at": 1792694625694,
+  "updated_at": 1792694625945,
+  "created_by": "b02b53d0",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694625945
+    }
+  ],
+  "properties": {
+    "claims": [
+      "disclosure-22oct"
+    ],
+    "pages": [
+      "facts/disclosure-22oct/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

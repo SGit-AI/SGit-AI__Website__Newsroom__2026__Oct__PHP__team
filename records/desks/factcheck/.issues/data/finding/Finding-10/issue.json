@@ -1,0 +1,32 @@
+{
+  "node_id": "fe52e45c",
+  "node_type": "finding",
+  "node_index": 10,
+  "label": "Finding-10",
+  "title": "chainguard: Lorenc quote attributed to The Register is not in The Register",
+  "description": "The note quotes Lorenc 'via The Register': 'I made the call to get these out early when exploits hit in the wild'. The Register capture has 'so we made the call to ship the fixes under that'. The quoted sentence appears only inside a Reddit comment embedded in the Foundation page ('but I made the call to get these out early when exploits hit in the wild.'), apparently quoting Lorenc elsewhere (likely Hacker News). Use The Register's words or capture the original.",
+  "status": "open",
+  "created_at": 1792694610838,
+  "updated_at": 1792694611103,
+  "created_by": "60331244",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694611103
+    }
+  ],
+  "properties": {
+    "claims": [
+      "chainguard"
+    ],
+    "pages": [
+      "facts/chainguard/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "id": "Run-2",
+ "site_version": "0.5.7",
+ "vault_commit": "31ccc515c29f",
+ "site_export_commit": "200d08971937",
+ "started": "2026-10-22T20:52Z",
+ "finished": "2026-10-22T21:10Z",
+ "checked": "fc.py changed (no claim changed since run 1, no source or agencies, exploitation, impact or front-page data changed, vault head unchanged); every open ticket against the current data (none fixed); mode 2: CISA KEV, the CVE and NVD records, php.net releases, the NCSC-NL repository head, the PHPocalypse Tracker, and the five oss-security posts newly referenced by the CVE-2026-109619 record",
+ "opened": "1 high finding; 1 contradiction (K-011); 5 new evidence (1 high); 0 tickets closed",
+ "audit": "fc.py check: 0 failures; every recorded excerpt re-found verbatim, every hash matching.",
+ "summary": "Nothing on the site changed and none of run 1's 143 tickets can close yet. The world moved: the PHP security team answered the 'incomplete fix' report publicly at 09:11 UTC on 22 October (an unrelated crash bug, 'nothing to do with the RCE'), so the front page's 'PHP has not answered it publicly yet' is out of date; capture the reply (Evidence-7). KEV still lists neither CVE; no PHP release after 21 October; NVD now 'Analyzed'; the PHPocalypse Tracker has one site still dark."
+}

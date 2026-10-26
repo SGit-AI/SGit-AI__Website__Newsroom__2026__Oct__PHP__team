@@ -1,0 +1,47 @@
+{
+  "node_id": "96383453",
+  "node_type": "evidence",
+  "node_index": 4,
+  "label": "Evidence-4",
+  "title": "PHPocalypse Tracker sites.csv: 50 sites, 2 with no back-up time, each with dark and back times and a source",
+  "description": "Fetched by the desk at 18:27 UTC. Row-level provenance, and recovery times this site does not record. Its own header warns that aggregator reports are not confirmed at the original source, so each row is a lead, not a fact. Capture the CSV on a schedule (board 057).",
+  "status": "captured",
+  "created_at": 1792694672283,
+  "updated_at": 1792828622885,
+  "created_by": "a492499b",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694672493
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "c2c36e31",
+      "target_label": "Contradiction-6",
+      "created_at": 1792694672685
+    }
+  ],
+  "properties": {
+    "url": "https://allixsenos.github.io/phpocalypse-tracker/sites.csv",
+    "retrieved_at": "2026-10-22T18:27Z",
+    "sha256": "8109506bc80264887f2bd36eb452c1ad5468db6330efe4f167623be9f9965fe6",
+    "claims": [
+      "affected-sites"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "7d6bf2b5",
+        "author": "cli-user",
+        "text": "Run-4: captured into the evidence vault as phpocalypse-tracker-sites-csv (capture 20261022T183616Z); its text.txt has the same sha256 as the desk's fetch, 8109506bc8026488.",
+        "created_at": 1792828622885,
+        "updated_at": 1792828622885
+      }
+    ]
+  }
+}

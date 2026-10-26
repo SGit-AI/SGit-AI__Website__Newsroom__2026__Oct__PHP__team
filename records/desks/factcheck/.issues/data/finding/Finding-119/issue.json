@@ -1,0 +1,31 @@
+{
+  "node_id": "757adb41",
+  "node_type": "finding",
+  "node_index": 119,
+  "label": "Finding-119",
+  "title": "Front page: 'Websites on PHP 8.1 or older have no ready-made fix' is contradicted by the source it cites",
+  "description": "data/plain.json, facts. The php.net advisory (php-net-advisory, cited) says: 'Some distributions and LTS vendors provide backported fixes, so contact your vendor for details'. The PHP project itself ships no release for 8.1 and older, and its minimal source backports for 7.4 to 8.1 are not packages; but distributions and LTS vendors do ship ready-made packages. Say: 'PHP itself has no release for 8.1 or older; your Linux distribution or LTS vendor may have one'.",
+  "status": "open",
+  "created_at": 1792694666033,
+  "updated_at": 1792694666238,
+  "created_by": "4f3078e6",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694666238
+    }
+  ],
+  "properties": {
+    "sources": [
+      "php-net-advisory"
+    ],
+    "pages": [
+      "index.html"
+    ],
+    "severity": "medium"
+  }
+}

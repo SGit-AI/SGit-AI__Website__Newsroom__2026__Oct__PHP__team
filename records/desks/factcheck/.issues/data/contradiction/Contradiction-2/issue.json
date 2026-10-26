@@ -1,0 +1,88 @@
+{
+  "node_id": "8a786366",
+  "node_type": "contradiction",
+  "node_index": 2,
+  "label": "Contradiction-2",
+  "title": "K-002: Is php2shell being exploited?",
+  "description": "They measure different things at different times. Amazon counts attempts against its own sensors and honeypots; CISA and KEV record exploitation it has evidence of against real systems. Both can be true at once: attempts in volume, and no confirmed compromise of a named organisation. The site should never write 'exploited' without saying which of the two it means. Amazon's 'broadly exploited' is the stronger word, sourced to Amazon's own post in the vault; a KEV entry would be the first official signal that attempts have become compromises.",
+  "status": "explained",
+  "created_at": 1792694600449,
+  "updated_at": 1792828702945,
+  "created_by": "31526de4",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694600688
+    },
+    {
+      "link_type_id": "b45c53be",
+      "verb": "relates-to",
+      "target_id": "e183c5e7",
+      "target_label": "Finding-122",
+      "created_at": 1792694668266
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "db164eb0",
+      "target_label": "Evidence-1",
+      "created_at": 1792694670447
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "9a8908e6",
+      "target_label": "Evidence-3",
+      "created_at": 1792694672045
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "cf98cb8f",
+      "target_label": "Evidence-6",
+      "created_at": 1792694673850
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "de4f3742",
+      "target_label": "Evidence-10",
+      "created_at": 1792702578093
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "33ecc95e",
+      "target_label": "Evidence-12",
+      "created_at": 1792807352865
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "de36bda3",
+      "target_label": "Evidence-18",
+      "created_at": 1792828702945
+    }
+  ],
+  "properties": {
+    "claims": [
+      "no-exploitation",
+      "cisa-none",
+      "amazon-honeypot",
+      "probing",
+      "watchtowr-itw",
+      "no-confirmed-compromise"
+    ],
+    "sources": [
+      "aws-security-blog-madpot",
+      "cisa-alert-php-20261021",
+      "cve-cve-2026-109618",
+      "cve-cve-2026-109619"
+    ],
+    "severity": "medium"
+  }
+}

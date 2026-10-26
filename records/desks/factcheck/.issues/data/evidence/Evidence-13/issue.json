@@ -1,0 +1,39 @@
+{
+  "node_id": "7acfaad8",
+  "node_type": "evidence",
+  "node_index": 13,
+  "label": "Evidence-13",
+  "title": "CNN reworded its 70_ lines twice without a note; the headline still says 'internet'",
+  "description": "Updated 18:26 UTC on 22 October: the body's 'powers 70% of all websites in the world' became 'powers 70% of the world's websites', and the lede's 'could affect 70% of the internet' (08:09 UTC capture) became 'could affect 70% of the world's websites'. The headline still ends 'affecting 70% of the internet'. Bears on the correction request R-003.",
+  "status": "proposed",
+  "created_at": 1792807353097,
+  "updated_at": 1792807353532,
+  "created_by": "023ecf71",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "6800daee",
+      "target_label": "Run-3",
+      "created_at": 1792807353299
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "259aa23a",
+      "target_label": "Contradiction-1",
+      "created_at": 1792807353532
+    }
+  ],
+  "properties": {
+    "url": "https://www.cnn.com/2026/10/21/tech/php2shell-vulnerability-ai-intl",
+    "retrieved_at": "2026-10-24T01:32Z",
+    "sha256": "e3a57d45a3ace0974642017c6cd2b951e0664b5616061b377d22f13fa81f738b",
+    "excerpt": "could affect 70% of the world\u2019s websites",
+    "claims": [
+      "scale-70pc-internet"
+    ],
+    "severity": "medium"
+  }
+}

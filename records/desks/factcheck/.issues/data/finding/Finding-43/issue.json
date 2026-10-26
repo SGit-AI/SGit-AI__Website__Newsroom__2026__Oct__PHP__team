@@ -1,0 +1,32 @@
+{
+  "node_id": "221e2225",
+  "node_type": "finding",
+  "node_index": 43,
+  "label": "Finding-43",
+  "title": "offline-allies: Italy's ACN does advise taking sites offline; the site says it does not",
+  "description": "acn-it-php2shell text.txt (sha 19fac2ed..., line 70): 'Qualora non fosse possibile applicare tempestivamente gli aggiornamenti di sicurezza, si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano versioni vulnerabili di PHP, sospendendone l'accessibilit_ fino all'avvenuto aggiornamento.' The claim note ('Italy ... give[s] no offline advice'), data/agencies.json (IT: offline 'none', 'Update only') and the collector notes ('NO offline or isolation advice') are all wrong against the same capture. agencies.json's offline_text 'Si raccomanda di aggiornare i prodotti vulnerabili.' is also truncated: the sentence continues 'seguendo le indicazioni dei bollettini di sicurezza riportati nella sezione Riferimenti.'",
+  "status": "open",
+  "created_at": 1792694628340,
+  "updated_at": 1792694628596,
+  "created_by": "a461e985",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694628596
+    }
+  ],
+  "properties": {
+    "claims": [
+      "offline-allies"
+    ],
+    "pages": [
+      "facts/offline-allies/index.html",
+      "claims/index.html"
+    ],
+    "severity": "high"
+  }
+}

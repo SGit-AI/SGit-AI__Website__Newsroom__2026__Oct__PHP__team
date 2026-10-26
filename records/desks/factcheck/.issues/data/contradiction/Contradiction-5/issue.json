@@ -1,0 +1,35 @@
+{
+  "node_id": "4459ce9d",
+  "node_type": "contradiction",
+  "node_index": 5,
+  "label": "Contradiction-5",
+  "title": "K-005: How many UK government services went down?",
+  "description": "Probably the same count, described loosely by The Register. The BBC's line is verified in a fetch by this desk; it says 'a minister' without naming one or the House, so the coverage review's 'in the House of Lords' is not yet carried by any source this desk has read. Neither is captured into the vault: this record is a request to capture.",
+  "status": "open",
+  "created_at": 1792694602359,
+  "updated_at": 1792694671343,
+  "created_by": "8a7dd20c",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694602540
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "6a30a79e",
+      "target_label": "Evidence-2",
+      "created_at": 1792694671343
+    }
+  ],
+  "properties": {
+    "claims": [
+      "uk-list"
+    ],
+    "severity": "medium"
+  }
+}

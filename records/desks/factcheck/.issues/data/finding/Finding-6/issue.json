@@ -1,0 +1,32 @@
+{
+  "node_id": "a1e01ea2",
+  "node_type": "finding",
+  "node_index": 6,
+  "label": "Finding-6",
+  "title": "quarkslab-2024: 'Two parties agree' is one origin, and 'confirmed' is overstated",
+  "description": "Calif writes 'We were able to confirm from PHP a similar/related issue was uncovered but exploitation was not proven in 2024', so its account derives from PHP. The causal 'so it was not fixed' is Calif's; the Foundation says the fix stalled because of competing approaches, consensus decision-making and a lack of resources. Status should be 'reported', with the Foundation's version as the lead.",
+  "status": "open",
+  "created_at": 1792694608806,
+  "updated_at": 1792694609015,
+  "created_by": "b68c78bf",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694609015
+    }
+  ],
+  "properties": {
+    "claims": [
+      "quarkslab-2024"
+    ],
+    "pages": [
+      "facts/quarkslab-2024/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "node_id": "cbd9f93a",
+  "node_type": "finding",
+  "node_index": 125,
+  "label": "Finding-125",
+  "title": "Front page: 'the PHP project has not answered it publicly yet' has been out of date since 09:11 UTC on 22 October",
+  "description": "data/plain.json, unknown: 'Whether the fix is complete. A report on 21 October suggested it may not be; the PHP project has not answered it publicly yet.' PHP's security team answered on oss-security at 09:11 UTC (2026/10/22/15): an unrelated crash bug of minimal impact, nothing to do with the RCE. It was true of the vault's capture, which stops before the reply; it is not true of the world. Capture the reply, then close or reword the question, and re-grade fix-incomplete (whose note says 'Nothing from PHP on the list at capture').",
+  "status": "fixed",
+  "created_at": 1792702578968,
+  "updated_at": 1792805639143,
+  "created_by": "3d2b3c78",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "00b6d9a2",
+      "target_label": "Run-2",
+      "created_at": 1792702579175
+    },
+    {
+      "link_type_id": "b45c53be",
+      "verb": "relates-to",
+      "target_id": "a6f17295",
+      "target_label": "Contradiction-11",
+      "created_at": 1792702579472
+    }
+  ],
+  "properties": {
+    "claims": [
+      "fix-incomplete"
+    ],
+    "pages": [
+      "index.html",
+      "code/index.html"
+    ],
+    "severity": "high",
+    "comments": [
+      {
+        "id": "fe003a55",
+        "author": "cli-user",
+        "text": "Run-3: fixed by v0.13.0: the front page now says the PHP security team replied on 22 October and the question waits on the reply's capture (board 250).",
+        "created_at": 1792805639143,
+        "updated_at": 1792805639143
+      }
+    ]
+  }
+}

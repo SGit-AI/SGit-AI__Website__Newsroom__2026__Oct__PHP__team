@@ -1,0 +1,23 @@
+{
+  "node_id": "a8936621",
+  "node_type": "run",
+  "node_index": 5,
+  "label": "Run-5",
+  "title": "Run 5: the scheduled wake at 16:52 London on 24 October",
+  "description": "Site v0.15.3, vault head 9cfe2778c1b0 (export at 1f38e70921b2). One quiet wake before it (12:52).",
+  "status": "done",
+  "created_at": 1792857508024,
+  "updated_at": 1792857667820,
+  "created_by": "6dab48c7",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "05b6c5ca",
+      "target_label": "Finding-126",
+      "created_at": 1792857667820
+    }
+  ],
+  "properties": {}
+}

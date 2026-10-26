@@ -1,0 +1,31 @@
+{
+  "node_id": "a66f2be8",
+  "node_type": "evidence",
+  "node_index": 5,
+  "label": "Evidence-5",
+  "title": "php.net releases feed, 18:27 UTC: no PHP release after 21 October",
+  "description": "Fetched by the desk: the newest releases are 8.5.12, 8.4.27, 8.3.36 and 8.2.35, dated 21 Oct 2026. Bears on fix-incomplete and the front page's open question 'Whether the fix is complete': no follow-up release as of this check.",
+  "status": "proposed",
+  "created_at": 1792694672927,
+  "updated_at": 1792694673151,
+  "created_by": "adfa2dd1",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694673151
+    }
+  ],
+  "properties": {
+    "url": "https://www.php.net/releases/index.php?json&max=8&version=8",
+    "retrieved_at": "2026-10-22T18:27Z",
+    "sha256": "06f7ddd8254f82984e9a75300cf733327f32f3b862d08b200dccbbb2affee450",
+    "claims": [
+      "fix-incomplete"
+    ],
+    "severity": "low"
+  }
+}

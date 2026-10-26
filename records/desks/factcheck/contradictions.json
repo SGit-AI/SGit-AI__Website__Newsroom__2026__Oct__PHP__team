@@ -1,0 +1,613 @@
+{
+ "about": "The contradiction ledger (board 061), kept by factcheck@php.newsroom. One record per measure the reporting disagrees about. Every 'says' is verbatim from the capture or fetch named; 'sources' are vault slugs in the site's manifest; 'outside' are URLs not captured into the vault, never cited until captured. Status: open (the desk cannot yet say why they differ, or the site states one side as fact), explained (the desk can say why they differ, and the site should say it too), resolved (a later source settles it).",
+ "contradictions": [
+  {
+   "id": "K-001",
+   "measure": "How much of the web: 70% of websites, or 70% of the Internet?",
+   "status": "explained",
+   "claims": [
+    "scale-70pc-internet",
+    "scale-70pc-websites"
+   ],
+   "statements": [
+    {
+     "who": "Wiz (blog body)",
+     "when": "2026-10-21",
+     "says": "a popular general-purpose scripting language that powers 70% of all websites in the world",
+     "measures": "share of websites using PHP",
+     "sources": [
+      "wiz-blog-php2shell"
+     ]
+    },
+    {
+     "who": "Wiz (blog headline and @wiz_io on X)",
+     "when": "2026-10-21",
+     "says": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet",
+     "measures": "the same figure, restated as a share of the Internet",
+     "sources": [
+      "wiz-blog-php2shell",
+      "x-wiz-io-php2shell"
+     ]
+    },
+    {
+     "who": "BBC live page",
+     "when": "2026-10-22 08:05 UTC capture",
+     "says": "cyber-security firm Wiz estimating that \"roughly 70%\" of the internet is affected, though the BBC is unable to independently verify that figure",
+     "measures": "the Wiz figure, quoted with a word ('roughly') that is not in Wiz's post",
+     "sources": [
+      "bbc-live-ckgel5xp2xv9t"
+     ]
+    },
+    {
+     "who": "CNN",
+     "when": "2026-10-22 11:26 UTC capture",
+     "says": "Websites shut down globally after AI finds a critical flaw affecting 70% of the internet",
+     "measures": "headline: share of the Internet; its own body says 'powers 70% of all websites'",
+     "sources": [
+      "cnn-php2shell-websites-shut"
+     ]
+    }
+   ],
+   "reading": "One origin, Wiz, restated: a share of websites using PHP became a share of 'the Internet' affected, inside Wiz's own post. Every outlet in the vault that carries the figure traces to Wiz, so it is one source, not several (restates, not corroborates). None of them says how the 70% was measured; it matches the usual web-technology survey figure for sites whose server-side language is known, which is a share of websites, not of hosts, traffic or 'the Internet', and not a count of vulnerable installations. The BBC's 'roughly 70%' puts a word in Wiz's mouth that its post does not use. Run 3 (24 October): the investigation php-share traces 127 statements of the share in the vault to their origin and measures them against W3Techs, the HTTP Archive, BuiltWith and the scanners; it is on /factcheck/investigations/php-share/.",
+   "settle": "The survey Wiz relied on, captured, with its population and method.",
+   "ticket": "Contradiction-1"
+  },
+  {
+   "id": "K-002",
+   "measure": "Is php2shell being exploited?",
+   "status": "explained",
+   "claims": [
+    "no-exploitation",
+    "cisa-none",
+    "amazon-honeypot",
+    "probing",
+    "watchtowr-itw",
+    "no-confirmed-compromise"
+   ],
+   "statements": [
+    {
+     "who": "Amazon Threat Intelligence (CJ Moses, AWS Security Blog)",
+     "when": "2026-10-21",
+     "says": "we saw them used against our sensors almost immediately. PHP2Shell is now being broadly exploited in the wild.",
+     "measures": "exploitation attempts against Amazon's MadPot honeypot sensors, from 17 October and in volume from 21 October 02:00 UTC",
+     "sources": [
+      "aws-security-blog-madpot"
+     ]
+    },
+    {
+     "who": "CISA (alert)",
+     "when": "2026-10-21",
+     "says": "While CISA has not observed exploitation of these vulnerabilities as of the time of publication",
+     "measures": "exploitation observed by CISA, as of the alert's publication",
+     "sources": [
+      "cisa-alert-php-20261021"
+     ]
+    },
+    {
+     "who": "CISA ADP (SSVC in both CVE records)",
+     "when": "2026-10-21 14:34 UTC",
+     "says": "Exploitation: none",
+     "measures": "CISA's SSVC exploitation decision point at the time it was scored; unchanged in the records fetched 2026-10-22 18:27 UTC",
+     "sources": [
+      "cve-cve-2026-109618",
+      "cve-cve-2026-109619"
+     ],
+     "outside": [
+      "https://cveawg.mitre.org/api/cve/CVE-2026-109618"
+     ]
+    },
+    {
+     "who": "CISA KEV catalog",
+     "when": "fetched 2026-10-22 18:27 UTC (catalog version 2026.10.21, released 2026-10-21 14:04 UTC)",
+     "says": "Neither CVE-2026-109618 nor CVE-2026-109619 is in the catalog's 1,754 entries.",
+     "measures": "CISA's official list of vulnerabilities with reliable evidence of exploitation",
+     "outside": [
+      "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+     ]
+    },
+    {
+     "who": "The Next Web",
+     "when": "2026-10-22 (fetched 18:30 UTC, sha256 c51dfb0561b1bdb2)",
+     "says": "Officials in Germany, the Netherlands and Japan say they have not seen one succeed.",
+     "measures": "successful exploitation, as seen by national officials",
+     "outside": [
+      "https://thenextweb.com/news/php2shell-millions-exploit-attempts-no-confirmed-breaches"
+     ]
+    },
+    {
+     "who": "Amazon (the same AWS Security Blog post, as revised)",
+     "when": "modified 2026-10-22 21:25 UTC",
+     "says": "PHP2Shell is now seeing broad exploitation attempts in the wild.",
+     "measures": "Amazon's own revision of 'is now being broadly exploited in the wild', with no note; captured in the vault on 23 October (capture 20261023T160435Z)",
+     "outside": [],
+     "sources": [
+      "aws-security-blog-madpot"
+     ]
+    },
+    {
+     "who": "Sophos, via Cyber Security News",
+     "when": "correction at 2026-10-22 21:21 UTC",
+     "says": "Sophos said its customer data showed scanning and a small number of failed exploit attempts.",
+     "measures": "Sophos's own success claim, withdrawn",
+     "sources": [
+      "cybersecuritynews-critical-php2shell-exploit-code"
+     ]
+    },
+    {
+     "who": "watchTowr (its own intel page and FAQ)",
+     "when": "captured 2026-10-23",
+     "says": "watchTowr has observed exploitation in the wild through its Attacker Eye honeypot network.",
+     "measures": "honeypot traffic, listed by watchTowr as 'EXPLOITED IN THE WILD: Yes'",
+     "sources": [
+      "watchtowr-php2shell-faq",
+      "watchtowr-php2shell"
+     ]
+    }
+   ],
+   "reading": "They measure different things at different times. Amazon counts attempts against its own sensors and honeypots; CISA and KEV record exploitation it has evidence of against real systems. Both can be true at once: attempts in volume, and no confirmed compromise of a named organisation. The site should never write 'exploited' without saying which of the two it means. Amazon's 'broadly exploited' is the stronger word, sourced to Amazon's own post in the vault; a KEV entry would be the first official signal that attempts have become compromises. Run 3 (24 October): Amazon itself has since narrowed its sentence from 'broadly exploited' to 'broad exploitation attempts', without a note: the strongest word on the exploitation side now agrees with the officials' reading. Run 5 (24 October): Sophos withdrew its earlier success claim at 21:21 UTC on 22 October, the same evening Amazon narrowed its wording: both strongest 'exploited' statements were walked back to attempts.",
+   "settle": "A KEV entry for either CVE, or a named organisation confirming a compromise.",
+   "ticket": "Contradiction-2"
+  },
+  {
+   "id": "K-003",
+   "measure": "Which PHP versions are affected?",
+   "status": "explained",
+   "claims": [
+    "versions-old",
+    "two-cves-9.2"
+   ],
+   "statements": [
+    {
+     "who": "Cloudflare",
+     "when": "2026-10-21",
+     "says": "The vulnerabilities affect all web servers running PHP 5.4 or later",
+     "measures": "affected versions",
+     "sources": [
+      "cloudflare-blog-php2shell-waf"
+     ]
+    },
+    {
+     "who": "The CVE records (CNA: PHP Group)",
+     "when": "2026-10-21",
+     "says": "affected: 8.2 before 8.2.35, 8.3 before 8.3.36, 8.4 before 8.4.27, 8.5 before 8.5.12",
+     "measures": "the supported branches that received a fixed release",
+     "sources": [
+      "cve-cve-2026-109618",
+      "cve-cve-2026-109619"
+     ]
+    },
+    {
+     "who": "php.net advisory",
+     "when": "2026-10-21",
+     "says": "the PHP security team provided minimal source-backports for PHP 7.4, PHP 8.0, and PHP 8.1",
+     "measures": "the branches that got a source backport",
+     "sources": [
+      "php-net-advisory"
+     ]
+    },
+    {
+     "who": "NVD (configuration)",
+     "when": "fetched 2026-10-22 18:27 UTC",
+     "says": "cpe:2.3:a:php:php, versionEndExcluding 8.2.35, with no starting version",
+     "measures": "NVD encodes every version before 8.2.35 as vulnerable",
+     "sources": [
+      "nvd-cve-2026-109618",
+      "nvd-cve-2026-109619"
+     ]
+    },
+    {
+     "who": "CrowdStrike (blog), relayed to oss-security by Greenbone",
+     "when": "fetched 2026-10-24 07:57 UTC",
+     "says": "The specific HashTable ordering behind CVE-2026-109618 was introduced by a performance optimization in October 2017 and first shipped in PHP 7.3.0 (December 2018).",
+     "measures": "when each flaw's code path entered PHP: CVE-2026-109618 from 7.3.0; CVE-2026-109619's paths from 7.1 (serialization) and 5.4 (session)",
+     "outside": [
+      "https://www.crowdstrike.com/en-us/blog/crowdstrike-protects-customers-from-php-rce-zero-days/ (sha256 e46a2935d6002eed)"
+     ]
+    }
+   ],
+   "reading": "Affected, supported and patched are three different lists. The CVE record lists only the supported branches the PHP project fixed; the backports reach down to 7.4; Cloudflare and NVD describe what is vulnerable, which goes back further. They are compatible, but read as a contradiction unless the site says so where it shows the version table. Run 4 (24 October): CrowdStrike gives each flaw its own start: CVE-2026-109618 from PHP 7.3.0, CVE-2026-109619 back to 5.4 through the session path. If it holds, 'every version since 5.4' is true only of the second flaw. CrowdStrike's own page also says both are in 'every PHP release from the 7.x and 8.x series', which its next sentence contradicts for 7.0 to 7.2. Not captured; the PHP project has not said.",
+   "settle": "The PHP project stating the earliest affected version.",
+   "ticket": "Contradiction-3"
+  },
+  {
+   "id": "K-004",
+   "measure": "How many systems are still unpatched?",
+   "status": "explained",
+   "claims": [
+    "scale-2.6m-hosts"
+   ],
+   "statements": [
+    {
+     "who": "Censys, via SecurityWeek",
+     "when": "2026-10-21 (SecurityWeek captured 2026-10-22 11:23 UTC)",
+     "says": "Out of 2.58 million internet-facing hosts seen on October 21, roughly 1.58 million were reporting identifiable PHP versions, and approximately 1.57 million were not patched",
+     "measures": "unpatched hosts among those whose PHP version is visible, on release day",
+     "sources": [
+      "securityweek-exploitation-days-before"
+     ]
+    },
+    {
+     "who": "VulnCheck, VirusTotal and Censys, via SecurityWeek",
+     "when": "2026-10-21",
+     "says": "more than 1 million PHP servers were running unpatched software releases as of October 21",
+     "measures": "a floor, with no method given",
+     "sources": [
+      "securityweek-exploitation-days-before"
+     ]
+    },
+    {
+     "who": "BBC, attributed only to 'researchers'",
+     "when": "2026-10-22, after the vault's last capture",
+     "says": "Major providers have implemented a fix, but globally 90% of systems at risk are yet to do so, researchers say.",
+     "measures": "unknown population and method",
+     "outside": [
+      "https://www.bbc.co.uk/news/live/ckgel5xp2xv9t (fetched 2026-10-22 18:30 UTC, sha256 3842343a8de23fc9)"
+     ]
+    }
+   ],
+   "reading": "The site's claim reads as 1.57 million unpatched out of about 2.6 million hosts (about 60%). The source says 1.57 million out of the 1.58 million whose version could be read (about 99%, on the day the fix shipped); the 2.58 million is all hosts seen, most of which do not announce a version. The two framings give very different pictures. The BBC's 90% has no named counter or method and is not captured. Open, because the site states one framing as fact. Run 3 (24 October): the site now states both counters and Censys's denominator, so the framing difference is explained on the page; the BBC's 90% stays uncaptured.",
+   "settle": "Censys's own post (the vault notes say it was not found), or a later Censys count with the same population.",
+   "ticket": "Contradiction-4"
+  },
+  {
+   "id": "K-005",
+   "measure": "How many UK government services went down?",
+   "status": "open",
+   "claims": [
+    "uk-list"
+   ],
+   "statements": [
+    {
+     "who": "The BBC live page, reporting a UK minister",
+     "when": "2026-10-22, after the vault's last capture",
+     "says": "In the UK, a minister said just after midday that 32 government services were unavailable and four partially unavailable because they were being fixed",
+     "measures": "central government services, at one moment",
+     "outside": [
+      "https://www.bbc.co.uk/news/live/ckgel5xp2xv9t (fetched 2026-10-22 18:30 UTC, sha256 3842343a8de23fc9)"
+     ]
+    },
+    {
+     "who": "The Register",
+     "when": "2026-10-22",
+     "says": "dozens of UK government services",
+     "measures": "unspecified; seen in the coverage review session, not fetched or captured by this desk",
+     "outside": [
+      "The Register follow-up, URL not recorded in the coverage review"
+     ]
+    }
+   ],
+   "reading": "Probably the same count, described loosely by The Register. The BBC's line is verified in a fetch by this desk; it says 'a minister' without naming one or the House, so the coverage review's 'in the House of Lords' is not yet carried by any source this desk has read. Neither is captured into the vault: this record is a request to capture.",
+   "settle": "The Hansard record of the minister's answer, captured.",
+   "ticket": "Contradiction-5"
+  },
+  {
+   "id": "K-006",
+   "measure": "How many sites were taken offline?",
+   "status": "explained",
+   "claims": [
+    "affected-sites"
+   ],
+   "statements": [
+    {
+     "who": "This site's impact ledger (data/impact.json)",
+     "when": "vault capture to 2026-10-22 11:34 UTC",
+     "says": "10 operators offline",
+     "measures": "operators with a captured source in the exported manifest"
+    },
+    {
+     "who": "PHPocalypse Tracker (Luka Kladaric)",
+     "when": "fetched 2026-10-22 18:27 UTC",
+     "says": "50 sites in sites.csv, 2 of them with no back-up time",
+     "measures": "sites first reported dark by any public source, aggregators included, with dark and back-up times",
+     "outside": [
+      "https://allixsenos.github.io/phpocalypse-tracker/sites.csv"
+     ]
+    },
+    {
+     "who": "The evidence vault itself",
+     "when": "head 31ccc515c29f",
+     "says": "40 sources not exported to this site, among them captures of Edinburgh council, French prefectures, ANTS, UNIGE, EPFL, Wikimedia status, and reports from Reuters, The Record and Global News",
+     "measures": "captured but not yet on the site"
+    }
+   ],
+   "reading": "Breadth of collection, and an export lag. The site requires a captured source per row; the tracker accepts aggregator reports and says so per row. Part of the gap is not collection at all: the vault already holds captures of more offline operators than the site shows, because the site's export stopped at 144 sources.",
+   "settle": "Re-run the vault export; capture the tracker's sites.csv into the source watch on a schedule.",
+   "ticket": "Contradiction-6"
+  },
+  {
+   "id": "K-007",
+   "measure": "How severe: CVSS 10.0, 9.2 or 9.8?",
+   "status": "explained",
+   "claims": [
+    "cvss-10",
+    "two-cves-9.2"
+   ],
+   "statements": [
+    {
+     "who": "Social posts relayed during the leak",
+     "when": "2026-10-20",
+     "says": "a wrong CVSS score of 10.0 (the actual score is 9.2)",
+     "measures": "a leaked number, corrected by the PHP Foundation",
+     "sources": [
+      "php-foundation-blog-security-release"
+     ]
+    },
+    {
+     "who": "The CVE records (CNA: PHP Group)",
+     "when": "2026-10-21",
+     "says": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N, base score 9.2",
+     "measures": "CVSS version 4.0, scored by the vendor",
+     "sources": [
+      "cve-cve-2026-109618",
+      "cve-cve-2026-109619"
+     ]
+    },
+    {
+     "who": "NVD (NIST)",
+     "when": "NVD record modified 2026-10-22 10:09 UTC",
+     "says": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H, base score 9.8",
+     "measures": "CVSS version 3.1, scored by NIST, which rates attack complexity low where the vendor rated it high",
+     "sources": [
+      "nvd-cve-2026-109618",
+      "nvd-cve-2026-109619"
+     ]
+    }
+   ],
+   "reading": "10.0 was wrong. 9.2 and 9.8 are both right, on two different scales scored by two different parties, and they disagree on one input: the vendor says attack complexity is high, NIST says low. The site explains 10.0 against 9.2 but never mentions 9.8, which is what a reader checking NVD, or a scanner reporting CVSS 3.1, will see.",
+   "settle": "Already settled as a reading; the site should carry the 9.8 and say what differs.",
+   "ticket": "Contradiction-7"
+  },
+  {
+   "id": "K-008",
+   "measure": "Which flaw was shown to give code execution on PHP-FPM?",
+   "status": "open",
+   "claims": [
+    "rce-fpm",
+    "rce-modphp"
+   ],
+   "statements": [
+    {
+     "who": "The PHP Foundation (blog)",
+     "when": "2026-10-21",
+     "says": "Remote code execution was also confirmed on PHP-FPM through application-level code paths",
+     "measures": "placed under CVE-2026-109618 in the post",
+     "sources": [
+      "php-foundation-blog-security-release"
+     ]
+    },
+    {
+     "who": "PHP security team (GHSA-w8hw-w9fx-j79w, CVE-2026-109618)",
+     "when": "2026-10-21",
+     "says": "no complete FPM exploit has been demonstrated for this SAPI",
+     "measures": "CVE-2026-109618 on FPM",
+     "sources": [
+      "github-ghsa-w8hw-w9fx-j79w"
+     ]
+    },
+    {
+     "who": "PHP security team (GHSA-6wmf-4rv5-p3rp, CVE-2026-109619)",
+     "when": "2026-10-21",
+     "says": "It works with a normal dynamic FPM pool, although it depends on a suitable application operation.",
+     "measures": "CVE-2026-109619 on FPM",
+     "sources": [
+      "github-ghsa-6wmf-4rv5-p3rp"
+     ]
+    }
+   ],
+   "reading": "The advisories, written by the PHP security team per CVE, put the demonstrated FPM exploit under CVE-2026-109619, and say none was demonstrated for CVE-2026-109618. The Foundation's blog places FPM confirmation under CVE-2026-109618. The blog appears to have swapped the attribution. That RCE was shown on FPM is not in doubt; which flaw does it is.",
+   "settle": "A correction to the Foundation's post, or a PHP security team statement.",
+   "ticket": "Contradiction-8"
+  },
+  {
+   "id": "K-009",
+   "measure": "Did any technical detail leak on 20 October?",
+   "status": "explained",
+   "claims": [
+    "leak-cve-ids",
+    "leak-hn",
+    "leak-video"
+   ],
+   "statements": [
+    {
+     "who": "The PHP Foundation",
+     "when": "2026-10-21",
+     "says": "They came with a wrong release time and a wrong CVSS score of 10.0 (the actual score is 9.2). No technical details leaked.",
+     "measures": "what circulated with the CVE IDs",
+     "sources": [
+      "phpfoundation-blog-security-release-leak"
+     ]
+    },
+    {
+     "who": "Daubois (a member of the PHP security team, own blog)",
+     "when": "2026-10",
+     "says": "A screenshot of the PHP2Shell tool, credited to Calif.IO, leaked alongside the advisory, and a short exploitation video went up and came down",
+     "measures": "a tool screenshot and a video",
+     "sources": [
+      "daubois-blog-php2shell-rumors"
+     ]
+    },
+    {
+     "who": "The Hacker News",
+     "when": "2026-10-21",
+     "says": "details about the CVE identifiers and a proof-of-concept (PoC) exploit leaked ahead of time",
+     "measures": "claims a PoC leaked",
+     "sources": [
+      "thehackernews-php2shell-4days"
+     ]
+    },
+    {
+     "who": "Equixly, citing Sansec",
+     "when": "2026-10",
+     "says": "Sansec cites a leaked screenshot of an exploit tool named PHP2Shell, whose banner claims the tool works against PHP 5.4.0 and later.",
+     "measures": "a screenshot of a tool banner",
+     "sources": [
+      "equixly-php2shell-what-we-know"
+     ]
+    },
+    {
+     "who": "The Register, reporting the Foundation",
+     "when": "2026-10-22",
+     "says": "At that point, no technical details leaked.",
+     "measures": "the Foundation's statement, with the time it applies to",
+     "sources": [
+      "theregister-php-blames-chainguard"
+     ]
+    },
+    {
+     "who": "Feross Aboukhadijeh (Socket) on X",
+     "when": "2026-10-21 23:02 UTC",
+     "says": "The CVE IDs leaked the day before, and Calif accidentally posted an exploit video that evening.",
+     "measures": "the order of events on 20 October",
+     "sources": [
+      "x-feross-chainguard"
+     ]
+    }
+   ],
+   "reading": "Probably different meanings of 'technical detail'. A screenshot of a tool banner and a demonstration video show that an exploit exists, not how it works; the Foundation may mean that no root cause or code leaked. The Hacker News's 'proof-of-concept exploit leaked' is stronger than anything else in the vault carries, and no capture shows a leaked PoC. Open until the Foundation or Daubois says what the Foundation meant. Run 3 (24 October), a fresh look with 112 more sources in the vault: the difference is time. The Foundation's 'no technical details leaked' describes the CVE IDs circulating from about 15:00 UTC on 20 October; The Register's report of it says 'At that point'. Calif's exploit video went up 'that evening' (Feross; Daubois; Wikipedia), after the pre-announcement. A video and a tool banner show that an exploit exists, not how it works; no capture shows leaked exploit code, so The Hacker News's 'proof-of-concept exploit leaked' most likely means the video. Both statements hold, each at its own time; a page that quotes the Foundation should keep its time.",
+   "settle": "A capture of the leaked screenshot or video, or the Foundation saying what 'technical details' covers.",
+   "ticket": "Contradiction-9"
+  },
+  {
+   "id": "K-010",
+   "measure": "When was the release planned, and when did it ship?",
+   "status": "open",
+   "claims": [
+    "release-moved",
+    "release-time"
+   ],
+   "statements": [
+    {
+     "who": "The PHP Foundation",
+     "when": "2026-10-21",
+     "says": "It also moved the release from October 22nd, 14:00 UTC, to October 21st, 14:00 UTC.",
+     "measures": "the planned times",
+     "sources": [
+      "php-foundation-blog-security-release"
+     ]
+    },
+    {
+     "who": "The Hacker News",
+     "when": "2026-10-21",
+     "says": "Originally scheduled for coordinated disclosure on October 22, 2026, at 2:00 p.m. UTC",
+     "measures": "the original plan, probably from the Foundation",
+     "sources": [
+      "thehackernews-php2shell-4days"
+     ]
+    },
+    {
+     "who": "CybelAngel",
+     "when": "2026-10",
+     "says": "The disclosure was originally under embargo until Thursday 22 October at 11:00 ET; after the leak, PHP scheduled its release for 21 October",
+     "measures": "the original embargo, 15:00 UTC, attributed by others to watchTowr",
+     "sources": [
+      "cybelangel-php2shell"
+     ]
+    },
+    {
+     "who": "The php.net ChangeLog",
+     "when": "captured 2026-10-22",
+     "says": "22 Oct 2026",
+     "measures": "the date the ChangeLog gives all four releases, which shipped on 21 October",
+     "sources": [
+      "php-net-changelog-8"
+     ]
+    },
+    {
+     "who": "Lorikeet Security (vendor blog)",
+     "when": "2026-10-21",
+     "says": "candidate pull requests under a private security branch scheduled for public disclosure on October 24.",
+     "measures": "a third planned date, 24 October, given with no source; no other statement in the vault gives it",
+     "sources": [
+      "lorikeet-php2shell"
+     ]
+    }
+   ],
+   "reading": "The original embargo time has two values, 14:00 UTC (the Foundation, echoed by The Hacker News) and 11:00 ET, which is 15:00 UTC (watchTowr, echoed by CybelAngel and others). The release itself is stamped 13:34 UTC on the GitHub advisories, ahead of the announced 14:00. The ChangeLog still carries the original date. The site should say 'about 14:00 UTC, advisories at 13:34' and give both original times. Run 7: Lorikeet's blog gives a third planned date, 24 October, unsourced and alone in the vault (in its captures of 22 and 25 October); it does not change the reading.",
+   "settle": "A PHP project statement of the embargo time, or the pre-announcement's original text.",
+   "ticket": "Contradiction-10"
+  },
+  {
+   "id": "K-011",
+   "measure": "Is the fix in PHP 8.5.12 incomplete?",
+   "status": "open",
+   "claims": [
+    "fix-incomplete",
+    "more-paths"
+   ],
+   "statements": [
+    {
+     "who": "Aaron Rainbolt on oss-security, relaying a Fediverse post",
+     "when": "2026-10-21 15:24 UTC",
+     "says": "the Fediverse is reporting that the fix to at least PHP 8.5.12 may be incomplete",
+     "measures": "an unconfirmed report from an unnamed person, relayed",
+     "sources": [
+      "openwall-oss-security-109619-thread"
+     ]
+    },
+    {
+     "who": "The same, relaying Canonical via a Matrix channel",
+     "when": "2026-10-21 17:29 UTC",
+     "says": "was told that it's \"unrelated and not a real issue\"",
+     "measures": "PHP's answer to Canonical, second-hand",
+     "sources": [
+      "openwall-oss-security-109619-thread"
+     ]
+    },
+    {
+     "who": "Jakub Zelenka, PHP security team, on oss-security (post 2026/10/22/15)",
+     "when": "2026-10-22 09:11 UTC",
+     "says": "This is unrelated issue with minimal impact (crash in one component in slightly unlikely scenario). It has nothing to do with the RCE.",
+     "measures": "PHP's own public answer",
+     "outside": [
+      "https://www.openwall.com/lists/oss-security/2026/10/22/15 (fetched 2026-10-22 20:5x UTC, sha256 94c69d8f1c07e67d)"
+     ]
+    }
+   ],
+   "reading": "The report and the answer are about different things: the Fediverse post describes some flaw in 8.5.12; the PHP security team says it is a separate crash bug of minimal impact, not a way around the RCE fix. The answer came at 09:11 UTC on 22 October, after the vault's copy of the thread (which stops at 22/2), so the site still says PHP has not answered. Open only until the reply is captured; then it should be marked explained and the claim re-graded.",
+   "settle": "Capture oss-security 2026/10/22/15 into the vault.",
+   "ticket": "Contradiction-11"
+  },
+  {
+   "id": "K-012",
+   "measure": "What does W3Techs say: 69.3% or 75%?",
+   "status": "explained",
+   "claims": [
+    "scale-70pc-websites"
+   ],
+   "statements": [
+    {
+     "who": "Reuters (via RTE, ABC Australia)",
+     "when": "2026-10-21",
+     "says": "PHP runs roughly 75% of websites whose programming language can be identified, according to web technology tracker W3Techs",
+     "measures": "W3Techs' share, credited to W3Techs",
+     "sources": [
+      "rte-reuters-websites-go-dark",
+      "abc-au-gov-sites-exposed",
+      "tuttotech-news-2026-10-22-vulnerabilita-php-html"
+     ]
+    },
+    {
+     "who": "Tenable, and every other outlet that names W3Techs",
+     "when": "2026-10-21 and 22",
+     "says": "69.3% of websites whose server-side language is known",
+     "measures": "W3Techs' share on the day",
+     "sources": [
+      "tenable-php2shell-faq"
+     ]
+    },
+    {
+     "who": "W3Techs' yearly table, fetched by the desk",
+     "when": "2026-10-24 01:31 UTC",
+     "says": "75.2% on 1 January 2025; 72.4% on 1 January 2026; 69.3% on 23 October 2026",
+     "measures": "the same measure over time",
+     "outside": [
+      "https://w3techs.com/technologies/history_overview/programming_language/ms/y"
+     ]
+    }
+   ],
+   "reading": "The same measurer at different dates. Reuters' 75% matches W3Techs' figure for January 2025, not the 69.3% W3Techs showed when Reuters wrote; the attribution is right and the number is out of date. Investigation php-share.",
+   "settle": "Capture W3Techs' yearly table into the vault (board 033).",
+   "ticket": "Contradiction-12"
+  }
+ ]
+}

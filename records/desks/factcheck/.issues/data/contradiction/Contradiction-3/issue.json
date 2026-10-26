@@ -1,0 +1,51 @@
+{
+  "node_id": "b51bf2ed",
+  "node_type": "contradiction",
+  "node_index": 3,
+  "label": "Contradiction-3",
+  "title": "K-003: Which PHP versions are affected?",
+  "description": "Affected, supported and patched are three different lists. The CVE record lists only the supported branches the PHP project fixed; the backports reach down to 7.4; Cloudflare and NVD describe what is vulnerable, which goes back further. They are compatible, but read as a contradiction unless the site says so where it shows the version table.",
+  "status": "explained",
+  "created_at": 1792694601189,
+  "updated_at": 1792828701935,
+  "created_by": "1ed3cdb6",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694601381
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "75e21387",
+      "target_label": "Evidence-9",
+      "created_at": 1792702577459
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "6fe5f9c6",
+      "target_label": "Evidence-16",
+      "created_at": 1792828701935
+    }
+  ],
+  "properties": {
+    "claims": [
+      "versions-old",
+      "two-cves-9.2"
+    ],
+    "sources": [
+      "cloudflare-blog-php2shell-waf",
+      "cve-cve-2026-109618",
+      "cve-cve-2026-109619",
+      "nvd-cve-2026-109618",
+      "nvd-cve-2026-109619",
+      "php-net-advisory"
+    ],
+    "severity": "medium"
+  }
+}

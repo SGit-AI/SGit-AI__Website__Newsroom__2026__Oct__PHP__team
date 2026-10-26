@@ -1,0 +1,31 @@
+{
+  "node_id": "4f789060",
+  "node_type": "finding",
+  "node_index": 95,
+  "label": "Finding-95",
+  "title": "quarkslab-redacted: 1 smaller precision and sourcing point",
+  "description": "Status 'reported' understates a counted record: The count is checkable on Quarkslab's own page (A6). Status could be 'confirmed'. Note that 'does not describe' cannot rule out that a redacted item (HIGH-1, CVE-2024-8928, or MED-2) relates to the OOM issue.",
+  "status": "open",
+  "created_at": 1792694654482,
+  "updated_at": 1792694654696,
+  "created_by": "f1e23b38",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694654696
+    }
+  ],
+  "properties": {
+    "claims": [
+      "quarkslab-redacted"
+    ],
+    "pages": [
+      "facts/quarkslab-redacted/index.html"
+    ],
+    "severity": "low"
+  }
+}

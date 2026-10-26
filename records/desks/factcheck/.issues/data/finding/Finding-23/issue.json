@@ -1,0 +1,32 @@
+{
+  "node_id": "9c6d4d43",
+  "node_type": "finding",
+  "node_index": 23,
+  "label": "Finding-23",
+  "title": "affected-sites: Note \"Not captured from any of the named organisations\" is out of date",
+  "description": "The vault holds operator captures: unige.ch returned HTTP 503 with an F5 \"under maintenance\" page at 2026-10-22 08:19:10Z (unige-site) and 08:19:43Z (ch-unige-down); nord.gouv.fr and rhone.gouv.fr served \"Maintenance en cours\" at 08:19:39-40Z; edinburgh.gov.uk was up (HTTP 200, normal homepage) at 08:19:03Z and 08:19:40Z; wikimediastatus.net showed \"All Systems Operational\" at 08:18:50Z. These show down/up state at capture time, not the reason. story.json repeats the out-of-date statement (\"has not been captured from any of those organisations\").",
+  "status": "open",
+  "created_at": 1792694617561,
+  "updated_at": 1792694617745,
+  "created_by": "9efa2f2b",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694617745
+    }
+  ],
+  "properties": {
+    "claims": [
+      "affected-sites"
+    ],
+    "pages": [
+      "facts/affected-sites/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

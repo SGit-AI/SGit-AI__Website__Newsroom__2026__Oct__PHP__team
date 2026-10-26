@@ -1,0 +1,32 @@
+{
+  "node_id": "107e10f2",
+  "node_type": "finding",
+  "node_index": 40,
+  "label": "Finding-40",
+  "title": "preannounce-time: The Foundation's post gives two times for the pre-announcement",
+  "description": "php-foundation-blog-security-release says 'published it at 19:30 UTC' and two paragraphs later 'the leak and pre-announcement around 20:00 UTC'. The note cites only the feed (20:32Z) and oss-security (20:22:51Z) against it; the source's own inconsistency should be shown.",
+  "status": "open",
+  "created_at": 1792694626796,
+  "updated_at": 1792694627053,
+  "created_by": "ec279d33",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694627053
+    }
+  ],
+  "properties": {
+    "claims": [
+      "preannounce-time"
+    ],
+    "pages": [
+      "facts/preannounce-time/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

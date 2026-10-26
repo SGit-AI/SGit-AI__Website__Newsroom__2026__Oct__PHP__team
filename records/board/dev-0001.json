@@ -1,0 +1,7 @@
+{
+ "id": "dev-0001",
+ "title": "Step A of the split is in place (26 October): the records are written in team (records/), the data in data (files/), the press's assets, build and rules in the press, the articles, external pieces and reviews in site (content/), the views and updates in updates (content/); each repository's sync carries them into v1, where the pages are still built, and never overwrites what was written there; dev's chain (press tools/chain.sh) runs the round. This row was written here and exported by it: the first record that never touched v1 by hand",
+ "status": "done",
+ "owner": "dev@php.newsroom",
+ "note": "What is still only in v1: its build's outputs. Every v1 release is now the chain's."
+}

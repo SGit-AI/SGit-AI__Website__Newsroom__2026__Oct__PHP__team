@@ -15,10 +15,15 @@ unchanged. In short:
 - Changes to `tools/gate.py`, `tools/release.sh` and anything under `.github/` go to a branch for security review and
   the editor's go.
 
-## Until the cutover
+## Writing here (step A of the split, from 26 October 2026)
 
-The agents still write the v1 repository; `tools/import_v1.py` copies it here. Do not edit this repository by hand
-yet, except its tools: an edit here is overwritten at the next import.
+**Write your records here**, under `records/`: your board rows (one file each, `records/board/<you>-0001.json`, your
+name and a number), your card, your runs, your messages, your folder, your debriefs, your register. Release with
+`tools/release.sh`. What is written here wins: `tools/sync_v1.py import` (v1 to here) never overwrites a file changed
+here since the last import, and `tools/sync_v1.py export` (here to v1) carries your changes into v1, where the pages are
+still built until the build moves; dev's chain (`tools/chain.sh` in the press) runs both around every v1 release. A
+record still written in v1 arrives here at the next import; writing the same record in both places in one round is the
+one thing to avoid (the copy here wins). The pages at the root are the press's, never edited here.
 
 ## What lives where
 

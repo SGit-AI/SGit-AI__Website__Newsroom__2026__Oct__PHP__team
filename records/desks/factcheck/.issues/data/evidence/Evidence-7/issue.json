@@ -1,0 +1,40 @@
+{
+  "node_id": "d1cf4e04",
+  "node_type": "evidence",
+  "node_index": 7,
+  "label": "Evidence-7",
+  "title": "PHP security team on oss-security, 22 October 09:11 UTC: the 'incomplete fix' report is 'unrelated' and 'has nothing to do with the RCE'",
+  "description": "Jakub Zelenka (who published both advisories) answering Rainbolt's relay of the Fediverse report. This is PHP's public answer that the site's front page says does not exist. High priority to capture: once captured, fix-incomplete should be re-graded and the front page's open question closed or reworded.",
+  "status": "proposed",
+  "created_at": 1792702575699,
+  "updated_at": 1792702576162,
+  "created_by": "f3b93b3b",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "00b6d9a2",
+      "target_label": "Run-2",
+      "created_at": 1792702575903
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "a6f17295",
+      "target_label": "Contradiction-11",
+      "created_at": 1792702576162
+    }
+  ],
+  "properties": {
+    "url": "https://www.openwall.com/lists/oss-security/2026/10/22/15",
+    "retrieved_at": "2026-10-22T20:54Z",
+    "sha256": "94c69d8f1c07e67d6fd44cfaeeb6e1805262c60d07acd5cd750e0b7d1a90026d",
+    "excerpt": "This is unrelated issue with minimal impact (crash in one component in slightly unlikely scenario). It has nothing to do with the RCE.",
+    "claims": [
+      "fix-incomplete",
+      "more-paths"
+    ],
+    "severity": "high"
+  }
+}

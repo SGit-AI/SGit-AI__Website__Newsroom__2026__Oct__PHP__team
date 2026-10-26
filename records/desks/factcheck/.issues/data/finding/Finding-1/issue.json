@@ -1,0 +1,32 @@
+{
+  "node_id": "4f1e750e",
+  "node_type": "finding",
+  "node_index": 1,
+  "label": "Finding-1",
+  "title": "ai-found: Patch the Planet framing generalised to all finders",
+  "description": "The claim says the flaws were found by researchers using frontier AI under OpenAI's Patch the Planet initiative. Calif's page places Calif under Patch the Planet; Wiz's blog and X thread never mention Patch the Planet, and Wiz credits Gemini 4 Argon most. The OOM root cause was first seen by a PHP core developer in 2024 without AI (Foundation blog). Reword to 'Calif, working under Patch the Planet, and Wiz both used AI models'.",
+  "status": "open",
+  "created_at": 1792694606057,
+  "updated_at": 1792694606317,
+  "created_by": "bceca80d",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694606317
+    }
+  ],
+  "properties": {
+    "claims": [
+      "ai-found"
+    ],
+    "pages": [
+      "facts/ai-found/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

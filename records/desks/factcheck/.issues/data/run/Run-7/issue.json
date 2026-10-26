@@ -1,0 +1,15 @@
+{
+  "node_id": "f97629be",
+  "node_type": "run",
+  "node_index": 7,
+  "label": "Run-7",
+  "title": "Run 7: 12:52 London wake, 25 October",
+  "description": "no-confirmed-compromise re-graded as of 09:35 UTC on 25 October (holds, A4); K-010 gains Lorikeet's unsourced 24 October date; KEV 2026.10.23 unchanged; audit 0 failures",
+  "status": "done",
+  "created_at": 1792933268701,
+  "updated_at": 1792933268701,
+  "created_by": "e92b5ab0",
+  "tags": [],
+  "links": [],
+  "properties": {}
+}

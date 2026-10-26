@@ -1,0 +1,32 @@
+{
+  "node_id": "626c3998",
+  "node_type": "finding",
+  "node_index": 7,
+  "label": "Finding-7",
+  "title": "ahead-of-attackers: Claim drops OpenAI's hedge 'to our knowledge'",
+  "description": "OpenAI wrote 'to our knowledge, frontier AI was able to find this vulnerability ahead of attackers'. The site states it unhedged. Restore the qualifier.",
+  "status": "open",
+  "created_at": 1792694609293,
+  "updated_at": 1792694609526,
+  "created_by": "7150f024",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694609526
+    }
+  ],
+  "properties": {
+    "claims": [
+      "ahead-of-attackers"
+    ],
+    "pages": [
+      "facts/ahead-of-attackers/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "node_id": "8336677d",
+  "node_type": "finding",
+  "node_index": 27,
+  "label": "Finding-27",
+  "title": "nl-offline: \"Primary statement\" covers only NCSC.NL",
+  "description": "The Rijksoverheid capture names only NCSC.NL; DigiD, MijnOverheid and Overheid.nl are not in it, and dutchitleaders-websites-offline is a Cloudflare challenge (75 chars). Status \"confirmed\" with note \"Primary statement\" overstates three of the four services. Cite tpo-nl-digid-offline and insurancebusiness-uk-councils-met (DigiD, MijnOverheid) and reuters-factbox-websites-offline (Overheid.nl), and mark those parts reported.",
+  "status": "fixed",
+  "created_at": 1792694620126,
+  "updated_at": 1792805572957,
+  "created_by": "c926d191",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694620341
+    }
+  ],
+  "properties": {
+    "claims": [
+      "nl-offline"
+    ],
+    "pages": [
+      "facts/nl-offline/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "5fdd8ae6",
+        "author": "cli-user",
+        "text": "Run-3: Fixed in v0.13.0: the claim says the government's notice names NCSC.nl; the rest is attributed to the press.",
+        "created_at": 1792805572957,
+        "updated_at": 1792805572957
+      }
+    ]
+  }
+}

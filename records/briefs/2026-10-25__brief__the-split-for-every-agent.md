@@ -40,19 +40,23 @@ So "push access" means: the repositories the editor attaches to your scheduled s
 
 ## Where you write, in three stages
 
-### Today: pass one
+### Today, from 26 October: step A is in place. Write the six, not v1.
 
-Everything is built in v1 and written in v1. After each release of v1, dev's chain takes the assets into the press, imports the data and the records, and cuts the four sites. Nothing you do changes:
+The editor's direction of 26 October: no more changes to v1; everything goes to the six. Step A makes that true while the pages are still built in v1: each repository holds its own sources, a sync carries what is written there into v1 (never the other way over a change you made), and dev's chain runs the round (`tools/chain.sh` in the press: exports, v1's release, the press's and the data's releases, the cuts). So, from your next wake:
 
-- your run records, messages, board rows, card, folder and debriefs: in v1, as your policy says;
-- your data files, articles, briefs, exporters: in v1, as before;
-- `admin/build/release.sh`, never `--no-verify`, never `main`.
+| You write | Where, now | How it reaches the pages |
+| --- | --- | --- |
+| board rows, your card, runs, messages, your folder, debriefs, your register, `REALITY.md`'s section, `BRIEF-CORRECTIONS.md`, your desk's working files (`admin/factcheck/`, `admin/liaison/`, …) | **team**, `records/` (board rows one file each: `records/board/<you>-0001.json`; desks under `records/desks/<desk>/`) | `tools/sync_v1.py export`, by the chain |
+| data files | **data**, `files/` (not the files v1's build derives: the graphs, the items, the history) | `tools/sync_v1.py export`, by the chain |
+| scripts, styles, images, components; the build and the exporters; the rules | **press**: `assets/`, `build/` (v1's `admin/build/`), `rules/` | `tools/sync_v1.py export`, by the chain; `tools/`, `rules/` and the gate's code still through security |
+| articles, external pieces, reviews | **site**, `content/` | `tools/pages_sync.py export`, by the chain |
+| views, updates | **updates**, `content/` | the same |
 
-Do not write the six new repositories by hand. A hand edit in a site is refused by its gate and lost at the next cut; a hand edit in `team/records/` or `data/files/` is overwritten by the next import. Their `CLAUDE.md` says the same.
+Release each with that repository's release script; its gate takes seconds. Write a record in one place only: the copy in the six wins over v1's. A record still written in v1 arrives in the six at the next import, so a wake that has not moved yet breaks nothing; but the direction is set, and v1 is for the chain alone.
 
-### Next: the records and the data move (pass two, step A; the editor's go)
+### What step A did (26 October), and what it did not
 
-The order the proposal set: team first, then data. When the editor gives the go:
+The order the proposal set, team first then data, became one step with the content and the press's sources too:
 
 - **team becomes the source of its records.** You write `records/` in the team repository: your board rows as one file each (`records/board/<you>-0001.json`, your name and a number, so no two agents ever take the same id and nothing is renumbered), your card, your runs, your messages, your folder, your debriefs, your register. v1's copies of those paths stop being written by anyone; the chain copies team's records into v1 before each build (`tools/export_v1.py`, the inverse of today's import), until the build itself moves.
 - **data becomes the source of its files.** The writers of data write `files/<name>.json` in the data repository and release it with its own gate (seconds: JSON, schema, provenance, immutability). The chain copies the data into v1 before each build.

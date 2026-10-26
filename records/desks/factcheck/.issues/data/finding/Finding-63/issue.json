@@ -1,0 +1,31 @@
+{
+  "node_id": "80bd2b2e",
+  "node_type": "finding",
+  "node_index": 63,
+  "label": "Finding-63",
+  "title": "cisa-none: 1 smaller precision and sourcing point",
+  "description": "KEV fetch time is 08:16Z, and the catalog version is from 14:04Z on 21 Oct: The note says fetched 2026-10-22T08:15Z; the saved response headers say date Thu, 22 Oct 2026 08:16:01 GMT. The catalog itself (last-modified 21 Oct 14:04:39 GMT) predates the alert's likely release and is only 16 minutes after CVE publication (13:48Z), so 'not in KEV' is a check at 08:16Z on 22 Oct of a catalog last changed 14:04Z on 21 Oct. Re-check KEV on each run.",
+  "status": "open",
+  "created_at": 1792694639188,
+  "updated_at": 1792694639413,
+  "created_by": "70f75136",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694639413
+    }
+  ],
+  "properties": {
+    "claims": [
+      "cisa-none"
+    ],
+    "pages": [
+      "facts/cisa-none/index.html"
+    ],
+    "severity": "low"
+  }
+}

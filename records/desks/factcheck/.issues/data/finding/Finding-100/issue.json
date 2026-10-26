@@ -1,0 +1,31 @@
+{
+  "node_id": "501f072c",
+  "node_type": "finding",
+  "node_index": 100,
+  "label": "Finding-100",
+  "title": "scale-2.6m-hosts: 1 smaller precision and sourcing point",
+  "description": "No scanner's own publication is captured; methods are not stated: VulnCheck, Censys, VirusTotal and Unit 42 figures all come through news outlets. numbers.json n-censys 'measures' ('Hosts whose HTTP response announces a PHP version below the fixed one') is a reasonable inference but no capture states Censys's method. gist-silascutler-censys-query holds only a Censys search URL.",
+  "status": "open",
+  "created_at": 1792694656983,
+  "updated_at": 1792694657263,
+  "created_by": "51d523fe",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694657263
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-2.6m-hosts"
+    ],
+    "pages": [
+      "facts/scale-2.6m-hosts/index.html"
+    ],
+    "severity": "low"
+  }
+}

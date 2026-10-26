@@ -1,0 +1,32 @@
+{
+  "node_id": "7fc57538",
+  "node_type": "finding",
+  "node_index": 11,
+  "label": "Finding-11",
+  "title": "no-exploitation: Time of the Austin interview is wrong: the post is 08:00 UTC (09:00 BST), not 08:00 BST",
+  "description": "claims.json 'by' says '08:00 BST 22 October'; exploitation.json and timeline.json date it 2026-10-22T07:00Z. The capture's page.html JSON-LD gives the post datePublished 2026-10-22T08:00:23.293Z, and the rendered page (UTC browser) shows 'published at 08:00'. The vault's BBC notes.md is the origin of the BST error (the 07:55Z curl copy showed BST clock times, the Playwright capture shows UTC).",
+  "status": "open",
+  "created_at": 1792694611380,
+  "updated_at": 1792694611590,
+  "created_by": "1633335e",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694611590
+    }
+  ],
+  "properties": {
+    "claims": [
+      "no-exploitation"
+    ],
+    "pages": [
+      "facts/no-exploitation/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

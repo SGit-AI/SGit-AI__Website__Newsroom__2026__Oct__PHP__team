@@ -1,0 +1,32 @@
+{
+  "node_id": "125eb35b",
+  "node_type": "finding",
+  "node_index": 45,
+  "label": "Finding-45",
+  "title": "offline-allies: Australia is not-shown, not contradicted, and the EU part largely holds",
+  "description": "ACSC's page lists other actions and no offline advice, but its body text is stale (pre-patch) and absence on one page is not a contradiction. For 'the EU', CERT-EU advises isolating internet-facing applications from public networks, CERT-FR recommends isolating affected equipment, ACN advises taking sites offline, and CERT.LV says systems that cannot be updated must have internet access restricted. Only NCSC-NL, ENISA's CNW page and JPCERT give no such advice.",
+  "status": "open",
+  "created_at": 1792694629366,
+  "updated_at": 1792694629639,
+  "created_by": "76937374",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694629639
+    }
+  ],
+  "properties": {
+    "claims": [
+      "offline-allies"
+    ],
+    "pages": [
+      "facts/offline-allies/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

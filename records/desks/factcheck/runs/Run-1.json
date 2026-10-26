@@ -1,0 +1,13 @@
+{
+ "id": "Run-1",
+ "site_version": "0.4.7",
+ "vault_commit": "31ccc515c29f",
+ "site_export_commit": "200d08971937",
+ "started": "2026-10-22T18:14Z",
+ "finished": "2026-10-22T18:55Z",
+ "checked": "all 70 claims against the evidence vault (mode 1); the front page's plain-English facts; 10 contradictions; mode 2: CISA KEV, the CVE and NVD records, php.net releases, the NCSC-NL repository, the BBC live page, The Next Web, the PHPocalypse Tracker",
+ "opened": "3 high, 56 medium and 65 low findings; 3 evidence gaps; 10 contradictions; 6 new evidence",
+ "audit": "Every excerpt recorded (one per capture checked) was re-found verbatim in its capture file by fc.py check, and every capture's sha256 matched the manifest: 0 mismatches.",
+ "summary": "First run. 10 of 70 claims can be relied on without reservation; 11 carry a status word stronger than their evidence, 6 a weaker one; 2 are refuted as worded (the CVSS 10.0 and 'disclosed on 22 October', which is true only in Australian time). Five quotes on the site are not in the captures they are attributed to. Highest: Italy's ACN does advise taking sites offline, which the agencies table says it does not; the 'contradicted' mark on the allies' offline advice rests on something the BBC did not say; and the site is 40 sources behind the vault. KEV still lists neither CVE at 18:27 UTC.",
+ "note": "Checked against the claims as they stood at site v0.4.7; data/claims.json is unchanged in dev up to v0.5.3."
+}

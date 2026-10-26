@@ -1,0 +1,31 @@
+{
+  "node_id": "0848ef21",
+  "node_type": "finding",
+  "node_index": 60,
+  "label": "Finding-60",
+  "title": "amazon-honeypot: 2 smaller precision and sourcing points",
+  "description": "'from multiple actors' is stated as fact; Amazon says 'suggesting': Amazon: 'The actual payloads and choices in anonymization infrastructure varied, suggesting these were multiple actors.' Use 'probably from multiple actors'. | Only one capture of Amazon's post, 21 hours after its date: The post is dated 21 Oct with no time; the single capture is 11:17Z on 22 Oct. The Hacker News (captured 08:13Z) already reports 'broad exploitation in the wild', so the sentence existed by then, but whether it was in the first version cannot be shown.",
+  "status": "open",
+  "created_at": 1792694637603,
+  "updated_at": 1792694637870,
+  "created_by": "d55f2cdd",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694637870
+    }
+  ],
+  "properties": {
+    "claims": [
+      "amazon-honeypot"
+    ],
+    "pages": [
+      "facts/amazon-honeypot/index.html"
+    ],
+    "severity": "low"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "node_id": "de36bda3",
+  "node_type": "evidence",
+  "node_index": 18,
+  "label": "Evidence-18",
+  "title": "Primary feeds at 07:57 UTC on 24 October: KEV (catalog 2026.10.23, 1,756 entries) still lists neither CVE; CISA SSVC still 'Exploitation: none'; no PHP release after 21 October; the PHPocalypse Tracker has 51 rows and none dark; W3Techs still 69.3_",
+  "description": "KEV has been updated twice since the release (2026.10.21, 2026.10.23) without either CVE. The NCSC-NL repository head moved from 94b4b16db9e5 to 2fdc314ded28 (the inventory's owners). Amazon's post still carries its revised sentence (Evidence-12).",
+  "status": "proposed",
+  "created_at": 1792828702567,
+  "updated_at": 1792828703126,
+  "created_by": "08e49652",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "fd8a8147",
+      "target_label": "Run-4",
+      "created_at": 1792828702747
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "8a786366",
+      "target_label": "Contradiction-2",
+      "created_at": 1792828702945
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "c2c36e31",
+      "target_label": "Contradiction-6",
+      "created_at": 1792828703126
+    }
+  ],
+  "properties": {
+    "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "retrieved_at": "2026-10-24T07:57Z",
+    "sha256": "97a6e54bc74c651ab3c55657191db9adec6c63b05ca54e4205327cfd97a8fb70",
+    "claims": [
+      "cisa-none",
+      "no-confirmed-compromise",
+      "affected-sites"
+    ],
+    "severity": "low"
+  }
+}

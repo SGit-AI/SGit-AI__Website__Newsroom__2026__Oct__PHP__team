@@ -1,0 +1,53 @@
+{
+  "node_id": "a6f17295",
+  "node_type": "contradiction",
+  "node_index": 11,
+  "label": "Contradiction-11",
+  "title": "K-011: Is the fix in PHP 8.5.12 incomplete?",
+  "description": "The report and the answer are about different things: the Fediverse post describes some flaw in 8.5.12; the PHP security team says it is a separate crash bug of minimal impact, not a way around the RCE fix. The answer came at 09:11 UTC on 22 October, after the vault's copy of the thread (which stops at 22/2), so the site still says PHP has not answered. Open only until the reply is captured; then it should be marked explained and the claim re-graded.",
+  "status": "open",
+  "created_at": 1792702575171,
+  "updated_at": 1792702579472,
+  "created_by": "57a3b08b",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "00b6d9a2",
+      "target_label": "Run-2",
+      "created_at": 1792702575398
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "d1cf4e04",
+      "target_label": "Evidence-7",
+      "created_at": 1792702576162
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "3778526a",
+      "target_label": "Evidence-8",
+      "created_at": 1792702576833
+    },
+    {
+      "link_type_id": "b45c53be",
+      "verb": "relates-to",
+      "target_id": "cbd9f93a",
+      "target_label": "Finding-125",
+      "created_at": 1792702579472
+    }
+  ],
+  "properties": {
+    "claims": [
+      "fix-incomplete",
+      "more-paths"
+    ],
+    "sources": [
+      "openwall-oss-security-109619-thread"
+    ],
+    "severity": "medium"
+  }
+}

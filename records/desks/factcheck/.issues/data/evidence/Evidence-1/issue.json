@@ -1,0 +1,40 @@
+{
+  "node_id": "db164eb0",
+  "node_type": "evidence",
+  "node_index": 1,
+  "label": "Evidence-1",
+  "title": "CISA KEV, 18:27 UTC on 22 October: neither CVE is listed (catalog 2026.10.21, released 14:04 UTC on 21 October, 1,754 entries)",
+  "description": "Fetched by the desk. The catalog has not been updated since 21 October 14:04 UTC, before CISA's own alert; so 'not in KEV' is as of that catalog version. Supports the front page's 'did not include these two when last checked' and board 010. Capture into the source watch on every run.",
+  "status": "proposed",
+  "created_at": 1792694669926,
+  "updated_at": 1792694670447,
+  "created_by": "f8560781",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694670247
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "8a786366",
+      "target_label": "Contradiction-2",
+      "created_at": 1792694670447
+    }
+  ],
+  "properties": {
+    "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "retrieved_at": "2026-10-22T18:27Z",
+    "sha256": "ef8fffede5c472001da046c7751beb2a3242458896d0ce08da52b30968b8b56b",
+    "claims": [
+      "cisa-none",
+      "no-confirmed-compromise",
+      "kev-precedent"
+    ],
+    "severity": "medium"
+  }
+}

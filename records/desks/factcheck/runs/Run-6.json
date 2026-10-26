@@ -1,0 +1,13 @@
+{
+ "id": "Run-6",
+ "site_version": "0.18.2",
+ "vault_commit": "176e2dc212e1",
+ "site_export_commit": "8c16a64a7cf6",
+ "started": "2026-10-25T08:52Z",
+ "finished": "2026-10-25T09:05Z",
+ "quiet_wakes_before": 1,
+ "checked": "fc.py changed (no-confirmed-compromise refreshed to 16:05 UTC on 24 October); fc.py check (0 failures); the first daily drift check (fc.py drift: every excerpt a grade rests on, against the newest capture of its source); the measures re-fetched (W3Techs, the HTTP Archive); KEV",
+ "opened": "1 finding (Finding-127: watchtowr-itw is now carried by watchTowr's own pages)",
+ "audit": "fc.py check: 0 failures. fc.py drift: 6 excerpts gone from re-captured sources, all explained: Amazon's revision (3, Finding-126), Cloudflare's 'Today' dated to 'October 21' (Quarkslab still named), watchTowr no longer blocking captures (2).",
+ "summary": "The daily sweep, with a new tool: fc.py drift checks every excerpt a grade rests on against the newest capture of its source. Of about 30 claims whose sources were re-captured on 23 and 24 October, six excerpts had gone, all explained. watchTowr's own pages are now captured and say 'EXPLOITED IN THE WILD: Yes' from its honeypot network: watchtowr-itw is A6 and its 'unverified' understates it (Finding-127). no-confirmed-compromise still holds at 16:05 UTC on 24 October (Die Presse for Austria; RainForest's honeypot, attempts only). W3Techs now says 69.2%, the first move in the measure's series. KEV still lists neither CVE. The 20:52 wake of 24 October was quiet."
+}

@@ -1,0 +1,32 @@
+{
+  "node_id": "90b1e305",
+  "node_type": "finding",
+  "node_index": 46,
+  "label": "Finding-46",
+  "title": "waf-nine-hours: 'Hours before disclosure' is shown only for Cloudflare, and Fortinet's date is after disclosure",
+  "description": "The lead clause applies to all five vendors, but only Cloudflare states a time before the release. Imperva says protection was verified and monitoring began 'before the announcement' with no time; Akamai and Fastly posts are dated 21 October with no time; Fortinet's FortiWeb article was created 10/22/2026 07:55 AM (timezone not stated) and its signatures are 'in Alert Only mode' by default. Suggested: 'Cloudflare from 03:02 UTC on 21 October; Imperva before the announcement; Akamai and Fastly on 21 October; Fortinet signatures by 22 October.'",
+  "status": "open",
+  "created_at": 1792694629929,
+  "updated_at": 1792694630136,
+  "created_by": "77a3f81e",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694630136
+    }
+  ],
+  "properties": {
+    "claims": [
+      "waf-nine-hours"
+    ],
+    "pages": [
+      "facts/waf-nine-hours/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

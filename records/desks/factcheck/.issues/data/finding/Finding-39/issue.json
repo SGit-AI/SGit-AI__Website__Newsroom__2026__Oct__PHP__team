@@ -1,0 +1,32 @@
+{
+  "node_id": "71ce1efa",
+  "node_type": "finding",
+  "node_index": 39,
+  "label": "Finding-39",
+  "title": "release-time: Three of the cited sources state a schedule, not a release time",
+  "description": "php.net's pre-announcement and the oss-security relay say 'It is scheduled for ... 14:00 UTC'; CERT-FR says the publisher 'annonce la disponibilit_ des correctifs ... pour le 21 octobre 2026 _ 16h00 heure de Paris (14h00 UTC)'; the Foundation says it 'moved the release ... to October 21st, 14:00 UTC'. None of these observes the release. The 'by' line should read 'scheduled for 14:00 UTC' with Daubois as the one after-the-event statement.",
+  "status": "open",
+  "created_at": 1792694626240,
+  "updated_at": 1792694626507,
+  "created_by": "84e468a4",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694626507
+    }
+  ],
+  "properties": {
+    "claims": [
+      "release-time"
+    ],
+    "pages": [
+      "facts/release-time/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "node_id": "259aa23a",
+  "node_type": "contradiction",
+  "node_index": 1,
+  "label": "Contradiction-1",
+  "title": "K-001: How much of the web: 70_ of websites, or 70_ of the Internet?",
+  "description": "One origin, Wiz, restated: a share of websites using PHP became a share of 'the Internet' affected, inside Wiz's own post. Every outlet in the vault that carries the figure traces to Wiz, so it is one source, not several (restates, not corroborates). None of them says how the 70% was measured; it matches the usual web-technology survey figure for sites whose server-side language is known, which is a share of websites, not of hosts, traffic or 'the Internet', and not a count of vulnerable installations. The BBC's 'roughly 70%' puts a word in Wiz's mouth that its post does not use.",
+  "status": "explained",
+  "created_at": 1792694599696,
+  "updated_at": 1792807354765,
+  "created_by": "6ac1c3b8",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694599941
+    },
+    {
+      "link_type_id": "b45c53be",
+      "verb": "relates-to",
+      "target_id": "1912cadc",
+      "target_label": "Finding-124",
+      "created_at": 1792694669629
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "7acfaad8",
+      "target_label": "Evidence-13",
+      "created_at": 1792807353532
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "2376a50e",
+      "target_label": "Evidence-14",
+      "created_at": 1792807354163
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "b5147ea8",
+      "target_label": "Evidence-15",
+      "created_at": 1792807354765
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-70pc-internet",
+      "scale-70pc-websites"
+    ],
+    "sources": [
+      "bbc-live-ckgel5xp2xv9t",
+      "cnn-php2shell-websites-shut",
+      "wiz-blog-php2shell",
+      "x-wiz-io-php2shell"
+    ],
+    "severity": "medium"
+  }
+}

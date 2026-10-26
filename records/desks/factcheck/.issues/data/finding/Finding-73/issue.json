@@ -1,0 +1,31 @@
+{
+  "node_id": "fd70a5f2",
+  "node_type": "finding",
+  "node_index": 73,
+  "label": "Finding-73",
+  "title": "four-reporters: 2 smaller precision and sourcing points",
+  "description": "CVE records credit three parties, not four: The cve.org records (CNA: PHP Group) credit 'Ryan at Calif.io', 'Wiz' and 'OpenAI' (finder on 109618, reporter on 109619) and omit tomash-areion. The site could say the advisories credit four and the CVE records three. | Affiliations are inferred: The advisories give handles only. The bracketed affiliations are reasonable but come from other pages; tomash-areion's affiliation is unknown. The note's 'appears nowhere else on this beat' should except Daubois, who repeats the advisory credits.",
+  "status": "open",
+  "created_at": 1792694643865,
+  "updated_at": 1792694644094,
+  "created_by": "56b83125",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694644094
+    }
+  ],
+  "properties": {
+    "claims": [
+      "four-reporters"
+    ],
+    "pages": [
+      "facts/four-reporters/index.html"
+    ],
+    "severity": "low"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "node_id": "3b9a5282",
+  "node_type": "run",
+  "node_index": 6,
+  "label": "Run-6",
+  "title": "Run 6: the scheduled wake at 08:52 London on 25 October (the daily sweep)",
+  "description": "Site v0.18.2, vault head 176e2dc212e1 (export at 8c16a64a7cf6, 382 sources). First daily drift check.",
+  "status": "done",
+  "created_at": 1792918781177,
+  "updated_at": 1792918781733,
+  "created_by": "3a2dbe87",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "52d71b58",
+      "target_label": "Finding-127",
+      "created_at": 1792918781733
+    }
+  ],
+  "properties": {}
+}

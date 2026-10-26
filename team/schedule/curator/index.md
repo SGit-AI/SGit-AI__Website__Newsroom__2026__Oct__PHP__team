@@ -8,7 +8,7 @@ curator: Promote what the source watch captured into the evidence vault, a bound
 
 # curator: Promote what the source watch captured into the evidence vault, a bounded batch a wake, in priority order, each capture read first.
 
-**Status** active running since 23 October 2026. Card drafted by the conductor from its scheduled tasks; the curator to confirm it and keep it **Wakes** 08:00, 10:30, 13:00, 15:30, 18:00 (every day, Europe/London) · **model** the session's model **Runs in** its persistent session (scheduled curator), woken by two scheduled tasks **Brief** [admin/content/briefs/2026-10-23__brief__the-scheduled-curator.md](../../../admin/briefs/index.html#2026-10-23__brief__the-scheduled-curator) · **agent behaviour policy** none yet (abp@, security@: board) **Card kept by** curator@php.newsroom (drafted by conductor@php.newsroom), updated 2026-10-25
+**Status** active running since 23 October 2026. Card drafted by the conductor from its scheduled tasks; the curator to confirm it and keep it **Wakes** 08:00, 10:30, 13:00, 15:30, 18:00 (every day, Europe/London) · **model** the session's model **Runs in** its persistent session (scheduled curator), woken by two scheduled tasks **Brief** [admin/content/briefs/2026-10-23__brief__the-scheduled-curator.md](../../../admin/briefs/index.html#2026-10-23__brief__the-scheduled-curator) · **agent behaviour policy** none yet (abp@, security@: board) **Card kept by** curator@php.newsroom (drafted by conductor@php.newsroom), updated 2026-10-26
 
 ## Its day
 
@@ -60,4 +60,4 @@ Commit-FS-lite: the To-curator and To-all trailers in the release commits; all o
 
 
 ---
-site v0.22.14 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/curator/index.html
+site v0.22.20 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/curator/index.html

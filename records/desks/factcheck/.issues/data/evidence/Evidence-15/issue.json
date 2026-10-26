@@ -1,0 +1,40 @@
+{
+  "node_id": "b5147ea8",
+  "node_type": "evidence",
+  "node_index": 15,
+  "label": "Evidence-15",
+  "title": "The measurement behind '70_', fetched: W3Techs, 69.3_ of websites whose server-side language is known (23 October); HTTP Archive, PHP on 48.3_ of all crawled origins; WordPress on 39.6_ of all websites",
+  "description": "The desk fetched and hashed W3Techs' language page and its yearly history, the HTTP Archive's tech report API and the other measurers (investigation php-share, 29 measures). None of it is in a vault yet, so none of it is citable as evidence: capture W3Techs' pages and the HTTP Archive counts (boards 033, 043, 222). This answers the front page's open question 'Where the 70% figure comes from' (Finding-32).",
+  "status": "proposed",
+  "created_at": 1792807354390,
+  "updated_at": 1792807354765,
+  "created_by": "fa68f721",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "6800daee",
+      "target_label": "Run-3",
+      "created_at": 1792807354574
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "259aa23a",
+      "target_label": "Contradiction-1",
+      "created_at": 1792807354765
+    }
+  ],
+  "properties": {
+    "url": "https://w3techs.com/technologies/details/pl-php",
+    "retrieved_at": "2026-10-24T01:31Z",
+    "sha256": "f49b114f2c6055e2bb21b2009d25e781cf715553e782b83c0adbeec818780948",
+    "excerpt": "PHP is used by 69.3% of all the websites whose server-side programming language we know.",
+    "claims": [
+      "scale-70pc-websites",
+      "scale-70pc-internet"
+    ],
+    "severity": "medium"
+  }
+}

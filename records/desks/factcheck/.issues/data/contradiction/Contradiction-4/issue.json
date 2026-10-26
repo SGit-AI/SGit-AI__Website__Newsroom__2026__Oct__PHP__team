@@ -1,0 +1,47 @@
+{
+  "node_id": "a816f5c9",
+  "node_type": "contradiction",
+  "node_index": 4,
+  "label": "Contradiction-4",
+  "title": "K-004: How many systems are still unpatched?",
+  "description": "The site's claim reads as 1.57 million unpatched out of about 2.6 million hosts (about 60%). The source says 1.57 million out of the 1.58 million whose version could be read (about 99%, on the day the fix shipped); the 2.58 million is all hosts seen, most of which do not announce a version. The two framings give very different pictures. The BBC's 90% has no named counter or method and is not captured. Open, because the site states one framing as fact.",
+  "status": "explained",
+  "created_at": 1792694601877,
+  "updated_at": 1792805573803,
+  "created_by": "ffc3e0c7",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694602096
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "6a30a79e",
+      "target_label": "Evidence-2",
+      "created_at": 1792694671156
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-2.6m-hosts"
+    ],
+    "sources": [
+      "securityweek-exploitation-days-before"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "e68d4143",
+        "author": "cli-user",
+        "text": "Run-3: the site now gives Censys's denominator (1.58 million version-readable hosts) beside VulnCheck's 2.6 million; the BBC's 90_ stays uncaptured and unattributed.",
+        "created_at": 1792805573803,
+        "updated_at": 1792805573803
+      }
+    ]
+  }
+}

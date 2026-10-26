@@ -1,0 +1,31 @@
+{
+  "node_id": "5e6ed7c9",
+  "node_type": "finding",
+  "node_index": 57,
+  "label": "Finding-57",
+  "title": "affected-sites: 1 smaller precision and sourcing point",
+  "description": "\"Online shops\" rests on the BBC alone and is vague: No capture names an online shop taken offline; the BBC capture otherwise mentions online shops only as platforms PHP powers. The University of Geneva item comes from an EPA photo alt text, not reporting text.",
+  "status": "open",
+  "created_at": 1792694636135,
+  "updated_at": 1792694636399,
+  "created_by": "a2dae529",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694636399
+    }
+  ],
+  "properties": {
+    "claims": [
+      "affected-sites"
+    ],
+    "pages": [
+      "facts/affected-sites/index.html"
+    ],
+    "severity": "low"
+  }
+}

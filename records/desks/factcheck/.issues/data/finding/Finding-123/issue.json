@@ -1,0 +1,28 @@
+{
+  "node_id": "033d4f73",
+  "node_type": "finding",
+  "node_index": 123,
+  "label": "Finding-123",
+  "title": "The scheduled-capture brief attributes the Censys count to The Hacker News; the vault has it from SecurityWeek",
+  "description": "admin/content/briefs/2026-10-22__brief__scheduled-capture-json-and-analysis.md, contradiction table: '1.57 million of about 2.6 million hosts unpatched on 21 October (Censys via The Hacker News)'. No Hacker News capture in the vault carries 1.57 million; securityweek-exploitation-days-before does, with a different denominator (K-004). The brief is the editor's and is not edited; this is a note for whoever builds on it.",
+  "status": "open",
+  "created_at": 1792694668550,
+  "updated_at": 1792694668859,
+  "created_by": "30a45dc0",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694668859
+    }
+  ],
+  "properties": {
+    "pages": [
+      "admin/briefs/index.html"
+    ],
+    "severity": "low"
+  }
+}

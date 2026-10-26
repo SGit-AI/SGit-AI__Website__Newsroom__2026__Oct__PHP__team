@@ -1,0 +1,65 @@
+{
+  "node_id": "00b6d9a2",
+  "node_type": "run",
+  "node_index": 2,
+  "label": "Run-2",
+  "title": "Run 2: the scheduled run at 20:52 UTC; no claim changed, the vault did not move; the outside sources did",
+  "description": "Site v0.5.7, vault head 31ccc515c29f.",
+  "status": "done",
+  "created_at": 1792702574925,
+  "updated_at": 1792702579175,
+  "created_by": "ab9dca16",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "a6f17295",
+      "target_label": "Contradiction-11",
+      "created_at": 1792702575398
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "d1cf4e04",
+      "target_label": "Evidence-7",
+      "created_at": 1792702575903
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "3778526a",
+      "target_label": "Evidence-8",
+      "created_at": 1792702576614
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "75e21387",
+      "target_label": "Evidence-9",
+      "created_at": 1792702577271
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "de4f3742",
+      "target_label": "Evidence-10",
+      "created_at": 1792702577900
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "ee9d1227",
+      "target_label": "Evidence-11",
+      "created_at": 1792702578531
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "cbd9f93a",
+      "target_label": "Finding-125",
+      "created_at": 1792702579175
+    }
+  ],
+  "properties": {}
+}

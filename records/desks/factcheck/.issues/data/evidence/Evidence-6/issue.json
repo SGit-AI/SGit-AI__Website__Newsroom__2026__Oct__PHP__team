@@ -1,0 +1,39 @@
+{
+  "node_id": "cf98cb8f",
+  "node_type": "evidence",
+  "node_index": 6,
+  "label": "Evidence-6",
+  "title": "CVE records unchanged since the vault's capture; CISA's SSVC still says Exploitation: none",
+  "description": "Fetched by the desk from the CVE API at 18:27 UTC. CVE-2026-109618 last updated 21 Oct 16:07 UTC, CVE-2026-109619 22 Oct 08:09 UTC, both before the vault's 08:12 UTC captures. CISA ADP SSVC, scored 21 Oct 14:34 UTC, still 'Exploitation: none'. Nothing to re-capture; recorded so the next run can tell if it changes.",
+  "status": "proposed",
+  "created_at": 1792694673412,
+  "updated_at": 1792694673850,
+  "created_by": "89436e96",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694673619
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "8a786366",
+      "target_label": "Contradiction-2",
+      "created_at": 1792694673850
+    }
+  ],
+  "properties": {
+    "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109618",
+    "retrieved_at": "2026-10-22T18:27Z",
+    "sha256": "f856138e139c216e7b499d86b519d6371b92494c7d63fcccbcd79117102750a1",
+    "claims": [
+      "two-cves-9.2",
+      "cisa-none"
+    ],
+    "severity": "low"
+  }
+}

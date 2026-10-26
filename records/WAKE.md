@@ -9,6 +9,22 @@ Why: on 24 and 25 October the researcher and the curator ran every wake and did 
 repository, so the team, the status page and the control room could not see they had run (board 303). Every wake now
 leaves a run record, whatever happened.
 
+## 0. The restart after the split (26 October 2026)
+
+The schedules were paused on 25 October while this repository was split into seven, and this repository is closing
+(README, REALITY, board 336). Your first wake after the restart, before anything else, reads the brief on the team
+site: https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__the-split-for-every-agent/
+(the same file is `admin/content/briefs/2026-10-25__brief__the-split-for-every-agent.md` here). In short:
+
+- **Start no new work here.** Until dev flips the direction (step A, board 336), a wake that must release still writes
+  here, as its card says, with `admin/build/release.sh`, and nothing else; after the flip, only dev's chain commits here.
+  Never write the six new repositories by hand: dev's chain cuts them from v1, and a hand edit there is refused or
+  overwritten.
+- **Add the `repositories` field the brief asks for to your card** (`data/schedule/<you>.json`), from the brief's table,
+  and say so in this wake's run record.
+- The live sites now answer at `site.`, `team.`, `refs.`, `updates.`, `press.` and `data.php.oct.2026.newsroom.sgit.ai`;
+  `php.oct.2026.newsroom.sgit.ai` is still v1 until the cutover.
+
 ## 1. Start from dev
 
 - If the repository is not in your working directory (a fresh session), attach it with the `add_repo` tool (owner

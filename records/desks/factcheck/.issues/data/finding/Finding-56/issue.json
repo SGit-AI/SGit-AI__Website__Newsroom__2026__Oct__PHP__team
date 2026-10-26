@@ -1,0 +1,31 @@
+{
+  "node_id": "0dae512b",
+  "node_type": "finding",
+  "node_index": 56,
+  "label": "Finding-56",
+  "title": "ac-high: 2 smaller precision and sourcing points",
+  "description": "Fastly quote drops the quotation marks around 'safe': Capture: 'most deployments may be _safe_ from RCE.' The site drops the scare quotes, which changes the tone: Fastly is hedging the word. | Imperva phrase used without attribution in the claim text: The claim's first clause is Imperva's sentence word for word; it should be quoted and attributed.",
+  "status": "open",
+  "created_at": 1792694635681,
+  "updated_at": 1792694635904,
+  "created_by": "5f337ea7",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694635904
+    }
+  ],
+  "properties": {
+    "claims": [
+      "ac-high"
+    ],
+    "pages": [
+      "facts/ac-high/index.html"
+    ],
+    "severity": "low"
+  }
+}

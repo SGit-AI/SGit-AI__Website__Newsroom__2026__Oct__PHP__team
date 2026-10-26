@@ -1,0 +1,31 @@
+{
+  "node_id": "f3334d4e",
+  "node_type": "finding",
+  "node_index": 77,
+  "label": "Finding-77",
+  "title": "latvia-offline: 1 smaller precision and sourcing point",
+  "description": "Translations and UTC conversion are the site's own: The source is in Latvian; \"restored by 20:00 UTC\" is the site's conversion of the 23:00 local update stamp. Correct, but should be marked as this site's conversion. The latvija.gov.lv capture from outside Latvia failed with net::ERR_CERT_COMMON_NAME_INVALID at 08:19:39Z on 22 Oct, consistent with, but not proof of, the foreign-access restriction.",
+  "status": "open",
+  "created_at": 1792694645754,
+  "updated_at": 1792694645960,
+  "created_by": "91edb1bd",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694645960
+    }
+  ],
+  "properties": {
+    "claims": [
+      "latvia-offline"
+    ],
+    "pages": [
+      "facts/latvia-offline/index.html"
+    ],
+    "severity": "low"
+  }
+}

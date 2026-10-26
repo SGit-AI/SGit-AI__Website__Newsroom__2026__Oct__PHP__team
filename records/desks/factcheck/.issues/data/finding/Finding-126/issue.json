@@ -1,0 +1,41 @@
+{
+  "node_id": "05b6c5ca",
+  "node_type": "finding",
+  "node_index": 126,
+  "label": "Finding-126",
+  "title": "amazon-honeypot quotes Amazon's first wording; Amazon revised it on 22 October at 21:25 UTC, and the vault now holds both",
+  "description": "The claim quotes 'PHP2Shell is now being broadly exploited in the wild' as Amazon's. The vault's second capture of the same post (20261023T160435Z, text sha256 4108b2850c48a8f2) reads 'PHP2Shell is now seeing broad exploitation attempts in the wild.', page modified 14:25 PDT on 22 October, with no note. The words were Amazon's at the time; they are not Amazon's now. The claim, and the other data files that quote it (impact.json, history.json, compromise.json and others), should give both wordings with their times. Correction request R-004 asked for this change and can close as corrected without being sent.",
+  "status": "open",
+  "created_at": 1792857667632,
+  "updated_at": 1792918782041,
+  "created_by": "0a08acd2",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "a8936621",
+      "target_label": "Run-5",
+      "created_at": 1792857667820
+    }
+  ],
+  "properties": {
+    "claims": [
+      "amazon-honeypot"
+    ],
+    "pages": [
+      "facts/amazon-honeypot/index.html",
+      "compromise/index.html"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "44e1bcae",
+        "author": "cli-user",
+        "text": "Run-6: fc.py drift finds Amazon's first wording also behind no-exploitation and no-confirmed-compromise (their notes quote it); the same two wordings with their times apply there.",
+        "created_at": 1792918782041,
+        "updated_at": 1792918782041
+      }
+    ]
+  }
+}

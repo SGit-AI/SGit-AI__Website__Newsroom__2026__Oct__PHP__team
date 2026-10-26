@@ -1,0 +1,31 @@
+{
+  "node_id": "86727508",
+  "node_type": "finding",
+  "node_index": 98,
+  "label": "Finding-98",
+  "title": "release-moved: 1 smaller precision and sourcing point",
+  "description": "Release actually shipped before 14:00 UTC; story.json says 'at 14:00 UTC': The schedule was 14:00 UTC, but the GHSAs show 13:34Z, Wiz posted at 13:32:25Z (decoded), CERT-EU says '13:30 UTC' and CybelAngel 'about 13:35 UTC'. story.json's lead says 'On 21 October 2026 at 14:00 UTC the PHP project released fixes'. The claim (schedule moved) is right; the lead sentence is not.",
+  "status": "open",
+  "created_at": 1792694655892,
+  "updated_at": 1792694656145,
+  "created_by": "c608b20a",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694656145
+    }
+  ],
+  "properties": {
+    "claims": [
+      "release-moved"
+    ],
+    "pages": [
+      "facts/release-moved/index.html"
+    ],
+    "severity": "low"
+  }
+}

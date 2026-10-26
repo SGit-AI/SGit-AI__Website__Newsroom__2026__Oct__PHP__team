@@ -1,0 +1,39 @@
+{
+  "node_id": "6fe5f9c6",
+  "node_type": "evidence",
+  "node_index": 16,
+  "label": "Evidence-16",
+  "title": "CrowdStrike dates each flaw's code: CVE-2026-109618 from PHP 7.3.0 (2018), CVE-2026-109619 back to 5.4 (session path) and 7.1 (serialization)",
+  "description": "Found through Greenbone's posts on oss-security (2026/10/23/4 and /5, now references in both CVE records). The first claim that splits the two flaws by version. If it holds, 'all versions from 5.4' is true only of CVE-2026-109619. The page contradicts itself ('present in every PHP release from the 7.x and 8.x series'). Capture it; then versions-old and the version table on /patching/ should be re-graded.",
+  "status": "proposed",
+  "created_at": 1792828701576,
+  "updated_at": 1792828701935,
+  "created_by": "d5d92a26",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "fd8a8147",
+      "target_label": "Run-4",
+      "created_at": 1792828701757
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "b51bf2ed",
+      "target_label": "Contradiction-3",
+      "created_at": 1792828701935
+    }
+  ],
+  "properties": {
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-protects-customers-from-php-rce-zero-days/",
+    "retrieved_at": "2026-10-24T07:57Z",
+    "sha256": "e46a2935d6002eed6d9082e3729ae7dd8cbd91e1d79bc830a5671f5cf4999a10",
+    "excerpt": "The specific HashTable ordering behind CVE-2026-109618 was introduced by a performance optimization in October 2017 and first shipped in PHP 7.3.0",
+    "claims": [
+      "versions-old"
+    ],
+    "severity": "medium"
+  }
+}

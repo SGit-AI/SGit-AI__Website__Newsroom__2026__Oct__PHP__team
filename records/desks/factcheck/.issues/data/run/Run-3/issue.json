@@ -1,0 +1,51 @@
+{
+  "node_id": "6800daee",
+  "node_type": "run",
+  "node_index": 3,
+  "label": "Run-3",
+  "title": "Run 3: the editor asked for a pass on 24 October; seven claims changed, the desk chief's fixes checked",
+  "description": "Site v0.13.0, vault head 1845598d9a38, 296 sources (the export lag is closed).",
+  "status": "done",
+  "created_at": 1792805570190,
+  "updated_at": 1792807354574,
+  "created_by": "3e61b611",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "964c820c",
+      "target_label": "Contradiction-12",
+      "created_at": 1792807351967
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "33ecc95e",
+      "target_label": "Evidence-12",
+      "created_at": 1792807352672
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "7acfaad8",
+      "target_label": "Evidence-13",
+      "created_at": 1792807353299
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "2376a50e",
+      "target_label": "Evidence-14",
+      "created_at": 1792807353949
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "b5147ea8",
+      "target_label": "Evidence-15",
+      "created_at": 1792807354574
+    }
+  ],
+  "properties": {}
+}

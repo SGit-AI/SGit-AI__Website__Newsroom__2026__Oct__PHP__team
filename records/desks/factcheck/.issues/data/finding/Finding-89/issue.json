@@ -1,0 +1,31 @@
+{
+  "node_id": "12a78f58",
+  "node_type": "finding",
+  "node_index": 89,
+  "label": "Finding-89",
+  "title": "offline-ncsc: 1 smaller precision and sourcing point",
+  "description": "CyberExpress is a copy of the BBC paragraph, not a third witness: cyberexpress-php2shell-gov-sites reproduces the BBC's sentence about the NCSC and its EU and Australian counterparts almost word for word, with US spelling ('organizations').",
+  "status": "open",
+  "created_at": 1792694651703,
+  "updated_at": 1792694651937,
+  "created_by": "d03e9e72",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694651937
+    }
+  ],
+  "properties": {
+    "claims": [
+      "offline-ncsc"
+    ],
+    "pages": [
+      "facts/offline-ncsc/index.html"
+    ],
+    "severity": "low"
+  }
+}

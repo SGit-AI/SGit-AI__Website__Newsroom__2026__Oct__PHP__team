@@ -1,0 +1,31 @@
+{
+  "node_id": "e0042bcb",
+  "node_type": "finding",
+  "node_index": 113,
+  "label": "Finding-113",
+  "title": "who-first: 2 smaller precision and sourcing points",
+  "description": "'the flaws' (plural) not shown: Calif reported its first bug on 11 August and 'the second bug' on 21 August; Wiz reported on 24 August and is listed first in the credits of GHSA-6wmf-4rv5-p3rp. Nothing captured shows which party first found CVE-2026-109619. | Hash pre-image unpublished: The tweet carries only a hex string. Its date is verified by the post ID decode (2026-08-05T15:54:24Z, matching the displayed '15:54 _ 5 Aug 2026'), but what it commits to cannot be checked.",
+  "status": "open",
+  "created_at": 1792694663171,
+  "updated_at": 1792694663400,
+  "created_by": "0d273b1d",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694663400
+    }
+  ],
+  "properties": {
+    "claims": [
+      "who-first"
+    ],
+    "pages": [
+      "facts/who-first/index.html"
+    ],
+    "severity": "low"
+  }
+}

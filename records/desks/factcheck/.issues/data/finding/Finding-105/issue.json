@@ -1,0 +1,31 @@
+{
+  "node_id": "5394f5ac",
+  "node_type": "finding",
+  "node_index": 105,
+  "label": "Finding-105",
+  "title": "scale-ncsc-nl: 1 smaller precision and sourcing point",
+  "description": "The cited capture carries no counts: ncsc-nl-php2shell-software-list text.txt (sha 83f3aa60...) is the index page with letter links only. The counts rest on files under sources/ncsc-nl-php2shell/raw/, a source the claim does not cite (numbers.json n-674 does). The tree files are not listed in raw/SHA256SUMS; this desk verified them against the bundle, which is.",
+  "status": "open",
+  "created_at": 1792694659461,
+  "updated_at": 1792694659720,
+  "created_by": "12cf8242",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694659720
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-ncsc-nl"
+    ],
+    "pages": [
+      "facts/scale-ncsc-nl/index.html"
+    ],
+    "severity": "low"
+  }
+}

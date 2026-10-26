@@ -1,0 +1,32 @@
+{
+  "node_id": "7c635f70",
+  "node_type": "finding",
+  "node_index": 9,
+  "label": "Finding-9",
+  "title": "leak-video: 'around 20:00 UTC' may be the pre-announcement's time, not the video's",
+  "description": "The Foundation sentence reads 'As a result of the leak and pre-announcement around 20:00 UTC, Calif ... mistakenly published a video.' The time can modify the pre-announcement (oss-security relayed it at 20:22:51Z; php.net's feed says 20:32Z). The Register reads it as 'a couple of hours later' than 15:00; Feross says 'that evening'. The site (claim and timeline.json at 2026-10-20T20:00Z) presents 20:00 UTC as the video's time. Say 'evening of 20 October' or flag the ambiguity.",
+  "status": "open",
+  "created_at": 1792694610279,
+  "updated_at": 1792694610517,
+  "created_by": "5750fcbb",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694610517
+    }
+  ],
+  "properties": {
+    "claims": [
+      "leak-video"
+    ],
+    "pages": [
+      "facts/leak-video/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,104 @@
+{
+ "id": "php-share",
+ "title": "How much PHP is there, and where does '70%' come from?",
+ "question": "How much of the web runs on PHP, by every measure that someone actually measures; and how did one of those measures become '70% of the Internet'?",
+ "brief": "admin/content/briefs/2026-10-24__brief__factcheck-investigations-how-much-php.md",
+ "opened": "2026-10-24",
+ "as_of": "2026-10-24T01:50Z",
+ "run": "Run-3",
+ "status": "open",
+ "answer": "About 69% of the websites whose server-side language W3Techs can identify, and falling: it was 80.6% in 2015. On every site the HTTP Archive crawls, PHP is detected on about half (48%). WordPress alone, which needs PHP, is on 39.6% of all websites. On the internet, the scanners count PHP on about 2 to 3 million hosts. No one measures a share of 'the Internet'. '70% of the Internet' is a website figure, restated in Wiz's own post, then copied.",
+ "verdicts": [
+  {
+   "wording": "PHP runs about 69-70% of the websites whose server-side language is known",
+   "kind": "count",
+   "level": 6,
+   "verdict": "holds",
+   "basis": "W3Techs' own page, fetched on 24 October: 69.3% as of 23 October, on 'all the websites whose server-side programming language we know'. The measurer is the primary record of its own measurement. It is one measurer, and W3Techs does not publish what share of sites have a known language.",
+   "measures": [
+    "w3techs-php-share-known"
+   ],
+   "families": [
+    "F-5"
+   ]
+  },
+  {
+   "wording": "PHP runs 70% of all websites",
+   "kind": "count",
+   "level": 1,
+   "verdict": "holds-in-part",
+   "basis": "No measurer of all websites gives 70%. The one that counts every crawled site, the HTTP Archive, detects PHP on 48.3% of mobile origins (September 2026, the desk's ratio of two published counts); WordPress alone is 39.6% of all sites (W3Techs). 'Of all websites' drops W3Techs' qualifier; W3Techs' own PHP 8 page does the same. The truth is between about 40% and about 70%, depending on what the unknown-language sites run.",
+   "measures": [
+    "httparchive-php-share-mobile",
+    "w3techs-wordpress-share-all",
+    "w3techs-php-share-known"
+   ],
+   "families": [
+    "F-2",
+    "F-8"
+   ]
+  },
+  {
+   "wording": "70% of the Internet",
+   "kind": "count",
+   "level": 0,
+   "verdict": "not-shown",
+   "basis": "Nothing measures a share of 'the Internet'. Scanners count PHP on about 2 to 3 million internet-facing hosts (Censys, VulnCheck, Shodan), 5.1 million IP addresses (VirusTotal). The phrase first appears in Wiz's X post at 13:32 UTC on 21 October; the body of Wiz's own blog post says 'websites'. It is a website share restated, a change of denominator, not a measurement.",
+   "measures": [
+    "censys-php-hosts-securityweek",
+    "vulncheck-php-hosts",
+    "shodan-php-hosts-poley",
+    "virustotal-php-ips"
+   ],
+   "families": [
+    "F-1",
+    "F-7"
+   ]
+  },
+  {
+   "wording": "75% of websites (Reuters, 'according to W3Techs')",
+   "kind": "count",
+   "level": 2,
+   "verdict": "holds-in-part",
+   "basis": "W3Techs' yearly table gives 75.2% on 1 January 2025, 72.4% on 1 January 2026 and 69.3% on 23 October 2026. Reuters' 75% matches the January 2025 figure, not the one W3Techs showed when Reuters wrote: an out-of-date number, correctly attributed.",
+   "measures": [
+    "w3techs-php-share-known"
+   ],
+   "families": [
+    "F-6"
+   ]
+  },
+  {
+   "wording": "could take down 70% of the internet (Fortune)",
+   "kind": "reading",
+   "level": 0,
+   "verdict": "not-shown",
+   "basis": "Fortune's headline and lede, in its own voice, with no source: a usage share became a share that could be taken down. Its only attributed 70% is an accurate quote of Wiz's conclusion. Nothing in the evidence measures what could be taken down.",
+   "measures": [],
+   "families": [
+    "F-1"
+   ]
+  }
+ ],
+ "findings": [
+  "The measurement exists, and it is W3Techs: 69.3% of the websites whose server-side programming language W3Techs knows, on 23 October 2026. Every outlet that names a measurer names W3Techs.",
+  "It is falling, and has been for a decade: 80.6% in January 2015, 75.2% in January 2025, 72.4% in January 2026, 69.3% now. '70%' is already a rounding up.",
+  "The bigger the site, the less PHP: 64.4% of the top million, 60.9% of the top 100,000, 58.7% of the top 1,000 (W3Techs, known-language sites).",
+  "On all websites, the only measurer that counts every crawled site gives about half: the HTTP Archive detects PHP on 48.3% of mobile origins and 47.3% of desktop origins in September 2026, down from about 58% in January 2023.",
+  "WordPress, which cannot run without PHP, is on 39.6% of all websites (W3Techs): a floor for PHP's share of all sites in that sample.",
+  "Counted in sites rather than shares: BuiltWith 23.96 million live PHP sites, Wappalyzer about 22.7 million. Neither publishes a denominator.",
+  "On the internet, scanners count hosts, not shares: about 2.6 million (Censys, VulnCheck), 1.9 million (Shodan), 5.1 million IP addresses (VirusTotal). Palo Alto's 22.6 million 'instances' (via Fortune) is not in Palo Alto's own advisory and is ten times every other count.",
+  "In the evidence vault, 127 statements of PHP's share in 11 languages, from 94 sources: 39 against 'the Internet' or 'the web', 29 against all websites, 30 with W3Techs' known-language denominator, 23 with no denominator.",
+  "'70% of the Internet' starts with Wiz: its X post at 13:32 UTC on 21 October, then its blog headline and conclusion. The same post's executive summary says 'powers 70% of all websites in the world'. The denominator changes inside the origin, which cites no measurement.",
+  "17 statements link a measurement; only one of the 39 'Internet' statements does (MediaNama puts a W3Techs link on the words '70% of the internet').",
+  "Re-checked live on 24 October: 73 page records at 68 addresses; 64 unchanged, 4 reworded without a note, 3 blocked, 2 could not be checked, none corrected. Wiz has changed nothing. CNN rewrote its 70% lines twice and still says 'internet' in the headline.",
+  "Outside the 70%: AWS rewrote 'PHP2Shell is now being broadly exploited in the wild' as 'now seeing broad exploitation attempts in the wild', without a note. This site quotes the first wording."
+ ],
+ "limits": [
+  "W3Techs does not publish what share of sites have a known server-side language, so its 69.3% cannot be turned into a share of all websites.",
+  "The HTTP Archive shares are the desk's own division of two published counts (PHP origins over all origins, same date and client); the HTTP Archive does not publish the ratio.",
+  "Every host count except the Censys query gist reaches the vault through a news outlet; no scanner's own publication is captured.",
+  "The Internet Archive could not be reached from the desk's session; the history of wording rests on the vault's repeat captures, the pages' own modified dates and Wikipedia's revision history.",
+  "The measurers' pages were fetched by the desk on 24 October and are not captured into a vault; they are shown with URL, time and sha256, and are not evidence of the story until captured (board 033, 043 and 222 ask the collectors for W3Techs)."
+ ]
+}

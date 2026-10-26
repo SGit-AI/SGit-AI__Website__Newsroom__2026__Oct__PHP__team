@@ -1,0 +1,41 @@
+{
+  "node_id": "00e8ab8d",
+  "node_type": "finding",
+  "node_index": 34,
+  "label": "Finding-34",
+  "title": "scale-2.6m-hosts: 'of which' joins two different counters",
+  "description": "The 2.6 million is VulnCheck's count; the 1.57 million unpatched is Censys's, out of the 2.58 million hosts Censys saw on 21 October (SecurityWeek). The same 'of which' framing recurs in questions.json and readings.json. Suggested wording: 'VulnCheck counts about 2.6 million; Censys saw 2.58 million on 21 October, of which 1.57 million were unpatched.'",
+  "status": "fixed",
+  "created_at": 1792694623680,
+  "updated_at": 1792805572040,
+  "created_by": "9afc5647",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694623917
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-2.6m-hosts"
+    ],
+    "pages": [
+      "facts/scale-2.6m-hosts/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "d6c3d030",
+        "author": "cli-user",
+        "text": "Run-3: Fixed in v0.13.0: VulnCheck's 2.6 million and Censys's 1.57 of 1.58 million are now separate counters.",
+        "created_at": 1792805572040,
+        "updated_at": 1792805572040
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "node_id": "440d3e67",
+  "node_type": "finding",
+  "node_index": 88,
+  "label": "Finding-88",
+  "title": "offline-cisa: 1 smaller precision and sourcing point",
+  "description": "The paraphrase drops 'until they can be patched or updated': CISA's advice is time-bound ('offline until they can be patched or updated'). Without it, the claim reads as permanent removal.",
+  "status": "open",
+  "created_at": 1792694651230,
+  "updated_at": 1792694651463,
+  "created_by": "8d474dac",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694651463
+    }
+  ],
+  "properties": {
+    "claims": [
+      "offline-cisa"
+    ],
+    "pages": [
+      "facts/offline-cisa/index.html"
+    ],
+    "severity": "low"
+  }
+}

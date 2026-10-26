@@ -1,0 +1,32 @@
+{
+  "node_id": "cfd5c9f9",
+  "node_type": "finding",
+  "node_index": 49,
+  "label": "Finding-49",
+  "title": "rce-fpm: Glossary short text for PHP-FPM says 'whether a full exploit exists is disputed'",
+  "description": "data/glossary.json (id fpm) short: 'Susceptible; whether a full exploit exists is disputed.' The PHP advisory GHSA-6wmf and oss-security 21/7 say FPM RCE was validated/demonstrated for CVE-2026-109619. The long text is accurate ('for the first flaw'); the short text misleads.",
+  "status": "open",
+  "created_at": 1792694631410,
+  "updated_at": 1792694631635,
+  "created_by": "c8dc536c",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694631635
+    }
+  ],
+  "properties": {
+    "claims": [
+      "rce-fpm"
+    ],
+    "pages": [
+      "facts/rce-fpm/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

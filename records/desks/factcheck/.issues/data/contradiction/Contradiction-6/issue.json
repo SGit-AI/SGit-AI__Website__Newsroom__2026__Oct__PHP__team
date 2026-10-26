@@ -1,0 +1,49 @@
+{
+  "node_id": "c2c36e31",
+  "node_type": "contradiction",
+  "node_index": 6,
+  "label": "Contradiction-6",
+  "title": "K-006: How many sites were taken offline?",
+  "description": "Breadth of collection, and an export lag. The site requires a captured source per row; the tracker accepts aggregator reports and says so per row. Part of the gap is not collection at all: the vault already holds captures of more offline operators than the site shows, because the site's export stopped at 144 sources.",
+  "status": "explained",
+  "created_at": 1792694602795,
+  "updated_at": 1792828703126,
+  "created_by": "e9ebd531",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694603011
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "96383453",
+      "target_label": "Evidence-4",
+      "created_at": 1792694672685
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "ee9d1227",
+      "target_label": "Evidence-11",
+      "created_at": 1792702578733
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supported-by",
+      "target_id": "de36bda3",
+      "target_label": "Evidence-18",
+      "created_at": 1792828703126
+    }
+  ],
+  "properties": {
+    "claims": [
+      "affected-sites"
+    ],
+    "severity": "medium"
+  }
+}

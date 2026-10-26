@@ -1,0 +1,41 @@
+{
+  "node_id": "e183c5e7",
+  "node_type": "finding",
+  "node_index": 122,
+  "label": "Finding-122",
+  "title": "Front page 'Has anyone been hacked?' gives Amazon's honeypot hit but not Amazon's 'broadly exploited in the wild'",
+  "description": "data/plain.json cards and facts say Amazon reports 'a decoy server was hit four days before the announcement'. Amazon's own post, in the vault (aws-security-blog-madpot), also says 'PHP2Shell is now being broadly exploited in the wild.' The front page is the most-read page and understates the strongest exploitation statement by a named party; it should carry Amazon's words and say what they rest on (its sensors) beside 'no confirmed break-in'. The coverage review flagged this; it is not yet done.",
+  "status": "open",
+  "created_at": 1792694667760,
+  "updated_at": 1792694668266,
+  "created_by": "7e98b237",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694667999
+    },
+    {
+      "link_type_id": "b45c53be",
+      "verb": "relates-to",
+      "target_id": "8a786366",
+      "target_label": "Contradiction-2",
+      "created_at": 1792694668266
+    }
+  ],
+  "properties": {
+    "claims": [
+      "amazon-honeypot"
+    ],
+    "sources": [
+      "aws-security-blog-madpot"
+    ],
+    "pages": [
+      "index.html"
+    ],
+    "severity": "medium"
+  }
+}

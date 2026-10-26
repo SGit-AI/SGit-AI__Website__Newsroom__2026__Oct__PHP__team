@@ -1,0 +1,32 @@
+{
+  "node_id": "94db3d5d",
+  "node_type": "finding",
+  "node_index": 48,
+  "label": "Finding-48",
+  "title": "rce-fpm: Status 'disputed' understates a claim the PHP advisory record carries; the dispute is about which CVE, not whether",
+  "description": "GHSA-6wmf and openwall 2026/10/21/7 (PHP security team, CVE-2026-109619) both say unauthenticated RCE was demonstrated against PHP-FPM. Only the attribution to CVE-2026-109618 is in doubt. Suggest rewording to 'RCE is confirmed on PHP-FPM for CVE-2026-109619 (session upload progress path, needs a suitable application operation); for CVE-2026-109618 the advisory says no complete FPM exploit' and setting the status accordingly. Also cite openwall-oss-security-2026-10-21-7, which is in the manifest but not on this claim; the cited openwall 21/6 is the 109618 post and does not carry the claim.",
+  "status": "open",
+  "created_at": 1792694630954,
+  "updated_at": 1792694631168,
+  "created_by": "dd71f1c0",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694631168
+    }
+  ],
+  "properties": {
+    "claims": [
+      "rce-fpm"
+    ],
+    "pages": [
+      "facts/rce-fpm/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

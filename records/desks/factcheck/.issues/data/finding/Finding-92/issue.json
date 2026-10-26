@@ -1,0 +1,31 @@
+{
+  "node_id": "403af686",
+  "node_type": "finding",
+  "node_index": 92,
+  "label": "Finding-92",
+  "title": "preannounce-time: 1 smaller precision and sourcing point",
+  "description": "The feed's 20:32Z is not a competing publication time: Alan Coopersmith's oss-security message quoting the php.net archive URL is dated 20:22:51Z, ten minutes before the feed's <published>2026-10-20T20:32:00+00:00>, so the feed timestamp is an authoring or rebuild time. The dispute is between 19:30 and 'around 20:00', both earlier than 20:22:51Z.",
+  "status": "open",
+  "created_at": 1792694653055,
+  "updated_at": 1792694653263,
+  "created_by": "9bfa60c8",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694653263
+    }
+  ],
+  "properties": {
+    "claims": [
+      "preannounce-time"
+    ],
+    "pages": [
+      "facts/preannounce-time/index.html"
+    ],
+    "severity": "low"
+  }
+}

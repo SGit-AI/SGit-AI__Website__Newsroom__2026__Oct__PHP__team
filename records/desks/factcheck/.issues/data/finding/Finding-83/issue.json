@@ -1,0 +1,31 @@
+{
+  "node_id": "2d838b44",
+  "node_type": "finding",
+  "node_index": 83,
+  "label": "Finding-83",
+  "title": "most-severe: 1 smaller precision and sourcing point",
+  "description": "OpenAI's wording differs between X post and press: The note's OpenAI quote matches the X post ('vulnerabilities'); the BBC and The Hacker News quote 'one of the most impactful security issues in recent memory', presumably from the blocked blog.",
+  "status": "open",
+  "created_at": 1792694648625,
+  "updated_at": 1792694648885,
+  "created_by": "07434da9",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694648885
+    }
+  ],
+  "properties": {
+    "claims": [
+      "most-severe"
+    ],
+    "pages": [
+      "facts/most-severe/index.html"
+    ],
+    "severity": "low"
+  }
+}

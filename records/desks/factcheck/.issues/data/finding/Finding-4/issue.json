@@ -1,0 +1,32 @@
+{
+  "node_id": "20a8cd9a",
+  "node_type": "finding",
+  "node_index": 4,
+  "label": "Finding-4",
+  "title": "wiz-independent: 'independently' not carried by any primary capture",
+  "description": "Wiz's blog says 'Prior to public disclosure, Wiz Research worked with the PHP team, Calif and OpenAI on discovery, coordination and patch verification'. The Foundation lists Wiz's 24 August report as 'further attack vectors'. Only OpenAI's blocked blog (search snippet) and Wikipedia say 'independently'. Attribute the word, or drop it.",
+  "status": "open",
+  "created_at": 1792694607705,
+  "updated_at": 1792694607969,
+  "created_by": "fd336679",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694607969
+    }
+  ],
+  "properties": {
+    "claims": [
+      "wiz-independent"
+    ],
+    "pages": [
+      "facts/wiz-independent/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

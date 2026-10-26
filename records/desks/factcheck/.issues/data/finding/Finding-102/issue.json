@@ -1,0 +1,40 @@
+{
+  "node_id": "f34c0416",
+  "node_type": "finding",
+  "node_index": 102,
+  "label": "Finding-102",
+  "title": "scale-70pc-internet: 1 smaller precision and sourcing point",
+  "description": "The BBC's quoted Wiz words 'roughly 70%' are not in either Wiz capture: The BBC puts \"roughly 70%\" in quotation marks as Wiz's estimate. Wiz's blog says 'affecting 70% of the Internet' (headline) and 'powers 70% of all websites in the world' (body); the X post says 'impacting 70% of the Internet'. The word 'roughly' is the BBC's. The claim text adopts 'Roughly' and attributes it to Wiz; it should either drop 'Roughly' or attribute the hedge to the BBC.",
+  "status": "fixed",
+  "created_at": 1792694657989,
+  "updated_at": 1792805570610,
+  "created_by": "6bf01804",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694658204
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-70pc-internet"
+    ],
+    "pages": [
+      "facts/scale-70pc-internet/index.html"
+    ],
+    "severity": "low",
+    "comments": [
+      {
+        "id": "a53591f1",
+        "author": "cli-user",
+        "text": "Run-3: Fixed in v0.13.0: the claim drops 'Roughly' and attributes the BBC's 'roughly 70_' to the BBC.",
+        "created_at": 1792805570610,
+        "updated_at": 1792805570610
+      }
+    ]
+  }
+}

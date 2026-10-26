@@ -1,0 +1,32 @@
+{
+  "node_id": "f6e879af",
+  "node_type": "finding",
+  "node_index": 14,
+  "label": "Finding-14",
+  "title": "amazon-honeypot: The note narrows Amazon's sentence to honeypots; Amazon's text does not",
+  "description": "Note: 'Attempts against honeypots, not compromises of victims'; history.json: \"Amazon saying it is 'broadly exploited' against honeypots\"; claims.json no-confirmed-compromise: \"'broadly exploited' against sensors\". Amazon writes 'we saw them used against our sensors almost immediately. PHP2Shell is now being broadly exploited in the wild.' and also 'With PHP2Shell, compromise may predate the advisory.' The honeypot limit is this site's reading. Say instead: Amazon gives no counts and names no victim; its evidence shown is honeypot telemetry.",
+  "status": "open",
+  "created_at": 1792694612820,
+  "updated_at": 1792694613053,
+  "created_by": "2c793cbe",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694613053
+    }
+  ],
+  "properties": {
+    "claims": [
+      "amazon-honeypot"
+    ],
+    "pages": [
+      "facts/amazon-honeypot/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "node_id": "678c3e66",
+  "node_type": "contradiction",
+  "node_index": 8,
+  "label": "Contradiction-8",
+  "title": "K-008: Which flaw was shown to give code execution on PHP-FPM?",
+  "description": "The advisories, written by the PHP security team per CVE, put the demonstrated FPM exploit under CVE-2026-109619, and say none was demonstrated for CVE-2026-109618. The Foundation's blog places FPM confirmation under CVE-2026-109618. The blog appears to have swapped the attribution. That RCE was shown on FPM is not in doubt; which flaw does it is.",
+  "status": "open",
+  "created_at": 1792694604329,
+  "updated_at": 1792694604595,
+  "created_by": "3301ffff",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694604595
+    }
+  ],
+  "properties": {
+    "claims": [
+      "rce-fpm",
+      "rce-modphp"
+    ],
+    "sources": [
+      "github-ghsa-6wmf-4rv5-p3rp",
+      "github-ghsa-w8hw-w9fx-j79w",
+      "php-foundation-blog-security-release"
+    ],
+    "severity": "medium"
+  }
+}

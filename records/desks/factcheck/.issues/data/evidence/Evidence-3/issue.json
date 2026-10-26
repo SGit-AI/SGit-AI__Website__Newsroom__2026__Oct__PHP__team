@@ -1,0 +1,49 @@
+{
+  "node_id": "9a8908e6",
+  "node_type": "evidence",
+  "node_index": 3,
+  "label": "Evidence-3",
+  "title": "The Next Web: 'Officials in Germany, the Netherlands and Japan say they have not seen one succeed'; Mizuho and Shizuoka Bank halted services",
+  "description": "Fetched by the desk; not in the vault. Bears on no-confirmed-compromise (a dated negative from three governments) and on impact (Japanese banks, via Bloomberg). Capture it, then chase the officials' own statements.",
+  "status": "captured",
+  "created_at": 1792694671594,
+  "updated_at": 1792857508481,
+  "created_by": "176c34fb",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694671837
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "8a786366",
+      "target_label": "Contradiction-2",
+      "created_at": 1792694672045
+    }
+  ],
+  "properties": {
+    "url": "https://thenextweb.com/news/php2shell-millions-exploit-attempts-no-confirmed-breaches",
+    "retrieved_at": "2026-10-22T18:30Z",
+    "sha256": "c51dfb0561b1bdb2cd0a5691a16ffc394908928d2deab03e90047ca1b6311bdb",
+    "excerpt": "Officials in Germany, the Netherlands and Japan say they have not seen one succeed.",
+    "claims": [
+      "no-confirmed-compromise",
+      "affected-sites"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "8c3c02f2",
+        "author": "cli-user",
+        "text": "Run-5: captured into the vault as the-next-web-php2shell-no-confirmed-breaches; the officials' sentence re-found verbatim.",
+        "created_at": 1792857508481,
+        "updated_at": 1792857508481
+      }
+    ]
+  }
+}

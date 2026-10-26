@@ -1,0 +1,40 @@
+{
+  "node_id": "de4f3742",
+  "node_type": "evidence",
+  "node_index": 10,
+  "label": "Evidence-10",
+  "title": "Primary feeds at 20:53 UTC: KEV unchanged (neither CVE), no PHP release after 21 October, NVD now 'Analyzed', CVE-2026-109619 updated 20:08 UTC with five oss-security references",
+  "description": "KEV is byte-identical to run 1 (catalog 2026.10.21). php.net releases unchanged. NVD moved CVE-2026-109618 from Modified to Analyzed at 20:45 UTC (scores unchanged). The CVE-2026-109619 record's ADP container added oss-security 22/14, 15, 16, 19 and 20 as references. The NCSC-NL repository head is unchanged at 94b4b16db9e5.",
+  "status": "proposed",
+  "created_at": 1792702577697,
+  "updated_at": 1792702578093,
+  "created_by": "abe4b389",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "00b6d9a2",
+      "target_label": "Run-2",
+      "created_at": 1792702577900
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "8a786366",
+      "target_label": "Contradiction-2",
+      "created_at": 1792702578093
+    }
+  ],
+  "properties": {
+    "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "retrieved_at": "2026-10-22T20:53Z",
+    "sha256": "ef8fffede5c472001da046c7751beb2a3242458896d0ce08da52b30968b8b56b",
+    "claims": [
+      "cisa-none",
+      "no-confirmed-compromise",
+      "two-cves-9.2"
+    ],
+    "severity": "low"
+  }
+}

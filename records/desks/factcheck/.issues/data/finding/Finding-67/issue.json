@@ -1,0 +1,31 @@
+{
+  "node_id": "48dcd6ae",
+  "node_type": "finding",
+  "node_index": 67,
+  "label": "Finding-67",
+  "title": "edinburgh: 2 smaller precision and sourcing points",
+  "description": "\"Late on 21 October\" is looser than the source: The Scotsman says the site went down \"late on Wednesday afternoon\"; the Edinburgh Evening News version was published 17:24 BST with the site already down, so the outage began before about 16:24Z. \"Late on 21 October\" suggests the evening. | Site was back by 08:19Z on 22 Oct: The council's own homepage returned HTTP 200 with normal content at 08:19:03Z (edinburgh-council-site) and 08:19:40Z (uk-edinburgh-council). impact.json says \"Website offline\" with no end; the down period itself has no operator capture.",
+  "status": "open",
+  "created_at": 1792694641055,
+  "updated_at": 1792694641261,
+  "created_by": "1175c12e",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694641261
+    }
+  ],
+  "properties": {
+    "claims": [
+      "edinburgh"
+    ],
+    "pages": [
+      "facts/edinburgh/index.html"
+    ],
+    "severity": "low"
+  }
+}

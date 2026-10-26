@@ -1,0 +1,31 @@
+{
+  "node_id": "cc65d63e",
+  "node_type": "finding",
+  "node_index": 72,
+  "label": "Finding-72",
+  "title": "fix-incomplete: 1 smaller precision and sourcing point",
+  "description": "Note's quote drops the inner quotation marks and spans a line break: The capture (21/23) reads: was told that it's \"unrelated and not a real issue\". The site writes 'was told that it's unrelated and not a real issue', merging Rainbolt's words with the words he attributes to PHP. Restore the inner quotes so the reader sees which words are PHP's (as relayed).",
+  "status": "open",
+  "created_at": 1792694643373,
+  "updated_at": 1792694643595,
+  "created_by": "3edb51c6",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694643595
+    }
+  ],
+  "properties": {
+    "claims": [
+      "fix-incomplete"
+    ],
+    "pages": [
+      "facts/fix-incomplete/index.html"
+    ],
+    "severity": "low"
+  }
+}

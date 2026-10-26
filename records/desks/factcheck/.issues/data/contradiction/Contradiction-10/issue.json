@@ -1,0 +1,35 @@
+{
+  "node_id": "8b06199c",
+  "node_type": "contradiction",
+  "node_index": 10,
+  "label": "Contradiction-10",
+  "title": "K-010: When was the release planned, and when did it ship?",
+  "description": "The original embargo time has two values, 14:00 UTC (the Foundation, echoed by The Hacker News) and 11:00 ET, which is 15:00 UTC (watchTowr, echoed by CybelAngel and others). The release itself is stamped 13:34 UTC on the GitHub advisories, ahead of the announced 14:00. The ChangeLog still carries the original date. The site should say 'about 14:00 UTC, advisories at 13:34' and give both original times.",
+  "status": "open",
+  "created_at": 1792694605490,
+  "updated_at": 1792694605767,
+  "created_by": "2e5fb058",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694605767
+    }
+  ],
+  "properties": {
+    "claims": [
+      "release-moved",
+      "release-time"
+    ],
+    "sources": [
+      "cybelangel-php2shell",
+      "php-foundation-blog-security-release",
+      "php-net-changelog-8",
+      "thehackernews-php2shell-4days"
+    ],
+    "severity": "medium"
+  }
+}

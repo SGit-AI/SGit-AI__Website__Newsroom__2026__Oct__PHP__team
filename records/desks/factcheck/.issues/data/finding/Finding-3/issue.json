@@ -1,0 +1,32 @@
+{
+  "node_id": "aa23416f",
+  "node_type": "finding",
+  "node_index": 3,
+  "label": "Finding-3",
+  "title": "openai-same-day: Note quotes OpenAI's blocked post",
+  "description": "The note says OpenAI's own post credits Calif's discovery 'using GPT-5.6 Sol'. OpenAI's blog capture is blocked (text.txt is 0 bytes) and the captured X post contains no such phrase. The wording exists only as a search snippet in the collector's notes. Drop the quote marks or say it is from a search summary.",
+  "status": "open",
+  "created_at": 1792694607139,
+  "updated_at": 1792694607392,
+  "created_by": "763b32b1",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694607392
+    }
+  ],
+  "properties": {
+    "claims": [
+      "openai-same-day"
+    ],
+    "pages": [
+      "facts/openai-same-day/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

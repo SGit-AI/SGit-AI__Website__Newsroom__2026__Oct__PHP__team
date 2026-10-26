@@ -1,0 +1,32 @@
+{
+  "node_id": "ad0fa3c7",
+  "node_type": "finding",
+  "node_index": 5,
+  "label": "Finding-5",
+  "title": "quarkslab-2024: Who found the OOM issue in 2024: the two sources differ",
+  "description": "The claim says the issue 'was found in a 2024 audit by Quarkslab'. The Foundation, the primary party, says a PHP core developer found the first signs 'while fixing one of the issues Quarkslab reported'. timeline.json (at 2024) states the Foundation's version correctly; this claim does not. Quarkslab's published summary lists no OOM finding.",
+  "status": "open",
+  "created_at": 1792694608265,
+  "updated_at": 1792694608532,
+  "created_by": "23fd7549",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694608532
+    }
+  ],
+  "properties": {
+    "claims": [
+      "quarkslab-2024"
+    ],
+    "pages": [
+      "facts/quarkslab-2024/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

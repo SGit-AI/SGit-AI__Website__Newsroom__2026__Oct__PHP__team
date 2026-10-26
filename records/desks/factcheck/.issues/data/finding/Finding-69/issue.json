@@ -1,0 +1,31 @@
+{
+  "node_id": "8d6ef7ee",
+  "node_type": "finding",
+  "node_index": 69,
+  "label": "Finding-69",
+  "title": "fix-authored: 2 smaller precision and sourcing points",
+  "description": "Other sources name different fix commits: Daubois's blog gives 'final commit 01a40e89fbfc authored 2026-10-18'; the collector notes record that rjmendez's repository names 82f8f31b16a. The authored day agrees (18 October), but the hashes are not reconciled with 3584a98bd (possibly the PR head or a per-branch cherry-pick). | raw/commit-3584a98bd.NEWS.diff is an empty file: Its SHA256SUMS entry is e3b0c442...b855, the hash of zero bytes. The NEWS entry (a34a205c2) appears only in the merge-path listing. The cited github-php-src-tag-php-8.5.12 capture carries none of the fix's times.",
+  "status": "open",
+  "created_at": 1792694641941,
+  "updated_at": 1792694642153,
+  "created_by": "f8ca6c7c",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694642153
+    }
+  ],
+  "properties": {
+    "claims": [
+      "fix-authored"
+    ],
+    "pages": [
+      "facts/fix-authored/index.html"
+    ],
+    "severity": "low"
+  }
+}

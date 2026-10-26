@@ -1,0 +1,31 @@
+{
+  "node_id": "a496d402",
+  "node_type": "finding",
+  "node_index": 85,
+  "label": "Finding-85",
+  "title": "no-confirmed-compromise: 2 smaller precision and sourcing points",
+  "description": "CISA KEV snapshot predates the patch release: The KEV file was fetched 08:16Z on 22 Oct but its catalogVersion 2026.10.21 was released 14:04:39Z on 21 Oct, minutes after the 14:00Z PHP release, so the absence of CVE-2026-109618/109619 says little. KEV also records exploitation, not a named victim. There is no text capture: the evidence is raw/known_exploited_vulnerabilities.20261022T0816Z.json (sha ef8fffed...). | Timeline says CERT.LV saw attempts \"none successful\": timeline.json (20:00Z event) says \"automated attempts seen, none successful\"; CERT.LV says only that there are no reports of successful attacks so far (\"l_dz _im nav zi_u par sekm_giem uzbrukumiem\"). Same nuance as this claim: absence of reports, not a finding of none.",
+  "status": "open",
+  "created_at": 1792694649695,
+  "updated_at": 1792694649923,
+  "created_by": "b317c9da",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694649923
+    }
+  ],
+  "properties": {
+    "claims": [
+      "no-confirmed-compromise"
+    ],
+    "pages": [
+      "facts/no-confirmed-compromise/index.html"
+    ],
+    "severity": "low"
+  }
+}

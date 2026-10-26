@@ -1,0 +1,37 @@
+{
+  "node_id": "fd8a8147",
+  "node_type": "run",
+  "node_index": 4,
+  "label": "Run-4",
+  "title": "Run 4: the scheduled wake at 08:52 London on 24 October",
+  "description": "Site v0.14.10, vault head b995a28fe67a (site export at 1845598d9a38).",
+  "status": "done",
+  "created_at": 1792828701336,
+  "updated_at": 1792828702747,
+  "created_by": "355cba6e",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "6fe5f9c6",
+      "target_label": "Evidence-16",
+      "created_at": 1792828701757
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "66626d5e",
+      "target_label": "Evidence-17",
+      "created_at": 1792828702346
+    },
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "de36bda3",
+      "target_label": "Evidence-18",
+      "created_at": 1792828702747
+    }
+  ],
+  "properties": {}
+}

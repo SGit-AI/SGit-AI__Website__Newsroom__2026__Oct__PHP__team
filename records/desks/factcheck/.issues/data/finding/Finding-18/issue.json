@@ -1,0 +1,32 @@
+{
+  "node_id": "b9c18902",
+  "node_type": "finding",
+  "node_index": 18,
+  "label": "Finding-18",
+  "title": "watchtowr-itw: Status 'unverified' understates the attempts half; the vault has four outlets quoting watchTowr",
+  "description": "securityweek-first-attempts-sensors, securityweek-exploitation-days-before, darkreading-php2shell-red-alert and tenable-php2shell-faq (in data/sources.json) and therecord-php-warnings (vault only) quote Jake Knott: watchTowr sees in-the-wild exploitation attempts. Cite them and mark that half reported or corroborated.",
+  "status": "open",
+  "created_at": 1792694614868,
+  "updated_at": 1792694615113,
+  "created_by": "6280b411",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694615113
+    }
+  ],
+  "properties": {
+    "claims": [
+      "watchtowr-itw"
+    ],
+    "pages": [
+      "facts/watchtowr-itw/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "node_id": "2376a50e",
+  "node_type": "evidence",
+  "node_index": 14,
+  "label": "Evidence-14",
+  "title": "Wikipedia's PHP2Shell article added 'nearly 70_ of the commercial world wide web' (23 October 13:41 UTC)",
+  "description": "Revision 1381581724 by Masem adds the sentence to the lead; the revision before it lacks it; still present at 01:37 UTC on 24 October. A new wording family: 'the commercial world wide web', with no measurement given.",
+  "status": "proposed",
+  "created_at": 1792807353758,
+  "updated_at": 1792807354163,
+  "created_by": "e07fb104",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "6800daee",
+      "target_label": "Run-3",
+      "created_at": 1792807353949
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "259aa23a",
+      "target_label": "Contradiction-1",
+      "created_at": 1792807354163
+    }
+  ],
+  "properties": {
+    "url": "https://en.wikipedia.org/wiki/PHP2Shell",
+    "retrieved_at": "2026-10-24T01:40Z",
+    "sha256": "786b2c1c89bcf866e33806e51edee170dd5592f4ea6a60e8133d28624628b0fa",
+    "excerpt": "estimated to affect nearly 70% of the commercial world wide web",
+    "claims": [
+      "scale-70pc-internet"
+    ],
+    "severity": "low"
+  }
+}

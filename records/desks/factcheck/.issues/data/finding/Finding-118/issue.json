@@ -1,0 +1,29 @@
+{
+  "node_id": "c7eab2ca",
+  "node_type": "finding",
+  "node_index": 118,
+  "label": "Finding-118",
+  "title": "data_vault.json lists five writing agents; the vault has a sixth, collector-news",
+  "description": "collector-news wrote most of the 40 unexported sources (their source.json says added_by collector-news). The site's agent list and team page do not know it exists.",
+  "status": "open",
+  "created_at": 1792694665558,
+  "updated_at": 1792694665777,
+  "created_by": "4887ab2a",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694665777
+    }
+  ],
+  "properties": {
+    "pages": [
+      "team/index.html",
+      "admin/vault/index.html"
+    ],
+    "severity": "low"
+  }
+}

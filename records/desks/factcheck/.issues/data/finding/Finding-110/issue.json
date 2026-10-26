@@ -1,0 +1,31 @@
+{
+  "node_id": "43ce5c86",
+  "node_type": "finding",
+  "node_index": 110,
+  "label": "Finding-110",
+  "title": "waf-nine-hours: 2 smaller precision and sourcing points",
+  "description": "Cloudflare's 'about 9 hours ahead' does not match its own 03:02 UTC: From 03:02 UTC to the first public artifacts (13:34Z) or the scheduled 14:00 UTC is about 10.5 to 11 hours. The claim id says nine hours; the claim text does not. | Vendors differ on pre-disclosure attack traffic: Cloudflare says it 'observed attack traffic targeting our customers' before the release; Imperva says that during pre-disclosure monitoring it 'observed no traffic matching the monitored PHP2Shell exploit patterns'. Different networks and patterns, so this is probably measures-differently, but the site should not cite either as general.",
+  "status": "open",
+  "created_at": 1792694661831,
+  "updated_at": 1792694662043,
+  "created_by": "42790956",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694662043
+    }
+  ],
+  "properties": {
+    "claims": [
+      "waf-nine-hours"
+    ],
+    "pages": [
+      "facts/waf-nine-hours/index.html"
+    ],
+    "severity": "low"
+  }
+}

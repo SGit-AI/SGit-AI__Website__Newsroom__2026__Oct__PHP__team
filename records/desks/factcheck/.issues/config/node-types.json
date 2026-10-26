@@ -1,0 +1,79 @@
+{
+  "types": [
+    {
+      "type_id": "8bf18252",
+      "name": "finding",
+      "display_name": "Finding",
+      "description": "Something on the site needs changing: an overstated status, a quote not in its capture, two pages that disagree",
+      "icon": "",
+      "color": "#d1495b",
+      "statuses": [
+        "open",
+        "acknowledged",
+        "fixed",
+        "wont-fix",
+        "superseded"
+      ],
+      "default_status": "open",
+      "properties": []
+    },
+    {
+      "type_id": "456cf73c",
+      "name": "contradiction",
+      "display_name": "Contradiction",
+      "description": "Two or more sources disagree about the same measure",
+      "icon": "",
+      "color": "#8f2d56",
+      "statuses": [
+        "open",
+        "explained",
+        "resolved"
+      ],
+      "default_status": "open",
+      "properties": []
+    },
+    {
+      "type_id": "484e1ba7",
+      "name": "gap",
+      "display_name": "Gap",
+      "description": "A statement no capture carries, and no better source found yet",
+      "icon": "",
+      "color": "#edae49",
+      "statuses": [
+        "open",
+        "captured",
+        "closed-no-evidence"
+      ],
+      "default_status": "open",
+      "properties": []
+    },
+    {
+      "type_id": "83ddc59d",
+      "name": "evidence",
+      "display_name": "Evidence",
+      "description": "Found outside the vault; a request to capture it, not citable until captured",
+      "icon": "",
+      "color": "#00798c",
+      "statuses": [
+        "proposed",
+        "captured",
+        "rejected"
+      ],
+      "default_status": "proposed",
+      "properties": []
+    },
+    {
+      "type_id": "acba2551",
+      "name": "run",
+      "display_name": "Run",
+      "description": "One fact-check run",
+      "icon": "",
+      "color": "#30638e",
+      "statuses": [
+        "done"
+      ],
+      "default_status": "done",
+      "properties": []
+    }
+  ]
+}

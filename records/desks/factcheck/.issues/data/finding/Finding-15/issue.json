@@ -1,0 +1,32 @@
+{
+  "node_id": "e10e3c30",
+  "node_type": "finding",
+  "node_index": 15,
+  "label": "Finding-15",
+  "title": "probing: exploitation.json's Woodward row says Amazon's own post was not found",
+  "description": "exploitation.json row (2026-10-22, Alan Woodward) has status 'reported; Cloudflare's own post confirms attack traffic, Amazon's own post not found' and cites thehackernews-php2shell-4days, while this claim (confirmed) cites aws-security-blog-madpot as Amazon's own confirmation.",
+  "status": "open",
+  "created_at": 1792694613352,
+  "updated_at": 1792694613563,
+  "created_by": "1f7ddf0d",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694613563
+    }
+  ],
+  "properties": {
+    "claims": [
+      "probing"
+    ],
+    "pages": [
+      "facts/probing/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

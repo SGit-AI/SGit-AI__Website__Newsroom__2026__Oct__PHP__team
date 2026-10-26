@@ -1,0 +1,31 @@
+{
+  "node_id": "3ff8826f",
+  "node_type": "finding",
+  "node_index": 81,
+  "label": "Finding-81",
+  "title": "leak-watchtowr: 1 smaller precision and sourcing point",
+  "description": "watchTowr's post is not captured: CERT-EU gives the URL (x.com/watchtowrcyber/status/2112611507749982605, decoded 2026-10-20T18:26:48Z) but the vault has no capture; watchtowr-php2shell and watchtowr-php2shell-faq are 403. CybelAngel and Huntress carry it and are not cited.",
+  "status": "open",
+  "created_at": 1792694647660,
+  "updated_at": 1792694647919,
+  "created_by": "4428d118",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694647919
+    }
+  ],
+  "properties": {
+    "claims": [
+      "leak-watchtowr"
+    ],
+    "pages": [
+      "facts/leak-watchtowr/index.html"
+    ],
+    "severity": "low"
+  }
+}

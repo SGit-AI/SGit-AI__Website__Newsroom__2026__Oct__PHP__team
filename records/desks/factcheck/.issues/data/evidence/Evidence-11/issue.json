@@ -1,0 +1,47 @@
+{
+  "node_id": "ee9d1227",
+  "node_type": "evidence",
+  "node_index": 11,
+  "label": "Evidence-11",
+  "title": "PHPocalypse Tracker, 20:53 UTC: the Dutch data protection authority back at 19:25 UTC; one site still dark (French prefecture websites)",
+  "description": "Was 2 still dark at 18:27 UTC. Of 50 rows, 49 now have a back-up time.",
+  "status": "rejected",
+  "created_at": 1792702578322,
+  "updated_at": 1792828703559,
+  "created_by": "02a7f5f1",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "00b6d9a2",
+      "target_label": "Run-2",
+      "created_at": 1792702578531
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "c2c36e31",
+      "target_label": "Contradiction-6",
+      "created_at": 1792702578733
+    }
+  ],
+  "properties": {
+    "url": "https://allixsenos.github.io/phpocalypse-tracker/sites.csv",
+    "retrieved_at": "2026-10-22T20:53Z",
+    "sha256": "1534d904219babed6a62bab19cbd061d9cc156b24b96f621b606af4e6587495b",
+    "claims": [
+      "affected-sites"
+    ],
+    "severity": "low",
+    "comments": [
+      {
+        "id": "d441ea4a",
+        "author": "cli-user",
+        "text": "Run-4: superseded: the tracker now has 51 rows and none dark (Evidence-18); the 22 October capture holds the 2-dark state.",
+        "created_at": 1792828703559,
+        "updated_at": 1792828703559
+      }
+    ]
+  }
+}

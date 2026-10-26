@@ -1,0 +1,31 @@
+{
+  "node_id": "e83d4c21",
+  "node_type": "finding",
+  "node_index": 91,
+  "label": "Finding-91",
+  "title": "pocs-wrong: 2 smaller precision and sourcing points",
+  "description": "Note overstates The Hacker News: THN says 'the public exploit code going around has not been shown to work', not that it has the wrong mechanism. | Fastly implies existing PoCs can yield code execution: Fastly: 'the existing PoCs require knowledge of the specific, running PHP binary and address space layout on the server for an attack to yield code execution on x86_64'. This reads as PoCs that work given layout knowledge, in tension with 'none has the correct mechanism' unless the populations differ (researcher PoCs vs leaked public ones). The note should say which.",
+  "status": "open",
+  "created_at": 1792694652629,
+  "updated_at": 1792694652830,
+  "created_by": "65333374",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694652830
+    }
+  ],
+  "properties": {
+    "claims": [
+      "pocs-wrong"
+    ],
+    "pages": [
+      "facts/pocs-wrong/index.html"
+    ],
+    "severity": "low"
+  }
+}

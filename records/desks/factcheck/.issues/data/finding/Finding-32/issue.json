@@ -1,0 +1,48 @@
+{
+  "node_id": "ffe37d81",
+  "node_type": "finding",
+  "node_index": 32,
+  "label": "Finding-32",
+  "title": "scale-70pc-websites: Cloudflare does cite its survey: the 70_ links to W3Techs",
+  "description": "The claim note says 'None of the three cites the survey it comes from', numbers.json n-70-websites says 'Neither page names the survey', and a sections.json page says 'None of the pages that use it says how' it was measured. Cloudflare's rendered.html (capture 20261022T081216Z) hyperlinks '70% of websites' to https://w3techs.com/technologies/details/pl-php. The text.txt drops the link, which is likely why it was missed. OpenAI and Wiz do not cite a source.",
+  "status": "open",
+  "created_at": 1792694622598,
+  "updated_at": 1792807354987,
+  "created_by": "28c479ae",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694622844
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-70pc-websites"
+    ],
+    "pages": [
+      "facts/scale-70pc-websites/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "fef1a274",
+        "author": "cli-user",
+        "text": "Run-3: still open. The wrong line survives in three places: the claim note ('None of the three cites the survey'), numbers.json n-70-websites ('Neither page names the survey') and the front page's open question ('None of the pages that use it says how it was measured'). Cloudflare's page links the figure to w3techs.com.",
+        "created_at": 1792805574279,
+        "updated_at": 1792805574279
+      },
+      {
+        "id": "8f821d9b",
+        "author": "cli-user",
+        "text": "Run-3: the investigation php-share answers where the figure comes from (W3Techs; Evidence-15), but the measurement still needs capturing before the site can cite it.",
+        "created_at": 1792807354987,
+        "updated_at": 1792807354987
+      }
+    ]
+  }
+}

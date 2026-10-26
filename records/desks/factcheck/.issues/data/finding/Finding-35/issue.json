@@ -1,0 +1,32 @@
+{
+  "node_id": "2b55fa2e",
+  "node_type": "finding",
+  "node_index": 35,
+  "label": "Finding-35",
+  "title": "scale-ncsc-nl: Confirmed: the inventory had 675 rows at cca173c64ec5, not 674; 4 not vulnerable, not 3",
+  "description": "Counting table rows in raw/tree-cca173c64ec5/software/software_list_*.md gives 675 (Fix 46, Investigation 418, Vulnerable 206, Not vuln 4, blank 1). A fresh clone of raw/php2shell-cca173c64ec5.bundle (HEAD cca173c64ec5db92, 2026-10-22T10:40:58+02:00) gives the same 675 and its tree is identical to the vault's tree; the SPDX file software/spdx/PHP_Downstream_Inventory.spdx3.json has 675 software_Package elements and 4 NotAffected VEX relationships. The missing row is iBabs / iBabs bestuursportaal (Not vuln), in software_list_i.md, whose Links cell is empty, which is probably why the export parser skipped it. data/software.json (count 674, Not vuln 3) and raw/software-list-cca173c64ec5.json carry the error. This confirms BRIEF-CORRECTIONS.md v0.4.2.",
+  "status": "open",
+  "created_at": 1792694624172,
+  "updated_at": 1792694624425,
+  "created_by": "c352ce23",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694624425
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-ncsc-nl"
+    ],
+    "pages": [
+      "facts/scale-ncsc-nl/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

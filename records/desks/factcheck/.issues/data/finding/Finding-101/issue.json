@@ -1,0 +1,31 @@
+{
+  "node_id": "4012adbc",
+  "node_type": "finding",
+  "node_index": 101,
+  "label": "Finding-101",
+  "title": "scale-30m: 1 smaller precision and sourcing point",
+  "description": "Only one outlet, no basis, no original audio: No other vault capture repeats the 30 million figure. The BBC summary paraphrases it as 'around 30 million websites ... one expert tells the BBC'. Woodward's own words are from a Radio 4 interview that is not captured.",
+  "status": "open",
+  "created_at": 1792694657515,
+  "updated_at": 1792694657747,
+  "created_by": "84de02c4",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694657747
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-30m"
+    ],
+    "pages": [
+      "facts/scale-30m/index.html"
+    ],
+    "severity": "low"
+  }
+}

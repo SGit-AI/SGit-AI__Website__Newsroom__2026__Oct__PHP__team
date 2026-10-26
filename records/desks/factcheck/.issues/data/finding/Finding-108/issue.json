@@ -1,0 +1,31 @@
+{
+  "node_id": "ab82f561",
+  "node_type": "finding",
+  "node_index": 108,
+  "label": "Finding-108",
+  "title": "vibe-code: 1 smaller precision and sourcing point",
+  "description": "The unnamed 'researchers' may be watchTowr; capture The Record and cite it: therecord-php-warnings (in the vault, not in data/sources.json) has watchTowr's Knott on AI-vibecoded PoC tools seen in the wild. Citing it would name a party; it still would not show the tool authors are criminals rather than researchers posting PoCs.",
+  "status": "open",
+  "created_at": 1792694660919,
+  "updated_at": 1792694661139,
+  "created_by": "fef80163",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694661139
+    }
+  ],
+  "properties": {
+    "claims": [
+      "vibe-code"
+    ],
+    "pages": [
+      "facts/vibe-code/index.html"
+    ],
+    "severity": "low"
+  }
+}

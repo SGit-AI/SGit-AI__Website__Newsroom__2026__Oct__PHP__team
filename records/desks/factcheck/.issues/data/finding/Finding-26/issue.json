@@ -1,0 +1,41 @@
+{
+  "node_id": "50259473",
+  "node_type": "finding",
+  "node_index": 26,
+  "label": "Finding-26",
+  "title": "no-confirmed-compromise: Claim text lacks its as-of and scope",
+  "description": "The negative holds only \"in every captured source, as of the latest capture\" (newest checked 2026-10-22T11:33Z). The note says so, but the claim and status \"confirmed\" read as a settled fact about the world. The supporting negatives are old: Huntress as of 20:30Z on 21 Oct, Imperva pre-disclosure only, CERT.LV 20:00Z on 21 Oct, against Amazon's \"broadly exploited in the wild\" and Cloudflare's \"millions\" of attempts. Suggest status \"reported\" or wording \"No named organisation, in any captured source as of <stamp>, ...\".",
+  "status": "fixed",
+  "created_at": 1792694619581,
+  "updated_at": 1792805572525,
+  "created_by": "dcc1b517",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694619846
+    }
+  ],
+  "properties": {
+    "claims": [
+      "no-confirmed-compromise"
+    ],
+    "pages": [
+      "facts/no-confirmed-compromise/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "65bd0f91",
+        "author": "cli-user",
+        "text": "Run-3: Fixed in v0.13.0: the claim is dated (16:04 UTC on 23 October) and scoped to the vault.",
+        "created_at": 1792805572525,
+        "updated_at": 1792805572525
+      }
+    ]
+  }
+}

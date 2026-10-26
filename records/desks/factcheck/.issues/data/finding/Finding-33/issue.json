@@ -1,0 +1,41 @@
+{
+  "node_id": "ff6a9bc1",
+  "node_type": "finding",
+  "node_index": 33,
+  "label": "Finding-33",
+  "title": "scale-70pc-websites: The claim drops the survey's population qualifier",
+  "description": "W3Techs' figure, as relayed by Tenable (69.3%) and Imperva (over 69%), is a share of websites whose server-side language is known, not of all websites. 'used by almost 70% of websites' overstates the population. numbers.json n-70-websites 'measures' describes the population correctly; the claim text should match.",
+  "status": "fixed",
+  "created_at": 1792694623084,
+  "updated_at": 1792805571607,
+  "created_by": "4d663ec6",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694623356
+    }
+  ],
+  "properties": {
+    "claims": [
+      "scale-70pc-websites"
+    ],
+    "pages": [
+      "facts/scale-70pc-websites/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium",
+    "comments": [
+      {
+        "id": "bbc3229b",
+        "author": "cli-user",
+        "text": "Run-3: Fixed in v0.13.0: the claim now reads 'websites whose server-side language is known'.",
+        "created_at": 1792805571607,
+        "updated_at": 1792805571607
+      }
+    ]
+  }
+}

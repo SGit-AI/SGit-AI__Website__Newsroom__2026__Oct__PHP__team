@@ -1,0 +1,46 @@
+{
+  "node_id": "6a30a79e",
+  "node_type": "evidence",
+  "node_index": 2,
+  "label": "Evidence-2",
+  "title": "BBC live page, 18:30 UTC: '32 government services were unavailable and four partially unavailable'; 'globally 90_ of systems at risk are yet to do so'",
+  "description": "Fetched by the desk; the vault's three BBC captures end at 08:05 UTC and carry neither line. The minister is not named on the page, and 'House of Lords' (in the coverage review) is not on it. The 90% is attributed only to 'researchers'. Capture the page as it stands.",
+  "status": "proposed",
+  "created_at": 1792694670710,
+  "updated_at": 1792694671343,
+  "created_by": "fcd3c48e",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694670937
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "a816f5c9",
+      "target_label": "Contradiction-4",
+      "created_at": 1792694671156
+    },
+    {
+      "link_type_id": "66312e5e",
+      "verb": "supports",
+      "target_id": "4459ce9d",
+      "target_label": "Contradiction-5",
+      "created_at": 1792694671343
+    }
+  ],
+  "properties": {
+    "url": "https://www.bbc.co.uk/news/live/ckgel5xp2xv9t",
+    "retrieved_at": "2026-10-22T18:30Z",
+    "sha256": "3842343a8de23fc96beb029341d71675595b81441d8e88b183374e3095dcdce4",
+    "excerpt": "a minister said just after midday that 32 government services were unavailable and four partially unavailable because they were being fixed",
+    "claims": [
+      "uk-list"
+    ],
+    "severity": "medium"
+  }
+}

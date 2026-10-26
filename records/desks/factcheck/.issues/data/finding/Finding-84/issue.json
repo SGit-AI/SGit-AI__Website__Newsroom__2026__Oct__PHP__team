@@ -1,0 +1,31 @@
+{
+  "node_id": "a2dbca3b",
+  "node_type": "finding",
+  "node_index": 84,
+  "label": "Finding-84",
+  "title": "nl-offline: 2 smaller precision and sourcing points",
+  "description": "The phrasing mirrors Insurance Business, which does not list Overheid.nl: The claim's structure (\"took its own site offline as a precaution, as did ...\") matches Insurance Business, whose list is DigiD, MijnOverheid, the House of Representatives, Port of Rotterdam, KNVB and hospitals. Overheid.nl comes from Reuters (RTE, factbox; Mashable and Wikipedia cite Reuters), one origin. | Restoration not recorded: ncsc.nl (08:19:19Z) and overheid.nl (08:19:27Z) both returned HTTP 200 with normal content on 22 Oct; BBC says the Dutch cyber agency \"is now running again\". impact.json gives no end time.",
+  "status": "open",
+  "created_at": 1792694649148,
+  "updated_at": 1792694649383,
+  "created_by": "103c66c1",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694649383
+    }
+  ],
+  "properties": {
+    "claims": [
+      "nl-offline"
+    ],
+    "pages": [
+      "facts/nl-offline/index.html"
+    ],
+    "severity": "low"
+  }
+}

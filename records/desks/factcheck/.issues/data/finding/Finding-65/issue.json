@@ -1,0 +1,31 @@
+{
+  "node_id": "7a783af2",
+  "node_type": "finding",
+  "node_index": 65,
+  "label": "Finding-65",
+  "title": "cvss-10: 1 smaller precision and sourcing point",
+  "description": "CVE records are the refuting primary but are not cited on this claim: The refutation rests on the PHP Foundation blog and Daubois; the CVE records cve-cve-2026-109618 and cve-cve-2026-109619 (CVSS 4.0 9.2) are the authoritative refutation and could be cited. The vault's own claim file (claude-story-site.json) records this claim as 'disputed' while the site says 'contradicted'; the site's word is the better fit.",
+  "status": "open",
+  "created_at": 1792694640122,
+  "updated_at": 1792694640346,
+  "created_by": "52a2876f",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694640346
+    }
+  ],
+  "properties": {
+    "claims": [
+      "cvss-10"
+    ],
+    "pages": [
+      "facts/cvss-10/index.html"
+    ],
+    "severity": "low"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "node_id": "ba8c09b4",
+  "node_type": "finding",
+  "node_index": 93,
+  "label": "Finding-93",
+  "title": "probing: 1 smaller precision and sourcing point",
+  "description": "'Both companies have since said so' gets the order wrong: Both posts are dated 21 October; Woodward spoke on Radio 4 at 06:44 UTC on 22 October (post datePublished 06:44:49Z). The companies said it first.",
+  "status": "open",
+  "created_at": 1792694653497,
+  "updated_at": 1792694653734,
+  "created_by": "fde2db99",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694653734
+    }
+  ],
+  "properties": {
+    "claims": [
+      "probing"
+    ],
+    "pages": [
+      "facts/probing/index.html"
+    ],
+    "severity": "low"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "node_id": "0fd9eeff",
+  "node_type": "finding",
+  "node_index": 68,
+  "label": "Finding-68",
+  "title": "fi-offline: 2 smaller precision and sourcing points",
+  "description": "Two start times in the same sources: Helsinki Times gives 12:45 for restricting traffic but also says Naumanen told STT \"the shutdown process had begun shortly after 1 pm\"; Yle says the same. The timeline row (09:45Z, confidence \"inferred\") should note that 12:45 is the restriction start per Helsinki Times only. | Yle and Helsinki Times are not fully independent: Yle's piece is bylined \"Yle News / STT\" and Helsinki Times also relies on STT for Naumanen; only Helsinki Times carries 12:45. The Valtori site capture (fi-valtori) failed (\"Target page, context or browser has been closed\"), so there is no operator capture.",
+  "status": "open",
+  "created_at": 1792694641487,
+  "updated_at": 1792694641693,
+  "created_by": "5d4582cc",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694641693
+    }
+  ],
+  "properties": {
+    "claims": [
+      "fi-offline"
+    ],
+    "pages": [
+      "facts/fi-offline/index.html"
+    ],
+    "severity": "low"
+  }
+}

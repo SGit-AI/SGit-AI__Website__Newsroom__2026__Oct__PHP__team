@@ -1,0 +1,32 @@
+{
+  "node_id": "e494251e",
+  "node_type": "finding",
+  "node_index": 22,
+  "label": "Finding-22",
+  "title": "affected-sites: Cited text capture no longer carries most of the list",
+  "description": "The 08:05:59Z text capture (sha c88b8c5f...) has no mention of Edinburgh council, the BBC, online stores or the University of Geneva. The list is only in raw/page.2026-10-22T0755Z.html (summary bullet \"Among the impacted sites are Wikipedia, Edinburgh council, many online stores and the BBC\") and the Geneva item only in the header image alt text in raw/initial-data.json. The BBC dropped the bullet between 07:55Z and 08:05Z. The assessment should cite the raw file and its sha, and say the bullet was later removed.",
+  "status": "open",
+  "created_at": 1792694617037,
+  "updated_at": 1792694617307,
+  "created_by": "b0610ad7",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694617307
+    }
+  ],
+  "properties": {
+    "claims": [
+      "affected-sites"
+    ],
+    "pages": [
+      "facts/affected-sites/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

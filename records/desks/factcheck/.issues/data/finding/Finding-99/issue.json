@@ -1,0 +1,31 @@
+{
+  "node_id": "15b2ec08",
+  "node_type": "finding",
+  "node_index": 99,
+  "label": "Finding-99",
+  "title": "release-time: 1 smaller precision and sourcing point",
+  "description": "CERT-EU's 13:30 UTC matches no captured artifact: The earliest public artifacts are GHSA-6wmf at 13:34:13Z and GHSA-w8hw at 13:34:25Z, tags at 13:35:38 UTC. CERT-EU's 13:30 may be a rounding; its own publication time '15:20:18' has no timezone.",
+  "status": "open",
+  "created_at": 1792694656418,
+  "updated_at": 1792694656690,
+  "created_by": "c9ba0f56",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694656690
+    }
+  ],
+  "properties": {
+    "claims": [
+      "release-time"
+    ],
+    "pages": [
+      "facts/release-time/index.html"
+    ],
+    "severity": "low"
+  }
+}

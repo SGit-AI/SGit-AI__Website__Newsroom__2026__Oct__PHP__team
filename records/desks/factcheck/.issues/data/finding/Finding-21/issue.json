@@ -1,0 +1,32 @@
+{
+  "node_id": "3cfe5277",
+  "node_type": "finding",
+  "node_index": 21,
+  "label": "Finding-21",
+  "title": "kev-precedent: Honeypot attempts count as 'exploited in the wild' for 2024 but not for php2shell",
+  "description": "Akamai's one-day evidence is exploit attempts against its honeypot network, the same kind of evidence as Amazon's MadPot hits, which the site's notes (amazon-honeypot, history.json) say are 'attempts against honeypots, not compromises'. Apply one standard to both.",
+  "status": "open",
+  "created_at": 1792694616573,
+  "updated_at": 1792694616783,
+  "created_by": "acfb90aa",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694616783
+    }
+  ],
+  "properties": {
+    "claims": [
+      "kev-precedent"
+    ],
+    "pages": [
+      "facts/kev-precedent/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

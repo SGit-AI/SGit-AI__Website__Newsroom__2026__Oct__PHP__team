@@ -1,0 +1,31 @@
+{
+  "node_id": "fb8591cb",
+  "node_type": "finding",
+  "node_index": 79,
+  "label": "Finding-79",
+  "title": "leak-hn: 3 smaller precision and sourcing points",
+  "description": "Screenshot 'came down' not carried: Daubois: 'A screenshot of the PHP2Shell tool, credited to Calif.IO, leaked alongside the advisory, and a short exploitation video went up and came down the same way.' Only the video is said to have come down. Also Daubois writes 'Calif.IO', not 'Calif.io'. | Note's quote of The Hacker News is not verbatim: The capture reads 'a proof-of-concept (PoC) exploit leaked ahead of time'; the note drops '(PoC)'. The Foundation's phrase is capitalised 'No technical details leaked.' in the source. | Uncited corroboration available: Huntress, CybelAngel and Equixly (all in the manifest) independently describe the removed Hacker News post; citing them would lift this above a single personal blog.",
+  "status": "open",
+  "created_at": 1792694646720,
+  "updated_at": 1792694646952,
+  "created_by": "8e1edbc2",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694646952
+    }
+  ],
+  "properties": {
+    "claims": [
+      "leak-hn"
+    ],
+    "pages": [
+      "facts/leak-hn/index.html"
+    ],
+    "severity": "low"
+  }
+}

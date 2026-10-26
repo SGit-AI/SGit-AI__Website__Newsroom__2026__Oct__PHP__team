@@ -1,0 +1,31 @@
+{
+  "node_id": "01d2084c",
+  "node_type": "finding",
+  "node_index": 109,
+  "label": "Finding-109",
+  "title": "waf: 1 smaller precision and sourcing point",
+  "description": "Note says Cloudflare's rules 'blocked the traffic it saw'; the capture does not say that: Cloudflare says it 'successfully deployed multiple mitigations' and 'observed attack traffic targeting our customers', and that attackers mutated payloads to bypass. It does not state that all observed traffic was blocked.",
+  "status": "open",
+  "created_at": 1792694661378,
+  "updated_at": 1792694661582,
+  "created_by": "3d3ad567",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694661582
+    }
+  ],
+  "properties": {
+    "claims": [
+      "waf"
+    ],
+    "pages": [
+      "facts/waf/index.html"
+    ],
+    "severity": "low"
+  }
+}

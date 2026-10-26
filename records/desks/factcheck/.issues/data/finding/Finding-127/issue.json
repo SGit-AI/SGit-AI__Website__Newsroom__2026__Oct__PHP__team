@@ -1,0 +1,31 @@
+{
+  "node_id": "52d71b58",
+  "node_type": "finding",
+  "node_index": 127,
+  "label": "Finding-127",
+  "title": "watchtowr-itw: watchTowr's own pages are now captured and carry the claim; the note still says watchtowr.com returns 403",
+  "description": "The vault re-captured watchtowr-php2shell (20261023T232528Z) and watchtowr-php2shell-faq (20261023T160435Z) with content: 'EXPLOITED IN THE WILD: Yes, reported by watchTowr' and 'watchTowr has observed exploitation in the wild through its Attacker Eye honeypot network'. The claim's note ('returns HTTP 403 to this site's capture tool; known only from search summaries') is out of date and its status 'unverified' understates a primary statement. Say also what it rests on: honeypot observations, like Amazon's.",
+  "status": "open",
+  "created_at": 1792918781481,
+  "updated_at": 1792918781733,
+  "created_by": "5777232b",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "3b9a5282",
+      "target_label": "Run-6",
+      "created_at": 1792918781733
+    }
+  ],
+  "properties": {
+    "claims": [
+      "watchtowr-itw"
+    ],
+    "pages": [
+      "facts/watchtowr-itw/index.html"
+    ],
+    "severity": "medium"
+  }
+}

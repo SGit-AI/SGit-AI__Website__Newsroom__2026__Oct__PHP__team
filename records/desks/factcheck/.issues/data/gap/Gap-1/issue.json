@@ -1,0 +1,32 @@
+{
+  "node_id": "047adb23",
+  "node_type": "gap",
+  "node_index": 1,
+  "label": "Gap-1",
+  "title": "affected-sites: Operators shown offline in the vault but absent from impact.json",
+  "description": "EPFL own homepage at 08:19:13Z: \"Some EPFL websites are unavailable\" after a security alert (epfl-site). Canada: \"Some Government of Canada websites have been temporarily taken offline as a precaution\" (globalnews-ottawa-sites, AI Minister Evan Solomon). Australia: government sites including the ACSC pulled offline (abc-au-gov-sites-exposed, abc-au-politics-live; cyber.gov.au capture failed ERR_ABORTED). Switzerland: universities of Geneva and Fribourg, EPFL, Basel-Stadt canton (20min-fr-suisse-romande, letemps-php-sites-debranches). Germany: Laender, hospitals, universities still offline Thursday (tagesspiegel-dpa-noch-offline). Czech government site offline 17:00 GMT and Internet Archive (reuters-factbox-websites-offline). None of these are rows in impact.json.",
+  "status": "open",
+  "created_at": 1792694617988,
+  "updated_at": 1792694618245,
+  "created_by": "ddb88120",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694618245
+    }
+  ],
+  "properties": {
+    "claims": [
+      "affected-sites"
+    ],
+    "pages": [
+      "facts/affected-sites/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}

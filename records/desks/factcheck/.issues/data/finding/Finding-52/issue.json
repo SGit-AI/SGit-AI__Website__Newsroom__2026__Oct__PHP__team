@@ -1,0 +1,32 @@
+{
+  "node_id": "2021b091",
+  "node_type": "finding",
+  "node_index": 52,
+  "label": "Finding-52",
+  "title": "pocs-wrong: Huntress is cited but does not carry the claim",
+  "description": "The Huntress capture says it had 'not built or reproduced a proof of concept' and was 'not aware of public exploit code as of this writing'; it says nothing about VulnCheck or a 200 response. The 'by' field names Huntress too. Remove it or cite what it actually says.",
+  "status": "open",
+  "created_at": 1792694633382,
+  "updated_at": 1792694633577,
+  "created_by": "6eda7da7",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "b2b83a65",
+      "target_label": "Run-1",
+      "created_at": 1792694633577
+    }
+  ],
+  "properties": {
+    "claims": [
+      "pocs-wrong"
+    ],
+    "pages": [
+      "facts/pocs-wrong/index.html",
+      "claims/index.html"
+    ],
+    "severity": "medium"
+  }
+}
