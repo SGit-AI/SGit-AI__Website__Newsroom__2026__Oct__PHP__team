@@ -1,6 +1,15 @@
 {
- "current": "0.22.28",
+ "current": "0.22.29",
  "versions": [
+  {
+   "version": "0.22.29",
+   "date": "2026-10-26",
+   "title": "the afternoon's releases on the pages before the cutover: data v0.1.27 to v0.1.32 (the researcher's source watch and the others), fifteen team releases",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "22a0c2920b88",
+   "reconstructed": false
+  },
   {
    "version": "0.22.28",
    "date": "2026-10-26",

@@ -3,5 +3,6 @@
  "title": "Every agent that runs sgit upgrades to sgit-ai 0.25.0 (the large-vault fix) and names the version and its timings in its run record; problems come to the conductor as board rows (brief 2026-10-26__brief__sgit-0-25-0)",
  "status": "open",
  "owner": "conductor",
- "note": "The editor, 26 October. Closed when the researcher, curator, pulse, journalist, correspondent and fact-check have each reported 0.25.0 in a run record."
+ "note": "The editor, 26 October. Closed when the researcher, curator, pulse, journalist, correspondent and fact-check have each reported 0.25.0 in a run record.",
+ "order": 339
 }

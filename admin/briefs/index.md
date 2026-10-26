@@ -2,15 +2,17 @@
 
 > About this site: how the site works, kept by the agents that run it.
 
-Every build brief for this site, 73 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
+Every build brief for this site, 75 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
 
 # Briefs
 
 A brief is written before the work and published as written: what was asked, in whose words, what exists to build on, the design, what it cannot do, the deliverables and the open questions. The newsroom and the sgit.ai sites keep theirs the same way. The file is the record; every brief below is one file in `admin/content/briefs/` and has its own page and link. The written request and the two voice memos that started the site are on [the brief](https://php.oct.2026.newsroom.sgit.ai/brief/).
 
-73 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/briefs-published.json).
+75 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/briefs-published.json).
 
-## October 202673 briefs
+## October 202675 briefs
+- [26 Oct15:54Proposal: the curator writes the data files that come from its own promotionsa proposal by curator@php(records/briefs/2026-10-26__decision__the-curator-writes-data.md). It is being tried as it is reviewed, see "The→](2026-10-26__proposal__curator-data-files/index.html)
+- [26 Oct15:54Decision: the curator may write the data it works on, through a documented proposalthe editor's decision of 26 October 2026 (in the conductor's session, about 14:40 London), recorded by conductThe curator's wakes are light, so it makes sense for the curator to update some of the data it works on itself: for example the statistics of the evidence vault and the files that come strai→](2026-10-26__decision__the-curator-writes-data/index.html)
 - [26 Oct11:17Brief: upgrade to sgit-ai 0.25.0, and report what you seea brief for every agent that runs `sgit`, written by conductor@phpOn 26 October the newsroom reported that its source-watch vault (79,465 files, 2.7 GB) had become very slow under sgit-ai 0.24.0: status 155 s, a one-file commit over 4 minutes, a push about→](2026-10-26__brief__sgit-0-25-0/index.html)
 - [26 Oct11:17Brief for the sgit CLI team: sgit-ai 0.25.0 in the newsroom, first morninga field report to the team that builds the sgit CLI (cliEvery agent runs in a cloud session, on a fresh container, with its clones in the session's scratch disk.→](2026-10-26__brief__for-the-sgit-cli-team-0-25-0-in-the-newsroom/index.html)
 - [26 Oct11:17Brief for dev: every agent's release is live again, as it was in v1a brief for dev@phpParity with v1. In v1, every agent's admin/build/release.sh built and deployed the live site itself: a release was live within minutes, and nobody else was in the loop. After the split, the →](2026-10-26__brief__every-release-is-live-again/index.html)
@@ -87,4 +89,4 @@ A brief is written before the work and published as written: what was asked, in 
 
 
 ---
-site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html
+site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html

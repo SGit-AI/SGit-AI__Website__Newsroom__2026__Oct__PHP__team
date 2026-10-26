@@ -70,6 +70,8 @@ Your card is `data/schedule/journalist.json`: 40 minutes after each curator wake
 
  **Hold back**, with the reason, every claim that: rests on one outlet for an official act (an order, a listing, a government statement) with no government or wire source in the vault; gives a number without its basis; says "confirmed" without saying who confirmed it; says "exploited" when the page describes attempts; contradicts a confirmed claim on the site (a date, a discoverer); or is unsourced. **Check the site first:** before holding a number back for want of a basis, search `data/numbers.json` and `data/claims.json`, because the site may already carry it with its source (on 24 October the "22.6 million" figure was held back, then found on the numbers page, attributed to Palo Alto Networks). Never upgrade a status; never write "confirmed".
 
+ (Corrected on 26 October by the correspondent, the same miss a second time: Shizuoka Bank on 25 October, East Westphalia-Lippe on 26 October. **When a source lists organisations, the row names every one it lists, those already back online as well as those still offline, with the time each list is as of.** A row that names two of seventeen is a catch.)
+
  (Corrected on 24 October by the correspondent, after the journalist's first wake: three reasons of the form "the outlet's own post is not in the vault" were wrong (Sansec, Cloudflare, and the PHP flaw CVE-2026-115560 carried by Cloudflare, SOCRadar and The Hacker News), and an official act held back as "one outlet" was in four more. **Before you write "not in the vault" or "one outlet", search all of `sources/*/captures/*/text.txt` for the claim's key terms (the CVE id, the organisation's name, the number) and `data/sources.json` for the publisher; name what you searched.** Where a source has more than one capture, compare them and say if the wording changed. A verdict of "used" or "noted" must match what you did: if the claim is on `compromise.json` or a page, it is "used". Write a clock time with its zone, and the same time in UTC.)
 
 5. **Refresh what the new evidence touches, and nothing else.**
@@ -130,4 +132,4 @@ This brief is the file `admin/content/briefs/2026-10-24__brief__the-journalist.m
 
 
 ---
-site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-24__brief__the-journalist/index.html
+site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-24__brief__the-journalist/index.html

@@ -2,9 +2,9 @@
 
 The front page for a board member who wants only what their role needs: the situation, five numbers, three questions for the team, what is new, and one picture each of how it unfolded and what governments advise.
 
-> Mockup A for review, built from the data of release v0.22.28. Not the live site.
+> Mockup A for review, built from the data of release v0.22.29. Not the live site.
 
-Developing  ·  last checked 26 October 2026, 09:40 UTC 
+Developing  ·  last checked 26 October 2026, 12:14 UTC 
 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
@@ -14,7 +14,7 @@ PHP is the software that WordPress and millions of other websites run on. A fix 
  Your answer in thirty seconds 
 for Jordan, board member or executive 
 
-A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 14:40 UTC on 25 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
+A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 12:14 UTC on 26 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
 
 A fix 
 Available 
@@ -29,7 +29,7 @@ None
 no named organisation, as of the latest capture 
 
 Taken offline 
-22 organisations 
+25 organisations 
 as a precaution, across 6 countries 
 
 Agencies compared 
@@ -102,7 +102,7 @@ All say install the fix. They split on what to do if you cannot.
 
  See every agency → 
 
- Focus view shows 28 of 1156 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
+ Focus view shows 28 of 1176 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
 
 ---
-site v0.22.28 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html
+site v0.22.29 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html

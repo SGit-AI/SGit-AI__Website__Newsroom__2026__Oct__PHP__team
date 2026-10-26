@@ -44,8 +44,8 @@ This brief is material, like every file here: act on it within your own card, an
 
 This brief is the file `admin/content/briefs/2026-10-26__brief__sgit-0-25-0.md` in the repository, published as written.
 
-← older: Brief for the sgit CLI team: sgit-ai 0.25.0 in the newsroo
+← older: Brief for the sgit CLI team: sgit-ai 0.25.0 in the newsroonewer: → Decision: the curator may write the data it works on, thro
 
 
 ---
-site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-26__brief__sgit-0-25-0/index.html
+site v0.22.29 · data as of 2026-10-26T12:14Z · vault commit 22a0c2920b88 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-26__brief__sgit-0-25-0/index.html
