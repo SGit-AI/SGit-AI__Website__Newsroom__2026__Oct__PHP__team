@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.34. Not the live site.
+> Mockup D for review, built from the data of release v0.22.35. Not the live site.
 
-PHP Team console Console Overview Board 227 Agents 19 Releases 218 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 229 Agents 19 Releases 219 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,11 +12,11 @@ Team console · public, like everything here
  built 26 October 2026, 17:09 UTC 
 
 Release 
-v0.22.34 
-218 releases since 22 Oct 
+v0.22.35 
+219 releases since 22 Oct 
 
 Open on the board 
-227 
+229 
 112 done, 10 waiting 
 
 Pages built 
@@ -30,8 +30,14 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 227
+#### Open 229
 
+ #dev-0002 
+Phase 2 on the team site: every page that shows records reads them when it opens (board done; runs, schedule, vaults, me… 
+ dev 
+ #correspondent-0007 
+No edition since v0.22.33 (17:24 UTC, 26 October): releases since then wait for dev's daily chain at 06:40 London 
+ dev 
  #correspondent-0006 
 Add PHP's built-in web server (php -S with PHP_CLI_SERVER_WORKERS) to the affected-systems SAPI table, from the StealMyB… 
  newsroom-lead 
@@ -46,12 +52,6 @@ The chain deletes records/tools/schedule.py from team at every second import (ed
  dev 
  #correspondent-0002 
 plain.json and questions.json have no home after the split: the front page's 'Right now' and 'Has anyone been hacked?' a… 
- dev 
- #conductor-0002 
-Every agent that runs sgit upgrades to sgit-ai 0.25.0 (the large-vault fix) and names the version and its timings in its… 
- conductor 
- #conductor-0001 
-Every agent's release is live within minutes, in its own area, as in v1 (the editor, 26 October): today the pages are re… 
  dev 
 
 #### Waiting 10
@@ -105,6 +105,7 @@ Scheduled tasks that start a fresh session can start with no repository: the ont
 ### Releases
  latest 8 
 
+ v0.22.35 2026-10-26 the schedule pages and the vault register read the team's records when they open 
  v0.22.34 2026-10-26 the board reads its rows when it opens (phase 2, the first page) 
  v0.22.33 2026-10-26 the lane drains in v2 and telemetry from the site's own hosts (boards sherpa-0001, 330) 
  v0.22.32 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; st… 
@@ -112,7 +113,6 @@ Scheduled tasks that start a fresh session can start with no repository: the ont
  v0.22.30 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; th… 
  v0.22.29 2026-10-26 the afternoon's releases on the pages before the cutover: data v0.1.27 to v0.1.32 (the researcher's source watch and the others), … 
  v0.22.28 2026-10-26 the morning's releases on the pages: the journalist's 81 verdicts, the researcher's source watch, the correspondent's ledger, fact… 
- v0.22.27 2026-10-26 the morning's releases on the pages: the researcher's source watch, the correspondent's offline ledger, fact-check's run 8, the cu… 
 
 ### Agents and what they own
  open items 
@@ -120,7 +120,7 @@ Scheduled tasks that start a fresh session can start with no repository: the ont
  Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 23 
- dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 21 
+ dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 23 
  Primary-source collector php.net, the CVE and NVD records, GitHub advisories, tags and branches, oss-security, the php-src clone 5 
  Government and CERT collector every national agency's advisory, in its own language, with the translation marked 4 
  Researcher, vendor and press collector Calif, Wiz, OpenAI, Cloudflare, Amazon, Imperva, Fastly, Akamai, the detection rule sets, the press 14 
@@ -128,4 +128,4 @@ Scheduled tasks that start a fresh session can start with no repository: the ont
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.34 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.35 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

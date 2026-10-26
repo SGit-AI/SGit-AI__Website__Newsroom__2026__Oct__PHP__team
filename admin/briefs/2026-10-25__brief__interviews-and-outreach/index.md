@@ -123,4 +123,4 @@ This brief is the file `admin/content/briefs/2026-10-25__brief__interviews-and-o
 
 
 ---
-site v0.22.34 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__interviews-and-outreach/index.html
+site v0.22.35 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__interviews-and-outreach/index.html

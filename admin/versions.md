@@ -6,7 +6,15 @@ Every release of this site, with what changed, why, the pages it changed and the
 
 # Release history
 
-One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.34. The data is [data/versions.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/versions.json); the pages are [data/release-pages.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.35. The data is [data/versions.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/versions.json); the pages are [data/release-pages.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+
+### v0.22.35 · 2026-10-26
+
+the schedule pages and the vault register read the team's records when they open
+Pages changed (29): Schedule: dev · Schedule: every agent that runs on its own · dev@php.newsroom, build, gate and release: the team · Schedule: correspondent · Schedule: conductor · Schedule: curator · Schedule: desk · Schedule: journalist and 21 more
+[Schedule: factcheck](../team/schedule/factcheck/index.html) · [Schedule: researcher](../team/schedule/researcher/index.html) · [Schedule: sherpa](../team/schedule/sherpa/index.html) · [Schedule: cartographer](../team/schedule/cartographer/index.html) · [Schedule: librarian](../team/schedule/librarian/index.html) · [Schedule: ontologist](../team/schedule/ontologist/index.html) · [Schedule: pulse](../team/schedule/pulse/index.html) · [Schedule: security](../team/schedule/security/index.html) · [PHP in October 2026: two critical security flaws, tracked as evidence](https://php.oct.2026.newsroom.sgit.ai/) · [The fact pipeline: from a web page to a reader](https://php.oct.2026.newsroom.sgit.ai/pipeline/) · [Every loop: from the researcher to the correspondent](https://updates.php.oct.2026.newsroom.sgit.ai/views/loops/) · [The team: the people, the agents and how they work together](../team/index.html) · [Every member: who owns what](../admin/agents/roles/index.html) · [What changed in the risk graph, release by release](https://php.oct.2026.newsroom.sgit.ai/grc/changes/) · [Vaults: who made each one](../team/vaults/index.html) · [The board](../admin/board/index.html) · [Admin and engineering](../admin/index.html) · [Release history](../admin/versions.html) · [Runs: what the agents do on their own, and every time they did it](../team/runs/index.html) · [How the story changed, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/versions/) · [What's new: every change, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/whatsnew/)
+
+ Vault commit `1dceaa1dfa7f`.
 
 ### v0.22.34 · 2026-10-26
 
@@ -1692,4 +1700,4 @@ Files: `admin/build/build.py`, `admin/build/export_vault.py`, `admin/build/valid
 
 
 ---
-site v0.22.34 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/versions.html
+site v0.22.35 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/versions.html

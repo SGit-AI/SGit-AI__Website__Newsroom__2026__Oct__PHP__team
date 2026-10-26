@@ -1,6 +1,15 @@
 {
- "current": "0.22.34",
+ "current": "0.22.35",
  "versions": [
+  {
+   "version": "0.22.35",
+   "date": "2026-10-26",
+   "title": "the schedule pages and the vault register read the team's records when they open",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "1dceaa1dfa7f",
+   "reconstructed": false
+  },
   {
    "version": "0.22.34",
    "date": "2026-10-26",
