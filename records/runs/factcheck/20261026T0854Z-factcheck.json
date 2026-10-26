@@ -1,0 +1,16 @@
+{
+ "run": "20261026T0854Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-26T08:54:00Z",
+ "finished": "2026-10-26T09:10:00Z",
+ "outcome": "ok",
+ "summary": "08:52 London wake (sgit 0.25.0, pack copy hsmfer5w pulled in 15 s): no-confirmed-compromise re-graded as of 14:40 UTC on 25 October, still holds (A4); La Razon is the one new source (attempts, no victim); fc.py check 0 failures; drift 6, unchanged and explained; W3Techs 69.2%; KEV 2026.10.23 lists neither CVE; NVD has no record for CVE-2026-115560; data v0.1.21 and team dev b223612 taken in; notes read to head b2236128f1a3. Open: the card's each_wake still names v1 paths (fixed in this release); the third flaw, CVE-2026-115560, is not in the claims yet (for the journalist).",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "b2236128f1a3"
+}

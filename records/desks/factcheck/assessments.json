@@ -2064,8 +2064,8 @@
   },
   {
    "id": "no-confirmed-compromise",
-   "claim_hash": "a6a0832ed7fa98c7",
-   "run": "Run-7",
+   "claim_hash": "7e29253938539073",
+   "run": "Run-8",
    "mode": "vault",
    "kind": "state",
    "level": 4,
@@ -2073,9 +2073,9 @@
    "tension": "none",
    "contradictions": [],
    "volatile": true,
-   "as_of": "20261025T093507Z",
+   "as_of": "20261025T144000Z",
    "status_fit": "ok",
-   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation.",
+   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim.",
    "checked": [
     {
      "source": "cisa-kev-json",
@@ -2251,6 +2251,14 @@
      "sha256": "6efd752b24f540730043417e4f8e1837289ad08b2351a62e22a4bc2bdc3e8ad6",
      "result": "carries",
      "excerpt": "no massive successful intrusion had been publicly confirmed as of Thursday",
+     "outside_citation": false
+    },
+    {
+     "source": "larazon-tecnologia-consumo-php-nuevo-fallo-segur",
+     "file": "sources/larazon-tecnologia-consumo-php-nuevo-fallo-segur/captures/20261024T083755Z/text.txt",
+     "sha256": "21b72816e736ca309b04551b94e2e98a6bb02d5619415a05d7e31db3c15ee71e",
+     "result": "partial",
+     "excerpt": "Los ataques contra PHP2Shell ya se cuentan por millones",
      "outside_citation": false
     }
    ],
