@@ -1,0 +1,17 @@
+{
+ "run": "20261026T0817Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T08:17:09Z",
+ "finished": "2026-10-26T08:17:43Z",
+ "outcome": "ok",
+ "summary": "Light check (08:15 London). Team head ec7ae5d64a51; v1 untouched since 00:52. Review since 07:51: the researcher's run record for 07:00 (pass in two phases, vault 7r83qic5 at 2bb61c291708, data v0.1.21) and the data release itself, both well-formed with Agent: trailers; press, site, updates, refs unchanged (no chain since 01:43, board conductor-0001). Run records: researcher 07:03 and pulse 07:23 both present, both written in team and nothing in v1. sgit 0.25.0 (board conductor-0002): the researcher upgraded and measured it on the 79,000-file watch clone (first status 11 s, then 3.3 s; history log 9.4 s; pull 2.3 s; its pass had run on 0.24.0 with commits of 12 min 38 s and 4 min 43 s and pushes about 4 min); pulse ran before the brief and upgrades at its next wake. Curator's 08:00 wake fired, run record not yet in.",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "ec7ae5d64a51ef689e2104ab9b3cd2e3369a7dcf"
+}
