@@ -1,0 +1,17 @@
+{
+ "run": "20261026T0723Z-pulse",
+ "agent": "pulse",
+ "started": "2026-10-26T07:23:53Z",
+ "finished": "2026-10-26T07:42:54Z",
+ "outcome": "ok",
+ "summary": "Pulse pass 20261026T072500Z (07:22 London), first wake from team: attached team (add_repo), woke on records/WAKE.md; 441 pages checked, 229 changed; Pulse vault is now the PACK vault 9f5knw9r (converted from the normal vault 4klm5qlt on 26 Oct, head 602d57e06a9c, in sync with the server; the pass pushed in one try). Team dev ca93865e70c5. Evidence: no tracked CVE reached a new rung; KEV still catalog 2026.10.23 (1,756), nothing added since the 23rd; no tracked CVE has ransomware use Known; php2shell rungs 3, 5 and 8 still not reached; Metasploit module index still names 4 of the tracked CVEs. EPSS: the API's newest date is still 2026-10-25, unchanged since the 25 October jump (CVE-2026-109618 0.9998, CVE-2026-109619 1.0). Attention: en-US news counts within a few items except Copy Fail CVE-2026-31431, 27 to 20. Blocked: 78 GitHub search API calls (session proxy), 2 Exploit-DB pages, CCN-CERT (bot-challenge), ACSC (down), ISC and Plex pages (404). Front-page, agency and offline counts still come from the retired source watch clone, frozen at 23 October 16:31 UTC. The source watch is no longer pulled. Card corrected in this release: times 07:22 and 14:52 (the conductor's message), the repositories field, the objective, steps that name the pack vault and no v1. Waiting on the editor: php2shell evidence from the site's curated data; the two KEV additions of 23 October (CVE-2026-110447, CVE-2026-114625); CVE-2026-115560 as its own row; publishing updates (needs the updates repository, a scope change); the vault-of-vaults seal (sha256:956934e47063ceaa, fingerprint to confirm); data attached for data/files/pulse.json; the exporter that feeds /pulse/ still reads the retired vault 4klm5qlt (press, security review).",
+ "read": [
+  "20261026T0145Z__conductor__to-pulse__your-card-s-times-differ-from-your-tasks",
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "05eb11b1131312a5539a85d44c3a6d43e6141b74"
+}
