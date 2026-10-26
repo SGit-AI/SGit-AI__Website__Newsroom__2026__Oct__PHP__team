@@ -49,4 +49,4 @@ The policy on /admin/telemetry/ states it: the request is made by the reader's b
 
 
 ---
-site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-030/index.html
+site v0.22.33 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-030/index.html

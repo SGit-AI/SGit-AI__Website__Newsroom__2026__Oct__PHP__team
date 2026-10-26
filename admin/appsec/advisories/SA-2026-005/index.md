@@ -52,4 +52,4 @@ Run by the gate, by the release tripwire on the staged diff, and on every securi
 
 
 ---
-site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-005/index.html
+site v0.22.33 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-005/index.html

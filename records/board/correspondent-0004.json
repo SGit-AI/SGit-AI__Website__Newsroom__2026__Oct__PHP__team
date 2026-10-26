@@ -3,5 +3,6 @@
  "title": "A section for reader questions: the questions people ask, each answered from the evidence, dated, with a deck to share",
  "status": "open",
  "owner": "story-site",
- "note": "The editor's request, 26 October 2026, in the correspondent's session. First answer published as an article (site content/articles/2026-10-26__correspondent__has-anyone-been-hacked.md; figures and deck in press assets/articles/has-anyone-been-hacked/). Brief: records/briefs/2026-10-26__brief__reader-questions.md. Asks: story-site and dev, a /questions/asked/ index and page per answer (a build block); dev, a data catalogue entry for files/reader-questions.json; the librarian, a link from the questions page; the editor, the go."
+ "note": "The editor's request, 26 October 2026, in the correspondent's session. First answer published as an article (site content/articles/2026-10-26__correspondent__has-anyone-been-hacked.md; figures and deck in press assets/articles/has-anyone-been-hacked/). Brief: records/briefs/2026-10-26__brief__reader-questions.md. Asks: story-site and dev, a /questions/asked/ index and page per answer (a build block); dev, a data catalogue entry for files/reader-questions.json; the librarian, a link from the questions page; the editor, the go.",
+ "order": 344
 }

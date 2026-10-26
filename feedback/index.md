@@ -45,4 +45,4 @@ Each piece of feedback becomes frictions in [the friction log](../sherpa/index.h
 
 
 ---
-site v0.22.32 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/feedback/index.html
+site v0.22.33 · data as of 2026-10-26T14:42Z · vault commit 2fc7e432584b · https://team.php.oct.2026.newsroom.sgit.ai/feedback/index.html

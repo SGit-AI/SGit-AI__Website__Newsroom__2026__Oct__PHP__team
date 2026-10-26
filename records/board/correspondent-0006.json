@@ -3,5 +3,6 @@
  "title": "Add PHP's built-in web server (php -S with PHP_CLI_SERVER_WORKERS) to the affected-systems SAPI table, from the StealMyBitcoin write-up",
  "status": "open",
  "owner": "newsroom-lead",
- "note": "data files/affected.json lists mod_php, PHP-FPM, php-cgi, FrankenPHP, LiteSpeed and 'CLI/cron/queue (not web-serving)'. The Steal My Bitcoin challenge demonstrated full RCE via the php2shell upload-progress chain against the built-in server (php -S) with multiple workers behind nginx, on PHP 8.4.26 Alpine. A SAPI the primary advisories did not cover. Add a row once the write-up is captured (board correspondent-0005), sourced to it, risk 'demonstrated (CTF build)', with the note that it is not a production SAPI. Found by the correspondent 26 October 2026; covered defensively in articles/steal-my-bitcoin."
+ "note": "data files/affected.json lists mod_php, PHP-FPM, php-cgi, FrankenPHP, LiteSpeed and 'CLI/cron/queue (not web-serving)'. The Steal My Bitcoin challenge demonstrated full RCE via the php2shell upload-progress chain against the built-in server (php -S) with multiple workers behind nginx, on PHP 8.4.26 Alpine. A SAPI the primary advisories did not cover. Add a row once the write-up is captured (board correspondent-0005), sourced to it, risk 'demonstrated (CTF build)', with the note that it is not a production SAPI. Found by the correspondent 26 October 2026; covered defensively in articles/steal-my-bitcoin.",
+ "order": 346
 }

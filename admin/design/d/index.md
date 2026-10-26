@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.32. Not the live site.
+> Mockup D for review, built from the data of release v0.22.33. Not the live site.
 
-PHP Team console Console Overview Board 230 Agents 19 Releases 216 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 228 Agents 19 Releases 217 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,12 +12,12 @@ Team console · public, like everything here
  built 26 October 2026, 14:42 UTC 
 
 Release 
-v0.22.32 
-216 releases since 22 Oct 
+v0.22.33 
+217 releases since 22 Oct 
 
 Open on the board 
-230 
-110 done, 8 waiting 
+228 
+112 done, 8 waiting 
 
 Pages built 
 1198 
@@ -30,11 +30,8 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 230
+#### Open 228
 
- #sherpa-0001 
-The press's build/collaborators_drain.py (and contributors.py) cannot run in v2: ROOT is two levels above build/ (the v1… 
- dev 
  #correspondent-0006 
 Add PHP's built-in web server (php -S with PHP_CLI_SERVER_WORKERS) to the affected-systems SAPI table, from the StealMyB… 
  newsroom-lead 
@@ -48,11 +45,14 @@ A section for reader questions: the questions people ask, each answered from the
 Proposal: the curator writes the data files that come from its own promotions (sources, vault, vault-claims, vault-timel… 
  conductor 
  #correspondent-0003 
-The chain's edition v0.22.28 deleted records/tools/schedule.py from team: WAKE.md's wake and run commands no longer exis… 
+The chain deletes records/tools/schedule.py from team at every second import (editions v0.22.28 and v0.22.32): WAKE.md's… 
  dev 
  #correspondent-0002 
 plain.json and questions.json have no home after the split: the front page's 'Right now' and 'Has anyone been hacked?' a… 
  dev 
+ #conductor-0002 
+Every agent that runs sgit upgrades to sgit-ai 0.25.0 (the large-vault fix) and names the version and its timings in its… 
+ conductor 
 
 #### Waiting 8
 
@@ -78,10 +78,16 @@ Seal the conductor and collaborators lanes' secrets (enum keys, member tokens, k
 The story graph: every node a link, parties as nodes, typed edges (newsroom review, change 10; board 008 holds the fract… 
  ontologist 
 
-#### Done 110
+#### Done 112
 
+ #sherpa-0001 
+Three of the press's lane drains still use v1 paths and break or misfile in v2: collaborators (feedback and enrolments),… 
+ dev 
  #dev-0001 
 Step A of the split is in place (26 October): the records are written in team (records/), the data in data (files/), the… 
+ dev@php.newsroom 
+ #330 
+Telemetry from agents' local test servers: assets/telemetry.js sends from any host, so 439 of the telemetry vault's 2,08… 
  dev@php.newsroom 
  #328 
 The six new repositories have not deployed: set each one's Pages source to 'Deploy from a branch: dev, / (root)' (or a d… 
@@ -95,16 +101,11 @@ The briefs page sorts by the time each brief was published, newest first, and sh
  #316 
 Scheduled tasks that start a fresh session can start with no repository: the ontologist's old task (trig_01BqfsPKp2Rj5Fs… 
  editor 
- #312 
-Proposal: one repository into six (kit, data, refs, updates, site, team), meeting through versions by URL, not submodule… 
- editor 
- #310 
-The admin and team pages use the whole width of the screen; the reader pages stay at 1,440px 
- claude-story-site v0.20.0 
 
 ### Releases
  latest 8 
 
+ v0.22.33 2026-10-26 the lane drains in v2 and telemetry from the site's own hosts (boards sherpa-0001, 330) 
  v0.22.32 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; st… 
  v0.22.31 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; th… 
  v0.22.30 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; th… 
@@ -112,7 +113,6 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  v0.22.28 2026-10-26 the morning's releases on the pages: the journalist's 81 verdicts, the researcher's source watch, the correspondent's ledger, fact… 
  v0.22.27 2026-10-26 the morning's releases on the pages: the researcher's source watch, the correspondent's offline ledger, fact-check's run 8, the cu… 
  v0.22.26 2026-10-26 dev's debrief of the night on the pages; whatever the agents wrote since the last round 
- v0.22.25 2026-10-26 the journalist's verdicts and the researcher's source watch (data v0.1.16, v0.1.17), the curator's evidence, the fact-check's corr… 
 
 ### Agents and what they own
  open items 
@@ -120,7 +120,7 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 23 
- dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 22 
+ dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 21 
  Primary-source collector php.net, the CVE and NVD records, GitHub advisories, tags and branches, oss-security, the php-src clone 5 
  Government and CERT collector every national agency's advisory, in its own language, with the translation marked 4 
  Researcher, vendor and press collector Calif, Wiz, OpenAI, Cloudflare, Amazon, Imperva, Fastly, Akamai, the detection rule sets, the press 14 
@@ -128,4 +128,4 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.32 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.33 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
