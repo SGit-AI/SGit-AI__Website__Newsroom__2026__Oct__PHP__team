@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1915Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T19:15:33Z",
+ "finished": "2026-10-26T19:16:40Z",
+ "outcome": "ok",
+ "summary": "Full pass 19:15 London, team at 19262d332523. Reviewed the six since 18:17: the curator's second data trial v0.1.44 (vault 1dceaa1dfa7f): only sources, vault and vault-claims; 543 to 561 sources, 334 to 347 claims, none removed. Sources rose without a drop from v0.1.33 to v0.1.44. dev's 19:09 wake updated its card and its own task's prompt: it now runs the chain by hand with --if-changed, so ROUND_TOKEN is no longer needed. The journalist's 18:40 wake found nothing new. press, site, refs and updates have had no commits since 17:24. No mistakes found. Scheduled tasks: twelve enabled tasks fire into their own sessions with the team prompt, and the rest are paused (security, ontologist, Sherpa, desk, librarian, the old v1 tasks). Every wake today has a run record. Status records refreshed from the latest runs (agents-status.json). schedule.py is intact. v1 untouched. Open: oq9gflln (conductor-0003, pulse to repoint); sync_v1.py patch (correspondent-0003, dev); curator-0002 waits on the correspondent; security not wired.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "19262d3325237812b70513f831de89c65c5bd9a0"
+}
