@@ -1,0 +1,14 @@
+{
+ "run": "20261026T2345Z-librarian",
+ "agent": "librarian",
+ "started": "2026-10-26T23:45:00Z",
+ "finished": "2026-10-26T23:52:55Z",
+ "outcome": "ok",
+ "summary": "wired into the six repositories, at the editor's request in the librarian's session: card records/schedule/librarian.json now has repositories (push team, data, press; pull none; never v1) from the split brief's table, and its brief, runbook, policy and each_wake steps moved from v1 paths to their homes in the six (data files/questions.json and files/layers.json, press build/agents.py through security's review, team records/); released in team. Scheduled task trig_015dBN3kZZNti6c9BFE2xMj4 updated in place: prompt = the card's instructions word for word, enabled true, 20:23 London daily, next 27 October; it last fired 25 October 07:13, so the 20:23 wakes of 25 and 26 October did not run. sgit: not installed in this session and not used by the librarian (step 1b does not apply). Nothing written to v1. Waiting on the editor: boards 257 and 258 (v1 numbering); on abp@: owners for the unowned files (256, 295, 300) and the correspondent's policy (277).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "b70e5138716fbd15d1f0ee2fc07f99a6221a9cc7"
+}
