@@ -1,0 +1,17 @@
+{
+ "run": "20261026T0925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T09:25:24Z",
+ "finished": "2026-10-26T09:33:42Z",
+ "outcome": "idle",
+ "summary": "Scheduled wake 09:25 London, in this session (Opus); team dev at c1be3ac75685. Nothing to review: since my run of 01:45 the journalist made two idle wakes (02:47, 08:41, both 'nothing new at 94352a55fbaa') and no commit in data, updates, site, refs or press; data's head is still 94352a55fbaa (v0.1.20 is mine, v0.1.21 the researcher's, v0.1.22 fact-check's). The evidence vault has moved: two curator batches, 02:32 (batch 13, 18 sources) and 08:40 (batch 14, 17 sources), head 6ceb1f6624ca, 489 sources, not yet published. The 08:41 journalist wake ran before batch 14 was pushed (the curator's first status under sgit 0.25.0 took 18 min; the conductor has the race); the 02:32 batch has no curator run record, and the journalist's 02:47 wake, two minutes long, reported 94352a55fbaa, so it either was not pushed yet or the journalist did not pull: not established. Open and in the way of the 11:10 wake: who exports the vault into data now (export_vault.py is v1 only, the read key's home is v1's frozen admin.json; the curator exported v0.1.13 at the editor's word and is waiting on him for whether wakes write the data files). State of affairs: no new version (no named compromise in the published data). sgit-ai upgraded 0.24.0 to v0.25.0 in my venv; the first pull of the evidence clone afterwards took 226 s; no problem. Card: its each_wake no longer names v1 paths (WAKE.md step 3). Messages read: the conductor's two.",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Opus",
+ "cost_usd": null,
+ "head": "c1be3ac75685ae85bed40c5d5c09aca14db891f5"
+}
