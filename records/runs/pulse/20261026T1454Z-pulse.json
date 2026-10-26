@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1454Z-pulse",
+ "agent": "pulse",
+ "started": "2026-10-26T14:54:17Z",
+ "finished": "2026-10-26T15:07:21Z",
+ "outcome": "ok",
+ "summary": "Pulse pass 20261026T145452Z (14:52 London); sgit-ai 0.25.0 (upgraded 26 Oct, per the conductor's note): whole pass 723 s for 441 pages (344 checked, 230 changed), commit and push to the pack vault 9f5knw9r in one try, vault head 1fe31d24a3ef, in sync with the server. Team dev 828a2c9ac194 recorded. Evidence: no tracked CVE reached a new rung; KEV still catalog 2026.10.23 (1,756), nothing added since the 23rd; no tracked CVE has ransomware use Known; php2shell rungs 3, 5 and 8 still not reached. EPSS now dated 2026-10-26 with scores unchanged from the 25th (CVE-2026-109618 0.9998, CVE-2026-109619 1.0). Attention: en-US news counts within a few items, except Copy Fail CVE-2026-31431, 20 to 26 (it was 27 to 20 at 07:22: the count swings with a blocked or unblocked feed). Blocked: 78 GitHub search API calls (session proxy), CCN-CERT (bot-challenge), ACSC (down). Front-page, agency and offline counts still come from the retired source watch, frozen at 23 October 16:31 UTC. Done this day: the Pulse vault converted to the pack vault 9f5knw9r; its key sealed to the root and to the vault-of-vaults keeper sha256:956934e47063ceaa (the editor confirmed it); data attached (files/pulse.json at f2e3fbf, not written). Waiting on the editor: php2shell evidence from the site's curated data; the KEV additions of 23 October (CVE-2026-110447, CVE-2026-114625); CVE-2026-115560 as its own row; publishing updates (the updates repository, a scope change); the exporter for /pulse/, which still reads the retired vault 4klm5qlt (press, security review); the vault register rows for 9f5knw9r and 4klm5qlt (not in pulse's scope).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "828a2c9ac1944c8389e0ce4f5112ba19deb7a2e9"
+}
