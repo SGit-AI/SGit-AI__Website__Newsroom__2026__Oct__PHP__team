@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1158Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-26T11:57:59Z",
+ "finished": "2026-10-26T12:40:00Z",
+ "outcome": "ok",
+ "summary": "Scheduled wake 11:55 London (fired 11:58 UTC), in this session (Opus); team dev at ec7980ba. Reviewed the journalist's 11:10 wake: data v0.1.24 (export of the curator's batches 13 to 15 into data, evidence vault a7ab84771dfc, 507 sources; 81 verdicts: 5 used, 20 agrees, 44 noted, 12 held back; rows: offline Japan (Business+IT), Poland (BIP), East Westphalia-Lippe; compromise ZDNET Japan Mirai attempts, ScaleCommerce; no-confirmed-compromise to 09:40 UTC 26 Oct) against the vault at a7ab84771dfc (sgit 0.25.0, pull 228 s). All five new rows checked against their captures; all 17 used and held-back verdicts read; the agrees checked for a referent, the noted spot-checked. The WeRSM 'confirmed compromises' hold-back is right (no victim, contradicted by Palo Alto's advisory): no named compromise. Two catches, fixed in data v0.1.27: (1) missing, a repeat of 25 Oct: the East Westphalia-Lippe row named two of the seventeen organisations Neue Westfaelische lists; now all, with the time; the journalist's brief tightened (dated correction). (2) verdict: Scherzer's timeline held back as contradicting release-time, which was already disputed and cited the tags at 13:34-13:35 UTC; release-time revised: scheduled 14:00, published 13:31 to 13:35 UTC, confirmed (note to story-site for pages that type 14:00). Readers' answers to 09:40 UTC 26 Oct. State of affairs: no new version (named compromises 0; offline count up, not a measure in v3). Board correspondent-0003: the chain's edition v0.22.28 (ec7980ba) deleted records/tools/schedule.py; this record written by hand. Pages: edition v0.22.28 carries data up to v0.1.26; v0.1.27 waits for the next round.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Opus",
+ "cost_usd": null,
+ "head": "ec7980ba"
+}
