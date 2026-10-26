@@ -1,0 +1,14 @@
+{
+ "run": "20261026T0009Z-curator",
+ "agent": "curator",
+ "started": "2026-10-26T00:09:54Z",
+ "finished": "2026-10-26T01:05:53Z",
+ "outcome": "ok",
+ "summary": "Not a scheduled wake: an editor-requested pass on 26 October, run before the 08:00 London wake. Did: (1) took in dev at v0.22.15 and read WAKE.md step 0 and the split brief; added the repositories field to the card (push: v1; after the move: team, data, v1), released in v1 as v0.22.17; (2) checked both scheduled tasks (trig_01DwwKQup3jRknBUsUNB8KJs, trig_0161BZjyVGGamSLwWYgw4EGm): both bound to this session, both carrying the card's prompt, both had been paused on 25 October; enabled them, next runs 08:03 and 10:35 UTC; (3) worked the backlog the researcher left: pack vault 7r83qic5 queue of 25 October 15:22 UTC (418 rows), promoted 18 sources, each read, hashes checked, none addressed an AI: evidence vault 3ytzxm3g head 94352a55fbaa, 454 sources, 163 claims in my file, 89 rows pending (all priority 4); (4) on the editor's authorisation attached the team and data repositories to this session and released data v0.1.13 (sources.json, vault.json, vault-claims.json refreshed to that head: 36 new sources and 16 new claims, nothing removed or edited; vault-timeline.json and software.json unchanged). Not done: no records of mine are written in both places this round: this run record is written only here; the v1 copy of my card still carries the field, as imported. Waits on the editor: the researcher's current pass has not been queued yet; nudge me when it has, or the 08:00 wake takes it. Key pair and evidence clone intact; no new handshake needed.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "469bc18d700b04bd0f86beb6bab233e5ec2b847c"
+}
