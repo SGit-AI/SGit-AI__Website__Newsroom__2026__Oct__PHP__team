@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1803Z-curator",
+ "agent": "curator",
+ "started": "2026-10-26T18:03:00Z",
+ "finished": "2026-10-26T18:53:11Z",
+ "outcome": "ok",
+ "summary": "Wake 18:00 London (fired 18:03 UTC); team at 8a7ceb2dc227. Took in the researcher's passes up to f212898aa0fe (pack vault 7r83qic5; queue 460 rows, 40 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (3 priority 2, 15 priority 4; now 561 sources, 623 captures), 13 claims of mine, no timeline rows; pushed 18:47:07 to 18:47:52 UTC (head 1dceaa1dfa7f, in sync). Every quote checked verbatim, hashes against the watch; the injection scan found nothing aimed at a reader (the word 'disregarded' in the PHP Foundation's quote about the Chainguard early release tripped the directive pattern; a copyright line forbidding AI training on one page, recorded as a rights notice). 22 queue rows pending. Worth a look: The Next Web relays the PHP Foundation's own blog post, which gives the Foundation's words ('a structural failure, caused by both the security team's decision process and its lack of resources'), that the two CVE ids circulated on 20 October at about 15:00 UTC with a wrong release time and a wrong score of 10.0, and that the team saw no working exploit by the release; Trend Micro and Huntress both say successful exploitation was not independently confirmed, in tension with outlets reporting confirmed compromises (kept as dated, reported claims); a third PHP flaw (CVE-2026-115560) now has four independent outlets (no emergency patch, regular release cycle). DATA: the second trial under the editor's go and the conductor's yes on curator-0002: data v0.1.44 released 18:52:59 UTC, the same three files as before (sources.json, vault-claims.json, vault.json), from press's export_vault.py over the evidence vault at 1dceaa1dfa7f: 561 sources, 623 captures; export 1 m 47 s, release about 2 m 52 s; the journalist and the correspondent have not yet said yes or no on curator-0002. Commits authored as curator@php.newsroom. Also handed to the conductor, at the editor's word, the old source-watch vault oq9gflln (message 20261026T1804Z): I no longer track it. sgit-ai v0.25.0 timings, pack clone: the pull of three passes took 39 m 15 s (18:04:17 to 18:43:32 UTC); evidence vault: commit 34 s (slower than before), push 53 s. Pulling is still the slow step; board row curator-0001 stands.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "1994e221256c178e630fac1537a94ac898837263"
+}
