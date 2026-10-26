@@ -1,6 +1,15 @@
 {
- "current": "0.22.22",
+ "current": "0.22.23",
  "versions": [
+  {
+   "version": "0.22.23",
+   "date": "2026-10-26",
+   "title": "step B of the split: the pages are built in the chain's own box from the six repositories' sources; nothing depends on v1's repository any more",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "87795d121200",
+   "reconstructed": false
+  },
   {
    "version": "0.22.22",
    "date": "2026-10-26",

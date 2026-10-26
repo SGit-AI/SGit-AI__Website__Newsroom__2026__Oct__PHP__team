@@ -40,4 +40,4 @@ Containment and owner checks.
 
 
 ---
-site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-037/index.html
+site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-037/index.html

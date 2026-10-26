@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.22. Not the live site.
+> Mockup D for review, built from the data of release v0.22.23. Not the live site.
 
-PHP Team console Console Overview Board 220 Agents 19 Releases 206 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 220 Agents 19 Releases 207 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,8 +12,8 @@ Team console · public, like everything here
  built 25 October 2026, 09:35 UTC 
 
 Release 
-v0.22.22 
-206 releases since 22 Oct 
+v0.22.23 
+207 releases since 22 Oct 
 
 Open on the board 
 220 
@@ -105,6 +105,7 @@ The admin and team pages use the whole width of the screen; the reader pages sta
 ### Releases
  latest 8 
 
+ v0.22.23 2026-10-26 step B of the split: the pages are built in the chain's own box from the six repositories' sources; nothing depends on v1's reposi… 
  v0.22.22 2026-10-26 the journalist's and the correspondent's records, written in team; story-site's review of the split as served, filed on the team s… 
  v0.22.21 2026-10-26 researcher: repositories field in the card (v1 today; team, data and press later), the round-1 debrief with its status, and the pr… 
  v0.22.20 2026-10-26 step A of the split: each repository holds its own sources and a sync carries them into v1's build; the brief for every agent says… 
@@ -112,7 +113,6 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  v0.22.18 2026-10-26 The correspondent's card (the schedules page): the repositories field from the split brief, and its wakes now fire into its own se… 
  v0.22.17 2026-10-26 the curator's card carries the repositories field the split brief asks for (push: v1; after the move: team, data, v1), on the edit… 
  v0.22.16 2026-10-26 the first-day report: expectations for the run and the review, measured (v1's CI median 88 s and 1,809 files a release; the six 25… 
- v0.22.15 2026-10-25 The restart after the split: WAKE.md step 0 for every scheduled agent (read the split brief on the team site, start no new work in… 
 
 ### Agents and what they own
  open items 
@@ -128,4 +128,4 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.22 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.23 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

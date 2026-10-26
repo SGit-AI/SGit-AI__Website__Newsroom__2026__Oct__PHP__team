@@ -28,8 +28,8 @@ $ sgit clone sgit_public_read_6451da6ba1c6201d35b0832d570097327552564c12c8e9a550
 
 - `memos/`: the editor's voice memos; `notes/`: agents' working notes; `tools/`: the capture tool and the index builder.
 
-The manifest this site is built from, with every hash, is [data/sources.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.12/sources.json); the sources are listed on [every source](https://refs.php.oct.2026.newsroom.sgit.ai/sources/). The telemetry vault (`84wr8mib`) is separate and private: Private. Its vault key, enum key and key-pair passphrase are held by the editor and the drainer, never in this repository.
+The manifest this site is built from, with every hash, is [data/sources.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.15/sources.json); the sources are listed on [every source](https://refs.php.oct.2026.newsroom.sgit.ai/sources/). The telemetry vault (`84wr8mib`) is separate and private: Private. Its vault key, enum key and key-pair passphrase are held by the editor and the drainer, never in this repository.
 
 
 ---
-site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/vault/index.html
+site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/vault/index.html

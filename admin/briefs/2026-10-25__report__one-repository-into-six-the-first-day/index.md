@@ -16,7 +16,7 @@ The site that tracks the two PHP flaws of October 2026 was one repository until 
 
 The proposal (why split, and how) and the plan (who does what, in which order) were written before the work: [the proposal](https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__proposal__one-repository-into-six/) and [the plan](https://php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__plan__one-repository-into-six-implementation/). This report is what happened.
 
-![The four sites, the press and the data API, and where one page's requests go](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.12/assets/briefs/split-request-flow.png)
+![The four sites, the press and the data API, and where one page's requests go](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.13/assets/briefs/split-request-flow.png)
 
 ### The day, by the clock (UTC, 25 October 2026)
 
@@ -75,7 +75,7 @@ v1 builds 1,096 pages (2,228 files in its `outputs.txt`): the 1,095 above, each 
 
 A redirect page is 600 to 750 bytes: a canonical link, a meta refresh, `noindex`, and one sentence with the link. The 3,284 of them cost 2.37 MB in all.
 
-![refs serving its sources page, with its scripts from the press and its data from the data API](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.12/assets/briefs/split-refs-sources.png)
+![refs serving its sources page, with its scripts from the press and its data from the data API](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.13/assets/briefs/split-refs-sources.png)
 
 ### The links, rewritten
 
@@ -107,7 +107,7 @@ refs carries the most cross-site links because every source and fact page links 
 
 "Runtime" is the group the pages' scripts fetch: items, telemetry, contributors, collaborators, control, personas, stack, subscriptions. Two of them (telemetry and subscriptions) hold their lane's write-only append token, as v1 always has; a published version keeps the token it was published with (flagged to security).
 
-![The data API's front page: every file, its group, bytes and sha256, and its schema](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.12/assets/briefs/split-data-front.png)
+![The data API's front page: every file, its group, bytes and sha256, and its schema](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.13/assets/briefs/split-data-front.png)
 
 ### The press
 
@@ -119,7 +119,7 @@ refs carries the most cross-site links because every source and fact page links 
 | Its gate | 1.1 s |
 | A cut | 0.8 s (site) to 1.2 s (refs) |
 
-![The press's front page: the four sites and the sections each owns](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.12/assets/briefs/split-press-front.png)
+![The press's front page: the four sites and the sections each owns](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.13/assets/briefs/split-press-front.png)
 
 ### The team's records
 
@@ -137,7 +137,7 @@ The team repository holds two things: the team's pages at its root (cut by the p
 
 Its records' gate takes 0.11 s; its pages' gate 2.1 s.
 
-![The team repository's front page, written from its records](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.12/assets/briefs/split-team-front.png)
+![The team repository's front page, written from its records](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.13/assets/briefs/split-team-front.png)
 
 ### The gates, timed
 
@@ -164,7 +164,7 @@ The six hosts were served from their repositories in Chromium (Playwright interc
 
 Separately, every executable inline script on the four sites (198) was hashed and checked against its own page's policy: all 198 are allowed, as v1's 195 are on v1 (the three more are the 404 router's copies).
 
-![The main site, staged, with the Ask pane open: its scripts all came from the press](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.12/assets/briefs/split-site-ask.png)
+![The main site, staged, with the Ask pane open: its scripts all came from the press](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.13/assets/briefs/split-site-ask.png)
 
 ### Expectations, for the run and the review (26 October)
 
@@ -204,4 +204,4 @@ This brief is the file `admin/content/briefs/2026-10-25__report__one-repository-
 
 
 ---
-site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-the-first-day/index.html
+site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-the-first-day/index.html

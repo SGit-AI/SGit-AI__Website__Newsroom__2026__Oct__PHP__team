@@ -103,4 +103,4 @@ Every run is a folder under `runs/`.
 
 
 ---
-site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/synthetic/security/index.html
+site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://php.oct.2026.newsroom.sgit.ai/admin/synthetic/security/index.html

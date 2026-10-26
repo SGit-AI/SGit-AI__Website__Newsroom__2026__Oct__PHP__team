@@ -148,7 +148,7 @@ In the collaborator's words, as received
 
 **Where the site stands today.** Not yet. Asked in CI-001 item 5 too. The fact-check desk grades every claim from A0 to A6, but every one of the 914 edges carries only from, rel, inverse and to: an edge read from the diff and an edge an agent inferred look the same.
 
-See: [The fact-check desk](https://php.oct.2026.newsroom.sgit.ai/factcheck/) · [data/grc-graph.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.12/grc-graph.json)
+See: [The fact-check desk](https://php.oct.2026.newsroom.sgit.ai/factcheck/) · [data/grc-graph.json](https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.15/grc-graph.json)
 
 **What is missing.** A basis on every edge, with its source.
 
@@ -207,4 +207,4 @@ Shared by the editor. Steps 1 to 5 of the brief to dev shipped in v0.10.13 (ever
 
 
 ---
-site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-002/index.html
+site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-002/index.html

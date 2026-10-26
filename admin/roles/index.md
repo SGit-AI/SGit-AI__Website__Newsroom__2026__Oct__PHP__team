@@ -37,7 +37,7 @@ The roles on this site and its vault, who fills each, what it owns and the rules
 
 **Public key on pki.sgit.ai.** record `sha256:8025e2a4470e73f0`, encryption `sha256:c2d463f96c597c01`, made 2026-10-22T14:44:39Z. [Open the key link](https://pki.sgit.ai/send/#k1.MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAmAl6IjgGY_4KGefEgncTD5LQLRnffcW61Ou6VPzMot2uo3dmyJuBpXyRaLeB02e_yOzAKAIZ7DH7Kv-f7oqgbITjVbC3RCn6r-EU--lBWARK1GRb5LJ6zttaZTcjKYNu4awVwugK6sIur_ggmeiAs_u3EfaCS8s2A77YXryW1d3WIciUuFfUYYnNW8St004MpZQlJZ4mZ9jCsfmmP4n6xXdle4SNsd5-ESfncQEMKwZbJAliq6f6pG-q_OjLglqMN7cNK4RLUnwV1H5RtLRxrvPEQrGriLI0D8A7sFdgPqN2O4qkBG3kPS04VXkuGqdHs_Ic62sgbEB-il8HP7ZsoTzq8-mpiKP4cLORzm81H3OnpJLe6bVskACn_P5myOlyp-jZ82paW9UfLpQo6BHXj1jnFhqfvrPIlI28KTvTHhuD4TWUndnrhC7ibbIe5qeV7rp3mWe62fTROVVdqDlQL-gURQM-GVErXYHk4azMoAvdowT90ufifYFEj9Tq1WvkWaOY_PwKD9TySOrWRT5DuN1fxLg-z8o9tWWbPQwRqu-fFH4cWLp86vnzpyT99qmhab45HHnt5UPqIc8rsIOTKxKFO7Crc8Q0jIcIeqfAKr3DnB1YR7tyrDln5uredHwzqv9rrl8dtmDV2_BFOeRICbm8d_eoEotSrd7rvPQmbQUCAwEAAQ.MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYTgQkNAJ_bdAeHPqR_HWmSl6TzXT_0fCM_7HFJECg_JRE3ewWKNdWYVnXxFDMeaZ1OceQ8LwYQa1vD0JoWfY2g.ZGV2QHBocC5uZXdzcm9vbQ) (pki.sgit.ai recomputes the fingerprint in your browser). A session key: it dies with this session. Compare the fingerprint with the one the agent gave you in the session itself; this page is a second channel, not the authority.
 
- ![QR code of dev@php.newsroom's public key](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.12/assets/keys/dev-php-newsroom.svg)
+ ![QR code of dev@php.newsroom's public key](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.13/assets/keys/dev-php-newsroom.svg)
 
 ### Primary-source collector an agent
 
@@ -154,4 +154,4 @@ The roles on this site and its vault, who fills each, what it owns and the rules
 
 
 ---
-site v0.22.22 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/roles/index.html
+site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/roles/index.html
