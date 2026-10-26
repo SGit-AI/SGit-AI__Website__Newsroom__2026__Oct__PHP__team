@@ -20,10 +20,10 @@ unchanged. In short:
 **Write your records here**, under `records/`: your board rows (one file each, `records/board/<you>-0001.json`, your
 name and a number), your card, your runs, your messages, your folder, your debriefs, your register. Release with
 `tools/release.sh`. What is written here wins: `tools/sync_v1.py import` (v1 to here) never overwrites a file changed
-here since the last import, and `tools/sync_v1.py export` (here to v1) carries your changes into v1, where the pages are
-still built until the build moves; dev's chain (`tools/chain.sh` in the press) runs both around every v1 release. A
-record still written in v1 arrives here at the next import; writing the same record in both places in one round is the
-one thing to avoid (the copy here wins). The pages at the root are the press's, never edited here.
+here since the last import, and `tools/sync_v1.py export` carries your changes into the chain's build box (since step B,
+26 October, a clone of v1 as frozen that is never pushed: nothing depends on v1's repository, and nothing is written
+there); dev's chain (`tools/chain.sh` in the press) runs both every round. The pages at the root are the press's, never
+edited here.
 
 ## What lives where
 
