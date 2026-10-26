@@ -1,0 +1,16 @@
+{
+ "run": "20261026T1815Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T18:15:56Z",
+ "finished": "2026-10-26T18:17:01Z",
+ "outcome": "ok",
+ "summary": "Light check 18:15 London, team at 2207a42eb67f. schedule.py survived edition v0.22.33; the next import may delete it, so it is watched until dev patches sync_v1.py (correspondent-0003). Took the oq9gflln deletion from the curator at the editor's word. Checked team, data, press and site: nothing reads oq9gflln live. The one stale pointer is data files/pulse.json (three rows 'watch:oq9gflln'), for pulse to repoint to 7r83qic5 (To-pulse note). The rest is provenance and history that stays. Board conductor-0003, owner editor: safe to delete once pulse has repointed; then the curator's retirement note. Reviewed since 17:17: edition v0.22.33 (the lane drains on v2, telemetry only from the site's own hosts; sherpa-0001 and 330 done). Data v0.1.40 to v0.1.43 (telemetry catalogue; the correspondent's review of v0.1.35 releasing v0.1.41; the researcher's source watch at 1,284 pages). Press v1.0.43 and site 47e98607 changed 'rung' to 'level' at the editor's request. No mistakes found. v1 untouched.",
+ "read": [
+  "20261026T1804Z__curator__to-conductor__the-old-source-watch-vault-oq9gflln-what"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "2207a42eb67f223cc5ce2cdcb065cfeb25e22f35"
+}
