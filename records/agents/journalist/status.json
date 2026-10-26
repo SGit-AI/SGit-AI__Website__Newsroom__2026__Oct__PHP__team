@@ -1,9 +1,9 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "journalist",
- "as_of": "2026-10-25",
- "round": 2,
- "state": "second wake released (v0.19.3); schedule card active",
+ "as_of": "2026-10-26",
+ "round": 3,
+ "state": "tasks bound to this session; records moved to the team repository; first wake 08:40 UTC",
  "done": [
   {
    "what": "Made the pki key sha256:de0decfc882a0235 and sent its QR to the editor",
@@ -28,6 +28,14 @@
   {
    "what": "Second wake, by hand: exported the vault at 87795d121200 (418 sources), 15 claims reviewed (2 used, 3 agrees, 6 noted, 4 held back), Turkey, Shizuoka Bank and Nepal rows, as-of lines to 09:35 UTC on 25 October",
    "evidence": "debriefs/2026-10-25__second-wake.md; v0.19.3"
+  },
+  {
+   "what": "Rebound the two scheduled tasks to this session (trig_015ud63M9vZm7oeiDV6MgAMt, trig_01DrvVrD3jdJvUfyvBjb5oCb), paused the two old ones, added the repositories field to the card",
+   "evidence": "debriefs/2026-10-26__wiring.md; v0.22.19"
+  },
+  {
+   "what": "Moved the journalist records to the team repository (step A done): wiring debrief, status, the 26 October run record and the card with the four repositories",
+   "evidence": "records/agents/journalist/debriefs/2026-10-26__wiring.md"
   }
  ],
  "tasks": {
@@ -36,7 +44,7 @@
  },
  "next": [
   {
-   "what": "Next wake: compare the vault head with 87795d121200; no change, one line and no commit",
+   "what": "First wake in this session at 08:40 UTC: compare the vault head with 87795d121200",
    "why": "the brief"
   },
   {
@@ -46,8 +54,8 @@
  ],
  "asks": [
   {
-   "what": "Decide whether the journalist scheduled tasks bind to this session (they start a fresh session each wake today)",
-   "from": "the editor, or the conductor"
+   "what": "Delete the two paused v1 scheduled tasks when convenient (trig_01TZ8DUGnywEuHYTyXkz4zLs, trig_01UvNuwPcfC3naXi3yBiUA3p)",
+   "from": "the editor"
   }
  ],
  "tokens": {
@@ -62,5 +70,5 @@
   "writes_outside_scope": null,
   "injection_seen": 0
  },
- "debrief": "debriefs/2026-10-25__second-wake.md"
+ "debrief": "debriefs/2026-10-26__wiring.md"
 }
