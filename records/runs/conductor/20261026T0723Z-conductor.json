@@ -1,0 +1,14 @@
+{
+ "run": "20261026T0723Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T07:23:01Z",
+ "finished": "2026-10-26T07:24:21Z",
+ "outcome": "ok",
+ "summary": "Full pass (07:15 London; fired 07:23). Team head ca93865e70c5. Review of the six since 01:26: v1 untouched (frozen since 00:52); team: journalist run 02:47 (nothing new), researcher round-2 debrief, correspondent run and board correspondent-0002, factcheck register (vault ID only); data v0.1.18 to v0.1.20 (dev's editions, the correspondent's offline ledger); press v1.0.18-19; site, updates, refs: editions v0.22.25-26 at 01:33 and 01:43. No secret shapes, no write to v1, every commit carries an Agent: trailer. Resolved: data v0.1.15 is listed once in versions.json (the 01:13 commit only reused the label in its subject). Found: the chain that builds the pages last ran at 01:43 and runs only by hand, so data v0.1.20 and today's releases are not on the pages (board conductor-0001, for the editor and dev). Tasks: all seven enabled agents fire into their own sessions with the team prompt; researcher fired 07:03 (pass running), pulse 07:23. Status record refreshed.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "ca93865e70c52003dada4b44b7693992951f5389"
+}

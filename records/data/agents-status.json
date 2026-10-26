@@ -1,7 +1,7 @@
 {
  "about": "Where every agent on the team is: what it last did, what it is waiting for and from whom, which branches wait to be carried into dev, what ran on a schedule, and how fresh the site's data is against its vaults. A snapshot taken by conductor@php.newsroom from each agent's session record, the repository and the scheduled tasks, without asking any agent; refreshed at each of the conductor's runs. Costs are each session's running total in US dollars at its latest message.",
  "kept_by": "conductor",
- "as_of": "2026-10-25T15:25Z",
+ "as_of": "2026-10-26T07:30Z",
  "live_version": "0.21.7",
  "agents": [
   {
@@ -335,56 +335,24 @@
  ],
  "schedules": [
   [
-   "Wiring check (15:15 London, 25 Oct)",
-   "Every task below was read from the account: which session it fires into, its prompt, when it last fired. \"Own session\" is the model the editor asked for; \"new session each time\" is not."
+   "Wiring (07:15 London, 26 October)",
+   "Enabled, each into its own session, each prompt pointing at team: conductor, researcher (2 tasks), curator (2), pulse (2), journalist (2), correspondent (2), fact-check. Paused until the loop is proven: ontologist, librarian, desk, Sherpa, security."
   ],
   [
-   "Conductor",
-   "own session; prompt points to WAKE.md (updated 15:16); hourly 07:15-21:15"
+   "Researcher",
+   "fired 07:03; a pass is running; run record due in team"
   ],
   [
-   "Researcher (2 tasks)",
-   "own session; WAKE.md prompt; fired 07:02, 09:31, 12:02, 14:31; no run record published yet"
+   "Pulse",
+   "fired 07:23"
   ],
   [
-   "Curator (2 tasks)",
-   "own session; WAKE.md prompt; fired 08:02, 10:36, 13:02; run record for 13:02 published and carried in"
+   "Today's first loop",
+   "curator 08:00, journalist 08:40, fact-check 08:52, correspondent 09:25"
   ],
   [
-   "Pulse (2 tasks)",
-   "own session; WAKE.md prompt; now 07:22 and 14:52; run record for 14:52 carried in"
-  ],
-  [
-   "Sherpa",
-   "own session; WAKE.md prompt; every two hours at :45; runs at 11:45 and 13:45"
-  ],
-  [
-   "Desk",
-   "own session; WAKE.md prompt; moved to 10:40 and 17:40"
-  ],
-  [
-   "Librarian",
-   "own session; WAKE.md prompt; moved to 20:23"
-  ],
-  [
-   "Ontologist",
-   "own session (new task, the fresh-session one is gone); WAKE.md prompt; 06:05, 10:05, 14:05, 18:05"
-  ],
-  [
-   "Security",
-   "own session; WAKE.md prompt; 22:35 London, inside the quiet hours (the editor asked in the security session)"
-  ],
-  [
-   "Fact-check",
-   "own session; OLD prompt still (says a quiet wake commits nothing): update it from its session"
-  ],
-  [
-   "Journalist (2 tasks)",
-   "NEW SESSION EACH TIME (not \"scheduled | journalist\"); prompt is the WAKE.md one; 08:40, 11:10, 13:40, 16:10, 18:40"
-  ],
-  [
-   "Correspondent (2 tasks)",
-   "NEW SESSION EACH TIME (not \"scheduled | correspondent\"); prompt is the WAKE.md one; 09:25, 11:55, 14:25, 16:55, 19:25"
+   "The chain (pages)",
+   "last edition v0.22.26 at 01:43 UTC; runs only by hand (board conductor-0001)"
   ]
  ],
  "freshness": [
@@ -400,16 +368,11 @@
   ]
  ],
  "decisions": [
+  "Who runs the chain that builds the pages, and when (board conductor-0001): today's releases stay off the pages until it runs.",
+  "Security: wire it in now (its review queue: steps A and B, the press's tools, chain.sh, build.sh, the .gitignore fix, tools/schedule.py in team) and move its wake out of the quiet hours.",
   "Wiring: the journalist's and the correspondent's tasks still start a new session each time; create them from 'scheduled | journalist' and 'scheduled | correspondent' and pause the old four. Fact-check's task still has the old prompt: update it from its session.",
   "INCIDENT, visibility: the researcher and the curator run on schedule but leave no commit and no run record, so the repository, this page and the control room cannot show what they did (their wake prompts say 'nothing new: no commit', which predates AGENTS.md section 7). Proposed: each wake writes a run report into the vault it owns and the conductor commits it as a run record, with your go to change the four scheduled prompts (a researcher that reads the open web should not also release).",
   "security/gate-pass-2 (5 commits ahead): a go; dismiss CodeQL alerts #3 and #22 yourself; rulesets at user logins; private vulnerability reporting.",
-  "The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move.",
-  "Pulse: a go on four things (switch its source to the site, two KEV entries, morning pass to 07:14, release its schedule card).",
-  "The desk's wakes clash with the correspondent's: board 285 proposes moving the desk's checks to about 10:15 and 17:40.",
-  "dev@ was blocked on a Bash permission prompt (last seen 16:45 UTC).",
-  "Lane keys: the Sherpa needs 5iwos28w and wgeiqabu; this session still has no lane keys, so the lanes are not drained here.",
-  "Run records: most scheduled prompts leave none on a quiet wake; AGENTS.md section 7 asks for one. The control room shows these as red dots. Say which rule stands.",
-  "Owner for admin/build/control.py, assets/control.css and assets/control.js; roster row for observability (data/team.json); security's self-check paragraph and card step.",
-  "Board 283: three additions to AGENTS.md section 1 on taking in dev (the correspondent says you agreed them)."
+  "The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move."
  ]
 }
