@@ -1,6 +1,6 @@
 ---
 agent: dev
-title: One repository into six, pass one, with one source for every file; four reports on it
+title: One repository into six: pass one, one source for every file, four reports, and steps A and B the same night (nothing depends on v1)
 date: 2026-10-25
 round: 2
 branch: dev (v1 with admin/build/release.sh; each new repository with its own release script)
@@ -43,6 +43,10 @@ The editor, in this session, 25 October 2026:
 ## The review, the same evening
 
 The editor asked for a step back against the original brief. Done, and released as press v1.0.7, data v0.1.7, v1 v0.22.10 and a cut of the four sites: the parity report the plan's step 1.8 asked for (1,101 of 1,101 pages read the same on the site that owns them); the markdown twins' links, never rewritten until then; the 404 page sending a foreign address (a twin, a view address, an asset, a data file) to the host that owns it, to the route's hosts only; both immutability checks moved from the index to the last commit; the site's gate and release installed with their sha256; and the smaller findings of an independent reading of the press's code, all fixed. Items 23 to 33 of "the challenges" list them. A brief for every agent, "The split, for every agent", says where each member writes today, after the records and data move and after the cutover, with a `repositories` field for every card and the per-agent table; board row 335 holds the four decisions it asks the editor for.
+
+## Steps A and B, the night of 25 to 26 October
+
+The editor's direction at 23:00: from now on everything happens in the six, nothing in v1. Step A (00:40): each repository holds its own sources (team `records/`, data `files/`, press `assets/`, `build/`, `rules/`, site and updates `content/`), a sync per repository that never overwrites a change made there and exports it into the build, and `tools/chain.sh` in the press for the round. Step B (01:10): the build out of v1: the chain builds each edition in a box of its own (`tools/build.sh`, a clone of v1 as frozen at v0.22.22, never pushed) from the six; v1's repository takes nothing, from anyone. Proven three times over with the agents' own writes: the journalist's and correspondent's records (00:39, 00:43), the curator's and fact-check's data releases (v0.1.13, v0.1.14), the journalist's and researcher's (v0.1.16, v0.1.17), all on the pages by edition v0.22.25 (01:50). Found on the way: the press's `.gitignore` (GitHub's Python template) hid `build/`, so v1.0.11 and v1.0.12 deployed without it and the sites lost their scripts for about 25 minutes (the correspondent's row correspondent-0001 caught it; fixed in v1.0.13); a rejected push when two writers release a minute apart, now retried by every release script (undo, take in, number again). The last v1 release is v0.22.22; its README and REALITY say it is closing.
 
 ## New features
 

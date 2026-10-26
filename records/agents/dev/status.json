@@ -1,9 +1,9 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "dev",
- "as_of": "2026-10-25",
+ "as_of": "2026-10-26",
  "round": 2,
- "state": "round 2 closed: the split, pass one, one source for every file, reviewed against the brief; next: the editor's four decisions (board 335), then step A",
+ "state": "round 2 closed: the split through step B (the six hold the sources, the chain builds in its box, v1 frozen at v0.22.22); next: the chain scheduled (the editor's go), pass two proper",
  "done": [
   {
    "what": "Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1",
@@ -20,6 +20,10 @@
   {
    "what": "The split reviewed against the brief: parity (1,101 of 1,101 pages), the twins' links, the 404 page's redirect to the owning host, immutability against the last commit, the tools with their sha256, an independent read's findings fixed; a brief for every agent with the repositories each needs",
    "evidence": "press v1.0.7, data v0.1.7, v1 v0.22.10; admin/content/briefs/2026-10-25__brief__the-split-for-every-agent.md; board 335"
+  },
+  {
+   "what": "Steps A and B of the split: every repository holds its own sources with a sync that never overwrites a change made there; the chain builds each edition in its own box from the six; v1 takes nothing; the agents' first writes in the six carried to the pages; the press .gitignore and the release races fixed",
+   "evidence": "press v1.0.11 to v1.0.18 (tools/sync_v1.py, site_sync.py, build.sh, chain.sh), data v0.1.11 to v0.1.18, editions v0.22.23 to v0.22.25; board dev-0001"
   }
  ],
  "tasks": {
@@ -34,25 +38,25 @@
  },
  "next": [
   {
-   "what": "The editor's four decisions (board 335): step A (records to team, data to data) or resume against v1; the Pages source; the rulesets. Then step A, a day's work.",
-   "why": "the schedule is paused until the agents are briefed"
+   "what": "The chain on a schedule, or run by dev at every wake, so the agents' writes reach the pages without a hand",
+   "why": "today it runs only when dev runs it; nothing that outlives a session without the editor's go"
   },
   {
-   "what": "Pass two of the split: the sources and the build out of v1, then the cutover",
-   "why": "the editor's plan; four decisions first"
+   "what": "Pass two proper: build.py cut into modules along the six lines; data/layers.json one file per desk; the line's words into data; a version and a colophon per site; the policies' scope.writes mapped to the six (abp); agents.py and schedule.py for the six (librarian, conductor)",
+   "why": "the remaining sources of conflict, and story-site's review of the split as served"
   },
   {
-   "what": "The parked items: the persona-first proposal, CI-003 steps 3 and 4, the vault key in browser storage",
-   "why": "the editor: come back to them later"
+   "what": "The cutover: php.oct.2026.newsroom.sgit.ai to the site repository, sites.json serve_at, one re-cut; v1 archived as …__PHP__v1",
+   "why": "the editor, once the sites look right"
   }
  ],
  "asks": [
   {
-   "what": "Board 335: the four decisions before the schedule resumes; the Pages source of the six (board 328)",
+   "what": "The go to schedule the chain (or a session of dev's that runs it each wake); the rulesets of the six; the cutover's day",
    "from": "the editor"
   },
   {
-   "what": "Review press v1.0.0 to v1.0.5, the data and team gates' changes, assets/route.js and the policy the partition writes",
+   "what": "Review of press v1.0.0 to v1.0.18 (the partition, the gates, the syncs, build.sh, chain.sh, the workflows), the data and team gates and release loops, assets/route.js",
    "from": "security@php.newsroom"
   }
  ],
@@ -67,7 +71,7 @@
   "overrides": 1,
   "writes_outside_scope": 16,
   "injection_seen": 0,
-  "note": "7 v1 scripts and build files and 9 images under assets/briefs/, plus the six new repositories (no policy yet), all under the editor's go for the split"
+  "note": "the six repositories have no policies yet (abp maps scope.writes); everything in them this round under the editor's go for the split"
  },
  "debrief": "admin/content/agents/dev/debriefs/2026-10-25__one-repository-into-six.md"
 }
