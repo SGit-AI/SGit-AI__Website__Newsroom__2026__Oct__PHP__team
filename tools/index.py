@@ -12,6 +12,8 @@ file per collection beside the records it is made of, under records/index/:
   messages.json   every message (records/messages/<to>/<id>.md: front matter and body), newest first, each with the run
                   that first read it
   registers.json  every register (records/registers/<agent>.json): vault IDs and kinds of key, never a key
+  agents.json     every member folder (records/agents/<id>/): its status.json and its debriefs (front matter and text),
+                  newest first
 
 A record that cannot be read is left out and named in that file's "skipped" (the gate refuses it at push time; a deploy
 never fails on one). The records stay the source: an
@@ -73,13 +75,42 @@ def collections():
             mskip.append(f'{os.path.relpath(p, ROOT)}: {str(e)[:80]}')
     msgs.sort(key=lambda m: m['id'], reverse=True)
     regs, gskip = load('records/registers/*.json')
-    return {'schedule': ('cards', sorted(cards, key=lambda c: str(c.get('agent'))), cskip), 'runs': ('runs', runs, rskip),
+    members, askip = agents()
+    return {'agents': ('agents', members, askip), 'schedule': ('cards', sorted(cards, key=lambda c: str(c.get('agent'))), cskip), 'runs': ('runs', runs, rskip),
             'messages': ('messages', msgs, mskip), 'registers': ('registers', regs, gskip)}
+
+
+def debrief(p):
+    """The build's load_debriefs: front matter (key: value lines) and the markdown text."""
+    m = re.match(r'^---\n(.*?)\n---\n(.*)$', open(p, encoding='utf-8').read(), re.S)
+    if not m: raise ValueError('no front matter')
+    meta = {}
+    for line in m.group(1).splitlines():
+        kv = re.match(r'^(\w+):\s*(.*)$', line)
+        if kv: meta[kv.group(1)] = kv.group(2)
+    return meta | {'file': os.path.basename(p), 'text': m.group(2)}
+
+
+def agents():
+    out, skipped = [], []
+    top = os.path.join(ROOT, 'records', 'agents')
+    for a in sorted(d for d in os.listdir(top) if os.path.isdir(os.path.join(top, d))):
+        sp, status = os.path.join(top, a, 'status.json'), None
+        if os.path.exists(sp):
+            try: status = json.load(open(sp, encoding='utf-8'))
+            except ValueError as e: skipped.append(f'records/agents/{a}/status.json: {str(e)[:80]}')
+        dbs = []
+        for p in sorted(glob.glob(os.path.join(top, a, 'debriefs', '*.md'))):
+            try: dbs.append(debrief(p))
+            except (ValueError, UnicodeDecodeError) as e: skipped.append(f'{os.path.relpath(p, ROOT)}: {str(e)[:80]}')
+        dbs.sort(key=lambda x: (x.get('date', ''), x['file']), reverse=True)
+        out.append({'agent': a, 'status': status, 'debriefs': dbs})
+    return out, skipped
 
 
 def write(out, name, data):
     with open(os.path.join(out, name + '.json'), 'w', encoding='utf-8', newline='\n') as f:
-        json.dump(data, f, ensure_ascii=False, indent=1, sort_keys=True); f.write('\n')
+        json.dump(data, f, ensure_ascii=False, indent=1); f.write('\n')   # each record's keys in its own order, as the build reads them
 
 
 def main():
