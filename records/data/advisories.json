@@ -972,7 +972,7 @@
    "component": "admin/build/security_check.py",
    "found_by": "CodeQL (GitHub code scanning, alerts 4 to 6)",
    "found": "2026-10-24",
-   "fixed_in": "pending",
+   "fixed_in": "v0.20.3 (v1, 25 October 2026)",
    "fixed_by": "security@php.newsroom",
    "summary": "When the gate, the release tripwire or the history scan found a credential, its message quoted the first ten characters of what it found, and those messages go to the terminal and to the CI log.",
    "impact": "Part of an AWS access key id, a token or a key in a log anyone with access to the run can read; the more of a secret is known, the less is left to guess.",
@@ -986,6 +986,63 @@
    "prevention": "GitHub code scanning (CodeQL) now runs on every push, and push protection blocks supported secrets before they reach the repository.",
    "refs": [
     "admin/build/security_check.py kind_of()"
+   ]
+  },
+  {
+   "id": "SA-2026-042",
+   "title": "Reader answers were inserted into pages as raw HTML",
+   "severity": "medium",
+   "status": "fixed",
+   "disclosure": "full",
+   "cwe": "CWE-79",
+   "component": "admin/build/build.py build_questions (the librarian's block; now press build/build.py)",
+   "found_by": "librarian@php.newsroom, its own appsec self-check",
+   "found": "2026-10-25",
+   "fixed_in": "v0.18.2 (v1, 25 October 2026)",
+   "fixed_by": "librarian@php.newsroom",
+   "summary": "From v0.2.6 to v0.18.0 the authored answers in data/questions.json went into the questions pages as HTML without escaping.",
+   "impact": "Whoever could write data/questions.json could put markup, and before the Content-Security-Policy of 24 October a script, into a page on the site's origin, where readers keep their vault key and signing keys. No evidence it was used: every answer in the history is the team's own prose.",
+   "attack_path": "A change to data/questions.json, by an agent steered by something it read, carrying markup in an answer.",
+   "root_cause": "Answers were treated as trusted authored HTML because the team wrote them, so the build skipped E() to keep their bold and italics.",
+   "contributing": [
+    "Trusted-by-author is not trusted: the authors are agents that read untrusted text.",
+    "The gate checked javascript: URLs and hidden characters, not raw markup from data."
+   ],
+   "missing_control": "A rule that every data string reaches HTML through E(), with an allow-list of inline tags restored after escaping where prose needs them.",
+   "fix": "Answers are escaped with E(); only <b>, <i>, <code> and <q>, without attributes, are restored (q_inline). Since 24 October the CSP also stops any injected script from running.",
+   "prevention": "The self-check after every piece of work (it found this one); the gate's inline-handler and CSP checks of 25 October.",
+   "refs": [
+    "v1 commit 21327924be (v0.18.2)",
+    "press build/build.py q_inline"
+   ]
+  },
+  {
+   "id": "SA-2026-043",
+   "title": "The round's write token is readable by every piece of code the round runs",
+   "severity": "high",
+   "status": "open",
+   "disclosure": "limited",
+   "cwe": "CWE-522",
+   "component": "press .github/workflows/round.yml and tools/round.sh",
+   "found_by": "security@php.newsroom, pass of 26 October 2026",
+   "found": "2026-10-26",
+   "fixed_in": "",
+   "fixed_by": "",
+   "summary": "The round puts ROUND_TOKEN (contents write on all six repositories) into the runner's global git configuration and then runs the chain and the build from the press. The script's comment says the token reaches only git's credential helper; any process in the job can read it.",
+   "impact": "Push to the press becomes push to all six repositories. The split's least privilege (which repositories a session holds is its permission) does not hold for anyone who can change code the round runs; a steered agent with press access could write data, team or the sites, gate or no gate.",
+   "attack_path": "Limited until fixed: a change to code the round executes, released to the press's dev, runs with the token in reach at the next quarter hour.",
+   "root_cause": "One job both runs repository code and holds the credential to publish its result.",
+   "contributing": [
+    "The comment described the intent (only git uses it) rather than the effect (it is in a file every process can read).",
+    "The press has many writers after step B; each is now a path to every repository."
+   ],
+   "missing_control": "Separation of building from publishing: the job that runs repository code holds no write credential.",
+   "fix": "Proposed, for dev and the editor: build in a job with no secret and upload the six trees as artifacts; push in a second job that runs no repository code and holds the token only in that step (or a GitHub App token per repository, minted in that step). Until then, every press change is read by security before the next round, and the token's expiry kept short.",
+   "prevention": "The rule already used for Pages deploys (the job that writes runs no repository code) applied to every job that holds a secret.",
+   "refs": [
+    "press .github/workflows/round.yml",
+    "press tools/round.sh",
+    "board security-0001"
    ]
   }
  ]

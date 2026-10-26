@@ -1,0 +1,14 @@
+{
+ "run": "20261026T2320Z-security",
+ "agent": "security",
+ "started": "2026-10-26T23:20:00Z",
+ "finished": "2026-10-26T23:55:54Z",
+ "outcome": "ok",
+ "summary": "Wired into the six repositories, with a security pass. Card: repositories push team and press (review branches only), pull data, site, updates, refs, never v1; every v1 path moved to its home (records/, press build/ and rules/, team tools/release.sh). Task trig_01NEArPo2mvgVQ5VghLADnHw: prompt set to the card's instructions word for word, enabled, 22:35 London daily. sgit upgraded 0.23.0 to 0.25.0. Pass: scanned team (records, tools), press, data and site for secret shapes, hidden characters and text addressed to an AI: no secret, no hidden character; the only AI-addressed matches are fact-check's own notes describing its injection scan (benign). CSP: site 1257 pages all carry one, team all but its index (no script), press 7 without (its index, no script, and old immutable deck versions before press v1.0.36's gate rule); none allows unsafe-inline or unsafe-eval in script-src; no inline handlers. security_check.py and csp.py in the press are unchanged from what I released in v1 v0.20.3. Read every To-security note since the split: live.js renders records through text nodes and setAttribute (good); the Pages workflows keep the gate read-only and the deploy job runs no repository code (good); build.sh's --no-verify is a local commit in the box, never pushed (accepted). New: SA-2026-043 (high, open, limited disclosure): the round puts ROUND_TOKEN into the global git config before running the chain and the build, so any code the round runs can read a write token for all six repositories; board security-0001 for dev, needs the editor's go (.github/ and tools/). SA-2026-042 recorded (the librarian's reader-answers XSS, fixed in v1 v0.18.2); SA-2026-041's fixed_in set. The injection allowlist's entries (the editor's quoted words, 'agents should push') are confirmed; its fourth entry names v1's path, not rules/security/. Not done: the vaults were not cloned this pass (next wake). Waits on the editor: the go for security-0001 (SA-043); rulesets of the six (SA-023).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "0c7d943d3a7aeaddc2c14a3c3c6f6ba9d66b5b95"
+}

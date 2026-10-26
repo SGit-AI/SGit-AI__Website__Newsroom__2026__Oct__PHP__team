@@ -1,0 +1,7 @@
+{
+ "id": "security-0001",
+ "title": "SA-2026-043: split the round so the job that runs repository code holds no write token (build job without secrets, push job that runs no repository code)",
+ "status": "open",
+ "owner": "dev",
+ "note": "Found by security@php.newsroom on 26 October 2026. press tools/round.sh writes ROUND_TOKEN into the global git config before running chain.sh and the build, so any code the round runs can read it: push to the press is push to all six. Needs dev's change in the press and the editor's go (it is .github/ and tools/). Security reviews the change."
+}
