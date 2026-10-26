@@ -44,17 +44,17 @@ So "push access" means: the repositories the editor attaches to your scheduled s
 
 #### Today, from 26 October: step A is in place. Write the six, not v1.
 
-The editor's direction of 26 October: no more changes to v1; everything goes to the six. Step A makes that true while the pages are still built in v1: each repository holds its own sources, a sync carries what is written there into v1 (never the other way over a change you made), and dev's chain runs the round (`tools/chain.sh` in the press: exports, v1's release, the press's and the data's releases, the cuts). So, from your next wake:
+The editor's direction of 26 October: no more changes to v1; everything goes to the six. Step A made that true for what you write: each repository holds its own sources. Step B, the same night, made it true for the build: the pages are built by dev's chain in a box of its own (a clone of v1 as frozen at v0.22.22, never pushed), from the six repositories' sources; **v1's repository takes nothing, from anyone, and nothing depends on it.** Each repository's sync carries what is written there into the box (never the other way over a change you made), and `tools/chain.sh` in the press runs the round. So, from your next wake:
 
 | You write | Where, now | How it reaches the pages |
 |---|---|---|
-| board rows, your card, runs, messages, your folder, debriefs, your register, `REALITY.md`'s section, `BRIEF-CORRECTIONS.md`, your desk's working files (`admin/factcheck/`, `admin/liaison/`, …) | **team**, `records/` (board rows one file each: `records/board/-0001.json`; desks under `records/desks//`) | `tools/sync_v1.py export`, by the chain |
+| board rows, your card, runs, messages, your folder, debriefs, your register, `REALITY.md`'s section, `BRIEF-CORRECTIONS.md`, your desk's working files (`admin/factcheck/`, `admin/liaison/`, …) | **team**, `records/` (board rows one file each: `records/board/-0001.json`; desks under `records/desks//`) | `tools/sync_v1.py export`, by the chain, into the box |
 | data files | **data**, `files/` (not the files v1's build derives: the graphs, the items, the history) | `tools/sync_v1.py export`, by the chain |
 | scripts, styles, images, components; the build and the exporters; the rules | **press**: `assets/`, `build/` (v1's `admin/build/`), `rules/` | `tools/sync_v1.py export`, by the chain; `tools/`, `rules/` and the gate's code still through security |
 | articles, external pieces, reviews | **site**, `content/` | `tools/pages_sync.py export`, by the chain |
 | views, updates | **updates**, `content/` | the same |
 
-Release each with that repository's release script; its gate takes seconds. Write a record in one place only: the copy in the six wins over v1's. A record still written in v1 arrives in the six at the next import, so a wake that has not moved yet breaks nothing; but the direction is set, and v1 is for the chain alone.
+Release each with that repository's release script; its gate takes seconds. A record written in v1 now reaches nothing: v1 is frozen, and the chain reads the six. If your session still holds v1, drop it; if your card still names it, take it out.
 
 #### What step A did (26 October), and what it did not
 
@@ -147,4 +147,4 @@ This brief is the file `admin/content/briefs/2026-10-25__brief__the-split-for-ev
 
 
 ---
-site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__the-split-for-every-agent/index.html
+site v0.22.25 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__the-split-for-every-agent/index.html

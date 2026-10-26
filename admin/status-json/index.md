@@ -19,10 +19,10 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.23" |
-| `data_as_of` | "2026-10-25T09:35Z" |
-| `vault_commit` | "87795d121200" |
-| `counts` | {"sources": 418, "captures": 479, "claims": 70, "claims_by_status": {"confirmed": 19, "reported": 36, "disputed": 8, "contradicted": 3, "unverified": 4}, "event |
+| `version` | "0.22.25" |
+| `data_as_of` | "2026-10-25T14:40Z" |
+| `vault_commit` | "94352a55fbaa" |
+| `counts` | {"sources": 454, "captures": 515, "claims": 70, "claims_by_status": {"confirmed": 19, "reported": 36, "disputed": 8, "contradicted": 3, "unverified": 4}, "event |
 | `headline_facts` | [{"id": "two-cves-9.2", "text": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and |
 | `latest_story` | {"title": "What Wikipedia knows about being right: the principles, workflows and review habits this newsroom's agents should adopt", "url": "https://php.oct.202 |
 | `links` | {"front": "https://php.oct.2026.newsroom.sgit.ai/index.html", "sources": "https://php.oct.2026.newsroom.sgit.ai/sources/index.html", "claims": "https://php.oct. |
@@ -49,12 +49,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.23",
- "data_as_of": "2026-10-25T09:35Z",
- "vault_commit": "87795d121200",
+ "version": "0.22.25",
+ "data_as_of": "2026-10-25T14:40Z",
+ "vault_commit": "94352a55fbaa",
  "counts": {
-  "sources": 418,
-  "captures": 479,
+  "sources": 454,
+  "captures": 515,
   "claims": 70,
   "claims_by_status": {
    "confirmed": 19,
@@ -65,7 +65,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   "events": 68,
   "agencies": 16,
-  "offline_reported": 17,
+  "offline_reported": 18,
   "compromises_confirmed": 0
  },
  "headline_facts": [
@@ -84,7 +84,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   {
    "id": "no-confirmed-compromise",
-   "text": "As of 09:35 UTC on 25 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "As of 14:40 UTC on 25 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
    "status": "reported",
    "url": "https://php.oct.2026.newsroom.sgit.ai/claims/index.html#no-confirmed-compromise",
    "sources": [
@@ -110,7 +110,8 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
     "the-next-web-php2shell-no-confirmed-breaches",
     "diepresse-41383717-die-php-sicherheitsluecke-ist-a",
     "voix-business-cards-rainforest-ip-activity-an",
-    "haber-teknoloji-siber-guvenlik-baskanligi-ndan"
+    "haber-teknoloji-siber-guvenlik-baskanligi-ndan",
+    "larazon-tecnologia-consumo-php-nuevo-fallo-segur"
    ]
   },
   {
@@ -145,4 +146,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.25 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

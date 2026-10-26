@@ -1,6 +1,24 @@
 {
- "current": "0.22.23",
+ "current": "0.22.25",
  "versions": [
+  {
+   "version": "0.22.25",
+   "date": "2026-10-26",
+   "title": "the journalist's verdicts and the researcher's source watch (data v0.1.16, v0.1.17), the curator's evidence, the fact-check's correction; the six's instructions at step B",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "94352a55fbaa",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.24",
+   "date": "2026-10-26",
+   "title": "the six's instructions and the agents' brief at step B; the curator's refreshed evidence (454 sources) and the fact-check's correction, written in data; the press's build/ no longer hidden by its ignore file",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "94352a55fbaa",
+   "reconstructed": false
+  },
   {
    "version": "0.22.23",
    "date": "2026-10-26",

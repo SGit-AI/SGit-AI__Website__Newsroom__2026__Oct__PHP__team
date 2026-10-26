@@ -25,4 +25,4 @@ Not sent. The Sherpa sends nothing to readers; a reply, if any, is the editor's.
 
 
 ---
-site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/feedback/uf-001/index.html
+site v0.22.25 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/feedback/uf-001/index.html

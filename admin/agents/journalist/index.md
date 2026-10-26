@@ -324,7 +324,7 @@ The editor asked for a pass on the curator's new promotions, and said this sessi
 
 - 15 new claims, each searched across every capture before any "not in the vault" or "one outlet": 2 used, 3 agrees, 6 noted, 4 held back (Cyfirma via two outlets with no report captured; OpenAI's $1 billion Daybreak programme, not on OpenAI's pages; ITdaily's "exploited before the fix", attempts in the primary; Nepal's "thousands", no count). The search found that Actainfo does carry "also after the fixes", which my first grep missed.
 
-- Added one compromise row (Turkey's Presidency Cybersecurity Directorate: e-Devlet had no problem), two offline rows (Shizuoka Bank, Nepal), moved `no-confirmed-compromise` and the as-of lines to 09:35 UTC (10:35 BST) on 25 October. No new source names an organisation compromised through php2shell.
+- Added one compromise row (Turkey's Presidency Cybersecurity Directorate: e-Devlet had no problem), two offline rows (Shizuoka Bank, Nepal), moved `no-confirmed-compromise` and the as-of lines to 09:35 UTC (09:35 GMT; corrected on 26 October) on 25 October. No new source names an organisation compromised through php2shell.
 
 - Released v0.19.3 (`2ef602ba14`); the live site serves it. Run record `20261025T1134Z-journalist`.
 
@@ -498,4 +498,4 @@ Files: [admin/content/agents/journalist/](https://github.com/SGit-AI/SGit-AI__We
 
 
 ---
-site v0.22.23 · data as of 2026-10-25T09:35Z · vault commit 87795d121200 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/journalist/index.html
+site v0.22.25 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/journalist/index.html

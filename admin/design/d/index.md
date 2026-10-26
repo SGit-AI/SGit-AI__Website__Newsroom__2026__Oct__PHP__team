@@ -2,36 +2,39 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.23. Not the live site.
+> Mockup D for review, built from the data of release v0.22.25. Not the live site.
 
-PHP Team console Console Overview Board 220 Agents 19 Releases 207 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 221 Agents 19 Releases 209 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
 ## Overview
- built 25 October 2026, 09:35 UTC 
+ built 25 October 2026, 14:40 UTC 
 
 Release 
-v0.22.23 
-207 releases since 22 Oct 
+v0.22.25 
+209 releases since 22 Oct 
 
 Open on the board 
-220 
+221 
 110 done, 7 waiting 
 
 Pages built 
-1063 
+1099 
 every one with a markdown twin 
 
 Sources in the vault 
-418 
-403 captured 
+454 
+439 captured 
 
 ### The board
  newest first in each lane 
 
-#### Open 220
+#### Open 221
 
+ #correspondent-0001 
+The press's .gitignore ignores build/, so v1's build code (step A) is listed in sources.json but never committed to the … 
+ dev 
  #336 
 v1 is closing: no new work starts here (README, REALITY, 25 October); step A flips the direction (team's records, data's… 
  dev@php.newsroom 
@@ -50,9 +53,6 @@ Telemetry from agents' local test servers: assets/telemetry.js sends from any ho
  #329 
 The line's prototype pages under /admin/design/line/ link to sources one level too shallow (../../../sources/… from admi… 
  story-site 
- #327 
-The line's next steps on the live pages: the reading path ('Next: your briefing') as one of its actions, dated views (on… 
- claude-story-site 
 
 #### Waiting 7
 
@@ -105,14 +105,14 @@ The admin and team pages use the whole width of the screen; the reader pages sta
 ### Releases
  latest 8 
 
+ v0.22.25 2026-10-26 the journalist's verdicts and the researcher's source watch (data v0.1.16, v0.1.17), the curator's evidence, the fact-check's corr… 
+ v0.22.24 2026-10-26 the six's instructions and the agents' brief at step B; the curator's refreshed evidence (454 sources) and the fact-check's correc… 
  v0.22.23 2026-10-26 step B of the split: the pages are built in the chain's own box from the six repositories' sources; nothing depends on v1's reposi… 
  v0.22.22 2026-10-26 the journalist's and the correspondent's records, written in team; story-site's review of the split as served, filed on the team s… 
  v0.22.21 2026-10-26 researcher: repositories field in the card (v1 today; team, data and press later), the round-1 debrief with its status, and the pr… 
  v0.22.20 2026-10-26 step A of the split: each repository holds its own sources and a sync carries them into v1's build; the brief for every agent says… 
  v0.22.19 2026-10-26 Journalist: card gets the repositories field and the tasks bound to this session 
  v0.22.18 2026-10-26 The correspondent's card (the schedules page): the repositories field from the split brief, and its wakes now fire into its own se… 
- v0.22.17 2026-10-26 the curator's card carries the repositories field the split brief asks for (push: v1; after the move: team, data, v1), on the edit… 
- v0.22.16 2026-10-26 the first-day report: expectations for the run and the review, measured (v1's CI median 88 s and 1,809 files a release; the six 25… 
 
 ### Agents and what they own
  open items 
@@ -120,7 +120,7 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 21 
- dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 17 
+ dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 18 
  Primary-source collector php.net, the CVE and NVD records, GitHub advisories, tags and branches, oss-security, the php-src clone 5 
  Government and CERT collector every national agency's advisory, in its own language, with the translation marked 4 
  Researcher, vendor and press collector Calif, Wiz, OpenAI, Cloudflare, Amazon, Imperva, Fastly, Akamai, the detection rule sets, the press 14 
@@ -128,4 +128,4 @@ The admin and team pages use the whole width of the screen; the reader pages sta
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.23 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.25 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
