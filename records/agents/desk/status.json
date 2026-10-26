@@ -1,25 +1,25 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "desk",
- "as_of": "2026-10-25",
+ "as_of": "2026-10-26",
  "round": {
-  "n": 3,
-  "date": "2026-10-25",
-  "branch": "narrator/offline-ledger",
+  "n": 4,
+  "date": "2026-10-26",
+  "branch": "dev (team)",
   "commits": [
-   "2e5a6a4c74",
-   "v0.21.1"
+   "b70e513",
+   "1594133"
   ]
  },
- "state": "round 3 closed: the scheduled task wired to the card; wakes at 10:40 and 17:40 London; next wake 17:40 today",
+ "state": "round 4 closed: wired into the six repositories (push team only); scheduled task enabled; next wake 27 October 10:40 London",
  "done": [
   {
-   "what": "The scheduled task carries the card's prompt word for word, updated in place; none created, none to delete",
-   "evidence": "trig_012VDhTAeH7RQRRTBF8Gxq6y; /team/schedule/wiring/"
+   "what": "Card given repositories (push team), v1 paths moved to team's records",
+   "evidence": "records/schedule/desk.json, team b70e513"
   },
   {
-   "what": "Wakes moved to 10:40 and 17:40 London, after the correspondent's reviews (board 285)",
-   "evidence": "data/schedule/desk.json; v0.21.1"
+   "what": "sgit 0.25.0; scheduled task's prompt set to the card's instructions, enabled",
+   "evidence": "trig_012VDhTAeH7RQRRTBF8Gxq6y; records/runs/desk/20261026T2345Z-desk.json"
   }
  ],
  "tasks": {
@@ -51,18 +51,14 @@
  },
  "next": [
   {
-   "what": "The 17:40 afternoon check",
+   "what": "The 10:40 wake on 27 October, the first against team",
    "why": "the card"
-  },
-  {
-   "what": "Approve story-site's page lines for the line design when they exist",
-   "why": "the line brief"
   }
  ],
  "asks": [
   {
-   "what": "the desk's scope over data/outreach.json and the front-page wording",
-   "from": "the editor, through abp@newsroom.sgit"
+   "what": "whether the desk holds a data push again for the correction requests (files/outreach.json)",
+   "from": "the editor"
   }
  ],
  "tokens": {
@@ -70,12 +66,12 @@
   "how": "the session does not show a token count to the agent"
  },
  "policy": {
-  "version": "2026-10-25",
+  "version": "2026-10-26",
   "out_of_scope_requests": 0,
   "pushbacks": 0,
   "overrides": 0,
   "writes_outside_scope": 0,
   "injection_seen": 0
  },
- "debrief": "admin/content/agents/desk/debriefs/2026-10-25__wired.md"
+ "debrief": "records/agents/desk/debriefs/2026-10-26__wired-into-the-six.md"
 }
