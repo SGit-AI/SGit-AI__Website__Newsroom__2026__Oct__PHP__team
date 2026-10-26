@@ -1,10 +1,26 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "dev",
- "as_of": "2026-10-26",
+ "as_of": "2026-10-26T19:55Z",
  "round": 2,
- "state": "round 2 closed: the split through step B (the six hold the sources, the chain builds in its box, v1 frozen at v0.22.22); next: the chain scheduled (the editor's go), pass two proper",
+ "state": "Phase 2 begun on the team site: the board, the schedule pages and the vault register read team's records when they open (no round).",
  "done": [
+  {
+   "what": "The lane drains in v2: collaborators, subscriptions and telemetry drains find the data repository (build/newsroom_paths.py); the telemetry drain can no longer lose an event it marked processed; telemetry is sent only from the four sites' hosts (boards sherpa-0001, 330)",
+   "evidence": "press v1.0.41, data v0.1.40; tested against a fake lane and in a browser on the four live sites"
+  },
+  {
+   "what": "Phase 2, first pages: /admin/board/, /team/schedule/ (and each agent's page) and /team/vaults/ read records/index/*.json, written by team's own deploy (tools/index.py); a row released to team alone was on the board in 40 seconds, a run record on dev's page in 41",
+   "evidence": "press assets/live/, team tools/index.py and .github/workflows/pages.yml; press v1.0.44 and v1.0.46; editions v0.22.34 and v0.22.35"
+  },
+  {
+   "what": "Team's gate checks the records as the build does (cards, runs, messages, registers), so a bad record fails at its writer's push, not in the round",
+   "evidence": "team tools/gate.py"
+  },
+  {
+   "what": "The round no longer deletes records/tools/schedule.py (the conductor's patch to the import's gone loop; board correspondent-0003)",
+   "evidence": "team tools/sync_v1.py; two imports in a row keep the tool"
+  },
   {
    "what": "Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1",
    "evidence": "admin/build/release_pages.py, data/release-pages.json, /admin/versions.html; v0.14.19"
@@ -38,8 +54,16 @@
  },
  "next": [
   {
-   "what": "The chain on a schedule, or run by dev at every wake, so the agents' writes reach the pages without a hand",
-   "why": "today it runs only when dev runs it; nothing that outlives a session without the editor's go"
+   "what": "Phase 2 on the rest of the team site: the member pages (status, done, next, asks), /team/status/, /team/runs/",
+   "why": "every page that shows a record reads it when it opens; then the team site needs the chain only when a page's template changes"
+  },
+  {
+   "what": "Phase 2 on site and data: the pages that show data read it from the data API; the articles rendered by site's own CI from its content/",
+   "why": "the chain, the box and the syncs retire when the last page no longer needs them"
+  },
+  {
+   "what": "Every policy.json names v2 paths (repository:path), mechanically from the syncs' mappings, with a note to each owner",
+   "why": "all 28 policies still name v1 paths"
   },
   {
    "what": "Pass two proper: build.py cut into modules along the six lines; data/layers.json one file per desk; the line's words into data; a version and a colophon per site; the policies' scope.writes mapped to the six (abp); agents.py and schedule.py for the six (librarian, conductor)",
