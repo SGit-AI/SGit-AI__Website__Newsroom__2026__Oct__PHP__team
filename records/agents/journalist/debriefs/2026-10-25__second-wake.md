@@ -24,7 +24,7 @@ The editor asked for a pass on the curator's new promotions, and said this sessi
 - Took in dev; read the inbox (desk, 25 October 09:24 UTC, CVE-2026-115560 in Right now: the correspondent's, passed on) and the notes. Read the correspondent's nine catches on my first 94 verdicts and the corrected brief.
 - Exported the evidence vault at `87795d121200` (was `8c16a64a7cf6`): 418 sources, 479 captures.
 - 15 new claims, each searched across every capture before any "not in the vault" or "one outlet": 2 used, 3 agrees, 6 noted, 4 held back (Cyfirma via two outlets with no report captured; OpenAI's $1 billion Daybreak programme, not on OpenAI's pages; ITdaily's "exploited before the fix", attempts in the primary; Nepal's "thousands", no count). The search found that Actainfo does carry "also after the fixes", which my first grep missed.
-- Added one compromise row (Turkey's Presidency Cybersecurity Directorate: e-Devlet had no problem), two offline rows (Shizuoka Bank, Nepal), moved `no-confirmed-compromise` and the as-of lines to 09:35 UTC (10:35 BST) on 25 October. No new source names an organisation compromised through php2shell.
+- Added one compromise row (Turkey's Presidency Cybersecurity Directorate: e-Devlet had no problem), two offline rows (Shizuoka Bank, Nepal), moved `no-confirmed-compromise` and the as-of lines to 09:35 UTC (09:35 GMT; corrected on 26 October) on 25 October. No new source names an organisation compromised through php2shell.
 - Released v0.19.3 (`2ef602ba14`); the live site serves it. Run record `20261025T1134Z-journalist`.
 
 ## What it looks like
