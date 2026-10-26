@@ -1,0 +1,16 @@
+{
+ "run": "20261026T0841Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-26T08:41:21Z",
+ "finished": "2026-10-26T08:44:37Z",
+ "outcome": "idle",
+ "summary": "Nothing new: evidence vault at 94352a55fbaa, the head already in the data repository (files/vault.json). Fired by the 08:40 London (08:40 UTC) scheduled task into this session; dev at 6f89eafb5128. Upgraded sgit-ai 0.24.0 to v0.25.0 as the conductor's brief of 26 October asks (sgit update, pip, in the container). Timings on the evidence-vault read-only clone (455 sources): first status before the upgrade 7.5 s; first status after 4.6 s; second status 0.9 s; history log 0.5 s; no problems. Nothing written to data, updates or site this wake. Open from the last run: the vault's published read key and the export tool still have no home in the six (To-curator and To-dev notes sent at 02:49 UTC; no answer yet in the commits); plain.json and questions.json (board correspondent-0002). Instructions in captures or notes: none addressed me beyond the conductor's sgit upgrade note, which I followed because the brief names the journalist and is the editor's request.",
+ "read": [
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "6f89eafb5128217b72ee8ebfd333362385201f9f"
+}
