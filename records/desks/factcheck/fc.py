@@ -8,12 +8,24 @@
   fc.py ticket create TYPE TITLE [--claims a,b] [--sources s] [--pages p] [--run Run-N] [--desc TEXT] [--severity S] [--prop k=v ...]
   fc.py ticket set LABEL [--status S] [--comment TEXT] [--prop k=v ...]
   fc.py ticket link LABEL VERB LABEL
-  fc.py export                   write data/factcheck.json for the build (deterministic: no clock)
+  fc.py export                   write factcheck.json into the data repository's files/ (FC_DATA overrides) (deterministic: no clock)
 """
 import hashlib, json, os, re, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
+
+
+def data_dir():
+    """Where the site's data files are: FC_DATA, else the data repository's files/ beside the team clone, else v1's data/."""
+    if os.environ.get('FC_DATA'):
+        return os.path.abspath(os.environ['FC_DATA'])
+    team = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
+    sib = os.path.join(os.path.dirname(team), os.path.basename(team).replace('__team', '__data'), 'files')
+    return sib if os.path.isdir(sib) else os.path.join(ROOT, 'data')
+
+
+DATA = data_dir()
 ISSUES = os.path.join(HERE, '.issues')
 
 LEVELS = [
@@ -40,7 +52,7 @@ def load(path):
 
 
 def data(name):
-    return load(os.path.join(ROOT, 'data', name + '.json'))
+    return load(os.path.join(DATA, name + '.json'))
 
 
 def desk(name, default):
@@ -402,7 +414,7 @@ def cmd_export(argv):
         'runs': runs,
         'investigations': investigations(),
     }
-    with open(os.path.join(ROOT, 'data', 'factcheck.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(DATA, 'factcheck.json'), 'w', encoding='utf-8') as f:
         json.dump(out, f, indent=1, ensure_ascii=False)
         f.write('\n')
     print(f'data/factcheck.json: {len(rows)} assessments, {len(K)} contradictions, {len(tix)} tickets, {len(runs)} runs')

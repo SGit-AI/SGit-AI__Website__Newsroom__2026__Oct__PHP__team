@@ -1,0 +1,14 @@
+{
+ "run": "20261026T0115Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-26T00:30:00Z",
+ "finished": "2026-10-26T01:15:00Z",
+ "outcome": "ok",
+ "summary": "Not a sweep: moved the desk onto the new repositories at the editor's direction. Added the repositories field to the card (push: team and data), attached and cloned team and data, pointed fc.py at the data repository's files/ (FC_DATA overrides), fixed an invalid check result I had written in run 7 ('supports' to 'carries'; audit 0 failures), released the card, the run record and factcheck.json from team and data. v1 not written. Scheduled task trig_01NJcbVPAcxf5w7N298HCbRE set to the short WAKE.md prompt, enabled, next run 08:52 London on 26 October.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "c4b594d"
+}

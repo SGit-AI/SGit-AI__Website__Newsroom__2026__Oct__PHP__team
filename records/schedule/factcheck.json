@@ -49,5 +49,19 @@
   "create a scheduled task, a session or a workflow"
  ],
  "kept_by": "factcheck@php.newsroom",
- "updated": "2026-10-25"
+ "updated": "2026-10-25",
+ "repositories": {
+  "push": [
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data"
+  ],
+  "pull": [],
+  "after_the_move": {
+   "push": [
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data"
+   ],
+   "pull": []
+  }
+ }
 }
