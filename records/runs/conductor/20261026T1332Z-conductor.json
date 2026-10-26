@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1332Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T13:32:39Z",
+ "finished": "2026-10-26T13:33:41Z",
+ "outcome": "ok",
+ "summary": "Light check (13:15 London, fired 13:32). Team head 1c2ca9ce0d2d; records/tools/schedule.py still in place (no round since the restore); v1 untouched. Review since 12:21: researcher run 12:06 (data v0.1.28, source watch at f12c7b82a7e8), factcheck run 9 at 12:59 (data v0.1.29); press, site, updates, refs unchanged since edition v0.22.28 at 11:39. Curator's 13:00 wake: run record not yet in (its pulls take up to 25 min on 0.25.0); journalist 13:40 next.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "1c2ca9ce0d2d3cf366b93892943b0d803dca094c"
+}
