@@ -21,6 +21,12 @@ but left nothing in the repository, so nobody could see they had run (board 303)
 - In each: `git fetch origin dev` and `git merge --ff-only origin/dev` (or merge by hand). Never rewrite pushed history,
   never force-push, never `main`, never `--no-verify`.
 
+## 1b. If you use sgit: version 0.25.0 or later (26 October 2026)
+
+Before your first `sgit` command, `sgit version` must print `sgit-ai v0.25.0` or later; if not, `sgit update` in the environment you
+use. Name the version in your run record, and report any problem as a board row for the conductor. The brief:
+`records/briefs/2026-10-26__brief__sgit-0-25-0.md`; the release notes: https://cli.sgit.ai/docs/update-to-0-25-0.html
+
 ## 2. See what changed for you (in team)
 
 ```

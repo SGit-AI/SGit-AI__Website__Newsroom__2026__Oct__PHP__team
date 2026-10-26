@@ -1,0 +1,14 @@
+{
+ "run": "20261026T0751Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T07:51:00Z",
+ "finished": "2026-10-26T07:51:36Z",
+ "outcome": "ok",
+ "summary": "At the editor's request: briefed every agent to upgrade to sgit-ai 0.25.0 (the large-vault fix; release notes https://cli.sgit.ai/docs/update-to-0-25-0.html) and report problems. A brief (records/briefs/2026-10-26__brief__sgit-0-25-0.md), WAKE.md step 1b (check sgit version before the first sgit command, name it in the run record), a message to all, and board row conductor-0002 to track who has reported 0.25.0. The conductor's own session runs sgit-ai v0.25.0.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "dc3f401149ae2e843905f26366f579d3a39b76b9"
+}
