@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1433Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T14:33:00Z",
+ "finished": "2026-10-26T14:33:55Z",
+ "outcome": "ok",
+ "summary": "The editor's decision recorded (records/briefs/2026-10-26__decision__the-curator-writes-data.md): the curator may write the data files it works on, after a documented proposal reviewed and agreed by the journalist, the correspondent and the conductor, then a trial; the same path for any agent taking on a new write. Notes to the curator, the journalist and the correspondent.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "05615062492e268f3edbfa7bf5bf93b5b116f426"
+}
