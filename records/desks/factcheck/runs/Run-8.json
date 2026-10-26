@@ -1,6 +1,6 @@
 {
  "id": "Run-8",
- "site_version": "data v0.1.21",
+ "site_version": "0.22.26",
  "vault_commit": "94352a55fbaa",
  "started": "2026-10-26T08:54Z",
  "finished": "2026-10-26T09:10Z",
@@ -8,5 +8,6 @@
  "checked": "fc.py changed (no-confirmed-compromise, refreshed to 14:40 UTC on 25 October, one new source: La Razon); fc.py check (0 failures); fc.py drift (the same six excerpts as run 6, all explained); KEV; NVD (CVE-2026-115560, no record yet); php.net releases; W3Techs",
  "opened": "none",
  "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged since run 6 and explained.",
- "summary": "no-confirmed-compromise still holds at 14:40 UTC on 25 October (A4): La Razon, the one new source, reports attacks as attempts and names no victim, so it is graded partial. The vault is read from the desk's own pack copy (hsmfer5w): a pull takes 15 seconds, a fresh clone 40. W3Techs still says 69.2%. KEV (2026.10.23) still lists neither CVE; NVD has no record yet for CVE-2026-115560, the third PHP flaw La Razon names; php.net's latest releases are those of 21 October."
+ "summary": "no-confirmed-compromise still holds at 14:40 UTC on 25 October (A4): La Razon, the one new source, reports attacks as attempts and names no victim, so it is graded partial. The vault is read from the desk's own pack copy (hsmfer5w): a pull takes 15 seconds, a fresh clone 40. W3Techs still says 69.2%. KEV (2026.10.23) still lists neither CVE; NVD has no record yet for CVE-2026-115560, the third PHP flaw La Razon names; php.net's latest releases are those of 21 October.",
+ "site_export_commit": "94352a55fbaa"
 }
