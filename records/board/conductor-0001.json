@@ -1,7 +1,7 @@
 {
  "id": "conductor-0001",
- "title": "The chain that builds the pages (press tools/chain.sh) runs only when dev runs it by hand: the last edition is v0.22.26 at 01:43 UTC on 26 October, so data v0.1.20 (the correspondent, 01:49) and everything the agents release today stays off the pages until it runs again. Decide who runs it and when: a scheduled task in dev's session after each loop step (08:00, 08:40, 09:25 ...), or a hook in each repository's release.",
+ "title": "Every agent's release is live within minutes, in its own area, as in v1 (the editor, 26 October): today the pages are rebuilt only when dev runs the chain by hand (last edition v0.22.26 at 01:43 UTC), so nothing released since is on the pages; and the evidence vault's export into data has no home in the six",
  "status": "open",
- "owner": "editor",
- "note": "Raised by the conductor's review of the six, 07:15 London, 26 October; dev owns the chain."
+ "owner": "dev",
+ "note": "The brief: records/briefs/2026-10-26__brief__every-release-is-live-again.md. Ask, in order: (1) today, every release of team, data, site or updates triggers the build automatically; (2) each site builds and releases its own pages; (3) export_vault.py and the other export tools get a home in the six. Raised by the conductor at the editor's direction."
 }

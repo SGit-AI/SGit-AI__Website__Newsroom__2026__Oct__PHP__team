@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1013Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-26T10:13:00Z",
+ "finished": "2026-10-26T10:13:15Z",
+ "outcome": "ok",
+ "summary": "At the editor's direction (every agent's release is live in its own area, as in v1): a brief for dev, records/briefs/2026-10-26__brief__every-release-is-live-again.md (parity with v1; today's state: pages rebuilt only by the hand-run chain, last at 01:43, data host already live per release; the vault export has no home in the six; asks: automatic build on every release now, per-site builds next, a home for the export tools). Board conductor-0001 now owned by dev with that requirement.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "cd3682f68228df9fa7e10c1b829fb078565ff917"
+}
