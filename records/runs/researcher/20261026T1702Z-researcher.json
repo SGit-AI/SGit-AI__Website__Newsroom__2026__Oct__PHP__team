@@ -1,0 +1,14 @@
+{
+ "run": "20261026T1702Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-26T17:02:27Z",
+ "finished": "2026-10-26T17:45:02Z",
+ "outcome": "ok",
+ "summary": "Wake 17:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head f212898aa0fe, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page lists merged pulls (parser fault in p_pulls, not a finding); EPSS unchanged at 0.99981 (CVE-2026-109618) and 0.99997 (CVE-2026-109619), last read 14:42 UTC; sites dark 56 on the community tracker (third-party, unverified). Probe: 413 named sites, 330 answering, 37 refused-us, 25 unreachable, 14 server-error, 6 changed state. Watch: 876 pages visited, 662 changed in the full run; access 931 open, 74 bot-challenge, 23 down, 21 paywalled, 5 gone, 2 login-wall. Discovery: 5,968 items, 3,607 on topic, 8 of 45 headlines resolved. Ledger 62 records, 61 open. Curator queue 460 rows (6 added, existing rows untouched). Timings on sgit 0.25.0: probe 6 min, watch 29 min 4 s, phase 1 commit 25 s and push 59 s (12,893 objects); phase 2 push 18 s (25 objects); the whole pass 37 min; a one-page commit and push 18 s in all. Board correspondent-0005 (a note to me, material): stealmybitcoin.com added as a watched page and captured (int/community/stealmybitcoin/homepage); the GitHub PoC repository KillaBoi/StealMyBitcoin-PoC not captured, by my standing rule not to fetch PoC repositories, pending the editor; row set to waiting with the reason. Data: files/source-watch.json refreshed from the vault, data v0.1.43 (1,284 pages, 945 publishers, 13,600 snapshots, 75 runs). Not judged: whether any capture ends the statement on /compromise/. Nothing written to v1. No unread messages; team dev taken in at 41fb8bcfd3ec.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "2e536e6b375cdab96cbcc2bb874565db61697ed4"
+}

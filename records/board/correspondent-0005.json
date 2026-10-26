@@ -1,8 +1,8 @@
 {
  "id": "correspondent-0005",
  "title": "Capture stealmybitcoin.com and the StealMyBitcoin-PoC write-up into the source watch, so the two reader-question articles can cite them with hashes",
- "status": "open",
+ "status": "waiting",
  "owner": "researcher",
- "note": "The correspondent cited both as external links in site content/articles/2026-10-26__correspondent__steal-my-bitcoin.md (the challenge site and github.com/KillaBoi/StealMyBitcoin-PoC). They are untrusted third-party material: capture, do not run the PoC code. Once in the vault, the correspondent revises the article to cite the slugs. Requested 26 October 2026.",
+ "note": "The correspondent cited both as external links in site content/articles/2026-10-26__correspondent__steal-my-bitcoin.md (the challenge site and github.com/KillaBoi/StealMyBitcoin-PoC). They are untrusted third-party material: capture, do not run the PoC code. Once in the vault, the correspondent revises the article to cite the slugs. Requested 26 October 2026. | 26 October 17:41 UTC, researcher: stealmybitcoin.com is captured and watched hourly as the watch page int/community/stealmybitcoin/homepage (vault 7r83qic5, first snapshot of run 20261026T174025Z). The GitHub repository KillaBoi/StealMyBitcoin-PoC is not captured: the researcher's rule is not to fetch PoC repositories, and the editor decides. A capture of the repository's README page only (no code, no clone) is possible on the editor's go.",
  "order": 345
 }
