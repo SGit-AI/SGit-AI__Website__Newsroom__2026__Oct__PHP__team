@@ -1,27 +1,58 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "pulse",
- "as_of": "2026-10-24",
- "round": null,
- "state": "no round recorded under this policy yet",
- "done": [],
+ "as_of": "2026-10-26",
+ "round": 2,
+ "state": "round 2 closed: Pulse vault converted to pack mode (9f5knw9r); records now written in team; passes at 07:22 and 14:52 London",
+ "done": [
+  "trig_01EYsEUMTQeJBQu2Aa18K4v2: prompt set to the card's, word for word; moved to 07:22 London",
+  "trig_012149SGwkRRJ2CUSC5XhsDP created for 14:52 London, card's prompt, waking this session",
+  "data/schedule/pulse.json: times, objective, status note (commit 3eb0c337cc)",
+  "Pulse vault 4klm5qlt: six passes 22 to 25 October, in sync with the server",
+  "Manual pass 20261026T001310Z (00:13 London) at the editor's request: pushed, in sync",
+  "Converted the Pulse vault to the pack vault 9f5knw9r (sgit pack import: 58 s; first push 77 s; a fresh clone matches file for file; pack verify ok); its key sealed to the root; the normal vault 4klm5qlt retired, kept",
+  "Both scheduled tasks now carry the card's instructions word for word, pointing at team and records/WAKE.md",
+  "First wake from team (07:22): pass 20261026T072500Z pushed; run record 20261026T0723Z; card corrected in team (times, repositories, objective, steps)"
+ ],
  "tasks": {
   "board": [],
   "note": "the board rows this member owns are in data/admin.json"
  },
- "next": [],
- "asks": [],
+ "next": [
+  "Read php2shell's evidence from the site's curated data and capture a press-homepage list for front-page counts (waits on the editor)",
+  "Track the KEV additions of 23 October, CVE-2026-110447 and CVE-2026-114625, and CVE-2026-115560 as a row of its own (waits on the editor)",
+  "Mark news counts from a blocked feed as blocked",
+  "Cover rung 2 with a source the proxy allows, in place of the blocked GitHub search (new source: the editor's go)"
+ ],
+ "asks": [
+  {
+   "from": "the editor",
+   "ask": "confirm sha256:956934e47063ceaa as the vault-of-vaults keeper, to seal the pack vault key (9f5knw9r) to it"
+  },
+  {
+   "from": "the editor",
+   "ask": "attach data (push) for files/pulse.json; and a go to publish updates in the updates repository (a scope change for the librarian / abp)"
+  },
+  {
+   "from": "press / security",
+   "ask": "move export_pulse.py to the press and point it at 9f5knw9r with its new read key: the site's /pulse/ page still reads the retired vault 4klm5qlt"
+  },
+  {
+   "from": "librarian / abp",
+   "ask": "add the vault register row for 9f5knw9r (and 4klm5qlt, retired) to pulse's register: data/vault-register is not in pulse's scope.writes"
+  }
+ ],
  "tokens": {
   "value": null,
-  "how": "not recorded"
+  "how": "not read this round"
  },
  "policy": {
   "version": "2026-10-24",
   "out_of_scope_requests": 0,
   "pushbacks": 0,
   "overrides": 0,
-  "writes_outside_scope": null,
+  "writes_outside_scope": 0,
   "injection_seen": 0
  },
- "debrief": null
+ "debrief": "records/agents/pulse/debriefs/2026-10-25__wiring-the-schedule.md"
 }
