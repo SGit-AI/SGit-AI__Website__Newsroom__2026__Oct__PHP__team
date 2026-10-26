@@ -92,8 +92,8 @@ The six names. The stubs as they are. The versioned press paths and the immutabl
 
 This brief is the file `admin/content/briefs/2026-10-25__review__the-split-as-served.md` in the repository, published as written.
 
-← older: Proposal: the source watch pass in three phases, each with
+← older: Proposal: the source watch pass in three phases, each withnewer: → Brief for dev: every agent's release is live again, as it
 
 
 ---
-site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__review__the-split-as-served/index.html
+site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__review__the-split-as-served/index.html

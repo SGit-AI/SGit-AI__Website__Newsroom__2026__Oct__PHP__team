@@ -61,4 +61,4 @@ The channels are kept by [Conductor](../conductor/index.html).
 
 
 ---
-site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/team/channels/index.html
+site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/team/channels/index.html

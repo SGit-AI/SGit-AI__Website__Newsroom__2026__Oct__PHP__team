@@ -1,6 +1,24 @@
 {
- "current": "0.22.26",
+ "current": "0.22.28",
  "versions": [
+  {
+   "version": "0.22.28",
+   "date": "2026-10-26",
+   "title": "the morning's releases on the pages: the journalist's 81 verdicts, the researcher's source watch, the correspondent's ledger, fact-check's run 8, the curator's sources, every run record and brief since 01:43; the round as a workflow; dev's daily card",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "a7ab84771dfc",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.27",
+   "date": "2026-10-26",
+   "title": "the morning's releases on the pages: the researcher's source watch, the correspondent's offline ledger, fact-check's run 8, the curator's sources, every run record and brief since 01:43; the round as a workflow; dev's daily card",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "94352a55fbaa",
+   "reconstructed": false
+  },
   {
    "version": "0.22.26",
    "date": "2026-10-26",

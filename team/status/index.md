@@ -10,22 +10,15 @@ Every agent on the team: what it last did, what it waits for and from whom, the 
 
 Where every agent on the team is: what it last did, what it is waiting for and from whom, which branches wait to be carried into dev, what ran on a schedule, and how fresh the site's data is against its vaults. A snapshot taken by conductor@php.newsroom from each agent's session record, the repository and the scheduled tasks, without asking any agent; refreshed at each of the conductor's runs. Costs are each session's running total in US dollars at its latest message.
 
-**As of** 2026-10-25 15:25Z UTC · **live site** v0.21.7
+**As of** 2026-10-26 11:35Z UTC · **live site** v0.21.7
 
 23agents3working2blocked17waiting on the editor16branches waiting for dev$1025spent, sessions so far
 
 ## What needs a decision first
-- Wiring: the journalist's and the correspondent's tasks still start a new session each time; create them from 'scheduled | journalist' and 'scheduled | correspondent' and pause the old four. Fact-check's task still has the old prompt: update it from its session.
-- INCIDENT, visibility: the researcher and the curator run on schedule but leave no commit and no run record, so the repository, this page and the control room cannot show what they did (their wake prompts say 'nothing new: no commit', which predates AGENTS.md section 7). Proposed: each wake writes a run report into the vault it owns and the conductor commits it as a run record, with your go to change the four scheduled prompts (a researcher that reads the open web should not also release).
-- security/gate-pass-2 (5 commits ahead): a go; dismiss CodeQL alerts #3 and #22 yourself; rulesets at user logins; private vulnerability reporting.
-- The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move.
-- Pulse: a go on four things (switch its source to the site, two KEV entries, morning pass to 07:14, release its schedule card).
-- The desk's wakes clash with the correspondent's: board 285 proposes moving the desk's checks to about 10:15 and 17:40.
-- dev@ was blocked on a Bash permission prompt (last seen 16:45 UTC).
-- Lane keys: the Sherpa needs 5iwos28w and wgeiqabu; this session still has no lane keys, so the lanes are not drained here.
-- Run records: most scheduled prompts leave none on a quiet wake; AGENTS.md section 7 asks for one. The control room shows these as red dots. Say which rule stands.
-- Owner for admin/build/control.py, assets/control.css and assets/control.js; roster row for observability (data/team.json); security's self-check paragraph and card step.
-- Board 283: three additions to AGENTS.md section 1 on taking in dev (the correspondent says you agreed them).
+- Set ROUND_TOKEN (the secret dev's quarter-hour round needs in the press's workflow): until then nothing released today reaches the pages.
+- Security: wire it in; its queue now includes the injection allowlist dev added at 11:10 (four entries for the editor's quoted words in the conductor's brief), steps A and B, the round workflow.
+- Whether wakes write the data files (the curator and the journalist both ask); the oq9gflln deletion (the curator).
+- dev's daily wake starts a fresh session each time; if you want it in its own session like the others, it is created from dev's session.
 
 ## Every agent
 
@@ -86,19 +79,9 @@ The register of schedules and every recorded run is on [runs](../runs/index.html
 
 | Schedule | State |
 |---|---|
-| Wiring check (15:15 London, 25 Oct) | Every task below was read from the account: which session it fires into, its prompt, when it last fired. "Own session" is the model the editor asked for; "new session each time" is not. |
-| Conductor | own session; prompt points to WAKE.md (updated 15:16); hourly 07:15-21:15 |
-| Researcher (2 tasks) | own session; WAKE.md prompt; fired 07:02, 09:31, 12:02, 14:31; no run record published yet |
-| Curator (2 tasks) | own session; WAKE.md prompt; fired 08:02, 10:36, 13:02; run record for 13:02 published and carried in |
-| Pulse (2 tasks) | own session; WAKE.md prompt; now 07:22 and 14:52; run record for 14:52 carried in |
-| Sherpa | own session; WAKE.md prompt; every two hours at :45; runs at 11:45 and 13:45 |
-| Desk | own session; WAKE.md prompt; moved to 10:40 and 17:40 |
-| Librarian | own session; WAKE.md prompt; moved to 20:23 |
-| Ontologist | own session (new task, the fresh-session one is gone); WAKE.md prompt; 06:05, 10:05, 14:05, 18:05 |
-| Security | own session; WAKE.md prompt; 22:35 London, inside the quiet hours (the editor asked in the security session) |
-| Fact-check | own session; OLD prompt still (says a quiet wake commits nothing): update it from its session |
-| Journalist (2 tasks) | NEW SESSION EACH TIME (not "scheduled \| journalist"); prompt is the WAKE.md one; 08:40, 11:10, 13:40, 16:10, 18:40 |
-| Correspondent (2 tasks) | NEW SESSION EACH TIME (not "scheduled \| correspondent"); prompt is the WAKE.md one; 09:25, 11:55, 14:25, 16:55, 19:25 |
+| Wiring (11:15 London) | Enabled into their own sessions with the team prompt: conductor, researcher (2), curator (2), pulse (2), journalist (2), correspondent (2), fact-check. New: dev's daily wake at 06:40 London, a fresh session each time (not a session of its own). Paused: ontologist, librarian, desk, Sherpa, security. |
+| The loop this morning | researcher 09:34 (queue pushed 10:09), curator 10:36 (batch 15 pushed 11:06), journalist 11:13 (81 verdicts, data v0.1.24), correspondent 11:55 next. The 08:00-08:40 race was the first-status delay; the 11:10 loop ran in order. |
+| The pages | still edition v0.22.26 (data 0.1.19); dev's round runs every quarter hour once the editor sets ROUND_TOKEN (press v1.0.20); edition v0.22.27 built at 11:22 but not yet cut to the sites |
 
 ## How fresh this site's data is
 
@@ -111,4 +94,4 @@ The vaults move ahead of the site; a fact reaches the site only when its vault i
 
 
 ---
-site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/team/status/index.html
+site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/team/status/index.html

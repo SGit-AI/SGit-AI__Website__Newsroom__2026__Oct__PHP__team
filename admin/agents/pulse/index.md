@@ -173,19 +173,65 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | no round recorded under this policy yet |
-| Done | nothing recorded |
-| Next | nothing proposed |
-| Asks | none |
-| Tokens | unknown · not recorded |
-| Policy | out_of_scope_requests 0, pushbacks 0, overrides 0, writes_outside_scope None, injection_seen 0 |
+| Round | 2 |
+| Done | trig_01EYsEUMTQeJBQu2Aa18K4v2: prompt set to the card's, word for word; moved to 07:22 London trig_012149SGwkRRJ2CUSC5XhsDP created for 14:52 London, card's prompt, waking this session data/schedule/pulse.json: times, objective, status note (commit 3eb0c337cc) Pulse vault 4klm5qlt: six passes 22 to 25 October, in sync with the server Manual pass 20261026T001310Z (00:13 London) at the editor's request: pushed, in sync Converted the Pulse vault to the pack vault 9f5knw9r (sgit pack import: 58 s; first push 77 s; a fresh clone matches file for file; pack verify ok); its key sealed to the root; the normal vault 4klm5qlt retired, kept Both scheduled tasks now carry the card's instructions word for word, pointing at team and records/WAKE.md First wake from team (07:22): pass 20261026T072500Z pushed; run record 20261026T0723Z; card corrected in team (times, repositories, objective, steps) |
+| Next | Read php2shell's evidence from the site's curated data and capture a press-homepage list for front-page counts (waits on the editor) Track the KEV additions of 23 October, CVE-2026-110447 and CVE-2026-114625, and CVE-2026-115560 as a row of its own (waits on the editor) Mark news counts from a blocked feed as blocked Cover rung 2 with a source the proxy allows, in place of the blocked GitHub search (new source: the editor's go) |
+| Asks | (from the editor) (from the editor) (from press / security) (from librarian / abp) |
+| Tokens | unknown · not read this round |
+| Policy | out_of_scope_requests 0, pushbacks 0, overrides 0, writes_outside_scope 0, injection_seen 0 |
 
 ## Its rounds
 
-No debrief yet.
+### Both scheduled tasks wired to the card's prompt; the passes moved to 07:22 and 14:52 London
+
+2026-10-25 · round 1 · branch `claude/brave-ritchie-ka37zx` · commits `3eb0c337cc` · tokens 392310 · outside scope 0 · overrides 0
+
+#### What I was asked
+
+The editor, in this session, 25 October 2026: confirm this is Pulse's session; follow the #pulse section of
+
+/team/schedule/wiring/ (update the scheduled tasks' prompts to the card's, word for word); and move the schedule to a
+
+time that makes sense against the other scheduled runs.
+
+#### What I did
+
+- Confirmed the session: session_019TV42nt6c1NL6MUTWVvpXG, titled "scheduled | pulse@newsroom".
+
+- Listed the account's scheduled tasks: one woke this session, trig_01EYsEUMTQeJBQu2Aa18K4v2, as the wiring page said.
+
+- Updated that task's prompt to the card's, word for word; moved it from 06:44 and 14:44 to 07:22 London and renamed it "Pulse pass (07:22 London)". 06:44 was inside the quiet hours (22:00 to 07:00).
+
+- Created trig_012149SGwkRRJ2CUSC5XhsDP, "Pulse pass (14:52 London)", with the card's prompt, waking this session. One task carries one minute value, so two different minutes need two tasks.
+
+- Chose minutes no other agent uses (:22 and :52). A Pulse pass takes 25 to 45 minutes and depends on no other agent, so both end before the journalist (08:40, 16:10) and the desk (09:20, 16:20).
+
+- data/schedule/pulse.json (commit 3eb0c337cc): times, times_why with both task ids, a corrected objective (it said Pulse tracks php2shell-related CVEs from the source watch; Pulse tracks the recent KEV additions across the industry, with php2shell as the reference case), status_note, updated.
+
+#### What it looks like
+
+No page was added or changed in this round: the card reaches /team/schedule/ only when it is built into dev, which
+
+the conductor carries (below). No screenshot.
+
+#### New features
+
+None.
+
+#### What I did not do
+
+- Did not release: the card says pulse never releases the site, and Pulse reads the open web (REQUIREMENTS section 7). The commit carries a To-conductor note to take the card into dev.
+
+- Did not change the card's each_wake: it still carries the earlier steps, including a pull of the retired source watch clone (oq9gflln). Moving Pulse's php2shell evidence to the site's curated data waits on the editor's go.
+
+- Did not write data/vault-register/pulse.json: it is not in this member's scope.writes (librarian's draft policy).
+
+#### Policy
+
+Scope check (agents.py check --agent pulse): one write, data/schedule/pulse.json, in scope; nothing outside.
 
 Files: [admin/content/agents/pulse/](https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP/tree/dev/admin/content/agents/pulse) · the same data for every member in [data/agents.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/agents.json).
 
 
 ---
-site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/pulse/index.html
+site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/pulse/index.html

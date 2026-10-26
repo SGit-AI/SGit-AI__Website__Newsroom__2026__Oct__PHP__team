@@ -27,7 +27,7 @@ An edit by hand in a site is refused by its gate ("changed since the press wrote
 
 ### The chain, after a v1 release
 
-![The chain, and what stops it](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.19/assets/briefs/split-release-chain.png)
+![The chain, and what stops it](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.27/assets/briefs/split-release-chain.png)
 
 Run it in this order, every time, from the parent folder of the clones. Each step is a release with its own gate; each refuses to run on a v1 clone with uncommitted changes.
 
@@ -63,7 +63,7 @@ Each site's gate runs in its release, and on its own:
 
 In a browser, once the sites are live: open a page, then the developer tools. The page's HTML comes from its own host; every script and stylesheet from `press.php.oct.2026.newsroom.sgit.ai/v//assets/`; every JSON file from `data.php.oct.2026.newsroom.sgit.ai/v//`; there should be no "Refused to load" line in the console. `press.json` at the site's root says which versions and which v1 commit it was cut from.
 
-![The control room on the team site: its data from the data API, its scripts from the press](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.19/assets/briefs/split-team-control.png)
+![The control room on the team site: its data from the data API, its scripts from the press](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.27/assets/briefs/split-team-control.png)
 
 ### Who owns what
 
@@ -93,4 +93,4 @@ This brief is the file `admin/content/briefs/2026-10-25__report__one-repository-
 
 
 ---
-site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-how-to-work-in-it/index.html
+site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__report__one-repository-into-six-how-to-work-in-it/index.html

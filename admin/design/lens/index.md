@@ -2,7 +2,7 @@
 
 A working prototype of a site that shapes itself to the reader in front of them: how long they have, who they are, what they want to do, and what they have seen; set once at the top right, applied on every page with no reload and no flash.
 
-> Prototype E for review, built from the data of release v0.22.26. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
+> Prototype E for review, built from the data of release v0.22.28. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
 
 This site shapes itself to you. Three taps, and you can change them any time, top right. 
 ### How long have you got?
@@ -13,16 +13,16 @@ The page below has already changed to fit that.
 Last one. 
 ### What do you want to do?
 
-Developing · data as of 25 October 2026, 14:40 UTC 
+Developing · data as of 26 October 2026, 09:40 UTC 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
 PHP is the software that WordPress and millions of other websites run on. A fix came out on 21 October 2026. Government cyber agencies have told organisations to install it now; the two US agencies add: take websites offline if you cannot. Phones and personal computers are not affected. 
  Your answer 
-Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 16:05 UTC on 24 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
+Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 14:40 UTC on 25 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
 If your website runs on WordPress, Drupal, Joomla or anything else written in PHP, it is in scope: the flaw is in PHP itself, underneath your site. Updating plugins does not fix it. If someone hosts the site for you, ask them in writing whether PHP has been updated to a fixed version and restarted. If you run the server yourself, update PHP today. 
-A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 16:05 UTC on 24 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
+A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 14:40 UTC on 25 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
 Expect unplanned work this week: updating PHP on every system that uses it, restarting, and re-testing. Some teams may take systems offline for hours as a precaution. Anything still on PHP 8.1 or older has no ready-made fix and becomes a migration project. Ask each system owner for a patch date and a test plan. 
-The documented cost so far is precaution, not breach: hours to a day of downtime for organisations that pulled sites, and engineering time to update. As of 16:05 UTC on 24 October, the latest capture in the evidence vault, no named organisation has said it was compromised through this flaw. Ask your broker now, in writing, whether a precautionary shutdown with no breach is covered. Do not use 70% of the Internet in any forecast. 
+The documented cost so far is precaution, not breach: hours to a day of downtime for organisations that pulled sites, and engineering time to update. As of 14:40 UTC on 25 October, the latest capture in the evidence vault, no named organisation has said it was compromised through this flaw. Ask your broker now, in writing, whether a precautionary shutdown with no breach is covered. Do not use 70% of the Internet in any forecast. 
 A flaw is not a breach. An unpatched, internet-facing PHP application holding personal data is a risk to record and treat; it becomes a breach to assess when there is a sign of compromise on it. No named organisation has said it was compromised through php2shell as of the last check. Ask your hosts in writing, review from 17 October, and document the assessment either way. 
 The flaw is in the PHP runtime, so exposure is every internet-facing system running PHP, including vendor appliances. Review logs from 17 October (the earliest reported attempt), not from the fix. Attempts are reported at scale; no named victim is confirmed. Patch first, isolate where you cannot. 
 Patch internet-facing mod_php first, then FPM, then the rest; restart every worker and rebuild every image. The fix changes how PHP behaves when memory runs out, so test under load. 7.4 to 8.1 have no release. Afterwards, invest in an inventory that answers 'where is PHP' in minutes. 
@@ -34,13 +34,13 @@ Target 8.5.12, 8.4.27, 8.3.36 or 8.2.35; restart every worker and rebuild images
 Your code is not the problem and cannot be the fix: the flaw is in the engine beneath it. ini_set, .user.ini and auto_prepend_file all run too late. Check the running version where the code runs, after the restart, and tell the platform owner today if your target is 8.1 or older. 
 Two classes: an out-of-memory longjmp leaving request memory uninitialised, and worker global state pointing at freed request memory across requests. mod_php was exploited before application code; FPM for the first flaw is disputed. The fix removes longjmp for OOM. A report of an incomplete fix is open. 
 A bug class seen and shelved in 2024 was turned into working exploits by three AI-assisted teams within three weeks in August 2026. The disclosure leaked 22.5 hours early. Agencies split on the hardest question, offline or not, along lines that look institutional rather than technical. 
-Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 16:05 UTC on 24 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
-A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 16:05 UTC on 24 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
+Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 14:40 UTC on 25 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
+A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 14:40 UTC on 25 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
 The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise, and CISA has not listed either flaw as exploited. 
 Internet-facing mod_php first, then FPM, then everything else. Where patching slips, apply php.net's temporary settings and record that each blocks a known path only. Alert on PHP workers spawning shells or fetching tools. Decide now who calls isolate or offline, and when. 
 Two classes: an out-of-memory longjmp leaving request memory uninitialised, and worker global state pointing at freed request memory across requests. mod_php was exploited before application code; FPM for the first flaw is disputed. The fix removes longjmp for OOM. A report of an incomplete fix is open. 
-Release v0.22.26. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
-Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 16:05 UTC on 24 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
+Release v0.22.28. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
+Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 14:40 UTC on 25 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
 
  1 min+ aim: understand verify 
 
@@ -430,7 +430,7 @@ The block is recorded in the vault.
 
 ### Everything else we hold
 
- Every claim (70) Every source (454) The timeline The numbers The code How this site knows 
+ Every claim (70) Every source (507) The timeline The numbers The code How this site knows 
 
 That is the page for the time you gave it. How this prototype works (for the editor and dev) 
 - Every part of every page is built, always. Each part says which settings show it: a time tier, an aim, a kind of reader. 
@@ -441,4 +441,4 @@ That is the page for the time you gave it. How this prototype works (for the edi
 - “Got it” marks a part as seen; Fade or Hide takes it out of the way on every page, until it changes.
 
 ---
-site v0.22.26 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html
+site v0.22.28 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html

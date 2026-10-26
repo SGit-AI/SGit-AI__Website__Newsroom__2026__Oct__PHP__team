@@ -8,22 +8,15 @@ A visual, interactive view of every agent on the team: the pipeline, who waits f
 
 # Control room
 
-Every agent, what it waits for, what runs on a schedule and what needs the editor, drawn from the team's own data. Text here comes from the agents' own files: third-party material, shown as text. As of 2026-10-25 15:25Z UTC, site v0.22.26.
+Every agent, what it waits for, what runs on a schedule and what needs the editor, drawn from the team's own data. Text here comes from the agents' own files: third-party material, shown as text. As of 2026-10-26 11:35Z UTC, site v0.22.28.
 
 This page draws its view with a script. Without it, the plain list below has the same facts; the plain pages are [status](../status/index.html) and [schedule](../schedule/index.html).
 
 ## What needs a decision first
-- Wiring: the journalist's and the correspondent's tasks still start a new session each time; create them from 'scheduled | journalist' and 'scheduled | correspondent' and pause the old four. Fact-check's task still has the old prompt: update it from its session.
-- INCIDENT, visibility: the researcher and the curator run on schedule but leave no commit and no run record, so the repository, this page and the control room cannot show what they did (their wake prompts say 'nothing new: no commit', which predates AGENTS.md section 7). Proposed: each wake writes a run report into the vault it owns and the conductor commits it as a run record, with your go to change the four scheduled prompts (a researcher that reads the open web should not also release).
-- security/gate-pass-2 (5 commits ahead): a go; dismiss CodeQL alerts #3 and #22 yourself; rulesets at user logins; private vulnerability reporting.
-- The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move.
-- Pulse: a go on four things (switch its source to the site, two KEV entries, morning pass to 07:14, release its schedule card).
-- The desk's wakes clash with the correspondent's: board 285 proposes moving the desk's checks to about 10:15 and 17:40.
-- dev@ was blocked on a Bash permission prompt (last seen 16:45 UTC).
-- Lane keys: the Sherpa needs 5iwos28w and wgeiqabu; this session still has no lane keys, so the lanes are not drained here.
-- Run records: most scheduled prompts leave none on a quiet wake; AGENTS.md section 7 asks for one. The control room shows these as red dots. Say which rule stands.
-- Owner for admin/build/control.py, assets/control.css and assets/control.js; roster row for observability (data/team.json); security's self-check paragraph and card step.
-- Board 283: three additions to AGENTS.md section 1 on taking in dev (the correspondent says you agreed them).
+- Set ROUND_TOKEN (the secret dev's quarter-hour round needs in the press's workflow): until then nothing released today reaches the pages.
+- Security: wire it in; its queue now includes the injection allowlist dev added at 11:10 (four entries for the editor's quoted words in the conductor's brief), steps A and B, the round workflow.
+- Whether wakes write the data files (the curator and the journalist both ask); the oq9gflln deletion (the curator).
+- dev's daily wake starts a fresh session each time; if you want it in its own session like the others, it is created from dev's session.
 
 ## Every agent
 
@@ -55,4 +48,4 @@ This page draws its view with a script. Without it, the plain list below has the
 
 
 ---
-site v0.22.26 · data as of 2026-10-25T14:40Z · vault commit 94352a55fbaa · https://team.php.oct.2026.newsroom.sgit.ai/team/control/index.html
+site v0.22.28 · data as of 2026-10-26T09:40Z · vault commit a7ab84771dfc · https://team.php.oct.2026.newsroom.sgit.ai/team/control/index.html
