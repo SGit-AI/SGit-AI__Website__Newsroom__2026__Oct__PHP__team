@@ -1,0 +1,14 @@
+{
+ "run": "20261026T2345Z-ontologist",
+ "agent": "ontologist",
+ "started": "2026-10-26T23:45Z",
+ "finished": "2026-10-26T23:52:55Z",
+ "outcome": "ok",
+ "summary": "wired into the six repositories: card records/schedule/ontologist.json now has repositories (push: team, data, press; pull: refs; never: v1), its brief, runbook, reads, writes and each_wake moved from v1 paths to their homes (team records/desks/ontologist/ and records/desks/wikipedia/, data files/, press build/ and assets/components/sg-graph/). Scheduled task trig_01MRxGu6YT6eguebZG8DSAni set to the card's instructions word for word and enabled (06:05, 10:05, 14:05, 18:05 London, into this session; next 27 October 06:05). sgit: not used by the ontologist and not installed here, so no upgrade. What stops the wakes: pass.py and fetch.py still assume v1's layout and would write the wrong files in team; the card tells each wake not to run them and to record partial until they are re-pointed (board ontologist-0001, session work). This session holds team with push; data and press are read only (public, through the proxy) until the editor attaches them with push. Nothing written to v1.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "5f3c50592e2dcd8bdb0a94884a2efccf98350c6c"
+}

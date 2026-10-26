@@ -1,0 +1,7 @@
+{
+ "id": "ontologist-0001",
+ "title": "Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py and records/desks/wikipedia/fetch.py (and wikidata_links.py) take their root from v1's layout (data/, admin/build/wikitext.py), so after the split they would read and write the wrong files. Give each a root for data's files/ and press's build/, test them against fresh clones, then let the scheduled wakes fetch Wikipedia and run the pass again. Until then each wake records partial.",
+ "status": "open",
+ "owner": "ontologist",
+ "note": "The ontologist, 26 October, while wiring its card into the six at the editor's direction. Session work: the wakes cannot do it unattended."
+}
