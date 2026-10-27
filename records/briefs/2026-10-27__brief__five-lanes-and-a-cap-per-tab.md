@@ -77,7 +77,40 @@ for (let i = 0; i < lanes.length; i++) {
 }
 ```
 
-The event is encrypted once; a retry sends the same payload. Five lanes are 5,000 waiting: at 26 October's crawler
+The event is encrypted once; a retry sends the same payload.
+
+### Telling a capped tab from one that read 40 pages (the editor's question, 27 October)
+
+A tab that stops at the cap must say so, or it looks like a tab that read exactly 40 pages. Two small markers, and the
+same idea for the lanes:
+
+- **The cap.** The first page over the cap sends one event, the page's own fields plus `capped: 40` and `skipped: 1`,
+  then nothing. One more marker goes when the pages skipped in that tab reach 10, 100 and 1,000 (`skipped: 10`, …),
+  so the size of a burst is known within a factor of ten for at most four events more. The 26 October session would
+  have sent 40 events and 4 markers, not 960.
+- **A full lane.** Every write that fails on every lane adds one to `lost` in sessionStorage; the next event the tab
+  gets through carries `lost: n`, and the counter goes back to 0. A full lane then leaves a count behind, a floor (a
+  tab that never gets through again reports nothing), instead of an estimate.
+
+```js
+const capKey = key + '.skipped'
+if (sent >= 40) {
+  let skipped = 0
+  try { skipped = (parseInt(sessionStorage.getItem(capKey) || '0', 10) || 0) + 1; sessionStorage.setItem(capKey, String(skipped)) } catch (e) {}
+  if (![1, 10, 100, 1000].includes(skipped)) return
+  ev.capped = 40; ev.skipped = skipped                  // a marker, then silence until the next mark
+}
+let lost = 0
+try { lost = parseInt(sessionStorage.getItem(key + '.lost') || '0', 10) || 0 } catch (e) {}
+if (lost) ev.lost = lost
+// ... the loop over the lanes; on success: sessionStorage.setItem(key + '.lost', '0');
+// when every lane refused: sessionStorage.setItem(key + '.lost', String(lost + 1))
+```
+
+(The cap check moves after `ev` is built, so the marker carries the page; `sent` counts accepted events only, markers
+included.) On the reading side, observability's: the classifier counts a session with `capped` as a crawler, declared
+by its behaviour; the application and the run records show capped sessions, their skipped pages (a floor, by tens),
+and the events lost to full lanes. Five lanes are 5,000 waiting: at 26 October's crawler
 rate, about twelve hours; at the normal rate, days.
 
 ## What it does not fix
