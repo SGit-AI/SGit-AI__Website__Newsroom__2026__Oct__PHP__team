@@ -5,7 +5,7 @@
  "vaults": [
   {
    "id": "nnd3i8iw",
-   "what": "The evidence vault as a pack vault with indexes: the same content as 3ytzxm3g (sources, claims, timeline) rewritten by sgit pack import at head 1dceaa1dfa7f, a new key; verified by a fresh clone identical file for file. Not yet cut over: the curator and its readers still use 3ytzxm3g until the editor says",
+   "what": "The evidence vault, a pack vault with indexes, the only evidence vault the curator writes from 27 October 2026 (cutover at the editor's word). The same content as 3ytzxm3g at head 1dceaa1dfa7f (sgit pack import, a new key); the journalist reads it with the read-only key the editor gave it",
    "created": "2026-10-27",
    "key_sealed_to_root": "2026-10-27"
   }
@@ -15,7 +15,8 @@
    "id": "3ytzxm3g",
    "key": "vault key",
    "from": "the editor, sealed to this session's key (23 October 2026)",
-   "since": "2026-10-23"
+   "since": "2026-10-23",
+   "retired": "2026-10-27: the evidence vault moved to the pack vault nnd3i8iw; the curator deleted its local clone of 3ytzxm3g and never uses it again; the old vault stays on the host, untouched, until the editor retires it"
   },
   {
    "id": "7r83qic5",
