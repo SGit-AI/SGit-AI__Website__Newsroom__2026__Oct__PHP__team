@@ -1,7 +1,7 @@
 {
  "id": "story-site-0002",
- "title": "The story as days: a mock-up of day pages (Day 0 to today, every role, the last 24 hours as the front page), and four decisions for the editor",
- "status": "waiting",
+ "title": "The story as days: the mock-up and the editor's decisions (front page the last 24 hours with the days strip; dates in the address; the desk closes the day; the end is the editor's call)",
+ "status": "done",
  "owner": "story-site",
- "note": "Brief records/briefs/2026-10-27__brief__the-story-as-days.md; the mock-up at press /latest/assets/design/days/. Waiting on the editor: the front page as the last 24 hours or the day so far; dates or day numbers in the address; who closes a day; when the story ends."
+ "note": "Decided by the editor on 27 October; brief records/briefs/2026-10-27__brief__the-story-as-days.md. The build is story-site-0003; the desk's part is story-site-0004."
 }

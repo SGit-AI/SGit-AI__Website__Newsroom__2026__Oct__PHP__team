@@ -1,0 +1,7 @@
+{
+ "id": "story-site-0003",
+ "title": "Build the story as days: the day file's shape, the day renderer and the front page as the last 24 hours with the strip, /on/<date>/ and /on/<date>/as/<role>/",
+ "status": "open",
+ "owner": "story-site",
+ "note": "Story-site: the day file's schema and the renderer (press), from the mock-up. Needs dev for the frames and the router reading 'on' (site's CI, the 404 renderer), and data's curator for files/days/ in data. Brief: the-story-as-days."
+}
