@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1700Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-27T17:00:00Z",
+ "finished": "2026-10-27T19:04:02Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/researcher/HANDOVER.md); card corrected (two phases, curator_queue.py); register checked (7r83qic5 held, 3ytzxm3g retired); vault in sync at c18e84740da7, data and team released; nothing exists only in the session. Never printed a key.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "16ec694a7f1b4505dc992d1c4d71aa247a4f4097"
+}
