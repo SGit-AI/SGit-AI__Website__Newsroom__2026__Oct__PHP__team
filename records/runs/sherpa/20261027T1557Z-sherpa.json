@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1557Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-27T15:57:19Z",
+ "finished": "2026-10-27T15:58:20Z",
+ "outcome": "idle",
+ "summary": "Drain wake (15:45 London, fired 15:57). Lanes: 58526ytp and d6zak0o3 empty (pending 0), vaults in sync; drains from press v1.0.79's tree, contributors.json unchanged; sgit-ai v0.26.0. No notes to me, no unread beyond what is read, none of my instruction files changed; 36 commits on dev since 14:02 (head ef8afac6ecd7). Idle: not a full-pass hour; the 17:45 pass walks them and the front page's first screen (F037, F039, F040).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "ef8afac6ecd738f7874e10a31e1e97c65dda3361"
+}
