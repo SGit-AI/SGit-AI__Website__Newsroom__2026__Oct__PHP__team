@@ -174,7 +174,7 @@
  "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps",
  "checkpoint": {
   "at": "B (first three): the BBC, PHP Foundation and PHP security team drafts",
-  "since": "2026-10-27T22:45Z",
+  "since": "2026-10-27T22:36Z",
   "waits_for": "the editor: approve, change or hold each draft (phase-2/messages/); decide the signature line and whether the Wiz suggestion goes later as R-002; and, before any send, each channel found and captured, and K-011's source captured",
   "passed": null
  },

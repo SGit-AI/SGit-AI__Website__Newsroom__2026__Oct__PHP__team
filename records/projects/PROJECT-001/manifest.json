@@ -5,7 +5,7 @@
  "lead": "sherpa",
  "checkpoint": {
   "at": "B (first three): the BBC, PHP Foundation and PHP security team drafts",
-  "since": "2026-10-27T22:45Z",
+  "since": "2026-10-27T22:36Z",
   "waits_for": "the editor: approve, change or hold each draft (phase-2/messages/); decide the signature line and whether the Wiz suggestion goes later as R-002; and, before any send, each channel found and captured, and K-011's source captured",
   "passed": null
  },
@@ -362,7 +362,7 @@
    "path": "project.json",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/project.json",
    "bytes": 7836,
-   "sha256": "1d0d617a181a4bf41254c29e34b86a3f689085cfb1e5bf26ec8ba61ae52cf63c",
+   "sha256": "73a0bbaf9085c366fcb8d9aa4c6941f70337397a5074b9164c33fab2196b3bb0",
    "about": "the state: phases, checkpoints, decisions, the next step"
   }
  ]
