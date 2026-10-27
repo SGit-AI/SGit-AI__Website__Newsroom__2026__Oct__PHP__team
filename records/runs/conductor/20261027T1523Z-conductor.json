@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1523Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T15:23:15Z",
+ "finished": "2026-10-27T15:24:18Z",
+ "outcome": "ok",
+ "summary": "Full pass 15:15 London, team at 08d2e19b2ce0. First: no built page has updated since 05:54 UTC. The edition schedules in GitHub Actions never fire (correspondent-0008, found by the correspondent at 14:57). I confirmed it in team: 232 runs of 'Deploy to GitHub Pages', 0 from a schedule, all from pushes. The press's edition.yml has run once, on its own push at 11:26. The front page still shows 14:42 UTC on 26 October. Fix: dev finds why; meanwhile run 'Build the edition' by hand, then each site's deploy. Live-read pages are unaffected. PROJECT-001: the editor passed checkpoint A at about 15:03 (BBC first, case study, outlet page template). The projects desk ran phase 2 wave 1 (design, BBC re-grade, outlet files; the evidence read key received), started the BBC front-page series as pulse, and opened projects-0001 (pulse to own the BBC captures) and projects-0002 (researcher, BBC clean-hands captures). Other wakes: pulse 14:52, observability 14:33 (no caps, at the editor's decision), ontologist 14:05 (31 new parties, data v0.1.81), correspondent 14:56 (batch 21, no catch; steal-my-bitcoin cites the challenge from the vault). PROJECT-002 still waits on the journalist (16:10). Last commits: data d64be95 14:39, site ead2bf0c 15:02, press 261f90b 11:26, refs 6407d1f4, updates 4237d75. v1 untouched.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "08d2e19b2ce0c3a0bcc3259a47068b5a92915078"
+}
