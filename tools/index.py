@@ -14,8 +14,8 @@ file per collection beside the records it is made of, under records/index/:
   registers.json  every register (records/registers/<agent>.json): vault IDs and kinds of key, never a key
   briefs.json     every brief (records/briefs/*.md): its title, who wrote it, its first line and when it was published
                   (records/data/briefs-published.json, else the commit that added it); its text is the file itself
-  agents.json     every member folder (records/agents/<id>/): its status.json and its debriefs (front matter and text),
-                  newest first
+  agents.json     every member folder (records/agents/<id>/): its status.json, its debriefs (front matter and text),
+                  newest first, and its ROLE.md (the text, or null)
 
 A record that cannot be read is left out and named in that file's "skipped" (the gate refuses it at push time; a deploy
 never fails on one). The records stay the source: an
@@ -107,7 +107,11 @@ def agents():
             try: dbs.append(debrief(p))
             except (ValueError, UnicodeDecodeError) as e: skipped.append(f'{os.path.relpath(p, ROOT)}: {str(e)[:80]}')
         dbs.sort(key=lambda x: (x.get('date', ''), x['file']), reverse=True)
-        out.append({'agent': a, 'status': status, 'debriefs': dbs})
+        rp, role = os.path.join(top, a, 'ROLE.md'), None     # the role, so a member's page shows the file it is kept in
+        if os.path.exists(rp):
+            try: role = open(rp, encoding='utf-8').read()
+            except (OSError, UnicodeDecodeError) as e: skipped.append(f'records/agents/{a}/ROLE.md: {str(e)[:80]}')
+        out.append({'agent': a, 'status': status, 'debriefs': dbs, 'role': role})
     return out, skipped
 
 
