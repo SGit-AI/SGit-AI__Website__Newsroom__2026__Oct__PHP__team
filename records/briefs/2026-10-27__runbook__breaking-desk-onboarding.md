@@ -39,7 +39,7 @@ Write to the editor one block, nothing else:
 ```
 breaking@php.newsroom <your fingerprint> needs, sealed to that fingerprint:
 1. vault 7r83qic5 (source watch), held by researcher@php.newsroom
-2. vault 3ytzxm3g (evidence), held by curator@php.newsroom
+2. vault nnd3i8iw (evidence), held by curator@php.newsroom
 ```
 
 The editor gives each holder, in its own session, your fingerprint. The holder runs `trust <fingerprint>` (it must
@@ -59,7 +59,7 @@ repository, reading the key from the saved file without printing it. `sgit versi
 the saved key files once the clones open.
 
 Make your own working vault, seal its key to the root (`seal --to sha256:db7f79fdd87e030a --from-vault …`), and write
-`records/registers/breaking.json`: the vault you made (its id, the date sealed) and `holds`: `7r83qic5`, `3ytzxm3g`.
+`records/registers/breaking.json`: the vault you made (its id, the date sealed) and `holds`: `7r83qic5`, `nnd3i8iw`.
 Ids only, never a key.
 
 ## 5. Ready

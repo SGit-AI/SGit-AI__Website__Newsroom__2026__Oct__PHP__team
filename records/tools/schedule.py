@@ -27,7 +27,7 @@ import argparse, datetime, glob, json, os, re, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # the team repository (this file: records/tools/)
 DATA = os.path.join(ROOT, 'records')                                       # records/runs, records/messages, records/schedule
-SECRET = re.compile(r'sgit_private_|BEGIN [A-Z ]*PRIVATE KEY|ghp_[A-Za-z0-9]{20,}|github_pat_|sk-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|pki\.sgit\.ai/m/#m1\.')
+SECRET = re.compile(r'sgit_private_|BEGIN [A-Z ]*PRIVATE KEY|ghp_[A-Za-z0-9]{20,}|github_pat_|(?<![A-Za-z0-9_-])sk-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|pki\.sgit\.ai/m/#m1\.')
 NAME = re.compile(r'[a-z][a-z0-9-]{1,30}')
 OUTCOMES = ('ok', 'idle', 'partial', 'failed')
 # The editor speaks to agents in their own sessions, never through a file in this repository: a message here that
@@ -128,7 +128,8 @@ def cmd_tasks(a):
     d = {'about': "The account's scheduled tasks for this newsroom, as the scheduled-task service lists them: what actually wakes each agent. Written by tools/schedule.py tasks on the conductor's full passes; /team/schedule/ checks each against its card. The account's other projects are left out.",
          'kept_by': 'conductor', 'as_of': a.as_of or now(), 'tasks': sorted(out, key=lambda x: (x['agent'], x['cron']))}
     p = os.path.join(DATA, 'scheduled-tasks.json')
-    open(p, 'w', encoding='utf-8').write(checked(json.dumps(d, indent=1, ensure_ascii=False), p) + '\n')
+    text = checked(json.dumps(d, indent=1, ensure_ascii=False), p) + '\n'   # checked before the file is opened, so a refusal leaves no empty file
+    open(p, 'w', encoding='utf-8').write(text)
     print(f'{len(out)} tasks: ' + ', '.join(sorted({x["agent"] or "?" for x in out})))
 
 def cmd_run(a):
@@ -140,7 +141,8 @@ def cmd_run(a):
     if a.log: r['log'] = open(a.log, encoding='utf-8').read()[-6000:]
     p = os.path.join(DATA, 'runs', a.agent, rid + '.json')
     os.makedirs(os.path.dirname(p), exist_ok=True)
-    open(p, 'w', encoding='utf-8').write(checked(json.dumps(r, indent=1, ensure_ascii=False), p) + '\n')
+    text = checked(json.dumps(r, indent=1, ensure_ascii=False), p) + '\n'
+    open(p, 'w', encoding='utf-8').write(text)
     print(os.path.relpath(p, ROOT))
 
 RUN_KEYS = {'run', 'agent', 'started', 'finished', 'outcome', 'summary', 'read', 'sent', 'article', 'model', 'cost_usd', 'head', 'log'}
@@ -181,7 +183,8 @@ def cmd_send(a):
     head = [f'from: {getattr(a, "from")}', f'to: {name(a.to)}', f'sent: {t}', f'subject: {a.subject}'] + ([f're: {a.re}'] if a.re else [])
     p = os.path.join(DATA, 'messages', a.to, mid + '.md')
     os.makedirs(os.path.dirname(p), exist_ok=True)
-    open(p, 'w', encoding='utf-8').write(checked('---\n' + '\n'.join(head) + '\n---\n' + body + '\n', p))
+    text = checked('---\n' + '\n'.join(head) + '\n---\n' + body + '\n', p)
+    open(p, 'w', encoding='utf-8').write(text)
     print(mid)
 
 def main():

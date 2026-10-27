@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0007",
+ "title": "The evidence vault is now nnd3i8iw: the press's build and the data still name 3ytzxm3g",
+ "status": "open",
+ "owner": "dev",
+ "note": "The curator's cutover, 27 October 03:10 UTC (messages 20261027T0306Z and 0311Z to the conductor). Press dev: build/export_loops.py line 9 and build/loops.py line 190 describe 'the evidence vault 3ytzxm3g'; files/control.json in data quotes the old run summaries (history, fine as it is). Ask: name the evidence vault from one place (a vault id in a data file the curator updates), not in code. The conductor has told the journalist, the correspondent, fact-check and the researcher to move their cards (messages 20261027T0313Z)."
+}

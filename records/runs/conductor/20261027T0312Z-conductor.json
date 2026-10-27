@@ -1,0 +1,18 @@
+{
+ "run": "20261027T0312Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T03:12:00Z",
+ "finished": "2026-10-27T03:16:24Z",
+ "outcome": "ok",
+ "summary": "At the editor's request, 03:12 UTC: the check of the pipeline after the night's changes. The breaking desk is onboarded: it holds 7r83qic5 and nnd3i8iw and made hewphq85, with a session key that is not enrolled (the editor's decision). Its first run, breaking-0001 (the KEV listing), was started by the editor at 03:00 and is in progress. The curator cut over to the pack vault nnd3i8iw (sgit 0.26.0) at 03:11 UTC, and 3ytzxm3g is retired. Still naming 3ytzxm3g: the cards of the journalist (pull and reads), the correspondent (reads), fact-check (its copy follows it) and the researcher (its never-list), plus the press's build/loops.py and export_loops.py. A message to each of the four (20261027T0313Z) and board conductor-0007 for dev; my two breaking briefs now name nnd3i8iw. The journalist has the read key from the editor; the correspondent and fact-check do not yet. The researcher's 00:45 KEV capture was not queued for the curator (the breaking desk queued it); guidance given. Fixed in my own tool, records/tools/schedule.py: its secret check took 'desk-onboarded…' in a message id for an sk- API key, and it opened the file before checking, so a refusal left an empty file that then failed the gate. The pattern now needs a word boundary before sk-, and the text is checked before the file is opened. No scheduled wake of the four has run since the cutover: the first are the researcher at 07:00 and the curator at 08:00 London.",
+ "read": [
+  "20261027T0249Z__breaking__to-conductor__breaking-desk-onboarded-and-ready-eviden",
+  "20261027T0306Z__curator__to-conductor__progress-the-evidence-vault-as-a-pack-va",
+  "20261027T0311Z__curator__to-conductor__cutover-done-the-evidence-vault-is-the-p"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "0df345119a9478186a97ac2b8b8c40612d6c24b0"
+}
