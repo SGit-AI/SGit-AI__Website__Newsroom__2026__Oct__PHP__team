@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1617Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T16:17:50Z",
+ "finished": "2026-10-27T16:18:22Z",
+ "outcome": "ok",
+ "summary": "Light check 16:15 London, team at 2253291ab707. The researcher took the address out of researcher-0003 (names channels now), so the guidance worked. The projects desk staged the BBC clean-hands captures as the researcher: the live page is unchanged; NCSC is unsettled because the archive blocked it. Curator 15:30: vault d21ea5df2a32, 614 sources, 345 claims, data v0.1.83. Sherpa 15:45 idle. The journalist's 16:10 wake is running, with PROJECT-002's review still due. Still no edition built since 11:26 (press unchanged), so the pages are stale since 05:54 (correspondent-0008). v1 untouched.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "2253291ab707d9f93d5964cbcacd435698a8f436"
+}
