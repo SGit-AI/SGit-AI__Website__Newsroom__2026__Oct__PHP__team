@@ -1,8 +1,15 @@
 {
  "agent": "curator@php.newsroom",
  "member": "curator",
- "note": "The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. It made no vault; it holds the keys below, given by the editor as a message sealed to its session key on pki.sgit.ai.",
- "vaults": [],
+ "note": "The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. It made one vault on 27 October 2026 (below); it holds the keys below, given by the editor as a message sealed to its session key on pki.sgit.ai.",
+ "vaults": [
+  {
+   "id": "nnd3i8iw",
+   "what": "The evidence vault as a pack vault with indexes: the same content as 3ytzxm3g (sources, claims, timeline) rewritten by sgit pack import at head 1dceaa1dfa7f, a new key; verified by a fresh clone identical file for file. Not yet cut over: the curator and its readers still use 3ytzxm3g until the editor says",
+   "created": "2026-10-27",
+   "key_sealed_to_root": "2026-10-27"
+  }
+ ],
  "holds": [
   {
    "id": "3ytzxm3g",
@@ -15,6 +22,12 @@
    "key": "vault key",
    "from": "the editor, as message text in the session (23 October 2026); used to read the pack copy of the source watch only, never to write",
    "since": "2026-10-23"
+  },
+  {
+   "id": "nnd3i8iw",
+   "key": "vault key",
+   "from": "made by the curator in its session (pack import of 3ytzxm3g, 27 October 2026); sealed to the root the same day",
+   "since": "2026-10-27"
   }
  ]
 }
