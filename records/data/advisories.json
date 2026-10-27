@@ -1037,7 +1037,7 @@
     "The press has many writers after step B; each is now a path to every repository."
    ],
    "missing_control": "Separation of building from publishing: the job that runs repository code holds no write credential.",
-   "fix": "Proposed, for dev and the editor: build in a job with no secret and upload the six trees as artifacts; push in a second job that runs no repository code and holds the token only in that step (or a GitHub App token per repository, minted in that step). Until then, every press change is read by security before the next round, and the token's expiry kept short.",
+   "fix": "The round is being retired: since dev's wake of 26 October 19:09 dev runs the chain by hand (--if-changed), so ROUND_TOKEN is no longer needed (the conductor's run of 19:15). Closed when the editor deletes the ROUND_TOKEN secret from the press's settings (and revokes the token on GitHub) and dev removes or disables .github/workflows/round.yml, which still runs every quarter hour. If a round ever returns: build in a job with no secret, push from a job that runs no repository code.",
    "prevention": "The rule already used for Pages deploys (the job that writes runs no repository code) applied to every job that holds a secret.",
    "refs": [
     "press .github/workflows/round.yml",
