@@ -1,7 +1,7 @@
 {
  "agent": "breaking@php.newsroom",
  "member": "breaking",
- "note": "Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md). Vault ids and key kinds only, never a key. The session's key pair is sha256:9db81b444079eb0e (encryption sha256:925d95a6be12bdef), a session key made with sgit pki keygen; it is not enrolled in the register at pki.sgit.ai, and the editor vouched for it to the vault keeper in person. It holds only the two keys below; the others it was sent (hsmfer5w, 4klm5qlt) were deleted unused at the editor's word.",
+ "note": "Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md). Vault ids and key kinds only, never a key. The session's key pair is sha256:9db81b444079eb0e (encryption sha256:925d95a6be12bdef), a session key made with sgit pki keygen; enrolment at pki.sgit.ai is skipped (the editor's decision, 27 October 2026); the editor vouched for it to the vault keeper in person. It holds only the two keys below; the others it was sent (hsmfer5w, 4klm5qlt) were deleted unused at the editor's word.",
  "vaults": [
   {
    "id": "hewphq85",
@@ -21,7 +21,8 @@
    "id": "nnd3i8iw",
    "key": "vault key",
    "from": "the vault keeper (DC Vault Registry, sha256:956934e47063ceaa), sealed to this session's key at the editor's go",
-   "since": "2026-10-27"
+   "since": "2026-10-27",
+   "note": "The evidence vault since the editor's word on 27 October 2026 (it replaces 3ytzxm3g); the breaking desk writes evidence only here"
   },
   {
    "id": "hewphq85",
