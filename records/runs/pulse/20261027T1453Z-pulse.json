@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1453Z-pulse",
+ "agent": "pulse",
+ "started": "2026-10-27T14:53:40Z",
+ "finished": "2026-10-27T15:07:13Z",
+ "outcome": "ok",
+ "summary": "Pulse pass 20261027T145421Z (14:52 London), sgit-ai 0.26.0: 441 pages (344 checked, 231 changed), whole pass 736 s (867 s at 07:22, 723 s on 0.25.0 on 26 Oct); commit and push to the pack vault 9f5knw9r in one try, head d2cc04c25606, in sync with the server. Team dev at 51aeb5bdbc75. Opened and closed the report with the banners, per WAKE.md steps 0 and 6. Evidence: no tracked CVE reached a new rung. KEV is still catalog 2026.10.26 (1,758 entries); the only additions since 23 October are the two php2shell CVEs (dateAdded 2026-10-26, due 2026-10-29), both with knownRansomwareCampaignUse Unknown; no tracked CVE has ransomware use Known. php2shell holds rungs 1, 4 and 5; 3 and 8 not reached. EPSS dated 2026-10-27: CVE-2026-109618 now 1.0 (was 0.9998), CVE-2026-109619 1.0. Attention: php2shell en-US news CVE-2026-109618 176 to 161 (no blocked news feed in this pass, so the drop is in what the feeds returned; not explained); others within a few items. Blocked: 78 GitHub search API calls (session proxy), CCN-CERT, ACSC. Front-page, agency and offline counts still come from the retired source watch, frozen at 23 October 16:31 UTC. Waiting on the editor: php2shell evidence from the site's curated data; the KEV additions of 23 October (CVE-2026-110447, CVE-2026-114625) as tracked CVEs; CVE-2026-115560 as its own row; publishing updates; the exporter for /pulse/ (press), still on the retired vault 4klm5qlt; the vault register rows for 9f5knw9r and 4klm5qlt.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "51aeb5bdbc75baaf991a195bfadf56eb40e45ca0"
+}
