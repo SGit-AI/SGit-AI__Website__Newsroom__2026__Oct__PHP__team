@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1902Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-27T19:02:12Z",
+ "finished": "2026-10-27T19:02:12Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/journalist/HANDOVER.md). All four repositories clean and level with dev; card and register checked and complete; last data release for vault d21ea5df2a32.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet 5.5",
+ "cost_usd": null,
+ "head": "281b9c58c3f45f558b9edf7b4c187f8299a30347"
+}
