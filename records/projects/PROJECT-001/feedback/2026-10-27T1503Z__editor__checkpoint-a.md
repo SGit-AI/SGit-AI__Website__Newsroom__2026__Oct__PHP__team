@@ -1,4 +1,4 @@
-# The editor at checkpoint A, 27 October 2026, about 12:40 UTC, in the projects desk's session
+# The editor at checkpoint A, 27 October 2026, about 15:03 UTC, in the projects desk's session
 
 The editor's own words (spoken, transcribed), filed verbatim. They pass checkpoint A.
 
@@ -12,5 +12,5 @@ The editor's own words (spoken, transcribed), filed verbatim. They pass checkpoi
 4. **Tone of every message:** positive, saying what we do. "You are doing great work; here is what we hold about you; here are some suggestions, and the added value we can offer." Corrections are framed as suggestions.
 5. **Sending:** each recipient is sent to as soon as its page and message are ready and approved. The desk sends nothing. The agent at riskmandate.ai sends, at the editor's go (this replaces "the editor sends from his own address" in the brief).
 6. **One outlet page shared by every project.** "op-ed page" read as "outlet page": `/outlets/<id>/`. PROJECT-001's objective now includes the workflow, the templates, the pipeline, the visualisation and the design, with the design agent (story-site, designer@php.newsroom) on the page and on the flows.
-7. **BBC front pages captured at regular intervals:** the home page, Technology and the AI pages, for a history over time. The desk checked Pulse first (log, 12:45).
+7. **BBC front pages captured at regular intervals:** the home page, Technology and the AI pages, for a history over time. The desk checked Pulse first (log, 15:05).
 8. **The evidence vault's read key:** the desk's public key QR (`sha256:db7c00f5a94f1559`) was given to the editor in the session, to pass to the curator.
