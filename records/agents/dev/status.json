@@ -1,10 +1,34 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "dev",
- "as_of": "2026-10-26T19:55Z",
- "round": 2,
- "state": "Phase 2 begun on the team site: the board, the schedule pages and the vault register read team's records when they open (no round).",
+ "as_of": "2026-10-27T03:16Z",
+ "round": 3,
+ "state": "Phase 2 on site: every article page draws its article from its Markdown in site's content/articles/ when it opens (no round), a new article has a page at once (the 404 page opens the article view), and site's gate checks an article at its writer's push.",
  "done": [
+  {
+   "what": "Articles live from their Markdown: assets/live/article.js draws an article page from site's content/articles/<file> (front matter, corrections, body, glossary, citations, sources cited); parity with the build on all eleven, on a scratch build and live",
+   "evidence": "press v1.0.64 to v1.0.67, edition v0.22.41; debrief 2026-10-27__articles-live"
+  },
+  {
+   "what": "A page for an item newer than the build: /articles/<slug>/ and /admin/briefs/<slug>/ answer with the 404 page, whose route opens the article or brief view; site's deploy writes content/index/articles.json (tools/pages_index.py)",
+   "evidence": "tested live with unknown addresses on site, team and refs; the view drew a new article on a scratch build"
+  },
+  {
+   "what": "site's gate checks an article at its writer's push: front matter, name and slug, corrections, diff blocks, cited sources in the data API, figures in the press, slider sizes",
+   "evidence": "tools/pages_gate.py section 5 in site since edition v0.22.42; the eleven pass, a bad file fails on ten counts"
+  },
+  {
+   "what": "The route sends content/articles/ to site and content/views/ to updates (both sites write content/; every content/ request had gone to updates)",
+   "evidence": "assets/route.js, tools/partition.py, press v1.0.64"
+  },
+  {
+   "what": "The readers' copy (glossary, plain, questions, interview, seo, billing) moved to site's content/data/; layers, feed-sources, pipeline, vaults and world are data's",
+   "evidence": "edition v0.22.40; byte-identical in the box after export"
+  },
+  {
+   "what": "A round stopped on a new agent (breaking's first run before its card): a run's agent is linked to its schedule page only when it has a card, in the build and the live views",
+   "evidence": "press v1.0.66; the round after it passed"
+  },
   {
    "what": "The lane drains in v2: collaborators, subscriptions and telemetry drains find the data repository (build/newsroom_paths.py); the telemetry drain can no longer lose an event it marked processed; telemetry is sent only from the four sites' hosts (boards sherpa-0001, 330)",
    "evidence": "press v1.0.41, data v0.1.40; tested against a fake lane and in a browser on the four live sites"
@@ -20,26 +44,6 @@
   {
    "what": "The round no longer deletes records/tools/schedule.py (the conductor's patch to the import's gone loop; board correspondent-0003)",
    "evidence": "team tools/sync_v1.py; two imports in a row keep the tool"
-  },
-  {
-   "what": "Every release links the pages it changed (/admin/versions.html, data/release-pages.json, admin/build/release_pages.py), back to v0.2.0; guidance in AGENTS.md section 1",
-   "evidence": "admin/build/release_pages.py, data/release-pages.json, /admin/versions.html; v0.14.19"
-  },
-  {
-   "what": "The source watch is 7r83qic5 everywhere live: /vaults/, /vaults/source-watch/, its data and export, the team, the schedules, every register's holds, the policies' vault grants, the live briefs; no read key published",
-   "evidence": "data/vaults.json, data/source-watch.json, admin/build/export_watch.py; v0.14.19"
-  },
-  {
-   "what": "One repository into six, pass one: the press cuts v1 into four sites (1,095 pages, 3,284 redirects); one source for every file (assets from the press, data from the data API, each page routed and its policy extended by exact host); four reports on the briefs page",
-   "evidence": "press v1.0.0 to v1.0.5, data v0.1.0 to v0.1.5, v1 v0.22.1 to v0.22.5; admin/content/briefs/2026-10-25__report__*.md"
-  },
-  {
-   "what": "The split reviewed against the brief: parity (1,101 of 1,101 pages), the twins' links, the 404 page's redirect to the owning host, immutability against the last commit, the tools with their sha256, an independent read's findings fixed; a brief for every agent with the repositories each needs",
-   "evidence": "press v1.0.7, data v0.1.7, v1 v0.22.10; admin/content/briefs/2026-10-25__brief__the-split-for-every-agent.md; board 335"
-  },
-  {
-   "what": "Steps A and B of the split: every repository holds its own sources with a sync that never overwrites a change made there; the chain builds each edition in its own box from the six; v1 takes nothing; the agents' first writes in the six carried to the pages; the press .gitignore and the release races fixed",
-   "evidence": "press v1.0.11 to v1.0.18 (tools/sync_v1.py, site_sync.py, build.sh, chain.sh), data v0.1.11 to v0.1.18, editions v0.22.23 to v0.22.25; board dev-0001"
   }
  ],
  "tasks": {
@@ -54,33 +58,25 @@
  },
  "next": [
   {
-   "what": "Phase 2 on the rest of the team site: the member pages (status, done, next, asks), /team/status/, /team/runs/",
-   "why": "every page that shows a record reads it when it opens; then the team site needs the chain only when a page's template changes"
+   "what": "The stories index and each article's other articles, live from content/index/articles.json; then the external pieces and the reviews (the same Markdown)",
+   "why": "a new article is listed only at the next round today"
   },
   {
-   "what": "Phase 2 on site and data: the pages that show data read it from the data API; the articles rendered by site's own CI from its content/",
-   "why": "the chain, the box and the syncs retire when the last page no longer needs them"
+   "what": "data's pages on refs (sources, facts, actors, claims, the graphs) drawn from the data API",
+   "why": "the brief's next step: a fact corrected in data shows on every page that shows it, with no build"
   },
   {
-   "what": "Every policy.json names v2 paths (repository:path), mechanically from the syncs' mappings, with a note to each owner",
-   "why": "all 28 policies still name v1 paths"
-  },
-  {
-   "what": "Pass two proper: build.py cut into modules along the six lines; data/layers.json one file per desk; the line's words into data; a version and a colophon per site; the policies' scope.writes mapped to the six (abp); agents.py and schedule.py for the six (librarian, conductor)",
-   "why": "the remaining sources of conflict, and story-site's review of the split as served"
-  },
-  {
-   "what": "The cutover: php.oct.2026.newsroom.sgit.ai to the site repository, sites.json serve_at, one re-cut; v1 archived as …__PHP__v1",
-   "why": "the editor, once the sites look right"
+   "what": "updates, the feeds by each owner's CI, then retire the chain and map the 28 policies to v2 paths",
+   "why": "the brief's last steps"
   }
  ],
  "asks": [
   {
-   "what": "The go to schedule the chain (or a session of dev's that runs it each wake); the rulesets of the six; the cutover's day",
+   "what": "The tag ruleset on the six (board dev-0003)",
    "from": "the editor"
   },
   {
-   "what": "Review of press v1.0.0 to v1.0.18 (the partition, the gates, the syncs, build.sh, chain.sh, the workflows), the data and team gates and release loops, assets/route.js",
+   "what": "Review of assets/route.js, tools/partition.py, tools/site_index.py and tools/site_gate.py section 5 (code that runs in every site), and site's workflow's index step",
    "from": "security@php.newsroom"
   }
  ],
@@ -97,5 +93,5 @@
   "injection_seen": 0,
   "note": "the six repositories have no policies yet (abp maps scope.writes); everything in them this round under the editor's go for the split"
  },
- "debrief": "admin/content/agents/dev/debriefs/2026-10-25__one-repository-into-six.md"
+ "debrief": "admin/content/agents/dev/debriefs/2026-10-27__articles-live.md"
 }
