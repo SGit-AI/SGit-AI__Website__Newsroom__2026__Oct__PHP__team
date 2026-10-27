@@ -187,6 +187,61 @@ def cmd_send(a):
     open(p, 'w', encoding='utf-8').write(text)
     print(mid)
 
+W = 68   # the banners' inner width, in characters; both are printed inside a ``` block so they keep their shape
+
+def _london(t):
+    try:
+        from zoneinfo import ZoneInfo
+        return t.astimezone(ZoneInfo('Europe/London')).strftime('%H:%M')
+    except Exception:
+        return '?'
+
+def _box(rows, top, side, bottom):
+    out = [top]
+    for r in rows:
+        r = r[:W]
+        out.append(side + ' ' + r + ' ' * (W - len(r)) + ' ' + side[::-1])
+    out.append(bottom)
+    return '\n'.join(out)
+
+def cmd_banner(a):
+    """A start or an end banner for a wake, so the editor sees where each wake's report begins and ends."""
+    who = name(a.agent)
+    runs = sorted(glob.glob(os.path.join(DATA, 'runs', who, '*.json')))
+    t = datetime.datetime.strptime(a.started, '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=datetime.timezone.utc) if a.started else datetime.datetime.now(datetime.timezone.utc)
+    day = t.strftime('%Y%m%d')
+    head = git('rev-parse', '--short=12', 'HEAD').strip()
+    if a.which == 'start':
+        n, today = len(runs) + 1, sum(1 for r in runs if os.path.basename(r).startswith(day)) + 1
+        card = os.path.join(DATA, 'schedule', who + '.json')
+        model = json.load(open(card, encoding='utf-8')).get('model', '?') if os.path.exists(card) else '?'
+        seen = read_by(who)
+        unread = sum(1 for d in (who, 'all') for q in glob.glob(os.path.join(DATA, 'messages', d, '*.md'))
+                     if os.path.basename(q)[:-3] not in seen and f'__{who}__' not in os.path.basename(q))
+        rows = [f'>>> WAKE START   {a.agent}',
+                f'run #{n}  (#{today} today)   {a.kind or "wake"}',
+                f'{t.strftime("%a %d %b %Y")}   fired {t.strftime("%H:%M")} UTC / {_london(t)} London'
+                + (f'   due {a.scheduled}' if a.scheduled else ''),
+                f'model {(str(model).split() or ["?"])[0]}   team {head}   unread {unread}']
+        print('```\n' + _box(rows, '╔' + '═' * (W + 2) + '╗', '║', '╚' + '═' * (W + 2) + '╝') + '\n```')
+    else:
+        last = json.load(open(runs[-1], encoding='utf-8')) if runs else {}
+        st = last.get('started', '')
+        try:
+            s0 = datetime.datetime.strptime(st[:19] + 'Z', '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=datetime.timezone.utc)
+        except ValueError:
+            s0 = t
+        now = datetime.datetime.now(datetime.timezone.utc)
+        rows = [f'<<< WAKE END   {a.agent}   run #{len(runs)}   {(last.get("outcome") or "?").upper()}',
+                f'{s0.strftime("%H:%M")} -> {now.strftime("%H:%M")} UTC  ({int((now - s0).total_seconds() // 60)} min)'
+                + (f'   released {a.release}' if a.release else '')
+                + (f'   problems {a.problems}' if a.problems else '')]
+        for i, f in enumerate([x for x in (a.for_you or '').split('|') if x.strip()], 1):
+            rows.append((f'FOR YOU  {i}. ' if i == 1 else f'         {i}. ') + f.strip())
+        if a.next:
+            rows.append(f'NEXT     {a.next}')
+        print('```\n' + _box(rows, '▛' + '▀' * (W + 2) + '▜', '▌', '▙' + '▄' * (W + 2) + '▟') + '\n```')
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter); s = ap.add_subparsers(dest='cmd', required=True)
     s.add_parser('inbox').add_argument('agent')
@@ -197,6 +252,8 @@ def main():
     p.add_argument('--body-file', required=True); p.add_argument('--re')
     p = s.add_parser('notes'); p.add_argument('agent'); p.add_argument('--since')
     p = s.add_parser('tasks'); p.add_argument('raw'); p.add_argument('--as-of'); s.add_parser('wake').add_argument('agent')
+    p = s.add_parser('banner'); p.add_argument('which', choices=('start', 'end')); p.add_argument('agent'); p.add_argument('--started')
+    p.add_argument('--kind'); p.add_argument('--scheduled'); p.add_argument('--release'); p.add_argument('--problems'); p.add_argument('--for-you'); p.add_argument('--next')
     a = ap.parse_args(); globals()['cmd_' + a.cmd.replace('-', '_')](a)
 
 if __name__ == '__main__':
