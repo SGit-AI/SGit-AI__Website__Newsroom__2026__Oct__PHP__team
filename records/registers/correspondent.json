@@ -7,8 +7,9 @@
   {
    "id": "3ytzxm3g",
    "key": "read key",
-   "from": "the published read key (admin/content/vaults/php-evidence.json)",
-   "since": "2026-10-22"
+   "from": "the published read key (admin/content/vaults/php-evidence.json); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw",
+   "since": "2026-10-22",
+   "until": "2026-10-27"
   },
   {
    "id": "4klm5qlt",
