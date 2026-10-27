@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0010",
+ "title": "dev's daily wake cannot push: its task starts a fresh session with no repositories and no add_repo",
+ "status": "open",
+ "owner": "editor",
+ "note": "27 October, 06:41 UTC: dev's daily task (trig_016bWKUV1FqcsHA2fvejMoWc, persist_session false) started a fresh session (cse_018yvwtNNU8G7eQs4T8mDXZ4). That session had no add_repo tool, and the git proxy refused team ('not in this session's authorized repository set'). It cloned the six read-only, did not run the chain, wrote no run record, and sent a push notification. This is the same limit the conductor found at 00:50 (conductor-0004): a fresh session started by a task has no repositories unless they are in the task's sources. Two fixes, either in dev's own session or the editor's: (1, recommended) bind the task to dev's persistent session (session_01PtVNbv644YqL1JuttoYv8f), like every other agent, so it wakes with its repositories attached; (2) add the six repositories to the task's sources in the scheduled-task settings. Until then the chain runs only when dev or the editor runs it by hand, and the CI that each site now runs."
+}
