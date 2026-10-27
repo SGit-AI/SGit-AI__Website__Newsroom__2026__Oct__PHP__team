@@ -38,7 +38,7 @@ QR image of your public key. Then wait: the editor enrols you at https://pki.sgi
 
 Write to the editor one block, nothing else:
 
- breaking@php.newsroom  needs, sealed to that fingerprint: 1. vault 7r83qic5 (source watch), held by researcher@php.newsroom 2. vault 3ytzxm3g (evidence), held by curator@php.newsroom The editor gives each holder, in its own session, your fingerprint. The holder runs `trust ` (it must
+ breaking@php.newsroom  needs, sealed to that fingerprint: 1. vault 7r83qic5 (source watch), held by researcher@php.newsroom 2. vault nnd3i8iw (evidence), held by curator@php.newsroom The editor gives each holder, in its own session, your fingerprint. The holder runs `trust ` (it must
 
 print `"ok": true`), then `seal --to  --from-vault  --name "vault key: " --qr …`. The editor
 
@@ -56,7 +56,7 @@ the saved key files once the clones open.
 
 Make your own working vault, seal its key to the root (`seal --to sha256:db7f79fdd87e030a --from-vault …`), and write
 
-`records/registers/breaking.json`: the vault you made (its id, the date sealed) and `holds`: `7r83qic5`, `3ytzxm3g`.
+`records/registers/breaking.json`: the vault you made (its id, the date sealed) and `holds`: `7r83qic5`, `nnd3i8iw`.
 
 Ids only, never a key.
 
@@ -86,4 +86,4 @@ This brief is the file `admin/content/briefs/2026-10-27__runbook__breaking-desk-
 
 
 ---
-site v0.22.42 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__runbook__breaking-desk-onboarding/index.html
+site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__runbook__breaking-desk-onboarding/index.html

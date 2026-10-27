@@ -39,7 +39,7 @@ promoted, given verdicts and written up, then released where each step's work li
 | Step | Role it plays | Writes | Needs |
 |---|---|---|---|
 | 1 | researcher | a capture in the source watch, and a priority-1 row in the curator's queue | the key of vault `7r83qic5` (source watch) |
-| 2 | curator | the promotion into the evidence vault; data `sources`, `vault`, `vault-claims` | the key of vault `3ytzxm3g` (evidence) |
+| 2 | curator | the promotion into the evidence vault; data `sources`, `vault`, `vault-claims` | the key of vault `nnd3i8iw` (evidence, pack mode; was `nnd3i8iw` until 27 October) |
 | 3 | journalist | the claim verdicts; data release | the evidence vault (same key) |
 | 4 | correspondent | review of step 3; a dated update or a piece in site, figures in press | nothing secret |
 
@@ -59,7 +59,7 @@ root like every vault.
 
 - **Keys by the book.** Its key pair is made in its session and enrolled by the editor. The holders (the researcher for
 
- `7r83qic5`, the curator for `3ytzxm3g`) seal their keys to its fingerprint in their own sessions, with the editor's
+ `7r83qic5`, the curator for `nnd3i8iw`) seal their keys to its fingerprint in their own sessions, with the editor's
 
  go. No key is ever printed or committed. Its register (`records/registers/breaking.json`) lists what it holds.
 
@@ -99,7 +99,7 @@ A container is reclaimed after a while, and its clones and a `--session` key go 
 
 1. The name: `breaking` (recommended; `incident` is security's word, and `focus` is the brief, not the desk).
 
-2. The two keys it holds: `7r83qic5` and `3ytzxm3g`, nothing else.
+2. The two keys it holds: `7r83qic5` and `nnd3i8iw`, nothing else.
 
 3. Option 1 or option 2 above, for restarts.
 
@@ -109,4 +109,4 @@ This brief is the file `admin/content/briefs/2026-10-27__brief__the-breaking-new
 
 
 ---
-site v0.22.42 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-breaking-news-desk/index.html
+site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-breaking-news-desk/index.html

@@ -144,8 +144,8 @@ for a Journalist; Day 1 for an Executive; a phone; the Night theme.
 
 This brief is the file `admin/content/briefs/2026-10-27__brief__the-story-as-days.md` in the repository, published as written.
 
-← older: Review: the line and the router, as they are on the live s
+← older: Review: the line and the router, as they are on the live snewer: → Brief: upgrade to sgit-ai 0.26.0, and read what is new
 
 
 ---
-site v0.22.42 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-story-as-days/index.html
+site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-story-as-days/index.html

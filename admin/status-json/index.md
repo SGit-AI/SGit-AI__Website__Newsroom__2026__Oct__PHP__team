@@ -19,10 +19,10 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.42" |
-| `data_as_of` | "2026-10-26T17:09Z" |
-| `vault_commit` | "1dceaa1dfa7f" |
-| `counts` | {"sources": 561, "captures": 623, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 36, "disputed": 7, "contradicted": 3, "unverified": 4}, "event |
+| `version` | "0.22.43" |
+| `data_as_of` | "2026-10-27T00:45Z" |
+| `vault_commit` | "24f0b0e22666" |
+| `counts` | {"sources": 562, "captures": 626, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 36, "disputed": 7, "contradicted": 3, "unverified": 4}, "event |
 | `headline_facts` | [{"id": "two-cves-9.2", "text": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and |
 | `latest_story` | {"title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell", "url": "https://php.oct.2026.newsroom.sgit.ai/articles/steal-my-bi |
 | `links` | {"front": "https://php.oct.2026.newsroom.sgit.ai/index.html", "sources": "https://php.oct.2026.newsroom.sgit.ai/sources/index.html", "claims": "https://php.oct. |
@@ -49,12 +49,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.42",
- "data_as_of": "2026-10-26T17:09Z",
- "vault_commit": "1dceaa1dfa7f",
+ "version": "0.22.43",
+ "data_as_of": "2026-10-27T00:45Z",
+ "vault_commit": "24f0b0e22666",
  "counts": {
-  "sources": 561,
-  "captures": 623,
+  "sources": 562,
+  "captures": 626,
   "claims": 70,
   "claims_by_status": {
    "confirmed": 20,
@@ -63,7 +63,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
    "contradicted": 3,
    "unverified": 4
   },
-  "events": 68,
+  "events": 69,
   "agencies": 16,
   "offline_reported": 28,
   "compromises_confirmed": 0
@@ -84,7 +84,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   {
    "id": "no-confirmed-compromise",
-   "text": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "As of 00:45 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
    "status": "reported",
    "url": "https://php.oct.2026.newsroom.sgit.ai/claims/index.html#no-confirmed-compromise",
    "sources": [
@@ -113,18 +113,22 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
     "haber-teknoloji-siber-guvenlik-baskanligi-ndan",
     "larazon-tecnologia-consumo-php-nuevo-fallo-segur",
     "techgaming-internet-sotto-attacco-php2shell-vulnera",
-    "bitpage-php2shell-php-sicherheitsluecke-webseite"
+    "bitpage-php2shell-php-sicherheitsluecke-webseite",
+    "cisa-alert-kev-20261026",
+    "cisa-kev-catalog"
    ]
   },
   {
    "id": "cisa-none",
-   "text": "CISA has not observed exploitation; neither CVE is in the Known Exploited Vulnerabilities catalog",
+   "text": "As of its alert of 21 October and KEV catalog version 2026.10.21 (fetched 2026-10-22T08:15Z), CISA had not observed exploitation and neither CVE was in the Known Exploited Vulnerabilities catalog. Superseded on 26 October: CISA added both CVEs to KEV (catalog version 2026.10.26, released 22:24 UTC; brk1-kev-listed-20261026)",
    "status": "confirmed",
    "url": "https://php.oct.2026.newsroom.sgit.ai/claims/index.html#cisa-none",
    "sources": [
     "cisa-alert-php-20261021",
     "cisa-kev-json",
-    "cve-cve-2026-109618"
+    "cve-cve-2026-109618",
+    "cisa-alert-kev-20261026",
+    "cisa-kev-catalog"
    ]
   }
  ],
@@ -148,4 +152,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.42 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

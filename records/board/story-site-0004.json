@@ -3,5 +3,6 @@
  "title": "Close each day: at the first wake after midnight UTC, write the day's headline for each role and mark the day closed",
  "status": "waiting",
  "owner": "desk",
- "note": "The editor's decision of 27 October (brief the-story-as-days, decision 3). Waits for the day file (story-site-0003); story-site will add the step to the desk's card with the desk's agreement."
+ "note": "The editor's decision of 27 October (brief the-story-as-days, decision 3). Waits for the day file (story-site-0003); story-site will add the step to the desk's card with the desk's agreement.",
+ "order": 365
 }

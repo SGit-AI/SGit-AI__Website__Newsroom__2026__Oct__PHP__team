@@ -2,7 +2,7 @@
 
 A working prototype of a site that shapes itself to the reader in front of them: how long they have, who they are, what they want to do, and what they have seen; set once at the top right, applied on every page with no reload and no flash.
 
-> Prototype E for review, built from the data of release v0.22.42. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
+> Prototype E for review, built from the data of release v0.22.43. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
 
 This site shapes itself to you. Three taps, and you can change them any time, top right. 
 ### How long have you got?
@@ -13,7 +13,7 @@ The page below has already changed to fit that.
 Last one. 
 ### What do you want to do?
 
-Developing · data as of 26 October 2026, 17:09 UTC 
+Developing · data as of 27 October 2026, 00:45 UTC 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
 PHP is the software that WordPress and millions of other websites run on. A fix came out on 21 October 2026. Government cyber agencies have told organisations to install it now; the two US agencies add: take websites offline if you cannot. Phones and personal computers are not affected. 
@@ -26,7 +26,7 @@ The documented cost so far is precaution, not breach: hours to a day of downtime
 A flaw is not a breach. An unpatched, internet-facing PHP application holding personal data is a risk to record and treat; it becomes a breach to assess when there is a sign of compromise on it. No named organisation has said it was compromised through php2shell as of the last check. Ask your hosts in writing, review from 17 October, and document the assessment either way. 
 The flaw is in the PHP runtime, so exposure is every internet-facing system running PHP, including vendor appliances. Review logs from 17 October (the earliest reported attempt), not from the fix. Attempts are reported at scale; no named victim is confirmed. Patch first, isolate where you cannot. 
 Patch internet-facing mod_php first, then FPM, then the rest; restart every worker and rebuild every image. The fix changes how PHP behaves when memory runs out, so test under load. 7.4 to 8.1 have no release. Afterwards, invest in an inventory that answers 'where is PHP' in minutes. 
-The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise, and CISA has not listed either flaw as exploited. 
+The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise. CISA listed both flaws as known exploited on 26 October, naming no victim: exploited is not the same as a confirmed compromise. 
 Safe to say: two critical flaws in PHP were fixed on 21 October; we updated or isolated our systems; we have no evidence of compromise and review continues. Do not say '70% of the Internet', 'the most severe ever' or 'exploited everywhere'. Point people to php.net and your national agency. 
 Internet-facing mod_php first, then FPM, then everything else. Where patching slips, apply php.net's temporary settings and record that each blocks a known path only. Alert on PHP workers spawning shells or fetching tools. Decide now who calls isolate or offline, and when. 
 Every application on an affected runtime is in scope, including ones with no uploads or sessions: the demonstrated paths run before application code. Add the running PHP version to the SBOM and fail the pipeline on an unfixed one. Detection belongs at the edge and on the host, not in the app. 
@@ -36,10 +36,10 @@ Two classes: an out-of-memory longjmp leaving request memory uninitialised, and 
 A bug class seen and shelved in 2024 was turned into working exploits by three AI-assisted teams within three weeks in August 2026. The disclosure leaked 22.5 hours early. Agencies split on the hardest question, offline or not, along lines that look institutional rather than technical. 
 Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 14:42 UTC on 26 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
 A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 14:42 UTC on 26 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
-The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise, and CISA has not listed either flaw as exploited. 
+The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise. CISA listed both flaws as known exploited on 26 October, naming no victim: exploited is not the same as a confirmed compromise. 
 Internet-facing mod_php first, then FPM, then everything else. Where patching slips, apply php.net's temporary settings and record that each blocks a known path only. Alert on PHP workers spawning shells or fetching tools. Decide now who calls isolate or offline, and when. 
 Two classes: an out-of-memory longjmp leaving request memory uninitialised, and worker global state pointing at freed request memory across requests. mod_php was exploited before application code; FPM for the first flaw is disputed. The fix removes longjmp for OOM. A report of an incomplete fix is open. 
-Release v0.22.42. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
+Release v0.22.43. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
 Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 14:42 UTC on 26 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
 
  1 min+ aim: understand verify 
@@ -133,7 +133,7 @@ Not your phone or laptop: the flaw is on web servers. It affects organisations t
 
 #### Has anyone been hacked?
 
-Attackers have been trying: Cloudflare reports millions of attempts and Amazon a honeypot hit four days before disclosure. But as of 09:35 UTC on 25 October no named organisation has said it was broken into through this flaw, and CISA has not listed either flaw as exploited. One company in Japan is investigating a break-in without saying how it happened, and a Czech university says it stopped an attack. 
+Attackers have been trying: Cloudflare reports millions of attempts and Amazon a honeypot hit four days before disclosure. But as of 00:45 UTC on 27 October no named organisation has said it was broken into through this flaw. CISA listed both flaws as exploited on 26 October, which means it has evidence they are being exploited, but it names no victim. One company in Japan is investigating a break-in without saying how it happened, and a Czech university says it stopped an attack. 
 
  1 min+ aim: understand verify for: study 
 
@@ -171,8 +171,8 @@ A fix has been available since 21 October. Organisations that run websites on PH
 Every government cyber agency says: install the fix now. If you cannot, the US agencies say take the website offline; the UK puts that after temporary mitigations, and several European agencies say cut it off from the public internet first.
  CISA NCSC UK CERT-EU 
 - 
-Attackers are trying to use the flaws, in large numbers: millions of attempts by one internet security company's count. As of 09:35 UTC on 25 October, no named organisation has said it was broken into through this flaw. The one security company that had claimed a successful break-in, Sophos, withdrew it; US banks and the large crypto platforms report none.
- Matthew Prince, Cloudflare CEO on… CISA Paperjam 
+Attackers are trying to use the flaws, in large numbers: millions of attempts by one internet security company's count. On 26 October CISA, the US cyber agency, added both flaws to its list of flaws known to be exploited: it has evidence of exploitation, and names no victim. As of 00:45 UTC on 27 October, no named organisation has said it was broken into through this flaw. The one security company that had claimed a successful break-in, Sophos, withdrew it; US banks and the large crypto platforms report none.
+ Matthew Prince, Cloudflare CEO on… CISA CISA 
 - 
 The advice is moving from 'install the fix' to 'and check whether you were already broken into'. Singapore's and Luxembourg's authorities now say so.
  CNA Paperjam 
@@ -185,6 +185,8 @@ Some organisations took websites offline as a precaution: the Dutch government t
 ### The latest
 
 - 
+ 26 Oct, 22:24 UTC CISA adds both flaws to its Known Exploited Vulnerabilities catalog (the version released at 22:24 UTC on 26 October): it has evidence they are exploited, names no victim, and gives US federal civilian agencies until 29 October to fix them. 
+- 
  23 Oct, 10:03 UTC Die Presse: as of 12:03 Vienna time (10:03 UTC) on 23 October no successful attack via the PHP flaws was known in Austria. 
 - 
  23 Oct, 09:16 UTC Japan's RainForest reports that its honeypots recorded 21 php2shell-related requests from 14 different addresses: attempts, not break-ins. 
@@ -192,8 +194,6 @@ Some organisations took websites offline as a precaution: the Dutch government t
  23 Oct, 07:58 UTC IT Social: the update closes the flaw, but obliges a hunt for possible compromises; the published figures count attempts, not intrusions. 
 - 
  23 Oct American Banker: no US bank or credit union has publicly reported a compromise, despite millions of attempts. 
-- 
- 22 Oct, 21:21 UTC Sophos withdraws an earlier claim of a successful compromise: its data shows scanning and a few failed attempts, and a botnet payload it saw was blocked. 
 
  5 min+ aim: act verify understand 
 
@@ -246,7 +246,7 @@ Where the 70% figure comes from. None of the pages that use it says how it was m
 - 
  confirmed The plan was to announce the fix on 22 October. Word leaked out on 20 October, so it was released a day early. 
 - 
- reported Attackers are trying, in large numbers: one internet security company reports millions of attempts, and Amazon reports a decoy server hit four days before the announcement. No named organisation has said it was broken into through these flaws, as of 09:35 UTC on 25 October, and the US government's official list of flaws known to be used in attacks did not include them when last checked. 
+ reported Attackers are trying, in large numbers: one internet security company reports millions of attempts, and Amazon reports a decoy server hit four days before the announcement. No named organisation has said it was broken into through these flaws, as of 00:45 UTC on 27 October. The US government's official list of flaws known to be used in attacks added both on 26 October, naming no victim. 
 - 
  confirmed Every agency says install the fix. They disagree on what to do if you cannot: the US says take the website offline, the UK lists that as a last resort, several European agencies say cut it off from the public internet, and some say nothing about it. 
 - 
@@ -430,7 +430,7 @@ The block is recorded in the vault.
 
 ### Everything else we hold
 
- Every claim (70) Every source (561) The timeline The numbers The code How this site knows 
+ Every claim (70) Every source (562) The timeline The numbers The code How this site knows 
 
 That is the page for the time you gave it. How this prototype works (for the editor and dev) 
 - Every part of every page is built, always. Each part says which settings show it: a time tier, an aim, a kind of reader. 
@@ -441,4 +441,4 @@ That is the page for the time you gave it. How this prototype works (for the edi
 - “Got it” marks a part as seen; Fade or Hide takes it out of the way on every page, until it changes.
 
 ---
-site v0.22.42 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html
+site v0.22.43 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html

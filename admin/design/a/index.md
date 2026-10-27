@@ -2,9 +2,9 @@
 
 The front page for a board member who wants only what their role needs: the situation, five numbers, three questions for the team, what is new, and one picture each of how it unfolded and what governments advise.
 
-> Mockup A for review, built from the data of release v0.22.42. Not the live site.
+> Mockup A for review, built from the data of release v0.22.43. Not the live site.
 
-Developing  ·  last checked 26 October 2026, 17:09 UTC 
+Developing  ·  last checked 27 October 2026, 00:45 UTC 
 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
@@ -59,12 +59,12 @@ Every agency puts offline last, but you need to be able to do it in minutes. Nam
 
 ### Since you last looked
  3 new 
+- New 23 Oct, 09:16 UTC 
+Japan's RainForest reports that its honeypots recorded 21 php2shell-related requests from 14 different addresses: attempts, not break-ins. 
 - New 23 Oct, 07:58 UTC 
 IT Social: the update closes the flaw, but obliges a hunt for possible compromises; the published figures count attempts, not intrusions. 
 - New 23 Oct 
 American Banker: no US bank or credit union has publicly reported a compromise, despite millions of attempts. 
-- New 22 Oct, 21:21 UTC 
-Sophos withdraws an earlier claim of a successful compromise: its data shows scanning and a few failed attempts, and a botnet payload it saw was blocked. 
 Read items disappear from this list. Everything new → 
 
 #### Ask about it
@@ -102,7 +102,7 @@ All say install the fix. They split on what to do if you cannot.
 
  See every agency → 
 
- Focus view shows 30 of 1231 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
+ Focus view shows 30 of 1235 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
 
 ---
-site v0.22.42 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html
+site v0.22.43 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html

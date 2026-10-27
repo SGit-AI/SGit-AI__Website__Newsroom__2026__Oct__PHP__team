@@ -3,5 +3,6 @@
  "title": "The story as days: the mock-up and the editor's decisions (front page the last 24 hours with the days strip; dates in the address; the desk closes the day; the end is the editor's call)",
  "status": "done",
  "owner": "story-site",
- "note": "Decided by the editor on 27 October; brief records/briefs/2026-10-27__brief__the-story-as-days.md. The build is story-site-0003; the desk's part is story-site-0004."
+ "note": "Decided by the editor on 27 October; brief records/briefs/2026-10-27__brief__the-story-as-days.md. The build is story-site-0003; the desk's part is story-site-0004.",
+ "order": 363
 }

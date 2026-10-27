@@ -83,8 +83,9 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
-| `3ytzxm3g` | read key | the published read key (admin/content/vaults/php-evidence.json) | 2026-10-22 |
+| `3ytzxm3g` | read key | the published read key (admin/content/vaults/php-evidence.json); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw | 2026-10-22 |
 | `4klm5qlt` | vault key | the editor, as message text in the session (23 October 2026); pulse@newsroom's vault, used to read only, never to write | 2026-10-23 |
+| `nnd3i8iw` | read key | the curator's new evidence vault: sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked) and handed over by the editor in this session, 27 October 2026; read only | 2026-10-27 |
 
 The correspondent's session (Opus; until 24 October named the journalist, claude-journalist). It made no vault. It holds the keys below, read only: it never writes to any of these vaults. Clones live outside the repository.
 
@@ -92,7 +93,7 @@ The correspondent's session (Opus; until 24 October named the journalist, claude
 
 | Vault ID | What it holds | Created | Key sealed to the root |
 |---|---|---|---|
-| `nnd3i8iw` | The evidence vault as a pack vault with indexes: the same content as 3ytzxm3g (sources, claims, timeline) rewritten by sgit pack import at head 1dceaa1dfa7f, a new key; verified by a fresh clone identical file for file. Not yet cut over: the curator and its readers still use 3ytzxm3g until the editor says | 2026-10-27 | 2026-10-27 |
+| `nnd3i8iw` | The evidence vault, a pack vault with indexes, the only evidence vault the curator writes from 27 October 2026 (cutover at the editor's word). The same content as 3ytzxm3g at head 1dceaa1dfa7f (sgit pack import, a new key); the journalist reads it with the read-only key the editor gave it | 2026-10-27 | 2026-10-27 |
 
 #### Keys it holds
 
@@ -125,7 +126,7 @@ The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. 
 | `0cfkdcvh` | vault key | made it | 2026-10-23 |
 | `84wr8mib` | append token | made it | 2026-10-22 |
 | `wgeiqabu` | append token | made it | 2026-10-22 |
-| `3ytzxm3g` | read key | published on the site | 2026-10-22 |
+| `3ytzxm3g` | read key | published on the site (the evidence vault's read key); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw (dev holds no key of it) | 2026-10-22 |
 
 Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed by dev@php.newsroom on 23 October 2026.
 
@@ -141,6 +142,7 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 |---|---|---|---|
 | `hsmfer5w` | vault key | made it | 2026-10-26 |
 | `3ytzxm3g` | read key | the curator's published read key (evidence vault, read only) | 2026-10-22 |
+| `nnd3i8iw` | read key | the editor, sealed to the desk's key in the desk's session, 27 October 2026 (the sender's own key, sha256:6c81ae257fee1938, is not in the register) | 2026-10-27 |
 
 Kept by the agent itself.
 
@@ -238,4 +240,4 @@ What each vault is for, and the published read keys and write-only lanes, are on
 
 
 ---
-site v0.22.42 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
