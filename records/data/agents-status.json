@@ -1,15 +1,15 @@
 {
  "about": "Where every agent on the team is: what it last did, what it is waiting for and from whom, which branches wait to be carried into dev, what ran on a schedule, and how fresh the site's data is against its vaults. A snapshot taken by conductor@php.newsroom from each agent's session record, the repository and the scheduled tasks, without asking any agent; refreshed at each of the conductor's runs. Costs are each session's running total in US dollars at its latest message.",
  "kept_by": "conductor",
- "as_of": "2026-10-26T19:25Z",
- "live_version": "edition v0.22.33 (data 0.1.42, press 1.0.42); the main site cut over at v0.22.32",
+ "as_of": "2026-10-27T11:30Z",
+ "live_version": "site v0.22.49; data v0.1.74; press v1.0.78",
  "agents": [
   {
    "agent": "curator@php.newsroom (scheduled)",
    "member": "newsroom-lead",
    "state": "working",
-   "last": "2026-10-26T18:53Z",
-   "did": "Wake 18:00 London (fired 18:03 UTC); team at 8a7ceb2dc227. Took in the researcher's passes up to f212898aa0fe (pack vault 7r83qic5; queue 460 rows, 40 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (3 priority 2, 15 priority 4; now 561 sources, 623 captures), 13 claims of mine, no timeline rows;…",
+   "last": "2026-10-27T10:47Z",
+   "did": "10:30 wake (dev 513a963f2c12): sgit-ai 0.26.0 in the venv. Pulled watch-pack in 3m48s (10:37:32 to 10:41:47 UTC; the earlier pulls took 25 to 39 minutes) and evidence-pack in 8.5s (up to date). Read 18 captures in full and promoted batch 20: 18 sources, 22 claims, 1 timeline row (SC Media on the Unit 42 retraction and…",
    "waiting": "Data writes on trial (v0.1.34, v0.1.44): the journalist says yes, the correspondent is to answer (curator-0002). The CLI team on the slow first status and pull (curator-0001).",
    "on": "editor",
    "cost": 22
@@ -18,8 +18,8 @@
    "agent": "researcher@php.newsroom (scheduled)",
    "member": "researcher",
    "state": "working",
-   "last": "2026-10-26T17:45Z",
-   "did": "Wake 17:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head f212898aa0fe, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page…",
+   "last": "2026-10-27T10:25Z",
+   "did": "Wake 09:30 London, 27 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head d311e66ff0c0, on sgit-ai v0.26.0. Cyber desk: both php2shell CVEs are in the CISA KEV catalog since 26 October (series kev-listed 2); the nuclei-templates pull-request…",
    "waiting": "A run record in git at every wake (your call: see the first decision).",
    "on": "",
    "cost": 14
@@ -47,9 +47,9 @@
   {
    "agent": "dev@php.newsroom",
    "member": "dev",
-   "state": "blocked",
-   "last": "2026-10-24T16:45Z",
-   "did": "Blocked on a Bash permission prompt (since 11:52 UTC, asked again 16:45).",
+   "state": "working",
+   "last": "2026-10-27T02:10Z",
+   "did": "CI owns the version in all six (https://sharness.ai/articles/ci-owns-the-version.html): after the gate, CI writes VERSION in a GitHub Actions commit, tags it and deploys it; release.sh never touches VERSION, and a pushed change to it fails the guard. First CI versions: press v1.0.58, data v0.1.52, team, site, refs,…",
    "waiting": "Approve or deny the Bash call in its session; desk lists 6 decisions waiting on you.",
    "on": "editor",
    "cost": 181
@@ -58,8 +58,8 @@
    "agent": "sherpa@php.newsroom",
    "member": "sherpa",
    "state": "working",
-   "last": "2026-10-26T16:54Z",
-   "did": "First run on v2, in an interactive session at the editor's request (the schedule is paused). Took in the six repositories: team and press with push, site, data, refs and updates read-only; v1 untouched. sgit-ai v0.25.0 (from 0.24.0): status 2.5 s then 1.6 s on the collaborators clone, 1.6 s then 1.3 s on the inbox;…",
+   "last": "2026-10-27T09:47Z",
+   "did": "Drain wake (09:45 London). Lanes: 58526ytp and d6zak0o3 both empty (pending 0), vaults in sync; the drains ran from press v1.0.76, data's contributors.json unchanged. No instruction file changed; sgit-ai v0.26.0. One new note (conductor: the wake tool hides your own notes to all) and the three conductor messages…",
    "waiting": "The conductor's lane key (5iwos28w) and the subscriptions key (wgeiqabu) handed over sealed.",
    "on": "editor",
    "cost": 91
@@ -78,8 +78,8 @@
    "agent": "pulse@newsroom",
    "member": "",
    "state": "working",
-   "last": "2026-10-26T15:07Z",
-   "did": "Pulse pass 20261026T145452Z (14:52 London); sgit-ai 0.25.0 (upgraded 26 Oct, per the conductor's note): whole pass 723 s for 441 pages (344 checked, 230 changed), commit and push to the pack vault 9f5knw9r in one try, vault head 1fe31d24a3ef, in sync with the server. Team dev 828a2c9ac194 recorded. Evidence: no…",
+   "last": "2026-10-27T07:39Z",
+   "did": "NEW RUNG: php2shell reached rung 5, a KEV listing. CISA KEV catalog 2026.10.26 (released 2026-10-26T22:24:24Z, 1,758 entries; the previous catalog I captured was 2026.10.23, 1,756) lists CVE-2026-109618 (PHP Memory Corruption Vulnerability) and CVE-2026-109619 (PHP Stale Internal Request-State Vulnerability), vendor…",
    "waiting": "Your go on those four; its card is not released yet.",
    "on": "editor",
    "cost": 28
@@ -87,9 +87,9 @@
   {
    "agent": "desk@php.newsroom",
    "member": "",
-   "state": "waiting",
-   "last": "2026-10-24T15:32Z",
-   "did": "Afternoon check done (run record 16:20). Lists 6 decisions for you, starting with dev's stuck prompt.",
+   "state": "working",
+   "last": "2026-10-27T10:47Z",
+   "did": "Morning line: day 7, CISA lists both flaws on KEV (26 October), no named victim; front page checked live (headline right, three 'as of' times and a stale count to the owners: desk-0003 to 0005); pipeline ran in order, dev's wake cannot push (conductor-0010); the editor's queue ranked; sgit 0.26.0; card model Sonnet;…",
    "waiting": "Your 6 ranked decisions; its scope.",
    "on": "editor",
    "cost": 20
@@ -118,8 +118,8 @@
    "agent": "factcheck@php.newsroom",
    "member": "verifier",
    "state": "working",
-   "last": "2026-10-26T17:20Z",
-   "did": "16:52 London wake (sgit 0.25.0; read the loose evidence clone, pulled to 22a0c2920b88; the pack copy hsmfer5w stays at 94352a55fbaa): no-confirmed-compromise holds A4 as of 12:14 UTC on 26 October, no victim named in 20 new captures; S-128 added to the 70% lineage; fc.py check 0 failures; drift 6, explained; KEV…",
+   "last": "2026-10-27T09:25Z",
+   "did": "08:52 London wake (sgit 0.26.0; the desk's clone of nnd3i8iw pulled in 73 s, head 6fe04cc074f9). HIGH: CISA added both CVEs to KEV on 26 October (catalog 2026.10.26, 22:24:24Z, due 29 October); fetched live, same bytes as the vault's capture. cisa-none superseded (dated claim), kev-precedent A2 with both catalogs,…",
    "waiting": "nothing",
    "on": "",
    "cost": 96
@@ -128,8 +128,8 @@
    "agent": "librarian@php.newsroom",
    "member": "librarian",
    "state": "working",
-   "last": "2026-10-25T07:13Z",
-   "did": "Its 07:13 pass is running now.",
+   "last": "2026-10-26T23:52Z",
+   "did": "wired into the six repositories, at the editor's request in the librarian's session: card records/schedule/librarian.json now has repositories (push team, data, press; pull none; never v1) from the split brief's table, and its brief, runbook, policy and each_wake steps moved from v1 paths to their homes in the six…",
    "waiting": "Two board decisions; security review of its CLAUDE.md branch.",
    "on": "editor",
    "cost": 47
@@ -157,9 +157,9 @@
   {
    "agent": "ontologist@php.newsroom (cartographer)",
    "member": "cartographer",
-   "state": "done",
-   "last": "2026-10-24T23:24Z",
-   "did": "Its first pass (14:40, run record 21:50 UTC): the Wikipedia php2shell article graph is live (v0.17.1).",
+   "state": "working",
+   "last": "2026-10-27T10:57Z",
+   "did": "Not a scheduled wake: the editor's direction in my session to fix my pages for the six repositories and the new design. Done. Press (released): the graph component v1.0.1 (v1.0.0 stays): v1.0.0 resolved its data file against document.baseURI, which the new line moves to a view (/wikipedia/php2shell/as/executive/), so…",
    "waiting": "nothing",
    "on": "",
    "cost": 66
@@ -177,9 +177,9 @@
   {
    "agent": "security@php.newsroom",
    "member": "",
-   "state": "waiting",
-   "last": "2026-10-24T22:05Z",
-   "did": "CodeQL fixes done (first scan triaged and hardened, v0.15.12); gate-pass-2 now 5 commits ahead of dev.",
+   "state": "working",
+   "last": "2026-10-26T23:55Z",
+   "did": "Wired into the six repositories, with a security pass. Card: repositories push team and press (review branches only), pull data, site, updates, refs, never v1; every v1 path moved to its home (records/, press build/ and rules/, team tools/release.sh). Task trig_01NEArPo2mvgVQ5VghLADnHw: prompt set to the card's…",
    "waiting": "Reply go to release security/gate-pass-2 (it carries the #4-6 fix); dismiss CodeQL alerts #3 and #22 yourself.",
    "on": "editor",
    "cost": 70
@@ -188,18 +188,18 @@
    "agent": "conductor@php.newsroom",
    "member": "conductor",
    "state": "working",
-   "last": "2026-10-26T18:17Z",
-   "did": "Light check 18:15 London, team at 2207a42eb67f. schedule.py survived edition v0.22.33; the next import may delete it, so it is watched until dev patches sync_v1.py (correspondent-0003). Took the oq9gflln deletion from the curator at the editor's word. Checked team, data, press and site: nothing reads oq9gflln live.…",
-   "waiting": "Security's review of press releases by agents other than dev; oq9gflln's deletion once pulse repoints (conductor-0003); dev's patch to sync_v1.py (correspondent-0003); wiring the ontologist, librarian, desk and Sherpa's schedules.",
+   "last": "2026-10-27T10:17Z",
+   "did": "Light check 10:15 London, team at 60258aeebd1e. Correspondent 09:25 (Opus) reviewed the journalist's batches 18 and 19 and released data v0.1.68 and v0.1.69, re-stamping the persona answers to 07:15 UTC with the KEV listing and the decoy break-in. In site (b650f85c, 09:32) it added KEV corrections to both…",
+   "waiting": "The editor: deleting 3ytzxm3g (conductor-0009), dev's daily wake bound to its own session (conductor-0010), the desk's release, the projects desk and the leads of PROJECT-001 and PROJECT-002.",
    "on": "editor",
    "cost": 2
   },
   {
    "agent": "observability@php.newsroom",
    "member": "observability",
-   "state": "waiting",
-   "last": "2026-10-24T12:22Z",
-   "did": "A debrief released. Board rows 270 to 273.",
+   "state": "working",
+   "last": "2026-10-27T08:36Z",
+   "did": "First scheduled wake (08:33 London). team at 2d5f11ea; 9 notes read as material, none for observability; sgit-ai upgraded 0.25.0 to v0.26.0 (WAKE.md step 1b). Keys present. Lane (84wr8mib, lane 1): 161 waiting of 1,000, none refused; drained with drain.py, pushed (vault head 072aaffbb7e2) before marking processed: 161…",
    "waiting": "The SG/Send access token (board 273); a decision on re-keying 84wr8mib; its key enrolled; the roster row.",
    "on": "editor",
    "cost": 11
@@ -218,8 +218,8 @@
    "agent": "correspondent@php.newsroom (scheduled)",
    "member": "correspondent",
    "state": "working",
-   "last": "2026-10-26T17:20Z",
-   "did": "Wake 16:55 London (ran 17:10 UTC), sgit 0.25.0. Team dev at 811a8e2c. Reviewed the journalist's only release since my last run, data v0.1.35 (vault 2fc7e432584b, 543 sources, latest capture 14:42 UTC), against the captures: Square Enix (TechGaming.it quote exact; cause not stated; Bitpage says 'kein Angriff'), Belgium…",
+   "last": "2026-10-27T09:32Z",
+   "did": "Wake 09:25 London. Team dev at e0e65bec636e. sgit 0.26.0 (pull of nnd3i8iw: 2 m 16 s; 581 sources). Housekeeping: register drops 3ytzxm3g (decommissioned 27 October), local clone deleted; card model Opus (already). Reviewed the journalist's batches 18 (data v0.1.61, 13 verdicts) and 19 (v0.1.66, 11 verdicts) against…",
    "waiting": "Your call on board 285: move the desk's checks to about 10:15 and 17:40 (its wakes clash with the correspondent's).",
    "on": "editor",
    "cost": 114
@@ -228,8 +228,8 @@
    "agent": "journalist@php.newsroom (scheduled)",
    "member": "journalist",
    "state": "working",
-   "last": "2026-10-26T18:42Z",
-   "did": "Nothing new: evidence vault at 2fc7e432584b, the head already in the data repository (files/vault.json, the curator's v0.1.34 and my v0.1.35). Fired by the 18:40 London (18:40 UTC) task into this session; dev at 37fdaafdbb6f. The curator's next batch had not been pushed (its record of 18:04 UTC is about the old vault…",
+   "last": "2026-10-27T11:18Z",
+   "did": "11:10 wake (fired 11:12 UTC) into this session; dev at 4dd76c008d29. Evidence vault nnd3i8iw (pack vault, sgit 0.26.0): pull of one batch 1 m 58 s; head 55b47c4d6af1 (598 sources, latest capture 09:43 UTC), the curator's batch 20, already in the data repository from the curator's own release, so I did not export. 22…",
    "waiting": "Its first wake at 08:40.",
    "on": "",
    "cost": 4
@@ -343,24 +343,25 @@
    "still edition v0.22.26 (data 0.1.19); dev's round runs every quarter hour once the editor sets ROUND_TOKEN (press v1.0.20); edition v0.22.27 built at 11:22 but not yet cut to the sites"
   ],
   [
-   "The loop this evening",
-   "curator 18:03 (batch 18, data v0.1.44, its second trial), journalist 18:40 (nothing new), researcher 17:02 (data v0.1.43), correspondent 16:55 (review, v0.1.41), fact-check 16:53 (run 10). dev ran the chain by hand at its 19:09 wake (no ROUND_TOKEN needed). Every wake today has a run record."
+   "The loop this morning",
+   "Every scheduled wake left a run record. Evidence vault nnd3i8iw: curator 08:00 and 10:30 (580 then 598 sources), journalist 08:40 and 11:10 (11 then 22 verdicts), fact-check 08:52 (run 12, the KEV listing), correspondent 09:25 (KEV corrections on both articles). Ontologist re-pointed 10:57. dev 06:40 could not push (conductor-0010)."
   ]
  ],
  "freshness": [
   [
    "Data API",
-   "2026-10-26T18:52Z",
-   "latest v0.1.44 (curator, vault 1dceaa1dfa7f, 561 sources)"
+   "2026-10-27T11:18Z",
+   "v0.1.74 (journalist, vault 55b47c4d6af1, 598 sources)"
   ],
   [
-   "Pages",
-   "2026-10-26T17:24Z",
-   "edition v0.22.33, data 0.1.42"
+   "Main site",
+   "2026-10-27T09:32Z",
+   "v0.22.49 (the correspondent's KEV corrections)"
   ]
  ],
  "decisions": [
-  "Delete oq9gflln once pulse repoints files/pulse.json (board conductor-0003).",
-  "Security's review of press releases by agents other than dev (v1.0.29 onwards)."
+  "Delete 3ytzxm3g (the editor, himself).",
+  "Bind dev's daily task to dev's own session (conductor-0010).",
+  "The projects desk, and the leads of PROJECT-001 and PROJECT-002."
  ]
 }
