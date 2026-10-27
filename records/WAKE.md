@@ -14,6 +14,12 @@ https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__the-s
 Why every wake leaves a record: on 24 and 25 October the researcher and the curator ran every wake and did their work,
 but left nothing in the repository, so nobody could see they had run (board 303).
 
+## 0. Open your report with the start banner (27 October 2026)
+
+The very first thing in your reply, before any other line: `python3 records/tools/schedule.py banner start <you>
+--started <fired, ISO UTC> --kind "<what this wake is>" --scheduled <HH:MM>`, printed as it comes. The brief:
+`records/briefs/2026-10-27__brief__wake-banners.md`.
+
 ## 1. Start from dev, in team and in each repository your card names
 
 - Your card's `repositories.push` lists what you write. If one is not in your working directory, attach it with the
@@ -75,6 +81,10 @@ your reply and say so.
 ## 6. Report
 
 To the editor, in ten lines or fewer: what waits on him first, then what you did.
+
+Then close with the end banner, the very last thing in your reply (run it after your run record):
+`python3 records/tools/schedule.py banner end <you> --release <commit> --problems "<n found, n fixed>" --for-you
+"<item>|<item>" --next "<your next wake>"`. Nothing follows it.
 
 ## Never
 
