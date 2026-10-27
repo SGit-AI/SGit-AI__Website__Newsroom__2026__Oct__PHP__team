@@ -12,13 +12,6 @@
  ],
  "holds": [
   {
-   "id": "3ytzxm3g",
-   "key": "vault key",
-   "from": "the editor, sealed to this session's key (23 October 2026)",
-   "since": "2026-10-23",
-   "retired": "2026-10-27: the evidence vault moved to the pack vault nnd3i8iw; the curator deleted its local clone of 3ytzxm3g and never uses it again; the old vault stays on the host, untouched, until the editor retires it"
-  },
-  {
    "id": "7r83qic5",
    "key": "vault key",
    "from": "the editor, as message text in the session (23 October 2026); used to read the pack copy of the source watch only, never to write",
@@ -29,6 +22,12 @@
    "key": "vault key",
    "from": "made by the curator in its session (pack import of 3ytzxm3g, 27 October 2026); sealed to the root the same day",
    "since": "2026-10-27"
+  }
+ ],
+ "decommissioned": [
+  {
+   "id": "3ytzxm3g",
+   "note": "decommissioned 27 October 2026: the evidence vault is the pack vault nnd3i8iw; the curator deleted its clone and holds no key of it; its deletion from the host waits on the editor (board conductor-0009)"
   }
  ]
 }
