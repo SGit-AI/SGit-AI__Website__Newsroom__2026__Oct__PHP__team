@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1705Z-curator",
+ "agent": "curator",
+ "started": "2026-10-27T17:05:00Z",
+ "finished": "2026-10-27T19:03:40Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/newsroom-lead/HANDOVER.md; pointer in records/agents/curator/). Promotion tools that existed only in the scratchpad pushed to records/agents/newsroom-lead/curator-tools/ (not the patched pki-agent copies, which bypass the register: the editor and security decide). Card completed (press as a read-only pull, handover field, status note); register already lists nnd3i8iw, the held keys, the read keys sealed to journalist, correspondent, factcheck and projects, and 3ytzxm3g as decommissioned. State: nnd3i8iw head d21ea5df2a32, 614 sources, 345 claims; queue empty; data released from that head; nothing half-done.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "281b9c58c3f45f558b9edf7b4c187f8299a30347"
+}

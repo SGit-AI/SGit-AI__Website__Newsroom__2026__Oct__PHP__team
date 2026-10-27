@@ -3,7 +3,7 @@
  "address": "curator@php.newsroom (scheduled)",
  "member": "newsroom-lead",
  "status": "active",
- "status_note": "running since 23 October 2026. Card drafted by the conductor from its scheduled tasks; the curator to confirm it and keep it",
+ "status_note": "paused for the move to a new account on 27 October 2026; handover written; the task is recreated from times and instructions at the editor's go",
  "objective": "Promote what the source watch captured into the evidence vault, a bounded batch a wake, in priority order, each capture read first.",
  "tz": "Europe/London",
  "days": "every day",
@@ -48,7 +48,10 @@
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data"
   ],
-  "pull": [],
+  "pull": [
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press (read only: build/export_vault.py)"
+  ],
   "note": "team: the run record, every wake. data: my five files (sources, vault, vault-claims, vault-timeline, software), only when the editor asks for a refresh. v1 is frozen: never written."
- }
+ },
+ "handover": "records/agents/newsroom-lead/HANDOVER.md (tools: records/agents/newsroom-lead/curator-tools/)"
 }
