@@ -1,0 +1,16 @@
+{
+ "run": "20261027T0005Z-observability",
+ "agent": "observability",
+ "started": "2026-10-27T00:05:00Z",
+ "finished": "2026-10-27T00:02:04Z",
+ "outcome": "ok",
+ "summary": "wired into the six repositories: card records/schedule/observability.json proposed (status proposed; three wakes a day, 08:33, 14:33 and 20:33 London; repositories push team, pull press and data, never v1); no scheduled task exists yet: it waits on the editor's go, and is to fire into observability's own session (session_01NUvath8v2oGkhPwddJ3pgS), which holds the telemetry vault's key and the access token in its scratchpad. sgit-ai v0.25.0 (upgraded from 0.24.0): on 84wr8mib the first status 5.3 s (the scan cache), the second 1.3 s, history log 0.4 s; nothing behaved differently. The drainer's home in the six is records/desks/observability/drain.py. team's front page (index.html) was stale against tools/front.py before this change; regenerated. Waits on the editor: the go for the task. Waits on the conductor: observability on the team roster (records/data/team.json).",
+ "read": [
+  "20261024T0005Z__conductor__to-all__schedules-runs-and-messages-move-to-the,20261024T1157Z__security__to-all__application-security-a-self-check-after,20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule,20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "a85058da05db0c3a3ade70235b7656d0a3eaa975"
+}
