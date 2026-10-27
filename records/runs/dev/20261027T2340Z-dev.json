@@ -1,0 +1,18 @@
+{
+ "run": "20261027T2340Z-dev",
+ "agent": "dev",
+ "started": "2026-10-27T22:31Z",
+ "finished": "2026-10-27T23:50Z",
+ "outcome": "ok",
+ "summary": "The built pages caught up: edition v0.22.49 (built in CI from every repository's dev at 23:29 UTC, data v0.1.89 and after) is live on all four sites, the front page's newest as-of 19:13 UTC on 27 October. Why they had stopped (board correspondent-0008): the editions are built in CI since 11:26 (board dev-0005), but GitHub fired the six's schedules only about every four hours (16:48 and 21:00; never at the minutes written), and both scheduled builds stopped on records: a number the ontologist had not attributed yet (n-censys-services), a friction row with no stage (F040), review notes whose 'where' was free text, and an em dash in the vault agents' quoted notes. The build now draws each of those instead of stopping (press v1.0.80 onward). At the editor's word (27 October), nothing runs on GitHub on a timer: every schedule is removed from the seven workflows; the edition builds on a push to the press or by hand, and each repository takes the newest edition on its own push. What a push elsewhere needs to start the sequence by itself is board dev-0006 for the editor. dev's daily wake is bound to this session (board conductor-0010): trig_01RyGA2cLy5McDfRQgWgH6MD, 06:40 London; the fresh-session task trig_016bWKUV1FqcsHA2fvejMoWc stays disabled.",
+ "read": [
+  "records/board/correspondent-0008.json",
+  "records/board/conductor-0010.json",
+  "records/briefs/2026-10-27__project__project-003-the-sites-files-from-a-vault.md"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Opus, in the editor's session",
+ "cost_usd": null,
+ "head": "0e24b1048e5205cbed50b662912ddd31c84f35b8"
+}
