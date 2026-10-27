@@ -1,0 +1,1978 @@
+{
+ "step": "1b",
+ "member": "sherpa",
+ "by": "projects@php.newsroom (subagent)",
+ "data_version": "0.1.62",
+ "tests": [
+  {
+   "id": "own_words",
+   "text": "We hold a captured source of theirs (slug and latest capture stamp). Counted only where a capture has status 200 and text of at least 300 bytes; a blocked or failed capture (e.g. the two openai.com blog captures, HTTP 403) does not count. Pages by a third party about them do not count."
+  },
+  {
+   "id": "careful",
+   "text": "Their reporting kept 'unable to verify' or equivalent hedging where it applied (a dated 'as of', a named scope, an attempt not called a compromise). pass true needs cited evidence; 'unknown' when we have none; false when a correction request is open against them (named: id and status), which counts against. Score counts true only."
+  },
+  {
+   "id": "reachable",
+   "text": "A published channel, by name. No URL is given because none appears in sources.json or our briefs and none was fetched (outside fetches are barred): every channel is 'url: null, to_confirm: true' and must be found and captured before use. pass false where only a person's handle exists. Never a private address."
+  }
+ ],
+ "scoring": "score = number of tests passed (careful counts only when true); sorted by score, then wave (1, 2, 3, none), then id. A score of 3 does not mean 'send': open correction requests make careful false for the publishers they name, and corrections come first (never a correction and an interview to the same party at once; board 332).",
+ "candidates": [
+  {
+   "id": "daubois",
+   "name": "Alexandre Daubois, PHP security team (personal blog)",
+   "kind": "maintainer",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "daubois-blog-php2shell-rumors",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Attributes relayed claims to their relayers and sets them against the record: 'Florian Roth's post, as Phoenix Security relayed it, said CVSS 10.0 ... PHP's own notice says 9.2' (fact-check cvss-10, carries). Some items holds-in-part (fix-authored, leak-cve-ids)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the PHP security team's published security contact (php.net) or the contact page of his personal blog",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "leaked exploit",
+    "CVSS 10.0"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Wave 1; 25 Oct brief proposes an interview (format A) but that is a later, separate ask. Personal blog of a Foundation contractor."
+  },
+  {
+   "id": "ncsc-nl",
+   "name": "NCSC-NL and the Dutch government (Rijksoverheid)",
+   "kind": "CERT/agency",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "ncsc-nl-php2shell",
+      "capture": "20261022T084815Z"
+     },
+     {
+      "slug": "rijksoverheid-ncsc-php-news",
+      "capture": "20261022T113033Z"
+     },
+     {
+      "slug": "ncsc-nl-advisories",
+      "capture": "20261022T081605Z"
+     },
+     {
+      "slug": "ncsc-nl-site",
+      "capture": "20261022T081919Z"
+     },
+     {
+      "slug": "ncsc-nl-php2shell-software-list",
+      "capture": "20261022T084807Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Its inventory README says 'Product entries should still be treated as investigation leads until they are backed by an upstream or vendor source' (fact-check scale-ncsc-nl, carries). Rijksoverheid page: advises a risk assessment per system and 'considering' switching off. No open correction request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "NCSC-NL contact page (ncsc.nl) and the Rijksoverheid press office",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Clean hands first: the fact-check desk finds our count of its list wrong (we say 674 rows, 3 not vulnerable; the file has 675, 4 not vulnerable, because the parsed JSON dropped the iBabs row: scale-ncsc-nl, contradicted). Step 2 fixes that before anyone is sent the page. The 'software-list-letters' capture failed (status None) and is not counted. Wave 1 interview (pull the plug, format B) is a later, separate ask."
+  },
+  {
+   "id": "weirdgloop",
+   "name": "Weird Gloop (cookmeplox)",
+   "kind": "other",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "weirdgloop-blog-php2shell",
+      "capture": "20261023T080157Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Fact-check weirdgloop-13h holds (carries, three assessments): 13 hours offline, ~94% of page views from cache, its own figures; it makes no claim of compromise (no-confirmed-compromise partial). No hedge was needed; none missing. No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Weird Gloop's published contact page (weirdgloop.org)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "millions of sites offline"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Wave 1 and first on the 25 Oct list (the only measured outage). Interview (A or C) is the later ask, not the first. Its blog is a vendor-kind row in sources.json."
+  },
+  {
+   "id": "zelenka",
+   "name": "Jakub Zelenka (bukka), PHP security team",
+   "kind": "maintainer",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "github-ghsa-w8hw-w9fx-j79w",
+      "capture": "20261022T080901Z"
+     },
+     {
+      "slug": "github-ghsa-6wmf-4rv5-p3rp",
+      "capture": "20261022T080901Z"
+     },
+     {
+      "slug": "openwall-oss-security-2026-10-21-6",
+      "capture": "20261022T081408Z"
+     },
+     {
+      "slug": "openwall-oss-security-2026-10-21-7",
+      "capture": "20261022T081407Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Advisories and oss-security posts: 'Updating is the only reliable mitigation; there is no complete generic configuration workaround' (fact-check only-update, carries); the 'fix is incomplete' report was answered as a separate crash bug (K-011, open)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the PHP security team's published security contact (php.net); not a personal address",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Wave 1 (with Daubois and Le Blanc, 25 Oct brief). One message to the team, not three. Interview (A/B) is a later ask."
+  },
+  {
+   "id": "certlv",
+   "name": "CERT.LV (Latvia)",
+   "kind": "CERT/agency",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "certlv-php-preventive",
+      "capture": "20261022T081354Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Scoped: 'Automated exploitation attempts seen, none successful so far' (source notes); latvia-offline holds (carries) for its geo-blocking. No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the CERT.LV contact page (cert.lv)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "millions of sites offline"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Five claims on the site, the most of any national CERT (25 Oct brief). Interview (format B) later and separate. Statement of 21 Oct, updated 23:00 local; predates KEV."
+  },
+  {
+   "id": "cloudflare",
+   "name": "Cloudflare",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "cloudflare-blog-php2shell-waf",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Counts attempts and traffic, not compromises: 'observed attack traffic targeting our customers' (cloudflare-traffic, probing: holds, carries); names the population: 'PHP is used by almost 70% of websites'. No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Cloudflare's press office (cloudflare.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "leaked exploit",
+    "70% of the internet"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Edge panel (wave 2). Lists the disclosers as 'Calif.io, Wiz, OpenAI and Quarkslab'. Prince is a separate row; send one page."
+  },
+  {
+   "id": "fastly",
+   "name": "Fastly",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "fastly-blog-php2shell",
+      "capture": "20261024T133450Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Candid on exploitability and limits: PoCs need the binary's layout on x86_64; 32-bit assume compromise; what a WAF cannot do (source notes; ac-high, more-paths, pocs-wrong: holds)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Fastly's published press contact (fastly.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "The most candid vendor (25 Oct brief). Edge panel."
+  },
+  {
+   "id": "huntress",
+   "name": "Huntress",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "huntress-php2shell-rapid-response",
+      "capture": "20261027T071509Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Scoped and dated: 'As of October 21 at 4:30pm ET, Huntress has not observed in-the-wild exploitation on partner systems'; 'we have not built or reproduced a proof of concept ... as of this writing'. Fact-check huntress-none: first half carried exactly; the PoC half is from the pre-release section and was overtaken by its own 4:40pm update (holds-in-part, disputed). No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Huntress's published press or contact page (huntress.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "leaked exploit"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Re-captured today (27 Oct 07:15Z); step 2 should read that capture against the 21 Oct text before the page says what Huntress 'has not observed' after the KEV listing."
+  },
+  {
+   "id": "imperva",
+   "name": "Imperva Threat Research (Nadav Avital, Bar Menachem)",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "imperva-blog-php2shell",
+      "capture": "20261023T080331Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "'Imperva observed no traffic matching the monitored PHP2Shell exploit patterns' pre-disclosure; names the population: '69% of websites whose server-side language is known'; attack complexity high (imperva-none, ac-high: holds, carries)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Imperva's published press contact (imperva.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "70% of the internet"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Edge panel. Held the details under embargo."
+  },
+  {
+   "id": "prince",
+   "name": "Matthew Prince, Cloudflare CEO",
+   "kind": "other",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "x-eastdakota-php2shell-stats",
+      "capture": "20261022T111808Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Frames 'thousands of attempts to exploit it' in the 10 hours before announcement; fact-check cf-millions holds (carries, measures-differently: attempts, not sites)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Cloudflare's press office (not a personal account)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Same organisation as Cloudflare: one message, not two. A later Startup Fortune item (25 Oct) says worse bugs are being patched; not yet read."
+  },
+  {
+   "id": "americanbanker",
+   "name": "American Banker",
+   "kind": "news",
+   "wave": 3,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "americanbanker-news-banks-dodge-early-damage-from-php2s",
+      "capture": "20261024T083755Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "'Banks have so far dodged early damage ... no U.S. bank has reported a compromise': scoped to reports (fact-check no-confirmed-compromise, holds, carries). No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "American Banker's published contact or corrections route",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Wave 3 local view; one short question ('is that still true?'), format B, not an interview. Capture 24 Oct, before KEV."
+  },
+  {
+   "id": "diepresse",
+   "name": "Die Presse",
+   "kind": "news",
+   "wave": 3,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "diepresse-41383717-die-php-sicherheitsluecke-ist-a",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Reports no compromise known in Austria (no-confirmed-compromise, holds, carries); an explainer of 23 Oct. No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Die Presse's published contact or corrections route",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Wave 3 local view; one short question, not an interview."
+  },
+  {
+   "id": "acsc",
+   "name": "ASD's ACSC (Australia)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "acsc-alert-php",
+      "capture": "20261022T081658Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Scoped: 'not aware of successful active exploitation within Australia' (source notes); no offline advice. Fact-check cites it for disclosure-22oct (refuted on our side: the alert's teaser carried a stale pre-disclosure date) and nz-active (absent). No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "cyber.gov.au contact (ACSC)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "The ACSC home capture (acsc-home) shows a stale pre-disclosure blurb dated 22 Oct; our disclosure-date claim is the one refuted, not theirs."
+  },
+  {
+   "id": "cccs",
+   "name": "Canadian Centre for Cyber Security (CCCS)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "cccs-al26-026",
+      "capture": "20261022T081700Z"
+     },
+     {
+      "slug": "cccs-alerts",
+      "capture": "20261022T081604Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Scoped: 'a Proof of Concept (PoC) is available, with no active exploitation being identified at this time' (fact-check huntress-none, offline-ncsc); advice worded 'consider isolating internet-facing applications' not 'offline'. No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the CCCS contact page (cyber.gc.ca)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "The 'at this time' statement predates KEV; step 2 should re-read."
+  },
+  {
+   "id": "cisa",
+   "name": "CISA (US Cybersecurity and Infrastructure Security Agency)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "cisa-alert-kev-20261026",
+      "capture": "20261027T004502Z"
+     },
+     {
+      "slug": "cisa-alert-php-20261021",
+      "capture": "20261022T081353Z"
+     },
+     {
+      "slug": "cisa-kev-catalog",
+      "capture": "20261027T004502Z"
+     },
+     {
+      "slug": "cisa-kev-json",
+      "capture": "20261027T004502Z"
+     },
+     {
+      "slug": "cisa-home",
+      "capture": "20261022T081329Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "21 Oct alert scoped its statement in time: CISA 'has not observed exploitation ... as of the time of publication'; on 26 Oct it added both CVEs to KEV and updated the alert (cisa-alert-kev-20261026, fact-check cisa-none 'superseded'). It names no victim. No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the CISA media and public-affairs contact (cisa.gov)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Step 2 must fix any page still saying 'CISA has not observed exploitation' (fact-check cisa-none is superseded). Central to the 'exploited' topic: KEV on 26 Oct; no named organisation has confirmed a compromise."
+  },
+  {
+   "id": "php-group",
+   "name": "The PHP Group / php.net (CVE numbering authority)",
+   "kind": "maintainer",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "php-net-advisory",
+      "capture": "20261022T080901Z"
+     },
+     {
+      "slug": "php-net-changelog-8",
+      "capture": "20261022T081558Z"
+     },
+     {
+      "slug": "github-php-src-tags",
+      "capture": "20261022T081558Z"
+     },
+     {
+      "slug": "cve-cve-2026-109618",
+      "capture": "20261022T081218Z"
+     },
+     {
+      "slug": "cve-cve-2026-109619",
+      "capture": "20261022T081219Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "Advisory is scoped: 'only an update is a complete solution, the following measures reduce exposure ... but do not make an installation safe' (fact-check only-update, carries). Disputed on the embargo time (K-010, open) and our disclosure-date claim is refuted against it (disclosure-22oct, measures-differently)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the PHP security team's published security contact (php.net)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "CVSS 10.0"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 3,
+   "note": "Settles K-008, K-010, K-011 (open contradictions) by asking the PHP security team; send with the Zelenka page, not twice."
+  },
+  {
+   "id": "calif",
+   "name": "Calif (Ryan Austin; Michal Zalewski)",
+   "kind": "researcher/vendor",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "calif-php2shell",
+      "capture": "20261024T133450Z"
+     },
+     {
+      "slug": "x-lcfr-hax-hash-tweet",
+      "capture": "20261022T081603Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Source note: its timeline 'omits the leaked/deleted video'; fact-check ai-found, leak-video, who-first, quarkslab-2024 are holds-in-part (some disputed). Not a correction request; no hedging either way."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Calif's published contact page (calif.io)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "leaked exploit"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Wave 1 panel (discovery teams). Ask about the omitted video in the page, neutrally. Panel interview (format B) later."
+  },
+  {
+   "id": "leblanc",
+   "name": "Arnaud Le Blanc and the PHP fix authors",
+   "kind": "maintainer",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "github-php-src-branch-7.4-backport",
+      "capture": "20261022T081558Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "A git commit and a backport branch carry no hedging; fact-check fix-authored holds-in-part (who authored which fix), fix-engine holds."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the PHP security team's published security contact (php.net)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "The fix-commit capture has no capture stamp (read from a clone): own_words rests on the 22 Oct backport-branch capture only."
+  },
+  {
+   "id": "openai",
+   "name": "OpenAI (Patch the Planet, Codex Security, Amy Burnett)",
+   "kind": "researcher/vendor",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "x-openai-php2shell",
+      "capture": "20261022T081645Z"
+     },
+     {
+      "slug": "patchtheplanet-org",
+      "capture": "20261023T232528Z"
+     },
+     {
+      "slug": "php2shell-com",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fact-check x-openai-php2shell: ahead-of-attackers and ai-found holds-in-part (disputed / measures-differently). The two openai.com blog captures returned HTTP 403 (no text), so its own coordinated-disclosure post is not read."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "OpenAI's press office and the Patch the Planet contact page",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Wave 1 panel. Only an X post, patchtheplanet.org and the joint php2shell.com site are held; the blog post is a request to capture again."
+  },
+  {
+   "id": "quarkslab",
+   "name": "Quarkslab (and OSTIF)",
+   "kind": "researcher/vendor",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "quarkslab-blog-php-src-audit",
+      "capture": "20261022T113008Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Its post redacts two high-severity issues 'with fixes in progress' (quarkslab-redacted, holds, carries); whether the 2024 audit surfaced the OOM issue is disputed and absent from its post (quarkslab-2024, holds-in-part, disputed)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Quarkslab's published contact page (quarkslab.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Blog is dated April 2025 (published field). OSTIF has no source of its own; ask both in one page."
+  },
+  {
+   "id": "wiz",
+   "name": "Wiz Research",
+   "kind": "researcher/vendor",
+   "wave": 1,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "wiz-blog-php2shell",
+      "capture": "20261023T160435Z"
+     },
+     {
+      "slug": "x-wiz-io-php2shell",
+      "capture": "20261022T081624Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Origin of the 70% headline: 'PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet' while its own body says 'powers 70% of all websites' (R-001, contradiction K-001). Open: R-001 (drafted; unblocked 24 Oct, ready for the editor)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Wiz's published press or research contact (R-001: to find, from its own site)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "70% of the internet"
+   ],
+   "open_requests": [
+    {
+     "id": "R-001",
+     "status": "drafted",
+     "role": "origin",
+     "blocked_by": []
+    }
+   ],
+   "fits": "correction (R-001); no check-what-we-hold or interview message to Wiz in the same breath",
+   "score": 2,
+   "note": "Origin before echo: R-001 goes first and unlocks the BBC (R-002), CNN, Fortune, Clarin. Wave 1 panel interview only after R-001 is answered."
+  },
+  {
+   "id": "akamai",
+   "name": "Akamai",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "akamai-blog-php-core-rce",
+      "capture": "20261022T112525Z"
+     },
+     {
+      "slug": "akamai-blog-cve-2024-4577-one-day",
+      "capture": "20261022T112501Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fact-check: waf-nine-hours and kev-precedent holds-in-part (partial); advice 'prompt application of vendor patches'. No hedging evidence."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Akamai's published press contact (akamai.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Edge panel; 2024 precedent (CVE-2024-4577 exploited one day after disclosure) is the KEV comparison."
+  },
+  {
+   "id": "amazon",
+   "name": "Amazon (CJ Moses; AWS Security Blog)",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "aws-security-blog-madpot",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Sentence changed without a note: 'broadly exploited in the wild' (earlier) then 'now seeing broad exploitation attempts in the wild' at 21:25Z on 22 Oct; the post also says 'it's unclear if any of these attempts would have succeeded' (R-004 quote). Open: R-004 (blocked: Evidence-12, a capture of the post as it now reads)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the AWS Security Blog's published contact (R-004: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "leaked exploit"
+   ],
+   "open_requests": [
+    {
+     "id": "R-004",
+     "status": "blocked",
+     "role": "origin",
+     "blocked_by": [
+      "Evidence-12: a capture of the AWS post as it now reads"
+     ]
+    }
+   ],
+   "fits": "correction (R-004, once Evidence-12 is captured); no other ask until answered",
+   "score": 2,
+   "note": "Origin of the 17 Oct honeypot account. The fact-check desk grades amazon-honeypot holds-in-part, superseded."
+  },
+  {
+   "id": "censys",
+   "name": "Censys",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "gist-silascutler-censys-query",
+      "capture": "20261022T112841Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "No Censys statement captured: its counts come via SecurityWeek (K-004, explained: 1.57 million unpatched of 1.58 million whose version is known, which our claim misread). The only held item is a GitHub gist by Silas Cutler, a third party."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Censys's published press or research contact",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "22 million servers"
+   ],
+   "open_requests": [],
+   "fits": "none yet (capture first)",
+   "score": 2,
+   "note": "own_words is false on purpose: the gist is a researcher's query, not Censys's words. The 'Censys's 1.57 million hosts' topic is central, so capturing Censys's own post is the first step (K-004 'settle')."
+  },
+  {
+   "id": "detectors",
+   "name": "Community detection authors (darkfibr, rjmendez, Lexsah, Blevene)",
+   "kind": "other",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "github-darkfibr-php2shell-detect",
+      "capture": "20261022T111956Z"
+     },
+     {
+      "slug": "github-rjmendez-phpup-2026",
+      "capture": "20261022T112003Z"
+     },
+     {
+      "slug": "github-lexsah-php2shell-detection",
+      "capture": "20261022T112009Z"
+     },
+     {
+      "slug": "gist-blevene-detection-guide",
+      "capture": "20261022T112029Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": true,
+    "evidence": "rjmendez's repository corrects the leaked PoC's mechanism (fact-check pocs-wrong, holds, carries); the others are detection rules."
+   },
+   "reachable": {
+    "pass": false,
+    "channel": "GitHub profiles only, no organisational channel; each person chooses",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "leaked exploit"
+   ],
+   "open_requests": [],
+   "fits": "none yet (a channel to confirm)",
+   "score": 2,
+   "note": "Individuals under handles; no press or contact page. reachable fails by our rule: do not use a private address. Format C under a handle each chooses (25 Oct brief)."
+  },
+  {
+   "id": "watchtowr",
+   "name": "watchTowr",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "watchtowr-php2shell",
+      "capture": "20261023T232528Z"
+     },
+     {
+      "slug": "watchtowr-php2shell-faq",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fact-check watchtowr-itw holds (carries) but earlier captures were blocked; K-010: its embargo time (11:00 ET) differs from the Foundation's (14:00 UTC), open; a CVSS 10.0 attribution to watchTowr is second-hand (Cyber Daily, via Daubois). No hedging evidence."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "watchTowr's published contact page (watchtowr.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "leaked exploit",
+    "CVSS 10.0"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Source note still says BLOCKED (HTTP 403) but the 23 Oct capture holds 12 KB of text; the note is stale. Confirmed the CVE numbers in public on 20 Oct."
+  },
+  {
+   "id": "bbc",
+   "name": "BBC News (live page; Kieran Kelly, Imogen James)",
+   "kind": "news",
+   "wave": 3,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "bbc-live-ckgel5xp2xv9t",
+      "capture": "20261022T080559Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Kept the hedge: 'though the BBC is unable to independently verify that figure' (R-002 quote, bbc-live-ckgel5xp2xv9t, checked in the capture). Counts against: R-002 (drafted, blocked by R-001) asks about the quoted 'roughly 70%' attributed to Wiz; the fact-check desk finds no 'roughly' in any Wiz text. Also 11 statements relayed that it did not originate (25 Oct brief)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the BBC's published corrections and complaints route (R-002 channel: to find) and the BBC press office",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "70% of the internet",
+    "millions of sites offline"
+   ],
+   "open_requests": [
+    {
+     "id": "R-002",
+     "status": "drafted",
+     "role": "echo",
+     "blocked_by": [
+      "R-001"
+     ]
+    }
+   ],
+   "fits": "correction (R-002, after R-001 is sent and answered); no interview or check-what-we-hold message to the BBC until then",
+   "score": 2,
+   "note": "Our only BBC source is one live page captured 22 Oct 08:05Z (three captures, the last complete); no later capture, so 'roughly 70%' may have been edited since. Interview (Wave 3, format A) only after R-002 is answered (board 332)."
+  },
+  {
+   "id": "fortune",
+   "name": "Fortune",
+   "kind": "news",
+   "wave": 3,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "fortune-ai-tools-php-vulnerability",
+      "capture": "20261023T012042Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Headline 'could take down 70% of the internet' (R-008). Open: R-008 (drafted, blocked by R-001)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Fortune's published corrections route (R-008: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "70% of the internet"
+   ],
+   "open_requests": [
+    {
+     "id": "R-008",
+     "status": "drafted",
+     "role": "echo",
+     "blocked_by": [
+      "R-001"
+     ]
+    }
+   ],
+   "fits": "correction (R-008, after R-001)",
+   "score": 2,
+   "note": "Echo of Wiz; no interview before R-008 is answered (board 332). Other Fortune editions (Italia, Indonesia, Startup Fortune) are separate publishers."
+  },
+  {
+   "id": "itsocial",
+   "name": "IT Social",
+   "kind": "news",
+   "wave": 3,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "itsocial-cybersecurite-cybersecurite-articles-php",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Reports first attempts four days before disclosure (23 Oct); no fact-check assessment cites it."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "IT Social's published contact route",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Wave 3 local view (French); one short question."
+  },
+  {
+   "id": "thn",
+   "name": "The Hacker News (Ravie Lakshmanan)",
+   "kind": "news",
+   "wave": 3,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "thehackernews-php2shell-4days",
+      "capture": "20261023T160435Z"
+     },
+     {
+      "slug": "thehackernews-php2shell-unpatched-alert",
+      "capture": "20261023T160435Z"
+     },
+     {
+      "slug": "thehackernews-what-protects-you",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Other pieces are scoped well (unpatched-alert: 'The CVSS 10.0 figure is the leak's. PHP's rating is 9.2'; what-protects-you: 'no compromise confirmed; public exploit code not shown to work'). Counts against: R-007 (drafted, an origin request) on 'details about the CVE identifiers and a proof-of-concept (PoC) exploit leaked ahead of time', which conflicts with the Foundation's 'No technical details leaked' (K-009)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "The Hacker News's published contact (R-007: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "leaked exploit",
+    "CVSS 10.0",
+    "22 million servers"
+   ],
+   "open_requests": [
+    {
+     "id": "R-007",
+     "status": "drafted",
+     "role": "origin",
+     "blocked_by": []
+    }
+   ],
+   "fits": "correction (R-007); interview (wave 3, format A) only after it is sent and answered",
+   "score": 2,
+   "note": "Carries Amazon's account and VulnCheck's host count. 6 statements relayed (25 Oct brief)."
+  },
+  {
+   "id": "wikipedia-editors",
+   "name": "The Wikipedia editors of the PHP2Shell article",
+   "kind": "other",
+   "wave": 3,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "wikipedia-php2shell",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fifteen findings against the article (25 Oct brief, the Wikipedia review) are for the editor to take to the talk page; not an outreach.json row. 364 revisions during a live incident."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the article's talk page on English Wikipedia (the editor, in his own words)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "correction (the editor, on the talk page, the 15 findings); no interview before",
+   "score": 2,
+   "note": "Not a normal recipient: the editor decides whether and how. The 25 Oct brief puts the interview after he has taken the findings to the talk page."
+  },
+  {
+   "id": "acn",
+   "name": "ACN / CSIRT Italia",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "acn-it-php2shell",
+      "capture": "20261022T081354Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Advice 'update the vulnerable products' only; no offline advice; fact-check offline-allies holds-in-part."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the ACN contact page (acn.gov.it)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Low priority."
+  },
+  {
+   "id": "bacs",
+   "name": "Swiss Federal Office for Cyber Security (BACS / NCSC)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "ch-bacs-warnung-php",
+      "capture": "20261022T081700Z"
+     },
+     {
+      "slug": "ch-ncsc-home",
+      "capture": "20261022T081604Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Hedging is only second-hand: Watson (Keystone-SDA) reports BACS 'knows of no attacks in Switzerland and has no reliable figures'; BACS's own warning is cited for waf (holds, partial)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the BACS contact page (ncsc.admin.ch)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Watson relay is a source of Watson's, not BACS's."
+  },
+  {
+   "id": "bankinfosecurity",
+   "name": "BankInfoSecurity (ISMG)",
+   "kind": "news",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "bankinfosecurity-attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Headline 'Attackers Exploit Leaked Zero-Day Flaws in Widely Used PHP' (R-006, drafted, an origin request)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "ISMG's published corrections route (R-006: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "leaked exploit"
+   ],
+   "open_requests": [
+    {
+     "id": "R-006",
+     "status": "drafted",
+     "role": "origin",
+     "blocked_by": []
+    }
+   ],
+   "fits": "correction (R-006)",
+   "score": 2,
+   "note": "Also the 'leaked' wording; fact-check K-009."
+  },
+  {
+   "id": "cert-eu",
+   "name": "CERT-EU",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "certeu-sa-2026-018",
+      "capture": "20261022T081329Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fact-check: leak-watchtowr holds (partial), offline-allies holds-in-part, release-time holds; no hedging evidence."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the CERT-EU contact page",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Cited by NCSC-NL's README; useful second CERT."
+  },
+  {
+   "id": "cert-fr",
+   "name": "CERT-FR (ANSSI)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "certfr-2026-ale-014",
+      "capture": "20261022T081353Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fact-check: versions-old holds-in-part (disputed), waf holds; wording 'isolate, then migrate'. No hedging evidence."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the CERT-FR contact page (cert.ssi.gouv.fr)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "A secondary headline says ANSSI 'orders sites offline'; CERT-FR's own wording is 'isolate' (source note)."
+  },
+  {
+   "id": "clarin",
+   "name": "Clarin (English edition)",
+   "kind": "news",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "clarin-us-news-php-security-vulnerabilities-how-ai-uncovered-massiv",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "'a 14-year-old flaw threatening 70% of the internet' (R-009, drafted, blocked by R-001)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Clarin's published corrections route (R-009: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "70% of the internet"
+   ],
+   "open_requests": [
+    {
+     "id": "R-009",
+     "status": "drafted",
+     "role": "echo",
+     "blocked_by": [
+      "R-001"
+     ]
+    }
+   ],
+   "fits": "correction (R-009, after R-001)",
+   "score": 2,
+   "note": "Echo of Wiz."
+  },
+  {
+   "id": "cnn",
+   "name": "CNN Business",
+   "kind": "news",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "cnn-php2shell-websites-shut",
+      "capture": "20261023T160435Z"
+     },
+     {
+      "slug": "cnn-wikipedia-ref-39-26-10-21-tech-php2shell",
+      "capture": "20261025T114552Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Headline 'Websites shut down globally after AI finds a critical flaw affecting 70% of the internet'; body says 'powers 70% of all websites' (R-003). Open: R-003 (drafted, blocked by R-001 and Evidence-13, a fresh capture before sending). Its Wikimedia quote 'taken down as a precautionary measure' holds."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "CNN's published corrections route (R-003: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "70% of the internet",
+    "millions of sites offline"
+   ],
+   "open_requests": [
+    {
+     "id": "R-003",
+     "status": "drafted",
+     "role": "echo",
+     "blocked_by": [
+      "R-001",
+      "Evidence-13: a fresh capture of CNN's page before sending"
+     ]
+    }
+   ],
+   "fits": "correction (R-003, after R-001 and a fresh capture)",
+   "score": 2,
+   "note": "Echo of Wiz."
+  },
+  {
+   "id": "itmedia",
+   "name": "TechTarget Japan (ITmedia)",
+   "kind": "news",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "techtarget-itmedia-tt-article-2610-23-2000002526",
+      "capture": "20261023T160435Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Headline carries 22.6 million affected servers (R-011, drafted, blocked by R-012)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "ITmedia's published corrections route (R-011: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "22 million servers"
+   ],
+   "open_requests": [
+    {
+     "id": "R-011",
+     "status": "drafted",
+     "role": "echo",
+     "blocked_by": [
+      "R-012"
+     ]
+    }
+   ],
+   "fits": "correction (R-011, after R-012)",
+   "score": 2,
+   "note": "Echo."
+  },
+  {
+   "id": "jpcert",
+   "name": "JPCERT/CC (Japan)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "jpcert-at260033",
+      "capture": "20261022T081700Z"
+     },
+     {
+      "slug": "jpcert-home",
+      "capture": "20261022T081606Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fact-check offline-allies only (absent); no hedging evidence."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the JPCERT/CC contact page (jpcert.or.jp)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Low priority."
+  },
+  {
+   "id": "letemps",
+   "name": "Le Temps",
+   "kind": "news",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "letemps-php-sites-debranches",
+      "capture": "20261022T081413Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "'des millions de sites sont debranches en urgence' (R-010, drafted). The source row was written by the newsroom lead without a read publication time."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Le Temps's published corrections route (R-010: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "millions of sites offline"
+   ],
+   "open_requests": [
+    {
+     "id": "R-010",
+     "status": "drafted",
+     "role": "origin",
+     "blocked_by": []
+    }
+   ],
+   "fits": "correction (R-010)",
+   "score": 2,
+   "note": "Origin request on the millions-offline phrasing against the trackers' counts."
+  },
+  {
+   "id": "ncsc-nz",
+   "name": "NCSC New Zealand",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "ncsc-nz-alert-php",
+      "capture": "20261022T081700Z"
+     },
+     {
+      "slug": "ncsc-nz-alerts",
+      "capture": "20261022T081605Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Fact-check nz-active holds with tension 'disputed' (is exploitation active?); no hedging evidence we can cite."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the NCSC NZ contact page (ncsc.govt.nz)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Disputed reading of its alert (nz-active): ask, do not assert."
+  },
+  {
+   "id": "ncsc-uk",
+   "name": "UK National Cyber Security Centre (NCSC)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "ncsc-news-php",
+      "capture": "20261022T080903Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "No hedging evidence either way. The alert page we hold (22 Oct 07:30Z) words the offline advice differently from the BBC/LBC quotation of 21 Oct ('Where immediate remediation is not feasible...'), suggesting an earlier NCSC wording (fact-check offline-ncsc, holds-in-part, disputed). No open request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the NCSC media enquiries route (ncsc.gov.uk)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "One source, one capture. Ask in the page whether the earlier wording was published and changed (the alert's JSON-LD dateModified is 22 Oct)."
+  },
+  {
+   "id": "nsa",
+   "name": "US National Security Agency (NSA Cybersecurity)",
+   "kind": "CERT/agency",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "nsa-press-php-4630238",
+      "capture": "20261022T080954Z"
+     },
+     {
+      "slug": "nsa-x-nsacyber",
+      "capture": "20261022T080925Z"
+     },
+     {
+      "slug": "nsa-x-2112903220209098897",
+      "capture": "20261022T080954Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Advice only (patch; take offline where it cannot be patched); fact-check offline-nsa and gov-patch-required hold (carries), no hedging evidence either way."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the NSA Cybersecurity media contact (nsa.gov)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "Lower priority: no topic of the six; a government-patch-required claim rests on it."
+  },
+  {
+   "id": "php-foundation",
+   "name": "The PHP Foundation",
+   "kind": "maintainer",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "php-foundation-blog-security-release",
+      "capture": "20261022T080901Z"
+     },
+     {
+      "slug": "phpfoundation-blog-security-release-leak",
+      "capture": "20261022T081244Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "No hedging evidence either way in the sources. Fact-check: its post calls the leaked CVSS 10.0 'wrong' (the CVE records say 9.2: carries) and the 07:41Z Chainguard embargo-break time holds, but 'unilaterally' is its reading (disputed, Lorenc contests), its 'No technical details leaked' conflicts with Amazon/THN (K-009, explained) and its FPM remote-code-execution sentence conflicts with the advisories (K-008, open). No open correction request."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the PHP Foundation contact (thephp.foundation)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "leaked exploit",
+    "CVSS 10.0"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "16 fact-check assessments cite its post, more than any other source; the most-stated party (13 claims, 25 Oct brief). The 25 Oct waves list the PHP security team, not the Foundation; Daubois (a Foundation contractor) is wave 1. Clean hands: K-008 and K-010 are open against the Foundation's wording, to be settled by asking, not asserted."
+  },
+  {
+   "id": "techtarget",
+   "name": "TechTarget (SearchSecurity)",
+   "kind": "news",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "techtarget-cybersecurity-news-366652444-php2shell-2",
+      "capture": "20261023T232528Z"
+     },
+     {
+      "slug": "techtarget-disclosure-unravels",
+      "capture": "20261023T012042Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "'PHP2Shell: 22M exposed servers at risk' and 'across 22 million vulnerable servers' (R-012, drafted, an origin request). Other piece 'disclosure unravels' is separate."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "TechTarget's published corrections route (R-012: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "22 million servers"
+   ],
+   "open_requests": [
+    {
+     "id": "R-012",
+     "status": "drafted",
+     "role": "origin",
+     "blocked_by": []
+    }
+   ],
+   "fits": "correction (R-012)",
+   "score": 2,
+   "note": "Origin of the 22 million figure for TechTarget Japan (R-011)."
+  },
+  {
+   "id": "trendmicro",
+   "name": "Trend Micro (Japan)",
+   "kind": "researcher/vendor",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "trendmicro-ja-jp-about-newsroom-press-releases-2026",
+      "capture": "20261024T083755Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Only a Japanese press release of 23 Oct announcing a free 'PHP2Shell Exposure Checker'; no fact-check assessment cites it and we hold no analysis post of theirs."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Trend Micro Japan's press-release contact (trendmicro.com/ja_jp)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 2,
+   "note": "The brief names Trend Micro among the researchers cited most, but the evidence holds one Japanese press release (queue priority 4); the ontologist may find the actors page thin. Consider replacing in the ten unless the English research post is captured first."
+  },
+  {
+   "id": "wired",
+   "name": "WIRED",
+   "kind": "news",
+   "wave": null,
+   "own_words": {
+    "pass": true,
+    "sources": [
+     {
+      "slug": "wired-exploited-days-before-patched",
+      "capture": "20261023T012042Z"
+     },
+     {
+      "slug": "es-wired-articulos-hackers-aprovecharon-las-vulne",
+      "capture": "20261024T133450Z"
+     }
+    ]
+   },
+   "careful": {
+    "pass": false,
+    "evidence": "Hedged in the body: 'to our knowledge, there has been no successful attempt at remote code execution', but the headline 'Hackers Exploited the PHP Vulnerabilities Days Before They Were Patched' says 'exploited' (R-005, drafted)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "WIRED's published corrections address (R-005: to find)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [
+    {
+     "id": "R-005",
+     "status": "drafted",
+     "role": "echo",
+     "blocked_by": []
+    }
+   ],
+   "fits": "correction (R-005)",
+   "score": 2,
+   "note": "The 'exploited vs attempted' topic in a headline."
+  },
+  {
+   "id": "ostif",
+   "name": "OSTIF (Open Source Technology Improvement Fund)",
+   "kind": "other",
+   "wave": 1,
+   "own_words": {
+    "pass": false,
+    "sources": []
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "No source of OSTIF's own."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "OSTIF's published contact page",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "none yet (capture first)",
+   "score": 1,
+   "note": "Wave 1 with Quarkslab; nothing of OSTIF's captured, so project test 1 fails. Fold into Quarkslab's page."
+  },
+  {
+   "id": "valtori",
+   "name": "Valtori and NCSC-FI",
+   "kind": "CERT/agency",
+   "wave": 1,
+   "own_words": {
+    "pass": false,
+    "sources": []
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "fi-offline holds (carries) through Yle and Helsinki Times; no statement of Valtori's own is captured."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the Valtori / NCSC-FI contact page (valtori.fi)",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "millions of sites offline"
+   ],
+   "open_requests": [],
+   "fits": "check-what-we-hold",
+   "score": 1,
+   "note": "own_words fails: the only capture of valtori.fi (22 Oct 08:19Z) failed (status None, no text); Yle and Helsinki Times are third-party. Needs a capture of an NCSC-FI or Valtori statement before it can be sent a page."
+  },
+  {
+   "id": "chainguard",
+   "name": "Chainguard",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": false,
+    "sources": []
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "As Lorenc: no Chainguard source of its own."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Chainguard's published press contact",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [],
+   "open_requests": [],
+   "fits": "none yet (capture first)",
+   "score": 1,
+   "note": "Same party as the Lorenc row: capture its own post first; send one page."
+  },
+  {
+   "id": "chainguard-lorenc",
+   "name": "Dan Lorenc, Chainguard",
+   "kind": "other",
+   "wave": 2,
+   "own_words": {
+    "pass": false,
+    "sources": []
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Only second-hand: The Register carries his reply ('I made the call to get these out early when exploits hit in the wild'); the Foundation's 'unilaterally broke the embargo' is its reading and he contests it (chainguard, holds-in-part, disputed). No Chainguard page captured (Techzine returned 403)."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "Chainguard's published press contact",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted",
+    "leaked exploit"
+   ],
+   "open_requests": [],
+   "fits": "none yet (capture first)",
+   "score": 1,
+   "note": "Right of reply, offer don't press (25 Oct brief). No captured words of his own, so project test 1 fails."
+  },
+  {
+   "id": "vulncheck",
+   "name": "VulnCheck",
+   "kind": "researcher/vendor",
+   "wave": 2,
+   "own_words": {
+    "pass": false,
+    "sources": []
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "No source of VulnCheck's own; known only through The Hacker News and PCMag ('2,608,039 internet-facing hosts')."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "VulnCheck's published contact page",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "22 million servers",
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "none yet (capture first)",
+   "score": 1,
+   "note": "Wave 2 counter. Needs a captured VulnCheck post before it can be sent a page."
+  },
+  {
+   "id": "woodward",
+   "name": "Alan Woodward, Surrey Centre for Cyber Security",
+   "kind": "other",
+   "wave": 2,
+   "own_words": {
+    "pass": false,
+    "sources": []
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Held only as quoted by the BBC live page (30 million websites; probing seen by Amazon and Cloudflare); no source of his own."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "the University of Surrey press office / Centre for Cyber Security contact",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "70% of the internet"
+   ],
+   "open_requests": [],
+   "fits": "interview",
+   "score": 1,
+   "note": "Says yes quickly (25 Oct brief), but project test 1 fails: nothing of his own captured. His quote sits in the BBC piece under R-002; an interview request to him is not an interview request to the BBC."
+  },
+  {
+   "id": "rainforest",
+   "name": "Japan's RainForest (honeypot)",
+   "kind": "researcher/vendor",
+   "wave": 3,
+   "own_words": {
+    "pass": false,
+    "sources": []
+   },
+   "careful": {
+    "pass": "unknown",
+    "evidence": "Held only through VOIX (a Japanese business-cards item) reporting its honeypot cross-check (21 requests from 14 addresses in Japan); fact-check no-confirmed-compromise partial."
+   },
+   "reachable": {
+    "pass": true,
+    "channel": "RainForest's published contact page",
+    "url": null,
+    "to_confirm": true
+   },
+   "topics": [
+    "exploited vs attempted"
+   ],
+   "open_requests": [],
+   "fits": "none yet (capture first)",
+   "score": 1,
+   "note": "own_words fails: the capture (voix-business-cards-rainforest-ip-activity-an, 24 Oct) is VOIX's article, not RainForest's own page."
+  }
+ ],
+ "injection_seen": []
+}

@@ -1,0 +1,3304 @@
+{
+ "step": "1a",
+ "member": "ontologist",
+ "by": "projects@php.newsroom (subagent)",
+ "data_version": "0.1.62",
+ "refs_commit": "6407d1f",
+ "date": "2026-10-27",
+ "method": "sources matched by publisher string or URL host/path prefix to the actor, never by a name appearing in a third party's URL or title; joint or ambiguous matches are under uncertain; \"complete\" is strict: own page, no source missing from actors.json or from the page, usable own words, every listed source cited by a claim row, no undated KEV line, no blocked/404 capture. Corrections for actors whose request has actor null are inferred from the publisher and marked so.",
+ "actors": [
+  {
+   "id": "php-group",
+   "name": "The PHP Group / php.net",
+   "role": "maintainer, CVE numbering authority",
+   "sources_listed": [
+    "php-net-advisory",
+    "php-net-changelog-8",
+    "github-php-src-tags"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "github-php-src-branch-7.4-backport",
+     "publisher": "php/php-src on GitHub",
+     "kind": "code",
+     "primary": true,
+     "published": "2026-10-18T18:10:24Z",
+     "latest_capture": "20261022T081558Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/tree/PHP-7.4-CVE-2026-109618-109619"
+    },
+    {
+     "caveat": null,
+     "slug": "github-php-src-tag-php-8.5.12",
+     "publisher": "php/php-src on GitHub (release by adoy)",
+     "kind": "code",
+     "primary": true,
+     "published": "2026-10-21T14:06:46Z",
+     "latest_capture": "20261022T081558Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/releases/tag/php-8.5.12"
+    },
+    {
+     "caveat": null,
+     "slug": "github-php-src-tags",
+     "publisher": "php/php-src on GitHub",
+     "kind": "code",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081558Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/tags"
+    },
+    {
+     "caveat": null,
+     "slug": "php-net-advisory",
+     "publisher": "PHP Group (php.net)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T080901Z",
+     "captures": 1,
+     "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+    },
+    {
+     "caveat": null,
+     "slug": "php-net-changelog-8",
+     "publisher": "PHP Group (php.net)",
+     "kind": "advisory",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081558Z",
+     "captures": 1,
+     "url": "https://www.php.net/ChangeLog-8.php"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "github-php-src-branch-7.4-backport",
+     "publisher": "php/php-src on GitHub",
+     "kind": "code",
+     "primary": true,
+     "published": "2026-10-18T18:10:24Z",
+     "latest_capture": "20261022T081558Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/tree/PHP-7.4-CVE-2026-109618-109619"
+    },
+    {
+     "caveat": null,
+     "slug": "github-php-src-tag-php-8.5.12",
+     "publisher": "php/php-src on GitHub (release by adoy)",
+     "kind": "code",
+     "primary": true,
+     "published": "2026-10-21T14:06:46Z",
+     "latest_capture": "20261022T081558Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/releases/tag/php-8.5.12"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "github-php-src-branch-7.4-backport",
+    "github-php-src-tag-php-8.5.12",
+    "github-php-src-tags",
+    "php-net-advisory",
+    "php-net-changelog-8"
+   ],
+   "uncertain": [
+    {
+     "slug": "cve-cve-2026-109618",
+     "reason": "CVE record, publisher \"CVE Program (CNA: PHP Group)\": PHP Group is the numbering authority, the record is the CVE Program's"
+    },
+    {
+     "slug": "cve-cve-2026-109619",
+     "reason": "same as CVE-2026-109618"
+    }
+   ],
+   "page": "actors/php-group/index.md",
+   "missing_from_page": [
+    "github-php-src-branch-7.4-backport"
+   ],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: github-php-src-branch-7.4-backport, github-php-src-tag-php-8.5.12",
+    "page does not name at all: github-php-src-branch-7.4-backport"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/php-group/index.md",
+    "sources_named": 17,
+    "sources_in_vault_list": 3,
+    "claim_rows": 5,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "php-foundation",
+   "name": "The PHP Foundation",
+   "role": "funds core developers; published the account of discovery and the leak",
+   "sources_listed": [
+    "php-foundation-blog-security-release"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "php-foundation-blog-security-release",
+     "publisher": "The PHP Foundation",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T080901Z",
+     "captures": 1,
+     "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+    },
+    {
+     "caveat": null,
+     "slug": "phpfoundation-blog-security-release-leak",
+     "publisher": "The PHP Foundation",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081244Z",
+     "captures": 1,
+     "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "phpfoundation-blog-security-release-leak",
+     "publisher": "The PHP Foundation",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081244Z",
+     "captures": 1,
+     "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "php-foundation-blog-security-release",
+    "phpfoundation-blog-security-release-leak"
+   ],
+   "uncertain": [],
+   "page": "actors/php-foundation/index.md",
+   "missing_from_page": [
+    "phpfoundation-blog-security-release-leak"
+   ],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: phpfoundation-blog-security-release-leak",
+    "page does not name at all: phpfoundation-blog-security-release-leak",
+    "page shows no claim row, so it says nothing about how we used its sources",
+    "named in the sources list but cited by no claim row (how used not shown): php-foundation-blog-security-release"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/php-foundation/index.md",
+    "sources_named": 1,
+    "sources_in_vault_list": 1,
+    "claim_rows": 0,
+    "says_how_used": "no",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "zelenka",
+   "name": "Jakub Zelenka (bukka), PHP security team",
+   "role": "published both GitHub advisories and the oss-security announcements",
+   "sources_listed": [
+    "github-ghsa-w8hw-w9fx-j79w",
+    "openwall-oss-security-2026-10-21-6"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "github-ghsa-6wmf-4rv5-p3rp",
+     "publisher": "PHP (php/php-src GitHub security advisory, published by bukka)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T13:34:13Z",
+     "latest_capture": "20261022T080901Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp"
+    },
+    {
+     "caveat": null,
+     "slug": "github-ghsa-w8hw-w9fx-j79w",
+     "publisher": "PHP (php/php-src GitHub security advisory, published by bukka)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T13:34:25Z",
+     "latest_capture": "20261022T080901Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w"
+    },
+    {
+     "caveat": null,
+     "slug": "openwall-oss-security-2026-10-21-6",
+     "publisher": "oss-security list (Jakub Zelenka, PHP security team)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T14:41:54Z",
+     "latest_capture": "20261022T081408Z",
+     "captures": 1,
+     "url": "https://www.openwall.com/lists/oss-security/2026/10/21/6"
+    },
+    {
+     "caveat": null,
+     "slug": "openwall-oss-security-2026-10-21-7",
+     "publisher": "oss-security list (Jakub Zelenka, PHP security team)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T14:44:06Z",
+     "latest_capture": "20261022T081407Z",
+     "captures": 1,
+     "url": "https://www.openwall.com/lists/oss-security/2026/10/21/7"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "github-ghsa-6wmf-4rv5-p3rp",
+     "publisher": "PHP (php/php-src GitHub security advisory, published by bukka)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T13:34:13Z",
+     "latest_capture": "20261022T080901Z",
+     "captures": 1,
+     "url": "https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp"
+    },
+    {
+     "caveat": null,
+     "slug": "openwall-oss-security-2026-10-21-7",
+     "publisher": "oss-security list (Jakub Zelenka, PHP security team)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T14:44:06Z",
+     "latest_capture": "20261022T081407Z",
+     "captures": 1,
+     "url": "https://www.openwall.com/lists/oss-security/2026/10/21/7"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "github-ghsa-6wmf-4rv5-p3rp",
+    "github-ghsa-w8hw-w9fx-j79w",
+    "openwall-oss-security-2026-10-21-6",
+    "openwall-oss-security-2026-10-21-7"
+   ],
+   "uncertain": [],
+   "page": "actors/zelenka/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: github-ghsa-6wmf-4rv5-p3rp, openwall-oss-security-2026-10-21-7"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/zelenka/index.md",
+    "sources_named": 8,
+    "sources_in_vault_list": 2,
+    "claim_rows": 4,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "daubois",
+   "name": "Alexandre Daubois, PHP security team (personal blog)",
+   "role": "inside account of the rumours and the leak",
+   "sources_listed": [
+    "daubois-blog-php2shell-rumors"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "daubois-blog-php2shell-rumors",
+     "publisher": "Alexandre Daubois (PHP security team / PHP Foundation)",
+     "kind": "researcher",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://daubois.dev/blog/cve-2026-109618-php2shell-rumors/"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "daubois-blog-php2shell-rumors"
+   ],
+   "uncertain": [],
+   "page": "actors/daubois/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/daubois/index.md",
+    "sources_named": 8,
+    "sources_in_vault_list": 1,
+    "claim_rows": 4,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "calif",
+   "name": "Calif (Ryan Austin, @lcfr_hax; Michal Zalewski)",
+   "role": "first reporter; published the write-up with demo videos",
+   "sources_listed": [
+    "calif-php2shell",
+    "x-lcfr-hax-hash-tweet"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "calif-php2shell",
+     "publisher": "Calif (Calif Research)",
+     "kind": "researcher",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261024T133450Z",
+     "captures": 2,
+     "url": "https://calif.io/php2shell/"
+    },
+    {
+     "caveat": null,
+     "slug": "x-lcfr-hax-hash-tweet",
+     "publisher": "Ryan Austin (@lcfr_hax), Calif",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-08-05T15:54Z",
+     "latest_capture": "20261022T081603Z",
+     "captures": 1,
+     "url": "https://x.com/lcfr_hax/status/2085031675382071483"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "calif-php2shell",
+    "x-lcfr-hax-hash-tweet"
+   ],
+   "uncertain": [
+    {
+     "slug": "php2shell-com",
+     "reason": "joint microsite of OpenAI, Wiz and Calif (php2shell.com): belongs to all three, owner not stated"
+    }
+   ],
+   "page": "actors/calif/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/calif/index.md",
+    "sources_named": 6,
+    "sources_in_vault_list": 2,
+    "claim_rows": 5,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "openai",
+   "name": "OpenAI (Patch the Planet, Codex Security, Amy Burnett)",
+   "role": "reported the same root cause on 11 August; ran the coordination coalition",
+   "sources_listed": [
+    "x-openai-php2shell",
+    "patchtheplanet-org",
+    "openai-community-php-flaws"
+   ],
+   "sources_found": [
+    {
+     "caveat": "capture is HTTP 403, status blocked: we do not hold their text",
+     "slug": "openai-blog-coordinated-disclosure",
+     "publisher": "OpenAI",
+     "kind": "researcher",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T112413Z",
+     "captures": 2,
+     "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+    },
+    {
+     "caveat": "notes say BLOCKED (403 challenge or capture tool refused); the latest capture reads HTTP 200 but may be a challenge page or a retry that worked: check text.txt before relying on it; elsewhere known only from search summaries",
+     "slug": "openai-patch-the-planet-launch",
+     "publisher": "OpenAI",
+     "kind": "researcher",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T112430Z",
+     "captures": 2,
+     "url": "https://openai.com/index/patch-the-planet/"
+    },
+    {
+     "caveat": null,
+     "slug": "patchtheplanet-org",
+     "publisher": "OpenAI (Patch the Planet / Daybreak)",
+     "kind": "researcher",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261023T232528Z",
+     "captures": 2,
+     "url": "https://patchtheplanet.org/"
+    },
+    {
+     "caveat": null,
+     "slug": "x-openai-php2shell",
+     "publisher": "OpenAI (@OpenAI)",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-10-21T14:04Z",
+     "latest_capture": "20261022T081645Z",
+     "captures": 1,
+     "url": "https://x.com/OpenAI/status/2112907856018309586"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": "capture is HTTP 403, status blocked: we do not hold their text",
+     "slug": "openai-blog-coordinated-disclosure",
+     "publisher": "OpenAI",
+     "kind": "researcher",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T112413Z",
+     "captures": 2,
+     "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+    },
+    {
+     "caveat": "notes say BLOCKED (403 challenge or capture tool refused); the latest capture reads HTTP 200 but may be a challenge page or a retry that worked: check text.txt before relying on it; elsewhere known only from search summaries",
+     "slug": "openai-patch-the-planet-launch",
+     "publisher": "OpenAI",
+     "kind": "researcher",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T112430Z",
+     "captures": 2,
+     "url": "https://openai.com/index/patch-the-planet/"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "openai-community-php-flaws"
+   ],
+   "own_words": true,
+   "own_words_slugs": [
+    "patchtheplanet-org",
+    "x-openai-php2shell"
+   ],
+   "uncertain": [
+    {
+     "slug": "php2shell-com",
+     "reason": "joint microsite of OpenAI, Wiz and Calif"
+    },
+    {
+     "slug": "openai-community-php-flaws",
+     "reason": "listed on the page, but a post on the OpenAI Developer Community forum by a user (\"sps\", Leader), not an OpenAI publication"
+    }
+   ],
+   "page": "actors/openai/index.md",
+   "missing_from_page": [
+    "openai-blog-coordinated-disclosure",
+    "openai-patch-the-planet-launch"
+   ],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: openai-blog-coordinated-disclosure, openai-patch-the-planet-launch",
+    "page does not name at all: openai-blog-coordinated-disclosure, openai-patch-the-planet-launch",
+    "named in the sources list but cited by no claim row (how used not shown): patchtheplanet-org, openai-community-php-flaws",
+    "capture is not their text (blocked/404): openai-blog-coordinated-disclosure, openai-patch-the-planet-launch; recapture or say plainly we do not hold it"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/openai/index.md",
+    "sources_named": 8,
+    "sources_in_vault_list": 3,
+    "claim_rows": 3,
+    "says_how_used": "partly: 1 of 3 listed sources cited by a claim row",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "wiz",
+   "name": "Wiz Research",
+   "role": "independent discovery 19 August; the '70% of the Internet' headline",
+   "sources_listed": [
+    "wiz-blog-php2shell",
+    "x-wiz-io-php2shell"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "wiz-blog-php2shell",
+     "publisher": "Wiz (Wiz Research)",
+     "kind": "researcher",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://www.wiz.io/blog/php2shell-php-rce"
+    },
+    {
+     "caveat": null,
+     "slug": "x-wiz-io-php2shell",
+     "publisher": "Wiz (@wiz_io)",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-10-21T13:32Z",
+     "latest_capture": "20261022T081624Z",
+     "captures": 1,
+     "url": "https://x.com/wiz_io/status/2112899813264277528"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "wiz-blog-php2shell",
+    "x-wiz-io-php2shell"
+   ],
+   "uncertain": [
+    {
+     "slug": "php2shell-com",
+     "reason": "joint microsite of OpenAI, Wiz and Calif"
+    }
+   ],
+   "page": "actors/wiz/index.md",
+   "missing_from_page": [],
+   "corrections": [
+    {
+     "id": "R-001",
+     "status": "drafted",
+     "match": "actor field",
+     "publisher": "Wiz (Wiz Research)"
+    }
+   ],
+   "agency_breakdown": null,
+   "gaps": [
+    "page shows no claim row, so it says nothing about how we used its sources",
+    "named in the sources list but cited by no claim row (how used not shown): wiz-blog-php2shell, x-wiz-io-php2shell"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/wiz/index.md",
+    "sources_named": 2,
+    "sources_in_vault_list": 2,
+    "claim_rows": 0,
+    "says_how_used": "no",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "quarkslab",
+   "name": "Quarkslab, OSTIF",
+   "role": "2024 audit that first surfaced the OOM issue",
+   "sources_listed": [
+    "php-foundation-blog-security-release",
+    "calif-php2shell"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "quarkslab-blog-php-src-audit",
+     "publisher": "Quarkslab",
+     "kind": "researcher",
+     "primary": true,
+     "published": "2025-04-10",
+     "latest_capture": "20261022T113008Z",
+     "captures": 1,
+     "url": "https://blog.quarkslab.com/security-audit-of-php-src.html"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "quarkslab-blog-php-src-audit",
+     "publisher": "Quarkslab",
+     "kind": "researcher",
+     "primary": true,
+     "published": "2025-04-10",
+     "latest_capture": "20261022T113008Z",
+     "captures": 1,
+     "url": "https://blog.quarkslab.com/security-audit-of-php-src.html"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "php-foundation-blog-security-release",
+    "calif-php2shell"
+   ],
+   "own_words": true,
+   "own_words_slugs": [
+    "quarkslab-blog-php-src-audit"
+   ],
+   "uncertain": [],
+   "page": "actors/quarkslab/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: quarkslab-blog-php-src-audit",
+    "named in the sources list but cited by no claim row (how used not shown): php-foundation-blog-security-release, calif-php2shell"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/quarkslab/index.md",
+    "sources_named": 4,
+    "sources_in_vault_list": 2,
+    "claim_rows": 1,
+    "says_how_used": "partly: 0 of 2 listed sources cited by a claim row",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "cloudflare",
+   "name": "Cloudflare",
+   "role": "WAF rules live 9 hours early; saw attack traffic",
+   "sources_listed": [
+    "cloudflare-blog-php2shell-waf"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "cloudflare-blog-php2shell-waf",
+     "publisher": "Cloudflare",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "cloudflare-blog-php2shell-waf"
+   ],
+   "uncertain": [],
+   "page": "actors/cloudflare/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/cloudflare/index.md",
+    "sources_named": 4,
+    "sources_in_vault_list": 1,
+    "claim_rows": 3,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "amazon",
+   "name": "Amazon (CJ Moses)",
+   "role": "honeypot evidence of a pre-disclosure attempt",
+   "sources_listed": [
+    "thehackernews-php2shell-4days"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "aws-security-blog-madpot",
+     "publisher": "Amazon (CJ Moses, AWS Security Blog)",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "aws-security-blog-madpot",
+     "publisher": "Amazon (CJ Moses, AWS Security Blog)",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "thehackernews-php2shell-4days"
+   ],
+   "own_words": true,
+   "own_words_slugs": [
+    "aws-security-blog-madpot"
+   ],
+   "uncertain": [],
+   "page": "actors/amazon/index.md",
+   "missing_from_page": [],
+   "corrections": [
+    {
+     "id": "R-004",
+     "status": "blocked",
+     "match": "inferred from publisher (actor field is null)",
+     "publisher": "Amazon Web Services (AWS Security Blog)"
+    }
+   ],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: aws-security-blog-madpot"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/amazon/index.md",
+    "sources_named": 2,
+    "sources_in_vault_list": 1,
+    "claim_rows": 1,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "chainguard",
+   "name": "Chainguard",
+   "role": "published patched images before the embargo lifted, per the Foundation",
+   "sources_listed": [
+    "php-foundation-blog-security-release",
+    "techzine-php-chainguard"
+   ],
+   "sources_found": [],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "php-foundation-blog-security-release",
+    "techzine-php-chainguard"
+   ],
+   "own_words": false,
+   "own_words_slugs": [],
+   "uncertain": [
+    {
+     "slug": "x-feross-chainguard",
+     "reason": "post by Feross Aboukhadijeh (@feross) about Chainguard, not Chainguard's own"
+    }
+   ],
+   "page": "actors/chainguard/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "named in the sources list but cited by no claim row (how used not shown): techzine-php-chainguard",
+    "no usable publication of their own held (all sources are about them): ask or capture before any request"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/chainguard/index.md",
+    "sources_named": 4,
+    "sources_in_vault_list": 2,
+    "claim_rows": 1,
+    "says_how_used": "partly: 1 of 2 listed sources cited by a claim row",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "watchtowr",
+   "name": "watchTowr",
+   "role": "confirmed the CVE numbers in public on 20 October, per Daubois",
+   "sources_listed": [
+    "daubois-blog-php2shell-rumors",
+    "certeu-sa-2026-018"
+   ],
+   "sources_found": [
+    {
+     "caveat": "notes say BLOCKED (403 challenge or capture tool refused); the latest capture reads HTTP 200 but may be a challenge page or a retry that worked: check text.txt before relying on it; elsewhere known only from search summaries",
+     "slug": "watchtowr-php2shell",
+     "publisher": "watchTowr",
+     "kind": "researcher",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261023T232528Z",
+     "captures": 2,
+     "url": "https://watchtowr.com/intelligence/php-remote-code-execution-php2shell/"
+    },
+    {
+     "caveat": "notes say BLOCKED (403 challenge or capture tool refused); the latest capture reads HTTP 200 but may be a challenge page or a retry that worked: check text.txt before relying on it; elsewhere known only from search summaries",
+     "slug": "watchtowr-php2shell-faq",
+     "publisher": "watchTowr",
+     "kind": "researcher",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://watchtowr.com/intelligence/php-cve-2026-109618-faq/"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": "notes say BLOCKED (403 challenge or capture tool refused); the latest capture reads HTTP 200 but may be a challenge page or a retry that worked: check text.txt before relying on it; elsewhere known only from search summaries",
+     "slug": "watchtowr-php2shell",
+     "publisher": "watchTowr",
+     "kind": "researcher",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261023T232528Z",
+     "captures": 2,
+     "url": "https://watchtowr.com/intelligence/php-remote-code-execution-php2shell/"
+    },
+    {
+     "caveat": "notes say BLOCKED (403 challenge or capture tool refused); the latest capture reads HTTP 200 but may be a challenge page or a retry that worked: check text.txt before relying on it; elsewhere known only from search summaries",
+     "slug": "watchtowr-php2shell-faq",
+     "publisher": "watchTowr",
+     "kind": "researcher",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://watchtowr.com/intelligence/php-cve-2026-109618-faq/"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "daubois-blog-php2shell-rumors",
+    "certeu-sa-2026-018"
+   ],
+   "own_words": false,
+   "own_words_slugs": [],
+   "uncertain": [],
+   "page": "actors/watchtowr/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: watchtowr-php2shell, watchtowr-php2shell-faq",
+    "capture is not their text (blocked/404): watchtowr-php2shell, watchtowr-php2shell-faq; recapture or say plainly we do not hold it",
+    "no usable publication of their own held (all sources are about them): ask or capture before any request"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/watchtowr/index.md",
+    "sources_named": 4,
+    "sources_in_vault_list": 2,
+    "claim_rows": 2,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "agencies",
+   "name": "National agencies (NSA, CISA, NCSC UK, CERT-EU, CERT-FR, CCCS, ACSC, NCSC NZ, NCSC-NL, ACN, BACS, CERT.LV, JPCERT)",
+   "role": "advisories; see the agency table",
+   "sources_listed": [
+    "nsa-press-php-4630238",
+    "cisa-alert-php-20261021",
+    "ncsc-news-php"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "nsa-press-php-4630238",
+     "publisher": "US National Security Agency (NSA)",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T080954Z",
+     "captures": 1,
+     "url": "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4630238/nsa-advisory-critical-patches-recommended-for-php-vulnerabilities/"
+    },
+    {
+     "caveat": null,
+     "slug": "nsa-x-2112903220209098897",
+     "publisher": "NSA Cybersecurity (@NSACyber)",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-10-21T13:45:58Z",
+     "latest_capture": "20261022T080954Z",
+     "captures": 1,
+     "url": "https://x.com/NSACyber/status/2112903220209098897"
+    },
+    {
+     "caveat": null,
+     "slug": "nsa-x-2113068811058622971",
+     "publisher": "NSA Cybersecurity (@NSACyber)",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-10-22T00:43:58Z",
+     "latest_capture": "20261022T080954Z",
+     "captures": 1,
+     "url": "https://x.com/NSACyber/status/2113068811058622971"
+    },
+    {
+     "caveat": null,
+     "slug": "nsa-x-nsacyber",
+     "publisher": "NSA Cybersecurity (@NSACyber)",
+     "kind": "social",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T080925Z",
+     "captures": 1,
+     "url": "https://x.com/NSACyber"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-kev-20261026",
+     "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-26",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-log4j-2021",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-10",
+     "latest_capture": "20261022T113354Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2021/12/10/apache-releases-log4j-version-2150-address-critical-rce-vulnerability-under-exploitation"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-php-20261021",
+     "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081353Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching"
+    },
+    {
+     "caveat": "capture is HTTP 404, status captured: we do not hold their text",
+     "slug": "cisa-ed-22-02-log4j",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-17",
+     "latest_capture": "20261022T113402Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/directives/ed-22-02-mitigate-apache-log4j-vulnerability"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-home",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081329Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-catalog",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-json",
+     "publisher": "CISA",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z (catalogVersion 2026.10.21)",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-news-php",
+     "publisher": "UK National Cyber Security Centre (NCSC)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T080903Z",
+     "captures": 1,
+     "url": "https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php"
+    },
+    {
+     "caveat": null,
+     "slug": "certeu-sa-2026-018",
+     "publisher": "CERT-EU",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21 15:20:18 (as stated; timezone not given)",
+     "latest_capture": "20261022T081329Z",
+     "captures": 1,
+     "url": "https://cert.europa.eu/publications/security-advisories/2026-018/"
+    },
+    {
+     "caveat": null,
+     "slug": "certfr-2026-ale-014",
+     "publisher": "CERT-FR (ANSSI)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081353Z",
+     "captures": 1,
+     "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/"
+    },
+    {
+     "caveat": null,
+     "slug": "cccs-al26-026",
+     "publisher": "Canadian Centre for Cyber Security (CCCS)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619"
+    },
+    {
+     "caveat": null,
+     "slug": "cccs-alerts",
+     "publisher": "CCCS",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081604Z",
+     "captures": 1,
+     "url": "https://www.cyber.gc.ca/en/alerts-advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "acsc-alert-php",
+     "publisher": "ASD's ACSC (Australia)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21 (Published); Last reviewed 2026-10-22",
+     "latest_capture": "20261022T081658Z",
+     "captures": 1,
+     "url": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-php"
+    },
+    {
+     "caveat": null,
+     "slug": "acsc-home",
+     "publisher": "ASD's ACSC",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081604Z",
+     "captures": 1,
+     "url": "https://www.cyber.gov.au/"
+    },
+    {
+     "caveat": "capture is HTTP None, status failed: we do not hold their text",
+     "slug": "cyber-gov-au-site",
+     "publisher": "cyber.gov.au",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081951Z",
+     "captures": 1,
+     "url": "https://www.cyber.gov.au/"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nz-alert-php",
+     "publisher": "NCSC New Zealand",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-22T09:15+13:00 (=2026-10-21T20:15Z); updated 10:20am 22-10-26 NZDT (=21:20Z)",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.ncsc.govt.nz/alerts/cve-2026-109618-and-cve-2026-109619-affecting-php/"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nz-alerts",
+     "publisher": "NCSC New Zealand",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://www.ncsc.govt.nz/alerts/"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-advisories",
+     "publisher": "NCSC-NL",
+     "kind": "advisory",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://advisories.ncsc.nl/advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T15:25:00Z",
+     "latest_capture": "20261022T084815Z",
+     "captures": 2,
+     "url": "https://github.com/NCSC-NL/php2shell"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell-software-list",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "government",
+     "primary": true,
+     "published": "generated from the repo's SPDX inventory; commit cca173c64ec5 at 2026-10-22T08:40:58Z",
+     "latest_capture": "20261022T084807Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/blob/main/software/software_list.md"
+    },
+    {
+     "caveat": "capture is HTTP None, status captured: we do not hold their text",
+     "slug": "ncsc-nl-php2shell-software-list-letters",
+     "publisher": "NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "the files as served by raw.githubusercontent.com at 2026-10-22T18:36:24Z",
+     "latest_capture": "20261022T183624Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/tree/main/software"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-site",
+     "publisher": "ncsc.nl",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081919Z",
+     "captures": 1,
+     "url": "https://www.ncsc.nl/"
+    },
+    {
+     "caveat": null,
+     "slug": "rijksoverheid-ncsc-php-news",
+     "publisher": "Rijksoverheid (Dutch government) / NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T113033Z",
+     "captures": 1,
+     "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/21/ncsc-ernstige-kwetsbaarheden-in-php"
+    },
+    {
+     "caveat": null,
+     "slug": "acn-it-php2shell",
+     "publisher": "ACN / CSIRT Italia",
+     "kind": "advisory",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081354Z",
+     "captures": 1,
+     "url": "https://www.acn.gov.it/portale/w/php2shell-sanate-vulnerabilita-critiche-in-php"
+    },
+    {
+     "caveat": null,
+     "slug": "ch-bacs-warnung-php",
+     "publisher": "Swiss Federal Office for Cyber Security (BACS / NCSC)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.bacs.admin.ch/en/warnung-php-en"
+    },
+    {
+     "caveat": null,
+     "slug": "ch-ncsc-home",
+     "publisher": "Swiss BACS",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081604Z",
+     "captures": 1,
+     "url": "https://www.ncsc.admin.ch/ncsc/en/home.html"
+    },
+    {
+     "caveat": null,
+     "slug": "certlv-php-preventive",
+     "publisher": "CERT.LV (Latvia)",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21T18:25 local (EEST, =15:25Z); updated 2026-10-21T23:00 local (=20:00Z)",
+     "latest_capture": "20261022T081354Z",
+     "captures": 1,
+     "url": "https://cert.lv/lv/2026/10/saistiba-ar-globali-atklatam-php-ievainojamibam-latvija-ievies-preventivus-pasakumus"
+    },
+    {
+     "caveat": null,
+     "slug": "jpcert-at260033",
+     "publisher": "JPCERT/CC (Japan)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-22",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.jpcert.or.jp/at/2026/at260033.html"
+    },
+    {
+     "caveat": null,
+     "slug": "jpcert-home",
+     "publisher": "JPCERT/CC",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081606Z",
+     "captures": 1,
+     "url": "https://www.jpcert.or.jp/"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "nsa-x-2112903220209098897",
+     "publisher": "NSA Cybersecurity (@NSACyber)",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-10-21T13:45:58Z",
+     "latest_capture": "20261022T080954Z",
+     "captures": 1,
+     "url": "https://x.com/NSACyber/status/2112903220209098897"
+    },
+    {
+     "caveat": null,
+     "slug": "nsa-x-2113068811058622971",
+     "publisher": "NSA Cybersecurity (@NSACyber)",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-10-22T00:43:58Z",
+     "latest_capture": "20261022T080954Z",
+     "captures": 1,
+     "url": "https://x.com/NSACyber/status/2113068811058622971"
+    },
+    {
+     "caveat": null,
+     "slug": "nsa-x-nsacyber",
+     "publisher": "NSA Cybersecurity (@NSACyber)",
+     "kind": "social",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T080925Z",
+     "captures": 1,
+     "url": "https://x.com/NSACyber"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-kev-20261026",
+     "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-26",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-log4j-2021",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-10",
+     "latest_capture": "20261022T113354Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2021/12/10/apache-releases-log4j-version-2150-address-critical-rce-vulnerability-under-exploitation"
+    },
+    {
+     "caveat": "capture is HTTP 404, status captured: we do not hold their text",
+     "slug": "cisa-ed-22-02-log4j",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-17",
+     "latest_capture": "20261022T113402Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/directives/ed-22-02-mitigate-apache-log4j-vulnerability"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-home",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081329Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-catalog",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-json",
+     "publisher": "CISA",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z (catalogVersion 2026.10.21)",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+     "caveat": null,
+     "slug": "certeu-sa-2026-018",
+     "publisher": "CERT-EU",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21 15:20:18 (as stated; timezone not given)",
+     "latest_capture": "20261022T081329Z",
+     "captures": 1,
+     "url": "https://cert.europa.eu/publications/security-advisories/2026-018/"
+    },
+    {
+     "caveat": null,
+     "slug": "certfr-2026-ale-014",
+     "publisher": "CERT-FR (ANSSI)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081353Z",
+     "captures": 1,
+     "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/"
+    },
+    {
+     "caveat": null,
+     "slug": "cccs-al26-026",
+     "publisher": "Canadian Centre for Cyber Security (CCCS)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619"
+    },
+    {
+     "caveat": null,
+     "slug": "cccs-alerts",
+     "publisher": "CCCS",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081604Z",
+     "captures": 1,
+     "url": "https://www.cyber.gc.ca/en/alerts-advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "acsc-alert-php",
+     "publisher": "ASD's ACSC (Australia)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21 (Published); Last reviewed 2026-10-22",
+     "latest_capture": "20261022T081658Z",
+     "captures": 1,
+     "url": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-php"
+    },
+    {
+     "caveat": null,
+     "slug": "acsc-home",
+     "publisher": "ASD's ACSC",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081604Z",
+     "captures": 1,
+     "url": "https://www.cyber.gov.au/"
+    },
+    {
+     "caveat": "capture is HTTP None, status failed: we do not hold their text",
+     "slug": "cyber-gov-au-site",
+     "publisher": "cyber.gov.au",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081951Z",
+     "captures": 1,
+     "url": "https://www.cyber.gov.au/"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nz-alert-php",
+     "publisher": "NCSC New Zealand",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-22T09:15+13:00 (=2026-10-21T20:15Z); updated 10:20am 22-10-26 NZDT (=21:20Z)",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.ncsc.govt.nz/alerts/cve-2026-109618-and-cve-2026-109619-affecting-php/"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nz-alerts",
+     "publisher": "NCSC New Zealand",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://www.ncsc.govt.nz/alerts/"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-advisories",
+     "publisher": "NCSC-NL",
+     "kind": "advisory",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://advisories.ncsc.nl/advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T15:25:00Z",
+     "latest_capture": "20261022T084815Z",
+     "captures": 2,
+     "url": "https://github.com/NCSC-NL/php2shell"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell-software-list",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "government",
+     "primary": true,
+     "published": "generated from the repo's SPDX inventory; commit cca173c64ec5 at 2026-10-22T08:40:58Z",
+     "latest_capture": "20261022T084807Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/blob/main/software/software_list.md"
+    },
+    {
+     "caveat": "capture is HTTP None, status captured: we do not hold their text",
+     "slug": "ncsc-nl-php2shell-software-list-letters",
+     "publisher": "NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "the files as served by raw.githubusercontent.com at 2026-10-22T18:36:24Z",
+     "latest_capture": "20261022T183624Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/tree/main/software"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-site",
+     "publisher": "ncsc.nl",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081919Z",
+     "captures": 1,
+     "url": "https://www.ncsc.nl/"
+    },
+    {
+     "caveat": null,
+     "slug": "rijksoverheid-ncsc-php-news",
+     "publisher": "Rijksoverheid (Dutch government) / NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T113033Z",
+     "captures": 1,
+     "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/21/ncsc-ernstige-kwetsbaarheden-in-php"
+    },
+    {
+     "caveat": null,
+     "slug": "acn-it-php2shell",
+     "publisher": "ACN / CSIRT Italia",
+     "kind": "advisory",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081354Z",
+     "captures": 1,
+     "url": "https://www.acn.gov.it/portale/w/php2shell-sanate-vulnerabilita-critiche-in-php"
+    },
+    {
+     "caveat": null,
+     "slug": "ch-bacs-warnung-php",
+     "publisher": "Swiss Federal Office for Cyber Security (BACS / NCSC)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.bacs.admin.ch/en/warnung-php-en"
+    },
+    {
+     "caveat": null,
+     "slug": "ch-ncsc-home",
+     "publisher": "Swiss BACS",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081604Z",
+     "captures": 1,
+     "url": "https://www.ncsc.admin.ch/ncsc/en/home.html"
+    },
+    {
+     "caveat": null,
+     "slug": "certlv-php-preventive",
+     "publisher": "CERT.LV (Latvia)",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21T18:25 local (EEST, =15:25Z); updated 2026-10-21T23:00 local (=20:00Z)",
+     "latest_capture": "20261022T081354Z",
+     "captures": 1,
+     "url": "https://cert.lv/lv/2026/10/saistiba-ar-globali-atklatam-php-ievainojamibam-latvija-ievies-preventivus-pasakumus"
+    },
+    {
+     "caveat": null,
+     "slug": "jpcert-at260033",
+     "publisher": "JPCERT/CC (Japan)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-22",
+     "latest_capture": "20261022T081700Z",
+     "captures": 1,
+     "url": "https://www.jpcert.or.jp/at/2026/at260033.html"
+    },
+    {
+     "caveat": null,
+     "slug": "jpcert-home",
+     "publisher": "JPCERT/CC",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081606Z",
+     "captures": 1,
+     "url": "https://www.jpcert.or.jp/"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "nsa-press-php-4630238",
+    "nsa-x-2112903220209098897",
+    "nsa-x-2113068811058622971",
+    "nsa-x-nsacyber",
+    "cisa-alert-kev-20261026",
+    "cisa-alert-log4j-2021",
+    "cisa-alert-php-20261021",
+    "cisa-kev-catalog",
+    "cisa-kev-json",
+    "ncsc-news-php",
+    "certeu-sa-2026-018",
+    "certfr-2026-ale-014",
+    "cccs-al26-026",
+    "acsc-alert-php",
+    "ncsc-nz-alert-php",
+    "ncsc-nl-advisories",
+    "ncsc-nl-php2shell",
+    "ncsc-nl-php2shell-software-list",
+    "rijksoverheid-ncsc-php-news",
+    "acn-it-php2shell",
+    "ch-bacs-warnung-php",
+    "certlv-php-preventive",
+    "jpcert-at260033"
+   ],
+   "uncertain": [
+    {
+     "slug": "nsa-x-nsacyber-nitter",
+     "reason": "nitter.net mirror of the NSACyber account; a third-party mirror, not NSA",
+     "for": "NSA"
+    },
+    {
+     "slug": "lv-latvija-gov",
+     "reason": "latvija.gov.lv is a government portal that went offline, not CERT.LV",
+     "for": "CERT.LV"
+    },
+    {
+     "slug": "enisa-cnw-2026-04-php",
+     "reason": "ENISA / EU CSIRTs Network advisory: an EU agency not named on the agencies page"
+    },
+    {
+     "slug": "ccn-cert-al-11-26",
+     "reason": "CCN-CERT (Spain) advisory: national CERT not named on the agencies page"
+    },
+    {
+     "slug": "cncs-pt-alerta-136114",
+     "reason": "CNCS (Portugal) alert: national agency not named on the agencies page"
+    },
+    {
+     "slug": "nukib-aktuality-2470",
+     "reason": "NUKIB (Czechia) notice: national agency not named on the agencies page"
+    },
+    {
+     "slug": "nvd-cve-2026-109618",
+     "reason": "NIST National Vulnerability Database record (US government database), not an advisory by a named agency"
+    },
+    {
+     "slug": "nvd-cve-2026-109619",
+     "reason": "NIST National Vulnerability Database record, as above"
+    }
+   ],
+   "page": "actors/agencies/index.md",
+   "missing_from_page": [
+    "nsa-x-2112903220209098897",
+    "nsa-x-2113068811058622971",
+    "nsa-x-nsacyber",
+    "cisa-alert-log4j-2021",
+    "cisa-ed-22-02-log4j",
+    "cisa-home",
+    "cccs-al26-026",
+    "cccs-alerts",
+    "acsc-alert-php",
+    "acsc-home",
+    "cyber-gov-au-site",
+    "ncsc-nz-alert-php",
+    "ncsc-nz-alerts",
+    "ncsc-nl-php2shell",
+    "ncsc-nl-php2shell-software-list-letters",
+    "ncsc-nl-site",
+    "rijksoverheid-ncsc-php-news",
+    "acn-it-php2shell",
+    "ch-ncsc-home",
+    "jpcert-at260033",
+    "jpcert-home"
+   ],
+   "corrections": [],
+   "agency_breakdown": {
+    "NSA": [
+     "nsa-press-php-4630238",
+     "nsa-x-2112903220209098897",
+     "nsa-x-2113068811058622971",
+     "nsa-x-nsacyber"
+    ],
+    "CISA": [
+     "cisa-alert-kev-20261026",
+     "cisa-alert-log4j-2021",
+     "cisa-alert-php-20261021",
+     "cisa-ed-22-02-log4j",
+     "cisa-home",
+     "cisa-kev-catalog",
+     "cisa-kev-json"
+    ],
+    "NCSC UK": [
+     "ncsc-news-php"
+    ],
+    "CERT-EU": [
+     "certeu-sa-2026-018"
+    ],
+    "CERT-FR": [
+     "certfr-2026-ale-014"
+    ],
+    "CCCS": [
+     "cccs-al26-026",
+     "cccs-alerts"
+    ],
+    "ACSC": [
+     "acsc-alert-php",
+     "acsc-home",
+     "cyber-gov-au-site"
+    ],
+    "NCSC NZ": [
+     "ncsc-nz-alert-php",
+     "ncsc-nz-alerts"
+    ],
+    "NCSC-NL": [
+     "ncsc-nl-advisories",
+     "ncsc-nl-php2shell",
+     "ncsc-nl-php2shell-software-list",
+     "ncsc-nl-php2shell-software-list-letters",
+     "ncsc-nl-site",
+     "rijksoverheid-ncsc-php-news"
+    ],
+    "ACN": [
+     "acn-it-php2shell"
+    ],
+    "BACS": [
+     "ch-bacs-warnung-php",
+     "ch-ncsc-home"
+    ],
+    "CERT.LV": [
+     "certlv-php-preventive"
+    ],
+    "JPCERT": [
+     "jpcert-at260033",
+     "jpcert-home"
+    ]
+   },
+   "gaps": [
+    "add to actors.json: nsa-x-2112903220209098897, nsa-x-2113068811058622971, nsa-x-nsacyber, cisa-alert-kev-20261026, cisa-alert-log4j-2021, cisa-ed-22-02-log4j, cisa-home, cisa-kev-catalog, cisa-kev-json, certeu-sa-2026-018, certfr-2026-ale-014, cccs-al26-026, cccs-alerts, acsc-alert-php, acsc-home, cyber-gov-au-site, ncsc-nz-alert-php, ncsc-nz-alerts, ncsc-nl-advisories, ncsc-nl-php2shell, ncsc-nl-php2shell-software-list, ncsc-nl-php2shell-software-list-letters, ncsc-nl-site, rijksoverheid-ncsc-php-news, acn-it-php2shell, ch-bacs-warnung-php, ch-ncsc-home, certlv-php-preventive, jpcert-at260033, jpcert-home",
+    "page does not name at all: nsa-x-2112903220209098897, nsa-x-2113068811058622971, nsa-x-nsacyber, cisa-alert-log4j-2021, cisa-ed-22-02-log4j, cisa-home, cccs-al26-026, cccs-alerts, acsc-alert-php, acsc-home, cyber-gov-au-site, ncsc-nz-alert-php, ncsc-nz-alerts, ncsc-nl-php2shell, ncsc-nl-php2shell-software-list-letters, ncsc-nl-site, rijksoverheid-ncsc-php-news, acn-it-php2shell, ch-ncsc-home, jpcert-at260033, jpcert-home",
+    "named in the sources list but cited by no claim row (how used not shown): nsa-press-php-4630238, ncsc-news-php",
+    "capture is not their text (blocked/404): cisa-ed-22-02-log4j, cyber-gov-au-site, ncsc-nl-php2shell-software-list-letters; recapture or say plainly we do not hold it"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/agencies/index.md",
+    "sources_named": 25,
+    "sources_in_vault_list": 3,
+    "claim_rows": 11,
+    "says_how_used": "partly: 1 of 3 listed sources cited by a claim row",
+    "kev_statement_dated_after_26_oct": true,
+    "kev_lines": [
+     {
+      "file": "actors/agencies/index.md",
+      "line": 23,
+      "text": "| As of its alert of 21 October and KEV catalog version 2026.10.21 (fetched 2026-10-22T08:15Z), CISA had not observed exploitation and neither CVE was in the Known Exploited Vulnerabilities catalog. Superseded on 26 October: CISA added both CVEs to KEV (catalog version 2026.10.26, released 22:24 UTC; brk1-kev-listed-20261026)Catalog version 2026.10.21 fetched 2026-10-22T08:15Z, 1,754 entries. A point-in-time negative finding. Revised by the correspondent on 27 October (breaking desk, correspondent's role): the claim said in the present tense that neither CVE is in KEV; since catalog version 2026.10.26 (released 22:24:24 UTC on 26 October, captured at 00:45 UTC on 27 October) both are, dateAd",
+      "dated": true,
+      "superseded_marked": true
+     },
+     {
+      "file": "actors/agencies/index.md",
+      "line": 27,
+      "text": "| The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell was not in KEV one day after disclosure (catalog version 2026.10.21) and both its CVEs were added on 26 October, five days after the fixes of 21 October (catalog version 2026.10.26)The KEV dates are counted from the captured catalog; 'exploited in the wild one day after disclosure' rests on Akamai alone. Revised by the correspondent on 27 October (breaking desk, correspondent's role): the claim ended 'php2shell is not in KEV after one day', in the present tense; both CVEs are in catalog version 2026.10.26 with dateAdded 2026-10-26. The one-day check is kept, with ",
+      "dated": true,
+      "superseded_marked": true
+     }
+    ]
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "bbc",
+   "name": "BBC News (live page; Kieran Kelly, Imogen James)",
+   "role": "the coverage most readers saw on the morning of 22 October",
+   "sources_listed": [
+    "bbc-live-ckgel5xp2xv9t"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "bbc-live-ckgel5xp2xv9t",
+     "publisher": "BBC News",
+     "kind": "news-live",
+     "primary": false,
+     "published": "2026-10-22T06:16:24Z",
+     "latest_capture": "20261022T080559Z",
+     "captures": 3,
+     "url": "https://www.bbc.co.uk/news/live/ckgel5xp2xv9t"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "bbc-live-ckgel5xp2xv9t"
+   ],
+   "uncertain": [],
+   "page": "actors/bbc/index.md",
+   "missing_from_page": [],
+   "corrections": [
+    {
+     "id": "R-002",
+     "status": "drafted",
+     "match": "actor field",
+     "publisher": "BBC News"
+    }
+   ],
+   "agency_breakdown": null,
+   "gaps": [
+    "page shows no claim row, so it says nothing about how we used its sources",
+    "named in the sources list but cited by no claim row (how used not shown): bbc-live-ckgel5xp2xv9t"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/bbc/index.md",
+    "sources_named": 1,
+    "sources_in_vault_list": 1,
+    "claim_rows": 0,
+    "says_how_used": "no",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "woodward",
+   "name": "Alan Woodward, Surrey Centre for Cyber Security",
+   "role": "commentator quoted by the BBC: 30 million websites; probing seen by Amazon and Cloudflare",
+   "sources_listed": [
+    "bbc-live-ckgel5xp2xv9t"
+   ],
+   "sources_found": [],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "bbc-live-ckgel5xp2xv9t"
+   ],
+   "own_words": false,
+   "own_words_slugs": [],
+   "uncertain": [],
+   "page": "actors/woodward/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "no usable publication of their own held (all sources are about them): ask or capture before any request"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/woodward/index.md",
+    "sources_named": 3,
+    "sources_in_vault_list": 1,
+    "claim_rows": 2,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "thn",
+   "name": "The Hacker News (Ravie Lakshmanan)",
+   "role": "carried Amazon's honeypot account and VulnCheck's host count",
+   "sources_listed": [
+    "thehackernews-php2shell-4days"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "thehackernews-php2shell-4days",
+     "publisher": "The Hacker News (Ravie Lakshmanan)",
+     "kind": "news",
+     "primary": false,
+     "published": "2026-10-22",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html"
+    },
+    {
+     "caveat": null,
+     "slug": "thehackernews-php2shell-unpatched-alert",
+     "publisher": "The Hacker News",
+     "kind": "news",
+     "primary": false,
+     "published": "2026-10-20",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+    },
+    {
+     "caveat": null,
+     "slug": "thehackernews-what-protects-you",
+     "publisher": "The Hacker News",
+     "kind": "news",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "thehackernews-php2shell-unpatched-alert",
+     "publisher": "The Hacker News",
+     "kind": "news",
+     "primary": false,
+     "published": "2026-10-20",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+    },
+    {
+     "caveat": null,
+     "slug": "thehackernews-what-protects-you",
+     "publisher": "The Hacker News",
+     "kind": "news",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T160435Z",
+     "captures": 2,
+     "url": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "thehackernews-php2shell-4days",
+    "thehackernews-php2shell-unpatched-alert",
+    "thehackernews-what-protects-you"
+   ],
+   "uncertain": [],
+   "page": "actors/thn/index.md",
+   "missing_from_page": [
+    "thehackernews-php2shell-unpatched-alert",
+    "thehackernews-what-protects-you"
+   ],
+   "corrections": [
+    {
+     "id": "R-007",
+     "status": "drafted",
+     "match": "inferred from publisher (actor field is null)",
+     "publisher": "The Hacker News"
+    }
+   ],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: thehackernews-php2shell-unpatched-alert, thehackernews-what-protects-you",
+    "page does not name at all: thehackernews-php2shell-unpatched-alert, thehackernews-what-protects-you"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/thn/index.md",
+    "sources_named": 2,
+    "sources_in_vault_list": 1,
+    "claim_rows": 1,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "chainguard-lorenc",
+   "name": "Dan Lorenc, Chainguard",
+   "role": "shipped patched images early; says exploits were in the wild and denies leaking",
+   "sources_listed": [
+    "theregister-php-blames-chainguard",
+    "x-feross-chainguard"
+   ],
+   "sources_found": [],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "theregister-php-blames-chainguard",
+    "x-feross-chainguard"
+   ],
+   "own_words": false,
+   "own_words_slugs": [],
+   "uncertain": [
+    {
+     "slug": "x-feross-chainguard",
+     "reason": "post by Feross Aboukhadijeh about Chainguard, not Dan Lorenc"
+    }
+   ],
+   "page": "actors/chainguard-lorenc/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "no usable publication of their own held (all sources are about them): ask or capture before any request"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/chainguard-lorenc/index.md",
+    "sources_named": 3,
+    "sources_in_vault_list": 2,
+    "claim_rows": 2,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "prince",
+   "name": "Matthew Prince, Cloudflare CEO",
+   "role": "the attempt counts",
+   "sources_listed": [
+    "x-eastdakota-php2shell-stats"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "x-eastdakota-php2shell-stats",
+     "publisher": "Matthew Prince (@eastdakota), Cloudflare CEO",
+     "kind": "social",
+     "primary": true,
+     "published": "2026-10-22T01:25Z",
+     "latest_capture": "20261022T111808Z",
+     "captures": 1,
+     "url": "https://x.com/eastdakota/status/2113079352682570051"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "x-eastdakota-php2shell-stats"
+   ],
+   "uncertain": [],
+   "page": "actors/prince/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/prince/index.md",
+    "sources_named": 1,
+    "sources_in_vault_list": 1,
+    "claim_rows": 1,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "imperva",
+   "name": "Imperva Threat Research",
+   "role": "had the details under embargo; saw nothing before disclosure",
+   "sources_listed": [
+    "imperva-blog-php2shell"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "imperva-blog-php2shell",
+     "publisher": "Imperva Threat Research (Nadav Avital, Bar Menachem)",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T080331Z",
+     "captures": 2,
+     "url": "https://www.imperva.com/blog/php2shell-vulnerability-updates/"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "imperva-blog-php2shell"
+   ],
+   "uncertain": [],
+   "page": "actors/imperva/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/imperva/index.md",
+    "sources_named": 1,
+    "sources_in_vault_list": 1,
+    "claim_rows": 1,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "fastly",
+   "name": "Fastly",
+   "role": "the most candid vendor on exploitability and on what a WAF cannot do",
+   "sources_listed": [
+    "fastly-blog-php2shell"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "fastly-blog-php2shell",
+     "publisher": "Fastly",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261024T133450Z",
+     "captures": 2,
+     "url": "https://www.fastly.com/blog/fastlys-proactive-protection-critical-php-rce-cve-2026-109618"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "fastly-blog-php2shell"
+   ],
+   "uncertain": [],
+   "page": "actors/fastly/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/fastly/index.md",
+    "sources_named": 4,
+    "sources_in_vault_list": 1,
+    "claim_rows": 2,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "akamai",
+   "name": "Akamai",
+   "role": "rule 3000991; the 2024 precedent",
+   "sources_listed": [
+    "akamai-blog-php-core-rce",
+    "akamai-blog-cve-2024-4577-one-day"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "akamai-blog-cve-2024-4577-one-day",
+     "publisher": "Akamai Security Research",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2024",
+     "latest_capture": "20261022T112501Z",
+     "captures": 1,
+     "url": "https://www.akamai.com/blog/security-research/2024-php-exploit-cve-one-day-after-disclosure"
+    },
+    {
+     "caveat": null,
+     "slug": "akamai-blog-php-core-rce",
+     "publisher": "Akamai Security Research",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T112525Z",
+     "captures": 1,
+     "url": "https://www.akamai.com/blog/security-research/critical-remote-code-execution-vulnerabilities-php-core"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "akamai-blog-cve-2024-4577-one-day",
+    "akamai-blog-php-core-rce"
+   ],
+   "uncertain": [],
+   "page": "actors/akamai/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "named in the sources list but cited by no claim row (how used not shown): akamai-blog-php-core-rce"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/akamai/index.md",
+    "sources_named": 6,
+    "sources_in_vault_list": 2,
+    "claim_rows": 1,
+    "says_how_used": "partly: 1 of 2 listed sources cited by a claim row",
+    "kev_statement_dated_after_26_oct": true,
+    "kev_lines": [
+     {
+      "file": "actors/akamai/index.md",
+      "line": 17,
+      "text": "| The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell was not in KEV one day after disclosure (catalog version 2026.10.21) and both its CVEs were added on 26 October, five days after the fixes of 21 October (catalog version 2026.10.26)The KEV dates are counted from the captured catalog; 'exploited in the wild one day after disclosure' rests on Akamai alone. Revised by the correspondent on 27 October (breaking desk, correspondent's role): the claim ended 'php2shell is not in KEV after one day', in the present tense; both CVEs are in catalog version 2026.10.26 with dateAdded 2026-10-26. The one-day check is kept, with ",
+      "dated": true,
+      "superseded_marked": true
+     }
+    ]
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "huntress",
+   "name": "Huntress",
+   "role": "no exploitation seen on partner systems",
+   "sources_listed": [
+    "huntress-php2shell-rapid-response"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "huntress-php2shell-rapid-response",
+     "publisher": "Huntress",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261027T071509Z",
+     "captures": 2,
+     "url": "https://www.huntress.com/blog/php2shell-leaked-critical-php-vulnerabilities"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "huntress-php2shell-rapid-response"
+   ],
+   "uncertain": [],
+   "page": "actors/huntress/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/huntress/index.md",
+    "sources_named": 2,
+    "sources_in_vault_list": 1,
+    "claim_rows": 2,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "weirdgloop",
+   "name": "Weird Gloop (cookmeplox)",
+   "role": "the one operator with a measured outage",
+   "sources_listed": [
+    "weirdgloop-blog-php2shell"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "weirdgloop-blog-php2shell",
+     "publisher": "Weird Gloop (cookmeplox)",
+     "kind": "vendor",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261023T080157Z",
+     "captures": 2,
+     "url": "https://weirdgloop.org/blog/php2shell"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "weirdgloop-blog-php2shell"
+   ],
+   "uncertain": [],
+   "page": "actors/weirdgloop/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [],
+   "complete": true,
+   "page_summary": {
+    "path": "actors/weirdgloop/index.md",
+    "sources_named": 1,
+    "sources_in_vault_list": 1,
+    "claim_rows": 1,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "rijksoverheid",
+   "name": "The Dutch government and NCSC-NL",
+   "role": "took its own site offline",
+   "sources_listed": [
+    "rijksoverheid-ncsc-php-news",
+    "ncsc-nl-php2shell"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-advisories",
+     "publisher": "NCSC-NL",
+     "kind": "advisory",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://advisories.ncsc.nl/advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T15:25:00Z",
+     "latest_capture": "20261022T084815Z",
+     "captures": 2,
+     "url": "https://github.com/NCSC-NL/php2shell"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell-software-list",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "government",
+     "primary": true,
+     "published": "generated from the repo's SPDX inventory; commit cca173c64ec5 at 2026-10-22T08:40:58Z",
+     "latest_capture": "20261022T084807Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/blob/main/software/software_list.md"
+    },
+    {
+     "caveat": "capture is HTTP None, status captured: we do not hold their text",
+     "slug": "ncsc-nl-php2shell-software-list-letters",
+     "publisher": "NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "the files as served by raw.githubusercontent.com at 2026-10-22T18:36:24Z",
+     "latest_capture": "20261022T183624Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/tree/main/software"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-site",
+     "publisher": "ncsc.nl",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081919Z",
+     "captures": 1,
+     "url": "https://www.ncsc.nl/"
+    },
+    {
+     "caveat": null,
+     "slug": "rijksoverheid-ncsc-php-news",
+     "publisher": "Rijksoverheid (Dutch government) / NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T113033Z",
+     "captures": 1,
+     "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/21/ncsc-ernstige-kwetsbaarheden-in-php"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-advisories",
+     "publisher": "NCSC-NL",
+     "kind": "advisory",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://advisories.ncsc.nl/advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell-software-list",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "government",
+     "primary": true,
+     "published": "generated from the repo's SPDX inventory; commit cca173c64ec5 at 2026-10-22T08:40:58Z",
+     "latest_capture": "20261022T084807Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/blob/main/software/software_list.md"
+    },
+    {
+     "caveat": "capture is HTTP None, status captured: we do not hold their text",
+     "slug": "ncsc-nl-php2shell-software-list-letters",
+     "publisher": "NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "the files as served by raw.githubusercontent.com at 2026-10-22T18:36:24Z",
+     "latest_capture": "20261022T183624Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/tree/main/software"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-site",
+     "publisher": "ncsc.nl",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081919Z",
+     "captures": 1,
+     "url": "https://www.ncsc.nl/"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "ncsc-nl-advisories",
+    "ncsc-nl-php2shell",
+    "ncsc-nl-php2shell-software-list",
+    "rijksoverheid-ncsc-php-news"
+   ],
+   "uncertain": [
+    {
+     "slug": "overheid-nl-site",
+     "reason": "overheid.nl is the Dutch government portal, not the Rijksoverheid news site or NCSC-NL"
+    }
+   ],
+   "page": "actors/rijksoverheid/index.md",
+   "missing_from_page": [
+    "ncsc-nl-php2shell-software-list-letters",
+    "ncsc-nl-site"
+   ],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: ncsc-nl-advisories, ncsc-nl-php2shell-software-list, ncsc-nl-php2shell-software-list-letters, ncsc-nl-site",
+    "page does not name at all: ncsc-nl-php2shell-software-list-letters, ncsc-nl-site",
+    "named in the sources list but cited by no claim row (how used not shown): ncsc-nl-php2shell",
+    "capture is not their text (blocked/404): ncsc-nl-php2shell-software-list-letters; recapture or say plainly we do not hold it"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/rijksoverheid/index.md",
+    "sources_named": 8,
+    "sources_in_vault_list": 2,
+    "claim_rows": 3,
+    "says_how_used": "partly: 1 of 2 listed sources cited by a claim row",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "valtori",
+   "name": "Valtori and NCSC-FI",
+   "role": "Finland's precautionary shutdown",
+   "sources_listed": [
+    "yle-finland-government-sites-shut",
+    "helsinkitimes-finland-shutdown"
+   ],
+   "sources_found": [
+    {
+     "caveat": "capture is HTTP None, status failed: we do not hold their text",
+     "slug": "fi-valtori",
+     "publisher": "valtori.fi",
+     "kind": "government",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081938Z",
+     "captures": 1,
+     "url": "https://valtori.fi/"
+    }
+   ],
+   "missing_from_actor": [
+    {
+     "caveat": "capture is HTTP None, status failed: we do not hold their text",
+     "slug": "fi-valtori",
+     "publisher": "valtori.fi",
+     "kind": "government",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081938Z",
+     "captures": 1,
+     "url": "https://valtori.fi/"
+    }
+   ],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [
+    "yle-finland-government-sites-shut",
+    "helsinkitimes-finland-shutdown"
+   ],
+   "own_words": false,
+   "own_words_slugs": [],
+   "uncertain": [],
+   "page": "actors/valtori/index.md",
+   "missing_from_page": [
+    "fi-valtori"
+   ],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "add to actors.json: fi-valtori",
+    "page does not name at all: fi-valtori",
+    "capture is not their text (blocked/404): fi-valtori; recapture or say plainly we do not hold it",
+    "no usable publication of their own held (all sources are about them): ask or capture before any request"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/valtori/index.md",
+    "sources_named": 2,
+    "sources_in_vault_list": 2,
+    "claim_rows": 1,
+    "says_how_used": "yes, through claim rows",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "detectors",
+   "name": "Community detection authors (darkfibr, rjmendez, Lexsah, Blevene)",
+   "role": "the rules, and the correction of the leaked PoC's mechanism",
+   "sources_listed": [
+    "github-darkfibr-php2shell-detect",
+    "github-rjmendez-phpup-2026",
+    "github-lexsah-php2shell-detection",
+    "gist-blevene-detection-guide"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "gist-blevene-detection-guide",
+     "publisher": "Blevene (GitHub gist)",
+     "kind": "code",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T112029Z",
+     "captures": 1,
+     "url": "https://gist.github.com/Blevene/472692937d05145d29d17dc3c6edc2a0"
+    },
+    {
+     "caveat": null,
+     "slug": "github-darkfibr-php2shell-detect",
+     "publisher": "darkfibr (Mike Haddock), GitHub",
+     "kind": "code",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T111956Z",
+     "captures": 1,
+     "url": "https://github.com/darkfibr/php2shell-detect"
+    },
+    {
+     "caveat": null,
+     "slug": "github-lexsah-php2shell-detection",
+     "publisher": "Lexsah, GitHub",
+     "kind": "code",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T112009Z",
+     "captures": 1,
+     "url": "https://github.com/Lexsah/php2shell-detection"
+    },
+    {
+     "caveat": null,
+     "slug": "github-rjmendez-phpup-2026",
+     "publisher": "rjmendez, GitHub",
+     "kind": "code",
+     "primary": false,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T112003Z",
+     "captures": 1,
+     "url": "https://github.com/rjmendez/phpup-2026"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "gist-blevene-detection-guide",
+    "github-darkfibr-php2shell-detect",
+    "github-lexsah-php2shell-detection",
+    "github-rjmendez-phpup-2026"
+   ],
+   "uncertain": [
+    {
+     "slug": "gist-silascutler-censys-query",
+     "reason": "detection-adjacent gist (Censys query) by Silas Cutler, not one of the four named authors"
+    }
+   ],
+   "page": "actors/detectors/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "named in the sources list but cited by no claim row (how used not shown): github-darkfibr-php2shell-detect, github-lexsah-php2shell-detection, gist-blevene-detection-guide"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/detectors/index.md",
+    "sources_named": 5,
+    "sources_in_vault_list": 4,
+    "claim_rows": 1,
+    "says_how_used": "partly: 1 of 4 listed sources cited by a claim row",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  },
+  {
+   "id": "leblanc",
+   "name": "Arnaud Le Blanc and the PHP fix authors",
+   "role": "wrote the fix",
+   "sources_listed": [
+    "github-php-src-fix-commit-3584a98bd"
+   ],
+   "sources_found": [
+    {
+     "caveat": "no capture in the vault (status captured): nothing saved of their text",
+     "slug": "github-php-src-fix-commit-3584a98bd",
+     "publisher": "php/php-src (git), read from a clone",
+     "kind": "code",
+     "primary": true,
+     "published": "2026-10-18T15:26:39Z (authored); 2026-10-21T14:06:22Z (committed)",
+     "latest_capture": null,
+     "captures": 0,
+     "url": "https://github.com/php/php-src/commit/3584a98bda0f2c0d367255b046798b0d3a221a19"
+    }
+   ],
+   "missing_from_actor": [],
+   "listed_not_found": [],
+   "listed_but_not_theirs": [],
+   "own_words": false,
+   "own_words_slugs": [],
+   "uncertain": [
+    {
+     "slug": "github-php-src-branch-7.4-backport",
+     "reason": "backport branch in php/php-src; author not stated in sources.json"
+    },
+    {
+     "slug": "github-php-src-tag-php-8.5.12",
+     "reason": "release tag \"by adoy\", not shown to be the fix author"
+    }
+   ],
+   "page": "actors/leblanc/index.md",
+   "missing_from_page": [],
+   "corrections": [],
+   "agency_breakdown": null,
+   "gaps": [
+    "page shows no claim row, so it says nothing about how we used its sources",
+    "named in the sources list but cited by no claim row (how used not shown): github-php-src-fix-commit-3584a98bd",
+    "capture is not their text (blocked/404): github-php-src-fix-commit-3584a98bd; recapture or say plainly we do not hold it",
+    "no usable publication of their own held (all sources are about them): ask or capture before any request"
+   ],
+   "complete": false,
+   "page_summary": {
+    "path": "actors/leblanc/index.md",
+    "sources_named": 1,
+    "sources_in_vault_list": 1,
+    "claim_rows": 0,
+    "says_how_used": "no",
+    "kev_statement_dated_after_26_oct": false,
+    "kev_lines": []
+   },
+   "injection_seen": []
+  }
+ ],
+ "named_without_page": [
+  {
+   "name": "NCSC-NL",
+   "own_page": false,
+   "covered_by": [
+    "rijksoverheid (page: \"The Dutch government and NCSC-NL\")",
+    "agencies (named in its title and its claim rows)"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-advisories",
+     "publisher": "NCSC-NL",
+     "kind": "advisory",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://advisories.ncsc.nl/advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T15:25:00Z",
+     "latest_capture": "20261022T084815Z",
+     "captures": 2,
+     "url": "https://github.com/NCSC-NL/php2shell"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell-software-list",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "government",
+     "primary": true,
+     "published": "generated from the repo's SPDX inventory; commit cca173c64ec5 at 2026-10-22T08:40:58Z",
+     "latest_capture": "20261022T084807Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/blob/main/software/software_list.md"
+    },
+    {
+     "caveat": "capture is HTTP None, status captured: we do not hold their text",
+     "slug": "ncsc-nl-php2shell-software-list-letters",
+     "publisher": "NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "the files as served by raw.githubusercontent.com at 2026-10-22T18:36:24Z",
+     "latest_capture": "20261022T183624Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/tree/main/software"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-site",
+     "publisher": "ncsc.nl",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081919Z",
+     "captures": 1,
+     "url": "https://www.ncsc.nl/"
+    },
+    {
+     "caveat": null,
+     "slug": "rijksoverheid-ncsc-php-news",
+     "publisher": "Rijksoverheid (Dutch government) / NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T113033Z",
+     "captures": 1,
+     "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/21/ncsc-ernstige-kwetsbaarheden-in-php"
+    }
+   ],
+   "sources_listed_in_actors_json": {
+    "rijksoverheid": [
+     "rijksoverheid-ncsc-php-news",
+     "ncsc-nl-php2shell"
+    ]
+   },
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-advisories",
+     "publisher": "NCSC-NL",
+     "kind": "advisory",
+     "primary": true,
+     "published": null,
+     "latest_capture": "20261022T081605Z",
+     "captures": 1,
+     "url": "https://advisories.ncsc.nl/advisories"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-php2shell-software-list",
+     "publisher": "NCSC-NL (Netherlands National Cyber Security Centre)",
+     "kind": "government",
+     "primary": true,
+     "published": "generated from the repo's SPDX inventory; commit cca173c64ec5 at 2026-10-22T08:40:58Z",
+     "latest_capture": "20261022T084807Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/blob/main/software/software_list.md"
+    },
+    {
+     "caveat": "capture is HTTP None, status captured: we do not hold their text",
+     "slug": "ncsc-nl-php2shell-software-list-letters",
+     "publisher": "NCSC-NL",
+     "kind": "government",
+     "primary": true,
+     "published": "the files as served by raw.githubusercontent.com at 2026-10-22T18:36:24Z",
+     "latest_capture": "20261022T183624Z",
+     "captures": 1,
+     "url": "https://github.com/NCSC-NL/php2shell/tree/main/software"
+    },
+    {
+     "caveat": null,
+     "slug": "ncsc-nl-site",
+     "publisher": "ncsc.nl",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081919Z",
+     "captures": 1,
+     "url": "https://www.ncsc.nl/"
+    }
+   ],
+   "own_words": true,
+   "own_words_slugs": [
+    "ncsc-nl-advisories",
+    "ncsc-nl-php2shell",
+    "ncsc-nl-php2shell-software-list",
+    "rijksoverheid-ncsc-php-news"
+   ],
+   "page_lines_naming_it": [
+    "actors/agencies/index.md:1",
+    "actors/agencies/index.md:5",
+    "actors/agencies/index.md:9",
+    "actors/agencies/index.md:17",
+    "actors/agencies/index.md:20",
+    "actors/rijksoverheid/index.md:1",
+    "actors/rijksoverheid/index.md:5",
+    "actors/rijksoverheid/index.md:9"
+   ],
+   "corrections": [],
+   "uncertain": [],
+   "injection_seen": [],
+   "complete": false,
+   "gaps": [
+    "no page of its own; covered by two pages (rijksoverheid and agencies) that split its sources inconsistently",
+    "actors.json lists for rijksoverheid only rijksoverheid-ncsc-php-news and ncsc-nl-php2shell; missing: ncsc-nl-advisories, ncsc-nl-php2shell-software-list, ncsc-nl-php2shell-software-list-letters, ncsc-nl-site",
+    "the agencies page cites ncsc-nl-advisories and ncsc-nl-php2shell-software-list in claim rows but the actor does not list them",
+    "ncsc-nl-site is a home page only"
+   ]
+  },
+  {
+   "name": "NCSC UK",
+   "own_page": false,
+   "covered_by": [
+    "agencies (named in its title; ncsc-news-php is on its sources list)"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "ncsc-news-php",
+     "publisher": "UK National Cyber Security Centre (NCSC)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T080903Z",
+     "captures": 1,
+     "url": "https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php"
+    }
+   ],
+   "sources_listed_in_actors_json": {
+    "agencies": [
+     "ncsc-news-php"
+    ]
+   },
+   "missing_from_actor": [],
+   "own_words": true,
+   "own_words_slugs": [
+    "ncsc-news-php"
+   ],
+   "page_lines_naming_it": [
+    "actors/agencies/index.md:1",
+    "actors/agencies/index.md:5",
+    "actors/agencies/index.md:9",
+    "actors/agencies/index.md:32"
+   ],
+   "corrections": [],
+   "uncertain": [],
+   "injection_seen": [],
+   "complete": false,
+   "gaps": [
+    "no page of its own: one advisory (ncsc-news-php) inside the agencies page; nothing else of theirs held",
+    "we hold no NCSC UK statement after 21 October; check for one before asking"
+   ]
+  },
+  {
+   "name": "CISA",
+   "own_page": false,
+   "covered_by": [
+    "agencies (named in its title; cisa-alert-php-20261021 is on its sources list)"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "cisa-alert-kev-20261026",
+     "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-26",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-log4j-2021",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-10",
+     "latest_capture": "20261022T113354Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2021/12/10/apache-releases-log4j-version-2150-address-critical-rce-vulnerability-under-exploitation"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-php-20261021",
+     "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21",
+     "latest_capture": "20261022T081353Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching"
+    },
+    {
+     "caveat": "capture is HTTP 404, status captured: we do not hold their text",
+     "slug": "cisa-ed-22-02-log4j",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-17",
+     "latest_capture": "20261022T113402Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/directives/ed-22-02-mitigate-apache-log4j-vulnerability"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-home",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081329Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-catalog",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-json",
+     "publisher": "CISA",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z (catalogVersion 2026.10.21)",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    }
+   ],
+   "sources_listed_in_actors_json": {
+    "agencies": [
+     "cisa-alert-php-20261021"
+    ]
+   },
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "cisa-alert-kev-20261026",
+     "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-26",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-alert-log4j-2021",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-10",
+     "latest_capture": "20261022T113354Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/alerts/2021/12/10/apache-releases-log4j-version-2150-address-critical-rce-vulnerability-under-exploitation"
+    },
+    {
+     "caveat": "capture is HTTP 404, status captured: we do not hold their text",
+     "slug": "cisa-ed-22-02-log4j",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2021-12-17",
+     "latest_capture": "20261022T113402Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/news-events/directives/ed-22-02-mitigate-apache-log4j-vulnerability"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-home",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": false,
+     "published": null,
+     "latest_capture": "20261022T081329Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-catalog",
+     "publisher": "CISA",
+     "kind": "government",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+     "caveat": null,
+     "slug": "cisa-kev-json",
+     "publisher": "CISA",
+     "kind": "advisory",
+     "primary": true,
+     "published": "2026-10-21T14:04:39Z (catalogVersion 2026.10.21)",
+     "latest_capture": "20261027T004502Z",
+     "captures": 1,
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    }
+   ],
+   "own_words": true,
+   "own_words_slugs": [
+    "cisa-alert-kev-20261026",
+    "cisa-alert-log4j-2021",
+    "cisa-alert-php-20261021",
+    "cisa-kev-catalog",
+    "cisa-kev-json"
+   ],
+   "page_lines_naming_it": [
+    "actors/agencies/index.md:1",
+    "actors/agencies/index.md:5",
+    "actors/agencies/index.md:9",
+    "actors/agencies/index.md:18",
+    "actors/agencies/index.md:23",
+    "actors/agencies/index.md:25",
+    "actors/agencies/index.md:27",
+    "actors/agencies/index.md:31"
+   ],
+   "corrections": [],
+   "uncertain": [],
+   "injection_seen": [],
+   "complete": false,
+   "gaps": [
+    "no page of its own: the sources sit inside the 13-agency page, so a recipient page would have to be carved out of it",
+    "actors.json lists only cisa-alert-php-20261021 for the agencies; missing: cisa-alert-kev-20261026, cisa-alert-log4j-2021, cisa-ed-22-02-log4j, cisa-home, cisa-kev-catalog, cisa-kev-json",
+    "the KEV statement of 26 October is on the agencies page (claim rows, lines 23 and 27) but the leading words of line 23 still read \"CISA had not observed exploitation and neither CVE was in KEV\" with status confirmed / A6; make the superseded status lead the row",
+    "cisa-ed-22-02-log4j capture is a 404 (not its text); cisa-home is a home page only"
+   ]
+  },
+  {
+   "name": "Trend Micro",
+   "own_page": false,
+   "covered_by": [
+    "none: no actor in actors.json, no page names Trend Micro"
+   ],
+   "sources_found": [
+    {
+     "caveat": null,
+     "slug": "trendmicro-ja-jp-about-newsroom-press-releases-2026",
+     "publisher": "トレンドマイクロ",
+     "kind": "news",
+     "primary": false,
+     "published": "2026-10-23",
+     "latest_capture": "20261024T083755Z",
+     "captures": 1,
+     "url": "https://www.trendmicro.com/ja_jp/about/newsroom/press-releases/2026/pr-20261023-01.html"
+    }
+   ],
+   "sources_listed_in_actors_json": {},
+   "missing_from_actor": [
+    {
+     "caveat": null,
+     "slug": "trendmicro-ja-jp-about-newsroom-press-releases-2026",
+     "publisher": "トレンドマイクロ",
+     "kind": "news",
+     "primary": false,
+     "published": "2026-10-23",
+     "latest_capture": "20261024T083755Z",
+     "captures": 1,
+     "url": "https://www.trendmicro.com/ja_jp/about/newsroom/press-releases/2026/pr-20261023-01.html"
+    }
+   ],
+   "own_words": true,
+   "own_words_slugs": [
+    "trendmicro-ja-jp-about-newsroom-press-releases-2026"
+   ],
+   "page_lines_naming_it": [],
+   "corrections": [],
+   "uncertain": [
+    {
+     "slug": "trendmicro-ja-jp-about-newsroom-press-releases-2026",
+     "reason": "Trend Micro Japan press release held as kind \"news\", primary false; it is Trend Micro's own publication, so counted as own words"
+    }
+   ],
+   "injection_seen": [],
+   "complete": false,
+   "gaps": [
+    "no actors.json entry and no page: create a party page (Trend Micro, with the press release of 23 October 2026) before any request",
+    "the one source is Japanese and held as news, primary false: recheck kind and publisher (\"トレンドマイクロ\" is not yet an alias of Trend Micro in the ontology), add an English reading of what the release claims (a free PHP2Shell Exposure Checker)",
+    "we hold one source only; look for an English Trend Micro post before asking"
+   ]
+  }
+ ],
+ "outreach_json_kev_stale": [
+  {
+   "file": "data/outreach.json (data repository, v0.1.62)",
+   "request": "R-004",
+   "field": "evidence",
+   "quote": "CISA had not observed exploitation",
+   "dated": false
+  },
+  {
+   "file": "data/outreach.json (data repository, v0.1.62)",
+   "request": "R-006",
+   "field": "evidence",
+   "quote": "neither CVE is in CISA's catalogue of known exploited vulnerabilities as of this site's latest check",
+   "dated": false,
+   "note": "\"latest check\" is undated"
+  }
+ ],
+ "corrections_not_tied_to_an_actor": [
+  {
+   "id": "R-003",
+   "publisher": "CNN Business",
+   "status": "drafted"
+  },
+  {
+   "id": "R-005",
+   "publisher": "WIRED",
+   "status": "drafted"
+  },
+  {
+   "id": "R-006",
+   "publisher": "BankInfoSecurity (ISMG)",
+   "status": "drafted"
+  },
+  {
+   "id": "R-008",
+   "publisher": "Fortune",
+   "status": "drafted"
+  },
+  {
+   "id": "R-009",
+   "publisher": "Clarín (English edition)",
+   "status": "drafted"
+  },
+  {
+   "id": "R-010",
+   "publisher": "Le Temps",
+   "status": "drafted"
+  },
+  {
+   "id": "R-011",
+   "publisher": "TechTarget Japan (ITmedia)",
+   "status": "drafted"
+  },
+  {
+   "id": "R-012",
+   "publisher": "TechTarget (SearchSecurity)",
+   "status": "drafted"
+  }
+ ],
+ "injection_seen": [],
+ "totals": {
+  "actors_audited": 27,
+  "actors_complete": 8,
+  "actors_not_complete": 19,
+  "named_candidates_audited": 4,
+  "sources_total_in_sources_json": 598,
+  "sources_missing_from_actors_json_unique": 44,
+  "sources_missing_from_actors_json_by_actor_sum": 48,
+  "sources_missing_note": "NCSC-NL sources count under both agencies and rijksoverheid, so the per-actor sum exceeds the unique count",
+  "listed_not_found": 0,
+  "actors_without_own_words": [
+   "chainguard",
+   "watchtowr",
+   "woodward",
+   "chainguard-lorenc",
+   "valtori",
+   "leblanc"
+  ],
+  "kev_lines_on_pages_undated": 0,
+  "kev_lines_on_pages_dated_and_superseded": 3,
+  "kev_stale_lines_in_outreach_json": 2,
+  "kev_statement_after_26_oct_on_pages": [
+   "agencies",
+   "akamai"
+  ],
+  "injection_seen": 0
+ },
+ "unique_missing_slugs": [
+  "acn-it-php2shell",
+  "acsc-alert-php",
+  "acsc-home",
+  "aws-security-blog-madpot",
+  "cccs-al26-026",
+  "cccs-alerts",
+  "certeu-sa-2026-018",
+  "certfr-2026-ale-014",
+  "certlv-php-preventive",
+  "ch-bacs-warnung-php",
+  "ch-ncsc-home",
+  "cisa-alert-kev-20261026",
+  "cisa-alert-log4j-2021",
+  "cisa-ed-22-02-log4j",
+  "cisa-home",
+  "cisa-kev-catalog",
+  "cisa-kev-json",
+  "cyber-gov-au-site",
+  "fi-valtori",
+  "github-ghsa-6wmf-4rv5-p3rp",
+  "github-php-src-branch-7.4-backport",
+  "github-php-src-tag-php-8.5.12",
+  "jpcert-at260033",
+  "jpcert-home",
+  "ncsc-nl-advisories",
+  "ncsc-nl-php2shell",
+  "ncsc-nl-php2shell-software-list",
+  "ncsc-nl-php2shell-software-list-letters",
+  "ncsc-nl-site",
+  "ncsc-nz-alert-php",
+  "ncsc-nz-alerts",
+  "nsa-x-2112903220209098897",
+  "nsa-x-2113068811058622971",
+  "nsa-x-nsacyber",
+  "openai-blog-coordinated-disclosure",
+  "openai-patch-the-planet-launch",
+  "openwall-oss-security-2026-10-21-7",
+  "phpfoundation-blog-security-release-leak",
+  "quarkslab-blog-php-src-audit",
+  "rijksoverheid-ncsc-php-news",
+  "thehackernews-php2shell-unpatched-alert",
+  "thehackernews-what-protects-you",
+  "watchtowr-php2shell",
+  "watchtowr-php2shell-faq"
+ ]
+}
