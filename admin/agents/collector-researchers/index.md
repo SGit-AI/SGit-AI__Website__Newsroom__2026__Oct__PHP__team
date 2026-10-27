@@ -217,4 +217,4 @@ Files: [admin/content/agents/collector-researchers/](https://github.com/SGit-AI/
 
 
 ---
-site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/collector-researchers/index.html
+site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/collector-researchers/index.html

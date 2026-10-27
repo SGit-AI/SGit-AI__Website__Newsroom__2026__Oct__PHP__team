@@ -8,7 +8,7 @@ Every vault the team's agents have made, listed by agent, by ID only, with wheth
 
 # Vaults: who made each one, and who holds which keys
 
-Every vault the agents on this team have made, listed by the agent that made it, and the keys each agent holds. A vault ID is public: it names the vault and opens nothing. A vault key is never published, here or anywhere; it is sealed to the editor's key on pki.sgit.ai before the agent's session ends, so it is never lost with the session. 23 vaults; for 1 of them, the sealing is not recorded yet.
+Every vault the agents on this team have made, listed by the agent that made it, and the keys each agent holds. A vault ID is public: it names the vault and opens nothing. A vault key is never published, here or anywhere; it is sealed to the editor's key on pki.sgit.ai before the agent's session ends, so it is never lost with the session. 24 vaults; for 1 of them, the sealing is not recorded yet.
 
 ### [conductor@php.newsroom](../conductor/index.html) 5 vaults made
 
@@ -72,10 +72,11 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 
 The correspondent's session (Opus; until 24 October named the journalist, claude-journalist). It made no vault. It holds the keys below, read only: it never writes to any of these vaults. Clones live outside the repository.
 
-### curator@php.newsroom 0 vaults made
+### curator@php.newsroom 1 vault made
 
 | Vault ID | What it holds | Created | Key sealed to the root |
 |---|---|---|---|
+| `nnd3i8iw` | The evidence vault as a pack vault with indexes: the same content as 3ytzxm3g (sources, claims, timeline) rewritten by sgit pack import at head 1dceaa1dfa7f, a new key; verified by a fresh clone identical file for file. Not yet cut over: the curator and its readers still use 3ytzxm3g until the editor says | 2026-10-27 | 2026-10-27 |
 
 #### Keys it holds
 
@@ -83,8 +84,9 @@ The correspondent's session (Opus; until 24 October named the journalist, claude
 |---|---|---|---|
 | `3ytzxm3g` | vault key | the editor, sealed to this session's key (23 October 2026) | 2026-10-23 |
 | `7r83qic5` | vault key | the editor, as message text in the session (23 October 2026); used to read the pack copy of the source watch only, never to write | 2026-10-23 |
+| `nnd3i8iw` | vault key | made by the curator in its session (pack import of 3ytzxm3g, 27 October 2026); sealed to the root the same day | 2026-10-27 |
 
-The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. It made no vault; it holds the keys below, given by the editor as a message sealed to its session key on pki.sgit.ai.
+The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. It made one vault on 27 October 2026 (below); it holds the keys below, given by the editor as a message sealed to its session key on pki.sgit.ai.
 
 ### [dev@php.newsroom](../dev/index.html) 5 vaults made
 
@@ -220,4 +222,4 @@ What each vault is for, and the published read keys and write-only lanes, are on
 
 
 ---
-site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html

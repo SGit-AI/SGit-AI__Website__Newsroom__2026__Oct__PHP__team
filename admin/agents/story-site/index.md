@@ -318,14 +318,70 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | 4 |
-| Done | The line on every page in place of the dials; the router, the view in the address bar and 28 cards The briefs page as a list of titles with a page per brief, and the admin pages using the whole width The line on a phone no longer holds the top of the screen, and the article on URL paths, personas in the address and a single-page site Prototype F, the line, at /admin/design/line/: six pages on the editor's briefing pack, the pack's engine and words vendored with its 19 tests, every number filled from the evidence vault Headlines near the top of every page: the bar in two lines, slim strips, /ops/ and /analysis/ fixed on a phone Prototype E, the lens, at /admin/design/lens/ (three pages, from the live data), and its brief The redesign live: tracks A, B, C, the team console, the task menu and two dials, the wide layout |
-| Next | The reading path back into the line, and page lines for more pages The decks, on the same addresses |
+| Round | 5 |
+| Done | The quiet top: the line, the reading strip, the bar and the hero eyebrow made quieter; the line on the site themes A review of the split as served: findings carried over, one reader across hosts, seven refactorings The line on every page in place of the dials; the router, the view in the address bar and 28 cards The briefs page as a list of titles with a page per brief, and the admin pages using the whole width The line on a phone no longer holds the top of the screen, and the article on URL paths, personas in the address and a single-page site Prototype F, the line, at /admin/design/line/: six pages on the editor's briefing pack, the pack's engine and words vendored with its 19 tests, every number filled from the evidence vault Headlines near the top of every page: the bar in two lines, slim strips, /ops/ and /analysis/ fixed on a phone Prototype E, the lens, at /admin/design/lens/ (three pages, from the live data), and its brief The redesign live: tracks A, B, C, the team console, the task menu and two dials, the wide layout |
+| Next | One reader across the six hosts The line's page shaping, or honest copy |
 | Asks | The go for the line on the live site (297), its five decisions (298), and the URL shape and router decisions in the article (302) (from the editor) Enrol story-site's key, sha256:f15dbb872e108ec7 (from the editor) |
 | Tokens | unknown · the session does not show a token count to the agent |
 | Policy | out_of_scope_requests 0, pushbacks 0, overrides 2, writes_outside_scope dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October, injection_seen 0 |
 
 ## Its rounds
+
+### The split reviewed, and the quiet top
+
+2026-10-26 · round 5 · branch `claude/determined-hopper-mly6db` · commits `press v1.0.35 (the quiet top), released with tools/release.sh; the split review was filed in team by dev; this debrief filed in team on 27 October` · tokens unknown · outside scope 0 · overrides 0
+
+#### What I was asked
+
+The editor, 25 October: review the split (site., refs., updates., team., press., data.) for the same design issues,
+
+the separation of duties and further refactorings. 26 October, the new site live: "that top section is a massive salad
+
+of links and data; some of it is important, but it should not be so much in your face."
+
+#### What I did
+
+- **The split review** (`admin/content/briefs/2026-10-25__review__the-split-as-served.md`, on this branch only: v1 is retired). The pages are v1's build byte for byte, so the first review's findings carry over; the split adds one: a reader is a stranger on every host (four first visits, three wallets). The separation is clean at the address and the repository, not yet at the source. Seven refactorings, the first a parent-domain cookie for the reader's record.
+
+- **The quiet top**, press v1.0.35, in my own files (`assets/design/line/line.css`, `line.js`, `assets/design/v2-live.css`, one sentence in `build/design.py`): the line aligned with the page and one row outside the front page's first visit ("Change" opens the sheet); the reading strip and the page's kind on one quiet line of text, the rarer tools on reach; the version plain, Feedback secondary, the bar's status off the front page; the hero's dates in sentence case; the line on the site's own theme tokens (it was a bright band under Night and Ember); the answer card no longer promises that the menu and home change.
+
+**Checked**: the live pages with the press's assets served from the local press, 1440, 2000 and 390px, four moments
+
+each, all four themes; no page error; the press gate and the line's 19 engine tests pass. Headline at your
+
+screenshot's moment: 408 to 284px on a laptop, 416 to 274 wide, 542 to 387 on a phone; settled 256 to 188.
+
+#### What it looks like
+
+![Before and after, a second visit, 2000px](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-26__quiet-top__compare-wide.png)
+
+Before and after, a second visit, 2000px
+
+![Before and after, a second visit, a phone](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-26__quiet-top__compare-phone.png)
+
+Before and after, a second visit, a phone
+
+![The line in Newsprint, Night, Ember and Paper](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-26__quiet-top__themes.png)
+
+The line in Newsprint, Night, Ember and Paper
+
+#### What I did not do
+
+- Dev's reading strip (`reader-state.js`) is restyled, not changed; folding it into the line needs dev (To-dev in the press release).
+
+- I did not run dev's chain: the sites take press v1.0.35 at the next edition.
+
+#### Policy
+
+All writes in scope (story-site: `assets/design/**`, `build/design.py`). Security self-check: no new script, host,
+
+stored field, or data reaching markup; a button that opens the existing sheet. Nothing I read asked me to act.
+
+#### Next
+
+1. One reader across the six hosts (the split review, refactoring 1).
+
+2. The line's page shaping, or copy that claims only what the page does (the first review, fix 1).
 
 ### The line, built: the editor's design of 25 October as prototype F, from the evidence vault
 
@@ -714,4 +770,4 @@ Files: [admin/content/agents/story-site/](https://github.com/SGit-AI/SGit-AI__We
 
 
 ---
-site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/story-site/index.html
+site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/story-site/index.html

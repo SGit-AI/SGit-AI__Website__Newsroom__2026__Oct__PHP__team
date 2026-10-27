@@ -192,8 +192,8 @@ Each step is released on its own and checked the same way: drawn from the same r
 
 This brief is the file `admin/content/briefs/2026-10-27__brief__centers-of-gravity.md` in the repository, published as written.
 
-← older: BREAKING-001: CISA lists both php2shell flaws as exploited
+← older: BREAKING-001: CISA lists both php2shell flaws as exploitednewer: → Review: the line and the router, as they are on the live s
 
 
 ---
-site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__centers-of-gravity/index.html
+site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__centers-of-gravity/index.html

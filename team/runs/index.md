@@ -10,7 +10,7 @@ The register of every schedule the team runs (who, where, how often, how many ru
 
 Everything the team runs on its own, without a person starting it: who runs it, where, how often, whether it runs at night, what it is allowed to change, and what it must leave behind. Kept by conductor@php.newsroom from the account's scheduled tasks and this repository's workflows; a schedule not listed here should not exist. Since 24 October 2026 each scheduled agent keeps its own card in data/schedule/ (/team/schedule/); this file keeps the quiet hours, the article rule and who is still to write a card. Times are UTC unless they say London.
 
-2schedules20runs a night, today432runs recorded201runs with changes and no article
+2schedules20runs a night, today433runs recorded201runs with changes and no article
 
 ## Quiet hours
 
@@ -33,7 +33,7 @@ A run that changes something a reader can see (a grade, a series, a new capture,
 
 ## Every run
 
-Newest first, read from the data each agent publishes: the release history, the source watch, the fact-check desk's runs and the synthetic readers' latest run each. dev@php.newsroom: 226, researcher@php.newsroom: 82, Conductor: 37, synthetic@php.newsroom: 12, Fact-check desk: 11, correspondent: 11, factcheck: 10, Journalist: 10, Sherpa: 7, curator: 7, pulse: 4, Ontologist: 4, desk: 4, librarian@php.newsroom: 3, observability: 2, security: 1, Cartographer: 1.
+Newest first, read from the data each agent publishes: the release history, the source watch, the fact-check desk's runs and the synthetic readers' latest run each. dev@php.newsroom: 227, researcher@php.newsroom: 82, Conductor: 37, synthetic@php.newsroom: 12, Fact-check desk: 11, correspondent: 11, factcheck: 10, Journalist: 10, Sherpa: 7, curator: 7, pulse: 4, Ontologist: 4, desk: 4, librarian@php.newsroom: 3, observability: 2, security: 1, Cartographer: 1.
 
 | When | Who | What | Run | Summary | Changes | Article | Output |
 |---|---|---|---|---|---|---|---|
@@ -41,6 +41,7 @@ Newest first, read from the data each agent publishes: the release history, the 
 | 2026-10-27T00:45:02Z | [researcher@php.newsroom](../researcher/index.html) | Source watch pass | `20261027T004502Z` | 3 pages due, 3 changed | yes | missing | [output](https://refs.php.oct.2026.newsroom.sgit.ai/vaults/source-watch/) |
 | 2026-10-27T00:20:00Z | observability | Scheduled wake | `20261027T0020Z-observability` | Not a scheduled wake: the editor's session. Lane found full (1,000) by the editor, who drained it; then 4 drained here (vault 84wr8mib at 3,431 events, 915 sessions; lane empty). Cause: one Googlebot rendering session, 960 events over 811 pages, 26 Oct 17:00 to 19:23 UTC; the lane refused for about 4¾ hours (estimated loss: 60 to 80 non-crawler events, 10 to 15 readers'). Five lanes configured on 84wr8mib (lanes.py) and tested; SG/Send's per-instance config cache answers 404 for new lanes for a while (observability-0002). The drain is parallel: app v0.4.3 (5wnsr5h8) and drain.py. Card active; task trig_01B9ULDBk3Mux6HzEkFQ7wZQ, 08:33, 14:33, 20:33 London. sgit-ai v0.25.0. Waits on dev: the page's side of the lanes and a cap of 40 events a tab (observability-0001). | yes | missing | [output](../../team/schedule/observability/index.html) |
 | 2026-10-27T00:05:00Z | observability | Scheduled wake | `20261027T0005Z-observability` | wired into the six repositories: card records/schedule/observability.json proposed (status proposed; three wakes a day, 08:33, 14:33 and 20:33 London; repositories push team, pull press and data, never v1); no scheduled task exists yet: it waits on the editor's go, and is to fire into observability's own session (session_01NUvath8v2oGkhPwddJ3pgS), which holds the telemetry vault's key and the access token in its scratchpad. sgit-ai v0.25.0 (upgraded from 0.24.0): on 84wr8mib the first status 5.3 s (the scan cache), the second 1.3 s, history log 0.4 s; nothing behaved differently. The drainer's home in the six is records/desks/observability/drain.py. team's front page (index.html) was stale against tools/front.py before this change; regenerated. Waits on the editor: the go for the task. Waits on the conductor: observability on the team roster (records/data/team.json). | yes | missing | [output](../../team/schedule/observability/index.html) |
+| 2026-10-27 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.41` | article pages are frames: each draws its article from site's content/articles/ when it opens; articles/view/ draws one newer than the build; the route sends content/articles/ to site | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-27 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.40` | the readers' copy (glossary, plain, questions, interview, seo, billing) moves to site's content/data/; five more files are data's | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-27 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.39` | every page reads the press and data from /latest/; each site's VERSION is its own, for its CI to write | yes | its release note | [output](../../admin/versions.html) |
 | 2026-10-27 | [dev@php.newsroom](../dev/index.html) | Release | `v0.22.38` | the brief on the six centers of gravity, with its diagrams | yes | its release note | [output](../../admin/versions.html) |
@@ -472,4 +473,4 @@ Newest first, read from the data each agent publishes: the release history, the 
 
 
 ---
-site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/runs/index.html
+site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/runs/index.html

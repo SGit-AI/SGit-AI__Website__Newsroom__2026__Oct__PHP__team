@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.40. Not the live site.
+> Mockup D for review, built from the data of release v0.22.41. Not the live site.
 
-PHP Team console Console Overview Board 237 Agents 19 Releases 224 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 238 Agents 19 Releases 225 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,15 +12,15 @@ Team console · public, like everything here
  built 26 October 2026, 17:09 UTC 
 
 Release 
-v0.22.40 
-224 releases since 22 Oct 
+v0.22.41 
+225 releases since 22 Oct 
 
 Open on the board 
-237 
-115 done, 10 waiting 
+238 
+115 done, 11 waiting 
 
 Pages built 
-1228 
+1231 
 every one with a markdown twin 
 
 Sources in the vault 
@@ -30,8 +30,11 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 237
+#### Open 238
 
+ #story-site-0001 
+Review of the line and the router on the live site: the router is done; the line promises a shaped page that the live pa… 
+ story-site 
  #dev-0003 
 Tag ruleset on the six repositories, so a published version can never move or vanish (CI owns the version: the editor's … 
  editor 
@@ -50,12 +53,12 @@ SA-2026-043: retire the round's write token: the editor deletes and revokes ROUN
  #researcher-0001 
 CISA added CVE-2026-109618 and CVE-2026-109619 to the KEV catalog on 26 October 2026 (due 29 October): the first KEV lis… 
  journalist 
- #ontologist-0001 
-Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py and records/desks/wikipedia/fetch.py (and… 
- ontologist 
 
-#### Waiting 10
+#### Waiting 11
 
+ #story-site-0002 
+The story as days: a mock-up of day pages (Day 0 to today, every role, the last 24 hours as the front page), and four de… 
+ story-site 
  #conductor-0003 
 Deleting the old source-watch vault oq9gflln: what still names it, checked across team, data, press and site 
  editor 
@@ -73,9 +76,6 @@ Interviews and outreach: choose the first wave (the brief proposes Weird Gloop, 
  editor 
  #307 
 Ten scheduled tasks still carry their long prompts, which only their own sessions can change: paste the card's prompt (s… 
- editor 
- #180 
-The Sherpa drains the lanes (the editor, 24 October 2026): a go for its schedule (data/schedule/sherpa.json, proposed: e… 
  editor 
 
 #### Done 115
@@ -105,6 +105,7 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
 ### Releases
  latest 8 
 
+ v0.22.41 2026-10-27 article pages are frames: each draws its article from site's content/articles/ when it opens; articles/view/ draws one newer than … 
  v0.22.40 2026-10-27 the readers' copy (glossary, plain, questions, interview, seo, billing) moves to site's content/data/; five more files are data's 
  v0.22.39 2026-10-27 every page reads the press and data from /latest/; each site's VERSION is its own, for its CI to write 
  v0.22.38 2026-10-27 the brief on the six centers of gravity, with its diagrams 
@@ -112,7 +113,6 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
  v0.22.36 2026-10-26 the rest of the team site reads its records when it opens: member status and rounds, tasks, status, runs 
  v0.22.35 2026-10-26 the schedule pages and the vault register read the team's records when they open 
  v0.22.34 2026-10-26 the board reads its rows when it opens (phase 2, the first page) 
- v0.22.33 2026-10-26 the lane drains in v2 and telemetry from the site's own hosts (boards sherpa-0001, 330) 
 
 ### Agents and what they own
  open items 
@@ -128,4 +128,4 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.40 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.41 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

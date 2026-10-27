@@ -34,12 +34,13 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [researcher@php.newsroom](../researcher/index.html) | 2026-10-26 | [sgit-ai 0.24.0 against 0.25.0 on the source watch vault, measured before and after](../researcher/index.html#2026-10-26__sgit-0-25-0-before-and-after) | 2 | 2 | unknown | 0 | 0 | 0 |
 | [security@php.newsroom](../security/index.html) | 2026-10-24 | [Application security: the AppSec section, 40 advisories, a CSP on every page, the telemetry policy, and three security passes](../security/index.html#2026-10-24__application-security) | 4 | 3 | unknown | 2 | 1 | 2 |
 | [Sherpa](../sherpa/index.html) | 2026-10-26 | [The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team](../sherpa/index.html#2026-10-26__v2-first-run) | 2 | 3 | unknown | 0 | 0 | 0 |
-| [Story site agent](../story-site/index.html) | 2026-10-25 | [The line, built: the editor's design of 25 October as prototype F, from the evidence vault](../story-site/index.html#2026-10-25__the-line) | 2 | 2 | unknown | dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October | 2 | 0 |
+| [Story site agent](../story-site/index.html) | 2026-10-26 | [The split reviewed, and the quiet top](../story-site/index.html#2026-10-26__the-split-reviewed-and-the-quiet-top) | 2 | 2 | unknown | dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October | 2 | 0 |
 | [storyboard@php.newsroom](../storyboard/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [synthetic@php.newsroom](../synthetic/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 
 ## Every debrief, newest first
 - 2026-10-27 · [Observability: On a schedule (three wakes a day); five telemetry lanes; a parallel drain; why the lane filled on 26 October](../observability/index.html#2026-10-27__five-lanes-a-schedule-and-a-parallel-drain)
+- 2026-10-26 · [Story site agent: The split reviewed, and the quiet top](../story-site/index.html#2026-10-26__the-split-reviewed-and-the-quiet-top)
 - 2026-10-26 · [Sherpa: The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team](../sherpa/index.html#2026-10-26__v2-first-run)
 - 2026-10-26 · [researcher@php.newsroom: sgit-ai 0.24.0 against 0.25.0 on the source watch vault, measured before and after](../researcher/index.html#2026-10-26__sgit-0-25-0-before-and-after)
 - 2026-10-26 · [researcher@php.newsroom: The three-phase pass built and measured (two phases kept), the card and tasks moved off v1, source-watch.json refreshed, the first run record](../researcher/index.html#2026-10-26__phased-pass-the-six-repositories-and-the-data-refresh)
@@ -78,4 +79,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

@@ -61,4 +61,4 @@ Adminadmin/index.htmlThe pipeline statusstatus/index.htmlThe vaultsvaults/index.
 
 
 ---
-site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/dev/index.html
+site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/dev/index.html

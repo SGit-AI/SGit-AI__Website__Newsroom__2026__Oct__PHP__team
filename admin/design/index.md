@@ -2,7 +2,7 @@
 
 The proposed redesign of the site for review: what is wrong now, the two dials (who you are and how much you see), which pages each reader sees, the menu per view, and four mockups built from the live data.
 
-> Mockup notes for review, built from the data of release v0.22.40. Not the live site.
+> Mockup notes for review, built from the data of release v0.22.41. Not the live site.
 
 Admin · design · for review 
 ## The redesign: who you are, and how much you want to see
@@ -105,24 +105,24 @@ risk register, frameworks, stakeholders · 117 pages
  The code 
 the fix in php-src, the review graph · 3 pages 
  Stories 
-signed articles written here · 12 pages 
+signed articles written here · 13 pages 
  The evidence 
 every source, the vaults, the pipeline, versions · 680 pages 
  The site and the team 
-method, roles, board, releases, admin · 315 pages 
+method, roles, board, releases, admin · 317 pages 
 
 ### Pages per reader, per view
 
  Reader Focus Standard Everything 
- Alex Curious reader 30 73 1228 
- Jordan Board member or executive 30 230 1228 
- Quinn CFO 30 230 1228 
- Robin CISO 161 230 1228 
- Rowan Journalist 770 793 1228 
- Sam Security lead 44 116 1228 
- Drew PHP or platform engineer 37 116 1228 
- Ash Security researcher 721 796 1228 
-Counted from the 1228 pages this release builds. 
+ Alex Curious reader 30 74 1231 
+ Jordan Board member or executive 30 231 1231 
+ Quinn CFO 30 231 1231 
+ Robin CISO 161 231 1231 
+ Rowan Journalist 771 794 1231 
+ Sam Security lead 44 117 1231 
+ Drew PHP or platform engineer 37 117 1231 
+ Ash Security researcher 721 797 1231 
+Counted from the 1231 pages this release builds. 
 
 #### Who sees the team console
 
@@ -171,7 +171,7 @@ All of it, for power users and the team.
 
 - The admin pages move into console D. 
 
- Mockups built by the design agent from release v0.22.40; the brief is on the briefs page. Board items record each step.
+ Mockups built by the design agent from release v0.22.41; the brief is on the briefs page. Board items record each step.
 
 ---
-site v0.22.40 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html
+site v0.22.41 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html

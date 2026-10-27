@@ -1,6 +1,185 @@
 {
  "about": "A page counts as changed when the content of its <main> differs from the previous release's, with the two site version numbers masked: the header, the footer and the version stamp change on every page at every release and say nothing about what the release did. Pages are compared as built and committed, so the list is what a reader would have seen change. Stored in data/release-pages.json, one entry per release, written once and never recomputed:",
  "releases": {
+  "0.22.41": {
+   "against": "0.22.40",
+   "pages": [
+    {
+     "path": "admin/briefs/2026-10-25__review__the-line-and-the-router-on-the-live-site/index.html",
+     "title": "Review: the line and the router, as they are on the live site",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-27__brief__the-story-as-days/index.html",
+     "title": "Brief: the story as days",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "articles/view/index.html",
+     "title": "An article",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/story-site/index.html",
+     "title": "Story site agent: role, policy and rounds",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/vaults/index.html",
+     "title": "Vaults: who made each one",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/index.html",
+     "title": "Briefs",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/index.html",
+     "title": "Stories: written here, signed and dated",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/rounds/index.html",
+     "title": "Every round: what each member did",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-27__brief__centers-of-gravity/index.html",
+     "title": "Brief: six centers of gravity; every site builds its frames, every page reads its content from its owner",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/exposed-is-not-exploited/index.html",
+     "title": "Exposed is not exploited: the sites php2shell did not hit, and what a hit will admit",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/has-anyone-been-hacked/index.html",
+     "title": "Has anyone actually been hacked through php2shell? What 525 sources say, five days on",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/patch-at-the-speed-of-metasploit/index.html",
+     "title": "Patch at the speed of Metasploit: where php2shell sits on the weaponisation ladder, and the attacks that come second and third",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/php2shell-in-perspective/index.html",
+     "title": "php2shell in perspective: an old embargo model, a Log4Shell shape, and the shrinking gap between theory and proof",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/steal-my-bitcoin/index.html",
+     "title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/the-risk-graph-before-and-after/index.html",
+     "title": "The risk graph, before and after: what changed from one reader's five ideas",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/the-telemetry-tools/index.html",
+     "title": "Who reads this site, and what works on it: the tools we built to find out, and what they say on day two",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/what-changed-in-a-day/index.html",
+     "title": "What changed in a day: no victim yet, four named cases tested, a patch moving through the supply chain, and firewalls on the list",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/what-wikipedia-knows-about-being-right/index.html",
+     "title": "What Wikipedia knows about being right: the principles, workflows and review habits this newsroom's agents should adopt",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/where-php2shell-stands/index.html",
+     "title": "Where php2shell stands: many sites dark, millions of attempts, no confirmed breach",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "articles/why-not-patch-every-version/index.html",
+     "title": "Why can't every version of PHP just be patched?",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "questions/index.html",
+     "title": "Questions readers ask about php2shell",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/board/index.html",
+     "title": "The board",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
   "0.22.40": {
    "against": "0.22.39",
    "pages": [
