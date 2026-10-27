@@ -1,0 +1,548 @@
+{
+ "step": "1c",
+ "member": "sherpa",
+ "by": "projects@php.newsroom (subagent)",
+ "checkpoint": "A: the ten names",
+ "data_version": "0.1.62",
+ "ten": [
+  {
+   "rank": 1,
+   "id": "huntress",
+   "name": "Huntress",
+   "kind": "researcher/vendor",
+   "why": "We hold its rapid-response post, scoped and dated ('As of October 21 at 4:30pm ET, Huntress has not observed in-the-wild exploitation'), re-captured 27 October. It is the clearest case of 'attempted' kept apart from 'exploited', and its page is complete.",
+   "own_words": [
+    {
+     "slug": "huntress-php2shell-rapid-response",
+     "capture": "20261027T071509Z"
+    }
+   ],
+   "careful": "Scoped and dated: 'As of October 21 at 4:30pm ET, Huntress has not observed in-the-wild exploitation on partner systems'; 'we have not built or reproduced a proof of concept ... as of this writing'. Fact-check huntress-none: first half carried exactly; the PoC half is from the pre-release section and was overtaken by its own 4:40pm update (holds-in-part, disputed). No open request.",
+   "channel": {
+    "name": "Huntress's published press or contact page (huntress.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'exploited' against 'attempted'; 'leaked exploit'",
+   "clean_hands": [
+    "Page is complete (audit), but the journalist must read the 27 Oct capture against the 21 Oct text before the page says what Huntress 'has not observed' after the KEV listing.",
+    "Fact-check huntress-none is holds-in-part, disputed: the 'no PoC' half was overtaken by its own 4:40pm update. Say so on the page."
+   ],
+   "phase2": {
+    "ontologist": "Confirm page stays complete; add the 27 Oct capture to the source list.",
+    "journalist": "Re-grade huntress-none against both captures, dated after 26 Oct.",
+    "correspondent": "Write /outreach/huntress/: its post, our use, the PoC half graded differently and why.",
+    "story_site": "One recipient page plus answer form."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 2,
+   "id": "cloudflare",
+   "name": "Cloudflare",
+   "kind": "researcher/vendor",
+   "why": "We hold its WAF post, which counts attack traffic and not compromises and says 'almost 70% of websites'. Its page is complete and no request is open against it.",
+   "own_words": [
+    {
+     "slug": "cloudflare-blog-php2shell-waf",
+     "capture": "20261023T160435Z"
+    }
+   ],
+   "careful": "Counts attempts and traffic, not compromises: 'observed attack traffic targeting our customers' (cloudflare-traffic, probing: holds, carries); names the population: 'PHP is used by almost 70% of websites'. No open request.",
+   "channel": {
+    "name": "Cloudflare's press office (cloudflare.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'70% of the internet' against '70% of websites'; 'exploited' against 'attempted'",
+   "clean_hands": [
+    "Page is complete (audit).",
+    "Matthew Prince has his own complete page: send one page for Cloudflare and link his; do not send him a second message.",
+    "Capture is 23 Oct, before KEV: confirm the post has not changed."
+   ],
+   "phase2": {
+    "ontologist": "Link the Prince page from the Cloudflare page.",
+    "journalist": "Re-grade cloudflare-traffic and the 70% wording after 26 Oct.",
+    "correspondent": "Write /outreach/cloudflare/.",
+    "story_site": "Recipient page."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 3,
+   "id": "fastly",
+   "name": "Fastly",
+   "kind": "researcher/vendor",
+   "why": "We hold its blog post, the most candid vendor on exploitability and on what a WAF cannot do. Its page is complete.",
+   "own_words": [
+    {
+     "slug": "fastly-blog-php2shell",
+     "capture": "20261024T133450Z"
+    }
+   ],
+   "careful": "Candid on exploitability and limits: PoCs need the binary's layout on x86_64; 32-bit assume compromise; what a WAF cannot do (source notes; ac-high, more-paths, pocs-wrong: holds).",
+   "channel": {
+    "name": "Fastly's published press contact (fastly.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'exploited' against 'attempted'",
+   "clean_hands": [
+    "Page is complete (audit); no gaps listed.",
+    "Journalist confirms no line implies Fastly saw exploitation."
+   ],
+   "phase2": {
+    "ontologist": "None beyond a check.",
+    "journalist": "Re-grade ac-high, more-paths, pocs-wrong after 26 Oct.",
+    "correspondent": "Write /outreach/fastly/.",
+    "story_site": "Recipient page."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 4,
+   "id": "imperva",
+   "name": "Imperva Threat Research",
+   "kind": "researcher/vendor",
+   "why": "We hold its post: 'no traffic matching the monitored exploit patterns' before disclosure and '69% of websites whose server-side language is known'. Its page is complete.",
+   "own_words": [
+    {
+     "slug": "imperva-blog-php2shell",
+     "capture": "20261023T080331Z"
+    }
+   ],
+   "careful": "'Imperva observed no traffic matching the monitored PHP2Shell exploit patterns' pre-disclosure; names the population: '69% of websites whose server-side language is known'; attack complexity high (imperva-none, ac-high: holds, carries).",
+   "channel": {
+    "name": "Imperva's published press contact (imperva.com)",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'70% of the internet' against '70% of websites whose server-side language is known'",
+   "clean_hands": [
+    "Page is complete (audit).",
+    "The 'no matching traffic' line is pre-disclosure: the page must say it is dated before KEV."
+   ],
+   "phase2": {
+    "ontologist": "None beyond a check.",
+    "journalist": "Re-grade imperva-none, ac-high after 26 Oct.",
+    "correspondent": "Write /outreach/imperva/.",
+    "story_site": "Recipient page."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 5,
+   "id": "weirdgloop",
+   "name": "Weird Gloop",
+   "kind": "other (a wiki host; vendor-kind source)",
+   "why": "We hold its blog post, the only measured outage: 13 hours offline and about 94% of page views from cache. It makes no claim of compromise.",
+   "own_words": [
+    {
+     "slug": "weirdgloop-blog-php2shell",
+     "capture": "20261023T080157Z"
+    }
+   ],
+   "careful": "Fact-check weirdgloop-13h holds (carries, three assessments): 13 hours offline, ~94% of page views from cache, its own figures; it makes no claim of compromise (no-confirmed-compromise partial). No hedge was needed; none missing. No open request.",
+   "channel": {
+    "name": "Weird Gloop's published contact page (weirdgloop.org)",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'millions of sites offline' against the trackers' counts",
+   "clean_hands": [
+    "Page is complete (audit).",
+    "An organisation channel only: no personal account of the author."
+   ],
+   "phase2": {
+    "ontologist": "None beyond a check.",
+    "journalist": "Re-grade weirdgloop-13h (three assessments, carries) after 26 Oct.",
+    "correspondent": "Write /outreach/weirdgloop/; an interview is a later, separate ask.",
+    "story_site": "Recipient page."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 6,
+   "id": "php-group",
+   "name": "The PHP Group / php.net (the PHP security team)",
+   "kind": "maintainer",
+   "why": "We hold php.net's advisory and changelog, scoped ('only an update is a complete solution'), and the two CVE records it numbers. Our claims settle K-008, K-010 and K-011 against its wording, so it should see them first.",
+   "own_words": [
+    {
+     "slug": "php-net-advisory",
+     "capture": "20261022T080901Z"
+    },
+    {
+     "slug": "php-net-changelog-8",
+     "capture": "20261022T081558Z"
+    },
+    {
+     "slug": "github-php-src-tags",
+     "capture": "20261022T081558Z"
+    },
+    {
+     "slug": "cve-cve-2026-109618",
+     "capture": "20261022T081218Z"
+    },
+    {
+     "slug": "cve-cve-2026-109619",
+     "capture": "20261022T081219Z"
+    }
+   ],
+   "careful": "Advisory is scoped: 'only an update is a complete solution, the following measures reduce exposure ... but do not make an installation safe' (fact-check only-update, carries). Disputed on the embargo time (K-010, open) and our disclosure-date claim is refuted against it (disclosure-22oct, measures-differently).",
+   "channel": {
+    "name": "the PHP security team's published security contact (php.net); no personal address",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'CVSS 10.0' (its 9.2); 'leaked exploit'",
+   "clean_hands": [
+    "Page incomplete: add github-php-src-branch-7.4-backport and github-php-src-tag-php-8.5.12 to actors.json; the page does not name the backport branch.",
+    "Zelenka's page is missing github-ghsa-6wmf-4rv5-p3rp and openwall-oss-security-2026-10-21-7 from actors.json; Daubois's page is complete. Send one message to the team that links all three pages, not three messages.",
+    "K-008, K-010 and K-011 are open: the page must say what we dispute and why. Our disclosure-date claim is refuted against its advisory (disclosure-22oct)."
+   ],
+   "phase2": {
+    "ontologist": "Add the 4 missing sources across php-group and zelenka; decide whether the CVE records belong here (PHP Group is the CNA).",
+    "journalist": "Re-grade K-008/K-010/K-011 and disclosure-22oct.",
+    "correspondent": "Write /outreach/php-group/ linking Zelenka and Daubois.",
+    "story_site": "Recipient page with three linked sections."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 7,
+   "id": "ncsc-nl",
+   "name": "NCSC-NL and the Dutch government (Rijksoverheid)",
+   "kind": "CERT/agency",
+   "why": "We hold five of its publications, including the software inventory whose README says entries are 'investigation leads'. It advises a risk assessment per system and 'considering' switching off, not a shutdown order.",
+   "own_words": [
+    {
+     "slug": "ncsc-nl-php2shell",
+     "capture": "20261022T084815Z"
+    },
+    {
+     "slug": "rijksoverheid-ncsc-php-news",
+     "capture": "20261022T113033Z"
+    },
+    {
+     "slug": "ncsc-nl-advisories",
+     "capture": "20261022T081605Z"
+    },
+    {
+     "slug": "ncsc-nl-site",
+     "capture": "20261022T081919Z"
+    },
+    {
+     "slug": "ncsc-nl-php2shell-software-list",
+     "capture": "20261022T084807Z"
+    }
+   ],
+   "careful": "Its inventory README says 'Product entries should still be treated as investigation leads until they are backed by an upstream or vendor source' (fact-check scale-ncsc-nl, carries). Rijksoverheid page: advises a risk assessment per system and 'considering' switching off. No open correction request.",
+   "channel": {
+    "name": "NCSC-NL contact page (ncsc.nl) and the Rijksoverheid press office",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'millions of sites offline' (it advises assessment, not shutdown); no brief phrase matches closer",
+   "clean_hands": [
+    "Our count is wrong: we say 674 rows, 3 not vulnerable; the file has 675, 4 not vulnerable (iBabs row dropped by the parsed JSON; fact-check scale-ncsc-nl, contradicted). Fixed before anyone is sent the page.",
+    "No page of its own: sources are split inconsistently between rijksoverheid and agencies. Missing from actors.json: ncsc-nl-advisories, ncsc-nl-php2shell-software-list, ncsc-nl-php2shell-software-list-letters, ncsc-nl-site.",
+    "The letters folder capture is blocked/404: recapture or say we do not hold it. ncsc-nl-site is a home page only."
+   ],
+   "phase2": {
+    "ontologist": "Make an NCSC-NL actor page; reconcile rijksoverheid and agencies.",
+    "journalist": "Correct 674 to 675 and 3 to 4; re-grade after 26 Oct.",
+    "correspondent": "Write /outreach/ncsc-nl/.",
+    "story_site": "Recipient page; Dutch/English reading of the inventory."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 8,
+   "id": "cisa",
+   "name": "CISA",
+   "kind": "CERT/agency",
+   "why": "We hold its 21 Oct alert ('has not observed exploitation ... as of the time of publication') and its 26 Oct KEV listing of both CVEs. It names no victim, which is the heart of 'exploited' against 'attempted'.",
+   "own_words": [
+    {
+     "slug": "cisa-alert-kev-20261026",
+     "capture": "20261027T004502Z"
+    },
+    {
+     "slug": "cisa-alert-php-20261021",
+     "capture": "20261022T081353Z"
+    },
+    {
+     "slug": "cisa-kev-catalog",
+     "capture": "20261027T004502Z"
+    },
+    {
+     "slug": "cisa-kev-json",
+     "capture": "20261027T004502Z"
+    },
+    {
+     "slug": "cisa-home",
+     "capture": "20261022T081329Z"
+    }
+   ],
+   "careful": "21 Oct alert scoped its statement in time: CISA 'has not observed exploitation ... as of the time of publication'; on 26 Oct it added both CVEs to KEV and updated the alert (cisa-alert-kev-20261026, fact-check cisa-none 'superseded'). It names no victim. No open request.",
+   "channel": {
+    "name": "the CISA media and public-affairs contact (cisa.gov)",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'exploited' against 'attempted': KEV on 26 October; no named victim",
+   "clean_hands": [
+    "No page of its own: carve one out of the 13-agency page; actors.json lists only cisa-alert-php-20261021 and misses six CISA sources.",
+    "The agencies page line 23 still leads 'CISA had not observed exploitation and neither CVE was in KEV' with status confirmed/A6: make the superseded status lead (lines 23, 27 are dated).",
+    "cisa-ed-22-02-log4j capture is a 404 and cisa-home is a home page: do not present them as its words."
+   ],
+   "phase2": {
+    "ontologist": "Carve out a CISA page; add the 6 missing sources.",
+    "journalist": "Re-grade cisa-none as superseded; confirm no page keeps the old line.",
+    "correspondent": "Write /outreach/cisa/ led by the KEV listing.",
+    "story_site": "Recipient page."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 9,
+   "id": "americanbanker",
+   "name": "American Banker",
+   "kind": "news",
+   "why": "We hold its report that 'banks have so far dodged early damage' and that no U.S. bank has reported a compromise: scoped to reports, and it holds. It is a careful trade title, not a headline outlet.",
+   "own_words": [
+    {
+     "slug": "americanbanker-news-banks-dodge-early-damage-from-php2s",
+     "capture": "20261024T083755Z"
+    }
+   ],
+   "careful": "'Banks have so far dodged early damage ... no U.S. bank has reported a compromise': scoped to reports (fact-check no-confirmed-compromise, holds, carries). No open request.",
+   "channel": {
+    "name": "American Banker's published contact or corrections route",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "check-what-we-hold",
+   "topic": "'exploited' against 'attempted'",
+   "clean_hands": [
+    "No actors page and not in actors.json: create one with the article.",
+    "Capture is 24 Oct, before KEV: the page asks 'is that still true?' and must say so; one short question, not an interview.",
+    "Check the outlet's own channel exists in captured form; no named reporter's address."
+   ],
+   "phase2": {
+    "ontologist": "Create the actor page and add the source.",
+    "journalist": "Re-grade no-confirmed-compromise as of 26 Oct and later.",
+    "correspondent": "Write /outreach/americanbanker/.",
+    "story_site": "Recipient page."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed",
+   "ask_detail": null
+  },
+  {
+   "rank": 10,
+   "id": "bbc",
+   "name": "BBC News (live page; Audience Services complaints route)",
+   "kind": "news",
+   "why": "We hold its live page, which kept the hedge 'unable to independently verify that figure'. It is the editor's named first outlet and the origin of three points of ours, so its one ask is a correction submission, not a check or an interview.",
+   "own_words": [
+    {
+     "slug": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z"
+    }
+   ],
+   "careful": "Kept the hedge in the live page ('the BBC is unable to independently verify that figure'). Careful is false on our rule only because a correction request (R-002) is open against it; three captures, all 22 Oct 07:55-08:06Z (latest 20261022T080559Z).",
+   "channel": {
+    "name": "BBC Audience Services (the BBC's own complaints route); channel to capture first",
+    "url": null,
+    "to_confirm": true
+   },
+   "ask": "correction",
+   "ask_detail": "ONE numbered 'Stage 1a' correction submission through the BBC's complaints route, three points: (1) a new request on 'disclosed on 22 October' (the fixes were released 21 Oct); (2) a new request on 'UK, NSA, EU and Australian agencies advise taking systems offline'; (3) R-002 'roughly 70%' (note that Wiz has been asked too, or send after R-001). Points 1 and 2 do not wait on R-001. A fourth point, the NCSC quote, is HELD until its origin is settled (the NCSC page changed at 07:30 GMT on 22 Oct; the same words appear in Canada's CCCS alert). No interview and no check-what-we-hold ask to the BBC. New requests are named by description; the liaison numbers them.",
+   "topic": "'70% of the internet' against '70% of websites'; 'millions of sites offline' against the trackers' counts",
+   "clean_hands": [
+    "Fresh capture of the live page (all ours are 22 Oct 07:55-08:06Z); drop any point the BBC has already corrected.",
+    "Capture the BBC complaints page and corrections page (url and channel not yet held).",
+    "Each new request needs its K-record on /factcheck/ before it is sent.",
+    "Fix our own claim no-exploitation: it shows 'reported', the fact-check says 'disputed'.",
+    "Actors page for the BBC shows no claim row and does not cite bbc-live-ckgel5xp2xv9t; make it complete.",
+    "The BBC's 30-working-day window ends about 3 December 2026."
+   ],
+   "phase2": {
+    "ontologist": "Complete the BBC page: claim rows, how bbc-live-ckgel5xp2xv9t is used; new capture added.",
+    "journalist": "Re-check the three points against a fresh capture; K-records; fix no-exploitation.",
+    "correspondent": "Write the BBC file and the one Stage 1a submission (three points).",
+    "story_site": "BBC file page (see editor question on /outlets/bbc/); answer form."
+   },
+   "to_confirm_channel": true,
+   "status": "proposed"
+  }
+ ],
+ "reserves": [
+  {
+   "id": "php-foundation",
+   "name": "The PHP Foundation",
+   "kind": "maintainer",
+   "score": 2,
+   "own_words": [
+    {
+     "slug": "php-foundation-blog-security-release",
+     "capture": "20261022T080901Z"
+    },
+    {
+     "slug": "phpfoundation-blog-security-release-leak",
+     "capture": "20261022T081244Z"
+    }
+   ],
+   "ask": "check-what-we-hold",
+   "channel": "the PHP Foundation contact (thephp.foundation)",
+   "why": "Starter. Score 2: no hedging evidence either way, and K-008 and K-010 are open against its wording. The PHP security team (rank 6) covers the maintainers; the Foundation would be a second PHP message."
+  },
+  {
+   "id": "ncsc-uk",
+   "name": "UK National Cyber Security Centre (NCSC)",
+   "kind": "CERT/agency",
+   "score": 2,
+   "own_words": [
+    {
+     "slug": "ncsc-news-php",
+     "capture": "20261022T080903Z"
+    }
+   ],
+   "ask": "check-what-we-hold",
+   "channel": "the NCSC media enquiries route (ncsc.gov.uk)",
+   "why": "Starter. Score 2: one source, one capture (22 Oct); no statement after 21 Oct held, and no hedging evidence. It would ask whether an earlier offline wording was published and changed."
+  },
+  {
+   "id": "daubois",
+   "name": "Alexandre Daubois, PHP security team (personal blog)",
+   "kind": "maintainer",
+   "score": 3,
+   "own_words": [
+    {
+     "slug": "daubois-blog-php2shell-rumors",
+     "capture": "20261023T160435Z"
+    }
+   ],
+   "ask": "interview, later",
+   "channel": "the PHP security team's published security contact (php.net) or the contact page of his personal blog",
+   "why": "Score 3 but folded into rank 6 (one message to the team). Keep as a later interview ask (25 Oct brief, format A)."
+  },
+  {
+   "id": "diepresse",
+   "name": "Die Presse",
+   "kind": "news",
+   "score": 3,
+   "own_words": [
+    {
+     "slug": "diepresse-41383717-die-php-sicherheitsluecke-ist-a",
+     "capture": "20261023T160435Z"
+    }
+   ],
+   "ask": "check-what-we-hold",
+   "channel": "Die Presse's published contact or corrections route",
+   "why": "Score 3 news; moved out when the BBC became one of the ten. 23 Oct explainer, no compromise known in Austria. Needs a page and an English reading; one short question."
+  },
+  {
+   "id": "certlv",
+   "name": "CERT.LV (Latvia)",
+   "kind": "CERT/agency",
+   "score": 3,
+   "own_words": [
+    {
+     "slug": "certlv-php-preventive",
+     "capture": "20261022T081354Z"
+    }
+   ],
+   "ask": "check-what-we-hold",
+   "channel": "the CERT.LV contact page (cert.lv)",
+   "why": "Score 3 CERT; no page of its own (inside agencies) and the latvija.gov.lv source is not CERT.LV. Use if the editor wants a third CERT."
+  }
+ ],
+ "starters_not_chosen": [
+  {
+   "name": "BBC",
+   "score": 2,
+   "why": "Chosen at rank 10 on the editor's briefing (via the coordinator): a corrections case, one Stage 1a submission with three points; no check or interview ask."
+  },
+  {
+   "name": "PHP Foundation",
+   "score": 2,
+   "why": "Careful is unknown and K-008, K-010 are open on its wording; the PHP security team (php-group) goes first as the maintainers' message."
+  },
+  {
+   "name": "NCSC UK",
+   "score": 2,
+   "why": "One source only (22 Oct), no later statement and no hedging evidence; ask once we have checked for a newer one."
+  },
+  {
+   "name": "Trend Micro",
+   "score": 2,
+   "why": "One Japanese press release (23 Oct), no analysis post, no actors entry and no page; the brief's 'cited most' does not hold on our evidence. Left out unless an English research post is captured first."
+  },
+  {
+   "name": "NCSC-NL, CISA, Huntress",
+   "score": 3,
+   "why": "Chosen (ranks 7, 8, 1)."
+  }
+ ],
+ "for_the_editor": [
+  "Is the BBC's page the 'BBC file' at /outlets/bbc/ (a template for every outlet) rather than /outreach/bbc/? And does point 3 (R-002) go now with a note that Wiz has been asked too, or wait for R-001?",
+  "Trend Micro: leave it out (one Japanese release), or ask us to capture an English post first and substitute it?",
+  "With the BBC as a corrections case, American Banker is the only news check-ask in the ten (Die Presse is first reserve); the other news outlets have a correction open. Is that enough news, or swap Die Presse back for a vendor?",
+  "One message to the PHP security team (with Zelenka and Daubois linked) instead of the PHP Foundation: agreed?",
+  "Order: complete-page vendors first (ranks 1 to 5), then those needing clean hands (6 to 10). Send the first five as soon as phase 2 passes, or all ten together?"
+ ],
+ "to_project_002": [
+  {
+   "item": "R-004 evidence in data outreach.json says 'CISA had not observed exploitation' with no date; superseded by the 26 Oct KEV listing.",
+   "where": "files/outreach.json R-004 evidence"
+  },
+  {
+   "item": "R-006 evidence says 'neither CVE is in CISA's catalogue ... as of this site's latest check': undated and now false.",
+   "where": "files/outreach.json R-006 evidence"
+  },
+  {
+   "item": "NCSC-NL inventory count: we say 674 rows, 3 not vulnerable; the file has 675, 4 (fact-check scale-ncsc-nl, contradicted).",
+   "where": "agencies and rijksoverheid pages"
+  },
+  {
+   "item": "Agencies page line 23 still leads with the old CISA statement as confirmed/A6; the superseded status should lead.",
+   "where": "refs agencies page, lines 23 and 27"
+  },
+  {
+   "item": "R-002 depends on a 22 Oct capture of the BBC page; recapture before sending, 'roughly 70%' may have changed. R-004 and R-007 have actor null.",
+   "where": "files/outreach.json R-002, R-004, R-007"
+  },
+  {
+   "item": "44 sources that belong to actors are not in actors.json; Trend Micro has no alias or actor.",
+   "where": "actors.json"
+  }
+ ],
+ "injection_seen": []
+}

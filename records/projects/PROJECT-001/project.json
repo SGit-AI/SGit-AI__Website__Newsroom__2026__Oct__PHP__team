@@ -3,7 +3,7 @@
  "title": "Telling them what we hold about them, and asking them to check it",
  "brief": "records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
  "lead": "sherpa",
- "state": "running",
+ "state": "waiting",
  "opened": "2026-10-27T10:53Z",
  "closed": null,
  "phases": [
@@ -24,7 +24,12 @@
       "refs /actors/"
      ],
      "produces": "phase-1/actors-audit.json, phase-1/actors-audit.md",
-     "model": "sonnet"
+     "model": "sonnet",
+     "started": "2026-10-27T12:19:35Z",
+     "ended": "2026-10-27T12:25:17Z",
+     "tokens": 147720,
+     "tool_calls": 23,
+     "checked": true
     },
     {
      "id": "1b",
@@ -36,7 +41,12 @@
       "data sources.json"
      ],
      "produces": "phase-1/candidates.json",
-     "model": "sonnet"
+     "model": "sonnet",
+     "started": "2026-10-27T12:19:35Z",
+     "ended": "2026-10-27T12:25:52Z",
+     "tokens": 163888,
+     "tool_calls": 20,
+     "checked": true
     },
     {
      "id": "1c",
@@ -47,8 +57,21 @@
       "1b"
      ],
      "produces": "phase-1/the-ten.json, phase-1/the-ten.md",
-     "model": "sonnet"
+     "model": "sonnet",
+     "started": "2026-10-27T12:26:50Z",
+     "ended": "2026-10-27T12:29:15Z",
+     "tokens": 96418,
+     "tool_calls": 11,
+     "checked": true
     }
+   ],
+   "ended": "2026-10-27T12:30Z",
+   "outputs": [
+    "phase-1/actors-audit.json",
+    "phase-1/actors-audit.md",
+    "phase-1/candidates.json",
+    "phase-1/the-ten.json",
+    "phase-1/the-ten.md"
    ]
   },
   {
@@ -70,11 +93,15 @@
    "passed": null
   }
  ],
- "next": "Phase 1 is running in the projects desk: 1a (ontologist) and 1b (Sherpa) side by side, then 1c (Sherpa) proposes the ten; the desk checks each, releases, and stops at checkpoint A.",
+ "next": "Waiting at checkpoint A for the editor. When passed: phase 2 (Prepare) in the desk: ontologist completes the ten actors pages at their source, journalist re-grades after 26 October, correspondent and story-site the recipient pages, Sherpa and desk the messages; the BBC's clean hands (fresh capture, complaints page) first.",
  "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps",
  "checkpoint": {
   "at": "A: the ten names",
-  "waits_for": "the editor, on the project's page or in the projects desk's session: approve, drop or change names",
+  "since": "2026-10-27T12:30Z",
+  "waits_for": "the editor: approve, drop or change the ten (phase-1/the-ten.md) and answer its five questions, on the project's page or in the projects desk's session",
   "passed": null
- }
+ },
+ "feedback": [
+  "feedback/2026-10-27T1228Z__editor__bbc-corrections-briefing.md (pointer; the briefing is in PROJECT-002's feedback)"
+ ]
 }

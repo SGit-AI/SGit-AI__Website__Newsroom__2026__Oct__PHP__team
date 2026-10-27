@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1217Z-projects",
+ "agent": "projects",
+ "started": "2026-10-27T12:17:00Z",
+ "finished": "2026-10-27T12:30:25Z",
+ "outcome": "ok",
+ "summary": "Onboarded as projects@php.newsroom (session key sha256:db7c00f5a94f1559, sgit-ai 0.26.0; register records/registers/projects.json; evidence vault read key asked for, not received; data and site attached at the editor's word, refs read only). PROJECT-001 phase 1 run end to end: 1a ontologist (actors audit) and 1b Sherpa (55 candidates) side by side, then 1c Sherpa (the ten), each Sonnet, each checked before the next. Releases in team: af2884c (plan), 23d049e (1a, 1b), and this one (1c, checkpoint A, report records/briefs/2026-10-27__report__project-001-phase-1-the-ten.md). The editor's BBC corrections briefing filed in PROJECT-002 feedback with a pointer in PROJECT-001. Waiting at checkpoint A for the editor: the ten and five questions. Nothing sent outside the newsroom; no vault written; no key printed.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Opus (coordinator), Sonnet (3 steps)",
+ "cost_usd": null,
+ "head": "23d049ee58c5b569f379764826d83a0cd457ac06"
+}
