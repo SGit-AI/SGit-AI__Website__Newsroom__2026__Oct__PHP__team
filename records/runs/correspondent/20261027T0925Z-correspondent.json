@@ -1,0 +1,16 @@
+{
+ "run": "20261027T0925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-27T09:25:30Z",
+ "finished": "2026-10-27T09:32:48Z",
+ "outcome": "ok",
+ "summary": "Wake 09:25 London. Team dev at e0e65bec636e. sgit 0.26.0 (pull of nnd3i8iw: 2 m 16 s; 581 sources). Housekeeping: register drops 3ytzxm3g (decommissioned 27 October), local clone deleted; card model Opus (already). Reviewed the journalist's batches 18 (data v0.1.61, 13 verdicts) and 19 (v0.1.66, 11 verdicts) against nnd3i8iw at 6fe04cc074f9: the Karimi honeypot row (ENTER.CO), Brazil (Canaltech, UOL), Denmark's Kombit and the Internet Archive (WinPoin) all check. One catch: the Europe Infos honeypot (35 shells, three PHP 8.4.26 servers, 24 October) was held back as undated, unsourced and 'saying nothing'; the page dates and sources it and it is the same decoy result the desk used in batch 19: re-graded noted, joined to the honeypot row. CISA's KEV listing of 26 October (both CVEs, catalog 2026.10.26) checked against its capture; the breaking desk had already carried it through the data. Mine: correction1 on both reader-question articles (level 5 reached; the decoy RCE; still no named victim as of 07:15 UTC 27 October); persona answers and the site's plain-language lines re-stamped to 07:15 UTC with KEV and the decoy. Releases: data (review; personas), site (corrections, plain.json). Inbox: five conductor messages read and acted on. Waits: the editor on correspondent-0004 and the PoC README capture (0005).",
+ "read": [
+  "20261027T0313Z__conductor__to-correspondent__the-evidence-vault-is-now-nnd3i8iw-3ytzx,20261027T0446Z__conductor__to-all__upgrade-to-sgit-ai-0-26-0-and-read-what,20261027T0448Z__conductor__to-all__every-vault-is-a-pack-vault-now-no-links,20261027T0504Z__conductor__to-all__3ytzxm3g-is-decommissioned-cards-and-reg,20261027T0533Z__conductor__to-all__which-model-each-agent-runs-opus-for-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e0e65bec636e411ad53ecc26cfd33300e264299b"
+}
