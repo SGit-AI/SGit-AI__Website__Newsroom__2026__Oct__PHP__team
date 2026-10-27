@@ -1,0 +1,731 @@
+{
+ "_note": "SAMPLE for the design prototype, derived by the designer from the data repository at 0.1.81; the ontologist's phase-2/outlets/bbc.json is the real file. Points 1-3 are proposals, not requests in outreach.json.",
+ "outlet": {
+  "id": "bbc",
+  "name": "BBC News",
+  "kind": "news",
+  "actor": "bbc",
+  "channel": {
+   "name": "BBC Audience Services (Stage 1a complaints route)",
+   "kind": "to capture",
+   "url": null,
+   "captured": null
+  }
+ },
+ "as_of": "2026-10-27T13:00:00Z",
+ "data_version": "0.1.81",
+ "summary": {
+  "sources": 1,
+  "captures": 4,
+  "claims": 12,
+  "by_verdict": {
+   "refuted": 1,
+   "holds-in-part": 7,
+   "not-shown": 1,
+   "holds": 3
+  },
+  "requests": {
+   "proposed": 1,
+   "held": 2,
+   "drafted": 1
+  },
+  "latest_capture": "2026-10-22T08:05:59Z"
+ },
+ "points": [
+  {
+   "n": 1,
+   "request_id": "R-013",
+   "status": "proposed",
+   "their_words": {
+    "text": null,
+    "source": "bbc-live-ckgel5xp2xv9t",
+    "capture": "20261022T080559Z",
+    "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+   },
+   "primary": {
+    "text": "GitHub advisory published 13:34 UTC, release 14:06 UTC; php.net dates it 21 Oct 2026",
+    "source": "php-net-advisory",
+    "capture": "20261022T080901Z"
+   },
+   "suggested": "If the page gives a date, say the fixes were released on 21 October (UTC).",
+   "verdict": "refuted",
+   "held_reason": "The fact-check finds that our captures of the live page state no disclosure date. We locate the exact sentence before we ask anything; if it is not there this point becomes a note on our own wording."
+  },
+  {
+   "n": 2,
+   "request_id": "R-014",
+   "status": "blocked",
+   "their_words": {
+    "text": "Where immediate remediation is not feasible, organisations should consider taking the system offline",
+    "source": "bbc-live-ckgel5xp2xv9t",
+    "capture": "20261022T080559Z",
+    "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+   },
+   "primary": {
+    "text": "NCSC page (modified 07:30:02 GMT, 22 Oct) gives the offline advice in other words, as step 4 of 6",
+    "source": "ncsc-news-php",
+    "capture": "20261022T080903Z"
+   },
+   "suggested": null,
+   "verdict": "holds-in-part",
+   "held_reason": "The same sentence appears in LBC at 15:41 on 21 Oct, before the NCSC page changed, so the BBC may be quoting an earlier NCSC text or a shared one. We ask a question about the source, not for a correction."
+  },
+  {
+   "n": 3,
+   "request_id": "R-015",
+   "status": "blocked",
+   "their_words": {
+    "text": "the NCSC, as well as its counterparts in the EU and Australia, urged users to apply the fixes",
+    "source": "bbc-live-ckgel5xp2xv9t",
+    "capture": "20261022T080559Z",
+    "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+   },
+   "primary": {
+    "text": "NCSC and NSA advise offline after mitigations; CERT-EU and CERT-FR advise isolation; ACSC gives no offline advice",
+    "source": "acsc-alert-php",
+    "capture": "20261022T081658Z"
+   },
+   "suggested": null,
+   "verdict": "holds-in-part",
+   "held_reason": "Our own claim words this more strongly than the BBC page does. We fix our wording first; the point may move to 'not asked'."
+  },
+  {
+   "n": 4,
+   "request_id": "R-002",
+   "status": "drafted",
+   "their_words": {
+    "text": "with cyber-security firm Wiz estimating that \"roughly 70%\" of the internet is affected, though the BBC is unable to independently verify that figure.",
+    "source": "bbc-live-ckgel5xp2xv9t",
+    "capture": "20261022T080559Z",
+    "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+   },
+   "primary": {
+    "text": "Wiz's headline and X post say '70% of the Internet'; the body says '70% of all websites in the world'",
+    "source": "wiz-blog-php2shell",
+    "capture": "20261023T160435Z"
+   },
+   "suggested": "with cyber-security firm Wiz saying the flaws affect \"70% of the Internet\", a figure that matches surveys of how many websites use PHP rather than a count of vulnerable systems, and that the BBC has been unable to independently verify.",
+   "verdict": "not-shown",
+   "held_reason": "Wiz (R-001) is asked first; the submission notes that Wiz has been asked too."
+  }
+ ],
+ "ledger": [
+  {
+   "claim_id": "disclosure-22oct",
+   "text": "The flaws were disclosed on 22 October 2026",
+   "attributed_to": "BBC framing (UK morning coverage)",
+   "status": "contradicted",
+   "factcheck": {
+    "verdict": "refuted",
+    "as_of": "20261022T081658Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t",
+    "php-net-advisory",
+    "github-php-src-tag-php-8.5.12"
+   ]
+  },
+  {
+   "claim_id": "offline-ncsc",
+   "text": "'Where immediate remediation is not feasible, organisations should consider taking the system offline until it can be fully mitigated'",
+   "attributed_to": "UK NCSC, as quoted by the BBC",
+   "status": "disputed",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "as_of": "20261022T112915Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t",
+    "ncsc-news-php",
+    "cccs-al26-026"
+   ]
+  },
+  {
+   "claim_id": "offline-allies",
+   "text": "The UK's NCSC, the NSA and their counterparts in the EU and Australia advise taking systems offline where patching is not feasible",
+   "attributed_to": "BBC",
+   "status": "contradicted",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "as_of": "20261022T084815Z",
+    "status_fit": "understated"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t",
+    "acsc-alert-php",
+    "certeu-sa-2026-018",
+    "ncsc-nl-php2shell",
+    "acn-it-php2shell",
+    "jpcert-at260033"
+   ]
+  },
+  {
+   "claim_id": "scale-70pc-internet",
+   "text": "70% of the Internet is affected",
+   "attributed_to": "Wiz (headline, X post); the BBC, which reports it as Wiz's 'roughly 70%'",
+   "status": "unverified",
+   "factcheck": {
+    "verdict": "not-shown",
+    "as_of": "20261022T081624Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "wiz-blog-php2shell",
+    "x-wiz-io-php2shell",
+    "bbc-live-ckgel5xp2xv9t"
+   ]
+  },
+  {
+   "claim_id": "vibe-code",
+   "text": "Criminals are using AI to 'vibe code' an attack method",
+   "attributed_to": "unnamed researchers, via the BBC",
+   "status": "unverified",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "as_of": "20261022T080854Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t"
+   ]
+  },
+  {
+   "claim_id": "no-exploitation",
+   "text": "There is no evidence yet that hackers have exploited the flaw",
+   "attributed_to": "Ryan Austin, Calif, on Radio 4, 08:00 BST 22 October",
+   "status": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "as_of": "20261022T080559Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t"
+   ]
+  },
+  {
+   "claim_id": "scale-30m",
+   "text": "Something like 30 million websites could be affected",
+   "attributed_to": "Alan Woodward, via the BBC",
+   "status": "reported",
+   "factcheck": {
+    "verdict": "holds",
+    "as_of": "20261022T080559Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t"
+   ]
+  },
+  {
+   "claim_id": "ai-found",
+   "text": "The flaws were found by researchers using frontier AI under OpenAI's Patch the Planet initiative",
+   "attributed_to": "BBC; OpenAI; Calif; Wiz",
+   "status": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "as_of": "20261022T081645Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t",
+    "x-openai-php2shell",
+    "calif-php2shell",
+    "wiz-blog-php2shell"
+   ]
+  },
+  {
+   "claim_id": "most-severe",
+   "text": "The most severe flaws ever detected by AI",
+   "attributed_to": "BBC attributing Wiz",
+   "status": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "as_of": "20261022T113134Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t",
+    "wiz-blog-php2shell"
+   ]
+  },
+  {
+   "claim_id": "leak-video",
+   "text": "Calif mistakenly published a video around 20:00 UTC on 20 October showing its proof of concept against a number of targets; copies circulated and 'contributed to accelerated development of various PoCs'",
+   "attributed_to": "PHP Foundation",
+   "status": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "as_of": "20261022T113204Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "php-foundation-blog-security-release",
+    "phpfoundation-blog-security-release-leak",
+    "bbc-live-ckgel5xp2xv9t",
+    "calif-php2shell"
+   ]
+  },
+  {
+   "claim_id": "affected-sites",
+   "text": "Parts of Wikipedia, Edinburgh council, French government sites, the University of Geneva, online shops and the BBC were affected or taken offline",
+   "attributed_to": "BBC",
+   "status": "reported",
+   "factcheck": {
+    "verdict": "holds",
+    "as_of": "20261022T080559Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t"
+   ]
+  },
+  {
+   "claim_id": "probing",
+   "text": "Amazon and Cloudflare saw sites being probed for the flaw",
+   "attributed_to": "Alan Woodward, via the BBC; confirmed by both companies' own posts",
+   "status": "confirmed",
+   "factcheck": {
+    "verdict": "holds",
+    "as_of": "20261022T111755Z",
+    "status_fit": "ok"
+   },
+   "sources": [
+    "bbc-live-ckgel5xp2xv9t",
+    "cloudflare-blog-php2shell-waf",
+    "aws-security-blog-madpot"
+   ]
+  }
+ ],
+ "captures": [
+  {
+   "source": "bbc-live-ckgel5xp2xv9t",
+   "stamp": "20261022T0755Z",
+   "kind": "raw curl",
+   "complete": true,
+   "files": {
+    "initial-data.json": "ee7445a58187bcd67df827007a8100941993a24dc3e7eea7e8a45f723a9e3305",
+    "page.2026-10-22T0755Z.html": "fe32274b64ee109a7e37fc4c26e37e793dc22481a6122888782c393e01102488"
+   }
+  },
+  {
+   "source": "bbc-live-ckgel5xp2xv9t",
+   "stamp": "20261022T080453Z",
+   "kind": "browser",
+   "complete": false,
+   "files": {
+    "headers.json": "6f92f9cc2df7e178c6a5480cde0a0d07eaa057374c17573ed0539cd2ec5e4f76",
+    "page.html": "dc9a4c45bac2ffecb6c3904ab17c14f29288f0928f0247acd449f62d0b715981",
+    "provenance.json": "de7ccc50e0cd85c96d0c814a87e22d61df580452ccc7cc08bec00fe2acb36000",
+    "rendered.html": "e9ae7f01673df9b32a99007f255c2106bc6f4179841891af83732ce54cac1bde",
+    "screenshot.png": "a466ce380b452e0a851e07db1d769f1ccb1b41391a8bf001b5febe1a6b0a8352",
+    "text.txt": "df1dbe6b553a8c004f6d950a1d606138f2795062d3225feaa37043d24343bc99"
+   }
+  },
+  {
+   "source": "bbc-live-ckgel5xp2xv9t",
+   "stamp": "20261022T080526Z",
+   "kind": "browser",
+   "complete": false,
+   "files": {
+    "headers.json": "d63c60c458f9e0144dfc1ec7336b7e7eb13ac35383008623841bf01030b99175",
+    "page.html": "dc9a4c45bac2ffecb6c3904ab17c14f29288f0928f0247acd449f62d0b715981",
+    "provenance.json": "b0b6c73c98d7b9af8e3cea8a007eb2212d89e38f80d8fdcb1c99b32cac545a18",
+    "rendered.html": "b42a90b0ed17266eac83cb8bc81fc6e2321285b3b3dd01c15aed55411ec51255",
+    "screenshot.png": "65eb8a2dd5d93f8ef2399b62dd91d4bae200c41997a77ccae9b9388d33c505bf",
+    "text.txt": "9ae96265aa96cff67f4da71f5ed410376023b17283d83b617eab7e98d2602738"
+   }
+  },
+  {
+   "source": "bbc-live-ckgel5xp2xv9t",
+   "stamp": "20261022T080559Z",
+   "kind": "browser",
+   "complete": true,
+   "files": {
+    "headers.json": "adef455045234df0fcb6936e0b86ce89d83c6b68719892c1e08bc498d0704517",
+    "page.html": "50bc0fc20681b834b1a40742cf921b27ceb5356d5ab38b417c7e53513016eefd",
+    "provenance.json": "b62c78eb8ac92bd2d3d7bbd6749e8f0c24519b5d2edac76d107af558eaf78d2f",
+    "rendered.html": "8ae9c4bca9c7ff8b5037ffa58536c2b75c45efdee1f851d583a80ac5cd05ff5c",
+    "screenshot.png": "f3cf0359a5f9aec2edf5dfa6cd060f55f94aa3c64b90f7e260edec02180a434c",
+    "text.txt": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "t": "2026-10-21T13:34:25Z",
+   "lane": "world",
+   "what": "GitHub advisory published",
+   "source": "github-ghsa-w8hw-w9fx-j79w"
+  },
+  {
+   "t": "2026-10-21T14:06:46Z",
+   "lane": "world",
+   "what": "PHP fixes released on GitHub (php.net: 21 Oct)",
+   "source": "php-net-advisory"
+  },
+  {
+   "t": "2026-10-21T15:41:00Z",
+   "lane": "world",
+   "what": "LBC article carries the NCSC offline sentence",
+   "source": null
+  },
+  {
+   "t": "2026-10-22T06:16:24Z",
+   "lane": "bbc",
+   "what": "Live page first published",
+   "source": "bbc-live-ckgel5xp2xv9t"
+  },
+  {
+   "t": "2026-10-22T07:00:00Z",
+   "lane": "bbc",
+   "what": "Radio 4 interview (not held as a source of its own)",
+   "source": null
+  },
+  {
+   "t": "2026-10-22T07:30:02Z",
+   "lane": "world",
+   "what": "NCSC page last modified",
+   "source": "ncsc-news-php"
+  },
+  {
+   "t": "2026-10-22T07:55:00Z",
+   "lane": "us",
+   "what": "Raw capture: 12 entries",
+   "source": "bbc-live-ckgel5xp2xv9t"
+  },
+  {
+   "t": "2026-10-22T08:05:59Z",
+   "lane": "us",
+   "what": "Last complete capture",
+   "source": "bbc-live-ckgel5xp2xv9t"
+  }
+ ],
+ "graph": {
+  "nodes": [
+   {
+    "id": "claim:affected-sites",
+    "kind": "claim",
+    "label": "Parts of Wikipedia, Edinburgh council, French government sites, the University of Geneva, online shops and the BBC were affected or taken offline"
+   },
+   {
+    "id": "claim:disclosure-22oct",
+    "kind": "claim",
+    "label": "The flaws were disclosed on 22 October 2026"
+   },
+   {
+    "id": "claim:most-severe",
+    "kind": "claim",
+    "label": "The most severe flaws ever detected by AI"
+   },
+   {
+    "id": "claim:no-exploitation",
+    "kind": "claim",
+    "label": "There is no evidence yet that hackers have exploited the flaw"
+   },
+   {
+    "id": "claim:offline-allies",
+    "kind": "claim",
+    "label": "The UK's NCSC, the NSA and their counterparts in the EU and Australia advise taking systems offline where patching is not feasible"
+   },
+   {
+    "id": "claim:offline-ncsc",
+    "kind": "claim",
+    "label": "'Where immediate remediation is not feasible, organisations should consider taking the system offline until it can be fully mitigated'"
+   },
+   {
+    "id": "claim:probing",
+    "kind": "claim",
+    "label": "Amazon and Cloudflare saw sites being probed for the flaw"
+   },
+   {
+    "id": "claim:scale-30m",
+    "kind": "claim",
+    "label": "Something like 30 million websites could be affected"
+   },
+   {
+    "id": "claim:scale-70pc-internet",
+    "kind": "claim",
+    "label": "70% of the Internet is affected"
+   },
+   {
+    "id": "claim:vibe-code",
+    "kind": "claim",
+    "label": "Criminals are using AI to 'vibe code' an attack method"
+   },
+   {
+    "id": "number:n-30m",
+    "kind": "number",
+    "label": "about 30 million websites"
+   },
+   {
+    "id": "party:bbc",
+    "kind": "party",
+    "label": "BBC News"
+   },
+   {
+    "id": "signal:099e7c2368",
+    "kind": "signal",
+    "label": "Ryan Austin, Calif, on BBC Radio 4: No evidence of exploitation yet: 'Not at the moment'."
+   },
+   {
+    "id": "signal:aefb0973bb",
+    "kind": "signal",
+    "label": "unnamed researchers, on the BBC: Criminals are using AI to 'vibe code' an attack method."
+   },
+   {
+    "id": "signal:fbd72526c5",
+    "kind": "signal",
+    "label": "Alan Woodward, on the BBC: Amazon and Cloudflare saw sites being probed for the flaw."
+   },
+   {
+    "id": "source:bbc-live-ckgel5xp2xv9t",
+    "kind": "source",
+    "label": "BBC News: PHP: Global scramble to fix critical cyber-security flaws as many websites taken offline - follow live"
+   }
+  ],
+  "edges": [
+   {
+    "from": "source:bbc-live-ckgel5xp2xv9t",
+    "verb": "published_by",
+    "to": "party:bbc",
+    "basis": null
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "claim:scale-70pc-internet",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "claim:scale-30m",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "claim:most-severe",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "states",
+    "to": "claim:disclosure-22oct",
+    "basis": null
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "claim:no-exploitation",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "claim:probing",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "claim:vibe-code",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "claim:offline-ncsc",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "states",
+    "to": "claim:offline-allies",
+    "basis": null
+   },
+   {
+    "from": "party:bbc",
+    "verb": "states",
+    "to": "claim:affected-sites",
+    "basis": null
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "number:n-30m",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "signal:099e7c2368",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "signal:fbd72526c5",
+    "basis": "attribution"
+   },
+   {
+    "from": "party:bbc",
+    "verb": "relays",
+    "to": "signal:aefb0973bb",
+    "basis": "attribution"
+   }
+  ]
+ },
+ "echo": [
+  {
+   "source": "ilsole24ore-art-php2shell-quando-vulnerabilita-softw",
+   "publisher": "Il Sole 24 Ore",
+   "lang": "it",
+   "published": "2026-10-22T10:14",
+   "claims": [
+    "affected-sites"
+   ]
+  },
+  {
+   "source": "cairo24-2516354",
+   "publisher": "القاهرة 24",
+   "lang": "ar-eg",
+   "published": "2026-10-22T17:15",
+   "claims": [
+    "scale-70pc-internet"
+   ]
+  },
+  {
+   "source": "itweb-article-php2shell-alarm-a-major-cyber-se",
+   "publisher": "ITWeb",
+   "lang": "en-ZA",
+   "published": "2026-10-23T13:27",
+   "claims": []
+  },
+  {
+   "source": "uzone-celah-php2shell-ancam-33-juta-situs-sera",
+   "publisher": "Uzone",
+   "lang": "id",
+   "published": "2026-10-23T17:00",
+   "claims": [
+    "affected-sites"
+   ]
+  },
+  {
+   "source": "lite-almasryalyoum-technolight-396865",
+   "publisher": "المصري لايت",
+   "lang": "ar",
+   "published": "2026-10-25T09:52",
+   "claims": []
+  },
+  {
+   "source": "startupper-ai-282619-antepithesi-220-ekat-liron-apo",
+   "publisher": "startupper",
+   "lang": "el",
+   "published": "2026-10-26T08:30",
+   "claims": [
+    "affected-sites"
+   ]
+  },
+  {
+   "source": "homodigital-luka-w-php-myslisz-nie-mam-strony-jestem",
+   "publisher": "HomoDigital",
+   "lang": "pl-PL",
+   "published": "2026-10-26T12:05",
+   "claims": []
+  },
+  {
+   "source": "sociedademilitar-2026-10-site-do-exercito-brasileiro-sai",
+   "publisher": "Revista Sociedade Militar",
+   "lang": "pt-BR",
+   "published": "2026-10-26T19:26",
+   "claims": [
+    "ai-found"
+   ]
+  },
+  {
+   "source": "mediaindonesia-teknologi-947268-celah-keamanan-php-dite",
+   "publisher": "Media Indonesia",
+   "lang": "id",
+   "published": null,
+   "claims": [
+    "offline-allies"
+   ]
+  },
+  {
+   "source": "vietnamnet-website-toan-cau-hung-chiu-hang-trieu-do",
+   "publisher": "Báo VietNamNet",
+   "lang": "vi",
+   "published": null,
+   "claims": [
+    "affected-sites"
+   ]
+  },
+  {
+   "source": "koran-jakarta-2026-10-22-upaya-global-perbaiki-celah-keamana",
+   "publisher": "Koran Jakarta ®",
+   "lang": "id",
+   "published": null,
+   "claims": []
+  }
+ ],
+ "not_asked": [
+  {
+   "claim_id": "scale-30m",
+   "reason": "Attributed to Alan Woodward, and the BBC says so: nothing to ask."
+  },
+  {
+   "claim_id": "vibe-code",
+   "reason": "Unverified but attributed to 'researchers'. We may ask who they are, as a question, not a correction."
+  },
+  {
+   "claim_id": "no-exploitation",
+   "reason": "True when said (Radio 4, 07:00 UTC, 22 Oct). Our own status was out of step with its fact-check; we fixed that first."
+  },
+  {
+   "claim_id": "ai-found",
+   "reason": "Carried by the BBC and by each research party in its own capture: nothing to ask."
+  },
+  {
+   "claim_id": "most-severe",
+   "reason": "Wording differs slightly from Wiz's blog; a quote-check comes first (possible later request)."
+  },
+  {
+   "claim_id": "leak-video",
+   "reason": "The PHP Foundation states it and the phrase is verbatim: nothing to ask."
+  },
+  {
+   "claim_id": "affected-sites",
+   "reason": "Carried by the BBC page: nothing to ask."
+  },
+  {
+   "claim_id": "probing",
+   "reason": "Confirmed by Amazon's and Cloudflare's own posts: nothing to ask."
+  }
+ ],
+ "changes": [
+  {
+   "t": "2026-10-22",
+   "what": "R-002 drafted from contradiction K-001"
+  },
+  {
+   "t": "2026-10-24",
+   "what": "Our own 'roughly' wording fixed; R-002 ready"
+  },
+  {
+   "t": "2026-10-27",
+   "what": "BBC file opened as the first outlet page (prototype)"
+  }
+ ],
+ "method": {
+  "hash": "sha256 of the file named",
+  "grading": "A0-A6 evidence scale; fact-check verdicts: holds, holds-in-part, not-shown, refuted",
+  "jq": [
+   "jq '.edges[] | select(.from==\"party:bbc\" or .to==\"party:bbc\")' graph.json",
+   "jq '.requests[] | select(.actor==\"bbc\")' outreach.json"
+  ]
+ }
+}

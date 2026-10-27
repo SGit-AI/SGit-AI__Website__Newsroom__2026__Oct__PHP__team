@@ -1,0 +1,21 @@
+{
+ "about": "Carried by hand from the editor's BBC corrections briefing (records/projects/PROJECT-002/feedback/2026-10-27T1228Z__editor__bbc-corrections-briefing.md, section 'Correction requests to open' and 'Not asking'). Not graded by the ontologist: the journalist is re-grading the points in parallel. Nothing here is sent.",
+ "request_n": {"R-002": 4},
+ "points": [
+  {"n": 1, "label": "R-013 (new)", "status": "proposed", "claim_id": "disclosure-22oct", "held_reason": null,
+   "suggested": "Say the fixes were released on 21 October.",
+   "depends_on": []},
+  {"n": 2, "label": "R-014 (new)", "status": "held", "claim_id": "offline-ncsc",
+   "held_reason": "Hold until the quote's origin is settled. The NCSC page was modified at 07:30:02 GMT on 22 Oct, after the BBC page opened; the opening words match Canada's CCCS alert AL26-026 and the wording is shared across Five Eyes and CERT-EU texts. Find an earlier NCSC capture (Wayback, CDN cache, NCSC change log) before calling it a misquote; if shared text, the request becomes a question about attribution, not a correction.",
+   "suggested": "Use the NCSC's actual wording, or attribute the line to its real source.",
+   "depends_on": ["fresh NCSC capture"]},
+  {"n": 3, "label": "R-015 (new)", "status": "proposed", "claim_id": "offline-allies", "held_reason": null,
+   "suggested": "Say agencies urge patching now, and some advise isolating or taking systems offline.",
+   "depends_on": []}
+ ],
+ "not_asked": [
+  {"claim_id": "scale-30m", "reason": "Woodward's estimate, attributed to him, so the attribution is correct even though no basis is given."},
+  {"claim_id": "vibe-code", "reason": "Unverified, but attributed to researchers. Log it as a question to ask the BBC (who the researchers are), not as a correction."},
+  {"claim_id": "no-exploitation", "reason": "True when said (07:00 UTC on 22 Oct). Fix our own status mismatch first: the claim showed 'reported' while its fact-check said 'disputed'."}
+ ]
+}

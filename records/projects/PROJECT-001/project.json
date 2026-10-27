@@ -201,5 +201,15 @@
   "ncsc-nl",
   "cisa",
   "americanbanker"
- ]
+ ],
+ "acting_as": {
+  "rule": "the editor, 27 October 15:30 UTC: the projects desk is a meta-agent and acts as every member; each step is a Sonnet subagent sharing the desk's file system (never a new session); every act as a member leaves a note in that member's vault (a commit), a message in team and a To- trailer, so its next scheduled wake has no surprises",
+  "feedback": "feedback/2026-10-27T1530Z__editor__the-desk-acts-as-every-member.md"
+ },
+ "article": {
+  "what": "one article for the whole end-to-end flow of PROJECT-001: every member the desk acted as, every step, every catch",
+  "when": "at the project's close",
+  "where": "site content/articles/",
+  "by": "journalist and correspondent, run by the desk"
+ }
 }

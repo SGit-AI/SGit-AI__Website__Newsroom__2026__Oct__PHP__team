@@ -1,0 +1,683 @@
+{
+ "step": "2b",
+ "member": "journalist",
+ "by": "projects@php.newsroom (subagent)",
+ "data_commit": "d64be95",
+ "as_of": "2026-10-27T15:20Z",
+ "claims": [
+  {
+   "id": "scale-70pc-internet",
+   "status_now": "unverified",
+   "factcheck": {
+    "verdict": "not-shown",
+    "level": 1,
+    "tension": "measures-differently (K-001)",
+    "status_fit": "ok",
+    "as_of": "20261022T081624Z"
+   },
+   "regrade": "stands",
+   "new_wording": null,
+   "mismatch": null,
+   "reason": "No capture measures a share of 'the Internet'; Wiz's headline and X post say 70% of the Internet, its body says 70% of all websites. The BBC's own caveat ('unable to independently verify that figure') is right.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  },
+  {
+   "id": "scale-30m",
+   "status_now": "reported",
+   "factcheck": {
+    "verdict": "holds",
+    "level": 2,
+    "tension": "none",
+    "status_fit": "ok",
+    "as_of": "20261022T080559Z"
+   },
+   "regrade": "stands",
+   "new_wording": null,
+   "mismatch": null,
+   "reason": "Woodward's 'something like 30 million websites' is in the BBC capture and attributed to him. Not a point.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  },
+  {
+   "id": "ai-found",
+   "status_now": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "level": 3,
+    "tension": "measures-differently",
+    "status_fit": "ok",
+    "as_of": "20261022T081645Z"
+   },
+   "regrade": "stands",
+   "new_wording": "Optional: 'AI was used in the discovery, per Calif, Wiz and OpenAI; only Calif is shown to have worked under Patch the Planet.'",
+   "mismatch": null,
+   "reason": "The BBC capture says only 'found by researchers at the security firms Calif and Wiz'; the Patch the Planet reading is ours (capped at A3). Not a BBC error.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  },
+  {
+   "id": "most-severe",
+   "status_now": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "level": 2,
+    "tension": "measures-differently",
+    "status_fit": "ok",
+    "as_of": "20261022T113134Z"
+   },
+   "regrade": "changed (note only)",
+   "new_wording": "Keep the claim; extend the note: 'Wiz's blog says \"among the most severe vulnerabilities discovered in PHP, and arguably in software history\"; a Substack piece relaying the Wall Street Journal quotes Wiz's co-founder as saying \"the most severe AI vulnerability that was ever found\", so the BBC line probably traces to an interview, not the blog.'",
+   "mismatch": null,
+   "reason": "The BBC capture carries the line in quotation marks as Wiz's. Our note sets only the blog against it, which reads as if the BBC overstated; the second-hand WSJ route (not captured at source) says otherwise. Not a point.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    },
+    {
+     "source": "substack-lopezkurtz-patch-is-the-exploit",
+     "capture": "20261022T113134Z",
+     "file": "text.txt",
+     "sha256": "cb3714dc12f96c969959784164a40f12aa923b46cf56df83aa950a9ea2573330"
+    },
+    {
+     "source": "wiz-blog-php2shell",
+     "capture": "20261022T081047Z",
+     "file": "text.txt",
+     "sha256": "e3568b6f88c93f6bb08eebe3c8811f9fd283212f7331b287d5170b91d6bad1ea"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "medium"
+  },
+  {
+   "id": "leak-video",
+   "status_now": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "level": 3,
+    "tension": "none",
+    "status_fit": "ok",
+    "as_of": "20261022T113204Z"
+   },
+   "regrade": "changed (new wording)",
+   "new_wording": "'Calif mistakenly published a video on 20 October, after the CVE IDs leaked and the release was pre-announced; copies circulated and \"contributed to accelerated development of various PoCs\" (PHP Foundation).' Drop 'around 20:00 UTC' from the claim or give it as the Foundation's, whose sentence can attach the time to the pre-announcement (put at 19:30 UTC).",
+   "mismatch": null,
+   "reason": "The BBC capture says only that Calif 'mistakenly published a video'; the time is the Foundation's and is uncertain. The wording problem is ours. Not a point.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    },
+    {
+     "source": "php-foundation-blog-security-release",
+     "capture": "20261022T080901Z",
+     "file": "text.txt",
+     "sha256": "a1be057adc1c5bfabad6a59007bd08960168346230f03967fba68f2402ab3f04"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  },
+  {
+   "id": "disclosure-22oct",
+   "status_now": "contradicted",
+   "factcheck": {
+    "verdict": "refuted",
+    "level": 0,
+    "tension": "measures-differently",
+    "status_fit": "ok",
+    "as_of": "20261022T081658Z"
+   },
+   "regrade": "changed (attribution); the BBC attribution is withdrawn",
+   "new_wording": "Keep the fact as contradicted if the site wants to record the 22 October framing at all, but remove the BBC as its author and source ('by' becomes: a framing in some coverage; the BBC does not say it). Or withdraw the claim.",
+   "mismatch": "Confirmed against the vault: no BBC capture or raw page says 'disclosed on 22 October' (the only '22 October' is a Getty photo caption). The claim, attribution.json (states: bbc), graph.json and fractal.json attribute it to the BBC.",
+   "reason": "As a fact, 21 October is settled (see point 1). That the BBC said 22 October is not shown by anything in the data files; the one BBC sentence searched ('Details of the discovery leaked online this week...') is absent. 22 October is right in Australian local time (ACSC: 0100 AEDT, 22 Oct = 14:00 UTC, 21 Oct) and was the original target date (PHP Foundation).",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    },
+    {
+     "source": "php-net-advisory",
+     "capture": "20261022T080901Z",
+     "file": "text.txt",
+     "sha256": "df0b1bba3deae2823b3f7c6200d5a4fafa1625c51cde86e50f650e0b0726b31e"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  },
+  {
+   "id": "no-exploitation",
+   "status_now": "reported",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "level": 2,
+    "tension": "disputed (K-002)",
+    "status_fit": "ok",
+    "as_of": "20261022T080559Z"
+   },
+   "regrade": "changed (new status and wording)",
+   "new_status": "disputed",
+   "new_wording": "'As of about 07:00 UTC on 22 October, Ryan Austin of Calif told BBC Radio 4: \"Not at the moment... it doesn't look like exploitation has taken off or been widespread.\"' Status disputed, note: true when said; since then Amazon's honeypot hits (17 Oct), NCSC NZ ('aware of reports of active exploitation', 21 Oct 20:15Z) and, on 26 Oct, CISA's KEV listing of both CVEs (no victim named) point the other way.",
+   "mismatch": "Claim status 'reported' vs fact-check tension 'disputed' (and verdict holds-in-part). The fact-check's own status_fit says 'ok', so no check catches it. Also the claim text is the BBC headline, not Austin's words.",
+   "reason": "The consistent pair is status disputed, fact-check disputed. The sentence was true when said and the BBC reported it accurately; what changed is the KEV listing of 26 Oct (CISA's rule: evidence of exploitation) while still no named victim. If the desk reads it in the present tense, the status is contradicted; the dated wording avoids that.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    },
+    {
+     "source": "aws-security-blog-madpot",
+     "capture": "20261022T111755Z",
+     "file": "text.txt",
+     "sha256": "94315ded6e1175f290a4a7cac71ba39dcf18ada7232367f66c34e1decfb08c7d"
+    },
+    {
+     "source": "ncsc-nz-alert-php",
+     "capture": "20261022T081700Z",
+     "file": "text.txt",
+     "sha256": "992fc3b6639069a9eb6618d9f6a71e994633960f0d6d4c77bd74bc797caa5301"
+    }
+   ],
+   "after_26_oct": "changed: the present-tense reading no longer holds",
+   "confidence": "high"
+  },
+  {
+   "id": "probing",
+   "status_now": "confirmed",
+   "factcheck": {
+    "verdict": "holds",
+    "level": 5,
+    "tension": "none",
+    "status_fit": "ok",
+    "as_of": "20261022T113204Z"
+   },
+   "regrade": "stands",
+   "new_wording": null,
+   "mismatch": "None in claims.json. Stale elsewhere: exploitation.json row 13 still says 'Amazon's own post not found' and cites thehackernews instead of aws-security-blog-madpot.",
+   "reason": "Woodward's remark is in the BBC capture; Amazon and Cloudflare each say it in their own posts. Worth keeping visible as a confirmed row on the BBC page.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  },
+  {
+   "id": "vibe-code",
+   "status_now": "unverified",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "level": 1,
+    "tension": "none",
+    "status_fit": "ok",
+    "as_of": "20261022T080854Z"
+   },
+   "regrade": "stands",
+   "new_wording": null,
+   "mismatch": null,
+   "reason": "The BBC carries 'Researchers say', unnamed. Log as a question to the BBC (who), not a correction. The nearest named source is watchTowr's Jake Knott via The Record: PoC tools 'vibecoded with the help of AI'.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  },
+  {
+   "id": "offline-ncsc",
+   "status_now": "disputed",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "level": 3,
+    "tension": "disputed",
+    "status_fit": "ok",
+    "as_of": "20261022T112915Z"
+   },
+   "regrade": "changed (note only)",
+   "new_wording": "Keep status disputed (or move to reported). Replace the note with: 'The sentence is not on the NCSC page as captured at 08:09Z on 22 Oct (offline advice is step 4 of 6 in other words; page last-modified 07:30:02 GMT). The BBC entry quoting it was published at 06:30Z and last edited 06:49Z, and LBC quoted the same sentence on 21 Oct (15:41), both before that change. An earlier NCSC wording is the likely source; an earlier NCSC copy would settle it.'",
+   "mismatch": null,
+   "reason": "Our note and agencies.json imply a BBC misquote and omit LBC's earlier use of the same sentence. Not a misquote on our evidence; see point 2.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    },
+    {
+     "source": "ncsc-news-php",
+     "capture": "20261022T080903Z",
+     "file": "text.txt",
+     "sha256": "a18ceeb011a3fe6f0311d92399618b5231abb0f57f3b94ffd7371cab6eccc339"
+    },
+    {
+     "source": "lbc-uk-websites-offline",
+     "capture": "20261022T112915Z",
+     "file": "text.txt",
+     "sha256": "125176f10b5494a60744d6f6d3c7918b76c38477c6c229b636fbeb00b3bed173"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "medium-high"
+  },
+  {
+   "id": "offline-allies",
+   "status_now": "contradicted",
+   "factcheck": {
+    "verdict": "holds-in-part",
+    "level": 1,
+    "tension": "none",
+    "status_fit": "understated",
+    "as_of": "20261022T084815Z"
+   },
+   "regrade": "changed (new wording; the BBC-attributed wording is withdrawn)",
+   "new_status": "confirmed (for the replacement)",
+   "new_wording": "Replace with what the BBC page says: 'The UK's NCSC, as well as its counterparts in the EU and Australia, urged those who use PHP to apply the fixes' (each agency capture carries it). Keep who advises taking systems offline as a separate agency claim from agencies.json, not attributed to the BBC.",
+   "mismatch": "Claim status 'contradicted' vs fact-check verdict holds-in-part with status_fit 'understated'; fact-check: 'The captured BBC page does not say this', and 'mislabels the BBC's statement'. attribution.json says the BBC 'states' it. Italy: sources.json notes and agencies.json say ACN is update only, but the capture (acn-it-php2shell text.txt line 70) says to consider taking sites offline: the notes and agencies.json are wrong, the fact-check was right.",
+   "reason": "The BBC attributes the offline quote to the NCSC alone and says the EU and Australian counterparts urged applying the fixes, which is true. NSA, NCSC (after mitigations), CERT-EU, CERT-FR, CCCS, CISA and others do advise offline or isolation; only Australia does not. The 'contradicted' label was ours, against a sentence the BBC did not write.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    },
+    {
+     "source": "acsc-alert-php",
+     "capture": "20261022T081658Z",
+     "file": "text.txt",
+     "sha256": "9370af142ded6de9a44fed4330585d677fde367d90d33ce355e9ebe6a75f7d56"
+    },
+    {
+     "source": "certeu-sa-2026-018",
+     "capture": "20261022T081329Z",
+     "file": "text.txt",
+     "sha256": "c65c95cf165d9ed7ec5d362642e92dd918c77fdfca1d4f88b303db6a3ab24ae3"
+    }
+   ],
+   "after_26_oct": "unchanged for the agencies; CISA's KEV listing is not advice",
+   "confidence": "high"
+  },
+  {
+   "id": "affected-sites",
+   "status_now": "reported",
+   "factcheck": {
+    "verdict": "holds",
+    "level": 2,
+    "tension": "none",
+    "status_fit": "ok",
+    "as_of": "20261022T080559Z"
+   },
+   "regrade": "stands",
+   "new_wording": "Cite the 07:55Z raw copy (page.2026-10-22T0755Z.html, sha256 fe32274b64ee109a7e37fc4c26e37e793dc22481a6122888782c393e01102488; initial-data.json ee7445a58187bcd67df827007a8100941993a24dc3e7eea7e8a45f723a9e3305) as well: Edinburgh council, online stores, the BBC and Geneva are only there, not in the 08:05Z text.",
+   "mismatch": null,
+   "reason": "Carried by the BBC; operator captures raise Wikipedia, French prefectures and Geneva, not 'online shops' (Edinburgh's own site was up at 08:19Z). Not asking.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "file": "text.txt",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    }
+   ],
+   "after_26_oct": "unchanged",
+   "confidence": "high"
+  }
+ ],
+ "points": [
+  {
+   "n": 1,
+   "title": "'Disclosed on 22 October' against fixes released 21 October",
+   "claim": "disclosure-22oct",
+   "bbc_words": "No such sentence. Searched all three BBC text.txt captures, extracted-text.md and the 07:55Z raw page: no 'disclosed on 22 October' and no date of release. What the BBC says: 'a plan to release the fix in late October'; 'a leak of the basic details... forcing the PHP Foundation to bring forward its announcement'; 'worked well' until 'two days ago'; the only '22 October' is a Getty photo caption ('The homepage of the PHP.net website is seen on October 22, 2026'). Checked against capture c88b8c5f... (text.txt lines 101-103, 129).",
+   "evidence": [
+    {
+     "source": "php-net-advisory",
+     "capture": "20261022T080901Z",
+     "sha256": "df0b1bba3deae2823b3f7c6200d5a4fafa1625c51cde86e50f650e0b0726b31e",
+     "quote": "It is scheduled for Wednesday, 21 October 2026 at 14:00 UTC.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "php-foundation-blog-security-release",
+     "capture": "20261022T080901Z",
+     "sha256": "a1be057adc1c5bfabad6a59007bd08960168346230f03967fba68f2402ab3f04",
+     "quote": "Published on Oct 21, 2026; release moved 'from October 22nd, 14:00 UTC, to October 21st, 14:00 UTC'",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "github-php-src-tag-php-8.5.12",
+     "capture": "20261022T081558Z",
+     "file": "rendered.html",
+     "sha256": "330630ed887249f612aa5637d43d010f74ecc0970060b8bed32da7957a2521aa",
+     "quote": "datetime=\"2026-10-21T14:06:46Z\"",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "github-ghsa-w8hw-w9fx-j79w",
+     "capture": "20261022T080901Z",
+     "file": "rendered.html",
+     "sha256": "79647ef8c491692c787e535f84364db88577ccdd26a84a066643ac2d8f0a1110",
+     "quote": "datetime=\"2026-10-21T13:34:25Z\"",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "wiz-blog-php2shell",
+     "capture": "20261022T081047Z",
+     "sha256": "e3568b6f88c93f6bb08eebe3c8811f9fd283212f7331b287d5170b91d6bad1ea",
+     "quote": "October 21, 2026: ... Public disclosure.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    }
+   ],
+   "counter_evidence": [
+    {
+     "source": "acsc-alert-php",
+     "capture": "20261022T081658Z",
+     "sha256": "9370af142ded6de9a44fed4330585d677fde367d90d33ce355e9ebe6a75f7d56",
+     "quote": "with full details publicly announced on Thursday 22 October 2026 at 0100 AEDT.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "x-wiz-io-php2shell",
+     "capture": "20261022T081624Z",
+     "sha256": "6c17977662815b0cb25a32e0987d1b1f95942156825b0cc616dc43a3f7f46809",
+     "quote": "Apply the Oct 22 security release immediately",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    }
+   ],
+   "verdict": "Not a BBC error: the BBC page does not say the flaws were disclosed on 22 October. Our own claim attributes a sentence to the BBC that it did not write. The 21 Oct release is established (GHSA 13:34:25Z, tag 13:35:38 UTC, GitHub release 14:06:46Z; the briefing's 'all 14:00 UTC' is the schedule), and the BBC is consistent with it (it reports a leak that forced the announcement forward).",
+   "goes": "no: drop R-013 as a BBC correction. Fix our claim instead (disclosure-22oct).",
+   "suggested_wording": "None to send. If the editor wants a friendly note on timing: 'The fixes were released on 21 October (php.net, the PHP Foundation and the GitHub release all carry that date); the entry might say so.'",
+   "still_stands_after_26_oct": "n/a (dropped); the date facts are unchanged",
+   "confidence": "high",
+   "quote_checked": "BBC side: checked against capture (absence confirmed). Our side: checked against captures."
+  },
+  {
+   "n": 2,
+   "title": "NCSC quote 'where immediate remediation is not feasible'",
+   "claim": "offline-ncsc",
+   "bbc_words": "\"Where immediate remediation is not feasible, organisations should consider taking the system offline until it can be fully mitigated,\" the NCSC said in a note [link to https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php]. Entry first published 2026-10-22T06:30:26Z (labelled 07:30 BST), last edited 06:49:45Z (raw/initial-data.json, entry 8 of 12, urn 22b1b27d-6558-4bb8-8efa-bc2f210465be; sha256 ee7445a58187bcd67df827007a8100941993a24dc3e7eea7e8a45f723a9e3305). Checked against capture c88b8c5f... (text.txt line 234). Beware: '07:30 BST' (BBC label) is 06:30Z; the NCSC page change is 07:30:02 GMT = 07:30Z.",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d",
+     "quote": "the BBC line above (text.txt line 234)",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "ncsc-news-php",
+     "capture": "20261022T080903Z",
+     "sha256": "a18ceeb011a3fe6f0311d92399618b5231abb0f57f3b94ffd7371cab6eccc339",
+     "quote": "If you are unable to apply the temporary mitigations, or applying them would take too long, you should consider taking the system offline until it can be fully mitigated. (step 4 of 6)",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "ncsc-news-php",
+     "capture": "20261022T080903Z",
+     "file": "headers.json",
+     "sha256": "642ad2462903a32f7050dae5e198654e710dadc0a6225333d96370031c7ede4c",
+     "quote": "last-modified: Thu, 22 Oct 2026 07:30:02 GMT",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "cccs-al26-026",
+     "capture": "20261022T081700Z",
+     "sha256": "9e7f44cc73e21ad54d1caf36c5273a289839c76ff1e1ac35bf377e4645ad91a2",
+     "quote": "Where immediate remediation is not feasible, organisations should consider isolating internet-facing applications from public networks until a fix can be applied.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "nsa-press-php-4630238",
+     "capture": "20261022T080954Z",
+     "sha256": "8a8553ea1ffcd794a5f6a39dea4162c7f84f0737d5061577a3e569cb39b79154",
+     "quote": "If an immediate update is not feasible, it is recommended that organizations take the system offline until it can be fully mitigated.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "certeu-sa-2026-018",
+     "capture": "20261022T081329Z",
+     "sha256": "c65c95cf165d9ed7ec5d362642e92dd918c77fdfca1d4f88b303db6a3ab24ae3",
+     "quote": "Where that is not feasible, organisations should consider isolating internet-facing applications from public networks until a fix is applied and verified.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "lbc-uk-websites-offline",
+     "capture": "20261022T112915Z",
+     "sha256": "125176f10b5494a60744d6f6d3c7918b76c38477c6c229b636fbeb00b3bed173",
+     "quote": "The NCSC warned: \"Where immediate remediation is not feasible, organisations should consider taking the system offline until it can be fully mitigated.\" Article dated '21 Oct 2026, 15:41', 'Updated: 19h ago' at the 22 Oct 11:29Z capture (so edited about 16:29Z on 21 Oct), both before the NCSC page change.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "cyberexpress-php2shell-gov-sites",
+     "capture": "20261022T112646Z",
+     "sha256": "f45bc7599367343e65c9a0d202d909990a7a802e526f44362042e0de16cf20a6",
+     "quote": "Where immediate remediation is not feasible, organizations should consider taking the system offline (a copy of the BBC; not independent)",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    }
+   ],
+   "verdict": "Not a misquote on our evidence. The BBC entry was published at 06:30Z and last edited at 06:49Z, 40 to 60 minutes before the NCSC page's last-modified time (07:30:02 GMT), and LBC quoted the same sentence as the NCSC's on 21 Oct. So the NCSC text on 22 Oct 08:09Z is a later version; the sentence was almost certainly on the page (or in an NCSC note) before the change. Still not proven without an earlier NCSC copy. Not identical to CCCS: only the CCCS opening matches; the ending matches the NSA's and NCSC's offline wording; CERT-EU's opening differs (the 'shared across Five Eyes and CERT-EU text' note overstates).",
+   "goes": "no: R-014 is not opened. At most an optional question after an earlier NCSC copy is sought.",
+   "suggested_wording": "Optional question: 'Could you tell us which NCSC text this line comes from? Our 22 Oct 08:09 UTC capture words it differently, and we would like to cite the version you saw.'",
+   "still_stands_after_26_oct": "yes (nothing since touches it)",
+   "confidence": "medium-high (not proven without an earlier NCSC capture)",
+   "quote_checked": "checked against capture"
+  },
+  {
+   "n": 3,
+   "title": "'UK, NSA, EU and Australian agencies advise taking systems offline'",
+   "claim": "offline-allies",
+   "bbc_words": "\"The UK's National Cyber Security Centre (NCSC), as well as its counterparts in the EU and Australia, earlier urged those who use PHP to apply the fixes.\" (text.txt line 232) and, in the NSA entry (06:55 BST), \"If an immediate update is not feasible, it is recommend that organizations take the system offline until it can be fully mitigated.\" (line 188). Checked against capture c88b8c5f... The BBC also says 'advice issued by governments, including the US, to take websites down if the flaws could not immediately be fixed' (line ~290).",
+   "evidence": [
+    {
+     "source": "acsc-alert-php",
+     "capture": "20261022T081658Z",
+     "sha256": "9370af142ded6de9a44fed4330585d677fde367d90d33ce355e9ebe6a75f7d56",
+     "quote": "Apply available security updates and other appropriate mitigations (no offline advice)",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "certeu-sa-2026-018",
+     "capture": "20261022T081329Z",
+     "sha256": "c65c95cf165d9ed7ec5d362642e92dd918c77fdfca1d4f88b303db6a3ab24ae3",
+     "quote": "organisations should consider isolating internet-facing applications from public networks",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "nsa-press-php-4630238",
+     "capture": "20261022T080954Z",
+     "sha256": "8a8553ea1ffcd794a5f6a39dea4162c7f84f0737d5061577a3e569cb39b79154",
+     "quote": "take the system offline until it can be fully mitigated",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "acn-it-php2shell",
+     "capture": "20261022T081354Z",
+     "sha256": "19fac2edc25161cd867bda0ea1c8bf8b6ce7625fbdd1e9a9a7cd41bdd8d1bef6",
+     "quote": "Qualora non fosse possibile applicare tempestivamente gli aggiornamenti di sicurezza, si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano versioni vulnerabili di PHP",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    }
+   ],
+   "verdict": "Not a BBC error. The BBC says the NCSC and its EU and Australian counterparts urged applying the fixes (true: ACSC says 'Apply available security updates'), attributes the offline quote to the NCSC, and reports the NSA's offline advice (true). ACSC gives no offline advice and CERT-EU says isolate, but the BBC did not say otherwise. Italy's ACN does advise considering taking sites offline (capture line 70), so our notes and agencies.json (update only) are wrong.",
+   "goes": "no: drop R-015",
+   "suggested_wording": "None to send. If the editor wants a friendly note: 'Agencies agree on patching now; some also advise isolating or taking systems offline if patching is not possible.'",
+   "still_stands_after_26_oct": "n/a (dropped); CISA's own alert also advises offline",
+   "confidence": "medium-high; rests on the fact-check's excerpts of the BBC capture, which I cannot reread",
+   "quote_checked": "checked against capture"
+  },
+  {
+   "n": 4,
+   "title": "R-002 'roughly 70%' against Wiz's words",
+   "claim": "scale-70pc-internet",
+   "bbc_words": "Two places: line 144, 'Cyber-security firm Wiz estimates that \"roughly 70%\" of the internet is affected by the PHP flaws.' and line 284, 'with cyber-security firm Wiz estimating that \"roughly 70%\" of the internet is affected, though the BBC is unable to independently verify that figure.' Checked against capture c88b8c5f...",
+   "evidence": [
+    {
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d",
+     "quote": "as above (outreach.json R-002, quote_checked true)",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "wiz-blog-php2shell",
+     "capture": "20261022T081047Z",
+     "sha256": "e3568b6f88c93f6bb08eebe3c8811f9fd283212f7331b287d5170b91d6bad1ea",
+     "quote": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet; body: powers 70% of all websites in the world.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    },
+    {
+     "source": "x-wiz-io-php2shell",
+     "capture": "20261022T081624Z",
+     "sha256": "6c17977662815b0cb25a32e0987d1b1f95942156825b0cc616dc43a3f7f46809",
+     "quote": "impacting 70% of the Internet.",
+     "quote_checked": "checked against capture: found, sha256 matches"
+    }
+   ],
+   "verdict": "Minor and fair to the BBC: Wiz does say 70% of the Internet, and the BBC flagged that it could not verify it. Only the word 'roughly' inside quotation marks is not in Wiz's captured words (it may come from an interview we do not hold). Weakest point.",
+   "goes": "optional, last: only with a note that Wiz (R-001) has been asked too; otherwise leave it out and keep the submission to fewer points",
+   "suggested_wording": "'...with Wiz saying the flaws affect \"70% of the Internet\", a figure that matches surveys of how many websites use PHP rather than a count of vulnerable systems, and that the BBC has been unable to independently verify.' (R-002's own suggestion, kept)",
+   "still_stands_after_26_oct": "yes",
+   "confidence": "medium",
+   "quote_checked": "checked against capture"
+  }
+ ],
+ "candidates": [
+  {
+   "candidate": "Most severe flaws ever detected by AI (Wiz)",
+   "settled": "BBC capture carries 'most severe' in quotation marks as Wiz's. Wiz's blog: 'among the most severe vulnerabilities discovered in PHP, and arguably in software history'. Substack relaying the WSJ (cb3714dc...): Wiz's co-founder said 'the most severe AI vulnerability that was ever found'; Cyber Express (f45bc759...) has Wiz calling them the 'most severe vulnerabilities ever discovered' by AI. BBC text line 290 checked against capture: Wiz 'describes the flaws as the \"most severe\" ever detected by AI'.",
+   "becomes_point": false,
+   "why": "Probably an interview line, accurately attributed. Not a point; update our claim note (claim most-severe). The WSJ article is not captured."
+  },
+  {
+   "candidate": "'One of the most impactful security issues in recent memory' (OpenAI)",
+   "settled": "BBC text line 292 checked against capture: OpenAI 'calls the discovery \"one of the most impactful security issues in recent memory\"'. OpenAI's tweet (x-openai-php2shell, 785b7cae..., checked): 'one of the most impactful vulnerabilities in recent memory'. OpenAI's blog is blocked and may use 'security issues'.",
+   "becomes_point": false,
+   "why": "A one-word difference, possibly the blog's own wording. Too small."
+  },
+  {
+   "candidate": "PHP Foundation joined Patch the Planet in July",
+   "settled": "BBC (line 97, checked against capture): 'In July 2026, the PHP Foundation got accepted into OpenAI's Patch the Planet initiative'. Foundation: 'got the PHP project into the Patch the Planet program, as part of which Calif began an audit on July 30th'. Calif's page: invited 30 July. The BBC says 'accepted', not 'joined'; 30 July fits July.",
+   "becomes_point": false,
+   "why": "Not settled either way; the 30 July date is consistent with 'July'. Make it a claim only if wanted; not a point."
+  },
+  {
+   "candidate": "Calif found it in August, OpenAI and Wiz shortly after",
+   "settled": "BBC (line 99, checked): 'In August... Calif... found a serious flaw in PHP, which researchers at OpenAI and Wiz also found shortly after.' Calif's page (checked): discovered 1 Aug, reported 11 Aug. Foundation blog (checked): 'OpenAI independently reported the same root cause on the same day', Wiz reported 24 Aug (Wiz: discovered 19 Aug). Calif first, Wiz later fit; OpenAI's 'shortly after' vs 'same day' differs by days.",
+   "becomes_point": false,
+   "why": "Calif first and Wiz later fit the sources; only OpenAI's 'shortly after' differs (same day per the Foundation). Keep as context."
+  }
+ ],
+ "our_side": [
+  {
+   "file": "claims.json",
+   "field": "disclosure-22oct.by / sources",
+   "problem": "Says BBC framing; the fact-check says the BBC capture never states a disclosure date. Same in attribution.json claims.disclosure-22oct.states=[bbc], graph.json and fractal.json (by: BBC framing), and the note in sources.json php-net-advisory notes_md ('the BBC frames disclosure as 22 Oct')."
+  },
+  {
+   "file": "claims.json",
+   "field": "offline-allies.status, .by",
+   "problem": "'contradicted' and 'BBC' for a sentence the BBC page does not carry; fact-check holds-in-part, status_fit understated. Also attribution.json claims.offline-allies.states=[bbc]; claim-review.json review 'offline-advice' (24 Oct, journalist) says 'agrees'."
+  },
+  {
+   "file": "agencies.json",
+   "field": "row 7 (ASD's ACSC) note",
+   "problem": "'The BBC's Australian counterparts framing is not supported by the page': the BBC said only that the counterparts urged applying the fixes, which ACSC does."
+  },
+  {
+   "file": "agencies.json",
+   "field": "row 2 (NCSC UK) note and row 6 (CCCS) note",
+   "problem": "Implies a BBC misquote and says the wording is 'shared across Five Eyes and CERT-EU text': only the CCCS opening matches; CERT-EU's opening and CCCS's ending differ; LBC's 21 Oct use of the BBC sentence is not recorded."
+  },
+  {
+   "file": "claims.json",
+   "field": "offline-ncsc.note",
+   "problem": "Does not mention LBC's earlier use of the sentence; reads as a BBC error. Status disputed is consistent with the fact-check."
+  },
+  {
+   "file": "claims.json",
+   "field": "no-exploitation.status",
+   "problem": "'reported' vs fact-check tension 'disputed'; and, after 26 Oct, 'There is no evidence yet' in the present tense is no longer true (CISA KEV listing). Also exploitation.json row 12 (status reported, 'No evidence of exploitation yet') carries it undated as to what changed."
+  },
+  {
+   "file": "claims.json",
+   "field": "leak-video.claim",
+   "problem": "'around 20:00 UTC on 20 October' stated as Calif's video time; the Foundation's sentence is ambiguous (pre-announcement 19:30 UTC)."
+  },
+  {
+   "file": "claims.json",
+   "field": "most-severe.note",
+   "problem": "Sets the blog against the BBC line only; omits the WSJ route."
+  },
+  {
+   "file": "exploitation.json",
+   "field": "row 13 (probing).status",
+   "problem": "'Amazon's own post not found' while claims.json probing is confirmed with aws-security-blog-madpot."
+  },
+  {
+   "file": "outreach.json",
+   "field": "R-002.channel, status",
+   "problem": "Channel 'to find'; the PROJECT-002 step 1 corrections pages of 14 outlets in the source watch (vault 7r83qic5) are not in sources.json, so the BBC route is not yet a captured source."
+  },
+  {
+   "file": "all BBC captures",
+   "field": "sources.json bbc-live-ckgel5xp2xv9t",
+   "problem": "Latest capture 22 Oct 08:05:59Z; nothing says what the page says now. Any point could already be corrected."
+  },
+  {
+   "file": "sources.json / agencies.json / claims.json",
+   "field": "acn-it-php2shell notes_md; agencies.json row ACN / CSIRT Italia (offline 'none', 'Update only'); offline-allies.note ('Italy gives no offline advice')",
+   "problem": "Wrong against the capture: text.txt line 70 says 'si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano versioni vulnerabili di PHP'. Italy belongs with the agencies that advise offline."
+  },
+  {
+   "file": "claims.json",
+   "field": "disclosure-22oct, offline-allies (and their rows in attribution.json, graph.json, fractal.json)",
+   "problem": "Two of the three 'contradicted' BBC rows put words in the BBC's mouth; the BBC page as captured says neither. Fix before any BBC reader opens the BBC file."
+  }
+ ],
+ "injection_seen": [],
+ "vault_check": "Quotes below were checked against the capture files in the evidence vault nnd3i8iw (head obj-cas-imm-9b5fd6786c2d), each file's sha256 recomputed and matched to sources.json, on 27 Oct 2026. Evidence items carry quote_checked."
+}
