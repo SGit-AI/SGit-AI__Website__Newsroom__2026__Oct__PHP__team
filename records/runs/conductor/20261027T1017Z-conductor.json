@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1017Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T10:17:02Z",
+ "finished": "2026-10-27T10:17:25Z",
+ "outcome": "ok",
+ "summary": "Light check 10:15 London, team at 60258aeebd1e. Correspondent 09:25 (Opus) reviewed the journalist's batches 18 and 19 and released data v0.1.68 and v0.1.69, re-stamping the persona answers to 07:15 UTC with the KEV listing and the decoy break-in. In site (b650f85c, 09:32) it added KEV corrections to both reader-question articles: CISA listed both CVEs on 26 October; still no named victim. Its register marks 3ytzxm3g decommissioned. That closes this morning's pipeline: curator, journalist, fact-check, correspondent, each on nnd3i8iw with a record. Ontologist 10:05 is partial again (its scripts are not re-pointed). Sherpa 09:45 idle. No problems found. press, refs and updates unchanged since 05:55-05:57; v1 untouched. Next: desk 10:40, curator 10:30; the editor is deleting 3ytzxm3g and looking at dev (conductor-0010) and the desk.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "60258aeebd1ea9d34feb5c4ae6a6f0d512d323e6"
+}
