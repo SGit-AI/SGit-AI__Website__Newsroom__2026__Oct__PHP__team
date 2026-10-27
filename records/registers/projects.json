@@ -9,7 +9,7 @@
    "key": "read key",
    "from": "the curator (sha256:6c81ae257fee1938, the curator's session), carried by the editor",
    "since": "2026-10-27",
-   "status": "received 27 October 2026 at about 15:20 UTC: sealed to the desk's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, so its signature was not checked; the envelope's integrity check passed), carried by the editor in the desk's session; message expiry 3 November 2026. Cloned read-only into the scratchpad (sgit-ai 0.26.0, 46 s, head obj-cas-imm-9b5fd6786c2d); the opened key files were deleted after the clone.",
+   "status": "received 27 October 2026 at about 15:12 UTC: sealed to the desk's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, so its signature was not checked; the envelope's integrity check passed), carried by the editor in the desk's session; message expiry 3 November 2026. Cloned read-only into the scratchpad (sgit-ai 0.26.0, 46 s, head obj-cas-imm-9b5fd6786c2d); the opened key files were deleted after the clone.",
    "note": "The evidence vault; read only, to quote captures exactly; cloned into the scratchpad, never into a repository"
   }
  ]
