@@ -1020,14 +1020,14 @@
    "id": "SA-2026-043",
    "title": "The round's write token is readable by every piece of code the round runs",
    "severity": "high",
-   "status": "open",
+   "status": "fixed",
    "disclosure": "limited",
    "cwe": "CWE-522",
    "component": "press .github/workflows/round.yml and tools/round.sh",
    "found_by": "security@php.newsroom, pass of 26 October 2026",
    "found": "2026-10-26",
-   "fixed_in": "",
-   "fixed_by": "",
+   "fixed_in": "press v1.0.52 (27 October 2026): .github/workflows/round.yml and tools/round.sh removed",
+   "fixed_by": "dev@php.newsroom",
    "summary": "The round puts ROUND_TOKEN (contents write on all six repositories) into the runner's global git configuration and then runs the chain and the build from the press. The script's comment says the token reaches only git's credential helper; any process in the job can read it.",
    "impact": "Push to the press becomes push to all six repositories. The split's least privilege (which repositories a session holds is its permission) does not hold for anyone who can change code the round runs; a steered agent with press access could write data, team or the sites, gate or no gate.",
    "attack_path": "Limited until fixed: a change to code the round executes, released to the press's dev, runs with the token in reach at the next quarter hour.",
@@ -1037,12 +1037,42 @@
     "The press has many writers after step B; each is now a path to every repository."
    ],
    "missing_control": "Separation of building from publishing: the job that runs repository code holds no write credential.",
-   "fix": "The round is being retired: since dev's wake of 26 October 19:09 dev runs the chain by hand (--if-changed), so ROUND_TOKEN is no longer needed (the conductor's run of 19:15). Closed when the editor deletes the ROUND_TOKEN secret from the press's settings (and revokes the token on GitHub) and dev removes or disables .github/workflows/round.yml, which still runs every quarter hour. If a round ever returns: build in a job with no secret, push from a job that runs no repository code.",
+   "fix": "The round is retired: the workflow and its script are gone from the press (v1.0.52), and editions are built by .github/workflows/edition.yml, whose build job holds only a read-only token and whose publish job runs no repository code. Left for the editor: delete the ROUND_TOKEN secret from the press's settings and revoke the token on GitHub; nothing reads it now, but a live token is still a token.",
    "prevention": "The rule already used for Pages deploys (the job that writes runs no repository code) applied to every job that holds a secret.",
    "refs": [
     "press .github/workflows/round.yml",
     "press tools/round.sh",
     "board security-0001"
+   ]
+  },
+  {
+   "id": "SA-2026-044",
+   "title": "An edition's patch can change the gate that judges it",
+   "severity": "medium",
+   "status": "open",
+   "disclosure": "limited",
+   "cwe": "CWE-284",
+   "component": "each repository's .github/workflows/pages.yml (the take step) and the press's tools/edition.sh",
+   "found_by": "security@php.newsroom, pass of 27 October 2026",
+   "found": "2026-10-27",
+   "fixed_in": "",
+   "fixed_by": "",
+   "summary": "When a site takes an edition, its gate job applies the press's patch and then runs tools/gate.py and tools/pages_gate.py from the patched tree. The take step refuses a patch that touches .github/, .git/ or VERSION, but not one that changes the gate or the release scripts, which the partition installs from the press.",
+   "impact": "Whatever writes the edition's patches decides what the receiving gate checks. The patches are made in the press's build job, which runs build/ code that its owners release without security's review; a change there, by mistake or by a steered agent, could carry a weakened gate and the content it would have refused to any of the five sites in one edition.",
+   "attack_path": "Limited until fixed: a change to code that runs in the edition's build job, released to the press, alters a site's patch at the next edition.",
+   "root_cause": "The refuse-list protects the deploy (workflows) and the version, but treats the gate as ordinary content of the patch.",
+   "contributing": [
+    "The press's tools/ are reviewed by security, but the job that builds the patches also runs build/, which is not.",
+    "The protected-path rule for the press was applied to commits, not to what CI writes into other repositories."
+   ],
+   "missing_control": "A gate that is not part of what it judges: the receiving repository runs its gate from its own dev before the patch, or refuses a patch that changes tools/ unless the edition says it carries a reviewed press release of tools/.",
+   "fix": "Proposed, for dev and the editor (board security-0002): in the take step, run the gate from the pre-patch tools (copy tools/ aside before git apply, run that copy on the patched tree), and refuse a patch that changes tools/ or adds a symbolic link (mode 120000); tools/ reaches a site only in a commit of its own, after review.",
+   "prevention": "Every job that decides whether to accept something runs code the something cannot change.",
+   "refs": [
+    "team .github/workflows/pages.yml (gate job, take step)",
+    "press .github/workflows/edition.yml",
+    "press tools/edition.sh",
+    "board security-0002"
    ]
   }
  ]

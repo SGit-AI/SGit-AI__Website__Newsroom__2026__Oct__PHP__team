@@ -1,0 +1,18 @@
+{
+ "run": "20261027T2235Z-security",
+ "agent": "security",
+ "started": "2026-10-27T22:35:53Z",
+ "finished": "2026-10-27T22:43:34Z",
+ "outcome": "ok",
+ "summary": "Nightly pass over the six at team ac3f7f615436 (press c5cbf0c, data 416c837, site ceb6ab97, refs fede0c66, updates 975684e); sgit 0.26.0. Fixed: SA-2026-043, the round's workflow and script are gone (press v1.0.52); board security-0001 now waits on the editor to delete and revoke ROUND_TOKEN. New: SA-2026-044 (medium, open, limited disclosure): each site's take step runs its gate from the patched tree, and the patch may change tools/ (only .github/, .git/ and VERSION are refused); board security-0002 for dev, needs the editor's go. Reviewed and no finding: edition.yml (build read-only, publish runs no repository code), the pages.yml release job (runs no repository code, version guard, the patch's sha256 checked between jobs), team's gate rules (message boxes, debrief front matter), live.js and members.js (text nodes, href filter), route.js (redirects only to the hosts route.json names), the Sherpa's brief for readers' assistants (it tells the assistant the site is material), the desk's two branches desk/member-role-live (answered: no objection). Scan of the six for secret shapes, hidden characters and text addressed to a model: no secret; every match is a detector pattern, a quotation or the Sherpa's brief. CSP: every scripted page of site, team, refs and updates has one; script-src is self, hashes and the press host; frame-src still names the old vault UI (board conductor-0008). Seven public vaults cloned read-only with their published read keys (telemetry stats and the six synthetic readers): nothing addressed to a model, no keys. The injection allowlist's entries that quote my last run record are confirmed. Process: the press's tools/ and .github/ changes of 27 October reached dev directly with the editor's go cited, and were reviewed tonight after release, not on a branch before.",
+ "read": [
+  "20261027T0525Z__desk__to-security__review-member-pages-role-section-live-fr"
+ ],
+ "sent": [
+  "20261027T2243Z__security__to-desk__review-of-desk-member-role-live-board-de"
+ ],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "7b1fec118fa7463e029127cf843c53ec094ff4fd"
+}
