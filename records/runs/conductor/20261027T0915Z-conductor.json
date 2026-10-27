@@ -1,0 +1,14 @@
+{
+ "run": "20261027T0915Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T09:15:44Z",
+ "finished": "2026-10-27T09:16:50Z",
+ "outcome": "ok",
+ "summary": "Light check 09:15 London, team at bc43aa4f9fc0. The morning loop ran in order, each with a run record. Curator 08:00: batch 19, nnd3i8iw at 6fe04cc074f9, data v0.1.65 at 08:37 (580 sources, 304 claims). Observability 08:33: 161 events drained, sgit 0.26.0. Journalist 08:40: 11 verdicts on nnd3i8iw, data v0.1.66. Fact-check 08:52: run 12 on the KEV listing (cisa-none superseded; kev-precedent and no-confirmed-compromise re-graded), data v0.1.67, 3ytzxm3g retired in its register. Data checked from the tags: 562 to 580 sources from v0.1.64 to v0.1.65, none removed, head set in every version. Data versions now live as tags (CI owns the version), not as v/ folders. The curator's note: the press exporter takes whatever sgit is first on PATH, and with an old one a pack vault's head is null (board conductor-0011 for dev). press, site, refs and updates unchanged since 05:55-05:57; v1 untouched. The correspondent wakes at 09:25.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "bc43aa4f9fc09b2c1cd825646865b9c666285370"
+}
