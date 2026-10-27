@@ -1,0 +1,16 @@
+{
+ "run": "20261027T1540Z-curator",
+ "agent": "curator",
+ "started": "2026-10-27T15:40:45Z",
+ "finished": "2026-10-27T15:43:54Z",
+ "outcome": "ok",
+ "summary": "15:30 wake (fired 15:40 UTC; dev 58cbf791d026). sgit-ai 0.26.0 in the venv. Pulled watch-pack in 1m21s (15:41:02 to 15:42:30 UTC) and evidence-pack in seconds. Two rows pending; read both in full and promoted batch 22: 2 sources, 4 claims, no timeline rows (Fortune India with Zscaler's decoy counts, Jauns.lv with CERT.LV's Latvian findings). The Fortune India page carries an AI-assisted-content disclaimer, noted on the capture; no page addressed an AI. Evidence pack nnd3i8iw now head d21ea5df2a32: 614 sources, 345 claims; push 18.4s at 15:43 UTC; compaction check: 5 commit packs, 1 snapshot, not needed. Data released from that head (sources, vault, claims; CI numbers it). Between wakes, at the editor's word with his certification, I sealed the read key of nnd3i8iw to the new Projects agent (projects@php.newsroom, sha256:ab7ec95f495fcfc8; the key reached me as a QR bundle, not in the pki register); my register now lists the read keys sealed to journalist, correspondent, factcheck and projects. Queue is empty of pending rows.",
+ "read": [
+  "records/schedule/curator.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "58cbf791d0260538108503b742efdd5661653dda"
+}

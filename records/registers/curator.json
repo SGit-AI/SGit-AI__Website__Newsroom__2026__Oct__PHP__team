@@ -7,7 +7,30 @@
    "id": "nnd3i8iw",
    "what": "The evidence vault, a pack vault with indexes, the only evidence vault the curator writes from 27 October 2026 (cutover at the editor's word). The same content as 3ytzxm3g at head 1dceaa1dfa7f (sgit pack import, a new key); the journalist reads it with the read-only key the editor gave it",
    "created": "2026-10-27",
-   "key_sealed_to_root": "2026-10-27"
+   "key_sealed_to_root": "2026-10-27",
+   "read_key_sealed_to": [
+    {
+     "agent": "journalist",
+     "fingerprint": "sha256:de0decfc882a0235",
+     "date": "2026-10-27"
+    },
+    {
+     "agent": "correspondent",
+     "fingerprint": "sha256:7b4142dddac2035a",
+     "date": "2026-10-27"
+    },
+    {
+     "agent": "factcheck",
+     "fingerprint": "sha256:3b8ff3f28ce433bb",
+     "date": "2026-10-27"
+    },
+    {
+     "agent": "projects",
+     "fingerprint": "sha256:ab7ec95f495fcfc8",
+     "date": "2026-10-27",
+     "note": "public key given as a QR by the editor, who certified it; not in the pki register"
+    }
+   ]
   }
  ],
  "holds": [
