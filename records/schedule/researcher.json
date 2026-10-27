@@ -14,7 +14,7 @@
   "14:30",
   "17:00"
  ],
- "model": "the session's model",
+ "model": "Sonnet",
  "session": "its persistent session (scheduled researcher), woken by two scheduled tasks",
  "brief": "admin/content/briefs/2026-10-23__brief__the-scheduled-source-watch.md",
  "abp": "none yet (abp@, security@: board)",

@@ -1,0 +1,20 @@
+{
+ "run": "20261027T0702Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-27T07:02:54Z",
+ "finished": "2026-10-27T07:56:08Z",
+ "outcome": "ok",
+ "summary": "Wake 07:00 London, 27 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head 6a96f221696a, the first full pass on sgit-ai v0.26.0. Cyber desk: both php2shell CVEs are in the CISA KEV catalog since 26 October (due 29 October; series kev-listed 2, unchanged since the capture of 00:45 UTC); Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page lists merged pulls (parser fault in p_pulls, not a finding); EPSS 0.99981 (CVE-2026-109618) and 0.99997 (CVE-2026-109619), last read 26 October 14:42 UTC; sites dark 48 on the community tracker (56 on 26 October; third-party, unverified). Probe: 413 named sites, 334 answering, 37 refused-us, 20 unreachable, 15 server-error, 13 changed state. Watch: 919 pages visited, 764 changed in the full run; access 968 open, 72 bot-challenge, 32 down, 19 paywalled, 6 gone, 2 login-wall. Discovery: 6,195 items, 3,756 on topic, 29 of 116 headlines resolved. Ledger 64 records, 63 open. Curator queue 467 rows (4 added, existing rows untouched). Timings on sgit 0.26.0 in the 79,000-file watch clone: first pull after the upgrade 4 min (cache and index build; the earlier up-to-date pull took 23.5 s), probe 7 min 14 s, watch 36 min 17 s, phase 1 commit 36 s and push 1 min 7 s (14,357 objects), phase 2 commit 7 s and push 26 s (150 objects), whole pass 46 min 28 s; data export 1 min 12 s (34 s on 0.25.0). Against 0.25.0 the commit and push are the same within noise; the extra time is the web (919 pages, 22 fetch errors). pack index verify: not run to the end (about 40 minutes; see board researcher-0002). Data: files/source-watch.json refreshed, 1,288 pages, 948 publishers, 14,441 snapshots, 79 runs. Card and register updated after the evidence vault moved (nnd3i8iw; 3ytzxm3g decommissioned), the card's model set to Sonnet. Not judged: whether any capture ends the statement on /compromise/. Nothing written to v1. team dev taken in at 0f075ff3.",
+ "read": [
+  "20261027T0313Z__conductor__to-researcher__the-evidence-vault-is-now-nnd3i8iw-3ytzx",
+  "20261027T0446Z__conductor__to-all__upgrade-to-sgit-ai-0-26-0-and-read-what",
+  "20261027T0448Z__conductor__to-all__every-vault-is-a-pack-vault-now-no-links",
+  "20261027T0504Z__conductor__to-all__3ytzxm3g-is-decommissioned-cards-and-reg",
+  "20261027T0533Z__conductor__to-all__which-model-each-agent-runs-opus-for-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "1f2cb49c05841e967564d282a631ca4f743cb15c"
+}
