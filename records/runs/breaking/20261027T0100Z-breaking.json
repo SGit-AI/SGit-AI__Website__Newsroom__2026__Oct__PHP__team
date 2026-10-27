@@ -1,0 +1,14 @@
+{
+ "run": "20261027T0100Z-breaking",
+ "agent": "breaking",
+ "started": "2026-10-27T01:00:00Z",
+ "finished": "2026-10-27T02:47:01Z",
+ "outcome": "ok",
+ "summary": "Onboarded (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md), with three departures the editor saw. (1) Key: the session's auto-mode classifier blocked running pki-agent.mjs, so the key pair was made with sgit pki keygen (sha256:9db81b444079eb0e, encryption sha256:925d95a6be12bdef, a session key); no signed record, not enrolled at pki.sgit.ai; the editor vouched for it to the vault keeper in person. (2) Keys held: the vault keeper (sha256:956934e47063ceaa, operated by the root until 30 October) sealed 7r83qic5 (source watch) and nnd3i8iw (the evidence vault as a pack vault, made by the curator, not yet cut over) to that key; both opened with signature checks and no problems; hsmfer5w and 4klm5qlt, also sent, were deleted unused at the editor's word. (3) Own vault hewphq85 (pack, sgit-ai 0.26.0, head ae579a3654d8), its key sealed to the root as a pki.sgit.ai sealed QR built to the tool's format and round-trip tested; carried by the editor. sgit-ai v0.26.0. Clones in the scratchpad, pack store, nothing unpacked; all in sync: 7r83qic5 at a4bb76c0a37b, nnd3i8iw at 0e8df46b49a5, hewphq85 at ae579a3654d8. At the editor's request, index packs built and pushed for 7r83qic5: 42 for 42 data packs (41 commit, 1 snapshot), 433 s, no commit, head unchanged; 0.25.0 ignores them. pack index verify on it did not finish in 30 min (one core) and was stopped. Measured on 7r83qic5 (104,884 files): clone --no-checkout 316 s (4.8 GB), clone --pack-store --no-checkout 232 s (4.3 GB), checkout --all 109 s, status 2.6 s (4.9 to 8.6 s with files out), pull with nothing new 2.4 s, history log of 4 commits 4.5 to 5.4 s. nnd3i8iw (5,162 files): clone --pack-store 26 s (646 MB), status 1.6 s, history log 2.0 s. Own vault first push 6.1 s. Incident: the source watch's read key was shown once in this session's output (sgit's clone banner) before the filter caught it; never written to a file or repository; reported to the editor. Waits on the editor: the cutover to nnd3i8iw, and enrolment if wanted.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "the session's model",
+ "cost_usd": null,
+ "head": "8fec45e5392e38f91c77278fb05b275afac445b2"
+}

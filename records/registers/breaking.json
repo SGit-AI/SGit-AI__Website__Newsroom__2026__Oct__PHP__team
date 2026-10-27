@@ -1,0 +1,33 @@
+{
+ "agent": "breaking@php.newsroom",
+ "member": "breaking",
+ "note": "Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md). Vault ids and key kinds only, never a key. The session's key pair is sha256:9db81b444079eb0e (encryption sha256:925d95a6be12bdef), a session key made with sgit pki keygen; it is not enrolled in the register at pki.sgit.ai, and the editor vouched for it to the vault keeper in person. It holds only the two keys below; the others it was sent (hsmfer5w, 4klm5qlt) were deleted unused at the editor's word.",
+ "vaults": [
+  {
+   "id": "hewphq85",
+   "what": "The breaking desk's working notes, a pack vault with indexes (sgit-ai 0.26.0): each run's checks and the releases it names. No capture, evidence or key is kept in it",
+   "created": "2026-10-27",
+   "key_sealed_to_root": "2026-10-27"
+  }
+ ],
+ "holds": [
+  {
+   "id": "7r83qic5",
+   "key": "vault key",
+   "from": "the vault keeper (DC Vault Registry, sha256:956934e47063ceaa), sealed to this session's key at the editor's go",
+   "since": "2026-10-27"
+  },
+  {
+   "id": "nnd3i8iw",
+   "key": "vault key",
+   "from": "the vault keeper (DC Vault Registry, sha256:956934e47063ceaa), sealed to this session's key at the editor's go",
+   "since": "2026-10-27"
+  },
+  {
+   "id": "hewphq85",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-27"
+  }
+ ]
+}
