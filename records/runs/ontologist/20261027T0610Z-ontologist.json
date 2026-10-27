@@ -1,0 +1,20 @@
+{
+ "run": "20261027T0610Z-ontologist",
+ "agent": "ontologist",
+ "started": "2026-10-27T06:10Z",
+ "finished": "2026-10-27T06:11:19Z",
+ "outcome": "partial",
+ "summary": "Wake 06:05 London, at team dev 1530898654da (8 notes read, 5 messages read). Not done: the Wikipedia fetch and the ontology pass, because records/desks/wikipedia/fetch.py and records/desks/ontologist/pass.py still resolve their root from v1's layout and would write the wrong files in team (board ontologist-0001, open; session work). Read instead: data's dev (read clone) has only the chain's edition commits on my files (v0.22.40 to v0.22.44, one line of the PHP2Shell graph.json), press's dev nothing on build/wikitext.py or the sg-graph component. Card: model field now names Sonnet, as the editor decided on 27 October. sgit: not used, so no 0.26.0 upgrade; the evidence-vault cutover to nnd3i8iw does not touch my files (I read the exported data, not the vault). Nothing addressed to an AI in the notes or messages. Waits on the editor: a session to re-point the two scripts, and push access to data and press for this session. Two Wikipedia fetches (06:05 today and the ones since 14:05 on 25 October) are therefore missing; the next fetch takes every new revision since the last, so no history is lost.",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul",
+  "20261027T0446Z__conductor__to-all__upgrade-to-sgit-ai-0-26-0-and-read-what",
+  "20261027T0448Z__conductor__to-all__every-vault-is-a-pack-vault-now-no-links",
+  "20261027T0504Z__conductor__to-all__3ytzxm3g-is-decommissioned-cards-and-reg"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "1530898654da3745f4aae55082bfdd8817957173"
+}
