@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1149Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-27T11:49:21Z",
+ "finished": "2026-10-27T11:53:13Z",
+ "outcome": "ok",
+ "summary": "Full pass (11:45 London). Lanes: 58526ytp and d6zak0o3 empty (pending 0), no inbox messages beyond those read at 07:45; drains from press v1.0.79's tree, data's contributors.json unchanged; sgit-ai v0.26.0. Read 34 commits since 09:46 (head e749e937) and the notes to me: conductor's PROJECT-001 (outreach, board conductor-0012: the editor chose the projects desk, its Sherpa step is a subagent there, I review it at my next wake) and conductor-0014 (project feedback filed under records/projects/, outside my write scope: not acted on, for the editor to widen or not). Walked nine live pages at 390x844 (front, /on/2026-10-27/, start, agencies, now, collaborators, feedback, team, articles): no overflow. Front page headline now 792px down on a first visit (598 on 26 October), 613 after That's me (425), next page 298: the day strip and the 24h block sit above it (F037, severity high). New: F039 (the 'v0.22.50 is live: reload' line makes the sticky header 80px, not 43), F040 (/on/<date>/ answers HTTP 404, drawn by the router: a shared link or an assistant gets no day). Closed: F032 (Latest is current). Synthetic readers: no run since 23 October (paused). Not done: PROJECT-001's ten names (the projects desk runs it).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e749e9378c9d9d22106e7a09aae3d4f7f397e469"
+}

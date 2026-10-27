@@ -2,7 +2,7 @@
  "schema": "sgit.newsroom.friction-log/1",
  "about": "Every friction a reader meets on this site, structured: who, where, what they tried, what happened, what they expected, the evidence, who can fix it and whether it landed. Kept by sherpa@php.newsroom; see admin/sherpa/README.md. Synthetic readers are test instruments, not people: their findings are prompts, and each is re-checked on the current version before it is logged.",
  "kept_by": "sherpa",
- "as_of_version": "0.22.29",
+ "as_of_version": "0.22.44",
  "stages": [
   "arrive",
   "first-screen",
@@ -663,11 +663,12 @@
    "evidence": [
     "synthetic PM, run 2 on v0.10.18",
     "v0.19.2: the front page's Latest still ends on 23 October, 10:03 UTC, while its own header says latest evidence 24 October 16:05 UTC and the third flaw (CVE-2026-115560, on the board 25 October) is on the page above it",
-    "UF-007 point 5 (26 October, v0.22.33): Latest's newest item is 23 October; What's new runs to v0.22.33 on 26 October"
+    "UF-007 point 5 (26 October, v0.22.33): Latest's newest item is 23 October; What's new runs to v0.22.33 on 26 October",
+    "11:45 pass, 27 October, live v0.22.44: the front page's Latest now runs to 26 October 22:24 UTC (CISA's KEV listing), the same day as What's new"
    ],
    "first_seen": "0.10.18",
-   "last_seen": "0.22.33",
-   "status": "open",
+   "last_seen": "0.22.44",
+   "status": "closed: checked live on 27 October (the front page's Latest is current)",
    "source": "synthetic readers, run 2"
   },
   {
@@ -761,7 +762,7 @@
    "page": "admin/design/line/index.html",
    "stage": "first-screen",
    "actual": "Prototype F (the line) puts the reader chooser (about 240px: 'You're viewing this as an Executive', 'That's me', six other readers) between the site's name and the headline; under the prototype's own banner the headline starts 522px down, about 410px without it, against 322px on the live front page today.",
-   "severity": "medium",
+   "severity": "high",
    "proposal": "If prototype F ships: after the first visit, or once 'That's me' is pressed, fold the chooser into the one 'Executive' pill, so a returning reader gets the headline at the live page's height. On a first visit the chooser earns its place: it is the first step F035 asks for.",
    "owner": "story-site",
    "also": [
@@ -769,11 +770,12 @@
    ],
    "evidence": [
     "Measured on v0.19.2 (prototype F after v0.19.0's phone fix) at 390x780, 25 October, 11:45 pass",
-    "v2, v0.22.29: first visit, headline at 598px (front), 549 (agencies), 571 (team); after That's me the chooser folds into its pill and stays folded: 425 (front), 335 (next page). UF-006 point 5 raises the same."
+    "v2, v0.22.29: first visit, headline at 598px (front), 549 (agencies), 571 (team); after That's me the chooser folds into its pill and stays folded: 425 (front), 335 (next page). UF-006 point 5 raises the same.",
+    "11:45 pass, 27 October, live edition v0.22.44 at 390x844: first visit, headline 792px down (598 on 26 October): the reader chooser, 'Your reading', the day strip and a large '24h' numeral come first. After That's me: 613px (425 on 26 October); the next page 298px (335)."
    ],
    "first_seen": "0.19.2",
-   "last_seen": "0.22.29",
-   "status": "improved: the chooser folds after the first choice, as proposed; the first visit still costs about 270px (UF-006.5)",
+   "last_seen": "0.22.44",
+   "status": "open, worse: the chooser folds as proposed, but the front page's new day strip and '24h' block put the headline below the first screen on a first visit (792px), and 613px after it",
    "source": "the Sherpa's 11:45 pass"
   },
   {
@@ -791,12 +793,52 @@
    "evidence": [
     "Measured on the live v2 site, v0.22.29, 390x844, 26 October",
     "UF-006 point 5",
-    "UF-007 point 10: 8 menus, 4 equal buttons, 16 roles, three places to choose a role"
+    "UF-007 point 10: 8 menus, 4 equal buttons, 16 roles, three places to choose a role",
+    "v0.22.44: still on every page; on the front page it now stands between the chooser and the day strip"
    ],
    "first_seen": "0.22.29",
-   "last_seen": "0.22.29",
+   "last_seen": "0.22.44",
    "status": "open",
    "source": "UF-006"
+  },
+  {
+   "id": "F039",
+   "reader": "a phone reader, any page",
+   "page": "every page, when a newer edition is live",
+   "stage": "first-screen",
+   "actual": "A line in the sticky header, 'v0.22.50 is live: reload', makes the header 80px instead of 43 (F034 fixed it at 43) and it stays that height while scrolling, on a page served by a cached edition older than the live one (page v0.22.44, live v0.22.50). A reader who never reloads keeps an 80px bar for the rest of the visit.",
+   "severity": "medium",
+   "proposal": "Keep the notice, but not in the sticky bar: show it once under the header, or fold it into the Menu button as a dot; a returning reader's header stays one line.",
+   "owner": "story-site",
+   "also": [
+    "dev"
+   ],
+   "evidence": [
+    "Measured live on 27 October, 11:55 UTC, 390x844: NAV.site 80px on the front page, /on/2026-10-27/, /start/, /agencies/, /collaborators/, /feedback/, /team/, /articles/"
+   ],
+   "first_seen": "0.22.44",
+   "last_seen": "0.22.44",
+   "status": "open",
+   "source": "the Sherpa's 11:45 pass"
+  },
+  {
+   "id": "F040",
+   "reader": "anyone who opens a shared link without running the page's script: a link preview, a search engine, an assistant fetching the page",
+   "page": "/on/<date>/ (the story as days)",
+   "actual": "Each day's page, for example /on/2026-10-27/, answers HTTP 404 and is drawn by the site's 404 router in the browser; a fetch without JavaScript gets the router's generic page ('this page, written for you'), not the day. /on/ itself is a real page (200). A day link shared on LinkedIn or WhatsApp, or given to an assistant, shows no day.",
+   "severity": "medium",
+   "proposal": "Write each day as a real file when the edition is built (the day's text is already data), or serve the router's page with a 200 and the day's title and summary in the HTML; the router keeps the rest.",
+   "owner": "story-site",
+   "also": [
+    "dev"
+   ],
+   "evidence": [
+    "curl on 27 October 2026: /on/2026-10-27/ 404, /on/2026-10-26/ 404, /on/ 200; board dev-0005 (a page is read from its owner when it opens) explains the design, this is its cost"
+   ],
+   "first_seen": "0.22.44",
+   "last_seen": "0.22.44",
+   "status": "open",
+   "source": "the Sherpa's 11:45 pass"
   }
  ]
 }
