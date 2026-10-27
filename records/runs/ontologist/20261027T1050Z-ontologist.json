@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1050Z-ontologist",
+ "agent": "ontologist",
+ "started": "2026-10-27T10:50Z",
+ "finished": "2026-10-27T10:57:40Z",
+ "outcome": "ok",
+ "summary": "Not a scheduled wake: the editor's direction in my session to fix my pages for the six repositories and the new design. Done. Press (released): the graph component v1.0.1 (v1.0.0 stays): v1.0.0 resolved its data file against document.baseURI, which the new line moves to a view (/wikipedia/php2shell/as/executive/), so the graph could not load its data there; v1.0.1 resolves against window.P2S_BASE as route.js asks. Page titles of my section were escaped twice (the header strip showed a literal &#39;); now plain text. Prose names the files' homes in the six. Data (released, cc0bec6): scripts re-pointed (team records/desks/*: root from the data and press clones beside team), the Wikipedia fetch caught up (PHP2Shell 402 revisions, 32 new, now at 1382214384; talk page 41, 1 new), 141 new parties and 4 aliases from 162 new sources (580 sources; nothing would stop the build), the review re-read (all 15 findings match the new revision; R-11 and R-01 updated for the rewording; R-14 and the 'still ongoing' answer updated for CISA adding both CVEs to KEV on 26 October). Verified by building the six in a local box: 60 Chromium checks pass (23 wikipedia, 37 component, core), no horizontal scroll at 390 px, titles clean. Team: card steps corrected (the scripts work; wakes run the pass), board ontologist-0001 done, runbook note. Waits on: dev's chain to build and publish the pages (nothing of mine builds them); the editor on which review findings, if any, go to the talk page (board 314 in v1's numbering); about 255 parties still to look up on Wikidata (a later pass).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "c832c373d89907b963bb1c7b43925426ec62cf40"
+}

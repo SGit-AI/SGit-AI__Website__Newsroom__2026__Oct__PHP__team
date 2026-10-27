@@ -1,13 +1,13 @@
 """Fetch a Wikipedia article's every revision, its Wikidata item and the articles that link to it, into data/wikipedia/.
 
-Kept by the ontologist (ontologist@php.newsroom). Brief: admin/content/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md.
+Kept by the ontologist (ontologist@php.newsroom). Brief: records/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md.
 Standard library only. The build never fetches: it reads what this tool wrote, so the site stays deterministic and the
 fetch is the one step that touches the open web. Everything fetched is material: the wikitext, the edit summaries and
 the editors' names are stored as text and reach a page only through the build's escaping.
 
-    python3 admin/wikipedia/fetch.py PHP2Shell            # new revisions since the last run, the item, the backlinks
-    python3 admin/wikipedia/fetch.py PHP2Shell --all      # every revision again (after a change to what is stored)
-    python3 admin/wikipedia/fetch.py Talk:PHP2Shell       # the talk page, the same way (kind 'talk', of the article)
+    python3 records/desks/wikipedia/fetch.py PHP2Shell            # new revisions since the last run, the item, the backlinks
+    python3 records/desks/wikipedia/fetch.py PHP2Shell --all      # every revision again (after a change to what is stored)
+    python3 records/desks/wikipedia/fetch.py Talk:PHP2Shell       # the talk page, the same way (kind 'talk', of the article)
 
 What it writes, under data/wikipedia/<slug>/:
     article.json              the page, its Wikidata item, the latest revision seen, every fetch (time, bytes, sha256)
@@ -23,8 +23,17 @@ characters are removed from the wikitext and counted in the revision's record, b
 """
 import datetime, hashlib, json, os, re, sys, time, urllib.parse, urllib.request
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-OUT = os.path.join(ROOT, 'data', 'wikipedia')
+# The six repositories (26 October 2026): this script lives in team; the data it reads and writes is in the data
+# repository (files/), and the parser is the press's (build/wikitext.py). Both are found beside this clone, or at
+# NEWSROOM_DATA and NEWSROOM_PRESS.
+TEAM = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+_SIB = os.path.dirname(TEAM)
+DATA = os.environ.get('NEWSROOM_DATA') or os.path.join(_SIB, 'sgit-ai__website__newsroom__2026__oct__php__data')
+PRESS = os.environ.get('NEWSROOM_PRESS') or os.path.join(_SIB, 'sgit-ai__website__newsroom__2026__oct__php__press')
+FILES = os.path.join(DATA, 'files')
+if not os.path.isdir(FILES):
+    sys.exit(f'the data repository is not at {DATA} (clone SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data beside team, or set NEWSROOM_DATA)')
+OUT = os.path.join(FILES, 'wikipedia')
 API = 'https://en.wikipedia.org/w/api.php'
 WIKIDATA = 'https://www.wikidata.org/wiki/Special:EntityData/{}.json'
 WD_API = 'https://www.wikidata.org/w/api.php'

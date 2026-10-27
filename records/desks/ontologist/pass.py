@@ -1,20 +1,29 @@
 """The ontologist's pass: what in data/ the ontology does not yet resolve, and where the graphs do not join.
 
 Read only: it writes nothing and prints a report; the build (admin/build/build.py) is what refuses to build when the
-graph would break its grammar. Run it first on every pass (after admin/wikipedia/fetch.py), fix what it lists in
+graph would break its grammar. Run it first on every pass (after records/desks/wikipedia/fetch.py), fix what it lists in
 data/entities.json, data/attribution.json and data/crosswalk.json, then build. Standard library only.
-Runbook: admin/ontologist/README.md. Brief: admin/content/briefs/2026-10-24__brief__the-ontologist.md.
+Runbook: records/desks/ontologist/README.md. Brief: records/briefs/2026-10-24__brief__the-ontologist.md.
 
-    python3 admin/ontologist/pass.py            # the report
-    python3 admin/ontologist/pass.py --strict   # exit 1 if anything would stop the build
+    python3 records/desks/ontologist/pass.py            # the report
+    python3 records/desks/ontologist/pass.py --strict   # exit 1 if anything would stop the build
 """
 import collections, json, os, sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+# The six repositories (26 October 2026): this script lives in team; the data it reads and writes is in the data
+# repository (files/), and the parser is the press's (build/wikitext.py). Both are found beside this clone, or at
+# NEWSROOM_DATA and NEWSROOM_PRESS.
+TEAM = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+_SIB = os.path.dirname(TEAM)
+DATA = os.environ.get('NEWSROOM_DATA') or os.path.join(_SIB, 'sgit-ai__website__newsroom__2026__oct__php__data')
+PRESS = os.environ.get('NEWSROOM_PRESS') or os.path.join(_SIB, 'sgit-ai__website__newsroom__2026__oct__php__press')
+FILES = os.path.join(DATA, 'files')
+if not os.path.isdir(FILES):
+    sys.exit(f'the data repository is not at {DATA} (clone SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data beside team, or set NEWSROOM_DATA)')
 
 
 def load(name):
-    with open(os.path.join(ROOT, 'data', name + '.json'), encoding='utf-8') as f:
+    with open(os.path.join(FILES, name + '.json'), encoding='utf-8') as f:
         return json.load(f)
 
 
@@ -74,9 +83,9 @@ def main():
     if gap:
         notes.append(f'{len(gap)} sources the vault\'s own claims cite that no site row cites: ' + ', '.join(gap[:12]) + (' …' if len(gap) > 12 else ''))
     # Wikipedia: references no capture holds and publishers no entity claims (admin/build/wikitext.py reads the latest revision)
-    wdir = os.path.join(ROOT, 'data', 'wikipedia')
+    wdir = os.path.join(FILES, 'wikipedia')
     if os.path.isdir(wdir):
-        sys.path.insert(0, os.path.join(ROOT, 'admin', 'build'))
+        sys.path.insert(0, os.path.join(PRESS, 'build'))
         import wikitext
         from urllib.parse import urlsplit, unquote
         def nurl(u):

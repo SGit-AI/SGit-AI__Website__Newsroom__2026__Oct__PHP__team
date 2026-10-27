@@ -7,13 +7,22 @@ the ontologist confirms each one by hand (confirmed: true) in the same file, and
 links. The editor's direction (25 October 2026): use the data Wikidata already has, especially for the parties that
 are already there, and watch it change.
 
-    python3 admin/wikipedia/wikidata_links.py            # parties not searched yet (Wikidata rate-limits: about 20 s a party)
-    python3 admin/wikipedia/wikidata_links.py --all      # every party again (confirmations are kept)
+    python3 records/desks/wikipedia/wikidata_links.py            # parties not searched yet (Wikidata rate-limits: about 20 s a party)
+    python3 records/desks/wikipedia/wikidata_links.py --all      # every party again (confirmations are kept)
 """
 import json, os, re, sys, time, urllib.parse, urllib.request
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-OUT = os.path.join(ROOT, 'data', 'wikidata-links.json')
+# The six repositories (26 October 2026): this script lives in team; the data it reads and writes is in the data
+# repository (files/), and the parser is the press's (build/wikitext.py). Both are found beside this clone, or at
+# NEWSROOM_DATA and NEWSROOM_PRESS.
+TEAM = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+_SIB = os.path.dirname(TEAM)
+DATA = os.environ.get('NEWSROOM_DATA') or os.path.join(_SIB, 'sgit-ai__website__newsroom__2026__oct__php__data')
+PRESS = os.environ.get('NEWSROOM_PRESS') or os.path.join(_SIB, 'sgit-ai__website__newsroom__2026__oct__php__press')
+FILES = os.path.join(DATA, 'files')
+if not os.path.isdir(FILES):
+    sys.exit(f'the data repository is not at {DATA} (clone SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data beside team, or set NEWSROOM_DATA)')
+OUT = os.path.join(FILES, 'wikidata-links.json')
 WD_API = 'https://www.wikidata.org/w/api.php'
 UA = 'php-newsroom-ontologist/1.0 (https://php.oct.2026.newsroom.sgit.ai/wikipedia/; read-only; one request every two seconds)'
 # words a candidate's description should carry for a party of this kind; a miss leaves the candidate unproposed
@@ -49,7 +58,7 @@ def query_name(e):
 
 
 def main():
-    ent = json.load(open(os.path.join(ROOT, 'data', 'entities.json'), encoding='utf-8'))['entities']
+    ent = json.load(open(os.path.join(FILES, 'entities.json'), encoding='utf-8'))['entities']
     links = json.load(open(OUT, encoding='utf-8')) if os.path.exists(OUT) else {'about': __doc__.strip().split('\n')[0], 'kept_by': 'ontologist', 'parties': {}}
     P = links['parties']
     for e in ent:
