@@ -1,0 +1,14 @@
+{
+ "run": "20261027T0746Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-27T07:46:20Z",
+ "finished": "2026-10-27T07:48:40Z",
+ "outcome": "ok",
+ "summary": "Drain wake (07:45 London) and the live check of the new page. sgit-ai upgraded to v0.26.0 (WAKE.md 1b): status 2.1 s and 2.3 s on the two clones, nothing different. Lanes: 58526ytp and d6zak0o3 both empty (pending 0), no inbox messages; the drains ran from press v1.0.76 with a scratch copy of data's contributors.json, unchanged. Read the wake's notes (the six centers of gravity brief; CI owns the version; pack vaults only, the evidence vault nnd3i8iw; sgit 0.26.0; the team site indexes status and briefs at deploy). Live check of /sherpa/for-your-claude/ (press v1.0.56): 200, redirect from php.oct to team, Copy button works (4,375 characters), no overflow or errors at 390 and 1280px; board sherpa-0002 closed. Not a full-pass hour: the 11:45 pass walks the 40 commits since 23:44, the story as days (/on/<date>/) and the new front page. Team head 40e2cbea.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "40e2cbeaf068742240933638d411d690cf195249"
+}
