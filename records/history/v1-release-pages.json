@@ -1,6 +1,89 @@
 {
  "about": "A page counts as changed when the content of its <main> differs from the previous release's, with the two site version numbers masked: the header, the footer and the version stamp change on every page at every release and say nothing about what the release did. Pages are compared as built and committed, so the list is what a reader would have seen change. Stored in data/release-pages.json, one entry per release, written once and never recomputed:",
  "releases": {
+  "0.22.39": {
+   "against": "0.22.38",
+   "pages": [
+    {
+     "path": "sherpa/for-your-claude/index.html",
+     "title": "Tell us what you think, with your own assistant",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "sherpa/for-your-claude/brief/index.html",
+     "title": "The brief for your assistant",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "team/sherpa/index.html",
+     "title": "Sherpa, walks with the reader: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "sherpa/index.html",
+     "title": "The Sherpa: I'm here to help you find your way",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/index.html",
+     "title": "Feedback from collaborators",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/board/index.html",
+     "title": "The board",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
   "0.22.38": {
    "against": "0.22.37",
    "pages": [

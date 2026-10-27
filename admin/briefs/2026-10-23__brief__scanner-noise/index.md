@@ -28,7 +28,7 @@ Jeremiah Grossman, chief executive of Root Evidence, posted on [LinkedIn](https:
 
 The false-positives for php2shell from makeshift scanners is what's going to be apocalyptic.
 
-![Jeremiah Grossman's LinkedIn post: "The false-positives for php2shell from makeshift scanners is what's going to be apocalyptic." 32 reactions, 8 comments, 1 repost when the screenshot was taken.](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.55/assets/briefs/grossman-post.png)
+![Jeremiah Grossman's LinkedIn post: "The false-positives for php2shell from makeshift scanners is what's going to be apocalyptic." 32 reactions, 8 comments, 1 repost when the screenshot was taken.](https://press.php.oct.2026.newsroom.sgit.ai/latest/assets/briefs/grossman-post.png)
 
 The picture is the top of the editor's screenshot, taken on 23 October and used with his go. LinkedIn gives the
 
@@ -160,4 +160,4 @@ This brief is the file `admin/content/briefs/2026-10-23__brief__scanner-noise.md
 
 
 ---
-site v0.22.38 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-23__brief__scanner-noise/index.html
+site v0.22.39 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-23__brief__scanner-noise/index.html

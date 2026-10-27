@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.38. Not the live site.
+> Mockup D for review, built from the data of release v0.22.39. Not the live site.
 
-PHP Team console Console Overview Board 236 Agents 19 Releases 222 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 236 Agents 19 Releases 223 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,15 +12,15 @@ Team console · public, like everything here
  built 26 October 2026, 17:09 UTC 
 
 Release 
-v0.22.38 
-222 releases since 22 Oct 
+v0.22.39 
+223 releases since 22 Oct 
 
 Open on the board 
 236 
 115 done, 10 waiting 
 
 Pages built 
-1226 
+1228 
 every one with a markdown twin 
 
 Sources in the vault 
@@ -105,6 +105,7 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
 ### Releases
  latest 8 
 
+ v0.22.39 2026-10-27 every page reads the press and data from /latest/; each site's VERSION is its own, for its CI to write 
  v0.22.38 2026-10-27 the brief on the six centers of gravity, with its diagrams 
  v0.22.37 2026-10-27 the briefs read live; telemetry capped at 40 events a tab, with five lanes 
  v0.22.36 2026-10-26 the rest of the team site reads its records when it opens: member status and rounds, tasks, status, runs 
@@ -112,7 +113,6 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
  v0.22.34 2026-10-26 the board reads its rows when it opens (phase 2, the first page) 
  v0.22.33 2026-10-26 the lane drains in v2 and telemetry from the site's own hosts (boards sherpa-0001, 330) 
  v0.22.32 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; st… 
- v0.22.31 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; th… 
 
 ### Agents and what they own
  open items 
@@ -128,4 +128,4 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.38 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.39 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

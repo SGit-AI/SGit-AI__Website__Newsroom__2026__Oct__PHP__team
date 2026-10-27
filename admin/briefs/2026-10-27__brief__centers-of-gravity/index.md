@@ -30,7 +30,7 @@ Until today every page of the four sites was written by one build, v1's, run by 
 
 Each repository is the center of gravity for one kind of content: the only place it is written, and the place that serves it, at its own address. Every other site reads it from there, by URL, when a page opens. Nothing is ever copied from one repository into another.
 
-![The six repositories, what each owns, and the reader's browser reading from all of them](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.55/assets/briefs/centers-of-gravity.png)
+![The six repositories, what each owns, and the reader's browser reading from all of them](https://press.php.oct.2026.newsroom.sgit.ai/latest/assets/briefs/centers-of-gravity.png)
 
 | Repository | Served at | The center of gravity for | Written as |
 |---|---|---|---|
@@ -47,7 +47,7 @@ Two of the six (refs and updates) own no content of their own: they are views, a
 
 A page is a frame. The site that serves its address writes the frame in its own CI; the frame holds no content. When a reader opens it, the frame asks the repositories that own its content for that content, and the press's renderer draws it.
 
-![Inside a page: the frame's parts, and the files each part reads](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.55/assets/briefs/inside-a-page-frame.png)
+![Inside a page: the frame's parts, and the files each part reads](https://press.php.oct.2026.newsroom.sgit.ai/latest/assets/briefs/inside-a-page-frame.png)
 
 What a frame carries, and why:
 
@@ -98,7 +98,7 @@ The index is what lets a static host answer "what is there": a page cannot list 
 
 A writer releases its own repository; its CI gates and deploys; the next time any page that shows that content opens, on any site, it shows the change. Measured on the team site: a board row released to team alone was on the board 40 seconds after the push, a run record on its agent's page 41 seconds after.
 
-![One article, from the writer's push to a reader's screen](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.55/assets/briefs/flow-one-article.png)
+![One article, from the writer's push to a reader's screen](https://press.php.oct.2026.newsroom.sgit.ai/latest/assets/briefs/flow-one-article.png)
 
 For an article:
 
@@ -108,7 +108,7 @@ For an article:
 
 - A reader opens the page: the frame from site, the renderer and figures from the press, the article's Markdown from site, the cited sources' titles from data, its writer's page from team.
 
-![One fact corrected in data, five pages on three sites changed on their next load](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.55/assets/briefs/flow-one-fact-many-pages.png)
+![One fact corrected in data, five pages on three sites changed on their next load](https://press.php.oct.2026.newsroom.sgit.ai/latest/assets/briefs/flow-one-fact-many-pages.png)
 
 For a fact, the fan-out is the point: the curator corrects one line of data's `files/facts.json` and releases data; every page that shows that fact (a briefing and an article on site, the fact's page and the risk graph on refs, what's new on updates) shows the correction on its next load. None of them is rebuilt.
 
@@ -146,7 +146,7 @@ Content drawn by a script is read by Google, which runs scripts; most other craw
 
 ### What retires
 
-![The chain before, and what replaces it](https://press.php.oct.2026.newsroom.sgit.ai/v/1.0.55/assets/briefs/the-chain-before-and-after.png)
+![The chain before, and what replaces it](https://press.php.oct.2026.newsroom.sgit.ai/latest/assets/briefs/the-chain-before-and-after.png)
 
 When the last page type has moved: the press's `tools/chain.sh`, `tools/build.sh`, the box, every repository's `sync_v1.py` and `pages_sync.py`, the press's `partition.py` and `parity.py`, the build's `outputs.txt`, the redirect stubs the partition writes, and dev's daily round (dev's daily wake stays, to check the sites, the lanes and the gates). Already gone: `round.yml`, `round.sh` and `ROUND_TOKEN`.
 
@@ -196,4 +196,4 @@ This brief is the file `admin/content/briefs/2026-10-27__brief__centers-of-gravi
 
 
 ---
-site v0.22.38 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__centers-of-gravity/index.html
+site v0.22.39 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__centers-of-gravity/index.html

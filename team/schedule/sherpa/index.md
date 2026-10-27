@@ -87,4 +87,4 @@ Commit-FS-lite: the To-sherpa and To-all trailers in the release commits; all on
 
 
 ---
-site v0.22.38 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/sherpa/index.html
+site v0.22.39 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/sherpa/index.html

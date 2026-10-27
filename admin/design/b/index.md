@@ -2,7 +2,7 @@
 
 A three-column working view for a security lead: their reading path and the site by task on the left, what changed since the last visit and the next three actions in the middle, and the state of the evidence as charts on the right.
 
-> Mockup B for review, built from the data of release v0.22.38. Not the live site.
+> Mockup B for review, built from the data of release v0.22.39. Not the live site.
 
 S 
  Sam 
@@ -124,4 +124,4 @@ Amazon: Proof-of-concept attempts begin, then six hours of attempts from anonymi
 8.1 and older: source backports only.
 
 ---
-site v0.22.38 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html
+site v0.22.39 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html

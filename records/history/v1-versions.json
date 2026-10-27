@@ -1,6 +1,15 @@
 {
- "current": "0.22.38",
+ "current": "0.22.39",
  "versions": [
+  {
+   "version": "0.22.39",
+   "date": "2026-10-27",
+   "title": "every page reads the press and data from /latest/; each site's VERSION is its own, for its CI to write",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "1dceaa1dfa7f",
+   "reconstructed": false
+  },
   {
    "version": "0.22.38",
    "date": "2026-10-27",

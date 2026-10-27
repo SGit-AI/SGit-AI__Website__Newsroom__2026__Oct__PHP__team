@@ -3,5 +3,6 @@
  "title": "Build /breaking/ from content/breaking/*.md (the list, a page per item), and files/breaking.json in the data catalogue",
  "status": "open",
  "owner": "dev",
- "note": "For conductor-0005's design. Until it is built, breaking@php.newsroom writes each item as an article with series: breaking and breaking_id: BREAKING-NNN, so it can move into the section unchanged."
+ "note": "For conductor-0005's design. Until it is built, breaking@php.newsroom writes each item as an article with series: breaking and breaking_id: BREAKING-NNN, so it can move into the section unchanged.",
+ "order": 359
 }

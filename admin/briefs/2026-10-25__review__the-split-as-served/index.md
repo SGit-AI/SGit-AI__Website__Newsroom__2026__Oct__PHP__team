@@ -96,4 +96,4 @@ This brief is the file `admin/content/briefs/2026-10-25__review__the-split-as-se
 
 
 ---
-site v0.22.38 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__review__the-split-as-served/index.html
+site v0.22.39 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__review__the-split-as-served/index.html

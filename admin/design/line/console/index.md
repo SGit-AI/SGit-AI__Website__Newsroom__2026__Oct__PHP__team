@@ -2,7 +2,7 @@
 
 A page written for the team: the line carries the gate, the page is dimmed rather than hidden, and anyone can read it anyway.
 
-> Prototype F for review, built from the data of release v0.22.38. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
+> Prototype F for review, built from the data of release v0.22.39. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
 
 Team console 
 ## The board, the releases, the agents
@@ -10,8 +10,8 @@ Team console
 Public, as everything here is; written for the team that runs the site. 
 
 Release 
-v0.22.38 
-222 releases 
+v0.22.39 
+223 releases 
 
 Open on the board 
 236 
@@ -22,4 +22,4 @@ Members
 each with a role and a policy
 
 ---
-site v0.22.38 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/console/index.html
+site v0.22.39 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/console/index.html

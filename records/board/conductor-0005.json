@@ -3,5 +3,6 @@
  "title": "A section for breaking news on the main site: /breaking/, items BREAKING-001, 002, … each with its own page",
  "status": "open",
  "owner": "story-site",
- "note": "The editor's request, 27 October 2026. The design: a list newest first (ID, title, state developing or settled, last update), and a page per item with dated updates newest first, each citing its sources and the data version. The source is one file per item in the site repository, content/breaking/BREAKING-NNN.md, with front matter id, title, opened, state and updated. The first item is BREAKING-001 (records/briefs/2026-10-27__breaking__breaking-001-cisa-lists-both-php2shell-flaws-as-exploited.md). The build is dev's, on conductor-0006."
+ "note": "The editor's request, 27 October 2026. The design: a list newest first (ID, title, state developing or settled, last update), and a page per item with dated updates newest first, each citing its sources and the data version. The source is one file per item in the site repository, content/breaking/BREAKING-NNN.md, with front matter id, title, opened, state and updated. The first item is BREAKING-001 (records/briefs/2026-10-27__breaking__breaking-001-cisa-lists-both-php2shell-flaws-as-exploited.md). The build is dev's, on conductor-0006.",
+ "order": 358
 }
