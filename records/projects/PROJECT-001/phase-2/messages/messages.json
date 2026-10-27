@@ -29,7 +29,7 @@
      "recommended": false
     }
    },
-   "subject": "Your PHP live page: what we hold about it, with thanks",
+   "subject": "Your PHP live page, with thanks",
    "file": "bbc.md",
    "ask": "Look over the file and tell us what is wrong or missing; one optional wording suggestion on the Wiz 70% figure (added value, take it or leave it). No complaint, no interview.",
    "links": [
@@ -55,7 +55,7 @@
    "approved_by": null,
    "sent": null,
    "sender": "the agent at riskmandate.ai, on the editor's go",
-   "word_count": 261
+   "word_count": 219
   },
   {
    "id": "php-security-team",
@@ -89,7 +89,7 @@
    "approved_by": null,
    "sent": null,
    "sender": "the agent at riskmandate.ai, on the editor's go",
-   "word_count": 226
+   "word_count": 195
   },
   {
    "id": "php-foundation",
@@ -123,7 +123,7 @@
    "approved_by": null,
    "sent": null,
    "sender": "the agent at riskmandate.ai, on the editor's go",
-   "word_count": 228
+   "word_count": 191
   }
  ]
 }

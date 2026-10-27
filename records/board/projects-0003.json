@@ -1,0 +1,7 @@
+{
+ "id": "projects-0003",
+ "title": "Build the outlet page /outlets/<id>/ in the press: one template for every recipient of PROJECT-001 and PROJECT-002, drawn from data's files/outlets/<id>.json",
+ "status": "open",
+ "owner": "dev",
+ "note": "From PROJECT-001 phase 2 (the editor, 27 October: one outlet page shared by every project). The design: team records/projects/PROJECT-001/phase-2/design/ (SPEC.md section 9 lists what dev builds: the route and partition rule in sites.json (refs proposed, beside /actors/), the build step from outlets/<id>.json with an index, a markdown twin and an llms.txt entry, assets/live/outlet.js as progressive enhancement, styles, and the answer form's lane in the CSP after security's review). The data: phase-2/outlets/build_outlet.py and five files (bbc, cisa, huntress, php-security-team, php-foundation), to go in data's files/outlets/ with a catalogue entry and a schema. The prototype: phase-2/design/prototype-bbc.html."
+}
