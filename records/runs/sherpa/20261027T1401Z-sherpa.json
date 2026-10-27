@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1401Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-27T14:01:34Z",
+ "finished": "2026-10-27T14:03:44Z",
+ "outcome": "ok",
+ "summary": "Drain wake (13:45 London, fired 14:01) and a read-only review of PROJECT-001 phase 1 (steps 1b and 1c, written in the projects desk under my name; I did not write or change them). Lanes: 58526ytp and d6zak0o3 empty (pending 0), no new inbox messages; drains from press v1.0.79's tree, contributors.json unchanged; sgit-ai v0.26.0. WAKE.md changed (start and end banners): followed. Review of the ten (records/projects/PROJECT-001/phase-1/the-ten.*): the method holds (three tests, nothing sent, no address, channels to confirm, BBC a corrections case only, Wiz held back until R-001, one message to the PHP security team not the Foundation). Checked nine quoted phrases against the sources' pages in refs: eight match. One does not: Huntress's 'As of October 21 at 4:30pm ET, Huntress has not observed in-the-wild exploitation' is in quotation marks, but the site's page holds only our paraphrase ('As of 16:30 ET (20:30 UTC) 21 Oct: no exploitation observed on partner systems'); the verbatim may be in the capture, which I cannot open (evidence vault nnd3i8iw: no key here). Whatever message quotes Huntress must quote the capture, not our page. My answers to the editor's five questions: (1) wait for R-001 before R-002's third point (origin before echo, as the candidates' data says); the /outlets/bbc/ template is a good pattern; (2) leave Trend Micro out; (3) one news check-ask is thin but honest: keep Die Presse first reserve; (4) agreed, one message to the PHP security team; (5) two batches: the five complete-page vendors first, the five needing our clean hands after, so five replies teach us before the sensitive five. Not in the ten by design: the discovery teams (Calif, OpenAI, Wiz) and Woodward are interviews, not checks, and come later (my 25 October brief). Team head 8881aed1b401.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8881aed1b40140931dfa49e3973f84f2a151b541"
+}
