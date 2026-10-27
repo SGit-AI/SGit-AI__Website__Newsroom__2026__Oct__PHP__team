@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1205Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-27T12:05:00Z",
+ "finished": "2026-10-27T13:00:53Z",
+ "outcome": "ok",
+ "summary": "Wake 12:00 London, 27 October: one pass of the source watch on the pack vault 7r83qic5 (12:06 to 12:54 UTC, 48 min), two phases each committed and pushed, then PROJECT-002 step 1 (conductor-0013): vault head 3c5e727b84f8, on sgit-ai v0.26.0. Cyber desk: both php2shell CVEs remain in the CISA KEV catalog (series kev-listed 2, read 00:45 UTC; no new KEV capture changed it); EPSS 0.99981 and 0.99997, last read 26 October 14:42 UTC; NVD both 9.2. Three GitHub series came back from empty bodies this pass (capture hash e3b0c442, the sha256 of nothing) and read 0: nuclei-templates merged pull requests (last good reading 4), Metasploit (0) and the php2shell repository count (last good 593); these are read failures, not changes, the p_pulls parser fault awaiting the editor's go. The CVE repository search read 683 (was 148). Sites dark 48 on the community tracker (07:15 UTC, unverified). Probe: 413 named sites, 327 answering, 38 refused-us, 25 unreachable, 15 server-error, 6 client-error; 8 changed state (eight Japanese sites the tracker lists as dark answer HTTP 200). Watch: 1,100 pages due in the full run, 695 changed; access 961 open, 80 bot-challenge, 31 down, 21 paywalled, 5 gone, 2 login-wall. Discovery: 6,435 items, 3,901 on topic, 15 of 51 headlines resolved. Ledger 66 records, 65 open. Curator queue 492 rows (8 added, existing rows untouched). PROJECT-002 step 1: 28 corrections and contact pages of 14 of the 15 distinct outlets captured (Fortune has no page found; the note says 16, BBC counts once), findings in the vault at analysis/project-002-corrections-channels.json and on board row researcher-0003; no page states a reply time; nothing was sent to any outlet. Data: files/source-watch.json refreshed twice (1,330 then 1,365 pages, 995 publishers, 15,981 snapshots). Notes read: the conductor's three (projects brief, PROJECT-002 step 1, wake banners).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "ee7e56107f89e7f648f9615af0b5bb80755c0948"
+}
