@@ -1,7 +1,7 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "desk",
- "as_of": "2026-10-26",
+ "as_of": "2026-10-27",
  "round": {
   "n": 4,
   "date": "2026-10-26",
@@ -20,6 +20,10 @@
   {
    "what": "sgit 0.25.0; scheduled task's prompt set to the card's instructions, enabled",
    "evidence": "trig_012VDhTAeH7RQRRTBF8Gxq6y; records/runs/desk/20261026T2345Z-desk.json"
+  },
+  {
+   "what": "Scope fixed at the editor's word: the card's repositories are team and data; the correction requests (files/outreach.json) are the desk's; the role and the card say so; abp@ asked to put it in the policy",
+   "evidence": "records/schedule/desk.json, records/agents/desk/ROLE.md, board desk-0002"
   }
  ],
  "tasks": {
@@ -51,14 +55,22 @@
  },
  "next": [
   {
-   "what": "The 10:40 wake on 27 October, the first against team",
+   "what": "Hold the correction requests: the editor sends them after the design settles (his word of 27 October); re-check every quote before then, publishers reword",
+   "why": "the editor"
+  },
+  {
+   "what": "The 10:40 wake",
    "why": "the card"
+  },
+  {
+   "what": "After security's review and the editor's go: the member-role branches (board desk-0001)",
+   "why": "the editor asked for the page to be fixed"
   }
  ],
  "asks": [
   {
-   "what": "whether the desk holds a data push again for the correction requests (files/outreach.json)",
-   "from": "the editor"
+   "what": "agree the desk's policy with the new scope (data push; files/outreach.json), and reconcile it with the liaison's, who also lists outreach.json",
+   "from": "abp@newsroom.sgit, then the editor"
   }
  ],
  "tokens": {

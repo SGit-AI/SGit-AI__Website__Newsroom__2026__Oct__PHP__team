@@ -23,8 +23,8 @@
   "The publication, as published: the headline against the journalist's latest state of affairs; the age of Right now; every front-page sentence against the fact-check desk's open findings and contradictions; one number, one value (offline, agencies, status counts, the 'as of' of no compromise) across the front page, briefings, personas and mockups; one fact, one grade; doors from the front to the best new pages.",
   "The system: who is blocked on whom and since when (team: /team/status/, records/data/); each card in records/schedule/ against its runs in records/runs/; the six repositories' releases; the vaults against what the sites show.",
   "Morning wake only: the line, the story in one paragraph, and the editor's decisions ranked by what each unblocks.",
-  "Afternoon wake only: the coverage promoted since the morning, read for overstatements; a correction proposed to the liaison (board row and message) only with every quote found character for character in its capture (read-only clone of the evidence vault, outside every repository, sgit 0.25.0 or later) and a fact-check record behind it.",
-  "What is wrong anywhere becomes a board row naming its owner (records/board/desk-NNNN.json) and a message to that owner (python3 records/tools/schedule.py send). The desk edits no other member's files.",
+  "Afternoon wake only: the coverage promoted since the morning, read for overstatements; a request drafted in data (files/outreach.json) only with every quote found character for character in its capture (read-only clone of the evidence vault, outside every repository, sgit 0.25.0 or later) and a fact-check record behind it; check the quotes again before any request is said to be ready, because publishers reword. Released with data's tools/release.sh (RELEASE_TRAILER=\"Agent: desk\"). Never sent by an agent: the editor sends each request, and on 27 October asked to hold them until the design settles.",
+  "What is wrong anywhere becomes a board row naming its owner (records/board/desk-NNNN.json) and a message to that owner (python3 records/tools/schedule.py send). The desk edits no other member's files, except the correction requests (files/outreach.json) and wording the editor has told it, in the session, to change.",
   "Every wake, whatever happened: one run record in team (python3 records/tools/schedule.py run desk ...) and one release with tools/release.sh (RELEASE_TRAILER=\"Agent: desk\"), as records/WAKE.md section 5 says.",
   "Report to the editor in ten lines or fewer: what waits on the editor first, then what moved."
  ],
@@ -37,7 +37,8 @@
  "writes": [
   "its briefs in records/briefs/ and its board rows as records/board/desk-NNNN.json",
   "its card (records/schedule/desk.json), its runs (records/runs/desk/) and its folder (records/agents/desk/)",
-  "messages to agents, in records/messages/"
+  "messages to agents, in records/messages/",
+  "the correction requests: files/outreach.json in the data repository"
  ],
  "never": [
   "write to a publisher or anyone outside the team: the editor sends every correction",
@@ -48,12 +49,14 @@
   "write v1 (SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP): frozen since 26 October 2026"
  ],
  "kept_by": "desk@php.newsroom",
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "repositories": {
   "push": [
-   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team"
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
+   "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__data"
   ],
   "pull": [],
-  "note": "v1 (SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP) is frozen since step B (26 October 2026): never written. The desk writes only its records in team (briefs, board rows, card, runs, messages, folder). It reads the sites and the data by URL. The correction requests (files/outreach.json) and the front page's wording live in data and site and are the liaison's, story-site's and the journalist's: the desk proposes changes to them by board row and message; a data push for the desk would be the editor's grant."
+  "note": "v1 (SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP) is frozen since step B (26 October 2026): never written. The desk writes its records in team (briefs, board rows, card, runs, messages, folder) and, since the editor's word of 27 October ('fix your scope: that's fine'), the correction requests in data (files/outreach.json). It reads the sites by URL. The front page's and the claims' wording are story-site's and the journalist's files in data: the desk edits them only where the editor says so in the session, otherwise proposes by board row and message.",
+  "granted": "the editor, 27 October 2026: data attached to the desk's session with push access"
  }
 }

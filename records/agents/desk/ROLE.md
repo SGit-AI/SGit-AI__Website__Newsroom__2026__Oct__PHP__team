@@ -39,6 +39,7 @@
 - `records/registers/desk.json`
 - `records/schedule/desk.json`
 - `records/runs/desk/**`
+- `files/outreach.json` in the data repository: the correction requests, their quotes and their checks (the editor, 27 October 2026: "fix your scope: that's fine"). The editor sends every request; the desk never writes to a publisher.
 
 **Appends** (shared files it adds to, in its own block, row or file only):
 
