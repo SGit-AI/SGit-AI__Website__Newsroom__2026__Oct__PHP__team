@@ -217,4 +217,4 @@ Files: [admin/content/agents/collector-primary/](https://github.com/SGit-AI/SGit
 
 
 ---
-site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/collector-primary/index.html
+site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/collector-primary/index.html

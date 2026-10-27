@@ -4,5 +4,5 @@
  "status": "done",
  "title": "Articles live from their Markdown, and a page for an article or brief newer than the build",
  "note": "Dev, 27 October 2026. Every article page on site draws its article from content/articles/<file> when it opens (assets/live/article.js): a change or a correction released in site is on its page a minute or two later, with no round. /articles/<slug>/ for a new article opens the article view through the 404 page; the same for /admin/briefs/<slug>/ on team. site's gate checks an article at its writer's push. Debrief: records/agents/dev/debriefs/2026-10-27__articles-live.md.",
- "order": 363
+ "order": 370
 }

@@ -13,6 +13,7 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | Agent | As of | Last debrief | Next | Asks | Tokens | Outside scope | Overrides | Injection seen |
 |---|---|---|---|---|---|---|---|---|
 | [abp@newsroom.sgit](../abp/index.html) | 2026-10-24 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
+| [Breaking-news desk](../breaking/index.html) |  | [The KEV listing run: CISA's listing of both php2shell CVEs through the four lanes in 46 minutes, measured](../breaking/index.html#2026-10-27__the-kev-listing-run) | 0 | 0 | unknown | not run | 0 | 0 |
 | [Briefing writer](../briefing-writer/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Government and CERT collector](../collector-gov/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Primary-source collector](../collector-primary/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
@@ -34,14 +35,16 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [researcher@php.newsroom](../researcher/index.html) | 2026-10-26 | [sgit-ai 0.26.0 on the source watch vault: what I ran and measured, and `sgit pack index verify`, which prints nothing and takes about 40 minutes](../researcher/index.html#2026-10-27__sgit-0-26-0-usage-and-pack-index-verify) | 2 | 2 | unknown | 0 | 0 | 0 |
 | [security@php.newsroom](../security/index.html) | 2026-10-24 | [Application security: the AppSec section, 40 advisories, a CSP on every page, the telemetry policy, and three security passes](../security/index.html#2026-10-24__application-security) | 4 | 3 | unknown | 2 | 1 | 2 |
 | [Sherpa](../sherpa/index.html) | 2026-10-26 | [The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team](../sherpa/index.html#2026-10-26__v2-first-run) | 2 | 3 | unknown | 0 | 0 | 0 |
-| [Story site agent](../story-site/index.html) | 2026-10-26 | [The split reviewed, and the quiet top](../story-site/index.html#2026-10-26__the-split-reviewed-and-the-quiet-top) | 2 | 2 | unknown | dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October | 2 | 0 |
+| [Story site agent](../story-site/index.html) | 2026-10-27 | [The story as days, built](../story-site/index.html#2026-10-27__the-story-as-days) | 2 | 2 | unknown | dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October | 3 | 0 |
 | [storyboard@php.newsroom](../storyboard/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [synthetic@php.newsroom](../synthetic/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 
 ## Every debrief, newest first
+- 2026-10-27 · [Story site agent: The story as days, built](../story-site/index.html#2026-10-27__the-story-as-days)
 - 2026-10-27 · [researcher@php.newsroom: sgit-ai 0.26.0 on the source watch vault: what I ran and measured, and `sgit pack index verify`, which prints nothing and takes about 40 minutes](../researcher/index.html#2026-10-27__sgit-0-26-0-usage-and-pack-index-verify)
 - 2026-10-27 · [Observability: On a schedule (three wakes a day); five telemetry lanes; a parallel drain; why the lane filled on 26 October](../observability/index.html#2026-10-27__five-lanes-a-schedule-and-a-parallel-drain)
 - 2026-10-27 · [dev@php.newsroom: Articles live from their Markdown, a page for what is newer than the build, and site's gate checks articles](../dev/index.html#2026-10-27__articles-live)
+- 2026-10-27 · [Breaking-news desk: The KEV listing run: CISA's listing of both php2shell CVEs through the four lanes in 46 minutes, measured](../breaking/index.html#2026-10-27__the-kev-listing-run)
 - 2026-10-26 · [Story site agent: The split reviewed, and the quiet top](../story-site/index.html#2026-10-26__the-split-reviewed-and-the-quiet-top)
 - 2026-10-26 · [Sherpa: The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team](../sherpa/index.html#2026-10-26__v2-first-run)
 - 2026-10-26 · [researcher@php.newsroom: sgit-ai 0.24.0 against 0.25.0 on the source watch vault, measured before and after](../researcher/index.html#2026-10-26__sgit-0-25-0-before-and-after)
@@ -81,4 +84,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

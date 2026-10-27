@@ -106,10 +106,10 @@ Measurements, not verdicts: the review says which of them mattered to this reade
 
 **Vault** `9p6jpsd2` · **read key** `sgit_public_read_e4e66e3ad8167c7de4f940f6224a58d2e74039a22092db0fa400484b548187da:9p6jpsd2` (read-only, published on purpose)
 
-[Open the vault read-only in a new tab ↗](https://dev.vault.sgraph.ai/en-gb/#sgit_public_read_e4e66e3ad8167c7de4f940f6224a58d2e74039a22092db0fa400484b548187da%3A9p6jpsd2) · `sgit clone sgit_public_read_e4e66e3ad8167c7de4f940f6224a58d2e74039a22092db0fa400484b548187da:9p6jpsd2`
+`sgit clone sgit_public_read_e4e66e3ad8167c7de4f940f6224a58d2e74039a22092db0fa400484b548187da:9p6jpsd2`
 
 This run is in the folder `runs/2026-10-23T2356Z/`: the served and rendered HTML, the text and the screenshots of every page, every request and console message, and what the reviewer was given.
 
 
 ---
-site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/synthetic/pm/2026-10-23T2356Z/index.html
+site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/synthetic/pm/2026-10-23T2356Z/index.html

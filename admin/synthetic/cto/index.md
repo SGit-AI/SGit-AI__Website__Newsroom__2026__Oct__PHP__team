@@ -96,14 +96,10 @@ Scores are 0 to 5 from this reader's point of view.
 
 **Vault** `wlhgl8pk` · **read key** `sgit_public_read_c20a2e6e91f6aa161ab7f6abb20dc0e27ade846a94ce149d0fd11996daaade3f:wlhgl8pk` (read-only, published on purpose)
 
-[Open the vault read-only in a new tab ↗](https://dev.vault.sgraph.ai/en-gb/#sgit_public_read_c20a2e6e91f6aa161ab7f6abb20dc0e27ade846a94ce149d0fd11996daaade3f%3Awlhgl8pk) · `sgit clone sgit_public_read_c20a2e6e91f6aa161ab7f6abb20dc0e27ade846a94ce149d0fd11996daaade3f:wlhgl8pk`
+`sgit clone sgit_public_read_c20a2e6e91f6aa161ab7f6abb20dc0e27ade846a94ce149d0fd11996daaade3f:wlhgl8pk`
 
 Every run is a folder under `runs/`.
 
-## See it live, here
-
-[Open the vault in a new tab ↗](https://dev.vault.sgraph.ai/en-gb/#sgit_public_read_c20a2e6e91f6aa161ab7f6abb20dc0e27ade846a94ce149d0fd11996daaade3f%3Awlhgl8pk) Read-only, in the official vault UI.
-
 
 ---
-site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/synthetic/cto/index.html
+site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/synthetic/cto/index.html

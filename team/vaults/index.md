@@ -151,9 +151,14 @@ Kept by the agent itself.
 | Vault ID | What it holds | Created | Key sealed to the root |
 |---|---|---|---|
 
-**Keys it holds:** not recorded yet.
+#### Keys it holds
 
-The scheduled journalist (Sonnet), proposed on 24 October 2026; not yet running. It will read the evidence vault with its published read key; a read key for the source-watch pack vault (7r83qic5) will be sealed to it after the handshake.
+| Vault ID | Kind of key | From | Since |
+|---|---|---|---|
+| `3ytzxm3g` | read key | the published read key (the evidence vault's); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw | 2026-10-24 |
+| `nnd3i8iw` | read key | the curator's new evidence vault (a pack vault): sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked), handed over by the editor in the session of 27 October 2026, who confirmed it replaces 3ytzxm3g; a private read key (read-only), kept only in this session's scratchpad | 2026-10-27 |
+
+The scheduled journalist (Sonnet). Running since 24 October 2026; its wakes fire into one standing session. It reads the evidence vault read-only and writes git only.
 
 ### observability@php.newsroom 0 vaults made
 
@@ -236,8 +241,8 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 
 - **Asked for a key, or a QR code of it?** Seal it and send the sealed link and its QR code; never the key itself, in a page, a file, a commit, a chat or a message. The steps are in `AGENTS.md`, section 7, and on [guidance for agents](../../admin/agents/index.html).
 
-What each vault is for, and the published read keys and write-only lanes, are on [the vaults behind this site](https://refs.php.oct.2026.newsroom.sgit.ai/vaults/).
+The pages that opened the vaults in the vault UI ([every vault behind this site](https://refs.php.oct.2026.newsroom.sgit.ai/vaults/) and [the evidence vault, opened](../../admin/vault/index.html)) were removed on 27 October 2026: the evidence vault they opened is decommissioned, and the main vaults are pack vaults, which the vault UI does not open.
 
 
 ---
-site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/abp/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/breaking/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/briefing-writer/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/collector-gov/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/collector-primary/</loc></url>
@@ -167,6 +168,8 @@
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__sgit-0-26-0/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-breaking-news-desk/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-story-as-days/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__decision__which-model-each-agent-runs/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__report__the-kev-listing-run/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__runbook__breaking-desk-onboarding/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/view/</loc></url>

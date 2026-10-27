@@ -1,6 +1,15 @@
 {
- "current": "0.22.43",
+ "current": "0.22.44",
  "versions": [
+  {
+   "version": "0.22.44",
+   "date": "2026-10-27",
+   "title": "the story as days (story-site, press 375c0de and site's content/days/): the front page leads with the last 24 hours and each day is at /on/<date>/; the pages that opened vaults in the vault UI are removed (the editor, 27 October 2026)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "24f0b0e22666",
+   "reconstructed": false
+  },
   {
    "version": "0.22.43",
    "date": "2026-10-27",

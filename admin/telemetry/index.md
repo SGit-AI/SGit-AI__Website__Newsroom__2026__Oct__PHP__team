@@ -88,12 +88,8 @@ The curated counts above are written at every drain into a public vault, `0cfkdc
 
 Open it yourself. The read key is the whole credential, and it is published on purpose.
 Read key: sgit_public_read_687c9515f681c96912aa1f711df647c7b0e5337c2c06bff219514d0c947fc800:0cfkdcvh
-In the official UI: open it read-only in a new tab ↗ · From the command line: sgit clone sgit_public_read_687c9515f681c96912aa1f711df647c7b0e5337c2c06bff219514d0c947fc800:0cfkdcvh
+From the command line: sgit clone sgit_public_read_687c9515f681c96912aa1f711df647c7b0e5337c2c06bff219514d0c947fc800:0cfkdcvh
 A read key decrypts and cannot write; it is derived one way from the vault key, which is not published and never will be.
-
-## See it live, here
-
-[Open the vault in a new tab ↗](https://dev.vault.sgraph.ai/en-gb/#sgit_public_read_687c9515f681c96912aa1f711df647c7b0e5337c2c06bff219514d0c947fc800%3A0cfkdcvh) The same counts, and more, in the public stats vault: its own app, updated at every drain.
 
 ## Every event, every group
 
@@ -207,4 +203,4 @@ Mechanics: `assets/telemetry.js` sends; `admin/build/telemetry_drain.py`, run by
 
 
 ---
-site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/telemetry/index.html
+site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/telemetry/index.html

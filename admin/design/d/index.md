@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.43. Not the live site.
+> Mockup D for review, built from the data of release v0.22.44. Not the live site.
 
-PHP Team console Console Overview Board 242 Agents 19 Releases 227 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 242 Agents 19 Releases 228 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,15 +12,15 @@ Team console · public, like everything here
  built 27 October 2026, 00:45 UTC 
 
 Release 
-v0.22.43 
-227 releases since 22 Oct 
+v0.22.44 
+228 releases since 22 Oct 
 
 Open on the board 
 242 
 117 done, 13 waiting 
 
 Pages built 
-1235 
+1238 
 every one with a markdown twin 
 
 Sources in the vault 
@@ -105,6 +105,7 @@ Step A of the split is in place (26 October): the records are written in team (r
 ### Releases
  latest 8 
 
+ v0.22.44 2026-10-27 the story as days (story-site, press 375c0de and site's content/days/): the front page leads with the last 24 hours and each day i… 
  v0.22.43 2026-10-27 the loops page names the evidence vault nnd3i8iw (3ytzxm3g decommissioned, the editor, 27 October 2026) 
  v0.22.42 2026-10-27 every site's gate is the press's newest: site's checks an article at its writer's push; a run's agent links to its schedule page o… 
  v0.22.41 2026-10-27 article pages are frames: each draws its article from site's content/articles/ when it opens; articles/view/ draws one newer than … 
@@ -112,7 +113,6 @@ Step A of the split is in place (26 October): the records are written in team (r
  v0.22.39 2026-10-27 every page reads the press and data from /latest/; each site's VERSION is its own, for its CI to write 
  v0.22.38 2026-10-27 the brief on the six centers of gravity, with its diagrams 
  v0.22.37 2026-10-27 the briefs read live; telemetry capped at 40 events a tab, with five lanes 
- v0.22.36 2026-10-26 the rest of the team site reads its records when it opens: member status and rounds, tasks, status, runs 
 
 ### Agents and what they own
  open items 
@@ -120,7 +120,7 @@ Step A of the split is in place (26 October): the records are written in team (r
  Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 34 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 25 
- dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 26 
+ dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 25 
  Primary-source collector php.net, the CVE and NVD records, GitHub advisories, tags and branches, oss-security, the php-src clone 5 
  Government and CERT collector every national agency's advisory, in its own language, with the translation marked 4 
  Researcher, vendor and press collector Calif, Wiz, OpenAI, Cloudflare, Amazon, Imperva, Fastly, Akamai, the detection rule sets, the press 14 
@@ -128,4 +128,4 @@ Step A of the split is in place (26 October): the records are written in team (r
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.43 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.44 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

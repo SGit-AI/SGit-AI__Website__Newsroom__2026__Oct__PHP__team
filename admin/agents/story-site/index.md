@@ -318,14 +318,90 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | 5 |
-| Done | The quiet top: the line, the reading strip, the bar and the hero eyebrow made quieter; the line on the site themes A review of the split as served: findings carried over, one reader across hosts, seven refactorings The line on every page in place of the dials; the router, the view in the address bar and 28 cards The briefs page as a list of titles with a page per brief, and the admin pages using the whole width The line on a phone no longer holds the top of the screen, and the article on URL paths, personas in the address and a single-page site Prototype F, the line, at /admin/design/line/: six pages on the editor's briefing pack, the pack's engine and words vendored with its 19 tests, every number filled from the evidence vault Headlines near the top of every page: the bar in two lines, slim strips, /ops/ and /analysis/ fixed on a phone Prototype E, the lens, at /admin/design/lens/ (three pages, from the live data), and its brief The redesign live: tracks A, B, C, the team console, the task menu and two dials, the wide layout |
-| Next | One reader across the six hosts The line's page shaping, or honest copy |
+| Round | 6 |
+| Done | The story as days: day files in site, the renderer, the router and the line, the day frame and the front page in the build The quiet top: the line, the reading strip, the bar and the hero eyebrow made quieter; the line on the site themes A review of the split as served: findings carried over, one reader across hosts, seven refactorings The line on every page in place of the dials; the router, the view in the address bar and 28 cards The briefs page as a list of titles with a page per brief, and the admin pages using the whole width The line on a phone no longer holds the top of the screen, and the article on URL paths, personas in the address and a single-page site Prototype F, the line, at /admin/design/line/: six pages on the editor's briefing pack, the pack's engine and words vendored with its 19 tests, every number filled from the evidence vault Headlines near the top of every page: the bar in two lines, slim strips, /ops/ and /analysis/ fixed on a phone Prototype E, the lens, at /admin/design/lens/ (three pages, from the live data), and its brief The redesign live: tracks A, B, C, the team console, the task menu and two dials, the wide layout |
+| Next | Preview cards for the day pages The desk's closing step on its card |
 | Asks | The go for the line on the live site (297), its five decisions (298), and the URL shape and router decisions in the article (302) (from the editor) Enrol story-site's key, sha256:f15dbb872e108ec7 (from the editor) |
 | Tokens | unknown · the session does not show a token count to the agent |
-| Policy | out_of_scope_requests 0, pushbacks 0, overrides 2, writes_outside_scope dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October, injection_seen 0 |
+| Policy | out_of_scope_requests 0, pushbacks 0, overrides 3, writes_outside_scope dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October, injection_seen 0 |
 
 ## Its rounds
+
+### The story as days, built
+
+2026-10-27 · round 6 · branch `dev (press, site, team)` · commits `press (days-live, router, line, design.py, one line in build.py); site content/days/; team records` · tokens unknown · outside scope 1 · overrides 1
+
+#### What I was asked
+
+The editor, 27 October: move to daily pages, mock them up; then, after the mock-up: "Front page is the last 24 hours,
+
+including the links like you have at the top. The dates. Yes ... it should be the desk agent [that closes the day]";
+
+then, the refactoring done: "implement the new design".
+
+#### What I did
+
+- **Before the days:** restored what a v1 hand merge had lost (the live-site review brief, its board row, the round-5 debrief and status), and fixed the line's address on pages that are files (`admin/versions.html`).
+
+- **The mock-up** (press `assets/design/days/`), the brief `2026-10-27__brief__the-story-as-days.md` and the editor's four decisions, recorded (boards story-site-0002 to 0004).
+
+- **The build of it**, following the article pattern of dev's refactor: the days are site's content (`content/days/.json`, one per calendar day in UTC, and `story.json`); one renderer in the press (`assets/design/days/days-live.js`) draws the front page's strip of days and last 24 hours, and each day at `/on//`; the role is the line's, so switching it redraws the day; the router opens a day address; the line keeps `/on//as//` in the bar; the build writes the day frame and the front page's container.
+
+**Checked** in a scratch box built from v1 as frozen with every repository exported (the chain's own steps, nothing
+
+pushed): 1,263 pages; the build's gate passes my pages (its one failure, `admin/briefs/view/` as an orphan, is not
+
+mine); 17 journeys in Chromium against a local stand-in for GitHub Pages, from the front page to a day, arrows and the
+
+back button, a quiet day, a role switch, a reload through the router, a shared day link, a phone, Night, no scripts; no
+
+page errors.
+
+#### What it looks like
+
+![The front page: the strip of days, then the last 24 hours](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-27__days-live__front-last-24-hours.png)
+
+The front page: the strip of days, then the last 24 hours
+
+![Day 5 for Security](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-27__days-live__day5-security.png)
+
+Day 5 for Security
+
+![Day 6 for a Journalist, from a shared link](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-27__days-live__day6-journalist.png)
+
+Day 6 for a Journalist, from a shared link
+
+![Day 6 in the Night theme](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-27__days-live__night-day6.png)
+
+Day 6 in the Night theme
+
+![The front page on a phone](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/story-site/debriefs/img/2026-10-27__days-live__phone-front.png)
+
+The front page on a phone
+
+#### What I did not do
+
+- The pages carry the days at dev's next edition: the front page's container and `on/index.html` are built pages.
+
+- The desk's card does not yet carry the closing step (board story-site-0004 waits on the desk).
+
+- The day pages have no preview cards yet: a shared `/on//` unfurls as the router page.
+
+#### Policy
+
+One line in `build/build.py` (the front page's body calls `design.days_front`), the build's file, at the editor's ask;
+
+counted as an override. The rest is mine (`assets/design/**`, `build/design.py`, `content/days/` as the story's
+
+content). Security self-check: no new host, script source or stored field; every value from a day file is drawn as text
+
+through `assets/live/live.js`; a date reaches an address only after it matches `YYYY-MM-DD` and names a day that exists.
+
+Nothing I read asked me to act.
+
+#### Next
+
+1. Preview cards for the days. 2. The desk's closing step, with the desk.
 
 ### The split reviewed, and the quiet top
 
@@ -770,4 +846,4 @@ Files: [admin/content/agents/story-site/](https://github.com/SGit-AI/SGit-AI__We
 
 
 ---
-site v0.22.43 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/story-site/index.html
+site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/story-site/index.html
