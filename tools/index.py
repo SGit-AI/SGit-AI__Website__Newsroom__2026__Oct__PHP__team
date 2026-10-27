@@ -12,6 +12,8 @@ file per collection beside the records it is made of, under records/index/:
   messages.json   every message (records/messages/<to>/<id>.md: front matter and body), newest first, each with the run
                   that first read it
   registers.json  every register (records/registers/<agent>.json): vault IDs and kinds of key, never a key
+  briefs.json     every brief (records/briefs/*.md): its title, who wrote it, its first line and when it was published
+                  (records/data/briefs-published.json, else the commit that added it); its text is the file itself
   agents.json     every member folder (records/agents/<id>/): its status.json and its debriefs (front matter and text),
                   newest first
 
@@ -20,7 +22,7 @@ never fails on one). The records stay the source: an
 agent writes its row and releases team, and the page shows it at the next deploy, a minute or two later, with no build
 anywhere else. Nothing is copied from another repository. No clock: the same records give the same bytes.
 """
-import argparse, glob, json, os, re, sys
+import argparse, glob, json, os, re, subprocess, sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
@@ -76,7 +78,8 @@ def collections():
     msgs.sort(key=lambda m: m['id'], reverse=True)
     regs, gskip = load('records/registers/*.json')
     members, askip = agents()
-    return {'agents': ('agents', members, askip), 'schedule': ('cards', sorted(cards, key=lambda c: str(c.get('agent'))), cskip), 'runs': ('runs', runs, rskip),
+    bs, bskip = briefs()
+    return {'agents': ('agents', members, askip), 'briefs': ('briefs', bs, bskip), 'schedule': ('cards', sorted(cards, key=lambda c: str(c.get('agent'))), cskip), 'runs': ('runs', runs, rskip),
             'messages': ('messages', msgs, mskip), 'registers': ('registers', regs, gskip)}
 
 
@@ -105,6 +108,52 @@ def agents():
             except (ValueError, UnicodeDecodeError) as e: skipped.append(f'{os.path.relpath(p, ROOT)}: {str(e)[:80]}')
         dbs.sort(key=lambda x: (x.get('date', ''), x['file']), reverse=True)
         out.append({'agent': a, 'status': status, 'debriefs': dbs})
+    return out, skipped
+
+
+def brief_meta(path):
+    """The build's brief_meta: title, who wrote it and a first line, read from the file itself."""
+    fn = os.path.basename(path)
+    lines = [x.rstrip('\n') for x in open(path, encoding='utf-8')]
+    title = next((x[2:].strip() for x in lines if x.startswith('# ')), fn[:-3])
+    body = [x.strip() for x in lines if x.strip() and not x.startswith('#')]
+    status = next((x for x in body if x.lower().startswith('status:')), '')
+    first = next((x for x in body if not x.lower().startswith('status:')
+                  and not x.startswith(('>', '|', '```', '- ', '* ', '<', '1.'))), '')
+    who = ''
+    m = re.search(r'Author:\s*([^.;]+)', status)
+    if m: who = m.group(1).strip()
+    elif status: who = status[7:].split('.')[0].strip()
+    lead = re.sub(r'[*`\[\]]', '', first)
+    if len(lead) > 120:
+        cut = lead.find('. ')
+        if 40 < cut < 190: lead = lead[:cut + 1]
+    return {'slug': fn[:-3], 'file': fn, 'date': fn[:10], 'title': title, 'who': who, 'lead': lead}
+
+
+def added(rel):
+    """When git first saw a file here (the release that published it), UTC to the minute; None without the history."""
+    try:
+        t = subprocess.run(['git', '-C', ROOT, 'log', '--diff-filter=A', '--format=%cI', '--', rel], capture_output=True, text=True, check=True).stdout.split()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    if not t: return None
+    import datetime as dt
+    return dt.datetime.fromisoformat(t[-1]).astimezone(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ')
+
+
+def briefs():
+    lp = os.path.join(ROOT, 'records', 'data', 'briefs-published.json')
+    led = json.load(open(lp, encoding='utf-8')).get('published', {}) if os.path.exists(lp) else {}
+    out, skipped = [], []
+    for p in sorted(glob.glob(os.path.join(ROOT, 'records', 'briefs', '*.md'))):
+        try:
+            m = brief_meta(p)
+        except (OSError, UnicodeDecodeError) as e:
+            skipped.append(f'{os.path.relpath(p, ROOT)}: {str(e)[:80]}'); continue
+        m['published'] = led.get(m['slug']) or added(os.path.relpath(p, ROOT)) or m['date'] + 'T00:00Z'
+        out.append(m)
+    out.sort(key=lambda m: (m['published'], m['slug']), reverse=True)
     return out, skipped
 
 

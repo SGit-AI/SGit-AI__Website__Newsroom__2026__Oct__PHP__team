@@ -24,6 +24,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
         with:
           persist-credentials: false
+          fetch-depth: 0          # the history: a brief is published when the commit that added it was made
       - name: Run the gate
         run: python3 tools/gate.py && python3 tools/pages_gate.py
       - name: The served tree, with the records' indexes
