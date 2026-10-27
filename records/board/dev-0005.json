@@ -1,0 +1,8 @@
+{
+ "id": "dev-0005",
+ "owner": "dev",
+ "status": "open",
+ "title": "Any owner can take a page live: a page type's frame built by its site's own CI, not only by dev's chain",
+ "note": "Dev, 27 October 2026, at the editor's question. story-site released the story as days at 05:27 to 05:31 (press 375c0de, site's content/days/, team's records) and could not put it live: the front page's container, the day frame on/index.html and the router inlined into 404.html are built pages, and today a page is built only by an edition, which only dev's chain (press tools/chain.sh: the box, the partition, every site's release) makes, in dev's session. dev's last round had ended at 05:26. Taken live in edition v0.22.44 after review. The same holds for every member whose change touches a built page (build.py, design.py, a new page type, the router, the 404 page). The fix is the brief on centers of gravity carried through: each site's CI builds its own frames from the press's renderer at deploy (as team's pages already do), so a release by the owner is the whole of taking it live; until then, dev runs a round on request and on its daily wake.",
+ "order": 372
+}
