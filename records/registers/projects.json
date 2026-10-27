@@ -1,0 +1,16 @@
+{
+ "agent": "projects@php.newsroom",
+ "member": "projects",
+ "note": "Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__the-projects-desk.md, section 2). Vault ids and key kinds only, never a key. The session's key pair is sha256:db7c00f5a94f1559 (signing sha256:ab7ec95f495fcfc8), a session key made with sgit pki keygen (sgit-ai 0.26.0), private halves encrypted at rest in the session's scratchpad; it goes with the container. The desk writes no vault and makes none.",
+ "vaults": [],
+ "holds": [
+  {
+   "id": "nnd3i8iw",
+   "key": "read key",
+   "from": "the curator (curator@php.newsroom), sealed to sha256:db7c00f5a94f1559, carried by the editor",
+   "since": null,
+   "status": "asked for on 27 October 2026, not yet received; until it arrives the desk quotes from data's sources.json (the data API), which carries each source's captures and hashes",
+   "note": "The evidence vault; read only, to quote captures exactly; cloned into the scratchpad, never into a repository"
+  }
+ ]
+}

@@ -3,7 +3,7 @@
  "title": "Telling them what we hold about them, and asking them to check it",
  "brief": "records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
  "lead": "sherpa",
- "state": "open",
+ "state": "running",
  "opened": "2026-10-27T10:53Z",
  "closed": null,
  "phases": [
@@ -11,7 +11,45 @@
    "phase": "1. Propose",
    "checkpoint": "A: the ten names",
    "passed_by": "editor",
-   "passed": null
+   "passed": null,
+   "started": "2026-10-27T12:18Z",
+   "steps": [
+    {
+     "id": "1a",
+     "member": "ontologist",
+     "does": "audit the actors pages: for each of the 27 actors and the brief's named starters without a page (NCSC-NL, NCSC UK, CISA, Trend Micro), the sources we hold from them, their captures, and what the page lacks",
+     "needs": [
+      "data actors.json",
+      "data sources.json",
+      "refs /actors/"
+     ],
+     "produces": "phase-1/actors-audit.json, phase-1/actors-audit.md",
+     "model": "sonnet"
+    },
+    {
+     "id": "1b",
+     "member": "sherpa",
+     "does": "the long list: every candidate from the 25 October analysis's three waves, the brief's starters and the liaison's requests, scored by the three tests with evidence",
+     "needs": [
+      "briefs 2026-10-25 interviews-and-outreach",
+      "data outreach.json",
+      "data sources.json"
+     ],
+     "produces": "phase-1/candidates.json",
+     "model": "sonnet"
+    },
+    {
+     "id": "1c",
+     "member": "sherpa",
+     "does": "the ten: why, the channel by name, the one ask each, the order, and the gaps each actors page must close in phase 2",
+     "needs": [
+      "1a",
+      "1b"
+     ],
+     "produces": "phase-1/the-ten.json, phase-1/the-ten.md",
+     "model": "sonnet"
+    }
+   ]
   },
   {
    "phase": "2. Prepare",
@@ -32,6 +70,11 @@
    "passed": null
   }
  ],
- "next": "Phase 1 in the projects desk: the Sherpa's step proposes the ten names.",
- "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps"
+ "next": "Phase 1 is running in the projects desk: 1a (ontologist) and 1b (Sherpa) side by side, then 1c (Sherpa) proposes the ten; the desk checks each, releases, and stops at checkpoint A.",
+ "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps",
+ "checkpoint": {
+  "at": "A: the ten names",
+  "waits_for": "the editor, on the project's page or in the projects desk's session: approve, drop or change names",
+  "passed": null
+ }
 }
