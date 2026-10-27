@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1725Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-27T17:20:00Z",
+ "finished": "2026-10-27T17:30:00Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/factcheck/HANDOVER.md). Nothing exists only in the session: the repositories are clean and at team f9c1b7ca and data ecffa42. The card names repositories (push team and data, never v1) and its model; the register lists nnd3i8iw (read key), hsmfer5w (stale) and 3ytzxm3g (retired). Needed in the new account: a new key, the nnd3i8iw read key sealed to it by the editor, the vault server token, and the editor's go for the scheduled task.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "f9c1b7ca"
+}
