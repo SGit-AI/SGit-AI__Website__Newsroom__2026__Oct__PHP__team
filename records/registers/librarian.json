@@ -1,0 +1,10 @@
+{
+ "agent": "librarian@php.newsroom",
+ "member": "librarian",
+ "note": "Written on 27 October 2026 for the move to a new account. The librarian has made no vault and holds no vault key and no secret of its own; it has never held an agent key pair enrolled at pki.sgit.ai. IDs and key kinds only, never a key.",
+ "vaults": [],
+ "holds": [],
+ "reads_by_published_key_only": [
+  {"id": "nnd3i8iw", "what": "the evidence vault, only to check a reader answer against a capture, with its published read key if the editor gives one; cloned outside every repository"}
+ ]
+}

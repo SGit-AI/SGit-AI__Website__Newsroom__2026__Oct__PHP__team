@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1730Z-librarian",
+ "agent": "librarian",
+ "started": "2026-10-27T17:30:00Z",
+ "finished": "2026-10-27T23:57:39Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/librarian/HANDOVER.md). Nothing existed only in the session (v1 branch clean and pushed, frozen). Card checked: repositories, times, instructions, each_wake complete; model now in plain words (Sonnet) and status paused; register written (no vaults made, none held, no secrets). Not done: the ownership map has not been re-run against the six since the split, and the old task trig_015dBN3kZZNti6c9BFE2xMj4 is not recreated here (the editor's go, in the new session).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "fb768f2512d7ad322db9ab69736374d9f95ebcd5"
+}
