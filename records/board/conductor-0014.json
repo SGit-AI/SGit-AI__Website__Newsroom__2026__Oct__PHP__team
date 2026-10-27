@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0014",
+ "title": "A page per project on the team site: /team/projects/ and /team/projects/<project-nnn>/, read live from records/projects/, with a feedback form that sends the project's id",
+ "status": "open",
+ "owner": "dev",
+ "note": "The editor, 27 October 2026: projects stop and start at checkpoints, have a clear beginning and end, and can be managed from a web page, where the editor talks to the project through the site's feedback lane (the Sherpa drains it). Source: records/projects/<PROJECT-NNN>/project.json (state, phases, checkpoints, next), log.md, feedback/. The brief: records/briefs/2026-10-27__brief__projects-and-the-projects-desk.md. The form adds a project field to the existing feedback lane; the Sherpa writes each piece into the project's feedback/ folder. Security reviews the form."
+}

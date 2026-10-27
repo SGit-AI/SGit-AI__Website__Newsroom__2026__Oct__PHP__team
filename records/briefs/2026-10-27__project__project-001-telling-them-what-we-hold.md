@@ -37,6 +37,19 @@ and phrases that matter, and the pages where we are strong.
 | security | reviews the answer lane before it opens |
 | the editor | sends every message, from his own address |
 
+## Phases and checkpoints
+
+The steps below fall into four phases. The project stops at each checkpoint until it is passed.
+
+| Phase | Steps | Ends at the checkpoint | Passed by |
+| --- | --- | --- | --- |
+| 1. Propose | 1 (the list) | **A: the ten names**, each with why and the channel | the editor, on the project's page |
+| 2. Prepare | 2, 3, 4 (re-grade, the pages, the messages) | **B: each page and each draft message** | the editor |
+| 3. Send | 5 (the editor sends, one by one) | **C: sent**, recorded in `files/outreach.json` | the editor |
+| 4. Answers | 6 (drained, saved, acted on) | **D: close**, the definition of done met | the editor |
+
+Phase 4 stays open as long as answers come in. The editor closes the project when he judges it done.
+
 ## Steps
 
 1. **The list (Sherpa, ontologist).** Ten names to start. Choose them from the Sherpa's three waves and the actors
@@ -86,7 +99,7 @@ The phrases the newsroom's evidence speaks to most clearly, so the ones to lead 
 
 ## Next step
 
-The Sherpa proposes the ten names in a board row (conductor-0012), from its 25 October analysis and the three tests
+Phase 1, run in the projects desk (`records/briefs/2026-10-27__runbook__the-projects-desk.md`): the Sherpa's step proposes the ten names in a board row (conductor-0012), from its 25 October analysis and the three tests
 above. Its next wake is 11:45 London.
 
 ## What waits for the editor

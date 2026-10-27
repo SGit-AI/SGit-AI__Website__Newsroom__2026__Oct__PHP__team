@@ -1,0 +1,37 @@
+{
+ "id": "PROJECT-002",
+ "title": "The corrections we propose, on a page, through each outlet's own channel",
+ "brief": "records/briefs/2026-10-27__project__project-002-the-corrections-we-propose.md",
+ "lead": "liaison",
+ "state": "open",
+ "opened": "2026-10-27T10:53Z",
+ "closed": null,
+ "phases": [
+  {
+   "phase": "1. Research and re-grade",
+   "checkpoint": "A: the 16 channels captured and the 12 rows re-graded",
+   "passed_by": "editor",
+   "passed": null
+  },
+  {
+   "phase": "2. The page and the requests",
+   "checkpoint": "B: the page and each request",
+   "passed_by": "editor",
+   "passed": null
+  },
+  {
+   "phase": "3. Send",
+   "checkpoint": "C: sent",
+   "passed_by": "editor",
+   "passed": null
+  },
+  {
+   "phase": "4. Answers",
+   "checkpoint": "D: close",
+   "passed_by": "editor",
+   "passed": null
+  }
+ ],
+ "next": "Phase 1: the researcher captures the corrections channels; fact-check re-grades the twelve rows.",
+ "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps"
+}

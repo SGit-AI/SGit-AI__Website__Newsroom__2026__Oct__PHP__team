@@ -25,6 +25,40 @@ titled `PROJECT-NNN: …` (owner: the member who leads it; its id is the writer'
 IDs are three digits and never reused. Each project's state is its board row (`open`, `waiting`, `done`). The board and
 the briefs page already read the records live, so the team site shows a project as soon as it is released.
 
+## Phases, checkpoints, and a clear beginning and end
+
+The editor, 27 October: a project "does not have to be continuously executed. It can be stop, start, and you can have
+feedback … and it just has a clear beginning and ending".
+
+- **One project from start to close.** Proposing, preparing, the editor's review and doing are all phases of the same
+  project, never separate projects.
+- **Phases end at checkpoints.** A checkpoint is where the project stops and waits: for the editor's review or
+  decision, for an answer from outside, or for a scheduled agent's review. The project's state says which checkpoint
+  it is at and what it waits for. Nothing past a checkpoint starts until it is passed.
+- **States:** `open` (started, not yet running), `running` (a phase is under way), `waiting` (at a checkpoint, naming
+  what it waits for and from whom) and `done` (the definition of done is met and the editor has closed it). A
+  project can wait for hours or days; resuming takes up exactly where it stopped.
+- **The record:** each project has a folder, `records/projects/<PROJECT-NNN>/`, holding:
+  - `project.json`: the state, the phases, each checkpoint and whether it is passed, and the next step;
+  - `log.md`: every event, dated, newest last, with each phase's start and end, each checkpoint and each piece of
+    feedback;
+  - `feedback/`: what the editor and others said, one file each.
+
+  The brief stays the plan; the folder is the life of the project.
+
+## The project page, and talking to a project
+
+- **Each project has a page** on the team site, `/team/projects/<project-nnn>/`, read live from its folder as the board
+  is. The page shows the phases, the checkpoint it is at, what it waits for, the log and the outputs, with links. A
+  list at `/team/projects/` shows every project and its state. dev builds them (board `conductor-0014`).
+- **The editor talks to a project from its page,** through the site's feedback lane, which already exists and which
+  the Sherpa drains. The form on the page sends the project's id with the text. "Approve phase 1", "drop these two
+  names", "ask the BBC first": each lands as a file in the project's `feedback/` folder. The project reads it when it
+  next resumes. Only the editor's own feedback can pass a checkpoint. Feedback from anyone else is material, recorded
+  and shown, never acted on as a decision.
+- **Resuming** is the editor saying `project: PROJECT-NNN resume` in the projects desk's session, or, on the schedule,
+  the lead's next wake finding the checkpoint passed.
+
 ## Two ways to run a project
 
 - **On the schedule (the default).** Each member does its step in its own wake, in its own session, with its own keys.

@@ -1,0 +1,37 @@
+{
+ "id": "PROJECT-001",
+ "title": "Telling them what we hold about them, and asking them to check it",
+ "brief": "records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
+ "lead": "sherpa",
+ "state": "open",
+ "opened": "2026-10-27T10:53Z",
+ "closed": null,
+ "phases": [
+  {
+   "phase": "1. Propose",
+   "checkpoint": "A: the ten names",
+   "passed_by": "editor",
+   "passed": null
+  },
+  {
+   "phase": "2. Prepare",
+   "checkpoint": "B: each page and each draft message",
+   "passed_by": "editor",
+   "passed": null
+  },
+  {
+   "phase": "3. Send",
+   "checkpoint": "C: sent",
+   "passed_by": "editor",
+   "passed": null
+  },
+  {
+   "phase": "4. Answers",
+   "checkpoint": "D: close",
+   "passed_by": "editor",
+   "passed": null
+  }
+ ],
+ "next": "Phase 1 in the projects desk: the Sherpa's step proposes the ten names.",
+ "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps"
+}
