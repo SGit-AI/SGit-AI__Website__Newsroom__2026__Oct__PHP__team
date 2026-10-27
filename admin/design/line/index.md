@@ -2,7 +2,7 @@
 
 The front page of the line prototype: one band under the masthead that says one thing to the persona in front of it, and the page under it ordered for that role, at the depth they asked for.
 
-> Prototype F for review, built from the data of release v0.22.39. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
+> Prototype F for review, built from the data of release v0.22.40. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
 
 Developing · data as of 26 October 2026, 17:09 UTC 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
@@ -217,4 +217,4 @@ ity team replied on the mailing list on 22 October, and this site will settle th
  PHP-FPM For CVE-2026-109618 the GitHub advisory says no complete FPM exploit has been demonstrated; the PHP Foundation blog says RCE was confirmed o
 
 ---
-site v0.22.39 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/index.html
+site v0.22.40 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/index.html

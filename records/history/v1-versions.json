@@ -1,6 +1,15 @@
 {
- "current": "0.22.39",
+ "current": "0.22.40",
  "versions": [
+  {
+   "version": "0.22.40",
+   "date": "2026-10-27",
+   "title": "the readers' copy (glossary, plain, questions, interview, seo, billing) moves to site's content/data/; five more files are data's",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "1dceaa1dfa7f",
+   "reconstructed": false
+  },
   {
    "version": "0.22.39",
    "date": "2026-10-27",

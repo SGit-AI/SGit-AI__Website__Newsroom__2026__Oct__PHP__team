@@ -78,4 +78,4 @@ Commit-FS-lite: the To-librarian and To-all trailers in the release commits; all
 
 
 ---
-site v0.22.39 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/librarian/index.html
+site v0.22.40 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/librarian/index.html

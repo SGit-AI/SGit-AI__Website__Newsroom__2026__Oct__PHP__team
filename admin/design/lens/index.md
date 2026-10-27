@@ -2,7 +2,7 @@
 
 A working prototype of a site that shapes itself to the reader in front of them: how long they have, who they are, what they want to do, and what they have seen; set once at the top right, applied on every page with no reload and no flash.
 
-> Prototype E for review, built from the data of release v0.22.39. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
+> Prototype E for review, built from the data of release v0.22.40. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
 
 This site shapes itself to you. Three taps, and you can change them any time, top right. 
 ### How long have you got?
@@ -39,7 +39,7 @@ A critical flaw in software that runs many websites, fixed on 21 October. Every 
 The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise, and CISA has not listed either flaw as exploited. 
 Internet-facing mod_php first, then FPM, then everything else. Where patching slips, apply php.net's temporary settings and record that each blocks a known path only. Alert on PHP workers spawning shells or fetching tools. Decide now who calls isolate or offline, and when. 
 Two classes: an out-of-memory longjmp leaving request memory uninitialised, and worker global state pointing at freed request memory across requests. mod_php was exploited before application code; FPM for the first flaw is disputed. The fix removes longjmp for OOM. A report of an incomplete fix is open. 
-Release v0.22.39. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
+Release v0.22.40. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
 Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. As of 14:42 UTC on 26 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
 
  1 min+ aim: understand verify 
@@ -441,4 +441,4 @@ That is the page for the time you gave it. How this prototype works (for the edi
 - “Got it” marks a part as seen; Fade or Hide takes it out of the way on every page, until it changes.
 
 ---
-site v0.22.39 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html
+site v0.22.40 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html

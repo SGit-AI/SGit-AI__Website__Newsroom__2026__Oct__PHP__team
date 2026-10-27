@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.39. Not the live site.
+> Mockup D for review, built from the data of release v0.22.40. Not the live site.
 
-PHP Team console Console Overview Board 236 Agents 19 Releases 223 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 237 Agents 19 Releases 224 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,11 +12,11 @@ Team console · public, like everything here
  built 26 October 2026, 17:09 UTC 
 
 Release 
-v0.22.39 
-223 releases since 22 Oct 
+v0.22.40 
+224 releases since 22 Oct 
 
 Open on the board 
-236 
+237 
 115 done, 10 waiting 
 
 Pages built 
@@ -30,8 +30,11 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 236
+#### Open 237
 
+ #dev-0003 
+Tag ruleset on the six repositories, so a published version can never move or vanish (CI owns the version: the editor's … 
+ editor 
  #sherpa-0002 
 A page and a brief for a power user's own assistant: /sherpa/for-your-claude/ (and /sherpa/for-your-claude/brief/), so a… 
  sherpa@php.newsroom 
@@ -50,9 +53,6 @@ CISA added CVE-2026-109618 and CVE-2026-109619 to the KEV catalog on 26 October 
  #ontologist-0001 
 Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py and records/desks/wikipedia/fetch.py (and… 
  ontologist 
- #observability-0002 
-SG/Send: the append service caches a vault's lane configuration per server instance and never refreshes it, so after `co… 
- conductor 
 
 #### Waiting 10
 
@@ -105,6 +105,7 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
 ### Releases
  latest 8 
 
+ v0.22.40 2026-10-27 the readers' copy (glossary, plain, questions, interview, seo, billing) moves to site's content/data/; five more files are data's 
  v0.22.39 2026-10-27 every page reads the press and data from /latest/; each site's VERSION is its own, for its CI to write 
  v0.22.38 2026-10-27 the brief on the six centers of gravity, with its diagrams 
  v0.22.37 2026-10-27 the briefs read live; telemetry capped at 40 events a tab, with five lanes 
@@ -112,12 +113,11 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
  v0.22.35 2026-10-26 the schedule pages and the vault register read the team's records when they open 
  v0.22.34 2026-10-26 the board reads its rows when it opens (phase 2, the first page) 
  v0.22.33 2026-10-26 the lane drains in v2 and telemetry from the site's own hosts (boards sherpa-0001, 330) 
- v0.22.32 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; st… 
 
 ### Agents and what they own
  open items 
 
- Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
+ Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 34 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
  conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 24 
  dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 24 
@@ -128,4 +128,4 @@ The six new repositories have not deployed: set each one's Pages source to 'Depl
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.39 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.40 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
