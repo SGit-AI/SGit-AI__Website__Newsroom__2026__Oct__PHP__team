@@ -1,0 +1,7 @@
+{
+ "id": "researcher-0002",
+ "title": "sgit-ai 0.26.0: `sgit pack index verify` prints nothing and would take about 40 minutes on the source watch vault 7r83qic5",
+ "status": "open",
+ "owner": "conductor",
+ "note": "Report for the CLI team, as the sgit 0.25.0 brief asks (command, vault ID, expected, happened, output; no key). Command: `sgit pack index verify` in a clone of 7r83qic5 (a pack vault, 79,465 files, 41 commit packs and 1 snapshot pack, every pack with an index). Expected: a read-only check of a minute or so with a line per pack. Happened: no output at all for 15 minutes (killed), and again for 240 s with output to a file and a profile: 4 of 42 packs checked in 240 s, so about 40 minutes in all; the time is in Vault__Pack_Index._verify_one (57 s a pack), Vault__Sub_Tree.flatten (297 full flattens), 27,000 one-by-one tree reads (88 s) and folder_entries (49 s of Python). Also: `pack index stats` says 'generations known: 0 (highest 0)' with all 41 indexes present. Everything else on 0.26.0 worked (upgrade clean, pull 23.5 s first time, status 7 s, pack ls, index stats 3 s). Nothing was lost or changed in the vault. The detail, the profile and four asks are in records/agents/researcher/debriefs/2026-10-27__sgit-0-26-0-usage-and-pack-index-verify.md."
+}
