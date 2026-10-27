@@ -24,7 +24,7 @@
   "20:15",
   "21:15"
  ],
- "model": "Sonnet",
+ "model": "Opus (the editor, 27 October 2026)",
  "session": "its own persistent session, conductor@php.newsroom (scheduled), on Sonnet (session_01RR3krokJmVQdy7UE8rJV8s), woken by one scheduled task (trig_01YQ9hbCi8iZJymLf3GtRWUo, CRON_TZ=Europe/London 15 7-21 * * *)",
  "brief": "records/briefs/2026-10-25__brief__the-split-for-every-agent.md",
  "abp": "none yet (abp@, security@: board)",
