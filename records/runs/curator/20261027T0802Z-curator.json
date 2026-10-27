@@ -1,0 +1,16 @@
+{
+ "run": "20261027T0802Z-curator",
+ "agent": "curator",
+ "started": "2026-10-27T08:02:56Z",
+ "finished": "2026-10-27T08:38:09Z",
+ "outcome": "ok",
+ "summary": "08:00 wake: pulled watch-pack in 25m22s (467 rows, 25 pending), added 1 capture, read and promoted batch 19: 18 sources (ENTER.CO honeypot RCE report, unwire.hk, UOL, VietNamNet, VTV, Weekly Hankook, WinPoin, WSWS and others), 11 claims, 1 timeline row; a private individual's Hacker News handle kept out of notes and claims. Evidence pack nnd3i8iw now head 6fe04cc074f9: 580 sources, 304 claims; commit 2.4s, push 10s. Compaction check: 2 commit packs, not needed. Data released from that head (sources, vault, claims, timeline files; CI numbers it). Exporter note: it calls sgit on PATH, so run it with sgit 0.26 first on PATH or the head reads null and the gate fails. 7 rows still pending.",
+ "read": [
+  "records/schedule/curator.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "c56b1f3a230c9f8393f59f0c4590a0aee40efdfc"
+}
