@@ -1,0 +1,16 @@
+{
+ "run": "20261027T1345Z-curator",
+ "agent": "curator",
+ "started": "2026-10-27T13:45:11Z",
+ "finished": "2026-10-27T13:55:58Z",
+ "outcome": "ok",
+ "summary": "13:00 wake (fired 13:45 UTC; dev 625fbcc54e58; re-read WAKE.md and CLAUDE.md, now with start and end banners). sgit-ai 0.26.0 in the venv (/usr/local/bin/sgit is still 0.24.0). Pulled watch-pack in 4m42s (13:46:30 to 13:51:19 UTC) and evidence-pack in seconds (up to date). Queue had 14 pending rows; read all 14 in full and promoted batch 21: 14 sources, 15 claims, no timeline rows (CNET France with the Cyfirma Lazarus claim marked unverified and a StealMyBitcoin conflict marked disputed against the Sixactualites item, Mynavi, Notebookcheck's Shodan counts, XenoSpectrum's NAS vendor status, ZDNet Korea interview, Yonhap, ZDNET and others). Where: the Yonhap page's copyright line prohibits AI training and use of the article; it is a licensing notice, not an instruction, noted on the capture. No page addressed an AI otherwise. Evidence pack nnd3i8iw now head 9b5fd6786c2d: 612 sources, 341 claims; commit seconds, push 23.8s at 13:53 UTC. Compaction check: 4 commit packs, 1 snapshot, not needed. Data released from that head (sources, vault, claims; CI numbers it), exporter run with sgit 0.26 first on PATH. Queue now empty of pending rows. The two notes from the conductor (projects brief, wake banners) were read; I took no project work, as my card names none.",
+ "read": [
+  "records/schedule/curator.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "625fbcc54e585fec269a75a122e2a8178241de5f"
+}
