@@ -1,0 +1,129 @@
+{
+ "step": "2d",
+ "by": "projects@php.newsroom (subagent: correspondent, sherpa)",
+ "status_rule": "a message is sent only when its status is 'approved' and approved_by is 'editor'",
+ "injection_seen": "none in the captures and files read (BBC live page text, php.net advisory, Foundation post, outlet files, channel.json); the Foundation post's reader comments were not used",
+ "notes": [
+  "BBC channel: this is not a complaint, so a warm note to BBC News or BBC Verify suits better than the formal complaints form (which starts a numbered Stage 1a process and a 30-working-day clock, and is for corrections). No such route is captured yet; the editor decides, or a capture of the BBC's contact route comes first. The complaints form URL is held as an alternative only.",
+  "BBC: the message says we corrected two of our own claims (data b90449e); the NCSC quote's origin is left out on purpose (unsettled, and it would be a second ask).",
+  "PHP security team: K-011 rests on Zelenka's oss-security post of 22 October 09:11 UTC, which our data records as fetched outside the vault (sha256 prefix 94c69d8f1c07e67d); capture it before sending.",
+  "PHP Foundation: K-008 (the Foundation's post placing FPM confirmation under CVE-2026-109618) is not raised with the Foundation, to keep one ask; it goes to the security team."
+ ],
+ "messages": [
+  {
+   "id": "bbc",
+   "to": {
+    "name": "BBC News (live page team)",
+    "kind": "news outlet"
+   },
+   "channel": {
+    "name": "BBC News / BBC Verify: a warm note to the newsroom's published audience or contact route (proposed); route to be found and captured before use",
+    "kind": "to find",
+    "url": null,
+    "to_confirm": true,
+    "alternative": {
+     "name": "BBC Complaints, online form (formal Stage 1a route)",
+     "url": "https://www.bbc.co.uk/contact/complaints/make-a-complaint",
+     "captured": "20261027T151830Z",
+     "kind": "complaints form",
+     "recommended": false
+    }
+   },
+   "subject": "Your PHP live page: what we hold about it, with thanks",
+   "file": "bbc.md",
+   "ask": "Look over the file and tell us what is wrong or missing; one optional wording suggestion on the Wiz 70% figure (added value, take it or leave it). No complaint, no interview.",
+   "links": [
+    "https://refs.php.oct.2026.newsroom.sgit.ai/outlets/bbc/ (not built yet)",
+    "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/",
+    "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/bbc.json"
+   ],
+   "quotes": [
+    {
+     "text": "We haven't been able to verify that figure but here's what we can say about some of the websites that have reported issues around the globe.",
+     "source": "bbc-live-ckgel5xp2xv9t",
+     "capture": "20261022T080559Z",
+     "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
+    },
+    {
+     "text": "a popular general-purpose scripting language that powers 70% of all websites in the world",
+     "source": "wiz-blog-php2shell",
+     "capture": "20261022T081047Z",
+     "sha256": "e3568b6f88c93f6bb08eebe3c8811f9fd283212f7331b287d5170b91d6bad1ea"
+    }
+   ],
+   "status": "draft",
+   "approved_by": null,
+   "sent": null,
+   "sender": "the agent at riskmandate.ai, on the editor's go",
+   "word_count": 261
+  },
+  {
+   "id": "php-security-team",
+   "to": {
+    "name": "The PHP security team (php.net)",
+    "kind": "maintainers"
+   },
+   "channel": {
+    "name": "the PHP security team's published security contact on php.net (the php.net site lists a Contact link; its address is not in our captured text)",
+    "kind": "to find",
+    "url": null,
+    "to_confirm": true
+   },
+   "subject": "Your PHP advisory: what we hold, and three points to check",
+   "file": "php-security-team.md",
+   "ask": "Check what we hold and say whether three open points (K-008, K-010, K-011) are right as we have them.",
+   "links": [
+    "https://refs.php.oct.2026.newsroom.sgit.ai/outlets/php-security-team/ (not built yet)",
+    "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/",
+    "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/php-security-team.json"
+   ],
+   "quotes": [
+    {
+     "text": "while only an update is a complete solution, the following measures reduce exposure to specific attack paths but do not make an installation safe.",
+     "source": "php-net-advisory",
+     "capture": "20261022T080901Z",
+     "sha256": "df0b1bba3deae2823b3f7c6200d5a4fafa1625c51cde86e50f650e0b0726b31e"
+    }
+   ],
+   "status": "draft",
+   "approved_by": null,
+   "sent": null,
+   "sender": "the agent at riskmandate.ai, on the editor's go",
+   "word_count": 226
+  },
+  {
+   "id": "php-foundation",
+   "to": {
+    "name": "The PHP Foundation",
+    "kind": "foundation"
+   },
+   "channel": {
+    "name": "the PHP Foundation's published contact (thephp.foundation lists a Contact link; its address is not in our captured text)",
+    "kind": "to find",
+    "url": null,
+    "to_confirm": true
+   },
+   "subject": "Your security-release post: what we hold, and what we can offer",
+   "file": "php-foundation.md",
+   "ask": "Check what we hold and say whether we describe the Foundation's role correctly; the added value (outlet file, evidence, correction channel) is offered, not asked for.",
+   "links": [
+    "https://refs.php.oct.2026.newsroom.sgit.ai/outlets/php-foundation/ (not built yet)",
+    "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/",
+    "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/php-foundation.json"
+   ],
+   "quotes": [
+    {
+     "text": "Moving the release forward by one day was the best compromise between acting quickly, giving people time to prepare, and making sure everyone had a simple update path when the vulnerabilities were disclosed.",
+     "source": "php-foundation-blog-security-release",
+     "capture": "20261022T080901Z",
+     "sha256": "a1be057adc1c5bfabad6a59007bd08960168346230f03967fba68f2402ab3f04"
+    }
+   ],
+   "status": "draft",
+   "approved_by": null,
+   "sent": null,
+   "sender": "the agent at riskmandate.ai, on the editor's go",
+   "word_count": 228
+  }
+ ]
+}

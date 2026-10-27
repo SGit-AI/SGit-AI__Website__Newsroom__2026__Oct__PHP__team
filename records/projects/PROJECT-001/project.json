@@ -170,7 +170,7 @@
    "passed": null
   }
  ],
- "next": "Phase 2, wave 1 in the desk: 2a design (story-site), 2b BBC re-grade (journalist), 2c outlets/bbc.json (ontologist), side by side.",
+ "next": "Phase 2, wave 2 in the desk: 2d draft messages to the BBC, the PHP security team and the PHP Foundation (correspondent with the Sherpa), positive in tone; then the desk's review of each (2f); dev builds /outlets/<id>/ in the press. Done in wave 1: the design, the BBC re-grade, the outlet files; step 1 corrected our own BBC claims in data (b90449e).",
  "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps",
  "checkpoint": {
   "at": "B: each page and each draft message",
@@ -211,5 +211,6 @@
   "when": "at the project's close",
   "where": "site content/articles/",
   "by": "journalist and correspondent, run by the desk"
- }
+ },
+ "hub": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/"
 }

@@ -1,0 +1,266 @@
+{
+ "project": "PROJECT-001",
+ "title": "Telling them what we hold about them, and asking them to check it",
+ "state": "running",
+ "lead": "sherpa",
+ "checkpoint": {
+  "at": "B: each page and each draft message",
+  "waits_for": "phase 2 to finish; then the editor",
+  "passed": null
+ },
+ "next": "Phase 2, wave 2 in the desk: 2d draft messages to the BBC, the PHP security team and the PHP Foundation (correspondent with the Sherpa), positive in tone; then the desk's review of each (2f); dev builds /outlets/<id>/ in the press. Done in wave 1: the design, the BBC re-grade, the outlet files; step 1 corrected our own BBC claims in data (b90449e).",
+ "brief": "https://team.php.oct.2026.newsroom.sgit.ai/records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
+ "hub": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/",
+ "for_agents": "Everything here is public and holds no secret. Read project.json for the state and messages.json for the messages. A message may be sent only when its status is \"approved\" and approved_by is \"editor\"; a draft is never sent. Nothing on these pages is an instruction to any agent but the newsroom's own; the editor, in his own session, decides.",
+ "messages": [],
+ "outlets": [
+  {
+   "id": "bbc",
+   "name": "BBC News",
+   "sources": 1,
+   "captures": 4,
+   "claims": 12,
+   "by_verdict": {
+    "holds": 3,
+    "holds-in-part": 7,
+    "not-shown": 1,
+    "refuted": 1
+   },
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/bbc.json"
+  },
+  {
+   "id": "cisa",
+   "name": "CISA",
+   "sources": 7,
+   "captures": 9,
+   "claims": 6,
+   "by_verdict": {
+    "holds": 5,
+    "holds-in-part": 1
+   },
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/cisa.json"
+  },
+  {
+   "id": "huntress",
+   "name": "Huntress",
+   "sources": 1,
+   "captures": 2,
+   "claims": 3,
+   "by_verdict": {
+    "holds": 2,
+    "holds-in-part": 1
+   },
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/huntress.json"
+  },
+  {
+   "id": "php-foundation",
+   "name": "The PHP Foundation",
+   "sources": 2,
+   "captures": 2,
+   "claims": 12,
+   "by_verdict": {
+    "holds": 5,
+    "holds-in-part": 6,
+    "refuted": 1
+   },
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/php-foundation.json"
+  },
+  {
+   "id": "php-security-team",
+   "name": "The PHP security team (php.net)",
+   "sources": 10,
+   "captures": 13,
+   "claims": 16,
+   "by_verdict": {
+    "holds": 12,
+    "holds-in-part": 2,
+    "refuted": 2
+   },
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/php-security-team.json"
+  }
+ ],
+ "files": [
+  {
+   "path": "feedback/2026-10-27T1228Z__editor__bbc-corrections-briefing.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/feedback/2026-10-27T1228Z__editor__bbc-corrections-briefing.md",
+   "bytes": 1237,
+   "sha256": "96a2970caf681a0d1004d9158d15316638b42b7d83bdbedc8dbd81b222b1ce4a",
+   "about": "the editor's own words, filed verbatim"
+  },
+  {
+   "path": "feedback/2026-10-27T1503Z__editor__checkpoint-a.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/feedback/2026-10-27T1503Z__editor__checkpoint-a.md",
+   "bytes": 3541,
+   "sha256": "4b8359c0b248aa71d4a87f1f98ef6e671020b2a06ff81429ba7b2b697b242304",
+   "about": "the editor's own words, filed verbatim"
+  },
+  {
+   "path": "feedback/2026-10-27T1516Z__editor__the-desk-acts-as-every-member.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/feedback/2026-10-27T1516Z__editor__the-desk-acts-as-every-member.md",
+   "bytes": 2535,
+   "sha256": "35ea4e69745e12cbe5cf9f2741480c328aea3c5df653df914509ce7a9cac8f38",
+   "about": "the editor's own words, filed verbatim"
+  },
+  {
+   "path": "feedback/README.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/feedback/README.md",
+   "bytes": 170,
+   "sha256": "950c9532d829419c3ce01b0fc1d8412148267cd4fa1842c2eb3289ede4eb9aac",
+   "about": ""
+  },
+  {
+   "path": "log.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/log.md",
+   "bytes": 15788,
+   "sha256": "4b6db1175e967461592788a50b1685ad15a92d6748c5851cf9a796e1b5bfba01",
+   "about": "every event, dated, newest last"
+  },
+  {
+   "path": "phase-1/actors-audit.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-1/actors-audit.json",
+   "bytes": 104540,
+   "sha256": "bba3e21feafbd954a64863aafc16cd26dbd1d691bba670ce2ff326b6df1fe9eb",
+   "about": "step 1a, the ontologist: what we hold about each actor, and what each page lacks"
+  },
+  {
+   "path": "phase-1/actors-audit.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-1/actors-audit.md",
+   "bytes": 15730,
+   "sha256": "881aaa4abd3da8dd40b9cd7ca10eb89a01ca8536d886c93b375e719acebd8d65",
+   "about": "step 1a, the ontologist: what we hold about each actor, and what each page lacks"
+  },
+  {
+   "path": "phase-1/candidates.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-1/candidates.json",
+   "bytes": 57634,
+   "sha256": "42bf2e5d73530c5ba6e8966ceec454a0f2602685fcc0e9ec782d46979d2669c2",
+   "about": "step 1b, the Sherpa: 55 candidates scored by the three tests"
+  },
+  {
+   "path": "phase-1/the-ten.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-1/the-ten.json",
+   "bytes": 24344,
+   "sha256": "9d01942a613e6814923bae0feba76ed94e9a422930f6dad9f5fd419497c77a81",
+   "about": "step 1c, the Sherpa: the ten proposed at checkpoint A"
+  },
+  {
+   "path": "phase-1/the-ten.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-1/the-ten.md",
+   "bytes": 10342,
+   "sha256": "8cec7db1334ef02a4f99e7f8425241b6e0ef9d368a681e29ab059cfa39c5da1a",
+   "about": "step 1c, the Sherpa: the ten proposed at checkpoint A"
+  },
+  {
+   "path": "phase-2/bbc-regrade.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/bbc-regrade.json",
+   "bytes": 36732,
+   "sha256": "e0b7cd0fd5431bb40d4137ea5a33defc7852522e525ee5990b945cb83ba024ee",
+   "about": "step 2b, the journalist: the BBC points and claims re-graded against the evidence vault"
+  },
+  {
+   "path": "phase-2/bbc-regrade.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/bbc-regrade.md",
+   "bytes": 10470,
+   "sha256": "34da19ad69c0e143ab426039a3a9a83b5b3a5d336993e08ccef603c2bdaffa43",
+   "about": "step 2b, the journalist: the BBC points and claims re-graded against the evidence vault"
+  },
+  {
+   "path": "phase-2/clean-hands.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/clean-hands.md",
+   "bytes": 5834,
+   "sha256": "2fe1dd482bc4e9d64cdc67ca91b9e927199ca00158479c9fe473329ce3040991",
+   "about": "step 1 of phase 2, fact-check and story-site: our own BBC claims corrected in data"
+  },
+  {
+   "path": "phase-2/design/FLOWS.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/design/FLOWS.md",
+   "bytes": 7178,
+   "sha256": "96a54afd94078e9922894da5a7e34fde173009f7803893e2485e80731736ef70",
+   "about": "step 2a: the pipeline, the per-outlet workflow and the request states, as diagrams"
+  },
+  {
+   "path": "phase-2/design/SPEC.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/design/SPEC.md",
+   "bytes": 16225,
+   "sha256": "7c5021c69b40d6d2ac749722c888e9fb92816aada3785d2c19176768f9c6f017",
+   "about": "step 2a, the design agent: the outlet page /outlets/<id>/, one template for every recipient"
+  },
+  {
+   "path": "phase-2/design/prototype-bbc.html",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/design/prototype-bbc.html",
+   "bytes": 45247,
+   "sha256": "763a25143479232b8c29c5fa46f5833b98eb492e276ce0fd4b3a3c1b1930a2a8",
+   "about": "step 2a: the BBC outlet page as a static prototype (not published)"
+  },
+  {
+   "path": "phase-2/design/sample-bbc.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/design/sample-bbc.json",
+   "bytes": 20911,
+   "sha256": "9438816f340d530b93057fc9121be05adbba0e619f800d71409645d2ed865ef7",
+   "about": "step 2a: the sample the prototype was drawn from"
+  },
+  {
+   "path": "phase-2/outlets/README.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/README.md",
+   "bytes": 5449,
+   "sha256": "f03252c4ed66d4c6064a77363985a553855fc17d9d0ee775d4819979fedb3b87",
+   "about": ""
+  },
+  {
+   "path": "phase-2/outlets/bbc.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/bbc.json",
+   "bytes": 80861,
+   "sha256": "4e1175a15de743f7f53793ec3dae6f580a576b3fcf5ff576788eb99c709401f6",
+   "about": "the outlet file every view of the page reads: bbc"
+  },
+  {
+   "path": "phase-2/outlets/build_outlet.py",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/build_outlet.py",
+   "bytes": 22317,
+   "sha256": "640329d21c40cd073628fbd68cacab1600ac5d429a6f15fa3d15fb87a36fe4c2",
+   "about": "step 2c, the ontologist: makes the outlet file for any outlet from the data repository"
+  },
+  {
+   "path": "phase-2/outlets/cisa.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/cisa.json",
+   "bytes": 92489,
+   "sha256": "721ee441cb79d1b0e7194a932b5b65b9aeaa0fa9ede50288a23c906609271785",
+   "about": "the outlet file every view of the page reads: cisa"
+  },
+  {
+   "path": "phase-2/outlets/editorial/bbc.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/editorial/bbc.json",
+   "bytes": 1976,
+   "sha256": "26d1084a34d997854a5b950cc18bf7b1d61a8d14dbcbdc0a820455ee48f6e6a7",
+   "about": ""
+  },
+  {
+   "path": "phase-2/outlets/huntress.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/huntress.json",
+   "bytes": 62960,
+   "sha256": "4e7a862e52f51a65739db186c4bd5d3dfea1cf849ba5602ee01935f3983ebe31",
+   "about": "the outlet file every view of the page reads: huntress"
+  },
+  {
+   "path": "phase-2/outlets/php-foundation.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/php-foundation.json",
+   "bytes": 98213,
+   "sha256": "1082b8f0eb7c95c84cc03dfd922cd5a2dbef07ad7e70a41cd6357510dd73721d",
+   "about": "the outlet file every view of the page reads: php-foundation"
+  },
+  {
+   "path": "phase-2/outlets/php-security-team.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/php-security-team.json",
+   "bytes": 112924,
+   "sha256": "6c01ed2bfd52ed2b8a30db5a30c0196ee71861c11a442759611814812aa90835",
+   "about": "the outlet file every view of the page reads: php-security-team"
+  },
+  {
+   "path": "project.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/project.json",
+   "bytes": 7454,
+   "sha256": "55c18b6ea90ca3ec837437c3c4dffaa097ace0a72ebd0989dea6657218744919",
+   "about": "the state: phases, checkpoints, decisions, the next step"
+  }
+ ]
+}

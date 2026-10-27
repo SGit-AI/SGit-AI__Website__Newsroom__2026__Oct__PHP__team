@@ -53,3 +53,8 @@
   - claim-review.json: 1 row.
   - factcheck.json: Finding-38, 43, 44 and 45 fixed; 129 to 131 added.
   Every change is dated "Corrected 27 October 2026, PROJECT-001" and keeps the old wording in its note. The desk checked: data's gate passed (516 files); files only grew; the new Wiz quote ("Apply the Oct 22 security release") is in Wiz's captured X thread (x-wiz-io-php2shell 20261022T081624Z); the release merged cleanly over five newer data commits, with the curator's and journalist's changes kept. Left for the curator (vault side): the acn-it-php2shell and php-net-advisory notes, and vault-claims.json. Left for a later run: leak-video (20:00 UTC) and the most-severe note. Derived files (graph, fractal, items, history) regenerate at the next build.
+- 2026-10-27 22:32 UTC, the editor (in the desk's session, about 22:25): go for wave 2. Asked for one page on our website holding all of this, linked, so that he can point the agent at riskmandate.ai at it, and confirmed that nothing here is secret.
+- 2026-10-27 22:32 UTC, projects@php.newsroom:
+  - The project hub is live at https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/, written by records/projects/hub.py. It has three forms: index.html for people, index.md as its markdown twin, and manifest.json for agents (every file with its URL and sha256, the messages and their status, and the rule that only a message approved by the editor is ever sent).
+  - Outlet files added: php-security-team.json (php.net, Zelenka and Daubois: 10 sources, 16 claims) and php-foundation.json (2 posts, 12 claims), from data at the current dev head.
+  - Step 2d (the draft messages to the BBC, the PHP security team and the PHP Foundation) is running as the correspondent with the Sherpa.
