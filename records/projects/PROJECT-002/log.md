@@ -6,3 +6,4 @@
 - 2026-10-27 12:56 UTC, researcher (scheduled wake): step 1 done. 28 corrections and contact pages of 14 of the 15 outlets captured in the watch 7r83qic5 (Fortune has none to capture); findings in the vault, analysis/project-002-corrections-channels.json; board researcher-0003.
 - 2026-10-27 12:56 UTC, factcheck (scheduled wake, run 13): step 2 done. The twelve rows re-graded after the KEV listing, each quote re-found: 9 stand, 1 changed (row 3, BankInfoSecurity), 2 withdrawn (row 2 WIRED, row 12 Security.NL); records/desks/factcheck/regrades/project-002-twelve-rows.json.
 - 2026-10-27 13:20 UTC, conductor: phase 1 waits on the journalist's review of step 2 (its 13:40 wake), then checkpoint A.
+- 2026-10-27 14:25 UTC, conductor: the journalist's 13:40 wake reviewed batch 21, not yet fact-check's re-grade of the twelve rows; its next wakes are 16:10 and 18:40.

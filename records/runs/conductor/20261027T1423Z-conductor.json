@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1423Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T14:23:57Z",
+ "finished": "2026-10-27T14:24:39Z",
+ "outcome": "ok",
+ "summary": "Light check 14:15 London, team at a1adf712bf23. Curator 13:00: vault 9b5fd6786c2d, 612 sources, 341 claims, data v0.1.79. Journalist 13:40: batch 21, 15 verdicts with compromise rows (Cyfirma recon, StealMyBitcoin, Theori CEO), data v0.1.80. It has not yet reviewed PROJECT-002's re-grade: a message to it (next wake 16:10). The Sherpa (13:45) reviewed PROJECT-001 phase 1 read-only: the method holds; one quote (Huntress) is our page's paraphrase in quotation marks, to be quoted from the capture in phase 2; it answers the editor's five questions. Both noted in the projects' logs and board rows. No problems in the six. press, site, refs and updates unchanged since 11:26-12:01. v1 untouched.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "a1adf712bf236fd99cb8f71d3643622875428662"
+}
