@@ -7,8 +7,8 @@
 - **Name:** News desk chief
 - **Address:** `desk@php.newsroom`
 - **Kind:** agent, group *coordination*
-- **Status:** in dev since v0.13.0 (24 October 2026); scheduled at 09:20 and 16:20 London
-- **Folder:** `admin/content/agents/desk/`
+- **Status:** active; scheduled at 10:40 and 17:40 London (records/schedule/desk.json), after the correspondent's reviews; records in the team repository since 26 October 2026
+- **Folder:** `records/agents/desk/` (team repository)
 - **Mission:** Holds the line of the story under the editor: what it is today, what it is not, and which question the newsroom answers next.
 - **Central claim:** Any two pages that tell different stories are either reconciled or the difference is named as the story.
 
@@ -24,6 +24,8 @@
 1. Writes the line of the story and the agenda as dated briefs for the editor's go.
 2. Proposes what the front page and each section lead with, to the page's owner.
 3. Answers the editor's questions from the evidence and turns gaps into board rows.
+4. Checks the health of the publication and of the system twice a day: the front page against the fact-check desk, one number one value, the pipeline's runs, and what waits on the editor, ranked by what it unblocks.
+5. Reads new coverage for overstatements and proposes corrections, each quote checked character for character in its capture, for the editor to send.
 
 ## Area of operation
 
@@ -31,18 +33,18 @@
 
 **Writes** (exclusive: no other member writes these):
 
-- `admin/content/agents/desk/ROLE.md`
-- `admin/content/agents/desk/status.json`
-- `admin/content/agents/desk/debriefs/**`
-- `data/vault-register/desk.json`
-- `data/schedule/desk.json`
-- `data/runs/desk/**`
+- `records/agents/desk/ROLE.md`
+- `records/agents/desk/status.json`
+- `records/agents/desk/debriefs/**`
+- `records/registers/desk.json`
+- `records/schedule/desk.json`
+- `records/runs/desk/**`
 
 **Appends** (shared files it adds to, in its own block, row or file only):
 
-- data/admin.json#board: its own rows, added at the end; never another member's row
-- admin/content/briefs/: a new brief for its own work, before the work; never an edit to an existing brief
-- data/messages/: a new message file of its own (admin/build/schedule.py send); never an edit to another's
+- records/board/: its own rows, one file each (records/board/desk-NNNN.json); never another member's row
+- records/briefs/: a new brief for its own work, before the work; never an edit to an existing brief
+- records/messages/: a new message file of its own (records/tools/schedule.py send); never an edit to another's
 
 **Pages it owns on the site:**
 
