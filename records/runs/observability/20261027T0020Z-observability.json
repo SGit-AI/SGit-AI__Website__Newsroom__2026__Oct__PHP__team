@@ -1,0 +1,14 @@
+{
+ "run": "20261027T0020Z-observability",
+ "agent": "observability",
+ "started": "2026-10-27T00:20:00Z",
+ "finished": "2026-10-27T00:31:54Z",
+ "outcome": "ok",
+ "summary": "Not a scheduled wake: the editor's session. Lane found full (1,000) by the editor, who drained it; then 4 drained here (vault 84wr8mib at 3,431 events, 915 sessions; lane empty). Cause: one Googlebot rendering session, 960 events over 811 pages, 26 Oct 17:00 to 19:23 UTC; the lane refused for about 4¾ hours (estimated loss: 60 to 80 non-crawler events, 10 to 15 readers'). Five lanes configured on 84wr8mib (lanes.py) and tested; SG/Send's per-instance config cache answers 404 for new lanes for a while (observability-0002). The drain is parallel: app v0.4.3 (5wnsr5h8) and drain.py. Card active; task trig_01B9ULDBk3Mux6HzEkFQ7wZQ, 08:33, 14:33, 20:33 London. sgit-ai v0.25.0. Waits on dev: the page's side of the lanes and a cap of 40 events a tab (observability-0001).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "fcd71ab33c2b3192c810b01eb2b11d696b5462ce"
+}

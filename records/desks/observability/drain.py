@@ -12,11 +12,15 @@ vault. Nothing secret is printed. Run it with a Python that has sgit-ai (and so 
     SG_SEND_TOKEN=<access token> python -I drain.py --vault <clone> --key-file <file holding the vault key> [--dry-run]
 
 --dry-run fetches and opens the events and prints what came in, and writes, commits, pushes and marks nothing.
+Batches are fetched, opened and marked processed PARALLEL at a time (since 27 October); the rows go into the drain file
+in the lane's order, whatever order the batches finish in.
 """
-import argparse, base64, collections, datetime, hashlib, json, os, subprocess, sys, urllib.request
+import argparse, base64, collections, datetime, hashlib, json, os, subprocess, sys, time, urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 API = 'https://dev.send.sgraph.ai/api/vault/append/'
 BATCH = 100                                              # the server's limit on ids per fetch and per mark-processed
+PARALLEL = 4                                             # batches in flight at once, as the application does
 NOTE = ('Counts over events received in the lane. Every event is an untrusted claim: the token and the public key are '
         'published, so rows can be forged or flooded. Visitors with blockers do not appear. No row leaves the vault.')
 
@@ -103,25 +107,35 @@ def main():
     path = os.path.join(V, 'drain', today + '.jsonl')
     existing = open(path, encoding='utf-8').read() if os.path.exists(path) else ''
     seen = {json.loads(l).get('_file') for l in existing.splitlines() if l.strip()}
-    rows, done, dup, unserved = [], collections.defaultdict(list), 0, 0
-    for lane, items in lanes.items():
-        for i in range(0, len(items), BATCH):
-            batch = items[i:i + BATCH]
-            got = post('fetch', a.vault_id, {'inbox': lane, 'file_ids': [x['file_id'] for x in batch]}, enum)
-            files = got.get('files') or got.get('entries') or []
-            unserved += len(batch) - len(files)
-            for f in files:
-                fid, content = f.get('file_id') or f.get('id'), f.get('content') or f.get('payload')
-                if not fid or not content: continue
-                done[lane].append(fid)
-                if fid in seen: dup += 1; continue
-                try: ev = open_event(key, content)
-                except Exception as x: ev = {'v': 0, 'undecryptable': True, 'error': str(x)[:120]}
-                meta = next((x for x in batch if x['file_id'] == fid), {})
-                ev['_file'] = fid
-                ev['_received'] = f.get('received') or meta.get('received') or int(str(fid)[:13] or 0) or None
-                rows.append(ev)
-            print(f'  batch {i // BATCH + 1}, lane {lane[:8]}…: fetched {len(files)} of {len(batch)}')
+    jobs = [(lane, items[i:i + BATCH]) for lane, items in lanes.items() for i in range(0, len(items), BATCH)]
+
+    def one(job):
+        lane, batch = job
+        t = time.time()
+        got = post('fetch', a.vault_id, {'inbox': lane, 'file_ids': [x['file_id'] for x in batch]}, enum)
+        files = got.get('files') or got.get('entries') or []
+        evs, ids, again = [], [], 0
+        for f in files:
+            fid, content = f.get('file_id') or f.get('id'), f.get('content') or f.get('payload')
+            if not fid or not content: continue
+            ids.append(fid)
+            if fid in seen: again += 1; continue
+            try: ev = open_event(key, content)
+            except Exception as x: ev = {'v': 0, 'undecryptable': True, 'error': str(x)[:120]}
+            meta = next((x for x in batch if x['file_id'] == fid), {})
+            ev['_file'] = fid
+            ev['_received'] = f.get('received') or meta.get('received') or int(str(fid)[:13] or 0) or None
+            evs.append(ev)
+        print(f'  lane {lane[:8]}…: fetched {len(files)} of {len(batch)} and opened them in {time.time() - t:.1f} s')
+        return lane, ids, evs, again, len(batch) - len(files)
+
+    t0 = time.time()
+    with ThreadPoolExecutor(PARALLEL) as ex:
+        results = list(ex.map(one, jobs))                # map keeps the jobs' order: the lane's order
+    print(f'fetched and opened {len(jobs)} batch(es), {PARALLEL} at a time, in {time.time() - t0:.1f} s')
+    rows, done = [r for x in results for r in x[2]], collections.defaultdict(list)
+    for lane, ids, *_ in results: done[lane] += ids
+    dup, unserved = sum(x[3] for x in results), sum(x[4] for x in results)
     bad = sum(1 for r in rows if r.get('undecryptable'))
     print(f'opened {len(rows)}: {len(rows) - bad} readable, {bad} undecryptable, {dup} already drained, {unserved} not served')
     if a.rows_out:
@@ -149,11 +163,9 @@ def main():
     if code != 0 or 'in sync with remote' not in st: sys.exit('the push did not land; nothing marked processed')
     print('pushed; the vault is in sync with the server')
 
-    marked = 0
-    for lane, ids in done.items():
-        for j in range(0, len(ids), BATCH):
-            post('mark-processed', a.vault_id, {'inbox': lane, 'file_ids': ids[j:j + BATCH]}, enum)
-            marked += len(ids[j:j + BATCH])
+    marks = [(lane, ids[j:j + BATCH]) for lane, ids in done.items() for j in range(0, len(ids), BATCH)]
+    with ThreadPoolExecutor(PARALLEL) as ex:
+        marked = sum(ex.map(lambda m: (post('mark-processed', a.vault_id, {'inbox': m[0], 'file_ids': m[1]}, enum), len(m[1]))[1], marks))
     print(f'marked {marked} lane file(s) processed')
 
 

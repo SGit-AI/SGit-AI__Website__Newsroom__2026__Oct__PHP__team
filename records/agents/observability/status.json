@@ -1,14 +1,14 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "observability",
- "as_of": "2026-10-25",
+ "as_of": "2026-10-27",
  "round": {
-  "n": 3,
-  "date": "2026-10-25",
-  "branch": "claude/wonderful-allen-vu7tzg",
+  "n": 4,
+  "date": "2026-10-27",
+  "branch": "dev (team)",
   "commits": []
  },
- "state": "round 3: the telemetry lane drained on 25 October (150 events; the lane empty); admin/observability/drain.py drains from the command line",
+ "state": "round 4: active on a schedule (trig_01B9ULDBk3Mux6HzEkFQ7wZQ, 08:33, 14:33, 20:33 London); five lanes on 84wr8mib; the application v0.4.3 drains in parallel",
  "done": [
   {
    "what": "Joined at the editor's request: the member folder (ROLE.md, a draft policy.json, status.json) and an empty vault register",
@@ -53,24 +53,37 @@
   {
    "what": "admin/observability/drain.py: the application's drain from the command line, the same order and row bytes, nothing secret printed",
    "evidence": "admin/observability/drain.py"
+  },
+  {
+   "what": "On a schedule: card active, task trig_01B9ULDBk3Mux6HzEkFQ7wZQ at the editor's go; sgit-ai 0.25.0",
+   "evidence": "records/schedule/observability.json"
+  },
+  {
+   "what": "Five lanes on the telemetry vault, configured and tested; the page's side briefed to dev; an SG/Send cache bug found",
+   "evidence": "records/desks/observability/lanes.py; records/briefs/2026-10-27__brief__five-lanes-and-a-cap-per-tab.md; board observability-0001, observability-0002"
+  },
+  {
+   "what": "The drain in parallel: the application v0.4.3 and drain.py, four batches at a time",
+   "evidence": "5wnsr5h8 CHANGELOG 0.4.3; records/desks/observability/drain.py"
   }
  ],
  "tasks": {
   "board": [
    "270",
    "272",
-   "330"
+   "observability-0001",
+   "observability-0002"
   ],
   "note": "the board rows this member owns or opened are in data/admin.json"
  },
  "next": [
   {
-   "what": "A proposed card for a scheduled lane check and drain with admin/observability/drain.py",
-   "why": "the lane refuses at 1,000 waiting; 430 came in on 25 October; needs the editor's go"
+   "what": "The scheduled wakes: drain three times a day, with the parallel timing and what came in",
+   "why": "the lane refused for 4¾ hours on 26 October"
   },
   {
-   "what": "Count the events the cap refuses, and stop telemetry from local test servers, with dev",
-   "why": "board 330: 21% of the events so far came from localhost"
+   "what": "Hand dev the five lane tokens for data/telemetry.json when dev takes observability-0001",
+   "why": "until the page knows them it uses lane 1 only"
   }
  ],
  "asks": [
@@ -100,5 +113,5 @@
   "injection_seen": 0,
   "detail": "One write outside scope: admin/content/agents/observability/policy.json, which abp@newsroom.sgit keeps; written as the member's first draft (the librarian's step for a new member), for abp@ to take over and the editor to agree (board 272's note). Appends only otherwise: own board rows in data/admin.json, own message files in data/messages/. The roster (data/team.json) is the conductor's: asked by message, not edited. One exposure, said to the editor at once: sgit clone printed the private read key of 84wr8mib into this session's tool output (the masking pattern missed it). It is in the session transcript only: no file, commit, page or message. Rotation (a rekey of 84wr8mib) is the editor's call. Round 2: no write outside scope. The editor decided in the session that 84wr8mib needs no rekey. Round 3: no write outside scope."
  },
- "debrief": "admin/content/agents/observability/debriefs/2026-10-25__the-lane-drained.md"
+ "debrief": "records/agents/observability/debriefs/2026-10-27__five-lanes-a-schedule-and-a-parallel-drain.md"
 }
