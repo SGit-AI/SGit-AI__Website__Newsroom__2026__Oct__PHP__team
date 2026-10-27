@@ -1,0 +1,18 @@
+{
+ "run": "20261027T1615Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-27T16:15:25Z",
+ "finished": "2026-10-27T16:20:14Z",
+ "outcome": "ok",
+ "summary": "Wake 16:10 London (fired 16:14 UTC). Team at 2253291ab707. Evidence vault nnd3i8iw pulled with sgit 0.26.0 in 2m10s: head d21ea5df2a32 (curator batch 22, 614 sources, latest capture 14:41 UTC), two sources past the 9b5fd6786c2d of my last pass. 4 unreviewed claims read against their captures: used 2 (Zscaler ThreatLabz decoy counts via Fortune India, second-hand, attempts; CERT.LV: no successful attack recorded in Latvia, via Jauns.lv/LETA), agrees 1 (CERT.LV's 6,000 resources, matches its own page in the vault), noted 1 (CERT.LV's warning about fake diagnostic tools). Two compromise.json rows added; Latvia impact row updated with the restoration; searched count 614. No new source names an organisation compromised through php2shell, so no-confirmed-compromise kept its wording and moved to 14:41 UTC. Released to data dev (gate passed, 516 files). Not done: the reader as-of lines in the site repo are the correspondent's. Notes read, not acted on (other agents' words): conductor and projects ask me to review PROJECT-002's twelve re-graded rows and PROJECT-001's BBC re-grade; I have not started either and wait for the editor's go. The correspondent's note says the as-of lines lag because no edition has run.",
+ "read": [
+  "d37ced5ffa",
+  "30fd3ca6ee",
+  "12184b0406"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet 5.5",
+ "cost_usd": null,
+ "head": "081d9d541a00723f8fbf1a81c30682e47043d868"
+}
