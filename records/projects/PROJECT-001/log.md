@@ -45,3 +45,11 @@
   - PROJECT-003, now the conductor's (the sites' files in vaults), so a BBC outlet-file project would be PROJECT-004;
   - the Sherpa's review of phase 1 on the board (14:25: one Huntress quote is our paraphrase; to quote from the capture in phase 2).
   The desk continues on the editor's word in its own session. Step 1 started, as fact-check and story-site (the claims' owners), as a Sonnet subagent editing data's working copy. The desk releases after checking its diff and data's gate.
+- 2026-10-27 19:17 UTC, step 1 "clean hands" (fact-check and story-site, run by the desk; Sonnet, 231 s, 111,539 tokens, 26 tool calls), released in data b90449e:
+  - claims.json: disclosure-22oct, offline-allies, no-exploitation and offline-ncsc corrected. The BBC no longer carries a disclosure date or the four-agency offline line; no-exploitation now reads "disputed", with "true when said" in its note.
+  - attribution.json: 2 rows.
+  - agencies.json: 4 rows (Italy's ACN does advise considering offline).
+  - exploitation.json: 2 rows (Amazon's honeypot post is in the vault: confirmed).
+  - claim-review.json: 1 row.
+  - factcheck.json: Finding-38, 43, 44 and 45 fixed; 129 to 131 added.
+  Every change is dated "Corrected 27 October 2026, PROJECT-001" and keeps the old wording in its note. The desk checked: data's gate passed (516 files); files only grew; the new Wiz quote ("Apply the Oct 22 security release") is in Wiz's captured X thread (x-wiz-io-php2shell 20261022T081624Z); the release merged cleanly over five newer data commits, with the curator's and journalist's changes kept. Left for the curator (vault side): the acn-it-php2shell and php-net-advisory notes, and vault-claims.json. Left for a later run: leak-video (20:00 UTC) and the most-severe note. Derived files (graph, fractal, items, history) regenerate at the next build.
