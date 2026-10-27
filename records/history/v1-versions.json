@@ -1,6 +1,33 @@
 {
- "current": "0.22.46",
+ "current": "0.22.49",
  "versions": [
+  {
+   "version": "0.22.49",
+   "date": "2026-10-27",
+   "title": "press: no workflow runs on a timer (the editor, 27 October 2026): edition.yml and pages.yml lose their schedules; the edition builds on a push to the press (or by hand), each site takes it on its next push; CLAUDE.md says so; team: board dev-0005 done (editions built in CI and taken by all six: edition-0.22.45 and 0.22.46, no round run); dev-0006 for the editor (editions within minutes need a dispatch-only token); CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006); site: CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006); updates: CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "6f0d5c50bf12",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.48",
+   "date": "2026-10-27",
+   "title": "press: CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006); team: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; site: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; refs: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; updates: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "6f0d5c50bf12",
+   "reconstructed": false
+  },
+  {
+   "version": "0.22.47",
+   "date": "2026-10-27",
+   "title": "press: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; data: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "6f0d5c50bf12",
+   "reconstructed": false
+  },
   {
    "version": "0.22.46",
    "date": "2026-10-27",

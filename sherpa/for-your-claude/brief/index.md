@@ -78,4 +78,4 @@ Say exactly this: "Three ways to send it. 1. Paste the three parts into the form
 
 
 ---
-site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/for-your-claude/brief/index.html
+site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/for-your-claude/brief/index.html

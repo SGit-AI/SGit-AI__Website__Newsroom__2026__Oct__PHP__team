@@ -6,7 +6,27 @@ Every release of this site, with what changed, why, the pages it changed and the
 
 # Release history
 
-One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.46. The data is [data/versions.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/versions.json); the pages are [data/release-pages.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+One entry per release, newest first, saying what changed and why in a sentence a reader can act on, and linking the pages it changed: new pages first, then the pages whose text changed most. A page counts as changed when its main content differs from the release before; the header, the footer and the version stamp are left out, because they change on every page at every release. The version in the top bar links here. Current: v0.22.49. The data is [data/versions.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/versions.json); the pages are [data/release-pages.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/release-pages.json), written at each release's build by `admin/build/release_pages.py`.
+
+### v0.22.49 · 2026-10-27
+
+press: no workflow runs on a timer (the editor, 27 October 2026): edition.yml and pages.yml lose their schedules; the edition builds on a push to the press (or by hand), each site takes it on its next push; CLAUDE.md says so; team: board dev-0005 done (editions built in CI and taken by all six: edition-0.22.45 and 0.22.46, no round run); dev-0006 for the editor (editions within minutes need a dispatch-only token); CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006); site: CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006); updates: CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006)
+Pages changed (11): Dinis Cruz, Editor: the team · dev@php.newsroom, build, gate and release: the team · The fact pipeline: from a web page to a reader · The team: the people, the agents and how they work together · What changed in the risk graph, release by release · The board · Admin and engineering · Release history and 3 more
+[Runs: what the agents do on their own, and every time they did it](../team/runs/index.html) · [How the story changed, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/versions/) · [What's new: every change, release by release](https://updates.php.oct.2026.newsroom.sgit.ai/whatsnew/)
+
+ Vault commit `6f0d5c50bf12`.
+
+### v0.22.48 · 2026-10-27
+
+press: CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fires the schedules only every few hours (board dev-0006); team: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; site: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; refs: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; updates: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it
+Pages changed (7): The fact pipeline: from a web page to a reader · What changed in the risk graph, release by release · Admin and engineering · Release history · Runs: what the agents do on their own, and every time they did it · How the story changed, release by release · What's new: every change, release by release
+ Vault commit `6f0d5c50bf12`.
+
+### v0.22.47 · 2026-10-27
+
+press: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it; data: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only every few hours, so an owner's release carries the newest edition with it
+Pages changed (8): Every member: who owns what · The fact pipeline: from a web page to a reader · What changed in the risk graph, release by release · Admin and engineering · Release history · Runs: what the agents do on their own, and every time they did it · How the story changed, release by release · What's new: every change, release by release
+ Vault commit `6f0d5c50bf12`.
 
 ### v0.22.46 · 2026-10-27
 
@@ -1785,4 +1805,4 @@ Files: `admin/build/build.py`, `admin/build/export_vault.py`, `admin/build/valid
 
 
 ---
-site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/versions.html
+site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/versions.html

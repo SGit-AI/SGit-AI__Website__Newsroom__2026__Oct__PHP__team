@@ -3,5 +3,6 @@
  "title": "Render Mermaid diagrams on the team site's brief pages (the reports' graphs and sequences now show as code)",
  "status": "open",
  "owner": "dev",
- "note": "Seen on 27 October: records/briefs/2026-10-27__report__project-001-phase-1-the-ten.md shows its flowchart and gantt as code blocks at /admin/briefs/…/. The runbook asks every project report for a Mermaid flowchart and gantt; the KEV report used PNGs instead. Either render mermaid code blocks in the briefs build (a pinned mermaid script from the press's assets, within the CSP) or render them to SVG at build time."
+ "note": "Seen on 27 October: records/briefs/2026-10-27__report__project-001-phase-1-the-ten.md shows its flowchart and gantt as code blocks at /admin/briefs/…/. The runbook asks every project report for a Mermaid flowchart and gantt; the KEV report used PNGs instead. Either render mermaid code blocks in the briefs build (a pinned mermaid script from the press's assets, within the CSP) or render them to SVG at build time.",
+ "order": 390
 }

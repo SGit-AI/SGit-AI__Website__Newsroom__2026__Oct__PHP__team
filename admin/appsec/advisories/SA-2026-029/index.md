@@ -44,4 +44,4 @@ Move identity to its own origin; the drain refuses invitations above a role allo
 
 
 ---
-site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-029/index.html
+site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-029/index.html

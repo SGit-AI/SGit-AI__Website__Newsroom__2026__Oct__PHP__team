@@ -3,5 +3,6 @@
  "title": "SA-2026-044: a site's take step runs the gate from the patched tree; run it from the pre-patch tools and refuse a patch that changes tools/ or adds a symbolic link",
  "status": "open",
  "owner": "dev",
- "note": "Found by security@php.newsroom on 27 October 2026 (nightly pass). Every repository's pages.yml: the gate job applies the edition's patch, then runs tools/gate.py and tools/pages_gate.py from it; the refuse-list covers .github/, .git/ and VERSION only. The patches are built in the press's edition job, which also runs build/ code released without security's review. A .github/ change in each repository and in the press: the editor's go, security's review of the branch."
+ "note": "Found by security@php.newsroom on 27 October 2026 (nightly pass). Every repository's pages.yml: the gate job applies the edition's patch, then runs tools/gate.py and tools/pages_gate.py from it; the refuse-list covers .github/, .git/ and VERSION only. The patches are built in the press's edition job, which also runs build/ code released without security's review. A .github/ change in each repository and in the press: the editor's go, security's review of the branch.",
+ "order": 391
 }

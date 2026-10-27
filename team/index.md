@@ -8,14 +8,14 @@ Every member of the team that runs this site, 2 people and 19 agents and roles, 
 
 This site is built and run by [Dinis Cruz](dinis/index.html) (editor) and [Vicky](vicky/index.html) (project manager), and a team of software agents, with help from [collaborators](../collaborators/index.html) who use it as it grows. Every member, human or agent, has a page: what they own, the rules they work by, the pages that are their home on this site, what they have shipped and the tasks they hold now. A new agent should be able to read this page and its own and begin. The roster is [data/team.json](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/data/team.json), kept by [the conductor](conductor/index.html).
 
-21members2humans17agents2roles not yet filled215open tasks12waiting110done
+21members2humans17agents2roles not yet filled214open tasks13waiting111done
 
 ## Who is on it
 
 ### The humans
 
 The two people on the team. They set direction and make the calls; every agent works for them.
-DIDinis Cruz@Dinis · EditorSets direction by voice memo, points agents at sources, reads what they wrote and says go.human36 open, 6 waiting, 19 doneVIVicky@Vicky · Project managerRuns the project side: what is planned, who has it, what is late and what the editor needs to decide.human2 open, 0 done
+DIDinis Cruz@Dinis · EditorSets direction by voice memo, points agents at sources, reads what they wrote and says go.human36 open, 7 waiting, 19 doneVIVicky@Vicky · Project managerRuns the project side: what is planned, who has it, what is late and what the editor needs to decide.human2 open, 0 done
 ### Coordination and comms
 
 Keeps every member, human and agent, synchronised: what is assigned, what is blocked, what changed.
@@ -23,7 +23,7 @@ COConductor@Conductor · Conductor and commsMaps the work, hands it out, and kee
 ### Building the site
 
 The build, the gate, the release, the design, and the pages.
-DEdev@php.newsroom@Dev · Build, gate and releaseThe build, the gate, the release, the data schema, the admin section, the telemetry and subscriptions lanes, and the site's reality file.agent44 open, 1 waiting, 42 doneSSStory site agent@StorySite · Design, claims and the story pagesReads every note in the vault, writes the claims and timeline this site publishes, and designs the pages that carry them.agent23 open, 11 done
+DEdev@php.newsroom@Dev · Build, gate and releaseThe build, the gate, the release, the data schema, the admin section, the telemetry and subscriptions lanes, and the site's reality file.agent43 open, 1 waiting, 43 doneSSStory site agent@StorySite · Design, claims and the story pagesReads every note in the vault, writes the claims and timeline this site publishes, and designs the pages that carry them.agent23 open, 11 done
 ### Evidence
 
 Capture before you read: the sources, the vaults, the watch.
@@ -104,4 +104,4 @@ Each briefing is a role too: a reader whose question the site answers in one pag
 
 
 ---
-site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/team/index.html
+site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/team/index.html

@@ -3,5 +3,6 @@
  "title": "PROJECT-003: three vaults (site-assets, site-data, archive) with indexes; thin GitHub Pages deploys; /archive/<slug>/ per publisher and actor (dev leads)",
  "status": "open",
  "owner": "dev",
- "note": "Brief: records/briefs/2026-10-27__project__project-003-the-sites-files-from-a-vault.md (widened 13:45 UTC at the editor's word: 'brief the developer to implement this'). Lead: dev. Next: phase 0, measure and write the index format, for checkpoint A. Measured: each site's pages.yml uploads the whole site every 15 minutes and commits the edition. The three vaults are normal vaults (browsers cannot read packs). What the public archive republishes is the editor's decision, with GRC."
+ "note": "Brief: records/briefs/2026-10-27__project__project-003-the-sites-files-from-a-vault.md (widened 13:45 UTC at the editor's word: 'brief the developer to implement this'). Lead: dev. Next: phase 0, measure and write the index format, for checkpoint A. Measured: each site's pages.yml uploads the whole site every 15 minutes and commits the edition. The three vaults are normal vaults (browsers cannot read packs). What the public archive republishes is the editor's decision, with GRC.",
+ "order": 385
 }

@@ -84,4 +84,4 @@ This brief is the file `admin/content/briefs/2026-10-25__brief__decks-the-ruv-mo
 
 
 ---
-site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__decks-the-ruv-model/index.html
+site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-25__brief__decks-the-ruv-model/index.html
