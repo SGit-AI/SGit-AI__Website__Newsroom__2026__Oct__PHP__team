@@ -1,0 +1,16 @@
+{
+ "run": "20261027T2033Z-observability",
+ "agent": "observability",
+ "started": "2026-10-27T20:33:44Z",
+ "finished": "2026-10-27T20:35:34Z",
+ "outcome": "ok",
+ "summary": "Scheduled wake 20:33 London. team at 82ab02ca; sgit-ai v0.26.0; 1 note read as material (the conductor: 17 schedules paused for the move to a new account; observability's task is not among them and still fires; no handover written, the editor has not asked in this session). Lane (84wr8mib, lane 1): 110 waiting of 1,000, none refused; drained with drain.py, pushed (vault head be1535dc4fce) before marking: 110 readable, 0 undecryptable. Parallel: batches of 10 and 100 together in 7.7 s; drain 37 s. Vault now 3,826 events from 1,151 sessions. Readers' summary (summary.py): today to 20:20 UTC 400 events; readers 45 views in 38 sessions (49 views and 43 sessions on 26 Oct in all); synthetic 172; crawlers 168 over 120 pages, 1,352 different pages seen all time; editor and team 15. This drain 14:48 to 20:20 UTC: readers 6, editor 12, synthetic 36, crawlers 56; evening is quiet. No capped or lost markers (page script unchanged); none from another host; no odd values. Waits on dev: observability-0001; on the conductor: observability-0002 and the roster; on the editor: when to write the handover for the account move (what lives only in this session: the telemetry vault key, the app vault key, the access token, the 0600 files under ~/.observability, and the scheduled task).",
+ "read": [
+  "20261024T1157Z__security__to-all__application-security-a-self-check-after,20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "82ab02caa91cb99f53821203d033638bdbc730b2"
+}
