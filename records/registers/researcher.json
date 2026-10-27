@@ -5,7 +5,7 @@
  "vaults": [
   {
    "id": "oq9gflln",
-   "what": "Retired on 23 October 2026, replaced by 7r83qic5; listed because every vault made stays registered with the date its key was sealed to the root",
+   "what": "Retired on 23 October 2026, replaced by 7r83qic5; reported deleted from the host by the editor on 25 October 2026; listed because every vault made stays registered with the date its key was sealed to the root",
    "created": "2026-10-22",
    "key_sealed_to_root": "2026-10-22"
   },
@@ -21,12 +21,13 @@
    "id": "3ytzxm3g",
    "key": "read key",
    "from": "the site (published in data/admin.json)",
-   "since": "2026-10-22"
+   "since": "2026-10-22",
+   "retired": "2026-10-27: the evidence vault is decommissioned (replaced by the pack vault nnd3i8iw); this session only ever held its published read key, never cloned it, and never uses it again"
   },
   {
    "id": "7r83qic5",
    "key": "vault key",
-   "from": "made it",
+   "from": "the editor, as message text in the session (23 October 2026), to clone and write the source watch; this session did not make the vault (a pack import by another agent)",
    "since": "2026-10-23"
   }
  ]

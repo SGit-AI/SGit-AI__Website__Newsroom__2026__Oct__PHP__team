@@ -27,7 +27,8 @@
   "Refresh files/source-watch.json in the data repository: run the exporter (build/export_watch.py in press, v1's admin/build/export_watch.py until then) from a scratch copy with --from work/watchpack, copy its output into data/files/source-watch.json, release with data's tools/release.sh.",
   "Report as the brief says (cyber-desk items first: a KEV listing, an EPSS step, a merged Metasploit module, sites dark; then probe counts, series, new articles, the ledger, in-sync state). Anything that would end the statement on /compromise/ goes first and at once.",
   "Leave a run record in team (records/runs/researcher/), whatever happened, and release team with tools/release.sh. Never write v1.",
-  "Never print a key. Write only to the watch vault 7r83qic5, team and data; never to the evidence vault 3ytzxm3g and never to v1."
+  "Never print a key. Write only to the watch vault 7r83qic5, team and data; never to the evidence vault (nnd3i8iw; 3ytzxm3g is decommissioned) and never to v1.",
+  "A capture I flag on a board row as news (a KEV listing, an EPSS step, a merged module, a named victim) goes into the curator's queue at priority 1 in the same wake, in addition to the mechanical rows (the conductor's note of 27 October, after the KEV capture of 00:45 UTC was not queued)."
  ],
  "reads": [
   "the watched sources",
@@ -42,11 +43,11 @@
  "never": [
   "print a key",
   "create tasks, sessions or workflows",
-  "write to 3ytzxm3g",
+  "write to the evidence vault: nnd3i8iw (from 27 October 2026) or 3ytzxm3g (decommissioned 27 October 2026)",
   "write to v1 (closed, 26 October 2026)"
  ],
  "kept_by": "researcher@php.newsroom (drafted by conductor@php.newsroom)",
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "repositories": {
   "push": [
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
