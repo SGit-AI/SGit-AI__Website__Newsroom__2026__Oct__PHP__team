@@ -1,6 +1,323 @@
 {
  "about": "A page counts as changed when the content of its <main> differs from the previous release's, with the two site version numbers masked: the header, the footer and the version stamp change on every page at every release and say nothing about what the release did. Pages are compared as built and committed, so the list is what a reader would have seen change. Stored in data/release-pages.json, one entry per release, written once and never recomputed:",
  "releases": {
+  "0.22.37": {
+   "against": "0.22.36",
+   "pages": [
+    {
+     "path": "team/schedule/observability/index.html",
+     "title": "Schedule: observability",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-27__brief__five-lanes-and-a-cap-per-tab/index.html",
+     "title": "Brief: five telemetry lanes and a cap per tab",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-27__brief__the-breaking-news-desk/index.html",
+     "title": "Brief: the breaking-news desk, one session that runs the whole pipeline on one story",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-27__runbook__breaking-desk-onboarding/index.html",
+     "title": "Runbook: onboarding the breaking-news desk (breaking@php.newsroom)",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/advisories/SA-2026-042/index.html",
+     "title": "SA-2026-042: Reader answers were inserted into pages as raw HTML",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/advisories/SA-2026-043/index.html",
+     "title": "SA-2026-043: The round's write token is readable by every piece of code the round runs",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/view/index.html",
+     "title": "A brief",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/index.html",
+     "title": "Schedule: every agent that runs on its own",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/observability/index.html",
+     "title": "Observability: role, policy and rounds",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/desk/index.html",
+     "title": "News desk chief: role, policy and rounds",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/ontologist/index.html",
+     "title": "Schedule: ontologist",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/security/index.html",
+     "title": "Schedule: security",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/dev/index.html",
+     "title": "dev@php.newsroom, build, gate and release: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/librarian/index.html",
+     "title": "Schedule: librarian",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/desk/index.html",
+     "title": "Schedule: desk",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/wiring/index.html",
+     "title": "Wiring every scheduled task to its card",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "vaults/source-watch/index.html",
+     "title": "The source watch: every outside source on php2shell, watched and snapshotted",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/conductor/index.html",
+     "title": "Conductor, conductor and comms: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/journalist/index.html",
+     "title": "Journalist, dated state-of-affairs articles: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/index.html",
+     "title": "Briefs",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/dev/index.html",
+     "title": "Schedule: dev",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/ontologist/index.html",
+     "title": "Ontologist, fractal semantic graphs: the ontologies, the story graph and the component that draws it: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/rounds/index.html",
+     "title": "Every round: what each member did",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/post-mortems/index.html",
+     "title": "Root causes and guidance",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/advisories/index.html",
+     "title": "Security advisories",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/index.html",
+     "title": "Application security",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/bounty/index.html",
+     "title": "Bug bounty and leaderboard",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-26__brief__reader-questions/index.html",
+     "title": "Brief: Reader questions, a section for the questions people ask",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/advisories/SA-2026-041/index.html",
+     "title": "SA-2026-041: The security check printed part of every secret it found",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "index.html",
+     "title": "PHP in October 2026: two critical security flaws, tracked as evidence",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/index.html",
+     "title": "The team: the people, the agents and how they work together",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "views/loops/index.html",
+     "title": "Every loop: from the researcher to the correspondent",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "vaults/index.html",
+     "title": "The vaults behind this site",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "questions/index.html",
+     "title": "Questions readers ask about php2shell",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/roles/index.html",
+     "title": "Every member: who owns what",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/cyber/index.html",
+     "title": "cyber@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/dev/index.html",
+     "title": "dev@php.newsroom: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/historian/index.html",
+     "title": "Historian: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/index.html",
+     "title": "How to work on this site: guidance for every agent",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/journalist/index.html",
+     "title": "Journalist: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/agents/story-site/index.html",
+     "title": "Story site agent: role, policy and rounds",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/briefs/2026-10-22__from-the-newsroom__review-of-the-site-at-v0.2.2/index.html",
+     "title": "php.oct.2026.newsroom.sgit.ai, reviewed against the newsroom's own standard",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/briefs/2026-10-24__brief__the-journalist/index.html",
+     "title": "Brief: the journalist (Sonnet), from its first session",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "updates/readme/index.html",
+     "title": "How an update is written",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/board/index.html",
+     "title": "The board",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
   "0.22.36": {
    "against": "0.22.35",
    "pages": [

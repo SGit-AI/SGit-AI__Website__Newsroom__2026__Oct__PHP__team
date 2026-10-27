@@ -42,4 +42,4 @@ This brief is the file `admin/content/briefs/2026-10-23__brief__the-risk-graph-a
 
 
 ---
-site v0.22.36 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-23__brief__the-risk-graph-as-a-tool/index.html
+site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-23__brief__the-risk-graph-as-a-tool/index.html

@@ -121,14 +121,72 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | {"n": 3, "date": "2026-10-25", "branch": "claude/wonderful-allen-vu7tzg", "commits": []} |
-| Done | Joined at the editor's request: the member folder (ROLE.md, a draft policy.json, status.json) and an empty vault register Its key made on pki.sgit.ai (sha256:b9ddd39416d71cbb), the root pinned from CLAUDE.md, the operator link to the root signed; the enrolment record and the key's QR codes handed to the editor in the session Read the history: dev@php.newsroom built the telemetry application (5wnsr5h8, v0.1.1 to v0.4.0) and the drain; told dev and the conductor, by message and in the commit Board rows 270 to 272: the key's enrolment, the vault keys' handover, the telemetry files' owner Received the vault key of 84wr8mib, sealed to this member's key (signature checks, sender chains to the root, expires 31 October); cloned it outside the repository with the key read from stdin The lane's 1,000-event cap traced to the SG/Send server (APPEND_MAX_FILES in Service__Vault__Append.py) and checked by running that code: event 1,001 is refused (507) and lost; a brief with the options The telemetry application v0.4.1: Queue & drain shows a progress bar while the lane is checked, and while it drains the seven steps with their counts, a bar over the events, each batch's size and time, and a summary; 8 more tests (36 pass over 1,543 real events); checked in a dry-run host against the real lane (first run, a repeat over the same events, a failed publish). Committed in the vault; the push is waiting for an SG/Send access token Pushed the telemetry application v0.4.1 (Queue & drain shows its progress) with the access token the editor gave in the session The telemetry application v0.4.2: ◎ and ↗ beside every page's name; One page (its numbers, views over time, before and after, paths, who, where from, devices, languages, versions, latest events, and the page itself framed with sandbox="", so it sends no telemetry); siteUrl() keeps untrusted paths on the site's origin; 40 tests pass over 1,653 events Drained the telemetry lane: 150 events (18 reader sessions, 40 synthetic, 2 crawlers, 2 power users), pushed to 84wr8mib before marking them processed; the vault holds 2,083 events from 674 sessions admin/observability/drain.py: the application's drain from the command line, the same order and row bytes, nothing secret printed |
-| Next | A proposed card for a scheduled lane check and drain with admin/observability/drain.py Count the events the cap refuses, and stop telemetry from local test servers, with dev |
+| Round | {"n": 4, "date": "2026-10-27", "branch": "dev (team)", "commits": []} |
+| Done | Joined at the editor's request: the member folder (ROLE.md, a draft policy.json, status.json) and an empty vault register Its key made on pki.sgit.ai (sha256:b9ddd39416d71cbb), the root pinned from CLAUDE.md, the operator link to the root signed; the enrolment record and the key's QR codes handed to the editor in the session Read the history: dev@php.newsroom built the telemetry application (5wnsr5h8, v0.1.1 to v0.4.0) and the drain; told dev and the conductor, by message and in the commit Board rows 270 to 272: the key's enrolment, the vault keys' handover, the telemetry files' owner Received the vault key of 84wr8mib, sealed to this member's key (signature checks, sender chains to the root, expires 31 October); cloned it outside the repository with the key read from stdin The lane's 1,000-event cap traced to the SG/Send server (APPEND_MAX_FILES in Service__Vault__Append.py) and checked by running that code: event 1,001 is refused (507) and lost; a brief with the options The telemetry application v0.4.1: Queue & drain shows a progress bar while the lane is checked, and while it drains the seven steps with their counts, a bar over the events, each batch's size and time, and a summary; 8 more tests (36 pass over 1,543 real events); checked in a dry-run host against the real lane (first run, a repeat over the same events, a failed publish). Committed in the vault; the push is waiting for an SG/Send access token Pushed the telemetry application v0.4.1 (Queue & drain shows its progress) with the access token the editor gave in the session The telemetry application v0.4.2: ◎ and ↗ beside every page's name; One page (its numbers, views over time, before and after, paths, who, where from, devices, languages, versions, latest events, and the page itself framed with sandbox="", so it sends no telemetry); siteUrl() keeps untrusted paths on the site's origin; 40 tests pass over 1,653 events Drained the telemetry lane: 150 events (18 reader sessions, 40 synthetic, 2 crawlers, 2 power users), pushed to 84wr8mib before marking them processed; the vault holds 2,083 events from 674 sessions admin/observability/drain.py: the application's drain from the command line, the same order and row bytes, nothing secret printed On a schedule: card active, task trig_01B9ULDBk3Mux6HzEkFQ7wZQ at the editor's go; sgit-ai 0.25.0 Five lanes on the telemetry vault, configured and tested; the page's side briefed to dev; an SG/Send cache bug found The drain in parallel: the application v0.4.3 and drain.py, four batches at a time |
+| Next | The scheduled wakes: drain three times a day, with the parallel timing and what came in Hand dev the five lane tokens for data/telemetry.json when dev takes observability-0001 |
 | Asks | Enrol sha256:b9ddd39416d71cbb (board 270) (from the editor) Whether the telemetry files move from dev (board 272) (from the editor and abp@) Whether the telemetry vault's app may open outside links without the host's confirm (permissions.externalLinks): it widens the sandbox (from the editor) |
 | Tokens | unknown · the session does not show a token count |
 | Policy | out_of_scope_requests 0, pushbacks 0, overrides 0, writes_outside_scope 1, injection_seen 0, detail One write outside scope: admin/content/agents/observability/policy.json, which abp@newsroom.sgit keeps; written as the member's first draft (the librarian's step for a new member), for abp@ to take over and the editor to agree (board 272's note). Appends only otherwise: own board rows in data/admin.json, own message files in data/messages/. The roster (data/team.json) is the conductor's: asked by message, not edited. One exposure, said to the editor at once: sgit clone printed the private read key of 84wr8mib into this session's tool output (the masking pattern missed it). It is in the session transcript only: no file, commit, page or message. Rotation (a rekey of 84wr8mib) is the editor's call. Round 2: no write outside scope. The editor decided in the session that 84wr8mib needs no rekey. Round 3: no write outside scope. |
 
 ## Its rounds
+
+### On a schedule (three wakes a day); five telemetry lanes; a parallel drain; why the lane filled on 26 October
+
+2026-10-27 · round 4 · branch `dev (team)` · commits `see the release` · tokens unknown · outside scope 0 · overrides 0
+
+#### What I was asked
+
+The editor, in this session, 26 and 27 October 2026: run on a schedule at least three times a day, wired into the six
+
+repositories as the other agents were; the lane hit 1,000 "due to crawlers"; "four or five append lanes that the UI can
+
+use when one fails"; and make the drain faster, in parallel.
+
+#### What I did
+
+- The card `records/schedule/observability.json` (08:33, 14:33, 20:33 London; push team, pull press and data, never v1), and at the editor's go the scheduled task `trig_01B9ULDBk3Mux6HzEkFQ7wZQ`, firing into this session with the card's instructions as its prompt. The card is active. sgit-ai upgraded to 0.25.0 (status 5.3 s then 1.3 s on 84wr8mib).
+
+- Why the lane filled: one Googlebot rendering session, 960 events over 811 pages of the newly live sites between 17:00 and 19:23 UTC on 26 October, 906 of them not declaring a bot. The lane refused everything for about 4¾ hours; about 60 to 80 non-crawler events were lost (an estimate from the day's rate), 10 to 15 of them readers'.
+
+- Five lanes on the telemetry vault: `records/desks/observability/lanes.py` derives lanes 2 to 5 from the write key, configures all five anchors (lane 1 the site's token), and records them in the vault's `identity/lanes.json`. Every lane tested with an event marked `test` and drained.
+
+- Found an SG/Send bug: lane configuration is cached per server instance and never refreshed, so new lanes answer 404 on stale instances for a while (4 of 12 writes accepted at first, 7 of 8 twenty minutes later). Board observability-0002.
+
+- The drain in parallel: the application v0.4.3 (pushed to 5wnsr5h8) and `drain.py` fetch, open and mark four batches at a time, rows still in the lane's order. 43 tests pass over 3,431 events; checked in the dry-run host across two lanes.
+
+- The page's side (`assets/telemetry.js`, dev's, in the press): the code in `records/briefs/2026-10-27__brief__five-lanes-and-a-cap-per-tab.md`, board observability-0001: the five lanes with a fallback on 507, 404 and 5xx, and at most 40 events a tab.
+
+- Drained: 4 events, then the lane tests. The vault holds 3,431 events from 915 sessions; the lane is empty.
+
+#### What it looks like
+
+![The application's drain across two lanes, two batches at once (dry-run host)](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/observability/debriefs/img/2026-10-27__lanes__parallel-drain.png)
+
+The application's drain across two lanes, two batches at once (dry-run host)
+
+#### What I did not do
+
+- `assets/telemetry.js` and `data/telemetry.json`: dev's (press, data). Until they change, pages use lane 1 only, and the cap is still 1,000.
+
+- A timing of the parallel drain on a full lane: the lane was empty; the first scheduled wake with events will say.
+
+- Five of my test events first went out encoded once instead of twice and came back undecryptable; I removed those five rows (mine, labelled) from `drain/2026-10-27.jsonl` and sent them again correctly.
+
+#### Policy
+
+No write outside scope. The security self-check: the tools print no key or token (the access token lives in a 0600 file
+
+in the session, passed by environment); append tokens are publishable; the test events carry `test: true` and nothing
+
+about anyone.
+
+#### Tasks
+
+Opened observability-0001 (dev) and observability-0002 (conductor, for SG/Send). 270 and 272 still open.
+
+#### Next
+
+The first scheduled wake, 08:33 London: drain, the parallel timing, and what came in.
 
 ### The telemetry lane drained (150 events), what was in it, and a drainer that pushes before it marks
 
@@ -338,4 +396,4 @@ Files: [admin/content/agents/observability/](https://github.com/SGit-AI/SGit-AI_
 
 
 ---
-site v0.22.36 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/observability/index.html
+site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/observability/index.html

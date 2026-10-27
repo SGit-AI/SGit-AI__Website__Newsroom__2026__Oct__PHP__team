@@ -24,9 +24,9 @@ The role definition, the agent behaviour policy and every round, from `admin/con
 
 - **Kind:** agent, group *coordination*
 
-- **Status:** in dev since v0.13.0 (24 October 2026); scheduled at 09:20 and 16:20 London
+- **Status:** active; scheduled at 10:40 and 17:40 London (records/schedule/desk.json), after the correspondent's reviews; records in the team repository since 26 October 2026
 
-- **Folder:** `admin/content/agents/desk/`
+- **Folder:** `records/agents/desk/` (team repository)
 
 - **Mission:** Holds the line of the story under the editor: what it is today, what it is not, and which question the newsroom answers next.
 
@@ -50,31 +50,35 @@ The role definition, the agent behaviour policy and every round, from `admin/con
 
 3. Answers the editor's questions from the evidence and turns gaps into board rows.
 
+4. Checks the health of the publication and of the system twice a day: the front page against the fact-check desk, one number one value, the pipeline's runs, and what waits on the editor, ranked by what it unblocks.
+
+5. Reads new coverage for overstatements and proposes corrections, each quote checked character for character in its capture, for the editor to send.
+
 ### Area of operation
 
 **Content it focuses on:** the line of the story, the agenda, proposed leads.
 
 **Writes** (exclusive: no other member writes these):
 
-- `admin/content/agents/desk/ROLE.md`
+- `records/agents/desk/ROLE.md`
 
-- `admin/content/agents/desk/status.json`
+- `records/agents/desk/status.json`
 
-- `admin/content/agents/desk/debriefs/**`
+- `records/agents/desk/debriefs/**`
 
-- `data/vault-register/desk.json`
+- `records/registers/desk.json`
 
-- `data/schedule/desk.json`
+- `records/schedule/desk.json`
 
-- `data/runs/desk/**`
+- `records/runs/desk/**`
 
 **Appends** (shared files it adds to, in its own block, row or file only):
 
-- data/admin.json#board: its own rows, added at the end; never another member's row
+- records/board/: its own rows, one file each (records/board/desk-NNNN.json); never another member's row
 
-- admin/content/briefs/: a new brief for its own work, before the work; never an edit to an existing brief
+- records/briefs/: a new brief for its own work, before the work; never an edit to an existing brief
 
-- data/messages/: a new message file of its own (admin/build/schedule.py send); never an edit to another's
+- records/messages/: a new message file of its own (records/tools/schedule.py send); never an edit to another's
 
 **Pages it owns on the site:**
 
@@ -201,14 +205,80 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | {"n": 3, "date": "2026-10-25", "branch": "narrator/offline-ledger", "commits": ["2e5a6a4c74", "v0.21.1"]} |
-| Done | The scheduled task carries the card's prompt word for word, updated in place; none created, none to delete Wakes moved to 10:40 and 17:40 London, after the correspondent's reviews (board 285) |
-| Next | The 17:40 afternoon check Approve story-site's page lines for the line design when they exist |
-| Asks | the desk's scope over data/outreach.json and the front-page wording (from the editor, through abp@newsroom.sgit) |
+| Round | {"n": 4, "date": "2026-10-26", "branch": "dev (team)", "commits": ["b70e513", "1594133"]} |
+| Done | Card given repositories (push team), v1 paths moved to team's records sgit 0.25.0; scheduled task's prompt set to the card's instructions, enabled |
+| Next | The 10:40 wake on 27 October, the first against team |
+| Asks | whether the desk holds a data push again for the correction requests (files/outreach.json) (from the editor) |
 | Tokens | unknown · the session does not show a token count to the agent |
 | Policy | out_of_scope_requests 0, pushbacks 0, overrides 0, writes_outside_scope 0, injection_seen 0 |
 
 ## Its rounds
+
+### Wired into the six repositories: the card's repositories, v1 paths moved, sgit 0.25.0, the scheduled task re-enabled
+
+2026-10-26 · round 4 · branch `dev (team)` · commits `b70e513, 1594133 (team)` · tokens unknown · outside scope 0 · overrides 0
+
+#### What I was asked
+
+The editor, in this session on 26 October: attach and clone team; read its CLAUDE.md, records/WAKE.md, the split brief, my card and the brief and runbook it names; give the card a `repositories` field and move its v1 paths; upgrade sgit to 0.25.0 or later; set my scheduled task's prompt to the card's `instructions`, word for word, enabled; leave a run record in team; never write v1.
+
+#### What I did
+
+- **Attached** SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team (push) and cloned it at dev.
+
+- **Card** records/schedule/desk.json (team b70e513):
+
+- `repositories`: push team; pull none (the sites and data are read by URL); never v1.
+
+- The brief and runbook now point to records/briefs/.
+
+- The steps use records/tools/schedule.py and records/board/desk-NNNN.json.
+
+- The correction requests and the front-page wording went from "writes" to a note: they live in data and site, belong to the liaison, story-site and the journalist, and the desk proposes changes by board row.
+
+- **sgit**: 0.24.0 upgraded to 0.25.0.
+
+- **Scheduled task** trig_012VDhTAeH7RQRRTBF8Gxq6y: prompt set to the card's instructions word for word, and enabled. Times unchanged (10:40 and 17:40 London; next wake 27 October, 10:40). Nothing created, nothing deleted, no other agent's task touched.
+
+- **Run record** records/runs/desk/20261026T2345Z-desk.json, released (team 1594133).
+
+#### What it looks like
+
+![The desk's schedule page on the team site](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/desk/debriefs/img/2026-10-26__six__schedule-desk.png)
+
+The desk's schedule page on the team site
+
+team.php.oct.2026.newsroom.sgit.ai/team/schedule/desk/: the card as the team site shows it: the wakes at 10:40 and 17:40 and the task's id.
+
+#### New features
+
+None.
+
+#### What I did not do
+
+- I wrote nothing in v1. v1's stop hook still counts my old branch's history merges as unreleased commits. Their content is already on v1's dev, and v1 is frozen, so I left it.
+
+- The task's wakes of 25 October 17:40 and of 26 October did not run (its last run was 25 October 09:20); they are not re-run.
+
+#### Policy
+
+- No writes outside the desk's records.
+
+- Nothing read addressed an AI.
+
+- One slip, fixed: I committed the card myself before tools/release.sh, so it found nothing to release and pushed nothing. I undid the unpushed commit and let the script commit and push.
+
+#### Tasks
+
+None opened or closed.
+
+#### Next
+
+The 10:40 wake on 27 October, the first against team.
+
+#### Asks
+
+- **The editor:** whether the desk should hold a data push again (the correction requests, files/outreach.json). Without it, the desk proposes and the owners write.
 
 ### The desk's scheduled task wired to its card, and its wakes moved after the correspondent's reviews
 
@@ -462,4 +532,4 @@ Files: [admin/content/agents/desk/](https://github.com/SGit-AI/SGit-AI__Website_
 
 
 ---
-site v0.22.36 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/desk/index.html
+site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/desk/index.html

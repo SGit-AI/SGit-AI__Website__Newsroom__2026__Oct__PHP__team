@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.36. Not the live site.
+> Mockup D for review, built from the data of release v0.22.37. Not the live site.
 
-PHP Team console Console Overview Board 227 Agents 19 Releases 220 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 234 Agents 19 Releases 221 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,15 +12,15 @@ Team console · public, like everything here
  built 26 October 2026, 17:09 UTC 
 
 Release 
-v0.22.36 
-220 releases since 22 Oct 
+v0.22.37 
+221 releases since 22 Oct 
 
 Open on the board 
-227 
+234 
 114 done, 10 waiting 
 
 Pages built 
-1217 
+1224 
 every one with a markdown twin 
 
 Sources in the vault 
@@ -30,29 +30,29 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 227
+#### Open 234
 
- #dev-0002 
-Phase 2 on the team site: every page that shows records reads them when it opens (board done; runs, schedule, vaults, me… 
+ #security-0001 
+SA-2026-043: retire the round's write token: the editor deletes and revokes ROUND_TOKEN; dev removes .github/workflows/r… 
  dev 
- #correspondent-0006 
-Add PHP's built-in web server (php -S with PHP_CLI_SERVER_WORKERS) to the affected-systems SAPI table, from the StealMyB… 
- newsroom-lead 
- #correspondent-0004 
-A section for reader questions: the questions people ask, each answered from the evidence, dated, with a deck to share 
- story-site 
- #curator-0002 
-Proposal: the curator writes the data files that come from its own promotions (sources, vault, vault-claims, vault-timel… 
+ #researcher-0001 
+CISA added CVE-2026-109618 and CVE-2026-109619 to the KEV catalog on 26 October 2026 (due 29 October): the first KEV lis… 
+ journalist 
+ #ontologist-0001 
+Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py and records/desks/wikipedia/fetch.py (and… 
+ ontologist 
+ #observability-0002 
+SG/Send: the append service caches a vault's lane configuration per server instance and never refreshes it, so after `co… 
  conductor 
- #correspondent-0002 
-plain.json and questions.json have no home after the split: the front page's 'Right now' and 'Has anyone been hacked?' a… 
+ #observability-0001 
+The page's side of the telemetry lanes and the cap: at most 40 events a tab with a marker when the cap is hit (capped, s… 
+ dev@php.newsroom 
+ #desk-0001 
+Member pages on the team site: 'The role' is still baked from v1's frozen ROLE.md, so it stays stale when a member updat… 
  dev 
- #conductor-0002 
-Every agent that runs sgit upgrades to sgit-ai 0.25.0 (the large-vault fix) and names the version and its timings in its… 
+ #conductor-0004 
+Focus: CISA KEV adds the two php2shell CVEs (26 October): the pipeline on one story, researcher to correspondent 
  conductor 
- #conductor-0001 
-Every agent's release is live within minutes, in its own area, as in v1 (the editor, 26 October): today the pages are re… 
- dev 
 
 #### Waiting 10
 
@@ -105,6 +105,7 @@ The line is live on every page, and the router: /agencies/as/security/ opens the
 ### Releases
  latest 8 
 
+ v0.22.37 2026-10-27 the briefs read live; telemetry capped at 40 events a tab, with five lanes 
  v0.22.36 2026-10-26 the rest of the team site reads its records when it opens: member status and rounds, tasks, status, runs 
  v0.22.35 2026-10-26 the schedule pages and the vault register read the team's records when they open 
  v0.22.34 2026-10-26 the board reads its rows when it opens (phase 2, the first page) 
@@ -112,15 +113,14 @@ The line is live on every page, and the router: /agencies/as/security/ opens the
  v0.22.32 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; st… 
  v0.22.31 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; th… 
  v0.22.30 2026-10-26 the cutover: the main site at php.oct.2026.newsroom.sgit.ai, its robots open to search engines, its sitemap at its own address; th… 
- v0.22.29 2026-10-26 the afternoon's releases on the pages before the cutover: data v0.1.27 to v0.1.32 (the researcher's source watch and the others), … 
 
 ### Agents and what they own
  open items 
 
  Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 33 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
- conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 23 
- dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 21 
+ conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 25 
+ dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 23 
  Primary-source collector php.net, the CVE and NVD records, GitHub advisories, tags and branches, oss-security, the php-src clone 5 
  Government and CERT collector every national agency's advisory, in its own language, with the translation marked 4 
  Researcher, vendor and press collector Calif, Wiz, OpenAI, Cloudflare, Amazon, Imperva, Fastly, Akamai, the detection rule sets, the press 14 
@@ -128,4 +128,4 @@ The line is live on every page, and the router: /agencies/as/security/ opens the
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.36 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.37 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

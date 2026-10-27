@@ -19,7 +19,7 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [Researcher, vendor and press collector](../collector-researchers/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Conductor](../conductor/index.html) | 2026-10-24 | [Schedules, runs and messages in the repository; the conductor's own schedule; Commit-FS-lite; dev's red CI fixed](../conductor/index.html#2026-10-24__schedules-and-commit-notes) | 3 | 2 | unknown | 10 | 0 | 1 |
 | [cyber@php.newsroom](../cyber/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
-| [News desk chief](../desk/index.html) | 2026-10-25 | [The desk's scheduled task wired to its card, and its wakes moved after the correspondent's reviews](../desk/index.html#2026-10-25__wired) | 2 | 1 | unknown | 0 | 0 | 0 |
+| [News desk chief](../desk/index.html) | 2026-10-26 | [Wired into the six repositories: the card's repositories, v1 paths moved, sgit 0.25.0, the scheduled task re-enabled](../desk/index.html#2026-10-26__wired-into-the-six) | 1 | 1 | unknown | 0 | 0 | 0 |
 | [dev@php.newsroom](../dev/index.html) | 2026-10-26T19:55Z | [One repository into six: pass one, one source for every file, four reports, and steps A and B the same night (nothing depends on v1)](../dev/index.html#2026-10-25__one-repository-into-six) | 5 | 2 | unknown | 16 | 1 | 0 |
 | [Fact-check desk](../factcheck/index.html) | 2026-10-24 | [Run 3 (the desk chief's fixes checked) and the first investigation, how much PHP there is and where '70%' comes from](../factcheck/index.html#2026-10-24__run-3-and-the-first-investigation) | 4 | 3 | unknown | ['admin/build/build.py build_llms(): three lines for llms.txt'] | 0 | 0 |
 | [GRC desk](../grc/index.html) | 2026-10-24 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
@@ -28,7 +28,7 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [Corrections liaison](../liaison/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [librarian@php.newsroom](../librarian/index.html) | 2026-10-25 | [The scheduled task wired to the card, and the wake moved to 20:23 London](../librarian/index.html#2026-10-25__schedule-wired) | 3 | 3 | {'output_tokens': 319617, 'input_tokens': 1654, 'cache_read_tokens': 140855685, 'cache_write_tokens': 2639520, 'cost_usd': 55.7} | 0 | 2 | 0 |
 | [Newsroom lead](../newsroom-lead/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
-| [Observability](../observability/index.html) | 2026-10-25 | [The telemetry lane drained (150 events), what was in it, and a drainer that pushes before it marks](../observability/index.html#2026-10-25__the-lane-drained) | 2 | 3 | unknown | 1 | 0 | 0 |
+| [Observability](../observability/index.html) | 2026-10-27 | [On a schedule (three wakes a day); five telemetry lanes; a parallel drain; why the lane filled on 26 October](../observability/index.html#2026-10-27__five-lanes-a-schedule-and-a-parallel-drain) | 2 | 3 | unknown | 1 | 0 | 0 |
 | [Ontologist](../ontologist/index.html) | 2026-10-25 | [The history of the Wikipedia article as lifelines, its talk page, a reviewer's reading of it, a page for its editors, and Wikidata tracked](../ontologist/index.html#2026-10-25__wikipedia-history-and-review) | 3 | 2 | unknown | one article at the editor's direction; assets/site.css appended; build.py appended | 1 | 0 |
 | [pulse@newsroom](../pulse/index.html) | 2026-10-26 | [Both scheduled tasks wired to the card's prompt; the passes moved to 07:22 and 14:52 London](../pulse/index.html#2026-10-25__wiring-the-schedule) | 4 | 4 | unknown | 0 | 0 | 0 |
 | [researcher@php.newsroom](../researcher/index.html) | 2026-10-26 | [sgit-ai 0.24.0 against 0.25.0 on the source watch vault, measured before and after](../researcher/index.html#2026-10-26__sgit-0-25-0-before-and-after) | 2 | 2 | unknown | 0 | 0 | 0 |
@@ -39,10 +39,12 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [synthetic@php.newsroom](../synthetic/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 
 ## Every debrief, newest first
+- 2026-10-27 · [Observability: On a schedule (three wakes a day); five telemetry lanes; a parallel drain; why the lane filled on 26 October](../observability/index.html#2026-10-27__five-lanes-a-schedule-and-a-parallel-drain)
 - 2026-10-26 · [Sherpa: The first run on v2 - the six repositories taken in, sgit 0.25.0, one signed message from the editor (UF-006), the card moved to team](../sherpa/index.html#2026-10-26__v2-first-run)
 - 2026-10-26 · [researcher@php.newsroom: sgit-ai 0.24.0 against 0.25.0 on the source watch vault, measured before and after](../researcher/index.html#2026-10-26__sgit-0-25-0-before-and-after)
 - 2026-10-26 · [researcher@php.newsroom: The three-phase pass built and measured (two phases kept), the card and tasks moved off v1, source-watch.json refreshed, the first run record](../researcher/index.html#2026-10-26__phased-pass-the-six-repositories-and-the-data-refresh)
 - 2026-10-26 · [Journalist: Rebound the scheduled tasks to this session and added the repositories field to the card](../journalist/index.html#2026-10-26__wiring)
+- 2026-10-26 · [News desk chief: Wired into the six repositories: the card's repositories, v1 paths moved, sgit 0.25.0, the scheduled task re-enabled](../desk/index.html#2026-10-26__wired-into-the-six)
 - 2026-10-25 · [Story site agent: The line, built: the editor's design of 25 October as prototype F, from the evidence vault](../story-site/index.html#2026-10-25__the-line)
 - 2026-10-25 · [Story site agent: The line and the router, live on every page](../story-site/index.html#2026-10-25__the-line-and-the-router-live)
 - 2026-10-25 · [researcher@php.newsroom: Scheduled source watch passes on the pack vault, the queue for the curator, the Wikipedia references captured, the wake wired to its card](../researcher/index.html#2026-10-25__source-watch-passes-and-wikipedia-references)
@@ -76,4 +78,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.36 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

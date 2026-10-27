@@ -52,8 +52,10 @@ The security advisories of the PHP October 2026 newsroom: every vulnerability fo
 | [SA-2026-038](../advisories/SA-2026-038/index.html) | low | open | An imported billing log can carry a script link | `assets/components/sg-meter` |  |
 | [SA-2026-039](../advisories/SA-2026-039/index.html) | low | accepted | No clickjacking protection | `GitHub Pages` |  |
 | [SA-2026-040](../advisories/SA-2026-040/index.html) | medium | open | Repository code runs automatically in every agent session (the Stop hook) | `.claude/settings.json, admin/build/agents.py` |  |
-| [SA-2026-041](../advisories/SA-2026-041/index.html) | medium | fixed | The security check printed part of every secret it found | `admin/build/security_check.py` | this release |
+| [SA-2026-041](../advisories/SA-2026-041/index.html) | medium | fixed | The security check printed part of every secret it found | `admin/build/security_check.py` | v0.20.3 (v1, 25 October 2026) |
+| [SA-2026-042](../advisories/SA-2026-042/index.html) | medium | fixed | Reader answers were inserted into pages as raw HTML | `admin/build/build.py build_questions (the librarian's block; now press build/build.py)` | v0.18.2 (v1, 25 October 2026) |
+| [SA-2026-043](../advisories/SA-2026-043/index.html) | high | open | The round's write token is readable by every piece of code the round runs | `press .github/workflows/round.yml and tools/round.sh` |  |
 
 
 ---
-site v0.22.36 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/index.html
+site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/index.html

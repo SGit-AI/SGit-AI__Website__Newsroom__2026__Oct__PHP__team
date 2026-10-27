@@ -18,7 +18,7 @@ Overview · Threat model and data flows · Advisories · Root causes and guidanc
 | **Component** | `admin/build/security_check.py` |
 | **Found by** | CodeQL (GitHub code scanning, alerts 4 to 6) |
 | **Found** | 2026-10-24 |
-| **Fixed in** | this release |
+| **Fixed in** | v0.20.3 (v1, 25 October 2026) |
 | **Fixed by** | security@php.newsroom |
 
 ## What it is
@@ -54,4 +54,4 @@ References: `admin/build/security_check.py kind_of()`
 
 
 ---
-site v0.22.36 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-041/index.html
+site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-041/index.html

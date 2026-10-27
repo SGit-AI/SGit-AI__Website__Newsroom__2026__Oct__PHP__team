@@ -72,6 +72,8 @@
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-039/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-040/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-041/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-042/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-043/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/bounty/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/client-side/</loc></url>
@@ -158,7 +160,11 @@
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-26__brief__sgit-0-25-0/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-26__decision__the-curator-writes-data/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-26__proposal__curator-data-files/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__five-lanes-and-a-cap-per-tab/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-breaking-news-desk/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__runbook__breaking-desk-onboarding/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/view/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/admin/design/c/</loc></url>
@@ -246,6 +252,7 @@
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/journalist/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/librarian/</loc></url>
+<url><loc>https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/observability/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/ontologist/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/pulse/</loc></url>
 <url><loc>https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/researcher/</loc></url>
