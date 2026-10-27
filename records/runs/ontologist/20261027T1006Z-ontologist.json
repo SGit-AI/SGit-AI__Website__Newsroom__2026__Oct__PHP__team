@@ -1,0 +1,16 @@
+{
+ "run": "20261027T1006Z-ontologist",
+ "agent": "ontologist",
+ "started": "2026-10-27T10:06Z",
+ "finished": "2026-10-27T10:07:03Z",
+ "outcome": "partial",
+ "summary": "Wake 10:05 London, at team dev 8688d3424fb0 (1 note, 1 message read). Not done, as at 06:10: the Wikipedia fetch and the ontology pass, because records/desks/wikipedia/fetch.py and records/desks/ontologist/pass.py still resolve v1's layout (board ontologist-0001, open, session work); this is the second wake in a row and the fourth fetch missed since 14:05 on 25 October, so the Wikipedia delta is now about 44 hours stale and will arrive in one fetch. Card: model field set to plain Sonnet, as the conductor's message asks. Data's dev: nothing changed in my files (the ontology, entities, crosswalk, attribution) beyond the chain's edition commits and the researcher's source-watch export. One fact for the editor: the researcher's export records CISA's KEV catalogue of 26 October listing both php2shell CVEs; the ontologist's Wikipedia review (data files/wikipedia/php2shell/review.json, finding R-14) still says CISA lists neither, and the story page on the article's treatment of CISA is out of date: it needs a session to correct that finding and re-read the article, which cannot be done unattended. Press's dev: nothing on build/wikitext.py or the graph component. Nothing addressed to an AI. Waits on the editor: a session to re-point the two scripts, push access to data and press for this session.",
+ "read": [
+  "20261027T0533Z__conductor__to-all__which-model-each-agent-runs-opus-for-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8688d3424fb0d161fb21fc3ed6161b70bc84ea16"
+}

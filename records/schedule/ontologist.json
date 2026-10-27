@@ -14,7 +14,7 @@
   "18:05"
  ],
  "times_why": "Four wakes a day, every four hours (the editor, 25 October: capture the article's history 'hourly or every four hours'), placed by the editor's direction the same day 'at a time that makes sense compared with the other scheduled runs': each wake maps what the desks before it added and lands before the conductor's next full pass reads the team. 06:05 takes the night's Wikipedia edits before anyone starts and before the 07:15 full pass; 10:05 follows the 08:00 promotion and the 08:52 fact-check, before 11:15; 14:05 follows 13:00 and 12:52, before 15:15; 18:05 follows 15:30 and 16:52, before 19:15. Minute :05 is clear of every other agent's wake and release (:00, :10, :13, :15, :20, :22, :25, :30, :40, :44, :45, :52, :55).",
- "model": "Sonnet (the editor, 27 October 2026: Opus for the conductor, the correspondent and security; Sonnet for the rest)",
+ "model": "Sonnet",
  "session": "this session (session_016wZtuCoQDVrXcpCnVGfWDv, the ontologist's own), woken by the scheduled task trig_01MRxGu6YT6eguebZG8DSAni; the fresh-session task trig_01BqfsPKp2Rj5Fs4eAVhjTv9 was deleted on 25 October. It holds no vault key and no secret, and does not use sgit.",
  "brief": "records/briefs/2026-10-24__brief__the-ontologist.md (team); the Wikipedia brief records/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md",
  "runbook": "records/desks/ontologist/README.md (team)",
