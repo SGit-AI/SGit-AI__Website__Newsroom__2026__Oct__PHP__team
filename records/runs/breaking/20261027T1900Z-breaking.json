@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1900Z-breaking",
+ "agent": "breaking",
+ "started": "2026-10-27T19:00:00Z",
+ "finished": "2026-10-27T19:55:19Z",
+ "outcome": "ok",
+ "summary": "Breaking run at the editor's word (board breaking-0002): The Hacker News, 'CISA Confirms Active Exploitation of Two PHP2Shell Flaws', and the sources it cites. Found: the article in neither vault; 46 of its 49 sources new; the four lanes paused for the move, so the desk was the only writer. 1 researcher: 47 pages added to 7r83qic5 with the watch's own browser capture (63 s), 38 open, 3 bot-challenged (X, Canon, Dell), 1 down (HP), 5 PDFs the watch cannot capture (ABB, Belden, dormakaba, HMS, Schneider), 6 empty renders (Citrix, F5, Hikvision, Hitachi Energy, Ivanti, MSRC); 32 queued; head 6b4b201bf16b. 2 curator: 31 new sources and 1 new capture into nnd3i8iw (head 6f0d5c50bf12), 40 claims brk2-*, 24 timeline rows; data cb27954 (645 sources, 711 captures, 452 claims). New fact: CISA's catalog page lists CVE-2026-111497 (Google Brotli) added 27 October, due 10 November; a different flaw, bundled in PHP's Windows builds. 3 journalist: 40 verdicts (11 used, 3 agrees, 22 noted, 4 held back), 7 compromise rows (Craft: exploitation before the patch, no victim named; no successful exploitation known to Craft Cloud, NETGEAR, Broadcom, Arista, Splunk, Salesforce), no-confirmed-compromise as of 19:13 UTC; data 8298fb3, site 90920989; the desk took the Brotli row off the compromise ledger. 4 correspondent: 3 catches, 21 verdicts spot-checked, state of affairs v5 (withdrawn vendor claims 1 to 2, open candidates 3 to 4, named compromises 0), n-censys-services beside n-censys, the readers' answers name Unit 42's withdrawal and Square Enix; data 105ad82, updates 4b1828a, site aa40f6a1; the article left as written. Subagents: 726,239 tokens, 40.9 min. The WordPress capture carries a data-llm-hint addressed to agents: recorded in its notes, not acted on. Working notes hewphq85 at 28512d7e5a2b. Waits: the lanes' reviews after the move; captures of the 15 pages and Asustor's AS-2026-023.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "the session's model",
+ "cost_usd": null,
+ "head": "fdaebf66a1dc86be1eabce52286b207662b5c259"
+}
