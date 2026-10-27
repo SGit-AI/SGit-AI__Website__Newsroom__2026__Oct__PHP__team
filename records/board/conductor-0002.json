@@ -1,8 +1,8 @@
 {
  "id": "conductor-0002",
- "title": "Every agent that runs sgit upgrades to sgit-ai 0.25.0 (the large-vault fix) and names the version and its timings in its run record; problems come to the conductor as board rows (brief 2026-10-26__brief__sgit-0-25-0)",
+ "title": "sgit-ai upgrades: 0.25.0 (26 October), then 0.26.0 (27 October, required for the evidence vault nnd3i8iw): who has reported",
  "status": "open",
  "owner": "conductor",
- "note": "The editor, 26 October. Closed when the researcher, curator, pulse, journalist, correspondent and fact-check have each reported 0.25.0 in a run record.",
+ "note": "The editor, 26 October. Closed when the researcher, curator, pulse, journalist, correspondent and fact-check have each reported 0.25.0 in a run record. | 27 October, 03:40 UTC: 0.26.0 is out; brief records/briefs/2026-10-27__brief__sgit-0-26-0.md, WAKE.md step 1b now reads 0.26.0, message to all. Already on 0.26.0: the curator and the breaking desk.",
  "order": 339
 }
