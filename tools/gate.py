@@ -5,7 +5,7 @@
 2. Every board row has an id, a title, a status (open, waiting, done) and an owner, and is filed under its id.
 3. Every schedule card names its member, a status (active, proposed, paused, ended) and its wake times (HH:MM), under its agent's name;
    every run record has an outcome (ok, idle, partial, failed); every message has its front matter; every member folder
-   has a role and a policy. (The rules the build stops a round on, here at push time.)
+   has a role and a policy; every debrief has front matter. (The rules the build stops a round on, here at push time.)
 4. The front page is what tools/front.py writes (it is built from this repository, so it cannot drift).
 5. No credential shapes anywhere: registers list vault IDs and key kinds, never a key (an id that is not a bare vault id fails).
 """
@@ -83,6 +83,15 @@ for a in agents:
     for need in ('ROLE.md', 'policy.json'):
         if not os.path.exists(os.path.join(ROOT, 'records', 'agents', a, need)):
             notes.append(f'records/agents/{a}/: no {need} (as in v1; the member, or abp@newsroom.sgit who keeps the policies, adds it)')
+    # a debrief is read by the build: front matter of key: value lines between --- lines, or the round stops
+    dd = os.path.join(ROOT, 'records', 'agents', a, 'debriefs')
+    for fn in sorted(os.listdir(dd)) if os.path.isdir(dd) else []:
+        if fn.endswith('.md'):
+            m = re.match(r'^---\n(.*?)\n---\n', open(os.path.join(dd, fn), encoding='utf-8', errors='replace').read(), re.S)
+            if not m:
+                fails.append(f'records/agents/{a}/debriefs/{fn}: a debrief starts with front matter (--- agent:, title:, date: ... ---)')
+            elif any(l.strip() and not re.match(r'^\w+:', l) for l in m.group(1).splitlines()):
+                fails.append(f'records/agents/{a}/debriefs/{fn}: every front matter line is "key: value"')
 
 KINDS = ('vault key', 'read key', 'append token')   # the build's rule, here at push time: the pages read the registers when they load
 for p, d in docs.items():

@@ -1,3 +1,20 @@
+---
+agent: dev
+title: Articles live from their Markdown, a page for what is newer than the build, and site's gate checks articles
+date: 2026-10-27
+round: 3
+branch: dev (each repository's own release script)
+commits: press v1.0.62 to v1.0.69; editions v0.22.40 to v0.22.42; site's deploy step; team dev-0004
+site_version: 0.22.43
+tokens: unknown
+tokens_how: the session does not report its token count to the agent
+outside_scope: site .github/workflows/pages.yml and CLAUDE.md, press tools/ (route, partition, site_index, site_gate), under the editor's go for the brief on centers of gravity in this session
+out_of_scope_requests: 0
+pushbacks: 0
+overrides: 0
+injection_seen: 0
+---
+
 # Debrief: articles live from their Markdown, and a page for what is newer than the build
 
 dev@php.newsroom, 27 October 2026. Step two of the brief "Centers of gravity, frames and live content"
