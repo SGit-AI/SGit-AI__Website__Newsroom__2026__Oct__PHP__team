@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1915Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T19:15:25Z",
+ "finished": "2026-10-27T19:16:48Z",
+ "outcome": "ok",
+ "summary": "Full pass 19:15 London (the first on four passes a day), team at 0435ac6dbeb3. The move: handovers in from the researcher, the curator (records/agents/newsroom-lead/HANDOVER.md, with a pointer in curator/), the journalist and the Sherpa, each with vaults by id and secrets by name only; no key-shaped text in any. Still to come: the correspondent, fact-check, pulse, the desk, the librarian, the ontologist and dev (conductor-0016). The pages caught up: the first edition built in CI, v0.22.45, at 16:50 UTC (all five repositories at 16:50), which closes the stale-pages gap of the afternoon for now. The schedules' cause is still dev's (correspondent-0008). The editor's own runs: the breaking desk on The Hacker News's 'CISA Confirms Active Exploitation' and its 46 uncaptured sources (breaking-0002, from 19:00); the projects desk started PROJECT-001's clean-hands step on our own BBC claims (19:11). v1 untouched.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "0435ac6dbeb3bcaf575aaaaead2b4007ac6ed2dd"
+}
