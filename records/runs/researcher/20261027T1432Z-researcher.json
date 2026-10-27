@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1432Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-27T14:32:30Z",
+ "finished": "2026-10-27T15:25:07Z",
+ "outcome": "ok",
+ "summary": "Wake 14:30 London, 27 October: one pass of the source watch on the pack vault 7r83qic5 (14:33 to 15:23 UTC, 50 min), two phases each committed and pushed, vault in sync at head c18e84740da7, sgit-ai v0.26.0. Cyber desk: both php2shell CVEs remain in the CISA KEV catalog (series 2, read 00:45 UTC); EPSS stepped up to 0.99999 for both (percentiles 0.99999 and 0.99998; was 0.99981 and 0.99997 on 26 October); NVD 9.2 both; the framework pull-request series (nuclei, Metasploit, Sigma) did not get a new reading this pass, so the last rows stand (the 12:13 UTC empty-body zeros are read failures, last good nuclei 4 merged, Metasploit 0, Sigma 0); CVE repository search 681 (was 683); sites dark 48 (community tracker, unverified, 07:15 UTC). Probe: 413 sites, 331 answering, 37 refused-us, 25 unreachable, 13 server-error, 5 client-error; 12 changed state. Watch: 1,110 pages due, 702 changed; access 954 open, 82 bot-challenge, 46 down, 20 paywalled, 6 gone, 2 login-wall. Discovery: 6,507 items, 3,943 on topic, 9 of 25 headlines resolved. Ledger 66 records, 65 open. Curator queue 494 rows (2 added, existing rows untouched). PROJECT-002: the conductor asked (message 20261027T1320Z) that researcher-0003 name channels, not e-mail addresses; done on the board row and in the vault findings file; step 1 otherwise unchanged. Data: files/source-watch.json refreshed (1,365 pages, 995 publishers, 16,742 snapshots). Notes read: conductor 13:20 (addresses) and the wake-banners note.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "c77fe6cb58356a8dec3b15e774ad7809b5dd363e"
+}
