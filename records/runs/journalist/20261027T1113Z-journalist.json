@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1113Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-27T11:13:08Z",
+ "finished": "2026-10-27T11:18:48Z",
+ "outcome": "ok",
+ "summary": "11:10 wake (fired 11:12 UTC) into this session; dev at 4dd76c008d29. Evidence vault nnd3i8iw (pack vault, sgit 0.26.0): pull of one batch 1 m 58 s; head 55b47c4d6af1 (598 sources, latest capture 09:43 UTC), the curator's batch 20, already in the data repository from the curator's own release, so I did not export. 22 claims without a verdict, each searched across every capture first, one verdict where two pages report one event (the correspondent's note of 27 October on the honeypots): 5 used, 2 agrees, 10 noted, 5 held back (Trail of Bits' production-grade exploit, third-hand; Russia's NKTsKI directive on one outlet; EADaily's AI-Lazarus story, which the outlet calls unconfirmed; Censys's 32.51 million on one outlet; Cyfirma's fifth page). New on the compromise picture, from one SC Media page of 26 October (its text read in full): Palo Alto Networks Unit 42 retracted on 25 October its 23 October statement tying an attack on a European government agency to PHP2Shell (unable to confirm initial access via either bug; no agency named); Sophos's 26 October blog (not the mass exploitation event feared); watchTowr's Knott (indiscriminate exploitation 'a firm No' for now); Delft's telescope (over 50,000 requests, 171 addresses sending code); and Karimi's honeypot as 35 working shells in a deliberately favourable setup. Four compromise rows added and the Karimi row completed. No organisation is named as compromised: no-confirmed-compromise and the story stamp moved to 09:43 UTC with the retraction in the note, the wording untouched. Offline rows, every organisation each source lists: BambooHR (US, Canada, Ireland), the University of Basel, the Brazilian Army's SGEx. Released data (CI numbers it). Notes read: the correspondent's (one event, one verdict) and the conductor's on projects. Not done: the readers' as-of lines in the site repository's content/data (plain.json, questions.json) stay at 00:45 UTC for the correspondent. The curator's key 6c81ae257fee1938 is still not in the register. Instructions in captures: none addressed me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "4dd76c008d29fba2230c7f048fc34f84fc3b3b24"
+}
