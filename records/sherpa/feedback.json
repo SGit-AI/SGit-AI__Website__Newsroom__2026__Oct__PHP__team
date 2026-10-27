@@ -873,10 +873,10 @@
   {
    "id": "UF-006",
    "received": "2026-10-26",
-   "tester": "editor",
-   "who": "the editor",
-   "channel": "the site's feedback form on /collaborators/, signed with the editor's enrolled key (sha256:89984d97af4d2deb, enrolled 23 October); drained from the collaborators lane by the Sherpa on 26 October",
-   "reader": "the editor, on an iPhone (Chrome), reviewing the redesign's mockups",
+   "tester": "unconfirmed",
+   "who": "sent with the editor's enrolled key; the sender is not confirmed",
+   "channel": "the site's feedback form on /collaborators/, signed with a key enrolled as the editor's (sha256:89984d97af4d2deb, enrolled 23 October); drained from the collaborators lane by the Sherpa on 26 October",
+   "reader": "a reader: the message came from the browser that holds the editor's enrolled key and carries no name; who typed it is not confirmed (a key identifies a browser, not a person)",
    "ask": "",
    "site_version": "0.22.22",
    "site_version_note": "Sent on v0.22.22 at 11:05 UTC; the three screenshots are of mockups A, B and D (/admin/design/a/, b/, d/, built from v0.10.11). Checked on the live v2 site, v0.22.29, which runs the line (prototype F).",
@@ -974,15 +974,16 @@
       "dev"
      ]
     }
-   ]
+   ],
+   "attribution_note": "Corrected on 27 October 2026: first recorded as the editor's own because the key was his. The editor then said that another reader's messages arrive through the same key (a message of 27 October, 18:42 UTC, was a reader's, not his). Which of these were the editor's is for him to confirm in session; until then they are a reader's, unnamed."
   },
   {
    "id": "UF-007",
    "received": "2026-10-26",
-   "tester": "editor",
-   "who": "the editor",
-   "channel": "the site's feedback form, ten messages signed with the editor's enrolled key (sha256:89984d97af4d2deb); drained from the collaborators lane by the Sherpa on 26 October, 23:45 UTC, with the press's fixed drain (v1.0.47). An eleventh message, unsigned and empty, from updates.php.oct.2026.newsroom.sgit.ai/whatsnew/as/executive/, is counted only.",
-   "reader": "the editor, reading the v2 front page as a reader would",
+   "tester": "unconfirmed",
+   "who": "sent with the editor's enrolled key; the sender is not confirmed",
+   "channel": "the site's feedback form, ten messages signed with a key enrolled as the editor's (sha256:89984d97af4d2deb); drained from the collaborators lane by the Sherpa on 26 October, 23:45 UTC, with the press's fixed drain (v1.0.47). An eleventh message, unsigned and empty, from updates.php.oct.2026.newsroom.sgit.ai/whatsnew/as/executive/, is counted only.",
+   "reader": "a reader: the message came from the browser that holds the editor's enrolled key and carries no name; who typed it is not confirmed (a key identifies a browser, not a person)",
    "ask": "",
    "site_version": "0.22.33",
    "site_version_note": "Sent on v0.22.33 between 17:41 and 19:14 UTC.",
@@ -1142,7 +1143,8 @@
      "owner": "story-site",
      "also": []
     }
-   ]
+   ],
+   "attribution_note": "Corrected on 27 October 2026: first recorded as the editor's own because the key was his. The editor then said that another reader's messages arrive through the same key (a message of 27 October, 18:42 UTC, was a reader's, not his). Which of these were the editor's is for him to confirm in session; until then they are a reader's, unnamed."
   }
  ]
 }
