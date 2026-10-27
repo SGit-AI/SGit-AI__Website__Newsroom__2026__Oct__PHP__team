@@ -3,7 +3,7 @@
  "address": "dev@php.newsroom",
  "member": "dev",
  "status": "active",
- "status_note": "the editor's go, 26 October 2026 ('you also need to now run on a schedule, maybe once a day'; again that evening: 'set your schedule so that you run once a day and you keep an eye on these things'): one wake a day to run the chain and keep the six, the sites and the lanes in good shape",
+ "status_note": "the editor's go, 26 October 2026 ('you also need to now run on a schedule, maybe once a day'; again that evening: 'set your schedule so that you run once a day and you keep an eye on these things'): one wake a day to keep the six, the sites and the lanes in good shape",
  "objective": "Keep the newsroom's six repositories, the press and the round working: every agent's release live within the quarter hour; the gates green; what can be made simpler or faster, made so.",
  "tz": "Europe/London",
  "days": "every day",
@@ -25,7 +25,7 @@
  },
  "each_wake": [
   "Attach the six (never v1); take in dev of each; read your messages (records/messages/dev/), your notes (python3 records/tools/schedule.py notes dev), the board rows that name you, and the day's run records that name the press, the chain, the gates, the syncs or a lane (the Sherpa's and the conductor's first).",
-  "The chain: from the folder that holds the clones, RELEASE_TRAILER set, run sgit-ai__website__newsroom__2026__oct__php__press/tools/chain.sh '<what changed>' --if-changed (it builds only when someone released since the last round; there is no scheduled round workflow and no ROUND_TOKEN). If it stops on an agent's content, make the build tolerate it when the fault is the build's, else a board row and a note to the owner; run it again until it is done.",
+  "The editions (board dev-0005; no round to run since 27 October): the press's newest release edition-<edition> (Build the edition, .github/workflows/edition.yml, every ten minutes) is newer than the last release anyone but CI made in the six, and each of the six has taken it (its newest commit with the trailer Edition: <edition>, made by its pages.yml every fifteen minutes). A red edition or a take that does not apply: read its log, fix the build when the fault is the build's, else a board row and a note to the owner of the record that stopped it. tools/chain.sh only when CI cannot build, and never while it does.",
   "Live: each of the four sites (php.oct.2026, refs., updates., team.) pins the press and data versions the round released (the p2s-route meta of a page; press.json); the data API and the press serve them (versions.json). A miss is a board row.",
   "Visitors: in a browser (Playwright), open one page of each site and check it reads telemetry.json from the data API and posts one event to the telemetry lane (84wr8mib). Answer that post locally (page.route, fulfil): never send a test event to the lane. A site that does not post is today's first fix.",
   "The lanes: telemetry-report.json in data says when the telemetry lane was last drained; older than two days is a board row for observability (the lane holds 1,000 pending events, then drops visits). The conductor's and the Sherpa's run records say the same for the collaborators and feedback lanes. Dev holds no lane key and drains nothing.",
