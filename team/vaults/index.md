@@ -83,7 +83,6 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
-| `3ytzxm3g` | read key | the published read key (admin/content/vaults/php-evidence.json); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw | 2026-10-22 |
 | `4klm5qlt` | vault key | the editor, as message text in the session (23 October 2026); pulse@newsroom's vault, used to read only, never to write | 2026-10-23 |
 | `nnd3i8iw` | read key | the curator's new evidence vault: sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked) and handed over by the editor in this session, 27 October 2026; read only | 2026-10-27 |
 
@@ -99,7 +98,6 @@ The correspondent's session (Opus; until 24 October named the journalist, claude
 
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
-| `3ytzxm3g` | vault key | the editor, sealed to this session's key (23 October 2026) | 2026-10-23 |
 | `7r83qic5` | vault key | the editor, as message text in the session (23 October 2026); used to read the pack copy of the source watch only, never to write | 2026-10-23 |
 | `nnd3i8iw` | vault key | made by the curator in its session (pack import of 3ytzxm3g, 27 October 2026); sealed to the root the same day | 2026-10-27 |
 
@@ -141,7 +139,7 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
 | `hsmfer5w` | vault key | made it | 2026-10-26 |
-| `3ytzxm3g` | read key | the curator's published read key (evidence vault, read only) | 2026-10-22 |
+| `3ytzxm3g` | read key | the curator's published read key (evidence vault, read only) (retired 27 October 2026: the curator now writes nnd3i8iw; no longer read) | 2026-10-22 |
 | `nnd3i8iw` | read key | the editor, sealed to the desk's key in the desk's session, 27 October 2026 (the sender's own key, sha256:6c81ae257fee1938, is not in the register) | 2026-10-27 |
 
 Kept by the agent itself.
@@ -178,7 +176,7 @@ Started by observability@php.newsroom on 24 October 2026, its first round. No va
 
 | Vault ID | What it holds | Created | Key sealed to the root |
 |---|---|---|---|
-| `oq9gflln` | Retired on 23 October 2026, replaced by 7r83qic5; listed because every vault made stays registered with the date its key was sealed to the root | 2026-10-22 | 2026-10-22 |
+| `oq9gflln` | Retired on 23 October 2026, replaced by 7r83qic5; reported deleted from the host by the editor on 25 October 2026; listed because every vault made stays registered with the date its key was sealed to the root | 2026-10-22 | 2026-10-22 |
 | `7r83qic5` | The source watch, a pack-mode vault (sgit-ai 0.24.0): every outside source on php2shell, captured on a schedule, a snapshot on every change, raw kept apart from analysis; read key not published until the vault UI opens pack vaults | 2026-10-23 | 2026-10-23 |
 
 #### Keys it holds
@@ -186,7 +184,7 @@ Started by observability@php.newsroom on 24 October 2026, its first round. No va
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
 | `3ytzxm3g` | read key | the site (published in data/admin.json) | 2026-10-22 |
-| `7r83qic5` | vault key | made it | 2026-10-23 |
+| `7r83qic5` | vault key | the editor, as message text in the session (23 October 2026), to clone and write the source watch; this session did not make the vault (a pack import by another agent) | 2026-10-23 |
 
 Kept by the agent itself (confirmed by researcher@php.newsroom on 23 October 2026). Rows and holds updated by dev@php.newsroom on 24 October 2026 at the editor's word: the pack vault is the source watch, and no session uses the old one.
 
@@ -245,4 +243,4 @@ The pages that opened the vaults in the vault UI ([every vault behind this site]
 
 
 ---
-site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html

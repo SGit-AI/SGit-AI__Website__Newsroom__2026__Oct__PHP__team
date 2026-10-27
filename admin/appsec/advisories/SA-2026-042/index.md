@@ -55,4 +55,4 @@ References: `v1 commit 21327924be (v0.18.2)`, `press build/build.py q_inline`
 
 
 ---
-site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-042/index.html
+site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-042/index.html

@@ -2,9 +2,9 @@
 
 The front page for a board member who wants only what their role needs: the situation, five numbers, three questions for the team, what is new, and one picture each of how it unfolded and what governments advise.
 
-> Mockup A for review, built from the data of release v0.22.44. Not the live site.
+> Mockup A for review, built from the data of release v0.22.45. Not the live site.
 
-Developing  ·  last checked 27 October 2026, 00:45 UTC 
+Developing  ·  last checked 27 October 2026, 09:43 UTC 
 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
@@ -14,7 +14,7 @@ PHP is the software that WordPress and millions of other websites run on. A fix 
  Your answer in thirty seconds 
 for Jordan, board member or executive 
 
-A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. As of 14:42 UTC on 26 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
+A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. On 26 October CISA added both flaws to its Known Exploited Vulnerabilities catalog: it holds evidence of exploitation, and names no victim. As of 07:15 UTC on 27 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread and a researcher's decoy servers were broken into. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
 
 A fix 
 Available 
@@ -29,7 +29,7 @@ None
 no named organisation, as of the latest capture 
 
 Taken offline 
-28 organisations 
+34 organisations 
 as a precaution, across 6 countries 
 
 Agencies compared 
@@ -102,7 +102,7 @@ All say install the fix. They split on what to do if you cannot.
 
  See every agency → 
 
- Focus view shows 30 of 1238 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
+ Focus view shows 30 of 1277 pages for this reader. Switch to Standard for the story and the evidence, or Everything for the whole site. Every number here links to its saved source on the live site.
 
 ---
-site v0.22.44 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html
+site v0.22.45 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/a/index.html

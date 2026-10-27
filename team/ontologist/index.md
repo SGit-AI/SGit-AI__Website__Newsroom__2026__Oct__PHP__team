@@ -51,7 +51,6 @@ The graphgraph/index.htmlEvery partygraph/parties/index.htmlThe graph componentg
 | 294 | data/wikipedia/ grows with every revision (6 MB for 364 revisions of one article): decide, with the researcher, whether old revisions move to the evidence vault and the repository keeps the latest text plus statement-level deltasFrom the brief: Wikipedia as an anchor (admin/content/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md). | open |  |
 | 319 | Wikidata and DBpedia, tracked: data/wikidata-links.json holds every party's lookup (25 items confirmed by hand on 25 October, the rest to confirm as the lookup completes); the item's history is on the evolution page; DBpedia returns 404 for PHP2Shell until its next extraction, recorded in article.json. Each wake re-fetches the item history and re-checks DBpedia; when DBpedia has the entry, read its triples beside Wikidata's claims and show where they differ.The ontologist, 25 October; the editor's direction: learn from them and use the identifiers that are already there. | open |  |
 | 320 | Watch a second Wikipedia article: 'Black October (information security)' (en.wikipedia.org, Wikidata Q141842194), started on 24 October from a thread on PHP2Shell's talk page, covers PHP2Shell beside other incidents of the month. Add it to data/wikipedia/index.json, give its pages a place in the navigation, and join it to the PHP2Shell article's graph by the article that links to it; session work (pages and Chromium tests), not a scheduled pass.The ontologist, scheduled pass of 25 October 14:05 London; the talk page thread is on /wikipedia/php2shell/talk/. | open |  |
-| ontologist-0001 | Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py and records/desks/wikipedia/fetch.py (and wikidata_links.py) take their root from v1's layout (data/, admin/build/wikitext.py), so after the split they would read and write the wrong files. Give each a root for data's files/ and press's build/, test them against fresh clones, then let the scheduled wakes fetch Wikipedia and run the pass again. Until then each wake records partial.The ontologist, 26 October, while wiring its card into the six at the editor's direction. Session work: the wakes cannot do it unattended. | open |  |
 
 ## Waiting on someone else
 
@@ -63,6 +62,12 @@ The graphgraph/index.htmlEvery partygraph/parties/index.htmlThe graph componentg
 - 22 October: the ontology (12 kinds, 14 verbs with inverses, two taxonomies, four formulas) aligned to graphs.sgit.ai; 113 parties resolved from every publisher spelling and every free-text attribution; the story graph rebuilt from 209 nodes and one verb to 614 nodes and 1178 edges in 14 verbs, with independent origins and relays per claim;  v1.0.0 with four views, path-finding and fractal zoom into the code-review graph; the review graph's eight broken area edges repaired
 - 24 October, pass 1: dev taken in twice (v0.10.18, v0.10.22; sources 144 to 295); 143 new publisher spellings resolved (243 parties); syndication as a verb (9 wire copies); the crosswalk to the code-review and risk graphs; the graph at 1048 nodes and 1516 edges in 15 verbs; the component and build fixed from an independent review; the pass as a tool; a daily schedule proposed (data/schedule/cartographer.json); twelve pages recorded twice handed to the collectors (board 187); the next layer, the researcher's compromise evidence and the vault's own claims, on the cartographer's list (188, 190)
 
+### Closed on the board
+
+| # | Task | Status | Shipped in |
+|---|---|---|---|
+| ontologist-0001 | Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py and records/desks/wikipedia/fetch.py (and wikidata_links.py) take their root from v1's layout (data/, admin/build/wikitext.py), so after the split they would read and write the wrong files. Give each a root for data's files/ and press's build/, test them against fresh clones, then let the scheduled wakes fetch Wikipedia and run the pass again. Until then each wake records partial.The ontologist, 26 October, while wiring its card into the six at the editor's direction. Session work: the wakes cannot do it unattended. Done on 27 October: the scripts take their root from the data and press clones beside team; the first fetch caught up 32 revisions. | done |  |
+
 ## How to reach them
 - **Mail**: an `.eml` in `mail/mailroom/ontologist/` in the mail vault (`fmb2tpl2`).
 - **Their queue**: `issues/ontologist/open|blocked|done/` in the issues vault (`zjruy9vk`). Read it; do not write in it.
@@ -72,4 +77,4 @@ What the three vaults are and who holds their keys: [how the team talks](../chan
 
 
 ---
-site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/team/ontologist/index.html
+site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/team/ontologist/index.html

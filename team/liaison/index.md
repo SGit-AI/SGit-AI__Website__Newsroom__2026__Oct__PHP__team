@@ -27,7 +27,9 @@ Corrections we have asked foroutreach/index.htmlFact-check: how sure we arefactc
 
 ## Open tasks
 
-None.
+| # | Task | Status | Shipped in |
+|---|---|---|---|
+| conductor-0013 | PROJECT-002: the corrections we propose, on a page, through each outlet's own channel (re-graded after CISA's KEV listing)Brief: records/briefs/2026-10-27__project__project-002-the-corrections-we-propose.md. Clean hands first: two of the desk's twelve rows (WIRED, BankInfoSecurity) rest on 'CISA has not observed exploitation', no longer true since 26 October. Next steps, side by side: the researcher captures 16 outlets' corrections channels (12:00 London); fact-check re-grades the twelve rows (12:52). The liaison has no session yet: the editor starts it, or the projects desk or the desk does its steps. The editor sends every request. | open |  |
 
 ## What they have done
 - Named the role and drafted the first three requests on the 70% figure (Wiz, BBC, CNN), all held until this site's own wording is fixed and sending is allowed
@@ -47,4 +49,4 @@ What the three vaults are and who holds their keys: [how the team talks](../chan
 
 
 ---
-site v0.22.44 · data as of 2026-10-27T00:45Z · vault commit 24f0b0e22666 · https://team.php.oct.2026.newsroom.sgit.ai/team/liaison/index.html
+site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/team/liaison/index.html
