@@ -1,0 +1,16 @@
+{
+ "run": "20261027T1434Z-observability",
+ "agent": "observability",
+ "started": "2026-10-27T14:34:14Z",
+ "finished": "2026-10-27T14:36:44Z",
+ "outcome": "ok",
+ "summary": "Scheduled wake 14:33 London. team at a308dc3c; 2 notes read as material (projects; wake banners, WAKE.md steps 0 and 6, followed); sgit-ai v0.26.0. Lane (84wr8mib): 105 waiting of 1,000, none refused; drained with drain.py, pushed (vault head f5192ac2a86d) before marking: 105 readable, 0 undecryptable. Parallel: batches of 5 and 100 together in 8.4 s; drain 38 s. Vault now 3,716 events from 1,092 sessions. Came in, 08:46 to 14:28 UTC, 49 sessions: readers 24 views in 19 sessions (GB 9, FR 5, KR 2, NO 2, US 2, DE 1; 19 desktop, 5 phone; the front page, /sources/cisco-sa-php-october26/ and /sources/calif-php2shell/ most read), the editor 3, synthetic 29 in 22 sessions, crawlers 49 in 5 sessions. Sites: refs 39, site 38, team 18, updates 10; none from another host. No capped or lost markers (page script unchanged). No odd values. FINDING, corrected in the brief and on board observability-0001: the Googlebot session 3f2fa233 has 2,129 events over 22 to 27 October and 1,322 pages: the id is not a tab, so the per-tab cap of 40 may not stop it (the renderer probably draws one id on every render with fresh storage); the earlier claim that it would was not checked. Recommended instead: send nothing from a recognisable crawler (Pacific time zone and a data-centre town or none); the editor decides. Waits on dev: observability-0001; on the editor: that decision; on the conductor: observability-0002 and the roster.",
+ "read": [
+  "20261024T1157Z__security__to-all__application-security-a-self-check-after,20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule,20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "a308dc3cc0238933037c65234e5a129f628517d1"
+}

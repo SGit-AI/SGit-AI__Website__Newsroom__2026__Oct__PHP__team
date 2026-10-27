@@ -119,3 +119,33 @@ rate, about twelve hours; at the normal rate, days.
 - The lanes widen what a flood can fill, too (every token is published): the cap per tab is the part that limits a
   flood from one browser.
 - The drain still has to run: three times a day (observability's card, from 27 October).
+
+## Correction, 27 October, 14:40 London (the 14:33 wake): the cap per tab may not stop the crawler
+
+This brief said a cap of 40 events per tab "would have limited the 26 October session to 40 events". That was not
+checked, and the data since points the other way. The one Googlebot "session" of 26 October (sid `3f2fa233`) is still
+sending: 2,129 events in the vault from 22 to 27 October, 1,322 different pages, all from Mountain View, 156 of them
+declaring `googlebot` and the rest not. A tab does not live five days, so the id is not one tab. Two readings:
+
+1. The renderer shares storage between renders: the same `sessionStorage` is seen by every render. Then the count and
+   the cap work, and 40 events per id is the most it could send.
+2. The renderer draws the same "random" id on every render (a deterministic `crypto.getRandomValues`) with fresh storage
+   each time. Then every render starts at a count of zero, and the cap never trips. The id staying fixed for five days
+   favours this reading; the data cannot settle it.
+
+So the cap is worth having (it costs nothing and bounds a browser that does hold its storage) but it is not the defence
+against this crawler. What bounds the crawler whatever the reading:
+
+- **The five lanes and the drains** (done): 5,000 waiting, drained three times a day. At 26 October's rate that is about
+  twelve hours' headroom, and a drain every six.
+- **Send nothing from a crawler the page can recognise**, which dev's script can do without knowing the id: the lookup
+  has already returned a city, and `telemetry_classes.py` already names the crawlers' data-centre towns (CRAWLER_PLACES)
+  and treats a Pacific time zone with a data-centre town or no town as a crawler. If `tz === 'America/Los_Angeles'` and
+  the city is one of those or empty, send nothing, or one event marked `capped: 0` per page load only when the page is
+  the front page. This loses the crawler counts the reports show today (about 1,500 events a day on the busy days); they
+  are noise for readers' numbers, but the editor may want to know that Google reads the site, which `robots` logs and
+  Search Console show better.
+- **Count what the lanes refuse** (the `lost` counter above), so a full lane is measured.
+
+The editor decides the second. Board observability-0001 says so.
+
