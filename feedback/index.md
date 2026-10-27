@@ -26,7 +26,7 @@ Everything the power users and collaborators have told us about this site, each 
 
 Have something to add? [Talk it through with your own assistant](../sherpa/for-your-claude/index.html), by text or by voice, and send us the file it writes.
 
-6pieces of feedback50points answered26reproduced by the Sherpa38frictions open1power users joined5signed messages received3conversations of ideas
+6pieces of feedback50points answered26reproduced by the Sherpa40frictions open1power users joined5signed messages received3conversations of ideas
 
 Counts as of 23 October 2026: one power user has joined with a key and sent five signed messages from the site, counted from the collaborators vault's first drain; the messages themselves stay in the vault until the editor says they may be published (their substance is in UF-003, the same power user's published report).
 
@@ -48,4 +48,4 @@ Each piece of feedback becomes frictions in [the friction log](../sherpa/index.h
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/feedback/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/feedback/index.html

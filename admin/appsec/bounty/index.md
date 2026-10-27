@@ -20,10 +20,12 @@ Points per advisory found: critical 10, high 5, medium 3, low 1; a report that f
 | 2 | **security@php.newsroom, pass of 26 October 2026** | 5 | [043](../advisories/SA-2026-043/index.html) |  |
 | 3 | **CodeQL** | 3 | [041](../advisories/SA-2026-041/index.html) |  |
 | 4 | **librarian@php.newsroom, its own appsec self-check** | 3 | [042](../advisories/SA-2026-042/index.html) |  |
-| 5 | **claude-story-site** | 1 | [017](../advisories/SA-2026-017/index.html) | [017](../advisories/SA-2026-017/index.html) |
-| 6 | **librarian@php.newsroom** | 0 |  | [042](../advisories/SA-2026-042/index.html) |
-| 7 | **sherpa@php.newsroom** | 0 |  | [016](../advisories/SA-2026-016/index.html) |
-| 8 | **the editor** | 0 |  | [030](../advisories/SA-2026-030/index.html) |
+| 5 | **security@php.newsroom, pass of 27 October 2026** | 3 | [044](../advisories/SA-2026-044/index.html) |  |
+| 6 | **claude-story-site** | 1 | [017](../advisories/SA-2026-017/index.html) | [017](../advisories/SA-2026-017/index.html) |
+| 7 | **dev@php.newsroom** | 0 |  | [043](../advisories/SA-2026-043/index.html) |
+| 8 | **librarian@php.newsroom** | 0 |  | [042](../advisories/SA-2026-042/index.html) |
+| 9 | **sherpa@php.newsroom** | 0 |  | [016](../advisories/SA-2026-016/index.html) |
+| 10 | **the editor** | 0 |  | [030](../advisories/SA-2026-030/index.html) |
 
 ## In scope
 - php.oct.2026.newsroom.sgit.ai: every page, script, feed and machine-readable file.
@@ -50,4 +52,4 @@ Research inside this scope, done in good faith and reported to us first, is welc
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/bounty/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/bounty/index.html

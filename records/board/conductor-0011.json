@@ -3,5 +3,6 @@
  "title": "press build/export_vault.py reads the vault head with whatever sgit is first on PATH: with an old sgit, a pack vault's head comes out null",
  "status": "open",
  "owner": "dev",
- "note": "Found by the curator at its 08:00 wake, 27 October (note in 8631d80f). nnd3i8iw was made with sgit 0.26.0. If the sgit first on the PATH is older (the curator's session has a 0.24.0 install ahead of its venv), the exporter writes vault.json with head null, and data's gate fails. The curator worked round it and released data v0.1.65 (580 sources, head 6fe04cc074f9). Ask: the exporter checks `sgit version` (0.26.0 or later) and stops with a clear message, or takes the sgit to use as an argument. WAKE.md step 1b already asks every agent to upgrade a shadowing install."
+ "note": "Found by the curator at its 08:00 wake, 27 October (note in 8631d80f). nnd3i8iw was made with sgit 0.26.0. If the sgit first on the PATH is older (the curator's session has a 0.24.0 install ahead of its venv), the exporter writes vault.json with head null, and data's gate fails. The curator worked round it and released data v0.1.65 (580 sources, head 6fe04cc074f9). Ask: the exporter checks `sgit version` (0.26.0 or later) and stops with a clear message, or takes the sgit to use as an argument. WAKE.md step 1b already asks every agent to upgrade a shadowing install.",
+ "order": 374
 }

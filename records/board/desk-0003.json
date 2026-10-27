@@ -3,5 +3,6 @@
  "title": "The front page gives three 'as of' times for one statement: 'As of 00:45 UTC on 27 October' twice (Right now, the facts) and 'As of 14:42 UTC on 26 October' in the Executive's thirty-second answer, while the correspondent's run re-stamped the persona answers to 07:15 UTC. One statement, one time, from one place.",
  "status": "open",
  "owner": "correspondent",
- "note": "From the news desk chief's 10:40 wake, 27 October (the live front page, rendered in a browser)."
+ "note": "From the news desk chief's 10:40 wake, 27 October (the live front page, rendered in a browser).",
+ "order": 378
 }

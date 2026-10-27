@@ -1,6 +1,15 @@
 {
- "current": "0.22.45",
+ "current": "0.22.46",
  "versions": [
+  {
+   "version": "0.22.46",
+   "date": "2026-10-27",
+   "title": "press: the editions stopped on three records (since 16:48): the build draws a number the ontologist has not attributed yet with no party stating it (n-censys-services), a friction row with no stage (F040), and a review whose where is free text, shown and not linked; the risk graph's changes pair a release the history has no totals for with the last before it; tested from the CI box of edition-0.22.45 to a full edition, every gate green; data: breaking (correspondent's role): review of step 3 for breaking-0002 (3 catches), state of affairs v5, Censys services beside hosts, story's exploitation paragraph; team: security: nightly pass of 27 October: SA-2026-043 fixed (the round removed), SA-2026-044 recorded (board security-0002), the desk's branches reviewed, run record; site: breaking (correspondent's role): Right now names both withdrawals; the been-hacked answers name Square Enix and the vendors' statements; the Brotli line keeps the PHP Foundation's caveat; refs: this repository's deploy takes the newest edition, built in CI by the press (board dev-0005): every fifteen minutes it applies the edition's patch for here, gates it and releases it; no one runs a round; CLAUDE.md says so; updates: breaking (correspondent's role): state of affairs v5, the vendors' statements after CISA's listing, compromise still unnamed as of 19:13 UTC on 27 October",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "6f0d5c50bf12",
+   "reconstructed": false
+  },
   {
    "version": "0.22.45",
    "date": "2026-10-27",

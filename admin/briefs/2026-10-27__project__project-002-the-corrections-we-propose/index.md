@@ -132,8 +132,8 @@ Starting the liaison's session (or letting the projects desk do its steps); ever
 
 This brief is the file `admin/content/briefs/2026-10-27__project__project-002-the-corrections-we-propose.md` in the repository, published as written.
 
-← older: PROJECT-001: telling them what we hold about them, and ask
+← older: PROJECT-001: telling them what we hold about them, and asknewer: → Brief: moving the newsroom to a new account, and onboardin
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__project__project-002-the-corrections-we-propose/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__project__project-002-the-corrections-we-propose/index.html

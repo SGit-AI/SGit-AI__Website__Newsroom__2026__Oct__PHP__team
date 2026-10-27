@@ -2,7 +2,7 @@
 
 A three-column working view for a security lead: their reading path and the site by task on the left, what changed since the last visit and the next three actions in the middle, and the state of the evidence as charts on the right.
 
-> Mockup B for review, built from the data of release v0.22.45. Not the live site.
+> Mockup B for review, built from the data of release v0.22.46. Not the live site.
 
 S 
  Sam 
@@ -13,7 +13,7 @@ Your reading path
 2 of 5 read · next: Exploitation signals 
  Today 9 new What to do The incident Detection and defence The agencies 16 Every claim 70 Ask 
 
-Since your last visit · 27 October 2026, 09:43 UTC 
+Since your last visit · 27 October 2026, 19:13 UTC 
 
 ## 9 things are new, 3 changed. Two matter for your runbook.
 
@@ -44,52 +44,53 @@ Alert on a PHP worker spawning a shell or a downloader. A clean access log prove
 
  All Facts Timeline Questions Stories 
 
- New front v0.22.45 
-#### Front page: right now
+ New story v0.22.46 
+#### Someone stole the bitcoin. What that does, and does not, tell us about php2shell
 
 ✓ 
 
- New front v0.22.45 
-#### Front page: at a glance
-
-✓ 
-
- New front v0.22.45 
-#### Front page: the core facts
-
-✓ 
-
- New fact reported v0.22.45 
-#### As of 09:43 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both
-
- CISA CISA Huntress Amazon 
-✓ 
-
- Changed story v0.22.43 
-#### Has anyone actually been hacked through php2shell? What 525 sources say, five days on
-
-✓ 
-
- Changed question v0.22.43 
+ New question v0.22.46 
 #### Has anyone actually been hacked?
 
 ✓ 
 
- Changed front v0.22.43 
+ New front v0.22.46 
+#### Front page: right now
+
+✓ 
+
+ New front v0.22.46 
 #### Front page: latest
 
 ✓ 
 
- Changed fact reported v0.22.43 
-#### The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell was not in KEV one day after disclosure (catalog ver
+ Changed front v0.22.46 
+#### Front page: the core facts
 
- CISA CVE record Akamai Security Research CISA 
 ✓ 
 
- Changed fact confirmed v0.22.43 
-#### As of its alert of 21 October and KEV catalog version 2026.10.21 (fetched 2026-10-22T08:15Z), CISA had not observed exploitation and neither CVE was in the Known Exploited Vulnerab
+ Changed fact disputed v0.22.46 
+#### The UK's NCSC, the NSA and their counterparts in the EU and Australia advise taking systems offline where patching is not feasible
 
- CISA CISA CVE record CISA 
+ ACSC CERT-EU NCSC-NL ACN / CSIRT Italia 
+✓ 
+
+ Changed fact disputed v0.22.46 
+#### There is no evidence yet that hackers have exploited the flaw
+
+ BBC News Amazon CISA 
+✓ 
+
+ Changed fact reported v0.22.46 
+#### As of 19:13 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both
+
+ CISA CISA Huntress Amazon 
+✓ 
+
+ Changed fact contradicted v0.22.46 
+#### The flaws were disclosed on 22 October 2026
+
+ php.net php-src 
 ✓ 
 
 Marked read, an item fades and then leaves this list; it comes back only if what it says changes. 
@@ -97,9 +98,9 @@ Marked read, an item fades and then leaves this list; it comes back only if what
 #### How sure are we?
 
 - 20 confirmed 
-- 36 reported 
-- 7 disputed 
-- 3 contradicted 
+- 35 reported 
+- 9 disputed 
+- 2 contradicted 
 - 4 unverified 
 
 #### Events per day, October
@@ -125,4 +126,4 @@ Amazon: Proof-of-concept attempts begin, then six hours of attempts from anonymi
 8.1 and older: source backports only.
 
 ---
-site v0.22.45 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html
+site v0.22.46 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html

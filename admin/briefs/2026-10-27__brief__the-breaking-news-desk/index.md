@@ -105,8 +105,8 @@ A container is reclaimed after a while, and its clones and a `--session` key go 
 
 This brief is the file `admin/content/briefs/2026-10-27__brief__the-breaking-news-desk.md` in the repository, published as written.
 
-← older: Brief: five telemetry lanes and a cap per tabnewer: → Runbook: onboarding the breaking-news desk (breaking@php.n
+← older: Brief: five telemetry lanes, and no capsnewer: → Runbook: onboarding the breaking-news desk (breaking@php.n
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-breaking-news-desk/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-breaking-news-desk/index.html

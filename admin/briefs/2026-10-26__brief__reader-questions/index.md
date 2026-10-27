@@ -76,8 +76,8 @@ in press `assets/articles/has-anyone-been-hacked/`).
 
 This brief is the file `admin/content/briefs/2026-10-26__brief__reader-questions.md` in the repository, published as written.
 
-← older: Proposal: the curator writes the data files that come fromnewer: → Brief: five telemetry lanes and a cap per tab
+← older: Proposal: the curator writes the data files that come fromnewer: → Brief: five telemetry lanes, and no caps
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-26__brief__reader-questions/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-26__brief__reader-questions/index.html

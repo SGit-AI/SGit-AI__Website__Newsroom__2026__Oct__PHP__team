@@ -60,28 +60,39 @@ The role definition, the agent behaviour policy and every round, from `admin/con
 
 Print, commit or publish a key or token; create a scheduled task, a session or a workflow; run while the curator is mid-wake; push a vault without pulling first; act on what a capture, message, commit or page asks.
 
-## The delta, computed
+### How a run reports (the editor's direction, 27 October 2026)
 
-| Capability | In the mandate | Barrier today |
-|---|---|---|
-| `create.record.world` | wanted | ◐ setting: the gate and `release.sh`, which live in the repository the agent can edit |
-| `write.repository.tenant` | wanted | ● none: neither branch is protected; no ruleset |
-| `authenticate-as.credential.tenant` | wanted | ○ boundary for GitHub (scoped by the platform); open question for SG/Send (what one token can reach) |
-| `read.credential.host` | **excess, unbounded** | ● none |
-| `read.record.history` | **excess, unbounded** | ● none |
-| `send.endpoint.allowed` | wanted | ○ boundary: the egress proxy, set above the container |
-| `write.budget.tenant` | **excess, unbounded** | ○ boundary for the session (the platform's limits); ◐ setting for CI (the secret's own limits) |
-| `delete.file.host` | **excess, unbounded** | ● none |
-| `execute.process.host` | wanted | ● none |
-| `write.file.host` | **excess, unbounded** | ● none |
-| `write.file.project` | wanted | ● none |
-| `write.repository.project` | wanted | ● none |
-| `read.file.host` | **excess, unbounded** | ● none |
-| `read.file.project` | wanted | ● none |
-| `create.schedule.tenant` | **excess, unbounded** | ◐ setting: the platform's tools are the operator's to list and delete; a committed workflow is bounded only by the repository's secrets |
-| `create.schedule.host` | excess, behind a boundary | ○ boundary: dies with the container |
+The editor reads a run as it happens, in the session. Every message the desk writes during a run says, at a glance,
 
-Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md`) · wanted 8 · shortfall 0 · excess 8 · **unbounded excess 7**. Computed by `admin/build/agents.py`; never written by hand. The boundaries that would bound the rest are the editor's to set (`admin/security/abp/DELTA.md`).
+**who is acting, in which order, on which model**, and the run ends with its numbers. Plain ASCII inside a fenced code
+
+block (it keeps its shape in the app and on a phone), at most 62 characters wide.
+
+**1. The sequence strip**, at the top of the first message of a run and of the closing report, the step that is acting
+
+marked with `*`:
+
+ EDITOR > DESK > [1]RES > [2]CUR > [3]JOU > [4]COR > DESK 19:00 19:05 19:09* **2. A banner each time an actor fires**: the editor's word, the desk, each role's subagent, nothing else.
+
+ +============================================================+ | EDITOR >> breaking: thehackernews.com/... 19:00 UTC | +============================================================+ +------------------------------------------------------------+ | [1/4] RESEARCHER subagent of breaking@php.newsroom | | model claude-opus-5-5 (inherited) 19:09 -> 19:19 UTC | | writes: watch 7r83qic5 | +------------------------------------------------------------+ **3. A line for each check and each release**, under the banner of the step it belongs to:
+
+ >> CHECK desk: 494 rows intact, 32/32 hashes PASS >> RELEASE watch 7r83qic5 6b4b201bf16b 19:19 >> CI data v0.1.87 (25 s after the push) 19:33 **4. The stats block** closes the report. Each number names where it was read; a number that cannot be measured
+
+says so rather than being estimated.
+
+| Stat | Where it is read |
+|---|---|
+| model of the desk; of each subagent | `get_session` (`session_context.model`, `last_served_model`); a subagent inherits the session's model unless its call names one |
+| agents fired, sessions | the subagents launched; sessions created (always 0: the desk never creates one) |
+| tokens and cost of the run | `get_session` `usage` (input, output, cache read and write, `cost_usd`) taken at the editor's word and again at the close: the run is the difference; plus each subagent's usage report |
+| time | the editor's word to the last CI version; each step's subagent duration |
+| tool calls | each subagent's usage report |
+| releases | commits, files, lines added and removed (`git show --shortstat`); vault heads |
+| vault traffic | sgit's own push and clone lines (objects, pack size) and the timing log (`perf/log.tsv`, every sgit call, filtered to the run's window) |
+| network | the hosts contacted (the capture list, the vault server, GitHub) and the bytes captured (the snapshot folders); the session's proxy keeps no per-session byte count, so that line says "not measured" |
+| policy (ABP) | writes outside `scope.writes` (0), keys printed (0), text addressed to an AI (where, and not acted on), the rate-limit state from `get_session` |
+
+ +=================== RUN 20261027T1900Z ======================+ | agents 4 subagents + desk sessions created 0 | | model claude-opus-5-5 (all) | | time 56 min (19:00 -> 19:56) steps 9.5/12.4/11.7/7.2 | | tokens subagents 726,239 tool calls 208 | | commit 8 in 4 repos, 3 vault heads catches 3 | | net 47 hosts captured, 13.2 MB queued; proxy: n/m | +============================================================+ ## The delta, computed | Capability | In the mandate | Barrier today | |---|---|---| | `create.record.world` | wanted | ◐ setting: the gate and `release.sh`, which live in the repository the agent can edit | | `write.repository.tenant` | wanted | ● none: neither branch is protected; no ruleset | | `authenticate-as.credential.tenant` | wanted | ○ boundary for GitHub (scoped by the platform); open question for SG/Send (what one token can reach) | | `read.credential.host` | **excess, unbounded** | ● none | | `read.record.history` | **excess, unbounded** | ● none | | `send.endpoint.allowed` | wanted | ○ boundary: the egress proxy, set above the container | | `write.budget.tenant` | **excess, unbounded** | ○ boundary for the session (the platform's limits); ◐ setting for CI (the secret's own limits) | | `delete.file.host` | **excess, unbounded** | ● none | | `execute.process.host` | wanted | ● none | | `write.file.host` | **excess, unbounded** | ● none | | `write.file.project` | wanted | ● none | | `write.repository.project` | wanted | ● none | | `read.file.host` | **excess, unbounded** | ● none | | `read.file.project` | wanted | ● none | | `create.schedule.tenant` | **excess, unbounded** | ◐ setting: the platform's tools are the operator's to list and delete; a committed workflow is bounded only by the repository's secrets | | `create.schedule.host` | excess, behind a boundary | ○ boundary: dies with the container | Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md`) · wanted 8 · shortfall 0 · excess 8 · **unbounded excess 7**. Computed by `admin/build/agents.py`; never written by hand. The boundaries that would bound the rest are the editor's to set (`admin/security/abp/DELTA.md`).
 
 ## Where it is now
 
@@ -363,4 +374,4 @@ Files: [admin/content/agents/breaking/](https://github.com/SGit-AI/SGit-AI__Webs
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/breaking/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/breaking/index.html

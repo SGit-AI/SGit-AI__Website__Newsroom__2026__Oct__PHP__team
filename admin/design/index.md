@@ -2,7 +2,7 @@
 
 The proposed redesign of the site for review: what is wrong now, the two dials (who you are and how much you see), which pages each reader sees, the menu per view, and four mockups built from the live data.
 
-> Mockup notes for review, built from the data of release v0.22.45. Not the live site.
+> Mockup notes for review, built from the data of release v0.22.46. Not the live site.
 
 Admin · design · for review 
 ## The redesign: who you are, and how much you want to see
@@ -107,22 +107,22 @@ the fix in php-src, the review graph · 3 pages
  Stories 
 signed articles written here · 13 pages 
  The evidence 
-every source, the vaults, the pipeline, versions · 717 pages 
+every source, the vaults, the pipeline, versions · 764 pages 
  The site and the team 
-method, roles, board, releases, admin · 326 pages 
+method, roles, board, releases, admin · 335 pages 
 
 ### Pages per reader, per view
 
  Reader Focus Standard Everything 
- Alex Curious reader 30 74 1277 
- Jordan Board member or executive 30 231 1277 
- Quinn CFO 30 231 1277 
- Robin CISO 161 231 1277 
- Rowan Journalist 808 831 1277 
- Sam Security lead 44 117 1277 
- Drew PHP or platform engineer 37 117 1277 
- Ash Security researcher 758 834 1277 
-Counted from the 1277 pages this release builds. 
+ Alex Curious reader 30 74 1333 
+ Jordan Board member or executive 30 231 1333 
+ Quinn CFO 30 231 1333 
+ Robin CISO 161 231 1333 
+ Rowan Journalist 855 878 1333 
+ Sam Security lead 44 117 1333 
+ Drew PHP or platform engineer 37 117 1333 
+ Ash Security researcher 805 881 1333 
+Counted from the 1333 pages this release builds. 
 
 #### Who sees the team console
 
@@ -171,7 +171,7 @@ All of it, for power users and the team.
 
 - The admin pages move into console D. 
 
- Mockups built by the design agent from release v0.22.45; the brief is on the briefs page. Board items record each step.
+ Mockups built by the design agent from release v0.22.46; the brief is on the briefs page. Board items record each step.
 
 ---
-site v0.22.45 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html
+site v0.22.46 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html

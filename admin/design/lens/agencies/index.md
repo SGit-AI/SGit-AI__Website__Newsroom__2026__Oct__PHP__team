@@ -2,7 +2,7 @@
 
 A content page that answers to two of the four settings: its length follows your time and its one line follows who you are; it reads the same whatever your aim, and the control says so.
 
-> Prototype E for review, built from the data of release v0.22.45. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
+> Prototype E for review, built from the data of release v0.22.46. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
 
 ## What 16 agencies advise
 
@@ -19,11 +19,11 @@ All 16 say install the fix. They split on what to do with a system you cannot pa
 ### The spectrum
  every agency, by what it says to do with a system you cannot patch 
 
- 6 No offline advice 
- EU ENISA CSIRTs Network AU ASD's ACSC NZ NCSC NL NCSC-NL IT ACN / CSIRT Italia JP JPCERT/CC 
+ 5 No offline advice 
+ EU ENISA CSIRTs Network AU ASD's ACSC NZ NCSC NL NCSC-NL JP JPCERT/CC 
 
- 2 Consider it, or after other steps 
- UK NCSC CH BACS 
+ 3 Consider it, or after other steps 
+ UK NCSC IT ACN / CSIRT Italia CH BACS 
 
  1 Restrict access 
  LV CERT.LV 
@@ -94,7 +94,7 @@ An index of about 30 national advisories, work in progress: a truncated CVE in t
  AU 
  No offline advice 
 
-No take-offline or isolation advice. The BBC's 'Australian counterparts' framing is not supported by the page. Parts of the body are still pre-patch text. 
+No take-offline or isolation advice. Parts of the body are still pre-patch text. Corrected 27 October 2026, PROJECT-001: the BBC said only that Australia's counterparts ' 
 
  ACSC ACSC 
 
@@ -116,9 +116,8 @@ Runs the public php2shell GitHub repository with the software inventory the UK N
 
 #### ACN / CSIRT Italia
  IT 
- No offline advice 
-
-Update only. Lists the four fixed branches and no end-of-life branches. 
+ Consider 
+ Qualora non fosse possibile applicare tempestivamente gli aggiornamenti di sicurezza, si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano versioni vulnerabili di PHP, sosp 
 
  ACN / CSIRT Italia 
 
@@ -168,4 +167,4 @@ Every agency with its publication time, its exact words, what it says of exploit
 That is the page for the time you gave it.
 
 ---
-site v0.22.45 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/agencies/index.html
+site v0.22.46 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/agencies/index.html

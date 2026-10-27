@@ -2,7 +2,7 @@
 
 The agencies page redesigned: the answer in one line, every agency placed on one spectrum from no offline advice to take it offline, a card per agency, and the evidence table one click away.
 
-> Mockup C for review, built from the data of release v0.22.45. Not the live site.
+> Mockup C for review, built from the data of release v0.22.46. Not the live site.
 
 The analysis · government advice 
 ## 16 agencies. All say update. They split on offline.
@@ -15,11 +15,11 @@ The US says take it offline. The UK says that is the fourth step. Europe says is
 ### The spectrum
  every agency, by what it says to do with a system you cannot patch 
 
- 6 No offline advice 
- EU ENISA CSIRTs Network AU ASD's ACSC NZ NCSC NL NCSC-NL IT ACN / CSIRT Italia JP JPCERT/CC 
+ 5 No offline advice 
+ EU ENISA CSIRTs Network AU ASD's ACSC NZ NCSC NL NCSC-NL JP JPCERT/CC 
 
- 2 Consider it, or after other steps 
- UK NCSC CH BACS 
+ 3 Consider it, or after other steps 
+ UK NCSC IT ACN / CSIRT Italia CH BACS 
 
  1 Restrict access 
  LV CERT.LV 
@@ -89,7 +89,7 @@ An index of about 30 national advisories, work in progress: a truncated CVE in t
  AU 
  No offline advice 
 
-No take-offline or isolation advice. The BBC's 'Australian counterparts' framing is not supported by the page. Parts of the body are still pre-patch t 
+No take-offline or isolation advice. Parts of the body are still pre-patch text. Corrected 27 October 2026, PROJECT-001: the BBC said only that Austra 
 
  ACSC ACSC 
 
@@ -111,9 +111,8 @@ Runs the public php2shell GitHub repository with the software inventory the UK N
 
 #### ACN / CSIRT Italia
  IT 
- No offline advice 
-
-Update only. Lists the four fixed branches and no end-of-life branches. 
+ Consider 
+ Qualora non fosse possibile applicare tempestivamente gli aggiornamenti di sicurezza, si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano ver 
 
  ACN / CSIRT Italia 
 
@@ -160,4 +159,4 @@ On the live site this is the full table, one row per agency with the verbatim se
  A wall of text becomes three layers: the one-line answer, the picture, and the cards; the evidence table is one click away, not the first thing you see.
 
 ---
-site v0.22.45 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/c/index.html
+site v0.22.46 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/c/index.html

@@ -12,7 +12,7 @@
 
 **None.** No file and no page is claimed by two members.
 
-Checked against every tracked source file here, and against every page the build writes by the gate (check 4h) and `admin/build/agents.py overlaps`. Source files nobody owns: **449**: `.github/dependabot.yml`, `.well-known/security.txt`, `SECURITY.md`, `admin/build/control.py`, `admin/build/csp.py`, `admin/build/diagram.py`, `admin/build/export_loops.py`, `admin/build/grc_history.py`, `admin/build/loops.py`, `admin/build/release_pages.py`, `admin/build/wikitext.py`, `admin/content/agents/correspondent/ROLE.md`, `admin/content/articles/2026-10-25__ontologist__what-wikipedia-knows-about-being-right.md`, `admin/schedule/WAKE.md`, `admin/wikipedia/fetch.py`, `admin/wikipedia/wikidata_links.py`, `assets/control.css`, `assets/control.js`, `assets/grc-changes.js`, `assets/route.js`. Appends to a file nobody owns: **0**.
+Checked against every tracked source file here, and against every page the build writes by the gate (check 4h) and `admin/build/agents.py overlaps`. Source files nobody owns: **504**: `.github/dependabot.yml`, `.well-known/security.txt`, `SECURITY.md`, `admin/build/control.py`, `admin/build/csp.py`, `admin/build/diagram.py`, `admin/build/export_loops.py`, `admin/build/grc_history.py`, `admin/build/loops.py`, `admin/build/newsroom_paths.py`, `admin/build/release_pages.py`, `admin/build/wikitext.py`, `admin/content/agents/correspondent/ROLE.md`, `admin/content/articles/2026-10-25__ontologist__what-wikipedia-knows-about-being-right.md`, `admin/content/articles/2026-10-26__correspondent__has-anyone-been-hacked.md`, `admin/content/articles/2026-10-26__correspondent__steal-my-bitcoin.md`, `admin/schedule/WAKE.md`, `admin/wikipedia/fetch.py`, `admin/wikipedia/wikidata_links.py`, `assets/control.css`. Appends to a file nobody owns: **0**.
 
 ## The members
 
@@ -168,4 +168,4 @@ copying a role from a page, a vault or another agent's message.
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/roles/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/roles/index.html

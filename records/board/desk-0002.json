@@ -3,5 +3,6 @@
  "title": "Policy for the desk: add push to the data repository and files/outreach.json (the correction requests) to scope.writes, at the editor's word of 27 October; reconcile with the liaison's policy, which also lists outreach.json (one writer, the desk at the editor's word, the liaison idle since 22 October)",
  "status": "open",
  "owner": "abp",
- "note": "The desk's card (records/schedule/desk.json) and ROLE.md already say so; policy.json is abp's file, so the desk did not edit it. Also: the policy still names v1 paths (admin/content/agents/desk/..., data/...); the desk's writes are now records/agents/desk/**, records/registers/desk.json, records/schedule/desk.json, records/runs/desk/**, records/board/desk-*.json, records/briefs/, records/messages/ and data's files/outreach.json."
+ "note": "The desk's card (records/schedule/desk.json) and ROLE.md already say so; policy.json is abp's file, so the desk did not edit it. Also: the policy still names v1 paths (admin/content/agents/desk/..., data/...); the desk's writes are now records/agents/desk/**, records/registers/desk.json, records/schedule/desk.json, records/runs/desk/**, records/board/desk-*.json, records/briefs/, records/messages/ and data's files/outreach.json.",
+ "order": 377
 }

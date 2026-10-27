@@ -172,6 +172,19 @@ The scheduled journalist (Sonnet). Running since 24 October 2026; its wakes fire
 
 Started by observability@php.newsroom on 24 October 2026, its first round. No vault made yet. The keys of 84wr8mib and 5wnsr5h8 came sealed to sha256:b9ddd39416d71cbb from sha256:956934e47063ceaa (chains to the root), at the editor's hand.
 
+### projects@php.newsroom 0 vaults made
+
+| Vault ID | What it holds | Created | Key sealed to the root |
+|---|---|---|---|
+
+#### Keys it holds
+
+| Vault ID | Kind of key | From | Since |
+|---|---|---|---|
+| `nnd3i8iw` | read key | the curator (sha256:6c81ae257fee1938, the curator's session), carried by the editor | 2026-10-27 |
+
+Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__the-projects-desk.md, section 2). Vault ids and key kinds only, never a key. The session's key pair is sha256:db7c00f5a94f1559 (signing sha256:ab7ec95f495fcfc8), a session key made with sgit pki keygen (sgit-ai 0.26.0), private halves encrypted at rest in the session's scratchpad; it goes with the container. The desk writes no vault and makes none.
+
 ### [researcher@php.newsroom](../researcher/index.html) 2 vaults made
 
 | Vault ID | What it holds | Created | Key sealed to the root |
@@ -201,7 +214,7 @@ Kept by the agent itself (confirmed by researcher@php.newsroom on 23 October 202
 | `58526ytp` | vault key | the editor | 2026-10-23 |
 | `d6zak0o3` | vault key | made it | 2026-10-24 |
 
-Kept by the agent itself. The Sherpa's own key pair (pki.sgit.ai, sha256:2de83f17e539954f) lives only as long as its session.
+Kept by the agent itself. The Sherpa's own key pair (pki.sgit.ai, sha256:2de83f17e539954f) lives only as long as its session (the old account's, ended 27 October 2026): the new session makes a new one and writes records/keys/sherpa.json. Vault keys are never written here; the editor re-seals each to the new key.
 
 ### [synthetic@php.newsroom](../synthetic/index.html) 6 vaults made
 
@@ -243,4 +256,4 @@ The pages that opened the vaults in the vault UI ([every vault behind this site]
 
 
 ---
-site v0.22.45 · data as of 2026-10-27T09:43Z · vault commit 55b47c4d6af1 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.46 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html

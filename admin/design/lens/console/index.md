@@ -2,7 +2,7 @@
 
 A page written for one kind of reader: anyone else is told who it is for and can read it anyway; the time and aim settings do not apply, and the control says so.
 
-> Prototype E for review, built from the data of release v0.22.45. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
+> Prototype E for review, built from the data of release v0.22.46. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
 
 This page is for the people who run the site. You are reading as someone else; nothing here is hidden, it is just not written for you. Back to your front page 
 ## Team console
@@ -10,12 +10,12 @@ This page is for the people who run the site. You are reading as someone else; n
  1 min+ 
 
 Release 
-v0.22.45 
-229 releases 
+v0.22.46 
+230 releases 
 
 Open on the board 
-248 
-120 done 
+255 
+122 done 
 
 Members 
 19 
@@ -24,8 +24,8 @@ each with a role and a policy
  1 min+ 
 ### Open work, by owner
 
- editor 40 
- dev 27 
+ editor 42 
+ dev 32 
  conductor 27 
  claude-story-site 23 
  ontologist 16 
@@ -36,4 +36,4 @@ each with a role and a policy
  researcher@php.newsroom 9
 
 ---
-site v0.22.45 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/console/index.html
+site v0.22.46 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/console/index.html
