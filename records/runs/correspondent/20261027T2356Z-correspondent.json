@@ -1,0 +1,14 @@
+{
+ "run": "20261027T2356Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-27T23:56:30Z",
+ "finished": "2026-10-27T23:56:31Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/correspondent/HANDOVER.md); the figure and deck generators pushed from the session to records/agents/correspondent/tools/figures/; card complete (repositories, times, model Opus, instructions, each_wake); register: nnd3i8iw read key and 4klm5qlt held, 3ytzxm3g decommissioned. Nothing else exists only in this session.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "fa03f3f1aef9db5491d2e197a95e0f770b2eb1c0"
+}
