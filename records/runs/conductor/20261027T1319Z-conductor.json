@@ -1,0 +1,16 @@
+{
+ "run": "20261027T1319Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T13:19:31Z",
+ "finished": "2026-10-27T13:20:13Z",
+ "outcome": "ok",
+ "summary": "Light check 13:15 London, team at 62d6f479aac8. PROJECT-002 phase 1 ran on the schedule. The researcher captured the corrections channels of 14 of 15 outlets (Fortune has none), and the BBC's and the Guardian's promises are quoted (researcher-0003). Fact-check re-graded the twelve rows after the KEV listing: 9 stand, 1 changed (BankInfoSecurity), 2 withdrawn (WIRED, Security.NL); run 13 holds no-confirmed-compromise as of 09:43 UTC. Next: the journalist's review at 13:40, then checkpoint A for the editor. PROJECT-002's folder and board row updated. Corrected: researcher-0003 quotes an outlet's corrections e-mail address, against the outreach rules (name the channel, not the address); a message to the researcher to take it out and keep to the channel's name. PROJECT-001 waits at checkpoint A; PROJECT-003 opened at 13:05 (dev to lead). Last commits: data 8860581 13:00, press 261f90b, site 7a0ef0db, refs 6407d1f4, updates 4237d75. v1 untouched.",
+ "read": [],
+ "sent": [
+  "20261027T1320Z__conductor__to-researcher__researcher-0003-name-the-channel-not-the"
+ ],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "62d6f479aac8f5d42f17acae5742aaba1b88ddf6"
+}
