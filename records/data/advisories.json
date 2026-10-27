@@ -1019,7 +1019,7 @@
   {
    "id": "SA-2026-043",
    "title": "The round's write token is readable by every piece of code the round runs",
-   "severity": "high",
+   "severity": "low",
    "status": "fixed",
    "disclosure": "limited",
    "cwe": "CWE-522",
@@ -1029,7 +1029,7 @@
    "fixed_in": "press v1.0.52 (27 October 2026): .github/workflows/round.yml and tools/round.sh removed",
    "fixed_by": "dev@php.newsroom",
    "summary": "The round puts ROUND_TOKEN (contents write on all six repositories) into the runner's global git configuration and then runs the chain and the build from the press. The script's comment says the token reaches only git's credential helper; any process in the job can read it.",
-   "impact": "Push to the press becomes push to all six repositories. The split's least privilege (which repositories a session holds is its permission) does not hold for anyone who can change code the round runs; a steered agent with press access could write data, team or the sites, gate or no gate.",
+   "impact": "Latent: the editor confirmed on 28 October 2026 that ROUND_TOKEN was never created, so every run of the round stopped at its first check and no token was ever exposed. Had it been created, push to the press would have been push to all six repositories.",
    "attack_path": "Limited until fixed: a change to code the round executes, released to the press's dev, runs with the token in reach at the next quarter hour.",
    "root_cause": "One job both runs repository code and holds the credential to publish its result.",
    "contributing": [
@@ -1037,7 +1037,7 @@
     "The press has many writers after step B; each is now a path to every repository."
    ],
    "missing_control": "Separation of building from publishing: the job that runs repository code holds no write credential.",
-   "fix": "The round is retired: the workflow and its script are gone from the press (v1.0.52), and editions are built by .github/workflows/edition.yml, whose build job holds only a read-only token and whose publish job runs no repository code. Left for the editor: delete the ROUND_TOKEN secret from the press's settings and revoke the token on GitHub; nothing reads it now, but a live token is still a token.",
+   "fix": "The round is retired: round.yml and round.sh are gone from the press (v1.0.52); the token was never created, so nothing is left to revoke. Editions are built by .github/workflows/edition.yml, whose build job holds only a read-only token and whose publish job runs no repository code.",
    "prevention": "The rule already used for Pages deploys (the job that writes runs no repository code) applied to every job that holds a secret.",
    "refs": [
     "press .github/workflows/round.yml",
