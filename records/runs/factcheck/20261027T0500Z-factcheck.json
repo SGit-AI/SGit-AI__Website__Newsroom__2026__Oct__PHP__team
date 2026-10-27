@@ -1,0 +1,14 @@
+{
+ "run": "20261027T0500Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-27T04:50:00Z",
+ "finished": "2026-10-27T05:10:00Z",
+ "outcome": "ok",
+ "summary": "Not a sweep: at the editor's direction opened the read key for the evidence vault's pack vault nnd3i8iw (sealed to the desk's key; the sender's key sha256:6c81ae257fee1938 is not in the register, so the seal was read on the editor's word), updated sgit to 0.26.0 (0.25.0 refuses this vault), cloned it read-only in 39 s (563 sources, 1.7 GB) outside every repository, and ran fc.py check against it: 0 failures. Registered the read key in records/registers/factcheck.json (ID only); the card's vault step now names nnd3i8iw. The next wake reads it. team bd3f5957 and data c79e763 taken in.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "bd3f5957"
+}
