@@ -1,0 +1,16 @@
+{
+ "run": "20261027T0834Z-observability",
+ "agent": "observability",
+ "started": "2026-10-27T08:34:03Z",
+ "finished": "2026-10-27T08:36:26Z",
+ "outcome": "ok",
+ "summary": "First scheduled wake (08:33 London). team at 2d5f11ea; 9 notes read as material, none for observability; sgit-ai upgraded 0.25.0 to v0.26.0 (WAKE.md step 1b). Keys present. Lane (84wr8mib, lane 1): 161 waiting of 1,000, none refused; drained with drain.py, pushed (vault head 072aaffbb7e2) before marking processed: 161 readable, 0 undecryptable, 0 already drained. Parallel drain timed: 2 batches (61 and 100) in 8.3 s together (about 14 s one after the other); whole drain 43 s with pull 6 s. Vault now 3,611 events from 1,044 sessions. Came in, 02:03 to 08:31 UTC, 119 sessions: readers 6 views (GB 3, SG, FI, NO; 3 phone, 3 desktop; /articles/steal-my-bitcoin/ most read), synthetic 105 views in 100 sessions, crawlers 50 views in 13 sessions (one session sent 38). Sites: site 99, refs 32, team 22, updates 8. No capped or lost markers yet (the page script is unchanged: observability-0001 with dev). One value matched the scan for model-addressed text: a real page path of this site containing the word claude; benign. Waits on dev: observability-0001. Waits on conductor: observability-0002 and the team roster.",
+ "read": [
+  "20261024T0005Z__conductor__to-all__schedules-runs-and-messages-move-to-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "2d5f11eadc945e255be7f4fd94ce399b8d262706"
+}
