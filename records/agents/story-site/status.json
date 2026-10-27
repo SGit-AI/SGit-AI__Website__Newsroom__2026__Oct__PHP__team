@@ -1,10 +1,14 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "story-site",
- "as_of": "2026-10-26",
- "round": 5,
- "state": "round 5 closed: the split reviewed; the quiet top released as press v1.0.35, live at the next edition",
+ "as_of": "2026-10-27",
+ "round": 6,
+ "state": "round 6 closed: the story as days built; on the pages at the next edition",
  "done": [
+  {
+   "what": "The story as days: day files in site, the renderer, the router and the line, the day frame and the front page in the build",
+   "evidence": "board story-site-0003; debrief 2026-10-27__the-story-as-days.md"
+  },
   {
    "what": "The quiet top: the line, the reading strip, the bar and the hero eyebrow made quieter; the line on the site themes",
    "evidence": "press v1.0.35; debrief 2026-10-26__the-split-reviewed-and-the-quiet-top.md"
@@ -44,25 +48,20 @@
  ],
  "tasks": {
   "board": [
-   "story-site-0001",
-   "327",
-   "325 (security)",
-   "326 (dev)",
-   "314",
-   "299",
-   "230",
-   "231"
+   "story-site-0003",
+   "story-site-0004",
+   "story-site-0001"
   ],
   "note": "the board rows this member owns are in data/admin.json"
  },
  "next": [
   {
-   "what": "One reader across the six hosts",
-   "why": "every reader is a stranger on the second click"
+   "what": "Preview cards for the day pages",
+   "why": "a shared /on/<date>/ unfurls as the router page"
   },
   {
-   "what": "The line's page shaping, or honest copy",
-   "why": "the first review, fix 1"
+   "what": "The desk's closing step on its card",
+   "why": "board story-site-0004"
   }
  ],
  "asks": [
@@ -83,9 +82,9 @@
   "version": "2026-10-22",
   "out_of_scope_requests": 0,
   "pushbacks": 0,
-  "overrides": 2,
+  "overrides": 3,
   "writes_outside_scope": "dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October",
   "injection_seen": 0
  },
- "debrief": "records/agents/story-site/debriefs/2026-10-26__the-split-reviewed-and-the-quiet-top.md"
+ "debrief": "records/agents/story-site/debriefs/2026-10-27__the-story-as-days.md"
 }

@@ -3,6 +3,6 @@
  "title": "Build the story as days: the day file's shape, the day renderer and the front page as the last 24 hours with the strip, /on/<date>/ and /on/<date>/as/<role>/",
  "status": "open",
  "owner": "story-site",
- "note": "Story-site: the day file's schema and the renderer (press), from the mock-up. Needs dev for the frames and the router reading 'on' (site's CI, the 404 renderer), and data's curator for files/days/ in data. Brief: the-story-as-days.",
+ "note": "Built and released 27 October: site content/days/ (story.json and Day 0 to Day 7, Day 7 open); press assets/design/days/days-live.js and .css (the front page's strip and last 24 hours, the day pages), the router (/on/<date>/ to on/index.html), the line (keeps /on/<date>/as/<role>/), and in the build the day frame and the front page's container. Live on the pages at dev's next edition. Checked in a scratch box built from v1 as frozen with every repository exported: 17 journeys, no page errors.",
  "order": 364
 }
