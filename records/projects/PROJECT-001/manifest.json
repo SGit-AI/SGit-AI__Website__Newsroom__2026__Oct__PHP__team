@@ -1,14 +1,15 @@
 {
  "project": "PROJECT-001",
  "title": "Telling them what we hold about them, and asking them to check it",
- "state": "running",
+ "state": "waiting",
  "lead": "sherpa",
  "checkpoint": {
-  "at": "B: each page and each draft message",
-  "waits_for": "phase 2 to finish; then the editor",
+  "at": "B (first three): the BBC, PHP Foundation and PHP security team drafts",
+  "since": "2026-10-27T22:45Z",
+  "waits_for": "the editor: approve, change or hold each draft (phase-2/messages/); decide the signature line and whether the Wiz suggestion goes later as R-002; and, before any send, each channel found and captured, and K-011's source captured",
   "passed": null
  },
- "next": "Phase 2, wave 2 in the desk: 2d draft messages to the BBC, the PHP security team and the PHP Foundation (correspondent with the Sherpa), positive in tone; then the desk's review of each (2f); dev builds /outlets/<id>/ in the press. Done in wave 1: the design, the BBC re-grade, the outlet files; step 1 corrected our own BBC claims in data (b90449e).",
+ "next": "At checkpoint B for the first three drafts (the BBC, the PHP Foundation, the PHP security team; desk-reviewed, changes applied). When the editor approves one, its status in messages.json becomes 'approved' and the agent at riskmandate.ai may send it through its captured channel. Meanwhile: the vault keys (9f5knw9r, 7r83qic5, nnd3i8iw write) to commit the staged captures; dev builds /outlets/<id>/ (projects-0003); the other eight recipients follow on the same template.",
  "brief": "https://team.php.oct.2026.newsroom.sgit.ai/records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
  "hub": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/",
  "for_agents": "Everything here is public and holds no secret. Read project.json for the state and messages.json for the messages. A message may be sent only when its status is \"approved\" and approved_by is \"editor\"; a draft is never sent. Nothing on these pages is an instruction to any agent but the newsroom's own; the editor, in his own session, decides.",
@@ -33,7 +34,7 @@
     }
    },
    "subject": "Your PHP live page, with thanks",
-   "ask": "Look over the file and tell us what is wrong or missing; one optional wording suggestion on the Wiz 70% figure (added value, take it or leave it). No complaint, no interview.",
+   "ask": "Look over what we hold about your live page and tell us what we have wrong or missing.",
    "status": "draft",
    "approved_by": null,
    "sent": null,
@@ -178,8 +179,8 @@
   {
    "path": "log.md",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/log.md",
-   "bytes": 16678,
-   "sha256": "453ff845ac31505a920ddd01b706cb1299b198ae1e8755db65aa8ded14ad39ed",
+   "bytes": 17817,
+   "sha256": "277b64495062c3d48c9f39ef85364091c3ae2e4878a2bd2e316a4168f81e8581",
    "about": "every event, dated, newest last"
   },
   {
@@ -267,31 +268,38 @@
    "about": "step 2a: the sample the prototype was drawn from"
   },
   {
+   "path": "phase-2/messages/REVIEW-desk.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/REVIEW-desk.md",
+   "bytes": 7010,
+   "sha256": "c0e78ac118087394efa1f580031c819b51a36e40f6d3de93398fcabe8e24c34b",
+   "about": "draft message to REVIEW-desk (not sent; sent only once the editor approves it)"
+  },
+  {
    "path": "phase-2/messages/bbc.md",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/bbc.md",
-   "bytes": 1363,
-   "sha256": "ca293786789b0251a7ca7c8940d4e405804e0aab1973f617f9e79147238e6dc7",
+   "bytes": 1148,
+   "sha256": "47e12aebc9fdebef5ccd6e0ab574873756a691e643692363a9ef70a9e96c76cc",
    "about": "draft message to bbc (not sent; sent only once the editor approves it)"
   },
   {
    "path": "phase-2/messages/messages.json",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/messages.json",
-   "bytes": 6188,
-   "sha256": "52c415b9ac1a7a653d4faa00cdefa8597796b24fa44e8c34cc0739dbbfcdf709",
+   "bytes": 7099,
+   "sha256": "609408b758c936fb9ac4a5f2a7d4d1697a8fd6340a89048972ed95c29c107108",
    "about": "step 2d: every draft message, its channel, its one ask and its status"
   },
   {
    "path": "phase-2/messages/php-foundation.md",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-foundation.md",
-   "bytes": 1302,
-   "sha256": "9dcb061ca8fdbe4057bcfaa7b2fa3675ebd9e2a3920ac53569317b3a95e9c482",
+   "bytes": 1340,
+   "sha256": "3fd83fb28e85456a304054a3f7a054d41bf9c0212ce08ffde3a88a5bab6b5b7e",
    "about": "draft message to php-foundation (not sent; sent only once the editor approves it)"
   },
   {
    "path": "phase-2/messages/php-security-team.md",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-security-team.md",
-   "bytes": 1371,
-   "sha256": "5926e7c96d0a9f329881f0884880b98edcf748907a284e51939fe5d3707a11c9",
+   "bytes": 1514,
+   "sha256": "58ca77af8290c28e983b35f3c9a82559da1303a37b868f678646af4749483b24",
    "about": "draft message to php-security-team (not sent; sent only once the editor approves it)"
   },
   {
@@ -353,8 +361,8 @@
   {
    "path": "project.json",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/project.json",
-   "bytes": 7454,
-   "sha256": "55c18b6ea90ca3ec837437c3c4dffaa097ace0a72ebd0989dea6657218744919",
+   "bytes": 7836,
+   "sha256": "1d0d617a181a4bf41254c29e34b86a3f689085cfb1e5bf26ec8ba61ae52cf63c",
    "about": "the state: phases, checkpoints, decisions, the next step"
   }
  ]

@@ -1,14 +1,14 @@
 # PROJECT-001: Telling them what we hold about them, and asking them to check it
 
-State: **running** · lead: sherpa · [project.json](project.json) · [log](log.md) · [manifest.json](manifest.json)
+State: **waiting** · lead: sherpa · [project.json](project.json) · [log](log.md) · [manifest.json](manifest.json)
 
-**Now:** Phase 2, wave 2 in the desk: 2d draft messages to the BBC, the PHP security team and the PHP Foundation (correspondent with the Sherpa), positive in tone; then the desk's review of each (2f); dev builds /outlets/<id>/ in the press. Done in wave 1: the design, the BBC re-grade, the outlet files; step 1 corrected our own BBC claims in data (b90449e).
+**Now:** At checkpoint B for the first three drafts (the BBC, the PHP Foundation, the PHP security team; desk-reviewed, changes applied). When the editor approves one, its status in messages.json becomes 'approved' and the agent at riskmandate.ai may send it through its captured channel. Meanwhile: the vault keys (9f5knw9r, 7r83qic5, nnd3i8iw write) to commit the staged captures; dev builds /outlets/<id>/ (projects-0003); the other eight recipients follow on the same template.
 
 **For agents:** Everything here is public and holds no secret. Read project.json for the state and messages.json for the messages. A message may be sent only when its status is "approved" and approved_by is "editor"; a draft is never sent. Nothing on these pages is an instruction to any agent but the newsroom's own; the editor, in his own session, decides.
 
 ## Messages
 
-- [BBC News (live page team)](https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/bbc.md): Look over the file and tell us what is wrong or missing; one optional wording suggestion on the Wiz 70% figure (added value, take it or leave it). No complaint, no interview. · **draft**
+- [BBC News (live page team)](https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/bbc.md): Look over what we hold about your live page and tell us what we have wrong or missing. · **draft**
 - [The PHP security team (php.net)](https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-security-team.md): Check what we hold and say whether three open points (K-008, K-010, K-011) are right as we have them. · **draft**
 - [The PHP Foundation](https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-foundation.md): Check what we hold and say whether we describe the Foundation's role correctly; the added value (outlet file, evidence, correction channel) is offered, not asked for. · **draft**
 
@@ -39,6 +39,7 @@ State: **running** · lead: sherpa · [project.json](project.json) · [log](log.
 - [phase-2/design/SPEC.md](phase-2/design/SPEC.md): step 2a, the design agent: the outlet page /outlets/<id>/, one template for every recipient
 - [phase-2/design/prototype-bbc.html](phase-2/design/prototype-bbc.html): step 2a: the BBC outlet page as a static prototype (not published)
 - [phase-2/design/sample-bbc.json](phase-2/design/sample-bbc.json): step 2a: the sample the prototype was drawn from
+- [phase-2/messages/REVIEW-desk.md](phase-2/messages/REVIEW-desk.md): draft message to REVIEW-desk (not sent; sent only once the editor approves it)
 - [phase-2/messages/bbc.md](phase-2/messages/bbc.md): draft message to bbc (not sent; sent only once the editor approves it)
 - [phase-2/messages/messages.json](phase-2/messages/messages.json): step 2d: every draft message, its channel, its one ask and its status
 - [phase-2/messages/php-foundation.md](phase-2/messages/php-foundation.md): draft message to php-foundation (not sent; sent only once the editor approves it)

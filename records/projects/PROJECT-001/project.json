@@ -3,7 +3,7 @@
  "title": "Telling them what we hold about them, and asking them to check it",
  "brief": "records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
  "lead": "sherpa",
- "state": "running",
+ "state": "waiting",
  "opened": "2026-10-27T10:53Z",
  "closed": null,
  "phases": [
@@ -170,11 +170,12 @@
    "passed": null
   }
  ],
- "next": "Phase 2, wave 2 in the desk: 2d draft messages to the BBC, the PHP security team and the PHP Foundation (correspondent with the Sherpa), positive in tone; then the desk's review of each (2f); dev builds /outlets/<id>/ in the press. Done in wave 1: the design, the BBC re-grade, the outlet files; step 1 corrected our own BBC claims in data (b90449e).",
+ "next": "At checkpoint B for the first three drafts (the BBC, the PHP Foundation, the PHP security team; desk-reviewed, changes applied). When the editor approves one, its status in messages.json becomes 'approved' and the agent at riskmandate.ai may send it through its captured channel. Meanwhile: the vault keys (9f5knw9r, 7r83qic5, nnd3i8iw write) to commit the staged captures; dev builds /outlets/<id>/ (projects-0003); the other eight recipients follow on the same template.",
  "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps",
  "checkpoint": {
-  "at": "B: each page and each draft message",
-  "waits_for": "phase 2 to finish; then the editor",
+  "at": "B (first three): the BBC, PHP Foundation and PHP security team drafts",
+  "since": "2026-10-27T22:45Z",
+  "waits_for": "the editor: approve, change or hold each draft (phase-2/messages/); decide the signature line and whether the Wiz suggestion goes later as R-002; and, before any send, each channel found and captured, and K-011's source captured",
   "passed": null
  },
  "feedback": [

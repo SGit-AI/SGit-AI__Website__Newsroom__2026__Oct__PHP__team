@@ -31,7 +31,7 @@
    },
    "subject": "Your PHP live page, with thanks",
    "file": "bbc.md",
-   "ask": "Look over the file and tell us what is wrong or missing; one optional wording suggestion on the Wiz 70% figure (added value, take it or leave it). No complaint, no interview.",
+   "ask": "Look over what we hold about your live page and tell us what we have wrong or missing.",
    "links": [
     "https://refs.php.oct.2026.newsroom.sgit.ai/outlets/bbc/ (not built yet)",
     "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/",
@@ -43,19 +43,18 @@
      "source": "bbc-live-ckgel5xp2xv9t",
      "capture": "20261022T080559Z",
      "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d"
-    },
-    {
-     "text": "a popular general-purpose scripting language that powers 70% of all websites in the world",
-     "source": "wiz-blog-php2shell",
-     "capture": "20261022T081047Z",
-     "sha256": "e3568b6f88c93f6bb08eebe3c8811f9fd283212f7331b287d5170b91d6bad1ea"
     }
    ],
    "status": "draft",
    "approved_by": null,
    "sent": null,
    "sender": "the agent at riskmandate.ai, on the editor's go",
-   "word_count": 219
+   "word_count": 219,
+   "reviewed": {
+    "by": "desk (step 2f, REVIEW-desk.md)",
+    "changes_applied": "by the correspondent (the projects desk), 27 October 2026"
+   },
+   "held": "The Wiz '70%' suggestion (R-002) is held until Wiz (R-001), the origin, has been asked: origin before echo (desk review)."
   },
   {
    "id": "php-security-team",
@@ -89,7 +88,12 @@
    "approved_by": null,
    "sent": null,
    "sender": "the agent at riskmandate.ai, on the editor's go",
-   "word_count": 195
+   "word_count": 195,
+   "reviewed": {
+    "by": "desk (step 2f, REVIEW-desk.md)",
+    "changes_applied": "by the correspondent (the projects desk), 27 October 2026"
+   },
+   "blocked_by": "Zelenka's oss-security post of 22 October (K-011) must be captured into the evidence vault first"
   },
   {
    "id": "php-foundation",
@@ -123,7 +127,33 @@
    "approved_by": null,
    "sent": null,
    "sender": "the agent at riskmandate.ai, on the editor's go",
-   "word_count": 191
+   "word_count": 191,
+   "reviewed": {
+    "by": "desk (step 2f, REVIEW-desk.md)",
+    "changes_applied": "by the correspondent (the projects desk), 27 October 2026"
+   }
   }
+ ],
+ "order": [
+  {
+   "n": 1,
+   "id": "bbc",
+   "why": "the editor: the BBC first; it asks only about its own page"
+  },
+  {
+   "n": 2,
+   "id": "php-foundation",
+   "why": "ready soonest; no capture blocker"
+  },
+  {
+   "n": 3,
+   "id": "php-security-team",
+   "why": "after K-011's source is captured; same day as the Foundation is fine, neither mentions the other"
+  }
+ ],
+ "send_blockers": [
+  "each channel found and captured (all three are 'to confirm')",
+  "the editor's approval of each message (checkpoint B)",
+  "php-security-team: K-011's source captured"
  ]
 }
