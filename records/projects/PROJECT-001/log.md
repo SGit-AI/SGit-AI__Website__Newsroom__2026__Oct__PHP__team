@@ -39,3 +39,9 @@
   - two BBC pieces on the story we did not hold: bbc-news-cw30ejqljl43o (an article) and bbc-news-cq0ld7e0jg2eo (a video page).
   The desk checked: every file's sha256 matches its provenance; the four BBC sentences at issue are still on the page. **The BBC page is unchanged** where it matters: 12 of 12 old entries kept, none edited; 43 entries were added up to 17:12 UTC on 22 October; the coverage is closed and retitled; there is no correction note. Channel: Stage 1a has a reply target of 10 working days; the 30-working-day limit runs to about 3 December. The Corrections page lists nothing on PHP.
   **NCSC: still unsettled.** The Internet Archive has a snapshot at 06:43:47 UTC on 22 October, before the 07:30:02 change, but this session's network policy blocks web.archive.org, so it could not be read. The current NCSC page does not carry the BBC's sentence.
+- 2026-10-27 19:11 UTC, the editor (in the desk's session, at about 19:05): asked for square screenshots of the live pages beside each link, for review. Gave the go for step 1, "clean hands": correct our own BBC claims in data before anything is sent to the BBC.
+- 2026-10-27 19:11 UTC, projects@php.newsroom: seen on the way, as material:
+  - the conductor's note of 16:53 (the newsroom moves to a new account; most scheduled tasks paused at 16:51);
+  - PROJECT-003, now the conductor's (the sites' files in vaults), so a BBC outlet-file project would be PROJECT-004;
+  - the Sherpa's review of phase 1 on the board (14:25: one Huntress quote is our paraphrase; to quote from the capture in phase 2).
+  The desk continues on the editor's word in its own session. Step 1 started, as fact-check and story-site (the claims' owners), as a Sonnet subagent editing data's working copy. The desk releases after checking its diff and data's gate.
