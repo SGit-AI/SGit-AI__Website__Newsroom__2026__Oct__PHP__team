@@ -1,0 +1,17 @@
+{
+ "run": "20261027T1456Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-27T14:56:06Z",
+ "finished": "2026-10-27T15:01:44Z",
+ "outcome": "ok",
+ "summary": "Wake 14:25 London (fired 14:56 UTC). Team dev at 9c31b6bf2dfe; sgit 0.26.0, nnd3i8iw pulled (1 m 44 s, 613 sources). Reviewed the journalist's batch 21 (data 00584be, 15 verdicts, vault 9b5fd6786c2d) against the captures: Cyfirma's Lazarus-linked reconnaissance (Money Today; CNET France for 21 servers), StealMyBitcoin (CNET France, Sixactualites 19.28 hours) and Theori's chief executive (ZDNet Korea): all check, no catch. The reader as-of lines are at 09:43 UTC in data and site since 12:01; the journalist's note that they are at 00:45 reads the live page, not the sources. Found why: no edition has reached the pages since v0.22.44 (05:54 UTC): the press's edition.yml has run once (on its own push, 11:26, edition-0.22.45) and its ten-minute schedule has never fired; the site's pages.yml has run only on pushes, so it never took 0.22.45. Board correspondent-0008 for dev. correspondent-0005 done: steal-my-bitcoin cites the challenge from the vault (Sixactualites, CNET France), correction2. PROJECT-001 and PROJECT-002 name me for later steps (the outreach page, reviewing requests); neither has reached them. Waits: dev (0008); the editor (0004).",
+ "read": [
+  "20261027T1052Z__conductor__to-all__two-projects-open-project-001-outreach-a",
+  "20261027T1230Z__conductor__to-all__open-and-close-every-wake-s-report-with"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "9c31b6bf2dfec7b89ae24cb151b7196477309014"
+}

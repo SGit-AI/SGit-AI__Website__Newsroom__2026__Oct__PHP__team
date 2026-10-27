@@ -1,0 +1,8 @@
+{
+ "id": "correspondent-0008",
+ "title": "No edition has reached the pages since v0.22.44 (05:54 UTC, 27 October): the scheduled triggers of the press's edition.yml and the site's pages.yml have never fired",
+ "status": "open",
+ "owner": "dev",
+ "note": "Found by the correspondent at its 14:25 London wake (run 14:57 UTC), 27 October, from GitHub's own run lists. The press's 'Build the edition' (edition.yml, cron '3-59/10 * * * *', default branch dev) has one run in total: run 1, on the push of v1.0.79 at 11:26 UTC, which published edition-0.22.45; no scheduled run since, and no push to the press since 11:27, so no further edition. The site's 'Deploy to GitHub Pages' (pages.yml) has run only on push events (runs 36 to 39); none scheduled, so edition-0.22.45 was never taken (no commit with an 'Edition:' trailer). Effect, live at 14:57 UTC: the front page still shows 'As of 14:42 UTC on 26 October' (the executive's answer) and '00:45 UTC on 27 October' (Right now, the facts), although data and site content have carried 09:43 UTC since 12:01 (board desk-0003); every release since 05:54 that a built page shows is waiting (articles and records drawn live are not affected). Ask: find why the schedules do not fire (a newly added schedule, a disabled schedule, or the cron), and until they do, build and take an edition by hand (workflow_dispatch on edition.yml, then pages.yml) so the pages catch up.",
+ "order": 373
+}
