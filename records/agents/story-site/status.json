@@ -1,10 +1,18 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "story-site",
- "as_of": "2026-10-25",
- "round": 4,
- "state": "round 4 closed: the line and the router live on every page",
+ "as_of": "2026-10-26",
+ "round": 5,
+ "state": "round 5 closed: the split reviewed; the quiet top released as press v1.0.35, live at the next edition",
  "done": [
+  {
+   "what": "The quiet top: the line, the reading strip, the bar and the hero eyebrow made quieter; the line on the site themes",
+   "evidence": "press v1.0.35; debrief 2026-10-26__the-split-reviewed-and-the-quiet-top.md"
+  },
+  {
+   "what": "A review of the split as served: findings carried over, one reader across hosts, seven refactorings",
+   "evidence": "brief records/briefs/2026-10-25__review__the-split-as-served.md (filed by dev)"
+  },
   {
    "what": "The line on every page in place of the dials; the router, the view in the address bar and 28 cards",
    "evidence": "v0.22.0; board 324; debrief 2026-10-25__the-line-and-the-router-live.md"
@@ -36,6 +44,7 @@
  ],
  "tasks": {
   "board": [
+   "story-site-0001",
    "327",
    "325 (security)",
    "326 (dev)",
@@ -48,12 +57,12 @@
  },
  "next": [
   {
-   "what": "The reading path back into the line, and page lines for more pages",
-   "why": "the older bar is hidden where the line runs"
+   "what": "One reader across the six hosts",
+   "why": "every reader is a stranger on the second click"
   },
   {
-   "what": "The decks, on the same addresses",
-   "why": "board 314, once the editor answers its decisions"
+   "what": "The line's page shaping, or honest copy",
+   "why": "the first review, fix 1"
   }
  ],
  "asks": [
@@ -78,5 +87,5 @@
   "writes_outside_scope": "dev's ask.js, site-tools.js, telemetry.js, sg-meter.js and sg-meter-core.js, layout() in build.py and /404.html: the editor's explicit go in this session, 25 October",
   "injection_seen": 0
  },
- "debrief": "admin/content/agents/story-site/debriefs/2026-10-25__the-line-and-the-router-live.md"
+ "debrief": "records/agents/story-site/debriefs/2026-10-26__the-split-reviewed-and-the-quiet-top.md"
 }
