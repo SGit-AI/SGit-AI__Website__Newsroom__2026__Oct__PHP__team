@@ -4,7 +4,7 @@
 1. Every JSON file parses.
 2. Every board row has an id, a title, a status (open, waiting, done) and an owner, and is filed under its id.
 3. Every schedule card names its member, a status (active, proposed, paused, ended) and its wake times (HH:MM), under its agent's name;
-   every run record has an outcome (ok, idle, partial, failed); every message has its front matter; every member folder
+   every run record has an outcome (ok, idle, partial, failed); every message has its front matter and a box some agent reads; every member folder
    has a role and a policy; every debrief has front matter. (The rules the build stops a round on, here at push time.)
 4. The front page is what tools/front.py writes (it is built from this repository, so it cannot drift).
 5. No credential shapes anywhere: registers list vault IDs and key kinds, never a key (an id that is not a bare vault id fails).
@@ -78,6 +78,18 @@ for p in files('records/messages'):
         miss = [k for k in ('from', 'to', 'sent', 'subject') if not head.get(k)]
         if miss:
             fails.append(f'{p}: a message needs front matter with {", ".join(miss)}')
+# a message's box is an agent a wake reads for: a card, a member, an expected schedule, a member's folder, all or the editor (the build's rule)
+def _ids(rel, key, sub):
+    try:
+        return {x[sub] for x in json.load(open(os.path.join(ROOT, rel), encoding='utf-8')).get(key, []) if isinstance(x, dict) and sub in x}
+    except (OSError, ValueError):
+        return set()
+boxes = ({f[:-5] for f in os.listdir(os.path.join(ROOT, 'records', 'schedule')) if f.endswith('.json')} | _ids('records/data/team.json', 'members', 'id')
+         | _ids('records/data/schedules.json', 'expected', 'agent') | {'all', 'editor'}
+         | {d for d in os.listdir(os.path.join(ROOT, 'records', 'agents')) if os.path.isdir(os.path.join(ROOT, 'records', 'agents', d))})
+for b in sorted({p.split('/')[2] for p in files('records/messages') if p.count('/') >= 3}):
+    if b not in boxes:
+        fails.append(f'records/messages/{b}/: no agent is called {b!r}, so no wake would read it; use the id on its card or on /team/')
 agents =sorted(d for d in os.listdir(os.path.join(ROOT, 'records', 'agents')) if os.path.isdir(os.path.join(ROOT, 'records', 'agents', d)))
 for a in agents:
     for need in ('ROLE.md', 'policy.json'):
