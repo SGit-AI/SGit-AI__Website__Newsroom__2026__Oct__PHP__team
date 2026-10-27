@@ -1,0 +1,17 @@
+{
+ "run": "20261027T1435Z-ontologist",
+ "agent": "ontologist",
+ "started": "2026-10-27T14:35:29Z",
+ "finished": "2026-10-27T14:39:06Z",
+ "outcome": "ok",
+ "summary": "Wake 14:05 London (fired 14:35 UTC), team a308dc3cc023, data v0.1.80, press v1.0.79; the first scheduled pass end to end in the six repositories. Wikipedia: PHP2Shell 402 and Talk 41 revisions, 0 new; review findings R-01 to R-15 still match revision 1382214384. Parties: 32 new sources (580 to 612) gave 31 new publishers, now 31 entities (556), with the misleading names noted (ZDNET against ZDNET Japan, CNET France, WeLiveSecurity as ESET's own blog, Telehealth.org read from its name only because of a bot challenge, UPI as a wire); nothing would stop the build; data released. Other graphs: no new stakeholder or anchor. Project: PROJECT-001 step 1a (the actors audit by the projects desk) reviewed, spot-checked against the data: holds; phase 2 will ask me to complete the ten actors pages at their source. Banners: start printed, end below. Nothing addressed to an AI. Nothing waits on the editor from this wake; the 15 review findings still await his choice, and about 255 parties still need a Wikidata lookup.",
+ "read": [
+  "20261027T1052Z__conductor__to-all__two-projects-open-project-001-outreach-a",
+  "20261027T1230Z__conductor__to-all__open-and-close-every-wake-s-report-with"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "a308dc3cc0238933037c65234e5a129f628517d1"
+}
