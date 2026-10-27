@@ -1,6 +1,6 @@
 {
  "id": "PROJECT-003",
- "title": "The sites' files served from a vault, and lighter git pushes",
+ "title": "The sites' static files and an archive in vaults, and GitHub Pages carrying only pages",
  "brief": "records/briefs/2026-10-27__project__project-003-the-sites-files-from-a-vault.md",
  "lead": "dev",
  "state": "open",
@@ -8,30 +8,36 @@
  "closed": null,
  "phases": [
   {
-   "phase": "0. Measure",
-   "checkpoint": "A: the plan's order agreed",
+   "phase": "0. Measure and design",
+   "checkpoint": "A: the design agreed (three vaults, the pack-mode exception, the order)",
    "passed_by": "editor",
    "passed": null
   },
   {
-   "phase": "1. Pages as artifacts",
-   "checkpoint": "B: refs from the artifact a day, history flat",
+   "phase": "1. Assets out of git (site-assets vault, manifest, route.js by id)",
+   "checkpoint": "B: security's review; pilot pages as fast as before",
    "passed_by": "editor",
    "passed": null
   },
   {
-   "phase": "2. The site vault (normal vault, read key published, manifest, route.js)",
-   "checkpoint": "C: security's review, load times no worse",
+   "phase": "2. Thin deploys (no edition committed; site-data vault)",
+   "checkpoint": "C: a day with no break; deploys a fraction of today's",
    "passed_by": "editor",
    "passed": null
   },
   {
-   "phase": "3. Move what fits",
-   "checkpoint": "D: close",
+   "phase": "3. The archive (archive vault, indexes, /archive/<slug>/, the BBC first)",
+   "checkpoint": "D: GRC's and security's review; everything from the BBC on one page",
+   "passed_by": "editor",
+   "passed": null
+  },
+  {
+   "phase": "4. Every publisher, every actor",
+   "checkpoint": "E: close",
    "passed_by": "editor",
    "passed": null
   }
  ],
- "next": "Phase 0: dev measures which paths make each repository's history grow, and GitHub's limits as they apply.",
+ "next": "dev, phase 0: measure deploy sizes and history growth, and write the index format as a brief for checkpoint A.",
  "runs_in": "dev's own session, or the projects desk"
 }

@@ -1,90 +1,138 @@
-# PROJECT-003: the sites' files served from a vault, and lighter git pushes
+# PROJECT-003: the sites' static files and an archive in vaults, and GitHub Pages carrying only pages
 
 Status: a project (`records/briefs/2026-10-27__brief__projects-and-the-projects-desk.md`), opened by conductor@php.newsroom on
-27 October 2026 at the editor's request. Board `conductor-0015`. Lead proposed: dev. Nothing changes on the sites until
-checkpoint A is passed.
+27 October 2026 at the editor's request, and widened the same afternoon at the editor's word ("brief the developer to
+implement this"). Board `conductor-0015`. Lead: dev. Nothing changes on the sites until checkpoint A is passed.
 
 ## The ask
 
-The editor, 27 October: "a new vault that is going to be used to capture the data and the files that are used in the
-main website, so that we reduce the amount of data that we publish in our Git pushes … that data is much better served
-from S3, from our vaults". It would be an append-only vault, "maybe even mapped by date … year, month, day, even hour …
-or maybe you organise by section". Pages would fetch each file by its object id, with the read key published so anyone
-can read it.
+The editor, 27 October, in two parts:
 
-## What the conductor measured first (27 October, 13:00 UTC)
+1. "A new vault … to capture the data and the files that are used in the main website, so that we reduce the amount
+   of data that we publish in our Git pushes … that data is much better served from S3, from our vaults." The layout
+   is append-only, "mapped by date … year, month, day, even hour … or maybe you organise by section". Pages fetch each
+   file by object id, with the read key published.
+2. "Maybe we have two or three vaults … that we strategically use … to optimise the use of GitHub Pages." And an
+   archive: "I want to see what is everything we have from the BBC, what is everything we have for the Guardian … for
+   this particular person or this particular thing, kind of like the Wayback Machine." Any agent updating it connects,
+   reads only the few files it needs (`--path`), uploads the new immutable files and updates the indexes and
+   cross-indexes, as pack indexes do. The website loads all of it dynamically from an index.
 
-- **The repositories are small; their history is what grows.** Current trees: team 47 MB, refs 34 MB, data 21 MB,
-  site 17 MB, press 12 MB, updates 9 MB. Packed histories: team 110 MB (296 commits), refs 80 MB (41 commits), site
-  58 MB, updates 26 MB, press 10 MB, data 4 MB.
-- **What changes, today:** lines changed per kind of file since midnight. In refs: HTML 177,426, JSON 25,730,
-  Markdown 13,480. In team: HTML 57,500, the records 25,056, Markdown 9,427, JSON 8,939. **The weight is generated HTML
-  pages,** rewritten by every edition, and editions now run every ten minutes. Data files and images are a small part.
-- **What sgit can serve today** (cli.sgit.ai, 0.26.0):
+## What the conductor measured (27 October, 13:00 to 13:40 UTC)
+
+- **Every deploy ships the whole site.** Each site's `.github/workflows/pages.yml` runs every 15 minutes. It applies
+  the newest edition, commits it to git and pushes, then uploads the whole built site with `upload-pages-artifact` and
+  deploys it. With four sites, that is up to 16 full uploads an hour (refs alone is 34 MB), plus a commit each time.
+- **History grows with generated HTML.** Packed histories: team 110 MB (296 commits), refs 80 MB (41 commits), site
+  58 MB, updates 26 MB. Lines changed today in refs: HTML 177,426, JSON 25,730, Markdown 13,480.
+- **What sgit gives us** (cli.sgit.ai, 0.26.0):
   - read keys may be published;
-  - `sgit cat` reads one file from the server with no clone (for an agent or CI, not a browser);
-  - the browser library reads **normal** vaults;
-  - **the browser cannot read pack vaults** (the limitations page: "The browser cannot read packs").
-  - Reading one file of a pack vault with no clone ("Phase 4") is not released.
+  - `clone --path` and `sgit cat` read only what is needed;
+  - the browser library reads **normal** vaults, but **cannot read pack vaults**;
+  - reading one file of a pack vault with no clone is not released.
 
-## What the plan does with that
+## The design: three vaults and thin pages
 
-1. **The biggest saving needs no vault:** stop committing generated pages. Each site's CI already builds its edition;
-   it can publish the built pages as a GitHub Pages artifact instead of committing them, so a site's git history holds
-   only its sources (content, records, the build) and not ten editions an hour of rewritten HTML. This removes most of
-   the growth.
-2. **The vault is right for files that never change once written:** images, figures, decks, PDFs and each data
-   version's files. A vault object is named by its hash, so a page can pin it forever and cache it forever. It moves
-   them out of git and onto S3, as the editor wants.
-3. **The site vault must be a normal vault, not a pack vault,** until the browser can read packs. That is a named
-   exception to "every vault is a pack vault", for this one vault, because browsers are its readers.
-4. **Never the pages' text.** A file in the vault is encrypted and decrypted in the reader's browser. Search engines and
-   readers without JavaScript would see nothing, so HTML and the words of articles stay served as plain pages.
+| Vault | Mode | Holds | Written by | Read by |
+| --- | --- | --- | --- | --- |
+| **site-assets** | normal (browsers read it) | images, figures, decks, PDFs, fonts: everything static the pages load | the press's build, at each edition | every page, by object id |
+| **site-data** | normal | each data version's files (today in data's git tags) | data's release | pages and scripts that read data |
+| **archive** | normal, read key published | the public archive: one record per capture of every source, with its indexes | the curator and the researcher, at each promotion and pass | the archive pages, and any reader with sgit |
 
-## The layout
+These three are an exception to "every vault is a pack vault", because browsers read them. The working vaults stay
+pack vaults: the watch `7r83qic5` and the evidence `nnd3i8iw`.
 
-The vault is append-only: a file is written once and never changed or deleted, and a new version is a new file.
+**Every vault is append-only.** A file is written once and never changed or deleted, and a new version is a new file.
+The layout is section first, then the date and hour of writing:
 
-`<section>/<yyyy>/<mm>/<dd>/<hh>/<name>`, for example `articles/has-anyone-been-hacked/2026/10/27/09/ladder.png` or
-`data/2026/10/27/11/sources.json`. Section first, so one section can be fetched or audited alone; then the date and
-hour of writing, so the history reads in order.
+```
+<section>/<yyyy>/<mm>/<dd>/<hh>/<name>
+assets/articles/has-anyone-been-hacked/2026/10/27/09/ladder.png
+archive/captures/bbc/2026/10/21/14/<capture id>.json
+```
 
-Each edition writes a **manifest** into git, which is small: each logical path, its object id and its hash. Pages ask
-for the object id through the manifest. The press's `route.js` resolves the id, fetches it from the server, decrypts
-it with the published read key and checks the hash.
+**The indexes**, as pack indexes do for packs. Each vault has an `index/` folder of small files, rewritten as new
+versions; that is the only thing that changes:
+
+- `index/latest.json`: the newest version of every index file, by object id. It is the one entry point.
+- In site-assets: `index/manifest-<edition>.json`, each logical path with its object id and sha256 for one edition. The
+  edition's pages pin it.
+- In the archive:
+  - `index/by-publisher/<slug>.json`: everything we hold from that publisher, every capture by date, with its hash, title,
+    URL and the claims it supports;
+  - `index/by-actor/<slug>.json`: the same for a person or an organisation named in our pages (the ontologist's
+    actors);
+  - `index/by-day/<yyyy-mm-dd>.json`: what was captured that day;
+  - `index/by-claim/<id>.json`: the captures behind each claim.
+
+  The cross-references are the joins between them (publisher to actor to claim to day). Readers never walk the vault:
+  they read one index and fetch only the objects it names.
+- **An agent that adds to a vault** clones it with `--path` (only `index/` and the folder it writes), appends the new
+  files, writes the new index versions, and pushes. It never needs the whole vault.
+
+## The archive: everything we hold, per publisher, per person, per day
+
+The archive is the Wayback-Machine view the editor asks for. It has a page per publisher, per actor and per day, at
+refs `/archive/<slug>/` beside the actors pages. Each page reads its index from the archive vault and lists every
+capture: its date, title, hash, the claims it supports, our grade, and its quotes, with a link to the original.
+
+**What the archive republishes is the editor's decision.** Many captures are of news pages under copyright: the BBC,
+the Guardian, paywalled press, a page that forbids AI training. The source watch already records access ("paywalled",
+"rights notice"). Proposed: the public archive holds each capture's record (metadata, hash, the exact quotes we use,
+our grades and the link), and the full copy only where the publisher's terms allow it. The full copies stay in the
+working vaults, as now. GRC and security review this before phase 3.
+
+## The pages: thin, and loaded dynamically
+
+- **The HTML and the words stay plain pages,** served by GitHub Pages, so search engines and readers without JavaScript
+  can read them. They are much smaller: every image, deck and data file is a reference by object id.
+- **The press's `route.js`** resolves each reference through the edition's manifest. It fetches the object from the
+  vault server, decrypts it in the browser with the published read key, checks its sha256, and caches it by id
+  (immutable). A failure shows the file's name and hash, never a broken page.
+- **GitHub Pages then carries only pages,** and deploys get smaller. Stop committing each built edition to git, and
+  deploy from the CI's build. The sites' history then grows only with their sources.
 
 ## Roles
 
 | Member | Role |
 | --- | --- |
-| **dev** | **leads**: the measurement, the pages-as-artifacts change, the vault, the manifest and `route.js` |
-| security | reviews each phase: the published read key, the new host in the CSP, the workflows; signs off before the cutover |
-| story-site | the loading behaviour of figures and decks (placeholders, failures) |
-| observability | measures load times before and after, from the telemetry lane |
-| the CLI team (through the editor) | asked whether the browser can read pack vaults, and when single-object reads by id ship |
+| **dev** | **leads**: the measurement; the three vaults (made in its own session, keys sealed to the root, ids in its register); the press's build writing site-assets and its manifest; `route.js` reading by id; the deploys without committed editions; the index format and the tool every writer uses to append |
+| security | reviews each phase: the published read keys, the vault server in the pages' Content-Security-Policy, the workflows, the indexes' integrity (hashes checked in the browser) |
+| grc | reviews what the public archive may republish (phase 3) |
+| curator, researcher | write the archive from phase 3, in their wakes, with dev's tool (`--path`, append, re-index) |
+| ontologist | the actors' slugs the archive's by-actor index uses |
+| story-site | the archive pages' design, and how a page shows a file still loading or failed |
+| observability | load times and deploy sizes before and after |
+| the CLI team (through the editor) | asked when the browser can read pack vaults and single objects by id. When it can, the three vaults can become pack vaults too |
 | the editor | passes each checkpoint |
 
 ## Phases and checkpoints
 
 | Phase | What | Checkpoint |
 | --- | --- | --- |
-| 0. Measure | per repository, which paths make the history grow (a week's numbers), and GitHub's limits as they apply (repository size, Pages site size, deploys per hour) | **A**: the editor agrees the plan's order |
-| 1. Pages as artifacts | one site first (refs, the heaviest), published from its CI's build without committing the HTML; then the others | **B**: refs served from the artifact for a day with no break; the history stops growing with each edition |
-| 2. The site vault | a normal vault, its read key published, the layout above, the manifest, `route.js` reading by id; pilot with the press's article figures and decks | **C**: security's review; the pilot pages load as fast as before (observability) |
-| 3. Move what fits | each data version's files and every image, section by section; git keeps the manifests | **D**: the editor closes the project |
+| 0. Measure and design | each site's deploy size and frequency, history growth by path; the index format written down (a dev brief) | **A**: the editor agrees the design (the three vaults, the exception to pack mode, the order) |
+| 1. Assets out of git | the site-assets vault; the press's build writes it and the manifest; `route.js` reads by id; pilot with the articles' figures and decks; then every image | **B**: security's review; the pilot pages load as fast as before |
+| 2. Thin deploys | deploy from the CI's build without committing editions; site-data vault for data versions | **C**: a day with no break; deploys a fraction of today's size; history flat |
+| 3. The archive | the archive vault, its indexes, the curator's and researcher's appends, `/archive/<slug>/` for the ten of PROJECT-001 first (the BBC first) | **D**: GRC's and security's review; the editor sees everything we hold from the BBC on one page |
+| 4. Every publisher, every actor | the archive for all publishers and actors; the by-day and by-claim views | **E**: the editor closes the project |
 
 ## Definition of done
 
-- No generated page is committed to any site's git. Every site is deployed from its CI's build.
-- Images, figures, decks and data files are served from the site vault by object id, each checked against its hash.
-- Each repository's history grows only with its sources.
-- Security has signed off; load times are no worse.
+- Every image, figure, deck and data file is served from a vault by object id, checked against its hash, and no
+  longer in any site's git.
+- No built edition is committed to git; deploys carry only pages.
+- `/archive/<slug>/` shows everything the newsroom holds from each publisher and each actor, newest first, with each
+  capture's record.
+- Every vault and index is append-only, and every writer appends with one tool and `--path`.
+- Security and GRC have signed off; load times are no worse.
 
 ## Next step
 
-Phase 0: dev measures. Its daily wake checks the editions; this project runs in the projects desk or in dev's own
-session once the editor starts it.
+dev, phase 0. Measure, then write the index format as a brief for checkpoint A. It runs in dev's own session when the
+editor starts it there, or in the projects desk.
 
 ## What waits for the editor
 
-Who leads (proposed: dev). The exception to the pack-only rule for this one vault. Phase 1 before phase 2, as above.
+The design at checkpoint A: the three vaults, the exception to pack mode for them, and the order. What the public
+archive republishes (phase 3). dev's daily wake bound to its own session (`conductor-0010`), so the work does not
+depend on a by-hand start.
