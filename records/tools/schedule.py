@@ -236,8 +236,11 @@ def cmd_banner(a):
                 f'{s0.strftime("%H:%M")} -> {now.strftime("%H:%M")} UTC  ({int((now - s0).total_seconds() // 60)} min)'
                 + (f'   released {a.release}' if a.release else '')
                 + (f'   problems {a.problems}' if a.problems else '')]
+        import textwrap
         for i, f in enumerate([x for x in (a.for_you or '').split('|') if x.strip()], 1):
-            rows.append((f'FOR YOU  {i}. ' if i == 1 else f'         {i}. ') + f.strip())
+            lines = textwrap.wrap(f.strip(), W - 12) or ['']   # a long item wraps under itself, never cut
+            rows.append((f'FOR YOU  {i}. ' if i == 1 else f'         {i}. ') + lines[0])
+            rows += ['            ' + l for l in lines[1:]]
         if a.next:
             rows.append(f'NEXT     {a.next}')
         print('```\n' + _box(rows, '▛' + '▀' * (W + 2) + '▜', '▌', '▙' + '▄' * (W + 2) + '▟') + '\n```')
