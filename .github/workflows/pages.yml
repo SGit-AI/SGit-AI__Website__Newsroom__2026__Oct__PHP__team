@@ -1,15 +1,22 @@
-# Deploy this repository to GitHub Pages from dev: run its gate, then publish the repository as served, with the
-# indexes the team's pages read when they load (tools/index.py: records/index/*.json, written here, never committed).
-# A record an agent releases is on its page at this deploy, with no build anywhere else. Pages source must be "GitHub
-# Actions". A change to this workflow goes to security@php.newsroom's review and the editor's go (CLAUDE.md).
+# Deploy the team site to GitHub Pages from dev. CI owns the version (https://sharness.ai/articles/ci-owns-the-version.html,
+# the editor's reference, 27 October 2026; the scheme of OSBot-Utils and SGit-AI__CLI):
+#   gate     runs the repository's gate on the pushed commit, read-only;
+#   release  writes VERSION (the newest tag v<a>.<b>.<c> plus one on the last number), commits it as GitHub Actions with
+#            the pushed subject after the number, tags that commit, pushes the branch, then the tag; runs no repository
+#            code. A pushed commit that changed VERSION fails the guard: VERSION is CI's alone. A run whose commit is
+#            no longer dev's head stands down: the run for the newer head releases it (a run releases only what it gated).
+#            Two releases cannot take one number: one release runs at a time (the concurrency group), and a refused push
+#            deletes its tag and tries again, three times;
+#   package  the served tree, from the release commit (the release commit's tree, and the records' indexes (tools/index.py: records/index/*.json, never committed)), read-only;
+#   deploy   publishes only what package built, from the commit release made.
+# The release push uses this run's GITHUB_TOKEN, which starts no new run, so a release is never numbered twice; that is
+# why package and deploy run here, in the same run. Installed by the press; a change goes to security@php.newsroom's
+# review and the editor's go.
 name: Deploy to GitHub Pages
 on:
   push:
     branches: [dev]
   workflow_dispatch:
-# The gate and the package run repository code, so they run with read-only permissions; only the deploy job, which
-# runs no repository code, can write to Pages or mint an OIDC token. Actions are pinned to commit SHAs (the tag is in
-# the comment).
 permissions:
   contents: read
 concurrency:
@@ -24,21 +31,84 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
         with:
           persist-credentials: false
-          fetch-depth: 0          # the history: a brief is published when the commit that added it was made
+          fetch-depth: 0
       - name: Run the gate
         run: python3 tools/gate.py && python3 tools/pages_gate.py
-      - name: The served tree, with the records' indexes
+  release:
+    needs: gate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      version: ${{ steps.r.outputs.version }}
+      sha: ${{ steps.r.outputs.sha }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          fetch-depth: 0
+      - id: r
+        name: The version, written by CI
+        env:
+          BEFORE: ${{ github.event.before }}
         run: |
           set -euo pipefail
-          mkdir _site
-          git archive HEAD | tar -x -C _site
-          rm -rf _site/.github
-          python3 tools/index.py --into _site --commit "$GITHUB_SHA"
+          git config user.name 'GitHub Actions'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch -q --tags --force origin
+          # the guard: VERSION is written by CI only
+          if [ -n "${BEFORE:-}" ] && [ "${BEFORE}" != "0000000000000000000000000000000000000000" ] && git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            if git log --format=%an "${BEFORE}..${GITHUB_SHA}" -- VERSION | grep -qv '^GitHub Actions$'; then
+              echo "::error::a pushed commit changed VERSION; it is written by CI only (release.sh never touches it)"; exit 1
+            fi
+          fi
+          release() { echo "version=$1" >> "$GITHUB_OUTPUT"; echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"; echo "$2 v$1"; }
+          for attempt in 1 2 3; do
+            git fetch -q origin "+refs/heads/dev:refs/remotes/origin/dev"
+            git reset -q --hard "${GITHUB_SHA}"
+            have="$(git tag --points-at HEAD -l 'v[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -1)"
+            if [ -n "$have" ]; then release "${have#v}" "already"; exit 0; fi     # a release commit, run again by hand
+            if [ "$(git rev-parse origin/dev)" != "${GITHUB_SHA}" ]; then
+              echo "dev has moved past this run's commit: the run for the newer push gates and releases it"; exit 0
+            fi
+            last="$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -1)"; last="${last#v}"
+            file="$(cat VERSION 2>/dev/null || echo 0.1.0)"          # the version before CI owned it, until a tag passes it
+            base="$(printf '%s\n%s\n' "${last:-0.0.0}" "$file" | sort -V | tail -1)"
+            IFS=. read -r MA MI PA <<< "$base"
+            new="$MA.$MI.$((PA+1))"                  # on dev, the last number plus one
+            printf '%s\n' "$new" > VERSION
+            git add VERSION
+            git commit -q -m "v$new: $(git log -1 --format=%s "${GITHUB_SHA}")"
+            git tag "v$new"
+            if git push -q origin "HEAD:dev"; then git push -q origin "refs/tags/v$new"; release "$new" "released"; exit 0; fi
+            git tag -d "v$new" >/dev/null; echo "dev moved while releasing ($attempt of 3)"; sleep 3
+          done
+          echo "::error::dev kept moving; nothing released"; exit 1
+  package:
+    needs: release
+    if: needs.release.outputs.sha != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          ref: ${{ needs.release.outputs.sha }}
+          persist-credentials: false
+          fetch-depth: 0
+      - name: The served tree
+        env:
+          VERSION_TAG: v${{ needs.release.outputs.version }}
+          RELEASE_SHA: ${{ needs.release.outputs.sha }}
+        run: |
+          set -euo pipefail
+          git fetch -q --tags --force origin
+          mkdir _site && git archive HEAD | tar -x -C _site && rm -rf _site/.github && python3 tools/index.py --into _site --commit "$RELEASE_SHA"
+          printf '{"repository": "%s", "version": "%s", "commit": "%s"}\n' "$GITHUB_REPOSITORY" "${VERSION_TAG#v}" "$RELEASE_SHA" > _site/release.json
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa  # v3.0.1
         with:
           path: _site
   deploy:
-    needs: gate
+    needs: package
     runs-on: ubuntu-latest
     permissions:
       pages: write
