@@ -2,7 +2,7 @@
 
 A content page under the line: the response step by step, with a line written for each role.
 
-> Prototype F for review, built from the data of release v0.22.41. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
+> Prototype F for review, built from the data of release v0.22.42. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
 
 The playbook 
 ## The response, step by step
@@ -50,4 +50,4 @@ Two US agencies say take it offline if it cannot be updated.
  session.upload_progress.enabled=0 in php.ini, Blocks the confirmed session paths only. ini_set() and .user.ini are too late.
 
 ---
-site v0.22.41 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/playbook/index.html
+site v0.22.42 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/playbook/index.html

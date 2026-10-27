@@ -10,7 +10,7 @@ Published 2026-10-27 02:43 UTC · `2026-10-27__brief__the-story-as-days.md` · [
 
 ## Brief: the story as days
 
-Status: a mock-up and a proposal, for the editor's decisions at the end. Not built. Author: story-site, 27 October 2026,
+Status: decided by the editor on 27 October (below); to be built. Not built yet. Author: story-site, 27 October 2026,
 
 at the editor's ask in its session: "move to the idea of having daily pages ... you can go back and forward ... see what
 
@@ -27,6 +27,22 @@ role, the last 24 hours; arrows or the strip to move). Its content is written fr
 `state.json` versions, `sources.json` by published date, the timeline, the compromise and impact ledgers, BREAKING-001);
 
 the clock is fixed at 09:10 UTC on Day 7. Screenshots: `records/agents/story-site/debriefs/img/2026-10-27__days__*.png`.
+
+### Decisions (the editor, 27 October 2026)
+
+1. **The front page is the last 24 hours**, with the strip of days at its top, as in the mock-up.
+
+2. **Dates in the address**, the day number on the page: `/on/2026-10-26/` and `/on/2026-10-26/as/security/`.
+
+3. **The desk closes the day**, not the journalist: desk@php.newsroom runs after the journalist and the correspondent.
+
+ A day's items end at midnight UTC; the desk's first wake after it (10:40 London, which is 10:40 UTC since the clocks
+
+ went back on 25 October) writes the day's headline for each role and closes the day. Until then the day page says
+
+ "closing" and shows its items as they stand.
+
+4. **When the story ends is the editor's call.** The site does not decide it.
 
 ### Why days
 
@@ -98,7 +114,9 @@ for a Journalist; Day 1 for an Executive; a phone; the Night theme.
 
 5. **When the story fades**, the front page follows: after three days with nothing for a role, the reader's front page
 
- leads with "Where it stands" and the last day that mattered to them, not with an empty 24 hours.
+ leads with "Where it stands" and the last day that mattered to them, not with an empty 24 hours. When the story ends
+
+ is the editor's call (decision 4).
 
 6. **Addresses:** `/on/2026-10-26/` for a day and `/on/2026-10-26/as/security/` for a day read as a role, with the
 
@@ -112,9 +130,9 @@ for a Journalist; Day 1 for an Executive; a phone; the Night theme.
 
  roles, sources by slug) and the headline per role. The measures are data's `state.json`, read as of the day's end.
 
-- **Who writes it:** the daily agents. The desk's run adds items as it works; the journalist writes the headlines and
+- **Who writes it:** the daily agents add items as they verify them (the researcher, the journalist, the
 
- closes the day after midnight UTC (rule 2). An item is written once, by the agent that verified it, and is never
+ correspondent); the desk writes the headlines and closes the day at its first wake after midnight UTC (decision 3). An item is written once, by the agent that verified it, and is never
 
  copied: the day file names the source slug, and data's `sources.json` holds the source.
 
@@ -124,24 +142,10 @@ for a Journalist; Day 1 for an Executive; a phone; the Night theme.
 
 - **The line** reads the same files: its "since you were here" becomes the items since the reader's last visit, by day.
 
-### Open questions for the editor
-
-1. **The front page: the last 24 hours (my recommendation), or the calendar day so far?**
-
-2. **Day numbers or dates in the address?** I recommend dates in the address (`/on/2026-10-26/`) and the day number on
-
- the page ("Day 6"), so an address never changes meaning.
-
-3. **Who closes a day and writes its headlines:** the journalist (my recommendation), or the desk?
-
-4. **When does the story end?** I suggest the site says so itself when every role has had three quiet days, and offers
-
- "Where it stands" as the page to keep.
-
 This brief is the file `admin/content/briefs/2026-10-27__brief__the-story-as-days.md` in the repository, published as written.
 
 ← older: Review: the line and the router, as they are on the live s
 
 
 ---
-site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-story-as-days/index.html
+site v0.22.42 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__the-story-as-days/index.html

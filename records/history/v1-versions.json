@@ -1,6 +1,15 @@
 {
- "current": "0.22.41",
+ "current": "0.22.42",
  "versions": [
+  {
+   "version": "0.22.42",
+   "date": "2026-10-27",
+   "title": "every site's gate is the press's newest: site's checks an article at its writer's push; a run's agent links to its schedule page only when it has a card",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "1dceaa1dfa7f",
+   "reconstructed": false
+  },
   {
    "version": "0.22.41",
    "date": "2026-10-27",

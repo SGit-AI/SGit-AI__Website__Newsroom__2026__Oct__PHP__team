@@ -8,7 +8,7 @@ Every vault the team's agents have made, listed by agent, by ID only, with wheth
 
 # Vaults: who made each one, and who holds which keys
 
-Every vault the agents on this team have made, listed by the agent that made it, and the keys each agent holds. A vault ID is public: it names the vault and opens nothing. A vault key is never published, here or anywhere; it is sealed to the editor's key on pki.sgit.ai before the agent's session ends, so it is never lost with the session. 24 vaults; for 1 of them, the sealing is not recorded yet.
+Every vault the agents on this team have made, listed by the agent that made it, and the keys each agent holds. A vault ID is public: it names the vault and opens nothing. A vault key is never published, here or anywhere; it is sealed to the editor's key on pki.sgit.ai before the agent's session ends, so it is never lost with the session. 25 vaults; for 1 of them, the sealing is not recorded yet.
 
 ### [conductor@php.newsroom](../conductor/index.html) 5 vaults made
 
@@ -31,6 +31,22 @@ Every vault the agents on this team have made, listed by the agent that made it,
 | `weic8imn` | vault key | made it | 2026-10-23 |
 
 Kept by the agent itself.
+
+### breaking@php.newsroom 1 vault made
+
+| Vault ID | What it holds | Created | Key sealed to the root |
+|---|---|---|---|
+| `hewphq85` | The breaking desk's working notes, a pack vault with indexes (sgit-ai 0.26.0): each run's checks and the releases it names. No capture, evidence or key is kept in it | 2026-10-27 | 2026-10-27 |
+
+#### Keys it holds
+
+| Vault ID | Kind of key | From | Since |
+|---|---|---|---|
+| `7r83qic5` | vault key | the vault keeper (DC Vault Registry, sha256:956934e47063ceaa), sealed to this session's key at the editor's go | 2026-10-27 |
+| `nnd3i8iw` | vault key | the vault keeper (DC Vault Registry, sha256:956934e47063ceaa), sealed to this session's key at the editor's go | 2026-10-27 |
+| `hewphq85` | vault key | made it | 2026-10-27 |
+
+Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md). Vault ids and key kinds only, never a key. The session's key pair is sha256:9db81b444079eb0e (encryption sha256:925d95a6be12bdef), a session key made with sgit pki keygen; enrolment at pki.sgit.ai is skipped (the editor's decision, 27 October 2026); the editor vouched for it to the vault keeper in person. It holds only the two keys below; the others it was sent (hsmfer5w, 4klm5qlt) were deleted unused at the editor's word.
 
 ### [claude-newsroom-lead (the evidence vault; curator@php.newsroom promotes into it)](../newsroom-lead/index.html) 1 vault made
 
@@ -222,4 +238,4 @@ What each vault is for, and the published read keys and write-only lanes, are on
 
 
 ---
-site v0.22.41 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.42 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
