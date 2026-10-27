@@ -1,0 +1,16 @@
+{
+ "run": "20261027T0723Z-pulse",
+ "agent": "pulse",
+ "started": "2026-10-27T07:23:50Z",
+ "finished": "2026-10-27T07:39:36Z",
+ "outcome": "ok",
+ "summary": "NEW RUNG: php2shell reached rung 5, a KEV listing. CISA KEV catalog 2026.10.26 (released 2026-10-26T22:24:24Z, 1,758 entries; the previous catalog I captured was 2026.10.23, 1,756) lists CVE-2026-109618 (PHP Memory Corruption Vulnerability) and CVE-2026-109619 (PHP Stale Internal Request-State Vulnerability), vendor PHP Group, product PHP, dateAdded 2026-10-26, dueDate 2026-10-29, forensicTriage Yes, knownRansomwareCampaignUse Unknown (so rung 6 not reached). Capture: pulse vault 9f5knw9r raw/us/registry/cisa-kev/kev-json/20261027T072423Z/text.txt, sha256 65f8ab8c7d95817cf7e57df5c903246dc22daca092d93392931466d7f316410f; first seen by Pulse at that pass, about nine hours after the catalog's release (my 26 Oct 14:52 pass saw 2026.10.23). Both CVEs now hold rungs 1 (2026-10-21), 4 (2026-10-21) and 5 (2026-10-26); rungs 3 and 8 are not reached, and the named-victim leads (CVUT, DMM, GMO, Valtec) stay recorded as not established or retracted. These two are the only KEV additions since 23 October. Pass 20261027T072423Z (07:22 London): 441 checked, 262 changed, whole pass 867 s on sgit-ai 0.26.0 (723 s on 0.25.0 yesterday; the totals include the captures, I have not isolated the push), vault 9f5knw9r head 274fa1166316, in sync with the server. Team dev at 1528a09e962d. Other rungs: no change for any other tracked CVE; no tracked CVE has ransomware use Known. EPSS dated 2026-10-26, unchanged (CVE-2026-109618 0.9998, CVE-2026-109619 1.0). Attention: php2shell en-US news 174 to 176, agency pages 64 to 63; others within a few items. Blocked: 78 GitHub search API calls (session proxy), CCN-CERT, ACSC, ISC and Plex pages. Front-page, agency and offline counts still come from the retired source watch, frozen at 23 October 16:31 UTC. Waiting on the editor: php2shell evidence from the site's curated data; the KEV additions of 23 October (CVE-2026-110447, CVE-2026-114625) as tracked CVEs; CVE-2026-115560 as its own row; publishing updates; the exporter for /pulse/ (press), which still reads the retired vault 4klm5qlt; the vault register rows for 9f5knw9r and 4klm5qlt.",
+ "read": [
+  "20261026T0145Z__conductor__to-pulse__your-card-s-times-differ-from-your-tasks"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "1528a09e962d4a1a6d25de5506315d947e45c2ea"
+}
