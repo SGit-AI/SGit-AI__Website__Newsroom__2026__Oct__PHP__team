@@ -1,0 +1,7 @@
+{
+ "id": "projects-0001",
+ "title": "Capture the BBC's front pages at regular intervals (the home page, News Technology, and the AI pages), so we hold their history over time: the editor's ask, 27 October (PROJECT-001)",
+ "status": "open",
+ "owner": "pulse",
+ "note": "The editor, 27 October, in the projects desk's session: 'we should actually be capturing the BBC homepage at regular intervals … also the tech … and maybe AI parts … that gives us also a history of the page over time'; he asked whether this is the PHP newsroom's or Pulse's. The desk checked Pulse (data files/pulse.json, head c27972b6de6f, generated 24 October 06:09 UTC): it counts front pages as attention (php2shell: front_pages 7; 25 of 26 tracked CVEs: 0) but holds no series of any outlet's front page, and the source watch's public shape names no BBC page. Proposed: Pulse owns it (front pages are its attention measure, across outlets and stories, not only PHP); the newsroom reads it for the BBC case study. Needs a change to Pulse's card and to its scheduled task, which only Pulse can make in its own session, at the editor's go. The desk captures nothing."
+}

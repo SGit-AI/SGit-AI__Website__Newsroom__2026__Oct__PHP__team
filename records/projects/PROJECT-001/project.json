@@ -3,7 +3,7 @@
  "title": "Telling them what we hold about them, and asking them to check it",
  "brief": "records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
  "lead": "sherpa",
- "state": "waiting",
+ "state": "running",
  "opened": "2026-10-27T10:53Z",
  "closed": null,
  "phases": [
@@ -11,7 +11,7 @@
    "phase": "1. Propose",
    "checkpoint": "A: the ten names",
    "passed_by": "editor",
-   "passed": null,
+   "passed": "2026-10-27T12:40Z by the editor, in the projects desk session (feedback/2026-10-27T1240Z__editor__checkpoint-a.md)",
    "started": "2026-10-27T12:18Z",
    "steps": [
     {
@@ -78,7 +78,84 @@
    "phase": "2. Prepare",
    "checkpoint": "B: each page and each draft message",
    "passed_by": "editor",
-   "passed": null
+   "passed": null,
+   "started": "2026-10-27T12:46Z",
+   "waves": [
+    {
+     "wave": 1,
+     "for": "the BBC, and the template every outlet uses",
+     "steps": [
+      {
+       "id": "2a",
+       "member": "story-site (designer)",
+       "does": "the outlet page /outlets/<id>/: information design, the seven views, phone width, no-JS fallback; a working prototype on the BBC's real data; the workflow and pipeline drawn as flows",
+       "needs": [
+        "the editor's BBC briefing",
+        "phase-1 outputs",
+        "data files"
+       ],
+       "produces": "phase-2/design/",
+       "model": "sonnet"
+      },
+      {
+       "id": "2b",
+       "member": "journalist",
+       "does": "re-grade the 12 BBC-linked claims and the BBC points after 26 October; settle what can be settled about the NCSC quote's origin from what we hold; our own no-exploitation mismatch",
+       "needs": [
+        "data claims, factcheck, sources"
+       ],
+       "produces": "phase-2/bbc-regrade.json",
+       "model": "sonnet"
+      },
+      {
+       "id": "2c",
+       "member": "ontologist",
+       "does": "outlets/<id>.json: the derived file every view reads (claims, sources, captures, requests, the echo network from the notes), with the generator that makes it for any outlet; the BBC first",
+       "needs": [
+        "data graph, claims, sources, outreach"
+       ],
+       "produces": "phase-2/outlets/bbc.json, phase-2/outlets/build_outlet.py",
+       "model": "sonnet"
+      }
+     ]
+    },
+    {
+     "wave": 2,
+     "for": "the messages and requests",
+     "steps": [
+      {
+       "id": "2d",
+       "member": "correspondent, Sherpa",
+       "does": "the BBC Stage 1a submission draft, and the PHP security team and PHP Foundation messages, positive in tone",
+       "needs": [
+        "2b",
+        "2c"
+       ]
+      },
+      {
+       "id": "2e",
+       "member": "liaison (the desk, until its session starts)",
+       "does": "the new BBC request rows in data outreach.json, the NCSC point held",
+       "needs": [
+        "2b"
+       ]
+      },
+      {
+       "id": "2f",
+       "member": "desk",
+       "does": "reviews the order and each message",
+       "needs": [
+        "2d"
+       ]
+      }
+     ]
+    },
+    {
+     "wave": 3,
+     "for": "the other eight recipients, on the template",
+     "steps": []
+    }
+   ]
   },
   {
    "phase": "3. Send",
@@ -93,15 +170,36 @@
    "passed": null
   }
  ],
- "next": "Waiting at checkpoint A for the editor. When passed: phase 2 (Prepare) in the desk: ontologist completes the ten actors pages at their source, journalist re-grades after 26 October, correspondent and story-site the recipient pages, Sherpa and desk the messages; the BBC's clean hands (fresh capture, complaints page) first.",
+ "next": "Phase 2, wave 1 in the desk: 2a design (story-site), 2b BBC re-grade (journalist), 2c outlets/bbc.json (ontologist), side by side.",
  "runs_in": "the projects desk (projects@php.newsroom), Opus coordinating, Sonnet steps",
  "checkpoint": {
-  "at": "A: the ten names",
-  "since": "2026-10-27T12:30Z",
-  "waits_for": "the editor: approve, drop or change the ten (phase-1/the-ten.md) and answer its five questions, on the project's page or in the projects desk's session",
+  "at": "B: each page and each draft message",
+  "waits_for": "phase 2 to finish; then the editor",
   "passed": null
  },
  "feedback": [
   "feedback/2026-10-27T1228Z__editor__bbc-corrections-briefing.md (pointer; the briefing is in PROJECT-002's feedback)"
+ ],
+ "decisions_at_a": [
+  "BBC first, as a full case study",
+  "Trend Micro out; American Banker stays",
+  "PHP security team and PHP Foundation each get a message (eleven recipients)",
+  "every message positive: what we do, great work, what we hold, suggestions and added value",
+  "the agent at riskmandate.ai sends, at the editor's go; the desk sends nothing",
+  "one outlet page /outlets/<id>/ shared by every project; PROJECT-001 builds the workflow, templates, pipeline, visualisation and design, with the design agent (story-site)",
+  "BBC front pages (home, Technology, AI) captured at regular intervals"
+ ],
+ "recipients": [
+  "bbc",
+  "huntress",
+  "cloudflare",
+  "fastly",
+  "imperva",
+  "weirdgloop",
+  "php-group (PHP security team)",
+  "php-foundation",
+  "ncsc-nl",
+  "cisa",
+  "americanbanker"
  ]
 }
