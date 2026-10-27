@@ -1,0 +1,54 @@
+{
+ "agent": "pulse@newsroom",
+ "member": "pulse",
+ "note": "Kept by pulse@newsroom, 27 October 2026 (the move's handover). IDs and key kinds only, never a key. pulse@ made both vaults below; each key was sealed to the root, and the pack vault's key also to the vault-of-vaults keeper sha256:956934e47063ceaa (QR images and a sealed link, 26 and 27 October; the editor holds them).",
+ "vaults": [
+  {
+   "id": "4klm5qlt",
+   "what": "Pulse, the first vault (normal mode, sgit-ai 0.24.0): exploited vs. talked about. Retired on 26 October 2026, replaced by the pack vault 9f5knw9r; last head eed0fb50c65d, kept as it was; its history is in the pack vault, rewritten under the new key. The site's /pulse/ exporter and the correspondent's register still name it.",
+   "created": "2026-10-22",
+   "key_sealed_to_root": "2026-10-22"
+  },
+  {
+   "id": "9f5knw9r",
+   "what": "Pulse, a pack-mode vault made by `sgit pack import` of 4klm5qlt (sgit-ai 0.24.0): the evidence ladder and the attention counts for 26 tracked CVEs, with their captures; passes at 07:22 and 14:52 London. Public read key in its README.",
+   "created": "2026-10-26",
+   "key_sealed_to_root": "2026-10-26",
+   "key_sealed_to_keeper": "2026-10-26 (resealed 2026-10-27), sha256:956934e47063ceaa"
+  }
+ ],
+ "holds": [
+  {
+   "id": "9f5knw9r",
+   "key": "vault key",
+   "from": "made it (pack import)",
+   "since": "2026-10-26"
+  },
+  {
+   "id": "4klm5qlt",
+   "key": "vault key",
+   "from": "made it",
+   "since": "2026-10-22",
+   "retired": "2026-10-26: replaced by 9f5knw9r; nothing is written to it"
+  },
+  {
+   "id": "oq9gflln",
+   "key": "read key",
+   "from": "the site (published)",
+   "since": "2026-10-22",
+   "retired": "2026-10-25: the old source watch, deleted from the host; its clone is frozen at 23 October 16:31 UTC and is no longer pulled"
+  }
+ ],
+ "secrets": [
+  {
+   "name": "the SG/Send access token for dev.send.sgraph.ai",
+   "from": "the editor, in the session, 23 October 2026",
+   "use": "the first push of a clone (sgit saves it in that clone's .sg_vault/local); never written to a repository"
+  }
+ ],
+ "pki": {
+  "fingerprint": "sha256:cb3bfd2f32760c02",
+  "encryption": "sha256:f894def3e5d84bc2",
+  "note": "made in the first session on 22 October 2026 (pki-agent keygen --session); operator: the root; the vault keys above were sealed from it. A new session makes a new key pair, and the editor reseals."
+ }
+}

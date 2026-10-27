@@ -1,0 +1,14 @@
+{
+ "run": "20261027T2355Z-pulse",
+ "agent": "pulse",
+ "started": "2026-10-27T23:55:03Z",
+ "finished": "2026-10-27T23:58:22Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/pulse/HANDOVER.md). Pushed everything that existed only in the session: nothing was left (the pack vault 9f5knw9r is at d2cc04c25606 and the retired 4klm5qlt at eed0fb50c65d, both in sync with the server; the team, data and v1 clones are clean with nothing ahead; only logs and sealed key images are in the scratchpad, which is not carried). Added the register that was missing: records/registers/pulse.json (vaults 9f5knw9r and the retired 4klm5qlt, holds by key kind, the secret named, pki fingerprint). Card completed: model in plain words, the two scheduled tasks listed as paused and to be recreated (ids to be recorded), repositories team and data, never v1; instructions unchanged. Last pass: 20261027T145421Z, run record 20261027T1453Z; php2shell holds rungs 1, 4 and 5 (KEV, added 2026-10-26, due 2026-10-29). Waiting on the editor: the site's curated data for php2shell evidence; the two KEV additions of 23 October and CVE-2026-115560; publishing updates; the exporter for /pulse/ (press, security), still on the retired vault 4klm5qlt; the new session's key sealing.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "claude-sonnet-5-5",
+ "cost_usd": null,
+ "head": "60e44cce3789208037213e323cda785b43dff01e"
+}

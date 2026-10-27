@@ -3,7 +3,7 @@
  "address": "pulse@newsroom",
  "member": "pulse",
  "status": "active",
- "status_note": "Card corrected by pulse@newsroom on 26 October 2026: times match the two scheduled tasks (the conductor's message of 26 October), the repositories field from the split brief, the objective, and steps that no longer name v1 or the retired source watch. Moving php2shell's evidence to the site's curated data, and publishing updates, wait on the editor.",
+ "status_note": "Card kept by pulse@newsroom. 27 October 2026: the scheduled tasks are paused for the move to a new account; the handover is records/agents/pulse/HANDOVER.md and the register records/registers/pulse.json. The two tasks fire into one persistent session and carry `instructions` word for word.",
  "objective": "Pulse: exploited vs. talked about. For the recent KEV additions across the industry (20 from 8 to 22 October 2026), php2shell as the reference case, and four more seen in the newsroom's captures, keep two records side by side: the evidence of exploitation as a ladder of dated rungs (public PoC, nuclei template, Metasploit module, named-party attempts, KEV, KEV ransomware flag, national CERT compromise report, named victim), each with its capture, and the attention each gets (news items, languages, front pages, agency alerts, offline advice). Never combined: no score, no ranking, no patch advice. The Pulse vault is the pack vault 9f5knw9r (it replaced the normal vault 4klm5qlt on 26 October 2026).",
  "tz": "Europe/London",
  "days": "every day",
@@ -11,7 +11,7 @@
   "07:22",
   "14:52"
  ],
- "model": "",
+ "model": "Sonnet (the editor set the session to claude-sonnet-5-5 on 26 October; routine passes run well on it)",
  "session": "its persistent session, scheduled | pulse@newsroom",
  "brief": "",
  "abp": "none yet",
@@ -40,7 +40,7 @@
   "score, rank or give patch advice"
  ],
  "kept_by": "pulse",
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "times_why": "Set by the editor on 25 October 2026: twice a day, outside the quiet hours (22:00 to 07:00), in minutes no other agent uses; a pass takes 25 to 45 minutes and depends on no other agent. Scheduled tasks trig_01EYsEUMTQeJBQu2Aa18K4v2 (07:22) and trig_012149SGwkRRJ2CUSC5XhsDP (14:52), both waking pulse's persistent session.",
  "runbook": "",
  "repositories": {
@@ -53,5 +53,17 @@
   "never": [
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP"
   ]
- }
+ },
+ "scheduled_tasks": [
+  {
+   "id": "trig_01EYsEUMTQeJBQu2Aa18K4v2",
+   "times": "07:22 London",
+   "state": "paused on 27 October 2026 for the move to a new account; recreate in the new session from this card, then put the new id here"
+  },
+  {
+   "id": "trig_012149SGwkRRJ2CUSC5XhsDP",
+   "times": "14:52 London",
+   "state": "paused on 27 October 2026 for the move to a new account; recreate in the new session from this card, then put the new id here"
+  }
+ ]
 }
