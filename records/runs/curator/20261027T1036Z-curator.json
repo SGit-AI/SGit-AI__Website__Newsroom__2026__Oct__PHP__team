@@ -1,0 +1,16 @@
+{
+ "run": "20261027T1036Z-curator",
+ "agent": "curator",
+ "started": "2026-10-27T10:36:27Z",
+ "finished": "2026-10-27T10:47:23Z",
+ "outcome": "ok",
+ "summary": "10:30 wake (dev 513a963f2c12): sgit-ai 0.26.0 in the venv. Pulled watch-pack in 3m48s (10:37:32 to 10:41:47 UTC; the earlier pulls took 25 to 39 minutes) and evidence-pack in 8.5s (up to date). Read 18 captures in full and promoted batch 20: 18 sources, 22 claims, 1 timeline row (SC Media on the Unit 42 retraction and Delft telescope figures, Information Security on the CISA KEV listing and Censys estimate, EADaily with two claims the outlet itself says are unconfirmed marked unverified, An-Nahar, Security NEXT on PAN-OS, UPI on KISA, Bloter on AhnLab, and others). No page addressed an AI; two disclose AI-assisted writing and are noted as such. Evidence pack nnd3i8iw now head 55b47c4d6af1: 598 sources, 326 claims; commit 2.4s, push 26.6s at 10:45 UTC. Compaction check: 3 commit packs, 1 snapshot, not needed. Data released from that head (sources, vault, claims, timeline; CI numbers it); the exporter was run with sgit 0.26 first on PATH. Pending queue after this batch: about 7 rows.",
+ "read": [
+  "records/schedule/curator.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "161d8c97d295610a4cd7bf91688f779a5585182a"
+}
