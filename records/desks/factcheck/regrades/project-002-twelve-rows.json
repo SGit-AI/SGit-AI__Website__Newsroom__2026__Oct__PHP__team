@@ -1,0 +1,176 @@
+{
+ "id": "project-002-twelve-rows",
+ "project": "PROJECT-002",
+ "step": 2,
+ "run": "Run-13",
+ "as_of": "2026-10-27T13:00Z",
+ "vault": "nnd3i8iw at 6fe04cc074f9 (the desk's clone; pulled 12:56 UTC)",
+ "brief": "records/briefs/2026-10-24__brief__asking-for-corrections.md",
+ "what_changed": "CISA added CVE-2026-109618 and CVE-2026-109619 to KEV on 26 October (catalog 2026.10.26; Evidence-19). Rows 2, 3 and 12 rested on \"no exploitation observed / KEV lists neither\".",
+ "summary": {
+  "stands": [
+   1,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "changed": [
+   3
+  ],
+  "withdrawn": [
+   2,
+   12
+  ]
+ },
+ "rows": [
+  {
+   "row": 1,
+   "publisher": "Wiz (blog and X post)",
+   "their_words": "70% of the Internet",
+   "source": "wiz-blog-php2shell",
+   "capture": "20261023T160435Z",
+   "file": "sources/wiz-blog-php2shell/captures/20261023T160435Z/text.txt",
+   "sha256": "4c6c2b8a41be8de0fd90fcc8232995625833e085788e2f99ce8ef9789b09635d",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "Unchanged in both captures. The KEV listing does not bear on it: the point is the denominator (K-001), and Wiz's own body says \"powers 70% of all websites\"."
+  },
+  {
+   "row": 2,
+   "publisher": "WIRED",
+   "their_words": "Hackers Exploited the PHP Vulnerabilities Days Before They Were Patched",
+   "source": "wired-exploited-days-before-patched",
+   "capture": "20261023T012042Z",
+   "file": "sources/wired-exploited-days-before-patched/captures/20261023T012042Z/text.txt",
+   "sha256": "d43b99af65d563ddd047c20c80d5318813eda28abd497763f91dd0a6ab8427cd",
+   "quote_found": true,
+   "verdict_after_kev": "withdrawn",
+   "reason": "Since 26 October CISA lists both CVEs as exploited (Evidence-19), so \"Exploited\" is now the authoritative position and asking WIRED for \"Tried to Exploit\" would ask it to weaken a headline CISA supports. \"Days before they were patched\" rests on AWS's honeypot attempt of 17 October, four days before the fixes, which WIRED states as an attempt in its body. One residue for the liaison, not for WIRED: WIRED quotes AWS as saying the flaws are being \"broadly exploited\"; AWS has since reworded that to \"broad exploitation attempts\" (Evidence-12), so any request on that wording goes to AWS."
+  },
+  {
+   "row": 3,
+   "publisher": "BankInfoSecurity",
+   "their_words": "Attackers Exploit Leaked Zero-Day Flaws",
+   "source": "bankinfosecurity-attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a",
+   "capture": "20261023T160435Z",
+   "file": "sources/bankinfosecurity-attackers-exploit-leaked-zero-day-flaws-in-widely-used-php-a/captures/20261023T160435Z/text.txt",
+   "sha256": "83102b4d722e0f3676a26b94f152f680c4c325f5fc5caa8949ab9f9cf7ca1032",
+   "quote_found": true,
+   "verdict_after_kev": "changed",
+   "reason": "The ground for \"Attempt to Exploit\" is gone: CISA lists both CVEs as exploited since 26 October, and AWS logged an attempt four days before the fixes, which makes \"zero-day\" defensible. What remains is \"leaked\" and its body line \"details of the bugs leaked in advance of patches\": the PHP Foundation says no technical details leaked, and a leaked exploit is the open K-009. New proposed correction, if any: ask only about \"details ... leaked\" against the Foundation's words, and hold it until K-009 is settled."
+  },
+  {
+   "row": 4,
+   "publisher": "Help Net Security",
+   "their_words": "confirmed exploitation",
+   "source": "helpnetsecurity-2026-10-22-php2shell-scanner-tool",
+   "capture": "20261023T160435Z",
+   "file": "sources/helpnetsecurity-2026-10-22-php2shell-scanner-tool/captures/20261023T160435Z/text.txt",
+   "sha256": "5af2786ae142ccb6bf69b7d7f2280c3cd37897cfd64aa72586b09b43c1532368",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "The KEV listing says the flaws are exploited; it names no product, victim or actor, so it does not confirm exploitation \"on\" WordPress, Drupal, Joomla, phpMyAdmin, Nextcloud and Magento. Those remain researchers' demonstrations. The row stands as written."
+  },
+  {
+   "row": 5,
+   "publisher": "The Hacker News",
+   "their_words": "leaked ahead of time",
+   "source": "thehackernews-php2shell-4days",
+   "capture": "20261023T160435Z",
+   "file": "sources/thehackernews-php2shell-4days/captures/20261023T160435Z/text.txt",
+   "sha256": "0c31fcebda310760b15f83418566d5bd2e63ebaffa0b93669443fb6f970efe31",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "Unchanged in both captures. K-009 (was a proof-of-concept exploit leaked?) is still open: the PHP Foundation says no technical details leaked, the release manager's timeline says the CVE IDs were discussed online with \"some incorrect details\". The KEV listing does not bear on it. Held until K-009 is settled."
+  },
+  {
+   "row": 6,
+   "publisher": "CNN Business",
+   "their_words": "70% of the internet",
+   "source": "cnn-php2shell-ai",
+   "capture": "20261023T160435Z",
+   "file": "sources/cnn-php2shell-ai/captures/20261023T160435Z/text.txt",
+   "sha256": "4933a8479ff293ef0e78e573b1da82e55f0a0c9d684b06ddcfdffb8e5f3aca79",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "The headline still says \"affecting 70% of the internet\". CNN has reworded its body twice (Evidence-13) and the newest capture no longer carries \"70% of all websites\", so the row's evidence line must be re-quoted from this capture before any request. K-001 stands."
+  },
+  {
+   "row": 7,
+   "publisher": "BBC live page",
+   "their_words": "roughly 70%",
+   "source": "bbc-live-ckgel5xp2xv9t",
+   "capture": "20261022T080559Z",
+   "file": "sources/bbc-live-ckgel5xp2xv9t/captures/20261022T080559Z/text.txt",
+   "sha256": "c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "The BBC attributes \"roughly 70%\" to Wiz and adds \"We haven't been able to verify that figure\". \"Roughly\" is in neither Wiz capture (the blog and the X post, checked in this run), so the wording is the BBC's; the BBC's own caveat stays. The KEV listing does not bear on it."
+  },
+  {
+   "row": 8,
+   "publisher": "Fortune",
+   "their_words": "could take down 70% of the internet",
+   "source": "fortune-ai-tools-php-vulnerability",
+   "capture": "20261023T012042Z",
+   "file": "sources/fortune-ai-tools-php-vulnerability/captures/20261023T012042Z/text.txt",
+   "sha256": "cdcba1b8c212b9e8d3928e5d5ea0a7e09ea4c719e7bef44139d3f9f2f0612808",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "Headline unchanged. K-001 stands; nothing measures what could be taken down."
+  },
+  {
+   "row": 9,
+   "publisher": "CRN",
+   "their_words": "70 percent of the Internet",
+   "source": "crn-news-security-2026-5-things-to-know-about-critical-php-vulne",
+   "capture": "20261023T160435Z",
+   "file": "sources/crn-news-security-2026-5-things-to-know-about-critical-php-vulne/captures/20261023T160435Z/text.txt",
+   "sha256": "683aa11bc32c6b1012132894fc892d5321c56d9bb0fa24fef1ea74435e105a2b",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "CRN quotes Wiz (\"With 70 percent of the Internet affected\"), so the wording is accurate to its source; the correction goes to Wiz (row 1), and CRN is asked after Wiz has answered."
+  },
+  {
+   "row": 10,
+   "publisher": "Le Temps",
+   "their_words": "des millions de sites",
+   "source": "letemps-php-sites-debranches",
+   "capture": "20261022T081413Z",
+   "file": "sources/letemps-php-sites-debranches/captures/20261022T081413Z/text.txt",
+   "sha256": "4330f33c3b6763a95df44d21cfc602ec5f9bfd9df6141e863545c6a9a276cf4e",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "Headline unchanged (\"des millions de sites sont débranchés en urgence\"). The community tracker counted about 50 sites dark and back; K-006 stands. The KEV listing does not bear on it."
+  },
+  {
+   "row": 11,
+   "publisher": "TechTarget Japan",
+   "their_words": "2200万台以上",
+   "source": "techtarget-itmedia-tt-article-2610-23-2000002526",
+   "capture": "20261023T160435Z",
+   "file": "sources/techtarget-itmedia-tt-article-2610-23-2000002526/captures/20261023T160435Z/text.txt",
+   "sha256": "14c421632d9592d8a6b0b2bef1f45af7363175b91bd978cc453d73de9b51dbdb",
+   "quote_found": true,
+   "verdict_after_kev": "stands",
+   "reason": "The article says more than 22 million servers were put at risk (2,260万 in the title). The figure is Unit 42's, its method unpublished; Censys counts 1.57 million hosts. The KEV listing does not bear on it."
+  },
+  {
+   "row": 12,
+   "publisher": "Security.NL",
+   "their_words": "Misbruik",
+   "source": "securitynl-misbruik-gemeld",
+   "capture": "20261022T191411Z",
+   "file": "sources/securitynl-misbruik-gemeld/captures/20261022T191411Z/text.txt",
+   "sha256": "95d1565c5959e61fa188ea5af37ef0518b3c171d442554cbee86484dd03ddd09",
+   "quote_found": true,
+   "verdict_after_kev": "withdrawn",
+   "reason": "Its headline \"Misbruik van PHP2Shell-lek gemeld\" (abuse reported) was criticised because its own body says it is unclear whether attacks succeeded. Since 26 October CISA lists both CVEs as exploited, so \"abuse reported\" is accurate and its body already says \"aanvalspogingen\" (attempts). Nothing to correct."
+  }
+ ]
+}

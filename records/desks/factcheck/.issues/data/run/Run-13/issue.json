@@ -1,0 +1,15 @@
+{
+  "node_id": "e00f9775",
+  "node_type": "run",
+  "node_index": 13,
+  "label": "Run-13",
+  "title": "Run 13: 12:52 London wake, 27 October",
+  "description": "PROJECT-002 step 2: the twelve rows re-graded after the KEV listing (9 stand, 1 changed, 2 withdrawn); no-confirmed-compromise as of 09:43 UTC holds A4",
+  "status": "done",
+  "created_at": 1793106005924,
+  "updated_at": 1793106005924,
+  "created_by": "e3fc0ea7",
+  "tags": [],
+  "links": [],
+  "properties": {}
+}

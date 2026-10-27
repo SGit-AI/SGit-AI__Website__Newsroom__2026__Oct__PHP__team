@@ -1,0 +1,13 @@
+{
+ "id": "Run-13",
+ "site_version": "data v0.1.77",
+ "vault_commit": "55b47c4d6af1",
+ "site_export_commit": "55b47c4d6af1",
+ "started": "2026-10-27T12:56Z",
+ "finished": "2026-10-27T13:30Z",
+ "quiet_wakes_before": 0,
+ "checked": "fc.py changed (no-confirmed-compromise); fc.py check (0 failures); fc.py drift (the same six); the 20 captures since 07:15 UTC read for a named compromise; PROJECT-002 step 2: the twelve outreach rows against their captures, verbatim",
+ "opened": "none",
+ "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+ "summary": "PROJECT-002 step 2 done: of the desk's twelve correction rows, 9 stand (1, 4, 5, 6, 7, 8, 9, 10, 11), 1 changed (3, BankInfoSecurity: drop 'attempt to exploit', hold the 'leaked' point until K-009 is settled), 2 withdrawn (2, WIRED, and 12, Security.NL: CISA's KEV listing of 26 October makes 'exploited' and 'abuse reported' defensible). Each quote re-found in its newest capture with sha256, in regrades/project-002-twelve-rows.json. no-confirmed-compromise holds A4 as of 09:43 UTC on 27 October."
+}
