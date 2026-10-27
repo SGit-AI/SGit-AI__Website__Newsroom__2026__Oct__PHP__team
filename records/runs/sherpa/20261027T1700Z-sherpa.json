@@ -1,0 +1,14 @@
+{
+ "run": "20261027T1700Z-sherpa",
+ "agent": "sherpa",
+ "started": "2026-10-27T17:00:00Z",
+ "finished": "2026-10-27T19:03:32Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/sherpa/HANDOVER.md). Pulled team's dev (281b9c58); read the moving brief. Pushed what existed only in the session: records/sherpa/make_inbox.py (the inbox vault maker, path patched for the press, not run); the two vault clones (58526ytp, d6zak0o3) are in sync, so nothing in the scratchpad is unpushed except the editor's own sealed copies and a vault key file that stays out of every repository. Card checked: repositories (push team; pull press, data; press when needed; never v1), times, model Sonnet, instructions, each_wake; status_note records the pause and the old task id trig_01Jq9e42ZLsawRCoJnLyvydp (disabled). Register checked: d6zak0o3 made and sealed to the root on 24 October; holds 58526ytp and d6zak0o3; the session key dies with the session. Not done: the 17:45 full pass of 27 October (paused at 16:51); PROJECT-001 checkpoint A and interviews board 331 still wait on the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "281b9c58c3f45f558b9edf7b4c187f8299a30347"
+}
