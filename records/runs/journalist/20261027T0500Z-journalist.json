@@ -1,0 +1,14 @@
+{
+ "run": "20261027T0500Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-27T05:00:24Z",
+ "finished": "2026-10-27T05:21:39Z",
+ "outcome": "ok",
+ "summary": "Run by hand in this session at the editor's request, outside the schedule (05:00 to 05:40 UTC on 27 October). The editor handed over a sealed read key for the evidence vault's replacement, the pack vault nnd3i8iw (sealed to my key sha256:de0decfc882a0235 by sha256:6c81ae257fee1938, the curator's new key, which the root does not yet vouch for; a private read key, read-only). Opened with pki-agent open into scratch, never printed. Clone of nnd3i8iw on sgit 0.26.0: 56 commits, read-only, 42 s (a normal-vault pull took minutes). Upgraded sgit 0.25.0 to 0.26.0 and read cli.sgit.ai (agents, partial clones, pack mode). Head 24f0b0e22666 (562 sources, latest capture 00:45 UTC on 27 October): already in the data repository, with the KEV rows, state v4 and the readers' copy done overnight by breaking@php.newsroom in the journalist's and the correspondent's roles (data v0.1.59 and v0.1.60; CISA added both CVEs to KEV on 26 October, catalogue 2026.10.26, due 29 October); I changed none of it. Reviewed the 13 claims of the curator's batch 18, each searched first: 0 used, 5 agrees, 6 noted, 2 held back (an unnamed honeypot result; a Trend Micro sentence not on its press release). Released the verdicts in data. The editor confirmed nnd3i8iw replaces 3ytzxm3g for me; my register (holds) and card (reads, step 2) are corrected. Not done: anything the scheduled wakes cover (08:40 UTC next). Instructions in captures: none addressed me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "309a4bdd9292eb761c3462710c3f1c5214c83cfc"
+}

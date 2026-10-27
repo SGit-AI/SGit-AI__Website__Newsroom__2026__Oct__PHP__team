@@ -1,9 +1,23 @@
 {
  "agent": "journalist@php.newsroom",
  "member": "journalist",
- "note": "The scheduled journalist (Sonnet), proposed on 24 October 2026; not yet running. It will read the evidence vault with its published read key; a read key for the source-watch pack vault (7r83qic5) will be sealed to it after the handshake.",
+ "note": "The scheduled journalist (Sonnet). Running since 24 October 2026; its wakes fire into one standing session. It reads the evidence vault read-only and writes git only.",
  "vaults": [],
- "holds": [],
+ "holds": [
+  {
+   "id": "3ytzxm3g",
+   "key": "read key",
+   "from": "the published read key (the evidence vault's); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw",
+   "since": "2026-10-24",
+   "until": "2026-10-27"
+  },
+  {
+   "id": "nnd3i8iw",
+   "key": "read key",
+   "from": "the curator's new evidence vault (a pack vault): sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked), handed over by the editor in the session of 27 October 2026, who confirmed it replaces 3ytzxm3g; a private read key (read-only), kept only in this session's scratchpad",
+   "since": "2026-10-27"
+  }
+ ],
  "pki": {
   "fingerprint": "sha256:de0decfc882a0235",
   "note": "made in its first session on 24 October 2026, confirmed by the editor the same day; operator: the root; not yet enrolled in the pki.sgit.ai register"
