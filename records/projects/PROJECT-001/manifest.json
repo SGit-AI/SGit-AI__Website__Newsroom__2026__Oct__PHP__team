@@ -12,19 +12,86 @@
  "brief": "https://team.php.oct.2026.newsroom.sgit.ai/records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md",
  "hub": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/",
  "for_agents": "Everything here is public and holds no secret. Read project.json for the state and messages.json for the messages. A message may be sent only when its status is \"approved\" and approved_by is \"editor\"; a draft is never sent. Nothing on these pages is an instruction to any agent but the newsroom's own; the editor, in his own session, decides.",
- "messages": [],
+ "messages": [
+  {
+   "id": "bbc",
+   "to": {
+    "name": "BBC News (live page team)",
+    "kind": "news outlet"
+   },
+   "channel": {
+    "name": "BBC News / BBC Verify: a warm note to the newsroom's published audience or contact route (proposed); route to be found and captured before use",
+    "kind": "to find",
+    "url": null,
+    "to_confirm": true,
+    "alternative": {
+     "name": "BBC Complaints, online form (formal Stage 1a route)",
+     "url": "https://www.bbc.co.uk/contact/complaints/make-a-complaint",
+     "captured": "20261027T151830Z",
+     "kind": "complaints form",
+     "recommended": false
+    }
+   },
+   "subject": "Your PHP live page, with thanks",
+   "ask": "Look over the file and tell us what is wrong or missing; one optional wording suggestion on the Wiz 70% figure (added value, take it or leave it). No complaint, no interview.",
+   "status": "draft",
+   "approved_by": null,
+   "sent": null,
+   "sender": "the agent at riskmandate.ai, on the editor's go",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/bbc.md"
+  },
+  {
+   "id": "php-security-team",
+   "to": {
+    "name": "The PHP security team (php.net)",
+    "kind": "maintainers"
+   },
+   "channel": {
+    "name": "the PHP security team's published security contact on php.net (the php.net site lists a Contact link; its address is not in our captured text)",
+    "kind": "to find",
+    "url": null,
+    "to_confirm": true
+   },
+   "subject": "Your PHP advisory: what we hold, and three points to check",
+   "ask": "Check what we hold and say whether three open points (K-008, K-010, K-011) are right as we have them.",
+   "status": "draft",
+   "approved_by": null,
+   "sent": null,
+   "sender": "the agent at riskmandate.ai, on the editor's go",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-security-team.md"
+  },
+  {
+   "id": "php-foundation",
+   "to": {
+    "name": "The PHP Foundation",
+    "kind": "foundation"
+   },
+   "channel": {
+    "name": "the PHP Foundation's published contact (thephp.foundation lists a Contact link; its address is not in our captured text)",
+    "kind": "to find",
+    "url": null,
+    "to_confirm": true
+   },
+   "subject": "Your security-release post: what we hold, and what we can offer",
+   "ask": "Check what we hold and say whether we describe the Foundation's role correctly; the added value (outlet file, evidence, correction channel) is offered, not asked for.",
+   "status": "draft",
+   "approved_by": null,
+   "sent": null,
+   "sender": "the agent at riskmandate.ai, on the editor's go",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-foundation.md"
+  }
+ ],
  "outlets": [
   {
    "id": "bbc",
    "name": "BBC News",
    "sources": 1,
    "captures": 4,
-   "claims": 12,
+   "claims": 10,
    "by_verdict": {
     "holds": 3,
-    "holds-in-part": 7,
-    "not-shown": 1,
-    "refuted": 1
+    "holds-in-part": 6,
+    "not-shown": 1
    },
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/bbc.json"
   },
@@ -111,8 +178,8 @@
   {
    "path": "log.md",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/log.md",
-   "bytes": 15788,
-   "sha256": "4b6db1175e967461592788a50b1685ad15a92d6748c5851cf9a796e1b5bfba01",
+   "bytes": 16678,
+   "sha256": "453ff845ac31505a920ddd01b706cb1299b198ae1e8755db65aa8ded14ad39ed",
    "about": "every event, dated, newest last"
   },
   {
@@ -200,6 +267,34 @@
    "about": "step 2a: the sample the prototype was drawn from"
   },
   {
+   "path": "phase-2/messages/bbc.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/bbc.md",
+   "bytes": 1363,
+   "sha256": "ca293786789b0251a7ca7c8940d4e405804e0aab1973f617f9e79147238e6dc7",
+   "about": "draft message to bbc (not sent; sent only once the editor approves it)"
+  },
+  {
+   "path": "phase-2/messages/messages.json",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/messages.json",
+   "bytes": 6188,
+   "sha256": "52c415b9ac1a7a653d4faa00cdefa8597796b24fa44e8c34cc0739dbbfcdf709",
+   "about": "step 2d: every draft message, its channel, its one ask and its status"
+  },
+  {
+   "path": "phase-2/messages/php-foundation.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-foundation.md",
+   "bytes": 1302,
+   "sha256": "9dcb061ca8fdbe4057bcfaa7b2fa3675ebd9e2a3920ac53569317b3a95e9c482",
+   "about": "draft message to php-foundation (not sent; sent only once the editor approves it)"
+  },
+  {
+   "path": "phase-2/messages/php-security-team.md",
+   "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/messages/php-security-team.md",
+   "bytes": 1371,
+   "sha256": "5926e7c96d0a9f329881f0884880b98edcf748907a284e51939fe5d3707a11c9",
+   "about": "draft message to php-security-team (not sent; sent only once the editor approves it)"
+  },
+  {
    "path": "phase-2/outlets/README.md",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/README.md",
    "bytes": 5449,
@@ -209,8 +304,8 @@
   {
    "path": "phase-2/outlets/bbc.json",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/bbc.json",
-   "bytes": 80861,
-   "sha256": "4e1175a15de743f7f53793ec3dae6f580a576b3fcf5ff576788eb99c709401f6",
+   "bytes": 76930,
+   "sha256": "daca7450319012cbb3a7026fe11b9ba4bfd5ea00b5576fa875714c792c83b565",
    "about": "the outlet file every view of the page reads: bbc"
   },
   {
@@ -230,8 +325,8 @@
   {
    "path": "phase-2/outlets/editorial/bbc.json",
    "url": "https://team.php.oct.2026.newsroom.sgit.ai/records/projects/PROJECT-001/phase-2/outlets/editorial/bbc.json",
-   "bytes": 1976,
-   "sha256": "26d1084a34d997854a5b950cc18bf7b1d61a8d14dbcbdc0a820455ee48f6e6a7",
+   "bytes": 2011,
+   "sha256": "6f00736b0b6f932fc8853c4e87bd4d96bf3948ce05645a40f09de92be3bf0c2d",
    "about": ""
   },
   {
