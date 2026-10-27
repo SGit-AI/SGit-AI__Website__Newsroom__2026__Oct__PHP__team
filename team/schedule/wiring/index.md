@@ -392,4 +392,4 @@ Card: `data/schedule/sherpa.json`, status active; wakes 07:45, 09:45, 11:45, 13:
 
 
 ---
-site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/wiring/index.html
+site v0.22.38 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/wiring/index.html

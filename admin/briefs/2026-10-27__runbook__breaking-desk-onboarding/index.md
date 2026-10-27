@@ -82,8 +82,8 @@ record naming every release, and report to the editor in ten lines.
 
 This brief is the file `admin/content/briefs/2026-10-27__runbook__breaking-desk-onboarding.md` in the repository, published as written.
 
-← older: Brief: the breaking-news desk, one session that runs the w
+← older: Brief: the breaking-news desk, one session that runs the wnewer: → BREAKING-001: CISA lists both php2shell flaws as exploited
 
 
 ---
-site v0.22.37 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__runbook__breaking-desk-onboarding/index.html
+site v0.22.38 · data as of 2026-10-26T17:09Z · vault commit 1dceaa1dfa7f · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__runbook__breaking-desk-onboarding/index.html

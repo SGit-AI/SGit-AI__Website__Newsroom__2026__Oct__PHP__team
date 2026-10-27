@@ -3,5 +3,6 @@
  "title": "SG/Send: the append service caches a vault's lane configuration per server instance and never refreshes it, so after `configure` some instances answer 404 for the new lanes until they are recycled",
  "status": "open",
  "owner": "conductor",
- "note": "Service__Vault__Append._load_append_config (sgraph_ai_app_send/lambda__user/service/Service__Vault__Append.py, _config_cache, never invalidated). Measured on 84wr8mib, 27 October: 12 concurrent writes to a lane configured minutes before, 4 accepted and 8 refused (404); 20 minutes later 7 of 8 accepted. For the conductor to carry to SG/Send. Suggested fix: a short TTL on the cache, or read config.json on every write (one small read)."
+ "note": "Service__Vault__Append._load_append_config (sgraph_ai_app_send/lambda__user/service/Service__Vault__Append.py, _config_cache, never invalidated). Measured on 84wr8mib, 27 October: 12 concurrent writes to a lane configured minutes before, 4 accepted and 8 refused (404); 20 minutes later 7 of 8 accepted. For the conductor to carry to SG/Send. Suggested fix: a short TTL on the cache, or read config.json on every write (one small read).",
+ "order": 354
 }

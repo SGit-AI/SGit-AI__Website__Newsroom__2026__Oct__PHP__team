@@ -3,5 +3,6 @@
  "title": "Member pages on the team site: 'The role' is still baked from v1's frozen ROLE.md, so it stays stale when a member updates records/agents/<id>/ROLE.md (the desk's still says 09:20 and 16:20 and admin/content/agents/desk/). Make the role section live from records/agents/<id>/ROLE.md, as 'Where it is now' (member-status) and 'Its rounds' (member-debriefs) already are since edition v0.22.36; it fixes every member at once",
  "status": "open",
  "owner": "dev",
- "note": "From the editor's session with the desk, 27 October: the editor asked for the desk's page to be fixed. The desk's ROLE.md in team is current (e1ea8c7); the page needs the press. A press change: security's review and the editor's go."
+ "note": "From the editor's session with the desk, 27 October: the editor asked for the desk's page to be fixed. The desk's ROLE.md in team is current (e1ea8c7); the page needs the press. A press change: security's review and the editor's go.",
+ "order": 352
 }

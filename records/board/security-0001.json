@@ -3,5 +3,6 @@
  "title": "SA-2026-043: retire the round's write token: the editor deletes and revokes ROUND_TOKEN; dev removes .github/workflows/round.yml (the chain now runs by hand, so neither is needed)",
  "status": "open",
  "owner": "dev",
- "note": "Found by security@php.newsroom on 26 October 2026. press tools/round.sh writes ROUND_TOKEN into the global git config before running chain.sh and the build, so any code the round runs can read it: push to the press is push to all six. Needs dev's change in the press and the editor's go (it is .github/ and tools/). Security reviews the change. Updated 27 October: the round is no longer needed (dev runs the chain by hand since 26 October 19:09), so the fix is retirement, not a redesign; the workflow and its cron are still in the press at v1.0.51."
+ "note": "Found by security@php.newsroom on 26 October 2026. press tools/round.sh writes ROUND_TOKEN into the global git config before running chain.sh and the build, so any code the round runs can read it: push to the press is push to all six. Needs dev's change in the press and the editor's go (it is .github/ and tools/). Security reviews the change. Updated 27 October: the round is no longer needed (dev runs the chain by hand since 26 October 19:09), so the fix is retirement, not a redesign; the workflow and its cron are still in the press at v1.0.51.",
+ "order": 357
 }
