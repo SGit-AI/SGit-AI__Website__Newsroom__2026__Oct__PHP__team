@@ -1,0 +1,25 @@
+{
+ "run": "20261027T1041Z-desk",
+ "agent": "desk",
+ "started": "2026-10-27T10:41:27Z",
+ "finished": "2026-10-27T10:47:23Z",
+ "outcome": "ok",
+ "summary": "Morning line: day 7, CISA lists both flaws on KEV (26 October), no named victim; front page checked live (headline right, three 'as of' times and a stale count to the owners: desk-0003 to 0005); pipeline ran in order, dev's wake cannot push (conductor-0010); the editor's queue ranked; sgit 0.26.0; card model Sonnet; outreach held, quotes to be re-checked against nnd3i8iw at 17:40",
+ "read": [
+  "20261026T0125Z__conductor__to-all__after-step-b-wake-md-and-tools-schedule",
+  "20261026T0751Z__conductor__to-all__upgrade-to-sgit-ai-0-25-0-the-large-vaul",
+  "20261027T0446Z__conductor__to-all__upgrade-to-sgit-ai-0-26-0-and-read-what",
+  "20261027T0448Z__conductor__to-all__every-vault-is-a-pack-vault-now-no-links",
+  "20261027T0504Z__conductor__to-all__3ytzxm3g-is-decommissioned-cards-and-reg",
+  "20261027T0533Z__conductor__to-all__which-model-each-agent-runs-opus-for-the"
+ ],
+ "sent": [
+  "20261027T1047Z__desk__to-correspondent__front-page-three-as-of-times-for-one-sta",
+  "20261027T1047Z__desk__to-story-site__front-page-counts-and-two-notes-on-the-d"
+ ],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "161d8c97d295610a4cd7bf91688f779a5585182a",
+ "log": "Morning line, 27 October 10:40 London (team at a966506, notes read to head 161d8c97d295, sgit 0.26.0; the first wake against the six repositories).\nThe line: day 7. CISA put both flaws on its Known Exploited Vulnerabilities list on 26 October (catalog released 22:24 UTC; federal agencies must fix them by 29 October). It names no victim, and no named organisation says it was broken into (graded A4 by the fact-check desk, re-graded at 08:52 today). The cost so far is still mostly precaution.\nThe publication, rendered in a browser: the headline is the day's news; the KEV listing is in Right now, the facts and Latest; the doors to /compromise/, /factcheck/, /outreach/, /stack/ and the days exist; the fact-check desk and the front page agree on KEV. Open: three 'as of' times for one statement (00:45 UTC 27 October twice, 14:42 UTC 26 October in the Executive's thirty-second answer; the correspondent's re-stamp says 07:15): board desk-0003, correspondent. '562 web pages saved' against 580 sources in data v0.1.70: desk-0004, story-site. First-visit 'Your reading: 768 new' machinery, and Days 4 and 5 titled Saturday and Sunday: desk-0005, story-site. Unknown 5 on the front page (where 70% comes from) was last seen out of date and the PHP team's reply is still uncaptured: board 259 and 250 open.\nThe system: the morning loop ran in order with a record each (curator 08:00, journalist 08:40, fact-check 08:52, correspondent 09:25; researcher 09:30, ontologist 10:05 partial: scripts not re-pointed; sherpa 09:45 idle). Dev's 06:40 task cannot push (conductor-0010) and left no record. No branch of mine unreleased except two awaiting security: desk/member-role-live in team and in press.\nFor the editor, ranked: (1) conductor-0010, where dev's daily task runs; (2) the line's decisions (298), which also gate the correction requests you are holding and the desk's approval of page lines; (3) security's review of the two member-role branches, and of press releases by agents other than dev; (4) 3ytzxm3g's deletion (conductor-0009, yours) then oq9gflln; (5) confirm the desk takes on closing each day with a headline per role (story-site's note; the brief says it is your decision 3): not taken on without your word to the desk.\nDone on the conductor's notes, inside my card: sgit 0.26.0; card model set to Sonnet; the old vault 3ytzxm3g is not named in my card (the desk holds no register). Not done: no vault was cloned this wake, so the outreach quotes (files/outreach.json cites captures by file and sha256 under the old vault) are re-checked against nnd3i8iw at the 17:40 wake before any request is called ready; the requests stay held until the design settles.\n"
+}

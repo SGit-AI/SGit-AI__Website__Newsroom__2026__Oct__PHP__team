@@ -12,7 +12,7 @@
   "17:40"
  ],
  "times_why": "After the whole pipeline (researcher, curator, journalist, correspondent) has run: the morning check 75 minutes after the correspondent's 09:25 review, the afternoon check 45 minutes after its 16:55 review, so the desk reads the front page the reader is about to read; none in the quiet hours; :40 is no other agent's minute at 10 or 17.",
- "model": "the session's model",
+ "model": "Sonnet",
  "session": "the editor's session with the desk (session_017Bh11ZMAfrDDo17TasVhQS), woken by one scheduled task (trig_012VDhTAeH7RQRRTBF8Gxq6y, CRON_TZ=Europe/London 40 10,17 * * *)",
  "brief": "records/briefs/2026-10-24__brief__the-desk-on-a-schedule.md",
  "runbook": "records/briefs/2026-10-22__brief__the-news-desk-chief.md",
