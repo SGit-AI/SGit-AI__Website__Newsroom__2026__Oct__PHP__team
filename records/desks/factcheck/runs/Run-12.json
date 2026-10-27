@@ -1,0 +1,13 @@
+{
+ "id": "Run-12",
+ "site_version": "data v0.1.66",
+ "vault_commit": "6fe04cc074f9",
+ "site_export_commit": "6fe04cc074f9",
+ "started": "2026-10-27T08:54Z",
+ "finished": "2026-10-27T09:25Z",
+ "quiet_wakes_before": 0,
+ "checked": "fc.py changed (cisa-none, kev-precedent, no-confirmed-compromise); fc.py check (0 failures); fc.py drift (the same six); CISA's KEV feed fetched live and compared with the vault's capture; NVD; W3Techs",
+ "opened": "1 evidence ticket (Evidence-19: KEV 2026.10.26 lists both CVEs); closed Finding-20",
+ "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+ "summary": "CISA added CVE-2026-109618 and CVE-2026-109619 to KEV on 26 October (catalog 2026.10.26, released 22:24:24Z, due 29 October). The desk fetched CISA's feed itself and got the same bytes as the vault's capture (sha256 653c72ea869c...). cisa-none is now a dated claim, superseded; kev-precedent carries both halves (A2); no-confirmed-compromise still holds at A4 as of 07:15 UTC on 27 October: the listing is exploitation of the flaws, names no victim or actor. K-002 gains the CISA statement. W3Techs 69.2%, NVD still has no record for CVE-2026-115560. The desk now reads the pack vault nnd3i8iw (sgit 0.26.0)."
+}

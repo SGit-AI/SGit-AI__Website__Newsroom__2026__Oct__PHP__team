@@ -1,0 +1,23 @@
+{
+  "node_id": "c7ed7866",
+  "node_type": "run",
+  "node_index": 12,
+  "label": "Run-12",
+  "title": "Run 12: 08:52 London wake, 27 October",
+  "description": "CISA added both CVEs to KEV on 26 October; cisa-none superseded, kev-precedent and no-confirmed-compromise re-graded",
+  "status": "done",
+  "created_at": 1793091402998,
+  "updated_at": 1793091403243,
+  "created_by": "f2a9c228",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened",
+      "target_id": "237e89a2",
+      "target_label": "Evidence-19",
+      "created_at": 1793091403243
+    }
+  ],
+  "properties": {}
+}

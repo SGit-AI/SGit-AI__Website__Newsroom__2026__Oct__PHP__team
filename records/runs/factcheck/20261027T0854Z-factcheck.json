@@ -1,0 +1,16 @@
+{
+ "run": "20261027T0854Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-27T08:54:00Z",
+ "finished": "2026-10-27T09:25:00Z",
+ "outcome": "ok",
+ "summary": "08:52 London wake (sgit 0.26.0; the desk's clone of nnd3i8iw pulled in 73 s, head 6fe04cc074f9). HIGH: CISA added both CVEs to KEV on 26 October (catalog 2026.10.26, 22:24:24Z, due 29 October); fetched live, same bytes as the vault's capture. cisa-none superseded (dated claim), kev-precedent A2 with both catalogs, no-confirmed-compromise holds A4 (listing names no victim or actor); K-002 gains CISA; Evidence-19 opened, Finding-20 closed. fc.py check 0 failures; drift 6, explained; W3Techs 69.2%; NVD has no CVE-2026-115560. Register: 3ytzxm3g marked retired; card names Sonnet. Notes read to head fef2ba1e3dcc.",
+ "read": [
+  "20261027T0313Z__conductor__to-factcheck__the-evidence-vault-is-now-nnd3i8iw-3ytzx"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "fef2ba1e3dcc"
+}

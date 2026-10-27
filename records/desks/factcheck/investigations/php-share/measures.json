@@ -469,6 +469,13 @@
      "sha256": "3fc3bc643bf82fd4cda77983dbc283735c98d6e05c46199fb722bb576435fea0",
      "run": "Run-8",
      "excerpt": "PHP is used by 69.2% of all the websites whose server-side programming language we know."
+    },
+    {
+     "retrieved_at": "2026-10-27T08:56Z",
+     "value": 69.2,
+     "sha256": "e6e1516166079ee4f90fe923ee92b0d12f1a055030aa6b3cd379b26b34cb5cce",
+     "run": "Run-12",
+     "excerpt": "PHP is used by 69.2% of all the websites whose server-side programming language we know."
     }
    ]
   },

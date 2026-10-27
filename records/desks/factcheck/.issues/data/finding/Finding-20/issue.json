@@ -5,9 +5,9 @@
   "label": "Finding-20",
   "title": "kev-precedent: Status 'confirmed' outruns the weakest part (A2), and 'last PHP core RCE' is not shown",
   "description": "The one-day exploitation rests on one party (Akamai). The CVE record calls CVE-2024-4577 'Argument Injection in PHP-CGI' on Windows with certain code pages, a SAPI bug rather than the PHP core; and nothing captured shows it is the most recent PHP RCE (only that it is the most recent PHP entry in KEV). Say 'the last PHP flaw in KEV'.",
-  "status": "open",
+  "status": "closed",
   "created_at": 1792694616060,
-  "updated_at": 1792805574035,
+  "updated_at": 1793091388012,
   "created_by": "0176b619",
   "tags": [],
   "links": [
@@ -35,6 +35,13 @@
         "text": "Run-3: status fixed ('reported'); still open for the text: 'the last PHP core RCE' is not carried by the CVE record, which calls CVE-2024-4577 a PHP-CGI argument injection.",
         "created_at": 1792805574035,
         "updated_at": 1792805574035
+      },
+      {
+        "id": "5e29cf72",
+        "author": "cli-user",
+        "text": "Run 12: kev-precedent is now status 'reported' (A2), which fits its weakest part; closed as fixed.",
+        "created_at": 1793091388012,
+        "updated_at": 1793091388012
       }
     ]
   }

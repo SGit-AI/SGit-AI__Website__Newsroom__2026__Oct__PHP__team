@@ -1,0 +1,33 @@
+{
+  "node_id": "237e89a2",
+  "node_type": "evidence",
+  "node_index": 19,
+  "label": "Evidence-19",
+  "title": "CISA KEV 2026.10.26 (22:24 UTC on 26 October): CVE-2026-109618 and CVE-2026-109619 listed, dateAdded 2026-10-26, due 2026-10-29",
+  "description": "Fetched by the desk from https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json at 08:56 UTC on 27 October: catalogVersion 2026.10.26, dateReleased 2026-10-26T22:24:24.6101Z, sha256 653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13, the same bytes as the evidence vault's capture of 00:45 UTC on 27 October. PHP Group / PHP, knownRansomwareCampaignUse Unknown. No victim or actor named.",
+  "status": "proposed",
+  "created_at": 1793091387294,
+  "updated_at": 1793091403243,
+  "created_by": "4a1ab689",
+  "tags": [],
+  "links": [
+    {
+      "link_type_id": "fd7feda8",
+      "verb": "opened-by",
+      "target_id": "c7ed7866",
+      "target_label": "Run-12",
+      "created_at": 1793091403243
+    }
+  ],
+  "properties": {
+    "claims": [
+      "cisa-none",
+      "kev-precedent",
+      "no-confirmed-compromise"
+    ],
+    "sources": [
+      "cisa-alert-kev-20261026",
+      "cisa-kev-catalog"
+    ]
+  }
+}
