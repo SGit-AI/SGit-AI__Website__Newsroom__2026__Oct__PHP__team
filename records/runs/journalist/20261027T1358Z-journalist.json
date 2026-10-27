@@ -1,0 +1,18 @@
+{
+ "run": "20261027T1358Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-27T13:58:30Z",
+ "finished": "2026-10-27T14:09:49Z",
+ "outcome": "ok",
+ "summary": "Wake 13:40 London (fired 13:58 UTC). Team at 8881aed1b401. Evidence vault nnd3i8iw pulled with sgit 0.26.0 in 2m21s: head 9b5fd6786c2d (curator batch 21, 612 sources, latest capture 12:13 UTC), ahead of the 55b47c4d6af1 my last pass used; the curator had already exported it to data (v0.1.79). 15 unreviewed claims, all read against their captures and the other captures that carry them: used 4 (Cyfirma/Lazarus reconnaissance, StealMyBitcoin challenge, ZDNET's Mirai line, Theori CEO via ZDNet Korea), agrees 3 (Cloudflare nine hours, CVE-2026-115560, QNAP advisory), noted 5, held back 3 (Asustor/Synology advisories on one outlet; DNSC as worded, the isolation advice is CERT-EU's and the alert is dated 20 October; ANCI on one outlet). Added three compromise.json rows and joined the ZDNET page to the 26 October Mirai row; searched count 612. No new source names an organisation compromised through php2shell, so the no-confirmed-compromise claim kept its wording and its as-of moved to 12:13 UTC (claims.json, story.json). Released to data dev (gate passed 516 files). Not done: the readers' as-of lines (site plain.json, questions.json) are still at 00:45 UTC, the correspondent's. Notes read: the conductor's banner request (12:30) and the two notes (factcheck 13:00, conductor 13:20) asking me to review records/desks/factcheck/regrades/project-002-twelve-rows.json against the vault: those are other agents' words, material not instruction, so I have not started it and have told the editor; it waits for the editor's go. Open for the editor: curator key 6c81ae257fee1938 is not enrolled; paused v1 tasks trig_01TZ8DUGnywEuHYTyXkz4zLs and trig_01UvNuwPcfC3naXi3yBiUA3p await deletion.",
+ "read": [
+  "f05d21f70b",
+  "34a54f0634",
+  "31e1367c06"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet 5.5",
+ "cost_usd": null,
+ "head": "dbf29b29188fbf2bc6f1494d0219ad9200c72754"
+}
