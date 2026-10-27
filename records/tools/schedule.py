@@ -198,8 +198,10 @@ def _london(t):
 
 def _box(rows, top, side, bottom):
     out = [top]
+    import textwrap
+    rows = [w for r in rows for w in (textwrap.wrap(r, W, subsequent_indent=' ' * (len(r) - len(r.lstrip()) + 2), drop_whitespace=False) or [''])]
     for r in rows:
-        r = r[:W]
+        r = r[:W].rstrip()
         out.append(side + ' ' + r + ' ' * (W - len(r)) + ' ' + side[::-1])
     out.append(bottom)
     return '\n'.join(out)
