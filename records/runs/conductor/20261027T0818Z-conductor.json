@@ -1,0 +1,17 @@
+{
+ "run": "20261027T0818Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-27T08:18:57Z",
+ "finished": "2026-10-27T08:19:40Z",
+ "outcome": "ok",
+ "summary": "Light check 08:15 London, team at 2ce31409a556. The morning's wakes all left records. Pulse 07:22: KEV listing captured independently, 'rung 5'. Researcher 07:00: first full pass on sgit 0.26.0, head 6a96f221696a, data v0.1.64, card on Sonnet. Sherpa 07:45: idle, both lanes empty, 0.26.0 fine. The curator's 08:00 wake is running (08:05: card on Sonnet, 3ytzxm3g dropped from its register, the breaking desk's KEV promotion re-checked). No problems found. press, site, refs and updates are unchanged since 05:55-05:57 (b2a0db4, c23ce636, 1cc1fd5c, 1e9dee0). Fixed in my wake tool (records/tools/schedule.py): an agent's own note or message to all no longer shows as unread in its own inbox. v1 untouched. Still on the editor: conductor-0009 (deleting 3ytzxm3g), conductor-0010 (dev's daily wake), the desk's release go.",
+ "read": [
+  "20261027T0504Z__conductor__to-all__3ytzxm3g-is-decommissioned-cards-and-reg",
+  "20261027T0533Z__conductor__to-all__which-model-each-agent-runs-opus-for-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "opus",
+ "cost_usd": null,
+ "head": "2ce31409a5560bd617e54517c757c57fe8c4de19"
+}
