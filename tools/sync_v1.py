@@ -195,7 +195,10 @@ def do_export(v1):
         seen = {}
         for i, row in enumerate(admin['board']):
             by_id[row_name(row, seen)] = i
-        for p in sorted(rows):
+        def placed(p):   # a row new to v1's board goes where its order says (the import records it), so a box made afresh orders the board as the old one did
+            o = json.load(open(os.path.join(ROOT, p), encoding='utf-8')).get('order')
+            return (o if isinstance(o, int) else float('inf'), p)
+        for p in sorted(rows, key=placed):
             row = json.load(open(os.path.join(ROOT, p), encoding='utf-8'))
             name = os.path.basename(p)[:-5]
             row = {k: v for k, v in row.items() if k != 'order'}
