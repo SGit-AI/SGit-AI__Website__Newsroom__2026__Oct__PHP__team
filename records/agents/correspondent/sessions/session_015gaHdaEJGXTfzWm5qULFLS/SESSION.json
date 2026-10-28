@@ -1,13 +1,14 @@
 {
  "agent": "correspondent@php.newsroom",
  "session": "session_015gaHdaEJGXTfzWm5qULFLS",
- "state": "current",
+ "state": "superseded",
  "from": "2026-10-28T02:57:02Z",
- "until": null,
+ "until": "2026-10-28T03:24:33Z",
  "supersedes": null,
  "fingerprint": "sha256:60a78bc4a1dcc0b2",
  "account": "the newsroom's new account (agent@diniscruz.ai)",
  "model": "Sonnet",
  "task": null,
- "note": null
+ "note": null,
+ "superseded_by": "session_015gaHdbWEWFsJYyL67i8V87"
 }
