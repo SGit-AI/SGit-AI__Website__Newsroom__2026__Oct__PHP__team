@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0000Z-desk",
+ "agent": "desk",
+ "started": "2026-10-28T00:00:16Z",
+ "finished": "2026-10-28T00:00:16Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/desk/HANDOVER.md). Card paused and complete (repositories team and data, times 10:40 and 17:40 London, model Sonnet, instructions, each_wake); register created (the desk makes and holds no vault); helper scripts saved in records/agents/desk/tools/; my team and press branches desk/member-role-live are pushed and wait for security's review; nothing exists only in this session.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "f247f8cb0b5152417d39c90a6a75435b223754df"
+}

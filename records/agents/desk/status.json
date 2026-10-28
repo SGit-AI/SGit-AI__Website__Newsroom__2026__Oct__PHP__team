@@ -11,7 +11,7 @@
    "1594133"
   ]
  },
- "state": "round 4 closed: wired into the six repositories (push team only); scheduled task enabled; next wake 27 October 10:40 London",
+ "state": "paused for the move to a new account: handover written (records/agents/desk/HANDOVER.md); schedule paused; the new session recreates the task at the editor's go",
  "done": [
   {
    "what": "Card given repositories (push team), v1 paths moved to team's records",
@@ -24,6 +24,10 @@
   {
    "what": "Scope fixed at the editor's word: the card's repositories are team and data; the correction requests (files/outreach.json) are the desk's; the role and the card say so; abp@ asked to put it in the policy",
    "evidence": "records/schedule/desk.json, records/agents/desk/ROLE.md, board desk-0002"
+  },
+  {
+   "what": "The 27 October morning wake; scope fixed (team and data); the member-role branches pushed for security's review; helper scripts saved in my folder; register and card complete; handover written",
+   "evidence": "records/agents/desk/HANDOVER.md; records/runs/desk/20261027T1041Z-desk.json"
   }
  ],
  "tasks": {
@@ -55,16 +59,12 @@
  },
  "next": [
   {
-   "what": "Hold the correction requests: the editor sends them after the design settles (his word of 27 October); re-check every quote before then, publishers reword",
-   "why": "the editor"
+   "what": "In the new session: onboard (key pair, records/keys/desk.json, the read key for nnd3i8iw), recreate the scheduled task at the editor's go, then the first wake",
+   "why": "records/briefs/2026-10-27__runbook__onboarding-a-session.md"
   },
   {
-   "what": "The 10:40 wake",
-   "why": "the card"
-  },
-  {
-   "what": "After security's review and the editor's go: the member-role branches (board desk-0001)",
-   "why": "the editor asked for the page to be fixed"
+   "what": "Corrections wait on PROJECT-002 and the editor's checkpoints; re-check quotes against nnd3i8iw before any request is called ready",
+   "why": "the editor holds sending"
   }
  ],
  "asks": [
@@ -85,5 +85,5 @@
   "writes_outside_scope": 0,
   "injection_seen": 0
  },
- "debrief": "records/agents/desk/debriefs/2026-10-26__wired-into-the-six.md"
+ "debrief": "records/agents/desk/HANDOVER.md"
 }
