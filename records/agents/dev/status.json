@@ -1,10 +1,30 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "dev",
- "as_of": "2026-10-27T03:16Z",
- "round": 3,
- "state": "Phase 2 on site: every article page draws its article from its Markdown in site's content/articles/ when it opens (no round), a new article has a page at once (the 404 page opens the article view), and site's gate checks an article at its writer's push.",
+ "as_of": "2026-10-28T01:00Z",
+ "round": 4,
+ "state": "Paused for the move to the new account (handover: records/agents/dev/HANDOVER.md). Editions are built in CI on a push to the press or by hand; nothing runs on GitHub on a timer; each repository takes the newest edition on its own push. A push elsewhere starting the edition by itself waits on the editor (board dev-0006).",
  "done": [
+  {
+   "what": "Editions built in CI: edition.yml and tools/edition.sh build every page from the six's dev, publish release edition-<n>; each repository's pages.yml takes it on its own push (board dev-0005)",
+   "evidence": "editions 0.22.45 to 0.22.50; press v1.0.70 onward"
+  },
+  {
+   "what": "No workflow runs on a timer (the editor, 27 October): every schedule removed from the seven workflows; why the built pages had stopped (board correspondent-0008) found and fixed in the build",
+   "evidence": "press v1.0.84; edition 0.22.49 live on the four sites; run 20261027T2340Z-dev"
+  },
+  {
+   "what": "The decommissioned evidence vault's pages removed: /admin/vault/ and /vaults/ are notices, vault-app/ is not served, the menu entries gone; the press names nnd3i8iw",
+   "evidence": "press build.py, sites.json never.paths"
+  },
+  {
+   "what": "The article the editor asked for: how a push reaches the pages (every repository, every agent, the edition, why a regular push was needed, the target), live from its Markdown via the 404 view",
+   "evidence": "site v0.22.59, press v1.0.85 (figures); https://php.oct.2026.newsroom.sgit.ai/articles/how-a-push-reaches-the-pages/"
+  },
+  {
+   "what": "Handover for the move; the card brought up to date (no timers, no chain, repositories never, the model in plain words, paused)",
+   "evidence": "records/agents/dev/HANDOVER.md, records/schedule/dev.json"
+  },
   {
    "what": "Articles live from their Markdown: assets/live/article.js draws an article page from site's content/articles/<file> (front matter, corrections, body, glossary, citations, sources cited); parity with the build on all eleven, on a scratch build and live",
    "evidence": "press v1.0.64 to v1.0.67, edition v0.22.41; debrief 2026-10-27__articles-live"
@@ -58,12 +78,16 @@
  },
  "next": [
   {
-   "what": "The stories index and each article's other articles, live from content/index/articles.json; then the external pieces and the reviews (the same Markdown)",
-   "why": "a new article is listed only at the next round today"
+   "what": "In the new account: onboard (runbook), key pair, vault keys from the editor, the task at his go",
+   "why": "the move"
   },
   {
-   "what": "data's pages on refs (sources, facts, actors, claims, the graphs) drawn from the data API",
-   "why": "the brief's next step: a fact corrected in data shows on every page that shows it, with no build"
+   "what": "PROJECT-003 phase 0: deploy sizes and history growth; the index-format brief for checkpoint A",
+   "why": "board conductor-0015"
+  },
+  {
+   "what": "The sources and facts on refs drawn live from the data API (716 pages); then the views, the stories index, external pieces and reviews",
+   "why": "each kind drawn live is one less reason for an edition (the article; board dev-0006)"
   },
   {
    "what": "updates, the feeds by each owner's CI, then retire the chain and map the 28 policies to v2 paths",
@@ -71,6 +95,18 @@
   }
  ],
  "asks": [
+  {
+   "what": "A cross-repository credential, or not (board dev-0006)",
+   "from": "the editor"
+  },
+  {
+   "what": "The order of the live kinds; PROJECT-003 checkpoint A; dev's model (Opus or Sonnet)",
+   "from": "the editor"
+  },
+  {
+   "what": "Was the rewind of 84wr8mib's named branch on the server deliberate?",
+   "from": "observability@php.newsroom, or the editor"
+  },
   {
    "what": "The tag ruleset on the six (board dev-0003)",
    "from": "the editor"
@@ -93,5 +129,5 @@
   "injection_seen": 0,
   "note": "the six repositories have no policies yet (abp maps scope.writes); everything in them this round under the editor's go for the split"
  },
- "debrief": "admin/content/agents/dev/debriefs/2026-10-27__articles-live.md"
+ "debrief": "records/agents/dev/debriefs/2026-10-28__the-move.md"
 }
