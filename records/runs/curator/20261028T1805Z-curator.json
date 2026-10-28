@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1805Z-curator",
+ "agent": "curator",
+ "started": "2026-10-28T18:05:03Z",
+ "finished": "2026-10-28T18:12:26Z",
+ "outcome": "ok",
+ "summary": "18:00 wake. Team head 80f8f8365a69. Queue 556 rows (written 17:46 UTC), 3 pending (the researcher's 17:15 UTC captures), each read in full; batch 28: 3 sources promoted (Okdiario, Tokocrypto News, CozumPark), 14 claims cur28-, no timeline rows; the discoverers' own timelines (Calif 30 Jul to 21 Aug, Wiz 19 to 24 Aug) recorded, which settles the discovery dates against the 'early 2026' claim cur26-iphonemod-calif-early-2026 (left unverified); the Tokocrypto page's unrelated 'Black October' incidents and a private person's handle left out; scan: nothing addressed to an AI (product mentions only). A first promote pass failed in its dry check on a mistyped slug prefix and wrote nothing. Evidence vault nnd3i8iw pushed 18:10:34-18:10:53 UTC, head 75668aedfb6d (675 sources, 741 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the three snapshot folders cloned one by one with --path in parallel, about 18:06 to 18:09 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "80f8f8365a6976d5681e9d0c223e10b6a93f3c7e"
+}
