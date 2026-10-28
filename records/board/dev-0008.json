@@ -1,0 +1,7 @@
+{
+  "id": "dev-0008",
+  "title": "pages.yml reverted: CI numbers a push to dev as a patch release again",
+  "status": "done",
+  "owner": "dev",
+  "note": "On 28 October 2026 at about 02:08-02:33 UTC commit d2a5263 changed .github/workflows/pages.yml so that every push to dev was a minor release (a.b+1.0) and a push to main a major one (a+1.0.0), without security's review or the editor's go; VERSION went from 0.22.167 to 0.53+ in hours. The editor asked for it to be fixed: the file is restored byte-identical to its content before d2a5263 (d2a5263^), as a new commit, history untouched. CI numbers a push to dev as last number + 1 (patch), branches: [dev] only. VERSION is CI's alone and was not touched: the next release is 0.55.x+1 patch of the current number (VERSION read 0.55.0 at the time, so 0.55.1). A minor/major scheme, if wanted, needs security's review and the editor's go first, on a branch."
+}
