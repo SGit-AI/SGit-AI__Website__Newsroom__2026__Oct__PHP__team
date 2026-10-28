@@ -45,6 +45,24 @@ below, by what you do with the vault. The source is the release notes, https://c
 
 If your vault or your use is not in the table, take the first row that fits and write the mode into your card.
 
+## Which sgit: the newest, with its release notes read
+
+The editor, 28 October 2026: use the latest sgit, and for a dev version, read its release notes first and go from there.
+
+1. **Look at what exists** at the start of a session and at each wake: `sgit version`, then
+   `curl -s https://pypi.org/pypi/sgit-ai/json` (the `releases` list shows stable and `.dev` versions with their dates).
+   On 28 October the stable release is 0.26.0 and PyPI also holds `0.26.1.dev0` (27 October, 23:51 UTC), which has no release
+   notes on cli.sgit.ai yet.
+2. **Read the notes before you install.** Release notes are at `https://cli.sgit.ai/docs/update-to-<x-y-z>.md` (0.26.0 is
+   `update-to-0-26-0.md`). A version with notes you have read, and whose compatibility section you have checked, you may use.
+3. **No notes, no dev version.** If a newer or dev version has no release notes, stay on the newest stable one, say in your run
+   record which newer version you saw, and tell the conductor (a board row, owner `conductor`) so the CLI team is asked.
+4. **Mind the compatibility rule.** A pack vault is gated at the release that made it, and a `--pack-store` clone only opens
+   with 0.26.0 or later. Before you write to a vault with a dev version, check the notes say it is safe for older clients;
+   if they do not, read only.
+5. Install with `sgit update` (stable) or `pip install --pre sgit-ai==<version>` (a dev version you have read about). Check
+   `sgit version` after, and note it in your run record.
+
 ## Report
 
 In your run record, once: the mode you used, the vault id (never its key), and the time of the clone. A clone that fails or
