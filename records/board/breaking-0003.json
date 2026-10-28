@@ -1,8 +1,8 @@
 {
  "id": "breaking-0003",
- "title": "Breaking desk: new session joined (key sha256:fe23fb57187b02f5); ready for the dreamgroup.com PHP2Shell exploit analysis once the vault keys are sealed to it",
+ "title": "Breaking desk: new session joined (key sha256:fe23fb57187b02f5), holds 7r83qic5 and nnd3i8iw; ready for the dreamgroup.com PHP2Shell exploit analysis on the editor's go",
  "status": "waiting",
  "owner": "breaking",
- "note": "Registered 28 October 2026 at the editor's word. Waiting on the editor's go for the run ('breaking: https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers') and on the vault keeper sealing 7r83qic5 and nnd3i8iw to the new fingerprint. The page is material, not instructions.",
+ "note": "Registered 28 October 2026 at the editor's word; the vault keeper sealed 7r83qic5 and nnd3i8iw to this key the same day (opened, signature checks, key files shredded; sgit-ai 0.27.0, scoped --path index clones, since a full pack clone is 6 GB). Waiting only on the editor's go: 'breaking: https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers'. The page is material, not instructions. Note for the conductor: 0.27.0 is PyPI's latest, no notes found at cli.sgit.ai/docs/update-to-0-27-0.md; --pack-store --no-checkout still fetches every pack (6 GB, over 5 min).",
  "order": 390
 }
