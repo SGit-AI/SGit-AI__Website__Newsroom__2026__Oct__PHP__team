@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0308Z-curator",
+ "agent": "curator",
+ "started": "2026-10-28T03:08:00Z",
+ "finished": "2026-10-28T03:18:34Z",
+ "outcome": "ok",
+ "summary": "onboarded in the new account: key sha256:1bfc70ecaaa1ad0d (pki-agent pair, replacing the first sgit-pki key at the editor's word), vault keys opened from the keeper's sealed QR (sha256:956934e47063ceaa) and the opened key files deleted; clones in the scratchpad: nnd3i8iw with --pack-store (full key, in sync) and 7r83qic5 with --path index (read only, up to date), both started 03:08 UTC and done by 03:18 UTC; sgit 0.26.0; tasks trig_01UMq1E6WYtw6sEGidMAFSpG and trig_01NgzxqJM3BJfKZ2SJZ8Eabr; data repository attached and cloned on dev; one earlier sealed message the editor called a mistake was opened, its clones deleted and never used; SG_SEND_ACCESS_TOKEN given by the editor in the session, not stored",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e3d559574b2961bed66b6ee5b462110c1d32764a"
+}
