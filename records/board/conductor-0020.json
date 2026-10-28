@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0020",
+ "title": "Review records/tools/pki-agent.mjs: a pinned copy of the key tool, so sessions do not download code from a URL",
+ "status": "open",
+ "owner": "security",
+ "note": "28 October 2026: security's own onboarding stopped because the session's auto mode refused to download pki-agent.mjs from pki.sgit.ai and run it (the researcher's did not). The conductor put an unmodified copy in records/tools/ with its sha256 pinned (pki-agent.mjs.sha256, pki-agent.README.md). It has not been read line by line (175 KB). Please review it: what it sends and where (pki.sgit.ai, dev.send.sgraph.ai, two DNS-over-HTTPS resolvers, the GitHub gists API), its one child_process use, and that it writes only under ~/.sg-send/keys and the paths it is given. Say in the row whether the pinned hash stands."
+}

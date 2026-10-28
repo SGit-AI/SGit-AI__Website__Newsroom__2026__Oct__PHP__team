@@ -247,6 +247,102 @@ def cmd_banner(a):
             rows.append(f'NEXT     {a.next}')
         print('```\n' + _box(rows, '▛' + '▀' * (W + 2) + '▜', '▌', '▙' + '▄' * (W + 2) + '▟') + '\n```')
 
+SESSION_ID = re.compile(r'[A-Za-z0-9_-]{6,80}')
+
+def _sessions(who):
+    out = []
+    for f in sorted(glob.glob(os.path.join(DATA, 'agents', who, 'sessions', '*', 'SESSION.json'))):
+        d = json.load(open(f, encoding='utf-8')); d['_path'] = f; out.append(d)
+    return out
+
+def _dump(path, d):
+    text = checked(json.dumps(d, indent=1, ensure_ascii=False), path) + '\n'
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    open(path, 'w', encoding='utf-8').write(text)
+
+def cmd_session(a):
+    """session register|list|who: a new session becomes the agent (its folder, its key, the old session's last stamp)."""
+    who = name(a.agent.split('@')[0])
+    if a.action == 'list':
+        for d in _sessions(who):
+            print(f"{d['from']}  {d.get('until') or 'now':20}  {d['state']:10}  {d['session']}  {d.get('fingerprint') or 'no key published'}  {d.get('account', '')}")
+        return
+    if a.action == 'who':
+        at = a.at or now()
+        hit = [d for d in _sessions(who) if d['from'] <= at and (not d.get('until') or at < d['until'])]
+        print(json.dumps({'agent': who, 'at': at, 'session': hit[0]['session'] if hit else None,
+                          'fingerprint': hit[0].get('fingerprint') if hit else None, 'state': hit[0]['state'] if hit else None}))
+        return
+    if not a.id or not SESSION_ID.fullmatch(a.id): sys.exit('refused: --id is the new session\'s id (letters, digits, - and _)')
+    if not a.key: sys.exit('refused: --key is the JSON file of your public key (fingerprint, public_key, encryption_fingerprint)')
+    key = json.load(open(a.key, encoding='utf-8'))
+    if key.get('encrypt') and not key.get('public_key'):                      # an `sgit pki export` bundle: both public halves, as PEM
+        key['public_key'] = key['encrypt']; key['encryption_fingerprint'] = key.get('encryption_fingerprint') or key.get('fingerprint')
+    for need in ('fingerprint', 'public_key'):
+        if not key.get(need): sys.exit(f'refused: the key file has no "{need}"')
+    folder = os.path.join(DATA, 'agents', who, 'sessions', a.id)
+    if os.path.exists(folder): sys.exit(f'refused: {a.id} is already registered for {who}; a session registers once')
+    t = a.at or now()
+    prev = [d for d in _sessions(who) if d['state'] == 'current']
+    for d in prev:                                                         # the old session's last stamp: from now on, nothing is its
+        path = d.pop('_path'); d['state'] = 'superseded'; d['until'] = t; d['superseded_by'] = a.id
+        _dump(path, d)
+    public = {'agent': f'{who}@php.newsroom', 'fingerprint': key['fingerprint'], 'encryption_fingerprint': key.get('encryption_fingerprint'),
+              'public_key': key['public_key']}
+    for extra in ('signing_fingerprint', 'sign'):                          # kept when the bundle has them
+        if key.get(extra): public[extra] = key[extra]
+    _dump(os.path.join(folder, 'key.json'), public)
+    if a.qr:
+        import shutil; shutil.copyfile(a.qr, os.path.join(folder, 'key.png'))
+    sess = {'agent': f'{who}@php.newsroom', 'session': a.id, 'state': 'current', 'from': t, 'until': None,
+            'supersedes': prev[0]['session'] if prev else None, 'fingerprint': key['fingerprint'], 'account': a.account, 'model': a.model,
+            'task': a.task, 'note': a.note}
+    _dump(os.path.join(folder, 'SESSION.json'), sess)
+    cur = public | {'session': a.id, 'created': t, 'from': t, 'account': a.account, 'enrolled': False,
+                    'replaces': prev[0].get('fingerprint') if prev else None}
+    _dump(os.path.join(DATA, 'keys', who + '.json'), cur)                  # the one current key the site lists
+    top = os.path.join(DATA, 'keys', who + '.png')
+    if a.qr and not (os.path.exists(top) and os.path.samefile(a.qr, top)):      # the image may already be there
+        import shutil; shutil.copyfile(a.qr, top)
+    print(f'{who}: {a.id} is the current session since {t}' + (f'; {prev[0]["session"]} superseded' if prev else ''))
+
+def cmd_onboarding(a):
+    """The onboarding checklist of one agent, worked out from the records and printed as a box the editor can read at a glance."""
+    who = name(a.agent.split('@')[0])
+    def load(path):
+        try: return json.load(open(os.path.join(DATA, path), encoding='utf-8'))
+        except (OSError, ValueError): return None
+    keyf, card, reg = load(f'keys/{who}.json'), load(f'schedule/{who}.json'), load(f'registers/{who}.json')
+    sess = _sessions(who); cur = [d for d in sess if d['state'] == 'current']; cur = cur[0] if cur else None
+    prev = [d for d in sess if d['state'] == 'superseded']
+    cardtext = json.dumps(card or {})
+    runs = [json.load(open(f, encoding='utf-8')) for f in sorted(glob.glob(os.path.join(DATA, 'runs', who, '*.json')))]
+    since = [r for r in runs if cur and r.get('started', '') >= (datetime.datetime.strptime(cur['from'], '%Y-%m-%dT%H:%M:%SZ') - datetime.timedelta(hours=6)).strftime('%Y-%m-%dT%H:%M:%SZ')
+             and 'onboard' in (r.get('summary') or '').lower()]       # the record may come just before the registration commit
+    holds = [h.get('id') if isinstance(h, dict) else h for h in (reg or {}).get('holds', [])]
+    holds = [h for h in holds if h and h not in ('3ytzxm3g', 'oq9gflln', 'weic8imn')]
+    model = str((card or {}).get('model', ''))
+    steps = [
+        (bool(keyf), 'public key published (records/keys)'),
+        (bool(cur and keyf and cur.get('fingerprint') == keyf.get('fingerprint')), 'registered as the current session'),
+        (bool(cur and (not cur.get('supersedes') or any(d['session'] == cur['supersedes'] and d['state'] == 'superseded' for d in prev))),
+         'previous session retired' if cur and cur.get('supersedes') else 'previous session retired (none: first session)'),
+        (bool(card and card.get('status') == 'active'), 'card active'),
+        (model.startswith(('Opus', 'Sonnet')), 'card names its model (Opus or Sonnet)'),
+        (bool(re.search(r'trig_[A-Za-z0-9]{10,}', cardtext)), 'scheduled task created and its id in the card'),
+        (bool(reg), 'register present'),
+        (bool(since), 'onboarding run record left'),
+    ]
+    sid = cur['session'][:30] if cur else 'none'
+    rows = [f'ONBOARDING  {who}@php.newsroom', f'session {sid}   key {(keyf or {}).get("fingerprint", "none")}', '']
+    for ok, label in steps:
+        rows.append(('[x] ' if ok else '[ ] ') + label)
+    rows.append('')
+    rows.append('vaults to hold (from the register): ' + (', '.join(holds) if holds else 'none') + '   (the agent confirms each is cloned)')
+    done = sum(1 for ok, _ in steps if ok)
+    rows.append(f'{done} of {len(steps)} done' + ('   READY' if done == len(steps) else ''))
+    print('```\n' + _box(rows, '┌' + '─' * (W + 2) + '┐', '│', '└' + '─' * (W + 2) + '┘') + '\n```')
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter); s = ap.add_subparsers(dest='cmd', required=True)
     s.add_parser('inbox').add_argument('agent')
@@ -259,6 +355,9 @@ def main():
     p = s.add_parser('tasks'); p.add_argument('raw'); p.add_argument('--as-of'); s.add_parser('wake').add_argument('agent')
     p = s.add_parser('banner'); p.add_argument('which', choices=('start', 'end')); p.add_argument('agent'); p.add_argument('--started')
     p.add_argument('--kind'); p.add_argument('--scheduled'); p.add_argument('--release'); p.add_argument('--problems'); p.add_argument('--for-you'); p.add_argument('--next')
+    p = s.add_parser('session'); p.add_argument('action', choices=('register', 'list', 'who')); p.add_argument('agent'); p.add_argument('--id'); p.add_argument('--key')
+    p.add_argument('--qr'); p.add_argument('--account'); p.add_argument('--model'); p.add_argument('--task'); p.add_argument('--note'); p.add_argument('--at')
+    s.add_parser('onboarding').add_argument('agent')
     a = ap.parse_args(); globals()['cmd_' + a.cmd.replace('-', '_')](a)
 
 if __name__ == '__main__':

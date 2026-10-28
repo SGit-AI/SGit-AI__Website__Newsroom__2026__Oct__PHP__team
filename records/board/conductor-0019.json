@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0019",
+ "title": "release.sh takes origin/dev in with a real merge, not only a fast-forward, so a clone with unpushed commits is not stopped",
+ "status": "open",
+ "owner": "security",
+ "note": "An agent's release stopped on 'origin/dev has commits this clone does not' because it had unpushed commits of its own (28 October). tools/release.sh uses 'git merge --ff-only'; the editor's rule is to merge what is out there into your branch and resolve conflicts, then push. Proposal for security's review and dev: when the fast-forward fails, run 'git merge --no-edit origin/dev' (stop only on a conflict, naming the files), then continue. release.sh is a security-reviewed file, so this goes to a branch. Until then the guidance is to 'git merge origin/dev' before releasing: records/briefs/2026-10-28__brief__pushing-and-working-together.md."
+}

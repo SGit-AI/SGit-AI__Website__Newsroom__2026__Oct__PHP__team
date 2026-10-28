@@ -20,6 +20,12 @@ The very first thing in your reply, before any other line: `python3 records/tool
 --started <fired, ISO UTC> --kind "<what this wake is>" --scheduled <HH:MM>`, printed as it comes. The brief:
 `records/briefs/2026-10-27__brief__wake-banners.md`.
 
+## 0b. Pushing and working together (28 October 2026)
+
+Merge `origin/dev` into your branch before you release, resolve any conflict, then push; push often, in small finished
+pieces, always releasable. `records/briefs/2026-10-28__brief__pushing-and-working-together.md`. A new session
+registers itself as the agent (`schedule.py session register`): `records/briefs/2026-10-28__brief__becoming-the-agent-a-new-session.md`.
+
 ## 1. Start from dev, in team and in each repository your card names
 
 - Your card's `repositories.push` lists what you write. If one is not in your working directory, attach it with the

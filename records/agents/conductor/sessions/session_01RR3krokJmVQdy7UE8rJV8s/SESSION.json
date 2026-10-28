@@ -1,0 +1,14 @@
+{
+ "agent": "conductor@php.newsroom",
+ "session": "session_01RR3krokJmVQdy7UE8rJV8s",
+ "state": "superseded",
+ "from": "2026-10-24T00:22:34Z",
+ "until": "2026-10-28T01:33:49Z",
+ "supersedes": null,
+ "fingerprint": null,
+ "account": "the old account",
+ "model": "Opus (created as Sonnet, switched 24 October)",
+ "task": "trig_01YQ9hbCi8iZJymLf3GtRWUo (paused 28 October 00:49 UTC)",
+ "note": "No public key was published by this session. Paused for the move on 28 October; handover: records/agents/conductor/HANDOVER.md. The editor kept it open afterwards to finish the handover and the onboarding documents, on his word.",
+ "superseded_by": "session_015gaHdb9pAjN2cyZJqtkBPb"
+}

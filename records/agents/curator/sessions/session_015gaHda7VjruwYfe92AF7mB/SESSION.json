@@ -1,0 +1,13 @@
+{
+ "agent": "curator@php.newsroom",
+ "session": "session_015gaHda7VjruwYfe92AF7mB",
+ "state": "current",
+ "from": "2026-10-28T02:44:35Z",
+ "until": null,
+ "supersedes": null,
+ "fingerprint": "sha256:a4ec1e20d5739c01",
+ "account": "the newsroom's new account (agent@diniscruz.ai)",
+ "model": "Sonnet",
+ "task": "trig_01UMq1E6WYtw6sEGidMAFSpG, trig_01NgzxqJM3BJfKZ2SJZ8Eabr",
+ "note": "keys made with sgit pki (pki-agent.mjs download was refused by the session's auto-mode classifier)"
+}

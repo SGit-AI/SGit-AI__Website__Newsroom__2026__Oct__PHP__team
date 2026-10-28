@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0018",
+ "title": "Gate rule for sessions: one current session per agent, and records/keys/<agent>.json is its key",
+ "status": "open",
+ "owner": "security",
+ "note": "The editor's direction, 28 October 2026 (records/briefs/2026-10-28__brief__becoming-the-agent-a-new-session.md). tools/gate.py (a security-reviewed file): for each records/agents/<agent>/sessions/*/SESSION.json, exactly one has state 'current'; its fingerprint equals records/keys/<agent>.json's; no two windows (from, until) overlap; a superseded session has 'until' and 'superseded_by'. The conductor's pass checks the same by hand until then (schedule.py session list/who)."
+}
