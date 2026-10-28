@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0321Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-28T03:21:00Z",
+ "finished": "2026-10-28T03:57:42Z",
+ "outcome": "ok",
+ "summary": "first pass in the new account, run on the editor's word: 03:21 to 03:56 UTC, two phases pushed (vault head b3cf1e835fc5, in sync); sgit-ai v0.26.0, vault cloned --pack-store --no-checkout, token held in the session only (a wrapper adds it to sgit push); probe 385 targets, watch 939 pages (353 of the first 408 answered 200), series 8 rows appended, ledger 67 records (66 open), discovery 4062 on-topic items of 6684; data files/source-watch.json refreshed (1419 pages, 1042 publishers, 885 snapshots) with the exporter from press build/ (identical to v1's), released to data. Cyber desk: KEV 2 listed (catalog 2026.10.27), nuclei php2shell pulls read again (4 merged, 5 open, 7 closed; parser version 2), Metasploit 0 merged (2 open), EPSS last read 27 Oct 14:41 UTC at 0.99999, NVD 9.2, public repos named php2shell 0, tracker 44 sites dark of 175 rows (unverified)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "a1507f4f91b2ad11b0a57bda674c2645fedf3b64"
+}

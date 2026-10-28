@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0430Z-curator",
+ "agent": "curator",
+ "started": "2026-10-28T04:30:50Z",
+ "finished": "2026-10-28T04:53:48Z",
+ "outcome": "ok",
+ "summary": "one-off pass after the researcher's first pass (head b3cf1e835fc5, 03:53 UTC): queue 532 rows, 6 pending (the researcher's new captures of 27-28 Oct), each capture read in full; batch 23: 6 sources promoted (ohn.haendlerbund, ITforBusiness, Chosun Biz, Datanet, News1, TVNET), 23 claims cur23-, 2 timeline rows; scan of captures: no text addressed to an AI (two benign hits: an accessibility-widget footer, a product name); News1's copyright line forbids AI training, noted on the capture. Evidence vault nnd3i8iw pushed 04:51:44-04:52:03 UTC, head 2fe8a8ccacaa (651 sources, 717 captures), in sync; compaction not needed (7 commit packs, 1 snapshot). Data released from that head (files: sources, vault, vault-claims, vault-timeline; gate passed 516 files). sgit 0.26.0. Clones (brief how-an-agent-clones-a-vault): evidence --pack-store, watch --path index 03:08-03:18 UTC; widening the watch clone with sgit fetch failed ('this clone holds only part of the vault'), so the six snapshot folders were cloned one by one with --path, about 3-5 minutes each (board row for the conductor). Not yet done: the projects desk's three requests (acn-it-php2shell note, php-net-advisory note, vault-claims attributions of the BBC), planned for the next wake",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "87753b9291767019a9b5456e5675d5e0c154aa21"
+}

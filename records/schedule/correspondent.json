@@ -14,8 +14,8 @@
   "16:55",
   "19:25"
  ],
- "model": "Opus",
- "session": "this persistent session, scheduled | correspondent@php.newsroom, on Opus (session_017Ue7cxZnVfB98bPMW4Fccm), woken by two scheduled tasks bound to it: trig_01XuuKqdtsRJ9n7jzUrSj9G9 (CRON_TZ=Europe/London 25 9,14,19 * * *) and trig_01T68Dq7frujFkMeEtJ5Bvjj (CRON_TZ=Europe/London 55 11,16 * * *), created 26 October 2026 at the editor's go. The fresh-session tasks of 25 October (trig_01QFHSsN5SyDzfHFLCjGwnoE, trig_014yJ7f7dxh9a2QLWhDG6kqb) are paused: a fresh session could not always attach the repository.",
+ "model": "Sonnet",
+ "session": "this persistent session, scheduled | correspondent@php.newsroom, on Sonnet (session_015gaHdaEJGXTfzWm5qULFLS, registered as ...-again), woken by two scheduled tasks bound to it: trig_01BEevB8uHovt5LUA7aSrJ1x (CRON_TZ=Europe/London 25 9,14,19 * * *) and trig_014jirF8YQKLRVGZo8CMX93R (CRON_TZ=Europe/London 55 11,16 * * *), created 28 October 2026 at the editor's go. The earlier session's tasks (trig_01XuuKqdtsRJ9n7jzUrSj9G9, trig_01T68Dq7frujFkMeEtJ5Bvjj) belong to a retired session.",
  "repositories": {
   "push": [
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
@@ -71,12 +71,12 @@
  "updated": "2026-10-26",
  "tasks": [
   {
-   "id": "trig_01XuuKqdtsRJ9n7jzUrSj9G9",
+   "id": "trig_01BEevB8uHovt5LUA7aSrJ1x",
    "wakes": "09:25, 14:25, 19:25",
    "fires_into": "this session"
   },
   {
-   "id": "trig_01T68Dq7frujFkMeEtJ5Bvjj",
+   "id": "trig_014jirF8YQKLRVGZo8CMX93R",
    "wakes": "11:55, 16:55",
    "fires_into": "this session"
   }

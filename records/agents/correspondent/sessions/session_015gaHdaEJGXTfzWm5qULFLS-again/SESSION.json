@@ -1,0 +1,13 @@
+{
+ "agent": "correspondent@php.newsroom",
+ "session": "session_015gaHdaEJGXTfzWm5qULFLS-again",
+ "state": "current",
+ "from": "2026-10-28T03:26:45Z",
+ "until": null,
+ "supersedes": "session_015gaHdbWEWFsJYyL67i8V87",
+ "fingerprint": "sha256:60a78bc4a1dcc0b2",
+ "account": "the newsroom's new account (agent@diniscruz.ai)",
+ "model": "Sonnet",
+ "task": null,
+ "note": "the editor's word, 28 October 2026: he started two correspondent sessions by mistake and chose this one (session_015gaHdaEJGXTfzWm5qULFLS, same key sha256:60a78bc4a1dcc0b2) as the agent; the id carries -again because a session registers once; session_015gaHdbWEWFsJYyL67i8V87 is retired"
+}

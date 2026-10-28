@@ -1,0 +1,12 @@
+{
+ "agent": "desk@php.newsroom",
+ "fingerprint": "sha256:46922be9562315cb",
+ "encryption_fingerprint": "sha256:d84935c13bc756da",
+ "public_key": "k1.MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAn4877cqGaom1hvQUpLJqj-xCx57VsKj0NMCRdefaDjjAKDAg_s8O9DIXmN7hyBEn2YKG6usAtcxXNEU1igVbSo1NWlTtvG_Vo0a2I4lF71MubAfUpOmMbwJIUFHYuBkEgw6pEI9zUJ4vOpIxPAG1_JigC7ni26IPD7CMGQpnrd7cLG2O3PEYaYX6yTw1MERuAOLJ0-vq2RXbqEQJ7kQSdmfR70gMJFSxBU0OI7u9owAxfJyu6ByOOo9Tuhw3GqKrGm1IU13jcJgTlBwemEM0SnXLprm3UryStHzba6T34T9KUZaCgsvUe6rjaWFtrMEWU3rgkhs0rutk34QQuKfQrMdEK5tAUb6G-Ami7ZkMJ9gc8mpD7ATdUYY86eD-tr2kGz6GZ0tzDTPoC9hEEuVwMsIW2O6fbFQHvhLTzRUFCMBiCuqv0v7HB6Ud3HK54KqrYPKNenbFpHtSz3i7IBySbVOMHi3aYA6Jjnuk2DO1o04OcsQ6LFeWWDXRkZ8wPc0uecoKviJzeRvgUm1FsmXLN_vSxkbsl0o466YJGB_Wqkttwp8P6sxx4v-YOnA3rL61Tgc1SDukJLDD0vss32fcrAZEi4XBYO_xORaxXV6LQgY_fYouXVBYnbxG9uBTRyod5nuEUDqsEfViWyl0DabbPAP-9i8BtMq67RCjL7NU0DcCAwEAAQ.MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE9LJ_ntFnzNafenF7Gg86sIGwQP_GAhsgrobHBh9KzlOVfB0KYsq9TbwlpfcCLAFJEzWYgjP_yZqusP7FmOA20Q.ZGVza0BwaHAubmV3c3Jvb20gKENsYXVkZSBDb2RlIHNlc3Npb24p",
+ "session": "session_015gaHdeFrPYNxywsrKLHdkd",
+ "created": "2026-10-28T03:28:46Z",
+ "from": "2026-10-28T03:28:46Z",
+ "account": "the newsroom's new account (agent@diniscruz.ai)",
+ "enrolled": false,
+ "replaces": null
+}
