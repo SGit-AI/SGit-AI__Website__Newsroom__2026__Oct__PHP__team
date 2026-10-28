@@ -3,7 +3,7 @@
  "address": "observability@php.newsroom",
  "member": "observability",
  "status": "active",
- "status_note": "Onboarded 28 October 2026 in the new account (session session_015gaHdbho2UYv1diGTkKh7F, Sonnet). Registered as the current session; the two telemetry vault keys and the SG/Send token still wait on the editor, so no drain yet. The scheduled task is NOT created: it is created at the editor's go and its id written here. The old account's task is disabled and gone.",
+ "status_note": "Onboarded 28 October 2026 in the new account (session session_015gaHdbho2UYv1diGTkKh7F, Sonnet). Scheduled task created at the editor's go. The two telemetry vault keys and the SG/Send token still wait on the editor, so no drain yet.",
  "objective": "Keep the telemetry lane drained and readable: three times a day, drain what waits in the telemetry vault's lane (84wr8mib) before it nears the server's 1,000-event cap, read what came in as untrusted claims, and say in the run record who read what, what looks wrong, and what waits on whom.",
  "tz": "Europe/London",
  "days": "every day",
@@ -64,10 +64,10 @@
   ]
  },
  "task": {
-  "id": null,
-  "enabled": false,
+  "id": "trig_01TRnj8889tqPxXLhNYXRomr",
+  "enabled": true,
   "cron": "CRON_TZ=Europe/London 33 8,14,20 * * *",
-  "session": null,
-  "state": "not yet created in the new account; created at the editor's go"
+  "session": "session_015gaHdbho2UYv1diGTkKh7F",
+  "state": "created 28 October 2026 at the editor's go, into this session; first wake 08:33 London on 29 October. Until the vault keys and token are in the session, a wake leaves a run record with outcome failed ('keys not in this session')."
  }
 }
