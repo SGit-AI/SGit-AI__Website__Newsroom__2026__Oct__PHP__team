@@ -1,0 +1,7 @@
+const { chromium } = require('playwright')
+;(async () => { const b = await chromium.launch(), p = await b.newPage({ viewport: { width: 390, height: 844 } })
+  await p.goto('http://localhost:8790/?page=overview'); await p.waitForSelector('text=Sections of the site')
+  await p.locator('section.card', { hasText: 'Pages' }).first().locator('.hb-row', { hasText: '/sources/calif-php2shell/' }).first().locator('button.pt').click()
+  await p.waitForSelector('text=Paths through it'); await p.waitForTimeout(500)
+  const sw = await p.evaluate(() => document.documentElement.scrollWidth); console.log('page width at 390px:', sw)
+  await p.screenshot({ path: process.argv[2] + '/5-phone.png' }); await b.close() })()

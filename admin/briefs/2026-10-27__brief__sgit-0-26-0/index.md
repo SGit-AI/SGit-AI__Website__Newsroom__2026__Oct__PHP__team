@@ -42,7 +42,9 @@ whole once. It follows the 0.25.0 brief (`records/briefs/2026-10-26__brief__sgit
 
 2. **Read the release notes**, sections 2 (what is new) and 4 (compatibility), before you change how you clone.
 
-3. **Consider the new ways to clone**, each where it fits your card:
+3. **Clone in pack mode, never a plain `sgit clone`** (the editor, 28 October: `records/briefs/2026-10-28__brief__how-an-agent-clones-a-vault.md`
+
+ says which mode for which agent). The ways, each where it fits your card:
 
 - `clone --no-checkout` then `sgit checkout `: for an agent that reads a few folders of a large vault (the
 
@@ -92,4 +94,4 @@ This brief is the file `admin/content/briefs/2026-10-27__brief__sgit-0-26-0.md` 
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__sgit-0-26-0/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__sgit-0-26-0/index.html

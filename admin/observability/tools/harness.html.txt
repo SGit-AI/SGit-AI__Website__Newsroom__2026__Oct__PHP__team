@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Telemetry app: dry-run harness</title>
+<style>body{margin:0;background:#f6f5f2;color:#0b0b0b;font:15px/1.5 system-ui,sans-serif}#app{padding:16px}#dry{background:#fff4e0;padding:4px 16px;font-size:13px}</style></head>
+<body><div id="dry">Dry-run harness: the lane is listed and fetched for real; nothing is published and nothing is marked processed.</div><div id="app">Loading…</div>
+<script>
+const j = (u, b) => fetch(u, { method: 'POST', body: JSON.stringify(b || {}) }).then(async r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() })
+const store = {}
+const sg = {
+  app: { writable: true, vaultId: '84wr8mib' },
+  state: { get: async k => store[k], set: async (k, v) => { store[k] = v } },
+  loadJs: p => new Promise((ok, no) => { const s = document.createElement('script'); s.src = '/' + p; s.onload = ok; s.onerror = () => no(new Error('load ' + p)); document.head.appendChild(s) }),
+  loadCss: p => new Promise(ok => { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = '/' + p; l.onload = ok; l.onerror = ok; document.head.appendChild(l) }),
+  vfs: {
+    readText: async p => { const r = await fetch('/vfs/read?p=' + encodeURIComponent(p.replace(/^\//, ''))); if (!r.ok) throw new Error('missing ' + p); return r.text() },
+    list: async p => (await fetch('/vfs/list?p=' + encodeURIComponent(p.replace(/^\/|\/$/g, '')))).json(),
+    write: async (p, t) => { await fetch('/vfs/write?p=' + encodeURIComponent(p), { method: 'POST', body: t }) },
+  },
+  append: { list: b => j('/lane/list', b), fetch: b => j('/lane/fetch', b), markProcessed: b => j('/lane/mark-processed', b) },
+  sync: { status: async () => ({ writable: true, localHasUnsynced: location.search.includes('fail=publish') }), pull: async () => ({ pulled: false }), push: async () => new Promise(r => setTimeout(r, 600)) },
+  history: { log: async () => [] },
+}
+TelemetryApp = { mod: {} }
+sg.loadJs('ux/app/telemetry-app.js').then(() => TelemetryApp.render({ sg, mount: document.getElementById('app'), ux: 'ux/', page: new URLSearchParams(location.search).get('page') || 'queue' })).catch(e => document.getElementById('app').textContent = String(e))
+</script></body></html>

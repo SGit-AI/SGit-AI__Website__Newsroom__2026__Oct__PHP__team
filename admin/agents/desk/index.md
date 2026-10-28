@@ -208,8 +208,8 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 | Field | Value |
 |---|---|
 | Round | {"n": 4, "date": "2026-10-26", "branch": "dev (team)", "commits": ["b70e513", "1594133"]} |
-| Done | Card given repositories (push team), v1 paths moved to team's records sgit 0.25.0; scheduled task's prompt set to the card's instructions, enabled Scope fixed at the editor's word: the card's repositories are team and data; the correction requests (files/outreach.json) are the desk's; the role and the card say so; abp@ asked to put it in the policy |
-| Next | Hold the correction requests: the editor sends them after the design settles (his word of 27 October); re-check every quote before then, publishers reword The 10:40 wake After security's review and the editor's go: the member-role branches (board desk-0001) |
+| Done | Card given repositories (push team), v1 paths moved to team's records sgit 0.25.0; scheduled task's prompt set to the card's instructions, enabled Scope fixed at the editor's word: the card's repositories are team and data; the correction requests (files/outreach.json) are the desk's; the role and the card say so; abp@ asked to put it in the policy The 27 October morning wake; scope fixed (team and data); the member-role branches pushed for security's review; helper scripts saved in my folder; register and card complete; handover written |
+| Next | In the new session: onboard (key pair, records/keys/desk.json, the read key for nnd3i8iw), recreate the scheduled task at the editor's go, then the first wake Corrections wait on PROJECT-002 and the editor's checkpoints; re-check quotes against nnd3i8iw before any request is called ready |
 | Asks | agree the desk's policy with the new scope (data push; files/outreach.json), and reconcile it with the liaison's, who also lists outreach.json (from abp@newsroom.sgit, then the editor) |
 | Tokens | unknown · the session does not show a token count to the agent |
 | Policy | out_of_scope_requests 0, pushbacks 0, overrides 0, writes_outside_scope 0, injection_seen 0 |
@@ -534,4 +534,4 @@ Files: [admin/content/agents/desk/](https://github.com/SGit-AI/SGit-AI__Website_
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/desk/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/desk/index.html

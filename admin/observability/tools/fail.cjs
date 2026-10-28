@@ -1,0 +1,7 @@
+const { chromium } = require('playwright')
+;(async () => { const b = await chromium.launch(), p = await b.newPage({ viewport: { width: 1280, height: 900 } })
+  let marks = 0; p.on('request', r => { if (r.url().includes('mark-processed')) marks++ })
+  await p.goto('http://localhost:8790/?fail=publish'); await p.waitForSelector('text=Drain it into this vault')
+  await p.locator('button', { hasText: /^Drain \d/ }).click(); await p.waitForSelector('text=Stopped:', { timeout: 60000 }); await p.waitForTimeout(800)
+  await p.screenshot({ path: process.argv[2] + '/5-failed.png' })
+  console.log(await p.locator('.steps').innerText()); console.log('mark-processed requests:', marks); await b.close() })()

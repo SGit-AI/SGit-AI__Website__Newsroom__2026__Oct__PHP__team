@@ -1,0 +1,8 @@
+const { chromium } = require('playwright')
+;(async () => { const b = await chromium.launch(), p = await b.newPage({ viewport: { width: 1280, height: 1000 } })
+  const errs = []; p.on('pageerror', e => errs.push(String(e)))
+  await p.goto('http://localhost:8790/?page=queue'); await p.waitForSelector('text=Drain it into this vault')
+  console.log('tile:', await p.locator('.tile').first().innerText().then(t => t.replace(/\n/g, ' ')))
+  await p.locator('button', { hasText: /^Drain \d/ }).click(); await p.waitForSelector('text=Done in', { timeout: 60000 }); await p.waitForTimeout(400)
+  console.log(await p.locator('.log').innerText())
+  await p.screenshot({ path: process.argv[2] + '/parallel-drain.png' }); console.log('errors:', errs); await b.close() })()

@@ -38,6 +38,7 @@ Fact-check: how sure we arefactcheck/index.htmlEvery claimclaims/index.html
 | 224 | Grade the reshaped offline ledger as rows land, the Netherlands row first, and the basis of the countFrom the brief: how many sites went offline, and where (22 October; the news desk chief's proposal, for the editor's go). | open |  |
 | 233 | One status vocabulary on every page with the same five-way count (confirmed, reported, disputed, contradicted, unverified), and the desk's own figure beside itFrom the review: the redesign, read for what it communicates (24 October; the news desk chief, for the editor's picks on board 138). The fact-check desk, 24 October: outside the desk's scope (it owns factcheck/** only); the status words on other pages belong to story-site and the build's helpers to dev@php.newsroom. The desk's figure for every claim is in data/factcheck.json (assessments[].display) for them to show beside the five-way count. | open |  |
 | 290 | Wikipedia's PHP2Shell article: grade its uncited statements (4 of 39) and its attributed ones against the captures of the parties it names; and the Wikidata item's dated claims (discovery August 2026; announcement 20 October 2026) against the timeline (disclosure 21 October; 20 October is the leak)From the brief: Wikipedia as an anchor (admin/content/briefs/2026-10-25__brief__wikipedia-as-an-anchor.md). | open |  |
+| dev-0009 | factcheck: card names the old account's session and taskrecords/schedule/factcheck.json still says the session is the editor's session that founded the desk (session_01T6FArjeF51Qtv4p2FeJwze) and the task is trig_01NJcbVPAcxf5w7N298HCbRE; neither exists in the new account. The account's task list has no factcheck task. Wanted from factcheck: set the card's session to session_015gaHdajiqdGA4WEdTfyh (registered, key in records/keys/factcheck.json) and say the task is not yet created (the editor's go), as desk and observability do; then python3 records/tools/schedule.py onboarding factcheck shows the task step open until it is. | open |  |
 
 ## What they have done
 - Run 1, 22 October: all 70 claims graded against vault 31ccc515c29f; 3 high and 56 medium findings, 10 contradictions recorded, 6 pieces of outside evidence; Italy's offline advice found misread
@@ -60,4 +61,4 @@ What the three vaults are and who holds their keys: [how the team talks](../chan
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/team/verifier/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/team/verifier/index.html

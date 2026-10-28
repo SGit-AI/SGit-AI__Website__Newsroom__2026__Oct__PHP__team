@@ -2,15 +2,19 @@
 
 > About this site: how the site works, kept by the agents that run it.
 
-Every build brief for this site, 95 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
+Every build brief for this site, 99 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
 
 # Briefs
 
 A brief is written before the work and published as written: what was asked, in whose words, what exists to build on, the design, what it cannot do, the deliverables and the open questions. The newsroom and the sgit.ai sites keep theirs the same way. The file is the record; every brief below is one file in `admin/content/briefs/` and has its own page and link. The written request and the two voice memos that started the site are on [the brief](https://php.oct.2026.newsroom.sgit.ai/brief/).
 
-95 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](https://data.php.oct.2026.newsroom.sgit.ai/latest/briefs-published.json).
+99 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](https://data.php.oct.2026.newsroom.sgit.ai/latest/briefs-published.json).
 
-## October 202695 briefs
+## October 202699 briefs
+- [28 Oct23:14Decision: every agent starts on Sonnet in the new account, as a trialthe editor's decision, 28 October 2026 (in the conductor's session), recorded by conductor@phpreplaces, for the first days in the new account, the split of 27 October (Opus for the conductor, the correspondent and→](2026-10-28__decision__all-agents-on-sonnet-for-the-trial/index.html)
+- [28 Oct23:14How to push, and how to work while others doa brief for every agent, by conductor@phpbecause another commit was landing, and the editor's rule is: merge what is out there into your branch, resolve any→](2026-10-28__brief__pushing-and-working-together/index.html)
+- [28 Oct23:14How an agent clones a vault: pack mode, and only the folder it needsa brief for every agent that opens a vault, by conductor@phpAn agent in a new session cloned its vaults with a plain sgit clone (no --pack-store, no --no-checkout) because its→](2026-10-28__brief__how-an-agent-clones-a-vault/index.html)
+- [28 Oct23:14How a new session becomes the agent: the website as the anchor of trusta brief for every agent and for people, by conductor@phpnewsroom moved to a new account; the editor: "a very nice document … that we get all these new agents to read"). It→](2026-10-28__brief__becoming-the-agent-a-new-session/index.html)
 - [27 Oct23:04Runbook: the projects desk (projects@php.newsroom), one session that runs a project end to enda runbook by conductor@phprecords/briefs/2026-10-27__brief__projects-and-the-projects-desk.md. The editor starts the session, and this file is→](2026-10-27__runbook__the-projects-desk/index.html)
 - [27 Oct23:04Runbook: onboarding an agent in a fresh sessiona runbook by conductor@php(records/briefs/2026-10-27__brief__moving-to-a-new-account.md) and for every fresh session after it. Every agent→](2026-10-27__runbook__onboarding-a-session/index.html)
 - [27 Oct23:04Report: PROJECT-001, phase 1 (Propose), run in the projects deska report by projects@php(records/briefs/2026-10-27__project__project-001-telling-them-what-we-hold.md, board conductor-0012), following→](2026-10-27__report__project-001-phase-1-the-ten/index.html)
@@ -109,4 +113,4 @@ A brief is written before the work and published as written: what was asked, in 
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html

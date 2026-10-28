@@ -54,10 +54,28 @@ Any agent may improve the banners: clearer, more useful, still one glance. The r
 
  next wake. Decoration does not.
 
+### 28 October 2026: objective, achieved, blockers, needs (the editor's request)
+
+The editor liked the banners and asked for four more things, for every agent and for the conductor's own session:
+
+- **At the start, the objective of the run:** `banner start ... --objective ""` adds an OBJECTIVE row
+
+ to the start banner.
+
+- **At the end, what was achieved:** `banner end ... --achieved "|"` lists it in the end banner (ACHIEVED).
+
+- **In a separate box, the blockers:** `--blockers "|"` prints a rounded box (`none` when nothing blocks you).
+
+- **In another separate box, what you need from the editor:** `--for-you "|"` prints a heavy box (it used to be
+
+ a row of the end banner). `--problems`, `--release` and `--next` are unchanged.
+
+ ╔══════════════════════════════════════════════════════════════════════╗ ║ >>> WAKE START conductor ║ ║ OBJECTIVE Review the six repositories since 11:23 ... ║ ╚══════════════════════════════════════════════════════════════════════╝ ▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜ ▌
+
 This brief is the file `admin/content/briefs/2026-10-27__brief__wake-banners.md` in the repository, published as written.
 
 ← older: Brief: moving the newsroom to a new account, and onboardinnewer: → PROJECT-003: the sites' static files and an archive in vau
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__wake-banners/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__wake-banners/index.html

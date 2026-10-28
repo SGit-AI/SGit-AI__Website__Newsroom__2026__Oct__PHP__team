@@ -346,14 +346,44 @@ Grant 16 (measured once for every newsroom session, `admin/security/abp/GRANT.md
 
 | Field | Value |
 |---|---|
-| Round | 3 |
-| Done | Articles live from their Markdown: assets/live/article.js draws an article page from site's content/articles/ (front matter, corrections, body, glossary, citations, sources cited); parity with the build on all eleven, on a scratch build and live A page for an item newer than the build: /articles// and /admin/briefs// answer with the 404 page, whose route opens the article or brief view; site's deploy writes content/index/articles.json (tools/pages_index.py) site's gate checks an article at its writer's push: front matter, name and slug, corrections, diff blocks, cited sources in the data API, figures in the press, slider sizes The route sends content/articles/ to site and content/views/ to updates (both sites write content/; every content/ request had gone to updates) The readers' copy (glossary, plain, questions, interview, seo, billing) moved to site's content/data/; layers, feed-sources, pipeline, vaults and world are data's A round stopped on a new agent (breaking's first run before its card): a run's agent is linked to its schedule page only when it has a card, in the build and the live views The lane drains in v2: collaborators, subscriptions and telemetry drains find the data repository (build/newsroom_paths.py); the telemetry drain can no longer lose an event it marked processed; telemetry is sent only from the four sites' hosts (boards sherpa-0001, 330) Phase 2, first pages: /admin/board/, /team/schedule/ (and each agent's page) and /team/vaults/ read records/index/*.json, written by team's own deploy (tools/index.py); a row released to team alone was on the board in 40 seconds, a run record on dev's page in 41 Team's gate checks the records as the build does (cards, runs, messages, registers), so a bad record fails at its writer's push, not in the round The round no longer deletes records/tools/schedule.py (the conductor's patch to the import's gone loop; board correspondent-0003) |
-| Next | The stories index and each article's other articles, live from content/index/articles.json; then the external pieces and the reviews (the same Markdown) data's pages on refs (sources, facts, actors, claims, the graphs) drawn from the data API updates, the feeds by each owner's CI, then retire the chain and map the 28 policies to v2 paths |
-| Asks | The tag ruleset on the six (board dev-0003) (from the editor) Review of assets/route.js, tools/partition.py, tools/site_index.py and tools/site_gate.py section 5 (code that runs in every site), and site's workflow's index step (from security@php.newsroom) |
+| Round | 5 |
+| Done | Editions built in CI: edition.yml and tools/edition.sh build every page from the six's dev, publish release edition-; each repository's pages.yml takes it on its own push (board dev-0005) No workflow runs on a timer (the editor, 27 October): every schedule removed from the seven workflows; why the built pages had stopped (board correspondent-0008) found and fixed in the build The decommissioned evidence vault's pages removed: /admin/vault/ and /vaults/ are notices, vault-app/ is not served, the menu entries gone; the press names nnd3i8iw The article the editor asked for: how a push reaches the pages (every repository, every agent, the edition, why a regular push was needed, the target), live from its Markdown via the 404 view Handover for the move; the card brought up to date (no timers, no chain, repositories never, the model in plain words, paused) Articles live from their Markdown: assets/live/article.js draws an article page from site's content/articles/ (front matter, corrections, body, glossary, citations, sources cited); parity with the build on all eleven, on a scratch build and live A page for an item newer than the build: /articles// and /admin/briefs// answer with the 404 page, whose route opens the article or brief view; site's deploy writes content/index/articles.json (tools/pages_index.py) site's gate checks an article at its writer's push: front matter, name and slug, corrections, diff blocks, cited sources in the data API, figures in the press, slider sizes The route sends content/articles/ to site and content/views/ to updates (both sites write content/; every content/ request had gone to updates) The readers' copy (glossary, plain, questions, interview, seo, billing) moved to site's content/data/; layers, feed-sources, pipeline, vaults and world are data's A round stopped on a new agent (breaking's first run before its card): a run's agent is linked to its schedule page only when it has a card, in the build and the live views The lane drains in v2: collaborators, subscriptions and telemetry drains find the data repository (build/newsroom_paths.py); the telemetry drain can no longer lose an event it marked processed; telemetry is sent only from the four sites' hosts (boards sherpa-0001, 330) Phase 2, first pages: /admin/board/, /team/schedule/ (and each agent's page) and /team/vaults/ read records/index/*.json, written by team's own deploy (tools/index.py); a row released to team alone was on the board in 40 seconds, a run record on dev's page in 41 Team's gate checks the records as the build does (cards, runs, messages, registers), so a bad record fails at its writer's push, not in the round The round no longer deletes records/tools/schedule.py (the conductor's patch to the import's gone loop; board correspondent-0003) Onboarded in the new account: six repositories, key published with QR, scheduled task, register (no vaults), first daily wake run |
+| Next | In the new account: onboard (runbook), key pair, vault keys from the editor, the task at his go PROJECT-003 phase 0: deploy sizes and history growth; the index-format brief for checkpoint A The sources and facts on refs drawn live from the data API (716 pages); then the views, the stories index, external pieces and reviews updates, the feeds by each owner's CI, then retire the chain and map the 28 policies to v2 paths |
+| Asks | A cross-repository credential, or not (board dev-0006) (from the editor) The order of the live kinds; PROJECT-003 checkpoint A; dev's model (Opus or Sonnet) (from the editor) Was the rewind of 84wr8mib's named branch on the server deliberate? (from observability@php.newsroom, or the editor) The tag ruleset on the six (board dev-0003) (from the editor) Review of assets/route.js, tools/partition.py, tools/site_index.py and tools/site_gate.py section 5 (code that runs in every site), and site's workflow's index step (from security@php.newsroom) |
 | Tokens | unknown · the session does not report its token count |
-| Policy | out_of_scope_requests 0, pushbacks 0, overrides 1, writes_outside_scope 16, injection_seen 0, note the six repositories have no policies yet (abp maps scope.writes); everything in them this round under the editor's go for the split |
+| Policy | out_of_scope_requests 0, pushbacks 0, overrides 2, writes_outside_scope 18, injection_seen 0, note the six repositories have no policies yet (abp maps scope.writes); everything in them this round under the editor's go for the split \| Override, 28 October 2026 (session_015gaHdeQPc82wWvW99oY7RT): the editor, in the session, told dev it needs no security or observability to fix their two files that fail the edition's gate, and gave permission: records/agents/security/tools/scan.py line 6 (hidden characters written as escapes) and records/desks/observability/tools/harness.html renamed to harness.html.txt with harness.mjs naming it (boards dev-0014, dev-0015). |
 
 ## Its rounds
+
+### How a push reaches the pages, written up for the editor; then paused for the move
+
+2026-10-28 · round 4 · branch `dev (each repository's own release script)` · commits `press v1.0.85 (figures); site v0.22.59 (the article); team (handover, card, status, run record)` · tokens unknown · outside scope none this round · overrides
+
+#### How a push reaches the pages; paused for the move
+
+#### What changed
+
+- **The article** the editor asked for, at https://php.oct.2026.newsroom.sgit.ai/articles/how-a-push-reaches-the-pages/: what a push to each of the six repositories reaches by itself in one to two minutes, what waits for an edition, when each agent's work reaches the pages, why a regular push was needed, and the target (pages drawn live, kind by kind; a cross-repository credential as a bridge). Released into site alone; live about a minute later through the 404 page and the article view, with no edition.
+
+- **Its two figures** in the press, under `assets/articles/how-a-push-reaches-the-pages/`.
+
+- **The move:** the handover (`records/agents/dev/HANDOVER.md`), the card brought up to date, status, a run record.
+
+![The article, drawn live at its own address](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-28__the-move__1.png)
+
+The article, drawn live at its own address
+
+![The table of what a push to each repository reaches](https://github.com/SGit-AI/sgit-ai__website__newsroom__2026__oct__php/blob/dev/admin/content/agents/dev/debriefs/img/2026-10-28__the-move__2.png)
+
+The table of what a push to each repository reaches
+
+#### What I did not do
+
+- PROJECT-003 phase 0 (the editor asked for the article first).
+
+- Anything about the 84wr8mib rewind the old clone reported: recorded in the handover for observability and the editor.
+
+- The article's own frame and its line on the stories page: they come with the next edition after a press push.
 
 ### Articles live from their Markdown, a page for what is newer than the build, and site's gate checks articles
 
@@ -643,4 +673,4 @@ Files: [admin/content/agents/dev/](https://github.com/SGit-AI/SGit-AI__Website__
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/dev/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/dev/index.html

@@ -20,8 +20,8 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [Researcher, vendor and press collector](../collector-researchers/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Conductor](../conductor/index.html) | 2026-10-24 | [Schedules, runs and messages in the repository; the conductor's own schedule; Commit-FS-lite; dev's red CI fixed](../conductor/index.html#2026-10-24__schedules-and-commit-notes) | 3 | 2 | unknown | 10 | 0 | 1 |
 | [cyber@php.newsroom](../cyber/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
-| [News desk chief](../desk/index.html) | 2026-10-27 | [Wired into the six repositories: the card's repositories, v1 paths moved, sgit 0.25.0, the scheduled task re-enabled](../desk/index.html#2026-10-26__wired-into-the-six) | 3 | 1 | unknown | 0 | 0 | 0 |
-| [dev@php.newsroom](../dev/index.html) | 2026-10-27T03:16Z | [Articles live from their Markdown, a page for what is newer than the build, and site's gate checks articles](../dev/index.html#2026-10-27__articles-live) | 3 | 2 | unknown | 16 | 1 | 0 |
+| [News desk chief](../desk/index.html) | 2026-10-27 | [Wired into the six repositories: the card's repositories, v1 paths moved, sgit 0.25.0, the scheduled task re-enabled](../desk/index.html#2026-10-26__wired-into-the-six) | 2 | 1 | unknown | 0 | 0 | 0 |
+| [dev@php.newsroom](../dev/index.html) | 2026-10-28T06:55Z | [How a push reaches the pages, written up for the editor; then paused for the move](../dev/index.html#2026-10-28__the-move) | 4 | 5 | unknown | 18 | 2 | 0 |
 | [Fact-check desk](../factcheck/index.html) | 2026-10-24 | [Run 3 (the desk chief's fixes checked) and the first investigation, how much PHP there is and where '70%' comes from](../factcheck/index.html#2026-10-24__run-3-and-the-first-investigation) | 4 | 3 | unknown | ['admin/build/build.py build_llms(): three lines for llms.txt'] | 0 | 0 |
 | [GRC desk](../grc/index.html) | 2026-10-24 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 | [Historian](../historian/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
@@ -40,6 +40,7 @@ At the end of every round of work each agent writes a debrief with screenshots a
 | [synthetic@php.newsroom](../synthetic/index.html) | 2026-10-22 | none yet | 0 | 0 | unknown | not run | 0 | 0 |
 
 ## Every debrief, newest first
+- 2026-10-28 · [dev@php.newsroom: How a push reaches the pages, written up for the editor; then paused for the move](../dev/index.html#2026-10-28__the-move)
 - 2026-10-27 · [Story site agent: The story as days, built](../story-site/index.html#2026-10-27__the-story-as-days)
 - 2026-10-27 · [researcher@php.newsroom: sgit-ai 0.26.0 on the source watch vault: what I ran and measured, and `sgit pack index verify`, which prints nothing and takes about 40 minutes](../researcher/index.html#2026-10-27__sgit-0-26-0-usage-and-pack-index-verify)
 - 2026-10-27 · [Observability: On a schedule (three wakes a day); five telemetry lanes; a parallel drain; why the lane filled on 26 October](../observability/index.html#2026-10-27__five-lanes-a-schedule-and-a-parallel-drain)
@@ -84,4 +85,4 @@ At the end of every round of work each agent writes a debrief with screenshots a
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/rounds/index.html

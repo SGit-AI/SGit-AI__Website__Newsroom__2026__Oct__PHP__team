@@ -19,12 +19,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.50" |
-| `data_as_of` | "2026-10-27T19:13Z" |
-| `vault_commit` | "6f0d5c50bf12" |
-| `counts` | {"sources": 645, "captures": 711, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 35, "disputed": 9, "contradicted": 2, "unverified": 4}, "event |
+| `version` | "0.22.51" |
+| `data_as_of` | "2026-10-28T17:15Z" |
+| `vault_commit` | "75668aedfb6d" |
+| `counts` | {"sources": 675, "captures": 741, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 35, "disputed": 9, "contradicted": 2, "unverified": 4}, "event |
 | `headline_facts` | [{"id": "two-cves-9.2", "text": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and |
-| `latest_story` | {"title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell", "url": "https://php.oct.2026.newsroom.sgit.ai/articles/steal-my-bi |
+| `latest_story` | {"title": "How a push reaches the pages: the six repositories, the edition, and why one push still waits for another", "url": "https://php.oct.2026.newsroom.sgi |
 | `links` | {"front": "https://php.oct.2026.newsroom.sgit.ai/index.html", "sources": "https://php.oct.2026.newsroom.sgit.ai/sources/index.html", "claims": "https://php.oct. |
 
 ## The rules
@@ -49,12 +49,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.50",
- "data_as_of": "2026-10-27T19:13Z",
- "vault_commit": "6f0d5c50bf12",
+ "version": "0.22.51",
+ "data_as_of": "2026-10-28T17:15Z",
+ "vault_commit": "75668aedfb6d",
  "counts": {
-  "sources": 645,
-  "captures": 711,
+  "sources": 675,
+  "captures": 741,
   "claims": 70,
   "claims_by_status": {
    "confirmed": 20,
@@ -65,7 +65,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   "events": 69,
   "agencies": 16,
-  "offline_reported": 34,
+  "offline_reported": 36,
   "compromises_confirmed": 0
  },
  "headline_facts": [
@@ -84,7 +84,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   {
    "id": "no-confirmed-compromise",
-   "text": "As of 19:13 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "As of 17:15 UTC on 28 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
    "status": "reported",
    "url": "https://php.oct.2026.newsroom.sgit.ai/claims/index.html#no-confirmed-compromise",
    "sources": [
@@ -141,9 +141,9 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   }
  ],
  "latest_story": {
-  "title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell",
-  "url": "https://php.oct.2026.newsroom.sgit.ai/articles/steal-my-bitcoin/index.html",
-  "written": "2026-10-26",
+  "title": "How a push reaches the pages: the six repositories, the edition, and why one push still waits for another",
+  "url": "https://php.oct.2026.newsroom.sgit.ai/articles/how-a-push-reaches-the-pages/index.html",
+  "written": "2026-10-27",
   "origin": "house"
  },
  "links": {
@@ -160,4 +160,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

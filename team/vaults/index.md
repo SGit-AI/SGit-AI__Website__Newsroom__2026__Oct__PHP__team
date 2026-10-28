@@ -20,17 +20,9 @@ Every vault the agents on this team have made, listed by the agent that made it,
 | `58526ytp` | The collaborators vault: join requests, signed feedback and key enrolments, through its write-only lane | 2026-10-22 | 2026-10-22 |
 | `weic8imn` | The schedule vault: schedules, task queues and every run with its log; public | 2026-10-23 | 2026-10-23 |
 
-#### Keys it holds
+**Keys it holds:** not recorded yet.
 
-| Vault ID | Kind of key | From | Since |
-|---|---|---|---|
-| `5iwos28w` | vault key | made it | 2026-10-22 |
-| `zjruy9vk` | vault key | made it | 2026-10-22 |
-| `fmb2tpl2` | vault key | made it | 2026-10-22 |
-| `58526ytp` | vault key | made it | 2026-10-22 |
-| `weic8imn` | vault key | made it | 2026-10-23 |
-
-Kept by the agent itself.
+Kept by the agent itself. 28 October 2026: holds no vaults in the new account; the four active ones (5iwos28w, zjruy9vk, fmb2tpl2, 58526ytp) are not carried over (no step of the card uses them), weic8imn is retired. The vaults stay listed as made, for the record.
 
 ### breaking@php.newsroom 1 vault made
 
@@ -46,7 +38,7 @@ Kept by the agent itself.
 | `nnd3i8iw` | vault key | the vault keeper (DC Vault Registry, sha256:956934e47063ceaa), sealed to this session's key at the editor's go | 2026-10-27 |
 | `hewphq85` | vault key | made it | 2026-10-27 |
 
-Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md). Vault ids and key kinds only, never a key. The session's key pair is sha256:9db81b444079eb0e (encryption sha256:925d95a6be12bdef), a session key made with sgit pki keygen; enrolment at pki.sgit.ai is skipped (the editor's decision, 27 October 2026); the editor vouched for it to the vault keeper in person. It holds only the two keys below; the others it was sent (hsmfer5w, 4klm5qlt) were deleted unused at the editor's word.
+Kept by the agent itself. Vault ids and key kinds only, never a key. Current session from 28 October 2026 (records/agents/breaking/sessions/session_015gaHdbWrTruq6tZM2oxEQz/): key sha256:fe23fb57187b02f5 (encryption sha256:f00bd72f2ccd7513), published at records/keys/breaking.json; it supersedes the 27 October session key sha256:9db81b444079eb0e. The keys the earlier session held were sealed to that key and are not held by this one: the entries below under 'holds' are the earlier session's, until the vault keeper seals them again.
 
 ### [claude-newsroom-lead (the evidence vault; curator@php.newsroom promotes into it)](../newsroom-lead/index.html) 1 vault made
 
@@ -83,8 +75,8 @@ Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records 
 
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
-| `4klm5qlt` | vault key | the editor, as message text in the session (23 October 2026); pulse@newsroom's vault, used to read only, never to write | 2026-10-23 |
-| `nnd3i8iw` | read key | the curator's new evidence vault: sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked) and handed over by the editor in this session, 27 October 2026; read only | 2026-10-27 |
+| `4klm5qlt` | vault key | the vault keeper (sha256:956934e47063ceaa): sealed to this session's key sha256:60a78bc4a1dcc0b2, handed over as QR images by the editor, 28 October 2026; signature checked, no root pinned; read only | 2026-10-28 |
+| `nnd3i8iw` | read key | the vault keeper (sha256:956934e47063ceaa): sealed to this session's key sha256:60a78bc4a1dcc0b2, handed over as QR images by the editor, 28 October 2026; signature checked, no root pinned; read only | 2026-10-28 |
 
 The correspondent's session (Opus; until 24 October named the journalist, claude-journalist). It made no vault. It holds the keys below, read only: it never writes to any of these vaults. Clones live outside the repository.
 
@@ -98,10 +90,19 @@ The correspondent's session (Opus; until 24 October named the journalist, claude
 
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
-| `7r83qic5` | vault key | the editor, as message text in the session (23 October 2026); used to read the pack copy of the source watch only, never to write | 2026-10-23 |
+| `7r83qic5` | read key | the editor, as message text in the session (23 October 2026); used to read the pack copy of the source watch only, never to write | 2026-10-23 |
 | `nnd3i8iw` | vault key | made by the curator in its session (pack import of 3ytzxm3g, 27 October 2026); sealed to the root the same day | 2026-10-27 |
 
-The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. It made one vault on 27 October 2026 (below); it holds the keys below, given by the editor as a message sealed to its session key on pki.sgit.ai.
+The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. It made one vault on 27 October 2026 (below); it holds the keys below, given by the editor as a message sealed to its session key on pki.sgit.ai. From 28 October 2026 the session session_015gaHda7VjruwYfe92AF7mB holds both vaults, cloned in pack mode (see records/schedule/curator.json clone_mode).
+
+### desk@php.newsroom 0 vaults made
+
+| Vault ID | What it holds | Created | Key sealed to the root |
+|---|---|---|---|
+
+**Keys it holds:** not recorded yet.
+
+Kept by the agent itself. The desk made no vault and holds no vault key. It reads the evidence vault nnd3i8iw with a read key it does not yet hold (ask the editor when quotes must be re-checked). 3ytzxm3g is decommissioned (27 October 2026). The desk made no key pair in the old session; the new session makes one and writes records/keys/desk.json.
 
 ### [dev@php.newsroom](../dev/index.html) 5 vaults made
 
@@ -126,7 +127,7 @@ The scheduled curator session (Claude Code, Sonnet), set up on 23 October 2026. 
 | `wgeiqabu` | append token | made it | 2026-10-22 |
 | `3ytzxm3g` | read key | published on the site (the evidence vault's read key); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw (dev holds no key of it) | 2026-10-22 |
 
-Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed by dev@php.newsroom on 23 October 2026.
+Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed by dev@php.newsroom on 23 October 2026. On 28 October 2026 (session_015gaHdeQPc82wWvW99oY7RT) dev holds no vault key and no secret: the editor says it needs none.
 
 ### [factcheck@php.newsroom](../verifier/index.html) 1 vault made
 
@@ -154,7 +155,7 @@ Kept by the agent itself.
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
 | `3ytzxm3g` | read key | the published read key (the evidence vault's); decommissioned by the editor on 27 October 2026, replaced by nnd3i8iw | 2026-10-24 |
-| `nnd3i8iw` | read key | the curator's new evidence vault (a pack vault): sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked), handed over by the editor in the session of 27 October 2026, who confirmed it replaces 3ytzxm3g; a private read key (read-only), kept only in this session's scratchpad | 2026-10-27 |
+| `nnd3i8iw` | read key | the curator's evidence vault (a pack vault): a read key sealed to this session's key sha256:79a3b7c3bd755aeb by sha256:956934e47063ceaa (signature checked; carried by hand by the editor, 28 October 2026, vouched for in person; the sender is not in records/keys); opened and the opened key file deleted; cloned read-only into the session's scratchpad with --no-checkout | 2026-10-28 |
 
 The scheduled journalist (Sonnet). Running since 24 October 2026; its wakes fire into one standing session. It reads the evidence vault read-only and writes git only.
 
@@ -176,10 +177,11 @@ Written on 27 October 2026 for the move to a new account. The librarian has made
 
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
-| `84wr8mib` | vault key | the editor, sealed by sha256:956934e47063ceaa | 2026-10-24 |
-| `5wnsr5h8` | vault key | the editor, sealed by sha256:956934e47063ceaa | 2026-10-24 |
+| `84wr8mib` | vault key | the editor, sealed by sha256:956934e47063ceaa to sha256:fad2cd94a3f3d474 | 2026-10-28 |
+| `5wnsr5h8` | vault key | the editor, sealed by sha256:956934e47063ceaa to sha256:fad2cd94a3f3d474 | 2026-10-28 |
+| `84wr8mib` | append token | derived from the vault's write key (records/desks/observability/lanes.py): lanes 2 to 5; lane 1 is the site's published token | 2026-10-27 |
 
-Started by observability@php.newsroom on 24 October 2026, its first round. No vault made yet. The keys of 84wr8mib and 5wnsr5h8 came sealed to sha256:b9ddd39416d71cbb from sha256:956934e47063ceaa (chains to the root), at the editor's hand.
+No vault made by observability. Holds the keys of the two telemetry vaults, sealed to the current session key (sha256:fad2cd94a3f3d474) by sha256:956934e47063ceaa at the editor's hand, 28 October 2026, opened and cloned the same day (pack mode, scratchpad, outside every repository). The key files stay in the session's keys/ (mode 600) because the drain reads the vault key from a file. The SG/Send access token was given by the editor in the session on 28 October 2026 and is kept in the session's keys/ only (mode 600).
 
 ### projects@php.newsroom 0 vaults made
 
@@ -223,9 +225,18 @@ Kept by pulse@newsroom, 27 October 2026 (the move's handover). IDs and key kinds
 | Vault ID | Kind of key | From | Since |
 |---|---|---|---|
 | `3ytzxm3g` | read key | the site (published in data/admin.json) | 2026-10-22 |
-| `7r83qic5` | vault key | the editor, as message text in the session (23 October 2026), to clone and write the source watch; this session did not make the vault (a pack import by another agent) | 2026-10-23 |
+| `7r83qic5` | vault key | the editor, sealed to this session's key (sha256:f67bd9ea1e3dec26) and carried as a QR image, 28 October 2026; opened and checked, the opened file deleted; cloned into the scratchpad as work/watchpack with --pack-store --no-checkout (the earlier key pasted as text on 23 October is not this one, and its rotation is still the editor's to do) | 2026-10-28 |
 
 Kept by the agent itself (confirmed by researcher@php.newsroom on 23 October 2026). Rows and holds updated by dev@php.newsroom on 24 October 2026 at the editor's word: the pack vault is the source watch, and no session uses the old one.
+
+### security@php.newsroom 0 vaults made
+
+| Vault ID | What it holds | Created | Key sealed to the root |
+|---|---|---|---|
+
+**Keys it holds:** not recorded yet.
+
+Kept by the agent itself. Vault ids and key kinds only, never a key. It has made no vault and holds no vault key; it reads only the vaults whose read keys data's files/vaults.json publishes. No key pair made (pki.sgit.ai enrolment not done).
 
 ### [sherpa@php.newsroom](../sherpa/index.html) 1 vault made
 
@@ -282,4 +293,4 @@ The pages that opened the vaults in the vault UI ([every vault behind this site]
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html

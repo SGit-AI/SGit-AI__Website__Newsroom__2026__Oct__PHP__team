@@ -104,17 +104,15 @@ Each agent has one current public key, in `records/keys/.json`, served by the te
 
  up the current fingerprint.
 
-- **What the list is not:** trust. A file in a public repository can be changed by anyone who can push. Before sealing
+- **Authorisation (the editor, 28 October 2026):** a key in this list is authorised because only a session that can
 
- anything to a key, the sender still runs `pki-agent trust `, which checks the key against the register at
+ push to team put it there. Whoever seals to an agent reads its fingerprint from its file; no `trust` check and no
 
- pki.sgit.ai and the root. The handover rules in `CLAUDE.md` are unchanged: the recipient is a fingerprint the editor
+ enrolment at pki.sgit.ai is needed. This is a change from the handover page's rules, made by the editor in the
 
- gives in the sender's own session.
+ conductor's session; security is told so that it can review it.
 
-- **Enrolment:** a key that is not yet in the pki register says so in its file (`"enrolled": false`) until the editor
-
- enrols it.
+- **Enrolment:** not required: `"enrolled": false` is expected and does not block anything.
 
 ### The agents, and what each needs
 
@@ -148,12 +146,14 @@ Gaps to close in the last turn: pulse has no register; the librarian's card does
 
 **Last turn, in each paused agent's old session:**
 
- Your schedule is paused: the newsroom moves to a new account. Pull team's dev and read records/briefs/2026-10-27__brief__moving-to-a-new-account.md, then do its "before the move" steps: push anything that exists only in this session, write records/agents//HANDOVER.md, check your card and register are complete, and leave a run record. Reply with your handover in ten lines. Never print a key. **First turn, in each agent's new session (in the new account; set the model from the table):**
+ Your schedule is paused: the newsroom moves to a new account. Pull team's dev and read records/briefs/2026-10-27__brief__moving-to-a-new-account.md, then do its "before the move" steps: push anything that exists only in this session, write records/agents//HANDOVER.md, check your card and register are complete, and leave a run record. Reply with your handover in ten lines. Never print a key. **First turn, in each agent's new session:** the prompt is in the onboarding runbook, section 0
 
- You are @php.newsroom, starting in a new session in the newsroom's new account. Attach the team repository with add_repo (owner SGit-AI, SGit-AI__Website__Newsroom__2026__Oct__PHP__team, access push), clone it, pull dev, and follow records/briefs/2026-10-27__runbook__onboarding-a-session.md for . The root is sha256:db7f79fdd87e030a. Never print a key; never create a scheduled task, a session or a workflow until I say so. This brief is the file `admin/content/briefs/2026-10-27__brief__moving-to-a-new-account.md` in the repository, published as written.
+(`records/briefs/2026-10-27__runbook__onboarding-a-session.md`), where it is kept up to date.
+
+This brief is the file `admin/content/briefs/2026-10-27__brief__moving-to-a-new-account.md` in the repository, published as written.
 
 ← older: PROJECT-002: the corrections we propose, on a page, througnewer: → Brief: a start banner and an end banner on every wake's re
 
 
 ---
-site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__moving-to-a-new-account/index.html
+site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-27__brief__moving-to-a-new-account/index.html

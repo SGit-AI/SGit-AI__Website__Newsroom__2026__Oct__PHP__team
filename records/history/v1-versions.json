@@ -1,6 +1,15 @@
 {
- "current": "0.22.50",
+ "current": "0.22.51",
  "versions": [
+  {
+   "version": "0.22.51",
+   "date": "2026-10-28",
+   "title": "press: dev: a second signed log to start the edition build, after the gate's two files were fixed (the editor's go, 28 October 2026); data: journalist: batch 28 reviewed (14 claims), compromise line and as-of refreshed to the vault at 75668aedfb6d; team: dev: fix the two files that fail the edition's gate (editor's override); rule: a signed log to the press starts a build; site: correspondent: readers' lines re-stamped to the claim's stamp, 17:15 UTC on 28 October (batches 23 to 28 checked against captures, no catch; board desk-0003)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "75668aedfb6d",
+   "reconstructed": false
+  },
   {
    "version": "0.22.50",
    "date": "2026-10-27",
