@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0231Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-28T02:31:54Z",
+ "finished": "2026-10-28T02:32:35Z",
+ "outcome": "ok",
+ "summary": "First wake in the new account, light check, run by hand at the editor's word after onboarding (key pushed to records/keys/ is the authorisation; no vaults carried over, register says so). Took in team dev at 98ac42c; the other five on dev, no commits in data, press, site, updates or refs since 00:40 UTC. Team: 22 commits, all by Claude sessions with an Agent trailer where release.sh ran, CI numbering v0.22.161 to v0.22.166, no secret shape, no v1 write, no overwritten record; one gap: the earlier conductor's ee4e115 (board conductor-0017 and the runbook change) is fine. Scheduled tasks: mine (trig_01W9xJLDzEPrMEQHp1LmFpF2, 07:15/11:15/15:15/19:15 London, this session, prompt word for word) and dev's (trig_01Ldj7hf4tBacaeNEavf2dPk, 06:40 London, dev's session) match their cards; the three older tasks in the list are disabled and not the newsroom's. Waiting: pages.yml change (minor on dev, major on main) on branch claude/busy-dirac-3gmk51 for security review and the editor's go; one thing to tell the editor: a disabled non-newsroom routine's prompt holds vault keys in plain text (not copied here).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "98ac42cf3d991091a5d48bc0753b823c804b1604"
+}
