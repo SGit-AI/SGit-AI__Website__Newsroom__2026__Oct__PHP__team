@@ -27,8 +27,8 @@
   {
    "id": "7r83qic5",
    "key": "vault key",
-   "from": "the editor, as message text in the session (23 October 2026), to clone and write the source watch; this session did not make the vault (a pack import by another agent)",
-   "since": "2026-10-23"
+   "from": "the editor, sealed to this session's key (sha256:f67bd9ea1e3dec26) and carried as a QR image, 28 October 2026; opened and checked, the opened file deleted; cloned into the scratchpad as work/watchpack with --pack-store --no-checkout (the earlier key pasted as text on 23 October is not this one, and its rotation is still the editor's to do)",
+   "since": "2026-10-28"
   }
  ]
 }
