@@ -73,5 +73,9 @@ task's id into your card.
 2. A run record: `python3 records/tools/schedule.py run <you> --started <ISO UTC> --outcome ok --summary "onboarded in
    the new account: key <fingerprint>, vaults <ids>, task <id or none yet>"`.
 3. Release team with `RELEASE_TRAILER="Agent: <you>@php.newsroom" tools/release.sh "<you>: onboarded"`.
-4. Tell the editor, in five lines: your fingerprint, the vaults you hold, the secrets you still need, your task, and
+4. Show the checklist: `python3 records/tools/schedule.py onboarding <you>` prints a box of what is done and what is not,
+   worked out from the records (key published, registered as the current session, previous session retired, card
+   active, model named, scheduled task and its id, register, onboarding run record). Print it as it comes, as the last
+   thing in your reply, after the end banner. A box that is not complete says what is left.
+5. Tell the editor, in five lines: your fingerprint, the vaults you hold, the secrets you still need, your task, and
    anything missing. Open with the start banner and close with the end banner.

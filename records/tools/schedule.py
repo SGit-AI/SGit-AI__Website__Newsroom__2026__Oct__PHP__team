@@ -302,6 +302,42 @@ def cmd_session(a):
         import shutil; shutil.copyfile(a.qr, top)
     print(f'{who}: {a.id} is the current session since {t}' + (f'; {prev[0]["session"]} superseded' if prev else ''))
 
+def cmd_onboarding(a):
+    """The onboarding checklist of one agent, worked out from the records and printed as a box the editor can read at a glance."""
+    who = name(a.agent.split('@')[0])
+    def load(path):
+        try: return json.load(open(os.path.join(DATA, path), encoding='utf-8'))
+        except (OSError, ValueError): return None
+    keyf, card, reg = load(f'keys/{who}.json'), load(f'schedule/{who}.json'), load(f'registers/{who}.json')
+    sess = _sessions(who); cur = [d for d in sess if d['state'] == 'current']; cur = cur[0] if cur else None
+    prev = [d for d in sess if d['state'] == 'superseded']
+    cardtext = json.dumps(card or {})
+    runs = [json.load(open(f, encoding='utf-8')) for f in sorted(glob.glob(os.path.join(DATA, 'runs', who, '*.json')))]
+    since = [r for r in runs if cur and r.get('started', '') >= cur['from'] and 'onboard' in (r.get('summary') or '').lower()]
+    holds = [h.get('id') if isinstance(h, dict) else h for h in (reg or {}).get('holds', [])]
+    holds = [h for h in holds if h and h not in ('3ytzxm3g', 'oq9gflln', 'weic8imn')]
+    model = str((card or {}).get('model', ''))
+    steps = [
+        (bool(keyf), 'public key published (records/keys)'),
+        (bool(cur and keyf and cur.get('fingerprint') == keyf.get('fingerprint')), 'registered as the current session'),
+        (bool(cur and (not cur.get('supersedes') or any(d['session'] == cur['supersedes'] and d['state'] == 'superseded' for d in prev))),
+         'previous session retired' if cur and cur.get('supersedes') else 'previous session retired (none: first session)'),
+        (bool(card and card.get('status') == 'active'), 'card active'),
+        (model.startswith(('Opus', 'Sonnet')), 'card names its model (Opus or Sonnet)'),
+        (bool(re.search(r'trig_[A-Za-z0-9]{10,}', cardtext)), 'scheduled task created and its id in the card'),
+        (bool(reg), 'register present'),
+        (bool(since), 'onboarding run record left'),
+    ]
+    sid = cur['session'][:30] if cur else 'none'
+    rows = [f'ONBOARDING  {who}@php.newsroom', f'session {sid}   key {(keyf or {}).get("fingerprint", "none")}', '']
+    for ok, label in steps:
+        rows.append(('[x] ' if ok else '[ ] ') + label)
+    rows.append('')
+    rows.append('vaults to hold (from the register): ' + (', '.join(holds) if holds else 'none') + '   (the agent confirms each is cloned)')
+    done = sum(1 for ok, _ in steps if ok)
+    rows.append(f'{done} of {len(steps)} done' + ('   READY' if done == len(steps) else ''))
+    print('```\n' + _box(rows, '┌' + '─' * (W + 2) + '┐', '│', '└' + '─' * (W + 2) + '┘') + '\n```')
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter); s = ap.add_subparsers(dest='cmd', required=True)
     s.add_parser('inbox').add_argument('agent')
@@ -316,6 +352,7 @@ def main():
     p.add_argument('--kind'); p.add_argument('--scheduled'); p.add_argument('--release'); p.add_argument('--problems'); p.add_argument('--for-you'); p.add_argument('--next')
     p = s.add_parser('session'); p.add_argument('action', choices=('register', 'list', 'who')); p.add_argument('agent'); p.add_argument('--id'); p.add_argument('--key')
     p.add_argument('--qr'); p.add_argument('--account'); p.add_argument('--model'); p.add_argument('--task'); p.add_argument('--note'); p.add_argument('--at')
+    s.add_parser('onboarding').add_argument('agent')
     a = ap.parse_args(); globals()['cmd_' + a.cmd.replace('-', '_')](a)
 
 if __name__ == '__main__':
