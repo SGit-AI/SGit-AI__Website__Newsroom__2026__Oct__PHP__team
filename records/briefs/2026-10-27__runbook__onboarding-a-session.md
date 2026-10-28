@@ -78,7 +78,11 @@ account put there. Whoever seals a vault key to you reads your fingerprint from 
    <you>@php.newsroom <fingerprint> needs, sealed to that fingerprint: <vault id> (<kind>), …
    ```
 
-2. The editor seals each to your fingerprint and gives you the QR images. Open them with `read-qr` and `open`. Accept
+2. (28 October 2026, the editor's way, proven with the correspondent) The conductor writes the editor a prompt for the vault
+   keeper's session, from your published key: `python3 records/tools/schedule.py vaultreq <you> --vault 'id|kind|why' ...`.
+   The keeper reads your key at its URL, checks the fingerprint and session, and seals each vault to it. So publish your key and
+   name each vault and why in your register or a board row; the conductor builds the prompt at its wake.
+   The editor seals each to your fingerprint and gives you the QR images. Open them with `read-qr` and `open`. Accept
    only what passes every check of the handover page, section B. Clone each vault into your scratchpad, never inside a
    repository, without printing the key, and in pack mode, never a plain `sgit clone`: `--path <folder>` to read one folder,
    `--no-checkout` then `sgit checkout` to read some, `--pack-store` to write or read most
