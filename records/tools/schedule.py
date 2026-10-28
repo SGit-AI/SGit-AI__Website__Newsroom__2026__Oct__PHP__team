@@ -381,7 +381,7 @@ def cmd_onboarding(a):
          'previous session retired' if cur and cur.get('supersedes') else 'previous session retired (none: first session)'),
         (bool(card and card.get('status') == 'active'), 'card active'),
         (model.startswith(('Opus', 'Sonnet')), 'card names its model (Opus or Sonnet)'),
-        (bool(cur and any(t['session'] == cur.get('session') and t['id'] in cardtext for t in tasks)), 'scheduled task created and its id in the card'),   # a task in the account's list that fires into the current session, its id in the card (28 October 2026: a stale id in a card no longer counts)
+        (bool(cur and any(cur.get('session', '').startswith(t['session']) and t['id'] in cardtext for t in tasks)), 'scheduled task created and its id in the card'),   # a task in the account's list that fires into the current session, its id in the card (28 October 2026: a stale id in a card no longer counts; a session registered as <id>-again is the same session as <id>)
         (bool(reg), 'register present'),
         (bool(since), 'onboarding run record left'),
     ]
