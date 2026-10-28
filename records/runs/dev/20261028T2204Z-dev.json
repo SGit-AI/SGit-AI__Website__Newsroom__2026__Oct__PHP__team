@@ -1,0 +1,14 @@
+{
+ "run": "20261028T2204Z-dev",
+ "agent": "dev",
+ "started": "2026-10-28T22:04:00Z",
+ "finished": "2026-10-28T22:40:44Z",
+ "outcome": "partial",
+ "summary": "Editor's bounded job: refresh the stale edition. Attached the press (push), tried workflow_dispatch of edition.yml (force=true, dev): 403 Resource not accessible by integration, no Actions: write. No press change made (no changelog line exists; press releases need security's review). Nothing triggered. Live before: site release.json 0.22.61 but now.json site 0.22.50, data_as_of 2026-10-27T19:13Z, front page as of 27 Oct, days end 2026-10-27 (closed false, no 2026-10-28). refs/updates/team/data/press serve no release.json. Still stale: the edition, until the editor runs the build or approves a press release; board dev-0012.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "6b5d8e5497b88fc254822b8324eb879895b337c7"
+}

@@ -1,0 +1,7 @@
+{
+ "id": "dev-0012",
+ "owner": "editor",
+ "status": "open",
+ "title": "The edition is stale (site still shows edition 0.22.50, data_as_of 27 Oct 19:13 UTC): this session cannot start the press's edition build",
+ "note": "Dev, 28 October 2026 about 22:10 UTC. Press attached with push access; workflow_dispatch of edition.yml (force=true, ref dev) is refused: 403 Resource not accessible by integration (the session's GitHub token has no Actions: write). The press keeps no board or changelog line, and every press release goes to security's review, so no change was made. To unstick, either: (a) the editor runs 'Build the edition' by hand in the press's Actions tab (force=true if nothing counts as released), or (b) the editor's go for a minimal press release by dev. Afterwards each of data, site, updates, refs and team takes the edition on its next push (workflow_dispatch of 'Deploy to GitHub Pages' needs the same Actions: write). Last edition run: press Actions run 40605729498 (27 Oct, success)."
+}
