@@ -7,19 +7,21 @@
   {
    "id": "4klm5qlt",
    "key": "vault key",
-   "from": "the editor, as message text in the session (23 October 2026); pulse@newsroom's vault, used to read only, never to write",
-   "since": "2026-10-23"
+   "from": "the vault keeper (sha256:956934e47063ceaa): sealed to this session's key sha256:60a78bc4a1dcc0b2, handed over as QR images by the editor, 28 October 2026; signature checked, no root pinned; read only",
+   "since": "2026-10-28",
+   "clone": "scratchpad, outside any repository, sgit 0.26.0 --no-checkout; opened key files deleted"
   },
   {
    "id": "nnd3i8iw",
    "key": "read key",
-   "from": "the curator's new evidence vault: sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked) and handed over by the editor in this session, 27 October 2026; read only",
-   "since": "2026-10-27"
+   "from": "the vault keeper (sha256:956934e47063ceaa): sealed to this session's key sha256:60a78bc4a1dcc0b2, handed over as QR images by the editor, 28 October 2026; signature checked, no root pinned; read only",
+   "since": "2026-10-28",
+   "clone": "scratchpad, outside any repository, sgit 0.26.0 --no-checkout; opened key files deleted"
   }
  ],
  "pki": {
   "fingerprint": "sha256:60a78bc4a1dcc0b2",
-  "note": "made in the new account's session session_015gaHdaEJGXTfzWm5qULFLS on 28 October 2026; the previous key sha256:7b4142dddac2035a belonged to the retired session. Vaults nnd3i8iw and 4klm5qlt are not yet held by this session: awaiting the editor's seal."
+  "note": "made in session session_015gaHdaEJGXTfzWm5qULFLS (registered as ...-again) on 28 October 2026; the previous key sha256:7b4142dddac2035a belonged to the retired session. Vaults nnd3i8iw and 4klm5qlt sealed to this key and cloned 28 October 2026."
  },
  "decommissioned": [
   {

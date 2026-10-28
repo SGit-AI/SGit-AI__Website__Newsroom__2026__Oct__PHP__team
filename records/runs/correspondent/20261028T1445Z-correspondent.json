@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1445Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-28T14:45:00Z",
+ "finished": "2026-10-28T14:54:18Z",
+ "outcome": "ok",
+ "summary": "vaults received: nnd3i8iw (read key, 6002 entries) and 4klm5qlt (vault key, 19741 entries) opened from the vault keeper's QR images (sealed to sha256:60a78bc4a1dcc0b2, signature checks, no root pinned), cloned with sgit 0.26.0 in --no-checkout mode (nnd3i8iw 14:51:36 to 14:52:36 UTC; 4klm5qlt 14:52:36 to 14:54:06 UTC), opened key files deleted; data and updates repos attached and cloned; register updated. First full review at the next wake.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "ea39cc9a5acff881f8cc88a5e996e99fc85dd9b8"
+}
