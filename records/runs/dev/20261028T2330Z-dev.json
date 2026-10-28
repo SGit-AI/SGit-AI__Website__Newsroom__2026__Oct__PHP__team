@@ -1,0 +1,14 @@
+{
+ "run": "20261028T2330Z-dev",
+ "agent": "dev",
+ "started": "2026-10-28T23:30:00Z",
+ "finished": "2026-10-28T23:24:56Z",
+ "outcome": "partial",
+ "summary": "Verified after the edition: main site took edition 0.22.51 (now.json site 0.22.51, data_as_of 2026-10-28T17:15Z; front page 'as of 17:15 UTC on 28 October'; press.json data 0.1.108, press 1.0.86); team too (data 0.1.108). NOT yet: refs (release 0.22.48, data 0.1.90) and updates (0.22.51, data 0.1.90): each needs a push of its own to deploy, as workflow_dispatch is refused. Days unchanged: 2026-10-27 closed false, no 2026-10-28 (board dev-0013, the editor's). Four lines on the front page still say as of 09:43 UTC on 27 October: not looked into. dev-0012 left open for refs and updates.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "9321000372037f2a6e393e4b0330a1995e155cb9"
+}
