@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-28T09:25:36Z",
+ "finished": "2026-10-28T09:25:56Z",
+ "outcome": "partial",
+ "summary": "woke at 09:25 (Sonnet, session_015gaHdaEJGXTfzWm5qULFLS-again), dev at e6d53c8c3022, no notes, no messages addressed to me beyond the broadcast ones. Could not do the review of the journalist's batches: the evidence vault nnd3i8iw is not held (read key not yet sealed to sha256:60a78bc4a1dcc0b2) and the data and updates repositories are not attached (add_repo denied by auto mode); site is cloned. Nothing written to desk.json or the readers' prose. Waiting on the editor: seal nnd3i8iw (and 4klm5qlt if wanted) to my fingerprint, and attach data and updates.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e6d53c8c3022dc17414564be4a02a749735b2a61"
+}
