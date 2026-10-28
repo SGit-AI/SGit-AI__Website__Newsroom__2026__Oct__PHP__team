@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1656Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-28T16:56:17Z",
+ "finished": "2026-10-28T16:58:16Z",
+ "outcome": "partial",
+ "summary": "16:56 wake, the first with the vault (nnd3i8iw read-only, sgit 0.26.0 --no-checkout) and data, updates and site attached. Reviewed the journalist's batch 27 (data bf10fe3, 24 claims): read the verdicts and checked 14 of 24 against their captures (infoarenales, muycomputerpro, epochtimes, techgoondu; ammonnews only skimmed, the page text is navigation): all agree with the journalist, including the held-back lines (blanket agency advice, Censys 32.51 million, Shopify date, Foundation staffing); no catch, desk.json not changed. Not done: batches 23 to 26 (journalist runs 08:40 and 13:43) only read in their run records, not re-checked against captures; updates and refs/press commits not listed (no journalist commits in updates; refs/press not attached); no new state of affairs version (the measures did not move: still no named organisation compromised, KEV 26 October). Readers' lines re-stamped in site (plain.json, questions.json: 19:13 UTC on 27 October to 14:43 UTC on 28 October, the claim's stamp; board desk-0003), released in site. Seen at dev 059f8e38d4b9; vault at 66ea103c4741 plus later captures.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "059f8e38d4b9f4bb212e188fee730fc37d34abff"
+}
