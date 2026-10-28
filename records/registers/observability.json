@@ -1,21 +1,21 @@
 {
  "agent": "observability@php.newsroom",
  "member": "observability",
- "note": "No vault made by observability. Holds the keys of the two telemetry vaults, sealed to its first key (sha256:b9ddd39416d71cbb) by sha256:956934e47063ceaa at the editor's hand, 24 October. That key dies with the session; in the new account the editor seals both again to the new key.",
+ "note": "No vault made by observability. Holds the keys of the two telemetry vaults, sealed to the current session key (sha256:fad2cd94a3f3d474) by sha256:956934e47063ceaa at the editor's hand, 28 October 2026, opened and cloned the same day (pack mode, scratchpad, outside every repository). The key files stay in the session's keys/ (mode 600) because the drain reads the vault key from a file. The SG/Send access token has not been given yet.",
  "vaults": [],
  "holds": [
   {
    "id": "84wr8mib",
    "key": "vault key",
-   "from": "the editor, sealed by sha256:956934e47063ceaa",
-   "since": "2026-10-24",
+   "from": "the editor, sealed by sha256:956934e47063ceaa to sha256:fad2cd94a3f3d474",
+   "since": "2026-10-28",
    "purpose": "the telemetry data vault: drain/, reports/, identity/ (the five lanes, identity/lanes.json); drained three times a day"
   },
   {
    "id": "5wnsr5h8",
    "key": "vault key",
-   "from": "the editor, sealed by sha256:956934e47063ceaa",
-   "since": "2026-10-24",
+   "from": "the editor, sealed by sha256:956934e47063ceaa to sha256:fad2cd94a3f3d474",
+   "since": "2026-10-28",
    "purpose": "the telemetry application (app/, tests/): changes are versioned here; the data vault links it"
   },
   {

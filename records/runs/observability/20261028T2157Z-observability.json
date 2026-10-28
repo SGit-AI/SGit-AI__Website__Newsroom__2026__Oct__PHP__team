@@ -1,0 +1,16 @@
+{
+ "run": "20261028T2157Z-observability",
+ "agent": "observability",
+ "started": "2026-10-28T21:57:00Z",
+ "finished": "2026-10-28T21:58:42Z",
+ "outcome": "ok",
+ "summary": "vault keys 84wr8mib and 5wnsr5h8 opened (sealed to sha256:fad2cd94a3f3d474 by sha256:956934e47063ceaa, signatures check) and both cloned in --pack-store mode with sgit 0.26.0 (about 10 s and 5 s); dry-run drain of 84wr8mib: 449 waiting in 1 lane, 449 readable, 0 undecryptable, nothing written or marked; the real drain waits for the SG/Send access token (outcome of the first drain not yet)",
+ "read": [
+  "records/briefs/2026-10-28__brief__how-an-agent-clones-a-vault.md"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "cf76cb6701206f8bfdab4f9c089e830bae1d1f31"
+}
