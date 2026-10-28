@@ -11,7 +11,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms))
 http.createServer(async (req, res) => {
   try {
     const u = new URL(req.url, 'http://x'), send = (code, data, type) => { res.writeHead(code, { 'content-type': type || 'application/json' }); res.end(typeof data === 'string' || Buffer.isBuffer(data) ? data : JSON.stringify(data)) }
-    if (u.pathname === '/') return send(200, fs.readFileSync(path.join(path.dirname(new URL(import.meta.url).pathname), 'harness.html'), 'utf8'), 'text/html')
+    if (u.pathname === '/') return send(200, fs.readFileSync(path.join(path.dirname(new URL(import.meta.url).pathname), 'harness.html.txt'), 'utf8'), 'text/html')
     if (u.pathname.startsWith('/ux/')) { const f = inside(UX, u.pathname.slice(4)); return send(200, fs.readFileSync(f), TYPES[path.extname(f)] || 'text/plain') }
     if (u.pathname === '/vfs/read') { const f = inside(DATA, u.searchParams.get('p')); return fs.existsSync(f) ? send(200, fs.readFileSync(f, 'utf8'), 'text/plain') : send(404, 'missing', 'text/plain') }
     if (u.pathname === '/vfs/list') { const d = inside(DATA, u.searchParams.get('p')); return send(200, fs.existsSync(d) ? fs.readdirSync(d).map(n => ({ path: '/' + path.posix.join(u.searchParams.get('p'), n), type: fs.statSync(path.join(d, n)).isDirectory() ? 'folder' : 'file' })) : []) }

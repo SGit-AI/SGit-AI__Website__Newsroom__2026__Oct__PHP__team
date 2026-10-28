@@ -128,10 +128,10 @@
   "version": "2026-10-25",
   "out_of_scope_requests": 0,
   "pushbacks": 0,
-  "overrides": 1,
-  "writes_outside_scope": 16,
+  "overrides": 2,
+  "writes_outside_scope": 18,
   "injection_seen": 0,
-  "note": "the six repositories have no policies yet (abp maps scope.writes); everything in them this round under the editor's go for the split"
+  "note": "the six repositories have no policies yet (abp maps scope.writes); everything in them this round under the editor's go for the split | Override, 28 October 2026 (session_015gaHdeQPc82wWvW99oY7RT): the editor, in the session, told dev it needs no security or observability to fix their two files that fail the edition's gate, and gave permission: records/agents/security/tools/scan.py line 6 (hidden characters written as escapes) and records/desks/observability/tools/harness.html renamed to harness.html.txt with harness.mjs naming it (boards dev-0014, dev-0015)."
  },
  "debrief": "records/agents/dev/debriefs/2026-10-28__the-move.md"
 }

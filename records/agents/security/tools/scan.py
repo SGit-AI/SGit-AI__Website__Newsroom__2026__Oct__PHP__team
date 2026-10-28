@@ -3,7 +3,7 @@
 import sys, os, re, importlib.util
 spec=importlib.util.spec_from_file_location('sc','/home/user/ro/press/build/security_check.py'); sc=importlib.util.module_from_spec(spec); spec.loader.exec_module(sc)
 pats=[(n,re.compile(p)) for n,p in sc.SECRET_KINDS] if isinstance(sc.SECRET_KINDS[0],tuple) else None
-ZW=re.compile('[​-‏⁠﻿‪-‮]')
+ZW=re.compile(r'[\u200b-\u200f\u2060\ufeff\u202a-\u202e]')
 AI=re.compile(r'(ignore (all )?(previous|prior|above) instructions|you are an? (ai|assistant|language model)|as an ai|system prompt|(dear|attention|note to) (ai|claude|llm|agent)s?\b)',re.I)
 for root in sys.argv[1:]:
     hits={}
