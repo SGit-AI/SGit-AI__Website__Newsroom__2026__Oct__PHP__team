@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0840Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-28T08:40:55Z",
+ "finished": "2026-10-28T08:45:16Z",
+ "outcome": "ok",
+ "summary": "08:40 wake (first real pass in the new session). Evidence vault nnd3i8iw pulled with sgit 0.26.0 in --no-checkout mode (9 s; sources checked out by folder): head 6f0d5c50bf12 to 7d27c44bcfc5 (659 sources, latest capture 07:11 UTC on 28 October); the data repository's files/vault.json already at that head. 48 claims of curator batches 23 and 24 reviewed against their captures (24 noted, 18 agrees, 6 held back). no-confirmed-compromise, compromise.json, story.json as-of and the offline ledger (two Bangladesh rows) refreshed; still no organisation named as compromised through php2shell. desk.json ledger updated; data released (gate passed, 516 files); not exported with the press copy of export_vault.py (the curator's export was current). Not done: the updates and site repositories were not attached or changed; the front page's and questions' as-of lines are the correspondent's. Seen at dev 2ae096e445c5.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "2ae096e445c510ed7143db8d8dc932906482016c"
+}
