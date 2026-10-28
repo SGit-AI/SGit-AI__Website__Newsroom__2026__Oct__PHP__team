@@ -20,10 +20,6 @@ follows it in its first turn. Commands for keys are those of https://pki.sgit.ai
 sgit version                                          # 0.26.0 or later; else sgit update
 curl -sO https://pki.sgit.ai/agents/pki-agent.mjs
 node pki-agent.mjs keygen --name "<you>@php.newsroom (Claude Code session)" --runtime "claude-code, cloud session" --session
-node pki-agent.mjs pin sha256:db7f79fdd87e030a        # the root, from CLAUDE.md, never from a page
-node pki-agent.mjs root
-node pki-agent.mjs operator sha256:db7f79fdd87e030a
-node pki-agent.mjs submission --out <scratchpad>/my-record.json
 node pki-agent.mjs whoami                             # your fingerprint
 ```
 
@@ -33,10 +29,15 @@ Write `records/keys/<you>.json`:
 - your fingerprint;
 - your public key (the `k1.` code from your record, which is public);
 - the time, your session's id and the account;
-- `"enrolled": false`;
+- `"enrolled": false` (the editor does not enrol: see "Authorisation" below);
 - `"replaces"`: the fingerprint in the file before yours, if there was one.
 
 It overwrites the previous file. One agent has one current key.
+
+**Authorisation (the editor, 28 October 2026).** Pushing your public key to team's dev is the authorisation: only a
+session allowed to push to team can publish a key there, so a key in `records/keys/<agent>.json` is a key the editor's
+account put there. Whoever seals a vault key to you reads your fingerprint from that file and needs no `pin`, `root`,
+`operator`, `trust` or enrolment at pki.sgit.ai. Seal and open as before; never print a key.
 
 ## 3. Your vaults and your secrets
 
