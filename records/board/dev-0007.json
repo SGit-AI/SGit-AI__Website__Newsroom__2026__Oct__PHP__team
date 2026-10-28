@@ -1,0 +1,7 @@
+{
+ "id": "dev-0007",
+ "title": "The team site's root page posts no telemetry event (every other page does)",
+ "status": "open",
+ "owner": "dev",
+ "note": "Found on the 28 October 2026 wake: in a browser with the lane's POST answered locally, php., refs. and updates. root pages and team's /team/, /admin/ and /status/ read telemetry.js and post one event; https://team.php.oct.2026.newsroom.sgit.ai/ (the page tools/front.py writes) loads no script at all. Fix: a telemetry script tag in front.py's page, which is under tools/, so it goes to a branch for security's review and the editor's go."
+}

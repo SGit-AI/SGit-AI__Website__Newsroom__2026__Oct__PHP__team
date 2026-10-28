@@ -1,9 +1,9 @@
 {
  "schema": "newsroom/agent-status/v1",
  "agent": "dev",
- "as_of": "2026-10-28T01:00Z",
- "round": 4,
- "state": "Paused for the move to the new account (handover: records/agents/dev/HANDOVER.md). Editions are built in CI on a push to the press or by hand; nothing runs on GitHub on a timer; each repository takes the newest edition on its own push. A push elsewhere starting the edition by itself waits on the editor (board dev-0006).",
+ "as_of": "2026-10-28T06:55Z",
+ "round": 5,
+ "state": "Active in the new account (session_015gaHdeQPc82wWvW99oY7RT, key sha256:d1331dd12796268e, daily wake 06:40 London). Edition 0.22.50 is still the newest: every release since went to data, team, site or updates, which cannot start the edition (board dev-0006, waiting on the editor); the sites still pin data 0.1.90 and press 1.0.84 (team: data 0.1.91). The team site's root page posts no telemetry (board dev-0007).",
  "done": [
   {
    "what": "Editions built in CI: edition.yml and tools/edition.sh build every page from the six's dev, publish release edition-<n>; each repository's pages.yml takes it on its own push (board dev-0005)",
@@ -64,6 +64,10 @@
   {
    "what": "The round no longer deletes records/tools/schedule.py (the conductor's patch to the import's gone loop; board correspondent-0003)",
    "evidence": "team tools/sync_v1.py; two imports in a row keep the tool"
+  },
+  {
+   "what": "Onboarded in the new account: six repositories, key published with QR, scheduled task, register (no vaults), first daily wake run",
+   "evidence": "records/keys/dev.json, task trig_01Ldj7hf4tBacaeNEavf2dPk, run records 20261028T0103Z-dev and this wake's"
   }
  ],
  "tasks": {
