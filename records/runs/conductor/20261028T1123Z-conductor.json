@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1123Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-28T11:23:34Z",
+ "finished": "2026-10-28T11:24:14Z",
+ "outcome": "partial",
+ "summary": "Full pass, fired 11:23 UTC for 11:15 London. dev at 8ad51199 (v0.53.0). Reviewed every commit since the last run (24 in team, 10 in data) and the other four repositories (press, site, updates, refs: unchanged): every agent release has its Agent trailer (the only commit without one is the conductor's own merge into its branch), no duplicate or reused version, no secret shape, no v1 write, no record overwritten, .github/ and tools/ unchanged since the last wake. data: v0.1.94 to v0.1.98 by researcher, curator and journalist. Tasks: 13 enabled, bound to the right sessions, times as the cards, prompts as the cards' wording; every wake that fired has a run record (conductor 07:17, dev 06:40, researcher 07:02 and 09:38, curator 08:02 and 10:35, journalist 08:40, correspondent 09:25, desk and observability onboarding); one wake due and not yet fired at 11:23: journalist 11:10 (the account's scheduler has fired others 2 to 8 minutes late; check it at the next wake). Not onboarded: factcheck (key, no task), librarian, ontologist, pulse, sherpa. Open and waiting on the editor, unchanged: .github/workflows/pages.yml (minor release on a dev push, major on main) has been on dev since 02:33 UTC from the conductor's own release, before security's review and the editor's go, VERSION now 0.53.0; security-0002; dev-0006, dev-0007. Not done again: the status records (scheduled-tasks.json via schedule.py tasks, agents-status.json): the tool wants the list as a file and the session holds it only as tool output; asked the editor whether he wants it done another way.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8ad51199d2fe2e813c7914afb8e1710dc2e8e1a1"
+}
