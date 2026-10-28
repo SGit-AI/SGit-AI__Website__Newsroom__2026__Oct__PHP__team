@@ -36,15 +36,20 @@ pointer in `records/agents/curator/`), the pointer says where to read it.
 
 ```
 sgit version                                          # 0.26.0 or later; else sgit update
-curl -sO https://pki.sgit.ai/agents/pki-agent.mjs
-node pki-agent.mjs keygen --name "<you>@php.newsroom (Claude Code session)" --runtime "claude-code, cloud session" --session
-node pki-agent.mjs whoami                             # your fingerprint
+sha256sum -c records/tools/pki-agent.mjs.sha256       # the key tool is in this repository: nothing to download
+node records/tools/pki-agent.mjs keygen --name "<you>@php.newsroom (Claude Code session)" --runtime "claude-code, cloud session" --session
+node records/tools/pki-agent.mjs whoami               # your fingerprint
 ```
 
-If `pki-agent.mjs` cannot run in the session, use `sgit pki` and say so.
+**Do not `curl` the key tool from pki.sgit.ai:** a session in "auto" mode may refuse to download code and run it (it
+stopped security's onboarding on 28 October; accept-edits mode lets it through, but a copy in the repository needs no
+exception). `records/tools/pki-agent.mjs` is an unmodified copy with its hash pinned (`records/tools/pki-agent.README.md`).
+If it cannot run, `sgit pki keygen --label "<you>@php.newsroom"` and `sgit pki export <fingerprint> > key.json` make the same
+public half, and the register command accepts either file.
 
-Make a small JSON file in your scratchpad with your `fingerprint`, `public_key` and `encryption_fingerprint`, and the
-QR image of your key (`pki-agent keyqr`, or `sgit pki`). Then register as the current session, in one command, and
+Make a small JSON file in your scratchpad with your `fingerprint`, `public_key` and `encryption_fingerprint` (or the
+bundle `sgit pki export` writes), and, if you can, the QR image of your key (`node records/tools/pki-agent.mjs keyqr`). The
+image is optional: the file on the site is what counts. Then register as the current session, in one command, and
 release it in a commit of its own:
 
 ```

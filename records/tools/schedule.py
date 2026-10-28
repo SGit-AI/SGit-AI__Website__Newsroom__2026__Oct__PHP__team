@@ -276,6 +276,8 @@ def cmd_session(a):
     if not a.id or not SESSION_ID.fullmatch(a.id): sys.exit('refused: --id is the new session\'s id (letters, digits, - and _)')
     if not a.key: sys.exit('refused: --key is the JSON file of your public key (fingerprint, public_key, encryption_fingerprint)')
     key = json.load(open(a.key, encoding='utf-8'))
+    if key.get('encrypt') and not key.get('public_key'):                      # an `sgit pki export` bundle: both public halves, as PEM
+        key['public_key'] = key['encrypt']; key['encryption_fingerprint'] = key.get('encryption_fingerprint') or key.get('fingerprint')
     for need in ('fingerprint', 'public_key'):
         if not key.get(need): sys.exit(f'refused: the key file has no "{need}"')
     folder = os.path.join(DATA, 'agents', who, 'sessions', a.id)
@@ -287,6 +289,8 @@ def cmd_session(a):
         _dump(path, d)
     public = {'agent': f'{who}@php.newsroom', 'fingerprint': key['fingerprint'], 'encryption_fingerprint': key.get('encryption_fingerprint'),
               'public_key': key['public_key']}
+    for extra in ('signing_fingerprint', 'sign'):                          # kept when the bundle has them
+        if key.get(extra): public[extra] = key[extra]
     _dump(os.path.join(folder, 'key.json'), public)
     if a.qr:
         import shutil; shutil.copyfile(a.qr, os.path.join(folder, 'key.png'))
@@ -313,7 +317,8 @@ def cmd_onboarding(a):
     prev = [d for d in sess if d['state'] == 'superseded']
     cardtext = json.dumps(card or {})
     runs = [json.load(open(f, encoding='utf-8')) for f in sorted(glob.glob(os.path.join(DATA, 'runs', who, '*.json')))]
-    since = [r for r in runs if cur and r.get('started', '') >= cur['from'] and 'onboard' in (r.get('summary') or '').lower()]
+    since = [r for r in runs if cur and r.get('started', '') >= (datetime.datetime.strptime(cur['from'], '%Y-%m-%dT%H:%M:%SZ') - datetime.timedelta(hours=6)).strftime('%Y-%m-%dT%H:%M:%SZ')
+             and 'onboard' in (r.get('summary') or '').lower()]       # the record may come just before the registration commit
     holds = [h.get('id') if isinstance(h, dict) else h for h in (reg or {}).get('holds', [])]
     holds = [h for h in holds if h and h not in ('3ytzxm3g', 'oq9gflln', 'weic8imn')]
     model = str((card or {}).get('model', ''))
