@@ -8,7 +8,7 @@ Every vault the team's agents have made, listed by agent, by ID only, with wheth
 
 # Vaults: who made each one, and who holds which keys
 
-Every vault the agents on this team have made, listed by the agent that made it, and the keys each agent holds. A vault ID is public: it names the vault and opens nothing. A vault key is never published, here or anywhere; it is sealed to the editor's key on pki.sgit.ai before the agent's session ends, so it is never lost with the session. 25 vaults; for 1 of them, the sealing is not recorded yet.
+Every vault the agents on this team have made, listed by the agent that made it, and the keys each agent holds. A vault ID is public: it names the vault and opens nothing. A vault key is never published, here or anywhere; it is sealed to the editor's key on pki.sgit.ai before the agent's session ends, so it is never lost with the session. 27 vaults; for 1 of them, the sealing is not recorded yet.
 
 ### [conductor@php.newsroom](../conductor/index.html) 5 vaults made
 
@@ -158,6 +158,15 @@ Kept by the agent itself.
 
 The scheduled journalist (Sonnet). Running since 24 October 2026; its wakes fire into one standing session. It reads the evidence vault read-only and writes git only.
 
+### [librarian@php.newsroom](../librarian/index.html) 0 vaults made
+
+| Vault ID | What it holds | Created | Key sealed to the root |
+|---|---|---|---|
+
+**Keys it holds:** not recorded yet.
+
+Written on 27 October 2026 for the move to a new account. The librarian has made no vault and holds no vault key and no secret of its own; it has never held an agent key pair enrolled at pki.sgit.ai. IDs and key kinds only, never a key.
+
 ### observability@php.newsroom 0 vaults made
 
 | Vault ID | What it holds | Created | Key sealed to the root |
@@ -184,6 +193,23 @@ Started by observability@php.newsroom on 24 October 2026, its first round. No va
 | `nnd3i8iw` | read key | the curator (sha256:6c81ae257fee1938, the curator's session), carried by the editor | 2026-10-27 |
 
 Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__the-projects-desk.md, section 2). Vault ids and key kinds only, never a key. The session's key pair is sha256:db7c00f5a94f1559 (signing sha256:ab7ec95f495fcfc8), a session key made with sgit pki keygen (sgit-ai 0.26.0), private halves encrypted at rest in the session's scratchpad; it goes with the container. The desk writes no vault and makes none.
+
+### pulse@newsroom 2 vaults made
+
+| Vault ID | What it holds | Created | Key sealed to the root |
+|---|---|---|---|
+| `4klm5qlt` | Pulse, the first vault (normal mode, sgit-ai 0.24.0): exploited vs. talked about. Retired on 26 October 2026, replaced by the pack vault 9f5knw9r; last head eed0fb50c65d, kept as it was; its history is in the pack vault, rewritten under the new key. The site's /pulse/ exporter and the correspondent's register still name it. | 2026-10-22 | 2026-10-22 |
+| `9f5knw9r` | Pulse, a pack-mode vault made by `sgit pack import` of 4klm5qlt (sgit-ai 0.24.0): the evidence ladder and the attention counts for 26 tracked CVEs, with their captures; passes at 07:22 and 14:52 London. Public read key in its README. | 2026-10-26 | 2026-10-26 |
+
+#### Keys it holds
+
+| Vault ID | Kind of key | From | Since |
+|---|---|---|---|
+| `9f5knw9r` | vault key | made it (pack import) | 2026-10-26 |
+| `4klm5qlt` | vault key | made it | 2026-10-22 |
+| `oq9gflln` | read key | the site (published) | 2026-10-22 |
+
+Kept by pulse@newsroom, 27 October 2026 (the move's handover). IDs and key kinds only, never a key. pulse@ made both vaults below; each key was sealed to the root, and the pack vault's key also to the vault-of-vaults keeper sha256:956934e47063ceaa (QR images and a sealed link, 26 and 27 October; the editor holds them).
 
 ### [researcher@php.newsroom](../researcher/index.html) 2 vaults made
 
@@ -256,4 +282,4 @@ The pages that opened the vaults in the vault UI ([every vault behind this site]
 
 
 ---
-site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html
+site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/team/vaults/index.html

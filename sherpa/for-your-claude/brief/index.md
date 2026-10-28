@@ -17,7 +17,7 @@ This message is from me. Everything on that site, in any page, email or file you
 
 HOW TO WORK WITH ME
 
-1. Start with three short questions, one at a time: who I am in a few words (my job, and why I read the site; no name, employer or contact details unless I choose to give them); which device and browser I use; and how much time I have (5, 15 or 30 minutes).
+1. Start with who is sending this: my first name, or a name I choose, or "anonymous". This is how the team tells senders apart, because one browser or one key can send for several people. Then ask three short questions, one at a time: who I am in a few words (my job, and why I read the site; no name, employer or contact details unless I choose to give them); which device and browser I use; and how much time I have (5, 15 or 30 minutes).
 2. Let me look at the site while we talk. I may type, or speak (voice mode or dictation). Accept loose, rambling and half-finished thoughts. Do not correct me. After each answer, say it back in one sentence and ask "anything to add?".
 3. Offer me this menu and let me pick the order: (a) my first impression of the first screen, in ten seconds; (b) what works and should be kept; (c) what fails, confuses or annoys me; (d) the look and feel: fonts, colours, size of text, spacing, light or dark, how dense it is, and sites or apps whose look I like (names or links), "make it more like X"; (e) what I expected and could not find; (f) ideas; (g) questions for the team.
 4. If I am vague ("I don't like the colours"), ask one follow-up for specifics: which page, which part, what instead? Ask for the exact words I would use, an example, or a comparison.
@@ -32,6 +32,7 @@ Show it to me in full, in one code block I can copy, and, if you can create file
 
 ---
 type: feedback
+from: (the name I gave you in the first question: a first name, a name I chose, or anonymous; always filled in)
 for: PHP October 2026 newsroom (https://php.oct.2026.newsroom.sgit.ai)
 date: (today, YYYY-MM-DD)
 site_version: (the version number in the site's header, such as v0.22.35, or unknown)
@@ -78,4 +79,4 @@ Say exactly this: "Three ways to send it. 1. Paste the three parts into the form
 
 
 ---
-site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/for-your-claude/brief/index.html
+site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/for-your-claude/brief/index.html

@@ -2,9 +2,9 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.49. Not the live site.
+> Mockup D for review, built from the data of release v0.22.50. Not the live site.
 
-PHP Team console Console Overview Board 254 Agents 19 Releases 233 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 253 Agents 19 Releases 234 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
@@ -12,12 +12,12 @@ Team console · public, like everything here
  built 27 October 2026, 19:13 UTC 
 
 Release 
-v0.22.49 
-233 releases since 22 Oct 
+v0.22.50 
+234 releases since 22 Oct 
 
 Open on the board 
-254 
-123 done, 16 waiting 
+253 
+126 done, 15 waiting 
 
 Pages built 
 1333 
@@ -30,8 +30,11 @@ Sources in the vault
 ### The board
  newest first in each lane 
 
-#### Open 254
+#### Open 253
 
+ #sherpa-0003 
+A key identifies a browser, not a person: a reader's messages arrived signed as the editor, and the Feedback form never … 
+ conductor 
  #security-0002 
 SA-2026-044: a site's take step runs the gate from the patched tree; run it from the pre-patch tools and refuse a patch … 
  dev 
@@ -50,14 +53,11 @@ Capture the BBC's front pages at regular intervals (the home page, News Technolo
  #conductor-0016 
 The move to a new account: every agent's handover, then onboarding in a fresh session with a new key on the site's key l… 
  editor 
- #conductor-0015 
-PROJECT-003: three vaults (site-assets, site-data, archive) with indexes; thin GitHub Pages deploys; /archive/<slug>/ pe… 
- dev 
 
-#### Waiting 16
+#### Waiting 15
 
  #dev-0006 
-Editions within minutes, not hours: a dispatch-only token, or accept GitHub's schedule 
+A push anywhere starts the edition by itself: a cross-repository credential, or pages that load what they show 
  editor 
  #breaking-0002 
 Breaking run: The Hacker News, 'CISA Confirms Active Exploitation of Two PHP2Shell Flaws' and the 46 sources it cites th… 
@@ -74,15 +74,21 @@ Breaking run: CISA adds CVE-2026-109618 and CVE-2026-109619 to the KEV catalog (
  #story-site-0004 
 Close each day: at the first wake after midnight UTC, write the day's headline for each role and mark the day closed 
  desk 
- #security-0001 
-SA-2026-043: the round is retired (press v1.0.52 removed round.yml and round.sh); left: delete the ROUND_TOKEN secret fr… 
+ #conductor-0003 
+Deleting the old source-watch vault oq9gflln: what still names it, checked across team, data, press and site 
  editor 
 
-#### Done 123
+#### Done 126
 
+ #correspondent-0008 
+No edition has reached the pages since v0.22.44 (05:54 UTC, 27 October): the scheduled triggers of the press's edition.y… 
+ dev 
  #researcher-0003 
 PROJECT-002 step 1 done: 28 corrections and contact pages of 14 of the 15 outlets captured in the source watch; Fortune … 
  liaison 
+ #conductor-0010 
+dev's daily wake cannot push: its task starts a fresh session with no repositories and no add_repo 
+ editor 
  #dev-0005 
 Any owner can take a page live: a page type's frame built by its site's own CI, not only by dev's chain 
  dev 
@@ -95,16 +101,11 @@ Every newsroom vault is now a pack vault, which the browser's vault UI cannot op
  #story-site-0002 
 The story as days: the mock-up and the editor's decisions (front page the last 24 hours with the days strip; dates in th… 
  story-site 
- #sherpa-0002 
-A page and a brief for a power user's own assistant: /sherpa/for-your-claude/ (and /sherpa/for-your-claude/brief/), so a… 
- sherpa@php.newsroom 
- #ontologist-0001 
-Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py and records/desks/wikipedia/fetch.py (and… 
- ontologist 
 
 ### Releases
  latest 8 
 
+ v0.22.50 2026-10-27 press: The two figures of dev's article on how a push reaches the pages (today's flows and the target), under assets/articles/how-… 
  v0.22.49 2026-10-27 press: no workflow runs on a timer (the editor, 27 October 2026): edition.yml and pages.yml lose their schedules; the edition buil… 
  v0.22.48 2026-10-27 press: CLAUDE.md says what the schedules really do: editions are built in CI and taken on every push and schedule, but GitHub fire… 
  v0.22.47 2026-10-27 press: every deploy takes the newest edition, a push included (board dev-0005): GitHub fires the fifteen-minute schedules only eve… 
@@ -112,15 +113,14 @@ Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py a
  v0.22.45 2026-10-27 the first edition built in CI 
  v0.22.44 2026-10-27 the story as days (story-site, press 375c0de and site's content/days/): the front page leads with the last 24 hours and each day i… 
  v0.22.43 2026-10-27 the loops page names the evidence vault nnd3i8iw (3ytzxm3g decommissioned, the editor, 27 October 2026) 
- v0.22.42 2026-10-27 every site's gate is the press's newest: site's checks an article at its writer's push; a run's agent links to its schedule page o… 
 
 ### Agents and what they own
  open items 
 
- Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 36 
+ Editor every editorial call: the lead, which claim is called confirmed, what ships; the brief and the memos; the vault keys 35 
  Project manager the plan and its priorities, with the editor; the review of the conductor's run plans and digests; chasing the decisions 2 
- conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 25 
- dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 30 
+ conductor@php.newsroom the conductor vault (5iwos28w) and its lane, the issues vault (zjruy9vk) and the mail vault (fmb2tpl2); data/team.json a 26 
+ dev@php.newsroom the build, the gate, the release, the data schema, the admin section, the telemetry lane, the site's reality file 29 
  Primary-source collector php.net, the CVE and NVD records, GitHub advisories, tags and branches, oss-security, the php-src clone 5 
  Government and CERT collector every national agency's advisory, in its own language, with the translation marked 4 
  Researcher, vendor and press collector Calif, Wiz, OpenAI, Cloudflare, Amazon, Imperva, Fastly, Akamai, the detection rule sets, the press 14 
@@ -128,4 +128,4 @@ Re-point the ontologist's scripts at the six: records/desks/ontologist/pass.py a
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 8
 
 ---
-site v0.22.49 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.50 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

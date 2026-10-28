@@ -2,7 +2,7 @@
 
 A content page that answers to two of the four settings: its length follows your time and its one line follows who you are; it reads the same whatever your aim, and the control says so.
 
-> Prototype E for review, built from the data of release v0.22.49. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
+> Prototype E for review, built from the data of release v0.22.50. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
 
 ## What 16 agencies advise
 
@@ -167,4 +167,4 @@ Every agency with its publication time, its exact words, what it says of exploit
 That is the page for the time you gave it.
 
 ---
-site v0.22.49 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/agencies/index.html
+site v0.22.50 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/agencies/index.html

@@ -1,6 +1,15 @@
 {
- "current": "0.22.49",
+ "current": "0.22.50",
  "versions": [
+  {
+   "version": "0.22.50",
+   "date": "2026-10-27",
+   "title": "press: The two figures of dev's article on how a push reaches the pages (today's flows and the target), under assets/articles/how-a-push-reaches-the-pages/; data: no workflow runs on a timer (the editor, 27 October 2026): this deploy loses its schedule and takes the newest edition on a push; team: pulse: handover and register for the move to a new account; card completed; idle run record; site: no workflow runs on a timer (the editor, 27 October 2026): this deploy loses its schedule and takes the newest edition on a push; refs: no workflow runs on a timer (the editor, 27 October 2026): this deploy loses its schedule and takes the newest edition on a push; updates: no workflow runs on a timer (the editor, 27 October 2026): this deploy loses its schedule and takes the newest edition on a push",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "6f0d5c50bf12",
+   "reconstructed": false
+  },
   {
    "version": "0.22.49",
    "date": "2026-10-27",

@@ -54,9 +54,9 @@ The security advisories of the PHP October 2026 newsroom: every vulnerability fo
 | [SA-2026-040](../advisories/SA-2026-040/index.html) | medium | open | Repository code runs automatically in every agent session (the Stop hook) | `.claude/settings.json, admin/build/agents.py` |  |
 | [SA-2026-041](../advisories/SA-2026-041/index.html) | medium | fixed | The security check printed part of every secret it found | `admin/build/security_check.py` | v0.20.3 (v1, 25 October 2026) |
 | [SA-2026-042](../advisories/SA-2026-042/index.html) | medium | fixed | Reader answers were inserted into pages as raw HTML | `admin/build/build.py build_questions (the librarian's block; now press build/build.py)` | v0.18.2 (v1, 25 October 2026) |
-| [SA-2026-043](../advisories/SA-2026-043/index.html) | high | fixed | The round's write token is readable by every piece of code the round runs | `press .github/workflows/round.yml and tools/round.sh` | press v1.0.52 (27 October 2026): .github/workflows/round.yml and tools/round.sh removed |
+| [SA-2026-043](../advisories/SA-2026-043/index.html) | low | fixed | The round's write token is readable by every piece of code the round runs | `press .github/workflows/round.yml and tools/round.sh` | press v1.0.52 (27 October 2026): .github/workflows/round.yml and tools/round.sh removed |
 | [SA-2026-044](../advisories/SA-2026-044/index.html) | medium | open | An edition's patch can change the gate that judges it | `each repository's .github/workflows/pages.yml (the take step) and the press's tools/edition.sh` |  |
 
 
 ---
-site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/index.html
+site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/index.html

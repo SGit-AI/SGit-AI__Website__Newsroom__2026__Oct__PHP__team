@@ -1,6 +1,251 @@
 {
  "about": "A page counts as changed when the content of its <main> differs from the previous release's, with the two site version numbers masked: the header, the footer and the version stamp change on every page at every release and say nothing about what the release did. Pages are compared as built and committed, so the list is what a reader would have seen change. Stored in data/release-pages.json, one entry per release, written once and never recomputed:",
  "releases": {
+  "0.22.50": {
+   "against": "0.22.49",
+   "pages": [
+    {
+     "path": "team/schedule/index.html",
+     "title": "Schedule: every agent that runs on its own",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/wiring/index.html",
+     "title": "Wiring every scheduled task to its card",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/conductor/index.html",
+     "title": "Conductor, conductor and comms: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/dinis/index.html",
+     "title": "Dinis Cruz, Editor: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/vaults/index.html",
+     "title": "Vaults: who made each one",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/dev/index.html",
+     "title": "dev@php.newsroom, build, gate and release: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/pulse/index.html",
+     "title": "Schedule: pulse",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/dev/index.html",
+     "title": "Schedule: dev",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/ontologist/index.html",
+     "title": "Schedule: ontologist",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/librarian/index.html",
+     "title": "Schedule: librarian",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/factcheck/index.html",
+     "title": "Schedule: factcheck",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/sherpa/index.html",
+     "title": "Schedule: sherpa",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/advisories/SA-2026-043/index.html",
+     "title": "SA-2026-043: The round's write token is readable by every piece of code the round runs",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "sherpa/index.html",
+     "title": "The Sherpa: I'm here to help you find your way",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/correspondent/index.html",
+     "title": "Schedule: correspondent",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-006/index.html",
+     "title": "UF-006: feedback of 2026-10-26, on v0.22.22",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "sherpa/for-your-claude/brief/index.html",
+     "title": "The brief for your assistant",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "sherpa/for-your-claude/index.html",
+     "title": "Tell us what you think, with your own assistant",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-007/index.html",
+     "title": "UF-007: feedback of 2026-10-26, on v0.22.33",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/index.html",
+     "title": "Feedback from collaborators",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/briefs/index.html",
+     "title": "The briefs: what the feedback asks of each team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-001/index.html",
+     "title": "UF-001: feedback of 2026-10-23, on v0.8.1",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-002/index.html",
+     "title": "UF-002: feedback of 2026-10-23, on v0.8.1",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-003/index.html",
+     "title": "UF-003: feedback of 2026-10-23, on v0.8.2",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-004/index.html",
+     "title": "UF-004: feedback of 2026-10-23, on v0.9.3",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "feedback/uf-005/index.html",
+     "title": "UF-005: feedback of 2026-10-23, on v0.10.13",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "index.html",
+     "title": "PHP in October 2026: two critical security flaws, tracked as evidence",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "views/loops/index.html",
+     "title": "Every loop: from the researcher to the correspondent",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/appsec/advisories/index.html",
+     "title": "Security advisories",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/index.html",
+     "title": "The team: the people, the agents and how they work together",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/appsec/index.html",
+     "title": "Application security",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/appsec/bounty/index.html",
+     "title": "Bug bounty and leaderboard",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/board/index.html",
+     "title": "The board",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
   "0.22.49": {
    "against": "0.22.48",
    "pages": [

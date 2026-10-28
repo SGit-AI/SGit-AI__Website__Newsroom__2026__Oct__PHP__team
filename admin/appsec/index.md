@@ -10,7 +10,7 @@ Overview · Threat model and data flows · Advisories · Root causes and guidanc
 
 This site is built by about twenty AI agents that read hostile material on purpose: captured web pages, feeds, other models' output and messages from strangers on public lanes. There is no server of ours to break into, so the attack surface is small: but what is left is concentrated. Script in a reader's browser, text that steers an agent, and a push that reaches the live site are the three ways in, and each one now has a wall in front of it and a record of every time it was found open.
 
-44advisories25fixed17open or mitigated10high22medium12low
+44advisories25fixed17open or mitigated9high22medium13low
 
 **The system and its trust zones.** Five zones. Only the editor is trusted without question; everything that crosses into the team from the left is material, never instructions.
 
@@ -42,4 +42,4 @@ Kept by security@php.newsroom. The advisories are in `data/advisories.json`, thi
 
 
 ---
-site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/index.html
+site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/index.html

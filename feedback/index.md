@@ -12,7 +12,7 @@ UF-001a power user from the collaborators groupUF-003power user 1
 Tests by agents
 UF-002an agent tester (Claude in a browser on the editor's compute
 From the editor
-UF-005the editorUF-006the editorUF-007the editor
+UF-005the editor
 Internal tests
 UF-004the editor
 Ideas from collaborators
@@ -39,8 +39,8 @@ Counts as of 23 October 2026: one power user has joined with a key and sent five
 | [UF-003](uf-003/index.html) | 2026-10-23 | v0.8.2 | power user 1 | person | 11 | The first person through the whole invitation: joining works in one click, the success message is clear, and signed feedback goes out with a confirmation that says who reads it and when. The gaps are about what happens next: no sign that the key is waiting for approval, a message that contradicts itself after a refresh (a bug), nothing that says a private window or another browser has no key, no way to see the feedback you sent, one kind and one screenshot per message, an unexplained 'no vault' label, and the busy top of the page again. |
 | [UF-004](uf-004/index.html) | 2026-10-23 | v0.9.3 | the editor, testing the forms | internal test | 2 | Internal test messages from the editor: a join request and a piece of feedback through the power users' forms. Both arrived intact and decrypt with the vault key alone. They are tests, not reader feedback, and are not counted as such; the request in the join note is routed like any other. |
 | [UF-005](uf-005/index.html) | 2026-10-23 | v0.10.13 | the editor | the editor | 2 | Two asks from the editor through the site's own form: a deep analysis of Fortune's article ('AI helped discover the PHP vulnerability that could take down 70% of the internet'), whose claims he calls incredible, wrong and still up; and a thread on running several fact-check and verification workflows, across several model providers, on key pages such as the state of affairs. |
-| [UF-006](uf-006/index.html) | 2026-10-26 | v0.22.22 | the editor | the editor | 5 | A phone review of the redesign: A to D read as working together (front pages for different readers, a content page, the console), and 'showing each reader what they need works well'. Three phone problems in the mockups (a fixed header two-thirds of the screen, the agencies page's two columns squeezed, the console's menu filling the first screen) and one question: what does a first-time visitor see before choosing a role, when the role and view selectors take so much space? The three problems are mockup-only: the live v2 site does not have them. The question holds on the live site, on every page, on a first visit. |
-| [UF-007](uf-007/index.html) | 2026-10-26 | v0.22.33 | the editor | the editor | 10 | A reader's pass over the v2 front page. What works: the status cards, 'What nobody knows yet', the thirty-second answer. What is wrong: the timeline's edge overflows on a phone, the feedback form keeps a stale screenshot error (F026), Latest stops on 23 October (F032). What to change: plain dates instead of version lines, one place to choose a reader, the three groups before the sixteen roles, a plain summary anyone can pass on, and a short FAQ. |
+| [UF-006](uf-006/index.html) | 2026-10-26 | v0.22.22 | sent with the editor's enrolled key; the sender is not confirmed | person | 5 | A phone review of the redesign: A to D read as working together (front pages for different readers, a content page, the console), and 'showing each reader what they need works well'. Three phone problems in the mockups (a fixed header two-thirds of the screen, the agencies page's two columns squeezed, the console's menu filling the first screen) and one question: what does a first-time visitor see before choosing a role, when the role and view selectors take so much space? The three problems are mockup-only: the live v2 site does not have them. The question holds on the live site, on every page, on a first visit. |
+| [UF-007](uf-007/index.html) | 2026-10-26 | v0.22.33 | sent with the editor's enrolled key; the sender is not confirmed | person | 10 | A reader's pass over the v2 front page. What works: the status cards, 'What nobody knows yet', the thirty-second answer. What is wrong: the timeline's edge overflows on a phone, the feedback form keeps a stale screenshot error (F026), Latest stops on 23 October (F032). What to change: plain dates instead of version lines, one place to choose a reader, the three groups before the sixteen roles, a plain summary anyone can pass on, and a short FAQ. |
 
 ## What happens next
 
@@ -48,4 +48,4 @@ Each piece of feedback becomes frictions in [the friction log](../sherpa/index.h
 
 
 ---
-site v0.22.49 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/feedback/index.html
+site v0.22.50 · data as of 2026-10-27T19:13Z · vault commit 6f0d5c50bf12 · https://team.php.oct.2026.newsroom.sgit.ai/feedback/index.html
