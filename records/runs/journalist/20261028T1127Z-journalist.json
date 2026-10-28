@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1127Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-28T11:27:28Z",
+ "finished": "2026-10-28T11:29:35Z",
+ "outcome": "ok",
+ "summary": "11:10 wake (fired 11:27 UTC, 17 minutes late). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 7d27c44bcfc5 to fd0acfb4ae10 (661 sources, latest capture 09:45 UTC). 10 claims of curator batch 25 reviewed against their captures (5 agrees, 2 noted, 3 held back: TI Inside's Anatel and courts line, its NSA and CERT-EU wording, Sbircia's NCSC offline line the site marks disputed; Sbircia's restart sentence also held back). no-confirmed-compromise, compromise.json, story.json as-of and desk.json updated; still no organisation named as compromised through php2shell. Data released (gate passed). Export not run (the curator's export was current); updates and site repositories not touched. Seen at dev 6a76a6073245.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "6a76a60732459151d8a1e316251368e2f07f8de3"
+}
