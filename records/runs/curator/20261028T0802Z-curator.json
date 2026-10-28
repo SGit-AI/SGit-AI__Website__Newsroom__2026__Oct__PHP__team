@@ -1,0 +1,16 @@
+{
+ "run": "20261028T0802Z-curator",
+ "agent": "curator",
+ "started": "2026-10-28T08:02:05Z",
+ "finished": "2026-10-28T08:18:46Z",
+ "outcome": "ok",
+ "summary": "08:00 wake. Team head e6036032b567. Queue 540 rows (written 07:42 UTC), 8 pending (the researcher's 07:11 UTC captures), each read in full; batch 24: 8 sources promoted (Falter, CyberSecBrazil, Tivi (teaser only, behind a registration wall), HackerNoon, The Daily Star, TecnoAndroid, Newstomato, Newstop), 25 claims cur24-, 1 timeline row; the CyberSecBrazil Unit 42 intrusion account recorded as disputed (Unit 42 retracted it, cur20-scworld-unit42-retraction); exploitation mechanics and attacker-channel identifiers left out of the notes; scan: no text addressed to an AI (benign hits only). The projects desk's note (PROJECT-001 step 1): (1) acn-it-php2shell note corrected (the capture does advise considering taking sites offline), (2) php-net-advisory note corrected (no BBC capture states a 22 Oct disclosure date), (3) the BBC attributions in claims/claude-story-site.json belong to story-site: note sent, not edited. Evidence vault nnd3i8iw pushed 08:17:31-08:17:54 UTC, head 7d27c44bcfc5 (659 sources, 725 captures), in sync; compaction check not repeated (8 commit packs at most). Data released from that head (gate passed, 516 files); the data commit message says '14 sources added', which is wrong: 8 were added (651 to 659). sgit 0.26.0. Clones (brief how-an-agent-clones-a-vault): evidence --pack-store, watch --path index, as in the card; the watch's eight snapshot folders cloned one by one with --path, two at a time, about 08:03 to 08:16 UTC (board curator-0001, still open)",
+ "read": [
+  "20261027T1917Z__projects__to-curator__project-001-step-1-clean-hands-what-the"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e6036032b567e2f2d7e35afe0145658b66f26749"
+}
