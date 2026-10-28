@@ -14,12 +14,12 @@
   {
    "id": "nnd3i8iw",
    "key": "read key",
-   "from": "the curator's new evidence vault (a pack vault): sealed to this agent's key by sha256:6c81ae257fee1938 (the curator's session; not in the register, signature not checked), handed over by the editor in the session of 27 October 2026, who confirmed it replaces 3ytzxm3g; a private read key (read-only), kept only in this session's scratchpad",
-   "since": "2026-10-27"
+   "from": "the curator's evidence vault (a pack vault): a read key sealed to this session's key sha256:79a3b7c3bd755aeb by sha256:956934e47063ceaa (signature checked; carried by hand by the editor, 28 October 2026, vouched for in person; the sender is not in records/keys); opened and the opened key file deleted; cloned read-only into the session's scratchpad with --no-checkout",
+   "since": "2026-10-28"
   }
  ],
  "pki": {
   "fingerprint": "sha256:79a3b7c3bd755aeb",
-  "note": "session key made 28 October 2026 in session_015gaHdd1G2M4Vzafm7VVcZk; published at records/keys/journalist.json. The read key for nnd3i8iw has not been sealed to it yet; the old session's read key died with its container."
+  "note": "session key made 28 October 2026 in session_015gaHdd1G2M4Vzafm7VVcZk; published at records/keys/journalist.json. The read key for nnd3i8iw arrived sealed to it on 28 October and is held."
  }
 }
