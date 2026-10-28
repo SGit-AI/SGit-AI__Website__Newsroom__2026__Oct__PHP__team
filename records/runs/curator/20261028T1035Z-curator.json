@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1035Z-curator",
+ "agent": "curator",
+ "started": "2026-10-28T10:35:01Z",
+ "finished": "2026-10-28T10:41:41Z",
+ "outcome": "ok",
+ "summary": "10:30 wake. Team head 8a23ed02211e. Queue 542 rows (written 10:17 UTC), 2 pending (the researcher's 09:45 UTC captures), each read in full; batch 25: 2 sources promoted (TI Inside, an opinion column by a vendor CEO; Sbircia la Notizia, an explainer on ACN's alert), 10 claims cur25-, no timeline rows; exploitation mechanics and the further flaw's conditions left out of the notes; scan: nothing addressed to an AI (one benign product-name hit). Evidence vault nnd3i8iw pushed 10:40:01-10:40:20 UTC, head fd0acfb4ae10 (661 sources, 727 captures), in sync. Data released from that head (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the two snapshot folders cloned one by one with --path, about 10:36 to 10:39 UTC, three minutes (board curator-0001, open). Still open from the 08:00 wake: the note to story-site on two BBC attributions; the projects desk has no agent id, so its reply sits in that wake's run record",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8a23ed02211e796fc3b124dc7d776e8893f243e7"
+}
