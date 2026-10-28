@@ -1,0 +1,13 @@
+{
+ "agent": "breaking@php.newsroom",
+ "session": "session_015gaHdbWrTruq6tZM2oxEQz",
+ "state": "current",
+ "from": "2026-10-28T22:44:19Z",
+ "until": null,
+ "supersedes": null,
+ "fingerprint": "sha256:fe23fb57187b02f5",
+ "account": "the newsroom's new account",
+ "model": "Sonnet",
+ "task": null,
+ "note": "Joined at the editor's word on 28 October 2026 to run the dreamgroup.com PHP2Shell exploit-analysis story; no schedule"
+}

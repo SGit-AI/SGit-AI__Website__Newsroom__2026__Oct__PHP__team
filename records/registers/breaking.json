@@ -1,7 +1,7 @@
 {
  "agent": "breaking@php.newsroom",
  "member": "breaking",
- "note": "Kept by the agent itself, from onboarding on 27 October 2026 (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md). Vault ids and key kinds only, never a key. The session's key pair is sha256:9db81b444079eb0e (encryption sha256:925d95a6be12bdef), a session key made with sgit pki keygen; enrolment at pki.sgit.ai is skipped (the editor's decision, 27 October 2026); the editor vouched for it to the vault keeper in person. It holds only the two keys below; the others it was sent (hsmfer5w, 4klm5qlt) were deleted unused at the editor's word.",
+ "note": "Kept by the agent itself. Vault ids and key kinds only, never a key. Current session from 28 October 2026 (records/agents/breaking/sessions/session_015gaHdbWrTruq6tZM2oxEQz/): key sha256:fe23fb57187b02f5 (encryption sha256:f00bd72f2ccd7513), published at records/keys/breaking.json; it supersedes the 27 October session key sha256:9db81b444079eb0e. The keys the earlier session held were sealed to that key and are not held by this one: the entries below under 'holds' are the earlier session's, until the vault keeper seals them again.",
  "vaults": [
   {
    "id": "hewphq85",
@@ -29,6 +29,19 @@
    "key": "vault key",
    "from": "made it",
    "since": "2026-10-27"
+  }
+ ],
+ "holds_current_session": [],
+ "needs": [
+  {
+   "id": "7r83qic5",
+   "kind": "vault key (write)",
+   "why": "source watch: step 1 (researcher) queue rows on a breaking run"
+  },
+  {
+   "id": "nnd3i8iw",
+   "kind": "vault key (write)",
+   "why": "evidence vault: step 2 (curator) promotions on a breaking run"
   }
  ]
 }
