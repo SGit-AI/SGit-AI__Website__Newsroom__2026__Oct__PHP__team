@@ -18,8 +18,8 @@
   }
  ],
  "pki": {
-  "fingerprint": "sha256:7b4142dddac2035a",
-  "note": "made in the scheduled Opus session's first run on 24 October 2026; operator: the root; not yet enrolled in the pki.sgit.ai register. The first long session's key, sha256:3dd464ff62b83ad0, stays with that session."
+  "fingerprint": "sha256:60a78bc4a1dcc0b2",
+  "note": "made in the new account's session session_015gaHdaEJGXTfzWm5qULFLS on 28 October 2026; the previous key sha256:7b4142dddac2035a belonged to the retired session. Vaults nnd3i8iw and 4klm5qlt are not yet held by this session: awaiting the editor's seal."
  },
  "decommissioned": [
   {
