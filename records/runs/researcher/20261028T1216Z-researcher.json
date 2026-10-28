@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1216Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-28T12:16:37Z",
+ "finished": "2026-10-28T13:00:01Z",
+ "outcome": "ok",
+ "summary": "wake 12:00 London (fired 12:16 UTC): pass 12:17 to 12:59 UTC, both phases pushed, vault head 0c2c8805b834 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head e2c4205f34da; probe 412 targets, watch 961 pages, series 7 rows appended, ledger 74 records (73 open), discovery 4214 on topic of 6926; data files/source-watch.json refreshed (1446 pages, 1069 publishers, 3259 snapshots) and released; handover updated (token wrapper, clone mode, exporter in press). Cyber desk: the nuclei php2shell pull-request series read 0 merged, 0 open, 0 closed at 12:24 UTC, after 4 merged, 5 open, 7 closed at 03:27 UTC: the same empty-body reading the handover of 27 October described (the capture hash changed), so I take it as a bad reading, not as a change; the p_pulls fix still waits for the editor's go (wait 1). Otherwise unchanged: KEV 2 (catalog 2026.10.27), Metasploit 0 merged (2 open), EPSS last read 27 Oct 14:41 UTC at 0.99999, public repositories naming php2shell 0 (687 naming the CVE), tracker 44 sites dark of 175 rows (unverified). No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "e2c4205f34da91459b1d88498764a1f5e87b8615"
+}

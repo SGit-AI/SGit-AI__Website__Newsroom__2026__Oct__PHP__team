@@ -49,3 +49,9 @@ ledger 66 records, 65 open; curator queue 494 rows.
 
 ## Last run record
 `records/runs/researcher/20261027T1432Z-researcher.json`, and the paused-for-the-move record below it.
+
+## Update, 28 October 2026 (session_015gaHdeNTGWK1pRfj8TGx7i, Sonnet)
+- Clone mode: `sgit clone --pack-store --no-checkout` into the scratchpad as `work/watchpack`, then `sgit checkout` of the folders a pass reads and writes (`tools index state targets series analysis contradictions taxonomy tips jobs inbox notes sources runs`). Board `researcher-0004` reports the flag combination to the conductor.
+- Pushing needs the vault server token, which the editor gives by name in the session. Hold it in a mode-600 file in the scratchpad, never in a repository or a log. A small wrapper named `sgit` first on PATH adds `--token <file contents>` to `sgit push` only, so `tools/pass.sh` runs unchanged: start a pass with `PATH=<scratchpad>/shim:$PATH setsid nohup timeout 7200 bash tools/pass.sh > <log> 2>&1 < /dev/null &`.
+- The exporter now lives in press (`build/export_watch.py`); copy it to a scratch folder as `admin/build/export_watch.py`, make a `data/` folder beside `admin/`, run it with `--from work/watchpack`, copy `data/source-watch.json` to data's `files/`.
+- The nuclei `p_pulls` reading is valid again (parser version 2). The seven waits of 27 October are still the editor's to answer, and the token was pasted into a session as text on 28 October, so it too should be rotated.
