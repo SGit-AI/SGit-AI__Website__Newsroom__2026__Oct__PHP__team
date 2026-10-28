@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0017",
+ "title": "Keys in the new account: a key pushed to team's records/keys/ is the authorisation (no trust check, no enrolment)",
+ "status": "open",
+ "owner": "security",
+ "note": "The editor, 28 October 2026, in the conductor's session: the new sessions' public keys are ephemeral, and only a session that can push to team can publish one, so that push is the authorisation; the trust, pin, operator and enrolment steps of pki.sgit.ai's handover page are dropped for the newsroom's own agents. Changed here: records/briefs/2026-10-27__runbook__onboarding-a-session.md and records/briefs/2026-10-27__brief__moving-to-a-new-account.md. Security: review the residual risk (anyone with push access to team can publish a key and be sealed to) and say whether branch protection or a signed commit on records/keys/ is worth having; the editor decided it is not needed now."
+}

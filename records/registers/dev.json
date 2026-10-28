@@ -1,7 +1,7 @@
 {
  "agent": "dev@php.newsroom",
  "member": "dev",
- "note": "Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed by dev@php.newsroom on 23 October 2026.",
+ "note": "Seeded by conductor@php.newsroom on 23 October 2026 from the site's own records (data/vaults.json, REALITY.md). The agent named here owns this file from now on: confirm or correct each row, and add the vaults it made that are missing. Confirmed by dev@php.newsroom on 23 October 2026. On 28 October 2026 (session_015gaHdeQPc82wWvW99oY7RT) dev holds no vault key and no secret: the editor says it needs none.",
  "vaults": [
   {
    "id": "84wr8mib",
@@ -39,43 +39,57 @@
    "id": "84wr8mib",
    "key": "vault key",
    "from": "made it",
-   "since": "2026-10-22"
+   "since": "2026-10-22",
+   "until": "2026-10-28",
+   "ended": "not carried into the new session: the editor, 28 October 2026, dev needs no vaults or secrets (it works on the press, the pages and the code)"
   },
   {
    "id": "wgeiqabu",
    "key": "vault key",
    "from": "made it",
-   "since": "2026-10-22"
+   "since": "2026-10-22",
+   "until": "2026-10-28",
+   "ended": "not carried into the new session: the editor, 28 October 2026, dev needs no vaults or secrets (it works on the press, the pages and the code)"
   },
   {
    "id": "i4diy82d",
    "key": "vault key",
    "from": "made it",
-   "since": "2026-10-22"
+   "since": "2026-10-22",
+   "until": "2026-10-28",
+   "ended": "not carried into the new session: the editor, 28 October 2026, dev needs no vaults or secrets (it works on the press, the pages and the code)"
   },
   {
    "id": "5wnsr5h8",
    "key": "vault key",
    "from": "made it",
-   "since": "2026-10-22"
+   "since": "2026-10-22",
+   "until": "2026-10-28",
+   "ended": "not carried into the new session: the editor, 28 October 2026, dev needs no vaults or secrets (it works on the press, the pages and the code)"
   },
   {
    "id": "0cfkdcvh",
    "key": "vault key",
    "from": "made it",
-   "since": "2026-10-23"
+   "since": "2026-10-23",
+   "until": "2026-10-28",
+   "ended": "not carried into the new session: the editor, 28 October 2026, dev needs no vaults or secrets (it works on the press, the pages and the code)"
   },
   {
    "id": "84wr8mib",
    "key": "append token",
    "from": "made it",
-   "since": "2026-10-22"
+   "since": "2026-10-22",
+   "until": "2026-10-28",
+   "ended": "not carried into the new session: the editor, 28 October 2026, dev needs no vaults or secrets (it works on the press, the pages and the code)"
   },
   {
    "id": "wgeiqabu",
    "key": "append token",
    "from": "made it",
-   "since": "2026-10-22"
+   "since": "2026-10-22",
+   "until": "2026-10-28",
+   "ended": "not carried into the new session: the editor, 28 October 2026, dev needs no vaults or secrets (it works on the press, the pages and the code)"
   },
   {
    "id": "3ytzxm3g",
