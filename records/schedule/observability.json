@@ -2,8 +2,8 @@
  "agent": "observability",
  "address": "observability@php.newsroom",
  "member": "observability",
- "status": "active",
- "status_note": "Active from 27 October 2026 at the editor's go in observability's session: the scheduled task trig_01B9ULDBk3Mux6HzEkFQ7wZQ (CRON_TZ=Europe/London 33 8,14,20 * * *) fires into session_01NUvath8v2oGkhPwddJ3pgS, its prompt this card's instructions, word for word.",
+ "status": "paused",
+ "status_note": "Paused 28 October 2026, about 00:49 UTC, at the editor's word, for the move to a new account. Handover: records/agents/observability/HANDOVER.md. The task (trig_01B9ULDBk3Mux6HzEkFQ7wZQ, CRON_TZ=Europe/London 33 8,14,20 * * *) is disabled; the new session creates its own at the editor's go and records its id here.",
  "objective": "Keep the telemetry lane drained and readable: three times a day, drain what waits in the telemetry vault's lane (84wr8mib) before it nears the server's 1,000-event cap, read what came in as untrusted claims, and say in the run record who read what, what looks wrong, and what waits on whom.",
  "tz": "Europe/London",
  "days": "every day",
@@ -13,8 +13,8 @@
   "20:33"
  ],
  "times_why": "Three wakes, six hours apart in the day and twelve overnight: at the busiest day so far (about 430 events on 25 October) the longest gap fills the lane to about 300, well under the 1,000 the server keeps. At :33, a minute no other card uses; nothing in the quiet hours.",
- "model": "Sonnet",
- "session": "observability's own persistent session (session_01NUvath8v2oGkhPwddJ3pgS), the one that holds the telemetry vault's key (84wr8mib) and the SG/Send access token, both in ~/.observability (keys/, vaults/, venv/: a link to the session's scratchpad), never in a repository or a prompt. If the session ends, the editor starts a new one and hands the key again, sealed to its key; the card's session changes in the same release.",
+ "model": "Sonnet (routine runs; the editor, 27 October: Sonnet for the rest)",
+ "session": "observability's own persistent session (session_01NUvath8v2oGkhPwddJ3pgS, old account): it holds the telemetry vault's key (84wr8mib), the app vault's key (5wnsr5h8) and the SG/Send access token in ~/.observability (a link to the session's scratchpad), never in a repository or a prompt. In the new account: a new session, the keys sealed to its new key by the editor, the same layout (keys/, vaults/, venv/, press/).",
  "brief": "records/briefs/2026-10-24__brief__the-lane-cap-and-sharded-lanes.md",
  "runbook": "records/desks/observability/drain.py (its docstring), and records/agents/observability/ROLE.md",
  "abp": "records/agents/observability/policy.json (draft)",
@@ -50,7 +50,7 @@
   "change another agent's card, runs, rows or files"
  ],
  "kept_by": "observability@php.newsroom",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "repositories": {
   "push": [
    "SGit-AI__Website__Newsroom__2026__Oct__PHP__team"
@@ -62,5 +62,12 @@
   "never": [
    "SGit-AI__Website__Newsroom__2026__Oct__PHP (v1: frozen since step B, 26 October 2026)"
   ]
+ },
+ "task": {
+  "id": "trig_01B9ULDBk3Mux6HzEkFQ7wZQ",
+  "enabled": false,
+  "cron": "CRON_TZ=Europe/London 33 8,14,20 * * *",
+  "session": "session_01NUvath8v2oGkhPwddJ3pgS",
+  "state": "disabled for the move; to be created again in the new account"
  }
 }

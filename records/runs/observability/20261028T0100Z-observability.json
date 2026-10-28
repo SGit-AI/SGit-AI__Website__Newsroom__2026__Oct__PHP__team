@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0100Z-observability",
+ "agent": "observability",
+ "started": "2026-10-28T01:00:00Z",
+ "finished": "2026-10-28T00:59:10Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/observability/HANDOVER.md). Card set to paused with the task id (trig_01B9ULDBk3Mux6HzEkFQ7wZQ, already disabled); register lists both vault keys held and the lanes' append tokens, with what each is for. Pushed what lived only in the old session: the dry-run host and its browser checks (records/desks/observability/tools/). Both vault clones in sync with the server; 101 events waiting in the lanes, none refused; nothing drained this turn. Left: the keys, the access token and the working copies of the vaults, which the new session gets from the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "4d1dc23f4c6eee8667eef11e16fa1dcfd942e4b6"
+}

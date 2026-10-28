@@ -1,0 +1,26 @@
+const { chromium } = require('playwright')
+const out = process.argv[2]
+;(async () => {
+  const b = await chromium.launch(), p = await b.newPage({ viewport: { width: 1280, height: 900 } })
+  const errs = []; p.on('pageerror', e => errs.push(String(e)))
+  const frames = []; p.on('request', r => { if (r.url().includes('newsroom.sgit.ai')) frames.push(r.resourceType() + ' ' + r.url()) })
+  await p.goto('http://localhost:8790/?page=overview'); await p.waitForSelector('text=Sections of the site')
+  await p.locator('text=Everyone').first().click(); await p.waitForTimeout(300)
+  const pagesCard = p.locator('section.card', { hasText: 'Pages' }).first()
+  await pagesCard.scrollIntoViewIfNeeded(); await pagesCard.hover(); await pagesCard.screenshot({ path: out + '/1-pages-with-tools.png' })
+  const row = pagesCard.locator('.hb-row', { hasText: '/sources/calif-php2shell/' }).first()
+  const before = (await p.locator('.pill').allInnerTexts()).length
+  await row.locator('button.pt').click(); await p.waitForSelector('text=Paths through it')
+  const after = (await p.locator('.pill').allInnerTexts()).length
+  console.log('filters before/after the ◎ click:', before, after, '(must be equal)')
+  console.log('tab:', await p.locator('nav button.on').innerText())
+  console.log('open link:', await p.locator('a.btn', { hasText: 'Open on the site' }).getAttribute('href'))
+  await p.screenshot({ path: out + '/2-one-page.png' })
+  await p.screenshot({ path: out + '/3-one-page-full.png', fullPage: true })
+  const fr = p.locator('iframe.page-frame'); await fr.scrollIntoViewIfNeeded(); await p.waitForTimeout(3500)
+  console.log('frame sandbox:', JSON.stringify(await fr.getAttribute('sandbox')), 'src:', await fr.getAttribute('src'))
+  await p.screenshot({ path: out + '/4-frame.png' })
+  console.log('requests to the site:', frames.slice(0, 8))
+  console.log('errors:', errs)
+  await b.close()
+})()

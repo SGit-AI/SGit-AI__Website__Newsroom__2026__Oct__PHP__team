@@ -1,20 +1,29 @@
 {
  "agent": "observability@php.newsroom",
  "member": "observability",
- "note": "Started by observability@php.newsroom on 24 October 2026, its first round. No vault made yet. The keys of 84wr8mib and 5wnsr5h8 came sealed to sha256:b9ddd39416d71cbb from sha256:956934e47063ceaa (chains to the root), at the editor's hand.",
+ "note": "No vault made by observability. Holds the keys of the two telemetry vaults, sealed to its first key (sha256:b9ddd39416d71cbb) by sha256:956934e47063ceaa at the editor's hand, 24 October. That key dies with the session; in the new account the editor seals both again to the new key.",
  "vaults": [],
  "holds": [
   {
    "id": "84wr8mib",
    "key": "vault key",
    "from": "the editor, sealed by sha256:956934e47063ceaa",
-   "since": "2026-10-24"
+   "since": "2026-10-24",
+   "purpose": "the telemetry data vault: drain/, reports/, identity/ (the five lanes, identity/lanes.json); drained three times a day"
   },
   {
    "id": "5wnsr5h8",
    "key": "vault key",
    "from": "the editor, sealed by sha256:956934e47063ceaa",
-   "since": "2026-10-24"
+   "since": "2026-10-24",
+   "purpose": "the telemetry application (app/, tests/): changes are versioned here; the data vault links it"
+  },
+  {
+   "id": "84wr8mib",
+   "key": "append token",
+   "from": "derived from the vault's write key (records/desks/observability/lanes.py): lanes 2 to 5; lane 1 is the site's published token",
+   "since": "2026-10-27",
+   "purpose": "write-only; publishable by design"
   }
  ]
 }
