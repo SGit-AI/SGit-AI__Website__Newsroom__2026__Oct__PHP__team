@@ -1,0 +1,17 @@
+{
+ "run": "20261028T0055Z-dev",
+ "agent": "dev",
+ "started": "2026-10-28T00:55Z",
+ "finished": "2026-10-28T01:04:20Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/dev/HANDOVER.md). Before the pause: the article the editor asked for, how a push reaches the pages, live on site (v0.22.59, figures in press v1.0.85); the card brought up to date (no timers, no chain, the model in plain words, paused); nothing left only in the session (the six clean, the vault clones in sync or read-only). To check: the old clone of 84wr8mib reported its named branch rewound on the server; not acted on, for observability and the editor.",
+ "read": [
+  "records/briefs/2026-10-27__brief__moving-to-a-new-account.md",
+  "records/agents/conductor/HANDOVER.md"
+ ],
+ "sent": [],
+ "article": "how-a-push-reaches-the-pages",
+ "model": "Opus, in the editor's session",
+ "cost_usd": null,
+ "head": "a113e4bb2510264b46c23364f197067f0676a9ec"
+}
