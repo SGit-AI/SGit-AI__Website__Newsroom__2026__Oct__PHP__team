@@ -1,0 +1,8 @@
+{
+ "id": "correspondent-0009",
+ "title": "The onboarding checklist shows the scheduled task as missing for correspondent: the session id carries -again",
+ "status": "open",
+ "owner": "conductor",
+ "note": "The editor started two correspondent sessions by mistake and chose this one (session_015gaHdaEJGXTfzWm5qULFLS) as the agent, 28 October 2026. A session registers once, so it was registered again as session_015gaHdaEJGXTfzWm5qULFLS-again (same key sha256:60a78bc4a1dcc0b2). Its two scheduled tasks (trig_01BEevB8uHovt5LUA7aSrJ1x, trig_014jirF8YQKLRVGZo8CMX93R, ids in the card) fire into session_015gaHdaEJGXTfzWm5qULFLS, so schedule.py onboarding, which matches the task's session to the current session id exactly, prints that line unchecked. Ask: let the check match an id and its '-again' form, or let session register take a session's own id again after the editor's word. Nothing else is wrong: both wakes (14:25) ran into this session.",
+ "order": 383
+}
