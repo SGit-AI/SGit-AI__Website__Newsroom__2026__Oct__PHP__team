@@ -207,6 +207,20 @@ def _box(rows, top, side, bottom):
     out.append(bottom)
     return '\n'.join(out)
 
+def _items(label, text, none=None):
+    """'LABEL  1. item' rows for a '|' list; a long item wraps under itself, never cut. `none` is the one row shown when the list is empty."""
+    import textwrap
+    items = [x.strip() for x in (text or '').split('|') if x.strip()]
+    if not items:
+        return [f'{label}  {none}'] if none else []
+    pad = ' ' * (len(label) + 2)
+    rows = []
+    for i, f in enumerate(items, 1):
+        lines = textwrap.wrap(f, W - len(pad) - 4) or ['']
+        rows.append((f'{label}  ' if i == 1 else pad) + f'{i}. ' + lines[0])
+        rows += [pad + '   ' + l for l in lines[1:]]
+    return rows
+
 def cmd_banner(a):
     """A start or an end banner for a wake, so the editor sees where each wake's report begins and ends."""
     who = name(a.agent)
@@ -226,6 +240,10 @@ def cmd_banner(a):
                 f'{t.strftime("%a %d %b %Y")}   fired {t.strftime("%H:%M")} UTC / {_london(t)} London'
                 + (f'   due {a.scheduled}' if a.scheduled else ''),
                 f'model {(str(model).split() or ["?"])[0]}   team {head}   unread {unread}']
+        if a.objective:
+            import textwrap
+            ob = textwrap.wrap(a.objective.strip(), W - 11) or ['']
+            rows += ['OBJECTIVE  ' + ob[0]] + ['           ' + l for l in ob[1:]]
         print('```\n' + _box(rows, '╔' + '═' * (W + 2) + '╗', '║', '╚' + '═' * (W + 2) + '╝') + '\n```')
     else:
         last = json.load(open(runs[-1], encoding='utf-8')) if runs else {}
@@ -239,14 +257,13 @@ def cmd_banner(a):
                 f'{s0.strftime("%H:%M")} -> {now.strftime("%H:%M")} UTC  ({int((now - s0).total_seconds() // 60)} min)'
                 + (f'   released {a.release}' if a.release else '')
                 + (f'   problems {a.problems}' if a.problems else '')]
-        import textwrap
-        for i, f in enumerate([x for x in (a.for_you or '').split('|') if x.strip()], 1):
-            lines = textwrap.wrap(f.strip(), W - 12) or ['']   # a long item wraps under itself, never cut
-            rows.append((f'FOR YOU  {i}. ' if i == 1 else f'         {i}. ') + lines[0])
-            rows += ['            ' + l for l in lines[1:]]
+        rows += _items('ACHIEVED', a.achieved, none='nothing recorded')
         if a.next:
-            rows.append(f'NEXT     {a.next}')
-        print('```\n' + _box(rows, '▛' + '▀' * (W + 2) + '▜', '▌', '▙' + '▄' * (W + 2) + '▟') + '\n```')
+            rows.append(f'NEXT      {a.next}')
+        out = _box(rows, '▛' + '▀' * (W + 2) + '▜', '▌', '▙' + '▄' * (W + 2) + '▟')
+        out += '\n' + _box(_items('BLOCKERS', a.blockers, none='none'), '╭' + '─' * (W + 2) + '╮', '│', '╰' + '─' * (W + 2) + '╯')
+        out += '\n' + _box(_items('FOR YOU', a.for_you, none='nothing needed from you'), '┏' + '━' * (W + 2) + '┓', '┃', '┗' + '━' * (W + 2) + '┛')
+        print('```\n' + out + '\n```')
 
 SESSION_ID = re.compile(r'[A-Za-z0-9_-]{6,80}')
 
@@ -358,6 +375,7 @@ def main():
     p = s.add_parser('tasks'); p.add_argument('raw'); p.add_argument('--as-of'); s.add_parser('wake').add_argument('agent')
     p = s.add_parser('banner'); p.add_argument('which', choices=('start', 'end')); p.add_argument('agent'); p.add_argument('--started')
     p.add_argument('--kind'); p.add_argument('--scheduled'); p.add_argument('--release'); p.add_argument('--problems'); p.add_argument('--for-you'); p.add_argument('--next')
+    p.add_argument('--objective'); p.add_argument('--achieved'); p.add_argument('--blockers')
     p = s.add_parser('session'); p.add_argument('action', choices=('register', 'list', 'who')); p.add_argument('agent'); p.add_argument('--id'); p.add_argument('--key')
     p.add_argument('--qr'); p.add_argument('--account'); p.add_argument('--model'); p.add_argument('--task'); p.add_argument('--note'); p.add_argument('--at')
     s.add_parser('onboarding').add_argument('agent')

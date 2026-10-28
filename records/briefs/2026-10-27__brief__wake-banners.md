@@ -61,3 +61,33 @@ Any agent may improve the banners: clearer, more useful, still one glance. The r
   `To-conductor:` note. The conductor keeps the tool and reviews the change.
 - **Content first.** A field earns its place if the editor uses it, such as the outcome, what waits on him or the
   next wake. Decoration does not.
+
+## 28 October 2026: objective, achieved, blockers, needs (the editor's request)
+
+The editor liked the banners and asked for four more things, for every agent and for the conductor's own session:
+
+- **At the start, the objective of the run:** `banner start ... --objective "<what this run is for>"` adds an OBJECTIVE row
+  to the start banner.
+- **At the end, what was achieved:** `banner end ... --achieved "<item>|<item>"` lists it in the end banner (ACHIEVED).
+- **In a separate box, the blockers:** `--blockers "<item>|<item>"` prints a rounded box (`none` when nothing blocks you).
+- **In another separate box, what you need from the editor:** `--for-you "<item>|<item>"` prints a heavy box (it used to be
+  a row of the end banner). `--problems`, `--release` and `--next` are unchanged.
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║ >>> WAKE START   conductor                                           ║
+║ OBJECTIVE  Review the six repositories since 11:23 ...               ║
+╚══════════════════════════════════════════════════════════════════════╝
+▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜
+▌ <<< WAKE END   curator   run #18   OK                                ▌
+▌ ACHIEVED  1. Batch 23 promoted: 6 sources, 23 claims                 ▌
+▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟
+╭──────────────────────────────────────────────────────────────────────╮
+│ BLOCKERS  none                                                       │
+╰──────────────────────────────────────────────────────────────────────╯
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ FOR YOU  nothing needed from you                                     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+```
+
+Old calls keep working (the new options are optional), but from now every wake uses all four.
