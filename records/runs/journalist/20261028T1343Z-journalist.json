@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1343Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-28T13:43:18Z",
+ "finished": "2026-10-28T13:44:56Z",
+ "outcome": "ok",
+ "summary": "13:40 wake (fired 13:43 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head fd0acfb4ae10 to 47a99d155a8d (664 sources, latest capture 12:24 UTC). 10 claims of curator batch 26 reviewed against their captures (4 agrees, 5 noted, 1 held back: iPhoneMod's early-2026 Calif date). no-confirmed-compromise, compromise.json, story.json as-of and desk.json updated; still no organisation named as compromised through php2shell. Data released (gate passed). Export not run (the curator's export was current); updates and site repositories not touched. Seen at dev ad418025004e.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "ad418025004e79cef3f5e2ad68744256e786d7b4"
+}
