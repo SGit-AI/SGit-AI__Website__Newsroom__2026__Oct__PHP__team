@@ -29,6 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 DATA = os.path.join(ROOT, 'records')                                       # records/runs, records/messages, records/schedule
 SECRET = re.compile(r'sgit_private_|BEGIN [A-Z ]*PRIVATE KEY|ghp_[A-Za-z0-9]{20,}|github_pat_|(?<![A-Za-z0-9_-])sk-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|pki\.sgit\.ai/m/#m1\.')
 NAME = re.compile(r'[a-z][a-z0-9-]{1,30}')
+NOT_OURS = ()   # names of the account's other projects' tasks to leave out; the new account (28 October 2026) holds only the newsroom's
 OUTCOMES = ('ok', 'idle', 'partial', 'failed')
 # The editor speaks to agents in their own sessions, never through a file in this repository: a message here that
 # claims to be from him is forged by whoever wrote it.
@@ -127,7 +128,7 @@ def cmd_tasks(a):
                     'next_run': t.get('next_run_at', ''), 'updated': t.get('updated_at', ''), 'prompt': t['derived_state']['prompt']})
     d = {'about': "The account's scheduled tasks for this newsroom, as the scheduled-task service lists them: what actually wakes each agent. Written by tools/schedule.py tasks on the conductor's full passes; /team/schedule/ checks each against its card. The account's other projects are left out.",
          'kept_by': 'conductor', 'as_of': a.as_of or now(), 'tasks': sorted(out, key=lambda x: (x['agent'], x['cron']))}
-    p = os.path.join(DATA, 'scheduled-tasks.json')
+    p = os.path.join(DATA, 'data', 'scheduled-tasks.json')
     text = checked(json.dumps(d, indent=1, ensure_ascii=False), p) + '\n'   # checked before the file is opened, so a refusal leaves no empty file
     open(p, 'w', encoding='utf-8').write(text)
     print(f'{len(out)} tasks: ' + ', '.join(sorted({x["agent"] or "?" for x in out})))
@@ -322,6 +323,8 @@ def cmd_onboarding(a):
     holds = [h.get('id') if isinstance(h, dict) else h for h in (reg or {}).get('holds', [])]
     holds = [h for h in holds if h and h not in ('3ytzxm3g', 'oq9gflln', 'weic8imn')]
     model = str((card or {}).get('model', ''))
+    tp = os.path.join(DATA, 'data', 'scheduled-tasks.json')
+    tasks = json.load(open(tp, encoding='utf-8')).get('tasks', []) if os.path.exists(tp) else []
     steps = [
         (bool(keyf), 'public key published (records/keys)'),
         (bool(cur and keyf and cur.get('fingerprint') == keyf.get('fingerprint')), 'registered as the current session'),
@@ -329,7 +332,7 @@ def cmd_onboarding(a):
          'previous session retired' if cur and cur.get('supersedes') else 'previous session retired (none: first session)'),
         (bool(card and card.get('status') == 'active'), 'card active'),
         (model.startswith(('Opus', 'Sonnet')), 'card names its model (Opus or Sonnet)'),
-        (bool(re.search(r'trig_[A-Za-z0-9]{10,}', cardtext)), 'scheduled task created and its id in the card'),
+        (bool(cur and any(t['session'] == cur.get('session') and t['id'] in cardtext for t in tasks)), 'scheduled task created and its id in the card'),   # a task in the account's list that fires into the current session, its id in the card (28 October 2026: a stale id in a card no longer counts)
         (bool(reg), 'register present'),
         (bool(since), 'onboarding run record left'),
     ]

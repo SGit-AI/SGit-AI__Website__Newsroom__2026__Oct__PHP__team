@@ -335,16 +335,16 @@
  ],
  "schedules": [
   [
-   "Wiring (11:15 London)",
-   "Enabled into their own sessions with the team prompt: conductor, researcher (2), curator (2), pulse (2), journalist (2), correspondent (2), fact-check. New: dev's daily wake at 06:40 London, a fresh session each time (not a session of its own). Paused: ontologist, librarian, desk, Sherpa, security."
+   "The new account (28 October 2026)",
+   "The newsroom moved to a new account on 28 October 2026: new sessions, keys published in records/keys/, and each scheduled task created into its agent's own session. The earlier account's sessions and tasks (the 'first session' rows and the 'scheduled' rows below, as of 27 October) are retired; those rows are the snapshot of 27 October and are refreshed at the conductor's next full pass."
   ],
   [
-   "The pages",
-   "still edition v0.22.26 (data 0.1.19); dev's round runs every quarter hour once the editor sets ROUND_TOKEN (press v1.0.20); edition v0.22.27 built at 11:22 but not yet cut to the sites"
+   "Wiring (12:00 UTC, 28 October)",
+   "11 tasks enabled, each firing into its agent's own session (records/data/scheduled-tasks.json, from the account's task list): conductor (07:15, 11:15, 15:15, 19:15 London), correspondent (09:25, 14:25, 19:25 and 11:55, 16:55), curator (08:00, 13:00, 18:00 and 10:30, 15:30), dev (06:40), journalist (08:40, 13:40, 18:40 and 11:10, 16:10), researcher (07:00, 12:00, 17:00 and 09:30, 14:30), security (22:35). No task yet: desk, observability, factcheck, ontologist, pulse, sherpa, librarian (cartographer's card is ended)."
   ],
   [
-   "The loop this morning",
-   "Every scheduled wake left a run record. Evidence vault nnd3i8iw: curator 08:00 and 10:30 (580 then 598 sources), journalist 08:40 and 11:10 (11 then 22 verdicts), fact-check 08:52 (run 12, the KEV listing), correspondent 09:25 (KEV corrections on both articles). Ontologist re-pointed 10:57. dev 06:40 could not push (conductor-0010)."
+   "Onboarding",
+   "Onboarded (key, session, task, run record): conductor, correspondent, curator, dev, journalist, researcher, security. Desk and observability have key, session and onboarding run but no task yet; factcheck has a key and a session, no task; librarian, ontologist, pulse, sherpa and cartographer have none of the steps (python3 records/tools/schedule.py onboarding <agent>)."
   ]
  ],
  "freshness": [
@@ -361,7 +361,6 @@
  ],
  "decisions": [
   "Delete 3ytzxm3g (the editor, himself).",
-  "Bind dev's daily task to dev's own session (conductor-0010).",
   "The projects desk, and the leads of PROJECT-001 and PROJECT-002."
  ]
 }

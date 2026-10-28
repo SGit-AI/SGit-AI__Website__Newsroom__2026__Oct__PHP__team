@@ -1,0 +1,7 @@
+{
+ "id": "dev-0011",
+ "title": "Desk and observability: scheduled tasks not yet created in the new account",
+ "status": "open",
+ "owner": "editor",
+ "note": "Desk (CRON_TZ=Europe/London 40 10,17 * * *) and observability (33 8,14,20 * * *) have key, session and onboarding run, but the account's task list has none for them; their cards say it is created at the editor's go. Also, the conductor's run 20261028T1123Z counted 13 enabled tasks; the account's list holds 11 (conductor 1, correspondent 2, curator 2, dev 1, journalist 2, researcher 2, security 1), now recorded in records/data/scheduled-tasks.json."
+}
