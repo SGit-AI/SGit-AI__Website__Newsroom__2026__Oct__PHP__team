@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1306Z-curator",
+ "agent": "curator",
+ "started": "2026-10-28T13:06:26Z",
+ "finished": "2026-10-28T13:13:26Z",
+ "outcome": "ok",
+ "summary": "13:00 wake. Team head 2df5ee8e5ea3. Queue 545 rows (written 12:55 UTC), 3 pending (the researcher's captures), each read in full; batch 26: 3 sources promoted (BitMAT, Stirile PRO TV, iPhoneMod), 10 claims cur26-, no timeline rows; iPhoneMod's 'early 2026' for Calif's discovery recorded as unverified (conflicts with the Foundation's 30 July audit start); scan: nothing addressed to an AI (one unrelated sidebar headline). Evidence vault nnd3i8iw pushed 13:11:31-13:11:50 UTC, head 47a99d155a8d (664 sources, 730 captures), in sync; compaction not needed (commit packs well under 50). Data released from that head (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the three snapshot folders cloned one by one with --path in parallel, about 13:07 to 13:10 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "2df5ee8e5ea398ea679205766276731ed224c96a"
+}
