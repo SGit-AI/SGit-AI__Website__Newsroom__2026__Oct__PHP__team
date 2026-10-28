@@ -1,0 +1,14 @@
+{
+ "run": "20261028T2325Z-dev",
+ "agent": "dev",
+ "started": "2026-10-28T23:25:00Z",
+ "finished": "2026-10-28T23:23:04Z",
+ "outcome": "partial",
+ "summary": "Edition 0.22.51 built and published (press release edition-0.22.51, 23:21 UTC; patches for press, data, team, site, refs, updates) after a second signed log (press log 20261028T2313Z, signature verified) and the fixes to scan.py and harness.html. The first edition build (run 9) failed the gate on those two files; this one passed. The main site: a signed log pushed to the site repository (content/log/edition-takes/20261028T2322Z..., tools/pages_release.sh) so its deploy takes the edition. Team takes it on this release. Not yet pushed by anyone: data, updates, refs (they take it on their next push; each needs a push, as the dispatch is refused). To verify after the deploys: now.json, front page as-of, content/days (days are a separate matter: board dev-0013).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8ac287ffe37bd2ed825894d43e070da19378e860"
+}
