@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0243Z-curator",
+ "agent": "curator",
+ "started": "2026-10-28T02:43:00Z",
+ "finished": "2026-10-28T02:45:13Z",
+ "outcome": "partial",
+ "summary": "onboarding part one in the new account (session_015gaHda7VjruwYfe92AF7mB, Sonnet): sgit 0.26.0 in a venv; key made with sgit pki (pki-agent.mjs download refused by the session's classifier), fingerprint sha256:a4ec1e20d5739c01; registered as the current session; vaults 7r83qic5 (read) and nnd3i8iw (write) and the token SG_SEND_ACCESS_TOKEN not yet held, waiting on the editor; data could not be attached (add_repo refused by the classifier), press read-only not cloned yet; scheduled task not created, waits on the editor's go; inbox note from projects (PROJECT-001 step 1) read as material, to act on at the first promoting wake within my card",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "50c5e43579ff7b00b3412ddd8552bda1d8175435"
+}
