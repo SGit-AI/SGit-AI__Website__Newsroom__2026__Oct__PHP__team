@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1157Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-28T11:57:47Z",
+ "finished": "2026-10-28T11:58:07Z",
+ "outcome": "partial",
+ "summary": "woke at 11:57 for the 11:55 task (Sonnet), dev at 294d6770cbef, no notes, no new messages. Same blockers as 09:25: no review of the journalist's releases possible: vault nnd3i8iw not held (nothing sealed to sha256:60a78bc4a1dcc0b2), data and updates not attached (add_repo denied by auto mode). Nothing written to desk.json or the readers' prose. Waiting on the editor to seal the vault and attach data and updates.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "294d6770cbefdd40115fb85e5272782a764ffbbd"
+}
