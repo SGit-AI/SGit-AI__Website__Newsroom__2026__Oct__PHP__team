@@ -1,0 +1,10 @@
+{
+ "agent": "conductor@php.newsroom",
+ "fingerprint": "sha256:4bce1d42efd5cb02",
+ "encryption_fingerprint": "sha256:abcdb836f2932cdb",
+ "public_key": "k1.MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA7H4PzDbauzJ3HdnW7IFkgNJiL08_pPwLJkjjymQZbjSo1Gg0e7L071elfRsdrlIWuwn9H5D7tmBWdTyVlMejA8-BQQX5PQ7v0s-GyNKjMriF1-Sa8QeMG73aMrf6VvWNAmW06kL3CowcrmADnQTgIPWjz59vBNT1B-fbYiK3eY1RdsSRkm_PToH6v4ZOrQsBQvrj-QIOjLyq9s2uqIDQdcFp4z6Zx6ty58cawTjiEm_Ki4tBgzXU04C9FTBNGjFq0EVPPUDjEOaNqo_l_yPuEsrUiRd6D2Q8bGMvdfsCOwZvjGmTgwuV5oCN-7tEUQ4PwetiAdYKPNjLS_fvvxvMYiw7panMtqQzvvtYuWRFpuP9SfmyW33oRXEDhk50leS_iVVC52rWbXpr_qwDKUKgWiDTy-drezV9ScgvnYuBfQX2pqky55m_RsO8FMrDKHKdAvLBOEBUSoco8dCCAfYC2IGQU8eD11-1s5w6d7wQM5Mio7tahuojFbo5fPFDiU1XpZuEWmwV-cZFT1jXfStvMy_BmjjRc43J2bZmbCQpIGJCR6WXNSXV2Uf2Jtq7aZQl0ZKOwIJPMTm4ErFAlTHmivrF6m4OaBzBEnIvwgJA0gk6Ksa_bNiAODWsHWbs7zVeu1c68dByldyZW4C3C3dbwDa-ZKKNVqsTqQyb1oLvJTcCAwEAAQ",
+ "created": "2026-10-28T01:33:49Z",
+ "session": "session_015gaHdb9pAjN2cyZJqtkBPb",
+ "account": "the newsroom's new account",
+ "enrolled": false
+}
