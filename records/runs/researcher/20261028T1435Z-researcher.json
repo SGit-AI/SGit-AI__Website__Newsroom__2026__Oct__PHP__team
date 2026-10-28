@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1435Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-28T14:35:35Z",
+ "finished": "2026-10-28T15:20:37Z",
+ "outcome": "ok",
+ "summary": "wake 14:30 London (fired 14:35 UTC): pass 14:36 to 15:19 UTC, both phases pushed, vault head cc69eeba3805 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head ab6f67e09e87; probe 412 targets, watch 971 pages, series 7 rows appended, ledger 74 records (73 open), discovery 4279 on topic of 7030; data files/source-watch.json refreshed (1454 pages, 1077 publishers, 4063 snapshots) and released. Cyber desk: the Metasploit pull-request series now reads 1 merged (14:43 UTC), but the captured page (text.txt of snapshot 20261028T144312Z) shows the merged one is #21757, a Flowise CVE-2025-58434 module that the search matched and that does not name php2shell; the php2shell module, #22036, is still open (5 of 8 tasks). So no merged module: the reading is a false positive of p_pulls, not queued as news. The nuclei series still reads 0/0/0 from 12:24 UTC (bad reading, no new capture of it this pass; the p_pulls fix waits for the editor, wait 1: it should count only pull requests whose title or number names the CVE or php2shell, and read the Open/Closed counts rather than merged lines). EPSS read at 14:43 UTC: 0.99999 (unchanged). KEV 2 (catalog 2026.10.27), public repositories naming php2shell 0 (690 name the CVE), tracker 44 sites dark of 175 rows (unverified). No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "4c3f789b7d4e57c977374c1b5ed7ecb58cee8125"
+}
