@@ -19,7 +19,7 @@
   }
  ],
  "pki": {
-  "fingerprint": "sha256:de0decfc882a0235",
-  "note": "made in its first session on 24 October 2026, confirmed by the editor the same day; operator: the root; not yet enrolled in the pki.sgit.ai register"
+  "fingerprint": "sha256:79a3b7c3bd755aeb",
+  "note": "session key made 28 October 2026 in session_015gaHdd1G2M4Vzafm7VVcZk; published at records/keys/journalist.json. The read key for nnd3i8iw has not been sealed to it yet; the old session's read key died with its container."
  }
 }
