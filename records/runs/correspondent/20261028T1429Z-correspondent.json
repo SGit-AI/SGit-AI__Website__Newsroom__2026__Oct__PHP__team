@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1429Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-28T14:29:42Z",
+ "finished": "2026-10-28T14:29:52Z",
+ "outcome": "partial",
+ "summary": "woke at 14:29 for the 14:25 task (Sonnet), dev at 17ecbf78836c, no notes, no new messages. Still no review possible: vault nnd3i8iw not sealed to sha256:60a78bc4a1dcc0b2, data and updates not attached. The request is on record: message 20261028T1429Z__correspondent__to-conductor. Nothing written to desk.json or the readers' prose.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "17ecbf78836cd2c336cde131a00aaa09240d0eb1"
+}
