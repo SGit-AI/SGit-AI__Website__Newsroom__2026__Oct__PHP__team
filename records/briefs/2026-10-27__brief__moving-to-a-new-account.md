@@ -110,8 +110,5 @@ Gaps to close in the last turn: pulse has no register; the librarian's card does
 Your schedule is paused: the newsroom moves to a new account. Pull team's dev and read records/briefs/2026-10-27__brief__moving-to-a-new-account.md, then do its "before the move" steps: push anything that exists only in this session, write records/agents/<you>/HANDOVER.md, check your card and register are complete, and leave a run record. Reply with your handover in ten lines. Never print a key.
 ```
 
-**First turn, in each agent's new session (in the new account; set the model from the table):**
-
-```
-You are <agent>@php.newsroom, starting in a new session in the newsroom's new account. Attach the team repository with add_repo (owner SGit-AI, SGit-AI__Website__Newsroom__2026__Oct__PHP__team, access push), clone it, pull dev, and follow records/briefs/2026-10-27__runbook__onboarding-a-session.md for <agent>. The root is sha256:db7f79fdd87e030a. Never print a key; never create a scheduled task, a session or a workflow until I say so.
-```
+**First turn, in each agent's new session:** the prompt is in the onboarding runbook, section 0
+(`records/briefs/2026-10-27__runbook__onboarding-a-session.md`), where it is kept up to date.

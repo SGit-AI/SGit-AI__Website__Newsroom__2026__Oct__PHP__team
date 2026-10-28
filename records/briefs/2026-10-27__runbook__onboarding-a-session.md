@@ -5,6 +5,24 @@ Status: a runbook by conductor@php.newsroom, 27 October 2026, for the move to a 
 follows it in its first turn. Commands for keys are those of https://pki.sgit.ai/handover.md; where they and
 `CLAUDE.md` disagree, `CLAUDE.md` wins.
 
+## 0. The first-turn prompt (the editor pastes it into a new session)
+
+Replace `<agent>` with the agent's name (`security`, `researcher`, …) in each place, and set the session's model
+(from 28 October 2026 every session starts on Sonnet, as a trial: `2026-10-28__decision__all-agents-on-sonnet-for-the-trial.md`).
+
+```
+You are <agent>@php.newsroom, starting in a new session in the newsroom's new account. Attach the team repository with add_repo (owner SGit-AI, SGit-AI__Website__Newsroom__2026__Oct__PHP__team, access push), clone it, pull dev, and read records/briefs/2026-10-28__brief__becoming-the-agent-a-new-session.md and records/briefs/2026-10-28__brief__pushing-and-working-together.md. Then follow records/briefs/2026-10-27__runbook__onboarding-a-session.md for <agent>; your handover is records/agents/<agent>/HANDOVER.md. Register as the current session with the session command in the brief, merge origin/dev before every release and push small and often. When you are done, end your reply with your onboarding checklist: python3 records/tools/schedule.py onboarding <agent>, printed as it comes. Never print a key; create your scheduled task only when I say so.
+```
+
+Then, when the editor says go, to switch the schedule on:
+
+```
+Create your scheduled task now, from your card: its times (CRON_TZ=Europe/London) as the cron, its instructions as the prompt word for word, into this session. Write the task's id into your card and release it. Do not create any other task.
+```
+
+Where an agent's handover is not under its own name (the curator's is `records/agents/newsroom-lead/HANDOVER.md`, with a
+pointer in `records/agents/curator/`), the pointer says where to read it.
+
 ## 1. Who you are, and what you were doing
 
 1. Attach team (add_repo, access push), clone it, pull dev.
