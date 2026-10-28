@@ -1,7 +1,7 @@
 {
  "about": "Everything the team runs on its own, without a person starting it: who runs it, where, how often, whether it runs at night, what it is allowed to change, and what it must leave behind. Kept by conductor@php.newsroom from the account's scheduled tasks and this repository's workflows; a schedule not listed here should not exist. Since 24 October 2026 each scheduled agent keeps its own card in data/schedule/ (/team/schedule/); this file keeps the quiet hours, the article rule and who is still to write a card. Times are UTC unless they say London.",
  "kept_by": "conductor",
- "observed": "2026-10-22T21:40Z",
+ "observed": "2026-10-28T15:25Z",
  "quiet_hours": {
   "tz": "Europe/London",
   "from": "22:00",
@@ -16,15 +16,16 @@
    "id": "source-watch",
    "member": "researcher",
    "name": "Source watch pass",
-   "where": "a claude.ai scheduled task waking researcher@php.newsroom's session",
+   "where": "two claude.ai scheduled tasks waking researcher@php.newsroom's own session (since 28 October 2026, the new account)",
    "kind": "chain",
    "every_minutes": 30,
-   "cadence": "every 30 minutes, each pass scheduling the next",
+   "cadence": "five passes a day, London time: 07:00, 09:30, 12:00, 14:30, 17:00 (two tasks; no chain)",
    "does": "Probes every watched source, captures what changed into the source watch vault, rebuilds the series and the analysis, pushes the vault, and reports moves (sites dark, KEV, EPSS, the NCSC-NL inventory, Metasploit and nuclei counts).",
    "writes": "the source watch vault (7r83qic5, pack mode); nothing in this repository",
    "status": "paused by the editor at 21:36 UTC on 22 October until he has reviewed it; the pass booked for 21:40 is disabled. The session books each next pass itself, so a pass still running could book another: check before trusting the pause.",
    "since": "2026-10-22T20:33Z",
-   "proposed": "Before scheduling the next pass, check London time: between 22:00 and 07:00, schedule it for 07:04 instead. Breaking-news nights only when the editor says so."
+   "proposed": "Before scheduling the next pass, check London time: between 22:00 and 07:00, schedule it for 07:04 instead. Breaking-news nights only when the editor says so.",
+   "note_28_oct": "The earlier chain (each pass scheduling the next, every 30 minutes) ended with the move to the new account."
   },
   {
    "id": "factcheck",
@@ -43,12 +44,32 @@
  ],
  "expected": [
   {
+   "agent": "desk",
+   "note": "onboarded 28 October; its task is created at the editor's go (board dev-0011)"
+  },
+  {
+   "agent": "observability",
+   "note": "onboarded 28 October; its task is created at the editor's go (board dev-0011)"
+  },
+  {
+   "agent": "factcheck",
+   "note": "onboarded (key, session); no task yet, its card still names the old session (board dev-0009)"
+  },
+  {
+   "agent": "sherpa",
+   "note": "not onboarded in the new account; new session at the editor's go (board dev-0010)"
+  },
+  {
    "agent": "pulse",
-   "note": "already runs on a schedule; to write its card"
+   "note": "not onboarded in the new account (board dev-0010)"
+  },
+  {
+   "agent": "ontologist",
+   "note": "not onboarded in the new account (board dev-0010)"
   },
   {
    "agent": "librarian",
-   "note": "asked by the editor on 24 October to propose one"
+   "note": "not onboarded in the new account (board dev-0010)"
   }
  ]
 }
