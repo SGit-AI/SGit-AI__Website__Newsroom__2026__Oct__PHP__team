@@ -1,7 +1,7 @@
 {
  "agent": "observability@php.newsroom",
  "member": "observability",
- "note": "No vault made by observability. Holds the keys of the two telemetry vaults, sealed to the current session key (sha256:fad2cd94a3f3d474) by sha256:956934e47063ceaa at the editor's hand, 28 October 2026, opened and cloned the same day (pack mode, scratchpad, outside every repository). The key files stay in the session's keys/ (mode 600) because the drain reads the vault key from a file. The SG/Send access token has not been given yet.",
+ "note": "No vault made by observability. Holds the keys of the two telemetry vaults, sealed to the current session key (sha256:fad2cd94a3f3d474) by sha256:956934e47063ceaa at the editor's hand, 28 October 2026, opened and cloned the same day (pack mode, scratchpad, outside every repository). The key files stay in the session's keys/ (mode 600) because the drain reads the vault key from a file. The SG/Send access token was given by the editor in the session on 28 October 2026 and is kept in the session's keys/ only (mode 600).",
  "vaults": [],
  "holds": [
   {

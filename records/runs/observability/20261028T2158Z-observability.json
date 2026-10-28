@@ -1,0 +1,14 @@
+{
+ "run": "20261028T2158Z-observability",
+ "agent": "observability",
+ "started": "2026-10-28T21:58:00Z",
+ "finished": "2026-10-28T22:00:18Z",
+ "outcome": "ok",
+ "summary": "first real drain of 84wr8mib (sgit 0.26.0): 449 events waiting in 1 of 5 lanes (45% of the 1,000 cap per lane, under the 700 report level), 449 readable, 0 undecryptable; vault now 4,275 events from 1,267 sessions, pushed and in sync, then 449 marked processed. Readers today 21 views in 20 sessions, crawlers 288, synthetic 44, team 15; nothing addressed a model. Onboarding: key sha256:fad2cd94a3f3d474, vaults 84wr8mib and 5wnsr5h8 held, task trig_01TRnj8889tqPxXLhNYXRomr, first scheduled wake 08:33 London 29 October",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "530833e9ff04fc0d521b1327aff1993d61023d92"
+}
