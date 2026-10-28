@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1707Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-28T17:07:33Z",
+ "finished": "2026-10-28T17:53:37Z",
+ "outcome": "ok",
+ "summary": "wake 17:00 London (fired 17:07 UTC): pass 17:08 to 17:52 UTC, both phases pushed, vault head 114cad837914 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head b400678e50cc; probe 412 targets, watch 974 pages, series 15 rows appended, ledger 74 records (73 open), discovery 4362 on topic of 7164; data files/source-watch.json refreshed (1460 pages, 1083 publishers, 4888 snapshots) and released. Cyber desk: the Metasploit and nuclei pull-request series both read 0 merged, 0 open, 0 closed at 17:15 UTC. Cause found in the captures: both pages timed out at the capture (meta.json: page.goto Timeout 45000ms exceeded, no page.html or text.txt), and p_pulls turned the missing page into a reading of zeros; so the zeros of 12:24 and 17:15 are failed captures, not observations (the real state at 14:43 UTC: Metasploit PR 22036 for php2shell open, nothing merged for it; nuclei last good reading 4 merged, 5 open, 7 closed at 03:27 UTC, not checked for PRs that do not name php2shell). The p_pulls fix waits for the editor (wait 1): skip a capture with an error or no page instead of reading it, and count only PRs naming the CVE or php2shell. EPSS last read 28 Oct 14:43 UTC, 0.99999 (unchanged). KEV 2 (catalog 2026.10.27). Public repositories naming php2shell 0 (691 name the CVE). Tracker 44 sites dark of 175 rows (unverified). Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "b400678e50cc678b94bd54c1d004b519afda0bc3"
+}
