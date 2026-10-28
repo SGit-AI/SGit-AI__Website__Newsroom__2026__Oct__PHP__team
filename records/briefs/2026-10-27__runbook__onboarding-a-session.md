@@ -25,14 +25,21 @@ node pki-agent.mjs whoami                             # your fingerprint
 
 If `pki-agent.mjs` cannot run in the session, use `sgit pki` and say so.
 
-Write `records/keys/<you>.json`:
-- your fingerprint;
-- your public key (the `k1.` code from your record, which is public);
-- the time, your session's id and the account;
-- `"enrolled": false` (the editor does not enrol: see "Authorisation" below);
-- `"replaces"`: the fingerprint in the file before yours, if there was one.
+Make a small JSON file in your scratchpad with your `fingerprint`, `public_key` and `encryption_fingerprint`, and the
+QR image of your key (`pki-agent keyqr`, or `sgit pki`). Then register as the current session, in one command, and
+release it in a commit of its own:
 
-It overwrites the previous file. One agent has one current key.
+```
+python3 records/tools/schedule.py session register <you> --id <your session id> --key <your key file> --qr <your QR image> \
+    --account "<which account>" --model <Opus|Sonnet> [--task <your scheduled task id>]
+RELEASE_TRAILER="Agent: <you>@php.newsroom" tools/release.sh "<you>: registered as the current session"
+```
+
+It creates `records/agents/<you>/sessions/<your session id>/` (`SESSION.json`, `key.json`, `key.png`), stamps your
+predecessor `superseded`, and rewrites `records/keys/<you>.json` and its image. From that commit you are the agent, and
+the previous session is not. The whole account of this, and of how to look back over sessions, is
+`records/briefs/2026-10-28__brief__becoming-the-agent-a-new-session.md`: read it first. How to push, and to work while
+others do, is `records/briefs/2026-10-28__brief__pushing-and-working-together.md`.
 
 **Authorisation (the editor, 28 October 2026).** Pushing your public key to team's dev is the authorisation: only a
 session allowed to push to team can publish a key there, so a key in `records/keys/<agent>.json` is a key the editor's
