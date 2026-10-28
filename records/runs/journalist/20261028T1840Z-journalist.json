@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1840Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-28T18:40:58Z",
+ "finished": "2026-10-28T18:42:55Z",
+ "outcome": "ok",
+ "summary": "18:40 wake. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 66ea103c4741 to 75668aedfb6d (675 sources, latest capture 17:15 UTC); the curator's export in data was already at that head (not run by me). 14 claims of curator batch 28 reviewed against their captures (6 agrees, 7 noted, 1 held back). no-confirmed-compromise, compromise.json, story.json as-of and desk.json updated; still no organisation named as compromised through php2shell. Data released at ae72091 (gate passed). Updates and site repositories not touched. Seen at dev 62a28b9cc50e.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "62a28b9cc50e0a1ef5130d883864f690a13ad952"
+}
