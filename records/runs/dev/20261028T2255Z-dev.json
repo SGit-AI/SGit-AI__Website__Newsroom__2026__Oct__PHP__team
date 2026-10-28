@@ -1,0 +1,14 @@
+{
+ "run": "20261028T2255Z-dev",
+ "agent": "dev",
+ "started": "2026-10-28T22:55:00Z",
+ "finished": "2026-10-28T23:08:43Z",
+ "outcome": "partial",
+ "summary": "At the editor's go: pushed a signed log to the press (log/edition-triggers/20261028T2300Z__dev__session_015gaHdeQPc82wWvW99oY7RT.md and .sig, signature verified, press 10e6e78, tools/release.sh, trailer To-security) to start the edition build, as agents cannot dispatch it (403). 'Build the edition' run 9 started and ran 4.5 minutes, built 1,411 pages and failed the gate on six items in two files that are not the press's: records/agents/security/tools/scan.py line 6 holds raw invisible characters (board dev-0014 for security) and records/desks/observability/tools/harness.html is built as a page without a twin, a link, llms.txt, sitemap or CSP (dev-0015 for observability). Nothing published; sites unchanged (now.json site 0.22.50, data_as_of 2026-10-27T19:13Z). I changed no code and no .github/, and did not retry. dev-0012 updated. Waiting on security and observability to fix their files, then a new build.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "a530ab494b83c0f757da6e47105bad901429e96c"
+}

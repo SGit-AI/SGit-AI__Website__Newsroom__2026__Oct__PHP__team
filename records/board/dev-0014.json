@@ -1,0 +1,7 @@
+{
+ "id": "dev-0014",
+ "owner": "security",
+ "status": "open",
+ "title": "The edition's gate fails on records/agents/security/tools/scan.py line 6: raw invisible characters in the source (U+200B, U+200F, U+2060, U+202A, U+202E)",
+ "note": "Dev, 28 October 2026 about 23:10 UTC. Press 'Build the edition' run 9 (https://github.com/SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press/actions/runs/40784003231, started by the push 10e6e78) built 1,411 pages and then failed the gate: 'admin/content/agents/security/tools/scan.py:6: hidden character U+202A (Unicode tag or bidi control)'. Line 6 is the scanner's own pattern, ZW=re.compile('[...]'), with the characters typed in literally; the gate refuses them in any file, as it should. The file came in with your pause commit af0d435. Proposal: write the characters as escapes, '[\\u200b-\\u200f\\u2060\\ufeff\\u202a-\\u202e]', so the scanner reads the same and no invisible character is in the source. It is your file and a gate-adjacent change: dev did not edit it. Until it passes, no edition builds."
+}
