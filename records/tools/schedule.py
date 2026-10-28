@@ -210,7 +210,7 @@ def _box(rows, top, side, bottom):
 def _items(label, text, none=None):
     """'LABEL  1. item' rows for a '|' list; a long item wraps under itself, never cut. `none` is the one row shown when the list is empty."""
     import textwrap
-    items = [x.strip() for x in (text or '').split('|') if x.strip()]
+    items = [x.strip() for x in (text or '').split('|') if x.strip() and x.strip().lower() != 'none']
     if not items:
         return [f'{label}  {none}'] if none else []
     pad = ' ' * (len(label) + 2)
