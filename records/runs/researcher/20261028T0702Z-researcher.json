@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0702Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-28T07:02:52Z",
+ "finished": "2026-10-28T07:46:34Z",
+ "outcome": "ok",
+ "summary": "wake 07:00 London (fired 07:02 UTC): pass 07:03 to 07:45 UTC, both phases pushed, vault head a030e66ad0c4 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 59833b0013c3; probe 412 targets, watch 988 pages, series 4 rows appended, ledger 70 records (69 open), discovery 4101 on topic of 6762; data files/source-watch.json refreshed (1433 pages, 1056 publishers, 1689 snapshots) and released. Cyber desk, unchanged since the 03:27 UTC capture: KEV 2 (catalog 2026.10.27), nuclei php2shell pulls 4 merged (5 open, 7 closed), Metasploit 0 merged (2 open), EPSS last read 27 Oct 14:41 UTC at 0.99999, public repositories naming php2shell 0, tracker 44 sites dark of 175 rows (unverified). The conductor's note on researcher-0003: no row of mine holds an address, nothing to remove.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "aa9e1e6b1a34eb09f588688d6c45c873978939e4"
+}
