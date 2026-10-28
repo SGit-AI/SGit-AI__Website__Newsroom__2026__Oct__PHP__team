@@ -1,7 +1,7 @@
 {
  "agent": "conductor@php.newsroom",
  "member": "conductor",
- "note": "Kept by the agent itself.",
+ "note": "Kept by the agent itself. 28 October 2026: holds no vaults in the new account; the four active ones (5iwos28w, zjruy9vk, fmb2tpl2, 58526ytp) are not carried over (no step of the card uses them), weic8imn is retired. The vaults stay listed as made, for the record.",
  "vaults": [
   {
    "id": "5iwos28w",
@@ -34,36 +34,27 @@
    "key_sealed_to_root": "2026-10-23"
   }
  ],
- "holds": [
+ "holds": [],
+ "not_carried_over": [
   {
    "id": "5iwos28w",
-   "key": "vault key",
-   "from": "made it",
-   "since": "2026-10-22"
+   "as_of": "2026-10-28"
   },
   {
    "id": "zjruy9vk",
-   "key": "vault key",
-   "from": "made it",
-   "since": "2026-10-22"
+   "as_of": "2026-10-28"
   },
   {
    "id": "fmb2tpl2",
-   "key": "vault key",
-   "from": "made it",
-   "since": "2026-10-22"
+   "as_of": "2026-10-28"
   },
   {
    "id": "58526ytp",
-   "key": "vault key",
-   "from": "made it",
-   "since": "2026-10-22"
+   "as_of": "2026-10-28"
   },
   {
    "id": "weic8imn",
-   "key": "vault key",
-   "from": "made it",
-   "since": "2026-10-23"
+   "as_of": "2026-10-28"
   }
  ]
 }
