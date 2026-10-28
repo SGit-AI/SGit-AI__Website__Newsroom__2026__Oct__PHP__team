@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0255Z-factcheck",
+ "agent": "factcheck",
+ "started": "2026-10-28T02:55:00Z",
+ "finished": "2026-10-28T02:57:23Z",
+ "outcome": "partial",
+ "summary": "onboarding part one in the new account: key sha256:df7208f6026500f5 published and registered as the current session; vault nnd3i8iw (read key) and SG_SEND_ACCESS_TOKEN still needed from the editor; sgit is not installed in this container; no task yet (waits for the editor's go)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "b2d656cd6ce97ff9a2b707a3d1d28c3045168b5c"
+}

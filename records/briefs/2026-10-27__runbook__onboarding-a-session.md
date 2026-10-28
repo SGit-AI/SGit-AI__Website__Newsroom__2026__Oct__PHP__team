@@ -80,7 +80,9 @@ account put there. Whoever seals a vault key to you reads your fingerprint from 
 
 2. The editor seals each to your fingerprint and gives you the QR images. Open them with `read-qr` and `open`. Accept
    only what passes every check of the handover page, section B. Clone each vault into your scratchpad, never inside a
-   repository, without printing the key, then delete the opened key files.
+   repository, without printing the key, and in pack mode, never a plain `sgit clone`: `--path <folder>` to read one folder,
+   `--no-checkout` then `sgit checkout` to read some, `--pack-store` to write or read most
+   (`records/briefs/2026-10-28__brief__how-an-agent-clones-a-vault.md`). Then delete the opened key files.
 3. Ask the editor, by name only, for each secret your handover lists (for example the vault server's token). Never
    write one into a file in a repository.
 

@@ -71,5 +71,12 @@
    "wakes": "09:30, 14:30",
    "fires_into": "this session"
   }
- ]
+ ],
+ "vault_clone": {
+  "vault": "7r83qic5",
+  "mode": "sgit clone --pack-store --no-checkout <key> work/watchpack",
+  "why": "the brief's default for the researcher is --pack-store (the watch is written every pass); --no-checkout is added because a pass writes only a few files, checked out with sgit checkout. The combination is untried per the brief: first use 28 October 2026, result to the conductor in a board row",
+  "where": "the scratchpad, work/watchpack, never inside a repository; key read from a mode-600 file, never on a command line",
+  "brief": "records/briefs/2026-10-28__brief__how-an-agent-clones-a-vault.md"
+ }
 }

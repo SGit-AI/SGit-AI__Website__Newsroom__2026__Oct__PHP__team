@@ -5,9 +5,9 @@
  "from": "2026-10-28T02:44:35Z",
  "until": null,
  "supersedes": null,
- "fingerprint": "sha256:a4ec1e20d5739c01",
+ "fingerprint": "sha256:1bfc70ecaaa1ad0d",
  "account": "the newsroom's new account (agent@diniscruz.ai)",
  "model": "Sonnet",
  "task": "trig_01UMq1E6WYtw6sEGidMAFSpG, trig_01NgzxqJM3BJfKZ2SJZ8Eabr",
- "note": "keys made with sgit pki (pki-agent.mjs download was refused by the session's auto-mode classifier)"
+ "note": "key replaced on 28 October 2026 at the editor's word: the first key (sha256:a4ec1e20d5739c01, made with sgit pki, an encryption-only bundle) was swapped for a pki-agent pair (sha256:1bfc70ecaaa1ad0d) so a vault key can be sealed to it; the first key was never used to seal or sign anything"
 }

@@ -1,0 +1,13 @@
+{
+ "agent": "factcheck@php.newsroom",
+ "session": "session_015gaHdajiqdGA4WEdTfyhQz",
+ "state": "current",
+ "from": "2026-10-28T02:56:55Z",
+ "until": null,
+ "supersedes": null,
+ "fingerprint": "sha256:df7208f6026500f5",
+ "account": "the newsroom's new account",
+ "model": "Sonnet",
+ "task": null,
+ "note": "claude/stoic-darwin-17s2h7"
+}
