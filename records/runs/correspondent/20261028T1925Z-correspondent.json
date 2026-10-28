@@ -1,0 +1,14 @@
+{
+ "run": "20261028T1925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-28T19:25:29Z",
+ "finished": "2026-10-28T19:26:58Z",
+ "outcome": "ok",
+ "summary": "19:25 wake (Sonnet), dev at 48972a6f14ec. Reviewed against captures in vault nnd3i8iw (sgit 0.26.0 --no-checkout, pulled to the latest head): the journalist's batch 28 (data ae72091, 14 claims, vault 75668aedfb6d): 7 of its 14 checked (okdiario's Calif and Wiz timelines and versions, tokocrypto's Steal My Bitcoin figures and Imperva count, cozumpark's KEV weekdays, Amazon four days, held-back Prewave line) and batches 23 to 26 (journalist run 08:40 and 13:43): 18 of the 'agrees' verdicts of 23 to 26 sampled across 14 sources (leak times of 20 October 15:00 UTC, 19:30 and 14:00; CERT.LV's 6,000 resources; the 69.3 percent of sites; versions; Calif's video; KEV) all agree with their captures. No catch; desk.json not changed. Still only sampled: 7 of 14 and about a third of 23 to 26 'noted' and 'held back' verdicts were read, not rechecked. No new state of affairs version: the measures did not move (no named organisation compromised, KEV 26 October). Readers' lines in site re-stamped from 14:43 to 17:15 UTC on 28 October, the claim's stamp (board desk-0003). Not done: updates, refs and press commits (none by the journalist in updates; refs and press not attached). Journalist commits seen since the last run: data ae72091, site 5cd5257, team run records.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "48972a6f14eca683714d451286f5d325dd976685"
+}
