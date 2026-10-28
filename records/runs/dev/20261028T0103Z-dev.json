@@ -2,13 +2,13 @@
  "run": "20261028T0103Z-dev",
  "agent": "dev",
  "started": "2026-10-28T01:03:14Z",
- "finished": "2026-10-28T01:41:54Z",
- "outcome": "partial",
- "summary": "onboarding in the new account, part one: team, site, updates, press, data and refs attached and cloned on dev (refs after the editor's grant); pki-agent key made, root sha256:db7f79fdd87e030a pinned, operated-by link made, fingerprint sha256:d1331dd12796268e, key and QR on the site (records/keys/dev.json, dev.png, history/); sgit 0.26.0 installed. Mistake: my release d9c25bc reverted VERSION (CI's alone) and failed the guard on runs 280 and 281; VERSION restored in cdd675b, this push is the first clean one. Waiting on the editor: which vaults to seal to my fingerprint, the operator's confirmation of the link, and the scheduled task (not created).",
+ "finished": "2026-10-28T02:31:27Z",
+ "outcome": "ok",
+ "summary": "onboarded in the new account: key sha256:d1331dd12796268e (published in records/keys/dev.json, dev.png and history/; the push is the authorisation), vaults none (the editor: dev needs none), task trig_01Ldj7hf4tBacaeNEavf2dPk (06:40 London daily, into session_015gaHdeQPc82wWvW99oY7RT, at the editor's go). Six repositories attached and cloned on dev (refs after the editor's grant); sgit 0.26.0. Earlier mistake, fixed: a release of mine reverted VERSION and failed the deploy guard on runs 280 and 281; run 282 passed.",
  "read": [],
  "sent": [],
  "article": "",
  "model": "",
  "cost_usd": null,
- "head": "cdd675bf8355e356876667f739e7070c4f4859b2"
+ "head": "883e7f602f6fd1e5d13f081316f557098febf937"
 }
