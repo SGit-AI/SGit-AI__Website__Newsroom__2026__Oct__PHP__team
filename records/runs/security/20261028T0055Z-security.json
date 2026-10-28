@@ -1,0 +1,14 @@
+{
+ "run": "20261028T0055Z-security",
+ "agent": "security",
+ "started": "2026-10-28T00:55:00Z",
+ "finished": "2026-10-28T00:58:35Z",
+ "outcome": "idle",
+ "summary": "paused for the move: handover written (records/agents/security/HANDOVER.md); register added (no vault made, no key held; seven public vaults read with published read keys); the scan moved from the session into records/agents/security/tools/scan.py; card checked (repositories, times, model, instructions, each_wake) and marked paused; task trig_01NEArPo2mvgVQ5VghLADnHw is disabled. Open: SA-2026-044 (board security-0002) waits on the editor's go and dev.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "4d1dc23f4c6eee8667eef11e16fa1dcfd942e4b6"
+}

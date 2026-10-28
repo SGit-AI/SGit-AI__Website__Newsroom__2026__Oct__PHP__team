@@ -1,0 +1,16 @@
+{
+ "agent": "security@php.newsroom",
+ "member": "security",
+ "note": "Kept by the agent itself. Vault ids and key kinds only, never a key. It has made no vault and holds no vault key; it reads only the vaults whose read keys data's files/vaults.json publishes. No key pair made (pki.sgit.ai enrolment not done).",
+ "vaults": [],
+ "holds": [],
+ "reads": [
+  {"id": "0cfkdcvh", "key": "published read key", "what": "the public telemetry stats"},
+  {"id": "1zq458zk", "key": "published read key", "what": "a synthetic reader's vault"},
+  {"id": "wlhgl8pk", "key": "published read key", "what": "a synthetic reader's vault"},
+  {"id": "9p6jpsd2", "key": "published read key", "what": "a synthetic reader's vault"},
+  {"id": "vjsqjhvp", "key": "published read key", "what": "a synthetic reader's vault"},
+  {"id": "3l7tzwh9", "key": "published read key", "what": "a synthetic reader's vault"},
+  {"id": "dpdx3q13", "key": "published read key", "what": "a synthetic reader's vault"}
+ ]
+}

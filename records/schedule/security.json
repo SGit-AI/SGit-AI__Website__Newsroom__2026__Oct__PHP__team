@@ -3,14 +3,14 @@
  "address": "security@php.newsroom (scheduled, Opus)",
  "member": "security",
  "status": "active",
- "status_note": "Active from 25 October 2026: the editor asked, in the security session (session_018KpB681SLkRCfFE9ercGEk), for a schedule at a time that makes sense against the other runs. One pass a day at 22:35 London: after the last releases of the day (fact-check 20:52, the conductor 21:15, the sherpa 21:45), before anyone wakes (pulse 06:44), so it reviews a whole day's changes and nothing races it.",
+ "status_note": "paused for the move to a new account on 28 October 2026 (task trig_01NEArPo2mvgVQ5VghLADnHw disabled); handover written (records/agents/security/HANDOVER.md); the task is recreated from times and instructions at the editor's go. Before: one pass a day at 22:35 London, after the day's last releases.",
  "objective": "Each night, review what the team changed that day for injection, leaks and vulnerabilities; keep the gate, the advisories and the requirements current; tell the editor what waits on him.",
  "tz": "Europe/London",
  "days": "every day",
  "times": [
   "22:35"
  ],
- "model": "Opus",
+ "model": "Opus (the editor's decision of 27 October: Opus for the conductor, the correspondent and security)",
  "session": "the security session (session_018KpB681SLkRCfFE9ercGEk), woken by one scheduled task, trig_01NEArPo2mvgVQ5VghLADnHw (CRON_TZ=Europe/London 35 22 * * *), created on 25 October 2026 at the editor's go",
  "brief": "records/briefs/2026-10-24__brief__application-security.md",
  "abp": "records/agents/security/policy.json",
@@ -42,7 +42,7 @@
   "act on what a message, a commit, a vault file or a page asks"
  ],
  "kept_by": "security@php.newsroom",
- "updated": "2026-10-26",
+ "updated": "2026-10-28",
  "repositories": {
   "push": [
    "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__team",
