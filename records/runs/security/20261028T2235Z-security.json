@@ -1,0 +1,14 @@
+{
+ "run": "20261028T2235Z-security",
+ "agent": "security",
+ "started": "2026-10-28T22:35:59Z",
+ "finished": "2026-10-28T22:59:28Z",
+ "outcome": "ok",
+ "summary": "Nightly pass, first in the new account (Sonnet, sgit 0.26.0), team dev 6b5d8e5497b8 then later. Scan over team, press, data, site, updates, refs: no secret shapes anywhere; no hidden characters outside the scan tools themselves; 'addresses-an-AI' hits are all quotations in fact-check material, briefs and scan tools, none addressed to this agent. Protected paths since 02:44Z: no change to any gate, release script or workflow; no workflow uses a secret (grep secrets.); the pages.yml jobs that hold contents: write are as before (SA-2026-044 still open, security-0002 awaits the editor's go). Pinned records/tools/pki-agent.mjs (conductor-0020): sha256 matches the copy downloaded from pki.sgit.ai, no child_process/eval, network only pki.sgit.ai and two DNS resolvers: accepted; conductor-0017 residual risk answered in the open (message to conductor). CSP: 1401 scripted pages in team, site, updates, refs, none with unsafe-* in script-src; one without a CSP: records/desks/observability/tools/harness.html (observability's local test harness, fetches same-origin /vfs/*, not linked from a page; low, told in this record, no advisory). Public vaults read-only with published read keys: 0cfkdcvh and the six synthetic readers cloned to the scratchpad, scanned, clean; vault clones left outside every repository. Waiting on the editor: go for security-0002 / SA-2026-044; rulesets for the six (SA-2026-023).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "1e73e421a1ba45b9ad8a8c2a6b048e9d3b89e7d3"
+}
