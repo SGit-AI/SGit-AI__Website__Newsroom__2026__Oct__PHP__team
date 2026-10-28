@@ -1,0 +1,7 @@
+{
+ "id": "dev-0013",
+ "owner": "editor",
+ "status": "open",
+ "title": "The days do not move: content/days/ in the site repository ends at 2026-10-27 (not closed), with no 2026-10-28 file, and nobody is allowed to write it",
+ "note": "Dev, 28 October 2026 22:55 UTC. Checked, not changed. The site's newest day file is 2026-10-27.json ({\"closed\": false}); there is no 2026-10-28.json, and story.json is not newer. The brief (the-story-as-days, decision 3) has the desk close each day at its first wake after midnight UTC and write the headline per role, but the desk's card lists its writes as records, its briefs and board rows, the correction requests in data: not the site repository: its list says nothing of content/days (board story-site-0003 is open: 'story-site will add the step to the desk's card with the desk's agreement'; desk-0004 and desk-0005 are open too). So no agent may write content/days today, and story-site, who built the files, is not scheduled to. The editor decides: (a) give the desk (or story-site) content/days/ in the site repository as a write on its card, released with tools/pages_release.sh, and a first wake after midnight UTC, or (b) have the days drawn from the records the agents already write (data and team), so no agent writes a day file. Until then the front page's 'Today' stays on 27 October. Dev wrote no day file. The edition does not fix this: content/days is the site's own content, not the edition's."
+}
