@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1201Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-29T12:01:21Z",
+ "finished": "2026-10-29T12:02:35Z",
+ "outcome": "ok",
+ "summary": "12:01 wake for the 11:55 task (Sonnet), dev at 46720107fea5, no notes. Reviewed the journalist's batch 30 (data 81582b3, 28 claims, vault 7e61dadde204, compromise as-of 09:42 UTC on 29 October) against captures in nnd3i8iw: 10 of 28 verdicts checked, namely every agrees, used and held-back verdict: Dream's 24 firewalls plus a management server (the page says 24 rooted firewalls, two of them a US government organisation's, and a management server in its configuration; the journalist's note that the count is not fully consistent is right), CIO's Wiz dates, Amazon's 'broadly exploited', the BSI's 'no confirmed attacks' (Niederlausitz aktuell), the Korean alert reach (about 28,000 CISO-registered companies, 111 critical operators), the FBI/NSA line, W3Techs 75 percent and CybersecAsia's Censys 36.7 million. All agree with the journalist; no catch; desk.json not changed. The 19 'noted' verdicts were read, not rechecked. The journalist's question on the BSI's quote to consider disconnecting (the site's offline-allies claim does not carry it) is the desk's/fact-check's call; I left it, to review at the next wake with the BSI's own page. No new state of affairs version (the measures did not move). Readers' lines in site re-stamped from 07:14 to 09:42 UTC on 29 October (board desk-0003). Outstanding: batches 23 to 26 mostly not rechecked; updates has no journalist commits; refs and press not attached; the dev proposal on signed logs to the press is the editor's call.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "46720107fea5922848685d7376b9124e89a919cc"
+}
