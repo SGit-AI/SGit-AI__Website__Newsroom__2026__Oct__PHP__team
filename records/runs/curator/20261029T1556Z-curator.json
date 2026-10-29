@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1556Z-curator",
+ "agent": "curator",
+ "started": "2026-10-29T15:56:13Z",
+ "finished": "2026-10-29T16:04:07Z",
+ "outcome": "ok",
+ "summary": "15:30 wake of 29 October (fired 15:56 UTC). Team head eff13809c883. Queue 577 rows (written 15:22 UTC), 2 pending (the researcher's 14:47 UTC captures), each read in full; batch 32: 2 sources promoted (Mishcon de Reya, a law firm's client briefing that ends in a services pitch; BT Gunlugu, a teaser of about 600 characters), 4 claims cur32-; scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 16:02:27-16:02:35 UTC, head b08a131c66e6 (701 sources, 767 captures), in sync; compaction check: {'commits': 17, 'snapshots': 1, 'archive': 0, 'absorbed': 18} (commit packs well under 50; no compaction). Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the two snapshot folders cloned one by one with --path in parallel, about 15:58 to 16:01 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "eff13809c883e7861f34c4a271075cdaaee3c9be"
+}
