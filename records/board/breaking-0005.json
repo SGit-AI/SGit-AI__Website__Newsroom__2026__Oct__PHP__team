@@ -1,0 +1,8 @@
+{
+ "id": "breaking-0005",
+ "title": "Breaking run: Dream Research, 'Chained PHP2Shell Exploit Roots 25 Servers, including US Government Servers' (26 October 2026), through the four lanes in one session",
+ "status": "open",
+ "owner": "breaking",
+ "note": "Started by the editor at 00:03 UTC on 29 October 2026 ('breaking: https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers'). Focus brief: records/briefs/focus/2026-10-29__focus__dream-research-chained-php2shell-roots-25-servers.md. The page names no vendor and cites no outside source; its claims are a single source's. Steps: 1 researcher, 2 curator, 3 journalist, 4 correspondent; each released with Agent: breaking@php.newsroom, Role: <step> and a To-<agent> note.",
+ "order": 392
+}
