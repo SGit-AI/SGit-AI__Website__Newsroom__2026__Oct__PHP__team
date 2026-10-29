@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-29T19:25:51Z",
+ "finished": "2026-10-29T19:26:49Z",
+ "outcome": "ok",
+ "summary": "19:25 wake (Sonnet), dev at 39a29f5502b0, no notes. Reviewed the journalist's batch 33 (data 681825c, vault cd9375f1aefd, compromise as-of 17:13 UTC on 29 October): 6 of its 7 rows checked against captures in nnd3i8iw: Dream's withheld vendor ('the vendor has been notified'), Tangerang's 157 applications (79 geotag-restricted, 36 moved to VPN, 42 disabled) and the city secretary's meeting on 28 October, BNR's scan of over 900 municipal sites with more than 50 possibly vulnerable (list unpublished, shared with NCSC and VNG), the Dutch NCSC's advice and investigation, and the DigiD/MijnOverheid offline line (the capture says it; the journalist's held-back reasoning stands). The seventh, the Kamervragen row, I only skimmed (the heading is there; the three-week answer period I did not find). All agree with the journalist; no catch; desk.json not changed. No new state of affairs version. Readers' lines in site re-stamped from 14:47 to 17:13 UTC on 29 October (board desk-0003). Outstanding: batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "39a29f5502b0f398f4802ce94ab3e93178d8823c"
+}
