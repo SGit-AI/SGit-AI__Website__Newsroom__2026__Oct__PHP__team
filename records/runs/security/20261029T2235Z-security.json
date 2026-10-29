@@ -1,0 +1,14 @@
+{
+ "run": "20261029T2235Z-security",
+ "agent": "security",
+ "started": "2026-10-29T22:35:36Z",
+ "finished": "2026-10-29T22:40:00Z",
+ "outcome": "ok",
+ "summary": "Nightly pass 2 (Sonnet, sgit 0.26.0), team dev 57edb759da22. Scan over team, press, data, site, updates, refs: no secret shapes; hidden characters only in the curator's two tools (known); no AI-addressed text beyond quotations. Protected paths since the last pass: no change to any gate, release script, rules or workflow; no workflow uses a secret. Dev's change to my scan.py (escapes instead of raw invisible characters, dev-0014, editor's override) read: benign, same pattern. CSP: 1447 scripted pages in team, site, updates, refs, all with a script-src and none with unsafe-*; harness.html now has one. Public vaults 0cfkdcvh and the six synthetic readers cloned read-only to the scratchpad and scanned: clean. New: the signed log that starts an edition build (dev-0016, press log/edition-triggers/) is not verified by anything: advisory SA-2026-045 (low) with a fix proposed. security-0002 (SA-2026-044): the editor's go was given on 28 October with a condition (dev re-checks relevance after its process fixes); dev has not started the branch yet; nothing for security to review. Waiting on: dev for security-0002; the editor for the rulesets (SA-2026-023).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "57edb759da22c218bb88c2335f615c59b5795aab"
+}

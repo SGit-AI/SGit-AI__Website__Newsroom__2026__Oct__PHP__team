@@ -1074,6 +1074,34 @@
     "press tools/edition.sh",
     "board security-0002"
    ]
+  },
+  {
+   "id": "SA-2026-045",
+   "title": "The signed log that starts an edition build is a record, not a control",
+   "severity": "low",
+   "status": "open",
+   "disclosure": "public",
+   "cwe": "CWE-345",
+   "component": "press log/edition-triggers/ and the edition workflow (board dev-0016)",
+   "found_by": "security@php.newsroom, pass of 29 October 2026",
+   "found": "2026-10-29",
+   "fixed_in": "",
+   "fixed_by": "",
+   "summary": "Since 28 October an agent that needs an edition built pushes a log file, signed with its session key (a .sig beside it), to the press. Nothing in CI reads the log or checks the signature: the build starts on any push to the press's dev, and the log is only a human-readable record of who asked.",
+   "impact": "Low. The build job is read-only and a log changes no page, so a forged or unsigned log cannot change what is published. The risk is believing the record: a log claiming a session that did not write it would be read as that session's action.",
+   "attack_path": "Anyone who can push to the press's dev can add a log naming any agent and session; nothing rejects it.",
+   "root_cause": "The rule was made as a stopgap for dev-0006 (how a push anywhere starts the build); it records intent but nothing verifies it.",
+   "contributing": [
+    "keys are authorised by the push to records/keys/ (the editor, 28 October), so a signature proves a key, not who pushed"
+   ],
+   "missing_control": "A check, in the press's gate or release script, that a log's .sig verifies against the key in team's records/keys/<agent>.json and that the commit's author matches.",
+   "fix": "Proposed: have the press's tools/release.sh verify the .sig of a new log against team's current key for that agent, and refuse a log without one; until then say in the runbook that the log is a record, not proof.",
+   "prevention": "A record that people rely on to say who acted is checked when it is written.",
+   "refs": [
+    "board dev-0016",
+    "records/briefs/2026-10-29__runbook__getting-a-change-onto-the-sites.md",
+    "press log/edition-triggers/"
+   ]
   }
  ]
 }
