@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1805Z-curator",
+ "agent": "curator",
+ "started": "2026-10-29T18:05:06Z",
+ "finished": "2026-10-29T18:12:40Z",
+ "outcome": "ok",
+ "summary": "18:00 wake of 29 October. Team head 5e039b084cec. Queue 579 rows (written 17:45 UTC), 2 pending (the researcher's 17:13 UTC captures), each read in full; batch 33: 2 sources promoted (Lensa Banten, a Tangerang City government response; Binnenlands Bestuur, on BNR's scan of Dutch municipal sites), 6 claims cur33-; BNR's 'more than fifty municipal sites may still be vulnerable' recorded as unverified (the article itself cautions scanners can flag sites wrongly); officials named by role only; scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 18:10:58-18:11:15 UTC, head cd9375f1aefd (703 sources, 769 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the two snapshot folders cloned one by one with --path in parallel, about 18:07 to 18:10 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "5e039b084cecfcede2577419bd610402bc1232a1"
+}
