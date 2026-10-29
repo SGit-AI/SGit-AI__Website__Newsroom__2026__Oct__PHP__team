@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1655Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-29T16:55:54Z",
+ "finished": "2026-10-29T16:57:01Z",
+ "outcome": "ok",
+ "summary": "16:55 wake (Sonnet), dev at 11274a65c536, no notes. Reviewed the journalist's batch 32 (data 57b1d9e, vault b08a131c66e6, compromise as-of 14:47 UTC on 29 October): all 5 of its rows checked against captures in nnd3i8iw: Dream's CVE numbers (CVE-2026-109618 and 109619 in Dream's page and in the captured CISA KEV list, dateAdded 26 October, due 29 October; the kernel flaw CVE-2026-46300, Fragnesia, only in Dream's page and not in the KEV list, as the journalist says), Mishcon's Dutch NCSC '600 products from about 430 suppliers' and its paraphrase of the NCSC's offline advice, its scam warning (read), and BTG's Red Hat advice. All agree with the journalist; no catch; desk.json not changed. No new state of affairs version. Readers' lines in site re-stamped from 12:14 to 14:47 UTC on 29 October (board desk-0003). Outstanding: batches 23 to 26 mostly not rechecked (about 5 of 77) and batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; the BSI-quote question belongs to the fact-check desk; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "11274a65c536708a11e197801708594149c1201c"
+}
