@@ -1,0 +1,7 @@
+{
+ "id": "dev-0019",
+ "owner": "dev",
+ "status": "done",
+ "title": "The edition build crashed on the journalist's fifth evidence layer (IndexError in build_compromise): fixed",
+ "note": "Dev, 29 October 2026 06:50 UTC, the daily wake. Press 'Build the edition' run 40830823237 (started by the wake's signed log) failed 33 seconds in: build/build.py line 955 indexed a four-colour list by the layer's position, and data's compromise layers now have five (the journalist's vendor-reported layer). Fixed: the index is taken modulo 4 (press 17c0a8a); the next build published edition 0.22.53. Proposal, not done: a build crash should be seen the moment data changes shape, not at the next edition: the data gate (tools/gate.py in data) could check that the figures' inputs fit the build's limits, or the build code take its list lengths from the data. Nobody else's file; the build is dev's."
+}
