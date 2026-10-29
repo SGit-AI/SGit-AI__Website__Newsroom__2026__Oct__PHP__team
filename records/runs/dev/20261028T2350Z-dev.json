@@ -1,0 +1,14 @@
+{
+ "run": "20261028T2350Z-dev",
+ "agent": "dev",
+ "started": "2026-10-28T23:50:00Z",
+ "finished": "2026-10-29T00:03:43Z",
+ "outcome": "ok",
+ "summary": "At the editor's go, pushed signed logs to updates (content/log/edition-takes/, pages_release.sh), data (log/edition-takes/, release.sh; CI minted 0.1.109) and refs (a signed README entry: refs owns no folder; board dev-0017), so each took edition 0.22.51. Verified: main site, refs, updates and team serve data 0.1.108, press 1.0.86, site 0.22.51; now.json site 0.22.51, data_as_of 2026-10-28T17:15Z. Wrote the runbook records/briefs/2026-10-29__runbook__getting-a-change-onto-the-sites.md and put it into my card's each_wake, so tomorrow's 06:40 wake starts the build and pushes the logs itself when releases are waiting. dev-0012 closed. Open: dev-0006 (a push elsewhere starts the build by itself: the editor's credential), dev-0013 (the days), dev-0017 (a log folder in refs).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "2aa962e045d4264ed505c9b3eadecaea7a08bbf7"
+}
