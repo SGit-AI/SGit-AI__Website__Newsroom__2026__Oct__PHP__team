@@ -1,0 +1,14 @@
+{
+ "run": "20261029T0003Z-breaking",
+ "agent": "breaking",
+ "started": "2026-10-29T00:03:00Z",
+ "finished": "2026-10-29T01:53:40Z",
+ "outcome": "ok",
+ "summary": "breaking-0005, Dream Research 'Chained PHP2Shell Exploit Roots 25 Servers' (26 Oct): four steps released in 110 minutes, 70 of them waiting on sgit clones and the vault token. Step 1 researcher: watch 7r83qic5 f203ac4e2bb8 (6 curl captures, 6 priority-1 rows, 556 old rows identical); step 2 curator: evidence nnd3i8iw 6c07e190d81e (6 sources, 35 claims cur29-cur63), data 69f75a0; step 3 journalist: data a2d5740 (35 verdicts, 'reported by Dream, not independently confirmed', the 'no named organisation' statement kept, as of 00:09Z); step 4 correspondent: data 34047b5, updates a2fbb30 (state of affairs v6), site 5e88446 (dated update to the compromise article). Desk catches: 3 timestamps in the future (02:00Z, 01:55, 01:50Z) moved to 01:53Z; 5 correspondent catches on the journalist step (desk.json 21-26). No independent confirmation of Dream's victim claims was found. Subagents: 4, tokens 597142 (141379, 143054, 142650, 170059), tool calls 112, time 18.1 min. sgit-ai 0.27.0. Open: the headline wording is the editor's; a piece of its own is recommended, not written; press-side figures, factcheck/control/graph derived files and the raw capture's technical section are others' or the editor's.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "0ee40d0da89bafd7b0420673a424fb6b64d9cc69"
+}
