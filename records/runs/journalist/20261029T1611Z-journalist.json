@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1611Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-29T16:11:48Z",
+ "finished": "2026-10-29T16:13:27Z",
+ "outcome": "ok",
+ "summary": "16:10 wake (fired 16:11 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 7f1f7c9514b8 to b08a131c66e6 (701 sources, latest capture 14:47 UTC); the curator's export in data was already at that head (not run by me). 4 claims of curator batch 32 reviewed against their captures (all noted). no-confirmed-compromise, compromise.json, story.json as-of and desk.json moved to 14:47 UTC with Dream's report left as reported. Data released at 57b1d9e (gate passed). Updates and site repositories not touched. Seen at dev b5f96f4ef1b9.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "b5f96f4ef1b993b5bbaa3374c024f64a133840d9"
+}
