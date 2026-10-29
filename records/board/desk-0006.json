@@ -1,0 +1,7 @@
+{
+ "id": "desk-0006",
+ "title": "abp: widen the desk's policy.json to write content/days/ in the site repository",
+ "status": "open",
+ "owner": "abp",
+ "note": "The editor's decision of 29 October 2026 (brief records/briefs/2026-10-29__brief__the-desk-owns-the-days.md, board conductor-0022): the desk owns the days. Please add content/days/<date>.json in the site repository to records/agents/desk/policy.json's scope. The desk's card already says so."
+}
