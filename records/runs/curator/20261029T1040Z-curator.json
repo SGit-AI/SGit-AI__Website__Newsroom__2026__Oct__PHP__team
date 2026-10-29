@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1040Z-curator",
+ "agent": "curator",
+ "started": "2026-10-29T10:40:06Z",
+ "finished": "2026-10-29T10:55:38Z",
+ "outcome": "ok",
+ "summary": "10:30 wake of 29 October. Team head 8b9b99acd5f3. Queue 571 rows (written 10:15 UTC), 11 pending (the researcher's 09:3x captures), each read in full; batch 30: 11 sources promoted (El Cronista (sponsored content, marked as such), CIO (a vendor press release), CybersecAsia, Tech Business News (Synology advisory), ActualApp, Boerse Online, NIEDERLAUSITZ aktuell, Belgium 24 (an outlet's check of its own server), New-Facts.eu, Korea Social Welfare Journal, EcoActu.ma), 28 claims cur30-, no timeline rows; the BSI's offline-consideration advice (Boerse Online) and the FBI's request to go offline (Korea Social Welfare Journal, to be checked against the FBI's own statement) bear on the disputed offline-allies claim; exploit mechanics and a press release's availability claim for a public exploit left out; scan: nothing addressed to an AI (benign hits only). Evidence vault nnd3i8iw pushed 10:54:11-10:54:21 UTC, head 7e61dadde204 (696 sources, 762 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the eleven snapshot folders cloned one by one with --path, four streams, about 10:41 to 10:52 UTC, 11 minutes in all (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "a669e2970a3ba4e72519b20589d91adf0647851e"
+}
