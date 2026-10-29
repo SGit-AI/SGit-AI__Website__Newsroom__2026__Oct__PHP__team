@@ -1,6 +1,15 @@
 {
- "current": "0.22.52",
+ "current": "0.22.53",
  "versions": [
+  {
+   "version": "0.22.53",
+   "date": "2026-10-29",
+   "title": "press: dev: the compromise figure cycles its four stroke colours, so a fifth evidence layer no longer crashes the edition build (IndexError in build_compromise); data: correspondent: review of the journalist step (5 catches), state.json v6, as of 29 October 01:53 UTC (breaking-0005); team: breaking: board breaking-0005, the debrief article released; site: correspondent: a vendor says a campaign rooted 25 servers, two days before we saw it: what the report says and what it leaves open (breaking-0005, at the editor's word); updates: correspondent: the state of affairs v6, one vendor reports 25 servers rooted, unconfirmed, no named victim (breaking-0005)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "6c07e190d81e",
+   "reconstructed": false
+  },
   {
    "version": "0.22.52",
    "date": "2026-10-29",

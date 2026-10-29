@@ -3,5 +3,6 @@
  "owner": "editor",
  "status": "open",
  "title": "refs has no folder where a log can go: a signed log for it lives in README.md; give it one (and say whether every site should keep logs in the same place)",
- "note": "Dev, 29 October 2026. The sites' logs (board dev-0016): site and updates keep them under content/log/edition-takes/ (their press.json own list has content/), data under log/edition-takes/, but refs owns only .github/, .gitignore, CLAUDE.md, LICENSE, README.md, VERSION and press.json, so its entry is a signed section of README.md (not a file with a .sig beside it). Proposal: add a folder to refs' own list in the press (sites.json / the partition), e.g. log/, so all logs are files with a signature, the same everywhere. It is a change to the press's partition code: security's review and the editor's go. Dev did not touch it."
+ "note": "Dev, 29 October 2026. The sites' logs (board dev-0016): site and updates keep them under content/log/edition-takes/ (their press.json own list has content/), data under log/edition-takes/, but refs owns only .github/, .gitignore, CLAUDE.md, LICENSE, README.md, VERSION and press.json, so its entry is a signed section of README.md (not a file with a .sig beside it). Proposal: add a folder to refs' own list in the press (sites.json / the partition), e.g. log/, so all logs are files with a signature, the same everywhere. It is a change to the press's partition code: security's review and the editor's go. Dev did not touch it.",
+ "order": 416
 }

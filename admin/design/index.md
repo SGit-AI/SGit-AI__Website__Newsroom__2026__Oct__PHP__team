@@ -2,7 +2,7 @@
 
 The proposed redesign of the site for review: what is wrong now, the two dials (who you are and how much you see), which pages each reader sees, the menu per view, and four mockups built from the live data.
 
-> Mockup notes for review, built from the data of release v0.22.52. Not the live site.
+> Mockup notes for review, built from the data of release v0.22.53. Not the live site.
 
 Admin · design · for review 
 ## The redesign: who you are, and how much you want to see
@@ -60,7 +60,7 @@ Pages stop at 1,080 pixels; on a laptop half the screen is empty. The proposal r
 
 #### The menu is the site map
 
-Eleven groups and 144 entries, ordered by how the site was built, not by what a reader wants to do. The proposal: four to eight entries, chosen by who you are and how much you want. 
+Eleven groups and 145 entries, ordered by how the site was built, not by what a reader wants to do. The proposal: four to eight entries, chosen by who you are and how much you want. 
 
 #### Everyone sees everything
 
@@ -105,31 +105,31 @@ risk register, frameworks, stakeholders · 117 pages
  The code 
 the fix in php-src, the review graph · 3 pages 
  Stories 
-signed articles written here · 14 pages 
+signed articles written here · 15 pages 
  The evidence 
-every source, the vaults, the pipeline, versions · 794 pages 
+every source, the vaults, the pipeline, versions · 800 pages 
  The site and the team 
-method, roles, board, releases, admin · 341 pages 
+method, roles, board, releases, admin · 344 pages 
 
 ### Pages per reader, per view
 
  Reader Focus Standard Everything 
- Alex Curious reader 30 75 1370 
- Jordan Board member or executive 30 232 1370 
- Quinn CFO 30 232 1370 
- Robin CISO 161 232 1370 
- Rowan Journalist 886 909 1370 
- Sam Security lead 44 118 1370 
- Drew PHP or platform engineer 37 118 1370 
- Ash Security researcher 835 912 1370 
-Counted from the 1370 pages this release builds. 
+ Alex Curious reader 30 76 1380 
+ Jordan Board member or executive 30 233 1380 
+ Quinn CFO 30 233 1380 
+ Robin CISO 161 233 1380 
+ Rowan Journalist 893 916 1380 
+ Sam Security lead 44 119 1380 
+ Drew PHP or platform engineer 37 119 1380 
+ Ash Security researcher 841 919 1380 
+Counted from the 1380 pages this release builds. 
 
 #### Who sees the team console
 
 Everything view only. It stays public, because how the site is run is part of the story; it just stops being in a reader's way. 
 
 ### The menu, per view
- today: 11 groups, 144 entries, the same for everyone 
+ today: 11 groups, 145 entries, the same for everyone 
 
 Focus 
 Four places. For a board member, a CFO, a website owner. 
@@ -171,7 +171,7 @@ All of it, for power users and the team.
 
 - The admin pages move into console D. 
 
- Mockups built by the design agent from release v0.22.52; the brief is on the briefs page. Board items record each step.
+ Mockups built by the design agent from release v0.22.53; the brief is on the briefs page. Board items record each step.
 
 ---
-site v0.22.52 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html
+site v0.22.53 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html

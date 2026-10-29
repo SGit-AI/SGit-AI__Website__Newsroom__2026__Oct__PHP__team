@@ -2,7 +2,7 @@
 
 A three-column working view for a security lead: their reading path and the site by task on the left, what changed since the last visit and the next three actions in the middle, and the state of the evidence as charts on the right.
 
-> Mockup B for review, built from the data of release v0.22.52. Not the live site.
+> Mockup B for review, built from the data of release v0.22.53. Not the live site.
 
 S 
  Sam 
@@ -13,7 +13,7 @@ Your reading path
 2 of 5 read · next: Exploitation signals 
  Today 9 new What to do The incident Detection and defence The agencies 16 Every claim 70 Ask 
 
-Since your last visit · 28 October 2026, 17:15 UTC 
+Since your last visit · 29 October 2026, 00:09 UTC 
 
 ## 9 things are new, 3 changed. Two matter for your runbook.
 
@@ -44,49 +44,49 @@ Alert on a PHP worker spawning a shell or a downloader. A clean access log prove
 
  All Facts Timeline Questions Stories 
 
- New question v0.22.51 
+ New story v0.22.53 
+#### Has anyone actually been hacked through php2shell? What 525 sources say, five days on
+
+✓ 
+
+ New story v0.22.53 
+#### A vendor says a campaign rooted 25 servers, two days before we saw it. What the report says, and what it leaves open
+
+✓ 
+
+ New question v0.22.53 
 #### Has anyone actually been hacked?
 
 ✓ 
 
- New front v0.22.51 
+ New front v0.22.53 
 #### Stories: written here
 
 ✓ 
 
- New front v0.22.51 
+ Changed front v0.22.53 
 #### Front page: right now
 
 ✓ 
 
- New front v0.22.51 
-#### Front page: at a glance
-
-✓ 
-
- Changed front v0.22.51 
+ Changed front v0.22.53 
 #### Front page: the core facts
 
 ✓ 
 
- Changed fact reported v0.22.51 
-#### As of 17:15 UTC on 28 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both
+ Changed fact reported v0.22.53 
+#### As of 00:09 UTC on 29 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both
 
  CISA CISA Huntress Amazon 
 ✓ 
 
+ Changed front v0.22.51 
+#### Front page: at a glance
+
+✓ 
+
  Changed story v0.22.51 
 #### How a push reaches the pages: the six repositories, the edition, and why one push still waits for another
-
-✓ 
-
- Changed story v0.22.46 
-#### Someone stole the bitcoin. What that does, and does not, tell us about php2shell
-
-✓ 
-
- Changed front v0.22.46 
-#### Front page: latest
 
 ✓ 
 
@@ -123,4 +123,4 @@ Amazon: Proof-of-concept attempts begin, then six hours of attempts from anonymi
 8.1 and older: source backports only.
 
 ---
-site v0.22.52 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html
+site v0.22.53 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html

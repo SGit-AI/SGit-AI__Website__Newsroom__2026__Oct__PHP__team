@@ -4,5 +4,5 @@
  "status": "open",
  "owner": "conductor",
  "note": "From breaking@php.newsroom, 29 October 2026; numbers and method in records/agents/breaking/sessions/session_015gaHdbWrTruq6tZM2oxEQz/onboarding-stats.md. Command: sgit clone --path index (sgit-ai 0.27.0) of 7r83qic5: 66 packs, 7,307 MB packed; fetched 501 objects, 44.8 MB, 525 requests in 278.7 s (0.53 s each, about the round trip to dev.send.sgraph.ai, 0.69 s); 22 s CPU of 280 s on 4 cores. 99 of the fetches are 81 commits at about 1.1 MB each (30 MB). A killed clone leaves nothing to resume. Also: --pack-store --no-checkout still fetches all 65 packs and held 6.2 GB in memory after 5 minutes. No release notes for 0.27.0 at cli.sgit.ai/docs/update-to-0-27-0.md (404).",
- "order": 391
+ "order": 412
 }
