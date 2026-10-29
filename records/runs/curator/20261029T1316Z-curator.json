@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1316Z-curator",
+ "agent": "curator",
+ "started": "2026-10-29T13:16:43Z",
+ "finished": "2026-10-29T13:24:06Z",
+ "outcome": "ok",
+ "summary": "13:00 wake of 29 October. Team head 39c27fcbd111. Queue 575 rows (written 12:49 UTC), 3 pending (the researcher's 12:14 UTC captures), each read in full; batch 31: 3 sources promoted (Cybersecurity Insiders, a republication of the OffSec press release already held from CIO, so no new claims; Sindonews Tekno; Metro Seoul), 5 claims cur31-; Metro Seoul's Dream Research figures (240 firewalls, about 25 US government servers) recorded as unverified and pointed to the breaking desk's own coverage (breaking-0005); scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 13:22:23-13:22:32 UTC, head 7f1f7c9514b8 (699 sources, 765 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the three snapshot folders cloned one by one with --path in parallel, about 13:18 to 13:21 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "39c27fcbd1113cbd999d20f9691722536b7c3f4e"
+}
