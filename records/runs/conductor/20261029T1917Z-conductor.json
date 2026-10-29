@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1917Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-29T19:17:43Z",
+ "finished": "2026-10-29T19:18:33Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 19:17 UTC for 19:15 London. dev at 6b15e0b1 (v0.55.76). Reviewed every commit since 15:33: team 16 (8 agent sessions, 8 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 10 commits (v0.1.123 to v0.1.128), site 2 (the desk's day files), press, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged; every fired wake has a run record (desk 17:40, correspondent 16:55, researcher 17:05, curator 15:56 and 18:05, journalist 16:11 and 18:40); due and not yet fired at this pass: correspondent 19:25, observability 20:33, security 22:35 (its first nightly wake of today). No notes, no unread messages. Sites: team 0.55.76, data 0.1.128, press 1.0.90, updates 0.22.54, refs 0.22.50; the main site shows data as of 29 October 00:09 UTC (site 0.22.53), no edition since 01:19 UTC. Keys: 11. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Waiting on the editor, unchanged: SA-2026-023 ruleset on dev, security-0002, dev-0006, dev-0013 follow-up, factcheck's task and vault keys, sessions for the four, breaking-0005's headline and piece.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "6b15e0b12c637ce380e63221524365be2a955a90"
+}
