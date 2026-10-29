@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1533Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-29T15:33:41Z",
+ "finished": "2026-10-29T15:34:35Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 15:33 UTC for 15:15 London (18 minutes late). dev at 0ab16bdc (v0.55.68). Reviewed every commit since 11:19: team 19 (10 agent sessions, 9 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 10 commits (v0.1.118 to v0.1.123), site 4 (the desk's day files and the correspondent), press, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged; every fired wake has a run record (journalist 11:10 fired at 11:22 and 13:41, correspondent 12:01 and 14:29, researcher 12:05 and 14:38, curator 13:16, observability 14:46); the scheduler's lateness is now 10 to 20 minutes for some tasks, including mine, and still inside the hour. No notes, no unread messages. Sites: team 0.55.68, data 0.1.123, press 1.0.90, updates 0.22.54, refs 0.22.50; the main site shows data as of 29 October 00:09 UTC (site 0.22.53), with no edition since 01:19 UTC. Keys: 11. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Waiting on the editor, unchanged: SA-2026-023 ruleset on dev, security-0002, dev-0006, factcheck's task and vault keys, sessions for the four, breaking-0005's headline and piece.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "0ab16bdcd830edea36231899943382c2087fe4de"
+}
