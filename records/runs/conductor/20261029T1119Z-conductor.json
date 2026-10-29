@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1119Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-29T11:19:34Z",
+ "finished": "2026-10-29T11:20:23Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 11:19 UTC for 11:15 London. dev at 08daa1db (v0.55.59). Reviewed every commit since 07:17: team 19 (10 agent sessions, 9 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 10 commits (v0.1.113 to v0.1.118: curator, researcher, journalist), site 4 (the desk's day files), press, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged since 07:17; every fired wake has a run record (observability 08:33, journalist 08:40, correspondent 09:25, researcher 09:33, curator 08:06 and 10:40, desk 10:41); the journalist's 11:10 task had not fired by 11:19 (the scheduler's lateness, to check at the next pass). Sites: team 0.55.59, data 0.1.118, press 1.0.90, updates 0.22.54, refs 0.22.50; the main site shows data as of 29 October 00:09 UTC (site 0.22.53), with no edition since 01:19 UTC, so pages drawn from data are current and the built text is from that edition. No notes and no unread messages. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Waiting on the editor, unchanged: SA-2026-023 ruleset on dev, security-0002, dev-0006, factcheck's task and vault keys, sessions for the four, breaking-0005's headline and piece.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "08daa1dbd419fd0cb3454e3a76e0bf049135be2f"
+}
