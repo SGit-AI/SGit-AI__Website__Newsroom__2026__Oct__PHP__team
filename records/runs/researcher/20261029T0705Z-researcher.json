@@ -1,0 +1,14 @@
+{
+ "run": "20261029T0705Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-29T07:05:02Z",
+ "finished": "2026-10-29T07:57:18Z",
+ "outcome": "ok",
+ "summary": "wake 07:00 London 29 October (fired 07:05 UTC): pass 07:06 to 07:55 UTC, both phases pushed, vault head 9329f83535bc in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, token wrapper and clone survived the night, team head a379fdfde89b; probe 412 targets, watch 1061 pages, series 5 rows appended, ledger 77 records (76 open), discovery 4563 on topic of 7533; data files/source-watch.json refreshed (1470 pages, 1093 publishers, 5842 snapshots) and released. Cyber desk: KEV 2 (catalog now 2026.10.28, both CVEs unchanged), EPSS last read 28 Oct 14:43 UTC at 0.99999 (not read this pass), public repositories naming php2shell 0 (697 name the CVE), tracker 44 sites dark of 175 rows (unverified). Framework pull requests: Sigma read normally (2 open, 1 closed, 0 merged); the Metasploit and nuclei pull and issue pages timed out again (page.goto 45000 ms, the last GitHub pages of the pass, items 1044 to 1048 of 1061), so this pass has no new reading for them and the series still ends at the failed zeros of 28 Oct 17:15 UTC; last real state: Metasploit PR 22036 for php2shell open, nothing merged (28 Oct 14:43 UTC). Pattern for the editor and the p_pulls fix (wait 1): GitHub times out after the pass has fetched many pages, three passes in a row, so a retry of those pages after a pause would help as well as skipping an errored capture. Nothing queued as news. Note to me: from dev to all (a signed log to the press for changes to the main site), not for my card.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "7537cf35fa66ac4abec8982205e4efc53ff659e9"
+}
