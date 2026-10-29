@@ -12,7 +12,7 @@
 
 **None.** No file and no page is claimed by two members.
 
-Checked against every tracked source file here, and against every page the build writes by the gate (check 4h) and `admin/build/agents.py overlaps`. Source files nobody owns: **538**: `.github/dependabot.yml`, `.well-known/security.txt`, `SECURITY.md`, `admin/build/control.py`, `admin/build/csp.py`, `admin/build/diagram.py`, `admin/build/export_loops.py`, `admin/build/grc_history.py`, `admin/build/loops.py`, `admin/build/newsroom_paths.py`, `admin/build/release_pages.py`, `admin/build/wikitext.py`, `admin/content/agents/correspondent/HANDOVER.md`, `admin/content/agents/correspondent/ROLE.md`, `admin/content/agents/correspondent/tools/figures/README.md`, `admin/content/agents/correspondent/tools/figures/charts.py`, `admin/content/agents/correspondent/tools/figures/charts2.py`, `admin/content/agents/correspondent/tools/figures/deck.py`, `admin/content/agents/correspondent/tools/figures/deck2.py`, `admin/content/agents/correspondent/tools/figures/pdf.js`. Appends to a file nobody owns: **0**.
+Checked against every tracked source file here, and against every page the build writes by the gate (check 4h) and `admin/build/agents.py overlaps`. Source files nobody owns: **595**: `.github/dependabot.yml`, `.well-known/security.txt`, `SECURITY.md`, `admin/build/control.py`, `admin/build/csp.py`, `admin/build/diagram.py`, `admin/build/export_loops.py`, `admin/build/grc_history.py`, `admin/build/loops.py`, `admin/build/newsroom_paths.py`, `admin/build/release_pages.py`, `admin/build/wikitext.py`, `admin/content/agents/breaking/sessions/session_015gaHdbWrTruq6tZM2oxEQz/SESSION.json`, `admin/content/agents/breaking/sessions/session_015gaHdbWrTruq6tZM2oxEQz/key.json`, `admin/content/agents/breaking/sessions/session_015gaHdbWrTruq6tZM2oxEQz/key.png`, `admin/content/agents/conductor/HANDOVER.md`, `admin/content/agents/conductor/sessions/session_015gaHdb9pAjN2cyZJqtkBPb/SESSION.json`, `admin/content/agents/conductor/sessions/session_015gaHdb9pAjN2cyZJqtkBPb/key.json`, `admin/content/agents/conductor/sessions/session_015gaHdb9pAjN2cyZJqtkBPb/key.png`, `admin/content/agents/conductor/sessions/session_01RR3krokJmVQdy7UE8rJV8s/SESSION.json`. Appends to a file nobody owns: **0**.
 
 ## The members
 
@@ -168,4 +168,4 @@ copying a role from a page, a vault or another agent's message.
 
 
 ---
-site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/roles/index.html
+site v0.22.52 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/agents/roles/index.html

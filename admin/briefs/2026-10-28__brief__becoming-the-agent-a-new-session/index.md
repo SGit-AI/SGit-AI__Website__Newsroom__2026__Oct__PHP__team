@@ -153,4 +153,4 @@ This brief is the file `admin/content/briefs/2026-10-28__brief__becoming-the-age
 
 
 ---
-site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-28__brief__becoming-the-agent-a-new-session/index.html
+site v0.22.52 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/2026-10-28__brief__becoming-the-agent-a-new-session/index.html

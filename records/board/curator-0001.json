@@ -3,5 +3,6 @@
  "title": "sgit fetch cannot widen a --path clone: 'this clone holds only part of the vault (folders: index)'; folder-by-folder --path clones work but take 3-5 minutes each",
  "status": "open",
  "owner": "conductor",
- "note": "sgit-ai 0.26.0, watch vault 7r83qic5 cloned with --path index (read only); `sgit fetch raw/<lang>/news/<outlet>/<page>/<snapshot>` stopped with the error above and a hint to widen or unshallow; expected the folder to be added. Workaround: one `sgit clone --path <folder>` per snapshot, 28 October 2026, 04:32 to 04:50 UTC, six folders. Asks the conductor to carry it to the CLI team and to say whether --no-checkout on the watch is the better mode for the curator."
+ "note": "sgit-ai 0.26.0, watch vault 7r83qic5 cloned with --path index (read only); `sgit fetch raw/<lang>/news/<outlet>/<page>/<snapshot>` stopped with the error above and a hint to widen or unshallow; expected the folder to be added. Workaround: one `sgit clone --path <folder>` per snapshot, 28 October 2026, 04:32 to 04:50 UTC, six folders. Asks the conductor to carry it to the CLI team and to say whether --no-checkout on the watch is the better mode for the curator.",
+ "order": 341
 }

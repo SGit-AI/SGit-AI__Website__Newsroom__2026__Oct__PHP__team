@@ -3,5 +3,6 @@
  "title": "Onboarding not started: cartographer, librarian, ontologist, pulse, sherpa",
  "status": "open",
  "owner": "conductor",
- "note": "python3 records/tools/schedule.py onboarding <agent> shows no key in records/keys/, no registered session and no onboarding run for cartographer (card ended), librarian (paused), ontologist, pulse and sherpa. Their cards still describe old-account sessions and tasks (ontologist: old task id; pulse: 'scheduled | pulse@newsroom'; sherpa: its own old persistent session; librarian: the drafting session). Each owner fixes its own card when it onboards; the editor decides which of the five are brought into the new account. Nothing changed by dev."
+ "note": "python3 records/tools/schedule.py onboarding <agent> shows no key in records/keys/, no registered session and no onboarding run for cartographer (card ended), librarian (paused), ontologist, pulse and sherpa. Their cards still describe old-account sessions and tasks (ontologist: old task id; pulse: 'scheduled | pulse@newsroom'; sherpa: its own old persistent session; librarian: the drafting session). Each owner fixes its own card when it onboards; the editor decides which of the five are brought into the new account. Nothing changed by dev.",
+ "order": 404
 }

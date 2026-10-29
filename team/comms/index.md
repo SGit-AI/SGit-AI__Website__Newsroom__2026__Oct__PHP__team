@@ -28,4 +28,4 @@ v0.11.5: what changed and why Agent: conductor@php.newsroom To-sherpa: your card
 
 
 ---
-site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/team/comms/index.html
+site v0.22.52 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/team/comms/index.html

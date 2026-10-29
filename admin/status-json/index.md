@@ -19,7 +19,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.51" |
+| `version` | "0.22.52" |
 | `data_as_of` | "2026-10-28T17:15Z" |
 | `vault_commit` | "75668aedfb6d" |
 | `counts` | {"sources": 675, "captures": 741, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 35, "disputed": 9, "contradicted": 2, "unverified": 4}, "event |
@@ -49,7 +49,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.51",
+ "version": "0.22.52",
  "data_as_of": "2026-10-28T17:15Z",
  "vault_commit": "75668aedfb6d",
  "counts": {
@@ -160,4 +160,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.52 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

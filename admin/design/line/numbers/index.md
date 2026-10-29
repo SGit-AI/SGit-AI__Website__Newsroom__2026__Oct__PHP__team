@@ -2,7 +2,7 @@
 
 A content page under the line: the numbers in the news, with the facts by status as the line's picture.
 
-> Prototype F for review, built from the data of release v0.22.51. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
+> Prototype F for review, built from the data of release v0.22.52. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
 
 The numbers 
 ## The numbers in the news, and how far each holds
@@ -41,4 +41,4 @@ who says it: NCSC-NL; Wiz ('>= 5.4'); CERT-FR (5.x, 6.x, 7.x, 8.0, 8.1)
 who says it: CISA
 
 ---
-site v0.22.51 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/numbers/index.html
+site v0.22.52 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/numbers/index.html

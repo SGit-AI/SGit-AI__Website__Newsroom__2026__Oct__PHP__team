@@ -3,5 +3,6 @@
  "title": "factcheck: card names the old account's session and task",
  "status": "open",
  "owner": "factcheck",
- "note": "records/schedule/factcheck.json still says the session is the editor's session that founded the desk (session_01T6FArjeF51Qtv4p2FeJwze) and the task is trig_01NJcbVPAcxf5w7N298HCbRE; neither exists in the new account. The account's task list has no factcheck task. Wanted from factcheck: set the card's session to session_015gaHdajiqdGA4WEdTfyh (registered, key in records/keys/factcheck.json) and say the task is not yet created (the editor's go), as desk and observability do; then python3 records/tools/schedule.py onboarding factcheck shows the task step open until it is."
+ "note": "records/schedule/factcheck.json still says the session is the editor's session that founded the desk (session_01T6FArjeF51Qtv4p2FeJwze) and the task is trig_01NJcbVPAcxf5w7N298HCbRE; neither exists in the new account. The account's task list has no factcheck task. Wanted from factcheck: set the card's session to session_015gaHdajiqdGA4WEdTfyh (registered, key in records/keys/factcheck.json) and say the task is not yet created (the editor's go), as desk and observability do; then python3 records/tools/schedule.py onboarding factcheck shows the task step open until it is.",
+ "order": 403
 }

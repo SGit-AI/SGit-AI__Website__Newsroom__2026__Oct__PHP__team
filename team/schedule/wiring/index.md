@@ -108,7 +108,7 @@ Card: `data/schedule/curator.json`, status active; wakes 08:00, 10:30, 13:00, 15
 
 ## desk (desk@php.newsroom)
 
-Card: `data/schedule/desk.json`, status active; wakes 10:40, 17:40 (Europe/London); to do.
+Card: `data/schedule/desk.json`, status active; wakes 00:40, 10:40, 17:40 (Europe/London); to do.
 
 No scheduled task wakes this agent: ask the editor's go to create one (step 4).
 
@@ -126,7 +126,7 @@ No scheduled task wakes this agent: ask the editor's go to create one (step 4).
 
 - If `update_trigger` refuses: do not delete anything. With the editor's go in this session, call `create_trigger` with the same `cron_expression`, `persistent_session_id` set to this session (this session), the same name, and the card's prompt; then tell the editor the old task's id, to delete.
 
-- Every time on your card must have a task, and no task a time off your card. Missing now: 10:40, 17:40: ask the editor's go to create a task for them, as in step 4.
+- Every time on your card must have a task, and no task a time off your card. Missing now: 00:40, 10:40, 17:40: ask the editor's go to create a task for them, as in step 4.
 
 - Reply to the editor in five lines: the ids updated, the ids created, the ids to delete, and anything that did not match. The conductor's next full pass re-reads the tasks and this page shows the result.
 
@@ -358,4 +358,4 @@ No scheduled task wakes this agent: ask the editor's go to create one (step 4).
 
 
 ---
-site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/wiring/index.html
+site v0.22.52 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/wiring/index.html

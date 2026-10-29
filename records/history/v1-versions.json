@@ -1,6 +1,15 @@
 {
- "current": "0.22.51",
+ "current": "0.22.52",
  "versions": [
+  {
+   "version": "0.22.52",
+   "date": "2026-10-29",
+   "title": "press: dev: the line no longer redraws forever when two tabs are open (a storage event now re-renders only when the view changed); data: dev: a signed log, so data's deploy takes edition 0.22.51 (the editor's go, 28 October 2026); team: desk: run record of the 00:40 wake, first run of the days; site: desk: close 27 and 28 October, open 29 October (the days, first run); refs: dev: a signed log entry in the README, so refs' deploy takes edition 0.22.51 (the editor's go, 28 October 2026); updates: dev: a signed log, so updates' deploy takes edition 0.22.51 (the editor's go, 28 October 2026)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "75668aedfb6d",
+   "reconstructed": false
+  },
   {
    "version": "0.22.51",
    "date": "2026-10-28",

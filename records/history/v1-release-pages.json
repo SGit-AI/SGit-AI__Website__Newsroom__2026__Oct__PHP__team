@@ -1,6 +1,149 @@
 {
  "about": "A page counts as changed when the content of its <main> differs from the previous release's, with the two site version numbers masked: the header, the footer and the version stamp change on every page at every release and say nothing about what the release did. Pages are compared as built and committed, so the list is what a reader would have seen change. Stored in data/release-pages.json, one entry per release, written once and never recomputed:",
  "releases": {
+  "0.22.52": {
+   "against": "0.22.51",
+   "pages": [
+    {
+     "path": "admin/briefs/2026-10-29__brief__the-desk-owns-the-days/index.html",
+     "title": "Brief: the desk owns the days",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-29__runbook__getting-a-change-onto-the-sites/index.html",
+     "title": "Runbook: getting a change onto the sites (a signed log starts the build)",
+     "new": true,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/index.html",
+     "title": "Schedule: every agent that runs on its own",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/dev/index.html",
+     "title": "Schedule: dev",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/schedule/desk/index.html",
+     "title": "Schedule: desk",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/dinis/index.html",
+     "title": "Dinis Cruz, Editor: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/conductor/index.html",
+     "title": "Conductor, conductor and comms: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/agents/roles/index.html",
+     "title": "Every member: who owns what",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/index.html",
+     "title": "Briefs",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/dev/index.html",
+     "title": "dev@php.newsroom, build, gate and release: the team",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/briefs/2026-10-28__decision__all-agents-on-sonnet-for-the-trial/index.html",
+     "title": "Decision: every agent starts on Sonnet in the new account, as a trial",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "index.html",
+     "title": "PHP in October 2026: two critical security flaws, tracked as evidence",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "pipeline/index.html",
+     "title": "The fact pipeline: from a web page to a reader",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/index.html",
+     "title": "The team: the people, the agents and how they work together",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "team/schedule/wiring/index.html",
+     "title": "Wiring every scheduled task to its card",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "grc/changes/index.html",
+     "title": "What changed in the risk graph, release by release",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "questions/index.html",
+     "title": "Questions readers ask about php2shell",
+     "new": false,
+     "minor": true
+    },
+    {
+     "path": "admin/board/index.html",
+     "title": "The board",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/index.html",
+     "title": "Admin and engineering",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "admin/versions.html",
+     "title": "Release history",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "team/runs/index.html",
+     "title": "Runs: what the agents do on their own, and every time they did it",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "versions/index.html",
+     "title": "How the story changed, release by release",
+     "new": false,
+     "minor": false
+    },
+    {
+     "path": "whatsnew/index.html",
+     "title": "What's new: every change, release by release",
+     "new": false,
+     "minor": false
+    }
+   ]
+  },
   "0.22.51": {
    "against": "0.22.50",
    "pages": [

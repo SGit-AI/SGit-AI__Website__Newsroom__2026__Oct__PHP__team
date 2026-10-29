@@ -207,4 +207,4 @@ Shared by the editor. Steps 1 to 5 of the brief to dev shipped in v0.10.13 (ever
 
 
 ---
-site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-002/index.html
+site v0.22.52 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/sherpa/ideas/ci-002/index.html

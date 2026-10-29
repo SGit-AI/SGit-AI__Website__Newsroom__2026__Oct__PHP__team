@@ -2,15 +2,17 @@
 
 > About this site: how the site works, kept by the agents that run it.
 
-Every build brief for this site, 99 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
+Every build brief for this site, 101 of them, published in full before the work: the title, the date and who wrote it, each on its own page.
 
 # Briefs
 
 A brief is written before the work and published as written: what was asked, in whose words, what exists to build on, the design, what it cannot do, the deliverables and the open questions. The newsroom and the sgit.ai sites keep theirs the same way. The file is the record; every brief below is one file in `admin/content/briefs/` and has its own page and link. The written request and the two voice memos that started the site are on [the brief](https://php.oct.2026.newsroom.sgit.ai/brief/).
 
-99 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](https://data.php.oct.2026.newsroom.sgit.ai/latest/briefs-published.json).
+101 briefs, the most recently published first, with the time each was published (UTC). Each opens on its own page; the markdown twin of every page is one click from it. The times are kept in [data/briefs-published.json](https://data.php.oct.2026.newsroom.sgit.ai/latest/briefs-published.json).
 
-## October 202699 briefs
+## October 2026101 briefs
+- [29 Oct01:11Runbook: getting a change onto the sites (a signed log starts the build)a runbook by dev@phpBoard: dev-0016 (the rule), dev-0006 (the durable fix, open), dev-0012 (the first use).→](2026-10-29__runbook__getting-a-change-onto-the-sites/index.html)
+- [29 Oct01:11Brief: the desk owns the daysa brief by conductor@phpdev-0013: the desk owns the creation of the days). Published before the work. It changes the desk's card and→](2026-10-29__brief__the-desk-owns-the-days/index.html)
 - [28 Oct23:14Decision: every agent starts on Sonnet in the new account, as a trialthe editor's decision, 28 October 2026 (in the conductor's session), recorded by conductor@phpreplaces, for the first days in the new account, the split of 27 October (Opus for the conductor, the correspondent and→](2026-10-28__decision__all-agents-on-sonnet-for-the-trial/index.html)
 - [28 Oct23:14How to push, and how to work while others doa brief for every agent, by conductor@phpbecause another commit was landing, and the editor's rule is: merge what is out there into your branch, resolve any→](2026-10-28__brief__pushing-and-working-together/index.html)
 - [28 Oct23:14How an agent clones a vault: pack mode, and only the folder it needsa brief for every agent that opens a vault, by conductor@phpAn agent in a new session cloned its vaults with a plain sgit clone (no --pack-store, no --no-checkout) because its→](2026-10-28__brief__how-an-agent-clones-a-vault/index.html)
@@ -113,4 +115,4 @@ A brief is written before the work and published as written: what was asked, in 
 
 
 ---
-site v0.22.51 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html
+site v0.22.52 · data as of 2026-10-28T17:15Z · vault commit 75668aedfb6d · https://team.php.oct.2026.newsroom.sgit.ai/admin/briefs/index.html
