@@ -1,0 +1,14 @@
+{
+ "run": "20261029T0806Z-curator",
+ "agent": "curator",
+ "started": "2026-10-29T08:06:30Z",
+ "finished": "2026-10-29T08:14:34Z",
+ "outcome": "ok",
+ "summary": "08:00 wake of 29 October. Team head 1120e3d00c4a. The evidence vault had moved since my last push: the breaking desk added a commit (6c07e190d81e: 6 sources, 35 claims, 'Role: curator'), which my clone pulled in sync before I wrote. Queue 560 rows (written 07:48 UTC), 4 pending (the researcher's 07:14 UTC captures), each read in full; batch 29: 4 sources promoted (Metro, Anashim U'Machshevim, InforGames, Digi24), 13 claims cur29-, no timeline rows; Digi24 is the same News.ro report as the Stirile PRO TV source (one claim only, marked as not independent); Metro's 'China' among agencies advising to go dark recorded as unverified; a honeypot's technical detail quoted by the Hebrew page left out; scan: nothing addressed to an AI (product-name mentions only). Evidence vault nnd3i8iw pushed 08:12:50-08:13:10 UTC, head c19ce304ce2d (685 sources, 751 captures), in sync. Data released from that head straight after (gate passed, 516 files); its commit says 4 added by the curator and 6 by the breaking desk. sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the four snapshot folders cloned one by one with --path in parallel, about 08:08 to 08:11 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "1120e3d00c4aaf9f7ebe063107e3e8307a0e8748"
+}
