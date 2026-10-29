@@ -1,0 +1,17 @@
+{
+ "run": "20261029T0833Z-observability",
+ "agent": "observability",
+ "started": "2026-10-29T08:33:42Z",
+ "finished": "2026-10-29T08:34:58Z",
+ "outcome": "ok",
+ "summary": "scheduled wake 08:33: sgit 0.26.0; team dev c92ca3e71f73; drained 84wr8mib: 69 waiting in 1 of 5 lanes (7% of cap, under the 700 report level), 69 readable, 0 undecryptable; vault 4,344 events from 1,303 sessions, pushed and in sync, then 69 marked processed. Readers today 9 views in 6 sessions, crawlers 28, synthetic 15; nothing addressed a model, no foreign host seen in the summary. Notes to me on dev (dev-0015, dev-0016) are material and need nothing from me. Nothing waits on the editor.",
+ "read": [
+  "records/WAKE.md",
+  "records/schedule/observability.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "c92ca3e71f737d11b411d1240ab79b67ccdae071"
+}
