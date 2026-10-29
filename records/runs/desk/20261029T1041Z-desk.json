@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1041Z-desk",
+ "agent": "desk",
+ "started": "2026-10-29T10:41:18Z",
+ "finished": "2026-10-29T10:43:41Z",
+ "outcome": "ok",
+ "summary": "10:40 wake. Taken in: team 8b9b99a, site dade079, data 9f25536 (read-only). The days: refreshed 2026-10-29 (Dream Research's report of 25 servers rooted, unverified, unnamed victims, state v6; the correspondent's dated update; headline per role) and released to site dev; the deploy shows it in the last 24 hours on the front page. Publication, rendered in Chromium: the strip shows days 0 to 9, the five questions agree with state v6 (none confirmed, 4 candidates, exploited 2 of 2); fault: the Executive lead says 'As of 09:43 UTC on 27 October' against the claim's 07:14 UTC on 29 October and 00:09 elsewhere (desk-0007, message to the correspondent); the header says 'latest evidence 00:09 UTC, last agent run 01:53 UTC' (edition lag). System: the journalist, correspondent, curator, researcher and conductor all ran today; abp has not answered desk-0006; the correspondent has not yet reviewed the closed days 27 and 28 October (my To-correspondent note). The dev proposal to push a signed log to the press for a day close (message 20261029T0112Z) is the editor's call: I did nothing; today's days were deployed by the site's own push, which is why no log was needed. Not done: the editor's queue ranking and the story in one paragraph in full; the vault check (no vault read key held). Waits on: the editor (the proposal; coverage count), abp, the correspondent.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8b9b99acd5f3db50bc299f93cd1f7c921bb175f7"
+}
