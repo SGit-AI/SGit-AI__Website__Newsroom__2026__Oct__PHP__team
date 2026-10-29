@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1341Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-29T13:41:12Z",
+ "finished": "2026-10-29T13:42:48Z",
+ "outcome": "ok",
+ "summary": "13:40 wake (fired 13:41 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 7e61dadde204 to 7f1f7c9514b8 (699 sources, latest capture 12:14 UTC); the curator's export in data was already at that head (not run by me). 5 claims of curator batch 31 reviewed against their captures (1 agrees, 3 noted, 1 held back: Metro Seoul's Dream Research repeat). no-confirmed-compromise, compromise.json, story.json as-of and desk.json moved to 12:14 UTC with Dream's report left as reported. Data released at 1e29b88 (gate passed). Updates and site repositories not touched. Seen at dev 71616d5cc911.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "71616d5cc9111906cdf4eb61cb76d79581f615d6"
+}
