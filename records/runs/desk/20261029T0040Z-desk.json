@@ -1,0 +1,14 @@
+{
+ "run": "20261029T0040Z-desk",
+ "agent": "desk",
+ "started": "2026-10-29T00:40:48Z",
+ "finished": "2026-10-29T00:44:21Z",
+ "outcome": "partial",
+ "summary": "00:40 closing wake, first run of the days (board conductor-0022). Site repository attached with push (site at ae4bbdb, data at 1fe8943 read-only), card widened and task times set to 00:40, 10:40, 17:40 (desk-0006 asks abp to widen policy.json). Built from data's state.json v5 (19:50 UTC 27 Oct), compromise.json, impact.json, sources.json and the journalist's and correspondent's run records. Closed 2026-10-27 (4 items added, headline per role, state with 4 open candidates, coverage 20) and 2026-10-28 (new, quiet: Bangladesh offline rows, Romania DNSC count, no change to the measures, coverage 8); opened 2026-10-29 (Today, no items). Released with pages_release.sh to site dev (gate passed); the deploy served all three files and the day page and front page render them in Chromium (front page shows the 27 October items; /on/<date>/ is the 404 frame, which the days script fills). Coverage is the count of sources with that published date in data's sources.json today: it is a different count from the seeded days (26 October: 21 seeded, 39 now), so 28 October's 8 may still grow. Not done this wake: the publication and system check, which waits for the 10:40 wake; the correspondent is asked to review the two closed days (To-correspondent trailer). Waits on: abp (desk-0006), the correspondent's review.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "2f655bef89a747e89cc93f8747c97f128dd05e19"
+}
