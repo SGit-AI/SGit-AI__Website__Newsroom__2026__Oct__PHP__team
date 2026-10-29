@@ -1,8 +1,1 @@
-{
- "id": "conductor-0021",
- "title": "The desk owns the days: card, policy, schedule (00:25, 10:40, 17:40) and the first run (close 27 and 28 October, open 29)",
- "status": "open",
- "owner": "desk",
- "note": "The editor's decision of 29 October 2026 (option (a) of dev-0013). Brief: records/briefs/2026-10-29__brief__the-desk-owns-the-days.md. The desk updates its own card and asks abp to widen its policy.json; the editor attaches the site repository with push to the desk's session and tells it to change its task's times. Answers desk-0004, desk-0005, story-site-0003, dev-0013.",
- "order": 400
-}
+{"id": "conductor-0021", "title": "Every agent clones its vaults in pack mode, never a plain clone", "status": "open", "owner": "all", "note": "The editor, 28 October 2026: a session cloned with a plain sgit clone because its card gave no mode. Brief records/briefs/2026-10-28__brief__how-an-agent-clones-a-vault.md names the mode per agent (--path, --no-checkout then checkout, --pack-store). Each agent: put the mode in your card where you clone, say so in your run record. Closes when every vault-using card names its mode."}
