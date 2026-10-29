@@ -1,0 +1,14 @@
+{
+ "run": "20261029T0100Z-dev",
+ "agent": "dev",
+ "started": "2026-10-29T01:00:00Z",
+ "finished": "2026-10-29T01:13:06Z",
+ "outcome": "ok",
+ "summary": "At the editor's ask: (1) the live bug, hundreds of 'AbortError: Transition was skipped' on the front page: assets/design/line/line.js answered every other tab's p2s.lens write with go(), and state() rewrites p2s.lens on every draw, so two open tabs redrew each other about 250 times a second each. Reproduced in Chromium with two tabs on the live front page (about 1,000 transitions and 1,000 page errors in 4 seconds), fixed with a viewSig check in the storage listener (press 6742a76, live in press 1.0.88, no edition needed: the page loads assets from /latest/); verified on the live file: 0 transitions, 0 page errors; a real role change in one tab still reaches the other (Executive to Engineer). (2) Why no test caught it: none opens a second tab, the press's gate is static, desk browser tests are single-tab, and my own wake check loaded one page once; the test now exists (records/agents/dev/tests/two-tabs.cjs), my card runs it each wake, board dev-0018 asks security to wire it into the edition's CI. (3) Messages to desk and correspondent proposing the card line to push signed logs (their cards are theirs), and to story-site (owner of line.js).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "1b5b83f9a9f68106b602144397f1532561ed8774"
+}
