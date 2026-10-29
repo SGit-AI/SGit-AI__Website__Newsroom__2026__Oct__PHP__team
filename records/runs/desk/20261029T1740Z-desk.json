@@ -1,0 +1,14 @@
+{
+ "run": "20261029T1740Z-desk",
+ "agent": "desk",
+ "started": "2026-10-29T17:40:47Z",
+ "finished": "2026-10-29T17:41:47Z",
+ "outcome": "ok",
+ "summary": "17:40 wake. Taken in: team 3646005, site 84b64cc, data 57b1d9e (read-only). State of affairs unchanged since v6 (01:53 UTC): no new version, compromise as-of moved to 14:47 UTC (journalist batches 30 to 32, vault b08a131c66e6, 701 sources), still no organisation confirmed; 3 sources published today (El Cronista, Metro, Tech Business News: none carries a new fact). Days: today's day (29 Oct) stands as released at 10:42, so no release to site this wake. Closed-day note: 2026-10-28's coverage reads 8 in the file and 15 sources by published date now (27 Oct: 20): the count grows as captures arrive and a closed day is never rewritten; I left it and ask the editor how it should be counted. Publication, rendered in Chromium: the five questions agree with v6; the Executive lead still says 'As of 09:43 UTC on 27 October' (desk-0007): the correspondent re-stamped the readers' lines to 14:47 UTC but the built page is edition 0.22.53 (07:04 UTC), so only a new edition fixes it; header 'latest evidence 00:09 UTC' is the same lag. No correction request drafted (the editor holds all sending; no vault read key held, so no quote can be re-checked). The correspondent has not yet reviewed the closed days 27 and 28 October. Waits on: the editor (dev's proposal for a signed log; coverage count), abp (desk-0006), dev's next edition.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "3646005406b4713c484d356fbe22596e715eceb3"
+}
