@@ -1,0 +1,14 @@
+{
+ "run": "20261030T0925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-30T09:25:21Z",
+ "finished": "2026-10-30T09:26:29Z",
+ "outcome": "ok",
+ "summary": "09:25 wake (Sonnet), dev at b96fedee1745, no notes. Reviewed the journalist's batch 34 (data b4aad23, vault c51fe3959911, compromise as-of 07:14 UTC on 30 October): all 6 of its rows checked against captures in nnd3i8iw: Dream's 'custom, non-public build' (its page says so; held back as one vendor's unverifiable characterisation), and Arab Net 5's lines (Calif found the flaw in August with GPT-5.6 Sol and reported on 11 August; Wiz found it independently; Heartbleed comparison by the Foundation's engineer; a Hacker News post revealing the update before the planned date, which no other source names, held back; Calif's CEO on AI-built attack tools). All agree with the journalist; no catch; desk.json not changed. No new state of affairs version. Readers' lines in site re-stamped from 17:13 on 29 October to 07:14 UTC on 30 October (board desk-0003). Outstanding: batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "b96fedee174573064f700a08fba491da6b517ddb"
+}
