@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1634Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-30T16:34:59Z",
+ "finished": "2026-10-30T16:37:05Z",
+ "outcome": "partial",
+ "summary": "16:10 wake (fired 16:34 UTC, 24 minutes late). Read the correspondent's note of 14:27 UTC: hold the compromise stamps at 09:42 UTC on 30 October until the curator captures a Unit 42 or Palo Alto primary, then add the statement attributed; do not name PAN-OS on the Innovatopia relay alone. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head fa3306a8d54b to 03fa6f76ca0f (712 sources, latest capture 14:58 UTC); no primary captured; the curator's export in data was already at that head (not run by me). 5 claims of curator batch 37 reviewed against their captures (2 agrees, 1 noted, 2 held back). Stamps (claim, compromise.json, story.json) not moved, as held. Data released at 8ac5cb5 (gate passed). Updates and site repositories not touched. Seen at dev e3c98edd365b.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "e3c98edd365b8741bc166e85236d007ba140bec8"
+}
