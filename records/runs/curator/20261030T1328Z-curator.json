@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1328Z-curator",
+ "agent": "curator",
+ "started": "2026-10-30T13:28:04Z",
+ "finished": "2026-10-30T13:37:19Z",
+ "outcome": "ok",
+ "summary": "13:00 wake of 30 October (fired 13:28 UTC). Team head 686e69ee6ac7. Queue 587 rows (written 12:46 UTC), 3 pending (the researcher's 12:14 UTC captures), each read in full; batch 36: 3 sources promoted (weekend.at on Risikomonitor.com's remeasurement of Austrian sites; Innovatopia, relaying Dream Research's report of a PAN-OS firewall intrusion chain with Unit 42's stated verification; Third News, relaying Check Point), 10 claims cur36-; the Dream Research claims firm up the relay recorded as unverified in cur31-metroseoul-dream-research, with the exploit chain and privilege-escalation mechanics left out; AI tooling found in the attacker's environment recorded as unverified evidence of AI use, as the report itself says; ENISA's isolation advice noted against the disputed offline-allies claim; scan: nothing addressed to an AI (advice to administrators only). Evidence vault nnd3i8iw pushed 13:35:16-13:35:36 UTC, head fa3306a8d54b (710 sources, 776 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the three snapshot folders cloned one by one with --path in parallel, about 13:29 to 13:34 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "686e69ee6ac702f43f18ab8d38a813cd1d6b606b"
+}
