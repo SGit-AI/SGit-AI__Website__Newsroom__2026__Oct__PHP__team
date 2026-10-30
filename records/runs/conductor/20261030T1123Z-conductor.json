@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1123Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-30T11:23:27Z",
+ "finished": "2026-10-30T11:24:14Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 11:23 UTC for 11:15 London. dev at 76495758 (v0.55.92). Reviewed every commit since 07:19: team 20 (10 agent sessions, 10 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 12 commits (v0.1.129 to v0.1.135: curator, researcher, journalist), site 2, press, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged; every fired wake has a run record (observability 08:33, journalist 08:41 and 11:20, correspondent 09:25, researcher 09:34, curator 08:06 and 10:40, desk 10:41). The desk's 10:40 wake read the publication and found a fault that is not edition lag: the Executive lead on the front page, /start/, /ops/, the board and the briefings still says 'As of 09:43 UTC on 27 October' after edition 0.22.54, because the text lives in data's files/sections.json and files/personas.json, and the header 'latest evidence' is older than the vault; it re-owned desk-0007 to the journalist and wrote to the journalist and the correspondent (I had told the editor at 11:11 that the built text lags up to a day: that was incomplete, and this corrects it). Today's day file 2026-10-30 has no items yet (no source published today, per the desk). Sites: team 0.55.92, data 0.1.135, press 1.0.91, updates 0.22.55, refs 0.22.51, site 0.22.54 (data as of 29 October 17:13 UTC). No notes, no unread messages. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Still open: desk-0006 (abp has not widened the desk's policy.json), the correspondent's review of closed days 27 to 29 October, SA-2026-023, security-0002, dev-0006, breaking-0005, factcheck's task and vault keys.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "76495758b5aa8e8a4dc2def520885ef3c2dc8976"
+}
