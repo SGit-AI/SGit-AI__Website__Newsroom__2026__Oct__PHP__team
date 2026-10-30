@@ -1,0 +1,14 @@
+{
+ "run": "20261030T0040Z-desk",
+ "agent": "desk",
+ "started": "2026-10-30T00:40:30Z",
+ "finished": "2026-10-30T00:42:44Z",
+ "outcome": "ok",
+ "summary": "00:40 closing wake. Taken in: team bbf8047, site a34d2fa, data 681825c (read-only). Closed 2026-10-29 (label Unverified, headline per role, coverage 3 by published date, closed_by desk@php.newsroom, items unchanged: Dream Research's report and the dated update; the measures did not move since state v6) and opened 2026-10-30 (Today, no items), released to site dev with pages_release.sh (gate passed). Deploy checked: the day files are served, the strip shows Day 9 'Unverified' and Day 10, /on/2026-10-29/ shows the closed day in Chromium. State of affairs unchanged (v6); the compromise line moved to 17:13 UTC (journalist batch 33, vault cd9375f1aefd, 703 sources); still no organisation confirmed. Still open: the front page's built Executive lead says 'As of 09:43 UTC on 27 October' (edition 0.22.53; desk-0007), waiting on dev's next edition or the editor's call on a signed log; abp has not widened policy.json (desk-0006); the correspondent has not reviewed closed days 27, 28 or 29 October; coverage counting is open with the editor (28 Oct reads 8, 15 now). The publication and system check is the 10:40 wake's.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "bbf8047dcf7bb53447a1d15b6f960b1a9b9ed95d"
+}
