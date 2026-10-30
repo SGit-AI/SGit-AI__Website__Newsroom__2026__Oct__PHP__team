@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1157Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-30T11:57:39Z",
+ "finished": "2026-10-30T11:59:20Z",
+ "outcome": "ok",
+ "summary": "11:57 wake for the 11:55 task (Sonnet), dev at 60d69844b09d. Read two desk messages I had not acted on: 29 October 10:43 (front page lead still at 09:43 UTC on 27 October; I missed it at the 09:25 and later wakes of 29 October, my fault) and 30 October 10:42 (the stale line is in data personas.json and sections.json, not in plain.json and questions.json). The three 09:43 UTC on 27 October lines in data files/personas.json (the everyone, board and CFO briefings) are mine (my handover): re-stamped to 09:42 UTC on 30 October and released in data (gate passed, 516 files). data files/sections.json is not edited by hand: it holds the build's dated versions of each page (history, 100+ different as-of times) and its current texts come from the pages' own sources; the edition after this release should carry the persona lines into it; the desk to re-read after the next edition. The three persona lines do not mention Dream Research's report (the readers' lines in plain.json and questions.json do): a content change for the editor's or desk's word, not made. Reviewed the journalist's batch 35 (data 11e817a, 7 claims, vault 7e7f2d59181f, compromise as-of 09:42 UTC on 30 October): 7 of 7 rows checked against captures (Dream's event times 18:14, 10:09 and 11:35 UTC; the Educator's Rapid7, Clinton and agencies lines; TF1's ANSSI lines, 660,000 IP addresses and 6 million applications; Der Standard's Austrian outages); all agree; the wrong ANSSI expansion on the TF1 page I did not look for. No catch; desk.json not changed. Readers' lines in site re-stamped from 07:14 to 09:42 UTC on 30 October (board desk-0003). Outstanding: batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "60d69844b09d776fc669d3c29a6e3f0b31389d51"
+}
