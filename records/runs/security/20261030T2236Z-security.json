@@ -1,0 +1,14 @@
+{
+ "run": "20261030T2236Z-security",
+ "agent": "security",
+ "started": "2026-10-30T22:36:04Z",
+ "finished": "2026-10-30T22:40:04Z",
+ "outcome": "ok",
+ "summary": "Nightly pass 3 (Sonnet, sgit 0.26.0), team dev 62db485ac1e5. Scan over team, press, data, site, updates, refs: no secret shapes; hidden characters only in the curator's two known tools; no AI-addressed text beyond quotations. Protected paths since the last pass: no change to any gate, release script, rules or workflow (data's only commit is CI's edition 0.22.54 partition); no workflow uses a secret. CSP: 1470 scripted pages in team, site, updates, refs, all with a script-src, none with unsafe-*. Public vaults 0cfkdcvh and the six synthetic readers cloned read-only to the scratchpad and scanned: clean. No notes to security. Quiet night. Open and unchanged: security-0002 / SA-2026-044 (the editor's go given 28 October; dev has not started the branch, so nothing to review); SA-2026-045 (low, the signed log is not verified, awaiting the editor's decision); rulesets for the six (SA-2026-023), awaiting the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "62db485ac1e5dc48f7d76048f504a81f69de2f81"
+}
