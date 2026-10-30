@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1704Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-30T17:04:39Z",
+ "finished": "2026-10-30T17:59:03Z",
+ "outcome": "ok",
+ "summary": "wake 17:00 London 30 October (fired 17:04 UTC): pass 17:06 to 17:58 UTC, both phases pushed, vault head 551b1d44e1cb in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head d3442f831d91; probe 412 targets, watch 1046 pages, series 6 rows appended, ledger 81 records (80 open), discovery 5282 on topic of 9119; data files/source-watch.json refreshed (1534 pages, 1157 publishers, 13360 snapshots) and released. Cyber desk: the Metasploit pull-request page was captured for the first time since 28 Oct (17:13 UTC, 200): PR 22036, the php2shell exploit module, is still open (5 of 8 tasks done, review required, checks 4/4); nothing merged for php2shell; the series value of 1 merged is again PR 21757, the unrelated Flowise module the search matches, a false positive of p_pulls. The nuclei pull-request page timed out again (its issues page loaded), so nuclei has no new reading (last good 4 merged, 5 open, 7 closed at 28 Oct 03:27 UTC; the zeros of 28 Oct are failed captures); Sigma read as before. Sites dark: 32 of 175 rows (tracker, capture 17:13 UTC), down from 34 at 14:58 UTC and 44 on 29 Oct; unverified. EPSS last read 30 Oct 14:58 UTC at 0.99999 (not read this pass). KEV 2 (catalog 2026.10.29). Public repositories naming php2shell 0 (708 name the CVE). The p_pulls fix (skip an errored capture, count only PRs naming the CVE or php2shell) and a retry of the GitHub pages after a pause wait for the editor (wait 1). Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "e860d471dffd39c5d3820c14f93638615e9845e7"
+}
