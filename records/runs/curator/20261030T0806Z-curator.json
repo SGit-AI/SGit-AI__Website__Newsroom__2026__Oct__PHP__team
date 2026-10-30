@@ -1,0 +1,14 @@
+{
+ "run": "20261030T0806Z-curator",
+ "agent": "curator",
+ "started": "2026-10-30T08:06:15Z",
+ "finished": "2026-10-30T08:14:27Z",
+ "outcome": "ok",
+ "summary": "08:00 wake of 30 October. Team head f334bffb1bde. Queue 581 rows (written 07:45 UTC), 1 pending (the researcher's 07:14 UTC capture), read in full; batch 34: 1 source promoted (Arab Net 5, an Arabic rewrite of a Wall Street Journal report), 5 claims cur34-; its one new fact, that a Hacker News post leaked the update before the planned 22 October date, is third-hand and single-source and is marked as such; scan: nothing addressed to an AI (right-to-left marks only). Evidence vault nnd3i8iw pushed 08:12:41-08:12:59 UTC, head c51fe3959911 (704 sources, 770 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the one snapshot folder cloned with --path, about 08:08 to 08:12 UTC, four minutes (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "f334bffb1bde19f06fe3bcb5c7002a370a7383a6"
+}
