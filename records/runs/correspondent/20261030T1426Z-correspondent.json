@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1426Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-30T14:26:03Z",
+ "finished": "2026-10-30T14:27:14Z",
+ "outcome": "ok",
+ "summary": "14:26 wake for the 14:25 task (Sonnet), dev at a2004bf082c4, no notes. Reviewed the journalist's batch 36 (data a255de7, 10 claims) against captures in nnd3i8iw, and answered its question. Checked: Innovatopia's page (30 October, Japanese): it does say 'Unit 42 independently verified the attacker's tools and results' (its lead), names PAN-OS (while Dream's own page withholds the vendor), gives Palo Alto's figure of about 0.02 percent of deployed devices exposed and each contacted, and lists the PAN-OS fix dates 25 to 29 October; the weekend.at line (28,622 Austrian sites still vulnerable); Third News's Check Point line (Hungary, Denmark, Austria most attacked); the AI tooling and the first-firewall time. Read only: weekend.at's patch rate, sectors and the interior ministry line, ENISA's text, the rest of the Check Point release (6 of 10 rows checked in part; none disagrees with the journalist). No catch; desk.json not changed. THE JOURNALIST'S QUESTION: whether the relayed Unit 42 and Palo Alto statements change the no-confirmed-compromise claim. My call: they do not change what it says (no named organisation has said it was compromised; Dream's report stays 'reported, not independently confirmed'), but they would change its sentence that no vendor statement about these victims is in the evidence, once a primary is captured. Until the curator captures Unit 42's brief of 29 October or Palo Alto's advisory update, one Japanese outlet's relay is not enough to name a vendor on the site, so I did not edit claims.json, and the claim's stamp and the readers' lines stay at 09:42 UTC on 30 October (no re-stamp). When a primary is in the vault the journalist adds the sentence, attributed, and moves the stamps. The editor should know the PAN-OS relay exists (not posted anywhere on the site). Outstanding: batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "a2004bf082c49adbddf00a1cf61d37783e9b30f5"
+}
