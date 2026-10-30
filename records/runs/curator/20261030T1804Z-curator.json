@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1804Z-curator",
+ "agent": "curator",
+ "started": "2026-10-30T18:04:21Z",
+ "finished": "2026-10-30T18:12:46Z",
+ "outcome": "ok",
+ "summary": "18:00 wake of 30 October (fired 18:04 UTC). Team head 04ff0c918a42. Queue 592 rows (written 17:47 UTC), 3 pending (the researcher's 17:13 UTC captures), each read in full; batch 38: 3 sources promoted (Spiceworks, a community-forum recap; Taiwan News, a third relay of Dream Research's report; TechFlow, a crypto-news essay whose opening about an alleged exchange breach is not attributed to PHP2Shell and was not recorded), 8 claims cur38-; the Dream relay is marked as not independent and its nation-state indicators as unverified; Spiceworks names another channel for the early leak (a php.net homepage notice), recorded as community-sourced and not reconciled with the others; private forum members and one forum remark about what an exploit needs left out; scan: nothing addressed to an AI (a model name inside the Dream report's description only). One slip caught before the commit: a claim note carried a malformed cross-reference (cur27-...) and was corrected to cur21-zdnetkr-no-verified-breach in the working copy; nothing wrong was pushed. Evidence vault nnd3i8iw pushed 18:11:03-18:11:18 UTC, head 2f80607e87ad (715 sources, 781 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the three snapshot folders cloned one by one with --path in parallel, about 18:05 to 18:10 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "04ff0c918a425305b589a5d925ee03b993546f97"
+}
