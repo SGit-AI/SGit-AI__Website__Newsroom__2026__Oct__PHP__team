@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1341Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-30T13:41:06Z",
+ "finished": "2026-10-30T13:44:00Z",
+ "outcome": "partial",
+ "summary": "13:40 wake (fired 13:41 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 7e7f2d59181f to fa3306a8d54b (710 sources, latest capture 12:14 UTC); the curator's export in data was already at that head (not run by me). 10 claims of curator batch 36 reviewed against their captures (2 agrees, 6 noted, 2 held back). Partial: the no-confirmed-compromise as-of, compromise.json and story.json were not moved from the 09:42 pass: Innovatopia relays a Unit 42 verification of Dream's report and a Palo Alto Networks statement (about 0.02 percent of PAN-OS devices affected), naming the vendor Dream withheld, with no primary in the vault, which touches the claim's sentence that no vendor statement about these victims is in the evidence; I left the claim to the correspondent (To-correspondent in the data release) and asked the curator to promote the primaries if the watch holds them. Data released at a255de7 (gate passed). Updates and site repositories not touched. Seen at dev 9868bb1ac750.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "9868bb1ac7508fd70fc05ec31a8bfab7ca9a5c77"
+}
