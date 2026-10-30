@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1041Z-desk",
+ "agent": "desk",
+ "started": "2026-10-30T10:41:08Z",
+ "finished": "2026-10-30T10:42:15Z",
+ "outcome": "ok",
+ "summary": "10:40 wake. Taken in: team 7498782, site ce83425, data 264d707 (read-only). State of affairs unchanged since v6; the compromise line is at 07:14 UTC on 30 October (journalist batch 34, vault c51fe3959911, 704 sources), still no organisation confirmed; no source published today. Days: 2026-10-30 stands (no item yet, nothing to add), no release to site. Publication, rendered in Chromium on edition 0.22.54 (site v0.22.75): the strip shows Days 8 to 10, the five questions agree with v6, 'Nothing new for you' reads right for the last 24 hours. Fault, and a correction of mine: the Executive lead (front page, /start/, /ops/, board, CFO and everyone briefings) still says 'As of 09:43 UTC on 27 October' after edition 0.22.54, so it is not edition lag as I wrote on 29 October: the text is in data files/sections.json and files/personas.json. desk-0007 corrected and re-owned to the journalist; messages to the journalist and the correspondent; I did not edit those files. The header 'latest evidence 29 October 17:45 UTC' is also older than the vault (07:14). Still open: abp has not widened policy.json (desk-0006); the correspondent has not reviewed closed days 27 to 29 October; dev's signed-log proposal and the coverage count are the editor's (28 Oct reads 8, 15 on 29 Oct). Not done: no vault read key, so no quote re-check; no correction request drafted (the editor holds all sending).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "74987820dc9c203a7eba859b2602a635e968771d"
+}
