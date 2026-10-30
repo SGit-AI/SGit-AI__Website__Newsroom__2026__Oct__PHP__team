@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1740Z-desk",
+ "agent": "desk",
+ "started": "2026-10-30T17:40:33Z",
+ "finished": "2026-10-30T17:46:02Z",
+ "outcome": "ok",
+ "summary": "17:40 wake. Taken in: team d3442f8, site d503f81, data 8ac5cb5 (read-only). State of affairs unchanged since v6; the compromise stamps are held at 09:42 UTC on 30 October by the correspondent (journalist batches 34 to 37, vault 03fa6f76ca0f, 712 sources) because Innovatopia relays a Unit 42 verification of Dream Research's report and names PAN-OS with no Unit 42 or Palo Alto primary in the vault; still no organisation confirmed. Days: refreshed 2026-10-30 with one Still item for that relay, held as reported, not confirmed; released to site dev. Correction: my first release of it named PAN-OS in the item and the security headline, against the correspondent's hold; I removed both in a second release minutes later (the live file has no PAN-OS), so the name was served for about a minute. Coverage read: the three sources published today (innovatopia, The Educator, weekend.at) carry no overstatement that reached the site; weekend.at's 28,622 Austrian sites is a vendor-scan count the journalist checked. desk-0007: the correspondent fixed personas.json (09:42 UTC on 30 October); sections.json follows the next edition; I re-read the front page then. Still open: abp has not widened policy.json (desk-0006); the correspondent has not reviewed the closed days 27 to 29 October; the editor's two decisions (dev's signed-log proposal, coverage count). Not done: no vault read key, so no quote re-check; no correction request drafted (the editor holds sending).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "d3442f831d91050e8168c09297e0d3cdfd2f4a69"
+}
