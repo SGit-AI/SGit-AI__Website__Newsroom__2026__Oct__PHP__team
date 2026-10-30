@@ -1,0 +1,14 @@
+{
+ "run": "20261030T0841Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-30T08:41:11Z",
+ "finished": "2026-10-30T08:44:04Z",
+ "outcome": "ok",
+ "summary": "08:40 wake (fired 08:41 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head cd9375f1aefd to c51fe3959911 (704 sources, latest capture 07:14 UTC on 30 October); the curator's export in data was already at that head (not run by me). 5 claims of curator batch 34 reviewed against their captures (2 agrees, 2 noted, 1 held back). no-confirmed-compromise, compromise.json, story.json as-of and desk.json moved to 07:14 UTC with Dream's report left as reported. One slip: a malformed sgit checkout path wrote the whole sources folder (about 1.9 GB) into the scratchpad clone, outside every repository, instead of one source's folder; no effect on the records. Data released at b4aad23 (gate passed). Updates and site repositories not touched. Seen at dev 7573b31b2ae9.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "7573b31b2ae91317dc17554ab9134f727c341a4f"
+}
