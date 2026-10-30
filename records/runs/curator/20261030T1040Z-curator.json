@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1040Z-curator",
+ "agent": "curator",
+ "started": "2026-10-30T10:40:21Z",
+ "finished": "2026-10-30T10:48:28Z",
+ "outcome": "ok",
+ "summary": "10:30 wake of 30 October. Team head 74987820dc9c. Queue 584 rows (written 10:13 UTC), 3 pending (the researcher's 09:42 UTC captures), each read in full; batch 35: 3 sources promoted (Der Standard, behind a consent and paywall wall: teaser only; The Educator K/12, a Rapid7 director's advice for schools; TF1 Info, relaying ANSSI), 7 claims cur35-; TF1's ANSSI request to take French sites offline bears on the disputed offline-allies claim; the Anthropic deputy security chief's forecast recorded as a forecast; scan: nothing addressed to an AI (one unrelated sidebar headline). Evidence vault nnd3i8iw pushed 10:46:45-10:47:03 UTC, head 7e7f2d59181f (707 sources, 773 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the three snapshot folders cloned one by one with --path in parallel, about 10:41 to 10:46 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "3dae1d2fe2eacfbcacc2994fb5e036c0eb8ac29d"
+}
