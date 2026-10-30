@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-30T19:25:47Z",
+ "finished": "2026-10-30T19:26:51Z",
+ "outcome": "ok",
+ "summary": "19:25 wake (Sonnet), dev at 7eb5f96a9e7c, no notes, no new messages. Reviewed the journalist's batch 38 (data 2c7591b, 9 rows; its commit says 8 claims plus the carried Dream row): checked against captures in nnd3i8iw: Dream's unknown outcomes (carried), Spiceworks (the sysadmin who found the notice on the php.net homepage and the joint EU statement, held back or noted correctly; the Unit 42 and Sophos line agrees with the 25 October withdrawal), Taiwan News (it names 25 'Palo Alto Networks firewall and management servers' and says 'AI-assisted campaign', while Dream's own page withholds the vendor: held back correctly) and TechFlow (the Binance theft of 30 October is on the page's first lines, with a headline pairing 'From Binance to PHP2Shell', but the page says the attack paths are not the same and gives the Binance route as a DevOps engineer's laptop, not PHP2Shell: nothing there ties Binance to php2shell, as the journalist read it). Not rechecked: the Spiceworks '24 to 48 hours' line and the Taiwan ACS line (read). No catch; desk.json not changed. The hold stands: the vault has no Unit 42 brief of 29 October and no Palo Alto advisory update, only the 22 October PSIRT capture, so PAN-OS stays off the site; two outlets now name Palo Alto from one Dream report, which does not change that. Stamps stay at 09:42 UTC on 30 October, readers' lines unchanged. Worth the editor's eye: TechFlow claims a Binance theft of about 6.3 billion US dollars on 30 October (initial investigation, a DevOps laptop); not a php2shell item, not in any other source I read, not verified. Outstanding: curator capture of the Unit 42 and Palo Alto primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "7eb5f96a9e7cba4643b5454094e3d7dbb9b655ec"
+}
