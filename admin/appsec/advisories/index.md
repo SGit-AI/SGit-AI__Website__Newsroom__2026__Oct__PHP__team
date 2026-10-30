@@ -56,7 +56,8 @@ The security advisories of the PHP October 2026 newsroom: every vulnerability fo
 | [SA-2026-042](../advisories/SA-2026-042/index.html) | medium | fixed | Reader answers were inserted into pages as raw HTML | `admin/build/build.py build_questions (the librarian's block; now press build/build.py)` | v0.18.2 (v1, 25 October 2026) |
 | [SA-2026-043](../advisories/SA-2026-043/index.html) | low | fixed | The round's write token is readable by every piece of code the round runs | `press .github/workflows/round.yml and tools/round.sh` | press v1.0.52 (27 October 2026): .github/workflows/round.yml and tools/round.sh removed |
 | [SA-2026-044](../advisories/SA-2026-044/index.html) | medium | open | An edition's patch can change the gate that judges it | `each repository's .github/workflows/pages.yml (the take step) and the press's tools/edition.sh` |  |
+| [SA-2026-045](../advisories/SA-2026-045/index.html) | low | open | The signed log that starts an edition build is a record, not a control | `press log/edition-triggers/ and the edition workflow (board dev-0016)` |  |
 
 
 ---
-site v0.22.53 · data as of 2026-10-29T00:09Z · vault commit 6c07e190d81e · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/index.html
+site v0.22.54 · data as of 2026-10-29T17:13Z · vault commit cd9375f1aefd · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/index.html

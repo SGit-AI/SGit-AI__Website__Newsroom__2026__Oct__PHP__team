@@ -19,10 +19,10 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.53" |
-| `data_as_of` | "2026-10-29T00:09Z" |
-| `vault_commit` | "6c07e190d81e" |
-| `counts` | {"sources": 681, "captures": 747, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 35, "disputed": 9, "contradicted": 2, "unverified": 4}, "event |
+| `version` | "0.22.54" |
+| `data_as_of` | "2026-10-29T17:13Z" |
+| `vault_commit` | "cd9375f1aefd" |
+| `counts` | {"sources": 703, "captures": 769, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 35, "disputed": 9, "contradicted": 2, "unverified": 4}, "event |
 | `headline_facts` | [{"id": "two-cves-9.2", "text": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and |
 | `latest_story` | {"title": "A vendor says a campaign rooted 25 servers, two days before we saw it. What the report says, and what it leaves open", "url": "https://php.oct.2026.n |
 | `links` | {"front": "https://php.oct.2026.newsroom.sgit.ai/index.html", "sources": "https://php.oct.2026.newsroom.sgit.ai/sources/index.html", "claims": "https://php.oct. |
@@ -49,12 +49,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.53",
- "data_as_of": "2026-10-29T00:09Z",
- "vault_commit": "6c07e190d81e",
+ "version": "0.22.54",
+ "data_as_of": "2026-10-29T17:13Z",
+ "vault_commit": "cd9375f1aefd",
  "counts": {
-  "sources": 681,
-  "captures": 747,
+  "sources": 703,
+  "captures": 769,
   "claims": 70,
   "claims_by_status": {
    "confirmed": 20,
@@ -84,7 +84,7 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   },
   {
    "id": "no-confirmed-compromise",
-   "text": "As of 00:09 UTC on 29 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts. One security vendor, Dream Research, reported on 26 October that a campaign using the two flaws, with a Linux kernel flaw, rooted 25 servers, three of them in a US government-affiliated environment; it names no victim and withholds the firewall vendor and the evidence, says it cannot tell whether later steps worked, and The Hacker News, The Next Web and CyPro repeat it as one source. The Next Web says it has not independently verified it and CyPro says other sources do not independently verify the victim details; no victim, vendor, CISA or PHP-team statement about these victims is in the evidence. Reported by Dream, not independently confirmed: it names no organisation, so it is a report of compromise, not a confirmed one.",
+   "text": "As of 17:13 UTC on 29 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts. One security vendor, Dream Research, reported on 26 October that a campaign using the two flaws, with a Linux kernel flaw, rooted 25 servers, three of them in a US government-affiliated environment; it names no victim and withholds the firewall vendor and the evidence, says it cannot tell whether later steps worked, and The Hacker News, The Next Web and CyPro repeat it as one source. The Next Web says it has not independently verified it and CyPro says other sources do not independently verify the victim details; no victim, vendor, CISA or PHP-team statement about these victims is in the evidence. Reported by Dream, not independently confirmed: it names no organisation, so it is a report of compromise, not a confirmed one.",
    "status": "reported",
    "url": "https://php.oct.2026.newsroom.sgit.ai/claims/index.html#no-confirmed-compromise",
    "sources": [
@@ -164,4 +164,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.53 · data as of 2026-10-29T00:09Z · vault commit 6c07e190d81e · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.54 · data as of 2026-10-29T17:13Z · vault commit cd9375f1aefd · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

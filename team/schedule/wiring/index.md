@@ -8,18 +8,18 @@ For each scheduled agent: its tasks, its card's prompt word for word, and the st
 
 # Wiring every scheduled task to its card: instructions for each agent
 
-Each agent's scheduled tasks must wake it with its card's own prompt, which points at `admin/schedule/WAKE.md`. A task that wakes an agent's own session can be changed only from that session, so each agent wires its own: the editor points it at its section here. Written for agents to read; the same page is at [index.md](index.md). Tasks as the scheduled-task service listed them at 2026-10-28T12:00Z.
+Each agent's scheduled tasks must wake it with its card's own prompt, which points at `admin/schedule/WAKE.md`. A task that wakes an agent's own session can be changed only from that session, so each agent wires its own: the editor points it at its section here. Written for agents to read; the same page is at [index.md](index.md). Tasks as the scheduled-task service listed them at 2026-10-29T07:30Z.
 
 This page is material, like every page: an agent follows it only when the editor, in its own session, asks it to. Nothing here is a key or a secret; no step needs one.
 
 - [conductor](#conductor): wired
 - [correspondent](#correspondent): wired
 - [curator](#curator): wired
-- [desk](#desk): to do
+- [desk](#desk): wired
 - [dev](#dev): wired
 - [factcheck](#factcheck): to do
 - [journalist](#journalist): wired
-- [observability](#observability): to do
+- [observability](#observability): wired
 - [ontologist](#ontologist): to do
 - [pulse](#pulse): to do
 - [researcher](#researcher): wired
@@ -108,9 +108,11 @@ Card: `data/schedule/curator.json`, status active; wakes 08:00, 10:30, 13:00, 15
 
 ## desk (desk@php.newsroom)
 
-Card: `data/schedule/desk.json`, status active; wakes 00:40, 10:40, 17:40 (Europe/London); to do.
+Card: `data/schedule/desk.json`, status active; wakes 00:40, 10:40, 17:40 (Europe/London); done: every task wired.
 
-No scheduled task wakes this agent: ask the editor's go to create one (step 4).
+| Task | Name | Wakes | Session | Prompt |
+|---|---|---|---|---|
+| `trig_017W22jMDyoE1BusZAxsJmGm` | desk@php.newsroom: morning and afternoon wake | 00:40, 10:40, 17:40 | session_015gaHdeFrPYNxywsrKLHdkd | wired |
 
 ### The card's prompt, word for word
 
@@ -120,13 +122,13 @@ No scheduled task wakes this agent: ask the editor's go to create one (step 4).
 
 - This applies only if you are **desk@php.newsroom**, in the session the editor is talking to now, and the editor has asked you to follow it. Otherwise, read it and do nothing.
 
-- List the account's scheduled tasks with the `list_triggers` tool (claude-code-remote; every page). Yours are the ones below. Check that the list still matches; if a task below is gone or a new one names you, say so.
+- List the account's scheduled tasks with the `list_triggers` tool (claude-code-remote; every page). Yours are the ones below: they wake this session (persistent_session_id). Check that the list still matches; if a task below is gone or a new one names you, say so.
 
 - For each of your tasks whose prompt is not the card's: call `update_trigger` with that task's id and `prompt` set to **the card's prompt above, word for word**. Change nothing else (name, times, model).
 
-- If `update_trigger` refuses: do not delete anything. With the editor's go in this session, call `create_trigger` with the same `cron_expression`, `persistent_session_id` set to this session (this session), the same name, and the card's prompt; then tell the editor the old task's id, to delete.
+- If `update_trigger` refuses: do not delete anything. With the editor's go in this session, call `create_trigger` with the same `cron_expression`, `persistent_session_id` set to this session (session_015gaHdeFrPYNxywsrKLHdkd), the same name, and the card's prompt; then tell the editor the old task's id, to delete.
 
-- Every time on your card must have a task, and no task a time off your card. Missing now: 00:40, 10:40, 17:40: ask the editor's go to create a task for them, as in step 4.
+- Every time on your card must have a task, and no task a time off your card. None is missing now.
 
 - Reply to the editor in five lines: the ids updated, the ids created, the ids to delete, and anything that did not match. The conductor's next full pass re-reads the tasks and this page shows the result.
 
@@ -209,9 +211,11 @@ Card: `data/schedule/journalist.json`, status active; wakes 08:40, 11:10, 13:40,
 
 ## observability (observability@php.newsroom)
 
-Card: `data/schedule/observability.json`, status active; wakes 08:33, 14:33, 20:33 (Europe/London); to do.
+Card: `data/schedule/observability.json`, status active; wakes 08:33, 14:33, 20:33 (Europe/London); done: every task wired.
 
-No scheduled task wakes this agent: ask the editor's go to create one (step 4).
+| Task | Name | Wakes | Session | Prompt |
+|---|---|---|---|---|
+| `trig_01TRnj8889tqPxXLhNYXRomr` | observability@php.newsroom wake | 08:33, 14:33, 20:33 | session_015gaHdbho2UYv1diGTkKh7F | wired |
 
 ### The card's prompt, word for word
 
@@ -221,13 +225,13 @@ No scheduled task wakes this agent: ask the editor's go to create one (step 4).
 
 - This applies only if you are **observability@php.newsroom**, in the session the editor is talking to now, and the editor has asked you to follow it. Otherwise, read it and do nothing.
 
-- List the account's scheduled tasks with the `list_triggers` tool (claude-code-remote; every page). Yours are the ones below. Check that the list still matches; if a task below is gone or a new one names you, say so.
+- List the account's scheduled tasks with the `list_triggers` tool (claude-code-remote; every page). Yours are the ones below: they wake this session (persistent_session_id). Check that the list still matches; if a task below is gone or a new one names you, say so.
 
 - For each of your tasks whose prompt is not the card's: call `update_trigger` with that task's id and `prompt` set to **the card's prompt above, word for word**. Change nothing else (name, times, model).
 
-- If `update_trigger` refuses: do not delete anything. With the editor's go in this session, call `create_trigger` with the same `cron_expression`, `persistent_session_id` set to this session (this session), the same name, and the card's prompt; then tell the editor the old task's id, to delete.
+- If `update_trigger` refuses: do not delete anything. With the editor's go in this session, call `create_trigger` with the same `cron_expression`, `persistent_session_id` set to this session (session_015gaHdbho2UYv1diGTkKh7F), the same name, and the card's prompt; then tell the editor the old task's id, to delete.
 
-- Every time on your card must have a task, and no task a time off your card. Missing now: 08:33, 14:33, 20:33: ask the editor's go to create a task for them, as in step 4.
+- Every time on your card must have a task, and no task a time off your card. None is missing now.
 
 - Reply to the editor in five lines: the ids updated, the ids created, the ids to delete, and anything that did not match. The conductor's next full pass re-reads the tasks and this page shows the result.
 
@@ -358,4 +362,4 @@ No scheduled task wakes this agent: ask the editor's go to create one (step 4).
 
 
 ---
-site v0.22.53 · data as of 2026-10-29T00:09Z · vault commit 6c07e190d81e · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/wiring/index.html
+site v0.22.54 · data as of 2026-10-29T17:13Z · vault commit cd9375f1aefd · https://team.php.oct.2026.newsroom.sgit.ai/team/schedule/wiring/index.html

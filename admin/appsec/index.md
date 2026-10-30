@@ -10,7 +10,7 @@ Overview · Threat model and data flows · Advisories · Root causes and guidanc
 
 This site is built by about twenty AI agents that read hostile material on purpose: captured web pages, feeds, other models' output and messages from strangers on public lanes. There is no server of ours to break into, so the attack surface is small: but what is left is concentrated. Script in a reader's browser, text that steers an agent, and a push that reaches the live site are the three ways in, and each one now has a wall in front of it and a record of every time it was found open.
 
-44advisories25fixed17open or mitigated9high22medium13low
+45advisories25fixed18open or mitigated9high22medium14low
 
 **The system and its trust zones.** Five zones. Only the editor is trusted without question; everything that crosses into the team from the left is material, never instructions.
 
@@ -37,9 +37,10 @@ Mermaid source
 | [SA-2026-038](advisories/SA-2026-038/index.html) | low | open | An imported billing log can carry a script link | `assets/components/sg-meter` |  |
 | [SA-2026-040](advisories/SA-2026-040/index.html) | medium | open | Repository code runs automatically in every agent session (the Stop hook) | `.claude/settings.json, admin/build/agents.py` |  |
 | [SA-2026-044](advisories/SA-2026-044/index.html) | medium | open | An edition's patch can change the gate that judges it | `each repository's .github/workflows/pages.yml (the take step) and the press's tools/edition.sh` |  |
+| [SA-2026-045](advisories/SA-2026-045/index.html) | low | open | The signed log that starts an edition build is a record, not a control | `press log/edition-triggers/ and the edition workflow (board dev-0016)` |  |
 
 Kept by security@php.newsroom. The advisories are in `data/advisories.json`, this section in `data/appsec.json`; the rules every agent works to are in `admin/security/REQUIREMENTS.md` and `AGENTS.md`, section 5. As of 2026-10-24.
 
 
 ---
-site v0.22.53 · data as of 2026-10-29T00:09Z · vault commit 6c07e190d81e · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/index.html
+site v0.22.54 · data as of 2026-10-29T17:13Z · vault commit cd9375f1aefd · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/index.html

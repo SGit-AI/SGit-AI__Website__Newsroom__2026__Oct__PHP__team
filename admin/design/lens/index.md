@@ -2,7 +2,7 @@
 
 A working prototype of a site that shapes itself to the reader in front of them: how long they have, who they are, what they want to do, and what they have seen; set once at the top right, applied on every page with no reload and no flash.
 
-> Prototype E for review, built from the data of release v0.22.53. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
+> Prototype E for review, built from the data of release v0.22.54. Not the live site. Every part of the page is listed here; the page shows the parts that fit the reader.
 
 This site shapes itself to you. Three taps, and you can change them any time, top right. 
 ### How long have you got?
@@ -13,7 +13,7 @@ The page below has already changed to fit that.
 Last one. 
 ### What do you want to do?
 
-Developing · data as of 29 October 2026, 00:09 UTC 
+Developing · data as of 29 October 2026, 17:13 UTC 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
 PHP is the software that WordPress and millions of other websites run on. A fix came out on 21 October 2026. Government cyber agencies have told organisations to install it now; the two US agencies add: take websites offline if you cannot. Phones and personal computers are not affected. 
@@ -39,7 +39,7 @@ A critical flaw in software that runs many websites, fixed on 21 October. Every 
 The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise. CISA listed both flaws as known exploited on 26 October, naming no victim: exploited is not the same as a confirmed compromise. 
 Internet-facing mod_php first, then FPM, then everything else. Where patching slips, apply php.net's temporary settings and record that each blocks a known path only. Alert on PHP workers spawning shells or fetching tools. Decide now who calls isolate or offline, and when. 
 Two classes: an out-of-memory longjmp leaving request memory uninitialised, and worker global state pointing at freed request memory across requests. mod_php was exploited before application code; FPM for the first flaw is disputed. The fix removes longjmp for OOM. A report of an incomplete fix is open. 
-Release v0.22.53. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
+Release v0.22.54. The site is rebuilt from the evidence vault; the board, the agents and their schedules are in the team console. 
 Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. On 26 October the US cyber agency CISA listed both flaws as known to be exploited, so update now if you run a site. As of 09:43 UTC on 27 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
 
  1 min+ aim: understand verify 
@@ -133,7 +133,7 @@ Not your phone or laptop: the flaw is on web servers. It affects organisations t
 
 #### Has anyone been hacked?
 
-Attackers have been trying: Cloudflare reports millions of attempts and Amazon a honeypot hit four days before disclosure. But as of 00:09 UTC on 29 October no named organisation has said it was broken into through this flaw. One security company, Dream Research, says a campaign using the flaws broke into 25 servers, three of them at a US government-affiliated organisation; it names no victim and no vendor, nobody has confirmed it, and The Next Web says it has not checked it. CISA listed both flaws as exploited on 26 October, which means it has evidence they are being exploited, but it names no victim. Two companies in Japan are named in reports of a break-in without saying how it happened: GMO is investigating one, and an Italian site reports that Square Enix confirmed unauthorised access to its systems. A Czech university says it stopped an attack. A researcher's decoy servers, left on an unpatched version on purpose, were broken into on 24 to 26 October: proof the attack works, not a victim. 
+Attackers have been trying: Cloudflare reports millions of attempts and Amazon a honeypot hit four days before disclosure. But as of 17:13 UTC on 29 October no named organisation has said it was broken into through this flaw. One security company, Dream Research, says a campaign using the flaws broke into 25 servers, three of them at a US government-affiliated organisation; it names no victim and no vendor, nobody has confirmed it, and The Next Web says it has not checked it. CISA listed both flaws as exploited on 26 October, which means it has evidence they are being exploited, but it names no victim. Two companies in Japan are named in reports of a break-in without saying how it happened: GMO is investigating one, and an Italian site reports that Square Enix confirmed unauthorised access to its systems. A Czech university says it stopped an attack. A researcher's decoy servers, left on an unpatched version on purpose, were broken into on 24 to 26 October: proof the attack works, not a victim. 
 
  1 min+ aim: understand verify for: study 
 
@@ -171,7 +171,7 @@ A fix has been available since 21 October. Organisations that run websites on PH
 Every government cyber agency says: install the fix now. If you cannot, the US agencies say take the website offline; the UK puts that after temporary mitigations, and several European agencies say cut it off from the public internet first.
  CISA NCSC UK CERT-EU 
 - 
-Attackers are trying to use the flaws, in large numbers: millions of attempts by one internet security company's count. On 26 October CISA, the US cyber agency, added both flaws to its list of flaws known to be exploited: it has evidence of exploitation, and names no victim. As of 00:09 UTC on 29 October, no named organisation has said it was broken into through this flaw. One security company, Dream Research, says a campaign using the flaws broke into 25 servers, three at a US government-affiliated organisation; it names no victim, nobody has confirmed it, and The Next Web says it has not checked it. Two security companies withdrew what they had said: Sophos a claimed successful break-in, and Palo Alto Networks' Unit 42, on 25 October, a statement tying an attack on a European government agency to the flaws. US banks and the large crypto platforms report none.
+Attackers are trying to use the flaws, in large numbers: millions of attempts by one internet security company's count. On 26 October CISA, the US cyber agency, added both flaws to its list of flaws known to be exploited: it has evidence of exploitation, and names no victim. As of 17:13 UTC on 29 October, no named organisation has said it was broken into through this flaw. One security company, Dream Research, says a campaign using the flaws broke into 25 servers, three at a US government-affiliated organisation; it names no victim, nobody has confirmed it, and The Next Web says it has not checked it. Two security companies withdrew what they had said: Sophos a claimed successful break-in, and Palo Alto Networks' Unit 42, on 25 October, a statement tying an attack on a European government agency to the flaws. US banks and the large crypto platforms report none.
  Matthew Prince, Cloudflare CEO on… CISA CISA 
 - 
 The advice is moving from 'install the fix' to 'and check whether you were already broken into'. Singapore's and Luxembourg's authorities now say so.
@@ -246,7 +246,7 @@ Where the 70% figure comes from. None of the pages that use it says how it was m
 - 
  confirmed The plan was to announce the fix on 22 October. Word leaked out on 20 October, so it was released a day early. 
 - 
- reported Attackers are trying, in large numbers: one internet security company reports millions of attempts, and Amazon reports a decoy server hit four days before the announcement. No named organisation has said it was broken into through these flaws, as of 00:09 UTC on 29 October. One security company, Dream Research, says it found a campaign that broke into 25 servers; it names no victim and nobody has confirmed it. The US government's official list of flaws known to be used in attacks added both on 26 October, naming no victim. 
+ reported Attackers are trying, in large numbers: one internet security company reports millions of attempts, and Amazon reports a decoy server hit four days before the announcement. No named organisation has said it was broken into through these flaws, as of 17:13 UTC on 29 October. One security company, Dream Research, says it found a campaign that broke into 25 servers; it names no victim and nobody has confirmed it. The US government's official list of flaws known to be used in attacks added both on 26 October, naming no victim. 
 - 
  confirmed Every agency says install the fix. They disagree on what to do if you cannot: the US says take the website offline, the UK lists that as a last resort, several European agencies say cut it off from the public internet, and some say nothing about it. 
 - 
@@ -429,7 +429,7 @@ The block is recorded in the vault.
 
 ### Everything else we hold
 
- Every claim (70) Every source (681) The timeline The numbers The code How this site knows 
+ Every claim (70) Every source (703) The timeline The numbers The code How this site knows 
 
 That is the page for the time you gave it. How this prototype works (for the editor and dev) 
 - Every part of every page is built, always. Each part says which settings show it: a time tier, an aim, a kind of reader. 
@@ -440,4 +440,4 @@ That is the page for the time you gave it. How this prototype works (for the edi
 - “Got it” marks a part as seen; Fade or Hide takes it out of the way on every page, until it changes.
 
 ---
-site v0.22.53 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html
+site v0.22.54 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/lens/index.html
