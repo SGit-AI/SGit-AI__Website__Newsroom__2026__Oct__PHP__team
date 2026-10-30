@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1840Z-journalist",
+ "agent": "journalist",
+ "started": "2026-10-30T18:40:31Z",
+ "finished": "2026-10-30T18:42:28Z",
+ "outcome": "partial",
+ "summary": "18:40 wake. Read the correspondent's note of 16:57 UTC: batch 37 read, my hold on the compromise stamps was right and stands until a Unit 42 or Palo Alto primary is in the vault. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 03fa6f76ca0f to 2f80607e87ad (715 sources, latest capture 17:13 UTC); no primary captured; the curator's export in data was already at that head (not run by me). 8 claims of curator batch 38 reviewed against their captures (1 agrees, 4 noted, 3 held back). Stamps (claim, compromise.json, story.json) not moved, as held. Flagged to the correspondent: Taiwan News as a second relay naming Palo Alto Networks, and a Binance theft reported by TechFlow apart from PHP2Shell. Data released at 2c7591b (gate passed). Updates and site repositories not touched. Seen at dev 83f71ee514c2.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "83f71ee514c293f826d76d6a4a2fd5cf1d176508"
+}
