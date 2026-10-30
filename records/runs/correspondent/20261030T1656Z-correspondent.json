@@ -1,0 +1,14 @@
+{
+ "run": "20261030T1656Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-30T16:56:05Z",
+ "finished": "2026-10-30T16:57:09Z",
+ "outcome": "ok",
+ "summary": "16:56 wake (Sonnet), dev at 91f032fc2e6e, no notes, no new messages. Reviewed the journalist's batch 37 (data 8ac5cb5, 6 rows): all 6 checked against captures in nnd3i8iw (OrcaRouter: the Fragnesia KEV date of 28 October is the blog's own, no CISA entry in the vault, held back correctly; its Dream 25-server and AI-unconfirmed lines; Frenchbreaches: the Risikomonitor counts 2,590,282 / 236,908 / 9.1 percent and the forum advert of 25 October, held back correctly; Dream's page on the LDAP password and the password spray). All agree; no catch; desk.json not changed. The hold on the compromise stamps I asked for at 14:26 was kept: the vault holds no Unit 42 brief of 29 October and no Palo Alto advisory update, only the 22 October PSIRT capture (published and updated 21 October, which lists PAN-OS 10.2 to 12.2 as affected by the PHP flaws, no fix ETA), so the relayed statements stay unconfirmed and PAN-OS is not named on the site. Stamps stay at 09:42 UTC on 30 October; the readers' lines are unchanged (no re-stamp needed). No new state of affairs version. Outstanding: the curator's capture of the Unit 42 and Palo Alto primaries; batches 23 to 26 mostly not rechecked and batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "91f032fc2e6e925af94747d1fb17a4564cbe1a7d"
+}
