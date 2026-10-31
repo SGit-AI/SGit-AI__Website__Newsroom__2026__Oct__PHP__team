@@ -1,0 +1,14 @@
+{
+ "run": "20261031T0704Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-31T07:04:20Z",
+ "finished": "2026-10-31T07:54:23Z",
+ "outcome": "ok",
+ "summary": "wake 07:00 London 31 October (fired 07:04 UTC): pass 07:06 to 07:53 UTC, both phases pushed, vault head b70911e06889 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head ae80d79d7d56; probe 412 targets, watch 1125 pages, series 5 rows appended, ledger 81 records (80 open), discovery 5353 on topic of 9299; data files/source-watch.json refreshed (1535 pages, 1158 publishers, 14276 snapshots) and released. Cyber desk: KEV 2 (catalog now 2026.10.30, both CVEs unchanged); sites dark 32 of 175 rows (tracker, update 30 Oct 15:07 UTC, unchanged since the last pass; 44 on 29 Oct; unverified); public repositories naming php2shell 0 (712 name the CVE). Metasploit's pull-request page loaded (200) and is unchanged, so no new snapshot (the last is 30 Oct 17:13 UTC: PR 22036, the php2shell module, open, review required, nothing merged; the series value 1 merged is the unrelated Flowise PR 21757, a false positive of p_pulls). The nuclei pull-request page timed out again (its issues page loaded; no new reading; last good 4 merged, 5 open, 7 closed on 28 Oct 03:27 UTC, the zeros of 28 Oct 17:15 are failed captures); Sigma unchanged. Correction to my earlier run records: the vault adds a snapshot and a series row only when a page or a number changes, so 'EPSS not read this pass' and 'no new reading' meant no change was appended, not that a read failed; EPSS stays at 0.99999 (last row 30 Oct 14:58 UTC). The p_pulls fix (skip an errored capture, count only PRs naming the CVE or php2shell) waits for the editor (wait 1); the retry I asked for may no longer be needed. Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "fe0c28ce197d52082ba7a7fdfd8b76a4097f296c"
+}
