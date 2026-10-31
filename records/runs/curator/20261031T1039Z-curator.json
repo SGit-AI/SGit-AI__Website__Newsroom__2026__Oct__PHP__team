@@ -1,0 +1,14 @@
+{
+ "run": "20261031T1039Z-curator",
+ "agent": "curator",
+ "started": "2026-10-31T10:39:57Z",
+ "finished": "2026-10-31T10:48:43Z",
+ "outcome": "ok",
+ "summary": "10:30 wake of 31 October. Team head b33e06e20bfc. Queue 596 rows (written 10:12 UTC), 1 pending (the researcher's 09:42 UTC capture), read in full; batch 40: 1 source promoted (IT-Administrator, on the Censys dashboard's state at 07:15 UTC on 26 October), 6 claims cur40-, including the dashboard's own method caveats (about 57% of services hide their version, banner counts miss backports, honeypots dropped, patched systems show as safe only after the next scan); hosters named by network and not blamed; scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 10:46:56-10:47:13 UTC, head b79970cfb056 (718 sources, 784 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the one snapshot folder cloned with --path, about 10:41 to 10:46 UTC, five minutes (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "7e6a7061140792edd6d251d65d23a7274d68697b"
+}
