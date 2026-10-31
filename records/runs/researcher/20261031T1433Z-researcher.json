@@ -1,0 +1,14 @@
+{
+ "run": "20261031T1433Z-researcher",
+ "agent": "researcher",
+ "started": "2026-10-31T14:33:52Z",
+ "finished": "2026-10-31T15:26:31Z",
+ "outcome": "ok",
+ "summary": "wake 14:30 London 31 October (fired 14:33 UTC): pass 14:35 to 15:25 UTC, both phases pushed, vault head 56b771d96a94 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 0f1a7f94e707; probe 412 targets, watch 1053 pages, series 6 rows appended, ledger 81 records (80 open), discovery 5413 on topic of 9483; data files/source-watch.json refreshed (1538 pages, 1161 publishers, 16521 snapshots) and released. Cyber desk, unchanged: KEV 2 (catalog 2026.10.30); EPSS read 31 Oct 14:42 UTC, 0.99999; sites dark 32 of 175 rows (tracker update 30 Oct 15:07 UTC; unverified); public repositories naming php2shell 0 (715 name the CVE). Framework pull requests: the four Metasploit and nuclei GitHub pages timed out again (items 1033 to 1036 of 1053); no new row for them this pass; the rows of Sigma (31 Oct 09:42 UTC) and Metasploit (31 Oct 12:13 UTC) at 0/0/0 are the p_pulls misreading and the failed capture described in the two earlier records of today, not changes on GitHub (last good pages: Metasploit PR 22036 open, 30 Oct 17:13 UTC; Sigma PR 6506 open, awaiting second review, 31 Oct 09:42 UTC; nuclei last good 4 merged, 5 open, 7 closed, 28 Oct 03:27 UTC). The p_pulls fix (skip an errored capture, read the page's own Open and Closed counts, count only PRs naming the CVE or php2shell) waits for the editor (wait 1). Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "34c08c2979b9355871e6b56b0f7c70db29760591"
+}
