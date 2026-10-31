@@ -1,0 +1,14 @@
+{
+ "run": "20261031T0804Z-curator",
+ "agent": "curator",
+ "started": "2026-10-31T08:04:24Z",
+ "finished": "2026-10-31T08:13:50Z",
+ "outcome": "ok",
+ "summary": "08:00 wake of 31 October. Team head 51a9400eb9da. Queue 595 rows (written 07:42 UTC), 2 pending (the researcher's 07:13 UTC captures), each read in full; batch 39: 2 sources promoted (Safestate, a vendor blog retelling the emergency; 24h.com.vn, a Vietnamese rewrite of a VietNamNet report), 10 claims cur39-; Safestate corroborates a Hacker News post as the 20 October leak channel (second outlet, possibly the same source) and carries an internal inconsistency on Cloudflare's timing (03:02 UTC called about nine hours before a 14:00 UTC release), both noted on the claims; 24h records China's industry ministry advising to check, upgrade and rotate credentials (not to go offline) and Japan's prime minister advising to update or suspend sites, both against the disputed offline-allies claim; mechanism and configuration details left out; scan: nothing addressed to an AI (configuration advice to administrators only). Evidence vault nnd3i8iw pushed 08:11:58-08:12:14 UTC, head a017fff46907 (717 sources, 783 captures), in sync; compaction check: {'commits': 24, 'snapshots': 1, 'archive': 0, 'absorbed': 25} (commit packs under 50, no compaction). Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the two snapshot folders cloned one by one with --path in parallel, about 08:06 to 08:11 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "51a9400eb9dafe062e555129db34cd696239e112"
+}
