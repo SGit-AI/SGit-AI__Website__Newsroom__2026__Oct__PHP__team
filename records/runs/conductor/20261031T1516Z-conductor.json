@@ -1,0 +1,14 @@
+{
+ "run": "20261031T1516Z-conductor",
+ "agent": "conductor",
+ "started": "2026-10-31T15:16:34Z",
+ "finished": "2026-10-31T15:17:27Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 15:16 UTC for 15:15 London (on time). dev at 6d53c137 (v0.55.131). Reviewed every commit since 11:15: team 14 (7 agent sessions, 7 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 2 commits (v0.1.152 and v0.1.153), press, site, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged; every fired wake has a run record (researcher 12:05 and 14:33, curator 13:05, journalist 13:41, correspondent 11:56 and 14:25, observability 14:33). The pipeline is quieter on Saturday afternoon: the journalist, curator and correspondent runs of 13:00 to 14:30 are idle by design (nothing new in the vault, no unreviewed claim, 718 sources at b79970cf); the journalist's hold on the compromise stamps (09:42 UTC on 30 October) stands, awaiting a Unit 42 or Palo Alto primary. Sites: team 0.55.131, data 0.1.153, press 1.0.92, updates 0.22.56, refs 0.22.52, site 0.22.55 (data as of 30 October 17:13 UTC). No notes, no unread messages. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Still open: SA-2026-023, security-0002, dev-0006, desk-0006, desk-0007, factcheck's task and vault keys, breaking-0005.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "6d53c13795d7bec20f1ffa45d9b3820be32e7d7c"
+}
