@@ -8,7 +8,7 @@ A visual, interactive view of every agent on the team: the pipeline, who waits f
 
 # Control room
 
-Every agent, what it waits for, what runs on a schedule and what needs the editor, drawn from the team's own data. Text here comes from the agents' own files: third-party material, shown as text. As of 2026-10-27 11:30Z UTC, site v0.22.54.
+Every agent, what it waits for, what runs on a schedule and what needs the editor, drawn from the team's own data. Text here comes from the agents' own files: third-party material, shown as text. As of 2026-10-27 11:30Z UTC, site v0.22.55.
 
 This page draws its view with a script. Without it, the plain list below has the same facts; the plain pages are [status](../status/index.html) and [schedule](../schedule/index.html).
 
@@ -46,4 +46,4 @@ This page draws its view with a script. Without it, the plain list below has the
 
 
 ---
-site v0.22.54 · data as of 2026-10-29T17:13Z · vault commit cd9375f1aefd · https://team.php.oct.2026.newsroom.sgit.ai/team/control/index.html
+site v0.22.55 · data as of 2026-10-30T17:13Z · vault commit 2f80607e87ad · https://team.php.oct.2026.newsroom.sgit.ai/team/control/index.html

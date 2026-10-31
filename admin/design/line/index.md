@@ -2,17 +2,17 @@
 
 The front page of the line prototype: one band under the masthead that says one thing to the persona in front of it, and the page under it ordered for that role, at the depth they asked for.
 
-> Prototype F for review, built from the data of release v0.22.54. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
+> Prototype F for review, built from the data of release v0.22.55. Not the live site. Every part of the page is listed here; a reader sees the parts written for their role.
 
-Developing · data as of 29 October 2026, 17:13 UTC 
+Developing · data as of 30 October 2026, 17:13 UTC 
 ## Two serious security flaws in PHP, the software behind many of the world's websites
 
 A fix came out on 21 October. Whoever runs a website needs to install it, and restart it. 
 Fixed in PHP 8.5.12, 8.4.27, 8.3.36, 8.2.35. An update only counts once the service restarts. 
 Target 8.5.12, 8.4.27, 8.3.36 or 8.2.35; restart every worker, rebuild images, verify with php -v inside the running container. 
 Your answer 
-A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. On 26 October CISA added both flaws to its Known Exploited Vulnerabilities catalog: it holds evidence of exploitation, and names no victim. As of 09:43 UTC on 27 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread and a researcher's decoy servers were broken into. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
-Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. On 26 October the US cyber agency CISA listed both flaws as known to be exploited, so update now if you run a site. As of 09:43 UTC on 27 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
+A critical flaw in software that runs many websites, fixed on 21 October. Every agency says update first; some say take systems offline if you cannot. On 26 October CISA added both flaws to its Known Exploited Vulnerabilities catalog: it holds evidence of exploitation, and names no victim. As of 09:42 UTC on 30 October, the latest capture in the evidence vault, no named organisation has said it was broken into through this flaw, though attempts are widespread and a researcher's decoy servers were broken into. Your questions are: do we know every system running PHP, are they updated and restarted, and who can pull a system offline and how fast. 
+Two serious holes were found in PHP, software that runs on the servers behind a large share of websites. They were fixed on 21 October 2026. Your phone and laptop are not the target: websites are, and it is the job of whoever runs them to update. Some sites were taken offline as a precaution. On 26 October the US cyber agency CISA listed both flaws as known to be exploited, so update now if you run a site. As of 09:42 UTC on 30 October, the latest capture in the evidence vault, no named organisation has said it was compromised through php2shell. 
 Internet-facing mod_php first, then FPM, then everything else. Where patching slips, apply php.net's temporary settings and record that each blocks a known path only. Alert on PHP workers spawning shells or fetching tools. Decide now who calls isolate or offline, and when. 
 Target 8.5.12, 8.4.27, 8.3.36 or 8.2.35; restart every worker and rebuild images. Until then: session.upload_progress.enabled=0 in php.ini or the pool, low post_max_size, fatal_error_backtraces=0 on 8.5, pm.max_requests=1 on FPM. Verify with php -v inside the running container. Keep session.upload_progress.enabled=0 after the update as well: CVE-2026-115560, published by PHP on 23 October (as Cloudflare and SOCRadar report), affects the fixed releases under a rare session setting and is fixed only in the next regular release. 
 The 70% figure is a share of websites that use PHP, restated as a share of the Internet. The release was 21 October, not 22. Three parties claim the discovery; their dates do not conflict, their framing does. No agency has confirmed a successful compromise. CISA listed both flaws as known exploited on 26 October, naming no victim: exploited is not the same as a confirmed compromise. 
@@ -217,4 +217,4 @@ ity team replied on the mailing list on 22 October, and this site will settle th
  PHP-FPM For CVE-2026-109618 the GitHub advisory says no complete FPM exploit has been demonstrated; the PHP Foundation blog says RCE was confirmed o
 
 ---
-site v0.22.54 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/index.html
+site v0.22.55 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/line/index.html

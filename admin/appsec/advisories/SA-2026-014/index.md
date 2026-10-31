@@ -53,4 +53,4 @@ The gate fails on a message whose sender disagrees with its file name, repeats a
 
 
 ---
-site v0.22.54 · data as of 2026-10-29T17:13Z · vault commit cd9375f1aefd · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-014/index.html
+site v0.22.55 · data as of 2026-10-30T17:13Z · vault commit 2f80607e87ad · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-014/index.html

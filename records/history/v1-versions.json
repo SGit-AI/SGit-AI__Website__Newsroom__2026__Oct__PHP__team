@@ -1,6 +1,15 @@
 {
- "current": "0.22.54",
+ "current": "0.22.55",
  "versions": [
+  {
+   "version": "0.22.55",
+   "date": "2026-10-31",
+   "title": "press: dev: the daily wake's signed log to start the edition build (releases waiting since 0.22.54); data: journalist: batch 38 reviewed (8 claims); compromise stamps still held at the 09:42 pass, no Unit 42 or Palo Alto primary yet; team: desk: run record of the 00:40 wake, 30 October closed and 31 October opened; site: desk: close 30 October, open 31 October (the days); refs: dev: a signed log entry in the README, so refs' deploy takes edition 0.22.54 (the daily wake); updates: dev: a signed log, so updates's deploy takes edition 0.22.54 (the daily wake)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "2f80607e87ad",
+   "reconstructed": false
+  },
   {
    "version": "0.22.54",
    "date": "2026-10-30",

@@ -2,7 +2,7 @@
 
 A three-column working view for a security lead: their reading path and the site by task on the left, what changed since the last visit and the next three actions in the middle, and the state of the evidence as charts on the right.
 
-> Mockup B for review, built from the data of release v0.22.54. Not the live site.
+> Mockup B for review, built from the data of release v0.22.55. Not the live site.
 
 S 
  Sam 
@@ -13,7 +13,7 @@ Your reading path
 2 of 5 read · next: Exploitation signals 
  Today 9 new What to do The incident Detection and defence The agencies 16 Every claim 70 Ask 
 
-Since your last visit · 29 October 2026, 17:13 UTC 
+Since your last visit · 30 October 2026, 17:13 UTC 
 
 ## 9 things are new, 3 changed. Two matter for your runbook.
 
@@ -44,23 +44,23 @@ Alert on a PHP worker spawning a shell or a downloader. A clean access log prove
 
  All Facts Timeline Questions Stories 
 
- New question v0.22.54 
+ New question v0.22.55 
 #### Has anyone actually been hacked?
 
 ✓ 
 
- New front v0.22.54 
+ New front v0.22.55 
 #### Front page: right now
 
 ✓ 
 
- New front v0.22.54 
+ New front v0.22.55 
 #### Front page: the core facts
 
 ✓ 
 
- New fact reported v0.22.54 
-#### As of 17:13 UTC on 29 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both
+ New fact reported v0.22.55 
+#### As of 09:42 UTC on 30 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both
 
  CISA CISA Huntress Amazon 
 ✓ 
@@ -123,4 +123,4 @@ Amazon: Proof-of-concept attempts begin, then six hours of attempts from anonymi
 8.1 and older: source backports only.
 
 ---
-site v0.22.54 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html
+site v0.22.55 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html
