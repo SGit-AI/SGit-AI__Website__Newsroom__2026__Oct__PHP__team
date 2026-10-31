@@ -1,0 +1,14 @@
+{
+ "run": "20261031T1305Z-curator",
+ "agent": "curator",
+ "started": "2026-10-31T13:05:09Z",
+ "finished": "2026-10-31T13:07:20Z",
+ "outcome": "idle",
+ "summary": "13:00 wake of 31 October (fired 13:05 UTC). Team head 08629f09fb6f. Nothing new: the queue (596 rows, written 10:12 UTC) has no pending row; the researcher's 12:07 to 12:55 UTC pass is already in my pull of the watch and added no queue rows. No commit to the evidence vault (head b79970cfb056, in sync, 718 sources, 784 captures) and no data release: data's files/vault.json already names that head. sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); no snapshot folder needed (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "08629f09fb6fbf5d5a99fc99cd47feb67e6edcd2"
+}
