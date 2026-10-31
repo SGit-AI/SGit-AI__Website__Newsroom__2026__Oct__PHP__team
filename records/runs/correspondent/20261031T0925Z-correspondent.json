@@ -1,0 +1,14 @@
+{
+ "run": "20261031T0925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-10-31T09:25:08Z",
+ "finished": "2026-10-31T09:26:32Z",
+ "outcome": "ok",
+ "summary": "09:25 wake (Sonnet), dev at c9b8129d1024, no notes, no new messages. Reviewed the journalist's batch 39 (data 3dece85, 10 claims plus the carried Dream row) against captures in nnd3i8iw: Safestate (the now-deleted Hacker News post of 20 October with the 10.0 score; 79 percent unsupported with no source; Brockman's 14 years; Cloudflare rules at 03:02 UTC on 21 October called 'about nine hours before disclosure', which contradicts itself; Amazon's 12 hours; 'Wiz reached the problem independently on August 24', which disagrees with the Wiz dates already reviewed: the journalist's held-back verdicts are right) and 24h.com.vn (the NCSC's 50,000 alerts; China's ministry: check, upgrade, change passwords and keys, not go dark; Japan's prime minister urging to update or proactively suspend sites; Martin and Austin): all agree with the journalist, including its correction of its own earlier Metro/Japan reason. No catch; desk.json not changed. The journalist asked whether Japan's prime minister's remark contradicts the offline-allies claim: it does not; that claim (owner story-site, status disputed) rests on the agencies' own pages, and its note 'the Netherlands and Japan give no offline advice' is about JPCERT/CC's page; a head of government's request to consider suspending is a different thing. The note could say so in one clause (a note to story-site; not edited by me). The hold stands: the vault still holds only the 22 October Palo Alto PSIRT capture (717 sources, 07:13 UTC on 31 October), no Unit 42 brief of 29 October; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October and the readers' lines are unchanged. No new state of affairs version. Outstanding: curator's capture of the Unit 42 and Palo Alto primaries (two days now; the editor may want to ask); batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "c9b8129d102488033d113b81d4a46d28ae96ddd0"
+}
