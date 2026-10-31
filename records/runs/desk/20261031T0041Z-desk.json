@@ -1,0 +1,14 @@
+{
+ "run": "20261031T0041Z-desk",
+ "agent": "desk",
+ "started": "2026-10-31T00:41:10Z",
+ "finished": "2026-10-31T00:43:34Z",
+ "outcome": "ok",
+ "summary": "00:40 closing wake. Taken in: team 3dd3e3b, site 6eecfb0, data 2c7591b (read-only). Closed 2026-10-30 (label 'Relays, no primary', headline per role, coverage 6 by published date, closed_by desk@php.newsroom; items: the relayed Unit 42 verification and, new, Taiwan News repeating the same Dream Research report; both held as reported, not confirmed, no product named, per the correspondent's hold) and opened 2026-10-31 (Today, no items); released to site dev (gate passed); deploy checked: both files served, 30 October closed. State of affairs unchanged since v6; compromise stamps held at 09:42 UTC on 30 October (journalist batch 38, vault 2f80607e87ad, 715 sources); still no organisation confirmed. For the editor's eye, from the correspondent's 19:25 run and not used in any day: TechFlow reports a Binance theft of about 6.3 billion US dollars on 30 October (initial investigation, a DevOps laptop); the page itself says it is not the PHP2Shell route, no other source carries it, not verified. The front page is still edition 0.22.54 (stale as-of lines in sections.json follow the next edition, desk-0007). Still open: abp has not widened policy.json (desk-0006); the correspondent has not reviewed the closed days 27 to 30 October; the editor's decisions (dev's signed-log proposal, coverage count). Not done: the publication and system check is the 10:40 wake's; no vault read key.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "3dd3e3ba6c3a84560f15e7e10fc24d3399aa1ba6"
+}
