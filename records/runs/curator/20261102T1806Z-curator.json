@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1806Z-curator",
+ "agent": "curator",
+ "started": "2026-11-02T18:06:00Z",
+ "finished": "2026-11-02T18:15:24Z",
+ "outcome": "ok",
+ "summary": "18:00 wake of 2 November (fired 18:06 UTC). Team head 7577f8cb26f2. Queue 605 rows (written 16:30 UTC), 1 pending (the researcher's 15:57 UTC capture), read in full; batch 44: 1 source promoted (Let's AI, a Hebrew explainer for business owners), 5 claims cur44-, including Wiz's 27 October measurement of about 67% fewer exposed vulnerable machines with the article's own caution about what the fall means, outage notices from Newfoundland and Labrador, Latvia and Lancashire County Council, and a separate Windows Brotli fix; scan: nothing addressed to an AI (an AI-tool menu only). Evidence vault nnd3i8iw pushed 18:13:26-18:13:44 UTC, head e4bbd16da443 (727 sources, 793 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the one snapshot folder cloned with --path, about 18:07 to 18:12 UTC, five minutes (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "7577f8cb26f2960844062bf477518d8587e2c129"
+}
