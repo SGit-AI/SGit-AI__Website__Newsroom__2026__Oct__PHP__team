@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1311Z-curator",
+ "agent": "curator",
+ "started": "2026-11-02T13:11:00Z",
+ "finished": "2026-11-02T13:19:57Z",
+ "outcome": "ok",
+ "summary": "13:00 wake of 2 November (fired 13:11 UTC). Team head 33dc32c0fa39 (the start banner printed 571e0e697d78; more commits landed in between). Queue 604 rows (written 12:54 UTC), 2 pending (the researcher's 12:20 UTC captures), each read in full; batch 43: 2 sources promoted (RedUSERS, a summary of a paid guide; Digitech, relaying The Verge), 6 claims cur43-; Digitech's 'about twenty years' for the flaw's age recorded as unverified against the vault's other accounts; two claim notes with clumsy cross-references were corrected in the working copy before the commit, nothing wrong pushed; the guide's technical and configuration detail left out; scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 13:18:12-13:18:29 UTC, head edfc9a499efb (726 sources, 792 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the two snapshot folders cloned one by one with --path in parallel, about 13:12 to 13:17 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "fba774ce4e60638dd4e44738151a19d8b2296ce5"
+}
