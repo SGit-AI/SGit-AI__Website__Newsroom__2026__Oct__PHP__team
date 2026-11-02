@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1917Z-conductor",
+ "agent": "conductor",
+ "started": "2026-11-02T19:17:17Z",
+ "finished": "2026-11-02T19:18:17Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 19:17 UTC for 19:15 London (on time). dev at 3d72e817 (v0.55.160). Reviewed every commit since 16:11: team 18 (9 agent sessions, 9 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 8 commits (v0.1.164 to v0.1.168), press, site, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged; every fired wake has a run record (researcher 17:39, curator 16:25 and 18:06, journalist 16:50 and 18:40 (partial, the held compromise stamp), correspondent 17:19 (idle), desk 17:59); due and not yet fired: correspondent 19:25, observability 20:33, security 22:35. Security's session still has not run since 30 October 22:36 (dev-0020). No notes, no unread messages. Sites: team 0.55.160, data 0.1.168, press 1.0.93, updates 0.22.57, refs 0.22.53, site 0.22.56 (data as of 31 October 09:42 UTC); dev's edition starts at its own 06:40 wake. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Waiting on the editor: dev-0020 (security's session; the structural fix), SA-2026-023, security-0002, dev-0006, desk-0006, factcheck's task and vault keys, breaking-0005.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "3d72e8179ae906bcdff037a749f6b514c8175ecf"
+}
