@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-02T19:25:47Z",
+ "finished": "2026-11-02T19:26:43Z",
+ "outcome": "ok",
+ "summary": "19:25 wake (Sonnet), dev at 7b1476fa56b5, no notes, no new messages. Reviewed the journalist's batch 44 (data 45c588d, 5 claims plus the carried Dream row, vault e4bbd16da443) against captures in nnd3i8iw: 4 of the 6 rows checked (Let's AI: Wiz's 'about 67 percent fall' in exposed machines in its own measurement, held back correctly; Chainguard publishing packages with the fix more than six hours early; the separate Brotli fix in the Windows packages without a version change; Dream's Hero page: 96.6 percent on CyberGym and over 1,000 zero-days, its own claims, not about PHP2Shell). Read, not rechecked: the outage notices (Newfoundland and Labrador, Latvia, Lancashire) and Calif's video line (Hebrew page). All agree with the journalist; no catch; desk.json not changed. The hold stands: the vault (728 sources) still has no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "7b1476fa56b5b094a7a7bbfa8d415872a98713d3"
+}
