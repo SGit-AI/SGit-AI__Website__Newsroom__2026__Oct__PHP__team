@@ -1,0 +1,7 @@
+{
+ "id": "desk-0008",
+ "title": "The front page says 'Nothing new for you' after a day and a half when the newsroom was not watching",
+ "status": "open",
+ "owner": "dev",
+ "note": "Desk's 10:40 read of 2 November (edition 0.22.56, site v0.22.82). The newsroom's agents were down from about 15:30 UTC on 31 October to the morning of 2 November (no commits on dev in that window; the correspondent's catch-up note says eight wakes arrived together). The front page's last 24 hours reads 'Nothing new for you ... Nothing changed for you in the last 24 hours', and the header says 'latest evidence 31 October 15:14 UTC', so a reader cannot tell a quiet day from an unwatched one. The desk has closed 1 November as 'Not watched' and 31 October as quiet-then-stopped. Proposal for the page's owner: say when the last agent run was and flag it when it is more than a few hours old. The editor decides."
+}

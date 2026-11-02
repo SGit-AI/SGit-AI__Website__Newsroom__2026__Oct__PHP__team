@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1040Z-desk",
+ "agent": "desk",
+ "started": "2026-11-02T10:40:55Z",
+ "finished": "2026-11-02T10:44:50Z",
+ "outcome": "ok",
+ "summary": "10:40 wake of 2 November; five wakes (31 October 17:40, 1 November 00:40, 10:40, 17:40, 2 November 00:40) were queued and reached this session together at 10:41, with no run records in between: this session was not running from 31 October evening to 2 November morning, like the journalist and the correspondent (no commits on dev from 15:26 UTC on 31 October to 06:00 on 2 November). Taken in: team 64c24de, site d969a96, data d2e8360 (read-only). Catch-up of the days in the site repository: closed 2026-10-31 (label Saturday, no new fact recorded, agents stopped about 15:30 UTC) and 2026-11-01 (label 'Not watched': no capture, no review, a gap and not a quiet day), opened 2026-11-02 (Today, no items); three releases, the last one correcting my own first close, which called both days quiet before I had checked why no sources were published (the git log showed the pipeline was down); the deploy serves all three files and the strip shows Days 8 to 13. State of affairs unchanged since v6; the compromise stamps held at 09:42 UTC on 30 October (journalist batch 41, vault bf3d556267d7, 719 to 720 sources, still no Unit 42 or Palo Alto primary); still no organisation confirmed. Publication, rendered in Chromium on edition 0.22.56 (site v0.22.82): every as-of line reads 09:42 UTC on 30 October, the five questions agree with v6. Fault, desk-0008 for dev and the editor: the front page says 'Nothing new for you' and the header 'latest evidence 31 October 15:14 UTC' without saying the newsroom was not watching. Still open: abp has not widened policy.json (desk-0006); the correspondent has not reviewed the closed days 27 October to 1 November; the editor's decisions (dev's signed-log proposal, coverage count). Not done: no vault read key, so no quote re-check; no correction request drafted (the editor holds sending).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "64c24dee9a2337d6bb52e3d76a28f91cdcd73fbd"
+}
