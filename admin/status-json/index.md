@@ -19,10 +19,10 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 | `story` | "php2shell" |
 | `cves` | ["CVE-2026-109618", "CVE-2026-109619"] |
 | `status` | "developing" |
-| `version` | "0.22.55" |
-| `data_as_of` | "2026-10-30T17:13Z" |
-| `vault_commit` | "2f80607e87ad" |
-| `counts` | {"sources": 715, "captures": 781, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 35, "disputed": 9, "contradicted": 2, "unverified": 4}, "event |
+| `version` | "0.22.56" |
+| `data_as_of` | "2026-10-31T09:42Z" |
+| `vault_commit` | "b79970cfb056" |
+| `counts` | {"sources": 718, "captures": 784, "claims": 70, "claims_by_status": {"confirmed": 20, "reported": 35, "disputed": 9, "contradicted": 2, "unverified": 4}, "event |
 | `headline_facts` | [{"id": "two-cves-9.2", "text": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and |
 | `latest_story` | {"title": "A vendor says a campaign rooted 25 servers, two days before we saw it. What the report says, and what it leaves open", "url": "https://php.oct.2026.n |
 | `links` | {"front": "https://php.oct.2026.newsroom.sgit.ai/index.html", "sources": "https://php.oct.2026.newsroom.sgit.ai/sources/index.html", "claims": "https://php.oct. |
@@ -49,12 +49,12 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
   "CVE-2026-109619"
  ],
  "status": "developing",
- "version": "0.22.55",
- "data_as_of": "2026-10-30T17:13Z",
- "vault_commit": "2f80607e87ad",
+ "version": "0.22.56",
+ "data_as_of": "2026-10-31T09:42Z",
+ "vault_commit": "b79970cfb056",
  "counts": {
-  "sources": 715,
-  "captures": 781,
+  "sources": 718,
+  "captures": 784,
   "claims": 70,
   "claims_by_status": {
    "confirmed": 20,
@@ -164,4 +164,4 @@ One small file at the site root, [/status.json](https://php.oct.2026.newsroom.sg
 
 
 ---
-site v0.22.55 · data as of 2026-10-30T17:13Z · vault commit 2f80607e87ad · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html
+site v0.22.56 · data as of 2026-10-31T09:42Z · vault commit b79970cfb056 · https://team.php.oct.2026.newsroom.sgit.ai/admin/status-json/index.html

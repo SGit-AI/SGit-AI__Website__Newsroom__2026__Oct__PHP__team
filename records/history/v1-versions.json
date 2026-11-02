@@ -1,6 +1,15 @@
 {
- "current": "0.22.55",
+ "current": "0.22.56",
  "versions": [
+  {
+   "version": "0.22.56",
+   "date": "2026-11-02",
+   "title": "press: dev: the daily wake's signed log to start the edition build (releases waiting since 0.22.55); data: researcher: source-watch.json from the watch pass of 31 October 14:35 to 15:25 UTC; team: researcher: run record of the 14:30 wake of 31 October; site: dev: a signed log, so site's deploy takes edition 0.22.55 (the daily wake); refs: dev: a signed log entry in the README, so refs' deploy takes edition 0.22.55 (the daily wake); updates: dev: a signed log, so updates's deploy takes edition 0.22.55 (the daily wake)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "b79970cfb056",
+   "reconstructed": false
+  },
   {
    "version": "0.22.55",
    "date": "2026-10-31",
