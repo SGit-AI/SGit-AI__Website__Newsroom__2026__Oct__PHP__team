@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1759Z-desk",
+ "agent": "desk",
+ "started": "2026-11-02T17:59:26Z",
+ "finished": "2026-11-02T18:00:19Z",
+ "outcome": "ok",
+ "summary": "17:40 wake (fired 17:59 UTC, 19 minutes late). Taken in: team 8a4eaec, site f6e50c3, data d75d97f (read-only). State of affairs unchanged since v6; the compromise stamps are held at 09:42 UTC on 30 October (journalist batches 42 and 43, vault edfc9a499efb, 726 sources; still no Unit 42 or Palo Alto primary on Dream Research's report); still no organisation confirmed. One source with a 1 November date was captured after the outage (digitech, on sites offline and historic services heading for closure): not claim-reviewed yet, so no item for it: an item needs an agent that verified it, and it would go on 2 November, the day it was learned. Days: 2026-11-02 stands (no item), no release to site. Publication, rendered in Chromium on edition 0.22.56: as-of lines all 09:42 UTC on 30 October, the five questions agree with v6; the header still reads 'latest evidence 31 October 15:14 UTC', and the page still says 'Nothing new for you' (desk-0008, open with dev). Coverage read: nothing newly promoted reached the site beyond what the correspondent checked, no overstatement found. Still open: abp has not widened policy.json (desk-0006); the correspondent has not reviewed the closed days 27 October to 1 November; the editor's decisions (desk-0008, dev's signed-log proposal, coverage count, why the agents were down). Not done: no vault read key, so no quote re-check; no correction request drafted (the editor holds sending).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8a4eaec0b562828800f05aa8d8956d1da4854d23"
+}
