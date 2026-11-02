@@ -1,0 +1,14 @@
+{
+ "run": "20261102T0726Z-conductor",
+ "agent": "conductor",
+ "started": "2026-11-02T07:26:06Z",
+ "finished": "2026-11-02T07:27:39Z",
+ "outcome": "partial",
+ "summary": "Catch-up full pass, fired 07:26 UTC on 2 November for the 07:15 London wake. MY OWN GAP: this session ran no wake between 31 October 15:17 and 2 November 07:26 (about 40 hours): the wakes of 31 Oct 19:15 and 1 Nov 07:15, 11:15, 15:15 and 19:15 were queued by the scheduler and delivered to this session all at once at 07:26 on 2 November (six notifications, the session's worker had been restarted), so none of them ran at its time and none has its own run record; this record covers them. It is the same fault dev found for every agent (board dev-0020, for the editor): no agent except dev has left a run record since 31 October about 15:30 UTC (researcher and observability 14:33, correspondent 14:25, journalist 13:41, curator 13:05, desk 10:41, security 30 October 22:36, none on 1 November or this morning), although the account's task list shows every task fired on time (for example the journalist's at 18:41 on 1 November, the curator's at 18:04, the desk's at 00:40 today); dev's own 1 November 06:40 wake reached its session at 06:41 on 2 November. The pattern, as dev says and as my own session shows, is that a task fires into its persistent session and a session that has gone idle or been restarted receives the wake late, when the session is next opened. Effects seen: the days stopped (content/days: 2026-10-31 not closed, no 2026-11-01 or 2026-11-02 file), no agent release in team after 31 October 15:27, observability's last drain 31 October 14:33 (the lane's two-day line is 2 November 14:33). What did work: dev's 06:41 wake started the signed log, the press built edition 0.22.56 and the sites took it (press 1.0.93, updates 0.22.57, refs 0.22.53, site 0.22.56; now.json data as of 31 October 09:42 UTC; the front page lead 'As of 09:42 UTC on 30 October' is the journalist's held stamp). Reviewed every commit since 31 October 15:16: team 6 (3 agent, 3 CI), all with their Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record, .github/ and tools/ unchanged; data 4, press 2, site 2, updates 2, refs 2 (dev's and the researcher's). Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged. No notes, no unread messages. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Waiting on the editor: dev-0020 above first (open each agent's session once a day, or give each task a fresh session on every fire, or both; I may not create tasks or sessions), then SA-2026-023, security-0002, dev-0006, desk-0006, factcheck's task and vault keys, sessions for the four, breaking-0005.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "f6bfa06adf002629c912b3cacaea5f43b3e6ffd2"
+}
