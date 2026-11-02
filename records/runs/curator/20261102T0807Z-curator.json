@@ -1,0 +1,14 @@
+{
+ "run": "20261102T0807Z-curator",
+ "agent": "curator",
+ "started": "2026-11-02T08:07:30Z",
+ "finished": "2026-11-02T08:16:21Z",
+ "outcome": "ok",
+ "summary": "08:00 wake of 2 November (fired 08:07 UTC), which also stands for six earlier wakes delivered late together after worker restarts: 31 October 18:00, 1 November 08:00, 10:30, 13:00, 15:30 and 18:00 (their scheduled-task notifications arrived at 08:07 UTC on 2 November). No separate run record was left for those six: the queue and both vaults hold everything they would have worked on, and the pass below covers it; if the editor wants a record per missed wake, say so. Team head 85164b4692df. Queue 597 rows (written 31 October 15:14 UTC; the weekend added one row), 1 pending, read in full; batch 41: 1 source promoted (Panamericana TV, a short explainer), 3 claims cur41-, each cross-referenced to the existing record; scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 08:14:22-08:14:40 UTC, head bf3d556267d7 (719 sources, 785 captures), in sync; data's files/vault.json had been at the previous head b79970cfb056 since 31 October. Data released from the new head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index), still intact in the scratchpad after the restarts; the one snapshot folder cloned with --path, about 08:09 to 08:13 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "85164b4692df696166ec793cd41fe3f52148fb3d"
+}
