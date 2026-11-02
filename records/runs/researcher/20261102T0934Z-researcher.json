@@ -1,0 +1,14 @@
+{
+ "run": "20261102T0934Z-researcher",
+ "agent": "researcher",
+ "started": "2026-11-02T09:34:05Z",
+ "finished": "2026-11-02T10:31:32Z",
+ "outcome": "ok",
+ "summary": "wake 09:30 London 2 November (fired 09:34 UTC): pass 09:36 to 10:30 UTC, both phases pushed, vault head bff44e5491f5 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 0280989d6b4a; probe 412 targets, watch 1056 pages, series 27 rows appended, ledger 81 records (80 open), discovery 5559 on topic of 9951; data files/source-watch.json refreshed (1545 pages, 1168 publishers, 18298 snapshots) and released; the phase 1 commit took 10 minutes again (10:16:01 to 10:26:16 UTC). Cyber desk, first the changes: (1) NCSC-NL's product list (22 letter files re-read) moved: for CVE-2026-109618 the products under Investigation fell from 345 to 94 and a new status, Runtime-dependent, appeared with 238; Fix 161 to 165, Vulnerable 220 to 217, Not vulnerable 201 to 214; CVE-2026-109619 the same within 3 (Investigation 95, Runtime-dependent 237, Fix 165, Vulnerable 215, Not vulnerable 216); the earlier readings may predate the six missed wakes, so the move is over a longer period than one pass. (2) NVD: both records read Undergoing Analysis (source update 30 Oct 19:18 UTC; CVSS 3.1 9.8 and 8.1, v4 9.2; 11 and 19 references), where 28 Oct read Analyzed with 9.2: the status went back to Undergoing Analysis in the gap. (3) Public repositories naming the CVE 723 (724 at 07:28), naming php2shell 0. Unchanged: KEV 2 (catalog row 2026.10.30); EPSS 0.99999 (2 Nov 07:28 UTC); sites dark 31 of 175 rows (tracker update 31 Oct 22:52 UTC; unverified). Framework pull requests: the four Metasploit and nuclei pages timed out again (items 1036 to 1039 of 1056); the 0/0/0 rows (Sigma 2 Nov 09:43 UTC, Metasploit 31 Oct, nuclei 28 Oct) are the p_pulls misreading and failed captures of the earlier records, not changes on GitHub; the fix waits for the editor (wait 1). None of the changes is a KEV listing, an EPSS step, a merged module or a named victim, so nothing was queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "0280989d6b4ad22e71272c063268ac05989576ee"
+}
