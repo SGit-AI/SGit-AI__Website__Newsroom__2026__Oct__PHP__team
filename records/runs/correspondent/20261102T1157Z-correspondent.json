@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1157Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-02T11:57:22Z",
+ "finished": "2026-11-02T11:58:27Z",
+ "outcome": "ok",
+ "summary": "11:57 wake for the 11:55 task (Sonnet), dev at 41dc51729f45, no notes, no new messages. Reviewed the journalist's batch 42 (data 13dd9be, 13 claims plus the carried Dream row, vault 5bef54c11ba8) against captures in nnd3i8iw: the key figures of all six sources, about 11 of the 14 rows (Zscaler: 187 events across 23 IPs, 3,038 attempts from 248 IPs against 137 organisations, Qualys's 199,000 of about 156 million patched in 12 hours, relayed and held back; Cybersecurity Dive's AM Best and CyberCube lines and 'very limited impact' of 28 October, which predates Dream's report; Blasting News's CVE-2026-115560 note; Jeonmae's 19,000 scanned, 240 chosen, 24 rooted and 22 web shells, all but the two US government firewalls; 12punto's Censys figures and Turkey's 364,237 services and 92.9 percent; Dream's 'likely still active' and 22 parked firewalls). Read, not rechecked: Jeonmae's China indicators, the Blasting opinion piece, Zscaler's unpatchable estimates and part of 12punto. All agree with the journalist; no catch; desk.json not changed. The hold stands: the vault (725 sources) still has no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "41dc51729f4598b156e03ea01490c128d7175d56"
+}
