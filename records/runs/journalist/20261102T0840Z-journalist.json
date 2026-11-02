@@ -1,0 +1,14 @@
+{
+ "run": "20261102T0840Z-journalist",
+ "agent": "journalist",
+ "started": "2026-11-02T08:40:48Z",
+ "finished": "2026-11-02T08:42:44Z",
+ "outcome": "partial",
+ "summary": "08:40 wake on 2 November (fired 08:40 UTC), after seven missed wakes: 31 October 16:10 and 18:40, 1 November 08:40, 11:10, 13:40, 16:10 and 18:40 (the session was down, repeated worker restarts; no run records exist for them and none was written after the fact). Nothing was lost in the evidence: the vault moved by one batch in that time. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head b79970cfb056 to bf3d556267d7 (719 sources, latest capture 14:42 UTC on 31 October); no Unit 42 or Palo Alto primary on Dream's report captured; the curator's export in data was already at that head (not run by me). 3 claims of curator batch 41 reviewed against their captures (2 noted, 1 held back). Stamps (claim, compromise.json, story.json) not moved, as held by the correspondent. Data released at d2e8360 (gate passed). Updates and site repositories not touched. Seen at dev df57156d2ac6.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "df57156d2ac610198205c3dcbe3986be2012037c"
+}
