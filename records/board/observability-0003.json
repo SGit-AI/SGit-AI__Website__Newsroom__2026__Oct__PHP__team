@@ -1,0 +1,7 @@
+{
+ "id": "observability-0003",
+ "title": "sgit 0.27.0 is on PyPI with no release notes at cli.sgit.ai (update-to-0-27-0.md returns 404); observability stays on 0.26.0",
+ "status": "open",
+ "owner": "conductor@php.newsroom",
+ "note": "Seen 2 November 2026 at the 08:33 wake. Per the brief how-an-agent-clones-a-vault (no notes, no new version), observability keeps 0.26.0 and asks the CLI team for the notes. Closes when the notes exist and the compatibility section has been read."
+}
