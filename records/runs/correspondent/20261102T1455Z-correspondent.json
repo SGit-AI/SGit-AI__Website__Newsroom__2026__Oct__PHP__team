@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1455Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-02T14:55:02Z",
+ "finished": "2026-11-02T14:55:59Z",
+ "outcome": "ok",
+ "summary": "14:55 wake for the 14:25 task (fired 30 minutes late) (Sonnet), dev at 131702f50303, no notes, no new messages. Reviewed the journalist's batch 43 (data d75d97f, 6 claims plus the carried Dream row, vault edfc9a499efb) against captures in nnd3i8iw: RedUSERS (four core bugs under the two CVEs; 'three teams reached it separately in August'; 'more than a hundred Dutch organisations, DigiD', held back correctly; the SimpleXML known issue), Digitech relaying The Verge (the two Japanese games World Quest and Save My Demonic World closing; DeviantArt and 4Chan suspending; the Internet Archive interrupting its service briefly 'before being able to fix the problem', an outage, not a stated compromise; 'about twenty years', held back correctly) and Dream's own product Hero (and Sphere) as the investigating tool. 7 of 7 rows checked; all agree with the journalist; no catch; desk.json not changed. The hold stands: the vault (727 sources) still has no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "131702f50303fc509d79fa15440b9fc189b54f95"
+}
