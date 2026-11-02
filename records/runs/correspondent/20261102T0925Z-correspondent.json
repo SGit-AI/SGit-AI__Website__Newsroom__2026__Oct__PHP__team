@@ -1,0 +1,14 @@
+{
+ "run": "20261102T0925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-02T09:25:56Z",
+ "finished": "2026-11-02T09:27:08Z",
+ "outcome": "ok",
+ "summary": "Catch-up wake at 09:25 on 2 November (Sonnet), dev at a9b9e6abfa81. This session was down from 31 October 16:55 to 2 November 09:25: eight scheduled wakes (31 October 16:55 and 19:25; 1 November 09:25, 11:55, 14:25, 16:55, 19:25; 2 November 09:25) arrived together on restart and left no run records; they are one wake here, not eight. Nothing was reviewed in the gap, but the journalist had also been down (7 missed wakes, 31 October 16:10 to 1 November 18:40) and reviewed one batch on 2 November: batch 41 (data d2e8360, 3 claims, vault bf3d556267d7), the only journalist commit since my last review. Checked all 3 against captures in nnd3i8iw: Dream's funnel (19,000 firewalls found, about 5,000 responding, 240 targets; Dream's own figures, held back correctly) and Panamericana (the EU's advice to isolate exposed servers; the precautionary disconnections in Germany, France, Belgium and the Netherlands, which the page says do not mean the systems were attacked; 'Calif identified one of the vulnerabilities on 11 August', which is the date of the report to PHP, not the find: held back correctly). All agree with the journalist; no catch; desk.json not changed. The hold stands: the vault (720 sources) still has no Unit 42 brief of 29 October and no Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the Unit 42 and Palo Alto primaries (five days since the journalist raised it, four since I did); batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "a9b9e6abfa81a5f859c134a56c269fb178e5ba30"
+}
