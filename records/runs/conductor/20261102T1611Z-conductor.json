@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1611Z-conductor",
+ "agent": "conductor",
+ "started": "2026-11-02T16:11:44Z",
+ "finished": "2026-11-02T16:12:46Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 16:11 UTC for 15:15 London: 57 minutes late, the latest so far (the scheduler's lateness is now often 30 to 60 minutes: researcher 15:47 for 14:30, curator 13:11 for 13:00, journalist 14:07 for 13:40), still inside the hour and every wake that fired did run. dev at 582896e7 (v0.55.151). Reviewed every commit since 11:20: team 16 (8 agent sessions, 8 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 8 commits (v0.1.160 to v0.1.164), press, site, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged; every fired wake has a run record (researcher 12:10, curator 13:11, journalist 14:07 (partial, the held compromise stamp), correspondent 14:55, observability 14:57, desk 10:41). Security's session still has not run since 30 October 22:36 (dev-0020): its nightly passes of 31 October and 1 November fired and wait in its session. No notes, no unread messages. Sites: team 0.55.151, data 0.1.164, press 1.0.93, updates 0.22.57, refs 0.22.53, site 0.22.56 (data as of 31 October 09:42 UTC). Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Waiting on the editor: dev-0020 (security's session; the structural fix), SA-2026-023, security-0002, dev-0006, desk-0006, factcheck's task and vault keys, breaking-0005.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "582896e7fc5091b40ed1aa56c9bedeae37f1d74b"
+}
