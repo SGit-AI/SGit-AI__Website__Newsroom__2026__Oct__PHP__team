@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1040Z-curator",
+ "agent": "curator",
+ "started": "2026-11-02T10:40:11Z",
+ "finished": "2026-11-02T10:50:00Z",
+ "outcome": "ok",
+ "summary": "10:30 wake of 2 November (fired 10:40 UTC). Team head 64c24dee9a23. Queue 602 rows (written 10:15 UTC), 5 pending (the researcher's 09:43 UTC captures and one at 07:28), each read in full; batch 42: 5 sources promoted (Zscaler, a vendor blog with decoy telemetry; Cybersecurity Dive, on the cyber-insurance view; Blasting News, an opinion piece; Jeonmae, a fourth relay of Dream Research's report; 12punto, on Censys's 23 October snapshot), 13 claims cur42-; the Dream relay is marked as not independent and its China indicators and AI-use claims as unverified; Zscaler's marketing and recommended controls left out; Cybersecurity Dive's unrelated sidebar headline (an alleged exchange hack) not recorded; the Censys 23 and 26 October snapshots are cross-referenced; scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 10:48:02-10:48:20 UTC, head 5bef54c11ba8 (724 sources, 790 captures), in sync. Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the five snapshot folders cloned one by one with --path in parallel, about 10:41 to 10:46 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "0ba6efd62254852b0a3ec4cc6b41fc00085d4faa"
+}
