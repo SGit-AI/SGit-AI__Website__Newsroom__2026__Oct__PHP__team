@@ -1,0 +1,14 @@
+{
+ "run": "20261102T1625Z-curator",
+ "agent": "curator",
+ "started": "2026-11-02T16:25:13Z",
+ "finished": "2026-11-02T16:26:27Z",
+ "outcome": "idle",
+ "summary": "15:30 wake of 2 November (fired 16:25 UTC, about an hour late). Team head 3cb946528ada. Nothing new: the queue (604 rows, written 12:54 UTC) has no pending row and is unchanged since my 13:00 wake. No commit to the evidence vault (head edfc9a499efb, in sync, 726 sources, 792 captures) and no data release: data's files/vault.json already names that head. sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); no snapshot folder needed (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "3cb946528ada52ea0310f621f742f78983a8d1b1"
+}
