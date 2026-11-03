@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1205Z-researcher",
+ "agent": "researcher",
+ "started": "2026-11-03T12:05:55Z",
+ "finished": "2026-11-03T13:07:44Z",
+ "outcome": "ok",
+ "summary": "wake 12:00 London 3 November (fired 12:05 UTC): pass 12:09 to 13:06 UTC, both phases pushed, vault head 4410e4d559be in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 317e93fafdc2; probe 412 targets, watch 1098 pages, series 6 rows appended, ledger 82 records (81 open), discovery 5690 on topic of 10365; data files/source-watch.json refreshed (1565 pages, 1188 publishers, 23276 snapshots) and released; the phase 1 commit took 13 minutes (12:48:57 to 13:01:54 UTC). Cyber desk, first the change: the nuclei-templates pull-request page loaded for the first time since 28 Oct 03:27 UTC (capture 3 Nov 12:16 UTC, 200) and gives a real reading: 15 pull requests naming CVE-2026-109618, CVE-2026-109619 or php2shell, none open, 5 merged and 10 closed unmerged (counted from the page text: merged 17573, 17563, 17493, 17489, 17478; among them 17573 'fix false positive: CVE-2026-109618 version check flags distro-backported (patched) PHP as vulnerable' and 17563 'Add CVE-2026-109619 as a passive PHP version check'), against 4 merged on 28 Oct 03:27 UTC, so one more nuclei pull request has merged since; the series row (5 merged, 10 closed) agrees with the page, its 'open 1' does not (the page says 0 open); which pull request merged since 28 Oct and when I did not establish; it is detection templates and fixes, not one of the flagged triggers, so it is reported here and not queued. The Metasploit pull and issues pages timed out this pass (items 1077 and 1078 of 1098), its 0/0/0 row of 12:16 UTC is a failed capture, the last good page being 3 Nov 09:44 UTC (PR 22036 open, nothing merged for php2shell); Sigma's 0/0/0 row (2 Nov 17:49 UTC) is the p_pulls misreading; the p_pulls fix waits for the editor (wait 1). Unchanged: NVD both records Analyzed (source updates 2 Nov 14:52 UTC); EPSS 0.99999 (last row 2 Nov 15:57 UTC); KEV 2 (catalog row 2026.10.30); sites dark 31 of 175 rows (tracker update 31 Oct 22:52 UTC; unverified); public repositories naming the CVE 727, naming php2shell 0. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "317e93fafdc23c62e222399c93c845e391fdf01d"
+}
