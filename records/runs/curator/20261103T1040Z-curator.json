@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1040Z-curator",
+ "agent": "curator",
+ "started": "2026-11-03T10:40:03Z",
+ "finished": "2026-11-03T10:51:18Z",
+ "outcome": "ok",
+ "summary": "10:30 wake of 3 November (fired 10:40 UTC). Team head f2ad2130087b. Queue 610 rows (written 10:15 UTC), 5 pending (the researcher's captures of 07:15 and 09:44 UTC), each read in full; batch 45: 5 sources promoted (Next, which scanned the .fr domain space; Memeburn; Cisco, a vendor marketing post; Security-Insider; Onlarissa, a second relay of Check Point's regional, sector and country percentages), 18 claims cur45-; Security-Insider is a careful account that corroborates the Hacker News leak at about 15:20 UTC (a third outlet), says the sources do not prove exploitation before the patch, and notes that PHP has not confirmed Wiz's 'back to 5.4' claim; Memeburn's own 48% calculation recorded as unverified; the Hacker News poster's username, reader comments, product and signature detail and configuration settings left out; scan: nothing addressed to an AI. Evidence vault nnd3i8iw pushed 10:49:22-10:49:43 UTC, head f4da0844be73 (732 sources, 798 captures), in sync; compaction check: {'commits': 30, 'snapshots': 1, 'archive': 0, 'absorbed': 31} (commit packs under 50, no compaction). Data released from that head straight after (gate passed, 516 files). sgit 0.26.0. Clones as in the card (evidence --pack-store, watch --path index); the five snapshot folders cloned one by one with --path in parallel, about 10:41 to 10:47 UTC (board curator-0001, open)",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "f4e1bef5d9b9cda44ada579b63a8be8d289f8c47"
+}
