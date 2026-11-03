@@ -1,6 +1,15 @@
 {
- "current": "0.22.56",
+ "current": "0.22.57",
  "versions": [
+  {
+   "version": "0.22.57",
+   "date": "2026-11-03",
+   "title": "press: dev: the daily wake's signed log to start the edition build (releases waiting since 0.22.56); data: journalist: batch 44 reviewed (5 claims); compromise stamps still held, no primary on Dream's report; team: desk: run record of the 00:40 wake, 2 November closed and 3 November opened; site: desk: close 2 November, open 3 November (the days); refs: dev: a signed log entry in the README, so refs' deploy takes edition 0.22.56 (the daily wake); updates: dev: a signed log, so updates's deploy takes edition 0.22.56 (the daily wake)",
+   "summary": "",
+   "changes": [],
+   "vault_commit": "e4bbd16da443",
+   "reconstructed": false
+  },
   {
    "version": "0.22.56",
    "date": "2026-11-02",

@@ -2,7 +2,7 @@
 
 The proposed redesign of the site for review: what is wrong now, the two dials (who you are and how much you see), which pages each reader sees, the menu per view, and four mockups built from the live data.
 
-> Mockup notes for review, built from the data of release v0.22.56. Not the live site.
+> Mockup notes for review, built from the data of release v0.22.57. Not the live site.
 
 Admin · design · for review 
 ## The redesign: who you are, and how much you want to see
@@ -107,22 +107,22 @@ the fix in php-src, the review graph · 3 pages
  Stories 
 signed articles written here · 15 pages 
  The evidence 
-every source, the vaults, the pipeline, versions · 837 pages 
+every source, the vaults, the pipeline, versions · 846 pages 
  The site and the team 
 method, roles, board, releases, admin · 345 pages 
 
 ### Pages per reader, per view
 
  Reader Focus Standard Everything 
- Alex Curious reader 30 76 1418 
- Jordan Board member or executive 30 233 1418 
- Quinn CFO 30 233 1418 
- Robin CISO 161 233 1418 
- Rowan Journalist 930 953 1418 
- Sam Security lead 44 119 1418 
- Drew PHP or platform engineer 37 119 1418 
- Ash Security researcher 878 956 1418 
-Counted from the 1418 pages this release builds. 
+ Alex Curious reader 30 76 1427 
+ Jordan Board member or executive 30 233 1427 
+ Quinn CFO 30 233 1427 
+ Robin CISO 161 233 1427 
+ Rowan Journalist 939 962 1427 
+ Sam Security lead 44 119 1427 
+ Drew PHP or platform engineer 37 119 1427 
+ Ash Security researcher 887 965 1427 
+Counted from the 1427 pages this release builds. 
 
 #### Who sees the team console
 
@@ -171,7 +171,7 @@ All of it, for power users and the team.
 
 - The admin pages move into console D. 
 
- Mockups built by the design agent from release v0.22.56; the brief is on the briefs page. Board items record each step.
+ Mockups built by the design agent from release v0.22.57; the brief is on the briefs page. Board items record each step.
 
 ---
-site v0.22.56 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html
+site v0.22.57 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/index.html

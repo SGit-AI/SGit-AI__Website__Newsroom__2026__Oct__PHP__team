@@ -2,7 +2,7 @@
 
 A three-column working view for a security lead: their reading path and the site by task on the left, what changed since the last visit and the next three actions in the middle, and the state of the evidence as charts on the right.
 
-> Mockup B for review, built from the data of release v0.22.56. Not the live site.
+> Mockup B for review, built from the data of release v0.22.57. Not the live site.
 
 S 
  Sam 
@@ -13,7 +13,7 @@ Your reading path
 2 of 5 read · next: Exploitation signals 
  Today 9 new What to do The incident Detection and defence The agencies 16 Every claim 70 Ask 
 
-Since your last visit · 31 October 2026, 09:42 UTC 
+Since your last visit · 2 November 2026, 15:57 UTC 
 
 ## 9 things are new, 3 changed. Two matter for your runbook.
 
@@ -123,4 +123,4 @@ Amazon: Proof-of-concept attempts begin, then six hours of attempts from anonymi
 8.1 and older: source backports only.
 
 ---
-site v0.22.56 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html
+site v0.22.57 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/b/index.html
