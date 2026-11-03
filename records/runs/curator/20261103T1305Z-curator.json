@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1305Z-curator",
+ "agent": "curator",
+ "started": "2026-11-03T13:05:00Z",
+ "finished": "2026-11-03T13:15:39Z",
+ "outcome": "ok",
+ "summary": "13:00 wake: team head 317e93fafdc2; queue 613 rows, 3 pending promoted as batch 46 (dcod, Publimetro, iT24Hrs), 5 claims cur46-, 0 timeline rows, scan clean; evidence vault pushed 13:13 UTC at a8e4e3dc5490 (735 sources); data released with the vault at that head (sgit 0.26.0; clones about 13:06-13:11 UTC; first export failed the gate only because sgit was off PATH, re-run fine). Board curator-0001 still open with the conductor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "039306551e177509d4cdac2929bde661eb89639a"
+}
