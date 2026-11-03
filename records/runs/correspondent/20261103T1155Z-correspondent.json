@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1155Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-03T11:55:52Z",
+ "finished": "2026-11-03T11:56:57Z",
+ "outcome": "ok",
+ "summary": "11:55 wake (Sonnet), dev at 4b399ef011bf, no notes, no new messages. Reviewed the journalist's batch 45 (data 31696da, 18 claims, vault f4da0844be73) against captures in nnd3i8iw: the key lines of five of the six sources, about 13 of the 18 rows. Security-Insider (the Hacker News user's post about 15:20 UTC on 20 October naming the two CVE ids and 'ab PHP 5', removed; Wiz's 19 August find and 24 August report; Baden-Wuerttemberg's precautionary outages with the Heidelberg and Mannheim university hospitals saying it was not a cyberattack; the paraphrase that the NCSC and CERT-EU say take systems off the net, held back correctly), Onlarissa (Check Point's 14 percent Europe, 20 percent telecoms, Hungary first; the word 'affected' undefined, held back correctly), Memeburn (its own 48 percent arithmetic, held back; the Foundation's 'structural failure'; the timeline), Next (CERT-FR noting exploitation attempts the week before; the 4.6 million .fr domains) and Cisco (SnortML catching a novel exploit attempt within 24 hours of disclosure). Read, not rechecked: Dream's separate Asia framework page (the page does not mention PHP2Shell), Onlarissa's sector and country figures beyond the first, the paywalled part of Next and Cisco's Splunk line. All agree with the journalist; no catch; desk.json not changed. The journalist's note on Hacker News as the early leak channel (now three outlets, 15:20 UTC fits the ids circulating about 15:00 UTC) is right to leave unstated until the post or the PHP team's word is in the vault. The hold stands: the vault (733 sources) still has no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the primaries (a week); batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "4b399ef011bfe591d89d21cf222558cf74a68268"
+}
