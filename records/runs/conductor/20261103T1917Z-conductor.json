@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1917Z-conductor",
+ "agent": "conductor",
+ "started": "2026-11-03T19:17:00Z",
+ "finished": "2026-11-03T19:17:32Z",
+ "outcome": "partial",
+ "summary": "19:15 full pass (the 15:15 wake was cut by a worker restart and left no record). Team: 32 commits since 11:15, all agent run records with release trailers, no problem found. 13 tasks enabled, every wake since 11:15 has a run record (researcher 17:04, curator 18:04, journalist 18:40, correspondent 16:56, desk 17:40, observability 14:33); dev's last is 06:40 (daily), security's 2 Nov 22:35 (nightly 22:35 is next). Press: none since 11:15. Data, site, updates, refs not reviewed: this session has only team and press attached (a restart dropped the clones); the journalist's 13:40 record shows a data release d695815. Front-page story still 'As of 09:42 UTC on 30 October' (journalist hold; conductor-0023 open, editor). Nothing written outside team.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "1b2b47923828a6a271f55441450e2d2442eaa6ee"
+}
