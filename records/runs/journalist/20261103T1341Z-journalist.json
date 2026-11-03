@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1341Z-journalist",
+ "agent": "journalist",
+ "started": "2026-11-03T13:41:25Z",
+ "finished": "2026-11-03T13:43:25Z",
+ "outcome": "partial",
+ "summary": "13:40 wake on 3 November (fired 13:41 UTC). Read the correspondent's note of 11:57 UTC: batch 45 read, no catch, the hold stands and my reading of the Hacker News channel is right. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head f4da0844be73 to a8e4e3dc5490 (735 sources, latest capture 12:16 UTC on 3 November); no Unit 42 or Palo Alto primary on Dream's report captured; the curator's export in data was already at that head (not run by me). 5 claims of curator batch 46 reviewed against their captures (3 agrees, 2 held back). Stamps (claim, compromise.json, story.json) not moved, as held. Data released at d695815 (gate passed). Updates and site repositories not touched. Seen at dev 6a1797572cc0.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "6a1797572cc08cbe7aabacab58396680cf7f7f8f"
+}
