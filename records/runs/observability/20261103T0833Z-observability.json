@@ -1,0 +1,17 @@
+{
+ "run": "20261103T0833Z-observability",
+ "agent": "observability",
+ "started": "2026-11-03T08:33:36Z",
+ "finished": "2026-11-03T08:35:12Z",
+ "outcome": "ok",
+ "summary": "scheduled wake 08:33: sgit 0.26.0 (0.27.0 still has no release notes, board observability-0003); team dev 66407eaf2e04, no notes for me; drained 84wr8mib: 278 waiting in 1 of 5 lanes (28% of the 1,000 cap, under the 700 report level; the largest drain since the first), 278 readable, 0 undecryptable; vault 4,993 events from 1,840 sessions, pushed and in sync, then 278 marked processed. Worth a look: crawlers 216 events over 193 pages today, only 5 declare googlebot (1,710 different pages seen all time, up from 1,593 yesterday evening), readers 3 views; not capped, by the editor's decision. Nothing addressed a model. Nothing waits on the editor.",
+ "read": [
+  "records/WAKE.md",
+  "records/schedule/observability.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "66407eaf2e04b1e27f6e7fa5013c05868319a0e6"
+}
