@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1115Z-conductor",
+ "agent": "conductor",
+ "started": "2026-11-03T11:15:40Z",
+ "finished": "2026-11-03T11:16:38Z",
+ "outcome": "ok",
+ "summary": "Full pass, fired 11:15 UTC for 11:15 London (on time). dev at bf240efd (v0.55.177). Reviewed every commit since 07:15: team 20 (10 agent sessions, 10 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged. Other repositories: data 8 commits (v0.1.169 to v0.1.172), press, site, updates and refs none. Tasks: 13 enabled, bound to the right sessions, times as the cards, unchanged; every fired wake has a run record (researcher 07:04 and 09:33, observability 08:33, curator 08:04 and 10:40, journalist 08:40 and 11:11 (partial, the held stamp), correspondent 09:25 (idle), desk 10:41). Not changed: the front-page story is still frozen at 'As of 09:42 UTC on 30 October' by the journalist's hold; conductor-0023 (how long the hold may last) is open with the editor; now.json data as of 2 November 15:57 UTC, site 0.22.57, latest evidence header 2 November 18:21 UTC. No notes, no unread messages. Sites: team 0.55.176, data 0.1.172, press 1.0.94, updates 0.22.58, refs 0.22.54. Not onboarded: sherpa, pulse, ontologist, librarian; factcheck has a key but no task. Waiting on the editor: conductor-0023, dev-0020, SA-2026-023, security-0002, dev-0006, desk-0006, factcheck's task and vault keys, breaking-0005.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "bf240efdcf2c69cd254c0d612d4bc8c61e769ea0"
+}
