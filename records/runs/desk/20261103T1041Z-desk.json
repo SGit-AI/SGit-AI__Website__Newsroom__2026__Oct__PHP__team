@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1041Z-desk",
+ "agent": "desk",
+ "started": "2026-11-03T10:41:14Z",
+ "finished": "2026-11-03T10:42:09Z",
+ "outcome": "ok",
+ "summary": "10:40 wake. Taken in: team f2ad213, site 8482d00, data 9e86fc7 (read-only). The pipeline ran today (journalist 08:40, correspondent 09:25, curator 08:00, researcher 07:00 and 09:30, all 'nothing new'); no source published yet today; state of affairs unchanged since v6 (30 October stamps held, 727 sources by the 18:15 UTC export; still no Unit 42 or Palo Alto primary); still no organisation confirmed. Days: 2026-11-03 stands (no item), no release to site. Publication, rendered in Chromium on edition 0.22.57 (site v0.22.84): as-of lines read 09:42 UTC on 30 October, the five questions agree with v6, the header's 'latest evidence' is 2 November 18:21 UTC (current). Read conductor-0023 (open, the editor's: the site's story frozen since 30 October by the journalist's hold on the compromise stamps, four options). Desk's opinion, for the editor, on the line: take (c) now (the page says plainly what is held and since when) and (d) (ask the researcher to target the Unit 42 and Palo Alto primaries), then (a) with an expiry; a hold that never ends turns a correct caution into a stale page. I did not write it into any page: the wording is the journalist's and the correspondent's, and publishing over a hold is the editor's. Still open: abp has not widened policy.json (desk-0006); desk-0008 (the page cannot show an unwatched stretch) with dev; the correspondent has not reviewed the closed days 27 October to 2 November; the editor's decisions (conductor-0023, desk-0008, dev's signed-log proposal, coverage count). Not done: no vault read key, so no quote re-check; no correction request drafted (the editor holds sending).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "f2ad2130087b5fd7bc10911be3d119c62cea2113"
+}
