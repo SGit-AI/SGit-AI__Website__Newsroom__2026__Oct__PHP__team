@@ -1,0 +1,14 @@
+{
+ "run": "20261103T1426Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-03T14:26:04Z",
+ "finished": "2026-11-03T14:26:59Z",
+ "outcome": "ok",
+ "summary": "14:26 wake (Sonnet), dev at 85370f93be9d, no notes, no new messages. Reviewed the journalist's batch 46 (data d695815, 5 claims plus the carried Dream row, vault a8e4e3dc5490) against captures in nnd3i8iw: 5 of the 6 rows checked (dcod relaying SecurityAffairs: 35 successful command executions in honeypots documented in a GitHub report; the 'more than two hundred servers inspected methodically through relay systems' line is undated and unsourced, held back correctly; Publimetro's '75 percent of the web' headline against the site's about 70 percent, held back, and its two months of private preparation; IT24HRS's note that PHP may be embedded in equipment whose users wait for the maker's patch; Dream's separate Asia framework page, a July 2026 incident that is not PHP2Shell). Read, not rechecked: Dream's Chinese-language indicator on that separate incident. All agree with the journalist; no catch; desk.json not changed. The hold stands: the vault (736 sources) still has no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "85370f93be9dbdf1e478bc18371544387123e74b"
+}
