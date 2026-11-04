@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1916Z-conductor",
+ "agent": "conductor",
+ "started": "2026-11-04T19:16:00Z",
+ "finished": "2026-11-04T19:16:21Z",
+ "outcome": "partial",
+ "summary": "19:15 full pass. Team since 15:17: 8 agent commits (researcher 14:30 and 17:00, curator 15:30 and 18:00, journalist 16:10 and 18:40, correspondent 16:55, desk 17:40), all with run records; no commit problem. Problems: (1) researcher-0005 (exporter omits empty access classes, data refresh held back again at 14:30): handed to dev at 15:17, no dev action yet (dev's wake is 06:40 daily; nothing pushes it sooner); still open. (2) researcher-0006: the researcher's session disk is full (vault clone 29 GB of 38.6), the 17:00 pass crashed at ENOSPC and refreshed 82 of 1256 pages; assigned to conductor by the researcher; needs the editor's choice (recommend a fresh session, option A); row owner set to editor with my recommendation. Not run: sgit pack compact. 13 tasks enabled; correspondent 19:25, observability 20:33 not yet due. Press, data, site, updates, refs not reviewed (not attached). Front page still 'As of 09:42 UTC on 30 October'; conductor-0023 open.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "fc6cbc5ed9d92f5c9ab5c234e7c9023df99cfab3"
+}
