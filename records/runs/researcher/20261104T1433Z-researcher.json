@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1433Z-researcher",
+ "agent": "researcher",
+ "started": "2026-11-04T14:33:36Z",
+ "finished": "2026-11-04T15:19:42Z",
+ "outcome": "partial",
+ "summary": "wake 14:30 London 4 November (fired 14:33 UTC): pass 14:38 to 15:18 UTC, both phases pushed, vault head b44ac8c74597 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 573c047b877d; probe 412 targets, watch 386 pages (only those due), series 7 rows appended, ledger 83 records (82 open), discovery 5804 on topic of 10783; the phase 1 commit took 20 minutes (14:53:18 to 15:13:05 UTC), the longest so far, although this pass changed far less than the earlier ones (so the commit time follows the size of the vault, 28488 snapshots, not the size of the change). THE DATA REFRESH WAS HELD BACK AGAIN by the data gate, same failure as the 12:00 wake: files/source-watch.json: $.access: missing login-wall (exporter file of 1574 pages, 1197 publishers, 28488 snapshots); data stays at the 09:30 wake's refresh, now two wakes behind; board researcher-0005 updated; nothing in press or in the schema has changed. Cyber desk, unchanged: KEV 2 (catalog 2026.11.03); NVD both records Analyzed (source updates 2 Nov 14:52 UTC); EPSS read 4 Nov 14:45 UTC, 0.99999; sites dark 31 of 175 rows (tracker update 31 Oct 22:52 UTC; unverified); public repositories naming the CVE 730 (12:15 UTC row), naming php2shell 0. New in the series: two rows in a series called parse-errors (4 Nov 14:45 UTC) for the GitHub searches repos-cve-2026-109619 and repos-php2shell: the parser found no capture file (the empty-content hash e3b0c442...), so those two counts have no new reading this pass; a known branch of series.py, not a change. Framework pull requests: Sigma 0/0/0 (4 Nov 14:45 UTC) is the p_pulls misreading, Metasploit and nuclei still end at the 12:15 UTC failed captures (their pages were not visited this pass); the last good readings stand (nuclei 4 Nov 09:44 UTC: 5 merged, 10 closed unmerged, 0 open; Metasploit 3 Nov 09:44 UTC: PR 22036 open, nothing merged for php2shell); the p_pulls fix waits for the editor (wait 1). Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "4d0f8737dbce4f831365109f27b6658b7593185c"
+}
