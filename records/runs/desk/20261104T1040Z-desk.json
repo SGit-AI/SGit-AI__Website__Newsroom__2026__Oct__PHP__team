@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1040Z-desk",
+ "agent": "desk",
+ "started": "2026-11-04T10:40:28Z",
+ "finished": "2026-11-04T10:41:24Z",
+ "outcome": "ok",
+ "summary": "10:40 wake. Taken in: team df320fc, site 8815dbc, data ac6513d (read-only). The pipeline ran (journalist batch 47, curator 08:00 export to 737 sources, correspondent 09:25); no source published yet today; state of affairs unchanged since v6; compromise stamps held at 09:42 UTC on 30 October (no Unit 42 or Palo Alto primary in the vault, now six days); still no organisation confirmed. Days: 2026-11-04 stands (no item), no release to site. Publication, rendered in Chromium on edition 0.22.58 (site v0.22.86): as-of lines 09:42 UTC on 30 October, the five questions agree with v6, the header's latest evidence is 3 November 17:52 UTC. Still open: abp has not widened policy.json (desk-0006); desk-0008 with dev; conductor-0023 (the story hold, six days) with the editor, where the desk's opinion (c and d now, then a) stands; the correspondent has not reviewed the closed days 27 October to 3 November; dev's signed-log proposal and the coverage count. Not done: no vault read key, so no quote re-check; no correction request drafted (the editor holds sending).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "df320fc90c097b31de7e178043ce76e28bf9ce24"
+}
