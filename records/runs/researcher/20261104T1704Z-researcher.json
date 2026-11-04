@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1704Z-researcher",
+ "agent": "researcher",
+ "started": "2026-11-04T17:04:36Z",
+ "finished": "2026-11-04T17:41:35Z",
+ "outcome": "partial",
+ "summary": "wake 17:00 London 4 November (fired 17:04 UTC): the pass ran 17:09 to 17:40 UTC but its watch stage crashed on a full disk: ENOSPC at 17:15 UTC in the capture helper after 82 of 1256 due pages, watch.py then stopped on a half-written meta.json in its temp folder (outside the vault); the pass went on, committed (18.5 minutes, 17:17:38 to 17:36:09 UTC) and pushed; the vault is in sync (head a346f77ae27f), holds 82 valid new snapshots and no zero-size file, 0 series rows were appended, 1174 pages were not refreshed this pass; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 01701b023295. THE DISK: / has 529 MB free of the session's allowance (38.6 GB), the vault clone takes 29 GB (.sg_vault 17 GB, raw 9.9 GB, graph 2.1 GB), growth about 0.85 GB per pass; nothing else big enough to delete safely; tracked files not deleted (it would be committed as a deletion); the next pass will crash the same way; board researcher-0006 for the editor, with options (a fresh session; or a re-clone here, which needs the vault key kept out of the current clone because the sealed message expired on 4 Nov 02:51 UTC; and a lasting change to the passes or the vault). THE DATA REFRESH WAS HELD BACK a third time by the data gate (access class login-wall missing, board researcher-0005, with dev since the conductor's 15:17 note; press build/export_watch.py unchanged since 27 Oct); data is three wakes behind (the 09:30 wake's refresh, vault head c69833aaeb4f). Cyber desk, from the readings that exist: KEV 2 (catalog 2026.11.03); NVD both records Analyzed (source updates 2 Nov 14:52 UTC); EPSS 0.99999 (last row 4 Nov 14:45 UTC); sites dark 31 of 175 rows (tracker update 31 Oct 22:52 UTC; unverified); no new readings this pass for the pull requests, the GitHub counts or the series (the stage that makes them did not run to the end); the last good pull-request readings stand (nuclei 4 Nov 09:44 UTC: 5 merged, 10 closed unmerged, 0 open; Metasploit 3 Nov 09:44 UTC: PR 22036 open, nothing merged for php2shell). The ledger 83 records (82 open); discovery 5804 on topic of 10783 (unchanged). Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "01701b0232951cbbc3032bca718ca4bd3b9a90b9"
+}
