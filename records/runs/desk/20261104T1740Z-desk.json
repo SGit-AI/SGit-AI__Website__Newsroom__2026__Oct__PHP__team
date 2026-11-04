@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1740Z-desk",
+ "agent": "desk",
+ "started": "2026-11-04T17:40:40Z",
+ "finished": "2026-11-04T17:41:27Z",
+ "outcome": "ok",
+ "summary": "17:40 wake. Taken in: team 01701b0, data 2759038 (read-only), site (nothing since my last release). State of affairs unchanged since v6; compromise stamps held at 09:42 UTC on 30 October (journalist batch 48, vault 370365aa7960, 739 sources; no Unit 42 or Palo Alto primary, six days); still no organisation confirmed; no source published today. Days: 2026-11-04 stands (no item), no release to site. Publication, rendered in Chromium on edition 0.22.58: as-of lines 09:42 UTC on 30 October, the five questions agree with v6. Coverage read: nothing promoted since the morning, no overstatement. Still open: abp has not widened policy.json (desk-0006); desk-0008 with dev; conductor-0023 (the story hold) with the editor; the correspondent has not reviewed the closed days 27 October to 3 November; dev's signed-log proposal and the coverage count. Not done: no vault read key, so no quote re-check; no correction request drafted (the editor holds sending).",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "01701b0232951cbbc3032bca718ca4bd3b9a90b9"
+}
