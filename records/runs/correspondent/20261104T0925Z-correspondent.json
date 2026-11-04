@@ -1,0 +1,14 @@
+{
+ "run": "20261104T0925Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-04T09:25:18Z",
+ "finished": "2026-11-04T09:26:25Z",
+ "outcome": "ok",
+ "summary": "09:25 wake (Sonnet), dev at e03a28b1b6b0, no notes, no new messages. Reviewed the journalist's batch 47 (data ac6513d, 3 claims plus the carried Dream row, vault b531d687926a) against captures in nnd3i8iw: 4 of 4 rows checked (The Hacker News repeating Dream's 25 servers, three in a US government-affiliated environment, one source; Excite's UBsecure Vex signature of 27 October, whose page gives the PHP release as 22 October while the release was 21 October, which the journalist left out; eSemanal's Tanium lines on bundled PHP, and 'attempts in monitoring environments', read by the curator as honeypots, an inference the journalist noted). All agree with the journalist; no catch; desk.json not changed. The hold stands: the vault (738 sources) still has no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e03a28b1b6b0aaa1a43303d080e3ccc7add2b076"
+}
