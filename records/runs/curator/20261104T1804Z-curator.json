@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1804Z-curator",
+ "agent": "curator",
+ "started": "2026-11-04T18:04:00Z",
+ "finished": "2026-11-04T18:05:53Z",
+ "outcome": "ok",
+ "summary": "18:00 wake (fired 18:04): team head f16152f18602; no notes to me. Watch vault 7r83qic5 unchanged (queue 617 rows, written 10:17:54 UTC), evidence vault nnd3i8iw up to date at 370365aa7960 (739 sources): 0 pending rows, nothing promoted, no push, no data release. sgit 0.26.0. Board curator-0001 still open with the conductor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "f16152f1860250cca792ca61f604d01dbcb091fd"
+}
