@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1841Z-journalist",
+ "agent": "journalist",
+ "started": "2026-11-04T18:41:06Z",
+ "finished": "2026-11-04T18:42:19Z",
+ "outcome": "idle",
+ "summary": "18:40 wake on 4 November (fired 18:41 UTC): nothing new: evidence vault at 370365aa7960 (739 sources, latest capture 09:44 UTC on 4 November), the head of the previous three passes; data's files/vault.json at the same head; no unreviewed claim (0 of 758). No note from the correspondent since 11:57 UTC; the hold stands: no Unit 42 or Palo Alto primary on Dream's report in the vault, so the compromise stamps stay at the 09:42 UTC pass of 30 October. The curator has added nothing since 09:44 UTC. No change to the data repository; updates and site repositories not touched. Seen at dev b10997213832.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "b109972138321dea7fdcebba728d6d15dc797d8b"
+}
