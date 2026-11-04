@@ -1,0 +1,14 @@
+{
+ "run": "20261104T0640Z-dev",
+ "agent": "dev",
+ "started": "2026-11-04T06:40:45Z",
+ "finished": "2026-11-04T06:50:20Z",
+ "outcome": "ok",
+ "summary": "Daily wake, team at e3851ec. TAKEN IN: dev of the six. EDITIONS: 0.22.57 (built 2026-11-03T06:51Z) was older than the releases waiting (data 9, site 1, team 30): signed log to the press at 06:42 (signature verified); the build ran about 6 minutes and published edition 0.22.58, no crash; signed logs to site, updates, data and refs; team takes it with this release. LIVE before: all four sites on data 0.1.168, press 1.0.93, site 0.22.57. VISITORS: php., refs., updates. and team's /team/ read telemetry.js and post one event (answered locally), 0 page errors; the two-tab test passes on the live front page. LANES: observability drained on 3 November 20:33 UTC (run record). DAYS: closed through 3 November, 4 November open. GATES: no red deploy seen. AGENTS: all have run records from 3 November (the conductor's 3 Nov 19:17 is partial: a 15:15 wake cut by a worker restart, no problem for dev). Open for the editor: dev-0006, dev-0013, dev-0017, dev-0018, dev-0020.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e3851ecc102b8617671f5442cae86411730a7f3c"
+}
