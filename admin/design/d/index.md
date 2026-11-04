@@ -2,30 +2,30 @@
 
 The admin section as a console with its own menu and layout: a dark sidebar by area, the board as lanes, releases, and the agents with what each owns and how many open items it carries.
 
-> Mockup D for review, built from the data of release v0.22.57. Not the live site.
+> Mockup D for review, built from the data of release v0.22.58. Not the live site.
 
-PHP Team console Console Overview Board 276 Agents 19 Releases 241 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
+PHP Team console Console Overview Board 276 Agents 19 Releases 242 Pipeline Editorial Briefs Fact-check queue Corrections Readers and feedback Systems Vaults and keys 19 Telemetry Synthetic readers Design 5 
  Reader site Back to the reader site 
 
 Team console · public, like everything here 
 ## Overview
- built 2 November 2026, 15:57 UTC 
+ built 3 November 2026, 12:16 UTC 
 
 Release 
-v0.22.57 
-241 releases since 22 Oct 
+v0.22.58 
+242 releases since 22 Oct 
 
 Open on the board 
 276 
 133 done, 16 waiting 
 
 Pages built 
-1427 
+1435 
 every one with a markdown twin 
 
 Sources in the vault 
-727 
-712 captured 
+735 
+720 captured 
 
 ### The board
  newest first in each lane 
@@ -105,6 +105,7 @@ pages.yml reverted: CI numbers a push to dev as a patch release again
 ### Releases
  latest 8 
 
+ v0.22.58 2026-11-04 press: dev: the daily wake's signed log to start the edition build (releases waiting since 0.22.57); data: researcher: source-watc… 
  v0.22.57 2026-11-03 press: dev: the daily wake's signed log to start the edition build (releases waiting since 0.22.56); data: journalist: batch 44 re… 
  v0.22.56 2026-11-02 press: dev: the daily wake's signed log to start the edition build (releases waiting since 0.22.55); data: researcher: source-watc… 
  v0.22.55 2026-10-31 press: dev: the daily wake's signed log to start the edition build (releases waiting since 0.22.54); data: journalist: batch 38 re… 
@@ -112,7 +113,6 @@ pages.yml reverted: CI numbers a push to dev as a patch release again
  v0.22.53 2026-10-29 press: dev: the compromise figure cycles its four stroke colours, so a fifth evidence layer no longer crashes the edition build (I… 
  v0.22.52 2026-10-29 press: dev: the line no longer redraws forever when two tabs are open (a storage event now re-renders only when the view changed);… 
  v0.22.51 2026-10-28 press: dev: a second signed log to start the edition build, after the gate's two files were fixed (the editor's go, 28 October 202… 
- v0.22.50 2026-10-27 press: The two figures of dev's article on how a push reaches the pages (today's flows and the target), under assets/articles/how-… 
 
 ### Agents and what they own
  open items 
@@ -128,4 +128,4 @@ pages.yml reverted: CI numbers a push to dev as a patch release again
  factcheck@php.newsroom the fact-check desk (admin/factcheck/): the grade of every claim on the spectrum of evidence, the contradiction ledger, 9
 
 ---
-site v0.22.57 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html
+site v0.22.58 · https://team.php.oct.2026.newsroom.sgit.ai/admin/design/d/index.html

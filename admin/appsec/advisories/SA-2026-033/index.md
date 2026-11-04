@@ -40,4 +40,4 @@ Move when production endpoints exist.
 
 
 ---
-site v0.22.57 · data as of 2026-11-02T15:57Z · vault commit e4bbd16da443 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-033/index.html
+site v0.22.58 · data as of 2026-11-03T12:16Z · vault commit a8e4e3dc5490 · https://team.php.oct.2026.newsroom.sgit.ai/admin/appsec/advisories/SA-2026-033/index.html
