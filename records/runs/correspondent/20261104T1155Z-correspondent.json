@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1155Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-04T11:55:46Z",
+ "finished": "2026-11-04T11:56:49Z",
+ "outcome": "ok",
+ "summary": "11:55 wake (Sonnet), dev at e1fb165d3038, no notes, no new messages. Reviewed the journalist's batch 48 (data 2759038, 5 claims plus the carried Dream row, vault 370365aa7960) against captures in nnd3i8iw: 5 of 6 rows checked (The Hacker News: 'observed on October 25' is Dream's discovery date, a wording slip, not the rooting dates; Sisun News: per Dream 24 firewalls and 1 internal management server, whether Korean systems were breached 'not yet confirmed', and the KISA alert from 'interest' to 'caution' on 22 October; Hackread: the mod_php highest-risk deployment, and the claim that Calif credited an 'independent researcher @lcfr_hax' with first finding PHP2Shell: Calif's own quoted post of 21 October names @lcfr_hax as the first to discover it, and the site already carries that handle as Calif's own reporter, so 'independent' is the outlet's word, as the journalist says; held back correctly). Read, not rechecked: Hackread's WordPress-is-not-PHP advice. All agree with the journalist; no catch; desk.json not changed. The hold stands: the vault (740 sources) still has no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture; PAN-OS stays off the site; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged; no new state of affairs version. Outstanding: the curator's capture of the primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e1fb165d303874c33f9d64ba6723659fa8a225b2"
+}
