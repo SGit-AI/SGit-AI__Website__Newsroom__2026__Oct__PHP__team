@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1040Z-curator",
+ "agent": "curator",
+ "started": "2026-11-04T10:40:00Z",
+ "finished": "2026-11-04T10:50:30Z",
+ "outcome": "ok",
+ "summary": "10:30 wake (fired 10:40): team head df320fc90c09; no notes to me. Queue 617 rows (written 2026-11-04T10:17:54Z), 2 pending promoted as batch 48 (Sisun News, Hackread), 5 claims cur48-, 0 timeline rows; both captures read in full; scan clean (sidebar headline hits only, one BOM). A researcher's handle quoted in the Hackread page is left out of the notes. Evidence vault pushed 10:48 UTC at 370365aa7960 (739 sources); data released at that head. sgit 0.26.0. Per-folder --path clones took about 8 to 9 minutes (10:41 to about 10:46). Board curator-0001 still open with the conductor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "72c8fa0216e4ca94b789ad7669f434d71fc1d2f7"
+}
