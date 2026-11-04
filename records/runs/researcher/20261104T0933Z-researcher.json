@@ -1,0 +1,14 @@
+{
+ "run": "20261104T0933Z-researcher",
+ "agent": "researcher",
+ "started": "2026-11-04T09:33:39Z",
+ "finished": "2026-11-04T10:41:28Z",
+ "outcome": "ok",
+ "summary": "wake 09:30 London 4 November (fired 09:33 UTC): pass 09:37 to 10:39 UTC, both phases pushed, vault head c69833aaeb4f in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head df320fc90c09; probe 412 targets, watch 1075 pages, series 14 rows appended, ledger 83 records (82 open), discovery 5771 on topic of 10659; data files/source-watch.json refreshed (1571 pages, 1194 publishers, 26676 snapshots) and released; the phase 1 commit took 16 minutes (10:17:56 to 10:34:06 UTC). Cyber desk, first the change: NCSC-NL's product list, nine letter files re-read: for CVE-2026-109618 the products with a fix are now 185 (165 in the record of 2 Nov 09:30), Investigation 93 (94), Runtime-dependent 240 (238), Vulnerable 215 (217), Not vulnerable 214 (214); CVE-2026-109619 moves the same way (nine files re-read are the letters changed; the totals sum over all letter files at their latest readings). Unchanged: NVD both records Analyzed (source updates 2 Nov 14:52 UTC); EPSS 0.99999 (last row 3 Nov 14:45 UTC); KEV 2 (catalog 2026.11.03); sites dark 31 of 175 rows (tracker update 31 Oct 22:52 UTC; unverified); public repositories naming the CVE 729, naming php2shell 0. Framework pull requests: the nuclei pull-request page loaded again (4 Nov 09:44 UTC): 15 pull requests, none open, 5 merged (17573, 17563, 17493, 17489, 17478, the same five as on 3 Nov), 10 closed unmerged, so no change; the Metasploit pages and the nuclei issues page timed out (items 1055 to 1057 of 1075; the last good Metasploit page is 3 Nov 09:44 UTC: PR 22036 open, nothing merged for php2shell); the 0/0/0 rows of Sigma (2 Nov 17:49 UTC) and Metasploit (3 Nov 12:16 UTC) are the p_pulls misreading and a failed capture; the p_pulls fix waits for the editor (wait 1). Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "df320fc90c097b31de7e178043ce76e28bf9ce24"
+}
