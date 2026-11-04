@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1204Z-researcher",
+ "agent": "researcher",
+ "started": "2026-11-04T12:04:34Z",
+ "finished": "2026-11-04T13:03:26Z",
+ "outcome": "partial",
+ "summary": "wake 12:00 London 4 November (fired 12:04 UTC): pass 12:08 to 13:01 UTC, both phases pushed, vault head 888a2e0facd5 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head abaadfa061fd; probe 412 targets, watch 1075 pages, series 7 rows appended, ledger 83 records (82 open), discovery 5793 on topic of 10728; the phase 1 commit took 16 minutes (12:40:14 to 12:56:02 UTC). THE DATA REFRESH WAS NOT RELEASED: the exporter's file (vault head 888a2e0facd5, 1571 pages, 1194 publishers, 27620 snapshots) fails the data gate: files/source-watch.json: $.access: missing login-wall, because the page that was the only login-wall page is now classed otherwise, the exporter writes only the classes that have pages, and the schema requires login-wall; no --no-verify, no edit of the exporter's output, no change to the schema; the clone of data is restored to its last release, so files/source-watch.json there stays at the 4 Nov 09:30 wake's refresh until the editor decides (board researcher-0005: the exporter emits every class, or the schema makes login-wall optional; the old wait 2). The same will happen at every wake until then. Cyber desk, unchanged: KEV 2 (catalog 2026.11.03); NVD both records Analyzed (source updates 2 Nov 14:52 UTC); EPSS 0.99999 (last row 3 Nov 14:45 UTC); sites dark 31 of 175 rows (tracker update 31 Oct 22:52 UTC; unverified); public repositories naming the CVE 730, naming php2shell 0; access classes of the 1571 pages: open 1400, bot-challenge 90, down 53, paywalled 16, gone 11, geo-blocked 1, login-wall 0 (1 before). Framework pull requests: the series rows of 4 Nov 12:15 UTC read 0/0/0 for Sigma, Metasploit and nuclei: Sigma's capture loaded without error and shows its page (the p_pulls misreading), the Metasploit and nuclei captures hold only meta and provenance, no page (failed captures); the last good readings stand (nuclei 4 Nov 09:44 UTC: 5 merged, 10 closed unmerged, 0 open, no change since 3 Nov; Metasploit 3 Nov 09:44 UTC: PR 22036 open, nothing merged for php2shell); the p_pulls fix waits for the editor (wait 1). Nothing queued as news. No note for me.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "abaadfa061fdb5f4abbf54bf761784c105d29b30"
+}
