@@ -1,0 +1,17 @@
+{
+ "run": "20261104T0833Z-observability",
+ "agent": "observability",
+ "started": "2026-11-04T08:33:52Z",
+ "finished": "2026-11-04T08:35:20Z",
+ "outcome": "ok",
+ "summary": "scheduled wake 08:33: sgit 0.26.0 (0.27.0 still has no release notes, board observability-0003); team dev 4f24819d76fc, no notes for me; drained 84wr8mib: 97 waiting in 1 of 5 lanes (under the 700 report level), 97 readable, 0 undecryptable; vault 5,172 events from 2,008 sessions, pushed and in sync, then 97 marked processed. Worth a look: 14 reader views today (the best day since 29 Oct) but 10 of them are from one country, with no referrer, one page per session, mostly deep admin and agent pages (/admin/agents/*, /admin/briefs/*, /team/control/): the pattern of an undeclared bot or scraper that passes the reader classifier, not necessarily readers; counts only, nothing else read into it. Crawlers 9, synthetic 55. Nothing addressed a model. Nothing waits on the editor.",
+ "read": [
+  "records/WAKE.md",
+  "records/schedule/observability.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "4f24819d76fcee14917d5b55740d1f0667eacae1"
+}
