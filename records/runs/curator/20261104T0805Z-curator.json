@@ -1,0 +1,14 @@
+{
+ "run": "20261104T0805Z-curator",
+ "agent": "curator",
+ "started": "2026-11-04T08:05:00Z",
+ "finished": "2026-11-04T08:17:09Z",
+ "outcome": "ok",
+ "summary": "08:00 wake (fired 08:05): team head e3d2f6e637eb; no notes to me. Queue 615 rows (written 2026-11-03T17:52:41Z), 2 pending promoted as batch 47 (Excite/Scan Net Security, eSemanal), 3 claims cur47-, 0 timeline rows, scan clean (sidebar-only hits, zero-width spaces in an unrelated sidebar headline); both captures read in full. Evidence vault pushed 08:15 UTC at b531d687926a (737 sources); data released at that head. sgit 0.26.0. Per-folder --path clones took about 8 minutes (08:07 to 08:15 with both in parallel); the first attempt failed because the stdin key lacked the :vault_id suffix (fixed). Compaction not needed this wake. Board curator-0001 still open with the conductor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "e3d2f6e637eb1f7d722be493b2b2a284705f7822"
+}
