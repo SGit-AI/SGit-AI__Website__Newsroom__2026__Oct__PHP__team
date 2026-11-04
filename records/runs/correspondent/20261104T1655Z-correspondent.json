@@ -1,0 +1,14 @@
+{
+ "run": "20261104T1655Z-correspondent",
+ "agent": "correspondent",
+ "started": "2026-11-04T16:55:45Z",
+ "finished": "2026-11-04T16:56:43Z",
+ "outcome": "idle",
+ "summary": "16:55 wake (Sonnet), dev at b841d851a1be, no notes, no new messages. Nothing new: no commit with the journalist's trailer in data, updates or site since batch 48 (11:12 UTC); its 16:11 run record is idle (vault 370365aa7960, 0 of 758 claims unreviewed); the vault has 740 sources, the same as at 14:25, and still no Unit 42 brief or Palo Alto advisory update, only the 22 October PSIRT capture. Nothing to review or correct; stamps stay at 09:42 UTC on 30 October, readers' lines unchanged, no new state of affairs version, desk.json not changed. Outstanding: the curator's capture of the primaries; batches 23 to 26 mostly not rechecked, batch 30's 19 noted verdicts only read; updates has no journalist commits; refs and press not attached; dev's proposal on signed logs to the press awaits the editor.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "b841d851a1be675cdf9fe83db820997f6e6593b5"
+}
