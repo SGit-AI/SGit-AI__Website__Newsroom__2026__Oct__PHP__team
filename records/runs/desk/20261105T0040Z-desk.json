@@ -1,0 +1,14 @@
+{
+ "run": "20261105T0040Z-desk",
+ "agent": "desk",
+ "started": "2026-11-05T00:40:52Z",
+ "finished": "2026-11-05T00:42:54Z",
+ "outcome": "ok",
+ "summary": "00:40 closing wake. Taken in: team 8a75e31, data (nothing new since 11:12 UTC on 4 November, read-only). Closed 2026-11-04 (label Quiet, headline per role, coverage 0 by published date, closed_by desk@php.newsroom, no items: the agents ran every wake, nothing verified moved the story) and opened 2026-11-05 (Today, no items); released to site dev (gate passed); deploy checked: the day files are served and 4 November shows as closed. State of affairs unchanged since v6; compromise stamps held at 09:42 UTC on 30 October (no Unit 42 or Palo Alto primary in six days); still no organisation confirmed. Still open: abp has not widened policy.json (desk-0006); desk-0008 with dev; conductor-0023 (the story hold) with the editor; the correspondent has not reviewed the closed days 27 October to 4 November; dev's signed-log proposal and the coverage count. Not done: the publication and system check is the 10:40 wake's; no vault read key.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "8a75e3133d41d7a581acc860f4f4856d58c50f86"
+}
