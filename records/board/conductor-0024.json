@@ -1,0 +1,7 @@
+{
+ "id": "conductor-0024",
+ "title": "Wind-down, 5 November 2026: all wakes stopped except the last round of journalist, desk and conductor",
+ "status": "open",
+ "owner": "conductor",
+ "note": "The editor's instruction, 5 November 2026, in the conductor's session. Disabled (not deleted) at 00:43 UTC: observability, correspondent (both), security, researcher (both), curator (both), dev. Left on for one last round: journalist (08:40, 11:10, 13:40), desk (10:40), conductor. The journalist closes the story with a 'no further updates' note; the desk makes the days page say 31 Oct to 5 Nov: no new verified developments and opens no new day. At the conductor's 11:15 wake: verify both done, disable journalist and desk, then the conductor's own task last, and mark this row done. Open items left for a later newsroom: researcher-0005 (exporter omits empty access classes), researcher-0006 (researcher disk full), conductor-0023 (superseded by the wind-down), dev-0020, SA-2026-023, security-0002, dev-0006, desk-0006, breaking-0005, factcheck task and vault keys, sessions for sherpa/pulse/ontologist/librarian. To resume: re-enable the tasks (update_trigger enabled=true) from records/data/scheduled-tasks.json."
+}
