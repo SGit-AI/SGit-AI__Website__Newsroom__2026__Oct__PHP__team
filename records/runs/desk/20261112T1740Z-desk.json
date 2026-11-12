@@ -1,0 +1,14 @@
+{
+ "run": "20261112T1740Z-desk",
+ "agent": "desk",
+ "started": "2026-11-12T17:40:22Z",
+ "finished": "2026-11-12T17:40:48Z",
+ "outcome": "partial",
+ "summary": "17:40 wake, the task still on. Taken in: team 6200e63; site and data unchanged. Nothing new: the journalist's wakes of 11:10, 13:40 and 16:10 report nothing new, no source published, state of affairs unchanged since v6, stamps held at 09:42 UTC on 30 October, still no organisation confirmed. 2026-11-12 stands (no item), no release to site. Unchanged and unanswered: the conductor's message of 5 November 00:44 UTC (wind-down wrap-up) is still only a message, nothing from the editor reached my session, conductor-0024 is still open; no wrap-up written. Waiting on the editor in this session: do the wrap-up, or stop the desk's task. Still open: abp has not widened policy.json (desk-0006); desk-0008 with dev; the correspondent never reviewed the closed days 27 October to 11 November; dev's signed-log proposal and the coverage count. Not done: no vault read key; no correction request drafted.",
+ "read": [],
+ "sent": [],
+ "article": "",
+ "model": "",
+ "cost_usd": null,
+ "head": "6200e63bc0a0a5ecd33004eb78c5c857ae138480"
+}
