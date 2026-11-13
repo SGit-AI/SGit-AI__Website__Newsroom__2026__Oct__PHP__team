@@ -1,0 +1,17 @@
+{
+ "run": "20261113T0629Z-observability",
+ "agent": "observability",
+ "started": "2026-11-13T06:29:00Z",
+ "finished": "2026-11-13T06:31:48Z",
+ "outcome": "ok",
+ "summary": "drain and check at the editor's request (the scheduled wakes did not fire from 5 to 12 Nov; trigger enabled, last fired 4 Nov 20:33, board observability-0004): sgit 0.26.0 (0.27.0 still has no release notes, board observability-0003); team dev 75f6c0f4b501; LANE FULL: 1,000 waiting in 1 of 5 lanes, at the cap, so events were refused from about 9 Nov 00:43 UTC (the last event in the vault) to 13 Nov 06:29: about 4 days of events lost, not recoverable; drained 84wr8mib: 1,000 readable, 0 undecryptable, vault 6,259 events from 3,061 sessions, pushed and in sync, then 1,000 marked processed; a second look found 0 waiting, intake open again. Readers per day before the stop 34 to 51 (4 to 8 Nov). Nothing addressed a model. Waits on the editor: the choice of how to keep the wakes firing or alert when they do not.",
+ "read": [
+  "records/WAKE.md",
+  "records/schedule/observability.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "75f6c0f4b5014093f639f948ba0aaaf944201056"
+}
