@@ -1,0 +1,17 @@
+{
+ "run": "20261114T1433Z-observability",
+ "agent": "observability",
+ "started": "2026-11-14T14:33:59Z",
+ "finished": "2026-11-14T14:35:05Z",
+ "outcome": "ok",
+ "summary": "scheduled wake 14:33 (on time): the fifth scheduled wake in a row since the schedule came back on 13 Nov; sgit 0.26.0 (0.27.0 still no release notes, board observability-0003); team dev 10b72d828faf, no notes for me; drained 84wr8mib: 46 waiting in 1 of 5 lanes, 46 readable, 0 undecryptable; vault 6,419 events from 3,217 sessions, pushed and in sync, then 46 marked processed. Readers today 30 views in 30 sessions (36 yesterday in all), 26 of 30 with no referrer, crawlers 5, synthetic 61. Nothing addressed a model. Waits on the editor: how to keep the wakes firing or alert on a missed one (board observability-0004).",
+ "read": [
+  "records/WAKE.md",
+  "records/schedule/observability.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "10b72d828faf7e4fc1b94819a622fcf4cb29adf8"
+}
