@@ -1,0 +1,17 @@
+{
+ "run": "20261117T1433Z-observability",
+ "agent": "observability",
+ "started": "2026-11-17T14:33:15Z",
+ "finished": "2026-11-17T14:34:45Z",
+ "outcome": "ok",
+ "summary": "scheduled wake 14:33 (on time): the fourteenth scheduled wake in a row since the schedule came back on 13 Nov; sgit 0.26.0 (0.27.0 still no release notes, board observability-0003); team dev bb5c51162bd5, no notes for me; drained 84wr8mib: 235 waiting in 1 of 5 lanes (24% of the 1,000 cap, under the 700 report level), 235 readable, 0 undecryptable; vault 7,402 events from 4,160 sessions, pushed and in sync, then 235 marked processed. Worth a look: a crawler burst, 211 crawler events today over 183 pages, only 2 declare googlebot (about 200 events in this six-hour window against about 5 to 25 a day last week); the lane is not capped, by the editor's decision, and the fill is at 24%, so no action; readers today 19 views (2 in this drain), 16 of 19 from our own hosts. Nothing addressed a model. Waits on the editor: how to keep the wakes firing or alert on a missed one (board observability-0004).",
+ "read": [
+  "records/WAKE.md",
+  "records/schedule/observability.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "bb5c51162bd5e8c2425cf9177b759b2edd385af0"
+}
