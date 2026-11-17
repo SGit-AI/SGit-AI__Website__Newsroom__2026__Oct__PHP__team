@@ -1,0 +1,17 @@
+{
+ "run": "20261117T0833Z-observability",
+ "agent": "observability",
+ "started": "2026-11-17T08:33:23Z",
+ "finished": "2026-11-17T08:35:05Z",
+ "outcome": "ok",
+ "summary": "scheduled wake 08:33 (on time): the thirteenth scheduled wake in a row since the schedule came back on 13 Nov; sgit 0.26.0 (0.27.0 still no release notes, board observability-0003); team dev aa2a10ce3a93, no notes for me; drained 84wr8mib: 347 waiting in 1 of 5 lanes (35% of the 1,000 cap, under the 700 report level; the largest overnight gap), 347 readable, 0 undecryptable; vault 7,167 events from 3,926 sessions, pushed and in sync, then 347 marked processed. Worth a look: the number of different pages seen all time went from 1,809 to 1,958 (+149) overnight, a crawl of new pages (the site grew), while crawler events dated today are 1; 16 Nov closed at 39 reader views (73 on 15 Nov); today 17 so far, 15 of 17 from our own hosts (refs 14). Synthetic 34. Nothing addressed a model. Waits on the editor: how to keep the wakes firing or alert on a missed one (board observability-0004).",
+ "read": [
+  "records/WAKE.md",
+  "records/schedule/observability.json"
+ ],
+ "sent": [],
+ "article": "",
+ "model": "Sonnet",
+ "cost_usd": null,
+ "head": "aa2a10ce3a93b724949ade145b6034bf691ac525"
+}
