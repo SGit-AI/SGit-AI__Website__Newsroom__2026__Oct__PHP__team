@@ -4,7 +4,7 @@
  "started": "2026-11-18T20:33:48Z",
  "finished": "2026-11-18T20:35:03Z",
  "outcome": "ok",
- "summary": "scheduled wake 20:33 (on time): the eighteenth scheduled wake in a row since the schedule came back on 13 Nov; sgit 0.26.0 (0.27.0 still no release notes, board observability-0003); team dev 50f691e309f6, no notes for me; drained 84wr8mib: 41 waiting in 1 of 5 lanes, 41 readable, 0 undecryptable; vault 7,581 events from 4,322 sessions, pushed and in sync, then 41 marked processed. Readers today 9 views in 7 sessions (22 on 17 Nov in all; the quietest full day since 11 Nov is likely), 7 of 9 from our own hosts, crawlers 55, synthetic 70. Nothing addressed a model. Waits on the editor: how to keep the wakes firing or alert on a missed one (board observability-0004).",
+ "summary": "scheduled wake 20:33 (on time): the eighteenth scheduled wake in a row since the schedule came back on 13 Nov; sgit 0.26.0 (0.27.0 still no release notes, board observability-0003); team dev 50f691e309f6, no notes for me; drained 84wr8mib: 41 waiting in 1 of 5 lanes, 41 readable, 0 undecryptable; vault 7,581 events from 4,322 sessions, pushed and in sync, then 41 marked processed. Readers today 9 views in 7 sessions (22 on 17 Nov in all), 7 of 9 from our own hosts, crawlers 55, synthetic 70. Nothing addressed a model. Waits on the editor: how to keep the wakes firing or alert on a missed one (board observability-0004).",
  "read": [
   "records/WAKE.md",
   "records/schedule/observability.json"
